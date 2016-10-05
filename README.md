@@ -12,6 +12,9 @@ Last date modified: 2016-10-04
 This repo aims to share protocols and notebooks of ongoing work. 
 
 # List of Notebooks by year
-1. [2016_Notebook]()
-2. 
-3. 
+[2016_Notebook](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_notebook.md)
+
+
+# List of protocols
+
+[Heat shocking, RNA isolations, and QPCR](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_ANBE_protocols.md)
