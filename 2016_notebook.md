@@ -105,6 +105,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 75: 2016-10-03 and 2016-10-04](#id-section75). Climate cascade meeting   
 * [Page 76: 2016-10-03 and 2016-10-04](#id-section76). Membrane stability   
 * [Page 77: 2016-10-04](#id-section77). Lab Safety Officer (LSO) meeting. 
+* [Page 78: 2016-10-05](#id-section78). Hsp gxp function valued trait fig
 
 	
 ------    
@@ -4965,3 +4966,90 @@ Safety Audits at UVM: LabCliq. LSO can do corrective actions but the PI has to u
 ### 6. Q & A   
 
 * Fraudulent calls: Target international faculty and staff referring to immigration status, healthcare, taxes. If you get calls, notify police services to set up trap on that phone. CHeck for scams on UVM police website
+
+
+
+	
+------    
+<div id='id-section78'/>
+### Page 78: 2016-10-05. Hsp gxp function valued trait fig  
+
+Boltzmann function and fit to dataset
+
+```R
+Boltz<-function(data=x){
+  B<-nls(gxp ~ (1+(max-1)/(1+exp((Tm-T)/a))),data=data, start=list(max=80,Tm=35,a=1.05), trace=TRUE,control=nls.control(warnOnly = TRUE, tol = 1e-05, maxiter=1000))
+#summary(B)
+  return(summary(B)$parameters)
+}
+
+T<-c(25,28,30,31.5,33,35,36.5,38.5,40,41)
+gxp<-c(1.050927323,
+1.795269722,
+2.394945916,
+2.025719648,
+5.995719441,
+12.75328258,
+35.0828896,
+44.80226791,
+63.64704198,
+67.607218)
+FB1<-as.data.frame(cbind(T,gxp));FB1
+
+Boltz(FB1)
+knitr::kable(Boltz(FB1))
+```
+
+### function that estimates values based on Boltzmann parameters
+
+```R
+fud<-function(T=seq(25,70,.1),Tm=40,slope=1.8,max=50){
+  y<-1+ (max-1)/(1+exp(((Tm-T)/slope)))
+  return(y)
+  }
+```
+
+### parameter fits  
+
+|    |  Estimate| Std. Error|   t value| p value|
+|:---|---------:|----------:|---------:|------------------:|
+|max | 76.179606|  8.0617514|  9.449511|          0.0000310|
+|Tm  | 37.432787|  0.5585165| 67.021804|          0.0000000|
+|a   |  1.765851|  0.3248254|  5.436310|          0.0009701|
+
+
+### With units and real data
+
+```R
+plot(seq(0,70,.1),fud(T=seq(0,70,.1)),col="blue",type="n",ylim=c(0,80),las=1,xlab="",ylab="",xlim=c(25,42))
+mtext("Fold Induction", side=2, line=2.5, cex=2)
+mtext("Temperature", side=1, line=2.7, cex=2)
+lines(seq(25,70,.1),fud(Tm=37.4,slope=1.76,max=76),lwd=6)
+points(FB1$T,FB1$gxp,pch=19,col="blue",cex=3)
+lines(c(37.4,37.4),c(-10,39),lwd=5,lty="dotdash",col="purple")
+abline(h=73,lty="dotdash",col="red",lwd=5)
+arrows(35,20,38,50,code=2,lwd=2,)
+text(c(39,30,36),c(20,76,50),c("Tm","Max","Slope"),font=2,cex=2)
+```
+
+
+![](https://cloud.githubusercontent.com/assets/4654474/19113926/cccab52a-8ad9-11e6-8a3a-9f77f3c8f519.jpeg) 
+
+
+### No units or real data
+
+```R
+plot(seq(0,70,.1),fud(T=seq(0,70,.1)),col="blue",type="n",ylim=c(0,80),las=1,xlab="",ylab="",xlim=c(25,42),axes=FALSE)
+mtext("Fold Induction", side=2, line=2.5, cex=2)
+mtext("Temperature", side=1, line=2.7, cex=2)
+lines(seq(25,70,.1),fud(Tm=37.4,slope=1.76,max=76),lwd=6)
+#points(FB1$T,FB1$gxp,pch=19,col="blue",cex=3)
+lines(c(37.4,37.4),c(-10,39),lwd=5,lty="dotdash",col="purple")
+abline(h=73,lty="dotdash",col="red",lwd=5)
+arrows(35,20,38,50,code=2,lwd=2,)
+text(c(39,30,36),c(20,76,50),c("Tm","Max","Slope"),font=2,cex=2)
+box()
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/19113928/ceaa3140-8ad9-11e6-8693-a8cb0c175eb9.jpeg)
+
