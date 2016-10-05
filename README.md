@@ -26,7 +26,8 @@ This repo shares my protocols and notebooks of ongoing work with the aim of capt
 
 # List of protocols
 
-[Heat shocking, RNA isolations, and QPCR](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_ANBE_protocols.md)
+* [Heat shocking, RNA isolations, and QPCR](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_ANBE_protocols.md)
+* [Protein related](https://github.com/adnguyen/2016_Protein_stability_evolution/blob/master/Documents/Protocols/Protocols.md)
 
 
 # Notes 
