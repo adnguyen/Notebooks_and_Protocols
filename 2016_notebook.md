@@ -105,7 +105,8 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 75: 2016-10-03 and 2016-10-04](#id-section75). Climate cascade meeting   
 * [Page 76: 2016-10-03 and 2016-10-04](#id-section76). Membrane stability   
 * [Page 77: 2016-10-04](#id-section77). Lab Safety Officer (LSO) meeting. 
-* [Page 78: 2016-10-05](#id-section78). Hsp gxp function valued trait fig
+* [Page 78: 2016-10-05](#id-section78). Hsp gxp function valued trait fig  
+* [Page 79: 2016-10-06](#id-section79). SHC lab meeting: NSF post doc app 
 
 	
 ------    
@@ -5053,3 +5054,42 @@ box()
 
 ![](https://cloud.githubusercontent.com/assets/4654474/19113928/ceaa3140-8ad9-11e6-8693-a8cb0c175eb9.jpeg)
 
+	
+------    
+<div id='id-section79'/>
+### Page 79: 2016-10-06. SHC lab meeting: NSF post doc app    
+
+Lab safety stuff: 
+1. Do trainings online
+2. Check waste and dispose it, ethidium bromide gels 
+3. Do monthly inspections  
+
+Newar works on Fridays; works up to 6 hours. 
+
+Notes: 
+* use performance curves or reaction norm instead of function-valued traits   
+* separate out terms, performance for fitness proxy and then reaction norm for physiology or any traits-phenology GxE = reaction norm; generate performance cruve--growth over season 
+* context depdnent expression of traits drive relative performance 
+* who cares about separating out photoperiod vs temp
+* env can shape relationship between traits and performance in non-linera and unexpected ways or in ways that influence the process of adaptation, adaptive potential. 
+* look at many gxp traits-relating those to each other and to performance 
+* integrate all of these traits and overlay them on a complex environmental background 
+
+* stoichiometry: give ratios not just %
+
+* expand on QG of gene expression 
+* selection may act in context-dependent manner 
+
+* be careful about constraints and trade-offs  
+
+* Think about training objective # 3; goal of grant? reword to make sure its a goal 
+
+* **certain clones**: does not tell you a whole lot. how should poplar be selected? Talk about general principals that you can lead to suggest to growers. What kind of outreach . prescribe based on environmental variables I am measuring.  
+
+* more info that is concrete on what the patterns are; feels adrift; not tied tightly between sections 
+
+* introduction- get rid of 2nd paragraph. maybe 1 sentence to previous paragraph 
+
+* reserach objectives: clarify traits; response function; add a little bit or shift; clarify parts
+
+* get the realized GSL ; using existing rad seq data; predict performance as a function of temperature
