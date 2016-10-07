@@ -106,7 +106,8 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 76: 2016-10-03 and 2016-10-04](#id-section76). Membrane stability   
 * [Page 77: 2016-10-04](#id-section77). Lab Safety Officer (LSO) meeting. 
 * [Page 78: 2016-10-05](#id-section78). Hsp gxp function valued trait fig  
-* [Page 79: 2016-10-06](#id-section79). SHC lab meeting: NSF post doc app 
+* [Page 79: 2016-10-06](#id-section79). SHC lab meeting: NSF post doc app   
+* [Page 80: 2016-10-07](#id-section80). Prepping cliamte cascade meeting   
 
 	
 ------    
@@ -5093,3 +5094,48 @@ Notes:
 * reserach objectives: clarify traits; response function; add a little bit or shift; clarify parts
 
 * get the realized GSL ; using existing rad seq data; predict performance as a function of temperature
+
+
+
+
+
+	
+------    
+<div id='id-section80'/>
+### Page 80: 2016-10-07. Prepping cliamte cascade meeting   
+1. Project updates:    
+ 	* Gene expression project:
+		* **Go over analyses:**
+		* **Go over figure layout for ms**   
+ 	* Multiple stressors ms:   
+		* **Ask about SHC comments on confusion of mismatch membrane stability**    
+ 	* Range limits ms: **SHC lab gave verbal edits:** 
+		* focus on 1 end of thermal niche breadth(although it is nice to mention it because CTmin decreases across lat)--CTmin. 
+		* Dicussion needs to talk about cold adaptation; why trade-offs?
+		* Walk through results better   
+ 
+ 	* Thermal niche ms: **Lacey and I working on discussion**     
+ 	* Stressed in nature MS: Samples to rerun.   
+  	* update: Curtis can no longer work+ write on project   
+		* in reference to missing samples
+		* Fit in time to process Curtis' samples.      
+		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**         
+	* Proteome stability project: **no clue what status is**    
+
+* Attending SICB - Jan 4-8 New Orleans, Give a talk about range limits paper.   
+	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+	* **Talk title: Northern range limits of a common forest ant is associated with trade-offs in cold physiology**   
+ 	* Apply for funding. Suitor Travel Grant Deadline is october 31    
+	* **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.    
+
+* **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
+	* Formatting:    
+		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+		* Dissertation Abstract is in multiple paragraphs, but for dissertation itself, make 1 paragraph
+	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+		1. Intent to graduate: February 1st for May.   
+		2. Send defense committe form to grad college---now   
+		3. Graduate college format check March 4th
+		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+		5. Final thesis April 7th.   
+	
