@@ -108,7 +108,8 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 78: 2016-10-05](#id-section78). Hsp gxp function valued trait fig  
 * [Page 79: 2016-10-06](#id-section79). SHC lab meeting: NSF post doc app   
 * [Page 80: 2016-10-07](#id-section80). Prepping cliamte cascade meeting   
-* [Page 81: 2016-10-11](#id-section81). ANCOVA models for testing interaction of hsp gxp parameter and habitat on CTmax
+* [Page 81: 2016-10-11](#id-section81). ANCOVA models for testing interaction of hsp gxp parameter and habitat on CTmax   
+* [Page 82: 2016-10-11](#id-section82). variance partitioning in CTmax of aphaeno
 
 	
 ------    
@@ -5342,3 +5343,36 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 |max83   |yes     |
 |slope83 |no      |
 |Tm83    |yes     |
+
+
+
+	
+------    
+<div id='id-section82'/>
+### Page 82: 2016-10-11. variance partitioning in CTmax of aphaeno
+
+* **Phylogenetic axes = first 9**
+* **Ecology = MAT, TMax, and habitat type** 
+
+```R
+#model construction
+
+var2<- varpart(Aph.dat$KO_temp_worker, ~ Axis.1 + Axis.2+ Axis.3+ Axis.4+Axis.5+Axis.6+Axis.7+Axis.8+Axis.9, ~bio1+bio5+habitat_v2,data=Aph.dat)
+
+$part
+$SS.Y
+[1] 121.5443
+
+$fract
+                Df R.squared Adj.R.squared Testable
+[a+b] = X1       9 0.5199228     0.4719151     TRUE
+[b+c] = X2       3 0.4388392     0.4213030     TRUE
+[a+b+c] = X1+X2 12 0.5288496     0.4638634     TRUE
+
+$indfract
+                Df R.squared Adj.R.squared Testable
+[a] = X1|X2      9        NA   0.042560390     TRUE
+[b]              0        NA   0.429354679    FALSE
+[c] = X2|X1      3        NA  -0.008051705     TRUE
+[d] = Residuals NA        NA   0.536136636    FALSE
+```
