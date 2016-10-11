@@ -5243,6 +5243,14 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 4 observations deleted due to missingness
 
 ```
+### Summary table:    
+
+|summary.table       |max70 |slope70 |Tm70 |max40 |slope40 |Tm40 |max83 |slope83 |Tm83 |
+|:-------------------|:-----|:-------|:----|:-----|:-------|:----|:-----|:-------|:----|
+|habitat             |yes   |yes     |yes  |yes   |yes     |yes  |yes   |yes     |yes  |
+|parameter           |no    |yes     |yes  |no    |no      |yes  |no    |no      |no   |
+|habitat * parameter |no    |no      |no   |no    |no      |yes  |no    |no      |no   |
+
 
 
 ### Effect of habitat type on hsp gxp parameters
@@ -5320,3 +5328,17 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 4 observations deleted due to missingness
 
 ```
+### Summary table of effect of habitat on hsp gxp parameter   
+
+
+|param   |habitat |
+|:-------|:-------|
+|max70   |yes     |
+|slope70 |yes     |
+|Tm70    |yes     |
+|max40   |yes     |
+|slope40 |yes     |
+|Tm40    |yes     |
+|max83   |yes     |
+|slope83 |no      |
+|Tm83    |yes     |
