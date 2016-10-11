@@ -108,6 +108,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 78: 2016-10-05](#id-section78). Hsp gxp function valued trait fig  
 * [Page 79: 2016-10-06](#id-section79). SHC lab meeting: NSF post doc app   
 * [Page 80: 2016-10-07](#id-section80). Prepping cliamte cascade meeting   
+* [Page 81: 2016-10-11](#id-section81). ANCOVA models for testing interaction of hsp gxp parameter and habitat on CTmax
 
 	
 ------    
@@ -5139,3 +5140,106 @@ Notes:
 		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
 		5. Final thesis April 7th.   
 	
+
+
+
+	
+------    
+<div id='id-section81'/>
+### Page 81: 2016-10-11.  ANCOVA models for testing interaction of hsp gxp parameter and habitat on CTmax   
+
+
+
+```
+apply(b2[,3:11],2,function(x){summary(aov(b2$KO_temp_worker~b2$habitat_v2*x))})
+$FC_hsc70_1468_max
+                Df Sum Sq Mean Sq F value  Pr(>F)    
+b2$habitat_v2    1 20.902  20.902  81.798 1.1e-11 ***
+x                1  0.375   0.375   1.467   0.232    
+b2$habitat_v2:x  1  0.374   0.374   1.462   0.233    
+Residuals       45 11.499   0.256                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+5 observations deleted due to missingness
+
+$FC_hsc70_1468_slope
+                Df Sum Sq Mean Sq F value   Pr(>F)    
+b2$habitat_v2    1 20.902  20.902  84.903 6.33e-12 ***
+x                1  1.169   1.169   4.749   0.0346 *  
+b2$habitat_v2:x  1  0.000   0.000   0.000   0.9999    
+Residuals       45 11.078   0.246                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+5 observations deleted due to missingness
+
+$FC_hsc70_1468_Tm
+                Df Sum Sq Mean Sq F value   Pr(>F)    
+b2$habitat_v2    1 20.902  20.902  89.676 2.79e-12 ***
+x                1  1.125   1.125   4.828   0.0332 *  
+b2$habitat_v2:x  1  0.633   0.633   2.718   0.1062    
+Residuals       45 10.489   0.233                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+5 observations deleted due to missingness
+
+$FC_hsp40_541_max
+                Df Sum Sq Mean Sq F value  Pr(>F)    
+b2$habitat_v2    1 21.311  21.311  85.111 9.4e-12 ***
+x                1  0.360   0.360   1.440  0.2368    
+b2$habitat_v2:x  1  0.875   0.875   3.494  0.0684 .  
+Residuals       43 10.767   0.250                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+7 observations deleted due to missingness
+
+$FC_hsp40_541_slope
+                Df Sum Sq Mean Sq F value   Pr(>F)    
+b2$habitat_v2    1 21.311  21.311  81.495 1.75e-11 ***
+x                1  0.605   0.605   2.312    0.136    
+b2$habitat_v2:x  1  0.153   0.153   0.585    0.449    
+Residuals       43 11.245   0.262                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+7 observations deleted due to missingness
+
+$FC_hsp40_541_Tm
+                Df Sum Sq Mean Sq F value   Pr(>F)    
+b2$habitat_v2    1 21.311  21.311 104.527 4.39e-13 ***
+x                1  1.642   1.642   8.052  0.00691 ** 
+b2$habitat_v2:x  1  1.594   1.594   7.816  0.00771 ** 
+Residuals       43  8.767   0.204                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+7 observations deleted due to missingness
+
+$FC_Hsp83_279_max
+                Df Sum Sq Mean Sq F value   Pr(>F)    
+b2$habitat_v2    1 23.226  23.226  95.284 8.72e-13 ***
+x                1  0.063   0.063   0.260    0.612    
+b2$habitat_v2:x  1  0.330   0.330   1.355    0.250    
+Residuals       46 11.213   0.244                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+4 observations deleted due to missingness
+
+$FC_Hsp83_279_slope
+                Df Sum Sq Mean Sq F value   Pr(>F)    
+b2$habitat_v2    1 23.226  23.226  95.648 8.22e-13 ***
+x                1  0.156   0.156   0.641    0.428    
+b2$habitat_v2:x  1  0.281   0.281   1.157    0.288    
+Residuals       46 11.170   0.243                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+4 observations deleted due to missingness
+
+$FC_Hsp83_279_Tm
+                Df Sum Sq Mean Sq F value   Pr(>F)    
+b2$habitat_v2    1 23.226  23.226  95.177 8.88e-13 ***
+x                1  0.068   0.068   0.279    0.600    
+b2$habitat_v2:x  1  0.313   0.313   1.283    0.263    
+Residuals       46 11.225   0.244                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+4 observations deleted due to missingness
+
+```
