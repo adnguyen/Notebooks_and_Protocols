@@ -5243,7 +5243,7 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 4 observations deleted due to missingness
 
 ```
-### Summary table:    
+### Summary table of each parameter and its interaction with habitat on CTmax:    
 
 |summary.table       |max70 |slope70 |Tm70 |max40 |slope40 |Tm40 |max83 |slope83 |Tm83 |
 |:-------------------|:-----|:-------|:----|:-----|:-------|:----|:-----|:-------|:----|
