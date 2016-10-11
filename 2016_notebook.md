@@ -5376,5 +5376,5 @@ $indfract
 [c] = X2|X1      3        NA  -0.008051705     TRUE
 [d] = Residuals NA        NA   0.536136636    FALSE
 ```
-** Figure with different components
+### **Figure with different components**
 ![](https://cloud.githubusercontent.com/assets/4654474/19286742/d6cae584-8fcc-11e6-9fdb-9d73f4a614cf.jpeg)
