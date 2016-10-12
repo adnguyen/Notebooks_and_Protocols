@@ -109,7 +109,8 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 79: 2016-10-06](#id-section79). SHC lab meeting: NSF post doc app   
 * [Page 80: 2016-10-07](#id-section80). Prepping cliamte cascade meeting   
 * [Page 81: 2016-10-11](#id-section81). ANCOVA models for testing interaction of hsp gxp parameter and habitat on CTmax   
-* [Page 82: 2016-10-11](#id-section82). variance partitioning in CTmax of aphaeno
+* [Page 82: 2016-10-11](#id-section82). variance partitioning in CTmax of aphaeno    
+* [Page 83: 2016-10-12](#id-section83). Testing effect of MAT on Hsp gxp and looking at correlations between phylogeny and climate.   
 
 	
 ------    
@@ -5378,3 +5379,146 @@ $indfract
 ```
 ### **Figure with different components**
 ![](https://cloud.githubusercontent.com/assets/4654474/19286742/d6cae584-8fcc-11e6-9fdb-9d73f4a614cf.jpeg)
+
+
+
+	
+------    
+<div id='id-section83'/>
+### Page 83: 2016-10-12.  Testing effect of MAT on Hsp gxp and looking at correlations between phylogeny and climate.   
+
+```R
+> apply(mergy[,38:43],2,function(x){summary(lm(log10(x)~mergy$bio1))})
+$FC_83
+
+Call:
+lm(formula = log10(x) ~ mergy$bio1)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.69315 -0.17367 -0.02182  0.16945  0.66741 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  0.993238   0.115874   8.572 1.19e-11 ***
+mergy$bio1  -0.000497   0.001227  -0.405    0.687    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2879 on 54 degrees of freedom
+Multiple R-squared:  0.003028,	Adjusted R-squared:  -0.01543 
+F-statistic: 0.164 on 1 and 54 DF,  p-value: 0.6871
+
+
+$FC_70
+
+Call:
+lm(formula = log10(x) ~ mergy$bio1)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.63143 -0.12966  0.02354  0.18406  0.45652 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 1.571710   0.105899  14.842   <2e-16 ***
+mergy$bio1  0.000679   0.001122   0.605    0.547    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2631 on 54 degrees of freedom
+Multiple R-squared:  0.006742,	Adjusted R-squared:  -0.01165 
+F-statistic: 0.3666 on 1 and 54 DF,  p-value: 0.5474
+
+
+$FC_40
+
+Call:
+lm(formula = log10(x) ~ mergy$bio1)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.87164 -0.16033  0.05806  0.23030  0.71656 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 0.8929016  0.1372969   6.503 2.63e-08 ***
+mergy$bio1  0.0002741  0.0014540   0.188    0.851    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.3411 on 54 degrees of freedom
+Multiple R-squared:  0.0006575,	Adjusted R-squared:  -0.01785 
+F-statistic: 0.03553 on 1 and 54 DF,  p-value: 0.8512
+
+
+$B_83
+
+Call:
+lm(formula = log10(x) ~ mergy$bio1)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.86395 -0.31896 -0.04139  0.33454  0.76906 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept)  0.203307   0.186138   1.092    0.280
+mergy$bio1  -0.002098   0.001971  -1.064    0.292
+
+Residual standard error: 0.4624 on 54 degrees of freedom
+Multiple R-squared:  0.02054,	Adjusted R-squared:  0.002405 
+F-statistic: 1.133 on 1 and 54 DF,  p-value: 0.292
+
+
+$B_70
+
+Call:
+lm(formula = log10(x) ~ mergy$bio1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.9569 -0.3399 -0.0464  0.3489  0.8581 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept)  0.199005   0.172676   1.152    0.254
+mergy$bio1  -0.002843   0.001829  -1.555    0.126
+
+Residual standard error: 0.429 on 54 degrees of freedom
+Multiple R-squared:  0.04284,	Adjusted R-squared:  0.02512 
+F-statistic: 2.417 on 1 and 54 DF,  p-value: 0.1259
+
+
+$B_40
+
+Call:
+lm(formula = log10(x) ~ mergy$bio1)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.68902 -0.28172  0.07947  0.31104  0.98014 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept)  0.300482   0.221888   1.354    0.181
+mergy$bio1  -0.003086   0.002350  -1.313    0.195
+
+Residual standard error: 0.5512 on 54 degrees of freedom
+Multiple R-squared:  0.03096,	Adjusted R-squared:  0.01301 
+F-statistic: 1.725 on 1 and 54 DF,  p-value: 0.1946
+```
+### Summary: none are significant   
+
+
+### **Correlation between Mean Annual Temperature (MAT), Tmax, and 4 phylogenetic axes** 
+
+
+|           | MAT| Tmax| Axis.1| Axis.2| Axis.3| Axis.4|
+|:----------|----------:|----------:|------:|------:|------:|------:|
+|MAT |      1.000|      0.910|  0.857|  0.197|  0.182|  0.132|
+|Tmax |      0.910|      1.000|  0.836|  0.128|  0.204|  0.110|
+|Axis.1     |      0.857|      0.836|  1.000|  0.002|  0.000|  0.008|
+|Axis.2     |      0.197|      0.128|  0.002|  1.000|  0.000| -0.002|
+|Axis.3     |      0.182|      0.204|  0.000|  0.000|  1.000|  0.000|
+|Axis.4     |      0.132|      0.110|  0.008| -0.002|  0.000|  1.000|
