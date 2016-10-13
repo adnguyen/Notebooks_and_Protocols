@@ -5522,3 +5522,34 @@ F-statistic: 1.725 on 1 and 54 DF,  p-value: 0.1946
 |Axis.2     |      0.197|      0.128|  0.002|  1.000|  0.000| -0.002|
 |Axis.3     |      0.182|      0.204|  0.000|  0.000|  1.000|  0.000|
 |Axis.4     |      0.132|      0.110|  0.008| -0.002|  0.000|  1.000|
+
+### 20161013 follow up: checking 18s HKG stability
+
+If there is an effect of rearing temperature, Tmax, and/or heat shock treatment, phylo axes, then the HKG is not stable.   
+
+```R
+ct<-read.csv("../Data/20150810_raw_CT_values.csv")
+
+z<-inner_join(ct,mergy,by="Colony")
+z$qpcr_block<-as.factor(z$qpcr_block)
+#different 18s ct among treatments?
+#different 18s ct
+summary(stepAIC(lm(log2(X18)~bio5*treatment+qpcr_block+Axis.1+Axis.2+Axis.3+Rearing_Temp,data=z2)),direction="forward")
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   3.176814   0.056303  56.424  < 2e-16 ***
+qpcr_block2   0.107059   0.017592   6.086 1.84e-08 ***
+qpcr_block3   0.163280   0.018586   8.785 2.83e-14 ***
+Axis.1       -0.136572   0.072299  -1.889   0.0616 .  
+Axis.2        0.204421   0.112195   1.822   0.0712 .  
+Axis.3       -0.278600   0.165081  -1.688   0.0944 .  
+Rearing_Temp -0.003763   0.002393  -1.573   0.1187    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.07137 on 107 degrees of freedom
+Multiple R-squared:  0.5648,	Adjusted R-squared:  0.5404 
+F-statistic: 23.15 on 6 and 107 DF,  p-value: < 2.2e-16
+
+```
