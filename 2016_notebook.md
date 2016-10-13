@@ -5557,7 +5557,8 @@ F-statistic: 23.15 on 6 and 107 DF,  p-value: < 2.2e-16
 ### 20161013 Taking out Axis1 because it covaries with bio5(Tmax)   
 
 
-```Rapply(mergy[,38:43],2,function(x){summary(stepAIC(lm(log10(x)~mergy$bio5+mergy$Rearing_Temp+mergy$Axis.2+mergy$Axis.3)),direction="forward")})
+```R
+apply(mergy[,38:43],2,function(x){summary(stepAIC(lm(log10(x)~mergy$bio5+mergy$Rearing_Temp+mergy$Axis.2+mergy$Axis.3)),direction="forward")})
 
 Start:  AIC=-142.41
 log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2 + mergy$Axis.3
