@@ -5553,3 +5553,299 @@ Multiple R-squared:  0.5648,	Adjusted R-squared:  0.5404
 F-statistic: 23.15 on 6 and 107 DF,  p-value: < 2.2e-16
 
 ```
+
+### 20161013 Taking out Axis1 because it covaries with bio5(Tmax)   
+
+
+```Rapply(mergy[,38:43],2,function(x){summary(stepAIC(lm(log10(x)~mergy$bio5+mergy$Rearing_Temp+mergy$Axis.2+mergy$Axis.3)),direction="forward")})
+
+Start:  AIC=-142.41
+log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2 + mergy$Axis.3
+
+                     Df Sum of Sq    RSS     AIC
+- mergy$Axis.3        1  0.002884 4.1926 -144.37
+- mergy$Axis.2        1  0.008699 4.1984 -144.29
+- mergy$bio5          1  0.017061 4.2068 -144.18
+<none>                            4.1897 -142.41
+- mergy$Rearing_Temp  1  0.257200 4.4469 -140.96
+
+Step:  AIC=-144.37
+log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2
+
+                     Df Sum of Sq    RSS     AIC
+- mergy$Axis.2        1  0.009219 4.2018 -146.25
+- mergy$bio5          1  0.021070 4.2137 -146.08
+<none>                            4.1926 -144.37
+- mergy$Rearing_Temp  1  0.254448 4.4471 -142.96
+
+Step:  AIC=-146.25
+log10(x) ~ mergy$bio5 + mergy$Rearing_Temp
+
+                     Df Sum of Sq    RSS     AIC
+- mergy$bio5          1   0.01849 4.2203 -147.99
+<none>                            4.2018 -146.25
+- mergy$Rearing_Temp  1   0.29906 4.5009 -144.26
+
+Step:  AIC=-147.99
+log10(x) ~ mergy$Rearing_Temp
+
+                     Df Sum of Sq    RSS     AIC
+<none>                            4.2203 -147.99
+- mergy$Rearing_Temp  1   0.30548 4.5258 -145.94
+Start:  AIC=-151.28
+log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2 + mergy$Axis.3
+
+                     Df Sum of Sq    RSS     AIC
+- mergy$Axis.3        1  0.006133 3.6020 -153.18
+- mergy$bio5          1  0.014353 3.6102 -153.05
+- mergy$Axis.2        1  0.125441 3.7213 -151.29
+<none>                            3.5959 -151.28
+- mergy$Rearing_Temp  1  0.211236 3.8071 -149.97
+
+Step:  AIC=-153.18
+log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2
+
+                     Df Sum of Sq    RSS     AIC
+- mergy$bio5          1  0.011172 3.6132 -155.00
+<none>                            3.6020 -153.18
+- mergy$Axis.2        1  0.128482 3.7305 -153.15
+- mergy$Rearing_Temp  1  0.218797 3.8208 -151.76
+
+Step:  AIC=-155
+log10(x) ~ mergy$Rearing_Temp + mergy$Axis.2
+
+                     Df Sum of Sq    RSS     AIC
+<none>                            3.6132 -155.00
+- mergy$Axis.2        1   0.13788 3.7510 -154.83
+- mergy$Rearing_Temp  1   0.22616 3.8393 -153.48
+Start:  AIC=-127.73
+log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2 + mergy$Axis.3
+
+                     Df Sum of Sq    RSS     AIC
+- mergy$Axis.3        1   0.03867 5.4351 -129.32
+- mergy$bio5          1   0.10859 5.5051 -128.58
+<none>                            5.3965 -127.73
+- mergy$Axis.2        1   0.42509 5.8216 -125.33
+- mergy$Rearing_Temp  1   0.64013 6.0366 -123.23
+
+Step:  AIC=-129.32
+log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2
+
+                     Df Sum of Sq    RSS     AIC
+- mergy$bio5          1   0.14392 5.5791 -129.80
+<none>                            5.4351 -129.32
+- mergy$Axis.2        1   0.41361 5.8488 -127.06
+- mergy$Rearing_Temp  1   0.67128 6.1064 -124.56
+
+Step:  AIC=-129.8
+log10(x) ~ mergy$Rearing_Temp + mergy$Axis.2
+
+                     Df Sum of Sq    RSS     AIC
+<none>                            5.5791 -129.80
+- mergy$Axis.2        1   0.47047 6.0495 -127.11
+- mergy$Rearing_Temp  1   0.63445 6.2135 -125.56
+Start:  AIC=-88.85
+log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2 + mergy$Axis.3
+
+                     Df Sum of Sq    RSS     AIC
+- mergy$Axis.2        1   0.02655 10.576 -90.709
+- mergy$bio5          1   0.27432 10.824 -89.365
+<none>                            10.549 -88.854
+- mergy$Axis.3        1   0.47944 11.029 -88.277
+- mergy$Rearing_Temp  1   0.48666 11.036 -88.239
+
+Step:  AIC=-90.71
+log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.3
+
+                     Df Sum of Sq    RSS     AIC
+- mergy$bio5          1   0.29726 10.873 -91.101
+<none>                            10.576 -90.709
+- mergy$Rearing_Temp  1   0.46041 11.036 -90.237
+- mergy$Axis.3        1   0.49173 11.068 -90.073
+
+Step:  AIC=-91.1
+log10(x) ~ mergy$Rearing_Temp + mergy$Axis.3
+
+                     Df Sum of Sq    RSS     AIC
+- mergy$Axis.3        1   0.36201 11.235 -91.201
+<none>                            10.873 -91.101
+- mergy$Rearing_Temp  1   0.50260 11.376 -90.480
+
+Step:  AIC=-91.2
+log10(x) ~ mergy$Rearing_Temp
+
+                     Df Sum of Sq    RSS     AIC
+<none>                            11.235 -91.201
+- mergy$Rearing_Temp  1   0.56062 11.796 -90.377
+Start:  AIC=-126.78
+log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2 + mergy$Axis.3
+
+                     Df Sum of Sq     RSS      AIC
+- mergy$Axis.2        1    0.0042  5.4901 -128.735
+- mergy$Axis.3        1    0.0404  5.5262 -128.354
+- mergy$bio5          1    0.1532  5.6391 -127.182
+<none>                             5.4859 -126.780
+- mergy$Rearing_Temp  1    4.5602 10.0461  -93.689
+
+Step:  AIC=-128.74
+log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.3
+
+                     Df Sum of Sq     RSS      AIC
+- mergy$Axis.3        1    0.0392  5.5292 -130.323
+- mergy$bio5          1    0.1609  5.6509 -129.060
+<none>                             5.4901 -128.735
+- mergy$Rearing_Temp  1    4.8078 10.2978  -94.254
+
+Step:  AIC=-130.32
+log10(x) ~ mergy$bio5 + mergy$Rearing_Temp
+
+                     Df Sum of Sq     RSS      AIC
+<none>                             5.5292 -130.323
+- mergy$bio5          1     0.204  5.7332 -130.221
+- mergy$Rearing_Temp  1     4.770 10.2992  -96.246
+Start:  AIC=-80.6
+log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2 + mergy$Axis.3
+
+                     Df Sum of Sq    RSS     AIC
+- mergy$bio5          1    0.1822 12.346 -81.733
+<none>                            12.164 -80.595
+- mergy$Rearing_Temp  1    0.7613 12.925 -79.074
+- mergy$Axis.2        1    1.1960 13.360 -77.156
+- mergy$Axis.3        1    3.4308 15.595 -68.185
+
+Step:  AIC=-81.73
+log10(x) ~ mergy$Rearing_Temp + mergy$Axis.2 + mergy$Axis.3
+
+                     Df Sum of Sq    RSS     AIC
+<none>                            12.346 -81.733
+- mergy$Rearing_Temp  1    0.8276 13.174 -79.970
+- mergy$Axis.2        1    1.3181 13.664 -77.849
+- mergy$Axis.3        1    3.9458 16.292 -67.648
+$FC_83
+
+Call:
+lm(formula = log10(x) ~ mergy$Rearing_Temp)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.6121 -0.1422 -0.0417  0.1399  0.7465 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)  
+(Intercept)         0.39083    0.27720   1.410   0.1641  
+mergy$Rearing_Temp  0.02473    0.01228   2.013   0.0489 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2745 on 56 degrees of freedom
+Multiple R-squared:  0.0675,	Adjusted R-squared:  0.05084 
+F-statistic: 4.053 on 1 and 56 DF,  p-value: 0.0489
+
+
+$FC_70
+
+Call:
+lm(formula = log10(x) ~ mergy$Rearing_Temp + mergy$Axis.2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.67832 -0.16434  0.02663  0.17901  0.38810 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)         2.12428    0.26812   7.923 1.16e-10 ***
+mergy$Rearing_Temp -0.02197    0.01184  -1.855   0.0689 .  
+mergy$Axis.2        0.81467    0.56233   1.449   0.1531    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2563 on 55 degrees of freedom
+Multiple R-squared:  0.07529,	Adjusted R-squared:  0.04167 
+F-statistic: 2.239 on 2 and 55 DF,  p-value: 0.1162
+
+
+$FC_40
+
+Call:
+lm(formula = log10(x) ~ mergy$Rearing_Temp + mergy$Axis.2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.80408 -0.10662  0.07152  0.25390  0.55421 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)  
+(Intercept)         0.08767    0.33317   0.263   0.7934  
+mergy$Rearing_Temp  0.03680    0.01471   2.501   0.0154 *
+mergy$Axis.2        1.50486    0.69876   2.154   0.0357 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.3185 on 55 degrees of freedom
+Multiple R-squared:  0.2085,	Adjusted R-squared:  0.1797 
+F-statistic: 7.242 on 2 and 55 DF,  p-value: 0.001614
+
+
+$B_83
+
+Call:
+lm(formula = log10(x) ~ mergy$Rearing_Temp)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.90287 -0.32839  0.03175  0.37027  0.81465 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)
+(Intercept)        -0.73480    0.45228  -1.625     0.11
+mergy$Rearing_Temp  0.03350    0.02004   1.672     0.10
+
+Residual standard error: 0.4479 on 56 degrees of freedom
+Multiple R-squared:  0.04753,	Adjusted R-squared:  0.03052 
+F-statistic: 2.794 on 1 and 56 DF,  p-value: 0.1002
+
+
+$B_70
+
+Call:
+lm(formula = log10(x) ~ mergy$bio5 + mergy$Rearing_Temp)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.80424 -0.20413 -0.03442  0.25526  0.81219 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        -1.479502   0.641632  -2.306   0.0249 *  
+mergy$bio5         -0.002799   0.001965  -1.424   0.1600    
+mergy$Rearing_Temp  0.097784   0.014196   6.888 5.75e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.3171 on 55 degrees of freedom
+Multiple R-squared:  0.4779,	Adjusted R-squared:  0.4589 
+F-statistic: 25.17 on 2 and 55 DF,  p-value: 1.734e-08
+
+
+$B_40
+
+Call:
+lm(formula = log10(x) ~ mergy$Rearing_Temp + mergy$Axis.2 + mergy$Axis.3)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.32627 -0.32412  0.04458  0.31258  0.90367 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        -0.92089    0.50132  -1.837 0.071726 .  
+mergy$Rearing_Temp  0.04213    0.02214   1.903 0.062428 .  
+mergy$Axis.2       -2.51976    1.04941  -2.401 0.019819 *  
+mergy$Axis.3       -6.14160    1.47835  -4.154 0.000117 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4782 on 54 degrees of freedom
+Multiple R-squared:  0.3049,	Adjusted R-squared:  0.2663 
+F-statistic: 7.897 on 3 and 54 DF,  p-value: 0.0001852
+```
