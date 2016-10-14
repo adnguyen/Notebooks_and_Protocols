@@ -6010,3 +6010,55 @@ common error before “however” and “nevertheless”).
 <div id='id-section87'/>
 ### Page 87: 2016-10-14. NSF post doc app meeting: Keller Lab
 
+### SK background to grant
+NSF use to have bioinformatics post doc competition and replaced with narrowly defined one in bio. It has to fit into 1 or a couple bins: 1 of them isplant genome research program (PGRP; funds poplar). SK attend PGRP meetings as part of training missions seriously. They build a program and come in as cohort(post doc fellows) and they ahve extra training sessions with them. Post doc presents work and are well supported for 3 years. SK fits squarely into: economically important plant, genome wide approaches to the problem of plant growth/yield and response to stress and other challenges. 
+
+### Project Summary
+
+
+### Project description
+
+**Large communication issue** 
+
+* What is new and novel? Kattia   
+
+* **Figure 3: analysis is of a single trait** Hammer it down, multiple times, outside of fig legend and make it more clear. 
+
+* **HAMMER DOWN novelty is non-linear GxE interactions**  
+
+* Cant predict performance readily from 1 environment to another environment (that span the current and future climate) 
+
+
+* Say you'll measure wood traits
+
+* **Bring more genomics more important**: Bring in population genetics into the proposal. 
+
+* Add path analsysis   
+
+* Come up with precise alleles of what is adaptive.   
+
+* Fig 1 C. put an ellipse for central population: 
+
+* Set margins to 1 inch around. 
+
+* heavy lifting (SK): bring emphasis on gene expression way up (genetic variation among genotpes in their transcriptional response to that variation); ID genes or networks of genes that show differences in expression or organization. What parts of the transcription? GO, pathways?  Genes in trade-offs in few networks or overdispered across a network, relative to the total transcriptome. Stress response genes (Hsps)? Phenology associated genes (circadian clock). How can that be pulled out using the kingsolver method. (Not just as a tool that is cool to use, but as a question with an appropriately matched tool). 
+
+* **Look at the SNPs.** include in 
+
+* There is gxp from fairbanks and indian head. "Timing for success title"   
+
+* Karl: pair down first paragraph; reduce in length 
+
+* SK, focus on the major ideas
+
+
+
+
+
+* **Be more explicit about what the trait is used for Gmatrix**. 
+
+* genetically based differences to identify GxE
+
+### Dissertation Abstract
+
+### Data management
