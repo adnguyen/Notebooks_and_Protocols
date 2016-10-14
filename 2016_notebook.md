@@ -5917,7 +5917,9 @@ But Puentes et al. focus on A. lyrata in thier native range(Norway-Sweden) and i
 <div id='id-section86'/>
 ### Page 86: 2016-10-14.  [Wiley House Style Guide](https://authorservices.wiley.com/bauthor/House_style_guide_US4520101451884.pdf)    
 
-### Use of *that* and *which*   
+I'll need to follow these general writing rules for submitting a ms to Evolution. 
+
+### Use of *that* and *which*    
 
 ```
 * That is used for defining or restrictive clauses:   
@@ -5933,6 +5935,25 @@ A nondefining clause is general (nonlimiting); it provides additional informatio
 commas is often important. In this example, all the symptoms were very troublesome.
 ```
 
+### Redundancy    
+
+```
+Avoid using a modifying word when the intended meaning is inherent in a word already used.
+Redundancy is obvious in examples such as the results were plotted graphically, past history, bright
+blue in color, inactivates its activity, and completely filled. Does the term careful monitoring
+suggest that the alternative is careless monitoring?
+```
+
+ 
+### Balancing a sentence:   
+```
+It is important to ensure that a sentence balances on either side of certain words (correlatives) that
+emphasize similarity or contrast and that are used in parallel: both and and; either and or; neither
+and nor; not only and but; between and and;whether and or. For example,“I swam both in the
+morning and afternoon” should be “I swam both in the morning and in the afternoon”or “I swam
+in both the morning and the afternoon.”Note the position of the preposition in. (See also the
+section “Editing for Sense.”)
+```
 
 ### Key Points
 ```
