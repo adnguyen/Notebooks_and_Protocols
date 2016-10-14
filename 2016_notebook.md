@@ -5968,3 +5968,39 @@ interpretation and generally accepted “facts.”
 compared with what.
 • Avoid sexist, dehumanizing, and stereotypical language.
 ```
+
+# Punctuation
+
+### Semi colons and Colons
+```
+SEMICOLONS
+• The semicolon is stronger than a comma but not as decisive as a full point. It can be used to
+separate sentences (whereas a comma cannot).
+• Use a semicolon before, and a comma after, the conjunctive adverbs however, that is,
+nevertheless, etc.
+
+COLONS
+Colons are used to introduce material that restates, explains, enlarges upon, or summarizes
+previous material. They also introduce items in a list set off from text (but a colon is not needed in
+run-on lists introduced by the words for example, namely, including, etc.; e.g., in the sentence “The
+dessert looks nice with fruit on it, for example: strawberries, raspberries, and blueberries” the
+colon should not be there).
+• In US spelling, if the material introduced by a colon consists of more than one sentence, or if
+it is a formal statement, quotation, or speech in dialogue it should take a capital after the
+colon. In UK spelling, a capital letter is not used after a colon (except in titles and subtitles).
+• Ratios containing words should have a thin space on each side of the colon (e.g., the light :
+dark cycle) but ratios containing numbers should be closed up (e.g., 16:8 h).
+```
+
+
+### Key Points:   
+```
+• Use commas to clarify sentences.
+• Do not use a comma to separate sentences; use a semicolon (this is a particularly
+common error before “however” and “nevertheless”).
+• Do not use apostrophes with plural abbreviations (e.g.,ANOVAs, not ANOVA’s).
+• For hyphenation, refer to your journal style sheet.
+• Do not hyphenate adverbs ending in -ly (e.g., dermatologically tested soap).
+• Use hyphens in compound terms to clarify meaning (e.g.,much-needed clothing).
+• Use en dashes, not hyphens, for associations (e.g., dose–response curve).
+```
