@@ -112,7 +112,8 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 82: 2016-10-11](#id-section82). variance partitioning in CTmax of aphaeno    
 * [Page 83: 2016-10-12](#id-section83). Testing effect of MAT on Hsp gxp and looking at correlations between phylogeny and climate.   
 * [Page 84: 2016-10-14](#id-section84). Updating climate cascade to do list.   
-* [Page 85: 2016-10-14](#id-section85). Paper note: Puentes, A., G. Granath, and J. Ågren. 2016. Similarity in G matrix structure among natural populations of Arabidopsis lyrata. Evolution 70:2370–2386.
+* [Page 85: 2016-10-14](#id-section85). Paper note: Puentes, A., G. Granath, and J. Ågren. 2016. Similarity in G matrix structure among natural populations of Arabidopsis lyrata. Evolution 70:2370–2386.  
+* [Page 86: 2016-10-14](#id-section86). [Wiley House Style Guide](https://authorservices.wiley.com/bauthor/House_style_guide_US4520101451884.pdf)  
 
 
 	
@@ -5911,4 +5912,38 @@ Similar paper  here: [Page 60: 2016-09-01](#id-section60). Paper notes: Paccard 
 But Puentes et al. focus on A. lyrata in thier native range(Norway-Sweden) and in the field, and Paccard et al. 2016 use populations from USA-Cananda in lab conditions. Peuntes uses 5 trais, Paccard used 10 traits. One of Cortlett Wood's papers suggests that the number of traits can alter how G changes among environments. Check what traits were used between studies.
 
 ### Summary of findings: G is stable between Norway and Sweden populations
+	
+------    
+<div id='id-section86'/>
+### Page 86: 2016-10-14.  [Wiley House Style Guide](https://authorservices.wiley.com/bauthor/House_style_guide_US4520101451884.pdf)    
 
+### Use of *that* and *which*   
+
+```
+* That is used for defining or restrictive clauses:   
+	* The patient made a list of the symptoms that were most troublesome   
+
+A defining clause is specific (limiting) to a particular person or thing; i.e., the patient had to list
+only those particular symptoms that were most troublesome.    
+
+* Which is used in nondefining or nonrestrictive clauses:    
+	* The patient made a list of the symptoms, which were most troublesome    
+
+A nondefining clause is general (nonlimiting); it provides additional information, and the use of
+commas is often important. In this example, all the symptoms were very troublesome.
+```
+
+
+### Key Points
+```
+• It is now acceptable to use the active or the passive voice.
+• Use the past tense for the author’s methods and results, and the present tense for
+interpretation and generally accepted “facts.”
+• The subject and verbmust agree in number.
+• “That” is defining;“which” is not.
+• Check that articles (“a,”“an,” and “the”) are used correctly.
+• Sentences must balance (e.g.,with “both … and …”).
+• In comparisons (e.g.,with lower/higher/less/more),make sure it is clear what is being
+compared with what.
+• Avoid sexist, dehumanizing, and stereotypical language.
+```
