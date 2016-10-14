@@ -111,7 +111,9 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 81: 2016-10-11](#id-section81). ANCOVA models for testing interaction of hsp gxp parameter and habitat on CTmax   
 * [Page 82: 2016-10-11](#id-section82). variance partitioning in CTmax of aphaeno    
 * [Page 83: 2016-10-12](#id-section83). Testing effect of MAT on Hsp gxp and looking at correlations between phylogeny and climate.   
-* [Page 84: 2016-10-12](#id-section84). Updating climate cascade to do list. 
+* [Page 84: 2016-10-14](#id-section84). Updating climate cascade to do list.   
+* [Page 85: 2016-10-14](#id-section85). Paper note: Puentes, A., G. Granath, and J. Ågren. 2016. Similarity in G matrix structure among natural populations of Arabidopsis lyrata. Evolution 70:2370–2386.
+
 
 	
 ------    
@@ -5893,3 +5895,20 @@ F-statistic: 7.897 on 3 and 54 DF,  p-value: 0.0001852
 		3. Graduate college format check March 4th
 		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
 		5. Final thesis April 7th.   
+
+
+
+
+	
+------    
+<div id='id-section85'/>
+### Page 85: 2016-10-14. Paper note: Puentes, A., G. Granath, and J. Ågren. 2016. Similarity in G matrix structure among natural populations of Arabidopsis lyrata. Evolution 70:2370–2386.   
+
+
+Similar paper  here: [Page 60: 2016-09-01](#id-section60). Paper notes: Paccard A, Van Buskirk J, Willi Y, Eckert CG, Bronstein JL. 2016. Quantitative Genetic Architecture at Latitudinal Range Boundaries: Reduced Variation but Higher Trait Independence. The American Naturalist. 
+
+**Method differences**:    
+But Puentes et al. focus on A. lyrata in thier native range(Norway-Sweden) and in the field, and Paccard et al. 2016 use populations from USA-Cananda in lab conditions. Peuntes uses 5 trais, Paccard used 10 traits. One of Cortlett Wood's papers suggests that the number of traits can alter how G changes among environments. Check what traits were used between studies.
+
+### Summary of findings: G is stable between Norway and Sweden populations
+
