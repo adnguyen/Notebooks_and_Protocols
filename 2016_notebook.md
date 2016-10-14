@@ -111,6 +111,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 81: 2016-10-11](#id-section81). ANCOVA models for testing interaction of hsp gxp parameter and habitat on CTmax   
 * [Page 82: 2016-10-11](#id-section82). variance partitioning in CTmax of aphaeno    
 * [Page 83: 2016-10-12](#id-section83). Testing effect of MAT on Hsp gxp and looking at correlations between phylogeny and climate.   
+* [Page 84: 2016-10-12](#id-section84). Updating climate cascade to do list. 
 
 	
 ------    
@@ -5850,3 +5851,45 @@ Residual standard error: 0.4782 on 54 degrees of freedom
 Multiple R-squared:  0.3049,	Adjusted R-squared:  0.2663 
 F-statistic: 7.897 on 3 and 54 DF,  p-value: 0.0001852
 ```
+
+
+	
+------    
+<div id='id-section84'/>
+### Page 84: 2016-10-12]. Updating climate cascade to do list. 
+
+1. Project updates:    
+ 	* Hsp gene expression + Ctmax project:
+		* **Go over updated figures**
+		* Starting to write: working title-**Shifts in the reaction norms of heat shock protein gene expression accompany evolutionary innovations in thermal tolerance of forest ants** 
+ 	* Multiple stressors ms:   
+		* **Sent SHC another version**    
+ 	* Range limits ms: **SHC lab gave verbal edits:** 
+		* focus on 1 end of thermal niche breadth(although it is nice to mention it because CTmin decreases across lat)--CTmin. 
+		* Dicussion needs to talk about cold adaptation; why trade-offs?
+		* Walk through results better   
+ 
+ 	* Thermal niche ms: **Lacey and I working on discussion**     
+ 	* Stressed in nature MS: Samples to rerun.   
+  	* update: Curtis can no longer work+ write on project   
+		* in reference to missing samples
+		* Fit in time to process Curtis' samples.      
+		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**         
+	* Proteome stability project: **should be getting data soon**    
+
+* Attending SICB - Jan 4-8 New Orleans, Give a talk about range limits paper.   
+	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+	* **Talk title: Northern range limits of a common forest ant is associated with trade-offs in cold physiology**   
+ 	* Apply for funding. Suitor Travel Grant Deadline is october 31    
+	* **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.    
+
+* **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
+	* Formatting:    
+		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+		* Dissertation Abstract is in multiple paragraphs, but for dissertation itself, make 1 paragraph
+	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+		1. Intent to graduate: February 1st for May.   
+		2. Send defense committe form to grad college---now   
+		3. Graduate college format check March 4th
+		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+		5. Final thesis April 7th.   
