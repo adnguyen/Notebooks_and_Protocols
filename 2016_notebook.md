@@ -6087,16 +6087,15 @@ NSF use to have bioinformatics post doc competition and replaced with narrowly d
  	* Thermal niche ms: **Lacey and I working on discussion**     
  	* Stressed in nature MS: Samples to rerun.   
   	* update: Curtis can no longer work+ write on project   
-		* in reference to missing samples
-		* Fit in time to process Curtis' samples.      
-		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**         
+		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
 	* Proteome stability project: **should be getting data soon**    
 
 * Attending SICB - Jan 4-8 New Orleans, Give a talk about range limits paper.   
 	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
 	* **Talk title: Northern range limits of a common forest ant is associated with trade-offs in cold physiology**   
  	* Apply for funding. Suitor Travel Grant Deadline is october 31    
-	* **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.  Application submitted today 2016-10-18  
+		* **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.  
+		* Application submitted today 2016-10-18    
 
 * **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
 	* Formatting:    
