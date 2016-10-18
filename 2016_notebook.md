@@ -6074,7 +6074,9 @@ NSF use to have bioinformatics post doc competition and replaced with narrowly d
 
 1. Project updates:    
  	* Hsp gene expression + Ctmax project:
-		* **Go over updated figures**
+		* **Go over updated figures**  
+		* figure 3, SHC says to switch back branches
+		* figure 4, color code by habitat type, NJG:don't use dot dash, use dash
 		* Starting to write: working title-**Shifts in the reaction norms of heat shock protein gene expression accompany evolutionary innovations in thermal tolerance of forest ants** 
 		* need to start writing methods and results
  	* Multiple stressors ms:   
