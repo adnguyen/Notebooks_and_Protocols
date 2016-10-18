@@ -114,7 +114,8 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 84: 2016-10-14](#id-section84). Updating climate cascade to do list.   
 * [Page 85: 2016-10-14](#id-section85). Paper note: Puentes, A., G. Granath, and J. Ågren. 2016. Similarity in G matrix structure among natural populations of Arabidopsis lyrata. Evolution 70:2370–2386.  
 * [Page 86: 2016-10-14](#id-section86). [Wiley House Style Guide](https://authorservices.wiley.com/bauthor/House_style_guide_US4520101451884.pdf)  
-* [Page 87: 2016-10-14](#id-section87). NSF post doc app meeting: Keller Lab
+* [Page 87: 2016-10-14](#id-section87). NSF post doc app meeting: Keller Lab    
+* [Page 88: 2016-10-18](#id-section88). Climate cascade meeting
 
 	
 ------    
@@ -6062,3 +6063,48 @@ NSF use to have bioinformatics post doc competition and replaced with narrowly d
 ### Dissertation Abstract
 
 ### Data management
+
+
+
+
+	
+------    
+<div id='id-section88'/>
+### Page 88: 2016-10-18. Climate cascade meeting   
+
+1. Project updates:    
+ 	* Hsp gene expression + Ctmax project:
+		* **Go over updated figures**
+		* Starting to write: working title-**Shifts in the reaction norms of heat shock protein gene expression accompany evolutionary innovations in thermal tolerance of forest ants** 
+		* need to start writing methods and results
+ 	* Multiple stressors ms:   
+		* **Sent SHC another version** ; should submit soon   
+ 	* Range limits ms: **SHC lab gave verbal edits:** 
+		* focus on 1 end of thermal niche breadth(although it is nice to mention it because CTmin decreases across lat)--CTmin. 
+		* Dicussion needs to talk about cold adaptation; why trade-offs?
+		* Walk through results better   
+ 
+ 	* Thermal niche ms: **Lacey and I working on discussion**     
+ 	* Stressed in nature MS: Samples to rerun.   
+  	* update: Curtis can no longer work+ write on project   
+		* in reference to missing samples
+		* Fit in time to process Curtis' samples.      
+		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**         
+	* Proteome stability project: **should be getting data soon**    
+
+* Attending SICB - Jan 4-8 New Orleans, Give a talk about range limits paper.   
+	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+	* **Talk title: Northern range limits of a common forest ant is associated with trade-offs in cold physiology**   
+ 	* Apply for funding. Suitor Travel Grant Deadline is october 31    
+	* **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.  Application submitted today 2016-10-18  
+
+* **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
+	* Formatting:    
+		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+		* Dissertation Abstract is in multiple paragraphs, but for dissertation itself, make 1 paragraph
+	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+		1. Intent to graduate: February 1st for May.   
+		2. Send defense committe form to grad college---now   
+		3. Graduate college format check March 4th
+		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+		5. Final thesis April 7th.  
