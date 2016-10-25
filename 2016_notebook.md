@@ -116,7 +116,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 86: 2016-10-14](#id-section86). [Wiley House Style Guide](https://authorservices.wiley.com/bauthor/House_style_guide_US4520101451884.pdf)  
 * [Page 87: 2016-10-14](#id-section87). NSF post doc app meeting: Keller Lab    
 * [Page 88: 2016-10-18](#id-section88). Climate cascade meeting
-* [Page 89: 2016-10-25](#id-section88). Climate cascade updated list
+* [Page 89: 2016-10-25](#id-section89). Climate cascade updated list
 
 	
 ------    
