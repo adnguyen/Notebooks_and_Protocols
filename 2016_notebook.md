@@ -6165,7 +6165,7 @@ Meeting time, Wednesday 2-4; 2016-10-26
 
 **Things to discuss**
 
-1. Potential post doc oppportunity at MBL(Marine Biological Laboratory)    
+* **Potential post doc oppportunity at MBL(Marine Biological Laboratory)**    
 
 	* Previous email pitch with prospective post doc mentor   
 
@@ -6177,7 +6177,8 @@ So this would involve sampling rotifers throughout the season (4-6 times), then 
 Establishing clones would allow one to assess the evolutionary potential at each point in the season by estimating the variance-covariance G matrix. Selection should erode genetic variation, so G should be altered throughout the season that may hinder or facilitate future responses.
 And evolutionary potential is really unique in rotifers because they can be clonal or mate. So I'd be interested in comparing G between these life strategies. 
 The problem with a G matrix, is that we have no clue what the key molecular players are: so to tackle this problem, one could leverage the collected data into a qtl analysis too.  
-```
-	* I think it is fun to think about the evolutionary potential to environmental change for organisms that can switch from asexual to sexual reproduction. If you compare the G matrix between them, sexually produced offspring populations should have more genetic variance than clonal offspring populations. These animals are resilient to environmental change because of this! So it'd be cool to compare G between asexual vs sexual and whether trade-offs can shift among traits.     
+``` 
 
-2. GTA for ecological genomics   
+I think it is fun to think about the evolutionary potential to environmental change for organisms that can switch from asexual to sexual reproduction. If you compare the G matrix between them, sexually produced offspring populations should have more genetic variance than clonal offspring populations. These animals are resilient to environmental change because of this! So it'd be cool to compare G between asexual vs sexual and whether trade-offs can shift among traits.     
+
+* **GTA for ecological genomics**   
