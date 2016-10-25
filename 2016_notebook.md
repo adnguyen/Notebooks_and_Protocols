@@ -117,6 +117,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 87: 2016-10-14](#id-section87). NSF post doc app meeting: Keller Lab    
 * [Page 88: 2016-10-18](#id-section88). Climate cascade meeting
 * [Page 89: 2016-10-25](#id-section89). Climate cascade updated list
+* [Page 90: 2016-10-25](#id-section90). Meeting with M Pespeni
 
 	
 ------    
@@ -6154,3 +6155,21 @@ NSF use to have bioinformatics post doc competition and replaced with narrowly d
 		3. Graduate college format check March 4th
 		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
 		5. Final thesis April 7th.  
+
+
+------    
+<div id='id-section90'/>
+### Page 90: 2016-10-25. Meeting with M Pespeni   
+
+**Things to discuss**
+
+1. Potential post doc oppportunity at MBL(Marine Biological Laboratory)    
+
+Previous email pitch with prospective post doc mentor
+```
+A question that excites me is how organisms persist and respond to environmental change in natural populations? ( This falls into 2 strategic themes of MBL: comparative evolution and genomics, and organismal adaptation and resiliency to climate change) Well, response to selection depends on their quantitative genetic architecture (variance-covariance G matrix) and selection gradient. Monogonont rotifers seem like a really great system to explore this question with a combination of field surveys, and lab studies. For example, since their lifespan is relatively short, there should be a lot of evolutionary responses within a season. So this would involve sampling rotifers throughout the season (4-6 times), then genotyping (GBS or rad-seq, maybe whole genome sequencing if its not too large) and establishing clones each time. Genotyping would detect shifts in allele frequencies with respect to the environment that changes, signature of evolution. Establishing clones would allow one to assess the evolutionary potential at each point in the season by estimating the variance-covariance G matrix. Selection should erode genetic variation, so G should be altered throughout the season that may hinder or facilitate future responses. And evolutionary potential is really unique in rotifers because they can be clonal or mate. So I'd be interested in comparing G between these life strategies. The problem with a G matrix, is that we have no clue what the key molecular players are: so to tackle this problem, one could leverage the collected data into a qtl analysis too.  
+```
+
+I think it is fun to think about the evolutionary potential to environmental change for organisms that can switch from asexual to sexual reproduction. If you compare the G matrix between them, sexually produced offspring populations should have more genetic variance than clonal offspring populations. These animals are resilient to environmental change because of this! So it'd be cool to compare G between asexual vs sexual and whether trade-offs can shift among traits. 
+
+2. GTA for ecological genomics   
