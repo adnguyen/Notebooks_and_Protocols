@@ -6189,6 +6189,6 @@ I think it is fun to think about the evolutionary potential to environmental cha
 <div id='id-section91'/>
 ### Page 91: 2016-10-26 SICB meeting talk    
 
-![details for my talk](http://sicb.org/meetings/2017/schedule/abstractdetails.php?id=5)
+[details for my talk](http://sicb.org/meetings/2017/schedule/abstractdetails.php?id=5)
 
 125-7  Sunday, Jan. 8 11:45    
