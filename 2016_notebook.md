@@ -6180,7 +6180,14 @@ And evolutionary potential is really unique in rotifers because they can be clon
 The problem with a G matrix, is that we have no clue what the key molecular players are: so to tackle this problem, one could leverage the collected data into a qtl analysis too.  
 ``` 
 
-I think it is fun to think about the evolutionary potential to environmental change for organisms that can switch from asexual to sexual reproduction. If you compare the G matrix between them, sexually produced offspring populations should have more genetic variance than clonal offspring populations. These animals are resilient to environmental change because of this! So it'd be cool to compare G between asexual vs sexual and whether trade-offs can shift among traits.     
+I think it is fun to think about the evolutionary potential to environmental change for organisms that can switch from asexual to sexual reproduction. If you compare the G matrix between them, sexually produced offspring populations should have more genetic variance than clonal offspring populations. These animals are resilient to environmental change because of this! So it'd be cool to compare G between asexual vs sexual and whether trade-offs can shift among traits.  
+
+### advice; write down questions, hypotheses and aims that will help facilitate the discussion  
+
+* sequencing for ecological genomics? : multiepex individuals , you'll need 1-2x converage: or pool individuals and estimate allele frequencies (sequence RNA or DNA); if RNA, then you'll have potential for allele-biased expression influencing allele freq estimates. If DNA gnoemics from a pooled sample, then playing field is level, but genomes are big. 2 ways to do it: HARP(genotype parentals(known)-then subsequent genotype larvae; needs and requires low coverage---then reconstruct allele frequencies). 
+
+* How many individuals per pop (10-100?) depends on how large your pop size (only need a few individuals)? If small pop--need more and there will be more random chance. Look up Christian Slaughter (experimental evolution). Look up papers ; power analyses. 
+
 
 * **GTA for ecological genomics**   
 
@@ -6192,3 +6199,5 @@ I think it is fun to think about the evolutionary potential to environmental cha
 [details for my talk](http://sicb.org/meetings/2017/schedule/abstractdetails.php?id=5)
 
 125-7  Sunday, Jan. 8 11:45    
+
+
