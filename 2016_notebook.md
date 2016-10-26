@@ -118,6 +118,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 88: 2016-10-18](#id-section88). Climate cascade meeting
 * [Page 89: 2016-10-25](#id-section89). Climate cascade updated list
 * [Page 90: 2016-10-25](#id-section90). Meeting with M Pespeni
+* [Page 91: 2016-10-26](#id-section91). SICB meeting talk
 
 	
 ------    
@@ -6182,3 +6183,12 @@ The problem with a G matrix, is that we have no clue what the key molecular play
 I think it is fun to think about the evolutionary potential to environmental change for organisms that can switch from asexual to sexual reproduction. If you compare the G matrix between them, sexually produced offspring populations should have more genetic variance than clonal offspring populations. These animals are resilient to environmental change because of this! So it'd be cool to compare G between asexual vs sexual and whether trade-offs can shift among traits.     
 
 * **GTA for ecological genomics**   
+
+	
+------    
+<div id='id-section91'/>
+### Page 91: 2016-10-26 SICB meeting talk    
+
+![details for my talk](http://sicb.org/meetings/2017/schedule/abstractdetails.php?id=5)
+
+125-7  Sunday, Jan. 8 11:45    
