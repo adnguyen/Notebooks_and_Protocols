@@ -117,9 +117,9 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 87: 2016-10-14](#id-section87). NSF post doc app meeting: Keller Lab    
 * [Page 88: 2016-10-18](#id-section88). Climate cascade meeting
 * [Page 89: 2016-10-25](#id-section89). Climate cascade updated list
-* [Page 90: 2016-10-25](#id-section90). Meeting with M Pespeni
+* [Page 90: 2016-10-25](#id-section90). Meeting with M Pespeni on 2016-10-26
 * [Page 91: 2016-10-26](#id-section91). SICB meeting talk
-
+* [Page 92: 2016-10-27](#id-section91). Proteome stability project update
 	
 ------    
 <div id='id-section1'/>
@@ -6201,3 +6201,16 @@ I think it is fun to think about the evolutionary potential to environmental cha
 125-7  Sunday, Jan. 8 11:45    
 
 
+------    
+<div id='id-section1'/>
+### Page 92: 2016-10-27. Proteome stability project update  
+
+* reminder: generated unfolding reaction norms for 6 ant colonies (3 colonies per species).   
+
+* received data from Bethany 2016-10-26
+	* excel sheets wit relative abundance to first sample is in: 2016_Protein_stability_evolution/Data/2016/10_Oct
+		* in this path, you'll see 3 folders, 1 set of samples queried against 18 species (it actually has a combo of ants/microbes because Bethany just took the top 18 searches) from uniprot. The other folder queries the NCBI database. And the last folder contains raw mass spec files.   
+		
+* Bethany is going to run more of the sample to see if we can ID more proteins. 
+	
+	
