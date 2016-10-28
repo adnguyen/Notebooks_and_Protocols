@@ -117,7 +117,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 87: 2016-10-14](#id-section87). NSF post doc app meeting: Keller Lab    
 * [Page 88: 2016-10-18](#id-section88). Climate cascade meeting
 * [Page 89: 2016-10-25](#id-section89). Climate cascade updated list
-* [Page 90: 2016-10-25](#id-section90). Meeting with M Pespeni on 2016-10-26
+* [Page 90: 2016-10-25](#id-section90). Meeting with M Pespeni on 2016-10-26 and Brent 2016-10-27
 * [Page 91: 2016-10-26](#id-section91). SICB meeting talk
 * [Page 92: 2016-10-27](#id-section91). Proteome stability project update
 	
@@ -6182,7 +6182,7 @@ The problem with a G matrix, is that we have no clue what the key molecular play
 
 I think it is fun to think about the evolutionary potential to environmental change for organisms that can switch from asexual to sexual reproduction. If you compare the G matrix between them, sexually produced offspring populations should have more genetic variance than clonal offspring populations. These animals are resilient to environmental change because of this! So it'd be cool to compare G between asexual vs sexual and whether trade-offs can shift among traits.  
 
-### advice; write down questions, hypotheses and aims that will help facilitate the discussion  
+### Melissa advice; write down questions, hypotheses and aims that will help facilitate the discussion  
 
 * sequencing for ecological genomics? : multiepex individuals , you'll need 1-2x converage: or pool individuals and estimate allele frequencies (sequence RNA or DNA); if RNA, then you'll have potential for allele-biased expression influencing allele freq estimates. If DNA gnoemics from a pooled sample, then playing field is level, but genomes are big. 2 ways to do it: HARP(genotype parentals(known)-then subsequent genotype larvae; needs and requires low coverage---then reconstruct allele frequencies). 
 
@@ -6191,7 +6191,14 @@ I think it is fun to think about the evolutionary potential to environmental cha
 
 * **GTA for ecological genomics**   
 
-	
+### 2016-10-27 Brent's thoughts
+
+**Ask about Isofemale lines**   
+
+* look up genome size (it's .35 pg)  	
+* What is changing G? What is the predictive power? model it. 
+* Try to talk to Mike Angiletta, Rus Lande. (Genetic accomodation and assimilation)  
+
 ------    
 <div id='id-section91'/>
 ### Page 91: 2016-10-26 SICB meeting talk    
