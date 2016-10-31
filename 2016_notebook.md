@@ -119,8 +119,8 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 89: 2016-10-25](#id-section89). Climate cascade updated list
 * [Page 90: 2016-10-25](#id-section90). Meeting with M Pespeni on 2016-10-26 and Brent 2016-10-27
 * [Page 91: 2016-10-26](#id-section91). SICB meeting talk
-* [Page 92: 2016-10-27](#id-section91). Proteome stability project update
-* [Page 93: 2016-10-31](#id-section92). CTmax and Hsp reaction norm stats
+* [Page 92: 2016-10-27](#id-section92). Proteome stability project update
+* [Page 93: 2016-10-31](#id-section93). CTmax and Hsp reaction norm stats
 	
 ------    
 <div id='id-section1'/>
