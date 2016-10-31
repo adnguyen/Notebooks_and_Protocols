@@ -120,6 +120,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 90: 2016-10-25](#id-section90). Meeting with M Pespeni on 2016-10-26 and Brent 2016-10-27
 * [Page 91: 2016-10-26](#id-section91). SICB meeting talk
 * [Page 92: 2016-10-27](#id-section91). Proteome stability project update
+* [Page 93: 2016-10-31](#id-section92). CTmax and Hsp reaction norm stats
 	
 ------    
 <div id='id-section1'/>
@@ -6220,4 +6221,283 @@ I think it is fun to think about the evolutionary potential to environmental cha
 		
 * Bethany is going to run more of the sample to see if we can ID more proteins. 
 	
+
 	
+------    
+<div id='id-section93'/>
+### Page 93: 2016-10-31.  CTmax and Hsp reaction norm stats   
+
+Stats overview: 
+1. Effect of local environment (Tmax and habitat type) on basal xp and other parameters.  
+
+### **Basal xp**   
+
+```R
+summary(lm(b70~bio5+habitat_v2,data=b70))
+Call:
+lm(formula = b70 ~ bio5 + habitat_v2, data = b70)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.10674 -0.34255  0.07049  0.44475  1.56186 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          10.915110   1.957855   5.575 1.74e-06 ***
+bio5                  0.005714   0.006543   0.873    0.388    
+habitat_v2flat woods -0.124177   0.365522  -0.340    0.736    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.87 on 41 degrees of freedom
+Multiple R-squared:  0.01836,	Adjusted R-squared:  -0.02952 
+F-statistic: 0.3835 on 2 and 41 DF,  p-value: 0.6839
+
+summary(lm(b83~bio5+habitat_v2,data=b83))
+Call:
+lm(formula = b83 ~ bio5 + habitat_v2, data = b83)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.16408 -0.49336  0.03001  0.64313  1.96466 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          12.751247   2.132030   5.981 2.34e-07 ***
+bio5                 -0.002689   0.007140  -0.377    0.708    
+habitat_v2flat woods -0.480410   0.362781  -1.324    0.191    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9811 on 50 degrees of freedom
+Multiple R-squared:  0.06047,	Adjusted R-squared:  0.02289 
+F-statistic: 1.609 on 2 and 50 DF,  p-value: 0.2103
+
+
+summary(lm(b40~bio5+habitat_v2,data=b40))
+Call:
+lm(formula = b40 ~ bio5 + habitat_v2, data = b40)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.7137 -0.6858 -0.1241  0.3196  3.0774 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          13.721471   2.714855   5.054 1.36e-05 ***
+bio5                  0.004703   0.009120   0.516    0.609    
+habitat_v2flat woods -0.381890   0.509208  -0.750    0.458    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.123 on 35 degrees of freedom
+Multiple R-squared:  0.01669,	Adjusted R-squared:  -0.0395 
+F-statistic: 0.297 on 2 and 35 DF,  p-value: 0.7449
+```
+
+### **Hsp70 (hsc70-4 h2) params (slope,Tm,max)**
+```R
+apply(b[,3:5],2,function(x){summary(lm(x~b$bio5+b$habitat_v2))})
+
+$FC_hsc70_1468_max
+
+Call:
+lm(formula = x ~ b$bio5 + b$habitat_v2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-20.536  -8.414  -1.652   4.839  30.045 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            -0.90802   28.24097  -0.032 0.974489    
+b$bio5                  0.13378    0.09449   1.416 0.163567    
+b$habitat_v2flat woods 20.35661    4.86449   4.185 0.000127 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 12.34 on 46 degrees of freedom
+Multiple R-squared:  0.4224,	Adjusted R-squared:  0.3973 
+F-statistic: 16.82 on 2 and 46 DF,  p-value: 3.288e-06
+
+
+$FC_hsc70_1468_slope
+
+Call:
+lm(formula = x ~ b$bio5 + b$habitat_v2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.91667 -0.22656  0.08771  0.27554  0.87662 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)   
+(Intercept)            0.213328   1.023087   0.209  0.83575   
+b$bio5                 0.002091   0.003423   0.611  0.54431   
+b$habitat_v2flat woods 0.494706   0.176226   2.807  0.00731 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4471 on 46 degrees of freedom
+Multiple R-squared:  0.2228,	Adjusted R-squared:  0.189 
+F-statistic: 6.595 on 2 and 46 DF,  p-value: 0.003032
+
+
+$FC_hsc70_1468_Tm
+
+Call:
+lm(formula = x ~ b$bio5 + b$habitat_v2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.23057 -0.46633 -0.00151  0.62405  1.24574 
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            35.043684   1.956972  17.907  < 2e-16 ***
+b$bio5                  0.003766   0.006548   0.575 0.568014    
+b$habitat_v2flat woods  1.372953   0.337088   4.073 0.000181 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8552 on 46 degrees of freedom
+Multiple R-squared:  0.3566,	Adjusted R-squared:  0.3287 
+F-statistic: 12.75 on 2 and 46 DF,  p-value: 3.931e-05
+```
+
+### Hsp83 params (slope,Tm,max)   
+
+```R
+apply(u[,9:11],2,function(x){summary(lm(x~u$bio5+u$habitat_v2))})
+$FC_Hsp83_279_max
+
+Call:
+lm(formula = x ~ u$bio5 + u$habitat_v2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.8432 -2.7507 -0.7032  2.3143 11.2074 
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)   
+(Intercept)             8.059606   8.941439   0.901  0.37208   
+u$bio5                 -0.002729   0.029897  -0.091  0.92766   
+u$habitat_v2flat woods  4.720030   1.550712   3.044  0.00386 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.06 on 46 degrees of freedom
+Multiple R-squared:  0.2054,	Adjusted R-squared:  0.1709 
+F-statistic: 5.947 on 2 and 46 DF,  p-value: 0.005045
+
+
+$FC_Hsp83_279_slope
+
+Call:
+lm(formula = x ~ u$bio5 + u$habitat_v2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.8619 -0.5948  0.1370  0.6879  1.3637 
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)
+(Intercept)            -1.056652   1.865514  -0.566    0.574
+u$bio5                  0.008211   0.006238   1.316    0.195
+u$habitat_v2flat woods  0.301698   0.323536   0.933    0.356
+
+Residual standard error: 0.8471 on 46 degrees of freedom
+Multiple R-squared:  0.09876,	Adjusted R-squared:  0.05957 
+F-statistic:  2.52 on 2 and 46 DF,  p-value: 0.09148
+
+
+$FC_Hsp83_279_Tm
+
+Call:
+lm(formula = x ~ u$bio5 + u$habitat_v2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.4767 -0.7621  0.1731  0.9167  2.6581 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            31.80124    3.37214   9.431 2.54e-12 ***
+u$bio5                  0.01076    0.01128   0.955 0.344699    
+u$habitat_v2flat woods  2.16554    0.58483   3.703 0.000569 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.531 on 46 degrees of freedom
+Multiple R-squared:  0.3423,	Adjusted R-squared:  0.3137 
+F-statistic: 11.97 on 2 and 46 DF,  p-value: 6.533e-05
+```
+### Hsp40 (hsc70-4 h2) params (slope,Tm,max)
+
+```R
+apply(n[,6:8],2,function(x){summary(lm(x~n$bio5+n$habitat_v2))})
+
+$FC_hsp40_541_max
+
+Call:
+lm(formula = x ~ n$bio5 + n$habitat_v2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.8615 -3.3291 -0.6736  1.7653 10.5454 
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)  
+(Intercept)             9.4754213 10.9534314   0.865   0.3917  
+n$bio5                 -0.0009401  0.0367220  -0.026   0.9797  
+n$habitat_v2flat woods  3.6490726  1.8969491   1.924   0.0609 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.749 on 44 degrees of freedom
+Multiple R-squared:  0.1003,	Adjusted R-squared:  0.05945 
+F-statistic: 2.454 on 2 and 44 DF,  p-value: 0.09765
+
+
+$FC_hsp40_541_slope
+
+Call:
+lm(formula = x ~ n$bio5 + n$habitat_v2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.4300 -0.5157  0.2182  0.6412  1.3309 
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)
+(Intercept)            -0.295834   1.816631  -0.163    0.871
+n$bio5                  0.005677   0.006090   0.932    0.356
+n$habitat_v2flat woods  0.413173   0.314610   1.313    0.196
+
+Residual standard error: 0.7877 on 44 degrees of freedom
+Multiple R-squared:  0.1048,	Adjusted R-squared:  0.06411 
+F-statistic: 2.576 on 2 and 44 DF,  p-value: 0.08755
+
+
+$FC_hsp40_541_Tm
+
+Call:
+lm(formula = x ~ n$bio5 + n$habitat_v2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.7066 -1.0076  0.2038  0.9873  3.5691 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            39.14520    3.84815  10.172 3.93e-13 ***
+n$bio5                 -0.01175    0.01290  -0.911 0.367444    
+n$habitat_v2flat woods  2.46904    0.66643   3.705 0.000588 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.669 on 44 degrees of freedom
+Multiple R-squared:  0.2539,	Adjusted R-squared:   0.22 
+F-statistic: 7.487 on 2 and 44 DF,  p-value: 0.00159
+```
+
