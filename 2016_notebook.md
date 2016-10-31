@@ -6501,7 +6501,9 @@ Multiple R-squared:  0.2539,	Adjusted R-squared:   0.22
 F-statistic: 7.487 on 2 and 44 DF,  p-value: 0.00159
 ```
 
-### Summary table: 
+### Summary: no sig effect of Tmax (bio5) on parameters, but habitat type does in some cases:    
+
+**Table summary:**    
 
 |Parameter |hsp83 |hsc70.4.h2 |hsp40 |
 |:---------|:-----|:----------|:-----|
