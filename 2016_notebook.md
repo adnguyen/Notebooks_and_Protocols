@@ -6501,3 +6501,11 @@ Multiple R-squared:  0.2539,	Adjusted R-squared:   0.22
 F-statistic: 7.487 on 2 and 44 DF,  p-value: 0.00159
 ```
 
+### Summary table: 
+
+|Parameter |hsp83 |hsc70.4.h2 |hsp40 |
+|:---------|:-----|:----------|:-----|
+|basal     |no    |no         |no    |
+|slope     |no    |yes        |no    |
+|Tm        |yes   |yes        |yes   |
+|max       |yes   |yes        |no    |
