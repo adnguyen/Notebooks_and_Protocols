@@ -120,7 +120,8 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 90: 2016-10-25](#id-section90). Meeting with M Pespeni on 2016-10-26 and Brent 2016-10-27
 * [Page 91: 2016-10-26](#id-section91). SICB meeting talk
 * [Page 92: 2016-10-27](#id-section92). Proteome stability project update
-* [Page 93: 2016-10-31](#id-section93). CTmax and Hsp reaction norm stats
+* [Page 93: 2016-10-31](#id-section93). CTmax and Hsp reaction norm stats   
+* [Page 94: 2016-10-31; 2016-11-01](#id-section94). Climate cascade meeting setup and notes
 	
 ------    
 <div id='id-section1'/>
@@ -6511,3 +6512,46 @@ F-statistic: 7.487 on 2 and 44 DF,  p-value: 0.00159
 |slope     |no    |yes        |no    |
 |Tm        |yes   |yes        |yes   |
 |max       |yes   |yes        |no    |
+
+
+
+	
+------    
+<div id='id-section04'/>
+### Page 94: 2016-10-31; 2016-11-01. Climate cascade meeting setup and notes    
+
+1. Project updates:    
+ 	* Hsp gene expression + Ctmax project:
+		* figure 3, SHC says to switch back branches
+		* Wrote up methods and results   
+		* Submit to? MBE, evolution, Goerge Somero and Brent think PNAS is a good fit. SHC and NJG thoughts?     
+ 	* Multiple stressors ms:   
+		* submitted **2016-10-24**    
+ 	* Range limits ms: **SHC lab gave verbal edits:** still need to incorporate
+ 	* Thermal niche ms: **Lacey and I working on discussion**     
+ 	* Stressed in nature MS: Samples to rerun.   
+  		* update: Curtis can no longer work+ write on project   
+		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
+	* Proteome stability project:
+		* **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
+			* Rerun mass spec, but loading more proteins (Bethany)
+	* Modulation of Hsp ms:    
+		* make fig 2 without spline curves with just points (done)   
+		* grab elevation data for each sampling point in R (done)
+		
+* Attending SICB - Jan 3-8 New Orleans, Give a talk about range limits paper.   
+	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+ 	* Apply for funding. Suitor Travel Grant Deadline is october 31    
+		* **Wrote up suiter award app** Application submitted today 2016-10-18    
+			* Bought hotel, rooming with Emily M., need to buy airplane tickets
+
+* **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
+	* Formatting:    
+		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+		* Dissertation Abstract is in multiple paragraphs, but for dissertation itself, make 1 paragraph
+	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+		1. Intent to graduate: February 1st for May.   
+		2. Send defense committe form to grad college---now   
+		3. Graduate college format check March 4th
+		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+		5. Final thesis April 7th.  
