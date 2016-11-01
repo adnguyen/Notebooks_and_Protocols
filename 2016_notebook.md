@@ -6549,7 +6549,6 @@ F-statistic: 7.487 on 2 and 44 DF,  p-value: 0.00159
 3. **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
 	* Formatting:    
 		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
-		* Dissertation Abstract is in multiple paragraphs, but for dissertation itself, make 1 paragraph
 	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
 		1. Intent to graduate: February 1st for May.   
 		2. Send defense committe form to grad college---now   
