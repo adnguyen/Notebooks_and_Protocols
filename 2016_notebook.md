@@ -6524,7 +6524,8 @@ F-statistic: 7.487 on 2 and 44 DF,  p-value: 0.00159
  	* **Hsp gene expression + Ctmax project:**
 		* figure 3, SHC says to switch back branches
 		* Wrote up methods and results   
-		* Submit to? MBE, evolution, Goerge Somero and Brent think PNAS is a good fit. SHC and NJG thoughts?     
+		* Submit to? MBE, evolution, Goerge Somero and Brent think PNAS is a good fit. SHC and NJG thoughts?  
+		* reference for rad-seq:HF3-picea,fbragg2-floridana,KH4-ashmeadi,Duke6-mariae,ala2-miamiana, Lex13-rudis    
  	* **Multiple stressors ms:**   
 		* submitted **2016-10-24**  
 		* in review **2016-11-01**
