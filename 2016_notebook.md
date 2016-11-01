@@ -111,6 +111,8 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 81: 2016-10-11](#id-section81). ANCOVA models for testing interaction of hsp gxp parameter and habitat on CTmax   
 * [Page 82: 2016-10-11](#id-section82). variance partitioning in CTmax of aphaeno    
 * [Page 83: 2016-10-12](#id-section83). Testing effect of MAT on Hsp gxp and looking at correlations between phylogeny and climate.   
+	* [2016-11-01 adding full models with automated stepAIC](#id-section83.5).    
+
 * [Page 84: 2016-10-14](#id-section84). Updating climate cascade to do list.   
 * [Page 85: 2016-10-14](#id-section85). Paper note: Puentes, A., G. Granath, and J. Ågren. 2016. Similarity in G matrix structure among natural populations of Arabidopsis lyrata. Evolution 70:2370–2386.  
 * [Page 86: 2016-10-14](#id-section86). [Wiley House Style Guide](https://authorservices.wiley.com/bauthor/House_style_guide_US4520101451884.pdf)  
@@ -5861,7 +5863,377 @@ Multiple R-squared:  0.3049,	Adjusted R-squared:  0.2663
 F-statistic: 7.897 on 3 and 54 DF,  p-value: 0.0001852
 ```
 
+<div id='id-section83.5'/>
+### 2016-11-01 adding full models with automated stepAIC
 
+```R
+apply(merg[,38:43],2,function(x){summary(stepAIC(lm(log10(x)~merg$bio5+merg$Rearing_Temp+merg$Axis.1+merg$Axis.2+merg$Axis.3)),direction="forward")})
+Start:  AIC=-135.83
+log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 + 
+    merg$Axis.3
+
+                    Df Sum of Sq    RSS     AIC
+- merg$Axis.3        1   0.00006 4.2616 -137.82
+- merg$Axis.2        1   0.00563 4.2671 -137.75
+- merg$Axis.1        1   0.03032 4.2918 -137.42
+- merg$bio5          1   0.05267 4.3142 -137.12
+<none>                           4.2615 -135.83
+- merg$Rearing_Temp  1   0.32622 4.5877 -133.62
+
+Step:  AIC=-137.82
+log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2
+
+                    Df Sum of Sq    RSS     AIC
+- merg$Axis.2        1   0.00557 4.2671 -139.75
+- merg$Axis.1        1   0.03288 4.2944 -139.39
+- merg$bio5          1   0.05995 4.3215 -139.03
+<none>                           4.2616 -137.82
+- merg$Rearing_Temp  1   0.32790 4.5895 -135.60
+
+Step:  AIC=-139.75
+log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1
+
+                    Df Sum of Sq    RSS     AIC
+- merg$Axis.1        1   0.02927 4.2964 -141.36
+- merg$bio5          1   0.05486 4.3220 -141.02
+<none>                           4.2671 -139.75
+- merg$Rearing_Temp  1   0.35722 4.6243 -137.17
+
+Step:  AIC=-141.36
+log10(x) ~ merg$bio5 + merg$Rearing_Temp
+
+                    Df Sum of Sq    RSS     AIC
+- merg$bio5          1   0.02771 4.3241 -142.99
+<none>                           4.2964 -141.36
+- merg$Rearing_Temp  1   0.33717 4.6336 -139.05
+
+Step:  AIC=-142.99
+log10(x) ~ merg$Rearing_Temp
+
+                    Df Sum of Sq    RSS     AIC
+<none>                           4.3241 -142.99
+- merg$Rearing_Temp  1    0.3481 4.6722 -140.58
+Start:  AIC=-147.19
+log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 + 
+    merg$Axis.3
+
+                    Df Sum of Sq    RSS     AIC
+- merg$Axis.1        1  0.009107 3.5000 -149.05
+- merg$Axis.3        1  0.009894 3.5008 -149.03
+- merg$bio5          1  0.016701 3.5076 -148.92
+- merg$Axis.2        1  0.046939 3.5379 -148.43
+<none>                           3.4909 -147.19
+- merg$Rearing_Temp  1  0.215627 3.7065 -145.78
+
+Step:  AIC=-149.05
+log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.2 + merg$Axis.3
+
+                    Df Sum of Sq    RSS     AIC
+- merg$Axis.3        1  0.005260 3.5053 -150.96
+- merg$bio5          1  0.008554 3.5086 -150.91
+- merg$Axis.2        1  0.057491 3.5575 -150.12
+<none>                           3.5000 -149.05
+- merg$Rearing_Temp  1  0.210727 3.7107 -147.71
+
+Step:  AIC=-150.96
+log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.2
+
+                    Df Sum of Sq    RSS     AIC
+- merg$bio5          1  0.006235 3.5115 -152.86
+- merg$Axis.2        1  0.059127 3.5644 -152.01
+<none>                           3.5053 -150.96
+- merg$Rearing_Temp  1  0.218048 3.7233 -149.52
+
+Step:  AIC=-152.86
+log10(x) ~ merg$Rearing_Temp + merg$Axis.2
+
+                    Df Sum of Sq    RSS     AIC
+- merg$Axis.2        1  0.065809 3.5773 -153.80
+<none>                           3.5115 -152.86
+- merg$Rearing_Temp  1  0.225290 3.7368 -151.31
+
+Step:  AIC=-153.8
+log10(x) ~ merg$Rearing_Temp
+
+                    Df Sum of Sq    RSS    AIC
+<none>                           3.5773 -153.8
+- merg$Rearing_Temp  1   0.18654 3.7639 -152.9
+Start:  AIC=-122.77
+log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 + 
+    merg$Axis.3
+
+                    Df Sum of Sq    RSS     AIC
+- merg$Axis.3        1   0.01759 5.0640 -124.58
+- merg$Axis.1        1   0.03695 5.0833 -124.37
+- merg$bio5          1   0.09873 5.1451 -123.69
+- merg$Axis.2        1   0.14349 5.1899 -123.20
+<none>                           5.0464 -122.77
+- merg$Rearing_Temp  1   0.61137 5.6577 -118.37
+
+Step:  AIC=-124.58
+log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2
+
+                    Df Sum of Sq    RSS     AIC
+- merg$Axis.1        1   0.06171 5.1257 -125.90
+- merg$Axis.2        1   0.13474 5.1987 -125.11
+- merg$bio5          1   0.15531 5.2193 -124.89
+<none>                           5.0640 -124.58
+- merg$Rearing_Temp  1   0.62522 5.6892 -120.06
+
+Step:  AIC=-125.9
+log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.2
+
+                    Df Sum of Sq    RSS     AIC
+- merg$bio5          1   0.11746 5.2431 -126.63
+- merg$Axis.2        1   0.17282 5.2985 -126.04
+<none>                           5.1257 -125.90
+- merg$Rearing_Temp  1   0.66713 5.7928 -121.05
+
+Step:  AIC=-126.63
+log10(x) ~ merg$Rearing_Temp + merg$Axis.2
+
+                    Df Sum of Sq    RSS     AIC
+<none>                           5.2431 -126.63
+- merg$Axis.2        1   0.21853 5.4617 -126.35
+- merg$Rearing_Temp  1   0.63456 5.8777 -122.23
+Start:  AIC=-85.77
+log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 + 
+    merg$Axis.3
+
+                    Df Sum of Sq    RSS     AIC
+- merg$Axis.2        1   0.09471 10.350 -87.247
+- merg$bio5          1   0.14357 10.399 -86.979
+- merg$Axis.3        1   0.17560 10.431 -86.803
+- merg$Rearing_Temp  1   0.34221 10.597 -85.900
+<none>                           10.255 -85.771
+- merg$Axis.1        1   0.51791 10.773 -84.963
+
+Step:  AIC=-87.25
+log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.3
+
+                    Df Sum of Sq    RSS     AIC
+- merg$bio5          1   0.09885 10.449 -88.705
+- merg$Axis.3        1   0.20541 10.555 -88.127
+- merg$Rearing_Temp  1   0.28656 10.636 -87.690
+<none>                           10.350 -87.247
+- merg$Axis.1        1   0.45249 10.802 -86.808
+
+Step:  AIC=-88.71
+log10(x) ~ merg$Rearing_Temp + merg$Axis.1 + merg$Axis.3
+
+                    Df Sum of Sq    RSS     AIC
+- merg$Rearing_Temp  1   0.30750 10.756 -89.052
+<none>                           10.449 -88.705
+- merg$Axis.3        1   0.37408 10.823 -88.700
+- merg$Axis.1        1   0.60533 11.054 -87.495
+
+Step:  AIC=-89.05
+log10(x) ~ merg$Axis.1 + merg$Axis.3
+
+              Df Sum of Sq    RSS     AIC
+<none>                     10.756 -89.052
+- merg$Axis.3  1   0.42229 11.178 -88.857
+- merg$Axis.1  1   0.71553 11.472 -87.381
+Start:  AIC=-122.03
+log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 + 
+    merg$Axis.3
+
+                    Df Sum of Sq    RSS      AIC
+- merg$bio5          1    0.0001 5.4282 -124.032
+- merg$Axis.2        1    0.0329 5.4610 -123.689
+- merg$Axis.1        1    0.0409 5.4690 -123.605
+- merg$Axis.3        1    0.0666 5.4947 -123.338
+<none>                           5.4281 -122.033
+- merg$Rearing_Temp  1    4.5125 9.9406  -89.546
+
+Step:  AIC=-124.03
+log10(x) ~ merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 + merg$Axis.3
+
+                    Df Sum of Sq    RSS      AIC
+- merg$Axis.2        1    0.0357 5.4639 -125.659
+- merg$Axis.3        1    0.0798 5.5080 -125.200
+- merg$Axis.1        1    0.1695 5.5977 -124.279
+<none>                           5.4282 -124.032
+- merg$Rearing_Temp  1    4.5125 9.9407  -91.545
+
+Step:  AIC=-125.66
+log10(x) ~ merg$Rearing_Temp + merg$Axis.1 + merg$Axis.3
+
+                    Df Sum of Sq     RSS      AIC
+- merg$Axis.3        1    0.0784  5.5423 -126.847
+- merg$Axis.1        1    0.1733  5.6372 -125.879
+<none>                            5.4639 -125.659
+- merg$Rearing_Temp  1    4.5377 10.0016  -93.197
+
+Step:  AIC=-126.85
+log10(x) ~ merg$Rearing_Temp + merg$Axis.1
+
+                    Df Sum of Sq     RSS      AIC
+- merg$Axis.1        1    0.1750  5.7173 -127.075
+<none>                            5.5423 -126.847
+- merg$Rearing_Temp  1    4.4787 10.0209  -95.087
+
+Step:  AIC=-127.07
+log10(x) ~ merg$Rearing_Temp
+
+                    Df Sum of Sq     RSS      AIC
+<none>                            5.7173 -127.075
+- merg$Rearing_Temp  1    4.7398 10.4571  -94.659
+Start:  AIC=-78.04
+log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 + 
+    merg$Axis.3
+
+                    Df Sum of Sq    RSS     AIC
+- merg$bio5          1    0.1636 11.382 -79.225
+<none>                           11.219 -78.036
+- merg$Axis.1        1    0.4666 11.685 -77.754
+- merg$Rearing_Temp  1    0.6847 11.903 -76.718
+- merg$Axis.2        1    0.9679 12.186 -75.402
+- merg$Axis.3        1    3.9432 15.162 -63.168
+
+Step:  AIC=-79.23
+log10(x) ~ merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 + merg$Axis.3
+
+                    Df Sum of Sq    RSS     AIC
+<none>                           11.382 -79.225
+- merg$Axis.1        1    0.4311 11.813 -79.144
+- merg$Rearing_Temp  1    0.6969 12.079 -77.897
+- merg$Axis.2        1    0.8346 12.217 -77.263
+- merg$Axis.3        1    3.9224 15.305 -64.643
+$FC_83
+
+Call:
+lm(formula = log10(x) ~ merg$Rearing_Temp)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.61666 -0.14861 -0.03988  0.14529  0.74191 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)  
+(Intercept)        0.36231    0.28484   1.272   0.2087  
+merg$Rearing_Temp  0.02638    0.01254   2.104   0.0399 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2804 on 55 degrees of freedom
+Multiple R-squared:  0.07451,	Adjusted R-squared:  0.05768 
+F-statistic: 4.428 on 1 and 55 DF,  p-value: 0.03995
+
+
+$FC_70
+
+Call:
+lm(formula = log10(x) ~ merg$Rearing_Temp)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.6417 -0.1415  0.0238  0.1711  0.3910 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        2.06670    0.25908   7.977 9.51e-11 ***
+merg$Rearing_Temp -0.01931    0.01140  -1.694    0.096 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.255 on 55 degrees of freedom
+Multiple R-squared:  0.04956,	Adjusted R-squared:  0.03228 
+F-statistic: 2.868 on 1 and 55 DF,  p-value: 0.09601
+
+
+$FC_40
+
+Call:
+lm(formula = log10(x) ~ merg$Rearing_Temp + merg$Axis.2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.80392 -0.10073  0.07339  0.22020  0.55569 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)  
+(Intercept)        0.09071    0.32917   0.276   0.7839  
+merg$Rearing_Temp  0.03680    0.01453   2.533   0.0143 *
+merg$Axis.2        1.24166    0.83541   1.486   0.1431  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.3145 on 53 degrees of freedom
+  (1 observation deleted due to missingness)
+Multiple R-squared:  0.166,	Adjusted R-squared:  0.1345 
+F-statistic: 5.275 on 2 and 53 DF,  p-value: 0.008145
+
+
+$B_83
+
+Call:
+lm(formula = log10(x) ~ merg$Axis.1 + merg$Axis.3)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.89374 -0.32249  0.03374  0.32440  0.77433 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept)  0.01073    0.05911   0.182   0.8566  
+merg$Axis.1 -1.09010    0.57516  -1.895   0.0634 .
+merg$Axis.3  2.00468    1.37680   1.456   0.1512  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4463 on 54 degrees of freedom
+Multiple R-squared:  0.09566,	Adjusted R-squared:  0.06217 
+F-statistic: 2.856 on 2 and 54 DF,  p-value: 0.06621
+
+
+$B_70
+
+Call:
+lm(formula = log10(x) ~ merg$Rearing_Temp)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.7507 -0.1789 -0.0132  0.2067  0.7046 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       -2.24217    0.32753  -6.846 6.75e-09 ***
+merg$Rearing_Temp  0.09734    0.01442   6.753 9.59e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.3224 on 55 degrees of freedom
+Multiple R-squared:  0.4533,	Adjusted R-squared:  0.4433 
+F-statistic:  45.6 on 1 and 55 DF,  p-value: 9.589e-09
+
+
+$B_40
+
+Call:
+lm(formula = log10(x) ~ merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 + 
+    merg$Axis.3)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.38234 -0.22276 -0.00071  0.25240  0.84201 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       -0.84687    0.49824  -1.700  0.09527 .  
+merg$Rearing_Temp  0.03887    0.02200   1.767  0.08319 .  
+merg$Axis.1       -0.85399    0.61446  -1.390  0.17062    
+merg$Axis.2       -2.42734    1.25523  -1.934  0.05870 .  
+merg$Axis.3       -6.12416    1.46081  -4.192  0.00011 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4724 on 51 degrees of freedom
+  (1 observation deleted due to missingness)
+Multiple R-squared:  0.3278,	Adjusted R-squared:  0.2751 
+F-statistic: 6.218 on 4 and 51 DF,  p-value: 0.0003732
+
+```
 	
 ------    
 <div id='id-section84'/>
