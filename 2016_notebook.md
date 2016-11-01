@@ -6521,31 +6521,32 @@ F-statistic: 7.487 on 2 and 44 DF,  p-value: 0.00159
 ### Page 94: 2016-10-31; 2016-11-01. Climate cascade meeting setup and notes    
 
 1. Project updates:    
- 	* Hsp gene expression + Ctmax project:
+ 	* **Hsp gene expression + Ctmax project:**
 		* figure 3, SHC says to switch back branches
 		* Wrote up methods and results   
 		* Submit to? MBE, evolution, Goerge Somero and Brent think PNAS is a good fit. SHC and NJG thoughts?     
- 	* Multiple stressors ms:   
-		* submitted **2016-10-24**    
- 	* Range limits ms: **SHC lab gave verbal edits:** still need to incorporate
- 	* Thermal niche ms: **Lacey and I working on discussion**     
- 	* Stressed in nature MS: Samples to rerun.   
+ 	* **Multiple stressors ms:**   
+		* submitted **2016-10-24**  
+		* in review **2016-11-01**
+ 	* **Range limits ms**: SHC lab gave verbal edit, still need to incorporate
+ 	* **Thermal niche ms:** Lacey and I working on discussion     
+ 	* **Stressed in nature MS: Samples to rerun.**       
   		* update: Curtis can no longer work+ write on project   
 		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
-	* Proteome stability project:
+	* **Proteome stability project:**    
 		* **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
 			* Rerun mass spec, but loading more proteins (Bethany)
-	* Modulation of Hsp ms:    
+	* **Modulation of Hsp ms:**        
 		* make fig 2 without spline curves with just points (done)   
 		* grab elevation data for each sampling point in R (done)
 		
-* Attending SICB - Jan 3-8 New Orleans, Give a talk about range limits paper.   
+2. **Attending SICB - Jan 3-8 New Orleans**, Give a talk about range limits paper.   
 	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
  	* Apply for funding. Suitor Travel Grant Deadline is october 31    
 		* **Wrote up suiter award app** Application submitted today 2016-10-18    
 			* Bought hotel, rooming with Emily M., need to buy airplane tickets
 
-* **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
+3. **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
 	* Formatting:    
 		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
 		* Dissertation Abstract is in multiple paragraphs, but for dissertation itself, make 1 paragraph
