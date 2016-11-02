@@ -124,6 +124,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 92: 2016-10-27](#id-section92). Proteome stability project update
 * [Page 93: 2016-10-31](#id-section93). CTmax and Hsp reaction norm stats   
 * [Page 94: 2016-10-31; 2016-11-01](#id-section94). Climate cascade meeting setup and notes
+* [Page 95: 2016-11-02](#id-section95). CTmax PGLS ANBE common garden
 	
 ------    
 <div id='id-section1'/>
@@ -6928,3 +6929,113 @@ F-statistic: 7.487 on 2 and 44 DF,  p-value: 0.00159
 		3. Graduate college format check March 4th
 		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
 		5. Final thesis April 7th.  
+
+
+	
+------    
+<div id='id-section95'/>
+### Page 95: 2016-11-02. Ancestral trait reconstruction and CTmax PGLS ANBE common garden
+
+**Ancestral trait reconstruction**
+```R
+cols<-ifelse(esthab[,1]>esthab[,2],"blue","red")
+par(mar=c(1,1,1,1))
+plot(ult.tree1,cex=.5)
+nodelabels(pch=19,cex=.75,col=cols)
+
+#obj<-contMap(ult.tree1,trait,plot=FALSE,fsize=.1,method="fastAnc")
+#obj$cols[]<-
+obj<-setMap(obj,colors=colorRampPalette(c("black","gray","red"))(length(obj$cols)))
+plot(obj,legend=FALSE)
+nodelabels(pch=19,cex=3,col=cols)
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/19929433/bacfa504-a0d9-11e6-8d35-ee802de3b9d8.jpeg)
+
+Doing pgls in 3 ways:
+
+1. Using colonies as tips (breaks assumptions because of reticulate evolution)
+2. Forcing polytomies with species as replicates
+3. Just doing species themselves (8)
+
+### 1. Using colonies as tips (breaks assumptions because of reticulate evolution)
+
+```R
+library(caper)
+aph_phylo1$colony.id2<-as.character(aph_phylo1$colony.id2)
+ult.tree1<-makeLabel(ult.tree1)
+aph_phylo1$habitat_v2<-droplevels(aph_phylo1$habitat_v2)
+pp<-comparative.data(phy=ult.tree1,data=aph_phylo1,names.col=colony.id2, vcv = TRUE, na.omit = FALSE, warn.dropped = TRUE)
+
+momo<-pgls(KO_temp_worker~bio5+habitat_v2,data=pp,lambda="ML",bounds=list(lambda=c(0.001,1)))
+summary(momo)
+
+Call:
+pgls(formula = KO_temp_worker ~ bio5 + habitat_v2, data = pp, 
+    lambda = "ML", bounds = list(lambda = c(0.001, 1)))
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.3636 -0.6161 -0.1511  0.3177  2.8311 
+
+Branch length transformations:
+
+kappa  [Fix]  : 1.000
+lambda [ ML]  : 0.001
+   lower bound : 0.001, p = 1    
+   upper bound : 1.000, p = < 2.22e-16
+   95.0% CI   : (NA, 0.517)
+delta  [Fix]  : 1.000
+
+Coefficients:
+                       Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)          37.2440770  1.0902152 34.1621 < 2.2e-16 ***
+bio5                  0.0128318  0.0036686  3.4978 0.0007098 ***
+habitat_v2flat woods  1.3750216  0.2575557  5.3387 6.157e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8605 on 97 degrees of freedom
+Multiple R-squared: 0.4051,	Adjusted R-squared: 0.3929 
+F-statistic: 33.03 on 2 and 97 DF,  p-value: 1.147e-11
+```
+
+It looks like the PGLS is using lambda of 0. So I tried estimating lambda and then plugging it in the PGLS model
+
+```R
+#phylogenetic signal
+x<-aph_phylo1$KO_temp_worker
+names(x)<-aph_phylo1$colony.id2
+phylosig(ult.tree1,x,test=TRUE,method="lambda")
+phylosig(ult.tree1,x,test=TRUE,method="K",nsim=1000)
+
+#redoing pgls with lambda from phylosig
+momo3<-pgls(KO_temp_worker~habitat_v2+bio5,data=pp,lambda=0.4833368)
+summary(momo3)
+Call:
+pgls(formula = KO_temp_worker ~ habitat_v2 + bio5, data = pp, 
+    lambda = 0.4833368)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.3928 -0.3833  0.1074  0.8404  3.3408 
+
+Branch length transformations:
+
+kappa  [Fix]  : 1.000
+lambda [Fix]  : 0.483
+delta  [Fix]  : 1.000
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          38.4681831  2.4673203 15.5911   <2e-16 ***
+habitat_v2flat woods  0.5009582  0.5160753  0.9707   0.3341    
+bio5                  0.0093601  0.0080294  1.1657   0.2466    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.082 on 97 degrees of freedom
+Multiple R-squared: 0.02726,	Adjusted R-squared: 0.007207 
+F-statistic: 1.359 on 2 and 97 DF,  p-value: 0.2617 
+```
+
