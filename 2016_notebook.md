@@ -124,7 +124,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 92: 2016-10-27](#id-section92). Proteome stability project update
 * [Page 93: 2016-10-31](#id-section93). CTmax and Hsp reaction norm stats   
 * [Page 94: 2016-10-31; 2016-11-01](#id-section94). Climate cascade meeting setup and notes
-* [Page 95: 2016-11-02](#id-section95). CTmax PGLS ANBE common garden
+* [Page 95: 2016-11-02](#id-section95). Ancestral trait reconstruction and CTmax PGLS ANBE common garden
 	
 ------    
 <div id='id-section1'/>
@@ -7007,7 +7007,19 @@ It looks like the PGLS is using lambda of 0. So I tried estimating lambda and th
 x<-aph_phylo1$KO_temp_worker
 names(x)<-aph_phylo1$colony.id2
 phylosig(ult.tree1,x,test=TRUE,method="lambda")
-phylosig(ult.tree1,x,test=TRUE,method="K",nsim=1000)
+$lambda
+[1] 0.4833368
+
+$logL
+[1] -128.4395
+
+$logL0
+[1] -151.6493
+
+$P
+[1] 9.5454e-12
+
+#phylosig(ult.tree1,x,test=TRUE,method="K",nsim=1000)
 
 #redoing pgls with lambda from phylosig
 momo3<-pgls(KO_temp_worker~habitat_v2+bio5,data=pp,lambda=0.4833368)
@@ -7039,3 +7051,181 @@ Multiple R-squared: 0.02726,	Adjusted R-squared: 0.007207
 F-statistic: 1.359 on 2 and 97 DF,  p-value: 0.2617 
 ```
 
+### 2. Forcing polytomies with species as replicates   
+
+```R
+aph_phylo2$colony.id2<-as.character(aph_phylo2$colony.id2)
+ult2.tree<-makeLabel(ult2.tree)
+aph_phylo2$habitat_v2<-droplevels(aph_phylo2$habitat_v2)
+pp<-comparative.data(phy=ult2.tree,data=aph_phylo2,names.col=colony.id2, vcv = TRUE, na.omit = FALSE, warn.dropped = TRUE)
+
+momo<-pgls(KO_temp_worker~bio5+habitat_v2,data=pp,lambda="ML",bounds=list(lambda=c(0.001,1)))
+summary(momo)
+
+Call:
+pgls(formula = KO_temp_worker ~ bio5 + habitat_v2, data = pp, 
+    lambda = "ML", bounds = list(lambda = c(0.001, 1)))
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2426 -1.0208 -0.0880  0.9807  5.7995 
+
+Branch length transformations:
+
+kappa  [Fix]  : 1.000
+lambda [ ML]  : 0.991
+   lower bound : 0.001, p = 0.1627
+   upper bound : 1.000, p = 0.69339
+   95.0% CI   : (NA, NA)
+delta  [Fix]  : 1.000
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          38.9471677  2.2565730 17.2594   <2e-16 ***
+bio5                  0.0080535  0.0067643  1.1906   0.2367    
+habitat_v2flat woods -0.0036539  0.4282500 -0.0085   0.9932    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.839 on 97 degrees of freedom
+Multiple R-squared: 0.01442,	Adjusted R-squared: -0.005903 
+F-statistic: 0.7095 on 2 and 97 DF,  p-value: 0.4944 
+```
+
+**Again, try to estimate lambda and then plug and chug**
+
+```R
+x<-aph_phylo2$KO_temp_worker
+names(x)<-aph_phylo2$colony.id2
+phylosig(ult2.tree,x,test=TRUE,method="lambda")
+$lambda
+[1] 0.9759065
+
+$logL
+[1] -124.9107
+
+$logL0
+[1] -151.6493
+
+$P
+[1] 2.616073e-13
+
+
+momo3<-pgls(KO_temp_worker~habitat_v2+bio5,data=pp,lambda=0.9759065)
+summary(momo3)
+
+Call:
+pgls(formula = KO_temp_worker ~ habitat_v2 + bio5, data = pp, 
+    lambda = 0.9759065)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.9077 -1.1334  0.0055  1.0044  5.3637 
+
+Branch length transformations:
+
+kappa  [Fix]  : 1.000
+lambda [Fix]  : 0.976
+delta  [Fix]  : 1.000
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          39.2879592  2.4115458 16.2916   <2e-16 ***
+habitat_v2flat woods  0.0118194  0.4401407  0.0269   0.9786    
+bio5                  0.0069203  0.0073845  0.9371   0.3510    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.766 on 97 degrees of freedom
+Multiple R-squared: 0.009022,	Adjusted R-squared: -0.01141 
+F-statistic: 0.4416 on 2 and 97 DF,  p-value: 0.6443 
+```
+
+### 3. Just doing species themselves (8)
+
+
+```R
+#PGLS with caper
+spec.tree<-makeLabel(spec.tree)
+smp<-comparative.data(phy=spec.tree,data=sm.dat2,names.col=Species, vcv = TRUE, na.omit = FALSE, warn.dropped = TRUE)
+
+spmod<-pgls(CTmax~Habitat+Tmax,data=smp,lambda="ML")
+#spmod<-pgls(CTmax~Habitat,data=smp,lambda=0.885536,bounds=list(lambda=c(0.001,1)))
+summary(spmod)
+Call:
+pgls(formula = CTmax ~ Habitat + Tmax, data = smp, lambda = "ML")
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.7707 -0.1147  0.0567  0.3244  0.5081 
+
+Branch length transformations:
+
+kappa  [Fix]  : 1.000
+lambda [ ML]  : 0.000
+   lower bound : 0.000, p = 1    
+   upper bound : 1.000, p = 0.0072118
+   95.0% CI   : (NA, 0.738)
+delta  [Fix]  : 1.000
+
+Coefficients:
+             Estimate Std. Error t value  Pr(>|t|)    
+(Intercept) 37.500342   2.914324 12.8676 5.048e-05 ***
+HabitatFW    1.462473   0.435376  3.3591   0.02013 *  
+Tmax         0.011812   0.009520  1.2407   0.26975    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4878 on 5 degrees of freedom
+Multiple R-squared: 0.7947,	Adjusted R-squared: 0.7125 
+F-statistic: 9.674 on 2 and 5 DF,  p-value: 0.01911 
+
+profile_lambda=pgls.profile(spmod, which="lambda") 
+plot(profile_lambda)
+
+
+n<-sm.dat2$CTmax
+names(n)<-sm.dat2$Species
+phylosig(spec.tree,n,method="lambda",test=TRUE)
+$lambda
+[1] 0.885536
+
+$logL
+[1] -8.958222
+
+$logL0
+[1] -10.06035
+
+$P
+[1] 0.1376303
+
+
+spmod<-pgls(CTmax~Habitat+Tmax,data=smp,lambda=0.885536)
+summary(spmod)
+
+
+Call:
+pgls(formula = CTmax ~ Habitat + Tmax, data = smp, lambda = 0.885536)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.93013 -0.02903  0.07964  0.38357  1.47947 
+
+Branch length transformations:
+
+kappa  [Fix]  : 1.000
+lambda [Fix]  : 0.886
+delta  [Fix]  : 1.000
+
+Coefficients:
+              Estimate Std. Error t value  Pr(>|t|)    
+(Intercept) 39.3419794  4.4119919  8.9171 0.0002954 ***
+HabitatFW    1.6291565  0.9278322  1.7559 0.1394628    
+Tmax         0.0055482  0.0145875  0.3803 0.7193135    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8271 on 5 degrees of freedom
+Multiple R-squared: 0.467,	Adjusted R-squared: 0.2538 
+F-statistic:  2.19 on 2 and 5 DF,  p-value: 0.2074 
+```
