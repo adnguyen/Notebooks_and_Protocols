@@ -124,7 +124,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 92: 2016-10-27](#id-section92). Proteome stability project update
 * [Page 93: 2016-10-31](#id-section93). CTmax and Hsp reaction norm stats   
 * [Page 94: 2016-10-31; 2016-11-01](#id-section94). Climate cascade meeting setup and notes
-* [Page 95: 2016-11-02](#id-section95). Ancestral trait reconstruction and CTmax PGLS ANBE common garden
+* [Page 95: 2016-11-02](#id-section95). Ancestral trait reconstruction and CTmax PGLS ANBE common garden; corresponds with  [Page 74: 2016-09-28](#id-section74). phylogenetic regressions (PGLS) and anovas 
 	
 ------    
 <div id='id-section1'/>
