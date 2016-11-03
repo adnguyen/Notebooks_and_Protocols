@@ -7381,3 +7381,22 @@ F-statistic:  2.19 on 2 and 5 DF,  p-value: 0.2074
 ### Page 96: 2016-11-03. notes from skype meeting with KG, potential post doc opp    
 
 Marine Biological Labs, [Hibbitt Early Career Fellows Program](http://www.mbl.edu/research/hibbitt-early-career-fellows-program/)   
+
+about fellowship: its brand new for MBL; its trying to bring in new investigators early in their careers
+
+MBL; resident and visiting scientists; there are a lot of courses in the summer (10 days to 6 weeks); teachers come from all of over the world; Whitman scholars are fellowships that PIs can establish labs; groups of researchers meet here;
+
+Other foundations:
+1. Charles King foundation/trust
+2. Life sciences research foundation
+3. Ford Foundation
+4. Hell and Hay whitney foundation? 
+**check on deadlines**
+
+There is a genome for 15 different species. huge range in genome sizes, why?
+
+Bioinformatics; david, mark welsh (bay paul center); Lots of peopel do pool-seq; own Illumina hi-seq ; miseq; sanger sequencing. play up bioinformatics resource; 
+
+MBL are conveners; convening power
+
+
