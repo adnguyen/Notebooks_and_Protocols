@@ -7407,7 +7407,8 @@ MBL are conveners; convening power
 <div id='id-section97'/>
 ### Page 97: 2016-11-04. ms in prep
 
-**first authored**
+**first authored**   
+
 1. multiple stressors (submitted)
 2. Curtis, stress in nature; submit to functional ecology
 3. rxn norm of Hsps and CTmax; submit to PNAS
