@@ -126,6 +126,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 94: 2016-10-31; 2016-11-01](#id-section94). Climate cascade meeting setup and notes
 * [Page 95: 2016-11-02](#id-section95). Ancestral trait reconstruction and CTmax PGLS ANBE common garden; corresponds with  [Page 74: 2016-09-28](#id-section74). phylogenetic regressions (PGLS) and anovas    
 * [Page 96: 2016-11-03](#id-section96). notes from skype meeting with KG, potential post doc opp
+* [Page 97: 2016-11-04](#id-section97). ms in prep
 	
 ------    
 <div id='id-section1'/>
@@ -7400,3 +7401,22 @@ Bioinformatics; david, mark welsh (bay paul center); Lots of peopel do pool-seq;
 MBL are conveners; convening power
 
 
+
+	
+------    
+<div id='id-section97'/>
+### Page 97: 2016-11-04. ms in prep
+
+**first authored**
+1. multiple stressors (submitted)
+2. Curtis, stress in nature; submit to functional ecology
+3. rxn norm of Hsps and CTmax; submit to PNAS
+4. range limits paper with Jordan and Megan ; submit to American Naturalist
+5. Modulation of Hsp ms (in review)
+6. Proteome stability project (a stretch...)    
+
+**with collaborators**    
+
+1. Comparative ramp papers (CP lead?); submit to current biology? 
+2. (co-lead author) thermal niche paper with LChick; submit molecular ecology?  
+3. CNP work with katie miller (submit where? )
