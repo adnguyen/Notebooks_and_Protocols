@@ -127,6 +127,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 95: 2016-11-02](#id-section95). Ancestral trait reconstruction and CTmax PGLS ANBE common garden; corresponds with  [Page 74: 2016-09-28](#id-section74). phylogenetic regressions (PGLS) and anovas    
 * [Page 96: 2016-11-03](#id-section96). notes from skype meeting with KG, potential post doc opp
 * [Page 97: 2016-11-04](#id-section97). ms in prep
+* [Page 98: 2016-11-08](#id-section98). climate cascade meeting
 	
 ------    
 <div id='id-section1'/>
@@ -7421,3 +7422,45 @@ MBL are conveners; convening power
 1. Comparative ramp papers (CP lead?); submit to current biology? 
 2. (co-lead author) thermal niche paper with LChick; submit molecular ecology?  
 3. CNP work with katie miller (submit where? )
+
+
+
+	
+------    
+<div id='id-section98'/>
+Page 98: 2016-11-08.  climate cascade meeting   
+
+1. Project updates:    
+ 	* **Hsp gene expression + Ctmax project:**
+		* figure 3, SHC says to switch back branches
+		* Wrote up methods and results-- go over with Nick then send to SHC   
+		* Submit to PNAS
+ 	* **Multiple stressors ms:**   
+		* submitted **2016-10-24**  
+		* in review **2016-11-01**
+ 	* **Range limits ms**: SHC lab gave verbal edit, still need to incorporate
+ 	* **Thermal niche ms:** Lacey and I working on discussion...eta?     
+ 	* **Stressed in nature MS: Samples to rerun.**       
+  		* update: Curtis can no longer work+ write on project   
+		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
+	* **Proteome stability project:**    
+		* **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
+			* Rerun mass spec, but loading more proteins (Bethany)
+			
+2. **Attending SICB - Jan 3-8 New Orleans**, Give a talk about range limits paper.   
+	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+ 	* Apply for funding. Suitor Travel Grant Deadline is october 31    
+		* **Wrote up suiter award app** Application submitted today 2016-10-18    
+			* Bought hotel, rooming with Emily M., airplane tickets
+
+3. **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
+	* Formatting:    
+		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+			* started outline   
+			
+	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+		1. Intent to graduate: February 1st for May.   
+		2. Send defense committe form to grad college---now   
+		3. Graduate college format check March 4th
+		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+		5. Final thesis April 7th.  
