@@ -7483,3 +7483,94 @@ MBL are conveners; convening power
 	* try framing in terms of integrating *proximal* and *ultimate* explanations   
 3. put rxn norms in better context of theory; what is the alternative to hotter is better?   
 	* Frazier et al. 2006, *AmNat*; the alternative is shifts in rxn norm horizontally, but not vertically= perfect-compensation hypothesis. In other words, biochemical adaptation can overcome rate-limiting effects of low temperature so that rmax is independent of Topt. Not mentioned in this explanation is that there can be constraints at higher temperatures that can potentially cause this pattern. 
+
+### 1. among colony variance
+```R
+ddply(Aph.dat,.(habitat_v2),summarize,CTmax=mean(KO_temp_worker),var=var(KO_temp_worker))
+        habitat_v2    CTmax       var
+1 deciduous forest 41.04248 0.9443724
+2       flat woods 42.77917 0.1750000
+```
+
+
+### PCA of cliamte variables
+
+```R
+bclim<-princomp(scale(cbind(Aph.dat[,21:39])))
+summary(bclim)
+Importance of components:
+                          Comp.1    Comp.2     Comp.3     Comp.4     Comp.5      Comp.6      Comp.7
+Standard deviation     3.6328923 1.7748683 1.19556867 0.77430677 0.46454501 0.335626591 0.215453516
+Proportion of Variance 0.7016431 0.1674725 0.07599067 0.03187406 0.01147273 0.005988581 0.002467848
+Cumulative Proportion  0.7016431 0.8691156 0.94510623 0.97698029 0.98845302 0.994441598 0.996909446
+
+knitr::kable(round(bclim$loadings[,1:2],3))
+|      | Comp.1| Comp.2|
+|:-----|------:|------:|
+|bio1  | -0.269| -0.035|
+|bio2  | -0.144| -0.354|
+|bio3  | -0.268| -0.059|
+|bio4  |  0.271|  0.015|
+|bio5  | -0.249| -0.102|
+|bio6  | -0.267| -0.029|
+|bio7  |  0.267| -0.013|
+|bio8  | -0.214| -0.040|
+|bio9  | -0.265| -0.073|
+|bio10 | -0.258| -0.061|
+|bio11 | -0.270| -0.034|
+|bio12 | -0.231| -0.123|
+|bio13 | -0.230|  0.171|
+|bio14 |  0.078| -0.495|
+|bio15 | -0.215|  0.319|
+|bio16 | -0.238|  0.148|
+|bio17 |  0.058| -0.514|
+|bio18 | -0.248|  0.145|
+|bio19 | -0.145| -0.385|
+```
+
+### **regression models; taking first two pcas that explain 86% of variation**
+
+```R
+pcmod<-lm(KO_temp_worker~Comp.1*habitat_v2+Comp.2*habitat_v2 ,data=Aph.dat)
+summary(stepAIC(pcmod,direction="both"))
+Call:
+lm(formula = KO_temp_worker ~ Comp.1 + habitat_v2 + Comp.2, data = Aph.dat)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.0136 -0.3372  0.1448  0.5228  1.5893 
+
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          41.06999    0.10129 405.476  < 2e-16 ***
+Comp.1               -0.04962    0.03006  -1.651   0.1020    
+habitat_v2flat woods  1.56474    0.30657   5.104 1.68e-06 ***
+Comp.2               -0.09366    0.05213  -1.797   0.0755 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8862 on 96 degrees of freedom
+Multiple R-squared:  0.3797,	Adjusted R-squared:  0.3603 
+F-statistic: 19.59 on 3 and 96 DF,  p-value: 5.466e-10
+```
+### regressions with Tmax, habitat
+
+```R
+umod<-lm(KO_temp_worker~Tmax*habitat_v2 ,data=Aph.dat)
+summary(stepAIC(umod,direction="both"))
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.1134 -0.3010  0.1356  0.5016  2.1504 
+
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          42.98224    1.05520  40.734  < 2e-16 ***
+Tmax                 -0.00648    0.00351  -1.846   0.0679 .  
+habitat_v2flat woods  1.78168    0.24622   7.236 1.08e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8982 on 97 degrees of freedom
+Multiple R-squared:  0.3561,	Adjusted R-squared:  0.3429 
+F-statistic: 26.83 on 2 and 97 DF,  p-value: 5.327e-10
+```
