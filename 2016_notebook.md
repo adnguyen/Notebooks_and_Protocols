@@ -128,7 +128,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 96: 2016-11-03](#id-section96). notes from skype meeting with KG, potential post doc opp
 * [Page 97: 2016-11-04](#id-section97). ms in prep
 * [Page 98: 2016-11-08](#id-section98). climate cascade meeting
-* [Page 99: 2016-11-08](#id-section99). writing session with NJG
+* [Page 99: 2016-11-08](#id-section99). writing session with NJG and stats follow up
 	
 ------    
 <div id='id-section1'/>
@@ -7505,6 +7505,7 @@ Proportion of Variance 0.7016431 0.1674725 0.07599067 0.03187406 0.01147273 0.00
 Cumulative Proportion  0.7016431 0.8691156 0.94510623 0.97698029 0.98845302 0.994441598 0.996909446
 
 knitr::kable(round(bclim$loadings[,1:2],3))
+```
 |      | Comp.1| Comp.2|
 |:-----|------:|------:|
 |bio1  | -0.269| -0.035|
@@ -7526,7 +7527,7 @@ knitr::kable(round(bclim$loadings[,1:2],3))
 |bio17 |  0.058| -0.514|
 |bio18 | -0.248|  0.145|
 |bio19 | -0.145| -0.385|
-```
+
 
 ### **regression models; taking first two pcas that explain 86% of variation**
 
@@ -7632,3 +7633,30 @@ Multiple R-squared:  0.3874,	Adjusted R-squared:  0.3682
 F-statistic: 20.23 on 3 and 96 DF,  p-value: 3.043e-10
 ```
 
+### Hsps; pcas and variance partitioning of CTmax 
+
+```R
+summary(pchsp)
+Importance of components:
+                          Comp.1    Comp.2     Comp.3     Comp.4     Comp.5     Comp.6
+Standard deviation     2.1385967 1.3517804 1.07592411 1.00232658 0.84659220 0.84649220
+Proportion of Variance 0.3906613 0.1560828 0.09887942 0.08581459 0.06121969 0.06120523
+Cumulative Proportion  0.3906613 0.5467441 0.64562350 0.73143809 0.79265778 0.85386301
+
+knitr::kable(round(pchsp$loadings[,1:7],3))
+```
+
+|                    | Comp.1| Comp.2| Comp.3| Comp.4| Comp.5| Comp.6| Comp.7|
+|:-------------------|------:|------:|------:|------:|------:|------:|------:|
+|hsc70               | -0.073| -0.596|  0.071| -0.224| -0.217|  0.055|  0.131|
+|hsp83               | -0.023| -0.593| -0.008|  0.098|  0.293|  0.292|  0.428|
+|hsp40               | -0.023|  0.008|  0.461|  0.803| -0.159|  0.237| -0.098|
+|FC_hsc70_1468_max   | -0.321| -0.160|  0.404| -0.273| -0.043| -0.006| -0.451|
+|FC_hsc70_1468_slope | -0.280| -0.286|  0.217|  0.189|  0.130| -0.629| -0.008|
+|FC_hsc70_1468_Tm    | -0.374|  0.157|  0.226| -0.133| -0.245| -0.283|  0.247|
+|FC_hsp40_541_max    | -0.350| -0.082| -0.324|  0.129| -0.097|  0.273| -0.358|
+|FC_hsp40_541_slope  | -0.292| -0.149| -0.524|  0.171| -0.167| -0.170| -0.242|
+|FC_hsp40_541_Tm     | -0.368|  0.063| -0.260|  0.149| -0.323|  0.130|  0.355|
+|FC_Hsp83_279_max    | -0.350|  0.057|  0.153| -0.213|  0.353|  0.440| -0.207|
+|FC_Hsp83_279_slope  | -0.290|  0.171| -0.145|  0.186|  0.694| -0.167|  0.129|
+|FC_Hsp83_279_Tm     | -0.351|  0.310|  0.171| -0.143| -0.119|  0.194|  0.393|
