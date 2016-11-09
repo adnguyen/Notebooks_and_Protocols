@@ -131,7 +131,9 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 99: 2016-11-08](#id-section99). writing session with NJG and stats follow up
 	* [among colony variance](#id-section99.1)
 	* [PCA of cliamte variables](#id-section99.2)
-	* [regressions PCA of cliamte variables](#id-section99.3)
+	* [CTmax response and regressions with PCA of cliamte variables,mat,Tmax,latitude ](#id-section99.3)
+	* [Hsp PCA](#id-section99.4)
+	* [Ctmax variance partitioning into Hsp rxn norm, phylo, loca env](#id-section99.5)
 	
 ------    
 <div id='id-section1'/>
@@ -7641,6 +7643,8 @@ Multiple R-squared:  0.3874,	Adjusted R-squared:  0.3682
 F-statistic: 20.23 on 3 and 96 DF,  p-value: 3.043e-10
 ```
 
+------    
+<div id='id-section99.4'/>
 ### Hsps; pcas and variance partitioning of CTmax 
 
 ```R
@@ -7698,6 +7702,9 @@ F-statistic: 9.767 on 3 and 37 DF,  p-value: 6.991e-05
 
 ![](https://cloud.githubusercontent.com/assets/4654474/20145096/c45b01f2-a66c-11e6-8d64-86898a420add.jpeg)   
 
+
+------    
+<div id='id-section99.5'/>
 ### Variance partitioning
 
 ```R
