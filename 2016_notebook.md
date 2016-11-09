@@ -7578,6 +7578,10 @@ Multiple R-squared:  0.4091,	Adjusted R-squared:  0.3969
 F-statistic: 33.58 on 2 and 97 DF,  p-value: 8.27e-12
 
 ```
+**Figure**
+![](https://cloud.githubusercontent.com/assets/4654474/20142358/627a29ea-a662-11e6-978c-b98508d4bc15.jpeg)
+
+
 ### regression with MAT
 
 ```R
@@ -7627,3 +7631,4 @@ Residual standard error: 0.8807 on 96 degrees of freedom
 Multiple R-squared:  0.3874,	Adjusted R-squared:  0.3682 
 F-statistic: 20.23 on 3 and 96 DF,  p-value: 3.043e-10
 ```
+
