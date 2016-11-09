@@ -128,6 +128,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 96: 2016-11-03](#id-section96). notes from skype meeting with KG, potential post doc opp
 * [Page 97: 2016-11-04](#id-section97). ms in prep
 * [Page 98: 2016-11-08](#id-section98). climate cascade meeting
+* [Page 99: 2016-11-08](#id-section99). writing session with NJG
 	
 ------    
 <div id='id-section1'/>
@@ -7464,3 +7465,19 @@ MBL are conveners; convening power
 		3. Graduate college format check March 4th
 		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
 		5. Final thesis April 7th.  
+
+
+
+	
+------    
+<div id='id-section99'/>
+### Page 99: 2016-11-08. writing session with NJG   
+**Writing Hsp reaction norm + CTmax ms in PNAS format**   
+
+1. Someting to explore: variance among colony level means of CTmax in open vs closed habitats   
+	* Narrow variance in warmer places could mean more stabilizing selection
+	* 
+2. Try variance partitioning CTmax into Hsp, local environment, and phylogenetics    
+ 	* Make CTmax vs Tmax figures with overlay of habitat type.  
+	* try framing in terms of integrating *proximal* and *ultimate* explanations   
+3. put rxn norms in better context of theory; what is the alternative to hotter is better?   
