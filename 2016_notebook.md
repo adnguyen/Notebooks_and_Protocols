@@ -7556,21 +7556,74 @@ F-statistic: 19.59 on 3 and 96 DF,  p-value: 5.466e-10
 ### regressions with Tmax, habitat
 
 ```R
-umod<-lm(KO_temp_worker~Tmax*habitat_v2 ,data=Aph.dat)
+umod<-lm(KO_temp_worker~bio5*habitat_v2 ,data=Aph.dat)
 summary(stepAIC(umod,direction="both"))
+Call:
+lm(formula = KO_temp_worker ~ bio1 * habitat_v2, data = Aph.dat)
+
 Residuals:
     Min      1Q  Median      3Q     Max 
--4.1134 -0.3010  0.1356  0.5016  2.1504 
+-3.8808 -0.2948  0.1394  0.5549  1.6231 
 
 Coefficients:
-                     Estimate Std. Error t value Pr(>|t|)    
-(Intercept)          42.98224    1.05520  40.734  < 2e-16 ***
-Tmax                 -0.00648    0.00351  -1.846   0.0679 .  
-habitat_v2flat woods  1.78168    0.24622   7.236 1.08e-10 ***
+                           Estimate Std. Error t value Pr(>|t|)    
+(Intercept)               40.289262   0.266504 151.177  < 2e-16 ***
+bio1                       0.006325   0.002090   3.027  0.00317 ** 
+habitat_v2flat woods       4.264228   2.013656   2.118  0.03679 *  
+bio1:habitat_v2flat woods -0.015722   0.010713  -1.468  0.14549    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.8982 on 97 degrees of freedom
-Multiple R-squared:  0.3561,	Adjusted R-squared:  0.3429 
-F-statistic: 26.83 on 2 and 97 DF,  p-value: 5.327e-10
+Residual standard error: 0.8744 on 96 degrees of freedom
+Multiple R-squared:  0.3962,	Adjusted R-squared:  0.3773 
+F-statistic: 20.99 on 3 and 96 DF,  p-value: 1.534e-10
+```
+### regression with MAT
+
+```R
+umod<-lm(KO_temp_worker~bio1*habitat_v2 ,data=Aph.dat)
+summary(stepAIC(umod,direction="both"))
+lm(formula = KO_temp_worker ~ bio1 * habitat_v2, data = Aph.dat)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.8808 -0.2948  0.1394  0.5549  1.6231 
+
+Coefficients:
+                           Estimate Std. Error t value Pr(>|t|)    
+(Intercept)               40.289262   0.266504 151.177  < 2e-16 ***
+bio1                       0.006325   0.002090   3.027  0.00317 ** 
+habitat_v2flat woods       4.264228   2.013656   2.118  0.03679 *  
+bio1:habitat_v2flat woods -0.015722   0.010713  -1.468  0.14549    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8744 on 96 degrees of freedom
+Multiple R-squared:  0.3962,	Adjusted R-squared:  0.3773 
+F-statistic: 20.99 on 3 and 96 DF,  p-value: 1.534e-10
+```
+
+### regression with lattitude
+```R
+latmod<-lm(KO_temp_worker~lat*habitat_v2 ,data=Aph.dat)
+summary(stepAIC(latmod,direction="both"))
+Call:
+lm(formula = KO_temp_worker ~ lat * habitat_v2, data = Aph.dat)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.9251 -0.2851  0.1050  0.5593  1.6421 
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)              43.26209    0.80838  53.517  < 2e-16 ***
+lat                      -0.05748    0.02079  -2.765  0.00682 ** 
+habitat_v2flat woods     -2.95972    2.90928  -1.017  0.31155    
+lat:habitat_v2flat woods  0.13632    0.09109   1.497  0.13777    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8807 on 96 degrees of freedom
+Multiple R-squared:  0.3874,	Adjusted R-squared:  0.3682 
+F-statistic: 20.23 on 3 and 96 DF,  p-value: 3.043e-10
 ```
