@@ -7660,3 +7660,32 @@ knitr::kable(round(pchsp$loadings[,1:7],3))
 |FC_Hsp83_279_max    | -0.350|  0.057|  0.153| -0.213|  0.353|  0.440| -0.207|
 |FC_Hsp83_279_slope  | -0.290|  0.171| -0.145|  0.186|  0.694| -0.167|  0.129|
 |FC_Hsp83_279_Tm     | -0.351|  0.310|  0.171| -0.143| -0.119|  0.194|  0.393|
+
+**Some stats**
+
+```R
+summary(lm(jj$KO_temp_worker~pchsp$scores[,1]+pchsp$scores[,2]+pchsp$scores[,3]))
+
+Call:
+lm(formula = jj$KO_temp_worker ~ pchsp$scores[, 1] + pchsp$scores[, 
+    2] + pchsp$scores[, 3])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.15358 -0.37044  0.04846  0.34646  1.54100 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       41.570122   0.098692 421.211  < 2e-16 ***
+pchsp$scores[, 1] -0.242155   0.046148  -5.247 6.55e-06 ***
+pchsp$scores[, 2] -0.001745   0.073009  -0.024    0.981    
+pchsp$scores[, 3]  0.121858   0.091727   1.328    0.192    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6319 on 37 degrees of freedom
+Multiple R-squared:  0.4419,	Adjusted R-squared:  0.3967 
+F-statistic: 9.767 on 3 and 37 DF,  p-value: 6.991e-05
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/20145096/c45b01f2-a66c-11e6-8d64-86898a420add.jpeg)
