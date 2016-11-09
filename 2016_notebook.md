@@ -129,6 +129,9 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 97: 2016-11-04](#id-section97). ms in prep
 * [Page 98: 2016-11-08](#id-section98). climate cascade meeting
 * [Page 99: 2016-11-08](#id-section99). writing session with NJG and stats follow up
+	* [among colony variance](#id-section99.1)
+	* [PCA of cliamte variables](#id-section99.2)
+	* [regressions PCA of cliamte variables](#id-section99.3)
 	
 ------    
 <div id='id-section1'/>
@@ -7484,6 +7487,8 @@ MBL are conveners; convening power
 3. put rxn norms in better context of theory; what is the alternative to hotter is better?   
 	* Frazier et al. 2006, *AmNat*; the alternative is shifts in rxn norm horizontally, but not vertically= perfect-compensation hypothesis. In other words, biochemical adaptation can overcome rate-limiting effects of low temperature so that rmax is independent of Topt. Not mentioned in this explanation is that there can be constraints at higher temperatures that can potentially cause this pattern. 
 
+------    
+<div id='id-section99.1'/>
 ### 1. among colony variance
 ```R
 ddply(Aph.dat,.(habitat_v2),summarize,CTmax=mean(KO_temp_worker),var=var(KO_temp_worker))
@@ -7492,7 +7497,7 @@ ddply(Aph.dat,.(habitat_v2),summarize,CTmax=mean(KO_temp_worker),var=var(KO_temp
 2       flat woods 42.77917 0.1750000
 ```
 
-
+<div id='id-section99.2'/>
 ### PCA of cliamte variables
 
 ```R
@@ -7528,6 +7533,9 @@ knitr::kable(round(bclim$loadings[,1:2],3))
 |bio18 | -0.248|  0.145|
 |bio19 | -0.145| -0.385|
 
+
+------    
+<div id='id-section99.3'/>
 
 ### **regression models; taking first two pcas that explain 86% of variation**
 
@@ -7742,3 +7750,6 @@ Controlling 1 table X
 Use function ‘rda’ to test significance of fractions of interest
 ```
 ![](https://cloud.githubusercontent.com/assets/4654474/20145401/0170bffe-a66e-11e6-96a8-4284d9905452.jpeg)
+
+**Slightly better figure**
+![](https://cloud.githubusercontent.com/assets/4654474/20146389/c31f76c4-a671-11e6-8290-93aa0900bb98.jpg)
