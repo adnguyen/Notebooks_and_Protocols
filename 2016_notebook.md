@@ -7559,24 +7559,24 @@ F-statistic: 19.59 on 3 and 96 DF,  p-value: 5.466e-10
 umod<-lm(KO_temp_worker~bio5*habitat_v2 ,data=Aph.dat)
 summary(stepAIC(umod,direction="both"))
 Call:
-lm(formula = KO_temp_worker ~ bio1 * habitat_v2, data = Aph.dat)
+lm(formula = KO_temp_worker ~ bio5 + habitat_v2, data = Aph.dat)
 
 Residuals:
     Min      1Q  Median      3Q     Max 
--3.8808 -0.2948  0.1394  0.5549  1.6231 
+-3.8297 -0.3348  0.2332  0.5586  1.4826 
 
 Coefficients:
-                           Estimate Std. Error t value Pr(>|t|)    
-(Intercept)               40.289262   0.266504 151.177  < 2e-16 ***
-bio1                       0.006325   0.002090   3.027  0.00317 ** 
-habitat_v2flat woods       4.264228   2.013656   2.118  0.03679 *  
-bio1:habitat_v2flat woods -0.015722   0.010713  -1.468  0.14549    
+                      Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          37.237343   1.084085  34.349  < 2e-16 ***
+bio5                  0.012855   0.003649   3.523 0.000652 ***
+habitat_v2flat woods  1.376747   0.255980   5.378  5.2e-07 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.8744 on 96 degrees of freedom
-Multiple R-squared:  0.3962,	Adjusted R-squared:  0.3773 
-F-statistic: 20.99 on 3 and 96 DF,  p-value: 1.534e-10
+Residual standard error: 0.8605 on 97 degrees of freedom
+Multiple R-squared:  0.4091,	Adjusted R-squared:  0.3969 
+F-statistic: 33.58 on 2 and 97 DF,  p-value: 8.27e-12
+
 ```
 ### regression with MAT
 
