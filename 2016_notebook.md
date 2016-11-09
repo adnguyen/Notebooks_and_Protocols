@@ -7479,5 +7479,7 @@ MBL are conveners; convening power
 	* 
 2. Try variance partitioning CTmax into Hsp, local environment, and phylogenetics    
  	* Make CTmax vs Tmax figures with overlay of habitat type.  
+		* regress against latitude and PCA of climate variables too
 	* try framing in terms of integrating *proximal* and *ultimate* explanations   
 3. put rxn norms in better context of theory; what is the alternative to hotter is better?   
+	* Frazier et al. 2006, *AmNat*; the alternative is shifts in rxn norm horizontally, but not vertically= perfect-compensation hypothesis. In other words, biochemical adaptation can overcome rate-limiting effects of low temperature so that rmax is independent of Topt. Not mentioned in this explanation is that there can be constraints at higher temperatures that can potentially cause this pattern. 
