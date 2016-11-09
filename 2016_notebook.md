@@ -7688,4 +7688,57 @@ Multiple R-squared:  0.4419,	Adjusted R-squared:  0.3967
 F-statistic: 9.767 on 3 and 37 DF,  p-value: 6.991e-05
 ```
 
-![](https://cloud.githubusercontent.com/assets/4654474/20145096/c45b01f2-a66c-11e6-8d64-86898a420add.jpeg)
+![](https://cloud.githubusercontent.com/assets/4654474/20145096/c45b01f2-a66c-11e6-8d64-86898a420add.jpeg)   
+
+### Variance partitioning
+
+```R
+var10<- varpart(jj$KO_temp_worker, ~ Axis.1 + Axis.2+ Axis.3+ Axis.4+Axis.5+Axis.6+Axis.7+Axis.8+Axis.9, ~bio1+bio5+habitat_v2,~Hsppc1+Hsppc2,data=nw)
+var10
+plot(var10)
+
+Partition of variance in RDA 
+
+Call: varpart(Y = jj$KO_temp_worker, X = ~Axis.1 + Axis.2 + Axis.3 + Axis.4 +
+Axis.5 + Axis.6 + Axis.7 + Axis.8 + Axis.9, ~bio1 + bio5 + habitat_v2, ~Hsppc1
++ Hsppc2, data = nw)
+
+Explanatory tables:
+X1:  ~Axis.1 + Axis.2 + Axis.3 + Axis.4 + Axis.5 + Axis.6 + Axis.7 + Axis.8 + Axis.9
+X2:  ~bio1 + bio5 + habitat_v2
+X3:  ~Hsppc1 + Hsppc2 
+
+No. of explanatory tables: 3 
+Total variation (SS): 26.477 
+            Variance: 0.66191 
+No. of observations: 41 
+
+Partition table:
+                      Df R.square Adj.R.square Testable
+[a+d+f+g] = X1         9  0.72027      0.63906     TRUE
+[b+d+e+g] = X2         3  0.64967      0.62126     TRUE
+[c+e+f+g] = X3         2  0.41531      0.38454     TRUE
+[a+b+d+e+f+g] = X1+X2 12  0.78605      0.69435     TRUE
+[a+c+d+e+f+g] = X1+X3 11  0.76028      0.66936     TRUE
+[b+c+d+e+f+g] = X2+X3  5  0.67973      0.63398     TRUE
+[a+b+c+d+e+f+g] = All 14  0.80893      0.70604     TRUE
+Individual fractions                                   
+[a] = X1 | X2+X3       9               0.07206     TRUE
+[b] = X2 | X1+X3       3               0.03668     TRUE
+[c] = X3 | X1+X2       2               0.01169     TRUE
+[d]                    0               0.21275    FALSE
+[e]                    0               0.01861    FALSE
+[f]                    0               0.00103    FALSE
+[g]                    0               0.35322    FALSE
+[h] = Residuals                        0.29396    FALSE
+Controlling 1 table X                                  
+[a+d] = X1 | X3        9               0.28482     TRUE
+[a+f] = X1 | X2        9               0.07309     TRUE
+[b+d] = X2 | X3        3               0.24944     TRUE
+[b+e] = X2 | X1        3               0.05529     TRUE
+[c+e] = X3 | X1        2               0.03029     TRUE
+[c+f] = X3 | X2        2               0.01271     TRUE
+---
+Use function ‘rda’ to test significance of fractions of interest
+```
+![](https://cloud.githubusercontent.com/assets/4654474/20145401/0170bffe-a66e-11e6-96a8-4284d9905452.jpeg)
