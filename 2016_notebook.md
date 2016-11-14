@@ -133,8 +133,11 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 	* [PCA of cliamte variables](#id-section99.2)
 	* [CTmax response and regressions with PCA of cliamte variables,mat,Tmax,latitude ](#id-section99.3)
 	* [Hsp PCA](#id-section99.4)
-	* [Ctmax variance partitioning into Hsp rxn norm, phylo, loca env](#id-section99.5)
+	* [Ctmax variance partitioning into Hsp rxn norm, phylo, loca env](#id-section99.5)    
 	
+* [Page 100: 2016-11-14 & 2016-11-15](#id-section100). climate cascade meeting  
+
+
 ------    
 <div id='id-section1'/>
 ### Page 1: 2016-05-13. Indirect genetic effects.
@@ -7758,5 +7761,46 @@ Use function ‘rda’ to test significance of fractions of interest
 ```
 ![](https://cloud.githubusercontent.com/assets/4654474/20145401/0170bffe-a66e-11e6-96a8-4284d9905452.jpeg)
 
-**Slightly better figure**
+**Slightly better figure**    
+
 ![](https://cloud.githubusercontent.com/assets/4654474/20146389/c31f76c4-a671-11e6-8290-93aa0900bb98.jpg)
+
+
+
+
+
+
+------    
+<div id='id-section100'/>
+### Page 100: 2016-11-14 & 2016-11-15. climate cascade meeting     
+
+1. Project updates:    
+ 	* **Hsp gene expression + Ctmax project:**
+		* figure 3, SHC says to switch back branches
+		* Wrote up methods and results-- go over with Nick then send to SHC   
+		* Submit to PNAS  
+ 	* **Multiple stressors ms:**   
+		* submitted **2016-10-24** ; in review **2016-11-01**  
+ 	* **Range limits ms**: SHC lab gave verbal edit, still need to incorporate
+ 	* **Thermal niche ms:** Lacey and I working on discussion...eta?     
+ 	* **Stressed in nature MS: Samples to rerun.**       
+  		* update: Curtis can no longer work+ write on project   
+		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
+	* **Proteome stability project:**    
+		* **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
+			* Rerun mass spec, but loading more proteins (Bethany)
+			
+2. **Attending SICB - Jan 3-8 New Orleans**, Give a talk about range limits paper.   
+	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+ 	* Support with Suiter Prize! $1,000
+
+3. **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
+	* Formatting:    
+		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+			* started outline   
+	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+		1. Intent to graduate: February 1st for May.   
+		2. Send defense committe form to grad college---now   
+		3. Graduate college format check March 4th
+		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+		5. Final thesis April 7th.  
