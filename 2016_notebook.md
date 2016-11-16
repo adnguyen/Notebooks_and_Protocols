@@ -136,6 +136,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 	* [Ctmax variance partitioning into Hsp rxn norm, phylo, loca env](#id-section99.5)    
 	
 * [Page 100: 2016-11-14 & 2016-11-15](#id-section100). climate cascade meeting  
+* [Page 101: 2016-11-16](#id-section101). Hsp reaction norm stats; adding quadratic term
 
 
 ------    
@@ -7804,3 +7805,32 @@ Use function ‘rda’ to test significance of fractions of interest
 		3. Graduate college format check March 4th
 		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
 		5. Final thesis April 7th.  
+
+
+------    
+<div id='id-section101'/>
+
+### Page 101: 2016-11-16Hsp reaction norm stats; adding quadratic term
+
+```R
+lm(formula = KO_temp_worker ~ bio5 + habitat_v2 + I(bio5^2), 
+    data = Aph.dat)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.6123 -0.3293  0.1297  0.4772  1.8485 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          -4.4102626 12.5885230  -0.350 0.726851    
+bio5                  0.2990131  0.0862737   3.466 0.000792 ***
+habitat_v2flat woods  1.5151487  0.2472431   6.128 1.96e-08 ***
+I(bio5^2)            -0.0004877  0.0001469  -3.320 0.001275 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8192 on 96 degrees of freedom
+Multiple R-squared:   0.47,	Adjusted R-squared:  0.4534 
+F-statistic: 28.37 on 3 and 96 DF,  p-value: 3.191e-13
+
+```
