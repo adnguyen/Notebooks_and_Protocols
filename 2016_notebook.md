@@ -137,7 +137,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 	
 * [Page 100: 2016-11-14 & 2016-11-15](#id-section100). climate cascade meeting  
 * [Page 101: 2016-11-16](#id-section101). Hsp reaction norm stats; adding quadratic term
-* [Page 102: 2016-11-22](#id-sectin102). climate cascade to do list
+* [Page 102: 2016-11-22](#id-section102). climate cascade to do list
 
 ------    
 <div id='id-section1'/>
