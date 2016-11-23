@@ -7846,7 +7846,7 @@ F-statistic: 28.37 on 3 and 96 DF,  p-value: 3.191e-13
  	* **Multiple stressors ms:**   
 		* **major revisions**
  	* **Range limits ms**: SHC lab gave verbal edit, still need to incorporate
- 	* **Thermal niche ms:** In my hands, get to it mid-december
+ 	* **Thermal niche ms:** In my hands, get to it mid-december    
 		*actionable items:    
 			* recheck stats   
 			* recheck figures    
