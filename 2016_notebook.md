@@ -7846,7 +7846,12 @@ F-statistic: 28.37 on 3 and 96 DF,  p-value: 3.191e-13
  	* **Multiple stressors ms:**   
 		* **major revisions**
  	* **Range limits ms**: SHC lab gave verbal edit, still need to incorporate
- 	* **Thermal niche ms:** Lacey and I working on discussion...eta?     
+ 	* **Thermal niche ms:** In my hands, get to it mid-december
+		*actionable items:
+			* recheck stats
+			* recheck figures
+			* make transitions between paragraphs in discussion 
+			
  	* **Stressed in nature MS: Samples to rerun.**       
   		* update: Curtis can no longer work+ write on project   
 		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
