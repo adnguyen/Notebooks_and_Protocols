@@ -7904,7 +7904,7 @@ F-statistic: 28.37 on 3 and 96 DF,  p-value: 3.191e-13
 			* Rerun mass spec, but loading more proteins (Bethany)
 			
 2. **Attending SICB - Jan 3-8 New Orleans**, Give a talk about range limits paper.   
-	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+	* **Practice talks: (Decemeber 7 2016 in EEEB)**
  	* Support with Suiter Prize! $1,000
 
 3. **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
