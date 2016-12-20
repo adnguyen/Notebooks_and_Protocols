@@ -139,7 +139,8 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 101: 2016-11-16](#id-section101). Hsp reaction norm stats; adding quadratic term
 * [Page 102: 2016-11-22](#id-section102). climate cascade to do list
 * [Page 103: 2016-12-06](#id-section103). climate cascade update
-* [Page 104: 2016-12-07](#id-section104). climate cascade update
+* [Page 104: 2016-12-19](#id-section104). climate cascade update
+* [Page 105: 2016-12-20](#id-section105). Reading a few papers
 
 ------    
 <div id='id-section1'/>
@@ -7920,7 +7921,7 @@ F-statistic: 28.37 on 3 and 96 DF,  p-value: 3.191e-13
 		5. Final thesis April 7th.  
 ------    
 <div id='id-section104'/>
-### Page 104: 2016-12-07. climate cascade update
+### Page 104: 2016-12-19. climate cascade update
 
 
 1. Project updates:    
@@ -7952,3 +7953,33 @@ F-statistic: 28.37 on 3 and 96 DF,  p-value: 3.191e-13
 		3. Graduate college format check March 4th
 		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
 		5. Final thesis April 7th.  
+		
+
+
+------    
+<div id='id-section105'/>
+### Page 105: 2016-12-20. Reading a few papers
+
+
+Reading some papers:
+
+1. There is a cool paper by [Gilchrist and Huey 2001, Evolution,](http://faculty.washington.edu/hueyrb/pdfs/gilchr_evol.pdf) that looks at the cross-generational effect of temperature on fitness in fruit flies. Ones reared from higher temperatures had offspring with higher fitness. This fitness benefit was gained by speeding up development.         
+
+Gilchrist GW, Huey RB (2001) PARENTAL AND DEVELOPMENTAL TEMPERATURE EFFECTS ON THE THERMAL DEPENDENCE OF FITNESS IN DROSOPHILA MELANOGASTER. Evolution 55:209–214. doi: 10.1111/j.0014-3820.2001.tb01287.x
+
+2. Cool paper by [Huey and Slatkin 1976, The Quarterly Review of Biology](http://www.jstor.org/stable/pdf/2824863.pdf) which developed the first thermoregulation model in lizards. They construct a mathematical model to quantify the costs and benefits of thermoregulation.     
+
+Huey RB, Slatkin M (1976) Cost and Benefits of Lizard Thermoregulation. The Quarterly Review of Biology 51:363–384.     
+
+	* Other follow up models:
+		1. Vickers M, Manicom C, Schwarzkopf L (2011) Extending the cost-benefit model of
+thermoregulation: High-temperature environments. Am Nat 177(4):452–461.     
+		2. Christian KA, Tracy CR, Tracy CR (2006) Evaluating thermoregulation in reptiles: An
+appropriate null model. Am Nat 168(3):421–430.       
+		3. Sears MW, Angilletta MJ, Schuler MS, et al (2016) Configuration of the thermal landscape determines thermoregulatory performance of ectotherms. PNAS 201604824. doi: 10.1073/pnas.1604824113   (previous citations 1 and 2 found from this citation) [link](http://www.pnas.org/content/early/2016/08/30/1604824113)   
+
+
+3. One of [Huey's Science papers](http://www.sciencemag.org/content/313/5794/1773) that shows different populations from 3 continents track chromosomal changes with climate change. 
+
+Balanyá J, Oller JM, Huey RB, et al (2006) Global Genetic Change Tracks Global Climate Warming in Drosophila subobscura. Science 313:1773–1775. doi: 10.1126/science.1131002
+
