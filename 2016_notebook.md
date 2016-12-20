@@ -139,6 +139,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 101: 2016-11-16](#id-section101). Hsp reaction norm stats; adding quadratic term
 * [Page 102: 2016-11-22](#id-section102). climate cascade to do list
 * [Page 103: 2016-12-06](#id-section103). climate cascade update
+* [Page 104: 2016-12-07](#id-section104). climate cascade update
 
 ------    
 <div id='id-section1'/>
@@ -7906,6 +7907,40 @@ F-statistic: 28.37 on 3 and 96 DF,  p-value: 3.191e-13
 2. **Attending SICB - Jan 3-8 New Orleans**, Give a talk about range limits paper.   
 	* **Practice talks: (Decemeber 7 2016 in EEEB)**
  	* Support with Suiter Prize! $1,000
+
+3. **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
+	* Formatting:    
+		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+			* started outline   
+	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+		1. Intent to graduate: February 1st for May.   
+		2. Send defense committe form to grad college---now   
+		3. Graduate college format check March 4th
+		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+		5. Final thesis April 7th.  
+------    
+<div id='id-section104'/>
+### Page 104: 2016-12-07. climate cascade update
+
+
+1. Project updates:    
+ 	* **Hsp gene expression + Ctmax project:**
+		* rewrite results, intro and send out to NJG and SHC  (methods done)    
+		* Submit to PNAS  
+ 	* **Multiple stressors ms:**   
+		* sent SHC revisions last week
+			
+ 	* **Range limits ms**: SHC lab gave verbal edit, still need to incorporate     
+ 	* **Thermal niche ms:** Send new draft to Lacy tomorrow.    		
+ 	* **Stressed in nature MS: Samples to rerun.**       
+  		* update: Curtis can no longer work+ write on project   
+		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
+	* **Proteome stability project:**    
+		* **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
+			* Rerun mass spec, but loading more proteins (Bethany)
+			
+2. **Attending SICB - Jan 3-8 New Orleans**, on range limits paper.   
+	* SICB talk Jan 8 2017, Sunday, 11:45AM.    
 
 3. **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
 	* Formatting:    
