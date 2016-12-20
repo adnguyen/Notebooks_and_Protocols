@@ -7965,18 +7965,16 @@ Reading some papers:
 
 1. There is a cool paper by [Gilchrist and Huey 2001, Evolution,](http://faculty.washington.edu/hueyrb/pdfs/gilchr_evol.pdf) that looks at the cross-generational effect of temperature on fitness in fruit flies. Ones reared from higher temperatures had offspring with higher fitness. This fitness benefit was gained by speeding up development.         
 
-Gilchrist GW, Huey RB (2001) PARENTAL AND DEVELOPMENTAL TEMPERATURE EFFECTS ON THE THERMAL DEPENDENCE OF FITNESS IN DROSOPHILA MELANOGASTER. Evolution 55:209–214. doi: 10.1111/j.0014-3820.2001.tb01287.x
+	* Gilchrist GW, Huey RB (2001) PARENTAL AND DEVELOPMENTAL TEMPERATURE EFFECTS ON THE THERMAL DEPENDENCE OF FITNESS IN DROSOPHILA MELANOGASTER. Evolution 55:209–214. doi: 10.1111/j.0014-3820.2001.tb01287.x     
 
 2. Cool paper by [Huey and Slatkin 1976, The Quarterly Review of Biology](http://www.jstor.org/stable/pdf/2824863.pdf) which developed the first thermoregulation model in lizards. They construct a mathematical model to quantify the costs and benefits of thermoregulation.     
-
-Huey RB, Slatkin M (1976) Cost and Benefits of Lizard Thermoregulation. The Quarterly Review of Biology 51:363–384.     
-
-	* Other follow up models:
+	* Huey RB, Slatkin M (1976) Cost and Benefits of Lizard Thermoregulation. The Quarterly Review of Biology 51:363–384.     
+	* Other follow up models:      
 		1. Vickers M, Manicom C, Schwarzkopf L (2011) Extending the cost-benefit model of
 thermoregulation: High-temperature environments. Am Nat 177(4):452–461.     
 		2. Christian KA, Tracy CR, Tracy CR (2006) Evaluating thermoregulation in reptiles: An
 appropriate null model. Am Nat 168(3):421–430.       
-		3. Sears MW, Angilletta MJ, Schuler MS, et al (2016) Configuration of the thermal landscape determines thermoregulatory performance of ectotherms. PNAS 201604824. doi: 10.1073/pnas.1604824113   (previous citations 1 and 2 found from this citation) [link](http://www.pnas.org/content/early/2016/08/30/1604824113)   
+		3. Sears MW, Angilletta MJ, Schuler MS, et al (2016) Configuration of the thermal landscape determines thermoregulatory performance of ectotherms. PNAS 201604824. doi: 10.1073/pnas.1604824113   (previous citations 1 and 2 found from this citation) [link](http://www.pnas.org/content/early/2016/08/30/1604824113)      
 
 
 3. One of [Huey's Science papers](http://www.sciencemag.org/content/313/5794/1773) that shows different populations from 3 continents track chromosomal changes with climate change. 
