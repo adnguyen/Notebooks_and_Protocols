@@ -23,6 +23,10 @@ This repo shares my protocols and notebooks of ongoing work with the aim of capt
   * Evolution meeting
   * Phylogenetics of Aphaenogaster    
 
+* [2017_Notebook](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md): This notebook logs     
+  * climate cascade meetings and projects (dissertation work)
+ 	* Conferences (SICB)
+
 
 # List of protocols
 
