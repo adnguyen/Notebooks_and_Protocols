@@ -1,8 +1,8 @@
 # 2017 General Notebook
 
-### Author: Andrew D. Nguyen
-### Affiliation: Biology Department, University of Vermont   
-### Contact: anbe642@gmail.com   
+### Author: Andrew D. Nguyen, [Evolutionary Physiologist](https://adnguyen.github.io)      
+### Affiliation: Biology Department, University of Vermont      
+### Contact: anbe642@gmail.com     
 
 ### Date started: 2017-01-01    
 ### Date end (last modified): ongoing   
@@ -16,13 +16,16 @@
 Notebook for 2017 new year. It'll log the rest of my dissertation and potentially new post doc ideas and/or projects
 
 ## List of projects and description   
-* Hsp rxn norm: CTmax and rxn norm of Hsp expression measured across forest ants from Fl to Maine.   
-* Range limits: Modelling + measured their cold physiology in forest ants of Maine and Vt.  
-
+* Hsp rxn norm: Understanding how the local thermal environment shapes thermal tolerance and stress response (using Hsps as a proxy for stress) in forest ants of the genus *Aphaenogaster*. CTmax and rxn norm of Hsp expression measured across forest ants from Fl to Maine.   
+* Range limits: Identifying the factors/forces that set range limits in common forest ants (*Aphaenogaster picea*). Modelling + measured their cold physiology in forest ants of Maine and Vt.  
+* Multiple stressors: Understanding how progressive desiccation and starvation impacts thermal tolerances in *A. picea*. We pre-treated with desiccation and starvation and then measured KO-time. We also measured the stress response.        
+* Thermal niche paper: Collaborative paper understanding how the environment shapes the ability to withstand cold and hot temperatures. In field and in a common garden, we measured upper and lower thermal limits of ants from GA-Maine (2 species).    
+* Stress in nature: Are ants stressed under experimental warming that projects climate change? Ants were collected from warming chambers (0-5 C increase from ambient) and we measured their stress response.    
+*  
 
 ###Table of Contents (Layout follows Page number: Date. Title of entry)    
 * [Page 1: 2017-01-01](#id-section1). SICB meeting
-* [Page 2: ](#id-section2). 
+* [Page 2: 2017-01-03](#id-section2). Yearly goals
 * [Page 3:](#id-section3).
 * [Page 4:](#id-section4).
 * [Page 5:](#id-section5).
@@ -225,7 +228,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 
 ------
 <div id='id-section1'/>
-### Page 1: 2016-01-01. Society for Integrative and Comparative Physiology (SICB) meeting in New Orleans     
+### Page 1: 2017-01-01. Society for Integrative and Comparative Physiology (SICB) meeting in New Orleans     
 
 ### Table of talks I'd like to attend     
 
@@ -315,12 +318,20 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 |Sunday, Jan8    |14:45       |220                    |Schoenle                         |Why Does Malaria Infection Reduce Fitness in Wild Birds?: A Test of Physiological Mechanisms                                                                                                        |
 |Sunday, Jan8    |15:00       |222                    |Leary                            |Acute Stress is a Target of Intra- and Intersexual Selection in the Green Treefrog, Hyla cinerea: Implications for Fitness, Honest Signals, and the Evolution of Endocrine-based Acoustic Armaments |   
 
-
-
-
 ------
 <div id='id-section2'/>
-### Page 2: 
+### Page 2: 2017-01-03. Yearly Goals
+
+1. Submit and Publish 3 manuscripts: range limits, Hsp rxn norm, and multiple stressors (also thermal niche paper).    
+2. Get a post doc. This'll probably involve learning a new study system. And also sending out tons of applications.      
+3. Learn and build a shiny app.    
+4. Learn and become more proficient in statistics (Machine learning?, Baysian, predictive modelling, mixed effects modelling, eigentensor analyses).     
+	* Quantitative genetics: more statistical genetics   
+	
+5. Form new collaborations? It'd be awesome to work with Brent Sinclair, Brent Lockwood, Joel Kingsolver, Caroline Williams, Jon Stillman, Alex Gunderson.     
+6. Participate in a meta-analysis? Would be cool. 
+7. Learn more physiology: Q10, metabolism related topics, lipid membranes, metabolites.   
+
 ------
 <div id='id-section3'/>
 ### Page 3:
