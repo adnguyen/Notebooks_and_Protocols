@@ -26,7 +26,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 ###Table of Contents (Layout follows Page number: Date. Title of entry)    
 * [Page 1: 2017-01-01](#id-section1). SICB meeting
 * [Page 2: 2017-01-03](#id-section2). Yearly goals
-* [Page 3:](#id-section3).
+* [Page 3: 2017-01-10](#id-section3). Status of projects
 * [Page 4:](#id-section4).
 * [Page 5:](#id-section5).
 * [Page 6:](#id-section6).
@@ -334,7 +334,36 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 
 ------
 <div id='id-section3'/>
-### Page 3:
+### Page 3: 2017-01-10. Status of Projects    
+
+1. Project updates:    
+ 	* **Hsp gene expression + Ctmax project:**
+		* rewrite results, intro and send out to NJG and SHC  (methods done)    
+		* Submit to PNAS  
+ 	* **Multiple stressors ms:**   
+		* In SHC's hands, due 2017-02-14
+			
+ 	* **Range limits ms**: SHC lab gave verbal edit, still need to incorporate     
+ 	* **Thermal niche ms:** Lacy to check intro, and add refs.    		
+ 	* **Stressed in nature MS: Samples to rerun.**       
+  		* update: Curtis can no longer work+ write on project   
+		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
+	* **Proteome stability project:**    
+		* **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
+			* Rerun mass spec, but loading more proteins (Bethany)
+			
+2. **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
+	* Formatting:    
+		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+			* started outline   
+	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+		1. Intent to graduate: February 1st for May.   
+		2. Send defense committe form to grad college---now   
+		3. Graduate college format check March 4th
+		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+		5. Final thesis April 7th.  
+		
+
 ------
 <div id='id-section4'/>
 ### Page 4:
