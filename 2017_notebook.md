@@ -401,23 +401,23 @@ Ant colonies experience temperature fluctuations throughout the day and season. 
 2. Do ant colonies utilize different genotypes to forage throughout the day and season? 
 
 **Hypotheses**  
-1. The number of fathers increases the amount of phenotypic variatnce in upper thermal limits.  
-2. There is genetic structuring in the foragers throughout the day and season. 
+1. The number of fathers increases the amount of phenotypic variatnce in upper thermal limits.    
+2. There is genetic structuring in the foragers throughout the day and season.    
 
 **Predictions**    
-1. Additive genetic variance in upper thermal limits will be proportional to the number of fathers.   
-2. Thermally tolerant genotypes perform during the warmest parts of the day and vice versa for more cool tolerant genotypes. 
-3. The more thermally tolerant genotypes start off at low frequency early on in the season, but increase in frequency at peak summer, then decrease again. 
+1. Additive genetic variance in upper thermal limits will be proportional to the number of fathers.     
+2. Thermally tolerant genotypes perform during the warmest parts of the day and vice versa for more cool tolerant genotypes.    
+3. The more thermally tolerant genotypes start off at low frequency early on in the season, but increase in frequency at peak summer, then decrease again.    
 
-**Experimental Design**
-1. Document the natural history of 10 pogo colonies, to tune for sampling
-2. If there is like 10 foraging bouts, or 10 time slices through the day, sample ~30 ants for each colony at each time slice.
-3. Phenotype each ant: measure morphology (head width, leg lengths, alitrunk length, etc), measure upper thermal limit
-4. Pool ants at each time slice, isolate DNA, and then pool-seq 
+**Experimental Design**   
+1. Document the natural history of 10 pogo colonies, to tune for sampling   
+2. If there is like 10 foraging bouts, or 10 time slices through the day, sample ~30 ants for each colony at each time slice.   
+3. Phenotype each ant: measure morphology (head width, leg lengths, alitrunk length, etc), measure upper thermal limit   
+4. Pool ants at each time slice, isolate DNA, and then pool-seq     
 
 **Critical Results or Alternative outcomes**   
-1. Positive relationship between parentage and phenotypic variance. 
-2. Structuring of alleles throughout the day or season. Some start off low, increase, then decrease in frequence.  This would indicate seasonal adaptation.    
+1. Positive relationship between parentage and phenotypic variance.    
+2. Structuring of alleles throughout the day or season. Some start off low, increase, then decrease in frequence.  This would indicate seasonal adaptation.     
 
 
 ------
