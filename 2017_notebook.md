@@ -392,11 +392,11 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 ### Page 5: 2017-01-17. Project idea: The impact of temperature variation on ant colonly level performance.     
 
 **Background**   
-Ant colonies experience temperature fluctuations throughout the day and season. In response to temperature variation, ants must be able to forage under cool and hot conditions. One way to achieve high performance in the face of temperature variation is for the colony to match individual level performance with shifting temperatures. For example, for colonies with diverse genetic structures, some genotypes may forage better under cool or hot conditions. Multiply mated queens (*Pogonomyrmex*) will produce offspring with more phenotypic variation in traits, compared to singly mated queens (*Aphaenogaster*). 
+Ant colonies experience temperature fluctuations throughout the day and season. In response to temperature variation, ants must be able to forage under cool and hot conditions. One way to achieve high performance in the face of temperature variation is for the colony to match individual level performance with shifting temperatures. For example, for colonies with diverse genetic structures, some genotypes may forage better under cool or hot conditions. Multiply mated queens (*Pogonomyrmex*) will produce offspring with more phenotypic variation in traits, compared to singly mated queens (*Aphaenogaster*).     
 
 **Notes:** Need to actually verify that foraging efficiency differs throughout the day in a colony, aka need to know more natural history. Look up Deborah Gordon's work. How will you address the confounding issue of demographic effects? Meaning what if there is genetic clumping of sperm and it corresponds to age polyethism, leading to the covariance between age and genotype.    
 
-**Question**
+**Question**   
 1. Is the amount of physiological variation in upper thermal limits reflected in the number of fathers?    
 2. Do ant colonies utilize different genotypes to forage throughout the day and season? 
 
