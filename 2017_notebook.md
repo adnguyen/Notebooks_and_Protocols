@@ -29,7 +29,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 3: 2017-01-10](#id-section3). Status of projects
 * [Page 4: 2017-01-17](#id-section4). Displaying hierarchical structure of a repo or set of directories in the terminal with tree command
 * [Page 5: 2017-01-17](#id-section5). Project idea: The impact of temperature variation on ant colonly level performance.
-* [Page 6:](#id-section6).
+* [Page 6: 2017-01-17](#id-section6). Tutorial for making fancy documents(Cover letters) in latex and rendering into pdf!
 * [Page 7:](#id-section7).
 * [Page 8:](#id-section8).
 * [Page 9:](#id-section9).
@@ -438,7 +438,10 @@ Quick and dirty: One of the benefits of a diverse genetic background in a colony
 
 ------
 <div id='id-section6'/>
-### Page 6:
+### Page 6: 2017-01-17. Tutorial for making fancy documents(Cover letters) in latex and rendering into pdf!
+
+I took this [cool template](https://www.sharelatex.com/templates/cover-letters/awesome-cv-cover-letter) for making a cover letter, which was in ".tex" format. Then converted the tex file into pdf using [this tutorial](http://economistry.com/2013/01/installing-and-using-latex-for-mac/), which involve installing mactex, sublime text 2, and skim. 
+
 ------
 <div id='id-section7'/>
 ### Page 7:
