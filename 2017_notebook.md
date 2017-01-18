@@ -27,8 +27,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 1: 2017-01-01](#id-section1). SICB meeting
 * [Page 2: 2017-01-03](#id-section2). Yearly goals
 * [Page 3: 2017-01-10](#id-section3). Status of projects
-* [Page 4:](#id-section4).
-* [Page 5:](#id-section5).
+* [Page 4: 2017-01-17](#id-section4). Displaying hierarchical structure of a repo or set of directories in the terminal with tree command
+* [Page 5: 2017-01-17](#id-section5). Project idea: The impact of temperature variation on ant colonly level performance.
 * [Page 6:](#id-section6).
 * [Page 7:](#id-section7).
 * [Page 8:](#id-section8).
@@ -366,10 +366,60 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 
 ------
 <div id='id-section4'/>
-### Page 4:
+### Page 4: 2017-01-17. Displaying hierarchical structure of a repo or set of directories in the terminal with tree command
+
+1. In the terminal, [install the tree command](https://rschu.me/list-a-directory-with-tree-command-on-mac-os-x-3b2d4c4a4827#.wk0u34bpj)
+	* You may have to install the [homebrew](http://brew.sh/)    
+2. use the tree command in the terminal
+
+```
+2017_Ecological_Genomics andrewnguyen$ tree
+.
+├── 2017_Ecological_Genomics.Rproj
+├── Online_notebook.md
+├── README.md
+├── RasterPCA_demo.Rmd
+├── RasterPCA_demo.html
+├── index.Rmd
+├── index.html
+└── index.pdf
+
+0 directories, 8 files
+```
+
 ------
 <div id='id-section5'/>
-### Page 5:
+### Page 5: 2017-01-17. Project idea: The impact of temperature variation on ant colonly level performance.     
+
+**Background**   
+Ant colonies experience temperature fluctuations throughout the day and season. In response to temperature variation, ants must be able to forage under cool and hot conditions. One way to achieve high performance in the face of temperature variation is for the colony to match individual level performance with shifting temperatures. For example, for colonies with diverse genetic structures, some genotypes may forage better under cool or hot conditions. Multiply mated queens (*Pogonomyrmex*) will produce offspring with more phenotypic variation in traits, compared to singly mated queens (*Aphaenogaster*). 
+
+**Notes:** Need to actually verify that foraging efficiency differs throughout the day in a colony, aka need to know more natural history. Look up Deborah Gordon's work. How will you address the confounding issue of demographic effects? Meaning what if there is genetic clumping of sperm and it corresponds to age polyethism, leading to the covariance between age and genotype.    
+
+**Question**
+1. Is the amount of physiological variation in upper thermal limits reflected in the number of fathers?    
+2. Do ant colonies utilize different genotypes to forage throughout the day and season? 
+
+**Hypotheses**  
+1. The number of fathers increases the amount of phenotypic variatnce in upper thermal limits.  
+2. There is genetic structuring in the foragers throughout the day and season. 
+
+**Predictions**    
+1. Additive genetic variance in upper thermal limits will be proportional to the number of fathers.   
+2. Thermally tolerant genotypes perform during the warmest parts of the day and vice versa for more cool tolerant genotypes. 
+3. The more thermally tolerant genotypes start off at low frequency early on in the season, but increase in frequency at peak summer, then decrease again. 
+
+**Experimental Design**
+1. Document the natural history of 10 pogo colonies, to tune for sampling
+2. If there is like 10 foraging bouts, or 10 time slices through the day, sample ~30 ants for each colony at each time slice.
+3. Phenotype each ant: measure morphology (head width, leg lengths, alitrunk length, etc), measure upper thermal limit
+4. Pool ants at each time slice, isolate DNA, and then pool-seq 
+
+**Critical Results or Alternative outcomes**   
+1. Positive relationship between parentage and phenotypic variance. 
+2. Structuring of alleles throughout the day or season. Some start off low, increase, then decrease in frequence.  This would indicate seasonal adaptation.    
+
+
 ------
 <div id='id-section6'/>
 ### Page 6:
