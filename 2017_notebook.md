@@ -394,31 +394,47 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 **Background**   
 Ant colonies experience temperature fluctuations throughout the day and season. In response to temperature variation, ants must be able to forage under cool and hot conditions. One way to achieve high performance in the face of temperature variation is for the colony to match individual level performance with shifting temperatures. For example, for colonies with diverse genetic structures, some genotypes may forage better under cool or hot conditions. Multiply mated queens (*Pogonomyrmex*) will produce offspring with more phenotypic variation in traits, compared to singly mated queens (*Aphaenogaster*).     
 
-**Notes:** Need to actually verify that foraging efficiency differs throughout the day in a colony, aka need to know more natural history. Look up Deborah Gordon's work. How will you address the confounding issue of demographic effects? Meaning what if there is genetic clumping of sperm and it corresponds to age polyethism, leading to the covariance between age and genotype.    
+**Notes:** Need to actually verify that foraging efficiency differs throughout the day in a colony, aka need to know more natural history. Look up Deborah Gordon's work. How will you address the confounding issue of demographic effects? Meaning what if there is genetic clumping of sperm and it corresponds to age polyethism, leading to the covariance between age and genotype. Also, the age structure of the colony itself may covary with genotype.       
 
 **Question**   
+
 1. Is the amount of physiological variation in upper thermal limits reflected in the number of fathers?    
-2. Do ant colonies utilize different genotypes to forage throughout the day and season? 
+2. Do ant colonies utilize different genotypes to forage throughout the day and season?    
+
+or
+
+Do ants display seasonal adaptation in forager performance?   
 
 **Hypotheses**  
+
 1. The number of fathers increases the amount of phenotypic variatnce in upper thermal limits.    
 2. There is genetic structuring in the foragers throughout the day and season.    
 
 **Predictions**    
+
 1. Additive genetic variance in upper thermal limits will be proportional to the number of fathers.     
 2. Thermally tolerant genotypes perform during the warmest parts of the day and vice versa for more cool tolerant genotypes.    
 3. The more thermally tolerant genotypes start off at low frequency early on in the season, but increase in frequency at peak summer, then decrease again.    
 
 **Experimental Design**   
+
+I should do a power analysis to see how many ants and colonies I'd need to sample. Sam Scarpino has an R package for this I think.   
+
 1. Document the natural history of 10 pogo colonies, to tune for sampling   
 2. If there is like 10 foraging bouts, or 10 time slices through the day, sample ~30 ants for each colony at each time slice.   
-3. Phenotype each ant: measure morphology (head width, leg lengths, alitrunk length, etc), measure upper thermal limit   
-4. Pool ants at each time slice, isolate DNA, and then pool-seq     
+3. Phenotype each ant: measure morphology (head width, leg lengths, alitrunk length, etc), number of ovarioles?, hydrocarbons, desiccation resistance, measure upper thermal limit   
+4. Pool ants at each time slice, isolate DNA, and then pool-seq (capture-seq, but chatting with April, it sounds like biased sampling because only the portion of the first exon and promoter are sequenced.)     
 
-**Critical Results or Alternative outcomes**   
+**Critical Results or Alternative outcomes**  
+
 1. Positive relationship between parentage and phenotypic variance.    
-2. Structuring of alleles throughout the day or season. Some start off low, increase, then decrease in frequence.  This would indicate seasonal adaptation.     
+2. Structuring of alleles throughout the day or season. Some start off low, increase, then decrease in frequence.  This would indicate seasonal adaptation of foragers!     
 
+It is possible that we won't find anything at all. But maybe because we're pool-sequencing, we can pick up the microbiome? And maybe that is structured diurnally or throughout the season.    
+
+### Another idea: Compare parasite load between ant colonies with high and low number of fathers.  
+
+Quick and dirty: One of the benefits of a diverse genetic background in a colony is disease resistance. So, test this by pool-seq experiment and measuring the parasite loads for ~30 individuals, potentially across a whole phylogeny of ants that vary in number of daddys and number of queens. Parasite load from different taxanomic groups (fungus, nemotodes, bacteria, viruses) can be mapped onto the phylogeny!
 
 ------
 <div id='id-section6'/>
