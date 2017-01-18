@@ -1,3 +1,6 @@
+---
+output: pdf_document
+---
 # 2016 General Notebook
 
 ### Author: Andrew D. Nguyen

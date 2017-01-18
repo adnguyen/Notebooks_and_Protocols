@@ -13,7 +13,7 @@ This repo shares my protocols and notebooks of ongoing work with the aim of capt
 
 
 # List of Notebooks by year
-* [2016_Notebook](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_notebook.md): This notebook logs:
+* [2016_Notebook](2016_notebook.html): This notebook logs:
   * climate cascade meetings
   * related climate cascade projects (Hsp modulation paper; thermal niche paper; Adaptive shifts in Hsp gxp as a function-valued trait paper; proteome stability project; range limits paper
   * post doc ideas (selection gradients, quantitative genetics in natural populations)
