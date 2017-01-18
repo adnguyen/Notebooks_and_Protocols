@@ -41,3 +41,5 @@ Referencing some syntax for pandoc for converting md to html:
 ```
 pandoc -o output.html input.txt
 ```
+
+another way is through [Dillinger.io](http://dillinger.io/)
