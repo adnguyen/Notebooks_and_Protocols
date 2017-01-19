@@ -31,7 +31,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 5: 2017-01-17](#id-section5). Project idea: The impact of temperature variation on ant colonly level performance.
 * [Page 6: 2017-01-17](#id-section6). Tutorial for making fancy documents(Cover letters) in latex and rendering into pdf!
 * [Page 7: 2017-01-19](#id-section7). Making sense of reviewer comment; multiple stressors ms
-* [Page 8:](#id-section8).
+* [Page 8: 2017-01-19](#id-section8). Notes from SICB
 * [Page 9:](#id-section9).
 * [Page 10:](#id-section10).
 * [Page 11:](#id-section11).
@@ -463,7 +463,31 @@ Calabria et al. 2012 find differences in basal hsp70 protein expression but not 
 
 ------
 <div id='id-section8'/>
-### Page 8:
+### Page 8: 2017-01-19. Notes from SICB    
+
+**2017-01-05; Met with Joel Kingsolver**   
+
+Met and talked about range limits project, selection gradient idea, and hsp rxn norm gxp project. 
+	* For my ancestral trait reconstruction of CTmax, I excluded the outgroup, suggests to include it      
+	* For multi-panel figure with parameters on x axis and ctmax on y axis; try partial regression      
+	* If I don't get into PNAS, try Proc B    
+	* For looking at shifts in trade-offs between multiple stressors look up Nancy Emory, central cali, she is a plant evo ecologist   
+	* Selection gradient proj idea; JK asks what has been done in well known systems? ie. Arapidopsis (sp?), check Andy Schidth   
+
+**2017-01-06; met with Ray Huey**    
+
+Showed hsp rxn norm paper stuff:     
+	* Are parameters correlated- he was worrieda bout this. 
+	* Try fitting splines and extracting parameters   
+	* Selection on graits; linear or quadratic? non-parametric?   
+
+**2017-01-07 Met with Dan Hahn and Greg Ragland**      
+
+Went over data and Dan liked how Iparsed out all the predictions for the shifts in reaction norms of hsp gxp expression. 
+	* Finger example highlights the differences between resistance and tolerance    
+	* Pressing two fingers together without moving = **resistance**       
+	* When 1 finger moves the other finger but can move back = **tolerance**   
+
 ------
 <div id='id-section9'/>
 ### Page 9:
