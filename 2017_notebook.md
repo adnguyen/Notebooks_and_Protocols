@@ -30,7 +30,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 4: 2017-01-17](#id-section4). Displaying hierarchical structure of a repo or set of directories in the terminal with tree command
 * [Page 5: 2017-01-17](#id-section5). Project idea: The impact of temperature variation on ant colonly level performance.
 * [Page 6: 2017-01-17](#id-section6). Tutorial for making fancy documents(Cover letters) in latex and rendering into pdf!
-* [Page 7:](#id-section7).
+* [Page 7: 2017-01-19](#id-section7). Making sense of reviewer comment; multiple stressors ms
 * [Page 8:](#id-section8).
 * [Page 9:](#id-section9).
 * [Page 10:](#id-section10).
@@ -444,7 +444,23 @@ I took this [cool template](https://www.sharelatex.com/templates/cover-letters/a
 
 ------
 <div id='id-section7'/>
-### Page 7:
+### Page 7: 2017-01-19. Making sense of reviewer comment; multiple stressors ms   
+
+**Is there any direct evidence that heat shock proteins prevent heat knockdown?**    
+
+Calabria et al. 2012 find differences in basal hsp70 protein expression but not heat-induced hsp70 expression between 3 genotypes of fruit flies( they differ in chromosomal structure). These differences were reflected in the fast ramp (0.1 C/min ramp), but not slow ramp(0.6 C/min ramping). 
+
+3 genotypes:
+
+1. O~(3+4)
+2. 
+3. 
+
+### References:    
+
+1. Calabria G, Dolgova O, Rego C, et al (2012) Hsp70 protein levels and thermotolerance in Drosophila subobscura: a reassessment of the thermal co-adaptation hypothesis. Journal of Evolutionary Biology 25:691–700. doi: 10.1111/j.1420-9101.2012.02463.x
+
+
 ------
 <div id='id-section8'/>
 ### Page 8:
