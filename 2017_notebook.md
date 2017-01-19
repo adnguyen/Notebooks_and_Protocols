@@ -465,9 +465,10 @@ Calabria et al. 2012 find differences in basal hsp70 protein expression but not 
 <div id='id-section8'/>
 ### Page 8: 2017-01-19. Notes from SICB    
 
-**2017-01-05; Met with Joel Kingsolver**   
+**2017-01-05; Met with Joel Kingsolver**    
 
-Met and talked about range limits project, selection gradient idea, and hsp rxn norm gxp project. 
+Met and talked about range limits project, selection gradient idea, and hsp rxn norm gxp project.    
+
 	* For my ancestral trait reconstruction of CTmax, I excluded the outgroup, suggests to include it      
 	* For multi-panel figure with parameters on x axis and ctmax on y axis; try partial regression      
 	* If I don't get into PNAS, try Proc B    
@@ -477,6 +478,7 @@ Met and talked about range limits project, selection gradient idea, and hsp rxn 
 **2017-01-06; met with Ray Huey**    
 
 Showed hsp rxn norm paper stuff:     
+
 	* Are parameters correlated- he was worrieda bout this. 
 	* Try fitting splines and extracting parameters   
 	* Selection on graits; linear or quadratic? non-parametric?   
@@ -484,6 +486,7 @@ Showed hsp rxn norm paper stuff:
 **2017-01-07 Met with Dan Hahn and Greg Ragland**      
 
 Went over data and Dan liked how Iparsed out all the predictions for the shifts in reaction norms of hsp gxp expression. 
+
 	* Finger example highlights the differences between resistance and tolerance    
 	* Pressing two fingers together without moving = **resistance**       
 	* When 1 finger moves the other finger but can move back = **tolerance**   
