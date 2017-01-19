@@ -452,9 +452,9 @@ Calabria et al. 2012 find differences in basal hsp70 protein expression but not 
 
 3 genotypes:
 
-1. O~(3+4)
-2. 
-3. 
+1. O(3+4)/O(3+4): higher hsp70 basal expression and thermal tolerance under fast ramp;       
+2. O(3+4+8)/O(3+4+8)    
+3. O(st)/O(st): lower hsp70 basal expression and thermal tolerance under fast ramp;   
 
 ### References:    
 
