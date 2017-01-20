@@ -32,7 +32,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 6: 2017-01-17](#id-section6). Tutorial for making fancy documents(Cover letters) in latex and rendering into pdf!
 * [Page 7: 2017-01-19](#id-section7). Making sense of reviewer comment; multiple stressors ms
 * [Page 8: 2017-01-19](#id-section8). Notes from SICB
-* [Page 9:](#id-section9).
+* [Page 9: 2017-01-20](#id-section9). Status of projects
 * [Page 10:](#id-section10).
 * [Page 11:](#id-section11).
 * [Page 12:](#id-section12).
@@ -490,7 +490,37 @@ Went over data and Dan liked how Iparsed out all the predictions for the shifts 
 
 ------
 <div id='id-section9'/>
-### Page 9:
+### Page 9: 2017-01-20. Status of projects
+
+1. Project updates:    
+ 	* **Hsp gene expression + Ctmax project:**
+		* Have intro, discussion mostly complete by today, meet with NJG Monday (2017-01-23)
+		* Submit to PNAS in May?   
+ 	* **Multiple stressors ms:**   
+		* In SHC's hands, due 2017-02-14
+ 	* **Range limits ms**: SHC lab gave verbal edit, still need to incorporate     
+ 	* **Thermal niche ms:** Lacy to check intro, and add refs.    		
+ 	* **Stressed in nature MS: Samples to rerun.**       
+		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
+	* **Proteome stability project:**    
+		* **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
+			* Rerun mass spec, but loading more proteins (Bethany)
+			
+2. **Thesis related**   
+	* **Defense talk: Have first version by Jan 31st**    
+		* Required defense talk in biolunch: Feb 24 (Friday)     
+	* Working title: Evolutionary Innovations of Ants to Thermally Stressful Environments     
+	* Formatting:    
+		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+			* started outline   
+	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+		1. Intent to graduate: February 1st for May.   
+		2. Send defense committe form to grad college---**done**
+		3. Graduate college format check March 4th
+		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+		5. Final thesis April 7th.  
+		
+
 ------
 <div id='id-section10'/>
 ### Page 10:
