@@ -1,6 +1,3 @@
----
-output: pdf_document
----
 # 2016 General Notebook
 
 ### Author: Andrew D. Nguyen
@@ -52,8 +49,8 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 28: 2016-06-03](#id-section28). Papers showing differences between fast static vs slow dynamic temperature treatments.   
 * [Page 29: 2016-06-06](#id-section29). Isolating RNA: colony CJ8; showing Sylvia    
 * [Page 30: 2016-06-07](#id-section30). **Brute force fitting nls function in R revisited ** [Page 22: 2016-06-02](#id-section22)  
- * [Failed attempt with nls2()] (#id-section30.1).
- * [Success with **failwith()**](#id-section30.2)
+* [Failed attempt with nls2()] (#id-section30.1).
+* [Success with **failwith()**](#id-section30.2)
 * [Page 31: 2016-06-08](#id-section31). Re-doing online notebook template   
 * [Page 32: 2016-06-08](#id-section32). qPCRs, 18s rRNA for Duke2, HF2, Kite 4, Kite8, 60 C annealing. Dilutions of future samples   
 * [Page 33: 2016-06-08](#id-section33). Climate cacade meeting   
@@ -67,8 +64,8 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 38: 2016-06-13](#id-section38). qPCR update for Duke1,CJ2,SHC8,CJ5. Randomizing samples treated at 25C(reference for basal expression) for qpcrs.    
 * [Page 39: 2016-06-13](#id-section39). Post doc project idea: Assessing current impacts of climate change in natural populations.   
 * [Page 40: 2016-06-14](#id-section40). qPCR's: Diluting samples for quantifying basal expression and repeats
- * [Basal expression plate layout.](#id-section40.1)
- * [Status update of samples.](#id-section40.5) 
+* [Basal expression plate layout.](#id-section40.1)
+* [Status update of samples.](#id-section40.5) 
 * [Page 41: 2016-06-15](#id-section41). qPCRs to quantify basal expression  **(Evolution of stress response project)**   
 * [Page 42: 2016-06-15](#id-section42). Evolution talks I want to attend.   
 * [Page 43: 2016-06-16](#id-section43). Figure for curve fitting: see  [Success with **failwith()**](#id-section30.2) and [Status update of samples.](#id-section40.5)  
@@ -103,8 +100,8 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 72: 2016-09-27](#id-section72) . evolution of hsp gxp data analysis   
 * [Page 73: 2016-09-28](#id-section73). building ultrametric trees   
 * [Page 74: 2016-09-28](#id-section74). phylogenetic regressions (PGLS) and anovas   
-	* [2016-09-28](#id-section74.1). SHC suggestion: ancestral trait reconsturction -> regressions/anovas; [following this tutorial](http://www.phytools.org/eqg2015/asr.html)
-	* [2016-09-29](#id-section74.2). PIC    
+  * [2016-09-28](#id-section74.1). SHC suggestion: ancestral trait reconsturction -> regressions/anovas; [following this tutorial](http://www.phytools.org/eqg2015/asr.html)
+  * [2016-09-29](#id-section74.2). PIC    
 * [Page 75: 2016-10-03 and 2016-10-04](#id-section75). Climate cascade meeting   
 * [Page 76: 2016-10-03 and 2016-10-04](#id-section76). Membrane stability   
 * [Page 77: 2016-10-04](#id-section77). Lab Safety Officer (LSO) meeting. 
@@ -114,7 +111,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 81: 2016-10-11](#id-section81). ANCOVA models for testing interaction of hsp gxp parameter and habitat on CTmax   
 * [Page 82: 2016-10-11](#id-section82). variance partitioning in CTmax of aphaeno    
 * [Page 83: 2016-10-12](#id-section83). Testing effect of MAT on Hsp gxp and looking at correlations between phylogeny and climate.   
-	* [2016-11-01 adding full models with automated stepAIC](#id-section83.5).    
+  * [2016-11-01 adding full models with automated stepAIC](#id-section83.5).    
 
 * [Page 84: 2016-10-14](#id-section84). Updating climate cascade to do list.   
 * [Page 85: 2016-10-14](#id-section85). Paper note: Puentes, A., G. Granath, and J. Ågren. 2016. Similarity in G matrix structure among natural populations of Arabidopsis lyrata. Evolution 70:2370–2386.  
@@ -132,12 +129,12 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 97: 2016-11-04](#id-section97). ms in prep
 * [Page 98: 2016-11-08](#id-section98). climate cascade meeting
 * [Page 99: 2016-11-08](#id-section99). writing session with NJG and stats follow up
-	* [among colony variance](#id-section99.1)
-	* [PCA of cliamte variables](#id-section99.2)
-	* [CTmax response and regressions with PCA of cliamte variables,mat,Tmax,latitude ](#id-section99.3)
-	* [Hsp PCA](#id-section99.4)
-	* [Ctmax variance partitioning into Hsp rxn norm, phylo, loca env](#id-section99.5)    
-	
+  * [among colony variance](#id-section99.1)
+  * [PCA of cliamte variables](#id-section99.2)
+  * [CTmax response and regressions with PCA of cliamte variables,mat,Tmax,latitude ](#id-section99.3)
+  * [Hsp PCA](#id-section99.4)
+  * [Ctmax variance partitioning into Hsp rxn norm, phylo, loca env](#id-section99.5)    
+
 * [Page 100: 2016-11-14 & 2016-11-15](#id-section100). climate cascade meeting  
 * [Page 101: 2016-11-16](#id-section101). Hsp reaction norm stats; adding quadratic term
 * [Page 102: 2016-11-22](#id-section102). climate cascade to do list
@@ -145,7 +142,7 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 104: 2016-12-19](#id-section104). climate cascade update
 * [Page 105: 2016-12-20](#id-section105). Reading a few papers
 
-------    
+------
 <div id='id-section1'/>
 ### Page 1: 2016-05-13. Indirect genetic effects.
 
@@ -159,7 +156,7 @@ In ant colonies, sisters are highly related if the queen mated once.
 
 This isnt a new [idea: Linksvayer 2007](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0000994). What would be interesting is to test the role of IGE in thermal ecology. Take a Northern(experiecnes cold) ant species and Southern (experiences warm) ant species and do a cross foster experiment. One outcome is that ants reared in the warm tolerant species will reare young in a way so that the baby has greater thermal tolerance than being reared by its own (cold tolerant genotype/species).    
 
-------    
+------
 <div id='id-section2'/>
 ### Page 2: 2016-05-13. Comparing G matrices of different populations      
 
@@ -171,11 +168,11 @@ It can vary vertically, shift right to left (warmer-cooler variation), and/or ex
 
 Example table of loadings across each temperature:   
 
-|Variation|15|20|25|30|35|   
-|---|---|---|---|---|---|   
-|Vertical|1|1|1|1|1|  
-|Warmer-cooler|-1|-.5|0|.5|1|   
-|Generalist-specialist|-1|.5|1|.5|-1|  
+| Variation             | 15   | 20   | 25   | 30   | 35   |
+| --------------------- | ---- | ---- | ---- | ---- | ---- |
+| Vertical              | 1    | 1    | 1    | 1    | 1    |
+| Warmer-cooler         | -1   | -.5  | 0    | .5   | 1    |
+| Generalist-specialist | -1   | .5   | 1    | .5   | -1   |
 
 Whoa, what if you wanted to compare G matrices of different populations? One way is to do a PCA decomp with each G matrix constructed from each population. Then simply look at how the loadings change as a function of temperature between populations. Statistically, you can do an ANCOVA such as:
 ```R
@@ -193,7 +190,7 @@ There is another cool paper to read about comparing G matrices by [Aguirre et al
 3. Construct a tensor; sounds like a 3D G matrix   
 4. Decompose G into eigenvectors; like Kingsolver, I believe   
 
-------    
+------
 <div id='id-section3'/>
 ### Page 3: 2016-05-16. Complete ddRAD-seq samples: processing      
 
@@ -201,16 +198,16 @@ ddrad-seq data are in! SHC processed short reads in STACKS and produced a fasta 
 
 From SHC:      
 > *Hi Andrew,
-I have run all your samples against your index and through the STACKs pipeline - I used a minimum threshold of 5 reads to call a SNP, a maximum # of SNPs per tag of 6, and a minimum number of individuals that had to have a genotype call at a SNP of 10 individuals.  The stats of genotype calls and heterozygosity across all your samples is in the excel spreadsheet - I highlighted those with <25% calls in yellow, and would not use those because they mess up the polarity inference for the SNPs and make the tree more ambiguous.  The exception would probably be NOVCOC, since you will need an outgroup and none of the putative outgroup taxa meet the threshold.  I've attached a NJ tree using all the >25% taxa plus NOVCOC, and it seems to resolve very nicely bootstrap-wise.  I do not know what many of these samples are, so no clue if it is biologically reasonable.  
-You'll find your fasta file in my scratch space here:
-Andrew_RADseq_051516/final_Andrew_sam_files/m5_output_refmap/Andrew_SNP_sequences_m5_filter6_ind10.fas
-Sara*    
+> I have run all your samples against your index and through the STACKs pipeline - I used a minimum threshold of 5 reads to call a SNP, a maximum # of SNPs per tag of 6, and a minimum number of individuals that had to have a genotype call at a SNP of 10 individuals.  The stats of genotype calls and heterozygosity across all your samples is in the excel spreadsheet - I highlighted those with <25% calls in yellow, and would not use those because they mess up the polarity inference for the SNPs and make the tree more ambiguous.  The exception would probably be NOVCOC, since you will need an outgroup and none of the putative outgroup taxa meet the threshold.  I've attached a NJ tree using all the >25% taxa plus NOVCOC, and it seems to resolve very nicely bootstrap-wise.  I do not know what many of these samples are, so no clue if it is biologically reasonable.  
+> You'll find your fasta file in my scratch space here:
+> Andrew_RADseq_051516/final_Andrew_sam_files/m5_output_refmap/Andrew_SNP_sequences_m5_filter6_ind10.fas
+> Sara*    
 
 *But, samples need to be redone:*      
 
 > *Hi Andrew,
-Just realized I did not adjust the barcode key for two samples in ddRAD10 that got moved during library prep – KITE5 and GF34-1.  So their data are incorrect.  Fixing now and should have a new version in a day or two.
-Sara*
+> Just realized I did not adjust the barcode key for two samples in ddRAD10 that got moved during library prep – KITE5 and GF34-1.  So their data are incorrect.  Fixing now and should have a new version in a day or two.
+> Sara*
 
 So the following files should be disregarded but I'm keeping them just to log them:   
 In the 2014_xanbe-common-garden_gxp_evolution/Data/Phylogenetics/20160516_complete_dataset_phylo_analyses/   
@@ -221,122 +218,122 @@ In the 2014_xanbe-common-garden_gxp_evolution/Data/Phylogenetics/20160516_comple
 But if you ignore KITE5 and GF34-1, here is the summary of results:     
 
 
-|Sample            |   SNPs| Hets|  Total| Prop.SNPs| Prop.het|
-|:-----------------|------:|----:|------:|---------:|--------:|
-|FORMICA           |     47|    1| 173822|      0.00|    0.021|
-|PB17-10_cat       |    203|    0| 173822|      0.00|    0.000|
-|CAMPNSP           |    584|   25| 173822|      0.00|    0.043|
-|PB17-14           |   1031|   10| 173822|      0.01|    0.010|
-|PB07-23           |   1921|   14| 173822|      0.01|    0.007|
-|09A               |   2587|   32| 173822|      0.01|    0.012|
-|CREMATOGASTER_cat |   3094|   32| 173822|      0.02|    0.010|
-|Kite8r            |   3751|   56| 173822|      0.02|    0.015|
-|TU64_cat          |   5217|   45| 173822|      0.03|    0.009|
-|Sal13-14r         |   7905|   78| 173822|      0.05|    0.010|
-|BK6-1             |  10743|  182| 173822|      0.06|    0.017|
-|EXIT65            |  11612|  120| 173822|      0.07|    0.010|
-|NOVCOC1           |  12013|   34| 173822|      0.07|    0.003|
-|ALA4              |  18707|  494| 173822|      0.11|    0.026|
-|KITE4_cat         |  36845|  494| 173822|      0.21|    0.013|
-|AHF3r             |  39557|  455| 173822|      0.23|    0.012|
-|Duke3r            |  53391|  827| 173822|      0.31|    0.015|
-|FBR5r             |  61628| 1072| 173822|      0.35|    0.017|
-|KITE5_cat         |  65777| 1745| 173822|      0.38|    0.027|
-|KH1               |  69951|  977| 173822|      0.40|    0.014|
-|KH2r              |  72601| 1021| 173822|      0.42|    0.014|
-|BSK5r             |  73690| 1573| 173822|      0.42|    0.021|
-|FBRAGG1           |  76194|  830| 173822|      0.44|    0.011|
-|AHW7              |  76776| 1298| 173822|      0.44|    0.017|
-|AHF1r             |  77515| 1038| 173822|      0.45|    0.013|
-|KH3               |  78618| 1099| 173822|      0.45|    0.014|
-|Avon19-1          |  78942| 1001| 173822|      0.45|    0.013|
-|Avon19-3          |  80182| 1137| 173822|      0.46|    0.014|
-|MA                |  80584| 1546| 173822|      0.46|    0.019|
-|AHW2              |  80841| 1405| 173822|      0.47|    0.017|
-|FBRAGG3           |  81143| 1103| 173822|      0.47|    0.014|
-|AHF2              |  82047| 1399| 173822|      0.47|    0.017|
-|CJ2r              |  82383| 1026| 173822|      0.47|    0.012|
-|SHC2              |  84679| 1541| 173822|      0.49|    0.018|
-|CJ4               |  84824| 1375| 173822|      0.49|    0.016|
-|HW10              |  85989| 1521| 173822|      0.49|    0.018|
-|SHC9r             |  87346| 1526| 173822|      0.50|    0.017|
-|MIC2              |  88435| 1198| 173822|      0.51|    0.014|
-|LPR4              |  90037| 1529| 173822|      0.52|    0.017|
-|DUKE2             |  91310| 1890| 173822|      0.53|    0.021|
-|Ala5r             |  91524| 2161| 173822|      0.53|    0.024|
-|SHC10             |  91772| 1614| 173822|      0.53|    0.018|
-|CJ6r              |  94419| 1386| 173822|      0.54|    0.015|
-|CJ7               |  95005| 2888| 173822|      0.55|    0.030|
-|LexSHC7r          |  96193| 1810| 173822|      0.55|    0.019|
-|YATES1            |  96271| 1921| 173822|      0.55|    0.020|
-|DUKE1             |  96675| 1731| 173822|      0.56|    0.018|
-|SWSR45-1r         |  97057|  652| 173822|      0.56|    0.007|
-|CJ8r              |  99904| 1318| 173822|      0.57|    0.013|
-|LexSHC8r          | 102414| 1934| 173822|      0.59|    0.019|
-|SHC5              | 102824| 1916| 173822|      0.59|    0.019|
-|SHC3              | 102969| 1891| 173822|      0.59|    0.018|
-|LEX9              | 103046|  990| 173822|      0.59|    0.010|
-|CJ3r              | 103819| 2001| 173822|      0.60|    0.019|
-|ALA1_cat          | 104644| 2454| 173822|      0.60|    0.023|
-|DUKE7             | 104763| 3081| 173822|      0.60|    0.029|
-|DUKE5             | 105184| 2362| 173822|      0.61|    0.022|
-|LPR1              | 105777| 1459| 173822|      0.61|    0.014|
-|LEX11             | 106302| 1999| 173822|      0.61|    0.019|
-|DUKE6             | 106634| 1284| 173822|      0.61|    0.012|
-|KH5               | 111245| 1899| 173822|      0.64|    0.017|
-|Avon19-2          | 111264| 1667| 173822|      0.64|    0.015|
-|Lex1r             | 112200| 2215| 173822|      0.65|    0.020|
-|AHW4              | 112462| 2571| 173822|      0.65|    0.023|
-|KH7               | 113614| 1765| 173822|      0.65|    0.016|
-|NewSh20-2         | 114686| 1843| 173822|      0.66|    0.016|
-|KH6               | 116788| 1914| 173822|      0.67|    0.016|
-|Duke9r            | 117894| 1385| 173822|      0.68|    0.012|
-|KH4               | 118160| 1794| 173822|      0.68|    0.015|
-|ALA3_cat          | 118525| 2965| 173822|      0.68|    0.025|
-|CJ1               | 119737| 1712| 173822|      0.69|    0.014|
-|FBR4r             | 122054| 1894| 173822|      0.70|    0.016|
-|Yates2r           | 122085| 2440| 173822|      0.70|    0.020|
-|AHW1              | 122370| 1423| 173822|      0.70|    0.012|
-|YATES3            | 124183| 2700| 173822|      0.71|    0.022|
-|SHC6              | 124396| 2577| 173822|      0.72|    0.021|
-|Mon22-2           | 124452| 2148| 173822|      0.72|    0.017|
-|NP20-3            | 124543| 2092| 173822|      0.72|    0.017|
-|CJ9               | 124795| 2533| 173822|      0.72|    0.020|
-|Burn21-1          | 124846| 2087| 173822|      0.72|    0.017|
-|KH8               | 125663| 2139| 173822|      0.72|    0.017|
-|Can21-2           | 125727| 2192| 173822|      0.72|    0.017|
-|KITE1             | 126422| 3578| 173822|      0.73|    0.028|
-|GB33-1            | 127665| 2376| 173822|      0.73|    0.019|
-|CJ5r              | 127719| 2798| 173822|      0.73|    0.022|
-|Duke8r            | 128227| 1555| 173822|      0.74|    0.012|
-|SHC4r             | 128586| 2703| 173822|      0.74|    0.021|
-|Ted3r             | 129299| 2332| 173822|      0.74|    0.018|
-|TED4_cat          | 131556| 2828| 173822|      0.76|    0.021|
-|Unit22-1          | 134451| 2447| 173822|      0.77|    0.018|
-|ALA2_cat          | 134714| 3708| 173822|      0.78|    0.028|
-|Sap               | 135261| 2478| 173822|      0.78|    0.018|
-|Pal21-3           | 135373| 2400| 173822|      0.78|    0.018|
-|POP2              | 135796| 3030| 173822|      0.78|    0.022|
-|Norr20-1          | 135922| 2502| 173822|      0.78|    0.018|
-|FBRAGG2           | 136534| 3678| 173822|      0.79|    0.027|
-|Duke4r            | 136812| 3048| 173822|      0.79|    0.022|
-|Camb31-1          | 136979| 2424| 173822|      0.79|    0.018|
-|KITE2             | 137173| 2190| 173822|      0.79|    0.016|
-|Hamp23-1          | 137953| 2639| 173822|      0.79|    0.019|
-|LEX5              | 139853| 3058| 173822|      0.80|    0.022|
-|Pop1r             | 139912| 3187| 173822|      0.80|    0.023|
-|GF34-1            | 140928| 4088| 173822|      0.81|    0.029|
-|POP3              | 140937| 3175| 173822|      0.81|    0.023|
-|LPR2              | 143401| 2190| 173822|      0.82|    0.015|
-|SHC1              | 145375| 2371| 173822|      0.84|    0.016|
-|AHW5              | 145662| 2407| 173822|      0.84|    0.017|
-|Phil20-4          | 147770| 2915| 173822|      0.85|    0.020|
-|AHW3              | 148236| 3804| 173822|      0.85|    0.026|
-|MIC1              | 149191| 2737| 173822|      0.86|    0.018|
-|LEX13             | 149260| 3486| 173822|      0.86|    0.023|
-|TED6              | 154029| 3347| 173822|      0.89|    0.022|
-|PMBE_cat          | 163739| 3120| 173822|      0.94|    0.019|
-|KITE3             | 166928| 6437| 173822|      0.96|    0.039|     
+| Sample            |   SNPs | Hets |  Total | Prop.SNPs | Prop.het |
+| :---------------- | -----: | ---: | -----: | --------: | -------: |
+| FORMICA           |     47 |    1 | 173822 |      0.00 |    0.021 |
+| PB17-10_cat       |    203 |    0 | 173822 |      0.00 |    0.000 |
+| CAMPNSP           |    584 |   25 | 173822 |      0.00 |    0.043 |
+| PB17-14           |   1031 |   10 | 173822 |      0.01 |    0.010 |
+| PB07-23           |   1921 |   14 | 173822 |      0.01 |    0.007 |
+| 09A               |   2587 |   32 | 173822 |      0.01 |    0.012 |
+| CREMATOGASTER_cat |   3094 |   32 | 173822 |      0.02 |    0.010 |
+| Kite8r            |   3751 |   56 | 173822 |      0.02 |    0.015 |
+| TU64_cat          |   5217 |   45 | 173822 |      0.03 |    0.009 |
+| Sal13-14r         |   7905 |   78 | 173822 |      0.05 |    0.010 |
+| BK6-1             |  10743 |  182 | 173822 |      0.06 |    0.017 |
+| EXIT65            |  11612 |  120 | 173822 |      0.07 |    0.010 |
+| NOVCOC1           |  12013 |   34 | 173822 |      0.07 |    0.003 |
+| ALA4              |  18707 |  494 | 173822 |      0.11 |    0.026 |
+| KITE4_cat         |  36845 |  494 | 173822 |      0.21 |    0.013 |
+| AHF3r             |  39557 |  455 | 173822 |      0.23 |    0.012 |
+| Duke3r            |  53391 |  827 | 173822 |      0.31 |    0.015 |
+| FBR5r             |  61628 | 1072 | 173822 |      0.35 |    0.017 |
+| KITE5_cat         |  65777 | 1745 | 173822 |      0.38 |    0.027 |
+| KH1               |  69951 |  977 | 173822 |      0.40 |    0.014 |
+| KH2r              |  72601 | 1021 | 173822 |      0.42 |    0.014 |
+| BSK5r             |  73690 | 1573 | 173822 |      0.42 |    0.021 |
+| FBRAGG1           |  76194 |  830 | 173822 |      0.44 |    0.011 |
+| AHW7              |  76776 | 1298 | 173822 |      0.44 |    0.017 |
+| AHF1r             |  77515 | 1038 | 173822 |      0.45 |    0.013 |
+| KH3               |  78618 | 1099 | 173822 |      0.45 |    0.014 |
+| Avon19-1          |  78942 | 1001 | 173822 |      0.45 |    0.013 |
+| Avon19-3          |  80182 | 1137 | 173822 |      0.46 |    0.014 |
+| MA                |  80584 | 1546 | 173822 |      0.46 |    0.019 |
+| AHW2              |  80841 | 1405 | 173822 |      0.47 |    0.017 |
+| FBRAGG3           |  81143 | 1103 | 173822 |      0.47 |    0.014 |
+| AHF2              |  82047 | 1399 | 173822 |      0.47 |    0.017 |
+| CJ2r              |  82383 | 1026 | 173822 |      0.47 |    0.012 |
+| SHC2              |  84679 | 1541 | 173822 |      0.49 |    0.018 |
+| CJ4               |  84824 | 1375 | 173822 |      0.49 |    0.016 |
+| HW10              |  85989 | 1521 | 173822 |      0.49 |    0.018 |
+| SHC9r             |  87346 | 1526 | 173822 |      0.50 |    0.017 |
+| MIC2              |  88435 | 1198 | 173822 |      0.51 |    0.014 |
+| LPR4              |  90037 | 1529 | 173822 |      0.52 |    0.017 |
+| DUKE2             |  91310 | 1890 | 173822 |      0.53 |    0.021 |
+| Ala5r             |  91524 | 2161 | 173822 |      0.53 |    0.024 |
+| SHC10             |  91772 | 1614 | 173822 |      0.53 |    0.018 |
+| CJ6r              |  94419 | 1386 | 173822 |      0.54 |    0.015 |
+| CJ7               |  95005 | 2888 | 173822 |      0.55 |    0.030 |
+| LexSHC7r          |  96193 | 1810 | 173822 |      0.55 |    0.019 |
+| YATES1            |  96271 | 1921 | 173822 |      0.55 |    0.020 |
+| DUKE1             |  96675 | 1731 | 173822 |      0.56 |    0.018 |
+| SWSR45-1r         |  97057 |  652 | 173822 |      0.56 |    0.007 |
+| CJ8r              |  99904 | 1318 | 173822 |      0.57 |    0.013 |
+| LexSHC8r          | 102414 | 1934 | 173822 |      0.59 |    0.019 |
+| SHC5              | 102824 | 1916 | 173822 |      0.59 |    0.019 |
+| SHC3              | 102969 | 1891 | 173822 |      0.59 |    0.018 |
+| LEX9              | 103046 |  990 | 173822 |      0.59 |    0.010 |
+| CJ3r              | 103819 | 2001 | 173822 |      0.60 |    0.019 |
+| ALA1_cat          | 104644 | 2454 | 173822 |      0.60 |    0.023 |
+| DUKE7             | 104763 | 3081 | 173822 |      0.60 |    0.029 |
+| DUKE5             | 105184 | 2362 | 173822 |      0.61 |    0.022 |
+| LPR1              | 105777 | 1459 | 173822 |      0.61 |    0.014 |
+| LEX11             | 106302 | 1999 | 173822 |      0.61 |    0.019 |
+| DUKE6             | 106634 | 1284 | 173822 |      0.61 |    0.012 |
+| KH5               | 111245 | 1899 | 173822 |      0.64 |    0.017 |
+| Avon19-2          | 111264 | 1667 | 173822 |      0.64 |    0.015 |
+| Lex1r             | 112200 | 2215 | 173822 |      0.65 |    0.020 |
+| AHW4              | 112462 | 2571 | 173822 |      0.65 |    0.023 |
+| KH7               | 113614 | 1765 | 173822 |      0.65 |    0.016 |
+| NewSh20-2         | 114686 | 1843 | 173822 |      0.66 |    0.016 |
+| KH6               | 116788 | 1914 | 173822 |      0.67 |    0.016 |
+| Duke9r            | 117894 | 1385 | 173822 |      0.68 |    0.012 |
+| KH4               | 118160 | 1794 | 173822 |      0.68 |    0.015 |
+| ALA3_cat          | 118525 | 2965 | 173822 |      0.68 |    0.025 |
+| CJ1               | 119737 | 1712 | 173822 |      0.69 |    0.014 |
+| FBR4r             | 122054 | 1894 | 173822 |      0.70 |    0.016 |
+| Yates2r           | 122085 | 2440 | 173822 |      0.70 |    0.020 |
+| AHW1              | 122370 | 1423 | 173822 |      0.70 |    0.012 |
+| YATES3            | 124183 | 2700 | 173822 |      0.71 |    0.022 |
+| SHC6              | 124396 | 2577 | 173822 |      0.72 |    0.021 |
+| Mon22-2           | 124452 | 2148 | 173822 |      0.72 |    0.017 |
+| NP20-3            | 124543 | 2092 | 173822 |      0.72 |    0.017 |
+| CJ9               | 124795 | 2533 | 173822 |      0.72 |    0.020 |
+| Burn21-1          | 124846 | 2087 | 173822 |      0.72 |    0.017 |
+| KH8               | 125663 | 2139 | 173822 |      0.72 |    0.017 |
+| Can21-2           | 125727 | 2192 | 173822 |      0.72 |    0.017 |
+| KITE1             | 126422 | 3578 | 173822 |      0.73 |    0.028 |
+| GB33-1            | 127665 | 2376 | 173822 |      0.73 |    0.019 |
+| CJ5r              | 127719 | 2798 | 173822 |      0.73 |    0.022 |
+| Duke8r            | 128227 | 1555 | 173822 |      0.74 |    0.012 |
+| SHC4r             | 128586 | 2703 | 173822 |      0.74 |    0.021 |
+| Ted3r             | 129299 | 2332 | 173822 |      0.74 |    0.018 |
+| TED4_cat          | 131556 | 2828 | 173822 |      0.76 |    0.021 |
+| Unit22-1          | 134451 | 2447 | 173822 |      0.77 |    0.018 |
+| ALA2_cat          | 134714 | 3708 | 173822 |      0.78 |    0.028 |
+| Sap               | 135261 | 2478 | 173822 |      0.78 |    0.018 |
+| Pal21-3           | 135373 | 2400 | 173822 |      0.78 |    0.018 |
+| POP2              | 135796 | 3030 | 173822 |      0.78 |    0.022 |
+| Norr20-1          | 135922 | 2502 | 173822 |      0.78 |    0.018 |
+| FBRAGG2           | 136534 | 3678 | 173822 |      0.79 |    0.027 |
+| Duke4r            | 136812 | 3048 | 173822 |      0.79 |    0.022 |
+| Camb31-1          | 136979 | 2424 | 173822 |      0.79 |    0.018 |
+| KITE2             | 137173 | 2190 | 173822 |      0.79 |    0.016 |
+| Hamp23-1          | 137953 | 2639 | 173822 |      0.79 |    0.019 |
+| LEX5              | 139853 | 3058 | 173822 |      0.80 |    0.022 |
+| Pop1r             | 139912 | 3187 | 173822 |      0.80 |    0.023 |
+| GF34-1            | 140928 | 4088 | 173822 |      0.81 |    0.029 |
+| POP3              | 140937 | 3175 | 173822 |      0.81 |    0.023 |
+| LPR2              | 143401 | 2190 | 173822 |      0.82 |    0.015 |
+| SHC1              | 145375 | 2371 | 173822 |      0.84 |    0.016 |
+| AHW5              | 145662 | 2407 | 173822 |      0.84 |    0.017 |
+| Phil20-4          | 147770 | 2915 | 173822 |      0.85 |    0.020 |
+| AHW3              | 148236 | 3804 | 173822 |      0.85 |    0.026 |
+| MIC1              | 149191 | 2737 | 173822 |      0.86 |    0.018 |
+| LEX13             | 149260 | 3486 | 173822 |      0.86 |    0.023 |
+| TED6              | 154029 | 3347 | 173822 |      0.89 |    0.022 |
+| PMBE_cat          | 163739 | 3120 | 173822 |      0.94 |    0.019 |
+| KITE3             | 166928 | 6437 | 173822 |      0.96 |    0.039 |
 
 Preliminary Tree; NJ:  
 
@@ -345,7 +342,7 @@ Preliminary Tree; NJ:
 
 SHC sent updated fasta file: 
 > *Your fasta file should be ready again – turns out that GF34-1 mapped very poorly and really should not be used.  The new SNP yield/heterozygosity summary file is in the same directory for you.   
-Sara*
+> Sara*
 
 Got rid of old fasta file, here is the updated file list:     
 * 20160516-Andrew_SNP_sequences_m5_filter6_ind10_het.tsv ; summary     
@@ -355,124 +352,124 @@ Got rid of old fasta file, here is the updated file list:
 
 Summary table of updated fasta file:   
 
-|Sample            |   SNPs| Hets|  Total| Proportion_loci_with_genotype|
-|:-----------------|------:|----:|------:|-----------------------------:|
-|FORMICA           |     43|    1| 174008|                          0.02|
-|PB17-10_cat       |    203|    0| 174008|                          0.00|
-|CAMPNSP           |    590|   23| 174008|                          0.04|
-|PB17-14           |   1034|    9| 174008|                          0.01|
-|PB07-23           |   1924|   14| 174008|                          0.01|
-|09A               |   2608|   34| 174008|                          0.01|
-|CREMATOGASTER_cat |   3087|   32| 174008|                          0.01|
-|Kite8r            |   3688|   53| 174008|                          0.01|
-|GF34-1            |   4035|   28| 174008|                          0.01|
-|TU64_cat          |   5180|   45| 174008|                          0.01|
-|Sal13-14r         |   7892|   78| 174008|                          0.01|
-|BK6-1             |  10723|  174| 174008|                          0.02|
-|EXIT65            |  11573|  122| 174008|                          0.01|
-|NOVCOC1           |  12003|   34| 174008|                          0.00|
-|ALA4              |  18742|  500| 174008|                          0.03|
-|KITE4_cat         |  36913|  498| 174008|                          0.01|
-|AHF3r             |  39632|  458| 174008|                          0.01|
-|Duke3r            |  53458|  813| 174008|                          0.02|
-|FBR5r             |  61790| 1073| 174008|                          0.02|
-|KH1               |  70047|  977| 174008|                          0.01|
-|KH2r              |  72760| 1024| 174008|                          0.01|
-|BSK5r             |  73728| 1575| 174008|                          0.02|
-|FBRAGG1           |  76234|  832| 174008|                          0.01|
-|AHW7              |  76850| 1278| 174008|                          0.02|
-|AHF1r             |  77526| 1043| 174008|                          0.01|
-|KH3               |  78767| 1102| 174008|                          0.01|
-|Avon19-1          |  79026|  995| 174008|                          0.01|
-|Avon19-3          |  80160| 1125| 174008|                          0.01|
-|MA                |  80715| 1536| 174008|                          0.02|
-|AHW2              |  80937| 1402| 174008|                          0.02|
-|FBRAGG3           |  81176| 1122| 174008|                          0.01|
-|AHF2              |  82223| 1396| 174008|                          0.02|
-|CJ2r              |  82528| 1023| 174008|                          0.01|
-|SHC2              |  84811| 1527| 174008|                          0.02|
-|CJ4               |  85003| 1371| 174008|                          0.02|
-|HW10              |  85935| 1512| 174008|                          0.02|
-|SHC9r             |  87518| 1514| 174008|                          0.02|
-|MIC2              |  88542| 1199| 174008|                          0.01|
-|LPR4              |  90158| 1530| 174008|                          0.02|
-|DUKE2             |  91423| 1896| 174008|                          0.02|
-|Ala5r             |  91632| 2171| 174008|                          0.02|
-|SHC10             |  91826| 1595| 174008|                          0.02|
-|CJ6r              |  94504| 1388| 174008|                          0.01|
-|CJ7               |  95178| 2898| 174008|                          0.03|
-|LexSHC7r          |  96265| 1803| 174008|                          0.02|
-|YATES1            |  96479| 1934| 174008|                          0.02|
-|DUKE1             |  96531| 1570| 174008|                          0.02|
-|SWSR45-1r         |  97061|  654| 174008|                          0.01|
-|CJ8r              | 100052| 1315| 174008|                          0.01|
-|LexSHC8r          | 102556| 1914| 174008|                          0.02|
-|SHC5              | 102976| 1895| 174008|                          0.02|
-|LEX9              | 103074|  994| 174008|                          0.01|
-|SHC3              | 103077| 1882| 174008|                          0.02|
-|CJ3r              | 103816| 1963| 174008|                          0.02|
-|ALA1_cat          | 104771| 2433| 174008|                          0.02|
-|DUKE7             | 104940| 3087| 174008|                          0.03|
-|DUKE5             | 105313| 2376| 174008|                          0.02|
-|LPR1              | 105841| 1459| 174008|                          0.01|
-|LEX11             | 106390| 1984| 174008|                          0.02|
-|DUKE6             | 106792| 1291| 174008|                          0.01|
-|Avon19-2          | 111266| 1661| 174008|                          0.01|
-|KH5               | 111410| 1902| 174008|                          0.02|
-|Lex1r             | 112257| 2203| 174008|                          0.02|
-|AHW4              | 112475| 2552| 174008|                          0.02|
-|KH7               | 113763| 1762| 174008|                          0.02|
-|NewSh20-2         | 114753| 1863| 174008|                          0.02|
-|KH6               | 116912| 1917| 174008|                          0.02|
-|Duke9r            | 117978| 1390| 174008|                          0.01|
-|KH4               | 118263| 1797| 174008|                          0.02|
-|ALA3_cat          | 118653| 3003| 174008|                          0.03|
-|CJ1               | 119837| 1716| 174008|                          0.01|
-|FBR4r             | 122154| 1887| 174008|                          0.02|
-|Yates2r           | 122241| 2424| 174008|                          0.02|
-|AHW1              | 122370| 1435| 174008|                          0.01|
-|YATES3            | 124252| 2669| 174008|                          0.02|
-|SHC6              | 124556| 2553| 174008|                          0.02|
-|Mon22-2           | 124561| 2157| 174008|                          0.02|
-|NP20-3            | 124747| 2105| 174008|                          0.02|
-|CJ9               | 124875| 2508| 174008|                          0.02|
-|Burn21-1          | 124936| 2101| 174008|                          0.02|
-|Can21-2           | 125784| 2198| 174008|                          0.02|
-|KH8               | 125792| 2150| 174008|                          0.02|
-|KITE1             | 126638| 3576| 174008|                          0.03|
-|GB33-1            | 127656| 2385| 174008|                          0.02|
-|CJ5r              | 127851| 2772| 174008|                          0.02|
-|Duke8r            | 128355| 1556| 174008|                          0.01|
-|SHC4r             | 128604| 2669| 174008|                          0.02|
-|Ted3r             | 129289| 2348| 174008|                          0.02|
-|TED4_cat          | 131758| 2863| 174008|                          0.02|
-|Unit22-1          | 134508| 2472| 174008|                          0.02|
-|ALA2_cat          | 134818| 3729| 174008|                          0.03|
-|Pal21-3           | 135398| 2411| 174008|                          0.02|
-|Sap               | 135413| 2487| 174008|                          0.02|
-|POP2              | 135928| 3004| 174008|                          0.02|
-|Norr20-1          | 136013| 2506| 174008|                          0.02|
-|FBRAGG2           | 136626| 3680| 174008|                          0.03|
-|Duke4r            | 136895| 3035| 174008|                          0.02|
-|Camb31-1          | 137074| 2448| 174008|                          0.02|
-|KITE2             | 137322| 2185| 174008|                          0.02|
-|Hamp23-1          | 138088| 2646| 174008|                          0.02|
-|Pop1r             | 139982| 3140| 174008|                          0.02|
-|LEX5              | 139987| 3014| 174008|                          0.02|
-|POP3              | 141037| 3140| 174008|                          0.02|
-|LPR2              | 143432| 2185| 174008|                          0.02|
-|SHC1              | 145541| 2382| 174008|                          0.02|
-|AHW5              | 145766| 2409| 174008|                          0.02|
-|Phil20-4          | 147887| 2925| 174008|                          0.02|
-|AHW3              | 148314| 3796| 174008|                          0.03|
-|MIC1              | 149322| 2762| 174008|                          0.02|
-|LEX13             | 149401| 3461| 174008|                          0.02|
-|TED6              | 154109| 3362| 174008|                          0.02|
-|KITE5_cat         | 157748| 5246| 174008|                          0.03|
-|PMBE_cat          | 163881| 3111| 174008|                          0.02|
-|KITE3             | 167083| 6441| 174008|                          0.04|
+| Sample            |   SNPs | Hets |  Total | Proportion_loci_with_genotype |
+| :---------------- | -----: | ---: | -----: | ----------------------------: |
+| FORMICA           |     43 |    1 | 174008 |                          0.02 |
+| PB17-10_cat       |    203 |    0 | 174008 |                          0.00 |
+| CAMPNSP           |    590 |   23 | 174008 |                          0.04 |
+| PB17-14           |   1034 |    9 | 174008 |                          0.01 |
+| PB07-23           |   1924 |   14 | 174008 |                          0.01 |
+| 09A               |   2608 |   34 | 174008 |                          0.01 |
+| CREMATOGASTER_cat |   3087 |   32 | 174008 |                          0.01 |
+| Kite8r            |   3688 |   53 | 174008 |                          0.01 |
+| GF34-1            |   4035 |   28 | 174008 |                          0.01 |
+| TU64_cat          |   5180 |   45 | 174008 |                          0.01 |
+| Sal13-14r         |   7892 |   78 | 174008 |                          0.01 |
+| BK6-1             |  10723 |  174 | 174008 |                          0.02 |
+| EXIT65            |  11573 |  122 | 174008 |                          0.01 |
+| NOVCOC1           |  12003 |   34 | 174008 |                          0.00 |
+| ALA4              |  18742 |  500 | 174008 |                          0.03 |
+| KITE4_cat         |  36913 |  498 | 174008 |                          0.01 |
+| AHF3r             |  39632 |  458 | 174008 |                          0.01 |
+| Duke3r            |  53458 |  813 | 174008 |                          0.02 |
+| FBR5r             |  61790 | 1073 | 174008 |                          0.02 |
+| KH1               |  70047 |  977 | 174008 |                          0.01 |
+| KH2r              |  72760 | 1024 | 174008 |                          0.01 |
+| BSK5r             |  73728 | 1575 | 174008 |                          0.02 |
+| FBRAGG1           |  76234 |  832 | 174008 |                          0.01 |
+| AHW7              |  76850 | 1278 | 174008 |                          0.02 |
+| AHF1r             |  77526 | 1043 | 174008 |                          0.01 |
+| KH3               |  78767 | 1102 | 174008 |                          0.01 |
+| Avon19-1          |  79026 |  995 | 174008 |                          0.01 |
+| Avon19-3          |  80160 | 1125 | 174008 |                          0.01 |
+| MA                |  80715 | 1536 | 174008 |                          0.02 |
+| AHW2              |  80937 | 1402 | 174008 |                          0.02 |
+| FBRAGG3           |  81176 | 1122 | 174008 |                          0.01 |
+| AHF2              |  82223 | 1396 | 174008 |                          0.02 |
+| CJ2r              |  82528 | 1023 | 174008 |                          0.01 |
+| SHC2              |  84811 | 1527 | 174008 |                          0.02 |
+| CJ4               |  85003 | 1371 | 174008 |                          0.02 |
+| HW10              |  85935 | 1512 | 174008 |                          0.02 |
+| SHC9r             |  87518 | 1514 | 174008 |                          0.02 |
+| MIC2              |  88542 | 1199 | 174008 |                          0.01 |
+| LPR4              |  90158 | 1530 | 174008 |                          0.02 |
+| DUKE2             |  91423 | 1896 | 174008 |                          0.02 |
+| Ala5r             |  91632 | 2171 | 174008 |                          0.02 |
+| SHC10             |  91826 | 1595 | 174008 |                          0.02 |
+| CJ6r              |  94504 | 1388 | 174008 |                          0.01 |
+| CJ7               |  95178 | 2898 | 174008 |                          0.03 |
+| LexSHC7r          |  96265 | 1803 | 174008 |                          0.02 |
+| YATES1            |  96479 | 1934 | 174008 |                          0.02 |
+| DUKE1             |  96531 | 1570 | 174008 |                          0.02 |
+| SWSR45-1r         |  97061 |  654 | 174008 |                          0.01 |
+| CJ8r              | 100052 | 1315 | 174008 |                          0.01 |
+| LexSHC8r          | 102556 | 1914 | 174008 |                          0.02 |
+| SHC5              | 102976 | 1895 | 174008 |                          0.02 |
+| LEX9              | 103074 |  994 | 174008 |                          0.01 |
+| SHC3              | 103077 | 1882 | 174008 |                          0.02 |
+| CJ3r              | 103816 | 1963 | 174008 |                          0.02 |
+| ALA1_cat          | 104771 | 2433 | 174008 |                          0.02 |
+| DUKE7             | 104940 | 3087 | 174008 |                          0.03 |
+| DUKE5             | 105313 | 2376 | 174008 |                          0.02 |
+| LPR1              | 105841 | 1459 | 174008 |                          0.01 |
+| LEX11             | 106390 | 1984 | 174008 |                          0.02 |
+| DUKE6             | 106792 | 1291 | 174008 |                          0.01 |
+| Avon19-2          | 111266 | 1661 | 174008 |                          0.01 |
+| KH5               | 111410 | 1902 | 174008 |                          0.02 |
+| Lex1r             | 112257 | 2203 | 174008 |                          0.02 |
+| AHW4              | 112475 | 2552 | 174008 |                          0.02 |
+| KH7               | 113763 | 1762 | 174008 |                          0.02 |
+| NewSh20-2         | 114753 | 1863 | 174008 |                          0.02 |
+| KH6               | 116912 | 1917 | 174008 |                          0.02 |
+| Duke9r            | 117978 | 1390 | 174008 |                          0.01 |
+| KH4               | 118263 | 1797 | 174008 |                          0.02 |
+| ALA3_cat          | 118653 | 3003 | 174008 |                          0.03 |
+| CJ1               | 119837 | 1716 | 174008 |                          0.01 |
+| FBR4r             | 122154 | 1887 | 174008 |                          0.02 |
+| Yates2r           | 122241 | 2424 | 174008 |                          0.02 |
+| AHW1              | 122370 | 1435 | 174008 |                          0.01 |
+| YATES3            | 124252 | 2669 | 174008 |                          0.02 |
+| SHC6              | 124556 | 2553 | 174008 |                          0.02 |
+| Mon22-2           | 124561 | 2157 | 174008 |                          0.02 |
+| NP20-3            | 124747 | 2105 | 174008 |                          0.02 |
+| CJ9               | 124875 | 2508 | 174008 |                          0.02 |
+| Burn21-1          | 124936 | 2101 | 174008 |                          0.02 |
+| Can21-2           | 125784 | 2198 | 174008 |                          0.02 |
+| KH8               | 125792 | 2150 | 174008 |                          0.02 |
+| KITE1             | 126638 | 3576 | 174008 |                          0.03 |
+| GB33-1            | 127656 | 2385 | 174008 |                          0.02 |
+| CJ5r              | 127851 | 2772 | 174008 |                          0.02 |
+| Duke8r            | 128355 | 1556 | 174008 |                          0.01 |
+| SHC4r             | 128604 | 2669 | 174008 |                          0.02 |
+| Ted3r             | 129289 | 2348 | 174008 |                          0.02 |
+| TED4_cat          | 131758 | 2863 | 174008 |                          0.02 |
+| Unit22-1          | 134508 | 2472 | 174008 |                          0.02 |
+| ALA2_cat          | 134818 | 3729 | 174008 |                          0.03 |
+| Pal21-3           | 135398 | 2411 | 174008 |                          0.02 |
+| Sap               | 135413 | 2487 | 174008 |                          0.02 |
+| POP2              | 135928 | 3004 | 174008 |                          0.02 |
+| Norr20-1          | 136013 | 2506 | 174008 |                          0.02 |
+| FBRAGG2           | 136626 | 3680 | 174008 |                          0.03 |
+| Duke4r            | 136895 | 3035 | 174008 |                          0.02 |
+| Camb31-1          | 137074 | 2448 | 174008 |                          0.02 |
+| KITE2             | 137322 | 2185 | 174008 |                          0.02 |
+| Hamp23-1          | 138088 | 2646 | 174008 |                          0.02 |
+| Pop1r             | 139982 | 3140 | 174008 |                          0.02 |
+| LEX5              | 139987 | 3014 | 174008 |                          0.02 |
+| POP3              | 141037 | 3140 | 174008 |                          0.02 |
+| LPR2              | 143432 | 2185 | 174008 |                          0.02 |
+| SHC1              | 145541 | 2382 | 174008 |                          0.02 |
+| AHW5              | 145766 | 2409 | 174008 |                          0.02 |
+| Phil20-4          | 147887 | 2925 | 174008 |                          0.02 |
+| AHW3              | 148314 | 3796 | 174008 |                          0.03 |
+| MIC1              | 149322 | 2762 | 174008 |                          0.02 |
+| LEX13             | 149401 | 3461 | 174008 |                          0.02 |
+| TED6              | 154109 | 3362 | 174008 |                          0.02 |
+| KITE5_cat         | 157748 | 5246 | 174008 |                          0.03 |
+| PMBE_cat          | 163881 | 3111 | 174008 |                          0.02 |
+| KITE3             | 167083 | 6441 | 174008 |                          0.04 |
 
- 
+
 Parsed 20160516_Andrew_SNP_sequences.fas:     
 * got rid of samples with low number of SNPs   
   * FORMICA
@@ -489,7 +486,7 @@ Parsed 20160516_Andrew_SNP_sequences.fas:
 Grabbing number of samples from command line:   
 grep '^>' 20160516_Andrew_SNP_sequences.fas | wc -l
      107        
-    
+
 **107 samples!**    
 
 **Next step is to reconstruct relationships of SNP Matrix**    
@@ -500,152 +497,152 @@ grep '^>' 20160516_Andrew_SNP_sequences.fas | wc -l
 
 For ML distance matrix with raxml, you need a fasta file and tree. Piece of code I've tried before: 
 > *##for anbe tree, claculate pairwise ml distance matrix
-nohup nice -n 19 ./raxmlHPC -f x -p 12345 -s ~/Desktop/2015_ANBE_common_garden/20150818_Andrew_SNP_sequences_nooutgr.fasta -m GTRGAMMA -t ~/Desktop/2015_ANBE_common_garden/RAxML_bestTree.20150819_commongarden_raxml_v2 -n 20150828_commongarden_pairwise_ML_distance &
+> nohup nice -n 19 ./raxmlHPC -f x -p 12345 -s ~/Desktop/2015_ANBE_common_garden/20150818_Andrew_SNP_sequences_nooutgr.fasta -m GTRGAMMA -t ~/Desktop/2015_ANBE_common_garden/RAxML_bestTree.20150819_commongarden_raxml_v2 -n 20150828_commongarden_pairwise_ML_distance &
 
-------    
+------
 <div id='id-section4'/>
 ### Page 4: 2016-05-13. Aphaenogaster morphological IDs     
 
 For JSG phytotron project (and also partly Lchick's thermal niche paper). 
 
 
-|ID         |Colony.ID |Species      |Vouchers    |Bernice.morphological.ID |pinned |sample.from |notes                                                                                                                                                           |
-|:----------|:---------|:------------|:-----------|:------------------------|:------|:-----------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-|ApGXL-01-A |MagSpr3   |carolinensis |            |                         |       |no specimen |                                                                                                                                                            |
-|ApGXL-01-B |MagSpr4   |rudis        |            |                         |       |no specimen |                                                                                                                                                            |
-|ApGXL-01-C |MagSpr7   |carolinensis |            |                         |       |no specimen |                                                                                                                                                            |
-|ApGXL-02-A |HW1       |rudis        |            |rudis                    |y      |Clint       |                                                                                                                                                            |
-|ApGXL-02-B |HW5       |rudis        |            |                         |       |no specimen |                                                                                                                                                            |
-|ApGXL-02-C |HW7       |rudis        |voucherNCSU |rudis                    |y      |Clint       |                                                                                                                                                            |
-|ApGXL-03-A |FMU4      |.            |            |                         |       |no specimen |                                                                                                                                                            |
-|ApGXL-04-A |UNF8      |rudis        |            |rudis                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-04-B |UNF9      |rudis        |            |rudis                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-04-C |UNF1      |carolinensis |            |carolinensis             |n      |Sara        |                                                                                                                                                            |
-|ApGXL-05-B |GSMNP4    |picea        |            |picea                    |y      |Sara        |                                                                                                                                                            |
-|ApGXL-05-D |GSMNP5    |picea        |            |picea                    |y      |Sara        |                                                                                                                                                            |
-|ApGXL-06-A |DW2       |rudis        |            |rudis                    |n      |Clint       |                                                                                                                                                            |
-|ApGXL-06-B |DW1       |rudis        |            |rudis                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-07-A |BRP2      |picea        |voucherNCSU |picea                    |y      |Clint       |                                                                                                                                                            |
-|ApGXL-07-B |BRP9      |picea        |voucherNCSU |                         |       |no specimen |                                                                                                                                                            |
-|ApGXL-08-A |Ijams6    |rudis        |            |rudis                    |y      |Sara        |                                                                                                                                                            |
-|ApGXL-08-D |IJams1    |rudis        |            |rudis                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-09-A |RC12      |rudis        |            |rudis                    |n      |Clint       |                                                                                                                                                            |
-|ApGXL-10-A |LVA9      |rudis        |            |rudis                    |n      |Sara        |there are 2 LVA 9s, not sure which one I have                                                                                                               |
-|ApGXL-10-B |LVA12     |rudis        |            |rudis                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-10-C |LVA11     |fulva        |            |fulva                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-10-F |LVA9      |rudis        |            |rudis                    |n      |Sara        |there are 2 LVA 9s, not sure which one I have                                                                                                               |
-|ApGXL-11-A |WP9       |rudis        |voucherNCSU |rudis                    |y      |Clint       |                                                                                                                                                            |
-|ApGXL-11-B |WP11      |rudis        |voucherNCSU |rudis?                   |y      |Clint       |where is this from?  It looks dark like picea, but no lighter antennal segmants.  It resembles one I described morphologically as rudis, but DNA said picea |
-|ApGXL-11-C |WP3       |fulva        |voucherNCSU |fulva                    |y      |Clint       |                                                                                                                                                            |
-|ApGXL-11-D |WP6       |rudis        |            |rudis                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-12-A |NOCK6     |picea        |            |rudis                    |n      |Clint       |where is this from?  It looks dark like picea, but no lighter antennal segmants.  It resembles one I described morphologically as rudis, but DNA said picea |
-|ApGXL-12-D |NOCK8     |rudis        |            |rudis                    |y      |Sara        |where is this from?  It looks dark like picea, but no lighter antennal segmants.  It resembles one I described morphologically as rudis, but DNA said picea |
-|ApGXL-13-A |HSP6      |picea        |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-13-B |HSP7      |picea        |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-13-C |HSP9      |picea        |voucherNCSU |picea                    |y      |Clint       |where is this from?  It looks dark like picea, but no lighter antennal segmants.  It resembles one I described morphologically as rudis, but DNA said picea |
-|ApGXL-13-D |HSP12     |picea        |            |picea                    |y      |Sara        |                                                                                                                                                            |
-|ApGXL-15-A |DSF4      |picea        |voucherNCSU |picea                    |y      |Clint       |                                                                                                                                                            |
-|ApGXL-15-B |DSF11     |picea        |voucherNCSU |picea                    |y      |Clint       |                                                                                                                                                            |
-|ApGXL-15-C |DSF8      |picea        |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-15-D |DSF12     |picea        |voucherNCSU |picea                    |y      |Clint       |                                                                                                                                                            |
-|APGXL-16-A |BRM4      |picea        |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|APGXL-16-B |BRM/BRF8  |picea        |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-17-A |Bard10    |picea        |voucherNCSU |picea                    |y      |Clint       |                                                                                                                                                            |
-|ApGXL-17-B |Bard9     |picea        |voucherNCSU |picea                    |y      |Clint       |                                                                                                                                                            |
-|ApGXL-17-C |Bard3     |picea        |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-18-A |Notch1    |fulva        |voucherNCSU |picea                    |y      |Sara        |discrepancy - spines not upward                                                                                                                             |
-|ApGXL-18-C |Notch4    |rudis        |            |picea                    |n      |Sara        |discrepancy, last 4 antennal sements lighter in color)                                                                                                      |
-|ApGXL-18-D |Notch2    |fulva        |voucherNCSU |picea                    |y      |Clint       |discrepancy - spines not upward                                                                                                                             |
-|ApGXL-19-A |HF001     |picea        |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-20-A |APB10     |picea        |voucherNCSU |picea                    |y      |Clint       |                                                                                                                                                            |
-|ApGXL-20-B |APB3a     |picea        |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-20-C |APB3b     |picea        |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-20-D |APB8      |picea        |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-21-A |Bear6     |picea        |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-21-B |Bear5     |picea        |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-21-C |Bear3     |picea        |            |picea                    |y      |Sara        |                                                                                                                                                            |
-|ApGXL-22-A |SEB1      |.            |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-22-B |SEB8      |picea        |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-22-C |SEB9      |picea        |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-23-A |MM1       |picea        |voucherNCSU |picea                    |y      |Clint       |                                                                                                                                                            |
-|ApGXL-23-B |MM2       |picea        |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-23-C |MM4       |picea        |voucherNCSU |picea                    |y      |Clint       |                                                                                                                                                            |
-|ApGXL-24-A |EW09      |picea        |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-24-B |EW4       |.            |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-25-A |RW3       |picea        |voucherNCSU |picea                    |y      |Clint       |light, but last 4 antennal segments lighter                                                                                                                 |
-|ApGXL-25-C |RW1       |.            |            |                         |       |no specimen |                                                                                                                                                            |
-|ApGXL-25-D |RW5       |picea        |            |picea                    |n      |Sara        |                                                                                                                                                            |
-|ApGXL-26-A |MB1       |picea        |voucherNCSU |picea                    |y      |Clint       |                                                                                                                                                            |
-|ApGXL-26-B |MB3       |picea        |voucherNCSU |                         |       |no specimen |                                                                                                                                                            |
-|ApGXL-26-C |MB4       |picea        |voucherNCSU |picea                    |y      |Clint       |                                                                                                                                                            |
-|ApGXL-26-D |MB2       |picea        |voucherNCSU |picea                    |y      |Clint       |                                                                                                                                                            |
-|ApGXL-26-E |MB6       |picea        |voucherNCSU |picea                    |y      |Clint       |                                                                                                                                                            |
-|ApGXL-27-A |KBH4b     |picea        |voucherNCSU |picea                    |y      |Clint       |                                                                                                                                                            |
-|ApGXL-27-B |KBH1      |picea        |voucherNCSU |picea                    |y      |Clint       |                                                                                                                                                            |
-|ApGXL-28-A |Brad1     |picea        |            |picea                    |y      |Sara        |                                                                                                                                                            |
-|ApGXL-28-B |Brad6     |picea        |voucherNCSU |picea                    |y      |Clint       |                                                                                                                                                            |
-|Aphaen 15  |Aphaen 15 |             |            |                         |       |            |                                                                                                                                                            |
-|Aphaen A2  |Aphaen A2 |             |            |                         |       |            |                                                                                                                                                            |
-|Aphaen12   |Aphaen12  |             |            |                         |       |            |                                                                                                                                                            |
-|Aphaen17   |Aphaen17  |             |            |                         |       |            |                                                                                                                                                            |
-|Aphaen18   |Aphaen18  |rudis        |            |                         |       |            |                                                                                                                                                            |
-|AphaenA    |AphaenA   |rudis        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|AphaenB    |AphaenB   |             |            |                         |       |            |                                                                                                                                                            |
-|BARD11     |BARD11    |             |            |                         |       |            |                                                                                                                                                            |
-|BARD2      |BARD2     |picea        |            |                         |       |            |                                                                                                                                                            |
-|BARD5      |BARD5     |fulva        |            |                         |       |            |                                                                                                                                                            |
-|Blank      |Blank     |rudis        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|Brad2      |Brad2     |picea        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|Brad3      |Brad3     |             |            |                         |       |            |                                                                                                                                                            |
-|BRP-2B     |BRP-2B    |picea        |            |                         |       |            |                                                                                                                                                            |
-|BRP08      |BRP08     |             |            |                         |       |            |                                                                                                                                                            |
-|BRP1       |BRP1      |picea        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|BRP10      |BRP10     |             |            |                         |       |            |                                                                                                                                                            |
-|BRP11      |BRP11     |picea        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|BRP3       |BRP3      |picea        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|BRP5       |BRP5      |picea        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|BRP6       |BRP6      |             |            |                         |       |            |                                                                                                                                                            |
-|BRP7       |BRP7      |picea        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|DF-3A      |DF-3A     |rudis        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|DF1-A      |DF1-A     |rudis        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|FMU6       |FMU6      |rudis        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|HSP1       |HSP1      |picea        |            |                         |       |            |                                                                                                                                                            |
-|HSP4       |HSP4      |             |            |                         |       |            |                                                                                                                                                            |
-|HSP5       |HSP5      |picea        |            |                         |       |            |                                                                                                                                                            |
-|HW8        |HW8       |             |            |                         |       |            |                                                                                                                                                            |
-|HW9        |HW9       |             |            |                         |       |            |                                                                                                                                                            |
-|KBH6       |KBH6      |             |            |                         |       |            |                                                                                                                                                            |
-|KBH8       |KBH8      |picea        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|LVA1       |LVA1      |fulva        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|LVA13      |LVA13     |rudis        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|LVA2       |LVA2      |rudis        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|LVA3       |LVA3      |rudis        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|MAGSPR6    |MAGSPR6   |rudis        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|NSP2       |NSP2      |picea        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|NSP3       |NSP3      |rudis        |            |                         |       |            |                                                                                                                                                            |
-|NSP7       |NSP7      |fulva        |            |                         |       |            |                                                                                                                                                            |
-|OLDRC1     |OLDRC1    |fulva        |            |                         |       |            |                                                                                                                                                            |
-|OldRC3     |OldRC3    |fulva        |            |                         |       |            |                                                                                                                                                            |
-|OldRC4     |OldRC4    |rudis        |            |                         |       |            |                                                                                                                                                            |
-|OldRC6     |OldRC6    |rudis        |            |                         |       |            |                                                                                                                                                            |
-|OLDRC7     |OLDRC7    |rudis        |            |                         |       |            |                                                                                                                                                            |
-|RC02       |RC02      |fulva        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|RC04       |RC04      |rudis        |            |                         |       |            |                                                                                                                                                            |
-|RC06       |RC06      |rudis        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|RC09       |RC09      |rudis        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|RC10       |RC10      |rudis        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|RC11       |RC11      |rudis        |            |                         |       |            |                                                                                                                                                            |
-|RC13       |RC13      |rudis        |voucherNCSU |                         |       |            |                                                                                                                                                            |
-|RC14       |RC14      |rudis        |            |                         |       |            |                                                                                                                                                            |
-|RC15       |RC15      |rudis        |            |                         |       |            |                                                                                                                                                            |
-|RC16       |RC16      |rudis        |            |                         |       |            |                                                                                                                                                            |
-|Seb 2A     |Seb 2A    |             |            |                         |       |            |                                                                                                                                                            |
-|SEB3A      |SEB3A     |             |            |                         |       |            |                                                                                                                                                            |
-|UNF4A      |UNF4A     |rudis        |            |                         |       |            |                                                                                                                                                            |
-|UNF7A      |UNF7A     |miamiana     |            |                         |       |            |                                                                                                                                                            |
-|YM01       |YM01      |rudis        |            |                         |       |            |                                                                                                                                                            |
-|YM02       |YM02      |rudis        |            |                         |       |            |                                                                                                                                                            |
-|YM03       |YM03      |rudis        |            |                         |       |            |                                                                                                                                                            |
+| ID         | Colony.ID | Species      | Vouchers    | Bernice.morphological.ID | pinned | sample.from | notes                                    |
+| :--------- | :-------- | :----------- | :---------- | :----------------------- | :----- | :---------- | :--------------------------------------- |
+| ApGXL-01-A | MagSpr3   | carolinensis |             |                          |        | no specimen |                                          |
+| ApGXL-01-B | MagSpr4   | rudis        |             |                          |        | no specimen |                                          |
+| ApGXL-01-C | MagSpr7   | carolinensis |             |                          |        | no specimen |                                          |
+| ApGXL-02-A | HW1       | rudis        |             | rudis                    | y      | Clint       |                                          |
+| ApGXL-02-B | HW5       | rudis        |             |                          |        | no specimen |                                          |
+| ApGXL-02-C | HW7       | rudis        | voucherNCSU | rudis                    | y      | Clint       |                                          |
+| ApGXL-03-A | FMU4      | .            |             |                          |        | no specimen |                                          |
+| ApGXL-04-A | UNF8      | rudis        |             | rudis                    | n      | Sara        |                                          |
+| ApGXL-04-B | UNF9      | rudis        |             | rudis                    | n      | Sara        |                                          |
+| ApGXL-04-C | UNF1      | carolinensis |             | carolinensis             | n      | Sara        |                                          |
+| ApGXL-05-B | GSMNP4    | picea        |             | picea                    | y      | Sara        |                                          |
+| ApGXL-05-D | GSMNP5    | picea        |             | picea                    | y      | Sara        |                                          |
+| ApGXL-06-A | DW2       | rudis        |             | rudis                    | n      | Clint       |                                          |
+| ApGXL-06-B | DW1       | rudis        |             | rudis                    | n      | Sara        |                                          |
+| ApGXL-07-A | BRP2      | picea        | voucherNCSU | picea                    | y      | Clint       |                                          |
+| ApGXL-07-B | BRP9      | picea        | voucherNCSU |                          |        | no specimen |                                          |
+| ApGXL-08-A | Ijams6    | rudis        |             | rudis                    | y      | Sara        |                                          |
+| ApGXL-08-D | IJams1    | rudis        |             | rudis                    | n      | Sara        |                                          |
+| ApGXL-09-A | RC12      | rudis        |             | rudis                    | n      | Clint       |                                          |
+| ApGXL-10-A | LVA9      | rudis        |             | rudis                    | n      | Sara        | there are 2 LVA 9s, not sure which one I have |
+| ApGXL-10-B | LVA12     | rudis        |             | rudis                    | n      | Sara        |                                          |
+| ApGXL-10-C | LVA11     | fulva        |             | fulva                    | n      | Sara        |                                          |
+| ApGXL-10-F | LVA9      | rudis        |             | rudis                    | n      | Sara        | there are 2 LVA 9s, not sure which one I have |
+| ApGXL-11-A | WP9       | rudis        | voucherNCSU | rudis                    | y      | Clint       |                                          |
+| ApGXL-11-B | WP11      | rudis        | voucherNCSU | rudis?                   | y      | Clint       | where is this from?  It looks dark like picea, but no lighter antennal segmants.  It resembles one I described morphologically as rudis, but DNA said picea |
+| ApGXL-11-C | WP3       | fulva        | voucherNCSU | fulva                    | y      | Clint       |                                          |
+| ApGXL-11-D | WP6       | rudis        |             | rudis                    | n      | Sara        |                                          |
+| ApGXL-12-A | NOCK6     | picea        |             | rudis                    | n      | Clint       | where is this from?  It looks dark like picea, but no lighter antennal segmants.  It resembles one I described morphologically as rudis, but DNA said picea |
+| ApGXL-12-D | NOCK8     | rudis        |             | rudis                    | y      | Sara        | where is this from?  It looks dark like picea, but no lighter antennal segmants.  It resembles one I described morphologically as rudis, but DNA said picea |
+| ApGXL-13-A | HSP6      | picea        |             | picea                    | n      | Sara        |                                          |
+| ApGXL-13-B | HSP7      | picea        |             | picea                    | n      | Sara        |                                          |
+| ApGXL-13-C | HSP9      | picea        | voucherNCSU | picea                    | y      | Clint       | where is this from?  It looks dark like picea, but no lighter antennal segmants.  It resembles one I described morphologically as rudis, but DNA said picea |
+| ApGXL-13-D | HSP12     | picea        |             | picea                    | y      | Sara        |                                          |
+| ApGXL-15-A | DSF4      | picea        | voucherNCSU | picea                    | y      | Clint       |                                          |
+| ApGXL-15-B | DSF11     | picea        | voucherNCSU | picea                    | y      | Clint       |                                          |
+| ApGXL-15-C | DSF8      | picea        |             | picea                    | n      | Sara        |                                          |
+| ApGXL-15-D | DSF12     | picea        | voucherNCSU | picea                    | y      | Clint       |                                          |
+| APGXL-16-A | BRM4      | picea        |             | picea                    | n      | Sara        |                                          |
+| APGXL-16-B | BRM/BRF8  | picea        |             | picea                    | n      | Sara        |                                          |
+| ApGXL-17-A | Bard10    | picea        | voucherNCSU | picea                    | y      | Clint       |                                          |
+| ApGXL-17-B | Bard9     | picea        | voucherNCSU | picea                    | y      | Clint       |                                          |
+| ApGXL-17-C | Bard3     | picea        |             | picea                    | n      | Sara        |                                          |
+| ApGXL-18-A | Notch1    | fulva        | voucherNCSU | picea                    | y      | Sara        | discrepancy - spines not upward          |
+| ApGXL-18-C | Notch4    | rudis        |             | picea                    | n      | Sara        | discrepancy, last 4 antennal sements lighter in color) |
+| ApGXL-18-D | Notch2    | fulva        | voucherNCSU | picea                    | y      | Clint       | discrepancy - spines not upward          |
+| ApGXL-19-A | HF001     | picea        |             | picea                    | n      | Sara        |                                          |
+| ApGXL-20-A | APB10     | picea        | voucherNCSU | picea                    | y      | Clint       |                                          |
+| ApGXL-20-B | APB3a     | picea        |             | picea                    | n      | Sara        |                                          |
+| ApGXL-20-C | APB3b     | picea        |             | picea                    | n      | Sara        |                                          |
+| ApGXL-20-D | APB8      | picea        |             | picea                    | n      | Sara        |                                          |
+| ApGXL-21-A | Bear6     | picea        |             | picea                    | n      | Sara        |                                          |
+| ApGXL-21-B | Bear5     | picea        |             | picea                    | n      | Sara        |                                          |
+| ApGXL-21-C | Bear3     | picea        |             | picea                    | y      | Sara        |                                          |
+| ApGXL-22-A | SEB1      | .            |             | picea                    | n      | Sara        |                                          |
+| ApGXL-22-B | SEB8      | picea        |             | picea                    | n      | Sara        |                                          |
+| ApGXL-22-C | SEB9      | picea        |             | picea                    | n      | Sara        |                                          |
+| ApGXL-23-A | MM1       | picea        | voucherNCSU | picea                    | y      | Clint       |                                          |
+| ApGXL-23-B | MM2       | picea        |             | picea                    | n      | Sara        |                                          |
+| ApGXL-23-C | MM4       | picea        | voucherNCSU | picea                    | y      | Clint       |                                          |
+| ApGXL-24-A | EW09      | picea        |             | picea                    | n      | Sara        |                                          |
+| ApGXL-24-B | EW4       | .            |             | picea                    | n      | Sara        |                                          |
+| ApGXL-25-A | RW3       | picea        | voucherNCSU | picea                    | y      | Clint       | light, but last 4 antennal segments lighter |
+| ApGXL-25-C | RW1       | .            |             |                          |        | no specimen |                                          |
+| ApGXL-25-D | RW5       | picea        |             | picea                    | n      | Sara        |                                          |
+| ApGXL-26-A | MB1       | picea        | voucherNCSU | picea                    | y      | Clint       |                                          |
+| ApGXL-26-B | MB3       | picea        | voucherNCSU |                          |        | no specimen |                                          |
+| ApGXL-26-C | MB4       | picea        | voucherNCSU | picea                    | y      | Clint       |                                          |
+| ApGXL-26-D | MB2       | picea        | voucherNCSU | picea                    | y      | Clint       |                                          |
+| ApGXL-26-E | MB6       | picea        | voucherNCSU | picea                    | y      | Clint       |                                          |
+| ApGXL-27-A | KBH4b     | picea        | voucherNCSU | picea                    | y      | Clint       |                                          |
+| ApGXL-27-B | KBH1      | picea        | voucherNCSU | picea                    | y      | Clint       |                                          |
+| ApGXL-28-A | Brad1     | picea        |             | picea                    | y      | Sara        |                                          |
+| ApGXL-28-B | Brad6     | picea        | voucherNCSU | picea                    | y      | Clint       |                                          |
+| Aphaen 15  | Aphaen 15 |              |             |                          |        |             |                                          |
+| Aphaen A2  | Aphaen A2 |              |             |                          |        |             |                                          |
+| Aphaen12   | Aphaen12  |              |             |                          |        |             |                                          |
+| Aphaen17   | Aphaen17  |              |             |                          |        |             |                                          |
+| Aphaen18   | Aphaen18  | rudis        |             |                          |        |             |                                          |
+| AphaenA    | AphaenA   | rudis        | voucherNCSU |                          |        |             |                                          |
+| AphaenB    | AphaenB   |              |             |                          |        |             |                                          |
+| BARD11     | BARD11    |              |             |                          |        |             |                                          |
+| BARD2      | BARD2     | picea        |             |                          |        |             |                                          |
+| BARD5      | BARD5     | fulva        |             |                          |        |             |                                          |
+| Blank      | Blank     | rudis        | voucherNCSU |                          |        |             |                                          |
+| Brad2      | Brad2     | picea        | voucherNCSU |                          |        |             |                                          |
+| Brad3      | Brad3     |              |             |                          |        |             |                                          |
+| BRP-2B     | BRP-2B    | picea        |             |                          |        |             |                                          |
+| BRP08      | BRP08     |              |             |                          |        |             |                                          |
+| BRP1       | BRP1      | picea        | voucherNCSU |                          |        |             |                                          |
+| BRP10      | BRP10     |              |             |                          |        |             |                                          |
+| BRP11      | BRP11     | picea        | voucherNCSU |                          |        |             |                                          |
+| BRP3       | BRP3      | picea        | voucherNCSU |                          |        |             |                                          |
+| BRP5       | BRP5      | picea        | voucherNCSU |                          |        |             |                                          |
+| BRP6       | BRP6      |              |             |                          |        |             |                                          |
+| BRP7       | BRP7      | picea        | voucherNCSU |                          |        |             |                                          |
+| DF-3A      | DF-3A     | rudis        | voucherNCSU |                          |        |             |                                          |
+| DF1-A      | DF1-A     | rudis        | voucherNCSU |                          |        |             |                                          |
+| FMU6       | FMU6      | rudis        | voucherNCSU |                          |        |             |                                          |
+| HSP1       | HSP1      | picea        |             |                          |        |             |                                          |
+| HSP4       | HSP4      |              |             |                          |        |             |                                          |
+| HSP5       | HSP5      | picea        |             |                          |        |             |                                          |
+| HW8        | HW8       |              |             |                          |        |             |                                          |
+| HW9        | HW9       |              |             |                          |        |             |                                          |
+| KBH6       | KBH6      |              |             |                          |        |             |                                          |
+| KBH8       | KBH8      | picea        | voucherNCSU |                          |        |             |                                          |
+| LVA1       | LVA1      | fulva        | voucherNCSU |                          |        |             |                                          |
+| LVA13      | LVA13     | rudis        | voucherNCSU |                          |        |             |                                          |
+| LVA2       | LVA2      | rudis        | voucherNCSU |                          |        |             |                                          |
+| LVA3       | LVA3      | rudis        | voucherNCSU |                          |        |             |                                          |
+| MAGSPR6    | MAGSPR6   | rudis        | voucherNCSU |                          |        |             |                                          |
+| NSP2       | NSP2      | picea        | voucherNCSU |                          |        |             |                                          |
+| NSP3       | NSP3      | rudis        |             |                          |        |             |                                          |
+| NSP7       | NSP7      | fulva        |             |                          |        |             |                                          |
+| OLDRC1     | OLDRC1    | fulva        |             |                          |        |             |                                          |
+| OldRC3     | OldRC3    | fulva        |             |                          |        |             |                                          |
+| OldRC4     | OldRC4    | rudis        |             |                          |        |             |                                          |
+| OldRC6     | OldRC6    | rudis        |             |                          |        |             |                                          |
+| OLDRC7     | OLDRC7    | rudis        |             |                          |        |             |                                          |
+| RC02       | RC02      | fulva        | voucherNCSU |                          |        |             |                                          |
+| RC04       | RC04      | rudis        |             |                          |        |             |                                          |
+| RC06       | RC06      | rudis        | voucherNCSU |                          |        |             |                                          |
+| RC09       | RC09      | rudis        | voucherNCSU |                          |        |             |                                          |
+| RC10       | RC10      | rudis        | voucherNCSU |                          |        |             |                                          |
+| RC11       | RC11      | rudis        |             |                          |        |             |                                          |
+| RC13       | RC13      | rudis        | voucherNCSU |                          |        |             |                                          |
+| RC14       | RC14      | rudis        |             |                          |        |             |                                          |
+| RC15       | RC15      | rudis        |             |                          |        |             |                                          |
+| RC16       | RC16      | rudis        |             |                          |        |             |                                          |
+| Seb 2A     | Seb 2A    |              |             |                          |        |             |                                          |
+| SEB3A      | SEB3A     |              |             |                          |        |             |                                          |
+| UNF4A      | UNF4A     | rudis        |             |                          |        |             |                                          |
+| UNF7A      | UNF7A     | miamiana     |             |                          |        |             |                                          |
+| YM01       | YM01      | rudis        |             |                          |        |             |                                          |
+| YM02       | YM02      | rudis        |             |                          |        |             |                                          |
+| YM03       | YM03      | rudis        |             |                          |        |             |                                          |
 
 
 
@@ -658,107 +655,106 @@ Sample list and plate layout for sanger sequencing. Amplicons ~ 100bps and were 
 If interested in protocols , see [here](https://github.com/adnguyen/Dissertation_temperature_adaptation_ants/blob/master/ANBE_protocols.md).    
 
 
-|Well |Template.Name |Primer.Name |
-|:----|:-------------|:-----------|
-|A1   |HF 5-1        |18s_F328    |
-|B1   |HF 5-1        |18s_R427    |
-|C1   |HF 7-1        |18s_F328    |
-|D1   |HF 7-1        |18s_R427    |
-|E1   |DF 13-A       |18s_F328    |
-|F1   |DF 13-A       |18s_R427    |
-|G1   |DF 14-A       |18s_F328    |
-|H1   |DF 14-A       |18s_R427    |
-|A2   |DF 8-B        |hsp83_F1583 |
-|B2   |DF 8-B        |hsp83_R1682 |
-|C2   |DF 5C-4       |hsp83_F1583 |
-|D2   |DF 5C-4       |hsp83_R1682 |
-|E2   |HF 8-1        |hsp83_F1583 |
-|F2   |HF 8-1        |hsp83_R1682 |
-|G2   |HF 2-2        |hsp83_F1583 |
-|H2   |HF 2-2        |hsp83_R1682 |
-|A3   |DF 1-D        |hsp70_F1468 |
-|B3   |DF 1-D        |hsp70_R1592 |
-|C3   |DF 10-3       |hsp70_F1468 |
-|D3   |DF 10-3       |hsp70_R1592 |
-|E3   |HF2 8-2       |hsp70_F1468 |
-|F3   |HF2 8-2       |hsp70_R1592 |
-|G3   |HF2 4-1       |hsp70_F1468 |
-|H3   |HF2 4-1       |hsp70_R1592 |
-|A4   |HF2 7-2       |hsp40_F541  |
-|B4   |HF2 7-2       |hsp40_R641  |
-|C4   |HF2 5-2       |hsp40_F541  |
-|D4   |HF2 5-2       |hsp40_R641  |
-|E4   |DF A1-B       |hsp40_F541  |
-|F4   |DF A1-B       |hsp40_R641  |
-|G4   |DF A8-B       |hsp40_F541  |
-|H4   |DF A8-B       |hsp40_R641  |
-|A5   |HF2 5-3       |actin_F984  |
-|B5   |HF2 5-3       |actin_R1095 |
-|C5   |HF2 8-1       |actin_F984  |
-|D5   |HF2 8-1       |actin_R1095 |
-|E5   |DF 3-A        |actin_F984  |
-|F5   |DF 3-A        |actin_R1095 |
-|G5   |DF 7-A        |actin_F984  |
-|H5   |DF 7-A        |actin_R1095 |
-|A6   |Exit65        |70_1468     |
-|B6   |BK            |70_1468     |
-|C6   |Ted6          |70_1468     |
-|D6   |DUKE6         |70_1468     |
-|E6   |ALA1          |70_1468     |
-|F6   |KH2           |70_1468     |
-|G6   |FB2           |70_1468     |
-|H6   |Exit65        |70_1592     |
-|A7   |BK            |70_1592     |
-|B7   |Ted6          |70_1592     |
-|C7   |DUKE6         |70_1592     |
-|D7   |ALA1          |70_1592     |
-|E7   |KH2           |70_1592     |
-|F7   |FB2           |70_1592     |
-|G7   |Exit65        |83_1583     |
-|H7   |BK            |83_1583     |
-|A8   |TED3          |83_1583     |
-|B8   |DUKE6         |83_1583     |
-|C8   |ALA1          |83_1583     |
-|D8   |KH2           |83_1583     |
-|E8   |FB2           |83_1583     |
-|F8   |Exit65        |83_1682     |
-|G8   |BK            |83_1682     |
-|H8   |TED3          |83_1682     |
-|A9   |DUKE6         |83_1682     |
-|B9   |ALA1          |83_1682     |
-|C9   |KH2           |83_1682     |
-|D9   |FB2           |83_1682     |
-|E9   |PB1710        |83_279      |
-|F9   |POP2          |83_279      |
-|G9   |SHC2          |83_279      |
-|H9   |cremato       |83_279      |
-|A10  |ex            |83_279      |
-|B10  |bk            |83_279      |
-|C10  |TED6          |83_279      |
-|D10  |PB1710        |83_300      |
-|E10  |POP2          |83_300      |
-|F10  |SHC2          |83_300      |
-|G10  |cremato       |83_300      |
-|H10  |ex            |83_300      |
-|A11  |bk            |83_300      |
-|B11  |TED6          |83_300      |
-|C11  |DUKE6         |hsp40_541   |
-|D11  |ALA1          |hsp40_541   |
-|E11  |KH2           |hsp40_541   |
-|F11  |FB2           |hsp40_541   |
-|G11  |EX            |hsp40_541   |
-|H11  |BK            |hsp40_541   |
-|A12  |Ted6          |hsp40_541   |
-|B12  |DUKE6         |hsp40_641   |
-|C12  |ALA1          |hsp40_641   |
-|D12  |KH2           |hsp40_641   |
-|E12  |FB2           |hsp40_641   |
-|F12  |EX            |hsp40_641   |
-|G12  |BK            |hsp40_641   |
-|H12  |Ted6          |hsp40_641   |
+| Well | Template.Name | Primer.Name |
+| :--- | :------------ | :---------- |
+| A1   | HF 5-1        | 18s_F328    |
+| B1   | HF 5-1        | 18s_R427    |
+| C1   | HF 7-1        | 18s_F328    |
+| D1   | HF 7-1        | 18s_R427    |
+| E1   | DF 13-A       | 18s_F328    |
+| F1   | DF 13-A       | 18s_R427    |
+| G1   | DF 14-A       | 18s_F328    |
+| H1   | DF 14-A       | 18s_R427    |
+| A2   | DF 8-B        | hsp83_F1583 |
+| B2   | DF 8-B        | hsp83_R1682 |
+| C2   | DF 5C-4       | hsp83_F1583 |
+| D2   | DF 5C-4       | hsp83_R1682 |
+| E2   | HF 8-1        | hsp83_F1583 |
+| F2   | HF 8-1        | hsp83_R1682 |
+| G2   | HF 2-2        | hsp83_F1583 |
+| H2   | HF 2-2        | hsp83_R1682 |
+| A3   | DF 1-D        | hsp70_F1468 |
+| B3   | DF 1-D        | hsp70_R1592 |
+| C3   | DF 10-3       | hsp70_F1468 |
+| D3   | DF 10-3       | hsp70_R1592 |
+| E3   | HF2 8-2       | hsp70_F1468 |
+| F3   | HF2 8-2       | hsp70_R1592 |
+| G3   | HF2 4-1       | hsp70_F1468 |
+| H3   | HF2 4-1       | hsp70_R1592 |
+| A4   | HF2 7-2       | hsp40_F541  |
+| B4   | HF2 7-2       | hsp40_R641  |
+| C4   | HF2 5-2       | hsp40_F541  |
+| D4   | HF2 5-2       | hsp40_R641  |
+| E4   | DF A1-B       | hsp40_F541  |
+| F4   | DF A1-B       | hsp40_R641  |
+| G4   | DF A8-B       | hsp40_F541  |
+| H4   | DF A8-B       | hsp40_R641  |
+| A5   | HF2 5-3       | actin_F984  |
+| B5   | HF2 5-3       | actin_R1095 |
+| C5   | HF2 8-1       | actin_F984  |
+| D5   | HF2 8-1       | actin_R1095 |
+| E5   | DF 3-A        | actin_F984  |
+| F5   | DF 3-A        | actin_R1095 |
+| G5   | DF 7-A        | actin_F984  |
+| H5   | DF 7-A        | actin_R1095 |
+| A6   | Exit65        | 70_1468     |
+| B6   | BK            | 70_1468     |
+| C6   | Ted6          | 70_1468     |
+| D6   | DUKE6         | 70_1468     |
+| E6   | ALA1          | 70_1468     |
+| F6   | KH2           | 70_1468     |
+| G6   | FB2           | 70_1468     |
+| H6   | Exit65        | 70_1592     |
+| A7   | BK            | 70_1592     |
+| B7   | Ted6          | 70_1592     |
+| C7   | DUKE6         | 70_1592     |
+| D7   | ALA1          | 70_1592     |
+| E7   | KH2           | 70_1592     |
+| F7   | FB2           | 70_1592     |
+| G7   | Exit65        | 83_1583     |
+| H7   | BK            | 83_1583     |
+| A8   | TED3          | 83_1583     |
+| B8   | DUKE6         | 83_1583     |
+| C8   | ALA1          | 83_1583     |
+| D8   | KH2           | 83_1583     |
+| E8   | FB2           | 83_1583     |
+| F8   | Exit65        | 83_1682     |
+| G8   | BK            | 83_1682     |
+| H8   | TED3          | 83_1682     |
+| A9   | DUKE6         | 83_1682     |
+| B9   | ALA1          | 83_1682     |
+| C9   | KH2           | 83_1682     |
+| D9   | FB2           | 83_1682     |
+| E9   | PB1710        | 83_279      |
+| F9   | POP2          | 83_279      |
+| G9   | SHC2          | 83_279      |
+| H9   | cremato       | 83_279      |
+| A10  | ex            | 83_279      |
+| B10  | bk            | 83_279      |
+| C10  | TED6          | 83_279      |
+| D10  | PB1710        | 83_300      |
+| E10  | POP2          | 83_300      |
+| F10  | SHC2          | 83_300      |
+| G10  | cremato       | 83_300      |
+| H10  | ex            | 83_300      |
+| A11  | bk            | 83_300      |
+| B11  | TED6          | 83_300      |
+| C11  | DUKE6         | hsp40_541   |
+| D11  | ALA1          | hsp40_541   |
+| E11  | KH2           | hsp40_541   |
+| F11  | FB2           | hsp40_541   |
+| G11  | EX            | hsp40_541   |
+| H11  | BK            | hsp40_541   |
+| A12  | Ted6          | hsp40_541   |
+| B12  | DUKE6         | hsp40_641   |
+| C12  | ALA1          | hsp40_641   |
+| D12  | KH2           | hsp40_641   |
+| E12  | FB2           | hsp40_641   |
+| F12  | EX            | hsp40_641   |
+| G12  | BK            | hsp40_641   |
+| H12  | Ted6          | hsp40_641   |
 
-
-------    
+------
 <div id='id-section6'/>
 ### Page 6: 2016-05-17 Phylogenetics results from 2016-05-16 (CIPRES RaxML analysis)
 
@@ -780,10 +776,10 @@ Results from [2016-05-16](#id-section3) ML tree using RaxML black box on CIPRES.
 When comparing with the NJ tree, the placement of *A. picea* is different. 
 * ML tree: *A. picea* is sister to *A. rudis*,*A. miamiana*, *A. lamellidens*     
 * NJ tree: *A. picea* is sister to *A. rudis*,*A. miamiana*, *A. lamellidens*,*A. ashmeadi*, *A. floridana*       
- 
+
 ##Rerunning analysis without PB07-23 to double check this sample doesnt skew ingroup relationships.      
 
-------    
+------
 <div id='id-section7'/>
 ### Page 7: 2016-05-17. ABI steponeplus machine maintenance.     
 
@@ -794,12 +790,12 @@ Machine Info: [ABI steponeplus](https://www.thermofisher.com/us/en/home/life-sci
 1. serial #: 272007769      
 2. ref: 4376592     
 3. University #: A92219    
- 
+
 Under contract, no cost.    
 Contact info:      
 * Jeremy, 1-800-955-6288 option 3, then option 1    
 * issue#: 405638599    
- 
+
 
 They need to send to Indonesia for repair. 1 month eta.     
 
@@ -807,16 +803,15 @@ They need to send to Indonesia for repair. 1 month eta.
 
 Also: 
 > *Hi Andrew,     
- You should receive a Loaner within 2-3 business days.    
-Thanks,     
-Foi Taua     
+>  You should receive a Loaner within 2-3 business days.    
+> Thanks,     
+> Foi Taua     
 
 Didn't know we were getting a loaner. He didn't mention cost. 
 
 20160520 update: Machine sent out
 
-
-------    
+------
 <div id='id-section8'/>
 ### Page 8: 2016-05-18.Phylogenetic results without pogo sample  
 The results of phylogenetic analysis of SNP matrix from [Page 3: 2016-05-16](#id-section3). Complete ddRAD-seq samples: processing. I excluded pogos, and it still needs further parsing. 
@@ -825,10 +820,10 @@ The results of phylogenetic analysis of SNP matrix from [Page 3: 2016-05-16](#id
 2. Parse out bootstraps below 100
 3. Need to relabel kite samples so that they're lower case.    
 4. Add in samples:
-  * HW6-rudis
-  * LPR4-ashmeadi
-  * 09A and 10A-rudis 
- 
+* HW6-rudis
+* LPR4-ashmeadi
+    * 09A and 10A-rudis 
+
 
 
 ###Getting rid of LPR4 and BSK5
@@ -867,7 +862,7 @@ Summary: Same topology without pogo sample.
 
 
 
-------    
+------
 <div id='id-section9'/>   
 ### Page 9: 2016-05-18. Agarose gel electrophoresis of qPCR amplicons; Curtis and ANBE samples    
 We wanted to check for specificity on a gel. Although, agarose gels don't completely pick up primer dimers. Even so, we acquire fluorescence at a higher temperature where those primer dimers disappear.   
@@ -875,53 +870,53 @@ We wanted to check for specificity on a gel. Although, agarose gels don't comple
 ## Sample list   
 
 
-| Lane|Section |Sample  |Gene       |Primer_pair |
-|----:|:-------|:-------|:----------|:-----------|
-|    1|Top     |Ladder  |           |            |
-|    2|Top     |Exit65  |hsc70-4 h2 |1468+1592   |
-|    3|Top     |BK      |hsc70-4 h2 |1468+1592   |
-|    4|Top     |Ted6    |hsc70-4 h2 |1468+1592   |
-|    5|Top     |DUKE6   |hsc70-4 h2 |1468+1592   |
-|    6|Top     |ALA1    |hsc70-4 h2 |1468+1592   |
-|    7|Top     |KH2     |hsc70-4 h2 |1468+1592   |
-|    8|Top     |FB2     |hsc70-4 h2 |1468+1592   |
-|    9|Top     |Exit65  |hsp83      |1592+1682   |
-|   10|Top     |BK      |hsp83      |1592+1682   |
-|   11|Top     |TED3    |hsp83      |1592+1682   |
-|   12|Top     |DUKE6   |hsp83      |1592+1682   |
-|   13|Top     |ALA1    |hsp83      |1592+1682   |
-|   14|Top     |KH2     |hsp83      |1592+1682   |
-|   15|Top     |FB2     |hsp83      |1592+1682   |
-|   16|Top     |PB1710  |hsp83      |279         |
-|   17|Top     |POP2    |hsp83      |279         |
-|   18|Top     |SHC2    |hsp83      |279         |
-|   19|Top     |cremato |hsp83      |279         |
-|   20|Top     |Ladder  |           |            |
-|    1|Bottom  |Ladder  |           |            |
-|    2|Bottom  |ex      |hsp83      |279         |
-|    3|Bottom  |bk      |hsp83      |279         |
-|    4|Bottom  |TED6    |hsp83      |279         |
-|    5|Bottom  |DUKE6   |hsp40      |541+641     |
-|    6|Bottom  |ALA1    |hsp40      |541+641     |
-|    7|Bottom  |KH2     |hsp40      |541+641     |
-|    8|Bottom  |FB2     |hsp40      |541+641     |
-|    9|Bottom  |EX      |hsp40      |541+641     |
-|   10|Bottom  |BK      |hsp40      |541+641     |
-|   11|Bottom  |Ted6    |hsp40      |541+641     |
-|   12|Bottom  |HF      |hsp83      |1592+1682   |
-|   13|Bottom  |HF      |hsp83      |1592+1682   |
-|   14|Bottom  |DF      |hsp83      |1592+1682   |
-|   15|Bottom  |DF      |hsp83      |1592+1682   |
-|   16|Bottom  |HF      |hsc70-4 h2 |1468+1592   |
-|   17|Bottom  |HF      |hsc70-4 h2 |1468+1592   |
-|   18|Bottom  |DF      |hsc70-4 h2 |1468+1592   |
-|   19|Bottom  |DF      |hsc70-4 h2 |1468+1592   |
-|   20|Bottom  |DF      |actin      |            |
-|   21|Bottom  |DF      |actin      |            |
-|   22|Bottom  |HF      |hsp40      |541+641     |
-|   23|Bottom  |HF      |hsp40      |541+641     |
-|   24|Bottom  |DF      |hsp40      |541+641     |
-|   25|Bottom  |Ladder  |           |            |
+| Lane | Section | Sample  | Gene       | Primer_pair |
+| ---: | :------ | :------ | :--------- | :---------- |
+|    1 | Top     | Ladder  |            |             |
+|    2 | Top     | Exit65  | hsc70-4 h2 | 1468+1592   |
+|    3 | Top     | BK      | hsc70-4 h2 | 1468+1592   |
+|    4 | Top     | Ted6    | hsc70-4 h2 | 1468+1592   |
+|    5 | Top     | DUKE6   | hsc70-4 h2 | 1468+1592   |
+|    6 | Top     | ALA1    | hsc70-4 h2 | 1468+1592   |
+|    7 | Top     | KH2     | hsc70-4 h2 | 1468+1592   |
+|    8 | Top     | FB2     | hsc70-4 h2 | 1468+1592   |
+|    9 | Top     | Exit65  | hsp83      | 1592+1682   |
+|   10 | Top     | BK      | hsp83      | 1592+1682   |
+|   11 | Top     | TED3    | hsp83      | 1592+1682   |
+|   12 | Top     | DUKE6   | hsp83      | 1592+1682   |
+|   13 | Top     | ALA1    | hsp83      | 1592+1682   |
+|   14 | Top     | KH2     | hsp83      | 1592+1682   |
+|   15 | Top     | FB2     | hsp83      | 1592+1682   |
+|   16 | Top     | PB1710  | hsp83      | 279         |
+|   17 | Top     | POP2    | hsp83      | 279         |
+|   18 | Top     | SHC2    | hsp83      | 279         |
+|   19 | Top     | cremato | hsp83      | 279         |
+|   20 | Top     | Ladder  |            |             |
+|    1 | Bottom  | Ladder  |            |             |
+|    2 | Bottom  | ex      | hsp83      | 279         |
+|    3 | Bottom  | bk      | hsp83      | 279         |
+|    4 | Bottom  | TED6    | hsp83      | 279         |
+|    5 | Bottom  | DUKE6   | hsp40      | 541+641     |
+|    6 | Bottom  | ALA1    | hsp40      | 541+641     |
+|    7 | Bottom  | KH2     | hsp40      | 541+641     |
+|    8 | Bottom  | FB2     | hsp40      | 541+641     |
+|    9 | Bottom  | EX      | hsp40      | 541+641     |
+|   10 | Bottom  | BK      | hsp40      | 541+641     |
+|   11 | Bottom  | Ted6    | hsp40      | 541+641     |
+|   12 | Bottom  | HF      | hsp83      | 1592+1682   |
+|   13 | Bottom  | HF      | hsp83      | 1592+1682   |
+|   14 | Bottom  | DF      | hsp83      | 1592+1682   |
+|   15 | Bottom  | DF      | hsp83      | 1592+1682   |
+|   16 | Bottom  | HF      | hsc70-4 h2 | 1468+1592   |
+|   17 | Bottom  | HF      | hsc70-4 h2 | 1468+1592   |
+|   18 | Bottom  | DF      | hsc70-4 h2 | 1468+1592   |
+|   19 | Bottom  | DF      | hsc70-4 h2 | 1468+1592   |
+|   20 | Bottom  | DF      | actin      |             |
+|   21 | Bottom  | DF      | actin      |             |
+|   22 | Bottom  | HF      | hsp40      | 541+641     |
+|   23 | Bottom  | HF      | hsp40      | 541+641     |
+|   24 | Bottom  | DF      | hsp40      | 541+641     |
+|   25 | Bottom  | Ladder  |            |             |
 
 
 Protocol:    
@@ -946,7 +941,7 @@ Showing pictures that focus on bottom part
 ![](https://cloud.githubusercontent.com/assets/4654474/15365447/4805a47a-1cee-11e6-8106-bb8263b48c44.jpg)
 ###Summary: Amplicons are specific. NO double bands.    
 
-------    
+------
 <div id='id-section10'/>
 ### Page 10: 2016-05-18. RaxML ML pairwise distance matrix
 
@@ -958,29 +953,29 @@ Code for RaxML
 
 Snippet of output:      
 
-|V1  |V2       |       V3|
-|:---|:--------|--------:|
-|HW5 |ALA1     | 0.094440|
-|HW5 |BK6-1    | 0.512869|
-|HW5 |POP3     | 0.096510|
-|HW5 |MA       | 0.092071|
-|HW5 |CJ1      | 0.277364|
-|HW5 |Camb31-1 | 0.096856|
-|HW5 |DUKE9    | 0.113134|
-|HW5 |ALA2     | 0.098850|
-|HW5 |KH4      | 0.032412|
-|HW5 |Unit22-1 | 0.097533|
+| V1   | V2       |       V3 |
+| :--- | :------- | -------: |
+| HW5  | ALA1     | 0.094440 |
+| HW5  | BK6-1    | 0.512869 |
+| HW5  | POP3     | 0.096510 |
+| HW5  | MA       | 0.092071 |
+| HW5  | CJ1      | 0.277364 |
+| HW5  | Camb31-1 | 0.096856 |
+| HW5  | DUKE9    | 0.113134 |
+| HW5  | ALA2     | 0.098850 |
+| HW5  | KH4      | 0.032412 |
+| HW5  | Unit22-1 | 0.097533 |
 
 
 
-------    
+------
 <div id='id-section11'/>
 ### Page 11: 2016-05-18. ABI steponeplus machine maintenance update    
 
 Update from, [Page 7: 2016-05-17](#id-section7). ABI steponeplus machine maintenance.
 
 > *Hi Andrew,      
-Thank you for your recent request to have your StepOne Plus serial number 272007769 sent in to our Global Repair Center.  Attached you will find the necessary paperwork to ensure that your unit is received correctly and promptly.     
+> Thank you for your recent request to have your StepOne Plus serial number 272007769 sent in to our Global Repair Center.  Attached you will find the necessary paperwork to ensure that your unit is received correctly and promptly.     
 1. Your RMA is 405638599   
 2. Please review and complete the attached decontamination form, and print out 2 copies.  
     For 9700/9800's, Please put both the TOP and BASE serial numbers on the decontamination certificate.   
@@ -988,23 +983,22 @@ Thank you for your recent request to have your StepOne Plus serial number 272007
 4. Please DO NOT include any consumables (trays, tubes, etc.).   
 5. Place a copy of the completed decontamination form INSIDE and OUTSIDE of the box.   
 6. Print out the FedEx label, (link will arrive via separate email).    
-Service of your instrument cannot begin without the completed decontamination form.    
-Best Regards,      
-Foi Taua      
-Remote Service Center  
-T 800 955 6288 option 3, 1 to reach Remote Service Center    
-F 760 930 2300    
-5791 Van Allen Way • Carlsbad • CA • 92008 • United States    
-instrumentservices@lifetech.com     
-www.lifetechnologies.com*   
+   Service of your instrument cannot begin without the completed decontamination form.    
+   Best Regards,      
+   Foi Taua      
+   Remote Service Center  
+   T 800 955 6288 option 3, 1 to reach Remote Service Center    
+   F 760 930 2300    
+   5791 Van Allen Way • Carlsbad • CA • 92008 • United States    
+   instrumentservices@lifetech.com     
+   www.lifetechnologies.com*   
 
 ![Link to pdf I had to fill out](https://github.com/adnguyen/Dissertation_temperature_adaptation_ants/files/272549/doc014276.pdf)
 
 
 # 2016-05-26 update: we received loaner.   
 
-
-------    
+------
 <div id='id-section12'/>
 ### Page 12: 2016-05-19. Getting whole rad loci with pyRAD [tutorial](http://nbviewer.jupyter.org/gist/dereneaton/dc6241083c912519064e/tutorial_pairddRAD_3.0.4-merged.ipynb) and/or stacks   
 
@@ -1018,8 +1012,8 @@ path of raw ddrad data
 
 SHC email:
 > *If you want to explore/analyze the RADseq data yourself:     
-/N/dc2/scratch/scahan/Aphaenogaster_RADfiles_051516/    
-You should find in each lane directory the raw .fq file from the sequencer, a barcode key file, the demultiplexed sample .fq files, and the trimming, filtering and mapping files from the pipeline.  The earliest lanes (1&2) might have fewer files because the process was not yet regularized back then.  The STACKs portion of the pipeline is specific to each project, so they all have their own directories in the main scratch space (e.g., Andrew_RADseq_051516, Bernice_051516, Phytotron_analyses_051516, etc.).  All directories at this level have their date suffix modified every two weeks, so job scripts that point to a particular path have to get edited to the current date suffix.  Some of the ddRAD lane directories also have a date suffix because they were secondarily moved from the main level into the Aphaenogaster directory.*    
+> /N/dc2/scratch/scahan/Aphaenogaster_RADfiles_051516/    
+> You should find in each lane directory the raw .fq file from the sequencer, a barcode key file, the demultiplexed sample .fq files, and the trimming, filtering and mapping files from the pipeline.  The earliest lanes (1&2) might have fewer files because the process was not yet regularized back then.  The STACKs portion of the pipeline is specific to each project, so they all have their own directories in the main scratch space (e.g., Andrew_RADseq_051516, Bernice_051516, Phytotron_analyses_051516, etc.).  All directories at this level have their date suffix modified every two weeks, so job scripts that point to a particular path have to get edited to the current date suffix.  Some of the ddRAD lane directories also have a date suffix because they were secondarily moved from the main level into the Aphaenogaster directory.*    
 
 ### Trying pyRAD tutorial. Looks "easy".
 **No access to dependencies**:    
@@ -1029,16 +1023,16 @@ You should find in each lane directory the raw .fq file from the sequencer, a ba
 
 20160520 update, working on Mason compute cluster:     
 > Hi Andrew,       
-First, I'd suggest you add "module load python" to your ~/.modules file, which
-will load the python 2.7.3 module each time you login. It's not terribly
-current, but it is the version under which we install python packages on Mason.      
-You'll find that numpy and scipy are both available there.    
-As for muscle and vsearch, I'll let you know when we get those packages
-installed.    
-Matt
+> First, I'd suggest you add "module load python" to your ~/.modules file, which
+> will load the python 2.7.3 module each time you login. It's not terribly
+> current, but it is the version under which we install python packages on Mason.      
+> You'll find that numpy and scipy are both available there.    
+> As for muscle and vsearch, I'll let you know when we get those packages
+> installed.    
+> Matt
 
 ### I could use the population function/module in [stacks](http://catchenlab.life.illinois.edu/stacks/comp/populations.php). 
-------    
+------
 <div id='id-section13'/>
 ### Page 13: 2016-05-20. Evolution of proteome stability project        
 
@@ -1090,26 +1084,26 @@ knitr::kable(mod1)
 Table summary of results from fitting curves.        
 
 
-|Species     |Colony  |   Estimate| Std. Error|    t value| Pr(>&#124;t&#124;)|parameter |
-|:-----------|:-------|----------:|----------:|----------:|------------------:|:---------|
-|A. rudis    |Duke 1  |  0.1606280|  0.0206403|   7.782238|          0.0000276|slope     |
-|A. rudis    |Duke 1  | 47.2920297|  0.9451544|  50.036301|          0.0000000|Tm        |
-|A. rudis    |Duke 1  |  0.3637620|  0.0293990|  12.373285|          0.0000006|min       |
-|A. rudis    |Lex 13  |  0.1333902|  0.0159832|   8.345673|          0.0000158|slope     |
-|A. rudis    |Lex 13  | 49.7593929|  1.2760137|  38.995972|          0.0000000|Tm        |
-|A. rudis    |Lex 13  |  0.2161279|  0.0451703|   4.784737|          0.0009947|min       |
-|A. rudis    |Yates 2 |  0.1573466|  0.0220329|   7.141430|          0.0000542|slope     |
-|A. rudis    |Yates 2 | 47.9849648|  1.0899761|  44.023870|          0.0000000|Tm        |
-|A. rudis    |Yates 2 |  0.3637813|  0.0336777|  10.801853|          0.0000019|min       |
-|P. barbatus |WWRQ-45 |  0.2142567|  0.0165774|  12.924625|          0.0000004|slope     |
-|P. barbatus |WWRQ-45 | 45.9987927|  0.3837543| 119.865208|          0.0000000|Tm        |
-|P. barbatus |WWRQ-45 |  0.4032438|  0.0126671|  31.834069|          0.0000000|min       |
-|P. barbatus |WWRQ-53 |  0.1823480|  0.0173963|  10.482009|          0.0000024|slope     |
-|P. barbatus |WWRQ-53 | 47.2858982|  0.5958843|  79.354167|          0.0000000|Tm        |
-|P. barbatus |WWRQ-53 |  0.4013122|  0.0184886|  21.705927|          0.0000000|min       |
-|P. barbatus |WWRQ-8  |  0.2028211|  0.0245990|   8.245113|          0.0000174|slope     |
-|P. barbatus |WWRQ-8  | 45.5664742|  0.6340253|  71.868543|          0.0000000|Tm        |
-|P. barbatus |WWRQ-8  |  0.4280916|  0.0194756|  21.980921|          0.0000000|min       |
+| Species     | Colony  |   Estimate | Std. Error |    t value | Pr(>&#124;t&#124;) | parameter |
+| :---------- | :------ | ---------: | ---------: | ---------: | -----------------: | :-------- |
+| A. rudis    | Duke 1  |  0.1606280 |  0.0206403 |   7.782238 |          0.0000276 | slope     |
+| A. rudis    | Duke 1  | 47.2920297 |  0.9451544 |  50.036301 |          0.0000000 | Tm        |
+| A. rudis    | Duke 1  |  0.3637620 |  0.0293990 |  12.373285 |          0.0000006 | min       |
+| A. rudis    | Lex 13  |  0.1333902 |  0.0159832 |   8.345673 |          0.0000158 | slope     |
+| A. rudis    | Lex 13  | 49.7593929 |  1.2760137 |  38.995972 |          0.0000000 | Tm        |
+| A. rudis    | Lex 13  |  0.2161279 |  0.0451703 |   4.784737 |          0.0009947 | min       |
+| A. rudis    | Yates 2 |  0.1573466 |  0.0220329 |   7.141430 |          0.0000542 | slope     |
+| A. rudis    | Yates 2 | 47.9849648 |  1.0899761 |  44.023870 |          0.0000000 | Tm        |
+| A. rudis    | Yates 2 |  0.3637813 |  0.0336777 |  10.801853 |          0.0000019 | min       |
+| P. barbatus | WWRQ-45 |  0.2142567 |  0.0165774 |  12.924625 |          0.0000004 | slope     |
+| P. barbatus | WWRQ-45 | 45.9987927 |  0.3837543 | 119.865208 |          0.0000000 | Tm        |
+| P. barbatus | WWRQ-45 |  0.4032438 |  0.0126671 |  31.834069 |          0.0000000 | min       |
+| P. barbatus | WWRQ-53 |  0.1823480 |  0.0173963 |  10.482009 |          0.0000024 | slope     |
+| P. barbatus | WWRQ-53 | 47.2858982 |  0.5958843 |  79.354167 |          0.0000000 | Tm        |
+| P. barbatus | WWRQ-53 |  0.4013122 |  0.0184886 |  21.705927 |          0.0000000 | min       |
+| P. barbatus | WWRQ-8  |  0.2028211 |  0.0245990 |   8.245113 |          0.0000174 | slope     |
+| P. barbatus | WWRQ-8  | 45.5664742 |  0.6340253 |  71.868543 |          0.0000000 | Tm        |
+| P. barbatus | WWRQ-8  |  0.4280916 |  0.0194756 |  21.980921 |          0.0000000 | min       |
 
 
 Only slope was significant
@@ -1127,8 +1121,7 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 
 ![](https://cloud.githubusercontent.com/assets/4654474/15428283/6679dffe-1e68-11e6-802d-0c3720407761.jpeg)
 
-
-------    
+------
 <div id='id-section14'/>
 ### Page 14: 2016-05-24. Evolution of proteome stability project: Polyacrylamide gels for colony level replicates (*A. rudis* vs *P. barbatus*)    
 Amanda Meyer is working on this project:      
@@ -1140,63 +1133,63 @@ Polyacrylamide Gels:
 
 
 1. Duke1   (*A. rudis*)      
-![](https://cloud.githubusercontent.com/assets/4654474/15510262/b5ca3c68-21a4-11e6-92bd-44a2446bd0cd.jpeg)    
+   ![](https://cloud.githubusercontent.com/assets/4654474/15510262/b5ca3c68-21a4-11e6-92bd-44a2446bd0cd.jpeg)    
 
 2. Yates2 (*A. rudis*)   
-![](https://cloud.githubusercontent.com/assets/4654474/15510265/b5d43f38-21a4-11e6-9f94-059d305760b5.jpeg)    
-**Note: For Yates2, the gels are reversed. (Bottom gel starts at 30C)**        
+   ![](https://cloud.githubusercontent.com/assets/4654474/15510265/b5d43f38-21a4-11e6-9f94-059d305760b5.jpeg)    
+   **Note: For Yates2, the gels are reversed. (Bottom gel starts at 30C)**        
 
 3. WWRQ45 (*P. barbatus*)    
-![](https://cloud.githubusercontent.com/assets/4654474/15510263/b5d2386e-21a4-11e6-8711-1eb6f9ea232f.jpeg)    
+   ![](https://cloud.githubusercontent.com/assets/4654474/15510263/b5d2386e-21a4-11e6-8711-1eb6f9ea232f.jpeg)    
 
 4. WWRQ53 (*P. barbatus*)    
-![](https://cloud.githubusercontent.com/assets/4654474/15510264/b5d24764-21a4-11e6-8b7f-8124cc659e0e.jpeg)      
+   ![](https://cloud.githubusercontent.com/assets/4654474/15510264/b5d24764-21a4-11e6-8b7f-8124cc659e0e.jpeg)      
 
 **Next steps:** 
 Need to destain and trypsin digest.    
 
-------    
+------
 <div id='id-section15'/>
 ### Page 15: 2016-05-24. Degenerate Hsp primer design from 2015-05-28     
 
 **Primer design from 2015-05-28 referenced here**     
 
-|  n|name            |sequence                  |
-|--:|:---------------|:-------------------------|
-|  1|hsc70-4h2_1175F |TTCTGYTGGAYGTDACTCC       |
-|  2|hsc70-h2_1345R  |TCGCTCTCTCHCCYTCRTARAC    |
-|  3|hsc70-4h2_1468F |GCGATYGARAAATCTACVGGC     |
-|  4|hsc7004h2_1592R |TGYTCRTCYTCCGATCGGTA      |
-|  5|hsc70-4h1_1291F |ACYTAYGCCGACAATCARCC      |
-|  6|hsc70-4h2_1390R |CGCTRAGCTCGAAYTTDCCC      |
-|  7|hsc70-4h1_1506F |CACYATYACCAAYGACAARG      |
-|  8|hsc70-4h1_1605R |YTCCTTCTGCTTCTCRTCCTC     |
-|  9|hsp40_118F      |GCCTTRCGATATCATCCTGA      |
-| 10|hsp40_248       |CCYTCCTCGCCRAATTTATC      |
-| 11|hsp40_541F      |AAAGATCGYGCYCARGATCC      |
-| 12|hsp40_641R      |GCYCGTCTRCATATYTTCATC     |
-| 13|hsp40_869F      |TRTGCGGTACTRTYGTCGAAG     |
-| 14|hsp40_968R      |TGGAACCTYTTGACNGTRTTC     |
-| 15|hsp83_278F      |ACDATYCTTGATTCTGGYATTGG   |
-| 16|hsp83_392R      |CCAAACTGTCCAATCATGGA      |
-| 17|hsp83754F       |GATGTYGGHGAGGATGA         |
-| 18|hsp83_880R      |GATTTCTYGTCCARATCGG       |
-| 19|hsp83_1583F     |AATTCGAYGGAAARCAGYTGG     |
-| 20|hsp83_1682R     |AAYTTGGCYTTGTCYTCCTC      |
-| 21|hsp83_1807F     |ATGGAGAGRATCATGAAGGC      |
-| 22|hsp83_1917R     |CARRTTCTCCATGATRGGATGATC  |
-| 23|nedd_510F       |TAATCATTCCAGTCAGCGG       |
-| 24|ned_614R        |TCAGATACGTCTCCGTTGTC      |
-| 25|nedd_556F       |TATCATGCATACATTTCCGAC     |
-| 26|nedd_683R       |ATCGTAATATCTGCACTTTGYTC   |
-| 27|nedd_956F       |ATGGTGAAGTTCTACGCGAG      |
-| 28|nedd_1088R      |TAAGGTAGCCACGTTGATCG      |
-| 29|nedd_1222F      |CAAGTAGCACCTAATGGTAGA     |
-| 30|nedd_1316R      |GGTATAGARCTTGGTCTTCC      |
-| 31|nedd_1351F      |GATTTAGATCAATTAGGACCDCTTC |
-| 32|nedd_1460R      |GGATCTTCCCATTGTGTTGT      |
-| 33|nedd_2375F      |GGAGAGTCGTTTTGTCATTCAG    |
-| 34|nedd_2459R      |CCATTCATTGGAACACGTGATG    |
+|    n | name            | sequence                  |
+| ---: | :-------------- | :------------------------ |
+|    1 | hsc70-4h2_1175F | TTCTGYTGGAYGTDACTCC       |
+|    2 | hsc70-h2_1345R  | TCGCTCTCTCHCCYTCRTARAC    |
+|    3 | hsc70-4h2_1468F | GCGATYGARAAATCTACVGGC     |
+|    4 | hsc7004h2_1592R | TGYTCRTCYTCCGATCGGTA      |
+|    5 | hsc70-4h1_1291F | ACYTAYGCCGACAATCARCC      |
+|    6 | hsc70-4h2_1390R | CGCTRAGCTCGAAYTTDCCC      |
+|    7 | hsc70-4h1_1506F | CACYATYACCAAYGACAARG      |
+|    8 | hsc70-4h1_1605R | YTCCTTCTGCTTCTCRTCCTC     |
+|    9 | hsp40_118F      | GCCTTRCGATATCATCCTGA      |
+|   10 | hsp40_248       | CCYTCCTCGCCRAATTTATC      |
+|   11 | hsp40_541F      | AAAGATCGYGCYCARGATCC      |
+|   12 | hsp40_641R      | GCYCGTCTRCATATYTTCATC     |
+|   13 | hsp40_869F      | TRTGCGGTACTRTYGTCGAAG     |
+|   14 | hsp40_968R      | TGGAACCTYTTGACNGTRTTC     |
+|   15 | hsp83_278F      | ACDATYCTTGATTCTGGYATTGG   |
+|   16 | hsp83_392R      | CCAAACTGTCCAATCATGGA      |
+|   17 | hsp83754F       | GATGTYGGHGAGGATGA         |
+|   18 | hsp83_880R      | GATTTCTYGTCCARATCGG       |
+|   19 | hsp83_1583F     | AATTCGAYGGAAARCAGYTGG     |
+|   20 | hsp83_1682R     | AAYTTGGCYTTGTCYTCCTC      |
+|   21 | hsp83_1807F     | ATGGAGAGRATCATGAAGGC      |
+|   22 | hsp83_1917R     | CARRTTCTCCATGATRGGATGATC  |
+|   23 | nedd_510F       | TAATCATTCCAGTCAGCGG       |
+|   24 | ned_614R        | TCAGATACGTCTCCGTTGTC      |
+|   25 | nedd_556F       | TATCATGCATACATTTCCGAC     |
+|   26 | nedd_683R       | ATCGTAATATCTGCACTTTGYTC   |
+|   27 | nedd_956F       | ATGGTGAAGTTCTACGCGAG      |
+|   28 | nedd_1088R      | TAAGGTAGCCACGTTGATCG      |
+|   29 | nedd_1222F      | CAAGTAGCACCTAATGGTAGA     |
+|   30 | nedd_1316R      | GGTATAGARCTTGGTCTTCC      |
+|   31 | nedd_1351F      | GATTTAGATCAATTAGGACCDCTTC |
+|   32 | nedd_1460R      | GGATCTTCCCATTGTGTTGT      |
+|   33 | nedd_2375F      | GGAGAGTCGTTTTGTCATTCAG    |
+|   34 | nedd_2459R      | CCATTCATTGGAACACGTGATG    |
 
 I don't use all of these anymore. But here are the ones that I've tested for specificity (from agarose gel electrophoresis , sequencing, and melt curve analysis following qPCR) and efficiency ( titrate amplicon across a dynamic range to compare slope equals -3.2).    
 
@@ -1208,7 +1201,7 @@ I don't use all of these anymore. But here are the ones that I've tested for spe
 
 
 
-------    
+------
 <div id='id-section16'/>
 ### Page 16: 2016-05-24](#id-section16). Sequencing analysis continued from [Page 5: 2016-05-16](#id-section5).    
 
@@ -1233,8 +1226,7 @@ I don't use all of these anymore. But here are the ones that I've tested for spe
 **Summary of results:**      
 Most of samples mapped really well! Generally, the sequencing with the forward primer recovers the reverse primer, and vice versa. 
 
-
-------    
+------
 <div id='id-section17'/>
 ###Page 17: 2016-05-25. Double check samples for SHC; JSG phytotron exp and MS.        
 
@@ -1253,7 +1245,7 @@ Need to double check these samples.
 
 
 
-------    
+------
 <div id='id-section18'/>
 ### Page 18: 2016-05-31. Learning model selection and model averaging!    
 
@@ -1279,28 +1271,28 @@ General Steps:
 
 
 
-| Eigenvalues| Relative_eig| Rel_corr_eig| Broken_stick| Cum_corr_eig| Cumul_br_stick| rep(1:20, 1)|
-|-----------:|------------:|------------:|------------:|------------:|--------------:|------------:|
-|       0.362|        0.563|        0.407|        0.114|        0.407|          0.114|            1|
-|       0.086|        0.134|        0.102|        0.087|        0.509|          0.200|            2|
-|       0.052|        0.081|        0.065|        0.073|        0.574|          0.273|            3|
-|       0.020|        0.032|        0.030|        0.064|        0.604|          0.337|            4|
-|       0.016|        0.025|        0.025|        0.057|        0.630|          0.394|            5|
-|       0.014|        0.022|        0.023|        0.052|        0.653|          0.446|            6|
-|       0.011|        0.017|        0.020|        0.047|        0.673|          0.494|            7|
-|       0.010|        0.015|        0.018|        0.043|        0.691|          0.537|            8|
-|       0.008|        0.013|        0.017|        0.040|        0.708|          0.577|            9|
-|       0.007|        0.011|        0.016|        0.037|        0.723|          0.614|           10|
-|       0.005|        0.008|        0.013|        0.034|        0.737|          0.649|           11|
-|       0.005|        0.008|        0.013|        0.032|        0.750|          0.681|           12|
-|       0.004|        0.007|        0.013|        0.030|        0.762|          0.710|           13|
-|       0.004|        0.007|        0.012|        0.028|        0.775|          0.738|           14|
-|       0.004|        0.006|        0.012|        0.026|        0.787|          0.764|           15|
-|       0.004|        0.006|        0.012|        0.024|        0.798|          0.787|           16|
-|       0.003|        0.005|        0.011|        0.022|        0.810|          0.810|           17|
-|       0.003|        0.005|        0.011|        0.021|        0.821|          0.830|           18|
-|       0.003|        0.005|        0.011|        0.019|        0.832|          0.849|           19|
-|       0.003|        0.005|        0.011|        0.018|        0.843|          0.867|           20|
+| Eigenvalues | Relative_eig | Rel_corr_eig | Broken_stick | Cum_corr_eig | Cumul_br_stick | rep(1:20, 1) |
+| ----------: | -----------: | -----------: | -----------: | -----------: | -------------: | -----------: |
+|       0.362 |        0.563 |        0.407 |        0.114 |        0.407 |          0.114 |            1 |
+|       0.086 |        0.134 |        0.102 |        0.087 |        0.509 |          0.200 |            2 |
+|       0.052 |        0.081 |        0.065 |        0.073 |        0.574 |          0.273 |            3 |
+|       0.020 |        0.032 |        0.030 |        0.064 |        0.604 |          0.337 |            4 |
+|       0.016 |        0.025 |        0.025 |        0.057 |        0.630 |          0.394 |            5 |
+|       0.014 |        0.022 |        0.023 |        0.052 |        0.653 |          0.446 |            6 |
+|       0.011 |        0.017 |        0.020 |        0.047 |        0.673 |          0.494 |            7 |
+|       0.010 |        0.015 |        0.018 |        0.043 |        0.691 |          0.537 |            8 |
+|       0.008 |        0.013 |        0.017 |        0.040 |        0.708 |          0.577 |            9 |
+|       0.007 |        0.011 |        0.016 |        0.037 |        0.723 |          0.614 |           10 |
+|       0.005 |        0.008 |        0.013 |        0.034 |        0.737 |          0.649 |           11 |
+|       0.005 |        0.008 |        0.013 |        0.032 |        0.750 |          0.681 |           12 |
+|       0.004 |        0.007 |        0.013 |        0.030 |        0.762 |          0.710 |           13 |
+|       0.004 |        0.007 |        0.012 |        0.028 |        0.775 |          0.738 |           14 |
+|       0.004 |        0.006 |        0.012 |        0.026 |        0.787 |          0.764 |           15 |
+|       0.004 |        0.006 |        0.012 |        0.024 |        0.798 |          0.787 |           16 |
+|       0.003 |        0.005 |        0.011 |        0.022 |        0.810 |          0.810 |           17 |
+|       0.003 |        0.005 |        0.011 |        0.021 |        0.821 |          0.830 |           18 |
+|       0.003 |        0.005 |        0.011 |        0.019 |        0.832 |          0.849 |           19 |
+|       0.003 |        0.005 |        0.011 |        0.018 |        0.843 |          0.867 |           20 |
 
 We have ~40 samples, so use 10:1 rule (sample: predictor). Regress first 4 Axes (60% of variation) against Ctmax.    
 ```R
@@ -1325,16 +1317,16 @@ F-statistic: 83.85 on 4 and 34 DF,  p-value: < 2.2e-16
 
 ### Check correlation between bioclim variables and phylogenetic components     
 
-|        | Axis.1| Axis.2| Axis.3| Axis.4|   bio5|   bio6|   bio7| merg$nb|
-|:-------|------:|------:|------:|------:|------:|------:|------:|-------:|
-|Axis.1  |  1.000|  0.000|  0.000|  0.000|  0.882|  0.745| -0.454|  -0.258|
-|Axis.2  |  0.000|  1.000|  0.000|  0.000|  0.159|  0.139| -0.089|   0.023|
-|Axis.3  |  0.000|  0.000|  1.000|  0.000|  0.151|  0.301| -0.327|  -0.321|
-|Axis.4  |  0.000|  0.000|  0.000|  1.000| -0.044| -0.090|  0.099|   0.072|
-|bio5    |  0.882|  0.159|  0.151| -0.044|  1.000|  0.772| -0.411|  -0.412|
-|bio6    |  0.745|  0.139|  0.301| -0.090|  0.772|  1.000| -0.897|  -0.728|
-|bio7    | -0.454| -0.089| -0.327|  0.099| -0.411| -0.897|  1.000|   0.757|
-|merg$nb | -0.258|  0.023| -0.321|  0.072| -0.412| -0.728|  0.757|   1.000|
+|         | Axis.1 | Axis.2 | Axis.3 | Axis.4 |   bio5 |   bio6 |   bio7 | merg$nb |
+| :------ | -----: | -----: | -----: | -----: | -----: | -----: | -----: | ------: |
+| Axis.1  |  1.000 |  0.000 |  0.000 |  0.000 |  0.882 |  0.745 | -0.454 |  -0.258 |
+| Axis.2  |  0.000 |  1.000 |  0.000 |  0.000 |  0.159 |  0.139 | -0.089 |   0.023 |
+| Axis.3  |  0.000 |  0.000 |  1.000 |  0.000 |  0.151 |  0.301 | -0.327 |  -0.321 |
+| Axis.4  |  0.000 |  0.000 |  0.000 |  1.000 | -0.044 | -0.090 |  0.099 |   0.072 |
+| bio5    |  0.882 |  0.159 |  0.151 | -0.044 |  1.000 |  0.772 | -0.411 |  -0.412 |
+| bio6    |  0.745 |  0.139 |  0.301 | -0.090 |  0.772 |  1.000 | -0.897 |  -0.728 |
+| bio7    | -0.454 | -0.089 | -0.327 |  0.099 | -0.411 | -0.897 |  1.000 |   0.757 |
+| merg$nb | -0.258 |  0.023 | -0.321 |  0.072 | -0.412 | -0.728 |  0.757 |   1.000 |
 
 
 ### Model subsets
@@ -1354,28 +1346,28 @@ lm(Ctmax~bio5*Axis.1+bio5*Axis.2+bio5*Axis.3+Rearing.temp,data=merg)
 
 **Showing table of model subsets generated from dredge() function**     
 
-|    | (Intercept)|    Axis.1|     Axis.2|      Axis.3|      bio5| Rearing.temp| Axis.1:bio5| Axis.2:bio5| Axis.3:bio5| df|     logLik|     AICc|     delta|    weight|
-|:---|-----------:|---------:|----------:|-----------:|---------:|------------:|-----------:|-----------:|-----------:|--:|----------:|--------:|---------:|---------:|
-|112 |    38.89633| -64.54042| 163.379439|  -7.1344145| 0.1142023|           NA|    2.536627|   -5.254042|          NA|  8|  -7.240543| 35.28109|  0.000000| 0.4265037|
-|42  |    40.27150| -32.80201|         NA|          NA| 0.0688105|           NA|    1.425184|          NA|          NA|  5| -13.003298| 37.82478|  2.543691| 0.1195549|
-|128 |    38.47028| -66.64409| 164.835542|  -7.4660612| 0.1213695|    0.0095824|    2.601996|   -5.309316|          NA|  9|  -7.070997| 38.34889|  3.067805| 0.0919936|
-|240 |    38.99929| -63.44634| 165.175057| -17.1348640| 0.1105860|           NA|    2.500507|   -5.300206|   0.3704068|  9|  -7.230877| 38.66865|  3.387565| 0.0784011|
-|44  |    39.58611| -45.63541|  -2.113326|          NA| 0.0908785|           NA|    1.833044|          NA|          NA|  6| -12.197967| 39.02093|  3.739847| 0.0657393|
-|108 |    40.67312| -34.07965|  68.733204|          NA| 0.0549570|           NA|    1.516668|   -2.192978|          NA|  7| -10.725474| 39.06385|  3.782765| 0.0643437|
-|46  |    40.41404| -31.25480|         NA|   0.5303359| 0.0639742|           NA|    1.377435|          NA|          NA|  6| -12.955310| 40.53562|  5.254534| 0.0308259|
-|58  |    40.27478| -32.80931|         NA|          NA| 0.0687900|   -0.0001219|    1.425440|          NA|          NA|  6| -13.003275| 40.63155|  5.350465| 0.0293822|
-|48  |    39.02228| -53.61002|  -2.839872|  -1.2211435| 0.1096013|           NA|    2.083210|          NA|          NA|  7| -12.029592| 41.67209|  6.391001| 0.0174636|
-|60  |    39.47928| -45.71692|  -2.160369|          NA| 0.0919412|    0.0034085|    1.834965|          NA|          NA|  7| -12.180302| 41.97351|  6.692423| 0.0150204|
-|256 |    38.58207| -65.43836| 166.850595| -18.6312806| 0.1173856|    0.0096530|    2.562160|   -5.361253|   0.4134582| 10|  -7.058857| 41.97486|  6.693772| 0.0150103|
-|124 |    40.68974| -34.04638|  68.875613|          NA| 0.0547434|   -0.0004636|    1.515799|   -2.197188|          NA|  8| -10.725127| 42.25025|  6.969168| 0.0130794|
-|174 |    40.17971| -36.89376|         NA| -39.0161170| 0.0707023|           NA|    1.545609|          NA|   1.4424428|  7| -12.647902| 42.90871|  7.627622| 0.0094104|
-|62  |    40.43434| -31.27748|         NA|   0.5367575| 0.0637997|   -0.0006914|    1.378308|          NA|          NA|  7| -12.954602| 43.52211|  8.241021| 0.0069248|
-|176 |    38.62972| -58.09940|  -4.104072|  36.3065961| 0.1233954|           NA|    2.234488|          NA|  -1.3972498|  8| -11.917041| 44.63408|  9.352996| 0.0039714|
-|64  |    38.74224| -54.92127|  -3.032774|  -1.3987999| 0.1142952|    0.0063182|    2.123167|          NA|          NA|  8| -11.971892| 44.74378|  9.462699| 0.0037594|
-|76  |    42.07767|  13.63416| 119.882620|          NA| 0.0151404|           NA|          NA|   -3.677760|          NA|  6| -15.148179| 44.92136|  9.640273| 0.0034400|
-|8   |    42.43692|  11.87677|   2.870941|   3.7234291|        NA|           NA|          NA|          NA|          NA|  5| -16.905003| 45.62819| 10.347102| 0.0024159|
-|190 |    40.09493| -37.03074|         NA| -40.5928212| 0.0716161|    0.0025740|    1.548960|          NA|   1.4990805|  8| -12.638411| 46.07682| 10.795736| 0.0019305|
-|6   |    42.43692|  11.87677|         NA|   3.7234291|        NA|           NA|          NA|          NA|          NA|  4| -19.294824| 47.76612| 12.485033| 0.0008295|
+|      | (Intercept) |    Axis.1 |     Axis.2 |      Axis.3 |      bio5 | Rearing.temp | Axis.1:bio5 | Axis.2:bio5 | Axis.3:bio5 |   df |     logLik |     AICc |     delta |    weight |
+| :--- | ----------: | --------: | ---------: | ----------: | --------: | -----------: | ----------: | ----------: | ----------: | ---: | ---------: | -------: | --------: | --------: |
+| 112  |    38.89633 | -64.54042 | 163.379439 |  -7.1344145 | 0.1142023 |           NA |    2.536627 |   -5.254042 |          NA |    8 |  -7.240543 | 35.28109 |  0.000000 | 0.4265037 |
+| 42   |    40.27150 | -32.80201 |         NA |          NA | 0.0688105 |           NA |    1.425184 |          NA |          NA |    5 | -13.003298 | 37.82478 |  2.543691 | 0.1195549 |
+| 128  |    38.47028 | -66.64409 | 164.835542 |  -7.4660612 | 0.1213695 |    0.0095824 |    2.601996 |   -5.309316 |          NA |    9 |  -7.070997 | 38.34889 |  3.067805 | 0.0919936 |
+| 240  |    38.99929 | -63.44634 | 165.175057 | -17.1348640 | 0.1105860 |           NA |    2.500507 |   -5.300206 |   0.3704068 |    9 |  -7.230877 | 38.66865 |  3.387565 | 0.0784011 |
+| 44   |    39.58611 | -45.63541 |  -2.113326 |          NA | 0.0908785 |           NA |    1.833044 |          NA |          NA |    6 | -12.197967 | 39.02093 |  3.739847 | 0.0657393 |
+| 108  |    40.67312 | -34.07965 |  68.733204 |          NA | 0.0549570 |           NA |    1.516668 |   -2.192978 |          NA |    7 | -10.725474 | 39.06385 |  3.782765 | 0.0643437 |
+| 46   |    40.41404 | -31.25480 |         NA |   0.5303359 | 0.0639742 |           NA |    1.377435 |          NA |          NA |    6 | -12.955310 | 40.53562 |  5.254534 | 0.0308259 |
+| 58   |    40.27478 | -32.80931 |         NA |          NA | 0.0687900 |   -0.0001219 |    1.425440 |          NA |          NA |    6 | -13.003275 | 40.63155 |  5.350465 | 0.0293822 |
+| 48   |    39.02228 | -53.61002 |  -2.839872 |  -1.2211435 | 0.1096013 |           NA |    2.083210 |          NA |          NA |    7 | -12.029592 | 41.67209 |  6.391001 | 0.0174636 |
+| 60   |    39.47928 | -45.71692 |  -2.160369 |          NA | 0.0919412 |    0.0034085 |    1.834965 |          NA |          NA |    7 | -12.180302 | 41.97351 |  6.692423 | 0.0150204 |
+| 256  |    38.58207 | -65.43836 | 166.850595 | -18.6312806 | 0.1173856 |    0.0096530 |    2.562160 |   -5.361253 |   0.4134582 |   10 |  -7.058857 | 41.97486 |  6.693772 | 0.0150103 |
+| 124  |    40.68974 | -34.04638 |  68.875613 |          NA | 0.0547434 |   -0.0004636 |    1.515799 |   -2.197188 |          NA |    8 | -10.725127 | 42.25025 |  6.969168 | 0.0130794 |
+| 174  |    40.17971 | -36.89376 |         NA | -39.0161170 | 0.0707023 |           NA |    1.545609 |          NA |   1.4424428 |    7 | -12.647902 | 42.90871 |  7.627622 | 0.0094104 |
+| 62   |    40.43434 | -31.27748 |         NA |   0.5367575 | 0.0637997 |   -0.0006914 |    1.378308 |          NA |          NA |    7 | -12.954602 | 43.52211 |  8.241021 | 0.0069248 |
+| 176  |    38.62972 | -58.09940 |  -4.104072 |  36.3065961 | 0.1233954 |           NA |    2.234488 |          NA |  -1.3972498 |    8 | -11.917041 | 44.63408 |  9.352996 | 0.0039714 |
+| 64   |    38.74224 | -54.92127 |  -3.032774 |  -1.3987999 | 0.1142952 |    0.0063182 |    2.123167 |          NA |          NA |    8 | -11.971892 | 44.74378 |  9.462699 | 0.0037594 |
+| 76   |    42.07767 |  13.63416 | 119.882620 |          NA | 0.0151404 |           NA |          NA |   -3.677760 |          NA |    6 | -15.148179 | 44.92136 |  9.640273 | 0.0034400 |
+| 8    |    42.43692 |  11.87677 |   2.870941 |   3.7234291 |        NA |           NA |          NA |          NA |          NA |    5 | -16.905003 | 45.62819 | 10.347102 | 0.0024159 |
+| 190  |    40.09493 | -37.03074 |         NA | -40.5928212 | 0.0716161 |    0.0025740 |    1.548960 |          NA |   1.4990805 |    8 | -12.638411 | 46.07682 | 10.795736 | 0.0019305 |
+| 6    |    42.43692 |  11.87677 |         NA |   3.7234291 |        NA |           NA |          NA |          NA |          NA |    4 | -19.294824 | 47.76612 | 12.485033 | 0.0008295 |
 
 
 ###Cumulative AIC weights    
@@ -1576,72 +1568,72 @@ Probably a poor way to show output, but you can see the consistency with model a
 ### full table    
 
 
-|Ctmax        |X            |X.1         |X.2         |X.3         |X.4                |X.5 |Ctmin        |X.6          |X.7        |X.8         |X.9         |X.10               |X.11 |TNB          |X.12         |X.13        |X.14        |X.15        |X.16               |
-|:------------|:------------|:-----------|:-----------|:-----------|:------------------|:---|:------------|:------------|:----------|:-----------|:-----------|:------------------|:----|:------------|:------------|:-----------|:-----------|:-----------|:------------------|
-|top 2 AICc   |             |            |            |            |                   |NA  |top 2 AICc   |             |           |            |            |                   |NA   |top 2 AICc   |             |            |            |            |                   |
-|             |Estimate     |st SE       |Adjusted SE |z value     |Pr(>&#124;z&#124;) |NA  |             |Estimate     |st SE      |Adjusted SE |z value     |Pr(>&#124;z&#124;) |NA   |             |Estimate     |st SE       |Adjusted SE |z value     |Pr(>&#124;z&#124;) |
-|(Intercept)  |39.1974113   |1.81717555  |1.88065146  |20.842464   |0                  |NA  |(Intercept)  |6.7081182    |0.2276948  |0.23542884  |28.4931876  |0                  |NA   |(Intercept)  |27.0459363   |1.9059241   |1.96848068  |13.7394979  |0                  |
-|Axis.1       |-57.5915669  |22.32728931 |22.90079918 |2.514828    |0.01190905         |NA  |Axis.2       |-2.1928922   |2.3776364  |2.41435204  |0.9082736   |0.3637337          |NA   |bio7         |0.3458702    |0.05107519  |0.05275118  |6.5566338   |0                  |
-|Axis.2       |127.6089015  |83.60796871 |84.76171296 |1.505502    |0.13219514         |NA  |bio6         |0.4381219    |0.0216451  |0.02237847  |19.5778289  |0                  |NA   |Axis.1       |0.4799895    |1.20994269  |1.23717296  |0.3879728   |0.6980362          |
-|Axis.3       |-5.5723952   |3.87984439  |3.94482507  |1.412584    |0.1577782          |NA  |             |             |           |            |            |                   |NA   |             |             |            |            |            |                   |
-|bio5         |0.1042642    |0.06385464  |0.06611108  |1.577106    |0.11477121         |NA  |             |             |           |            |            |                   |NA   |             |             |            |            |            |                   |
-|Axis.1:bio5  |2.2932857    |0.74450301  |0.76259317  |3.00722     |0.00263649         |NA  |             |             |           |            |            |                   |NA   |             |             |            |            |            |                   |
-|Axis.2:bio5  |-4.1037142   |2.67226625  |2.70829115  |1.515241    |0.12971134         |NA  |             |             |           |            |            |                   |NA   |             |             |            |            |            |                   |
-|             |             |            |            |            |                   |NA  |             |             |           |            |            |                   |NA   |             |             |            |            |            |                   |
-|top 6 AICc   |             |            |            |            |                   |NA  |top 6 AIC    |             |           |            |            |                   |NA   |top 6 AIC    |             |            |            |            |                   |
-|             |Estimate     |st SE       |Adjusted SE |z value     |Pr(>&#124;z&#124;) |NA  |             |Estimate     |st SE      |Adjusted SE |z value     |Pr(>&#124;z&#124;) |NA   |             |Estimate     |st SE       |Adjusted SE |z value     |Pr(>&#124;z&#124;) |
-|(Intercept)  |39.09770833  |1.858677254 |1.925749929 |20.30258848 |0                  |NA  |(Intercept)  |6.684988297  |0.34810913 |0.35955592  |18.59234664 |0                  |NA   |(Intercept)  |27.10029979  |1.93125923  |1.9947008   |13.58614773 |0                  |
-|Axis.1       |-58.89921078 |22.04271462 |22.67258208 |2.59781663  |0.0093819          |NA  |Axis.2       |-2.395005615 |2.383652   |2.42548151  |0.98743511  |0.3234294          |NA   |bio7         |0.340556895  |0.05066679  |0.05234842  |6.505580624 |0                  |
-|Axis.2       |128.5516463  |84.09957359 |85.29260627 |1.50718394  |0.1317635          |NA  |bio6         |0.434621522  |0.02580208 |0.02660974  |16.33317269 |0                  |NA   |Axis.1       |0.233929172  |0.87808967  |0.89639122  |0.26096772  |0.7941174          |
-|Axis.3       |-6.557056311 |24.86761943 |25.84512303 |0.25370575  |0.7997229          |NA  |Axis.1       |0.237902792  |0.84028327 |0.86112014  |0.27627131  |0.7823397          |NA   |Rearing.temp |0.006336015  |0.02480004  |0.02533232  |0.250115874 |0.8024977          |
-|bio5         |0.106760957  |0.064593101 |0.066955014 |1.59451773  |0.1108201          |NA  |Axis.4       |0.112568203  |1.35995056 |1.40562657  |0.080084    |0.9361704          |NA   |Axis.2       |0.384777978  |1.53920801  |1.57274344  |0.244654003 |0.8067243          |
-|Axis.1:bio5  |2.335012045  |0.732742988 |0.752658592 |3.10235221  |0.0019199          |NA  |Rearing.temp |-0.000455203 |0.01026543 |0.01062611  |0.04283813  |0.9658306          |NA   |Axis.3       |-0.405958108 |1.89199147  |1.93749909  |0.209526864 |0.834037           |
-|Axis.2:bio5  |-4.139188942 |2.678608124 |2.715902917 |1.5240563   |0.1274946          |NA  |             |             |           |            |            |                   |NA   |Axis.4       |-0.020203078 |2.08189989  |2.15420639  |0.009378432 |0.9925172          |
-|Rearing.temp |0.001023202  |0.006706439 |0.006926472 |0.14772334  |0.8825611          |NA  |             |             |           |            |            |                   |NA   |             |             |            |            |            |                   |
-|Axis.4       |0.040415014  |0.730962899 |0.759753398 |0.05319491  |0.9575766          |NA  |             |             |           |            |            |                   |NA   |             |             |            |            |            |                   |
-|Axis.3:bio5  |0.033707897  |0.907576414 |0.943914621 |0.03571075  |0.971513           |NA  |             |             |           |            |            |                   |NA   |             |             |            |            |            |                   |
-|             |             |            |            |            |                   |NA  |             |             |           |            |            |                   |NA   |             |             |            |            |            |                   |
-|top10 AICc   |             |            |            |            |                   |NA  |top 10 AIC   |             |           |            |            |                   |NA   |top 10 AIC   |             |            |            |            |                   |
-|             |Estimate     |st SE       |Adjusted SE |z value     |Pr(>&#124;z&#124;) |NA  |             |Estimate     |st SE      |Adjusted SE |z value     |Pr(>&#124;z&#124;) |NA   |             |Estimate     |st SE       |Adjusted SE |z value     |Pr(>&#124;z&#124;) |
-|(Intercept)  |3.93E+01     |1.899791736 |1.963911039 |20.01693332 |0                  |NA  |(Intercept)  |6.708401068  |0.37935474 |0.39165216  |17.1284671  |0                  |NA   |(Intercept)  |26.99566918  |1.97438106  |2.03890627  |13.2402698  |0                  |
-|Axis.1       |-5.49E+01    |22.98798186 |23.54781004 |2.33039265  |0.0197854          |NA  |Axis.2       |-2.306237463 |2.41991077 |2.46193139  |0.936759437 |0.3488823          |NA   |bio7         |0.341349078  |0.05167576  |0.05337701  |6.3950576   |0                  |
-|Axis.2       |1.13E+02     |87.18011426 |88.20794399 |1.28066363  |0.2003118          |NA  |bio6         |0.434528345  |0.0260478  |0.0268662   |16.17379177 |0                  |NA   |Axis.1       |0.333219277  |1.03492288  |1.0576099   |0.3150682   |0.7527099          |
-|Axis.3       |-5.52E+00    |22.98845903 |23.88232484 |0.23133093  |0.8170577          |NA  |Axis.1       |0.134917912  |0.91388635 |0.93807943  |0.143823548 |0.8856398          |NA   |Rearing.temp |0.009351372  |0.0297777   |0.03043434  |0.3072639   |0.7586425          |
-|bio5         |9.98E-02     |0.06595076  |0.068221677 |1.46265473  |0.1435619          |NA  |Axis.4       |0.084008834  |1.17585796 |1.21528353  |0.069126942 |0.9448886          |NA   |Axis.2       |0.449552864  |1.65384841  |1.69015606  |0.265983    |0.7902523          |
-|Axis.1:bio5  |2.20E+00     |0.766278694 |0.783913018 |2.80383221  |0.0050499          |NA  |Rearing.temp |-0.001159531 |0.01228646 |0.01268573  |0.091404373 |0.9271713          |NA   |Axis.3       |-0.513063577 |2.10220292  |2.15127673  |0.2384926   |0.8114991          |
-|Axis.2:bio5  |-3.64E+00    |2.782129711 |2.81413218  |1.29206427  |0.1963349          |NA  |Axis.3       |-0.018400092 |0.73655574 |0.76270452  |0.024124797 |0.9807531          |NA   |Axis.4       |-32.1405597  |171.6554339 |174.0144258 |0.1847005   |0.8534639          |
-|Rearing.temp |8.61E-04     |0.007016252 |0.007252224 |0.1187358   |0.9054847          |NA  |Axis.2:bio6  |-0.001287445 |0.19407722 |0.20101898  |0.006404594 |0.9948899          |NA   |Axis.4:bio7  |0.985550403  |5.26653     |5.33891153  |0.1845976   |0.8535446          |
-|Axis.4       |-5.58E-03    |0.843672767 |0.874007493 |0.00638567  |0.994905           |NA  |Axis.1:bio6  |-0.02598336  |0.13293313 |0.13465174  |0.192967133 |0.8469847          |NA   |             |             |            |            |            |                   |
-|Axis.3:bio5  |2.85E-02     |0.834371842 |0.867772028 |0.03282359  |0.9738153          |NA  |             |             |           |            |            |                   |NA   |             |             |            |            |            |                   |
-|             |             |            |            |            |                   |NA  |             |             |           |            |            |                   |NA   |             |             |            |            |            |                   |
-|delta 4      |             |            |            |            |                   |NA  |delta 4      |             |           |            |            |                   |NA   |delta 4      |             |            |            |            |                   |
-|             |Estimate     |st SE       |Adjusted SE |z value     |Pr(>&#124;z&#124;) |NA  |             |Estimate     |st SE      |Adjusted SE |z value     |Pr(>&#124;z&#124;) |NA   |             |Estimate     |st SE       |Adjusted SE |z value     |Pr(>&#124;z&#124;) |
-|(Intercept)  |3.92E+01     |1.893976934 |1.959535391 |20.00841235 |0                  |NA  |(Intercept)  |6.705813971  |0.36859922 |0.38057547  |17.62019506 |0                  |NA   |(Intercept)  |26.99362954  |1.98319436  |2.04854756  |13.1769601  |0                  |
-|Axis.1       |-5.72E+01    |22.60477016 |23.20900583 |2.46345624  |0.0137605          |NA  |Axis.2       |-2.092714799 |2.40013254 |2.43860238  |0.85816155  |0.3908033          |NA   |bio7         |0.341410566  |0.05185096  |0.05357386  |6.3727077   |0                  |
-|Axis.2       |1.24E+02     |83.35210021 |84.53449839 |1.4715241   |0.1411494          |NA  |bio6         |0.434592864  |0.02574957 |0.0265647   |16.35978856 |0                  |NA   |Axis.1       |0.332214471  |1.03734215  |1.06050509  |0.3132606   |0.7540827          |
-|Axis.3       |-6.10E+00    |24.04585344 |24.98659536 |0.24418582  |0.8070869          |NA  |Axis.1       |0.122426556  |0.87143086 |0.89445417  |0.136872923 |0.8911312          |NA   |Rearing.temp |0.009346593  |0.02990764  |0.03058437  |0.3056003   |0.759909           |
-|bio5         |1.03E-01     |0.065747663 |0.068062898 |1.51566905  |0.1296031          |NA  |Axis.4       |0.125415028  |1.4735481  |1.52274366  |0.082361222 |0.9343595          |NA   |Axis.2       |2.838029586  |17.73196229 |18.10766781 |0.1567308   |0.875457           |
-|Axis.1:bio5  |2.28E+00     |0.749621892 |0.768722868 |2.96354009  |0.0030412          |NA  |Rearing.temp |-0.001052176 |0.0117087  |0.01208889  |0.087036633 |0.9306424          |NA   |Axis.3       |-0.629285835 |2.34142278  |2.39958368  |0.2622479   |0.7931303          |
-|Axis.2:bio5  |-4.00E+00    |2.655253834 |2.692134467 |1.48727215  |0.1369429          |NA  |Axis.3       |-0.018674382 |0.92571971 |0.95829077  |0.019487177 |0.9844525          |NA   |Axis.4       |-27.62992928 |159.5462112 |161.7281284 |0.1708418   |0.8643481          |
-|Rearing.temp |9.52E-04     |0.006474441 |0.006686524 |0.14238996  |0.886772           |NA  |Axis.2:bio6  |-0.001168247 |0.18487511 |0.19148771  |0.006100898 |0.9951322          |NA   |Axis.4:bio7  |0.847237516  |4.89499575  |4.96194424  |0.1707471   |0.8644226          |
-|Axis.4       |3.76E-02     |0.705181274 |0.732950521 |0.05130819  |0.9590799          |NA  |Axis.1:bio6  |-0.023577694 |0.12685366 |0.12848792  |0.183501249 |0.8544047          |NA   |Axis.2:bio7  |-0.064576645 |0.51493977  |0.52615353  |0.1227335   |0.9023182          |
-|Axis.3:bio5  |3.14E-02     |0.875514464 |0.910565657 |0.03444602  |0.9725215          |NA  |             |             |           |            |            |                   |NA   |             |             |            |            |            |                   |
-|             |             |            |            |            |                   |NA  |             |             |           |            |            |                   |NA   |             |             |            |            |            |                   |
-|95 conf int  |             |            |            |            |                   |NA  |95 conf int  |             |           |            |            |                   |NA   |95 conf int  |             |            |            |            |                   |
-|             |Estimate     |st SE       |Adjusted SE |z value     |Pr(>&#124;z&#124;) |NA  |             |Estimate     |st SE      |Adjusted SE |z value     |Pr(>&#124;z&#124;) |NA   |             |Estimate     |st SE       |Adjusted SE |z value     |Pr(>&#124;z&#124;) |
-|(Intercept)  |39.34503249  |1.92565228  |1.99050365  |19.76637044 |0                  |NA  |(Intercept)  |6.700287577  |0.44563973 |0.46035289  |14.55467701 |0                  |NA   |(Intercept)  |26.9140026   |2.16190181  |2.23237161  |12.05623762 |0                  |
-|Axis.1       |-54.06305882 |23.2473386  |23.81149971 |2.27046005  |0.0231797          |NA  |Axis.2       |-2.082292553 |2.57543166 |2.62119065  |0.79440713  |0.4269585          |NA   |bio7         |0.34177799   |0.05653227  |0.05838979  |5.85338647  |0                  |
-|Axis.2       |105.8730629  |88.45648472 |89.42203144 |1.18397067  |0.2364247          |NA  |bio6         |0.430727698  |0.03052731 |0.03143785  |13.70092854 |0                  |NA   |Axis.1       |1.57794905   |11.89650289 |12.18647211 |0.12948366  |0.896975           |
-|Axis.3       |-5.432382412 |26.52153131 |27.54590024 |0.19721201  |0.8436616          |NA  |Axis.1       |0.22267537   |1.25918711 |1.2934862   |0.17215133  |0.8633186          |NA   |Rearing.temp |0.01174595   |0.03343028  |0.03422627  |0.34318537  |0.731459           |
-|bio5         |0.098505527  |0.066665352 |0.068957648 |1.42849314  |0.15315            |NA  |Axis.4       |0.171362227  |2.27629114 |2.35191008  |0.07286088  |0.9419168          |NA   |Axis.2       |4.24708937   |26.46804905 |27.17670287 |0.15627684  |0.8758148          |
-|Axis.1:bio5  |2.167761235  |0.774452089 |0.79221653  |2.73632417  |0.006213           |NA  |Rearing.temp |-0.001971928 |0.01542466 |0.01593332  |0.12376128  |0.9015043          |NA   |Axis.3       |2.55023555   |39.50379104 |40.44935619 |0.06304762  |0.9497286          |
-|Axis.2:bio5  |-3.410786773 |2.820916563 |2.850966    |1.19636179  |0.2315554          |NA  |Axis.3       |0.344867152  |5.82039656 |5.9665753   |0.05779985  |0.9539081          |NA   |Axis.4       |-43.46029486 |204.0829434 |207.3599239 |0.20958869  |0.8339887          |
-|Rearing.temp |0.001015674  |0.008166926 |0.008450716 |0.12018797  |0.9043342          |NA  |Axis.2:bio6  |-0.028382406 |0.36667178 |0.37805671  |0.07507447  |0.9401555          |NA   |Axis.4:bio7  |1.32978885   |6.25950379  |6.36007272  |0.20908391  |0.8343827          |
-|Axis.4       |2.178787485  |41.79217286 |43.10770462 |0.05054288  |0.9596898          |NA  |Axis.1:bio6  |-0.054579821 |0.21631607 |0.21965669  |0.24847785  |0.8037647          |NA   |Axis.2:bio7  |-0.10008424  |0.7756989   |0.79685177  |0.12559957  |0.9000489          |
-|Axis.3:bio5  |0.037161754  |0.968321351 |1.006521472 |0.03692097  |0.970548           |NA  |Axis.3:bio6  |0.016466532  |0.41755684 |0.42796108  |0.0384767   |0.9693076          |NA   |Axis.1:bio7  |-0.03381928  |0.34694592  |0.35551648  |0.09512717  |0.9242138          |
-|Axis.4:bio5  |-0.06684784  |1.259095332 |1.298786073 |0.05146948  |0.9589514          |NA  |Axis.4:bio6  |0.070484176  |1.61820244 |1.66039021  |0.04245037  |0.9661397          |NA   |Axis.3:bio7  |-0.08611658  |0.98198428  |1.00527754  |0.08566448  |0.9317331          |
+| Ctmax        | X            | X.1         | X.2         | X.3         | X.4                | X.5  | Ctmin        | X.6          | X.7        | X.8         | X.9         | X.10               | X.11 | TNB          | X.12         | X.13        | X.14        | X.15        | X.16               |
+| :----------- | :----------- | :---------- | :---------- | :---------- | :----------------- | :--- | :----------- | :----------- | :--------- | :---------- | :---------- | :----------------- | :--- | :----------- | :----------- | :---------- | :---------- | :---------- | :----------------- |
+| top 2 AICc   |              |             |             |             |                    | NA   | top 2 AICc   |              |            |             |             |                    | NA   | top 2 AICc   |              |             |             |             |                    |
+|              | Estimate     | st SE       | Adjusted SE | z value     | Pr(>&#124;z&#124;) | NA   |              | Estimate     | st SE      | Adjusted SE | z value     | Pr(>&#124;z&#124;) | NA   |              | Estimate     | st SE       | Adjusted SE | z value     | Pr(>&#124;z&#124;) |
+| (Intercept)  | 39.1974113   | 1.81717555  | 1.88065146  | 20.842464   | 0                  | NA   | (Intercept)  | 6.7081182    | 0.2276948  | 0.23542884  | 28.4931876  | 0                  | NA   | (Intercept)  | 27.0459363   | 1.9059241   | 1.96848068  | 13.7394979  | 0                  |
+| Axis.1       | -57.5915669  | 22.32728931 | 22.90079918 | 2.514828    | 0.01190905         | NA   | Axis.2       | -2.1928922   | 2.3776364  | 2.41435204  | 0.9082736   | 0.3637337          | NA   | bio7         | 0.3458702    | 0.05107519  | 0.05275118  | 6.5566338   | 0                  |
+| Axis.2       | 127.6089015  | 83.60796871 | 84.76171296 | 1.505502    | 0.13219514         | NA   | bio6         | 0.4381219    | 0.0216451  | 0.02237847  | 19.5778289  | 0                  | NA   | Axis.1       | 0.4799895    | 1.20994269  | 1.23717296  | 0.3879728   | 0.6980362          |
+| Axis.3       | -5.5723952   | 3.87984439  | 3.94482507  | 1.412584    | 0.1577782          | NA   |              |              |            |             |             |                    | NA   |              |              |             |             |             |                    |
+| bio5         | 0.1042642    | 0.06385464  | 0.06611108  | 1.577106    | 0.11477121         | NA   |              |              |            |             |             |                    | NA   |              |              |             |             |             |                    |
+| Axis.1:bio5  | 2.2932857    | 0.74450301  | 0.76259317  | 3.00722     | 0.00263649         | NA   |              |              |            |             |             |                    | NA   |              |              |             |             |             |                    |
+| Axis.2:bio5  | -4.1037142   | 2.67226625  | 2.70829115  | 1.515241    | 0.12971134         | NA   |              |              |            |             |             |                    | NA   |              |              |             |             |             |                    |
+|              |              |             |             |             |                    | NA   |              |              |            |             |             |                    | NA   |              |              |             |             |             |                    |
+| top 6 AICc   |              |             |             |             |                    | NA   | top 6 AIC    |              |            |             |             |                    | NA   | top 6 AIC    |              |             |             |             |                    |
+|              | Estimate     | st SE       | Adjusted SE | z value     | Pr(>&#124;z&#124;) | NA   |              | Estimate     | st SE      | Adjusted SE | z value     | Pr(>&#124;z&#124;) | NA   |              | Estimate     | st SE       | Adjusted SE | z value     | Pr(>&#124;z&#124;) |
+| (Intercept)  | 39.09770833  | 1.858677254 | 1.925749929 | 20.30258848 | 0                  | NA   | (Intercept)  | 6.684988297  | 0.34810913 | 0.35955592  | 18.59234664 | 0                  | NA   | (Intercept)  | 27.10029979  | 1.93125923  | 1.9947008   | 13.58614773 | 0                  |
+| Axis.1       | -58.89921078 | 22.04271462 | 22.67258208 | 2.59781663  | 0.0093819          | NA   | Axis.2       | -2.395005615 | 2.383652   | 2.42548151  | 0.98743511  | 0.3234294          | NA   | bio7         | 0.340556895  | 0.05066679  | 0.05234842  | 6.505580624 | 0                  |
+| Axis.2       | 128.5516463  | 84.09957359 | 85.29260627 | 1.50718394  | 0.1317635          | NA   | bio6         | 0.434621522  | 0.02580208 | 0.02660974  | 16.33317269 | 0                  | NA   | Axis.1       | 0.233929172  | 0.87808967  | 0.89639122  | 0.26096772  | 0.7941174          |
+| Axis.3       | -6.557056311 | 24.86761943 | 25.84512303 | 0.25370575  | 0.7997229          | NA   | Axis.1       | 0.237902792  | 0.84028327 | 0.86112014  | 0.27627131  | 0.7823397          | NA   | Rearing.temp | 0.006336015  | 0.02480004  | 0.02533232  | 0.250115874 | 0.8024977          |
+| bio5         | 0.106760957  | 0.064593101 | 0.066955014 | 1.59451773  | 0.1108201          | NA   | Axis.4       | 0.112568203  | 1.35995056 | 1.40562657  | 0.080084    | 0.9361704          | NA   | Axis.2       | 0.384777978  | 1.53920801  | 1.57274344  | 0.244654003 | 0.8067243          |
+| Axis.1:bio5  | 2.335012045  | 0.732742988 | 0.752658592 | 3.10235221  | 0.0019199          | NA   | Rearing.temp | -0.000455203 | 0.01026543 | 0.01062611  | 0.04283813  | 0.9658306          | NA   | Axis.3       | -0.405958108 | 1.89199147  | 1.93749909  | 0.209526864 | 0.834037           |
+| Axis.2:bio5  | -4.139188942 | 2.678608124 | 2.715902917 | 1.5240563   | 0.1274946          | NA   |              |              |            |             |             |                    | NA   | Axis.4       | -0.020203078 | 2.08189989  | 2.15420639  | 0.009378432 | 0.9925172          |
+| Rearing.temp | 0.001023202  | 0.006706439 | 0.006926472 | 0.14772334  | 0.8825611          | NA   |              |              |            |             |             |                    | NA   |              |              |             |             |             |                    |
+| Axis.4       | 0.040415014  | 0.730962899 | 0.759753398 | 0.05319491  | 0.9575766          | NA   |              |              |            |             |             |                    | NA   |              |              |             |             |             |                    |
+| Axis.3:bio5  | 0.033707897  | 0.907576414 | 0.943914621 | 0.03571075  | 0.971513           | NA   |              |              |            |             |             |                    | NA   |              |              |             |             |             |                    |
+|              |              |             |             |             |                    | NA   |              |              |            |             |             |                    | NA   |              |              |             |             |             |                    |
+| top10 AICc   |              |             |             |             |                    | NA   | top 10 AIC   |              |            |             |             |                    | NA   | top 10 AIC   |              |             |             |             |                    |
+|              | Estimate     | st SE       | Adjusted SE | z value     | Pr(>&#124;z&#124;) | NA   |              | Estimate     | st SE      | Adjusted SE | z value     | Pr(>&#124;z&#124;) | NA   |              | Estimate     | st SE       | Adjusted SE | z value     | Pr(>&#124;z&#124;) |
+| (Intercept)  | 3.93E+01     | 1.899791736 | 1.963911039 | 20.01693332 | 0                  | NA   | (Intercept)  | 6.708401068  | 0.37935474 | 0.39165216  | 17.1284671  | 0                  | NA   | (Intercept)  | 26.99566918  | 1.97438106  | 2.03890627  | 13.2402698  | 0                  |
+| Axis.1       | -5.49E+01    | 22.98798186 | 23.54781004 | 2.33039265  | 0.0197854          | NA   | Axis.2       | -2.306237463 | 2.41991077 | 2.46193139  | 0.936759437 | 0.3488823          | NA   | bio7         | 0.341349078  | 0.05167576  | 0.05337701  | 6.3950576   | 0                  |
+| Axis.2       | 1.13E+02     | 87.18011426 | 88.20794399 | 1.28066363  | 0.2003118          | NA   | bio6         | 0.434528345  | 0.0260478  | 0.0268662   | 16.17379177 | 0                  | NA   | Axis.1       | 0.333219277  | 1.03492288  | 1.0576099   | 0.3150682   | 0.7527099          |
+| Axis.3       | -5.52E+00    | 22.98845903 | 23.88232484 | 0.23133093  | 0.8170577          | NA   | Axis.1       | 0.134917912  | 0.91388635 | 0.93807943  | 0.143823548 | 0.8856398          | NA   | Rearing.temp | 0.009351372  | 0.0297777   | 0.03043434  | 0.3072639   | 0.7586425          |
+| bio5         | 9.98E-02     | 0.06595076  | 0.068221677 | 1.46265473  | 0.1435619          | NA   | Axis.4       | 0.084008834  | 1.17585796 | 1.21528353  | 0.069126942 | 0.9448886          | NA   | Axis.2       | 0.449552864  | 1.65384841  | 1.69015606  | 0.265983    | 0.7902523          |
+| Axis.1:bio5  | 2.20E+00     | 0.766278694 | 0.783913018 | 2.80383221  | 0.0050499          | NA   | Rearing.temp | -0.001159531 | 0.01228646 | 0.01268573  | 0.091404373 | 0.9271713          | NA   | Axis.3       | -0.513063577 | 2.10220292  | 2.15127673  | 0.2384926   | 0.8114991          |
+| Axis.2:bio5  | -3.64E+00    | 2.782129711 | 2.81413218  | 1.29206427  | 0.1963349          | NA   | Axis.3       | -0.018400092 | 0.73655574 | 0.76270452  | 0.024124797 | 0.9807531          | NA   | Axis.4       | -32.1405597  | 171.6554339 | 174.0144258 | 0.1847005   | 0.8534639          |
+| Rearing.temp | 8.61E-04     | 0.007016252 | 0.007252224 | 0.1187358   | 0.9054847          | NA   | Axis.2:bio6  | -0.001287445 | 0.19407722 | 0.20101898  | 0.006404594 | 0.9948899          | NA   | Axis.4:bio7  | 0.985550403  | 5.26653     | 5.33891153  | 0.1845976   | 0.8535446          |
+| Axis.4       | -5.58E-03    | 0.843672767 | 0.874007493 | 0.00638567  | 0.994905           | NA   | Axis.1:bio6  | -0.02598336  | 0.13293313 | 0.13465174  | 0.192967133 | 0.8469847          | NA   |              |              |             |             |             |                    |
+| Axis.3:bio5  | 2.85E-02     | 0.834371842 | 0.867772028 | 0.03282359  | 0.9738153          | NA   |              |              |            |             |             |                    | NA   |              |              |             |             |             |                    |
+|              |              |             |             |             |                    | NA   |              |              |            |             |             |                    | NA   |              |              |             |             |             |                    |
+| delta 4      |              |             |             |             |                    | NA   | delta 4      |              |            |             |             |                    | NA   | delta 4      |              |             |             |             |                    |
+|              | Estimate     | st SE       | Adjusted SE | z value     | Pr(>&#124;z&#124;) | NA   |              | Estimate     | st SE      | Adjusted SE | z value     | Pr(>&#124;z&#124;) | NA   |              | Estimate     | st SE       | Adjusted SE | z value     | Pr(>&#124;z&#124;) |
+| (Intercept)  | 3.92E+01     | 1.893976934 | 1.959535391 | 20.00841235 | 0                  | NA   | (Intercept)  | 6.705813971  | 0.36859922 | 0.38057547  | 17.62019506 | 0                  | NA   | (Intercept)  | 26.99362954  | 1.98319436  | 2.04854756  | 13.1769601  | 0                  |
+| Axis.1       | -5.72E+01    | 22.60477016 | 23.20900583 | 2.46345624  | 0.0137605          | NA   | Axis.2       | -2.092714799 | 2.40013254 | 2.43860238  | 0.85816155  | 0.3908033          | NA   | bio7         | 0.341410566  | 0.05185096  | 0.05357386  | 6.3727077   | 0                  |
+| Axis.2       | 1.24E+02     | 83.35210021 | 84.53449839 | 1.4715241   | 0.1411494          | NA   | bio6         | 0.434592864  | 0.02574957 | 0.0265647   | 16.35978856 | 0                  | NA   | Axis.1       | 0.332214471  | 1.03734215  | 1.06050509  | 0.3132606   | 0.7540827          |
+| Axis.3       | -6.10E+00    | 24.04585344 | 24.98659536 | 0.24418582  | 0.8070869          | NA   | Axis.1       | 0.122426556  | 0.87143086 | 0.89445417  | 0.136872923 | 0.8911312          | NA   | Rearing.temp | 0.009346593  | 0.02990764  | 0.03058437  | 0.3056003   | 0.759909           |
+| bio5         | 1.03E-01     | 0.065747663 | 0.068062898 | 1.51566905  | 0.1296031          | NA   | Axis.4       | 0.125415028  | 1.4735481  | 1.52274366  | 0.082361222 | 0.9343595          | NA   | Axis.2       | 2.838029586  | 17.73196229 | 18.10766781 | 0.1567308   | 0.875457           |
+| Axis.1:bio5  | 2.28E+00     | 0.749621892 | 0.768722868 | 2.96354009  | 0.0030412          | NA   | Rearing.temp | -0.001052176 | 0.0117087  | 0.01208889  | 0.087036633 | 0.9306424          | NA   | Axis.3       | -0.629285835 | 2.34142278  | 2.39958368  | 0.2622479   | 0.7931303          |
+| Axis.2:bio5  | -4.00E+00    | 2.655253834 | 2.692134467 | 1.48727215  | 0.1369429          | NA   | Axis.3       | -0.018674382 | 0.92571971 | 0.95829077  | 0.019487177 | 0.9844525          | NA   | Axis.4       | -27.62992928 | 159.5462112 | 161.7281284 | 0.1708418   | 0.8643481          |
+| Rearing.temp | 9.52E-04     | 0.006474441 | 0.006686524 | 0.14238996  | 0.886772           | NA   | Axis.2:bio6  | -0.001168247 | 0.18487511 | 0.19148771  | 0.006100898 | 0.9951322          | NA   | Axis.4:bio7  | 0.847237516  | 4.89499575  | 4.96194424  | 0.1707471   | 0.8644226          |
+| Axis.4       | 3.76E-02     | 0.705181274 | 0.732950521 | 0.05130819  | 0.9590799          | NA   | Axis.1:bio6  | -0.023577694 | 0.12685366 | 0.12848792  | 0.183501249 | 0.8544047          | NA   | Axis.2:bio7  | -0.064576645 | 0.51493977  | 0.52615353  | 0.1227335   | 0.9023182          |
+| Axis.3:bio5  | 3.14E-02     | 0.875514464 | 0.910565657 | 0.03444602  | 0.9725215          | NA   |              |              |            |             |             |                    | NA   |              |              |             |             |             |                    |
+|              |              |             |             |             |                    | NA   |              |              |            |             |             |                    | NA   |              |              |             |             |             |                    |
+| 95 conf int  |              |             |             |             |                    | NA   | 95 conf int  |              |            |             |             |                    | NA   | 95 conf int  |              |             |             |             |                    |
+|              | Estimate     | st SE       | Adjusted SE | z value     | Pr(>&#124;z&#124;) | NA   |              | Estimate     | st SE      | Adjusted SE | z value     | Pr(>&#124;z&#124;) | NA   |              | Estimate     | st SE       | Adjusted SE | z value     | Pr(>&#124;z&#124;) |
+| (Intercept)  | 39.34503249  | 1.92565228  | 1.99050365  | 19.76637044 | 0                  | NA   | (Intercept)  | 6.700287577  | 0.44563973 | 0.46035289  | 14.55467701 | 0                  | NA   | (Intercept)  | 26.9140026   | 2.16190181  | 2.23237161  | 12.05623762 | 0                  |
+| Axis.1       | -54.06305882 | 23.2473386  | 23.81149971 | 2.27046005  | 0.0231797          | NA   | Axis.2       | -2.082292553 | 2.57543166 | 2.62119065  | 0.79440713  | 0.4269585          | NA   | bio7         | 0.34177799   | 0.05653227  | 0.05838979  | 5.85338647  | 0                  |
+| Axis.2       | 105.8730629  | 88.45648472 | 89.42203144 | 1.18397067  | 0.2364247          | NA   | bio6         | 0.430727698  | 0.03052731 | 0.03143785  | 13.70092854 | 0                  | NA   | Axis.1       | 1.57794905   | 11.89650289 | 12.18647211 | 0.12948366  | 0.896975           |
+| Axis.3       | -5.432382412 | 26.52153131 | 27.54590024 | 0.19721201  | 0.8436616          | NA   | Axis.1       | 0.22267537   | 1.25918711 | 1.2934862   | 0.17215133  | 0.8633186          | NA   | Rearing.temp | 0.01174595   | 0.03343028  | 0.03422627  | 0.34318537  | 0.731459           |
+| bio5         | 0.098505527  | 0.066665352 | 0.068957648 | 1.42849314  | 0.15315            | NA   | Axis.4       | 0.171362227  | 2.27629114 | 2.35191008  | 0.07286088  | 0.9419168          | NA   | Axis.2       | 4.24708937   | 26.46804905 | 27.17670287 | 0.15627684  | 0.8758148          |
+| Axis.1:bio5  | 2.167761235  | 0.774452089 | 0.79221653  | 2.73632417  | 0.006213           | NA   | Rearing.temp | -0.001971928 | 0.01542466 | 0.01593332  | 0.12376128  | 0.9015043          | NA   | Axis.3       | 2.55023555   | 39.50379104 | 40.44935619 | 0.06304762  | 0.9497286          |
+| Axis.2:bio5  | -3.410786773 | 2.820916563 | 2.850966    | 1.19636179  | 0.2315554          | NA   | Axis.3       | 0.344867152  | 5.82039656 | 5.9665753   | 0.05779985  | 0.9539081          | NA   | Axis.4       | -43.46029486 | 204.0829434 | 207.3599239 | 0.20958869  | 0.8339887          |
+| Rearing.temp | 0.001015674  | 0.008166926 | 0.008450716 | 0.12018797  | 0.9043342          | NA   | Axis.2:bio6  | -0.028382406 | 0.36667178 | 0.37805671  | 0.07507447  | 0.9401555          | NA   | Axis.4:bio7  | 1.32978885   | 6.25950379  | 6.36007272  | 0.20908391  | 0.8343827          |
+| Axis.4       | 2.178787485  | 41.79217286 | 43.10770462 | 0.05054288  | 0.9596898          | NA   | Axis.1:bio6  | -0.054579821 | 0.21631607 | 0.21965669  | 0.24847785  | 0.8037647          | NA   | Axis.2:bio7  | -0.10008424  | 0.7756989   | 0.79685177  | 0.12559957  | 0.9000489          |
+| Axis.3:bio5  | 0.037161754  | 0.968321351 | 1.006521472 | 0.03692097  | 0.970548           | NA   | Axis.3:bio6  | 0.016466532  | 0.41755684 | 0.42796108  | 0.0384767   | 0.9693076          | NA   | Axis.1:bio7  | -0.03381928  | 0.34694592  | 0.35551648  | 0.09512717  | 0.9242138          |
+| Axis.4:bio5  | -0.06684784  | 1.259095332 | 1.298786073 | 0.05146948  | 0.9589514          | NA   | Axis.4:bio6  | 0.070484176  | 1.61820244 | 1.66039021  | 0.04245037  | 0.9661397          | NA   | Axis.3:bio7  | -0.08611658  | 0.98198428  | 1.00527754  | 0.08566448  | 0.9317331          |
 
-------    
+------
 <div id='id-section19'/>
 ### Page 19: 2016-06-01 Variance partitioning: thermal tolerance breadth example    
 
@@ -1652,7 +1644,7 @@ Probably a poor way to show output, but you can see the consistency with model a
 * c+b= ecological
 * a = phylo independent of ecology
 * c = ecology independent of phylo
-code for model construction: 
+  code for model construction: 
 ```R
 #Ctmax
 #varpar
@@ -1706,11 +1698,11 @@ anova(c)
 ###Summary of results: Proportion of variance assigned to each component   
 **Please scroll right to see the whole table, this table is wide**    
 
-|Trait             |Independent.Phylogeny |Independent.Ecology |Phylogeny |Ecology | Phylogeny.and.Ecology|Full  | Residual|
-|:-----------------|:---------------------|:-------------------|:---------|:-------|---------------------:|:-----|--------:|
-|Ctmax             |**0.14**                 |0                   |**0.90**     |**0.75**   |                  0.75|**0.90** |     0.10|
-|Ctmin             |0                     |**0.31**               |**0.64**     |**0.92**   |                  0.60|**0.91** |     0.09|
-|Tolerance Breadth |0                     |**0.45**               |0.17      |**0.57**   |                  0.11|**0.53** |     0.47|
+| Trait             | Independent.Phylogeny | Independent.Ecology | Phylogeny | Ecology  | Phylogeny.and.Ecology | Full     | Residual |
+| :---------------- | :-------------------- | :------------------ | :-------- | :------- | --------------------: | :------- | -------: |
+| Ctmax             | **0.14**              | 0                   | **0.90**  | **0.75** |                  0.75 | **0.90** |     0.10 |
+| Ctmin             | 0                     | **0.31**            | **0.64**  | **0.92** |                  0.60 | **0.91** |     0.09 |
+| Tolerance Breadth | 0                     | **0.45**            | 0.17      | **0.57** |                  0.11 | **0.53** |     0.47 |
 Note-Bolded values represents significant variance component. The combined phylogeny and ecology variance component can not be tested for significance, only indirectly measured. **The ecological component is represented by Tmax for Ctmax, Tmin for CTmin, and TAR for tolerance breadth.**  
 
 ### Different way to represent proportion of variance explained by each component   
@@ -1724,8 +1716,7 @@ Note-Bolded values represents significant variance component. The combined phylo
 
 ![](https://cloud.githubusercontent.com/assets/4654474/15729238/54f6fa6a-2830-11e6-9ea8-a0857c178f04.jpg)
 
-
-------    
+------
 <div id='id-section20'/>
 ###Notes from climate cascade meeting, 2016-06-01    
 
@@ -1747,7 +1738,7 @@ For the phytroton gxp paper:
 1. Remake boxplot to include Axis 2    
 
 
-------    
+------
 <div id='id-section21'/>
 ### Page 21: 2016-06-02. Levine's test for raw residuals   
 
@@ -1765,59 +1756,59 @@ About the test: [some background](http://www.itl.nist.gov/div898/handbook/eda/se
 **Using the [car package in R](http://www.inside-r.org/packages/cran/car/docs/leveneTest)   
 
  ###Raw residuals in long format       
+
  
- 
- 
-|Raw Residuals|Field_V_phyto |
-|----------:|:-----|
-|  1.2426873|field |
-|  1.0498107|field |
-|  0.1956326|field |
-| -0.8463195|field |
-|  1.4852558|field |
-| -0.2966277|field |
-|  0.7426873|field |
-|  0.8078586|field |
-|  0.6459408|field |
-| -0.8070045|field |
-| -0.2070045|field |
-| -0.6070045|field |
-| -0.2070045|field |
-| -0.1799154|field |
-| -1.1114907|field |
-| -0.8269702|field |
-| -1.0805318|field |
-| -0.1320043|phyto |
-| -0.4520043|phyto |
-|  0.0980829|phyto |
-|  0.0980829|phyto |
-| -0.1842485|phyto |
-|  0.0157515|phyto |
-| -0.2211002|phyto |
-| -0.3411002|phyto |
-| -0.2292049|phyto |
-| -0.3492049|phyto |
-| -0.3492049|phyto |
-| -0.1640741|phyto |
-| -0.1040741|phyto |
-| -0.2040741|phyto |
-| -0.0640741|phyto |
-| -0.0720043|phyto |
-|  0.1879957|phyto |
-|  0.4388998|phyto |
-|  0.0388998|phyto |
-|  0.2988998|phyto |
-|  0.2388998|phyto |
-|  0.2739434|phyto |
-|  0.4939434|phyto |
-|  0.5959259|phyto |
-|  0.5559259|phyto |
-|  0.3679957|phyto |
-|  0.6329521|phyto |
-|  0.0070044|phyto |
-| -0.5389433|phyto |
-| -0.5789433|phyto |
-| -0.3589433|phyto |
+
+| Raw Residuals | Field_V_phyto |
+| ------------: | :------------ |
+|     1.2426873 | field         |
+|     1.0498107 | field         |
+|     0.1956326 | field         |
+|    -0.8463195 | field         |
+|     1.4852558 | field         |
+|    -0.2966277 | field         |
+|     0.7426873 | field         |
+|     0.8078586 | field         |
+|     0.6459408 | field         |
+|    -0.8070045 | field         |
+|    -0.2070045 | field         |
+|    -0.6070045 | field         |
+|    -0.2070045 | field         |
+|    -0.1799154 | field         |
+|    -1.1114907 | field         |
+|    -0.8269702 | field         |
+|    -1.0805318 | field         |
+|    -0.1320043 | phyto         |
+|    -0.4520043 | phyto         |
+|     0.0980829 | phyto         |
+|     0.0980829 | phyto         |
+|    -0.1842485 | phyto         |
+|     0.0157515 | phyto         |
+|    -0.2211002 | phyto         |
+|    -0.3411002 | phyto         |
+|    -0.2292049 | phyto         |
+|    -0.3492049 | phyto         |
+|    -0.3492049 | phyto         |
+|    -0.1640741 | phyto         |
+|    -0.1040741 | phyto         |
+|    -0.2040741 | phyto         |
+|    -0.0640741 | phyto         |
+|    -0.0720043 | phyto         |
+|     0.1879957 | phyto         |
+|     0.4388998 | phyto         |
+|     0.0388998 | phyto         |
+|     0.2988998 | phyto         |
+|     0.2388998 | phyto         |
+|     0.2739434 | phyto         |
+|     0.4939434 | phyto         |
+|     0.5959259 | phyto         |
+|     0.5559259 | phyto         |
+|     0.3679957 | phyto         |
+|     0.6329521 | phyto         |
+|     0.0070044 | phyto         |
+|    -0.5389433 | phyto         |
+|    -0.5789433 | phyto         |
+|    -0.3589433 | phyto         |
 
 **Code**:
 ```R
@@ -1839,7 +1830,7 @@ boxplot(lt[,1]~lt[,2],ylab="raw residuals",las=1)
 
 ##Summary: Yes, sig diff in variance between field and phyto.    
 
-------    
+------
 <div id='id-section22'/>
 ### Page 22: 2016-06-02. **Brute force fitting nls() functions in R!!**  
 
@@ -1857,32 +1848,32 @@ Thermal breadth = 1 if they analyze it, 0 if they don't.
 
 ###Table:     
 
-|Type              |Author                    | Year|Journal                                 |Taxa                   |Rearing_acclimation.Temperature |Heat_tolerance_Trait |Cold_tolerance_trait | Thermal_Breadth|Locale                    |
-|:-----------------|:-------------------------|----:|:---------------------------------------|:----------------------|:-------------------------------|:--------------------|:--------------------|---------------:|:-------------------------|
-|Meta-analysis     |Addo-Bediako et al.       | 2000|Proceedings of the royal society b      |Insects                |                                |                     |                     |              NA|Global                    |
-|Lab acclimation   |Deere & Chown             | 2006|American Naturalist                     |Mites                  |1; 5; 10; 15                    |Locomotion           |Locomotion           |               1|Southern Ocean            |
-|Field             |Compton et al.            | 2007|Experimental marine biology and ecology |Bivalve                |                                |Ctmax                |Ctmin                |               1|Europe                    |
-|Lab acclimation   |Calosi et al.             | 2008|Biology letters                         |Beetles                |14.5;20.5                       |Ctmax                |Ctmin                |               0|Europe                    |
-|Lab acclimation   |Calosi et al.             | 2008|Journal of biogeography                 |Beetles                |14.5; 20.5                      |Ctmax                |Ctmin                |               1|Africa to Europe          |
-|Field             |Sinervo et al.            | 2010|Science                                 |Lizards                |                                |Tb                   |                     |               0|Mexico                    |
-|Lab acclimation   |Calosi et al.             | 2010|Journal of Animal Ecology               |Beetles                |14.5; 20.5                      |Ctmax                |Ctmin                |               1|USA                       |
-|Lab acclimation   |Anert et al.              | 2011|Integrative and Comparative Biology     |Plants                 |20-24                           |RGR                  |RGR                  |               1|USA                       |
-|Meta-analysis     |Sunday et al.             | 2011|Proceedings of the royal society b      |Terrestrial and Marine |                                |Ctmax                |Ctmin                |               1|Global                    |
-|Common garden     |Overgaard et al.          | 2011|American Naturalist                     |Fruit Fly              |25;29                           |Ctmax;KO             |Ctmin;KO             |               1|Australia                 |
-|Common garden     |Krenek et al.             | 2012|Plosone                                 |Paramecium             |22                              |GR                   |GR                   |               1|Europe                    |
-|Meta-analysis     |Grigg & Buckley           | 2012|Biology letters                         |Lizards                |                                |Ctmax                |Ctmin                |               1|Global                    |
-|Short acclimation |Sheldon & Tewksbury       | 2014|Ecology                                 |Beetles                |20                              |Ctmax                |Ctmin                |               1|North and Central America |
-|Common garden     |Sheth & Angert            | 2014|Evolution                               |Plants                 |20-25                           |RGR                  |RGR                  |               1|North America             |
-|Meta-analysis     |Khaliq et al.             | 2014|Proceedings of the royal society b      |Birds and Mammal       |                                |Ctmax                |Ctmin                |               1|Global                    |
-|Short acclimation |Sheldon et al.            | 2015|Global Ecology and Biogeography         |Lizards                |29                              |Ctmax                |Ctmin                |               1|Argentina                 |
-|Lab acclimation   |Bonino et al.             | 2015|Zoology                                 |Lizards                |20-40                           |Ctmax                |Ctmin                |               1|Argentina                 |
-|                  |Velasco et al.            | 2016|Journal of biogeography                 |                       |                                |                     |                     |              NA|Central America           |
-|Meta-analysis     |Lancaster                 | 2016|Nature Climate Change                   |Insects                |                                |Ctmax                |Ctmin                |               1|Global                    |
-|Lab acclimation   |Gutierrez-Pesquera et al. | 2016|Journal of biogeography                 |Frogs (tadpoles)       |20                              |Ctmax                |Ctmin                |               1|Global                    |
+| Type              | Author                    | Year | Journal                                 | Taxa                   | Rearing_acclimation.Temperature | Heat_tolerance_Trait | Cold_tolerance_trait | Thermal_Breadth | Locale                    |
+| :---------------- | :------------------------ | ---: | :-------------------------------------- | :--------------------- | :------------------------------ | :------------------- | :------------------- | --------------: | :------------------------ |
+| Meta-analysis     | Addo-Bediako et al.       | 2000 | Proceedings of the royal society b      | Insects                |                                 |                      |                      |              NA | Global                    |
+| Lab acclimation   | Deere & Chown             | 2006 | American Naturalist                     | Mites                  | 1; 5; 10; 15                    | Locomotion           | Locomotion           |               1 | Southern Ocean            |
+| Field             | Compton et al.            | 2007 | Experimental marine biology and ecology | Bivalve                |                                 | Ctmax                | Ctmin                |               1 | Europe                    |
+| Lab acclimation   | Calosi et al.             | 2008 | Biology letters                         | Beetles                | 14.5;20.5                       | Ctmax                | Ctmin                |               0 | Europe                    |
+| Lab acclimation   | Calosi et al.             | 2008 | Journal of biogeography                 | Beetles                | 14.5; 20.5                      | Ctmax                | Ctmin                |               1 | Africa to Europe          |
+| Field             | Sinervo et al.            | 2010 | Science                                 | Lizards                |                                 | Tb                   |                      |               0 | Mexico                    |
+| Lab acclimation   | Calosi et al.             | 2010 | Journal of Animal Ecology               | Beetles                | 14.5; 20.5                      | Ctmax                | Ctmin                |               1 | USA                       |
+| Lab acclimation   | Anert et al.              | 2011 | Integrative and Comparative Biology     | Plants                 | 20-24                           | RGR                  | RGR                  |               1 | USA                       |
+| Meta-analysis     | Sunday et al.             | 2011 | Proceedings of the royal society b      | Terrestrial and Marine |                                 | Ctmax                | Ctmin                |               1 | Global                    |
+| Common garden     | Overgaard et al.          | 2011 | American Naturalist                     | Fruit Fly              | 25;29                           | Ctmax;KO             | Ctmin;KO             |               1 | Australia                 |
+| Common garden     | Krenek et al.             | 2012 | Plosone                                 | Paramecium             | 22                              | GR                   | GR                   |               1 | Europe                    |
+| Meta-analysis     | Grigg & Buckley           | 2012 | Biology letters                         | Lizards                |                                 | Ctmax                | Ctmin                |               1 | Global                    |
+| Short acclimation | Sheldon & Tewksbury       | 2014 | Ecology                                 | Beetles                | 20                              | Ctmax                | Ctmin                |               1 | North and Central America |
+| Common garden     | Sheth & Angert            | 2014 | Evolution                               | Plants                 | 20-25                           | RGR                  | RGR                  |               1 | North America             |
+| Meta-analysis     | Khaliq et al.             | 2014 | Proceedings of the royal society b      | Birds and Mammal       |                                 | Ctmax                | Ctmin                |               1 | Global                    |
+| Short acclimation | Sheldon et al.            | 2015 | Global Ecology and Biogeography         | Lizards                | 29                              | Ctmax                | Ctmin                |               1 | Argentina                 |
+| Lab acclimation   | Bonino et al.             | 2015 | Zoology                                 | Lizards                | 20-40                           | Ctmax                | Ctmin                |               1 | Argentina                 |
+|                   | Velasco et al.            | 2016 | Journal of biogeography                 |                        |                                 |                      |                      |              NA | Central America           |
+| Meta-analysis     | Lancaster                 | 2016 | Nature Climate Change                   | Insects                |                                 | Ctmax                | Ctmin                |               1 | Global                    |
+| Lab acclimation   | Gutierrez-Pesquera et al. | 2016 | Journal of biogeography                 | Frogs (tadpoles)       | 20                              | Ctmax                | Ctmin                |               1 | Global                    |
 
 
 
-------    
+------
 <div id='id-section24'/>
 ### Page 24: 2016-06-03. Proteome stability project: Organizational entry   
 
@@ -1895,90 +1886,90 @@ Today is Amanda's last day, so sad. She was working on the proteome stability pr
 
 2. For the TMT labeling, what order will they be labeled? See table below   
 3. What else needs to be done? Wai and Bethany will resuspend our tryptic peptides, take some out and run some of the samples on LTQ to see if we have peptides. If we have peptides, then Wai will do the labeling for us! Wow!
- 
+
 ### Organization table: 3 pogo and 3 rudis colonies treated across 10 temperatures, that will be TMT labelled. LTQ run means that a subsample will be taken out to run on mass spec to check for peptides. ug of sample indicates how much protein we have. 
-|Species     | Replicate|Colony  | Temperature| Sample..|Sample.Label |TMT.Label | LTQ...assignment|LTQ.Run | ug.of.Sample|
-|:-----------|---------:|:-------|-----------:|--------:|:------------|:---------|----------------:|:-------|------------:|
-|P. barbatus |         1|WWR45   |        30.1|        2|P45-2        |126       |                1|Yes     |         7.28|
-|P. barbatus |         1|WWR45   |        36.0|        3|P45-3        |127N      |                2|Yes     |         7.21|
-|P. barbatus |         1|WWR45   |        41.2|        4|P45-4        |127C      |                3|        |         6.23|
-|P. barbatus |         1|WWR45   |        43.9|        5|P45-5        |128N      |                4|        |         5.95|
-|P. barbatus |         1|WWR45   |        46.3|        6|P45-6        |128C      |                5|        |         5.41|
-|P. barbatus |         1|WWR45   |        48.2|        7|P45-7        |129N      |                6|Yes     |         4.59|
-|P. barbatus |         1|WWR45   |        50.3|        8|P45-8        |129C      |                7|        |         4.43|
-|P. barbatus |         1|WWR45   |        55.1|        9|P45-9        |130N      |                8|        |         3.63|
-|P. barbatus |         1|WWR45   |        61.2|       10|P45-10       |130C      |                9|Yes     |         3.03|
-|P. barbatus |         1|WWR45   |        65.2|       11|P45-11       |131       |               10|        |         3.08|
-|A. rudis    |         1|Duke 1  |        30.1|        2|ARD1-2       |126       |               11|        |         6.69|
-|A. rudis    |         1|Duke 1  |        36.0|        3|ARD1-3       |127N      |               12|Yes     |         6.00|
-|A. rudis    |         1|Duke 1  |        41.2|        4|ARD1-4       |127C      |               13|        |         5.85|
-|A. rudis    |         1|Duke 1  |        43.9|        5|ARD1-5       |128N      |               14|Yes     |         5.44|
-|A. rudis    |         1|Duke 1  |        46.3|        6|ARD1-6       |128C      |               15|        |         4.86|
-|A. rudis    |         1|Duke 1  |        48.2|        7|ARD1-7       |129N      |               16|        |         4.50|
-|A. rudis    |         1|Duke 1  |        50.3|        8|ARD1-8       |129C      |               17|Yes     |         3.79|
-|A. rudis    |         1|Duke 1  |        55.1|        9|ARD1-9       |130N      |               18|Yes     |         3.65|
-|A. rudis    |         1|Duke 1  |        61.2|       10|ARD1-10      |130C      |               19|        |         3.13|
-|A. rudis    |         1|Duke 1  |        65.2|       11|ARD1-11      |131       |               20|        |         2.66|
-|P. barbatus |         2|WWRQ53  |        30.1|        2|P53-2        |126       |               21|        |         6.54|
-|P. barbatus |         2|WWRQ53  |        36.0|        3|P53-3        |127N      |               22|        |         6.21|
-|P. barbatus |         2|WWRQ53  |        41.2|        4|P53-4        |127C      |               23|Yes     |         5.82|
-|P. barbatus |         2|WWRQ53  |        43.9|        5|P53-5        |128N      |               24|        |         5.26|
-|P. barbatus |         2|WWRQ53  |        46.3|        6|P53-6        |128C      |               25|        |         4.82|
-|P. barbatus |         2|WWRQ53  |        48.2|        7|P53-7        |129N      |               26|        |         4.51|
-|P. barbatus |         2|WWRQ53  |        50.3|        8|P53-8        |129C      |               27|Yes     |         4.02|
-|P. barbatus |         2|WWRQ53  |        55.1|        9|P53-9        |130N      |               28|        |         3.64|
-|P. barbatus |         2|WWRQ53  |        61.2|       10|P53-10       |130C      |               29|        |         2.81|
-|P. barbatus |         2|WWRQ53  |        65.2|       11|P53-11       |131       |               30|        |         2.79|
-|A. rudis    |         2|Yates 2 |        30.1|        2|ARY2-2       |126       |               31|        |         6.10|
-|A. rudis    |         2|Yates 2 |        36.0|        3|ARY2-3       |127N      |               32|Yes     |         6.52|
-|A. rudis    |         2|Yates 2 |        41.2|        4|ARY2-4       |127C      |               33|        |         5.95|
-|A. rudis    |         2|Yates 2 |        43.9|        5|ARY2-5       |128N      |               34|        |         5.26|
-|A. rudis    |         2|Yates 2 |        46.3|        6|ARY2-6       |128C      |               35|        |         4.74|
-|A. rudis    |         2|Yates 2 |        48.2|        7|ARY2-7       |129N      |               36|Yes     |         4.49|
-|A. rudis    |         2|Yates 2 |        50.3|        8|ARY2-8       |129C      |               37|        |         4.30|
-|A. rudis    |         2|Yates 2 |        55.1|        9|ARY2-9       |130N      |               38|        |         3.57|
-|A. rudis    |         2|Yates 2 |        61.2|       10|ARY2-10      |130C      |               39|        |         3.01|
-|A. rudis    |         2|Yates 2 |        65.2|       11|ARY2-11      |131       |               40|Yes     |         2.83|
-|P. barbatus |         3|WWRQ8   |        30.1|        2|P8-2         |126       |               41|        |         7.52|
-|P. barbatus |         3|WWRQ8   |        36.0|        3|P8-3         |127N      |               42|        |         7.28|
-|P. barbatus |         3|WWRQ8   |        41.2|        4|P8-4         |127C      |               43|        |         6.57|
-|P. barbatus |         3|WWRQ8   |        43.9|        5|P8-5         |128N      |               44|        |         5.79|
-|P. barbatus |         3|WWRQ8   |        46.3|        6|P8-6         |128C      |               45|Yes     |         5.33|
-|P. barbatus |         3|WWRQ8   |        48.2|        7|P8-7         |129N      |               46|Yes     |         4.87|
-|P. barbatus |         3|WWRQ8   |        50.3|        8|P8-8         |129C      |               47|Yes     |         4.52|
-|P. barbatus |         3|WWRQ8   |        55.1|        9|P8-9         |130N      |               48|        |         3.88|
-|P. barbatus |         3|WWRQ8   |        61.2|       10|P8-10        |130C      |               49|        |         3.46|
-|P. barbatus |         3|WWRQ8   |        65.2|       11|P8-11        |131       |               50|Yes     |         3.31|
-|A. rudis    |         3|Lex 13  |        30.1|        2|ARL13-2      |126       |               51|        |         6.26|
-|A. rudis    |         3|Lex 13  |        36.0|        3|ARL13-3      |127N      |               52|        |         5.90|
-|A. rudis    |         3|Lex 13  |        41.2|        4|ARL13-4      |127C      |               53|Yes     |         5.58|
-|A. rudis    |         3|Lex 13  |        43.9|        5|ARL13-5      |128N      |               54|        |         5.01|
-|A. rudis    |         3|Lex 13  |        46.3|        6|ARL13-6      |128C      |               55|        |         4.51|
-|A. rudis    |         3|Lex 13  |        48.2|        7|ARL13-7      |129N      |               56|Yes     |         3.95|
-|A. rudis    |         3|Lex 13  |        50.3|        8|ARL13-8      |129C      |               57|Yes     |         3.83|
-|A. rudis    |         3|Lex 13  |        55.1|        9|ARL13-9      |130N      |               58|        |         3.41|
-|A. rudis    |         3|Lex 13  |        61.2|       10|ARL13-10     |130C      |               59|        |         2.62|
-|A. rudis    |         3|Lex 13  |        65.2|       11|ARL13-11     |131       |               60|        |         1.79|
+| Species     | Replicate | Colony  | Temperature | Sample.. | Sample.Label | TMT.Label | LTQ...assignment | LTQ.Run | ug.of.Sample |
+| :---------- | --------: | :------ | ----------: | -------: | :----------- | :-------- | ---------------: | :------ | -----------: |
+| P. barbatus |         1 | WWR45   |        30.1 |        2 | P45-2        | 126       |                1 | Yes     |         7.28 |
+| P. barbatus |         1 | WWR45   |        36.0 |        3 | P45-3        | 127N      |                2 | Yes     |         7.21 |
+| P. barbatus |         1 | WWR45   |        41.2 |        4 | P45-4        | 127C      |                3 |         |         6.23 |
+| P. barbatus |         1 | WWR45   |        43.9 |        5 | P45-5        | 128N      |                4 |         |         5.95 |
+| P. barbatus |         1 | WWR45   |        46.3 |        6 | P45-6        | 128C      |                5 |         |         5.41 |
+| P. barbatus |         1 | WWR45   |        48.2 |        7 | P45-7        | 129N      |                6 | Yes     |         4.59 |
+| P. barbatus |         1 | WWR45   |        50.3 |        8 | P45-8        | 129C      |                7 |         |         4.43 |
+| P. barbatus |         1 | WWR45   |        55.1 |        9 | P45-9        | 130N      |                8 |         |         3.63 |
+| P. barbatus |         1 | WWR45   |        61.2 |       10 | P45-10       | 130C      |                9 | Yes     |         3.03 |
+| P. barbatus |         1 | WWR45   |        65.2 |       11 | P45-11       | 131       |               10 |         |         3.08 |
+| A. rudis    |         1 | Duke 1  |        30.1 |        2 | ARD1-2       | 126       |               11 |         |         6.69 |
+| A. rudis    |         1 | Duke 1  |        36.0 |        3 | ARD1-3       | 127N      |               12 | Yes     |         6.00 |
+| A. rudis    |         1 | Duke 1  |        41.2 |        4 | ARD1-4       | 127C      |               13 |         |         5.85 |
+| A. rudis    |         1 | Duke 1  |        43.9 |        5 | ARD1-5       | 128N      |               14 | Yes     |         5.44 |
+| A. rudis    |         1 | Duke 1  |        46.3 |        6 | ARD1-6       | 128C      |               15 |         |         4.86 |
+| A. rudis    |         1 | Duke 1  |        48.2 |        7 | ARD1-7       | 129N      |               16 |         |         4.50 |
+| A. rudis    |         1 | Duke 1  |        50.3 |        8 | ARD1-8       | 129C      |               17 | Yes     |         3.79 |
+| A. rudis    |         1 | Duke 1  |        55.1 |        9 | ARD1-9       | 130N      |               18 | Yes     |         3.65 |
+| A. rudis    |         1 | Duke 1  |        61.2 |       10 | ARD1-10      | 130C      |               19 |         |         3.13 |
+| A. rudis    |         1 | Duke 1  |        65.2 |       11 | ARD1-11      | 131       |               20 |         |         2.66 |
+| P. barbatus |         2 | WWRQ53  |        30.1 |        2 | P53-2        | 126       |               21 |         |         6.54 |
+| P. barbatus |         2 | WWRQ53  |        36.0 |        3 | P53-3        | 127N      |               22 |         |         6.21 |
+| P. barbatus |         2 | WWRQ53  |        41.2 |        4 | P53-4        | 127C      |               23 | Yes     |         5.82 |
+| P. barbatus |         2 | WWRQ53  |        43.9 |        5 | P53-5        | 128N      |               24 |         |         5.26 |
+| P. barbatus |         2 | WWRQ53  |        46.3 |        6 | P53-6        | 128C      |               25 |         |         4.82 |
+| P. barbatus |         2 | WWRQ53  |        48.2 |        7 | P53-7        | 129N      |               26 |         |         4.51 |
+| P. barbatus |         2 | WWRQ53  |        50.3 |        8 | P53-8        | 129C      |               27 | Yes     |         4.02 |
+| P. barbatus |         2 | WWRQ53  |        55.1 |        9 | P53-9        | 130N      |               28 |         |         3.64 |
+| P. barbatus |         2 | WWRQ53  |        61.2 |       10 | P53-10       | 130C      |               29 |         |         2.81 |
+| P. barbatus |         2 | WWRQ53  |        65.2 |       11 | P53-11       | 131       |               30 |         |         2.79 |
+| A. rudis    |         2 | Yates 2 |        30.1 |        2 | ARY2-2       | 126       |               31 |         |         6.10 |
+| A. rudis    |         2 | Yates 2 |        36.0 |        3 | ARY2-3       | 127N      |               32 | Yes     |         6.52 |
+| A. rudis    |         2 | Yates 2 |        41.2 |        4 | ARY2-4       | 127C      |               33 |         |         5.95 |
+| A. rudis    |         2 | Yates 2 |        43.9 |        5 | ARY2-5       | 128N      |               34 |         |         5.26 |
+| A. rudis    |         2 | Yates 2 |        46.3 |        6 | ARY2-6       | 128C      |               35 |         |         4.74 |
+| A. rudis    |         2 | Yates 2 |        48.2 |        7 | ARY2-7       | 129N      |               36 | Yes     |         4.49 |
+| A. rudis    |         2 | Yates 2 |        50.3 |        8 | ARY2-8       | 129C      |               37 |         |         4.30 |
+| A. rudis    |         2 | Yates 2 |        55.1 |        9 | ARY2-9       | 130N      |               38 |         |         3.57 |
+| A. rudis    |         2 | Yates 2 |        61.2 |       10 | ARY2-10      | 130C      |               39 |         |         3.01 |
+| A. rudis    |         2 | Yates 2 |        65.2 |       11 | ARY2-11      | 131       |               40 | Yes     |         2.83 |
+| P. barbatus |         3 | WWRQ8   |        30.1 |        2 | P8-2         | 126       |               41 |         |         7.52 |
+| P. barbatus |         3 | WWRQ8   |        36.0 |        3 | P8-3         | 127N      |               42 |         |         7.28 |
+| P. barbatus |         3 | WWRQ8   |        41.2 |        4 | P8-4         | 127C      |               43 |         |         6.57 |
+| P. barbatus |         3 | WWRQ8   |        43.9 |        5 | P8-5         | 128N      |               44 |         |         5.79 |
+| P. barbatus |         3 | WWRQ8   |        46.3 |        6 | P8-6         | 128C      |               45 | Yes     |         5.33 |
+| P. barbatus |         3 | WWRQ8   |        48.2 |        7 | P8-7         | 129N      |               46 | Yes     |         4.87 |
+| P. barbatus |         3 | WWRQ8   |        50.3 |        8 | P8-8         | 129C      |               47 | Yes     |         4.52 |
+| P. barbatus |         3 | WWRQ8   |        55.1 |        9 | P8-9         | 130N      |               48 |         |         3.88 |
+| P. barbatus |         3 | WWRQ8   |        61.2 |       10 | P8-10        | 130C      |               49 |         |         3.46 |
+| P. barbatus |         3 | WWRQ8   |        65.2 |       11 | P8-11        | 131       |               50 | Yes     |         3.31 |
+| A. rudis    |         3 | Lex 13  |        30.1 |        2 | ARL13-2      | 126       |               51 |         |         6.26 |
+| A. rudis    |         3 | Lex 13  |        36.0 |        3 | ARL13-3      | 127N      |               52 |         |         5.90 |
+| A. rudis    |         3 | Lex 13  |        41.2 |        4 | ARL13-4      | 127C      |               53 | Yes     |         5.58 |
+| A. rudis    |         3 | Lex 13  |        43.9 |        5 | ARL13-5      | 128N      |               54 |         |         5.01 |
+| A. rudis    |         3 | Lex 13  |        46.3 |        6 | ARL13-6      | 128C      |               55 |         |         4.51 |
+| A. rudis    |         3 | Lex 13  |        48.2 |        7 | ARL13-7      | 129N      |               56 | Yes     |         3.95 |
+| A. rudis    |         3 | Lex 13  |        50.3 |        8 | ARL13-8      | 129C      |               57 | Yes     |         3.83 |
+| A. rudis    |         3 | Lex 13  |        55.1 |        9 | ARL13-9      | 130N      |               58 |         |         3.41 |
+| A. rudis    |         3 | Lex 13  |        61.2 |       10 | ARL13-10     | 130C      |               59 |         |         2.62 |
+| A. rudis    |         3 | Lex 13  |        65.2 |       11 | ARL13-11     | 131       |               60 |         |         1.79 |
 
 
 ###A note: showing actual temperature treatments from thermal cycler
 
-| Thermocylcer.Actual.Temp| Temperature|
-|------------------------:|-----------:|
-|                     25.0|          25|
-|                     30.1|          30|
-|                     36.0|          35|
-|                     41.2|          40|
-|                     43.9|          43|
-|                     46.3|          45|
-|                     48.2|          48|
-|                     50.3|          50|
-|                     55.1|          55|
-|                     61.2|          60|
-|                     65.2|          65|
-|                     70.1|          70|
+| Thermocylcer.Actual.Temp | Temperature |
+| -----------------------: | ----------: |
+|                     25.0 |          25 |
+|                     30.1 |          30 |
+|                     36.0 |          35 |
+|                     41.2 |          40 |
+|                     43.9 |          43 |
+|                     46.3 |          45 |
+|                     48.2 |          48 |
+|                     50.3 |          50 |
+|                     55.1 |          55 |
+|                     61.2 |          60 |
+|                     65.2 |          65 |
+|                     70.1 |          70 |
 
-------    
+------
 <div id='id-section25'/>
 ### Page 25: 2016-06-03. ggplot reference, updating a figure from [Page 20: 2016-06-02](#id-section20)   
 
@@ -2028,7 +2019,7 @@ ylab(expression(paste("Hsp40 basal expression (",2^paste(Delta,Delta,"CT"),")"))
 
 ![](https://cloud.githubusercontent.com/assets/4654474/15782778/8f5642c0-2979-11e6-8645-e037fe954ad3.png)
 
-------    
+------
 <div id='id-section26'/>
 ###Page 26: 2016-06-03 What is a cell type?    
 
@@ -2050,7 +2041,7 @@ Feder suggests to read:
 
 
 
-------    
+------
 <div id='id-section27'/>
 ###Page 27: 2016-06-03. qPCR plate layout and using the loaner ABI steponeplus [Page 11: 2016-05-18](#id-section11)   
 
@@ -2059,16 +2050,16 @@ I started up the aBI steponeplus loaner today.
 
 My usual 96 well plate layout is in my physical notebook, but I'll share it here:  
 
-|X  |X1         |X2         |X3         |X4         |X5         |X6         |X7         |X8         |X9         |X10         |X11         |X12         |
-|:--|:----------|:----------|:----------|:----------|:----------|:----------|:----------|:----------|:----------|:-----------|:-----------|:-----------|
-|A  |Colony1:T1 |Colony1:T2 |Colony1:T3 |Colony1:T4 |Colony1:T5 |Colony1:T6 |Colony1:T7 |Colony1:T8 |Colony1:T9 |Colony1:T10 |Colony1:T11 |Colony1:T12 |
-|B  |Colony1:T1 |Colony1:T2 |Colony1:T3 |Colony1:T4 |Colony1:T5 |Colony1:T6 |Colony1:T7 |Colony1:T8 |Colony1:T9 |Colony1:T10 |Colony1:T11 |Colony1:T12 |
-|C  |Colony2:T1 |Colony2:T2 |Colony2:T3 |Colony2:T4 |Colony2:T5 |Colony2:T6 |Colony2:T7 |Colony2:T8 |Colony2:T9 |Colony2:T10 |Colony2:T11 |Colony2:T12 |
-|D  |Colony2:T1 |Colony2:T2 |Colony2:T3 |Colony2:T4 |Colony2:T5 |Colony2:T6 |Colony2:T7 |Colony2:T8 |Colony2:T9 |Colony2:T10 |Colony2:T11 |Colony2:T12 |
-|E  |Colony3:T1 |Colony3:T2 |Colony3:T3 |Colony3:T4 |Colony3:T5 |Colony3:T6 |Colony3:T7 |Colony3:T8 |Colony3:T9 |Colony3:T10 |Colony3:T11 |Colony3:T12 |
-|F  |Colony3:T1 |Colony3:T2 |Colony3:T3 |Colony3:T4 |Colony3:T5 |Colony3:T6 |Colony3:T7 |Colony3:T8 |Colony3:T9 |Colony3:T10 |Colony3:T11 |Colony3:T12 |
-|G  |Colony4:T1 |Colony4:T2 |Colony4:T3 |Colony4:T4 |Colony4:T5 |Colony4:T6 |Colony4:T7 |Colony4:T8 |Colony4:T9 |Colony4:T10 |Colony4:T11 |Colony4:T12 |
-|H  |Colony4:T1 |Colony4:T2 |Colony4:T3 |Colony4:T4 |Colony4:T5 |Colony4:T6 |Colony4:T7 |Colony4:T8 |Colony4:T9 |Colony4:T10 |Colony4:T11 |Colony4:T12 |
+| X    | X1         | X2         | X3         | X4         | X5         | X6         | X7         | X8         | X9         | X10         | X11         | X12         |
+| :--- | :--------- | :--------- | :--------- | :--------- | :--------- | :--------- | :--------- | :--------- | :--------- | :---------- | :---------- | :---------- |
+| A    | Colony1:T1 | Colony1:T2 | Colony1:T3 | Colony1:T4 | Colony1:T5 | Colony1:T6 | Colony1:T7 | Colony1:T8 | Colony1:T9 | Colony1:T10 | Colony1:T11 | Colony1:T12 |
+| B    | Colony1:T1 | Colony1:T2 | Colony1:T3 | Colony1:T4 | Colony1:T5 | Colony1:T6 | Colony1:T7 | Colony1:T8 | Colony1:T9 | Colony1:T10 | Colony1:T11 | Colony1:T12 |
+| C    | Colony2:T1 | Colony2:T2 | Colony2:T3 | Colony2:T4 | Colony2:T5 | Colony2:T6 | Colony2:T7 | Colony2:T8 | Colony2:T9 | Colony2:T10 | Colony2:T11 | Colony2:T12 |
+| D    | Colony2:T1 | Colony2:T2 | Colony2:T3 | Colony2:T4 | Colony2:T5 | Colony2:T6 | Colony2:T7 | Colony2:T8 | Colony2:T9 | Colony2:T10 | Colony2:T11 | Colony2:T12 |
+| E    | Colony3:T1 | Colony3:T2 | Colony3:T3 | Colony3:T4 | Colony3:T5 | Colony3:T6 | Colony3:T7 | Colony3:T8 | Colony3:T9 | Colony3:T10 | Colony3:T11 | Colony3:T12 |
+| F    | Colony3:T1 | Colony3:T2 | Colony3:T3 | Colony3:T4 | Colony3:T5 | Colony3:T6 | Colony3:T7 | Colony3:T8 | Colony3:T9 | Colony3:T10 | Colony3:T11 | Colony3:T12 |
+| G    | Colony4:T1 | Colony4:T2 | Colony4:T3 | Colony4:T4 | Colony4:T5 | Colony4:T6 | Colony4:T7 | Colony4:T8 | Colony4:T9 | Colony4:T10 | Colony4:T11 | Colony4:T12 |
+| H    | Colony4:T1 | Colony4:T2 | Colony4:T3 | Colony4:T4 | Colony4:T5 | Colony4:T6 | Colony4:T7 | Colony4:T8 | Colony4:T9 | Colony4:T10 | Colony4:T11 | Colony4:T12 |
 
 For each plate, I can run the 12 points of a performance curves for 4 colonies in duplicates. Each colony takes up 24 wells: 12 (T1-T12) temperature treatments and then ran in duplicates. Conditions for qpcr found [here](https://github.com/adnguyen/Dissertation_temperature_adaptation_ants/blob/master/ANBE_protocols.md#quantitative-real-time-pcr).
 
@@ -2085,7 +2076,7 @@ For each plate, I can run the 12 points of a performance curves for 4 colonies i
 10. T10 - 41 C
 11. T11 - 25 C (middle of run) 
 12. T12 - 25 C (end of run)
- 
+
 **T11 and T12 are in there to serve as  a time control** (When I do the delta delta CT calculation, I'll include those to wash out the effect of time. 
 
 
@@ -2095,14 +2086,14 @@ Colonies:
 2. HF2   
 3. Kite4   
 4. Kite8    
- 
+
 ##Summary of results:
 
 All colonies had double peaks. So they're not usable. For these colonies, only hsp83 279-392 prims worked. Next, do 18s rRNA for housekeeping gene.    
 
 **Silvia asked me to show her how to isolate RNA next Monday (2016-06-03)**, so I can isoalte CJ8( a colony I thought I isolated RNA from, but I didn't). **It is in box 54**
 
-------    
+------
 <div id='id-section28'/>
 ###Page 28: 2016-06-03. Papers showing differences between fast static vs slow dynamic temperature treatments.     
 
@@ -2110,7 +2101,7 @@ There is a large argument in the literature about how to best temperature treat 
 
 Here are a list of papers that find no clinal variation for slow ramp, but do for fast static experiments. 
 1. [Castaneda et al. 2015; Evolution](http://onlinelibrary.wiley.com/doi/10.1111/evo.12757/epdf)   
-2. 
+2. ​
 
 [Sgro et al. 2010; Journal of Evolutionary Biology](http://onlinelibrary.wiley.com/doi/10.1111/j.1420-9101.2010.02110.x/epdf) shows complex patterns between slow, hardening, and fast heat shocks across latitude.     
 
@@ -2118,9 +2109,8 @@ Our group has argued that different temperature treatments represent different a
 1. Fast heat shocks, whether dynamic or static = basal heat tolerance 
 2. Slow heat shocks, whether dynamic or static = phenotypic plastic response in heat tolerance or acclimation or partial hardening response. 
 
- 
 
-------    
+------
 <div id='id-section29'/>
 ###Page 29: 2016-06-06. Isolating RNA: colony CJ8; showing Sylvia    
 
@@ -2147,35 +2137,35 @@ Samples:
 
 ### Results of RNA isolation: we have RNA, now convert 50ng to cDNA      
 
-|   N|     Date|species |colony |box.condition |temp | Qubit_quant| conversion| Water.to.add|
-|---:|--------:|:-------|:------|:-------------|:----|-----------:|----------:|------------:|
-| 799| 20160606|fulva   |CJ8    |box54         |25   |       11.70|       4.27|         5.73|
-| 800| 20160606|fulva   |CJ8    |box54         |28   |       11.50|       4.35|         5.65|
-| 801| 20160606|fulva   |CJ8    |box54         |30   |        6.19|       8.08|         1.92|
-| 802| 20160606|fulva   |CJ8    |box54         |31.5 |       30.50|       1.64|         8.36|
-| 803| 20160606|fulva   |CJ8    |box54         |33   |       41.40|       1.21|         8.79|
-| 804| 20160606|fulva   |CJ8    |box54         |35   |       43.30|       1.15|         8.85|
-| 805| 20160606|fulva   |CJ8    |box54         |36.5 |       19.70|       2.54|         7.46|
-| 806| 20160606|fulva   |CJ8    |box54         |38.5 |       14.20|       3.52|         6.48|
-| 807| 20160606|fulva   |CJ8    |box54         |40   |       34.00|       1.47|         8.53|
-| 808| 20160606|fulva   |CJ8    |box54         |41   |       12.20|       4.10|         5.90|
-| 809| 20160606|fulva   |CJ8    |box54         |mid  |       46.20|       1.08|         8.92|
-| 810| 20160606|fulva   |CJ8    |box54         |last |       16.90|       2.96|         7.04|
-| 811| 20160606|fulva   |CJ8    |box54         |25_2 |       20.20|       2.48|         7.52|
-| 812| 20160606|fulva   |CJ8    |box54         |41_2 |       27.60|       1.81|         8.19|
+|    N |     Date | species | colony | box.condition | temp | Qubit_quant | conversion | Water.to.add |
+| ---: | -------: | :------ | :----- | :------------ | :--- | ----------: | ---------: | -----------: |
+|  799 | 20160606 | fulva   | CJ8    | box54         | 25   |       11.70 |       4.27 |         5.73 |
+|  800 | 20160606 | fulva   | CJ8    | box54         | 28   |       11.50 |       4.35 |         5.65 |
+|  801 | 20160606 | fulva   | CJ8    | box54         | 30   |        6.19 |       8.08 |         1.92 |
+|  802 | 20160606 | fulva   | CJ8    | box54         | 31.5 |       30.50 |       1.64 |         8.36 |
+|  803 | 20160606 | fulva   | CJ8    | box54         | 33   |       41.40 |       1.21 |         8.79 |
+|  804 | 20160606 | fulva   | CJ8    | box54         | 35   |       43.30 |       1.15 |         8.85 |
+|  805 | 20160606 | fulva   | CJ8    | box54         | 36.5 |       19.70 |       2.54 |         7.46 |
+|  806 | 20160606 | fulva   | CJ8    | box54         | 38.5 |       14.20 |       3.52 |         6.48 |
+|  807 | 20160606 | fulva   | CJ8    | box54         | 40   |       34.00 |       1.47 |         8.53 |
+|  808 | 20160606 | fulva   | CJ8    | box54         | 41   |       12.20 |       4.10 |         5.90 |
+|  809 | 20160606 | fulva   | CJ8    | box54         | mid  |       46.20 |       1.08 |         8.92 |
+|  810 | 20160606 | fulva   | CJ8    | box54         | last |       16.90 |       2.96 |         7.04 |
+|  811 | 20160606 | fulva   | CJ8    | box54         | 25_2 |       20.20 |       2.48 |         7.52 |
+|  812 | 20160606 | fulva   | CJ8    | box54         | 41_2 |       27.60 |       1.81 |         8.19 |
 
 ### Master mix for cDNA conversion    
 
 
-|cDNA.synthesis | X1.rxn| X17.rxns|
-|:--------------|------:|--------:|
-|10xBuffer      |    2.0|     34.0|
-|dNTP           |    0.8|     13.6|
-|multiscribe RT |    1.0|     17.0|
-|Rnase          |    1.0|     17.0|
-|Primer         |    2.0|     34.0|
-|H20            |    3.2|     54.4|
-|total rxn      |   10.0|    170.0|
+| cDNA.synthesis | X1.rxn | X17.rxns |
+| :------------- | -----: | -------: |
+| 10xBuffer      |    2.0 |     34.0 |
+| dNTP           |    0.8 |     13.6 |
+| multiscribe RT |    1.0 |     17.0 |
+| Rnase          |    1.0 |     17.0 |
+| Primer         |    2.0 |     34.0 |
+| H20            |    3.2 |     54.4 |
+| total rxn      |   10.0 |    170.0 |
 
 ## Steps:  
 1. Put pcr strip tubes on ice. 
@@ -2185,7 +2175,7 @@ Samples:
 5. PCR, see protocol link at beginning of post. 
 
 
-------    
+------
 <div id='id-section30'/>
 ###Page 30: 2016-06-07. **Brute force fitting nls function in R revisited ** [Page 22: 2016-06-02](#id-section22)    
 
@@ -2286,44 +2276,44 @@ fits<-ddply(mlong,.(Colony,gene),Boltz)
 ###Output table!       
 
 
-|Colony |gene          |   Estimate| Std. Error|    t value| Pr(>&#124;t&#124;)|parameter |
-|:------|:-------------|----------:|----------:|----------:|------------------:|:---------|
-|Avon   |FC_hsc70_1468 | 35.8189402|  1.3830780|  25.897990|          0.0000002|max       |
-|Avon   |FC_hsc70_1468 | 37.7704625|  0.1824726| 206.992555|          0.0000000|Tm        |
-|Avon   |FC_hsc70_1468 |  1.5075619|  0.1117296|  13.492950|          0.0000103|slope     |
-|Avon   |FC_Hsp83_279  | 13.0621490|  1.7746986|   7.360207|          0.0007271|max       |
-|Avon   |FC_Hsp83_279  | 38.5802879|  0.7637267|  50.515830|          0.0000001|Tm        |
-|Avon   |FC_Hsp83_279  |  2.1031077|  0.3554831|   5.916195|          0.0019659|slope     |
-|Avon   |FC_Hsp83_1583 | 16.8751069|  2.4307114|   6.942456|          0.0004429|max       |
-|Avon   |FC_Hsp83_1583 | 38.4508017|  0.9001894|  42.714125|          0.0000000|Tm        |
-|Avon   |FC_Hsp83_1583 |  2.4352914|  0.3611821|   6.742558|          0.0005186|slope     |
-|Avon   |FC_hsp40_424  | 21.9643380| 12.1034762|   1.814713|          0.1194923|max       |
-|Avon   |FC_hsp40_424  | 40.8933831|  2.9441107|  13.889893|          0.0000087|Tm        |
-|Avon   |FC_hsp40_424  |  2.6054162|  0.6918408|   3.765919|          0.0093334|slope     |
-|KH7    |FC_hsc70_1468 | 57.0478157| 12.0292674|   4.742418|          0.0021020|max       |
-|KH7    |FC_hsc70_1468 | 38.2671391|  1.0235944|  37.385060|          0.0000000|Tm        |
-|KH7    |FC_hsc70_1468 |  1.7874874|  0.5009719|   3.568039|          0.0091208|slope     |
-|KH7    |FC_Hsp83_279  | 18.8164697| 14.2023236|   1.324887|          0.2268193|max       |
-|KH7    |FC_Hsp83_279  | 39.5972751|  5.0039209|   7.913250|          0.0000977|Tm        |
-|KH7    |FC_Hsp83_279  |  2.9760831|  1.4783205|   2.013152|          0.0839745|slope     |
-|KH7    |FC_Hsp83_1583 | 16.7337144| 10.3102857|   1.623012|          0.1486163|max       |
-|KH7    |FC_Hsp83_1583 | 40.1004665|  4.0390733|   9.928135|          0.0000224|Tm        |
-|KH7    |FC_Hsp83_1583 |  3.0388325|  1.0845309|   2.801979|          0.0264489|slope     |
-|KH7    |FC_hsp40_424  | 19.9496194| 14.9270787|   1.336472|          0.2231999|max       |
-|KH7    |FC_hsp40_424  | 41.3533804|  3.8900811|  10.630467|          0.0000143|Tm        |
-|KH7    |FC_hsp40_424  |  2.6777066|  0.8223794|   3.256048|          0.0139403|slope     |
-|SHC6   |FC_hsc70_1468 | 30.1357724|  1.3518947|  22.291509|          0.0000001|max       |
-|SHC6   |FC_hsc70_1468 | 36.0181917|  0.2145002| 167.916817|          0.0000000|Tm        |
-|SHC6   |FC_hsc70_1468 |  0.7601739|  0.1966529|   3.865562|          0.0061670|slope     |
-|SHC6   |FC_Hsp83_279  |  3.9378751|  0.3837209|  10.262341|          0.0000180|max       |
-|SHC6   |FC_Hsp83_279  | 34.4580183|  0.8580317|  40.159376|          0.0000000|Tm        |
-|SHC6   |FC_Hsp83_279  |  1.2755059|  0.6850160|   1.862009|          0.1049016|slope     |
-|SHC6   |FC_Hsp83_1583 |  8.6530046|  1.6923497|   5.113012|          0.0021932|max       |
-|SHC6   |FC_Hsp83_1583 | 36.6782852|  1.1214736|  32.705437|          0.0000001|Tm        |
-|SHC6   |FC_Hsp83_1583 |  1.8095631|  0.6243422|   2.898352|          0.0273933|slope     |
-|SHC6   |FC_hsp40_424  |  8.3707957|  1.0694746|   7.827017|          0.0001048|max       |
-|SHC6   |FC_hsp40_424  | 35.6669753|  0.9166608|  38.909679|          0.0000000|Tm        |
-|SHC6   |FC_hsp40_424  |  1.8169999|  0.6708063|   2.708680|          0.0302567|slope     |
+| Colony | gene          |   Estimate | Std. Error |    t value | Pr(>&#124;t&#124;) | parameter |
+| :----- | :------------ | ---------: | ---------: | ---------: | -----------------: | :-------- |
+| Avon   | FC_hsc70_1468 | 35.8189402 |  1.3830780 |  25.897990 |          0.0000002 | max       |
+| Avon   | FC_hsc70_1468 | 37.7704625 |  0.1824726 | 206.992555 |          0.0000000 | Tm        |
+| Avon   | FC_hsc70_1468 |  1.5075619 |  0.1117296 |  13.492950 |          0.0000103 | slope     |
+| Avon   | FC_Hsp83_279  | 13.0621490 |  1.7746986 |   7.360207 |          0.0007271 | max       |
+| Avon   | FC_Hsp83_279  | 38.5802879 |  0.7637267 |  50.515830 |          0.0000001 | Tm        |
+| Avon   | FC_Hsp83_279  |  2.1031077 |  0.3554831 |   5.916195 |          0.0019659 | slope     |
+| Avon   | FC_Hsp83_1583 | 16.8751069 |  2.4307114 |   6.942456 |          0.0004429 | max       |
+| Avon   | FC_Hsp83_1583 | 38.4508017 |  0.9001894 |  42.714125 |          0.0000000 | Tm        |
+| Avon   | FC_Hsp83_1583 |  2.4352914 |  0.3611821 |   6.742558 |          0.0005186 | slope     |
+| Avon   | FC_hsp40_424  | 21.9643380 | 12.1034762 |   1.814713 |          0.1194923 | max       |
+| Avon   | FC_hsp40_424  | 40.8933831 |  2.9441107 |  13.889893 |          0.0000087 | Tm        |
+| Avon   | FC_hsp40_424  |  2.6054162 |  0.6918408 |   3.765919 |          0.0093334 | slope     |
+| KH7    | FC_hsc70_1468 | 57.0478157 | 12.0292674 |   4.742418 |          0.0021020 | max       |
+| KH7    | FC_hsc70_1468 | 38.2671391 |  1.0235944 |  37.385060 |          0.0000000 | Tm        |
+| KH7    | FC_hsc70_1468 |  1.7874874 |  0.5009719 |   3.568039 |          0.0091208 | slope     |
+| KH7    | FC_Hsp83_279  | 18.8164697 | 14.2023236 |   1.324887 |          0.2268193 | max       |
+| KH7    | FC_Hsp83_279  | 39.5972751 |  5.0039209 |   7.913250 |          0.0000977 | Tm        |
+| KH7    | FC_Hsp83_279  |  2.9760831 |  1.4783205 |   2.013152 |          0.0839745 | slope     |
+| KH7    | FC_Hsp83_1583 | 16.7337144 | 10.3102857 |   1.623012 |          0.1486163 | max       |
+| KH7    | FC_Hsp83_1583 | 40.1004665 |  4.0390733 |   9.928135 |          0.0000224 | Tm        |
+| KH7    | FC_Hsp83_1583 |  3.0388325 |  1.0845309 |   2.801979 |          0.0264489 | slope     |
+| KH7    | FC_hsp40_424  | 19.9496194 | 14.9270787 |   1.336472 |          0.2231999 | max       |
+| KH7    | FC_hsp40_424  | 41.3533804 |  3.8900811 |  10.630467 |          0.0000143 | Tm        |
+| KH7    | FC_hsp40_424  |  2.6777066 |  0.8223794 |   3.256048 |          0.0139403 | slope     |
+| SHC6   | FC_hsc70_1468 | 30.1357724 |  1.3518947 |  22.291509 |          0.0000001 | max       |
+| SHC6   | FC_hsc70_1468 | 36.0181917 |  0.2145002 | 167.916817 |          0.0000000 | Tm        |
+| SHC6   | FC_hsc70_1468 |  0.7601739 |  0.1966529 |   3.865562 |          0.0061670 | slope     |
+| SHC6   | FC_Hsp83_279  |  3.9378751 |  0.3837209 |  10.262341 |          0.0000180 | max       |
+| SHC6   | FC_Hsp83_279  | 34.4580183 |  0.8580317 |  40.159376 |          0.0000000 | Tm        |
+| SHC6   | FC_Hsp83_279  |  1.2755059 |  0.6850160 |   1.862009 |          0.1049016 | slope     |
+| SHC6   | FC_Hsp83_1583 |  8.6530046 |  1.6923497 |   5.113012 |          0.0021932 | max       |
+| SHC6   | FC_Hsp83_1583 | 36.6782852 |  1.1214736 |  32.705437 |          0.0000001 | Tm        |
+| SHC6   | FC_Hsp83_1583 |  1.8095631 |  0.6243422 |   2.898352 |          0.0273933 | slope     |
+| SHC6   | FC_hsp40_424  |  8.3707957 |  1.0694746 |   7.827017 |          0.0001048 | max       |
+| SHC6   | FC_hsp40_424  | 35.6669753 |  0.9166608 |  38.909679 |          0.0000000 | Tm        |
+| SHC6   | FC_hsp40_424  |  1.8169999 |  0.6708063 |   2.708680 |          0.0302567 | slope     |
 
 ###looks like it works when there is no poor fit.  
 
@@ -2344,59 +2334,59 @@ fits<-ddply(mlong,.(Colony,gene),failwith(f=Boltz)) ## the magical code here
 
 ##Table of outputs   
 
-|Colony |gene          |   Estimate| Std. Error|    t value| Pr(>&#124;t&#124;)|
-|:------|:-------------|----------:|----------:|----------:|------------------:|
-|Avon   |FC_hsc70_1468 | 35.8189402|  1.3830779|  25.897991|          0.0000002|
-|Avon   |FC_hsc70_1468 | 37.7704625|  0.1824726| 206.992559|          0.0000000|
-|Avon   |FC_hsc70_1468 |  1.5075619|  0.1117296|  13.492950|          0.0000103|
-|Avon   |FC_Hsp83_279  | 13.0621489|  1.7746986|   7.360207|          0.0007271|
-|Avon   |FC_Hsp83_279  | 38.5802879|  0.7637267|  50.515830|          0.0000001|
-|Avon   |FC_Hsp83_279  |  2.1031077|  0.3554832|   5.916195|          0.0019659|
-|Avon   |FC_Hsp83_1583 | 16.8751071|  2.4307113|   6.942456|          0.0004429|
-|Avon   |FC_Hsp83_1583 | 38.4508017|  0.9001893|  42.714127|          0.0000000|
-|Avon   |FC_Hsp83_1583 |  2.4352914|  0.3611821|   6.742558|          0.0005186|
-|Avon   |FC_hsp40_424  | 21.9649309| 12.1044659|   1.814614|          0.1195088|
-|Avon   |FC_hsp40_424  | 40.8935313|  2.9442708|  13.889188|          0.0000087|
-|Avon   |FC_hsp40_424  |  2.6054554|  0.6918546|   3.765900|          0.0093336|
-|KH7    |FC_hsc70_1468 | 57.0473854| 12.0288922|   4.742530|          0.0021017|
-|KH7    |FC_hsc70_1468 | 38.2671031|  1.0235676|  37.386005|          0.0000000|
-|KH7    |FC_hsc70_1468 |  1.7874685|  0.5009659|   3.568045|          0.0091207|
-|KH7    |FC_Hsp83_279  | 18.8160754| 14.2013489|   1.324950|          0.2267995|
-|KH7    |FC_Hsp83_279  | 39.5971341|  5.0036704|   7.913618|          0.0000977|
-|KH7    |FC_Hsp83_279  |  2.9760359|  1.4782900|   2.013161|          0.0839733|
-|KH7    |FC_Hsp83_1583 | 16.7333374| 10.3095588|   1.623090|          0.1485996|
-|KH7    |FC_Hsp83_1583 | 40.1003166|  4.0388773|   9.928580|          0.0000224|
-|KH7    |FC_Hsp83_1583 |  3.0387896|  1.0845105|   2.801992|          0.0264484|
-|KH7    |FC_hsp40_424  | 19.9504446| 14.9288152|   1.336372|          0.2232310|
-|KH7    |FC_hsp40_424  | 41.3536013|  3.8903675|  10.629742|          0.0000143|
-|KH7    |FC_hsp40_424  |  2.6777587|  0.8223999|   3.256030|          0.0139406|
-|Phil   |FC_hsc70_1468 | 14.4816051|  0.6238735|  23.212404|          0.0000028|
-|Phil   |FC_hsc70_1468 | 34.8148669|  0.2209902| 157.540295|          0.0000000|
-|Phil   |FC_hsc70_1468 |  0.8480438|  0.2387966|   3.551322|          0.0163645|
-|Phil   |FC_Hsp83_279  |  4.6238796|  0.4489827|  10.298570|          0.0001484|
-|Phil   |FC_Hsp83_279  | 33.7411733|  0.7422000|  45.461025|          0.0000001|
-|Phil   |FC_Hsp83_279  |  1.2133128|  0.5981040|   2.028598|          0.0982866|
-|Phil   |FC_hsp40_424  |  4.3629872|  0.2614315|  16.688838|          0.0000141|
-|Phil   |FC_hsp40_424  | 34.6387089|  0.3401929| 101.820776|          0.0000000|
-|Phil   |FC_hsp40_424  |  0.7043699|  0.3427897|   2.054816|          0.0950582|
-|SHC6   |FC_hsc70_1468 | 30.1357991|  1.3519005|  22.291433|          0.0000001|
-|SHC6   |FC_hsc70_1468 | 36.0181969|  0.2145014| 167.915909|          0.0000000|
-|SHC6   |FC_hsc70_1468 |  0.7601800|  0.1966547|   3.865558|          0.0061670|
-|SHC6   |FC_Hsp83_279  |  3.9379010|  0.3837369|  10.261982|          0.0000180|
-|SHC6   |FC_Hsp83_279  | 34.4580679|  0.8580653|  40.157863|          0.0000000|
-|SHC6   |FC_Hsp83_279  |  1.2755764|  0.6850461|   1.862030|          0.1048984|
-|SHC6   |FC_Hsp83_1583 |  8.6530046|  1.6923498|   5.113012|          0.0021932|
-|SHC6   |FC_Hsp83_1583 | 36.6782851|  1.1214737|  32.705435|          0.0000001|
-|SHC6   |FC_Hsp83_1583 |  1.8095631|  0.6243422|   2.898351|          0.0273933|
-|SHC6   |FC_hsp40_424  |  8.3707958|  1.0694747|   7.827016|          0.0001048|
-|SHC6   |FC_hsp40_424  | 35.6669753|  0.9166608|  38.909677|          0.0000000|
-|SHC6   |FC_hsp40_424  |  1.8169999|  0.6708063|   2.708680|          0.0302567|
-|test   |FC_hsc70_1468 |  9.8719349|  0.9800918|  10.072460|          0.0000204|
-|test   |FC_hsc70_1468 | 35.6649510|  0.8966939|  39.773830|          0.0000000|
-|test   |FC_hsc70_1468 |  2.9884380|  0.4909301|   6.087299|          0.0004973|
-|test   |FC_hsp40_424  |  8.0828867|  0.1090835|  74.098170|          0.0000000|
-|test   |FC_hsp40_424  | 30.3192228|  0.1219349| 248.650901|          0.0000000|
-|test   |FC_hsp40_424  |  1.1145318|  0.1136478|   9.806893|          0.0000243|
+| Colony | gene          |   Estimate | Std. Error |    t value | Pr(>&#124;t&#124;) |
+| :----- | :------------ | ---------: | ---------: | ---------: | -----------------: |
+| Avon   | FC_hsc70_1468 | 35.8189402 |  1.3830779 |  25.897991 |          0.0000002 |
+| Avon   | FC_hsc70_1468 | 37.7704625 |  0.1824726 | 206.992559 |          0.0000000 |
+| Avon   | FC_hsc70_1468 |  1.5075619 |  0.1117296 |  13.492950 |          0.0000103 |
+| Avon   | FC_Hsp83_279  | 13.0621489 |  1.7746986 |   7.360207 |          0.0007271 |
+| Avon   | FC_Hsp83_279  | 38.5802879 |  0.7637267 |  50.515830 |          0.0000001 |
+| Avon   | FC_Hsp83_279  |  2.1031077 |  0.3554832 |   5.916195 |          0.0019659 |
+| Avon   | FC_Hsp83_1583 | 16.8751071 |  2.4307113 |   6.942456 |          0.0004429 |
+| Avon   | FC_Hsp83_1583 | 38.4508017 |  0.9001893 |  42.714127 |          0.0000000 |
+| Avon   | FC_Hsp83_1583 |  2.4352914 |  0.3611821 |   6.742558 |          0.0005186 |
+| Avon   | FC_hsp40_424  | 21.9649309 | 12.1044659 |   1.814614 |          0.1195088 |
+| Avon   | FC_hsp40_424  | 40.8935313 |  2.9442708 |  13.889188 |          0.0000087 |
+| Avon   | FC_hsp40_424  |  2.6054554 |  0.6918546 |   3.765900 |          0.0093336 |
+| KH7    | FC_hsc70_1468 | 57.0473854 | 12.0288922 |   4.742530 |          0.0021017 |
+| KH7    | FC_hsc70_1468 | 38.2671031 |  1.0235676 |  37.386005 |          0.0000000 |
+| KH7    | FC_hsc70_1468 |  1.7874685 |  0.5009659 |   3.568045 |          0.0091207 |
+| KH7    | FC_Hsp83_279  | 18.8160754 | 14.2013489 |   1.324950 |          0.2267995 |
+| KH7    | FC_Hsp83_279  | 39.5971341 |  5.0036704 |   7.913618 |          0.0000977 |
+| KH7    | FC_Hsp83_279  |  2.9760359 |  1.4782900 |   2.013161 |          0.0839733 |
+| KH7    | FC_Hsp83_1583 | 16.7333374 | 10.3095588 |   1.623090 |          0.1485996 |
+| KH7    | FC_Hsp83_1583 | 40.1003166 |  4.0388773 |   9.928580 |          0.0000224 |
+| KH7    | FC_Hsp83_1583 |  3.0387896 |  1.0845105 |   2.801992 |          0.0264484 |
+| KH7    | FC_hsp40_424  | 19.9504446 | 14.9288152 |   1.336372 |          0.2232310 |
+| KH7    | FC_hsp40_424  | 41.3536013 |  3.8903675 |  10.629742 |          0.0000143 |
+| KH7    | FC_hsp40_424  |  2.6777587 |  0.8223999 |   3.256030 |          0.0139406 |
+| Phil   | FC_hsc70_1468 | 14.4816051 |  0.6238735 |  23.212404 |          0.0000028 |
+| Phil   | FC_hsc70_1468 | 34.8148669 |  0.2209902 | 157.540295 |          0.0000000 |
+| Phil   | FC_hsc70_1468 |  0.8480438 |  0.2387966 |   3.551322 |          0.0163645 |
+| Phil   | FC_Hsp83_279  |  4.6238796 |  0.4489827 |  10.298570 |          0.0001484 |
+| Phil   | FC_Hsp83_279  | 33.7411733 |  0.7422000 |  45.461025 |          0.0000001 |
+| Phil   | FC_Hsp83_279  |  1.2133128 |  0.5981040 |   2.028598 |          0.0982866 |
+| Phil   | FC_hsp40_424  |  4.3629872 |  0.2614315 |  16.688838 |          0.0000141 |
+| Phil   | FC_hsp40_424  | 34.6387089 |  0.3401929 | 101.820776 |          0.0000000 |
+| Phil   | FC_hsp40_424  |  0.7043699 |  0.3427897 |   2.054816 |          0.0950582 |
+| SHC6   | FC_hsc70_1468 | 30.1357991 |  1.3519005 |  22.291433 |          0.0000001 |
+| SHC6   | FC_hsc70_1468 | 36.0181969 |  0.2145014 | 167.915909 |          0.0000000 |
+| SHC6   | FC_hsc70_1468 |  0.7601800 |  0.1966547 |   3.865558 |          0.0061670 |
+| SHC6   | FC_Hsp83_279  |  3.9379010 |  0.3837369 |  10.261982 |          0.0000180 |
+| SHC6   | FC_Hsp83_279  | 34.4580679 |  0.8580653 |  40.157863 |          0.0000000 |
+| SHC6   | FC_Hsp83_279  |  1.2755764 |  0.6850461 |   1.862030 |          0.1048984 |
+| SHC6   | FC_Hsp83_1583 |  8.6530046 |  1.6923498 |   5.113012 |          0.0021932 |
+| SHC6   | FC_Hsp83_1583 | 36.6782851 |  1.1214737 |  32.705435 |          0.0000001 |
+| SHC6   | FC_Hsp83_1583 |  1.8095631 |  0.6243422 |   2.898351 |          0.0273933 |
+| SHC6   | FC_hsp40_424  |  8.3707958 |  1.0694747 |   7.827016 |          0.0001048 |
+| SHC6   | FC_hsp40_424  | 35.6669753 |  0.9166608 |  38.909677 |          0.0000000 |
+| SHC6   | FC_hsp40_424  |  1.8169999 |  0.6708063 |   2.708680 |          0.0302567 |
+| test   | FC_hsc70_1468 |  9.8719349 |  0.9800918 |  10.072460 |          0.0000204 |
+| test   | FC_hsc70_1468 | 35.6649510 |  0.8966939 |  39.773830 |          0.0000000 |
+| test   | FC_hsc70_1468 |  2.9884380 |  0.4909301 |   6.087299 |          0.0004973 |
+| test   | FC_hsp40_424  |  8.0828867 |  0.1090835 |  74.098170 |          0.0000000 |
+| test   | FC_hsp40_424  | 30.3192228 |  0.1219349 | 248.650901 |          0.0000000 |
+| test   | FC_hsp40_424  |  1.1145318 |  0.1136478 |   9.806893 |          0.0000243 |
 
 ###Notice: 
 That not all genes have fitted parameters! nice! ie. test hsp83's!    
@@ -2405,7 +2395,7 @@ That not all genes have fitted parameters! nice! ie. test hsp83's!
 
 1. Predict new sets of values for each gene/colony 
 2. Visualize actual vs predicted values!
- 
+
 
 ###Code to predict new values
 
@@ -2420,7 +2410,7 @@ plot(fud())
 ```
 
 * OK, now the data manipulation
- 
+
 ```R
 #grab fitted lines from estimates
 #change to wide format
@@ -2470,10 +2460,10 @@ qplot(x=T,y=gxp,data=subset(mlong,mlong$gene=="FC_hsc70_1468"),colour=Colony)+ge
 
 
 
- 
 
 
-------    
+
+------
 <div id='id-section31'/>
 ### Page 31: 2016-06-08. Redoing online notebook template
 
@@ -2535,7 +2525,7 @@ write.csv(m1,"testy.csv")
 4. Open in textwrangler and you'll see that the line breaks appear. Then get rid of quotes.
 
 
-------    
+------
 <div id='id-section32'/>
 ### Page 32: 2016-06-08. qPCRs, 18s rRNA for Duke2, HF2, Kite 4, Kite8, 60 C annealing
 
@@ -2547,10 +2537,10 @@ Colonies:
 3. Kite4
 4. Kite8
 
-1. Made master mix: added 550 uL sybr green, 21 uL F+R primer, and 84 uL h20
-2. Dispensed 6 uL into plate
-3. Added 4 uL of cDNA (1/100 dilution) into plate
-4. qPCR, 60 C annealing
+5. Made master mix: added 550 uL sybr green, 21 uL F+R primer, and 84 uL h20
+6. Dispensed 6 uL into plate
+7. Added 4 uL of cDNA (1/100 dilution) into plate
+8. qPCR, 60 C annealing
 
 ### Summary:
 
@@ -2559,11 +2549,11 @@ Single peaks from melt curve analysis indicating single amplicon. The threshold 
 
 ###Updated summary of whole project so far:     
 
-|Progress     | X18s| hsc70.4_1468_1592_degen| hsp83_279_392_degen| hsp83_1583_1682_degen| hsp40_424_525degen|
-|:------------|----:|-----------------------:|-------------------:|---------------------:|------------------:|
-|works        |   59|                      51|                  57|                    41|                 51|
-|double peaks |    2|                      11|                   5|                    19|                  7|
-|total        |   61|                      62|                  62|                    60|                 58|
+| Progress     | X18s | hsc70.4_1468_1592_degen | hsp83_279_392_degen | hsp83_1583_1682_degen | hsp40_424_525degen |
+| :----------- | ---: | ----------------------: | ------------------: | --------------------: | -----------------: |
+| works        |   59 |                      51 |                  57 |                    41 |                 51 |
+| double peaks |    2 |                      11 |                   5 |                    19 |                  7 |
+| total        |   61 |                      62 |                  62 |                    60 |                 58 |
 
 
 
@@ -2577,7 +2567,7 @@ Sample colonies:
 3. Duke1
 4. SHC8
 
-------    
+------
 <div id='id-section33'/>
 ### Page 33: 2016-06-08. Climate cascade meeting.     
 
@@ -2585,14 +2575,14 @@ SHC can't make it. KM going to process samples. ANBE + NJG meet
 
 1. Evolution poster: Go over figures and conclusions
 2. Update gxp curve fitting
-3. 
+3. ​
 
 NJG suggestions:    
 * For figure4, gray out points and put pretreatment temps beside each line.    
 * Figure 3, plot hardening ability vs basal cold tolerance.    
-* 
+* ​
 
-------    
+------
 <div id='id-section34'/>
 ### Page 34: 2016-06-09; 2016-06-10. qPCRs: Duke1, CJ2, SHC8, CJ5    
 
@@ -2603,24 +2593,24 @@ NJG suggestions:
 5. 18s rRNA, 60 C annealing results: Samples were diluted 1/10.   
 
 
-------    
+------
 <div id='id-section35'/>
 ###  Page 35: 2016-06-10. ABI steponeplus machine fix and sending back instrument.  
 
 ### machine repaired    
 
 >*Dear Andrew,
-The repair of your instrument on service reference notification 405638599 has been completed and is now on its way back to you. For your record the reference tracking number is 650686939762
-I will be sending you a separate email with the decontamination forms and FedEx labels to return the loaner you received during the repair of yor instrument. Please send this loaner back in a timely fashion as we do have other customers in need of this loaner.
-Thank you,
-Leticia C.
-Instrument Services  
-Life Sciences Solutions*
+>The repair of your instrument on service reference notification 405638599 has been completed and is now on its way back to you. For your record the reference tracking number is 650686939762
+>I will be sending you a separate email with the decontamination forms and FedEx labels to return the loaner you received during the repair of yor instrument. Please send this loaner back in a timely fashion as we do have other customers in need of this loaner.
+>Thank you,
+>Leticia C.
+>Instrument Services  
+>Life Sciences Solutions*
 
 ### Sending back loaner
 
 >Dear Andrew,   
-Attached you will find the necessary paperwork to ensure that the loaner unit is returned correctly and promptly.      
+>Attached you will find the necessary paperwork to ensure that the loaner unit is returned correctly and promptly.      
 1. Your RMA is 14635-69
 2. Please review and complete the attached decontamination form and print out 2 copies.
 3. Please remember to place the instrument in the "Ship Prep" position prior to packing the instrument.
@@ -2628,11 +2618,11 @@ Attached you will find the necessary paperwork to ensure that the loaner unit is
 5. Please DO NOT include any consumables (trays, tubes, etc.).
 6. Place a copy of the completed decontamination form INSIDE and OUTSIDE of the box.
 7. Print out the FedEx label, (link will arrive via separate email).  
-The return transaction cannot be processed until the completed decontamination form and the instrument are received.
-Thank you,
-Leticia C.
-Instrument Services  
-Life Sciences Solutions
+   The return transaction cannot be processed until the completed decontamination form and the instrument are received.
+   Thank you,
+   Leticia C.
+   Instrument Services  
+   Life Sciences Solutions
 
 <div id='id-section35'/>
 ### 2016-06-13 update
@@ -2641,7 +2631,7 @@ We received the repaired machine back.
 
 [Here](https://github.com/adnguyen/Dissertation_temperature_adaptation_ants/files/311989/doc014592.pdf) is the decomtamination form for the loaner. 
 
-------    
+------
 <div id='id-section36'/>
 ### Page 36: 2016-06-10. Thoughts on Kingsolver & Woods 2016, AmNat. [ref here](http://www.journals.uchicago.edu/doi/abs/10.1086/684786)    
 
@@ -2687,11 +2677,11 @@ Note: There is a cool paper by Hoekstra & Montooth that shows how Hsp70 expressi
 
 Other thoughts:      
 1. One cool thing about the model is that you can add transcriptome, proteome data as parameters into the model.  How?      
-  * Count the costs of each transcript (# of basepairs) and subtract response from baseline to get relative response. One could argue that overall, Hsp expression is not costly because other transcripts can be downregulated at the same time. I don't think anybody has tried to explore this in transcriptome datasets.     
+* Count the costs of each transcript (# of basepairs) and subtract response from baseline to get relative response. One could argue that overall, Hsp expression is not costly because other transcripts can be downregulated at the same time. I don't think anybody has tried to explore this in transcriptome datasets.     
 
 2. In aquatic systems, oxygen limitation seems to be the mechanism for upper thermal limits. Is there a way to make one global model so that we can make predictions for any ectotherm?   
 
-------    
+------
 <div id='id-section37'/>
 ### Page 37: 2016-06-11. Quantifying natural selection in natural populations    
 
@@ -2704,8 +2694,7 @@ Refs for me to read:
 * [Heisler & Damuth 1987](http://www.jstor.org/stable/pdf/2461705.pdf) for multilevel selection and it also introduces contextual analyses.
 
 
-
-------    
+------
 <div id='id-section38'/>
 ### Page 38: 2016-06-13. qPCR update for Duke1,CJ2,SHC8,CJ5. Randomizing samples treated at 25C(reference for basal expression) for qpcrs.     
 
@@ -2725,83 +2714,82 @@ write.csv(sample(d$colonies),"ra.csv")
 
 * Here is the layout:      
 
-|Row | Column|Colony             |
-|:---|------:|:------------------|
-|A   |      1|Ala1               |
-|A   |      2|KITE8              |
-|A   |      3|Yates2             |
-|A   |      4|FBRAGG3            |
-|A   |      5|CJ4                |
-|A   |      6|BK                 |
-|A   |      7|HW7                |
-|A   |      8|KH3                |
-|A   |      9|DUKE9              |
-|A   |     10|SHC8               |
-|A   |     11|CJ2                |
-|A   |     12|HF2                |
-|B   |      1|shc7               |
-|B   |      2|MA                 |
-|B   |      3|PB07-23            |
-|B   |      4|CJ8                |
-|B   |      5|Lex9               |
-|B   |      6|ApGxL10A           |
-|B   |      7|Phillips           |
-|B   |      8|hf3                |
-|B   |      9|PB17-10            |
-|B   |     10|CJ6                |
-|B   |     11|Ala4               |
-|B   |     12|CJ5                |
-|C   |      1|PB17-14            |
-|C   |      2|DUKE8              |
-|C   |      3|KH1                |
-|C   |      4|Greenfield         |
-|C   |      5|fbragg1            |
-|C   |      6|Avon19.1           |
-|C   |      7|CampNSP            |
-|C   |      8|KH6                |
-|C   |      9|KH5                |
-|C   |     10|DUKE2              |
-|C   |     11|SHC9               |
-|C   |     12|LPR2               |
-|D   |      1|KITE4              |
-|D   |      2|FBRAGG4            |
-|D   |      3|KH7                |
-|D   |      4|DUKE1              |
-|D   |      5|PMBE               |
-|D   |      6|DUKE6              |
-|D   |      7|CJ7                |
-|D   |      8|fbragg5            |
-|D   |      9|CJ1                |
-|D   |     10|LPR4               |
-|D   |     11|YATES3             |
-|D   |     12|POP1               |
-|E   |      1|kh2                |
-|E   |      2|Bingham            |
-|E   |      3|SHC3               |
-|E   |      4|ApGxL09A           |
-|E   |      5|Ted6               |
-|E   |      6|DUKE7              |
-|E   |      7|SHC6               |
-|E   |      8|DUKE4              |
-|E   |      9|DUKE5              |
-|E   |     10|Ted4               |
-|E   |     11|EXIT65             |
-|E   |     12|sidewalk (formica) |
-|F   |      1|POP2               |
-|F   |      2|fbragg2            |
-|F   |      3|SHC2               |
-|F   |      4|LEX13              |
-|F   |      5|SHC5               |
-|F   |      6|cremat             |
-|F   |      7|SHC10              |
-|F   |      8|pop3               |
-|F   |      9|SR45               |
-|F   |     10|AS4                |
+| Row  | Column | Colony             |
+| :--- | -----: | :----------------- |
+| A    |      1 | Ala1               |
+| A    |      2 | KITE8              |
+| A    |      3 | Yates2             |
+| A    |      4 | FBRAGG3            |
+| A    |      5 | CJ4                |
+| A    |      6 | BK                 |
+| A    |      7 | HW7                |
+| A    |      8 | KH3                |
+| A    |      9 | DUKE9              |
+| A    |     10 | SHC8               |
+| A    |     11 | CJ2                |
+| A    |     12 | HF2                |
+| B    |      1 | shc7               |
+| B    |      2 | MA                 |
+| B    |      3 | PB07-23            |
+| B    |      4 | CJ8                |
+| B    |      5 | Lex9               |
+| B    |      6 | ApGxL10A           |
+| B    |      7 | Phillips           |
+| B    |      8 | hf3                |
+| B    |      9 | PB17-10            |
+| B    |     10 | CJ6                |
+| B    |     11 | Ala4               |
+| B    |     12 | CJ5                |
+| C    |      1 | PB17-14            |
+| C    |      2 | DUKE8              |
+| C    |      3 | KH1                |
+| C    |      4 | Greenfield         |
+| C    |      5 | fbragg1            |
+| C    |      6 | Avon19.1           |
+| C    |      7 | CampNSP            |
+| C    |      8 | KH6                |
+| C    |      9 | KH5                |
+| C    |     10 | DUKE2              |
+| C    |     11 | SHC9               |
+| C    |     12 | LPR2               |
+| D    |      1 | KITE4              |
+| D    |      2 | FBRAGG4            |
+| D    |      3 | KH7                |
+| D    |      4 | DUKE1              |
+| D    |      5 | PMBE               |
+| D    |      6 | DUKE6              |
+| D    |      7 | CJ7                |
+| D    |      8 | fbragg5            |
+| D    |      9 | CJ1                |
+| D    |     10 | LPR4               |
+| D    |     11 | YATES3             |
+| D    |     12 | POP1               |
+| E    |      1 | kh2                |
+| E    |      2 | Bingham            |
+| E    |      3 | SHC3               |
+| E    |      4 | ApGxL09A           |
+| E    |      5 | Ted6               |
+| E    |      6 | DUKE7              |
+| E    |      7 | SHC6               |
+| E    |      8 | DUKE4              |
+| E    |      9 | DUKE5              |
+| E    |     10 | Ted4               |
+| E    |     11 | EXIT65             |
+| E    |     12 | sidewalk (formica) |
+| F    |      1 | POP2               |
+| F    |      2 | fbragg2            |
+| F    |      3 | SHC2               |
+| F    |      4 | LEX13              |
+| F    |      5 | SHC5               |
+| F    |      6 | cremat             |
+| F    |      7 | SHC10              |
+| F    |      8 | pop3               |
+| F    |      9 | SR45               |
+| F    |     10 | AS4                |
 
 I'll arrange these samples in rows of 12 in pcr strip tubes, dilute 1/10 and then I can multichannel the samples into a 96 well qpcr plate.    
 
-
-------    
+------
 <div id='id-section39'/>
 ### Page 39: 2016-06-13. Post doc project idea: Assessing current impacts of climate change in natural populations. 
 
@@ -2835,7 +2823,7 @@ I'll arrange these samples in rows of 12 in pcr strip tubes, dilute 1/10 and the
 1. For example, I have CTmax data and the underlying stress response measured. CTmax is a component of fitness, so if I regress the stress response onto the relative fitness of CTmax(CTmax of individual/ population CTmax mean) , then I can determine a selection gradient.    
 2. I can also measure phenotypic selection for allele frequencies!  (Dr. Goodnight's suggestion) 
 
-------    
+------
 <div id='id-section40'/>
 ### Page 40: 2016-06-14. qPCR's: Diluting samples for quantifying basal expression and repeats   
 
@@ -2858,84 +2846,84 @@ All in all, it took ~ 3 hours from organization to completion.
 <div id='id-section40.1'/>
 ## Updated plate layout:   
 
-|Row | Column|Colony             |
-|:---|------:|:------------------|
-|A   |      1|Ala1               |
-|A   |      2|KITE8              |
-|A   |      3|Yates2             |
-|A   |      4|FBRAGG3            |
-|A   |      5|CJ4                |
-|A   |      6|BK                 |
-|A   |      7|HW7                |
-|A   |      8|KH3                |
-|A   |      9|DUKE9              |
-|A   |     10|SHC8               |
-|A   |     11|CJ2                |
-|A   |     12|HF2                |
-|B   |      1|shc7               |
-|B   |      2|MA                 |
-|B   |      3|PB07-23            |
-|B   |      4|CJ8                |
-|B   |      5|Lex9               |
-|B   |      6|ApGxL10A           |
-|B   |      7|Phillips           |
-|B   |      8|hf3                |
-|B   |      9|PB17-10            |
-|B   |     10|CJ6                |
-|B   |     11|Ala4               |
-|B   |     12|CJ5                |
-|C   |      1|PB17-14            |
-|C   |      2|DUKE8              |
-|C   |      3|KH1                |
-|C   |      4|Greenfield         |
-|C   |      5|fbragg1            |
-|C   |      6|Avon19.1           |
-|C   |      7|CampNSP            |
-|C   |      8|KH6                |
-|C   |      9|KH5                |
-|C   |     10|DUKE2              |
-|C   |     11|SHC9               |
-|C   |     12|LPR2               |
-|D   |      1|KITE4              |
-|D   |      2|FBRAGG4            |
-|D   |      3|KH7                |
-|D   |      4|DUKE1              |
-|D   |      5|PMBE               |
-|D   |      6|DUKE6              |
-|D   |      7|CJ7                |
-|D   |      8|fbragg5            |
-|D   |      9|CJ1                |
-|D   |     10|LPR4               |
-|D   |     11|YATES3             |
-|D   |     12|POP1               |
-|E   |      1|kh2                |
-|E   |      2|Bingham            |
-|E   |      3|SHC3               |
-|E   |      4|ApGxL09A           |
-|E   |      5|Ted6               |
-|E   |      6|DUKE7              |
-|E   |      7|SHC6               |
-|E   |      8|DUKE4              |
-|E   |      9|DUKE5              |
-|E   |     10|Ted4               |
-|E   |     11|EXIT65             |
-|E   |     12|sidewalk (formica) |
-|F   |      1|POP2               |
-|F   |      2|fbragg2            |
-|F   |      3|SHC2               |
-|F   |      4|LEX13              |
-|F   |      5|SHC5               |
-|F   |      6|cremat             |
-|F   |      7|SHC10              |
-|F   |      8|pop3               |
-|F   |      9|SR45               |
-|F   |     10|Duke 8 41          |
-|F   |     11|SHC10 mid          |
-|F   |     12|AS4                |
-|G   |      1|yates3 mid         |
-|G   |      2|shc2 mid           |
-|G   |      3|exit65 mid         |
-|G   |      4|gf mid             |
+| Row  | Column | Colony             |
+| :--- | -----: | :----------------- |
+| A    |      1 | Ala1               |
+| A    |      2 | KITE8              |
+| A    |      3 | Yates2             |
+| A    |      4 | FBRAGG3            |
+| A    |      5 | CJ4                |
+| A    |      6 | BK                 |
+| A    |      7 | HW7                |
+| A    |      8 | KH3                |
+| A    |      9 | DUKE9              |
+| A    |     10 | SHC8               |
+| A    |     11 | CJ2                |
+| A    |     12 | HF2                |
+| B    |      1 | shc7               |
+| B    |      2 | MA                 |
+| B    |      3 | PB07-23            |
+| B    |      4 | CJ8                |
+| B    |      5 | Lex9               |
+| B    |      6 | ApGxL10A           |
+| B    |      7 | Phillips           |
+| B    |      8 | hf3                |
+| B    |      9 | PB17-10            |
+| B    |     10 | CJ6                |
+| B    |     11 | Ala4               |
+| B    |     12 | CJ5                |
+| C    |      1 | PB17-14            |
+| C    |      2 | DUKE8              |
+| C    |      3 | KH1                |
+| C    |      4 | Greenfield         |
+| C    |      5 | fbragg1            |
+| C    |      6 | Avon19.1           |
+| C    |      7 | CampNSP            |
+| C    |      8 | KH6                |
+| C    |      9 | KH5                |
+| C    |     10 | DUKE2              |
+| C    |     11 | SHC9               |
+| C    |     12 | LPR2               |
+| D    |      1 | KITE4              |
+| D    |      2 | FBRAGG4            |
+| D    |      3 | KH7                |
+| D    |      4 | DUKE1              |
+| D    |      5 | PMBE               |
+| D    |      6 | DUKE6              |
+| D    |      7 | CJ7                |
+| D    |      8 | fbragg5            |
+| D    |      9 | CJ1                |
+| D    |     10 | LPR4               |
+| D    |     11 | YATES3             |
+| D    |     12 | POP1               |
+| E    |      1 | kh2                |
+| E    |      2 | Bingham            |
+| E    |      3 | SHC3               |
+| E    |      4 | ApGxL09A           |
+| E    |      5 | Ted6               |
+| E    |      6 | DUKE7              |
+| E    |      7 | SHC6               |
+| E    |      8 | DUKE4              |
+| E    |      9 | DUKE5              |
+| E    |     10 | Ted4               |
+| E    |     11 | EXIT65             |
+| E    |     12 | sidewalk (formica) |
+| F    |      1 | POP2               |
+| F    |      2 | fbragg2            |
+| F    |      3 | SHC2               |
+| F    |      4 | LEX13              |
+| F    |      5 | SHC5               |
+| F    |      6 | cremat             |
+| F    |      7 | SHC10              |
+| F    |      8 | pop3               |
+| F    |      9 | SR45               |
+| F    |     10 | Duke 8 41          |
+| F    |     11 | SHC10 mid          |
+| F    |     12 | AS4                |
+| G    |      1 | yates3 mid         |
+| G    |      2 | shc2 mid           |
+| G    |      3 | exit65 mid         |
+| G    |      4 | gf mid             |
 
 -------
 
@@ -2965,13 +2953,13 @@ Ran 18s rRNA for following colonies:
 <div id='id-section40.5'/>
 #Update of samples:   
 
-| Status      | X18s| hsc70.4_1468_1592_degen| hsp83_279_392_degen| hsp83_1583_1682_degen| hsp40_424_525degen|
-|:------------|----:|-----------------------:|-------------------:|---------------------:|------------------:|
-|works        |   67|                      58|                  65|                    45|                 57|
-|double peaks |    0|                      9|                   2|                    20|                  10|
-|total        |   67|                      67|                  67|                    65|                 67|
+| Status       | X18s | hsc70.4_1468_1592_degen | hsp83_279_392_degen | hsp83_1583_1682_degen | hsp40_424_525degen |
+| :----------- | ---: | ----------------------: | ------------------: | --------------------: | -----------------: |
+| works        |   67 |                      58 |                  65 |                    45 |                 57 |
+| double peaks |    0 |                       9 |                   2 |                    20 |                 10 |
+| total        |   67 |                      67 |                  67 |                    65 |                 67 |
 
-------    
+------
 <div id='id-section41'/>
 ### Page 41: 2016-06-15. qPCRs to quantify basal expression. **(Evolution of stress response project)**   
 
@@ -2983,38 +2971,37 @@ So for each gene, run 2 plates. Samples on the plate were already previously ran
 2. **Ran** hsc70-4 h2 1468 plate 1, 55 C annealing temp.    
 3. **Ran** hsp83 279 plate 1, 55 C annealing temp.    
 4. **Ran** hsp40 541 plate 1, 55 C annealing temp.    
- 
 
 
 
-------    
+
+------
 <div id='id-section42'/>
 ### Page 42: 2016-06-15. Evolution talks I want to attend.
 
 Not a comprehensive list, but a start. 
 
-|Day               |Speaker                  |Room      |Time    |Title                                                                                                                                                         |Session                                |
-|:-----------------|:------------------------|:---------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------|
-|Monday, June 20   |Tangwancheroen, Sumaetee |MR10C     |1:30PM  |Adaptation via divergence in gene regulation along a temperature cline: cis and trans effects on HSP expression the copepod Tigriopus californicus            |Adaptation 1                           |
-|Monday, June 20   |Lyons,Marta              |BallroomC |2:00PM  |Predicting range contractions in niche conserved plethodontid salamanders comparing correlative and biophysical niche models                                  |Evolutionary ecology 1                 |
-|Saturday, June 18 |Gilbert, Kimberly        |MR6B      |1:30PM  |Local maladaptation interacts with expansion load during species range expansions                                                                             |Population genetics theory methods 1   |
-|Saturday, June 18 |Kingsolver,Joel          |BallroomC |9:15AM  |Elevational clines in plastic and evolutionary responses of montane butterflies to climate change                                                             |Contemporary evolution                 |
-|Sunday, June 19   |Nunney,Leonard           |MR9AB     |2:45PM  |Adapting to a changing environment: modeling the interaction of directional evolution and plasticity                                                          |Phenotypic plasticity                  |
-|Sunday, June 19   |Muir,Chris               |BallroomA |8:30AM  |What is evolutionary physiology?                                                                                                                              |Evolutionary physiological synthesis 1 |
-|Sunday, June 19   |Garcia,Matteo            |MR7       |9:00AM  |Performance determines division of labor in leafcutting ants                                                                                                  |Social systems 1                       |
-|Sunday, June 19   |Campbell Staton, Shane   |MR9C      |9:15AM  |Polar Vortex cold wave elicits rapid physiological, regulatory and genetic shifts in populations of the green anole, Anolis carolinensis                      |Expression studies                     |
-|Sunday, June 19   |Fumagalli, Sarah         |MR7       |9:30AM  |The evolution of cooperation between unrelated individuals                                                                                                    |Social systems 1                       |
-|Sunday, June 19   |Catullo,Renee            |BallroomC |10:15AM |Extending spatial modelling of climate change responses beyond the realized niche: estimating, and accommodating, physiological limits and adaptive evolution |Niche modeling                         |
-|Sunday, June 19   |Powell,Scott             |MR9AB     |10:15AM |Diversification of complex social phenotypes: insights from the turtle ants                                                                                   |Adaptation                             |
-|Sunday, June 19   |Sexton, Jason            |MR6A      |10:45AM |Does species niche breadth predict plant performance in novel environments? An experimental test in Australian Alps plants                                    |Biogeography I                         |
-|Sunday, June 19   |Rosauer,Dan              |BallroomC |10:45AM |Distribution models below species level                                                                                                                       |Niche modeling                         |
-|Sunday, June 19   |Chau,Linh                |MR7       |10:45AM |Gene Duplication in the Evolution of Sex- and Caste-biased Gene Expression in Social Insects                                                                  |Social systems 2                       |
-|Sunday, June 19   |Gunderson,Alex           |BallroomA |11:00AM |The physiology of adaptive radiation                                                                                                                          |Evolutionary physiological synthesis 2 |
-|Sunday, June 19   |Angert,Amy               |BallroomA |11:15AM |Linking physiology to biogeography in monkeyflowers                                                                                                           |Evolutionary physiological synthesis 2 |
-|Sunday, June 19   |Parker,Joseph            |MR9AB     |11:15AM |An inordinate fondness for rove beetles: evolution and diversification of ant social parasites                                                                |Adaptation                             |
+| Day               | Speaker                  | Room      | Time    | Title                                    | Session                                |
+| :---------------- | :----------------------- | :-------- | :------ | :--------------------------------------- | :------------------------------------- |
+| Monday, June 20   | Tangwancheroen, Sumaetee | MR10C     | 1:30PM  | Adaptation via divergence in gene regulation along a temperature cline: cis and trans effects on HSP expression the copepod Tigriopus californicus | Adaptation 1                           |
+| Monday, June 20   | Lyons,Marta              | BallroomC | 2:00PM  | Predicting range contractions in niche conserved plethodontid salamanders comparing correlative and biophysical niche models | Evolutionary ecology 1                 |
+| Saturday, June 18 | Gilbert, Kimberly        | MR6B      | 1:30PM  | Local maladaptation interacts with expansion load during species range expansions | Population genetics theory methods 1   |
+| Saturday, June 18 | Kingsolver,Joel          | BallroomC | 9:15AM  | Elevational clines in plastic and evolutionary responses of montane butterflies to climate change | Contemporary evolution                 |
+| Sunday, June 19   | Nunney,Leonard           | MR9AB     | 2:45PM  | Adapting to a changing environment: modeling the interaction of directional evolution and plasticity | Phenotypic plasticity                  |
+| Sunday, June 19   | Muir,Chris               | BallroomA | 8:30AM  | What is evolutionary physiology?         | Evolutionary physiological synthesis 1 |
+| Sunday, June 19   | Garcia,Matteo            | MR7       | 9:00AM  | Performance determines division of labor in leafcutting ants | Social systems 1                       |
+| Sunday, June 19   | Campbell Staton, Shane   | MR9C      | 9:15AM  | Polar Vortex cold wave elicits rapid physiological, regulatory and genetic shifts in populations of the green anole, Anolis carolinensis | Expression studies                     |
+| Sunday, June 19   | Fumagalli, Sarah         | MR7       | 9:30AM  | The evolution of cooperation between unrelated individuals | Social systems 1                       |
+| Sunday, June 19   | Catullo,Renee            | BallroomC | 10:15AM | Extending spatial modelling of climate change responses beyond the realized niche: estimating, and accommodating, physiological limits and adaptive evolution | Niche modeling                         |
+| Sunday, June 19   | Powell,Scott             | MR9AB     | 10:15AM | Diversification of complex social phenotypes: insights from the turtle ants | Adaptation                             |
+| Sunday, June 19   | Sexton, Jason            | MR6A      | 10:45AM | Does species niche breadth predict plant performance in novel environments? An experimental test in Australian Alps plants | Biogeography I                         |
+| Sunday, June 19   | Rosauer,Dan              | BallroomC | 10:45AM | Distribution models below species level  | Niche modeling                         |
+| Sunday, June 19   | Chau,Linh                | MR7       | 10:45AM | Gene Duplication in the Evolution of Sex- and Caste-biased Gene Expression in Social Insects | Social systems 2                       |
+| Sunday, June 19   | Gunderson,Alex           | BallroomA | 11:00AM | The physiology of adaptive radiation     | Evolutionary physiological synthesis 2 |
+| Sunday, June 19   | Angert,Amy               | BallroomA | 11:15AM | Linking physiology to biogeography in monkeyflowers | Evolutionary physiological synthesis 2 |
+| Sunday, June 19   | Parker,Joseph            | MR9AB     | 11:15AM | An inordinate fondness for rove beetles: evolution and diversification of ant social parasites | Adaptation                             |
 
-
-------    
+------
 <div id='id-section43'/>
 ###Page 43: 2016-06-16. Figure for curve fitting: see  [Success with **failwith()**](#id-section30.2) and [Status update of samples.](#id-section40.5)     
 
@@ -3022,34 +3009,34 @@ Not a comprehensive list, but a start.
 
 ![](https://cloud.githubusercontent.com/assets/4654474/16124570/7f83264e-33bd-11e6-95b4-f6b4e04ca936.jpeg)
 
-------    
+------
 <div id='id-section44'/>
 ### Page 44: 2016-07-18. Summary statistics for modulation of Hsp paper. 
 ### Overall means    
-|      | mean xp|
-|:-----|------------------------------:|
-|FC_83 |                      11.218868|
-|FC_70 |                      50.227915|
-|FC_40 |                      10.535062|
-|B_83  |                       1.735492|
-|B_70  |                       1.446917|
-|B_40  |                       1.935067|
+|       |   mean xp |
+| :---- | --------: |
+| FC_83 | 11.218868 |
+| FC_70 | 50.227915 |
+| FC_40 | 10.535062 |
+| B_83  |  1.735492 |
+| B_70  |  1.446917 |
+| B_40  |  1.935067 |
 ### Comparison among genes   
 ![](https://cloud.githubusercontent.com/assets/4654474/16931807/e244df40-4d10-11e6-8943-b80542aa66f5.jpeg)
 
 ### medians     
-| Rearing_Temp| Induction83|   Basal83| Induction70|   Basal70| Induction40|  Basal40|
-|------------:|-----------:|---------:|-----------:|---------:|-----------:|--------:|
-|           20|    7.046216| 0.9032384|    48.88187| 0.4773797|    6.903618| 1.155806|
-|           26|   10.441149| 1.5197949|    39.13139| 2.2318297|   13.267033| 1.559372|
+| Rearing_Temp | Induction83 |   Basal83 | Induction70 |   Basal70 | Induction40 |  Basal40 |
+| -----------: | ----------: | --------: | ----------: | --------: | ----------: | -------: |
+|           20 |    7.046216 | 0.9032384 |    48.88187 | 0.4773797 |    6.903618 | 1.155806 |
+|           26 |   10.441149 | 1.5197949 |    39.13139 | 2.2318297 |   13.267033 | 1.559372 |
 
 ### means     
-| Rearing_Temp| Induction83|  Basal83| Induction70|  Basal70| Induction40|  Basal40|
-|------------:|-----------:|--------:|-----------:|--------:|-----------:|--------:|
-|           20|    9.352522| 1.262254|    55.45230| 0.640272|    8.059647| 1.680941|
-|           26|   14.320365| 2.334319|    42.62233| 2.565149|   14.086744| 2.299683|
+| Rearing_Temp | Induction83 |  Basal83 | Induction70 |  Basal70 | Induction40 |  Basal40 |
+| -----------: | ----------: | -------: | ----------: | -------: | ----------: | -------: |
+|           20 |    9.352522 | 1.262254 |    55.45230 | 0.640272 |    8.059647 | 1.680941 |
+|           26 |   14.320365 | 2.334319 |    42.62233 | 2.565149 |   14.086744 | 2.299683 |
 
-------    
+------
 <div id='id-section45'/>
 ### Page 45: 2016-07-19.  Meeting with [VGN proteomics facility](https://vgn.uvm.edu/proteomics)
 
@@ -3061,7 +3048,7 @@ Timeline:
 * Next week for TMT labelling
 * First week of August for sending me a dataset  
 
-------    
+------
 <div id='id-section46'/>
 ### Page 46: 2016-07-21. Reference samples for mapping index; Hsp modulation and thermal niche paper.   
 
@@ -3074,7 +3061,7 @@ From SHC:
 * MB6 (ApGxL-26E)
 
 
-------    
+------
 <div id='id-section47'/>
 ###Page 47: 2016-07-26. Learning mixed effects stat models   
 
@@ -3155,7 +3142,7 @@ model with the effect in question against the model without the effect in
 question.
 ```
 
-------    
+------
 <div id='id-section48'/>
 ### Page 48: 2016-07-27. Meeting with Steve Keller to discuss post doc idea (started here: [Page 37: 2016-06-11](#id-section37). Quantifying natural selection in natural populations )     
 
@@ -3171,18 +3158,18 @@ Thoughts+ retyping notes:
 1. One challenge Steve brought up was that photoperiod is diff across lat and is not changing with climate. So when scientists do recipricol transplants between north and south populations, photoperiod is a confounding effect with temperature/climate.    
 2. Selection gradients may not be increasing with climate if there is insufficient genetic variation to respond to selection. It could decrease. I need to think more carefully about how to connect selection gradients with population level dynamics. (I still need to read Ruth Shaw's aster modeling papers). 
 3. RIght now, as I've pitched it, I have no manipulations which is something I need to determine whether temperature is actually increasing selection gradients.     
- * start cohorts at different times to control development    
- * for biotic interactions, manipulate floral display for pollintors    
- * induce herbivory- plant stress responses   
+* start cohorts at different times to control development    
+* for biotic interactions, manipulate floral display for pollintors    
+* induce herbivory- plant stress responses   
 4. I could estimate kinship matrix in natural populations with many markers(thousands) and apply quantitative genetics techniques to identify constraints between different traits.    
 
 Post doc grants:      
 
 1. Plant genome fellowship due in november (focused on crop or crop related plants)    
- * systems: sunflower, grasses, medacago, poplar(viability selection, high early life stage mortality), willows     
+* systems: sunflower, grasses, medacago, poplar(viability selection, high early life stage mortality), willows     
 2. Fullbright for international opportunities   
 
-------    
+------
 <div id='id-section49'/>
 ###Page 49:2016-07-28. Quantitative genetics and the molecular basis of complex traits
 
@@ -3192,7 +3179,7 @@ It'd be interesting to merge both approaches: Knock out or in a gene for many ge
 
 [Paaby lab](http://genaamics.org/research/) is doing a bit of this. She gave a talk earlier this year? Anyway, she picked a well known developmental pathway in worms(*C. elegans*) and used RNAi for many different species(I think) for a panel of genes. 
 
-------    
+------
 <div id='id-section50'/>
 ###Page 50: 2016-08-02. Picking a plant system for post doc idea  
 
@@ -3222,32 +3209,32 @@ Perrenial with wide distribution from Canada to Mexico. We could look at episodi
 
 **Cool technique to QTL with function valued traits** [here](http://g3journal.org/content/6/1/79)
 
-------    
+------
 <div id='id-section51'/>
 ###Page 51: 2016-08-02; 2016-08-03. Climate cascade meeting    
 
 1. Project updates:    
- * Gene expression project: on hold; focusing on 2 manuscripts (multiple stressors and range limits ms)      
- * Multiple stressors ms: NJG gave me edits 2016-08-02, rework, then send to Sara. Aiming to submit next week?    
- * Range limits ms: Go over figures, meet with NJG 2016-08-03 to go over intro, methods, and results. 
- * Figure suggestions:    
+* Gene expression project: on hold; focusing on 2 manuscripts (multiple stressors and range limits ms)      
+* Multiple stressors ms: NJG gave me edits 2016-08-02, rework, then send to Sara. Aiming to submit next week?    
+* Range limits ms: Go over figures, meet with NJG 2016-08-03 to go over intro, methods, and results. 
+* Figure suggestions:    
    * recolor map, keep maps consistent         
    * shift cold tolerance vs tmin legend from horiztonal to vertical.    
    * double checkt he interaction of tmin and pre treatment temp; the betas       
    * create 2 panel fig for basal cold tolerance and hardening.    
- 
- * Thermal niche ms: Lacey's hands     
- * HSP modulation paper: SHC's hands     
- * Stressed in nature MS: Curtis' hands ; he was suppose to give me a timeline      
- * Genome sequencing? Mlau's hands    
- * Phylogenomics of common forest ants: SHC and Bernice assembling data matrix. ADN needs to send vouchers to Bernice.     
+
+* Thermal niche ms: Lacey's hands     
+* HSP modulation paper: SHC's hands     
+* Stressed in nature MS: Curtis' hands ; he was suppose to give me a timeline      
+* Genome sequencing? Mlau's hands    
+* Phylogenomics of common forest ants: SHC and Bernice assembling data matrix. ADN needs to send vouchers to Bernice.     
 
 2. Ask about post doc (**NJG and SHC think its ok to stay at same institution**)   
 3. Attending SICB - Jan 4-8 New Orleans, Give a talk about range limits paper? Apply for funding? **Suitor Travel Grant [Deadline is october 31](http://www.uvm.edu/cas/foruvmstudents/research/?Page=suiter.html)**    
 4. Biolunch: Should I talk about github?( **SHC and NJG are ok with this but I need to think about my delivery and what people can "handle"**) Range limits? Dissertation talk (I want to give this in the Spring ( **SHC says yes** ))?    
 
 
-------    
+------
 <div id='id-section52'/>
 ### Page 52: 2016-08-04. Following up stats, range limits project   
 
@@ -3310,16 +3297,16 @@ F-statistic: 9.164 on 7 and 76 DF,  p-value: 3.644e-08
 ```R
 knitr::kable(summary(qc)$coefficients)
 ```
-|                     |   Estimate| Std. Error|    t value| Pr(>&#124;t&#124;)|
-|:--------------------|----------:|----------:|----------:|------------------:|
-|(Intercept)          |  210.58099|  363.71495|  0.5789726|          0.5643197|
-|Tmin                 |  -24.64324|   24.27295| -1.0152553|          0.3132054|
-|pretreat_Temp0       |  450.14412|  514.37061|  0.8751358|          0.3842574|
-|pretreat_Temp25      | 1796.59479|  514.37061|  3.4928022|          **0.0008002**|
-|pretreat_Temp5       | 1173.91549|  514.37061|  2.2822367|          **0.0252738**|
-|Tmin:pretreat_Temp0  |   40.72533|   34.32714|  1.1863889|          0.2391643|
-|Tmin:pretreat_Temp25 |  114.57348|   34.32714|  3.3376940|          **0.0013101**|
-|Tmin:pretreat_Temp5  |   76.71280|   34.32714|  2.2347566|          **0.0283715**|
+|                      |   Estimate | Std. Error |    t value | Pr(>&#124;t&#124;) |
+| :------------------- | ---------: | ---------: | ---------: | -----------------: |
+| (Intercept)          |  210.58099 |  363.71495 |  0.5789726 |          0.5643197 |
+| Tmin                 |  -24.64324 |   24.27295 | -1.0152553 |          0.3132054 |
+| pretreat_Temp0       |  450.14412 |  514.37061 |  0.8751358 |          0.3842574 |
+| pretreat_Temp25      | 1796.59479 |  514.37061 |  3.4928022 |      **0.0008002** |
+| pretreat_Temp5       | 1173.91549 |  514.37061 |  2.2822367 |      **0.0252738** |
+| Tmin:pretreat_Temp0  |   40.72533 |   34.32714 |  1.1863889 |          0.2391643 |
+| Tmin:pretreat_Temp25 |  114.57348 |   34.32714 |  3.3376940 |      **0.0013101** |
+| Tmin:pretreat_Temp5  |   76.71280 |   34.32714 |  2.2347566 |      **0.0283715** |
 
 ###Hardening ability
 ```R
@@ -3362,7 +3349,7 @@ Residuals	34	531992	15647
 ```
 Interaction non-significant; the change was caused by a mistake made by consolidating scripts. 
 
-------    
+------
 <div id='id-section53'/>
 ### Page 53: 2016-08-08. Post doc ideas part 2
 
@@ -3402,32 +3389,31 @@ Approach1: **Evaluate growth as a function valued trait across latitudinal cline
 Approach2: **Evaluate growth as a function valued trait within a common garden**    
 
 * Possible to have them reared at 6 temperatures and 3 moisture levels? 
-*
+  *
 
 Analysis: Determine shifts in growth reaction norms. 
 
 
 
-
-------    
+------
 <div id='id-section54'/>
 ###Page 54: 2016-08-10. Climate cascade meeting   
 
 1. Project updates:    
- * Gene expression project: on hold; focusing on 2 manuscripts (multiple stressors and range limits ms)      
- * **Multiple stressors ms: SHC's hands- discussion is too disjointed, reworking organization**      
- * **Range limits ms: Fixed figures, go over!**    
- * Thermal niche ms: Lacy and I are working on it. Discussion left to do        
- * HSP modulation paper: SHC's hands     
- * Stressed in nature MS: Curtis' hands ; he was suppose to give me a timeline      
- * Genome sequencing? Mlau's hands    
- * Phylogenomics of common forest ants: ADN to send Bernice samples this week.     
+* Gene expression project: on hold; focusing on 2 manuscripts (multiple stressors and range limits ms)      
+* **Multiple stressors ms: SHC's hands- discussion is too disjointed, reworking organization**      
+* **Range limits ms: Fixed figures, go over!**    
+* Thermal niche ms: Lacy and I are working on it. Discussion left to do        
+* HSP modulation paper: SHC's hands     
+* Stressed in nature MS: Curtis' hands ; he was suppose to give me a timeline      
+* Genome sequencing? Mlau's hands    
+* Phylogenomics of common forest ants: ADN to send Bernice samples this week.     
 2. Attending SICB - Jan 4-8 New Orleans, Give a talk about range limits paper.         
- * Apply for funding. **Suitor Travel Grant [Deadline is october 31](http://www.uvm.edu/cas/foruvmstudents/research/?Page=suiter.html)**       
+* Apply for funding. **Suitor Travel Grant [Deadline is october 31](http://www.uvm.edu/cas/foruvmstudents/research/?Page=suiter.html)**       
 3. Biolunch, working title: **Strategies for achieving reproducible research** ; get picture of the meeting
 
 
-------    
+------
 <div id='id-section55'/>
 ### Page 55: 2016-08-11.  Overlaying raster files in a map in R     
 
@@ -3466,8 +3452,7 @@ points(dbio2$Lon,dbio2$Lat,pch=16,col=dbio2$coco)
 
 ```
 
-
-------    
+------
 <div id='id-section56'/>
 ###Page 56: 2016-08-16 range limits paper, data analysis of chill coma recovery time (CCRT) revisited     
 
@@ -3622,7 +3607,7 @@ prtrt_T25:T -0.680  0.499  0.997  0.496 -0.682  0.501
 prtrt_Tm5:T -0.674  0.496  0.497  0.997 -0.677  0.497  0.499
 ```
 
-------    
+------
 <div id='id-section57'/>
 ### Page 57: 2016-08-25. Hsp modulation follow up stats
 
@@ -3653,25 +3638,25 @@ zAxis 2 A. picea-North     0.1331582 -0.7295202  0.9958366 0.9765503
 zAxis 2 A. picea-South     1.3438760  0.3706435  2.3171085 0.0031663
 ```
 
-------    
+------
 <div id='id-section58'/>
 ### Page 58: 2016-08-29 & 30. Climate cascade meeting  
 
 1. Project updates:    
- * Gene expression project: on hold; focusing on 2 manuscripts (multiple stressors and range limits ms)      
- * Multiple stressors ms: working on SHC edits   
-	* Send out Wednesday. 
+* Gene expression project: on hold; focusing on 2 manuscripts (multiple stressors and range limits ms)      
+* Multiple stressors ms: working on SHC edits   
+    * Send out Wednesday. 
 
- * Range limits ms: **Go over figure; SHC has ms**; eta? Not looked at it. 
- 	* sampling map: make larger, points should be gray; sites that were used for common garden should have a gold outline
- 	* fig 6, cold phys; get rid of "cold", use different words.  
- 
- * Thermal niche ms: **Lacey and I working on discussion**     
- * HSP modulation paper: SHC submitted     
- * Stressed in nature MS: Samples to rerun.   
-  	* update: Curtis can no longer work+ write on project   
-	* in reference to missing samples
-	* Fit in time to process Curtis' samples. 
+* Range limits ms: **Go over figure; SHC has ms**; eta? Not looked at it. 
+    * sampling map: make larger, points should be gray; sites that were used for common garden should have a gold outline
+    * fig 6, cold phys; get rid of "cold", use different words.  
+
+* Thermal niche ms: **Lacey and I working on discussion**     
+* HSP modulation paper: SHC submitted     
+* Stressed in nature MS: Samples to rerun.   
+    * update: Curtis can no longer work+ write on project   
+    * in reference to missing samples
+    * Fit in time to process Curtis' samples. 
 ```
 The DF 20140717 sample box was found when we dug through all the freezers
 in the winter and I didn't have time to extract RNA and qPCR them all. 
@@ -3681,37 +3666,37 @@ The HF 20140812 box was the box we weren't able to find anywhere.
 There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates. 
 
 
- * Genome sequencing? Mlau's hands    
- * Phylogenomics of common forest ants: status?      
- 
+* Genome sequencing? Mlau's hands    
+* Phylogenomics of common forest ants: status?      
+
 
 * Attending SICB - Jan 4-8 New Orleans, Give a talk about range limits paper.   
-	* **construct talk; when to give practice talk ?** 
+  * **construct talk; when to give practice talk ?** 
 * Apply for funding. Suitor Travel Grant Deadline is october 31   
-	* **Wrote up suiter award app**. I need to find out pricing and then get everything signed.       
+  * **Wrote up suiter award app**. I need to find out pricing and then get everything signed.       
 * Biolunch, working title: Strategies for achieving reproducible research Sept 2nd. 
 
 
-------    
+------
 <div id='id-section59'/>
 ### Page 59: 2016-09-01. SHC lab meeting Fall 2016   
 
-| Room|Date     |Activity                                 |Person.in.Charge |Breakfast |
-|----:|:--------|:----------------------------------------|:----------------|:---------|
-|  124|Sept. 8  |IDPs                                     |Sara             |Sara      |
-|  124|Sept. 15 |American Naturalist paper                |Sara             |Megna     |
-|  122|Sept. 22 |Experimental design                      |Megna            |Katie     |
-|  124|**Sept. 29** |**Manuscript - A. picea range limits**       |**Andrew**           |Laurel    |
-|  124|**Oct. 6**   |**Proposal - NSF post-doc fellowship**       |**Andrew**           |Delaney   |
-|  124|Oct. 13  |Experimental design                      |Julia            |Julia     |
-|  122|Oct. 20  |Research update                          |Bonnie           |Bonnie    |
-|  124|Oct. 27  |Results presentation                     |Delaney          |Delaney   |
-|  124|Nov. 3   |Paper discussion                         |Laurel           |Sara      |
-|  124|Nov. 10  |Results discussion                       |Laurel           |Laurel    |
-|  122|Nov. 17  |Manuscript - CNP in Aphaenogaster        |Katie            |Bonnie    |
-|   NA|24-Nov   |Thanksgiving                             |                 |          |
-|  124|**Dec. 1**  |**Meeting talk  - range limits**             |**Andrew**           |Sara      |
-|  124|Dec. 8   |Dimensions of Biodiversity new papers!!! |Everyone         |Andrew    |
+| Room | Date         | Activity                                 | Person.in.Charge | Breakfast |
+| ---: | :----------- | :--------------------------------------- | :--------------- | :-------- |
+|  124 | Sept. 8      | IDPs                                     | Sara             | Sara      |
+|  124 | Sept. 15     | American Naturalist paper                | Sara             | Megna     |
+|  122 | Sept. 22     | Experimental design                      | Megna            | Katie     |
+|  124 | **Sept. 29** | **Manuscript - A. picea range limits**   | **Andrew**       | Laurel    |
+|  124 | **Oct. 6**   | **Proposal - NSF post-doc fellowship**   | **Andrew**       | Delaney   |
+|  124 | Oct. 13      | Experimental design                      | Julia            | Julia     |
+|  122 | Oct. 20      | Research update                          | Bonnie           | Bonnie    |
+|  124 | Oct. 27      | Results presentation                     | Delaney          | Delaney   |
+|  124 | Nov. 3       | Paper discussion                         | Laurel           | Sara      |
+|  124 | Nov. 10      | Results discussion                       | Laurel           | Laurel    |
+|  122 | Nov. 17      | Manuscript - CNP in Aphaenogaster        | Katie            | Bonnie    |
+|   NA | 24-Nov       | Thanksgiving                             |                  |           |
+|  124 | **Dec. 1**   | **Meeting talk  - range limits**         | **Andrew**       | Sara      |
+|  124 | Dec. 8       | Dimensions of Biodiversity new papers!!! | Everyone         | Andrew    |
 
 
 ### Note dietary requirements for breakfasts:    
@@ -3719,16 +3704,16 @@ There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets r
 * No coconut   
 * No nuts in baked goods   
 * No honeydew melon    
- 
+
 
 ### Including notes from meeting (added 2016-09-02)
 * LSO needs to check monthly eye wash, chemical inventory, lab safety
 * Do your lab safety training. 
-* 
+* ​
 
 **Tuesday morning (2016-09-06)**: Schedule time to look for ants, collect ~ 20. 
 
-------    
+------
 <div id='id-section60'/>
 ### 2016-09-01: Paper notes: Paccard et al. 2016
 
@@ -3756,8 +3741,7 @@ Separate or the same item?
 4. **Response to selection: Random skewers method**: THey calculate change in phenotype by simulating Betas in the delta Z = **G** * Beta     
 
 
-
-------    
+------
 <div id='id-section61'/>
 ### Page 61: 2016-09-06. Playing with rpart with range limit data    
 
@@ -3765,7 +3749,7 @@ Separate or the same item?
 
 ### [Guidance for picking "best" tree](http://stats.stackexchange.com/questions/13471/how-to-choose-the-number-of-splits-in-rpart)   
 * Convention is to pick one with the lowest cross-validate relative error or smallest(simplest) tree within 1 standard error of best tree   
-* 
+* ​
 
 ###Full dataset layout
 
@@ -3818,27 +3802,27 @@ str(dbio2)
 ```
 knitr::kable(round(cor(dbio2[17:35]),3))
 ```
-|       |    MAT|    MDR|    ISO|     SD|   Tmax|   Tmin|    TAR|    TWQ|    TDQ| TwarmQ|  TminQ|     AP|    PWM|    PDM|    PSD|    PWQ|    PDQ| PwarmQ|  PminQ|
-|:------|------:|------:|------:|------:|------:|------:|------:|------:|------:|------:|------:|------:|------:|------:|------:|------:|------:|------:|------:|
-|MAT    |  1.000| -0.273|  0.352| -0.637|  0.663|  0.876| -0.512| -0.740|  0.620|  0.852|  0.948|  0.560|  0.598|  0.769| -0.265|  0.495|  0.793| -0.878|  0.684|
-|MDR    | -0.273|  1.000|  0.541|  0.787|  0.483| -0.674|  0.913|  0.137| -0.722|  0.168| -0.519| -0.606| -0.647| -0.437| -0.587| -0.733| -0.399|  0.525| -0.678|
-|ISO    |  0.352|  0.541|  1.000| -0.047|  0.537|  0.104|  0.179| -0.387| -0.027|  0.402|  0.249|  0.119|  0.060|  0.218| -0.470| -0.040|  0.303| -0.127|  0.072|
-|SD     | -0.637|  0.787| -0.047|  1.000|  0.133| -0.916|  0.967|  0.526| -0.859| -0.143| -0.848| -0.836| -0.843| -0.717| -0.341| -0.861| -0.724|  0.771| -0.898|
-|Tmax   |  0.663|  0.483|  0.537|  0.133|  1.000|  0.229|  0.299| -0.506| -0.031|  0.939|  0.398| -0.056| -0.015|  0.344| -0.700| -0.180|  0.364| -0.395|  0.041|
-|Tmin   |  0.876| -0.674|  0.104| -0.916|  0.229|  1.000| -0.860| -0.649|  0.845|  0.511|  0.980|  0.771|  0.809|  0.818|  0.106|  0.775|  0.826| -0.916|  0.884|
-|TAR    | -0.512|  0.913|  0.179|  0.967|  0.299| -0.860|  1.000|  0.371| -0.844| -0.009| -0.752| -0.785| -0.800| -0.622| -0.471| -0.854| -0.619|  0.692| -0.844|
-|TWQ    | -0.740|  0.137| -0.387|  0.526| -0.506| -0.649|  0.371|  1.000| -0.452| -0.589| -0.714| -0.577| -0.586| -0.721|  0.258| -0.466| -0.712|  0.740| -0.671|
-|TDQ    |  0.620| -0.722| -0.027| -0.859| -0.031|  0.845| -0.844| -0.452|  1.000|  0.232|  0.783|  0.806|  0.847|  0.741|  0.401|  0.848|  0.709| -0.756|  0.878|
-|TwarmQ |  0.852|  0.168|  0.402| -0.143|  0.939|  0.511| -0.009| -0.589|  0.232|  1.000|  0.646|  0.168|  0.218|  0.526| -0.561|  0.070|  0.548| -0.613|  0.285|
-|TminQ  |  0.948| -0.519|  0.249| -0.848|  0.398|  0.980| -0.752| -0.714|  0.783|  0.646|  1.000|  0.730|  0.760|  0.824| -0.037|  0.697|  0.845| -0.918|  0.840|
-|AP     |  0.560| -0.606|  0.119| -0.836| -0.056|  0.771| -0.785| -0.577|  0.806|  0.168|  0.730|  1.000|  0.957|  0.731|  0.381|  0.955|  0.783| -0.632|  0.941|
-|PWM    |  0.598| -0.647|  0.060| -0.843| -0.015|  0.809| -0.800| -0.586|  0.847|  0.218|  0.760|  0.957|  1.000|  0.799|  0.424|  0.976|  0.799| -0.733|  0.971|
-|PDM    |  0.769| -0.437|  0.218| -0.717|  0.344|  0.818| -0.622| -0.721|  0.741|  0.526|  0.824|  0.731|  0.799|  1.000| -0.117|  0.695|  0.966| -0.856|  0.856|
-|PSD    | -0.265| -0.587| -0.470| -0.341| -0.700|  0.106| -0.471|  0.258|  0.401| -0.561| -0.037|  0.381|  0.424| -0.117|  1.000|  0.560| -0.157|  0.031|  0.310|
-|PWQ    |  0.495| -0.733| -0.040| -0.861| -0.180|  0.775| -0.854| -0.466|  0.848|  0.070|  0.697|  0.955|  0.976|  0.695|  0.560|  1.000|  0.707| -0.649|  0.940|
-|PDQ    |  0.793| -0.399|  0.303| -0.724|  0.364|  0.826| -0.619| -0.712|  0.709|  0.548|  0.845|  0.783|  0.799|  0.966| -0.157|  0.707|  1.000| -0.803|  0.847|
-|PwarmQ | -0.878|  0.525| -0.127|  0.771| -0.395| -0.916|  0.692|  0.740| -0.756| -0.613| -0.918| -0.632| -0.733| -0.856|  0.031| -0.649| -0.803|  1.000| -0.835|
-|PminQ  |  0.684| -0.678|  0.072| -0.898|  0.041|  0.884| -0.844| -0.671|  0.878|  0.285|  0.840|  0.941|  0.971|  0.856|  0.310|  0.940|  0.847| -0.835|  1.000|
+|        |    MAT |    MDR |    ISO |     SD |   Tmax |   Tmin |    TAR |    TWQ |    TDQ | TwarmQ |  TminQ |     AP |    PWM |    PDM |    PSD |    PWQ |    PDQ | PwarmQ |  PminQ |
+| :----- | -----: | -----: | -----: | -----: | -----: | -----: | -----: | -----: | -----: | -----: | -----: | -----: | -----: | -----: | -----: | -----: | -----: | -----: | -----: |
+| MAT    |  1.000 | -0.273 |  0.352 | -0.637 |  0.663 |  0.876 | -0.512 | -0.740 |  0.620 |  0.852 |  0.948 |  0.560 |  0.598 |  0.769 | -0.265 |  0.495 |  0.793 | -0.878 |  0.684 |
+| MDR    | -0.273 |  1.000 |  0.541 |  0.787 |  0.483 | -0.674 |  0.913 |  0.137 | -0.722 |  0.168 | -0.519 | -0.606 | -0.647 | -0.437 | -0.587 | -0.733 | -0.399 |  0.525 | -0.678 |
+| ISO    |  0.352 |  0.541 |  1.000 | -0.047 |  0.537 |  0.104 |  0.179 | -0.387 | -0.027 |  0.402 |  0.249 |  0.119 |  0.060 |  0.218 | -0.470 | -0.040 |  0.303 | -0.127 |  0.072 |
+| SD     | -0.637 |  0.787 | -0.047 |  1.000 |  0.133 | -0.916 |  0.967 |  0.526 | -0.859 | -0.143 | -0.848 | -0.836 | -0.843 | -0.717 | -0.341 | -0.861 | -0.724 |  0.771 | -0.898 |
+| Tmax   |  0.663 |  0.483 |  0.537 |  0.133 |  1.000 |  0.229 |  0.299 | -0.506 | -0.031 |  0.939 |  0.398 | -0.056 | -0.015 |  0.344 | -0.700 | -0.180 |  0.364 | -0.395 |  0.041 |
+| Tmin   |  0.876 | -0.674 |  0.104 | -0.916 |  0.229 |  1.000 | -0.860 | -0.649 |  0.845 |  0.511 |  0.980 |  0.771 |  0.809 |  0.818 |  0.106 |  0.775 |  0.826 | -0.916 |  0.884 |
+| TAR    | -0.512 |  0.913 |  0.179 |  0.967 |  0.299 | -0.860 |  1.000 |  0.371 | -0.844 | -0.009 | -0.752 | -0.785 | -0.800 | -0.622 | -0.471 | -0.854 | -0.619 |  0.692 | -0.844 |
+| TWQ    | -0.740 |  0.137 | -0.387 |  0.526 | -0.506 | -0.649 |  0.371 |  1.000 | -0.452 | -0.589 | -0.714 | -0.577 | -0.586 | -0.721 |  0.258 | -0.466 | -0.712 |  0.740 | -0.671 |
+| TDQ    |  0.620 | -0.722 | -0.027 | -0.859 | -0.031 |  0.845 | -0.844 | -0.452 |  1.000 |  0.232 |  0.783 |  0.806 |  0.847 |  0.741 |  0.401 |  0.848 |  0.709 | -0.756 |  0.878 |
+| TwarmQ |  0.852 |  0.168 |  0.402 | -0.143 |  0.939 |  0.511 | -0.009 | -0.589 |  0.232 |  1.000 |  0.646 |  0.168 |  0.218 |  0.526 | -0.561 |  0.070 |  0.548 | -0.613 |  0.285 |
+| TminQ  |  0.948 | -0.519 |  0.249 | -0.848 |  0.398 |  0.980 | -0.752 | -0.714 |  0.783 |  0.646 |  1.000 |  0.730 |  0.760 |  0.824 | -0.037 |  0.697 |  0.845 | -0.918 |  0.840 |
+| AP     |  0.560 | -0.606 |  0.119 | -0.836 | -0.056 |  0.771 | -0.785 | -0.577 |  0.806 |  0.168 |  0.730 |  1.000 |  0.957 |  0.731 |  0.381 |  0.955 |  0.783 | -0.632 |  0.941 |
+| PWM    |  0.598 | -0.647 |  0.060 | -0.843 | -0.015 |  0.809 | -0.800 | -0.586 |  0.847 |  0.218 |  0.760 |  0.957 |  1.000 |  0.799 |  0.424 |  0.976 |  0.799 | -0.733 |  0.971 |
+| PDM    |  0.769 | -0.437 |  0.218 | -0.717 |  0.344 |  0.818 | -0.622 | -0.721 |  0.741 |  0.526 |  0.824 |  0.731 |  0.799 |  1.000 | -0.117 |  0.695 |  0.966 | -0.856 |  0.856 |
+| PSD    | -0.265 | -0.587 | -0.470 | -0.341 | -0.700 |  0.106 | -0.471 |  0.258 |  0.401 | -0.561 | -0.037 |  0.381 |  0.424 | -0.117 |  1.000 |  0.560 | -0.157 |  0.031 |  0.310 |
+| PWQ    |  0.495 | -0.733 | -0.040 | -0.861 | -0.180 |  0.775 | -0.854 | -0.466 |  0.848 |  0.070 |  0.697 |  0.955 |  0.976 |  0.695 |  0.560 |  1.000 |  0.707 | -0.649 |  0.940 |
+| PDQ    |  0.793 | -0.399 |  0.303 | -0.724 |  0.364 |  0.826 | -0.619 | -0.712 |  0.709 |  0.548 |  0.845 |  0.783 |  0.799 |  0.966 | -0.157 |  0.707 |  1.000 | -0.803 |  0.847 |
+| PwarmQ | -0.878 |  0.525 | -0.127 |  0.771 | -0.395 | -0.916 |  0.692 |  0.740 | -0.756 | -0.613 | -0.918 | -0.632 | -0.733 | -0.856 |  0.031 | -0.649 | -0.803 |  1.000 | -0.835 |
+| PminQ  |  0.684 | -0.678 |  0.072 | -0.898 |  0.041 |  0.884 | -0.844 | -0.671 |  0.878 |  0.285 |  0.840 |  0.941 |  0.971 |  0.856 |  0.310 |  0.940 |  0.847 | -0.835 |  1.000 |
 
 ### rpart predictive model: full bioclim    
 
@@ -3856,12 +3840,12 @@ rpart.plot(tree.1,type=3,extra=100)
 **classification tree**     
 Table statistics of model:   
 
-|   CP| nsplit| rel error| xerror|      xstd|
-|----:|------:|---------:|------:|---------:|
-| 0.42|      0|      1.00|   1.26| 0.0981595|
-| 0.12|      1|      0.58|   0.82| 0.0990346|
-| 0.06|      2|      0.46|   0.76| 0.0976589|
-| 0.00|      5|      0.28|   0.66| 0.0944956|
+|   CP | nsplit | rel error | xerror |      xstd |
+| ---: | -----: | --------: | -----: | --------: |
+| 0.42 |      0 |      1.00 |   1.26 | 0.0981595 |
+| 0.12 |      1 |      0.58 |   0.82 | 0.0990346 |
+| 0.06 |      2 |      0.46 |   0.76 | 0.0976589 |
+| 0.00 |      5 |      0.28 |   0.66 | 0.0944956 |
 
 
 ![](https://cloud.githubusercontent.com/assets/4654474/18282348/c2215726-742e-11e6-87b4-cb276c6b2136.jpeg)
@@ -3879,10 +3863,10 @@ sum(ifelse(vars$V1== m.pre,1,0))/nrow(vars)
 
 Confusion matrix indicating 86.2% accuracy:    
 
-|        | absent| present|
-|:-------|------:|-------:|
-|absent  |     42|       8|
-|present |      6|      46|
+|         | absent | present |
+| :------ | -----: | ------: |
+| absent  |     42 |       8 |
+| present |      6 |      46 |
 
 ### Subset of bioclim variables:      
 ```R
@@ -3891,16 +3875,16 @@ names(sub)<-c("MAT","Tmin","SD","TAR","ISO","MDR","AP","PSD")
 knitr::kable(round(cor(sub),3))
 ```
 
-|     |    MAT|   Tmin|     SD|    TAR|    ISO|    MDR|     AP|    PSD|
-|:----|------:|------:|------:|------:|------:|------:|------:|------:|
-|MAT  |  1.000|  0.876| -0.637| -0.512|  0.352| -0.273|  0.560| -0.265|
-|Tmin |  0.876|  1.000| -0.916| -0.860|  0.104| -0.674|  0.771|  0.106|
-|SD   | -0.637| -0.916|  1.000|  0.967| -0.047|  0.787| -0.836| -0.341|
-|TAR  | -0.512| -0.860|  0.967|  1.000|  0.179|  0.913| -0.785| -0.471|
-|ISO  |  0.352|  0.104| -0.047|  0.179|  1.000|  0.541|  0.119| -0.470|
-|MDR  | -0.273| -0.674|  0.787|  0.913|  0.541|  1.000| -0.606| -0.587|
-|AP   |  0.560|  0.771| -0.836| -0.785|  0.119| -0.606|  1.000|  0.381|
-|PSD  | -0.265|  0.106| -0.341| -0.471| -0.470| -0.587|  0.381|  1.000|
+|      |    MAT |   Tmin |     SD |    TAR |    ISO |    MDR |     AP |    PSD |
+| :--- | -----: | -----: | -----: | -----: | -----: | -----: | -----: | -----: |
+| MAT  |  1.000 |  0.876 | -0.637 | -0.512 |  0.352 | -0.273 |  0.560 | -0.265 |
+| Tmin |  0.876 |  1.000 | -0.916 | -0.860 |  0.104 | -0.674 |  0.771 |  0.106 |
+| SD   | -0.637 | -0.916 |  1.000 |  0.967 | -0.047 |  0.787 | -0.836 | -0.341 |
+| TAR  | -0.512 | -0.860 |  0.967 |  1.000 |  0.179 |  0.913 | -0.785 | -0.471 |
+| ISO  |  0.352 |  0.104 | -0.047 |  0.179 |  1.000 |  0.541 |  0.119 | -0.470 |
+| MDR  | -0.273 | -0.674 |  0.787 |  0.913 |  0.541 |  1.000 | -0.606 | -0.587 |
+| AP   |  0.560 |  0.771 | -0.836 | -0.785 |  0.119 | -0.606 |  1.000 |  0.381 |
+| PSD  | -0.265 |  0.106 | -0.341 | -0.471 | -0.470 | -0.587 |  0.381 |  1.000 |
 
 
 **Classification tree with subset of bioclim**
@@ -3921,13 +3905,13 @@ rpart.plot(tree.1,type=3,extra=100)
 
 Table statistics of model:   
 
-|   CP| nsplit| rel error| xerror|      xstd|
-|----:|------:|---------:|------:|---------:|
-| 0.38|      0|      1.00|   1.24| 0.0986179|
-| 0.14|      1|      0.62|   1.00| 0.1009756|
-| 0.04|      2|      0.48|   0.84| 0.0994100|
-| 0.02|      6|      0.32|   0.66| 0.0944956|
-| 0.00|      7|      0.30|   0.52| 0.0880285|
+|   CP | nsplit | rel error | xerror |      xstd |
+| ---: | -----: | --------: | -----: | --------: |
+| 0.38 |      0 |      1.00 |   1.24 | 0.0986179 |
+| 0.14 |      1 |      0.62 |   1.00 | 0.1009756 |
+| 0.04 |      2 |      0.48 |   0.84 | 0.0994100 |
+| 0.02 |      6 |      0.32 |   0.66 | 0.0944956 |
+| 0.00 |      7 |      0.30 |   0.52 | 0.0880285 |
 
 ![](https://cloud.githubusercontent.com/assets/4654474/18282392/f47428fc-742e-11e6-95ea-fe2dc7e7f547.jpeg)
 
@@ -3941,40 +3925,39 @@ knitr::kable(mc)
 
 Confusion matrix indicating 85.2% accuracy    
 
-|        | absent| present|
-|:-------|------:|-------:|
-|absent  |     46|       4|
-|present |     11|      41|
+|         | absent | present |
+| :------ | -----: | ------: |
+| absent  |     46 |       4 |
+| present |     11 |      41 |
 
-
-------    
+------
 <div id='id-section62'/>
 ### Page 62: 2016-09-06. Climate cascade meeting  
 
 1. Project updates:    
- * Gene expression project: on hold; focusing on 2 manuscripts (multiple stressors and range limits ms)      
- * Multiple stressors ms:   
-	* **SHC hands**
- * Range limits ms: **Aaron made comments, go over with Nick**
- 
- * Thermal niche ms: **Lacey and I working on discussion**     
- * Stressed in nature MS: Samples to rerun.   
-  	* update: Curtis can no longer work+ write on project   
-	* in reference to missing samples
-	* Fit in time to process Curtis' samples. 
+* Gene expression project: on hold; focusing on 2 manuscripts (multiple stressors and range limits ms)      
+* Multiple stressors ms:   
+    * **SHC hands**
+* Range limits ms: **Aaron made comments, go over with Nick**
+
+* Thermal niche ms: **Lacey and I working on discussion**     
+* Stressed in nature MS: Samples to rerun.   
+    * update: Curtis can no longer work+ write on project   
+    * in reference to missing samples
+    * Fit in time to process Curtis' samples. 
 
 **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**
 
 
 * Attending SICB - Jan 4-8 New Orleans, Give a talk about range limits paper.   
-	* **construct talk; when to give practice talk ?**  
- 	* Apply for funding. Suitor Travel Grant Deadline is october 31    
-	* **Wrote up suiter award app**. I need to find out pricing and then get everything signed.   
+  * **construct talk; when to give practice talk ?**  
+  * Apply for funding. Suitor Travel Grant Deadline is october 31    
+  * **Wrote up suiter award app**. I need to find out pricing and then get everything signed.   
 
 Notes:  Only NJG and ANBE in attendance. 
 
 * **Go over thesis layout next time**
-------    
+------
 <div id='id-section63'/>
 ###Page 63: 2016-09-07.  PCA update for range limit data  ; see * [Page 63: 2016-09-07](#id-section63). PCA update for range limit data
 
@@ -3988,27 +3971,27 @@ knitr::kable(round(nm$loadings[,1:4],3))
 ```
 **Table of loadings**    
 
-|       | Comp.1| Comp.2| Comp.3| Comp.4|
-|:------|------:|------:|------:|------:|
-|MAT    |  0.238| -0.242|  0.191| -0.079|
-|MDR    | **-0.192**| -0.307| -0.347|  0.086|
-|ISO    |  0.037| -0.309| -0.614| -0.515|
-|SD     | **-0.267**| -0.124|  0.000|  0.393|
-|Tmax   |  0.052| -0.451|  0.099|  0.239|
-|Tmin   |  **0.281**| **-0.026**|  0.184| -0.206|
-|TAR    | **-0.248**| -0.211| -0.129|  0.327|
-|TWQ    | -0.205|  0.213|  0.151| -0.155|
-|TDQ    |  0.259|  0.111|  0.034|  0.002|
-|TwarmQ |  0.128| -0.389|  0.247|  0.209|
-|TminQ  |  0.274| -0.112|  0.140| -0.205|
-|AP     |  0.258|  0.103| -0.324|  0.158|
-|PWM    |  0.268|  0.100| -0.230|  0.275|
-|PDM    |  0.259| -0.108| -0.046|  0.164|
-|PSD    |  0.052|  0.413| -0.107|  0.240|
-|PWQ    |  0.256|  0.180| -0.215|  0.198|
-|PDQ    |  0.259| -0.124| -0.122|  0.075|
-|PwarmQ | -0.263|  0.107| -0.228| -0.014|
-|PminQ  |  0.282|  0.065| -0.130|  0.143|
+|        |     Comp.1 |     Comp.2 | Comp.3 | Comp.4 |
+| :----- | ---------: | ---------: | -----: | -----: |
+| MAT    |      0.238 |     -0.242 |  0.191 | -0.079 |
+| MDR    | **-0.192** |     -0.307 | -0.347 |  0.086 |
+| ISO    |      0.037 |     -0.309 | -0.614 | -0.515 |
+| SD     | **-0.267** |     -0.124 |  0.000 |  0.393 |
+| Tmax   |      0.052 |     -0.451 |  0.099 |  0.239 |
+| Tmin   |  **0.281** | **-0.026** |  0.184 | -0.206 |
+| TAR    | **-0.248** |     -0.211 | -0.129 |  0.327 |
+| TWQ    |     -0.205 |      0.213 |  0.151 | -0.155 |
+| TDQ    |      0.259 |      0.111 |  0.034 |  0.002 |
+| TwarmQ |      0.128 |     -0.389 |  0.247 |  0.209 |
+| TminQ  |      0.274 |     -0.112 |  0.140 | -0.205 |
+| AP     |      0.258 |      0.103 | -0.324 |  0.158 |
+| PWM    |      0.268 |      0.100 | -0.230 |  0.275 |
+| PDM    |      0.259 |     -0.108 | -0.046 |  0.164 |
+| PSD    |      0.052 |      0.413 | -0.107 |  0.240 |
+| PWQ    |      0.256 |      0.180 | -0.215 |  0.198 |
+| PDQ    |      0.259 |     -0.124 | -0.122 |  0.075 |
+| PwarmQ |     -0.263 |      0.107 | -0.228 | -0.014 |
+| PminQ  |      0.282 |      0.065 | -0.130 |  0.143 |
 
 **Screeplot of PCA of all bioclim vars**
 ![](https://cloud.githubusercontent.com/assets/4654474/18310610/659a47a2-74cd-11e6-9bf3-ebdb4d6dc2fd.jpeg)
@@ -4061,12 +4044,12 @@ knitr::kable(round(summary(dmo1)$coefficients,3))
 **Table output of logistic regression**    
 
 
-|              | Estimate| Std. Error| z value| Pr(>&#124;z&#124;)|
-|:-------------|--------:|----------:|-------:|------------------:|
-|(Intercept)   |   -0.117|      0.248|  -0.472|              0.637|
-|pc1 |    0.231|      0.085|   2.726|             ** 0.006**|
-|pc2 |   -0.578|      0.150|  -3.846|              **0.000**|
-|pc3 |   -0.199|      0.247|  -0.804|              0.421|
+|             | Estimate | Std. Error | z value | Pr(>&#124;z&#124;) |
+| :---------- | -------: | ---------: | ------: | -----------------: |
+| (Intercept) |   -0.117 |      0.248 |  -0.472 |              0.637 |
+| pc1         |    0.231 |      0.085 |   2.726 |         ** 0.006** |
+| pc2         |   -0.578 |      0.150 |  -3.846 |          **0.000** |
+| pc3         |   -0.199 |      0.247 |  -0.804 |              0.421 |
 
 ### Overlaying presence-absence onto climate space as represented by PCs
 
@@ -4090,12 +4073,12 @@ So my suggestion would be to stick with the CART analysis. If you must do a GLM,
  
 Best,
 Aaron
-``` 
+```
 
-------    
+------
 <div id='id-section64'/>
 
-------    
+------
 <div id='id-section65'/>
 <<<<<<< HEAD
 =======
@@ -4105,36 +4088,35 @@ Aaron
 
 [Youtube version](https://www.youtube.com/watch?v=tD8HZuWqIQw&list=UUq4pm1i_VZqxKVVOz5qRBIA&index=16)
 
-
-------    
+------
 <div id='id-section66'/>     
 ### Page 66: 2016-09-13. climate cascade meeting       
 
 1. Project updates:    
- * Gene expression project: on hold; focusing on 2 manuscripts (multiple stressors and range limits ms)      
- * Multiple stressors ms:   
-	* **my hands, need to edit and send out by wednesday/thursday**
- * Range limits ms: **SHC's hands**
- 
- * Thermal niche ms: **Lacey and I working on discussion**     
- * Stressed in nature MS: Samples to rerun.   
-  	* update: Curtis can no longer work+ write on project   
-	* in reference to missing samples
-	* Fit in time to process Curtis' samples. 
+* Gene expression project: on hold; focusing on 2 manuscripts (multiple stressors and range limits ms)      
+* Multiple stressors ms:   
+    * **my hands, need to edit and send out by wednesday/thursday**
+* Range limits ms: **SHC's hands**
+
+* Thermal niche ms: **Lacey and I working on discussion**     
+* Stressed in nature MS: Samples to rerun.   
+    * update: Curtis can no longer work+ write on project   
+    * in reference to missing samples
+    * Fit in time to process Curtis' samples. 
 
 **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**
 
 
 * Attending SICB - Jan 4-8 New Orleans, Give a talk about range limits paper.   
-	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
- 	* Apply for funding. Suitor Travel Grant Deadline is october 31    
-	* **Wrote up suiter award app**. I need to find out pricing and then get everything signed.   
+  * **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+  * Apply for funding. Suitor Travel Grant Deadline is october 31    
+  * **Wrote up suiter award app**. I need to find out pricing and then get everything signed.   
 
 * **Go over thesis layout next time**   
-	* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agreee   
-	
+  * Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agreee   
 
-------    
+
+------
 <div id='id-section67'/>
 ### Page 68: 2016-09-14. SICB meeting    
 
@@ -4152,56 +4134,55 @@ Budget:
 * $388 flight
 * $580 + taxes and fees hotel
 * $ 99 registration to SICB
-   
+
    
 
-------    
+------
 <div id='id-section68'/>
 ### Page 68: 2016-09-19; 2016-09-20. Climate cascade meeting
 
  1. Project updates:    
- 	* Gene expression project: on hold; focusing on 2 manuscripts (multiple stressors and range limits ms)      
- 	* Multiple stressors ms:   
-		* **sent to SHC 2016-09-16** 
- 	* Range limits ms: **SHC's hands**
- 
- 	* Thermal niche ms: **Lacey and I working on discussion**     
- 	* Stressed in nature MS: Samples to rerun.   
-  	* update: Curtis can no longer work+ write on project   
-		* in reference to missing samples
-		* Fit in time to process Curtis' samples.      
-		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**         
-	* Proteome stability project: **ETA end of the week (5/6 done)**    
+    * Gene expression project: on hold; focusing on 2 manuscripts (multiple stressors and range limits ms)      
+    * Multiple stressors ms:   
+       * **sent to SHC 2016-09-16** 
+    * Range limits ms: **SHC's hands**
+
+    * Thermal niche ms: **Lacey and I working on discussion**     
+    * Stressed in nature MS: Samples to rerun.   
+       * update: Curtis can no longer work+ write on project   
+       * in reference to missing samples
+       * Fit in time to process Curtis' samples.      
+       * **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**         
+    * Proteome stability project: **ETA end of the week (5/6 done)**    
 
 * Attending SICB - Jan 4-8 New Orleans, Give a talk about range limits paper.   
-	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
- 	* Apply for funding. Suitor Travel Grant Deadline is october 31    
-	* **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.    
+  * **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+  * Apply for funding. Suitor Travel Grant Deadline is october 31    
+  * **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.    
 
 * **Go over thesis layout next time**   
-	* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
-	* Abstract? I have one written up for NSF post doc fellowship
-	
-	
-------    
+  * Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+  * Abstract? I have one written up for NSF post doc fellowship
+
+------
 <div id='id-section69'/>
 ### Page 69: 2016-09-21. qpcr redos for 18s rRNA    
 
 Table of colonies with unstable HSG as determined by linear regression (18s  ~ Temp).
 
-|   |colony   | Df|         SS|         MS|         F|   p_value|
-|:--|:--------|--:|----------:|----------:|---------:|---------:|
-|5  |ALA1     |  1| 2123420.91| 2123420.91|  8.054925| 0.0218751|
-|9  |Avon19-1 |  1|   85577.02|   85577.02|  5.659013| 0.0446244|
-|15 |CJ2      |  1|  860194.07|  860194.07| 26.944017| 0.0008317|
-|55 |GF34-1   |  1| 9742336.46| 9742336.46| 45.449574| 0.0001463|
-|85 |LPR4     |  1| 2802821.86| 2802821.86| 14.940584| 0.0047729|
+|      | colony   |   Df |         SS |         MS |         F |   p_value |
+| :--- | :------- | ---: | ---------: | ---------: | --------: | --------: |
+| 5    | ALA1     |    1 | 2123420.91 | 2123420.91 |  8.054925 | 0.0218751 |
+| 9    | Avon19-1 |    1 |   85577.02 |   85577.02 |  5.659013 | 0.0446244 |
+| 15   | CJ2      |    1 |  860194.07 |  860194.07 | 26.944017 | 0.0008317 |
+| 55   | GF34-1   |    1 | 9742336.46 | 9742336.46 | 45.449574 | 0.0001463 |
+| 85   | LPR4     |    1 | 2802821.86 | 2802821.86 | 14.940584 | 0.0047729 |
 
 others: Yates3, Duke8    
 
 
 
-------    
+------
 <div id='id-section70'/>
 ### Page 70: 2016-09-26. selecting poplar clones    
 
@@ -4233,68 +4214,65 @@ range of GSLs: 2.016667-4.833333 months
 
 ### Table for previous fig    
 
-|PopCode |       GSL|       BS|       BF|   months|
-|:-------|---------:|--------:|--------:|--------:|
-|CBI     |  84.20000| 200.9000| 116.7000| 2.806667|
-|CLK     |  62.00000| 183.8889| 121.8889| 2.066667|
-|CPL     |  67.57143| 190.3571| 122.7857| 2.252381|
-|CYP     |  61.85714| 184.8571| 123.0000| 2.061905|
-|FIS     |  77.80000| 194.0000| 116.2000| 2.593333|
-|FNO     |  70.11111| 181.0000| 110.8889| 2.337037|
-|GAM     |  64.76000| 186.6400| 121.8800| 2.158667|
-|HWK     |  68.80000| 189.8500| 121.0500| 2.293333|
-|KAP     |  68.75000| 193.3125| 124.5625| 2.291667|
-|KEN     | 145.00000| 256.6000| 111.6000| 4.833333|
-|LLC     | 136.95000| 248.1500| 111.2000| 4.565000|
-|LON     |  91.72727| 208.7273| 117.0000| 3.057576|
-|MBK     |  61.77778| 182.3333| 120.5556| 2.059259|
-|NBY     |  91.23529| 210.4706| 119.2353| 3.041177|
-|NEG     |  76.88636| 195.6591| 118.7727| 2.562879|
-|OUT     |  69.40000| 188.1000| 118.7000| 2.313333|
-|RAD     |  63.77778| 181.7037| 117.9259| 2.125926|
-|SKN     |  63.38462| 184.8462| 121.4615| 2.112821|
-|TBY     | 137.60000| 250.1333| 112.5333| 4.586667|
-|TUR     |  63.40000| 186.5000| 123.1000| 2.113333|
-|UMI     |  61.00000| 182.0000| 121.0000| 2.033333|
-|WLK     |  60.50000| 175.0000| 114.5000| 2.016667|
+| PopCode |       GSL |       BS |       BF |   months |
+| :------ | --------: | -------: | -------: | -------: |
+| CBI     |  84.20000 | 200.9000 | 116.7000 | 2.806667 |
+| CLK     |  62.00000 | 183.8889 | 121.8889 | 2.066667 |
+| CPL     |  67.57143 | 190.3571 | 122.7857 | 2.252381 |
+| CYP     |  61.85714 | 184.8571 | 123.0000 | 2.061905 |
+| FIS     |  77.80000 | 194.0000 | 116.2000 | 2.593333 |
+| FNO     |  70.11111 | 181.0000 | 110.8889 | 2.337037 |
+| GAM     |  64.76000 | 186.6400 | 121.8800 | 2.158667 |
+| HWK     |  68.80000 | 189.8500 | 121.0500 | 2.293333 |
+| KAP     |  68.75000 | 193.3125 | 124.5625 | 2.291667 |
+| KEN     | 145.00000 | 256.6000 | 111.6000 | 4.833333 |
+| LLC     | 136.95000 | 248.1500 | 111.2000 | 4.565000 |
+| LON     |  91.72727 | 208.7273 | 117.0000 | 3.057576 |
+| MBK     |  61.77778 | 182.3333 | 120.5556 | 2.059259 |
+| NBY     |  91.23529 | 210.4706 | 119.2353 | 3.041177 |
+| NEG     |  76.88636 | 195.6591 | 118.7727 | 2.562879 |
+| OUT     |  69.40000 | 188.1000 | 118.7000 | 2.313333 |
+| RAD     |  63.77778 | 181.7037 | 117.9259 | 2.125926 |
+| SKN     |  63.38462 | 184.8462 | 121.4615 | 2.112821 |
+| TBY     | 137.60000 | 250.1333 | 112.5333 | 4.586667 |
+| TUR     |  63.40000 | 186.5000 | 123.1000 | 2.113333 |
+| UMI     |  61.00000 | 182.0000 | 121.0000 | 2.033333 |
+| WLK     |  60.50000 | 175.0000 | 114.5000 | 2.016667 |
 
 
 
 
 
-
-------    
+------
 <div id='id-section71'/>
 ### Page 71: 2016-09-26 and 2016-09-27. Climate cascade meeting    
 
 1. Project updates:    
- 	* Gene expression project: on hold; focusing on 2 manuscripts (multiple stressors and range limits ms) 
-		* **Present some analyses**    
- 	* Multiple stressors ms:   
-		* **Working on SHC edits**    
- 	* Range limits ms: **SHC lab meeting to go over Thursday September 29th**
- 
- 	* Thermal niche ms: **Lacey and I working on discussion**     
- 	* Stressed in nature MS: Samples to rerun.   
-  	* update: Curtis can no longer work+ write on project   
-		* in reference to missing samples
-		* Fit in time to process Curtis' samples.      
-		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**         
-	* Proteome stability project: **ETA end of the week (5/6 done); database searching**    
+    * Gene expression project: on hold; focusing on 2 manuscripts (multiple stressors and range limits ms) 
+      * **Present some analyses**    
+    * Multiple stressors ms:   
+      * **Working on SHC edits**    
+    * Range limits ms: **SHC lab meeting to go over Thursday September 29th**
+
+    * Thermal niche ms: **Lacey and I working on discussion**     
+    * Stressed in nature MS: Samples to rerun.   
+      * update: Curtis can no longer work+ write on project   
+      * in reference to missing samples
+      * Fit in time to process Curtis' samples.      
+      * **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**         
+    * Proteome stability project: **ETA end of the week (5/6 done); database searching**    
 
 * Attending SICB - Jan 4-8 New Orleans, Give a talk about range limits paper.   
-	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
- 	* Apply for funding. Suitor Travel Grant Deadline is october 31    
-	* **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.    
+  * **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+  * Apply for funding. Suitor Travel Grant Deadline is october 31    
+  * **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.    
 
 * **Thesis related**   
-	* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
-	* Dissertation Abstract is in multiple paragraphs, but for dissertation itself, make 1 paragraph
-	
+  * Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+  * Dissertation Abstract is in multiple paragraphs, but for dissertation itself, make 1 paragraph
 
 
-
-------    
+------
 <div id='id-section72'/>
 ### Page 72: 2016-09-27. evolution of hsp gxp data analysis
 
@@ -4308,17 +4286,17 @@ range of GSLs: 2.016667-4.833333 months
 Table of correlation between params     
 
 
-|                    | FC_hsc70_1468_max| FC_hsc70_1468_slope| FC_hsc70_1468_Tm| FC_hsp40_541_max| FC_hsp40_541_slope| FC_hsp40_541_Tm| FC_Hsp83_279_max| FC_Hsp83_279_slope| FC_Hsp83_279_Tm|
-|:-------------------|-----------------:|-------------------:|----------------:|----------------:|------------------:|---------------:|----------------:|------------------:|---------------:|
-|FC_hsc70_1468_max   |             1.000|               0.569|            0.642|            0.398|              0.104|           0.076|            0.029|             -0.122|          -0.207|
-|FC_hsc70_1468_slope |             0.569|               1.000|            0.640|            0.340|              0.189|           0.174|           -0.154|             -0.079|          -0.297|
-|FC_hsc70_1468_Tm    |             0.642|               0.640|            1.000|            0.429|              0.207|           0.401|           -0.130|             -0.124|          -0.264|
-|FC_hsp40_541_max    |             0.398|               0.340|            0.429|            1.000|              0.602|           0.624|            0.030|              0.117|          -0.082|
-|FC_hsp40_541_slope  |             0.104|               0.189|            0.207|            0.602|              1.000|           0.651|            0.037|              0.122|          -0.129|
-|FC_hsp40_541_Tm     |             0.076|               0.174|            0.401|            0.624|              0.651|           1.000|           -0.247|             -0.075|          -0.215|
-|FC_Hsp83_279_max    |             0.029|              -0.154|           -0.130|            0.030|              0.037|          -0.247|            1.000|              0.756|           0.669|
-|FC_Hsp83_279_slope  |            -0.122|              -0.079|           -0.124|            0.117|              0.122|          -0.075|            0.756|              1.000|           0.864|
-|FC_Hsp83_279_Tm     |            -0.207|              -0.297|           -0.264|           -0.082|             -0.129|          -0.215|            0.669|              0.864|           1.000|    
+|                     | FC_hsc70_1468_max | FC_hsc70_1468_slope | FC_hsc70_1468_Tm | FC_hsp40_541_max | FC_hsp40_541_slope | FC_hsp40_541_Tm | FC_Hsp83_279_max | FC_Hsp83_279_slope | FC_Hsp83_279_Tm |
+| :------------------ | ----------------: | ------------------: | ---------------: | ---------------: | -----------------: | --------------: | ---------------: | -----------------: | --------------: |
+| FC_hsc70_1468_max   |             1.000 |               0.569 |            0.642 |            0.398 |              0.104 |           0.076 |            0.029 |             -0.122 |          -0.207 |
+| FC_hsc70_1468_slope |             0.569 |               1.000 |            0.640 |            0.340 |              0.189 |           0.174 |           -0.154 |             -0.079 |          -0.297 |
+| FC_hsc70_1468_Tm    |             0.642 |               0.640 |            1.000 |            0.429 |              0.207 |           0.401 |           -0.130 |             -0.124 |          -0.264 |
+| FC_hsp40_541_max    |             0.398 |               0.340 |            0.429 |            1.000 |              0.602 |           0.624 |            0.030 |              0.117 |          -0.082 |
+| FC_hsp40_541_slope  |             0.104 |               0.189 |            0.207 |            0.602 |              1.000 |           0.651 |            0.037 |              0.122 |          -0.129 |
+| FC_hsp40_541_Tm     |             0.076 |               0.174 |            0.401 |            0.624 |              0.651 |           1.000 |           -0.247 |             -0.075 |          -0.215 |
+| FC_Hsp83_279_max    |             0.029 |              -0.154 |           -0.130 |            0.030 |              0.037 |          -0.247 |            1.000 |              0.756 |           0.669 |
+| FC_Hsp83_279_slope  |            -0.122 |              -0.079 |           -0.124 |            0.117 |              0.122 |          -0.075 |            0.756 |              1.000 |           0.864 |
+| FC_Hsp83_279_Tm     |            -0.207 |              -0.297 |           -0.264 |           -0.082 |             -0.129 |          -0.215 |            0.669 |              0.864 |           1.000 |
 
 
 
@@ -4335,20 +4313,20 @@ Proportion of Variance 0.007444064 0.004639294
 Cumulative Proportion  0.995360706 1.000000000
 ```
 
-|                    | Comp.1| Comp.2| Comp.3| Comp.4|
-|:-------------------|------:|------:|------:|------:|
-|hsc70               |  0.366|  0.117| -0.041| -0.400|
-|hsp83               |  0.271|  0.019| -0.238| -0.414|
-|hsp40               |  0.141|  0.309| -0.279| -0.433|
-|FC_hsc70_1468_max   |  0.284| -0.006|  0.529| -0.184|
-|FC_hsc70_1468_slope |  0.313|  0.112|  0.318| -0.110|
-|FC_hsc70_1468_Tm    |  0.300| -0.063|  0.495|  0.234|
-|FC_hsp40_541_max    |  0.210| -0.502|  0.039| -0.185|
-|FC_hsp40_541_slope  |  0.153| -0.521| -0.264| -0.048|
-|FC_hsp40_541_Tm     |  0.232| -0.493| -0.175|  0.173|
-|FC_Hsp83_279_max    | -0.321| -0.174|  0.305| -0.324|
-|FC_Hsp83_279_slope  | -0.355| -0.249|  0.168| -0.366|
-|FC_Hsp83_279_Tm     | -0.392| -0.124|  0.124| -0.276|
+|                     | Comp.1 | Comp.2 | Comp.3 | Comp.4 |
+| :------------------ | -----: | -----: | -----: | -----: |
+| hsc70               |  0.366 |  0.117 | -0.041 | -0.400 |
+| hsp83               |  0.271 |  0.019 | -0.238 | -0.414 |
+| hsp40               |  0.141 |  0.309 | -0.279 | -0.433 |
+| FC_hsc70_1468_max   |  0.284 | -0.006 |  0.529 | -0.184 |
+| FC_hsc70_1468_slope |  0.313 |  0.112 |  0.318 | -0.110 |
+| FC_hsc70_1468_Tm    |  0.300 | -0.063 |  0.495 |  0.234 |
+| FC_hsp40_541_max    |  0.210 | -0.502 |  0.039 | -0.185 |
+| FC_hsp40_541_slope  |  0.153 | -0.521 | -0.264 | -0.048 |
+| FC_hsp40_541_Tm     |  0.232 | -0.493 | -0.175 |  0.173 |
+| FC_Hsp83_279_max    | -0.321 | -0.174 |  0.305 | -0.324 |
+| FC_Hsp83_279_slope  | -0.355 | -0.249 |  0.168 | -0.366 |
+| FC_Hsp83_279_Tm     | -0.392 | -0.124 |  0.124 | -0.276 |
 
 
 
@@ -4404,20 +4382,20 @@ Cumulative Proportion  0.98547690 0.993458257 1.000000000
 
 knitr::kable(round(paramspc$loadings[,1:4],3))
 ```
-|                    | Comp.1| Comp.2| Comp.3| Comp.4|
-|:-------------------|------:|------:|------:|------:|
-|hsc70               | -0.338|  0.071| -0.410| -0.299|
-|hsp83               | -0.275|  0.237| -0.295| -0.234|
-|hsp40               | -0.098|  0.057| -0.476| -0.391|
-|FC_hsc70_1468_max   | -0.316| -0.358|  0.172| -0.246|
-|FC_hsc70_1468_slope | -0.195| -0.360|  0.211| -0.172|
-|FC_hsc70_1468_Tm    | -0.289| -0.347|  0.253| -0.044|
-|FC_hsp40_541_max    | -0.414|  0.177|  0.147|  0.127|
-|FC_hsp40_541_slope  | -0.310|  0.265| -0.087|  0.461|
-|FC_hsp40_541_Tm     | -0.348|  0.304|  0.081|  0.313|
-|FC_Hsp83_279_max    | -0.390|  0.076|  0.292| -0.183|
-|FC_Hsp83_279_slope  |  0.053|  0.439|  0.418| -0.286|
-|FC_Hsp83_279_Tm     |  0.193|  0.406|  0.290| -0.410|
+|                     | Comp.1 | Comp.2 | Comp.3 | Comp.4 |
+| :------------------ | -----: | -----: | -----: | -----: |
+| hsc70               | -0.338 |  0.071 | -0.410 | -0.299 |
+| hsp83               | -0.275 |  0.237 | -0.295 | -0.234 |
+| hsp40               | -0.098 |  0.057 | -0.476 | -0.391 |
+| FC_hsc70_1468_max   | -0.316 | -0.358 |  0.172 | -0.246 |
+| FC_hsc70_1468_slope | -0.195 | -0.360 |  0.211 | -0.172 |
+| FC_hsc70_1468_Tm    | -0.289 | -0.347 |  0.253 | -0.044 |
+| FC_hsp40_541_max    | -0.414 |  0.177 |  0.147 |  0.127 |
+| FC_hsp40_541_slope  | -0.310 |  0.265 | -0.087 |  0.461 |
+| FC_hsp40_541_Tm     | -0.348 |  0.304 |  0.081 |  0.313 |
+| FC_Hsp83_279_max    | -0.390 |  0.076 |  0.292 | -0.183 |
+| FC_Hsp83_279_slope  |  0.053 |  0.439 |  0.418 | -0.286 |
+| FC_Hsp83_279_Tm     |  0.193 |  0.406 |  0.290 | -0.410 |
 
 ### Stats
 ```R
@@ -4440,8 +4418,7 @@ F-statistic: 6.384 on 3 and 28 DF,  p-value: 0.00196
 
 
 
-
-------    
+------
 <div id='id-section73'/>
 ### Page 73: 2016-09-28. building ultrametric trees   
 
@@ -4449,8 +4426,8 @@ I need to build ultrametric trees to do phylogenetic analyses. They need to be u
 
 1. I created a new folder in /Data/Phylogenetics/20160928_beast
 2. It has 2 newick files: 20160927_phylogeny_aphaeno_BL_species.newick and 20160927_phylogeny_aphaeno_BL.newick 
-	* 20160927_phylogeny_aphaeno_BL.newick  has BL for each colony, and I previously added CJ10, LPR4, and Bing in there; so I have to take them out because there is no sequence data for those samples. New file: 20160927_phylogeny_aphaeno_BL_none.newick    
-	
+   * 20160927_phylogeny_aphaeno_BL.newick  has BL for each colony, and I previously added CJ10, LPR4, and Bing in there; so I have to take them out because there is no sequence data for those samples. New file: 20160927_phylogeny_aphaeno_BL_none.newick    
+
 3. It also has this fasta file that was previously parsed: 20160516_Andrew_SNP_sequences.fas
 4. In downstream analyses, I got rid of novomessor which I'll do for this fasta too. New file: 20160516_Andrew_SNP_sequences_nonov.fas   
 
@@ -4478,7 +4455,7 @@ Cannot get it to work. YULE model best for species. But I have pop and species.
 
 
 
-------    
+------
 <div id='id-section74'/>
 ### Page 74: 2016-09-28. phylogenetic regressions (PGLS) and anovas    
 
@@ -4747,7 +4724,7 @@ email: ***@umb.edu
 blog: http://phytools.blogspot.com
 ```
 
-------    
+------
 <div id='id-section74.1'/>
 ### 2016-09-28. SHC suggestion: ancestral trait reconsturction -> regressions/anovas    
 
@@ -4757,23 +4734,23 @@ blog: http://phytools.blogspot.com
 
 
 
-------    
+------
 <div id='id-section74.2'/>
 ### 2016-09-29. PIC
 
 **Dataset**     
 
 
-|   |Species       |    CTmax|     Tmax|Habitat |
-|:--|:-------------|--------:|--------:|:-------|
-|1  |ashmeadi      | 42.80833| 324.0000|FW      |
-|2  |floridana     | 42.76852| 323.7778|FW      |
-|6  |picea         | 40.50096| 262.9615|DF      |
-|7  |rudis         | 41.33808| 300.3214|DF      |
-|5  |miamiana      | 40.95128| 329.3846|DF      |
-|4  |lamellidens   | 42.09375| 318.2500|DF      |
-|3  |fulva         | 41.01222| 310.5556|DF      |
-|8  |tennesseensis | 40.75000| 311.0000|DF      |
+|      | Species       |    CTmax |     Tmax | Habitat |
+| :--- | :------------ | -------: | -------: | :------ |
+| 1    | ashmeadi      | 42.80833 | 324.0000 | FW      |
+| 2    | floridana     | 42.76852 | 323.7778 | FW      |
+| 6    | picea         | 40.50096 | 262.9615 | DF      |
+| 7    | rudis         | 41.33808 | 300.3214 | DF      |
+| 5    | miamiana      | 40.95128 | 329.3846 | DF      |
+| 4    | lamellidens   | 42.09375 | 318.2500 | DF      |
+| 3    | fulva         | 41.01222 | 310.5556 | DF      |
+| 8    | tennesseensis | 40.75000 | 311.0000 | DF      |
 
 
 ### NOdes of phylogeny
@@ -4782,15 +4759,15 @@ blog: http://phytools.blogspot.com
 
 ### Independent contrast estimates for CTMAX
 
-|  Node   |     cctmax|
-|:----|----------:|
-|1001 | -0.7004417|
-|1002 | -0.5834076|
-|1003 | -1.5296702|
-|1004 |  0.8678094|
-|1005 |  0.2051669|
-|92   |  2.0095026|
-|1006 | -0.0679396|
+| Node |     cctmax |
+| :--- | ---------: |
+| 1001 | -0.7004417 |
+| 1002 | -0.5834076 |
+| 1003 | -1.5296702 |
+| 1004 |  0.8678094 |
+| 1005 |  0.2051669 |
+| 92   |  2.0095026 |
+| 1006 | -0.0679396 |
 
 
 ### Better fig with contrsts of CTmax v Tmax with points labeled by nodes    
@@ -4799,51 +4776,50 @@ blog: http://phytools.blogspot.com
 
 
 
-------    
+------
 <div id='id-section75'/> 
 ### Page 75: 2016-10-03 and 2016-10-04.Climate cascade meeting   
 
 1. Project updates:    
- 	* Gene expression project:
-		* **Go over analyses:**
-			* Phylo anova, PGLS, ancestral trait reconstruction
-			* GXP: basal expression, PGLS with CTmax and gxp parameters
-		* **Go over figure layout for ms**   
-		* Left to do: QC and analyze hsp83 and hsp40    
- 	* Multiple stressors ms:   
-		* **Ask about SHC comments on confusion of mismatch membrane stability**    
- 	* Range limits ms: **SHC lab gave verbal edits:** 
-		* focus on 1 end of thermal niche breadth(although it is nice to mention it because CTmin decreases across lat)--CTmin. 
-		* Dicussion needs to talk about cold adaptation; why trade-offs?
-		* Walk through results better   
- 
- 	* Thermal niche ms: **Lacey and I working on discussion**     
- 	* Stressed in nature MS: Samples to rerun.   
-  	* update: Curtis can no longer work+ write on project   
-		* in reference to missing samples
-		* Fit in time to process Curtis' samples.      
-		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**         
-	* Proteome stability project: **no clue what status is**    
+    * Gene expression project:
+      * **Go over analyses:**
+        * Phylo anova, PGLS, ancestral trait reconstruction
+        * GXP: basal expression, PGLS with CTmax and gxp parameters
+      * **Go over figure layout for ms**   
+      * Left to do: QC and analyze hsp83 and hsp40    
+    * Multiple stressors ms:   
+      * **Ask about SHC comments on confusion of mismatch membrane stability**    
+    * Range limits ms: **SHC lab gave verbal edits:** 
+      * focus on 1 end of thermal niche breadth(although it is nice to mention it because CTmin decreases across lat)--CTmin. 
+      * Dicussion needs to talk about cold adaptation; why trade-offs?
+      * Walk through results better   
+
+    * Thermal niche ms: **Lacey and I working on discussion**     
+    * Stressed in nature MS: Samples to rerun.   
+      * update: Curtis can no longer work+ write on project   
+      * in reference to missing samples
+      * Fit in time to process Curtis' samples.      
+      * **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**         
+    * Proteome stability project: **no clue what status is**    
 
 * Attending SICB - Jan 4-8 New Orleans, Give a talk about range limits paper.   
-	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
-	* **Talk title: Northern range limits of a common forest ant is associated with trade-offs in cold physiology**   
- 	* Apply for funding. Suitor Travel Grant Deadline is october 31    
-	* **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.    
+  * **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+  * **Talk title: Northern range limits of a common forest ant is associated with trade-offs in cold physiology**   
+  * Apply for funding. Suitor Travel Grant Deadline is october 31    
+  * **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.    
 
 * **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
-	* Formatting:    
-		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
-		* Dissertation Abstract is in multiple paragraphs, but for dissertation itself, make 1 paragraph
-	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
-		1. Intent to graduate: February 1st for May.   
-		2. Send defense committe form to grad college---now   
-		3. Graduate college format check March 4th
-		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
-		5. Final thesis April 7th.   
-	
-	
-------    
+  * Formatting:    
+    * Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+    * Dissertation Abstract is in multiple paragraphs, but for dissertation itself, make 1 paragraph
+  * [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+    1. Intent to graduate: February 1st for May.   
+    2. Send defense committe form to grad college---now   
+    3. Graduate college format check March 4th
+    4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+    5. Final thesis April 7th.   
+
+------
 <div id='id-section76'/>
 ### Page 76: 2016-10-03. Membrane stability    
 
@@ -4880,16 +4856,16 @@ Cooper et al. 2014; Functional ecology finds that acclimation ifluences PE/PC ra
 
 ### Summary table of directions of effects for stressors on membrane fluidity    
 
-|          Stress.type      |Heat     |Cold     |Desiccation |pH |
-|:---------------------------|:--------|:--------|:-----------|:--|             
-|membrane.fluidity           |decrease |increase |increase    |   |
-|membrane.rigidity           |increase |decrease |decrease    |   |
-|PC                          |increase |decrease |decrease    |   |
-|PE                          |decrease |increase |increase    |   |
-|PE.PC.ratio                 |decrease |increase |increase    |   |
-|saturated.FA                |increase |decrease |decrease    |   |
-|unsaturated.FA              |decrease |increase |increase    |   |
-|saturated.unsaturated.ratio |increase |decrease |decrease    |   |
+| Stress.type                 | Heat     | Cold     | Desiccation | pH   |
+| :-------------------------- | :------- | :------- | :---------- | :--- |
+| membrane.fluidity           | decrease | increase | increase    |      |
+| membrane.rigidity           | increase | decrease | decrease    |      |
+| PC                          | increase | decrease | decrease    |      |
+| PE                          | decrease | increase | increase    |      |
+| PE.PC.ratio                 | decrease | increase | increase    |      |
+| saturated.FA                | increase | decrease | decrease    |      |
+| unsaturated.FA              | decrease | increase | increase    |      |
+| saturated.unsaturated.ratio | increase | decrease | decrease    |      |
 
 
 refs:   
@@ -4909,8 +4885,8 @@ Holmstrup, M., K. Hedlund, and H. Boriss. 2002. Drought acclimation and lipid co
 
 
 
-	
-------    
+​	
+------
 <div id='id-section77'/>
 ### Page 77: 2016-10-04 Lab Safety Officer (LSO) meeting.   
 
@@ -4922,15 +4898,15 @@ Agenda:
 
 * staff changes- new lab safety coordinator    
 * lab fires at uvm 
-	* Chemistry- no blame; removing syringe that had fire . no evac, not a big fire 
-	* Votey building - small fire; no damage no hurt; alcohol near a burner--fire
-		* faculty said not to leave in 1 class; that is bad. You should leave if fire alarm goes off.  
+  * Chemistry- no blame; removing syringe that had fire . no evac, not a big fire 
+  * Votey building - small fire; no damage no hurt; alcohol near a burner--fire
+    * faculty said not to leave in 1 class; that is bad. You should leave if fire alarm goes off.  
 * Explosion at U Hawaii
-	* **post doc in lab; working with pressure vessel (creating fuel for bacteria to make biofilms and biofuels); mixing hydrogen and oxygen and some carbon dioxide. Did over and over, and had minor issues; but in march it blew up. Took her arm off. Lab had good safety; but regulatory agents don't know how stuff get mixed; we all need to get better at hazard assessment. Fined $115,000; $750,000 building damage. Brought up issue of coverage of isurance for post doc researchers**    
-	* Violations: Failed t provide a safe workplace; failed to ensure employees to follow proper procedures. Chemical Hygiene plan did not include SOPs for relevant safety. 
-	
+  * **post doc in lab; working with pressure vessel (creating fuel for bacteria to make biofilms and biofuels); mixing hydrogen and oxygen and some carbon dioxide. Did over and over, and had minor issues; but in march it blew up. Took her arm off. Lab had good safety; but regulatory agents don't know how stuff get mixed; we all need to get better at hazard assessment. Fined $115,000; $750,000 building damage. Brought up issue of coverage of isurance for post doc researchers**    
+  * Violations: Failed t provide a safe workplace; failed to ensure employees to follow proper procedures. Chemical Hygiene plan did not include SOPs for relevant safety. 
+
 * Fine at Oregon   
-	* $275,000 by EPA for mismanagement of chemicals; did not get rid of their chemicals; no labeled; every bottle out there should be labeled.  
+  * $275,000 by EPA for mismanagement of chemicals; did not get rid of their chemicals; no labeled; every bottle out there should be labeled.  
 
 **We're going to be inspected by the US EPA and the state department(DEC)**
 
@@ -5006,8 +4982,8 @@ Safety Audits at UVM: LabCliq. LSO can do corrective actions but the PI has to u
 
 
 
-	
-------    
+​	
+------
 <div id='id-section78'/>
 ### Page 78: 2016-10-05. Hsp gxp function valued trait fig  
 
@@ -5048,11 +5024,11 @@ fud<-function(T=seq(25,70,.1),Tm=40,slope=1.8,max=50){
 
 ### parameter fits  
 
-|    |  Estimate| Std. Error|   t value| p value|
-|:---|---------:|----------:|---------:|------------------:|
-|max | 76.179606|  8.0617514|  9.449511|          0.0000310|
-|Tm  | 37.432787|  0.5585165| 67.021804|          0.0000000|
-|a   |  1.765851|  0.3248254|  5.436310|          0.0009701|
+|      |  Estimate | Std. Error |   t value |   p value |
+| :--- | --------: | ---------: | --------: | --------: |
+| max  | 76.179606 |  8.0617514 |  9.449511 | 0.0000310 |
+| Tm   | 37.432787 |  0.5585165 | 67.021804 | 0.0000000 |
+| a    |  1.765851 |  0.3248254 |  5.436310 | 0.0009701 |
 
 
 ### With units and real data
@@ -5090,8 +5066,7 @@ box()
 
 ![](https://cloud.githubusercontent.com/assets/4654474/19113928/ceaa3140-8ad9-11e6-8693-a8cb0c175eb9.jpeg)
 
-	
-------    
+------
 <div id='id-section79'/>
 ### Page 79: 2016-10-06. SHC lab meeting: NSF post doc app    
 
@@ -5134,51 +5109,50 @@ Notes:
 
 
 
-	
-------    
+​	
+------
 <div id='id-section80'/>
 ### Page 80: 2016-10-07. Prepping cliamte cascade meeting   
 1. Project updates:    
- 	* Gene expression project:
-		* **Go over analyses:**
-		* **Go over figure layout for ms**   
- 	* Multiple stressors ms:   
-		* **Ask about SHC comments on confusion of mismatch membrane stability**    
- 	* Range limits ms: **SHC lab gave verbal edits:** 
-		* focus on 1 end of thermal niche breadth(although it is nice to mention it because CTmin decreases across lat)--CTmin. 
-		* Dicussion needs to talk about cold adaptation; why trade-offs?
-		* Walk through results better   
- 
- 	* Thermal niche ms: **Lacey and I working on discussion**     
- 	* Stressed in nature MS: Samples to rerun.   
-  	* update: Curtis can no longer work+ write on project   
-		* in reference to missing samples
-		* Fit in time to process Curtis' samples.      
-		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**         
-	* Proteome stability project: **no clue what status is**    
+    * Gene expression project:
+      * **Go over analyses:**
+      * **Go over figure layout for ms**   
+    * Multiple stressors ms:   
+      * **Ask about SHC comments on confusion of mismatch membrane stability**    
+    * Range limits ms: **SHC lab gave verbal edits:** 
+      * focus on 1 end of thermal niche breadth(although it is nice to mention it because CTmin decreases across lat)--CTmin. 
+      * Dicussion needs to talk about cold adaptation; why trade-offs?
+      * Walk through results better   
+
+    * Thermal niche ms: **Lacey and I working on discussion**     
+    * Stressed in nature MS: Samples to rerun.   
+      * update: Curtis can no longer work+ write on project   
+      * in reference to missing samples
+      * Fit in time to process Curtis' samples.      
+      * **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**         
+    * Proteome stability project: **no clue what status is**    
 
 * Attending SICB - Jan 4-8 New Orleans, Give a talk about range limits paper.   
-	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
-	* **Talk title: Northern range limits of a common forest ant is associated with trade-offs in cold physiology**   
- 	* Apply for funding. Suitor Travel Grant Deadline is october 31    
-	* **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.    
+  * **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+  * **Talk title: Northern range limits of a common forest ant is associated with trade-offs in cold physiology**   
+  * Apply for funding. Suitor Travel Grant Deadline is october 31    
+  * **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.    
 
 * **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
-	* Formatting:    
-		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
-		* Dissertation Abstract is in multiple paragraphs, but for dissertation itself, make 1 paragraph
-	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
-		1. Intent to graduate: February 1st for May.   
-		2. Send defense committe form to grad college---now   
-		3. Graduate college format check March 4th
-		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
-		5. Final thesis April 7th.   
-	
+  * Formatting:    
+    * Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+    * Dissertation Abstract is in multiple paragraphs, but for dissertation itself, make 1 paragraph
+  * [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+    1. Intent to graduate: February 1st for May.   
+    2. Send defense committe form to grad college---now   
+    3. Graduate college format check March 4th
+    4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+    5. Final thesis April 7th.   
 
 
 
-	
-------    
+​	
+------
 <div id='id-section81'/>
 ### Page 81: 2016-10-11.  ANCOVA models for testing interaction of hsp gxp parameter and habitat on CTmax   
 
@@ -5279,11 +5253,11 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 ```
 ### Summary table of each parameter and its interaction with habitat on CTmax:    
 
-|summary.table       |max70 |slope70 |Tm70 |max40 |slope40 |Tm40 |max83 |slope83 |Tm83 |
-|:-------------------|:-----|:-------|:----|:-----|:-------|:----|:-----|:-------|:----|
-|habitat             |yes   |yes     |yes  |yes   |yes     |yes  |yes   |yes     |yes  |
-|parameter           |no    |yes     |yes  |no    |no      |yes  |no    |no      |no   |
-|habitat * parameter |no    |no      |no   |no    |no      |yes  |no    |no      |no   |
+| summary.table       | max70 | slope70 | Tm70 | max40 | slope40 | Tm40 | max83 | slope83 | Tm83 |
+| :------------------ | :---- | :------ | :--- | :---- | :------ | :--- | :---- | :------ | :--- |
+| habitat             | yes   | yes     | yes  | yes   | yes     | yes  | yes   | yes     | yes  |
+| parameter           | no    | yes     | yes  | no    | no      | yes  | no    | no      | no   |
+| habitat * parameter | no    | no      | no   | no    | no      | yes  | no    | no      | no   |
 
 
 
@@ -5365,22 +5339,21 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 ### Summary table of effect of habitat on hsp gxp parameter   
 
 
-|param   |habitat |
-|:-------|:-------|
-|max70   |yes     |
-|slope70 |yes     |
-|Tm70    |yes     |
-|max40   |yes     |
-|slope40 |yes     |
-|Tm40    |yes     |
-|max83   |yes     |
-|slope83 |no      |
-|Tm83    |yes     |
+| param   | habitat |
+| :------ | :------ |
+| max70   | yes     |
+| slope70 | yes     |
+| Tm70    | yes     |
+| max40   | yes     |
+| slope40 | yes     |
+| Tm40    | yes     |
+| max83   | yes     |
+| slope83 | no      |
+| Tm83    | yes     |
 
 
 
-	
-------    
+------
 <div id='id-section82'/>
 ### Page 82: 2016-10-11. variance partitioning in CTmax of aphaeno
 
@@ -5414,8 +5387,7 @@ $indfract
 
 
 
-	
-------    
+------
 <div id='id-section83'/>
 ### Page 83: 2016-10-12.  Testing effect of MAT on Hsp gxp and looking at correlations between phylogeny and climate.   
 
@@ -5546,14 +5518,14 @@ F-statistic: 1.725 on 1 and 54 DF,  p-value: 0.1946
 ### **Correlation between Mean Annual Temperature (MAT), Tmax, and 4 phylogenetic axes** 
 
 
-|           | MAT| Tmax| Axis.1| Axis.2| Axis.3| Axis.4|
-|:----------|----------:|----------:|------:|------:|------:|------:|
-|MAT |      1.000|      0.910|  0.857|  0.197|  0.182|  0.132|
-|Tmax |      0.910|      1.000|  0.836|  0.128|  0.204|  0.110|
-|Axis.1     |      0.857|      0.836|  1.000|  0.002|  0.000|  0.008|
-|Axis.2     |      0.197|      0.128|  0.002|  1.000|  0.000| -0.002|
-|Axis.3     |      0.182|      0.204|  0.000|  0.000|  1.000|  0.000|
-|Axis.4     |      0.132|      0.110|  0.008| -0.002|  0.000|  1.000|
+|        |   MAT |  Tmax | Axis.1 | Axis.2 | Axis.3 | Axis.4 |
+| :----- | ----: | ----: | -----: | -----: | -----: | -----: |
+| MAT    | 1.000 | 0.910 |  0.857 |  0.197 |  0.182 |  0.132 |
+| Tmax   | 0.910 | 1.000 |  0.836 |  0.128 |  0.204 |  0.110 |
+| Axis.1 | 0.857 | 0.836 |  1.000 |  0.002 |  0.000 |  0.008 |
+| Axis.2 | 0.197 | 0.128 |  0.002 |  1.000 |  0.000 | -0.002 |
+| Axis.3 | 0.182 | 0.204 |  0.000 |  0.000 |  1.000 |  0.000 |
+| Axis.4 | 0.132 | 0.110 |  0.008 | -0.002 |  0.000 |  1.000 |
 
 ### 20161013 follow up: checking 18s HKG stability
 
@@ -6254,52 +6226,51 @@ Multiple R-squared:  0.3278,	Adjusted R-squared:  0.2751
 F-statistic: 6.218 on 4 and 51 DF,  p-value: 0.0003732
 
 ```
-	
-------    
+
+------
 <div id='id-section84'/>
 ### Page 84: 2016-10-12]. Updating climate cascade to do list. 
 
 1. Project updates:    
- 	* Hsp gene expression + Ctmax project:
-		* **Go over updated figures**
-		* Starting to write: working title-**Shifts in the reaction norms of heat shock protein gene expression accompany evolutionary innovations in thermal tolerance of forest ants** 
- 	* Multiple stressors ms:   
-		* **Sent SHC another version**    
- 	* Range limits ms: **SHC lab gave verbal edits:** 
-		* focus on 1 end of thermal niche breadth(although it is nice to mention it because CTmin decreases across lat)--CTmin. 
-		* Dicussion needs to talk about cold adaptation; why trade-offs?
-		* Walk through results better   
- 
- 	* Thermal niche ms: **Lacey and I working on discussion**     
- 	* Stressed in nature MS: Samples to rerun.   
-  	* update: Curtis can no longer work+ write on project   
-		* in reference to missing samples
-		* Fit in time to process Curtis' samples.      
-		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**         
-	* Proteome stability project: **should be getting data soon**    
+    * Hsp gene expression + Ctmax project:
+      * **Go over updated figures**
+      * Starting to write: working title-**Shifts in the reaction norms of heat shock protein gene expression accompany evolutionary innovations in thermal tolerance of forest ants** 
+    * Multiple stressors ms:   
+      * **Sent SHC another version**    
+    * Range limits ms: **SHC lab gave verbal edits:** 
+      * focus on 1 end of thermal niche breadth(although it is nice to mention it because CTmin decreases across lat)--CTmin. 
+      * Dicussion needs to talk about cold adaptation; why trade-offs?
+      * Walk through results better   
+
+    * Thermal niche ms: **Lacey and I working on discussion**     
+    * Stressed in nature MS: Samples to rerun.   
+      * update: Curtis can no longer work+ write on project   
+      * in reference to missing samples
+      * Fit in time to process Curtis' samples.      
+      * **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**         
+    * Proteome stability project: **should be getting data soon**    
 
 * Attending SICB - Jan 4-8 New Orleans, Give a talk about range limits paper.   
-	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
-	* **Talk title: Northern range limits of a common forest ant is associated with trade-offs in cold physiology**   
- 	* Apply for funding. Suitor Travel Grant Deadline is october 31    
-	* **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.    
+  * **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+  * **Talk title: Northern range limits of a common forest ant is associated with trade-offs in cold physiology**   
+  * Apply for funding. Suitor Travel Grant Deadline is october 31    
+  * **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.    
 
 * **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
-	* Formatting:    
-		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
-		* Dissertation Abstract is in multiple paragraphs, but for dissertation itself, make 1 paragraph
-	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
-		1. Intent to graduate: February 1st for May.   
-		2. Send defense committe form to grad college---now   
-		3. Graduate college format check March 4th
-		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
-		5. Final thesis April 7th.   
+  * Formatting:    
+    * Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+    * Dissertation Abstract is in multiple paragraphs, but for dissertation itself, make 1 paragraph
+  * [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+    1. Intent to graduate: February 1st for May.   
+    2. Send defense committe form to grad college---now   
+    3. Graduate college format check March 4th
+    4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+    5. Final thesis April 7th.   
 
 
 
 
-	
-------    
+------
 <div id='id-section85'/>
 ### Page 85: 2016-10-14. Paper note: Puentes, A., G. Granath, and J. Ågren. 2016. Similarity in G matrix structure among natural populations of Arabidopsis lyrata. Evolution 70:2370–2386.   
 
@@ -6310,8 +6281,8 @@ Similar paper  here: [Page 60: 2016-09-01](#id-section60). Paper notes: Paccard 
 But Puentes et al. focus on A. lyrata in thier native range(Norway-Sweden) and in the field, and Paccard et al. 2016 use populations from USA-Cananda in lab conditions. Peuntes uses 5 trais, Paccard used 10 traits. One of Cortlett Wood's papers suggests that the number of traits can alter how G changes among environments. Check what traits were used between studies.
 
 ### Summary of findings: G is stable between Norway and Sweden populations
-	
-------    
+
+------
 <div id='id-section86'/>
 ### Page 86: 2016-10-14.  [Wiley House Style Guide](https://authorservices.wiley.com/bauthor/House_style_guide_US4520101451884.pdf)    
 
@@ -6342,7 +6313,7 @@ blue in color, inactivates its activity, and completely filled. Does the term ca
 suggest that the alternative is careless monitoring?
 ```
 
- 
+
 ### Balancing a sentence:   
 ```
 It is important to ensure that a sentence balances on either side of certain words (correlatives) that
@@ -6403,8 +6374,7 @@ common error before “however” and “nevertheless”).
 • Use en dashes, not hyphens, for associations (e.g., dose–response curve).
 ```
 
-	
-------    
+------
 <div id='id-section87'/>
 ### Page 87: 2016-10-14. NSF post doc app meeting: Keller Lab
 
@@ -6464,95 +6434,95 @@ NSF use to have bioinformatics post doc competition and replaced with narrowly d
 
 
 
-	
-------    
+​	
+------
 <div id='id-section88'/>
 ### Page 88: 2016-10-18. Climate cascade meeting   
 
 1. Project updates:    
- 	* Hsp gene expression + Ctmax project:
-		* **Go over updated figures**  
-		* figure 3, SHC says to switch back branches
-		* figure 4, color code by habitat type, NJG:don't use dot dash, use dash
-		* Starting to write: working title-**Shifts in the reaction norms of heat shock protein gene expression accompany evolutionary innovations in thermal tolerance of forest ants** 
-		* need to start writing methods and results
- 	* Multiple stressors ms:   
-		* **Sent SHC another version** ; should submit soon   
- 	* Range limits ms: **SHC lab gave verbal edits:** 
-		* focus on 1 end of thermal niche breadth(although it is nice to mention it because CTmin decreases across lat)--CTmin. 
-		* Dicussion needs to talk about cold adaptation; why trade-offs?
-		* Walk through results better   
- 
- 	* Thermal niche ms: **Lacey and I working on discussion**     
- 	* Stressed in nature MS: Samples to rerun.   
-  	* update: Curtis can no longer work+ write on project   
-		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
-	* Proteome stability project: **should be getting data soon**    
+    * Hsp gene expression + Ctmax project:
+      * **Go over updated figures**  
+      * figure 3, SHC says to switch back branches
+      * figure 4, color code by habitat type, NJG:don't use dot dash, use dash
+      * Starting to write: working title-**Shifts in the reaction norms of heat shock protein gene expression accompany evolutionary innovations in thermal tolerance of forest ants** 
+      * need to start writing methods and results
+    * Multiple stressors ms:   
+      * **Sent SHC another version** ; should submit soon   
+    * Range limits ms: **SHC lab gave verbal edits:** 
+      * focus on 1 end of thermal niche breadth(although it is nice to mention it because CTmin decreases across lat)--CTmin. 
+      * Dicussion needs to talk about cold adaptation; why trade-offs?
+      * Walk through results better   
+
+    * Thermal niche ms: **Lacey and I working on discussion**     
+    * Stressed in nature MS: Samples to rerun.   
+      * update: Curtis can no longer work+ write on project   
+      * **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
+    * Proteome stability project: **should be getting data soon**    
 
 * Attending SICB - Jan 4-8 New Orleans, Give a talk about range limits paper.   
-	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
-	* **Talk title: Northern range limits of a common forest ant is associated with trade-offs in cold physiology**   
- 	* Apply for funding. Suitor Travel Grant Deadline is october 31    
-		* **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.  
-		* Application submitted today 2016-10-18    
+  * **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+  * **Talk title: Northern range limits of a common forest ant is associated with trade-offs in cold physiology**   
+  * Apply for funding. Suitor Travel Grant Deadline is october 31    
+    * **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.  
+    * Application submitted today 2016-10-18    
 
 * **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
-	* Formatting:    
-		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
-		* Dissertation Abstract is in multiple paragraphs, but for dissertation itself, make 1 paragraph
-	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
-		1. Intent to graduate: February 1st for May.   
-		2. Send defense committe form to grad college---now   
-		3. Graduate college format check March 4th
-		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
-		5. Final thesis April 7th.  
+  * Formatting:    
+    * Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+    * Dissertation Abstract is in multiple paragraphs, but for dissertation itself, make 1 paragraph
+  * [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+    1. Intent to graduate: February 1st for May.   
+    2. Send defense committe form to grad college---now   
+    3. Graduate college format check March 4th
+    4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+    5. Final thesis April 7th.  
 
-------    
+------
 <div id='id-section89'/>
 ### Page 89: 2016-10-25.  Climate cascade updated list   
 
 1. Project updates:    
- 	* Hsp gene expression + Ctmax project:
-		* figure 3, SHC says to switch back branches
-		* Starting to write: working title-**Shifts in the reaction norms of heat shock protein gene expression accompany evolutionary innovations in thermal tolerance of forest ants** 
-		* need to start writing methods and results; submit to **MBE**
- 	* Multiple stressors ms:   
-		* submitted **2016-10-24**    
- 	* Range limits ms: **SHC lab gave verbal edits:** 
-		* focus on 1 end of thermal niche breadth(although it is nice to mention it because CTmin decreases across lat)--CTmin. 
-		* Dicussion needs to talk about cold adaptation; why trade-offs?
-		* Walk through results better   
- 	* Thermal niche ms: **Lacey and I working on discussion**     
- 	* Stressed in nature MS: Samples to rerun.   
-  	* update: Curtis can no longer work+ write on project   
-		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
-	* Proteome stability project:
-		* **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
-			* Rerun mass spec, but loading more proteins (Bethany)
-	* Modulation of Hsp ms:    
-		* make fig 2 without spline curves with just points   
-		* grab elevation data for each sampling point in R
-		
+    * Hsp gene expression + Ctmax project:
+      * figure 3, SHC says to switch back branches
+      * Starting to write: working title-**Shifts in the reaction norms of heat shock protein gene expression accompany evolutionary innovations in thermal tolerance of forest ants** 
+      * need to start writing methods and results; submit to **MBE**
+    * Multiple stressors ms:   
+      * submitted **2016-10-24**    
+    * Range limits ms: **SHC lab gave verbal edits:** 
+      * focus on 1 end of thermal niche breadth(although it is nice to mention it because CTmin decreases across lat)--CTmin. 
+      * Dicussion needs to talk about cold adaptation; why trade-offs?
+      * Walk through results better   
+    * Thermal niche ms: **Lacey and I working on discussion**     
+    * Stressed in nature MS: Samples to rerun.   
+      * update: Curtis can no longer work+ write on project   
+      * **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
+    * Proteome stability project:
+      * **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
+        * Rerun mass spec, but loading more proteins (Bethany)
+    * Modulation of Hsp ms:    
+      * make fig 2 without spline curves with just points   
+      * grab elevation data for each sampling point in R
+
 * Attending SICB - Jan 3-8 New Orleans, Give a talk about range limits paper.   
-	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
-	* **Talk title: Northern range limits of a common forest ant is associated with trade-offs in cold physiology**   
- 	* Apply for funding. Suitor Travel Grant Deadline is october 31    
-		* **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.  
-		* Application submitted today 2016-10-18    
+  * **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+  * **Talk title: Northern range limits of a common forest ant is associated with trade-offs in cold physiology**   
+  * Apply for funding. Suitor Travel Grant Deadline is october 31    
+    * **Wrote up suiter award app**. I need to find out pricing (~ $1000) and then get everything signed. Waiting to find better flight prices.  
+    * Application submitted today 2016-10-18    
 
 * **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
-	* Formatting:    
-		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
-		* Dissertation Abstract is in multiple paragraphs, but for dissertation itself, make 1 paragraph
-	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
-		1. Intent to graduate: February 1st for May.   
-		2. Send defense committe form to grad college---now   
-		3. Graduate college format check March 4th
-		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
-		5. Final thesis April 7th.  
+  * Formatting:    
+    * Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+    * Dissertation Abstract is in multiple paragraphs, but for dissertation itself, make 1 paragraph
+  * [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+    1. Intent to graduate: February 1st for May.   
+    2. Send defense committe form to grad college---now   
+    3. Graduate college format check March 4th
+    4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+    5. Final thesis April 7th.  
 
 
-------    
+------
 <div id='id-section90'/>
 ### Page 90: 2016-10-25. Meeting with M Pespeni   
 
@@ -6562,7 +6532,7 @@ Meeting time, Wednesday 2-4; 2016-10-26
 
 * **Potential post doc oppportunity at MBL(Marine Biological Laboratory)**    
 
-	* Previous email pitch with prospective post doc mentor   
+  * Previous email pitch with prospective post doc mentor   
 
 ```
 A question that excites me is how organisms persist and respond to environmental change in natural populations?
@@ -6572,7 +6542,7 @@ So this would involve sampling rotifers throughout the season (4-6 times), then 
 Establishing clones would allow one to assess the evolutionary potential at each point in the season by estimating the variance-covariance G matrix. Selection should erode genetic variation, so G should be altered throughout the season that may hinder or facilitate future responses.
 And evolutionary potential is really unique in rotifers because they can be clonal or mate. So I'd be interested in comparing G between these life strategies. 
 The problem with a G matrix, is that we have no clue what the key molecular players are: so to tackle this problem, one could leverage the collected data into a qtl analysis too.  
-``` 
+```
 
 I think it is fun to think about the evolutionary potential to environmental change for organisms that can switch from asexual to sexual reproduction. If you compare the G matrix between them, sexually produced offspring populations should have more genetic variance than clonal offspring populations. These animals are resilient to environmental change because of this! So it'd be cool to compare G between asexual vs sexual and whether trade-offs can shift among traits.  
 
@@ -6593,7 +6563,7 @@ I think it is fun to think about the evolutionary potential to environmental cha
 * What is changing G? What is the predictive power? model it. 
 * Try to talk to Mike Angiletta, Rus Lande. (Genetic accomodation and assimilation)  
 
-------    
+------
 <div id='id-section91'/>
 ### Page 91: 2016-10-26 SICB meeting talk    
 
@@ -6601,22 +6571,21 @@ I think it is fun to think about the evolutionary potential to environmental cha
 
 125-7  Sunday, Jan. 8 11:45    
 
-
-------    
+------
 <div id='id-section92'/>
 ### Page 92: 2016-10-27. Proteome stability project update  
 
 * reminder: generated unfolding reaction norms for 6 ant colonies (3 colonies per species).   
 
 * received data from Bethany 2016-10-26
-	* excel sheets wit relative abundance to first sample is in: 2016_Protein_stability_evolution/Data/2016/10_Oct
-		* in this path, you'll see 3 folders, 1 set of samples queried against 18 species (it actually has a combo of ants/microbes because Bethany just took the top 18 searches) from uniprot. The other folder queries the NCBI database. And the last folder contains raw mass spec files.   
-		
-* Bethany is going to run more of the sample to see if we can ID more proteins. 
-	
+  * excel sheets wit relative abundance to first sample is in: 2016_Protein_stability_evolution/Data/2016/10_Oct
+    * in this path, you'll see 3 folders, 1 set of samples queried against 18 species (it actually has a combo of ants/microbes because Bethany just took the top 18 searches) from uniprot. The other folder queries the NCBI database. And the last folder contains raw mass spec files.   
 
-	
-------    
+* Bethany is going to run more of the sample to see if we can ID more proteins. 
+
+  ​
+
+------
 <div id='id-section93'/>
 ### Page 93: 2016-10-31.  CTmax and Hsp reaction norm stats   
 
@@ -6898,60 +6867,58 @@ F-statistic: 7.487 on 2 and 44 DF,  p-value: 0.00159
 
 **Table summary:**    
 
-|Parameter |hsp83 |hsc70.4.h2 |hsp40 |
-|:---------|:-----|:----------|:-----|
-|basal     |no    |no         |no    |
-|slope     |no    |yes        |no    |
-|Tm        |yes   |yes        |yes   |
-|max       |yes   |yes        |no    |
+| Parameter | hsp83 | hsc70.4.h2 | hsp40 |
+| :-------- | :---- | :--------- | :---- |
+| basal     | no    | no         | no    |
+| slope     | no    | yes        | no    |
+| Tm        | yes   | yes        | yes   |
+| max       | yes   | yes        | no    |
 
 
 
-	
-------    
+------
 <div id='id-section94'/>
 ### Page 94: 2016-10-31; 2016-11-01. Climate cascade meeting setup and notes    
 
 1. Project updates:    
- 	* **Hsp gene expression + Ctmax project:**
-		* figure 3, SHC says to switch back branches
-		* Wrote up methods and results   
-		* Submit to? MBE, evolution, Goerge Somero and Brent think PNAS is a good fit. SHC and NJG thoughts?  
-		* reference for rad-seq:HF3-picea,fbragg2-floridana,KH4-ashmeadi,Duke6-mariae,ala2-miamiana, Lex13-rudis    
- 	* **Multiple stressors ms:**   
-		* submitted **2016-10-24**  
-		* in review **2016-11-01**
- 	* **Range limits ms**: SHC lab gave verbal edit, still need to incorporate
- 	* **Thermal niche ms:** Lacey and I working on discussion     
- 	* **Stressed in nature MS: Samples to rerun.**       
-  		* update: Curtis can no longer work+ write on project   
-		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
-	* **Proteome stability project:**    
-		* **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
-			* Rerun mass spec, but loading more proteins (Bethany)
-	* **Modulation of Hsp ms:**        
-		* make fig 2 without spline curves with just points (done)   
-		* grab elevation data for each sampling point in R (done)
-		
+    * **Hsp gene expression + Ctmax project:**
+        * figure 3, SHC says to switch back branches
+        * Wrote up methods and results   
+        * Submit to? MBE, evolution, Goerge Somero and Brent think PNAS is a good fit. SHC and NJG thoughts?  
+        * reference for rad-seq:HF3-picea,fbragg2-floridana,KH4-ashmeadi,Duke6-mariae,ala2-miamiana, Lex13-rudis    
+    * **Multiple stressors ms:**   
+        * submitted **2016-10-24**  
+        * in review **2016-11-01**
+    * **Range limits ms**: SHC lab gave verbal edit, still need to incorporate
+    * **Thermal niche ms:** Lacey and I working on discussion     
+    * **Stressed in nature MS: Samples to rerun.**       
+        * update: Curtis can no longer work+ write on project   
+        * **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
+    * **Proteome stability project:**    
+        * **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
+          * Rerun mass spec, but loading more proteins (Bethany)
+    * **Modulation of Hsp ms:**        
+        * make fig 2 without spline curves with just points (done)   
+        * grab elevation data for each sampling point in R (done)
+
 2. **Attending SICB - Jan 3-8 New Orleans**, Give a talk about range limits paper.   
-	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
- 	* Apply for funding. Suitor Travel Grant Deadline is october 31    
-		* **Wrote up suiter award app** Application submitted today 2016-10-18    
-			* Bought hotel, rooming with Emily M., need to buy airplane tickets
+    * **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+    * Apply for funding. Suitor Travel Grant Deadline is october 31    
+      * **Wrote up suiter award app** Application submitted today 2016-10-18    
+        * Bought hotel, rooming with Emily M., need to buy airplane tickets
 
 3. **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
-	* Formatting:    
-		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
-	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
-		1. Intent to graduate: February 1st for May.   
-		2. Send defense committe form to grad college---now   
-		3. Graduate college format check March 4th
-		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
-		5. Final thesis April 7th.  
+    * Formatting:    
+      * Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+    * [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+      1. Intent to graduate: February 1st for May.   
+      2. Send defense committe form to grad college---now   
+      3. Graduate college format check March 4th
+      4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+      5. Final thesis April 7th.  
 
 
-	
-------    
+------
 <div id='id-section95'/>
 ### Page 95: 2016-11-02. Ancestral trait reconstruction and CTmax PGLS ANBE common garden
 
@@ -7394,7 +7361,7 @@ F-statistic:  2.19 on 2 and 5 DF,  p-value: 0.2074
 
 
 
-------    
+------
 <div id='id-section96'/>
 ### Page 96: 2016-11-03. notes from skype meeting with KG, potential post doc opp    
 
@@ -7409,7 +7376,7 @@ Other foundations:
 2. Life sciences research foundation
 3. Ford Foundation
 4. Hell and Hay whitney foundation? 
-**check on deadlines**
+   **check on deadlines**
 
 There is a genome for 15 different species. huge range in genome sizes, why?
 
@@ -7419,8 +7386,7 @@ MBL are conveners; convening power
 
 
 
-	
-------    
+------
 <div id='id-section97'/>
 ### Page 97: 2016-11-04. ms in prep
 
@@ -7441,65 +7407,65 @@ MBL are conveners; convening power
 
 
 
-	
-------    
+​	
+------
 <div id='id-section98'/>
 ### Page 98: 2016-11-08.  climate cascade meeting   
 
 1. Project updates:    
- 	* **Hsp gene expression + Ctmax project:**
-		* figure 3, SHC says to switch back branches
-		* Wrote up methods and results-- go over with Nick then send to SHC   
-		* Submit to PNAS
- 	* **Multiple stressors ms:**   
-		* submitted **2016-10-24**  
-		* in review **2016-11-01**
- 	* **Range limits ms**: SHC lab gave verbal edit, still need to incorporate
- 	* **Thermal niche ms:** Lacey and I working on discussion...eta?     
- 	* **Stressed in nature MS: Samples to rerun.**       
-  		* update: Curtis can no longer work+ write on project   
-		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
-	* **Proteome stability project:**    
-		* **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
-			* Rerun mass spec, but loading more proteins (Bethany)
-			
+    * **Hsp gene expression + Ctmax project:**
+        * figure 3, SHC says to switch back branches
+        * Wrote up methods and results-- go over with Nick then send to SHC   
+        * Submit to PNAS
+    * **Multiple stressors ms:**   
+        * submitted **2016-10-24**  
+        * in review **2016-11-01**
+    * **Range limits ms**: SHC lab gave verbal edit, still need to incorporate
+    * **Thermal niche ms:** Lacey and I working on discussion...eta?     
+    * **Stressed in nature MS: Samples to rerun.**       
+        * update: Curtis can no longer work+ write on project   
+        * **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
+    * **Proteome stability project:**    
+        * **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
+          * Rerun mass spec, but loading more proteins (Bethany)
+
 2. **Attending SICB - Jan 3-8 New Orleans**, Give a talk about range limits paper.   
-	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
- 	* Apply for funding. Suitor Travel Grant Deadline is october 31    
-		* **Wrote up suiter award app** Application submitted today 2016-10-18    
-			* Bought hotel, rooming with Emily M., airplane tickets
+    * **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+    * Apply for funding. Suitor Travel Grant Deadline is october 31    
+      * **Wrote up suiter award app** Application submitted today 2016-10-18    
+        * Bought hotel, rooming with Emily M., airplane tickets
 
 3. **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
-	* Formatting:    
-		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
-			* started outline   
-			
-	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
-		1. Intent to graduate: February 1st for May.   
-		2. Send defense committe form to grad college---now   
-		3. Graduate college format check March 4th
-		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
-		5. Final thesis April 7th.  
+    * Formatting:    
+      * Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+        * started outline   
+
+    * [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+      1. Intent to graduate: February 1st for May.   
+      2. Send defense committe form to grad college---now   
+      3. Graduate college format check March 4th
+      4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+      5. Final thesis April 7th.  
 
 
 
-	
-------    
+​	
+------
 <div id='id-section99'/>
 ### Page 99: 2016-11-08. writing session with NJG   
 **Writing Hsp reaction norm + CTmax ms in PNAS format**   
 
 1. Someting to explore: variance among colony level means of CTmax in open vs closed habitats   
-	* Narrow variance in warmer places could mean more stabilizing selection
-	* 
+    * Narrow variance in warmer places could mean more stabilizing selection
+    * ​
 2. Try variance partitioning CTmax into Hsp, local environment, and phylogenetics    
- 	* Make CTmax vs Tmax figures with overlay of habitat type.  
-		* regress against latitude and PCA of climate variables too
-	* try framing in terms of integrating *proximal* and *ultimate* explanations   
+    * Make CTmax vs Tmax figures with overlay of habitat type.  
+      * regress against latitude and PCA of climate variables too
+    * try framing in terms of integrating *proximal* and *ultimate* explanations   
 3. put rxn norms in better context of theory; what is the alternative to hotter is better?   
-	* Frazier et al. 2006, *AmNat*; the alternative is shifts in rxn norm horizontally, but not vertically= perfect-compensation hypothesis. In other words, biochemical adaptation can overcome rate-limiting effects of low temperature so that rmax is independent of Topt. Not mentioned in this explanation is that there can be constraints at higher temperatures that can potentially cause this pattern. 
+    * Frazier et al. 2006, *AmNat*; the alternative is shifts in rxn norm horizontally, but not vertically= perfect-compensation hypothesis. In other words, biochemical adaptation can overcome rate-limiting effects of low temperature so that rmax is independent of Topt. Not mentioned in this explanation is that there can be constraints at higher temperatures that can potentially cause this pattern. 
 
-------    
+------
 <div id='id-section99.1'/>
 ### 1. among colony variance
 ```R
@@ -7523,30 +7489,29 @@ Cumulative Proportion  0.7016431 0.8691156 0.94510623 0.97698029 0.98845302 0.99
 
 knitr::kable(round(bclim$loadings[,1:2],3))
 ```
-|      | Comp.1| Comp.2|
-|:-----|------:|------:|
-|bio1  | -0.269| -0.035|
-|bio2  | -0.144| -0.354|
-|bio3  | -0.268| -0.059|
-|bio4  |  0.271|  0.015|
-|bio5  | -0.249| -0.102|
-|bio6  | -0.267| -0.029|
-|bio7  |  0.267| -0.013|
-|bio8  | -0.214| -0.040|
-|bio9  | -0.265| -0.073|
-|bio10 | -0.258| -0.061|
-|bio11 | -0.270| -0.034|
-|bio12 | -0.231| -0.123|
-|bio13 | -0.230|  0.171|
-|bio14 |  0.078| -0.495|
-|bio15 | -0.215|  0.319|
-|bio16 | -0.238|  0.148|
-|bio17 |  0.058| -0.514|
-|bio18 | -0.248|  0.145|
-|bio19 | -0.145| -0.385|
+|       | Comp.1 | Comp.2 |
+| :---- | -----: | -----: |
+| bio1  | -0.269 | -0.035 |
+| bio2  | -0.144 | -0.354 |
+| bio3  | -0.268 | -0.059 |
+| bio4  |  0.271 |  0.015 |
+| bio5  | -0.249 | -0.102 |
+| bio6  | -0.267 | -0.029 |
+| bio7  |  0.267 | -0.013 |
+| bio8  | -0.214 | -0.040 |
+| bio9  | -0.265 | -0.073 |
+| bio10 | -0.258 | -0.061 |
+| bio11 | -0.270 | -0.034 |
+| bio12 | -0.231 | -0.123 |
+| bio13 | -0.230 |  0.171 |
+| bio14 |  0.078 | -0.495 |
+| bio15 | -0.215 |  0.319 |
+| bio16 | -0.238 |  0.148 |
+| bio17 |  0.058 | -0.514 |
+| bio18 | -0.248 |  0.145 |
+| bio19 | -0.145 | -0.385 |
 
-
-------    
+------
 <div id='id-section99.3'/>
 
 ### **regression models; taking first two pcas that explain 86% of variation**
@@ -7653,7 +7618,7 @@ Multiple R-squared:  0.3874,	Adjusted R-squared:  0.3682
 F-statistic: 20.23 on 3 and 96 DF,  p-value: 3.043e-10
 ```
 
-------    
+------
 <div id='id-section99.4'/>
 ### Hsps; pcas and variance partitioning of CTmax 
 
@@ -7668,20 +7633,20 @@ Cumulative Proportion  0.3906613 0.5467441 0.64562350 0.73143809 0.79265778 0.85
 knitr::kable(round(pchsp$loadings[,1:7],3))
 ```
 
-|                    | Comp.1| Comp.2| Comp.3| Comp.4| Comp.5| Comp.6| Comp.7|
-|:-------------------|------:|------:|------:|------:|------:|------:|------:|
-|hsc70               | -0.073| -0.596|  0.071| -0.224| -0.217|  0.055|  0.131|
-|hsp83               | -0.023| -0.593| -0.008|  0.098|  0.293|  0.292|  0.428|
-|hsp40               | -0.023|  0.008|  0.461|  0.803| -0.159|  0.237| -0.098|
-|FC_hsc70_1468_max   | -0.321| -0.160|  0.404| -0.273| -0.043| -0.006| -0.451|
-|FC_hsc70_1468_slope | -0.280| -0.286|  0.217|  0.189|  0.130| -0.629| -0.008|
-|FC_hsc70_1468_Tm    | -0.374|  0.157|  0.226| -0.133| -0.245| -0.283|  0.247|
-|FC_hsp40_541_max    | -0.350| -0.082| -0.324|  0.129| -0.097|  0.273| -0.358|
-|FC_hsp40_541_slope  | -0.292| -0.149| -0.524|  0.171| -0.167| -0.170| -0.242|
-|FC_hsp40_541_Tm     | -0.368|  0.063| -0.260|  0.149| -0.323|  0.130|  0.355|
-|FC_Hsp83_279_max    | -0.350|  0.057|  0.153| -0.213|  0.353|  0.440| -0.207|
-|FC_Hsp83_279_slope  | -0.290|  0.171| -0.145|  0.186|  0.694| -0.167|  0.129|
-|FC_Hsp83_279_Tm     | -0.351|  0.310|  0.171| -0.143| -0.119|  0.194|  0.393|
+|                     | Comp.1 | Comp.2 | Comp.3 | Comp.4 | Comp.5 | Comp.6 | Comp.7 |
+| :------------------ | -----: | -----: | -----: | -----: | -----: | -----: | -----: |
+| hsc70               | -0.073 | -0.596 |  0.071 | -0.224 | -0.217 |  0.055 |  0.131 |
+| hsp83               | -0.023 | -0.593 | -0.008 |  0.098 |  0.293 |  0.292 |  0.428 |
+| hsp40               | -0.023 |  0.008 |  0.461 |  0.803 | -0.159 |  0.237 | -0.098 |
+| FC_hsc70_1468_max   | -0.321 | -0.160 |  0.404 | -0.273 | -0.043 | -0.006 | -0.451 |
+| FC_hsc70_1468_slope | -0.280 | -0.286 |  0.217 |  0.189 |  0.130 | -0.629 | -0.008 |
+| FC_hsc70_1468_Tm    | -0.374 |  0.157 |  0.226 | -0.133 | -0.245 | -0.283 |  0.247 |
+| FC_hsp40_541_max    | -0.350 | -0.082 | -0.324 |  0.129 | -0.097 |  0.273 | -0.358 |
+| FC_hsp40_541_slope  | -0.292 | -0.149 | -0.524 |  0.171 | -0.167 | -0.170 | -0.242 |
+| FC_hsp40_541_Tm     | -0.368 |  0.063 | -0.260 |  0.149 | -0.323 |  0.130 |  0.355 |
+| FC_Hsp83_279_max    | -0.350 |  0.057 |  0.153 | -0.213 |  0.353 |  0.440 | -0.207 |
+| FC_Hsp83_279_slope  | -0.290 |  0.171 | -0.145 |  0.186 |  0.694 | -0.167 |  0.129 |
+| FC_Hsp83_279_Tm     | -0.351 |  0.310 |  0.171 | -0.143 | -0.119 |  0.194 |  0.393 |
 
 **Some stats**
 
@@ -7712,8 +7677,7 @@ F-statistic: 9.767 on 3 and 37 DF,  p-value: 6.991e-05
 
 ![](https://cloud.githubusercontent.com/assets/4654474/20145096/c45b01f2-a66c-11e6-8d64-86898a420add.jpeg)   
 
-
-------    
+------
 <div id='id-section99.5'/>
 ### Variance partitioning
 
@@ -7776,44 +7740,43 @@ Use function ‘rda’ to test significance of fractions of interest
 
 
 
-
-------    
+------
 <div id='id-section100'/>
 ### Page 100: 2016-11-14 & 2016-11-15. climate cascade meeting     
 
 1. Project updates:    
- 	* **Hsp gene expression + Ctmax project:**
-		* figure 3, SHC says to switch back branches
-		* Wrote up methods and results-- go over with Nick then send to SHC   
-		* Submit to PNAS  
- 	* **Multiple stressors ms:**   
-		* submitted **2016-10-24** ; in review **2016-11-01**  
- 	* **Range limits ms**: SHC lab gave verbal edit, still need to incorporate
- 	* **Thermal niche ms:** Lacey and I working on discussion...eta?     
- 	* **Stressed in nature MS: Samples to rerun.**       
-  		* update: Curtis can no longer work+ write on project   
-		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
-	* **Proteome stability project:**    
-		* **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
-			* Rerun mass spec, but loading more proteins (Bethany)
-			
+    * **Hsp gene expression + Ctmax project:**
+        * figure 3, SHC says to switch back branches
+        * Wrote up methods and results-- go over with Nick then send to SHC   
+        * Submit to PNAS  
+    * **Multiple stressors ms:**   
+        * submitted **2016-10-24** ; in review **2016-11-01**  
+    * **Range limits ms**: SHC lab gave verbal edit, still need to incorporate
+    * **Thermal niche ms:** Lacey and I working on discussion...eta?     
+    * **Stressed in nature MS: Samples to rerun.**       
+        * update: Curtis can no longer work+ write on project   
+        * **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
+    * **Proteome stability project:**    
+        * **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
+          * Rerun mass spec, but loading more proteins (Bethany)
+
 2. **Attending SICB - Jan 3-8 New Orleans**, Give a talk about range limits paper.   
-	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
- 	* Support with Suiter Prize! $1,000
+    * **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+    * Support with Suiter Prize! $1,000
 
 3. **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
-	* Formatting:    
-		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
-			* started outline   
-	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
-		1. Intent to graduate: February 1st for May.   
-		2. Send defense committe form to grad college---now   
-		3. Graduate college format check March 4th
-		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
-		5. Final thesis April 7th.  
+    * Formatting:    
+      * Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+        * started outline   
+    * [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+      1. Intent to graduate: February 1st for May.   
+      2. Send defense committe form to grad college---now   
+      3. Graduate college format check March 4th
+      4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+      5. Final thesis April 7th.  
 
 
-------    
+------
 <div id='id-section101'/>
 
 ### Page 101: 2016-11-16Hsp reaction norm stats; adding quadratic term
@@ -7841,125 +7804,124 @@ F-statistic: 28.37 on 3 and 96 DF,  p-value: 3.191e-13
 
 ```
 
-------    
+------
 <div id='id-section102'/>
 ### Page 102: 2016-11-22.  climate cascade to do list     
 
 1. Project updates:    
- 	* **Hsp gene expression + Ctmax project:**
-		* rewrite results, intro and send out to NJG and SHC   
-		* Submit to PNAS  
- 	* **Multiple stressors ms:**   
-		* **major revisions**
- 	* **Range limits ms**: SHC lab gave verbal edit, still need to incorporate
- 	* **Thermal niche ms:** In my hands, get to it mid-december    
-		* actionable items:    
-			* recheck stats     
-			* recheck figures      
-			* make transitions between paragraphs in discussion      
-			
- 	* **Stressed in nature MS: Samples to rerun.**       
-  		* update: Curtis can no longer work+ write on project   
-		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
-	* **Proteome stability project:**    
-		* **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
-			* Rerun mass spec, but loading more proteins (Bethany)
-			
+    * **Hsp gene expression + Ctmax project:**
+        * rewrite results, intro and send out to NJG and SHC   
+        * Submit to PNAS  
+    * **Multiple stressors ms:**   
+        * **major revisions**
+    * **Range limits ms**: SHC lab gave verbal edit, still need to incorporate
+    * **Thermal niche ms:** In my hands, get to it mid-december    
+        * actionable items:    
+          * recheck stats     
+          * recheck figures      
+          * make transitions between paragraphs in discussion      
+
+    * **Stressed in nature MS: Samples to rerun.**       
+        * update: Curtis can no longer work+ write on project   
+        * **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
+    * **Proteome stability project:**    
+        * **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
+          * Rerun mass spec, but loading more proteins (Bethany)
+
 2. **Attending SICB - Jan 3-8 New Orleans**, Give a talk about range limits paper.   
-	* **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
- 	* Support with Suiter Prize! $1,000
+    * **Practice talks: (December 1 2016 in SHC lab meeting ; Decemeber 7 2016 in EEEB)**
+    * Support with Suiter Prize! $1,000
 
 3. **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
-	* Formatting:    
-		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
-			* started outline   
-	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
-		1. Intent to graduate: February 1st for May.   
-		2. Send defense committe form to grad college---now   
-		3. Graduate college format check March 4th
-		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
-		5. Final thesis April 7th.  
+    * Formatting:    
+      * Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+        * started outline   
+    * [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+      1. Intent to graduate: February 1st for May.   
+      2. Send defense committe form to grad college---now   
+      3. Graduate college format check March 4th
+      4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+      5. Final thesis April 7th.  
 
 
-------    
+------
 <div id='id-section103'/>
 ### Page 103: 2016-12-06. climate cascade update
 
 
 1. Project updates:    
- 	* **Hsp gene expression + Ctmax project:**
-		* rewrite results, intro and send out to NJG and SHC  (methods done)    
-		* Submit to PNAS  
- 	* **Multiple stressors ms:**   
-		* **major revisions**; addressing now   
-			* go over figures   
-			
- 	* **Range limits ms**: SHC lab gave verbal edit, still need to incorporate
- 	* **Thermal niche ms:** In my hands, get to it mid-december    
-		* actionable items:    
-			* recheck stats (are we using same dataset?)     
-			* recheck figures      
-			* make transitions between paragraphs in discussion (constructing outline)      
-			
- 	* **Stressed in nature MS: Samples to rerun.**       
-  		* update: Curtis can no longer work+ write on project   
-		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
-	* **Proteome stability project:**    
-		* **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
-			* Rerun mass spec, but loading more proteins (Bethany)
-			
+    * **Hsp gene expression + Ctmax project:**
+        * rewrite results, intro and send out to NJG and SHC  (methods done)    
+        * Submit to PNAS  
+    * **Multiple stressors ms:**   
+        * **major revisions**; addressing now   
+          * go over figures   
+
+    * **Range limits ms**: SHC lab gave verbal edit, still need to incorporate
+    * **Thermal niche ms:** In my hands, get to it mid-december    
+        * actionable items:    
+          * recheck stats (are we using same dataset?)     
+          * recheck figures      
+          * make transitions between paragraphs in discussion (constructing outline)      
+
+    * **Stressed in nature MS: Samples to rerun.**       
+        * update: Curtis can no longer work+ write on project   
+        * **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
+    * **Proteome stability project:**    
+        * **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
+          * Rerun mass spec, but loading more proteins (Bethany)
+
 2. **Attending SICB - Jan 3-8 New Orleans**, Give a talk about range limits paper.   
-	* **Practice talks: (Decemeber 7 2016 in EEEB)**
- 	* Support with Suiter Prize! $1,000
+    * **Practice talks: (Decemeber 7 2016 in EEEB)**
+    * Support with Suiter Prize! $1,000
 
 3. **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
-	* Formatting:    
-		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
-			* started outline   
-	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
-		1. Intent to graduate: February 1st for May.   
-		2. Send defense committe form to grad college---now   
-		3. Graduate college format check March 4th
-		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
-		5. Final thesis April 7th.  
-------    
+    * Formatting:    
+      * Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+        * started outline   
+    * [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+      1. Intent to graduate: February 1st for May.   
+      2. Send defense committe form to grad college---now   
+      3. Graduate college format check March 4th
+      4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+      5. Final thesis April 7th.  
+------
 <div id='id-section104'/>
 ### Page 104: 2016-12-19. climate cascade update
 
 
 1. Project updates:    
- 	* **Hsp gene expression + Ctmax project:**
-		* rewrite results, intro and send out to NJG and SHC  (methods done)    
-		* Submit to PNAS  
- 	* **Multiple stressors ms:**   
-		* sent SHC revisions last week
-			
- 	* **Range limits ms**: SHC lab gave verbal edit, still need to incorporate     
- 	* **Thermal niche ms:** Send new draft to Lacy tomorrow.    		
- 	* **Stressed in nature MS: Samples to rerun.**       
-  		* update: Curtis can no longer work+ write on project   
-		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
-	* **Proteome stability project:**    
-		* **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
-			* Rerun mass spec, but loading more proteins (Bethany)
-			
+    * **Hsp gene expression + Ctmax project:**
+        * rewrite results, intro and send out to NJG and SHC  (methods done)    
+        * Submit to PNAS  
+    * **Multiple stressors ms:**   
+        * sent SHC revisions last week
+
+    * **Range limits ms**: SHC lab gave verbal edit, still need to incorporate     
+        * **Thermal niche ms:** Send new draft to Lacy tomorrow.    	
+    * **Stressed in nature MS: Samples to rerun.**       
+        * update: Curtis can no longer work+ write on project   
+        * **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
+    * **Proteome stability project:**    
+        * **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
+          * Rerun mass spec, but loading more proteins (Bethany)
+
 2. **Attending SICB - Jan 3-8 New Orleans**, on range limits paper.   
-	* SICB talk Jan 8 2017, Sunday, 11:45AM.    
+    * SICB talk Jan 8 2017, Sunday, 11:45AM.    
 
 3. **Thesis related**  [FORMS FOUND HERE](http://www.uvm.edu/~gradcoll/?Page=Forms.html)  
-	* Formatting:    
-		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
-			* started outline   
-	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
-		1. Intent to graduate: February 1st for May.   
-		2. Send defense committe form to grad college---now   
-		3. Graduate college format check March 4th
-		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
-		5. Final thesis April 7th.  
-		
+    * Formatting:    
+      * Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+        * started outline   
+    * [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+      1. Intent to graduate: February 1st for May.   
+      2. Send defense committe form to grad college---now   
+      3. Graduate college format check March 4th
+      4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+      5. Final thesis April 7th.  
 
 
-------    
+------
 <div id='id-section105'/>
 ### Page 105: 2016-12-20. Reading a few papers
 
@@ -7968,16 +7930,16 @@ Reading some papers:
 
 1. There is a cool paper by [Gilchrist and Huey 2001, Evolution,](http://faculty.washington.edu/hueyrb/pdfs/gilchr_evol.pdf) that looks at the cross-generational effect of temperature on fitness in fruit flies. Ones reared from higher temperatures had offspring with higher fitness. This fitness benefit was gained by speeding up development.         
 
-	* Gilchrist GW, Huey RB (2001) PARENTAL AND DEVELOPMENTAL TEMPERATURE EFFECTS ON THE THERMAL DEPENDENCE OF FITNESS IN DROSOPHILA MELANOGASTER. Evolution 55:209–214. doi: 10.1111/j.0014-3820.2001.tb01287.x     
+   * Gilchrist GW, Huey RB (2001) PARENTAL AND DEVELOPMENTAL TEMPERATURE EFFECTS ON THE THERMAL DEPENDENCE OF FITNESS IN DROSOPHILA MELANOGASTER. Evolution 55:209–214. doi: 10.1111/j.0014-3820.2001.tb01287.x     
 
 2. Cool paper by [Huey and Slatkin 1976, The Quarterly Review of Biology](http://www.jstor.org/stable/pdf/2824863.pdf) which developed the first thermoregulation model in lizards. They construct a mathematical model to quantify the costs and benefits of thermoregulation.     
-	* Huey RB, Slatkin M (1976) Cost and Benefits of Lizard Thermoregulation. The Quarterly Review of Biology 51:363–384.     
-	* Other follow up models:      
-		1. Vickers M, Manicom C, Schwarzkopf L (2011) Extending the cost-benefit model of
-thermoregulation: High-temperature environments. Am Nat 177(4):452–461.     
-		2. Christian KA, Tracy CR, Tracy CR (2006) Evaluating thermoregulation in reptiles: An
-appropriate null model. Am Nat 168(3):421–430.       
-		3. Sears MW, Angilletta MJ, Schuler MS, et al (2016) Configuration of the thermal landscape determines thermoregulatory performance of ectotherms. PNAS 201604824. doi: 10.1073/pnas.1604824113   (previous citations 1 and 2 found from this citation) [link](http://www.pnas.org/content/early/2016/08/30/1604824113)      
+   * Huey RB, Slatkin M (1976) Cost and Benefits of Lizard Thermoregulation. The Quarterly Review of Biology 51:363–384.     
+   * Other follow up models:      
+     1. Vickers M, Manicom C, Schwarzkopf L (2011) Extending the cost-benefit model of
+        thermoregulation: High-temperature environments. Am Nat 177(4):452–461.     
+     2. Christian KA, Tracy CR, Tracy CR (2006) Evaluating thermoregulation in reptiles: An
+        appropriate null model. Am Nat 168(3):421–430.       
+     3. Sears MW, Angilletta MJ, Schuler MS, et al (2016) Configuration of the thermal landscape determines thermoregulatory performance of ectotherms. PNAS 201604824. doi: 10.1073/pnas.1604824113   (previous citations 1 and 2 found from this citation) [link](http://www.pnas.org/content/early/2016/08/30/1604824113)      
 
 
 3. One of [Huey's Science papers](http://www.sciencemag.org/content/313/5794/1773) that shows different populations from 3 continents track chromosomal changes with climate change. 
