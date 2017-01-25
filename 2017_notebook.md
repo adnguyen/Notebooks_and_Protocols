@@ -30,9 +30,9 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 4: 2017-01-17](#id-section4). Displaying hierarchical structure of a repo or set of directories in the terminal with tree command
 * [Page 5: 2017-01-17](#id-section5). Project idea: The impact of temperature variation on ant colonly level performance.
 * [Page 6: 2017-01-17](#id-section6). Tutorial for making fancy documents(Cover letters) in latex and rendering into pdf!
-* [Page 7:](#id-section7).
-* [Page 8:](#id-section8).
-* [Page 9:](#id-section9).
+* [Page 7: 2017-01-19](#id-section7). Making sense of reviewer comment; multiple stressors ms
+* [Page 8: 2017-01-19](#id-section8). Notes from SICB
+* [Page 9: 2017-01-20](#id-section9). Status of projects
 * [Page 10:](#id-section10).
 * [Page 11:](#id-section11).
 * [Page 12:](#id-section12).
@@ -444,13 +444,83 @@ I took this [cool template](https://www.sharelatex.com/templates/cover-letters/a
 
 ------
 <div id='id-section7'/>
-### Page 7:
+### Page 7: 2017-01-19. Making sense of reviewer comment; multiple stressors ms   
+
+**Is there any direct evidence that heat shock proteins prevent heat knockdown?**    
+
+Calabria et al. 2012 find differences in basal hsp70 protein expression but not heat-induced hsp70 expression between 3 genotypes of fruit flies( they differ in chromosomal structure). These differences were reflected in the fast ramp (0.1 C/min ramp), but not slow ramp(0.6 C/min ramping). 
+
+3 genotypes:
+
+1. O(3+4)/O(3+4): higher hsp70 basal expression and thermal tolerance under fast ramp;       
+2. O(3+4+8)/O(3+4+8)    
+3. O(st)/O(st): lower hsp70 basal expression and thermal tolerance under fast ramp;   
+
+### References:    
+
+1. Calabria G, Dolgova O, Rego C, et al (2012) Hsp70 protein levels and thermotolerance in Drosophila subobscura: a reassessment of the thermal co-adaptation hypothesis. Journal of Evolutionary Biology 25:691–700. doi: 10.1111/j.1420-9101.2012.02463.x
+
+
 ------
 <div id='id-section8'/>
-### Page 8:
+### Page 8: 2017-01-19. Notes from SICB    
+
+**2017-01-05; Met with Joel Kingsolver**    
+
+Met and talked about range limits project, selection gradient idea, and hsp rxn norm gxp project.      
+* For my ancestral trait reconstruction of CTmax, I excluded the outgroup, suggests to include it      
+* For multi-panel figure with parameters on x axis and ctmax on y axis; try partial regression      
+* If I don't get into PNAS, try Proc B    
+* For looking at shifts in trade-offs between multiple stressors look up Nancy Emory, central cali, she is a plant evo ecologist   
+* Selection gradient proj idea; JK asks what has been done in well known systems? ie. Arapidopsis (sp?), check Andy Schidth   
+
+**2017-01-06; met with Ray Huey**    
+
+Showed hsp rxn norm paper stuff:     
+* Are parameters correlated- he was worrieda bout this.    
+* Try fitting splines and extracting parameters     
+* Selection on graits; linear or quadratic? non-parametric?       
+
+**2017-01-07 Met with Dan Hahn and Greg Ragland**      
+  
+Went over data and Dan liked how Iparsed out all the predictions for the shifts in reaction norms of hsp gxp expression.    
+* Finger example highlights the differences between resistance and tolerance    
+* Pressing two fingers together without moving = **resistance**       
+* When 1 finger moves the other finger but can move back = **tolerance**     
+
 ------
 <div id='id-section9'/>
-### Page 9:
+### Page 9: 2017-01-20. Status of projects
+
+1. Project updates:    
+ 	* **Hsp gene expression + Ctmax project:**
+		* Have intro, discussion mostly complete by today, meet with NJG Monday (2017-01-23)
+		* Submit to PNAS in May?   
+ 	* **Multiple stressors ms:**   
+		* In SHC's hands, due 2017-02-14
+ 	* **Range limits ms**: SHC lab gave verbal edit, still need to incorporate     
+ 	* **Thermal niche ms:** Lacy to check intro, and add refs.    		
+ 	* **Stressed in nature MS: Samples to rerun.**       
+		* **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
+	* **Proteome stability project:**    
+		* **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
+			* Rerun mass spec, but loading more proteins (Bethany)
+			
+2. **Thesis related**   
+	* **Defense talk: Have first version by Jan 31st**    
+		* Required defense talk in biolunch: Feb 24 (Friday)     
+	* Working title: Evolutionary Innovations of Ants to Thermally Stressful Environments     
+	* Formatting:    
+		* Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+			* started outline   
+	* [Deadlines](http://www.uvm.edu/~gradcoll/pdf/Timetable%20for%20defense%202016-17-2.pdf):    
+		1. Intent to graduate: February 1st for May.   
+		2. Send defense committe form to grad college---**done**
+		3. Graduate college format check March 4th
+		4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
+		5. Final thesis April 7th.  
+		
+
 ------
 <div id='id-section10'/>
 ### Page 10:
