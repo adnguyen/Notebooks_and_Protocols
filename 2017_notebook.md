@@ -33,11 +33,11 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 7: 2017-01-19](#id-section7). Making sense of reviewer comment; multiple stressors ms
 * [Page 8: 2017-01-19](#id-section8). Notes from SICB
 * [Page 9: 2017-01-20](#id-section9). Status of projects
-* [Page 10: 2017-01-26](#id-section10). Hoffmann et al. 2013, Functional Ecology Paper notes 
+* [Page 10: 2017-01-26](#id-section10). Hoffmann et al. 2013, Functional Ecology Paper notes ; Constraints on upper thermal limits
 * [Page 11: 2017-01-26](#id-section11). Notes on teaching statements
 * [Page 12: 2017-01-26.](#id-section12). SHC lab meeting, organizational
-* [Page 13:](#id-section13).
-* [Page 14:](#id-section14).
+* [Page 13: 2017-01-26](#id-section13). Bubliy & Loeschke 2005 paper notes; comparisons of selection on stress resistance
+* [Page 14: 2017-01-26.](#id-section14). Mitchell & Hoffmann 2010 paper notes, Functional Ecology; Thermal ramping influences evolutionary potential
 * [Page 15:](#id-section15).
 * [Page 16:](#id-section16).
 * [Page 17:](#id-section17).
@@ -611,13 +611,88 @@ Tentative: Thursdays 4-5PM
 
 ------
 <div id='id-section13'/>
-### Page 13:
+### Page 13: 2017-01-26. Bubliy & Loeschke 2005 paper notes
+
+**Correlated response to selection for stress resistance.** 
+
+
+
+Fruit fly paper doing a selection experiment on: 
+
+1. cold (CS) in units of survival rate
+   * chilled 5 C, recover 24 hours
+2. heat (HS) in units of survival rate
+   * hardened 30 min at 36C, recover 20 hours at 25 C, then heat shocked 38C 1 hour
+3. desiccation (DS)
+4. starvation (SS)
+5. Heat knockdown time (KS) -in units of time (minutes)
+   * KO at 40C
+6. Lifespan (LS)
+
+* And then they checked all of the traits from each selected line relative to controls. 
+* 21 generations
+
+
+
+1. Cold shock resistance (CS)
+   * CS, HS, and DS all increased
+2. Heat shock resistance (HS)
+   * HS, KS, DS all responded
+3. Heat knockdown resistance  (KS)
+   * only KS responded
+
+KS and SS increased developmental time. 
+
+
+
+Upper and lower thermal limits can equally respond to selection after X generations in fruit flies. IN this experiment, there isn't necessarily a trade off betwween the two (except in cold shock resistance). 
+
+
+
+
+
 ------
 <div id='id-section14'/>
-### Page 14:
+### Page 14: 2017-01-26. Mitchell & Hoffmann 2010, Functional Ecology; Thermal ramping influences evolutionary potential
+
+In fruit flies, they measured upper thermal limits as knockdown time in a static and ramping experiment. They did this in  a quantitative genetic design, so they could estimate the narrow-sense heritability (partition out variation to the additive genetic component).  They also measured this for ~11 species.  (looks like a lot of work)
+
+
+
+**Methods:**
+
+Slow ramp: 0.06 C/min
+
+Fast, static HS: 38C preset temp
+
+
+
+Fast and slow show a postive relationship. 
+
+
+
+Set up a model to partition out variation Va (additive genetic variance), Vp (phenotypic variance), and Ve (environmental variance) and presented models for their coefficient of variation.
+
+
+
+**Results**: 
+
+* Ramping had low heritability(not sig different than 0), but static had high heritability (sig different than 0)
+* Ramping had more environmental variance, but do the data need to be standardized first, such that the mean is 0 and variance i 1? No, the units are the same for both traits
+* Ramping had higher phenotypic variance
+
+
+
+**THoughts**
+
+This paper contrasts a little bit with van Heraawarden & Sgrò paper, where they focus one 1 species. But they find that ramping, fast HS, and hardening all significantly correlate. But there is an additive genetic axis where
+
+
+
 ------
 <div id='id-section15'/>
 ### Page 15:
+
 ------
 <div id='id-section16'/>
 ### Page 16:
