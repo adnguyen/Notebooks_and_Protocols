@@ -35,7 +35,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 9: 2017-01-20](#id-section9). Status of projects
 * [Page 10: 2017-01-26](#id-section10). Hoffmann et al. 2013, Functional Ecology Paper notes 
 * [Page 11: 2017-01-26](#id-section11). Notes on teaching statements
-* [Page 12:](#id-section12).
+* [Page 12: 2017-01-26.](#id-section12). SHC lab meeting, organizational
 * [Page 13:](#id-section13).
 * [Page 14:](#id-section14).
 * [Page 15:](#id-section15).
@@ -582,7 +582,33 @@ A good quote:
 
 ------
 <div id='id-section12'/>
-### Page 12:
+### Page 12: 2017-01-26. SHC lab meeting, organizational    
+
+### Write down 3 concrete goals and timeline for the semester: 
+
+1. Publish the multiple stressors manuscript
+   * deadline is Feb 12 to submit revisions
+2. Get a post doctoral position or real job by end of semester
+   * NSF, should know by Feb 9th
+   * Hibbitt fellow, no clue, but should be soon
+   * prepping application for data scientist position
+3. Have submittable version of hsp rxn norm paper to PNAS
+   * Part of thesis, so should be accomplished by April 7th
+
+Benchmark goals
+
+1/3- Wait for SHC to give back feedback and take 2 days to submit it, prior to Feb12. Keep writing on PNAS paper, have introduction, discussion done. Results and methods are mostly complete but could be tweaked. Post doc stuff is passive
+
+2/3- get notified from NSF, hibbit. For Hibbitt, if they're interested, they'll interview on site. For PNAS paper, shape up ms.
+
+3/3- Constant revisions on PNAS paper
+
+### Set schedule 
+
+I have a biolunch talk (dissertation requirement talk) February 24th. Give practice talk February 10th. 
+
+Tentative: Thursdays 4-5PM
+
 ------
 <div id='id-section13'/>
 ### Page 13:
