@@ -38,7 +38,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 12: 2017-01-26.](#id-section12). SHC lab meeting, organizational
 * [Page 13: 2017-01-26](#id-section13). Bubliy & Loeschke 2005 paper notes; comparisons of selection on stress resistance
 * [Page 14: 2017-01-26.](#id-section14). Mitchell & Hoffmann 2010 paper notes, Functional Ecology; Thermal ramping influences evolutionary potential
-* [Page 15:](#id-section15).
+* [Page 15: 2017-01-27.](#id-section15) Embedding a calendar into your webpage
 * [Page 16:](#id-section16).
 * [Page 17:](#id-section17).
 * [Page 18:](#id-section18).
@@ -691,7 +691,19 @@ This paper contrasts a little bit with van Heraawarden & Sgrò paper, where they
 
 ------
 <div id='id-section15'/>
-### Page 15:
+### Page 15: 2017-01-27. Embedding calender into webpage
+
+[Followed this tutorial](http://denisecase.github.io/2015/07/10/add-calender-to-site/): 
+
+1. Create a  calender in google (gmail)
+2. Go to settings
+3. click calendars
+4. go down to where it says embed this calendar, it is in html code, so copy that
+5. tutorial goes through yml, but I just used the html code to make a new webpage with my calender in it and created a link in the navigation bar
+
+[Here it is](https://adnguyen.github.io/calender.html), useful for me to access my calender wherever I am now!   
+
+
 
 ------
 <div id='id-section16'/>
