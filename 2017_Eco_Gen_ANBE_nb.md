@@ -20,8 +20,8 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 1: 2017-01-18](#id-section1). First class; intros
 * [Page 2: 2017-01-20](#id-section2). Readings for 2017-01-23 Monday    
 * [Page 3: 2017-01-23](#id-section3). Week 2, Day 2, course notes
-* [Page 4:2017-01-25](#id-section4) . Week 2, Day 3, class notes (paper discussions and student project development)
-* [Page 5:](#id-section5).
+* [Page 4: 2017-01-25](#id-section4) . Week 2, Day 3, class notes (paper discussions and student project development)
+* [Page 5: 2017-01-30](#id-section5). Week 3, Day 4, class notes , Group presentations of project ideas
 * [Page 6:](#id-section6).
 * [Page 7:](#id-section7).
 * [Page 8:](#id-section8).
@@ -625,7 +625,52 @@ Set up new webpage for course:
 
 ------
 <div id='id-section5'/>
-### Page 5:
+### Page 5: 2017-01-30. Week 3, Day 4, class notes , Group presentations of project ideas
+
+
+
+Melissa gave handoout for a general formula. This may help articulate and motivate and objectives  of the eco genom project. this approach can be applied to your other research projects, papers, or grants!
+
+
+
+1. **The opener:** capture the attention of your audience highlighting an important area of research
+2. **Current knowledge:** What is known about this area and will facilitate your work? 
+3. **The Gap statement:** Where is the gap in the understanding? The critical missing bit of knowledge that prevents forward scientific progress? 
+4. **Objectives:** Articulate the objectives of your research- "Here we..."
+5. **Central hypothesis:** null and alternative 
+6. **How will you test this hypothesis?** How will you distinguish between alternative explanations, will you have the statistical power to do so? 
+7. **What are your expected results/outcomes?** 
+
+
+
+Steve will be writing up projects on the board: 
+
+1. **Immune-related gene expression**
+   * reverse pathology
+   * looking specific classes of genes
+   * a priori tests for resistance genes
+     * compare individuals that stayed healthy vs those that got sick
+     * looking at S-H transition 
+2. **Intertidal vs subtotal** 
+   * Genetic differences in susceptibility
+   * local adaptation? 
+   * gene expression differences
+3. **Temporal Variation** 
+   * chagnes in gene expression through time
+   * changes in microbiome through time
+   * temporal differences in H vs S
+4. **Heritability of microbiome**
+   * comapre microbial commuity to host individual relatedness
+5. **Comparison within the intertidal group**
+   * genetic differences ( 3 gropus of individual)
+   * delta in microbiome
+
+
+
+
+
+
+
 ------
 <div id='id-section6'/>
 ### Page 6:
