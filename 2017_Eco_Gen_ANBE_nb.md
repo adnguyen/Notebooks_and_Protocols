@@ -645,25 +645,72 @@ Melissa gave handoout for a general formula. This may help articulate and motiva
 
 Steve will be writing up projects on the board: 
 
-1. **Immune-related gene expression**
+1. **Immune-related gene expression** 
    * reverse pathology
    * looking specific classes of genes
    * a priori tests for resistance genes
      * compare individuals that stayed healthy vs those that got sick
      * looking at S-H transition 
-2. **Intertidal vs subtotal** 
+   * **Group(Name = Sherlock):** Erin, Sam, Alex, Lauren, Dr. Brody, and 
+     * Interested in reverse pathology
+     * What type of pathogens are causing immune response differences? 
+       * Viral specific, fungal specific, or bacterial specific
+       * Focus on the transitions: HS, HH, SS
+         * blocking based on time 
+         * what is the workflow? 
+           * ​
+     * Back up Q: comapre responses to another species. 
+     * Use random group of genes to use as housekeeping and control
+     * make heat map or venn diagram of differential gene expression 
+     * ​
+2. **Intertidal vs subtidal** 
    * Genetic differences in susceptibility
    * local adaptation? 
    * gene expression differences
+   * **Group discussion(Name=):** Lauren, Laura, Kattia, Dr. K
+     * subtidal more susceptible than intertidal. What differences contribute to that? 
+     * Focus on GXP expression between the two groups: ID, genes that are more diff expressed and do a functional enrichment analysis (immune vs general stress response; tease apart handling and susceptibility)
+     * Focus on community structure of micro biome between the two groups: subtotal = more diversity? Equals more resilient to pathogen? Specific taxa associated with disease? 
+       * Candidate genes in stress response? They want to do  a broad survey of genes (generalized). 3 broad categories: **stress, immune, other**. 
+       * Time point? Use first time point (day3 ); potentially comparing healthy vs sick 
+       * Not looking at SNP level differences 
+       * Potentially associate gxp with micro biome ; mantel test. 
 3. **Temporal Variation** 
    * chagnes in gene expression through time
    * changes in microbiome through time
    * temporal differences in H vs S
+   * **Group discussion (Name=):**
+     * change of gxp through time: compare HH vs HS (that made it to day 15)
+       * ignore SS 
+       * for each time point, what genes are differentially expressed between HH and HS
+       * ID'ing those genes 
+     * What is causing sickness? and how organisms are affected by it?(this is focus)
+     * stability of gxp for HH vs HS; House keeping genes? 
+     * Which ones are varying over time? 
+     * **functional enrichment for varying or stable through time**
+     * ​
 4. **Heritability of microbiome**
-   * comapre microbial commuity to host individual relatedness
+   * compare microbial commuity to host individual relatedness
 5. **Comparison within the intertidal group**
    * genetic differences ( 3 gropus of individual)
    * delta in microbiome
+   * **Group discussion (Name=Rising starfish ):**
+     * Intertidal group only: control for the handling stress
+     * Want to do is access genomic differences (SNP data) between individuals that stayed healthy. HH, vs Sick
+       * Differences between intertidal and subtidal 
+     * Genetic basis with respect to susceptibilty 
+     * Look at micro biome: microbiome composition of Healthy vs Sick
+     * Microbiome changes across each time point for all of the individuals 
+     * one specific group of microbes that are found in healthy that are lacking in the sick(indicator taxa)
+       * aides in resilience or susceptibility 
+     * Thinking about all time points(or we can start first day) 
+     * How many OTUs? > 100s
+     * Rare taxa might drop out? 
+     * check allele frequency differences among sick and healthy 
+
+
+
+### Admin stuff
 
 
 
@@ -705,7 +752,7 @@ example_data  popgen    scripts       users
 
 
 
-### Repeated measures anova of differential gene expression
+### Repeated measures anova or time series of differential gene expression 
 
 We need to figure out how to do this. 
 
