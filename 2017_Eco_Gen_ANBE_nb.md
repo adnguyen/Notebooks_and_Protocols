@@ -711,6 +711,20 @@ Steve will be writing up projects on the board:
        * Can do PCA  or discriminant analysis (DAPC)
        * FST method
 
+### Assignment:
+
+*As a group, write up 1 page proposal following the guideline above. Integrate feedback. Due next Monday. We will give additional and formal feedback in the form of writing.* 
+
+Email, MS word
+
+List all the exact sample names too
+
+
+
+
+
+For wednesday: We're going to do a bioblitz of library prep types. Learn more about how libraries are made and what data they produced: WGS, RNA-seq, GBS(rad-seq), Amplicon-seq. No discussion, just 4 INFO UPDATES(20 minutes each)
+
 
 
 ### Admin stuff
