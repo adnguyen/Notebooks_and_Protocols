@@ -692,17 +692,14 @@ bin          data  etc  lib   media  nsr  proc  run   srv   tmp  usr
 
 Stuff is stored on the data/ directory.  Let's look inside
 
-
+```
 
 [adnguyen@pbio381 /]$ cd data/
-
 [adnguyen@pbio381 data]$ ls
-
 databases     packages  project_data  temp_data
-
 example_data  popgen    scripts       users
 
-
+```
 
 **Notes**: Stuff that needs to be installed, goes into the popgen folder
 
