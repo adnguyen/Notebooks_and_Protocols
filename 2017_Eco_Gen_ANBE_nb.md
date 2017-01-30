@@ -667,6 +667,51 @@ Steve will be writing up projects on the board:
 
 
 
+**Logging into the cluster:** 
+
+
+
+```
+ssh adnguyen@pbio381.uvm.edu
+```
+
+
+
+Going in to the root: 
+
+
+
+```
+[adnguyen@pbio381 ~]$ cd /
+[adnguyen@pbio381 /]$ ls
+autorelabel  boot  dev  home  lib64  mnt  opt   root  sbin  sys  users  var
+bin          data  etc  lib   media  nsr  proc  run   srv   tmp  usr
+```
+
+
+
+Stuff is stored on the data/ directory.  Let's look inside
+
+
+
+[adnguyen@pbio381 /]$ cd data/
+
+[adnguyen@pbio381 data]$ ls
+
+databases     packages  project_data  temp_data
+
+example_data  popgen    scripts       users
+
+
+
+**Notes**: Stuff that needs to be installed, goes into the popgen folder
+
+
+
+### Repeated measures anova of differential gene expression
+
+We need to figure out how to do this. 
+
 
 
 
