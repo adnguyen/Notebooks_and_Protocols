@@ -721,11 +721,13 @@ List all the exact sample names too
 
 
 
+**For wednesday:**
+
+**First half-** We're going to do a bioblitz of library prep types. Learn more about how libraries are made and what data they produced: WGS, RNA-seq, GBS(rad-seq), Amplicon-seq. No discussion, just 4 INFO UPDATES(20 minutes each).
 
 
-For wednesday: We're going to do a bioblitz of library prep types. Learn more about how libraries are made and what data they produced: WGS, RNA-seq, GBS(rad-seq), Amplicon-seq. No discussion, just 4 INFO UPDATES(20 minutes each)
 
-
+**Second half**- logging into the server. Unix command line stuff. Bring your computer. Have software installed (Putty in Windows). File transfer client 
 
 ### Admin stuff
 
