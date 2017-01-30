@@ -706,7 +706,10 @@ Steve will be writing up projects on the board:
      * Thinking about all time points(or we can start first day) 
      * How many OTUs? > 100s
      * Rare taxa might drop out? 
-     * check allele frequency differences among sick and healthy 
+     * Finding diffs
+       * check allele frequency differences among sick and healthy 
+       * Can do PCA  or discriminant analysis (DAPC)
+       * FST method
 
 
 
