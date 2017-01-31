@@ -1,3 +1,5 @@
+
+
 # 2017 General Notebook
 
 ### Author: Andrew D. Nguyen, [Evolutionary Physiologist](https://adnguyen.github.io)      
@@ -39,7 +41,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 13: 2017-01-26](#id-section13). Bubliy & Loeschke 2005 paper notes; comparisons of selection on stress resistance
 * [Page 14: 2017-01-26.](#id-section14). Mitchell & Hoffmann 2010 paper notes, Functional Ecology; Thermal ramping influences evolutionary potential
 * [Page 15: 2017-01-27.](#id-section15) Embedding a calendar into your webpage
-* [Page 16:](#id-section16).
+* [Page 16: 2017-01-31](#id-section16). Sørensen et al. 2003; Ecology letters, The Evolutionary and ecological role of heat shock proteins; paper notes
 * [Page 17:](#id-section17).
 * [Page 18:](#id-section18).
 * [Page 19:](#id-section19).
@@ -701,14 +703,84 @@ This paper contrasts a little bit with van Heraawarden & Sgrò paper, where they
 4. go down to where it says embed this calendar, it is in html code, so copy that
 5. tutorial goes through yml, but I just used the html code to make a new webpage with my calender in it and created a link in the navigation bar
 
-[Here it is](https://adnguyen.github.io/calender.html), useful for me to access my calender wherever I am now!   
+[Here it is](https://adnguyen.github.io/calendar.html), useful for me to access my calender wherever I am now!   
+
+
+
+### 2017-01-31 Update  
+
+Calendar doesn't show up on my iphone or ipad (safari), what is the point? Taking the calendar out. 
 
 
 
 ------
 <div id='id-section16'/>
-### Page 16:
+### Page 16: 2017-01-31. Sørensen et al. 2003; Ecology letters, The Evolutionary and ecological role of heat shock proteins
+
+Trying to get a handle on how this paper frames the role of Hsps with upper thermal limits. From the abstract, they mention it as a resistance mechanism. 
+
+
+
+1. **Defining stress:**  a condition that disturbs the normal function of the biological system or a condition that decreases fitness (Hoffmann & Parsons 1991; Bijlsma & Loeschcke 1997)
+   * I like part of the definition. I'd define stress **as a perturbation to a biological system that decreases fitness.** Or, a force acting on a biological system that decreases fitness. 
+   * These forces can be *extrinsic* (environmental) and *intrinsic* (genetics, inbreeding, deleterious mutations, ageing).
+
+
+2. **Hsp natural history** (cite Ritossa 1962 as first discovering heat shock response through chromosome puffs(which had Hsps on it))
+3. **Protein quality control system (PQC)**: importance increases upon exposrue to environmental /genetic stresses
+   * function is 2 fold: correct folding and to assist in degradation of denatured or aggregated proteins
+   * not very informative
+4. Stress as an ecoogical and evo force (Don't agree with the framing)
+   * types of responses:
+     * move, alter physiological state through hibernation or diapause
+     * adapt or acclimate
+     * fail and die
+   * Adaptive change in Hsp over days (Nguyen et al. 1994; Ferguson et al. 1998) or over seasons (Fader et al. 1994; Hofmann & Somero 1995; Pyza et al. 1997; Miner et al. 2000) and natural populations(no citations, what?)
+5. Effects of stress on rates of evolution
+   * ​
+6. **Costs of Hsp expression**
+   * unclear whether reduced fitness is due to cost of acclimation or reared under poor conditions. Why would we tease these apart? 
+   * Benefits of acclimation (stress /longevity) can be separated from costs
+     * ex: Hercus et al. 2003: repeated mild stress lowered fertility and fecundity in the short term but not long term
+     * One way to separte out costs and benefits is by altering acclimation treatments (Scott et al. 1997; Hoffmann & HewaKapuge 2000; Thomson et al. 2001; Wilson & Franklin 2002)
+   * lowers fertility fecundity, energy, development, and survival 
+   * Direct costs measured by Krebs & Feder 1998: hardened flies at different stages (1-3rd instar) in 4isofemale lines. Multiple heat exposures reduced survival but did not affect development time. Expression of Hsp70 was not correlated with survival, suggesting differences in expression cannot explain survival effects. 
+   * said this already but high hsps lower growth and cell division (Feder et al. 1992; Krebs & Feder 1997, reduced reproduction (Krebs & Loeschcke 1994; Silbermann & Tatar 2000))
+     * Silbermann & Tatar 2000 showed heat induced hsp expression reduced egg hatching of moms in fruit flies. 
+     * Krebs & Loeschcke 1994 found reduced fecundity
+7. **The role of Hsps for adaptation** 
+   * Improved heat resistance of insects after hsp expression in **insects** ( (Gehring & Wehner 1995; Dahlgaard et al. 1998), **fish**(Basu et al. 2002) , plants (Sun et al. 2002), **mammals** (Ulmasov et al. 1993; Matz
+     et al. 1996a). 
+   * Some of the first data on the possible ecological relevance of Hsp expression comes from selection studies. In
+     different species of Drosophila, it was shown that (contrary to predictions at that time) expression of Hsp70 was lower in lines frequently, or continuously exposed to severe stress (Bettencourt et al. 1999; Sørensen et al. 1999; Lansing et al 2000)
+     * interpretation = costs of Hsp in pops exposed to stress outweighs benefits and adaptation is achieved through some other means
+   * Density dependence might drive hsp expression 
+   * Age will influence hsp expression
+   * Life stages may differe in stressors exposed
+     * Stage specific Hsp expression and resistance - no citation
+     * not much support (Sørensen et al. 1999)
+   * In adults, Hsp70 down regulated with decreasing heat stress resistance (Sørensen & Loeschcke 2002a)
+8. **Conclusions and future prospectives**
+   * ```However, new results show that Hsp expression is highly fine-tuned (not being only an on–off mechanism) and that Hsps are also continuously expressed after mild chronic stress exposure.```
+   * Hsps as biomarkers of stress
+   * ```However, local adaptation and selection for other kinds of adaptive mechanisms may disturb the evaluation of the results. The results by Sørensen et al. (1999, 2001) and Ko¨hler et al. (2000) showing that there is selection against Hsp expression in populations being exposed to chronic stress clearly demonstrates this problem.```
+
+
+This is a pretty old study. Looking up papers that cite it that look cool/interesting:
+
+1. T. Esperk, A. Kjærsgaard, R. J. Walters, D. Berger, W. U. Blanckenhorn, **Plastic and evolutionary responses to heat stress in a temperate dung fly: negative correlation between basal and induced heat tolerance?**, Journal of Evolutionary Biology, 2016, 29, 5
+2. Ramadoss Dineshram, Kondethimmanahalli Chandramouli, Ginger Wai Kuen Ko, Huoming Zhang, Pei-Yuan Qian, Timothy Ravasi, Vengatesen Thiyagarajan, **Quantitative analysis of oyster larval proteome provides new insights into the effects of multiple climate change stressors**, Global Change Biology, 2016, 22, 6
+3. L.Ye. Kozeko, D.B. Rakhmetov, **Variation in dynamics of the heat shock proteins HSP70 synthesis in Malva sylvestris and M. pulchella (Malvaceae) in connection with tolerance to high temperature, flooding and drought,** Ukrainian Botanical Journal, 2016, 73, 2, 194
+   * constitutive and inducible; for thermal and drought tolerant plants
+4. Delphine Cottin, Natacha Foucreau, Frédéric Hervant, Christophe Piscart, **Differential regulation of hsp70 genes in the freshwater key species Gammarus pulex (Crustacea, Amphipoda) exposed to thermal stress: effects of latitude and ontogeny**, Journal of Comparative Physiology B, 2015, 185, 3, 303
+   * good ref, added to my table
+5. Jennifer A. Jost, Emily N. Soltis, Marshall R. Moyer, Sarah S. Keshwani, **Linking zebra mussel growth and survival with two cellular stress indicators during chronic temperature stress**, Invertebrate Biology, 2015, 134, 3
+6. D Porcelli, R K Butlin, K J Gaston, D Joly, R R Snook, **The environmental genomics of metazoan thermal adaptation,** Heredity, 2015, 114, 5, 502
+
 ------
+
+------
+
 <div id='id-section17'/>
 ### Page 17:
 ------
