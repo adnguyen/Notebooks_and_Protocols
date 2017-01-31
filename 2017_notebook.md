@@ -43,7 +43,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 15: 2017-01-27.](#id-section15) Embedding a calendar into your webpage
 * [Page 16: 2017-01-31](#id-section16). Sørensen et al. 2003; Ecology letters, The Evolutionary and ecological role of heat shock proteins; paper notes
 * [Page 17: 2017-01-31](#id-section17). List of Adaptive Variation in Hsps lit table. 
-* [Page 18:](#id-section18).
+* [Page 18: 2017-01-31](#id-section18). Statuf of projects: writing
 * [Page 19:](#id-section19).
 * [Page 20:](#id-section20).
 * [Page 21:](#id-section21).
@@ -840,7 +840,39 @@ Not very informative in terms of what Hsps are actually doing and how they relat
 
 ------
 <div id='id-section18'/>
-### Page 18:
+### Page 18: 2017-01-31. Status of projects: writing
+
+1. Project updates:    
+   - **Hsp gene expression + Ctmax project:**
+     - Met with NJG yesterday, revised intro, reread, should be ready to review with NJG 2017-02-06; Monday
+     - Meeting with NJG 2017-02-03, Friday 1PM
+     - Submit to PNAS in May?   
+   - **Multiple stressors ms:**   
+     - ==In SHC's hands, due 2017-02-14==
+   - **Range limits ms**: SHC lab gave verbal edit, still need to incorporate     
+     - **Thermal niche ms:** Lacy to check intro, and add refs.    	
+   - **Stressed in nature MS: Samples to rerun.**       
+     - **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
+   - **Proteome stability project:**    
+     - **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
+       - Rerun mass spec, but loading more proteins (Bethany)
+2. **Thesis related**   
+   - **Defense talk:** 
+     - Giving practice talk ==February 9th== (Thursday in lab meeting, 4PM)
+       - Need to write out script by  ==Feb 7th==  
+     - Required defense talk in biolunch: ==Feb 24 (Friday)==     
+   - Working title: Evolutionary Innovations of Ants to Thermally Stressful Environments     
+   - Formatting:    
+     - Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+       - started filling in introduction, eta? No clue, working on in the background   
+   - Deadlines: 
+     1. Intent to graduate: February 1st for May.   —**done**
+     2. Send defense committe form to grad college—**done****
+     3. ==Graduate college format check March 4th==
+     4. Defense notice 3 weeks before defense  (oral defense by March 24th—*flexible*).   
+     5. Final thesis April 7th.  
+
+
 ------
 <div id='id-section19'/>
 ### Page 19:
