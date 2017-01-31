@@ -845,7 +845,7 @@ Not very informative in terms of what Hsps are actually doing and how they relat
 1. Project updates:    
    - **Hsp gene expression + Ctmax project:**
      - Met with NJG yesterday, revised intro, reread, should be ready to review with NJG 2017-02-06; Monday
-     - Meeting with NJG 2017-02-03, Friday 1PM
+     - Meeting with NJG 2017-02-03, Friday 1PM to go over results, figure legends, figures. 
      - Submit to PNAS in May?   
    - **Multiple stressors ms:**   
      - ==In SHC's hands, due 2017-02-14==
