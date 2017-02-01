@@ -22,7 +22,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 3: 2017-01-23](#id-section3). Week 2, Day 2, course notes
 * [Page 4: 2017-01-25](#id-section4) . Week 2, Day 3, class notes (paper discussions and student project development)
 * [Page 5: 2017-01-30](#id-section5). Week 3, Day 4, class notes , Group presentations of project ideas
-* [Page 6:](#id-section6).
+* [Page 6: 2017-02-01](#id-section6). Week 3, Day 5, command line stuff
 * [Page 7:](#id-section7).
 * [Page 8:](#id-section8).
 * [Page 9:](#id-section9).
@@ -781,7 +781,89 @@ We need to figure out how to do this.
 
 ------
 <div id='id-section6'/>
-### Page 6:
+### Page 6: 2017-02-01. Week 3, Day 5, info-updates; command line unix tutorial 
+
+## Announcements
+
+1. <usStarters</u>
+   * Send link to Github notebook to Antdrew (adnguyen@uvm.edu)
+   * sign-ups (folkds sitting in , too!)
+   * Project proposals due by email next ==Monday February 6th.==
+   * We start transcriptomics next week!
+2. <u>Info-update Blitz</u>
+3. <u>Unix tutorial</u> 
+
+### <u>2. Info Updates</u>
+
+* <u>Whole genome sequencing</u> 
+  * **applications**
+    * high power and high resolution for pop gen, effective pop size, genetic relatedness, inbreeding, admixture events, conservations(monitoring or control breeding)
+    * new ones too! screen for adaptive potential, inbreeding depression, impacts of genetic variation, plastic responses
+    * Needs $, computational expertise (cluster, command line, python/perl)
+    * ==Limitations==
+      * Polymorphic genes: core genes that are highly conserved
+      * Paralog 
+      * Rapidly evolving genes (poor representation)
+      * Large gene families
+      * Using 1 individual (does not capture the diversity of the species)
+      * Pool samples is a possibility
+      * **Not really whole genome!!**; some parts cant be sequenced, heterochromatic regions and highly repetitive regions
+  * **Prior expectations**
+    * Reference genome? 
+      * No = de novo assembly
+      * Yes = map reads to it
+  * **Methods**
+    * Platforms:
+      * Short reads: Illumina (150bp), Solid (50bp)
+      * Longer reads: Pacific bioscience (5kb); Ion torrent (~500 bps)
+    * <u>Knowing your organism!</u>
+      * Genome size! (K-mer approach: unique element of DNA seq length)
+      * Know repetitive content and error rates of sequencing
+        * GC content too
+      * Degree of Genome duplication
+
+```mermaid
+graph LR
+
+A{Genome?}
+
+A -->|No| B[De novo assembly]
+
+A -->|Yes| C[ YOu good]
+
+```
+
+**More methods:** 
+
+* Labby stuff 
+  * high quality, avoid energetic active  tissue (mitochondria may mess up depth)
+  * avoid gut and skin
+  * Quantity: 1 -6 ug(short)
+  * Library prep
+    * single pair, paired end or mate-pair (shotgun sequencing) 
+    * assemble contigs and map to scaffolds
+* Computational stuff
+  * De novo, use algorithms to maximize accuracy in assembly
+  * Annotate; automate, manually
+
+
+
+* **RNA-seq**
+  * Advantages: 
+    * ​
+  * Limitations
+  * Workflow
+
+
+
+### 3. Tutorials reference [page](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorials.html)
+
+
+
+
+
+
+
 ------
 <div id='id-section7'/>
 ### Page 7:
