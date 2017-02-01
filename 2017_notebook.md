@@ -44,7 +44,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 16: 2017-01-31](#id-section16). Sørensen et al. 2003; Ecology letters, The Evolutionary and ecological role of heat shock proteins; paper notes
 * [Page 17: 2017-01-31](#id-section17). List of Adaptive Variation in Hsps lit table. 
 * [Page 18: 2017-01-31](#id-section18). Statuf of projects: writing
-* [Page 19:](#id-section19).
+* [Page 19: 2017-01-31](#id-section19). SHC lab meeting reading: Ranga et al. 2017; Evol Ecol: Sibling Drosophila species (Drosophila leontia and Drosophila kikkawai) show divergence for thermotolerance along a latitudinal gradient
 * [Page 20:](#id-section20).
 * [Page 21:](#id-section21).
 * [Page 22:](#id-section22).
@@ -875,8 +875,133 @@ Not very informative in terms of what Hsps are actually doing and how they relat
 
 ------
 <div id='id-section19'/>
-### Page 19:
+### Page 19: 2017-01-31. SHC lab meeting reading: Ranga et al. 2017; Evol Ecol: Sibling Drosophila species (Drosophila leontia and Drosophila kikkawai) show divergence for thermotolerance along a latitudinal gradient
+
+This study compares the different aspects of lower and upper thermal limits between two closely related species (*Drosophila*) in India across a wide climate gradient (8 -32 degrees north): 
+
+1. *D. leontia*
+2. *D. kikkawai*
+
+==Measurements:==
+
+1. **Upper thermal limits**
+   * Heat knockdown time: 39 C treatment in water bath, measured time where they could not stand
+   * Survival: 24 hour survey of flies 100% dead when treated at 39C over time (10-80min)
+   * Hardening:
+2. **Lower thermal limits**
+   * Chill coma recovery time
+     * 0C treatment for 8 hour then recover at room temp (22C); measured time they could stand upright
+   * Cold survival 
+     * 0 C treatment for 8 -96 hours, measured survival after 24hours
+3. **Absolute hardening capacity (AHC)**
+   * AHC = KT - C 
+   * KT = thermotolerance after hardening
+     * warm: (33, 35 or 37 C)
+     * cool: (0, 2 or 4 C)
+   * C = basal thermo-tolerance
+4. **Relative hardening capacity**
+   * RHC = (KT – C)/C
+5. **Egg-to-adult viability**
+   * Hot: eggs subected to 39 C 1 hour
+   * Cold: eggs subjected to 0 C 12 hours
+   * transferred to 22C 65% RH
+
+## Results 
+
+(Fig 2)
+
+1. *D. leontia* ==lower plasticity==
+   * Clinal variation in Upper thermal limits (KD time, heat survival)
+     * No benefit from hardening
+   * No clinal variation in lower thermal limits ( CCRT, cold survival)
+     * No benefit from hardening
+2. *D. kikkawai* —==higher plasticity==
+   * Clinal variation in Upper thermal limits (KD time, heat survival)
+     - Benefit from hardening
+   * Clinal variation in lower thermal limits ( CCRT, cold survival)
+     - Benefit from hardening
+
+Table 2: They did anova for each trait, testing the effect of each population
+
+Why not do an ANCOVA:
+
+```R
+aov(Thermal trait~ Latitude * Species)
+```
+
+
+
+**Fig 3: Egg-to-Adult viability**
+
+1. *D. leontia ==lower plasticity==*
+   * Southern pop had higher viability under controls, heat stressed, but not cold stress. 
+   * **Notes** *makes sense because they have no relationship to cold* 
+   * ​
+2. *D. kikkawai ==higher plasticity==*
+   * Southern pop had higher viability under heat stress but lower under controls and cold stress.
+
+**Fig 4: Mortality**
+
+1. *D. leontia* ==lower plasticity==
+   * **HS:** No diff in mortality between hardening and controsl (consistent with fig 2)
+   * **HS:** Southern had lower mortality  than north
+   * **CS:** No diff between hardening and controls and pops
+2. *D. kikkawai* ==higher plasticity==
+   * **HS** higher mortality in control than hardened, makes sense; southern has lower mortality
+   * **CS:**  Northern have lower mortality than south ; hardening has lower mortality
+
+**Fig 5: AHC (Absolute hardening capacity) and RHC relative hardening capacity**: Same direction
+
+1. *D. leontia* ==lower plasticity==
+   * no sig hardening between northern and southern pops
+2. *D. kikkawai* ==higher plasticity==
+   * Upper thermal limits: positive plasticity
+     * Northern pops have higher upper thermal limits
+   * Lower thermal limits: 
+     * CCRT: northern have faster recovery time
+     * survival: northern have higher survival
+
+
+
+**Fig 6: Hardening vs pretreatment temperatures**
+
+1. Upper thermal limits:
+   * *D. kikkawai* ==higher plasticity== had higher hardening than *D. leontia* ==lower plasticity== for both KD time and survival
+2. Lower thermal limits: 
+   * *D. kikkawai* ==higher plasticity==  has higher cold tolerance than *D. leontia* ==lower plasticity==
+
+**Fig 7 looks the same, wtf**
+
+
+
+**Figure 8** Focus on the climate variables each species experiences 
+
+- North is more variable, south less variable (A)
+- Tave and RH negatively related to latitude
+
+1. *D. leontia* ==lower plasticity==
+   * higher abundance at the warm end
+2. *D. kikkawai* ==higher plasticity== 
+   * higher abundance at the cold end 
+
+
+
+What is the demographic history? I ask because it can explain some of the results. 
+
+
+
+Optimal temp for D. leontia is the south and D. kikkawai is in the north. So D. leontia could be moving south to north and D. kikkawai could be moving north to south. 
+
+
+
+
+
 ------
+
+------
+
+
+
 <div id='id-section20'/>
 ### Page 20:
 ------
