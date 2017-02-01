@@ -984,13 +984,13 @@ aov(Thermal trait~ Latitude * Species)
 2. *D. kikkawai* ==higher plasticity== 
    * higher abundance at the cold end 
 
+## Thoughts 
+
+* What is the demographic history? I ask because it can explain some of the results. 
 
 
-What is the demographic history? I ask because it can explain some of the results. 
-
-
-
-Optimal temp for D. leontia is the south and D. kikkawai is in the north. So D. leontia could be moving south to north and D. kikkawai could be moving north to south. 
+* Optimal temp for D. leontia is the south and D. kikkawai is in the north. So D. leontia could be moving south to north and D. kikkawai could be moving north to south. 
+* Painful read, could have analyzed the data differently. 
 
 
 
