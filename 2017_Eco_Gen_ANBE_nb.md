@@ -850,19 +850,166 @@ A -->|Yes| C[ YOu good]
 
 * **RNA-seq**
   * Advantages: 
-    * ​
-  * Limitations
+    * Diff gene expression
+    * Allele-specific expression from environmental response or adaptive significance
+    * Gives reliable and relevent subset of the genome
+    * Wider dynamic range than micro-arrays
+    * Can give info on splicing events
+  * ==Limitations==
+    * some transcripts may not be reflected in the protein abundance
   * Workflow
+    * <u>Considerations:</u>
+      * prot coding or regulatory non coding?
+      * ref genome?
+      * alt splicing?
+      * tech?
+      * population or treatment specific 
+      * Choice of tissue type
+        * Small organisms- pool organisms
+      * Biological replicates!?
+    * <u>Wet lab</u>
+      * RNASE free; DNASE free (nuclease free)
+      * Get rid of ribosomal RNA; so enrich for poly-AAA tails
+      * Single end or paired end 
+    * <u>Sequencing platforms</u>
+      * Roche 454 sequencing - out of date
+      * Hi-seq by Illumina
+      * Think about error profiles
+      * coverage (100 million bps with  > 100 bps per read )
+    * <u>Computational</u>
+      * Programming: Unix , python, R
+      * De novo assembly: consruct contigs (stretches of RNA)
+      * Map to reference genome!
+
+
+
+
+
+
+
+```mermaid
+graph TD
+A(Purpose and Experimental Set up) --> B(Tissue Prep + Library)
+B --> C(High throughput sequencing)
+C --> D(Transcriptome assembly construction)
+D --> E(Align reads!)
+E --> F(Read quantification, marker development)
+F --> G(Biological inferences)
+```
+
+* **<u>Amplicon-seq</u>** (Hannah): 16s rRNA as example - IDs prokaryotes such as bacteria (18s r RNA, fungi, protozoa)
+  * Methods
+    * Library prep 
+      * extract —> check quality and quantity —> pcr with specific primers
+    * sequencing
+      * 200-600 bps
+    * data analysis
+      * Learning activity
+  * Applications
+
+
+
+==Workflow==
+
+
+
+```mermaid
+graph TD
+A{Extract DNA} --> B(check quality and quantity)
+B --> C(PCR with specific primers)
+C --> D(Clean up PCR product)
+D --> Z(Run gel and cut out band)
+D --> T(Or run it through a column)
+Z --> Y(Second PCR: barcode and add adaptors)
+T --> Y(Second PCR: barcode and add adaptors)
+Y --> N(Clean again and check quality)
+N --> L{Nex-gen Sequencing}
+```
+
+* Data analysis ; where you spend most of your time!
+
+```mermaid
+graph TD
+A{Take raw reads} --> B(QC)
+B --> C[Trim adaptors]
+C --> D(Align Sequences!)
+```
+
+
+
+* Applications:
+  * Known sequences saves you time
+  * ID species 
+
+
+
+<u>Glossary</u>
+
+Amplicon-seq: targeted approach for analyzing genetic variation in a specifc genomic region 
+
+Amplicon: Targeted gene (region) to abe amplified via pca with specific primers
+
+
+
+* *<u>GBS or Rad-seq</u>**
+
+There is a continuum in how much sequence you can get (completeness of samples):
+
+```mermaid
+graph LR
+A{WGS} --> B(RNA-seq)
+B --> Amplicon-seq
+```
+
+* Trade off between sampling and completeness. 
+* GBS falls between RNA-seq and Amplicon-Seq. 
+* Good for population geneticists
+* Goals:
+  * Lots of individuals
+  * Lots of SNPs across the genome
+  * Don't care about specific genes
+  * Dont need complete genome sequence
+* Genotyping-by-sequencing(GBS) or Restriction Assisted DNA -seqencing (RAD-seq)
+* Cut up with restriction enzymes,
+* Sequence with single ends
 
 
 
 ### 3. Tutorials reference [page](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorials.html)
 
+* Cluster (Shared resource): 
+  * 24 CPU cores! 
+  * 32 GB of RAM
+  * maintained by IT
+  * 1 TB harddrive 
+  * THink about other people
+* Logging into the server: 
+  * Everybody has a home directory (~/)
 
 
 
+* Finding out where you are?
 
 
+
+```
+
+```
+
+```UNIX
+[adnguyen@pbio381 ~]$ pwd
+/users/a/d/adnguyen
+```
+
+
+
+* copying the data file
+
+
+
+```
+cp /data/project_data/ssw_samples.txt .
+```
 
 ------
 <div id='id-section7'/>
