@@ -23,7 +23,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 4: 2017-01-25](#id-section4) . Week 2, Day 3, class notes (paper discussions and student project development)
 * [Page 5: 2017-01-30](#id-section5). Week 3, Day 4, class notes , Group presentations of project ideas
 * [Page 6: 2017-02-01](#id-section6). Week 3, Day 5, command line stuff
-* [Page 7:](#id-section7).
+* [Page 7: 2017-02-03](#id-section7). Installing trinity onto UVM cluster
 * [Page 8:](#id-section8).
 * [Page 9:](#id-section9).
 * [Page 10:](#id-section10).
@@ -1013,8 +1013,50 @@ cp /data/project_data/ssw_samples.txt .
 
 ------
 <div id='id-section7'/>
-### Page 7:
+### Page 7: 2017-02-03. Installing trinity into the cluster 
+
+Get the tar and zip file here: https://github.com/trinityrnaseq/trinityrnaseq/releases; 
+
+[Installation instructions](https://github.com/trinityrnaseq/trinityrnaseq/wiki/Installing%20Trinity)
+
+
+
+1. Working directory: /data/popgen
+2. Used "wget"
+   * Downloading the file: 
+
+```
+			wget "https://github.com/trinityrnaseq/trinityrnaseq/archive/Trinity-v2.3.2.tar.gz"
+```
+
+3. Gunzip and tar commands to get executable.
+
+```
+gunzip Trinity-v2.3.2.tar.gz
+tar -xvf Trinity-v2.3.2.tar
+```
+
+4. cd'd into triniy directory and use "make"
+
+5. make plugins
+
+6. Check to see if it works
+
+   ```
+   cd sample_data/test_Trinity_Assembly/
+   ./runMe.sh
+   ```
+
+   ​
+
+
+
+
+
 ------
+
+
+
 <div id='id-section8'/>
 ### Page 8:
 ------

@@ -45,8 +45,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 17: 2017-01-31](#id-section17). List of Adaptive Variation in Hsps lit table. 
 * [Page 18: 2017-01-31](#id-section18). Statuf of projects: writing
 * [Page 19: 2017-01-31](#id-section19). SHC lab meeting reading: Ranga et al. 2017; Evol Ecol: Sibling Drosophila species (Drosophila leontia and Drosophila kikkawai) show divergence for thermotolerance along a latitudinal gradient
-* [Page 20:](#id-section20).
-* [Page 21:](#id-section21).
+* [Page 20: 2017-02-02](#id-section20). SHC lab meeting: reading Ranga et al. 2017; lab discussion
+* [Page 21: 2017-02-03](#id-section21).Todgham et al. 2017; JEB, The effect of temperature adaptation on the ubiquitin-proteasome pathway in notothenioid fishes
 * [Page 22:](#id-section22).
 * [Page 23:](#id-section23).
 * [Page 24:](#id-section24).
@@ -1002,7 +1002,7 @@ aov(Thermal trait~ Latitude * Species)
 
 
 <div id='id-section20'/>
-### Page 20: 2017-02-14. SHC lab meeting: reading Ranga et al. 2017; lab discussion
+### Page 20: 2017-02-02. SHC lab meeting: reading Ranga et al. 2017; lab discussion
 
 
 
@@ -1057,7 +1057,95 @@ B --> E(Isofemale line 3)
 
 ------
 <div id='id-section21'/>
-### Page 21:
+### Page 21: 2017-02-03. Todgham et al. 2017; JEB, The effect of temperature adaptation on the ubiquitin-proteasome pathway in notothenioid fishes
+
+Ref: Todgham AE, Crombie TA, Hofmann GE. 2016. The effect of temperature adaptation on the ubiquitin-proteasome pathway in notothenioid fishes. The Journal of Experimental Biology:jeb.145946.
+
+
+
+**Background**
+
+Ubiquitin tags proteins for degradation through the proteasome(protein chomper). In the face of heat stress, different species can adaptively modulate this pathway to cope with the deleterious effects of protein damage. <u>Antarctic species live in -1.9C while new zealand species live in 10C .</u>
+
+
+
+**Objective:** Understand the thermal compensation of Ub-proteasome pathway in antarctic fish vs ones form warmer climates.
+
+## Approach and workflow
+
+**Compared ubiquitin ,proteasome activity and expression between 2 tissues (gill and liver) for 4 different fish species.** 
+
+```mermaid
+
+graph TD
+A(Trematomus bemacchii) --> D{Antarctic fish}
+B(Pagothenia borchgrevinki) --> D
+
+R(Notothenia angustata) --> P{New Zealand}
+G(Bovichtus variegatus) --> P
+
+D --> M{Ub-proteasome pathway}
+P --> M{Ub-proteasome pathway}
+M --> K(Gills)
+M --> I(Liver)
+
+
+K --> W{UB tagging proteins}
+K --> E{Proteasome 26s complex}
+
+K --> U[Ub-congugated protein]
+I --> U
+
+K --> O[Proteasome activity]
+I --> O[Proteasome activity]
+
+W --> T(CHIP)
+W --> UbE2D1
+W --> Ubiquitin
+
+E --> PSMA2
+E --> PSMB7
+E --> PSMC1
+
+
+```
+
+**Figure 1: UB conjugated proteins**
+
+Antarctic and N. angustata have higher ubiquitin tagged proteins than B. variegatus for both liver and gill. 
+
+
+
+**FIgure 2. Protasome activity** 
+
+Antactic have higher proteasome activity at 0 and 10 C for both gill and liver. The magnitidue of differences were higher in the gills. This may be why they focused only on the gills for gene expression 
+
+
+
+**Figure 3: Gill gxp for UB related genes**
+
+  General pattern as Fig 1. where antarctic fish and N. angustata have higher expression of UB realted gene expression than B. variegatus. But N. angustata had higher expression than the antarctic fish. There could be different dynamics that would be captured with a reaction norm approach. 
+
+
+
+**Figure 4: Gil gxn for proteasome complex related genes.** 
+
+Similar result as figure 1. (exxcept top panel) . But here we see categorical differences between Antarctic and new zealand. Antarctic fish have higher expression. 
+
+
+
+## Thoughts:
+
+ It looks like cold tolerant species up-regulate their protein degradation pathway. It fits the model that if proteins are too damaged, they're clear those proteins. 
+
+
+
+Cool method to test for proteasome activity: (Coux et al., 1996)
+
+1.  chymotrypsin-like activities, which cleaves after large hydrophobic residues
+2.  trypsin-like activities, which cleaves after basic residues
+3. peptidylglutamylpeptide hydrolyzing activities, which cleaves after acidic residues .
+
 ------
 <div id='id-section22'/>
 ### Page 22:
