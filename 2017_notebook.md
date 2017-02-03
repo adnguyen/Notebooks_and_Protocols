@@ -867,7 +867,7 @@ Not very informative in terms of what Hsps are actually doing and how they relat
        - started filling in introduction, eta? No clue, working on in the background   
    - Deadlines: 
      1. Intent to graduate: February 1st for May.   —**done**
-     2. Send defense committe form to grad college—**done****
+     2. Send defense committe form to grad college—**done**
      3. ==Graduate college format check March 4th==
      4. Defense notice 3 weeks before defense  (oral defense by March 24th—*flexible*).   
      5. Final thesis April 7th.  
