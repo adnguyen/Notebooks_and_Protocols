@@ -995,7 +995,6 @@ aov(Thermal trait~ Latitude * Species)
 
 
 
-
 ------
 
 ------
@@ -1003,7 +1002,59 @@ aov(Thermal trait~ Latitude * Species)
 
 
 <div id='id-section20'/>
-### Page 20:
+### Page 20: 2017-02-14. SHC lab meeting: reading Ranga et al. 2017; lab discussion
+
+
+
+Preliminary stuffY:
+
+* SHC needs to quickly read multiple stressors ms
+
+
+
+Katie miller wants to draw out stuff
+
+
+
+```mermaid
+graph TD
+A{Heat tolerance}
+B{Cold tolerance}
+A --> C(33 C)
+A --> D(35 C)
+A --> E(37 C)
+C --> F{Heat shock 37C}
+D --> F{Heat shock 37C}
+E --> F{Heat shock 37C}
+F --> G(% Survival)
+F --> H(Knock down time)
+F --> J(Egg-adult viability)
+```
+
+Not exactly the experimental design….
+
+
+
+Model construction for testing the effects of lines and populations on thermal traits: Nested ANOVA
+
+
+
+```mermaid
+graph TD
+A[Thermal Trait] --> B(Populations)
+B --> C(Isofemale line 1)
+B --> D(Isofemale line 2)
+B --> E(Isofemale line 3)
+```
+
+
+
+
+
+
+
+
+
 ------
 <div id='id-section21'/>
 ### Page 21:
