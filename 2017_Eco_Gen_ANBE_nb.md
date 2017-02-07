@@ -24,7 +24,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 5: 2017-01-30](#id-section5). Week 3, Day 4, class notes , Group presentations of project ideas
 * [Page 6: 2017-02-01](#id-section6). Week 3, Day 5, command line stuff
 * [Page 7: 2017-02-03](#id-section7). Installing trinity onto UVM cluster
-* [Page 8:](#id-section8).
+* [Page 8: 2017-02-06](#id-section8). Week 4, Day 6, RNA-seq
 * [Page 9:](#id-section9).
 * [Page 10:](#id-section10).
 * [Page 11:](#id-section11).
@@ -1052,13 +1052,278 @@ tar -xvf Trinity-v2.3.2.tar
 
 
 
-
 ------
 
 
 
 <div id='id-section8'/>
-### Page 8:
+### Page 8: 2017-02-06. Week 4, Day 6, RNA-seq
+
+## Class outline:
+
+1. info update with Melissa on RNA-seq
+2. Paper discussion
+3. RNA-seq pipeline through the server
+
+
+
+## 1 .info update with Melissa on RNA-seq
+
+Pre-overall workflow:
+
+1. Approach
+2. Experimental design
+3. Library Prep
+4. Sequencing facility
+5. Receive data
+6. Computer/server setup 
+7. Processing
+
+==Processing Workflow:==
+
+
+
+```mermaid
+graph TD
+A{Raw reads, fast-q} --> B[Clean reads: Get rid of adaptors]
+B --> C[Clean reads: Check nucleotide quality]
+C --> D[Clean reads: Length? ]
+D --> E(Evaluate Quality)
+E --> F{De novo Transcriptome Assembly, fasta}
+F --> G[Evaluate Transcriptome assembly]
+G --> Y(compare to closely related species)
+G --> P(CEG)
+G --> W(N50 and number of contigs)
+G --> y(BLAST to annotate)
+F --> K(Map raw reads, SAM files)
+A --> K
+K --> H(Extract read count info, gene expression)
+H --> U(DGE analysis)
+K --> V(Identify SNPs)
+V --> J(Population genomics analyses)
+J --> a(Genetic Differentiation)
+J --> b(Population Structure)
+J --> h(test for signatures of selection)
+
+```
+
+
+
+## 2. Paper discussion: Dunning et al. 2014
+
+Title: Divergent transcriptional responses to low temperature among populations of alpine and lowland species of New Zealand stick insects (Micrarchus).
+
+
+
+Shared response to cold shock? Stick insects in new zealand. They all responded to cold shock differently through differential gene expression (~ 2000 unique genes). 
+
+
+
+**Hypothesis**: We hypothesize that species with poor dispersal ability are likely to have strong phylogeographic structure as a result of genetic drift and, possibly, local adaptation.
+
+* The resulting divergent genetic backgrounds are likely to contribute to variation in the intra- and interspecific transcriptional responses to environmental stress.
+
+They're poor dispersers, so that you'd expect for them to be locally adapted, particularly to the environment. 
+
+
+
+Approach: 
+
+* They used SNPs and COI(mitochondria) to measure extent of population/species differentiation.
+* De novo assembly in transcriptome
+* 4 taxa; generated transcriptome data from experiment, 
+
+
+
+What is phred quality? Quality score on the propbability of the error.  >30  chance it is "right".
+
+
+
+What are unigenes? *Trinity components containing clusters of ‘contigs’ representing splice variants of the same locus.*
+
+
+
+## RNA-seq tutorial
+
+1. CD to path
+
+   * ```UNIX
+      cd project_data/fastq/
+     ```
+
+2. Files: 
+
+   * ```UNIX
+     ls
+     07_5-08_S_1_R1.fq.gz  27_5-11_H_0_R2.fq.gz
+     07_5-08_S_1_R2.fq.gz  27_5-14_H_0_R1.fq.gz
+     07_5-11_S_4_R1.fq.gz  27_5-14_H_0_R2.fq.gz
+     07_5-11_S_4_R2.fq.gz  27_5-20_H_0_R1.fq.gz
+     08_5-11_S_1_R1.fq.gz  27_5-20_H_0_R2.fq.gz
+     08_5-11_S_1_R2.fq.gz  28_5-08_S_1_R1.fq.gz
+     08_5-14_S_1_R1.fq.gz  28_5-08_S_1_R2.fq.gz
+     08_5-14_S_1_R2.fq.gz  28_5-11_S_1_R1.fq.gz
+     09_5-08_H_0_R1.fq.gz  28_5-11_S_1_R2.fq.gz
+     09_5-08_H_0_R2.fq.gz  28_5-17_S_2_R1.fq.gz
+     09_5-14_S_2_R1.fq.gz  28_5-17_S_2_R2.fq.gz
+     09_5-14_S_2_R2.fq.gz  29_5-08_S_2_R1.fq.gz
+     10_5-08_H_0_R1.fq.gz  29_5-08_S_2_R2.fq.gz
+     10_5-08_H_0_R2.fq.gz  29_5-11_S_2_R1.fq.gz
+     10_5-11_H_0_R1.fq.gz  29_5-11_S_2_R2.fq.gz
+     10_5-11_H_0_R2.fq.gz  29_5-14_S_2_R1.fq.gz
+     10_5-20_S_2_R1.fq.gz  29_5-14_S_2_R2.fq.gz
+     10_5-20_S_2_R2.fq.gz  31_6-21_H_0_R1.fq.gz
+     15_5-17_S_3_R1.fq.gz  31_6-21_H_0_R2.fq.gz
+     15_5-17_S_3_R2.fq.gz  32_6-15_H_0_R1.fq.gz
+     19_5-11_H_0_R1.fq.gz  32_6-15_H_0_R2.fq.gz
+     19_5-11_H_0_R2.fq.gz  32_6-18_H_0_R1.fq.gz
+     19_5-17_H_0_R1.fq.gz  32_6-18_H_0_R2.fq.gz
+     19_5-17_H_0_R2.fq.gz  32_6-21_H_0_R1.fq.gz
+     19_5-20_S_5_R1.fq.gz  32_6-21_H_0_R2.fq.gz
+     19_5-20_S_5_R2.fq.gz  33_6-12_H_0_R1.fq.gz
+     20_5-14_H_0_R1.fq.gz  33_6-12_H_0_R2.fq.gz
+     20_5-14_H_0_R2.fq.gz  34_6-12_H_0_R1.fq.gz
+     22_5-08_S_1_R1.fq.gz  34_6-12_H_0_R2.fq.gz
+     22_5-08_S_1_R2.fq.gz  34_6-18_H_0_R1.fq.gz
+     22_5-11_S_1_R1.fq.gz  34_6-18_H_0_R2.fq.gz
+     22_5-11_S_1_R2.fq.gz  35_6-15_H_0_R1.fq.gz
+     23_5-17_S_2_R1.fq.gz  35_6-15_H_0_R2.fq.gz
+     23_5-17_S_2_R2.fq.gz  35_6-18_H_0_R1.fq.gz
+     24_5-08_H_0_R1.fq.gz  35_6-18_H_0_R2.fq.gz
+     24_5-08_H_0_R2.fq.gz  36_6-12_S_1_R1.fq.gz
+     24_5-14_H_0_R1.fq.gz  36_6-12_S_1_R2.fq.gz
+     24_5-14_H_0_R2.fq.gz  36_6-15_S_2_R1.fq.gz
+     24_5-17_H_0_R1.fq.gz  36_6-15_S_2_R2.fq.gz
+     24_5-17_H_0_R2.fq.gz  36_6-18_S_3_R1.fq.gz
+     24_5-20_H_0_R1.fq.gz  36_6-18_S_3_R2.fq.gz
+     24_5-20_H_0_R2.fq.gz  38_6-18_S_2_R1.fq.gz
+     26_5-08_S_2_R1.fq.gz  38_6-18_S_2_R2.fq.gz
+     26_5-08_S_2_R2.fq.gz  38_6-21_H_0_R1.fq.gz
+     26_5-11_S_3_R1.fq.gz  38_6-21_H_0_R2.fq.gz
+     26_5-11_S_3_R2.fq.gz  38_6-24_S_5_R1.fq.gz
+     27_5-08_H_0_R1.fq.gz  38_6-24_S_5_R2_fastqc.html
+     27_5-08_H_0_R2.fq.gz  38_6-24_S_5_R2_fastqc.zip
+     27_5-11_H_0_R1.fq.gz  38_6-24_S_5_R2.fq.gz
+     ```
+
+   * Each class member will do R1 and R2(left and right reads)
+
+   * number relates to scale of symptoms
+
+   * Samples I'm doing!
+
+   * ```UNIX 
+     20_5-14_H_0_R1.fq.gz & 205-14_H_0_R2.fq.gz
+     ```
+
+3. look at our files: 
+
+   * ```UNIX
+     zcat 20_5-14_H_0_R1.fq.gz | head
+
+     ```
+
+   * Output:
+
+     @J00160:63:HHHT2BBXX:1:1101:27823:1244 1:N:0:TCCGGAGA+AGGCTATA
+
+     GNGCGTTATTATATGGTTTTATCTTCATTTNTTAAATGAACTTGATCTTGAATTTTTTTTTTTTTTTTTTTGGGGGATCGGAAGAGCACACGTNTGAACTC
+
+     +
+
+     A#AFFAFJJJJJJJJJJJJJJJJJJJJJJJ#JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJAAFFF-A<JFAJF<JJ-FJJJF#JF-J77A
+
+     @J00160:63:HHHT2BBXX:1:1101:28635:1244 1:N:0:TCCGGAGA+AGGCTATA
+
+     ANTGAGTAGAAGGAATCGGTCCACCATAAANAAGTGGAGGTTCCACATGGGCAAAGATGCCGGTACCATTCTTAACACTAGAAGAAGGAGCTTTTTCACTA
+
+     +
+
+     A#AFFJJJJJJJJJJJJJJJJJJJJJJJJJ#JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJAJJJJJJJJJJJJJJJJJJJJJJJJAFJJJJJF
+
+     @J00160:63:HHHT2BBXX:1:1101:29244:1244 1:N:0:TCCGGAGA+AGGCTATA
+
+     GAGGCACTCATACAGGTTACACAGCTGAGANTAATTTATATCATATACTATAATGCATAATACATGTAAGCATCTCTATTGCTACATTGCCTGGTTATACA
+
+4. This is a fastq file
+
+   * Unique indentifier
+   * ATGC's are sequence data for the reads; same length
+   * 3rd line is a plus, just an indicator; before the quality score (PHRED) for each nucleotide bases (ASCII format to have double digit value to be represented by a single character). Makes downstream processing easier
+   * Letters are good quality, non-letters are not.
+   * greater than 30 is usually the cutoff
+
+5. move into my directory and save the scripts into the scripts folder
+
+   * ```UNIX
+     cd scripts/
+     ```
+
+   * ```UNIX
+     cp /data/scripts/trim_example.sh .
+
+     ```
+
+   * ​
+
+
+
+## Actual script to run trimmomatic
+
+```
+#!/bin/bash
+      java -classpath /data/popgen/Trimmomatic-0.33/trimmomatic-0.33.jar org.usadellab.trimmomatic.TrimmomaticPE \
+                -threads 1 \
+                -phred33 \
+                 /data/project_data/fastq/20_5-14_H_0_R1.fq.gz \
+                 /data/project_data/fastq/20_5-14_H_0_R2.fq.gz \
+                 /data/project_data/fastq/cleanreads/"20_5-14_H_0_R1_clean_paired.fa" \
+                 /data/project_data/fastq/cleanreads/"20_5-14_H_0_R1_clean_unpaired.fa" \
+                 /data/project_data/fastq/cleanreads/"20_5-14_H_0_R2_clean_paired.fa" \
+                 /data/project_data/fastq/cleanreads/"20_5-14_H_0_R2_clean_unpaired.fa" \
+                 ILLUMINACLIP:/data/popgen/Trimmomatic-0.33/adapters/TruSeq3-PE.fa:2:30:10 \
+                 LEADING:28 \
+             TRAILING:28 \
+             SLIDINGWINDOW:6:28 \
+             HEADCROP:9 \
+             MINLEN:35 \
+```
+
+
+
+
+
+## Running script:
+
+
+
+```
+./trim_example.sh &
+```
+
+
+
+Output
+
+
+
+```
+Input Read Pairs: 13876156 Both Surviving: 11211956 (80.80%) Forward Only Surviving: 2046413 (14.75%) Reverse Only Surviving: 257037 (1.85%) Dropped: 360750 (2.60%)
+TrimmomaticPE: Completed successfully
+```
+
+
+
+
+
+### Course notes and thoughts:
+
+* Students may benefit from instructor led demonstration of implementing an electronic notebook.
+  * It is also more engaging when the instructor takes notes or copy and paste code into a notebook
+* Give more clear instructions for how journal club leaders should lead a paper. 
+  * Students should give questions, rational, hypotheses, experimental design,
+* ​
+
 ------
 <div id='id-section9'/>
 ### Page 9:
