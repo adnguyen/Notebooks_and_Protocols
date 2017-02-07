@@ -35,22 +35,22 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 7: 2017-01-19](#id-section7). Making sense of reviewer comment; multiple stressors ms
 * [Page 8: 2017-01-19](#id-section8). Notes from SICB
 * [Page 9: 2017-01-20](#id-section9). Status of projects
-* [Page 10: 2017-01-26](#id-section10). Hoffmann et al. 2013, Functional Ecology Paper notes ; Constraints on upper thermal limits
+* [Page 10: 2017-01-26](#id-section10). **Hoffmann et al. 2013**, Functional Ecology Paper notes ; Constraints on upper thermal limits
 * [Page 11: 2017-01-26](#id-section11). Notes on teaching statements
 * [Page 12: 2017-01-26.](#id-section12). SHC lab meeting, organizational
-* [Page 13: 2017-01-26](#id-section13). Bubliy & Loeschke 2005 paper notes; comparisons of selection on stress resistance
-* [Page 14: 2017-01-26.](#id-section14). Mitchell & Hoffmann 2010 paper notes, Functional Ecology; Thermal ramping influences evolutionary potential
+* [Page 13: 2017-01-26](#id-section13). **Bubliy & Loeschke 2005** paper notes; comparisons of selection on stress resistance
+* [Page 14: 2017-01-26.](#id-section14). **Mitchell & Hoffmann 2010** paper notes, Functional Ecology; Thermal ramping influences evolutionary potential
 * [Page 15: 2017-01-27.](#id-section15) Embedding a calendar into your webpage
-* [Page 16: 2017-01-31](#id-section16). Sørensen et al. 2003; Ecology letters, The Evolutionary and ecological role of heat shock proteins; paper notes
+* [Page 16: 2017-01-31](#id-section16). **Sørensen et al. 2003**; Ecology letters, The Evolutionary and ecological role of heat shock proteins; paper notes
 * [Page 17: 2017-01-31](#id-section17). List of Adaptive Variation in Hsps lit table. 
 * [Page 18: 2017-01-31](#id-section18). Statuf of projects: writing
 * [Page 19: 2017-01-31](#id-section19). SHC lab meeting reading: Ranga et al. 2017; Evol Ecol: Sibling Drosophila species (Drosophila leontia and Drosophila kikkawai) show divergence for thermotolerance along a latitudinal gradient
 * [Page 20: 2017-02-02](#id-section20). SHC lab meeting: reading Ranga et al. 2017; lab discussion
-* [Page 21: 2017-02-03](#id-section21).Todgham et al. 2017; JEB, The effect of temperature adaptation on the ubiquitin-proteasome pathway in notothenioid fishes
-* [Page 22:](#id-section22).
-* [Page 23:](#id-section23).
-* [Page 24:](#id-section24).
-* [Page 25:](#id-section25).
+* [Page 21: 2017-02-03](#id-section21).**Todgham et al. 2017**; JEB, The effect of temperature adaptation on the ubiquitin-proteasome pathway in notothenioid fishes
+* [Page 22: 2017-02-06](#id-section22). **Tomanek & Somero 2002**; JEB, Paper notes
+* [Page 23: 2017-02-06](#id-section23). **Tomanek 2010;** JEB, paper notes
+* [Page 24: 2017-02-06](#id-section24). **Parcel & Lindquist 1994;** cold spring harbor , paper notes
+* [Page 25: 2017-02-07](#id-section25). How far down do Aphaenogaster colonies go in the winter?
 * [Page 26:](#id-section26).
 * [Page 27:](#id-section27).
 * [Page 28:](#id-section28).
@@ -1144,20 +1144,168 @@ Cool method to test for proteasome activity: (Coux et al., 1996)
 
 1.  chymotrypsin-like activities, which cleaves after large hydrophobic residues
 2.  trypsin-like activities, which cleaves after basic residues
-3. peptidylglutamylpeptide hydrolyzing activities, which cleaves after acidic residues .
+3.  peptidylglutamylpeptide hydrolyzing activities, which cleaves after acidic residues .
 
 ------
 <div id='id-section22'/>
-### Page 22:
+### Page 22: 2017-02-06. **Tomanek & Somero 2002**; JEB Paper notes
+
+Reference:   
+
+Tomanek L, Somero GN. 2002. Interspecific- and acclimation-induced variation in levels of heat-shock proteins 70 (hsp70) and 90 (hsp90) and heat-shock transcription factor-1 (HSF1) in congeneric marine snails (genus Tegula): implications for regulation of hsp gene expression. J Exp Biol 205:677–685.
+
+
+
+## Rational/Objectives/Questions
+
+How do species adaptively vary in their stress response?
+
+
+
+Species differ in vertical distribution
+
+1. *Tegula brunnea* = subtidal 
+2. *T. montereyi* = subtidal to low intertidal zones
+3. *T. funerals* = low to mid intertidal zone (with wider latitudinal distribution) 
+   * ==experiences the highest heat stress==
+
+
+
+## Methods
+
+1. Collected mid july and treated 13, 18 and 23 C for 30-34 days
+2. Dissected tissues and isolated proteins
+3. They measured protein levels of Hsp70/90/40, HSF with western blots.
+
+
+
+## Take homes
+
+*Our results indicate that the cellular thermometer model can account for intraspecific but not interspecific variation in Ton  and that the relative levels of expression of different isoforms of hsp70 may provide a better measure of heat stress than the total expression of all hsp70 isoforms.*
+
+
+
+Figures are uninterpretable.
+
 ------
+
+
+
+
 <div id='id-section23'/>
-### Page 23:
+
+### Page 23: 2017-02-06. Tomanek 2010; JEB
+
+Reference:
+
+Tomanek L. 2010. Variation in the heat shock response and its implication for predicting the effect of global climate change on species’ biogeographical distribution ranges and metabolic costs. J Exp Biol 213:971–979.
+
+
+
+This is one of the few papers that compare the thermal reaction norms of Hsp  protein expression among 3 different species. These species vary in the thermal environment
+
+
+
+Species: *Chlorostoma* formerly *Tegula*
+
+1. C. funebralis = warm tolerance
+2. C. brunnea = intermediate tolerance
+3. C. montereyi = low to intermediate tolerance
+
+
+
+Figure 1.
+
+These species shift the reaction norm of Hsp protein expression to the right, in support for the tolerance mechanism. And C. funebralis shifts their max expression upwards at the higher temperature. 
+
+
+
+Some species lack HSR:
+
+1. Hydra lack a HSR (Bosch et al. 1988)
+   * mRNA gets rapidly degraded
+2. antarctic marine organisms have little HSR
+   * lacks inducibility of HSPs
+
+
+
+**Argues that the variation in the thermal reaction norms of Hsp expression is related to the temperature variation different taxanomic groups experience.**
+
 ------
 <div id='id-section24'/>
-### Page 24:
+### Page 24: 2017-02-06. **Parcel & Lindquist 1994;** cold spring harbor , paper notes 
+
+<u>Title: Heat Shock proteins and stress tolerance</u>
+
+* ​
+* Protection (resistance) and tolerance are assumed to be the same (conflated). 
+* Induced thermotolerance = heat hardening; when exposed to sublethal stress and Hsps increase , it can confer resistance to future temperature threats
+* *Nutrient availability, o x y g e n tension, diurnal rhythms, and a host of other variables exert highly reproducible effects on thermotolerance.*
+* *In general terms, hsps function by preventing the accumulation of stress-damaged proteins.*
+* ​
+
+How does heat stress damage cells?
+
+* Heat damages a wide variety of cellular structures and metabolic proc e s s e s (for detailed reviews, see Nover 1991; Laszlo 1992).*
+* *In higher eukaryotes, one of the most immediate effects of heat shock is extensive disruption of the cytoskeleton (Falkner et al. 1981; Coss et al. 1982; Glass et al. 1985; Welch and Suhan 1985; Iida et al. 1 9 8 6 ) .*
+* The golgi gets fragmented and number  of lysosomes increase.
+* Mitochondria swell and decrease in number— decrease in oxidative phosphorylation
+* influence gene expression; reduced
+* DNA synthesis is slowed; inhibit chromatn assembly; DNA becomes unstable
+* *The total protein content of the nucleus also increases with heat shock (Laszlo 1992).*
+* changes lipid membranes; increased fluidity of bilayer and aggregation of integral membrane proteins
+
+What is  the response?
+
+* *In many cases, mild heat pretreatments, which induce hsp synthesis, either reduce the extent of these perturbations or speed their repair.*
+* *Unfortunately, although we know that hsps have a central role in thermotolerance and have learned a great deal about the general biochemical functions of these proteins, w e still do not k n ow which heatinduced cellular perturbations are responsible for lethality or w h i c h lethal lesions are the most susceptible to repair by hsps.*
+
+## Hsp70 function in stress tolerance (so this paper frames in term of tolerance)
+
+* *early experiments showed a c l o s e correlation between their induction and the induction of tolerance to high temperatures (Li and Werb 1982; Li and Laszlo 1985; Subjeck and Shyy 1986).*
+  * Li & Werb 1982 compare thermal tolerance with Hsp protein expression
+
+Where is hsp70 localized during HS?
+
+* concentrated in membrane, nuclei, and nucleoli (*Pelham 1984; Pelham et al. 1984; Velazquez and Lindquist 1984; Welch and Feramisco 1984*)
+
+
+
+**In a f ew experiments, differences in thermotolerance among cultivars have been correlated with differences in hsp synthesis (Ougham and Stoddart 1986; Howarth 1989; Krishnan et al. 1989). **
+
+
+
+**In o n e case, however, where the cosegregation of hsp polymorphisms and thermotolerance polymorphisms was examined, no simple correlation was observed (Fender and O'Connell 1989). **
+
+
+
 ------
 <div id='id-section25'/>
-### Page 25:
+### Page 25: 2017-02-07. How far down do Aphaenogaster colonies go in the winter?
+
+Lubertazzi 2012 has the answer. 
+
+
+
+```
+4.1.4.Winter. In winter months colonies avoid freezing temperatures
+by maintaining their nests below ground. Talbot
+[24] found the average depth of 5 winter colonies inMissouri
+to be 25 cm. Colonies in Connecticut appear to prefer deeper
+nests, to a depth of at least 50 cm. Developmental processes
+enter a diapause and worker activity within the nest is
+minimal.
+
+```
+
+==Depending on where they are, 25-50 cm!!!==
+
+
+
+reference: 
+
+Lubertazzi D. 2012. The Biology and Natural History of *Aphaenogaster rudis*. Psyche: A Journal of Entomology [Internet] 2012. Available from: http://www.hindawi.com/journals/psyche/2012/752815/abs
+
 ------
 <div id='id-section26'/>
 ### Page 26:
