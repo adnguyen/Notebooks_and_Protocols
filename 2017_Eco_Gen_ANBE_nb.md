@@ -25,7 +25,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 6: 2017-02-01](#id-section6). Week 3, Day 5, command line stuff
 * [Page 7: 2017-02-03](#id-section7). Installing trinity onto UVM cluster
 * [Page 8: 2017-02-06](#id-section8). Week 4, Day 6, RNA-seq
-* [Page 9:](#id-section9).
+* [Page 9: 2017-02-08](#id-section9). Week 4, Day 7, RNA-seq cont'd + paper discussion DePanis et al. 2016; MolEco
 * [Page 10:](#id-section10).
 * [Page 11:](#id-section11).
 * [Page 12:](#id-section12).
@@ -1326,7 +1326,219 @@ TrimmomaticPE: Completed successfully
 
 ------
 <div id='id-section9'/>
-### Page 9:
+### Page 9: 2017-02-08. Week 4, Day 7, RNA-seq cont'd + paper discussion DePanis et al. 2016; MolEco
+
+Transcriptomics take 2: 
+
+## Info update by Lisa Chamberland
+
+1. Intro
+   * studying relationship between organism and environment
+   * adding genomics you can look at this at a finer scale
+   * observe rapid responses to the environment (gene expression)
+   * advantages: can study wild systems (non-models; or non-traditional)
+   * find silent genes that get expressed under novel stimuli
+   * variation between individuals, within and among populations, 
+   * novel transcripts without homologues in closely related organisms
+   * Main methods:
+     * microarrays
+     * nexgen sequencing
+2. Breif overview
+3. Main questions
+   1. How much variation is there in gene expression and how is it structured? (288 studies)
+      * Heritable variation
+      * Epigenetics
+      * Wild populations
+      * Qst-Fst comparisons
+      * eQTL
+      * Macroevolution
+        * bottlenecks, drift, selection
+   2. How do environmental stimuli affect gene expression? ( 136)
+      * abiotic stress
+      * environmental heterogeneity
+      * host-parasite interactions
+      * selective abiotic and biotic interactions
+      * molecular basis of response
+        * phenotypic plasticity
+        * among genotypes
+      * drawbacks : need to flash freeze and the transcriptome is just a snapshot
+      * time course analyses
+   3. how does gene expression affect phenotype? (15 studies)
+      * alternative phenotypes
+      * move from correlation to causation
+        * transgenics, RNAi, crispr-cas9
+4. future directions
+   * combined microarrays and rna-seq 
+   * Database for proposed ecologicla variations
+   * Problems:
+     * bias in signals 
+     * ~~heterologous arrays~~
+     * polyploidy
+     * RNA pooling
+     * statistical anlayses
+
+
+
+Glossary: 
+
+
+
+## Paper discussion
+
+Background: Desert drosophila that grows in arid conditions. It has 2 hosts. The two cactus differ in alkyloids. 
+
+Q: How does environment influence gene expression? 
+
+
+
+
+
+## Coding session
+
+Learning goals (skills):
+
+1. scripts
+   * executing scripts
+2. paths
+   * program
+   * input
+   * output
+   * filenames in and out
+3. moving through the directories
+4. moving files
+   * on the server 
+   * ==from server to our computer (scp)==
+5. ​
+
+Practical:
+
+1. Finish up our cleaning: trimmomatic
+2. fastqc (visualizing)
+3. make a table of # reads
+4. design assembly tests
+5. Start assemblies
+6. Evaluate assembly
+
+
+
+<u>Moved the trimmomatic files into this path:</u>
+
+
+
+```
+/users/a/d/adnguyen/mydata/2017-02-08_cleanread
+```
+
+<u>Ok now, run fastqc to check files</u>
+
+
+
+```
+fastqc 20*
+```
+
+
+
+<u>What do I get?</u>
+
+```
+[adnguyen@pbio381 2017-02-08_cleanreads]$ ls
+20_5-14_H_0_R1_clean_paired.fa
+20_5-14_H_0_R1_clean_paired.fa_fastqc.html
+20_5-14_H_0_R1_clean_paired.fa_fastqc.zip
+20_5-14_H_0_R1_clean_unpaired.fa
+20_5-14_H_0_R1_clean_unpaired.fa_fastqc.html
+20_5-14_H_0_R1_clean_unpaired.fa_fastqc.zip
+20_5-14_H_0_R2_clean_paired.fa
+20_5-14_H_0_R2_clean_paired.fa_fastqc.html
+20_5-14_H_0_R2_clean_paired.fa_fastqc.zip
+20_5-14_H_0_R2_clean_unpaired.fa
+20_5-14_H_0_R2_clean_unpaired.fa_fastqc.html
+20_5-14_H_0_R2_clean_unpaired.fa_fastqc.zip
+```
+
+
+
+<u>Now, I'll move it back to my computer: So in my home computer, this is my working directory.</u>
+
+
+
+```
+/Users/andrewnguyen
+```
+
+
+
+<u>Now we can move files from server to my home computer</u>
+
+```
+scp adnguyen@pbio381.uvm.edu:~/mydata/2017-02-08_cleanreads/*.html .
+
+```
+
+<u>This is what i get</u>
+
+```
+andrewnguyen$ ls
+20_5-14_H_0_R1_clean_paired.fa_fastqc.html
+20_5-14_H_0_R1_clean_unpaired.fa_fastqc.html
+20_5-14_H_0_R2_clean_paired.fa_fastqc.html
+20_5-14_H_0_R2_clean_unpaired.fa_fastqc.html
+Applications
+Desktop
+Documents
+Downloads
+Dropbox
+Google Drive
+Library
+Movies
+Music
+Pictures
+Public
+Sites
+Teaching
+bower_components
+node_modules
+package.json
+zScience
+
+```
+
+
+
+**When doing an assembly. You can concatenate reads and then run fastqc.**
+
+
+
+## Now we can run an assembly:
+
+What can influence it?  
+
+* number of individuals? 
+
+
+
+
+
+instructor meeting:
+
+* Coming up is assembly and mapping sequence reads. 
+
+
+* There is a catch up day. We're ~ half a day behind. 
+* Melissa make better quality assembly
+  * Evaluate the assembly, 
+  * Start annotation mapping (can use Trinitate; built into Trinity)
+* Melissa (for Monday): finish cleaning all the samples and then make a good reference
+  * Health and sick individuals; 50 million reads
+  * BWA-mem; short mapping ==(by monday)==
+    * students will map their own files —> sam files
+    * then concatenate sam files
+* for transcriptomics, they can extract read counts ffrom their sam files ==(Wednesday)==. (this involves a python script)
+  * DEseq2 in R for transcriptomic analyses
+
+
+
 ------
 <div id='id-section10'/>
 ### Page 10:
