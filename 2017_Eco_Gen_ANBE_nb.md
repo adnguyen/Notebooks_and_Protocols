@@ -1739,7 +1739,9 @@ Only downregulated in the head were enriched under clinal and seasonal.
 
 Take home
 
-
+* Tissue specific and isoform specific expression can vary within an organism. 
+* Downrgulated genes in the head are the types of genes that are related to latitude and seasonality. 
+* Gene expression is autocorrelated. 
 
 ------
 <div id='id-section11'/>
