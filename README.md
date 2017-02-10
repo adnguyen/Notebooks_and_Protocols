@@ -28,13 +28,15 @@ This repo shares my protocols and notebooks of ongoing work with the aim of capt
   * Phylogenetics of Aphaenogaster    
 
 * 2015 (before I found markdown, so these aren't perfectly formatted)    
-	* 
+	* [HMM scans](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2015_hmmscan_notebook.md)
+	* [RAD-seq phylogenetics](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2015_phylogenomics_rad_seq_ANBE.md)   
+	
 
 
 # List of protocols
 
 * [Heat shocking, RNA isolations, and QPCR](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_ANBE_protocols.md)
-* [Protein related](https://github.com/adnguyen/2016_Protein_stability_evolution/blob/master/Documents/Protocols/Protocols.md)
+* [Protein related](https://github.com/adnguyen/2016_Protein_stability_evolution/blob/master/Documents/Protocols/Protocols.md)  
 
 
 # Notes 
