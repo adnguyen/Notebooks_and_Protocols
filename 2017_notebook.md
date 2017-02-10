@@ -52,7 +52,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 24: 2017-02-06](#id-section24). **Parcel & Lindquist 1994;** cold spring harbor , paper notes
 * [Page 25: 2017-02-07](#id-section25). How far down do Aphaenogaster colonies go in the winter?
 * [Page 26: 2017-02-07](#id-section26).  A definition of a trade-off
-* [Page 27:](#id-section27).
+* [Page 27: 2017-02-09](#id-section27). SHC lab meeting: Practice talk for biolunch and dissertation defense
 * [Page 28:](#id-section28).
 * [Page 29:](#id-section29).
 * [Page 30:](#id-section30).
@@ -1369,7 +1369,164 @@ reference
 
 ------
 <div id='id-section27'/>
-### Page 27:
+### Page 27: 2017-02-09. SHC lab meeting: Practice talk for biolunch and dissertation defense
+
+
+
+SHC : overall intro is fine, you'll give it better every time you do it. you'll get smoother. 
+
+
+
+==SHC has problem with question:==
+
+What types of adaptations are needed to evolve into different environments?
+
+What types of adaptations are needed to colonize different environments? (might want to be more specific, "thermally extreme environments")
+
+
+
+SHC wants me to avoid, performance is physiology/ behavior. performance relates to fitness. They are not the same thing. 
+
+In slide 8; I'm showing TPC's across a temperature gradient. The whole thing is shifting, but what im saying is that only ctmax is changing. thinka bout this. display diff
+
+
+
+slide 9: there is an issue with me only presenting 1 option. There are other ways!!! don't necessarily talk about other ways. 
+
+Slide 11: Engage with the figure: Here are the 3 heat shock proteins, but if i have a pathway, i better show how it works. Rethink. 
+
+
+
+Slide 17: this is vague. I mean that the "dynamics of how they are used". This is what i want to stress. "Temperature selection" is too vague and I can say something more specific. 
+
+
+
+Slide 18: this is confusing: too fast, both slide 18 and 19 have positive slopes and how ar they different? 
+
+SHC suggestion: I want to get across, how do i use hsps to be better protected? Have them there all the time! Get across in plain english
+
+Slide 19: Tolerance: when you do get damage, you repair it , turn on when needed and turn on stronger.
+
+==Went too fast; and with graphs, it is hard for audience to get it==. Bar graph instead to give people the words (SHC is not sure)
+
+
+
+If HSPs are contributing to thermal limits, how are they doing it? SHC confused as to why upper thermal limits is on y axis
+
+==get rid of slide 20==
+
+
+
+Slide 21: title is bad, instead: ants live in different environments. colonized environments from extremely cold to extremely hot!
+
+Slide 22: Question 2 needs adjustments. How implies that it assumed they already adaptively vary. "relate" is vague, be more precise. 
+
+Question 3 is awkward. SHC is not sure, think about how to frame it . How do upper thermal limits interact with other elements of physiology that relates to or influence species survival. or where species occur or performance 
+
+
+
+slide 24: NOt clear that i used drosophila for blast search. Which ones in fruit flies are heat inducible? 
+
+SHC suggestion: Save housekeeping business for this slide. Some are for heat response and some are for housekeeping function. Use fruit flies as a reference. Adds to story about shifts taht have gone on in these proteins used in ants as opposed to other insects. it is dynamic. 
+
+==KM suggestions==
+
+conclusions for each chapter was unclear:
+
+multiple stressors: symbols for desiccation and starved were the same. change colors!
+
+----
+
+Slide 25: give a road map for the first time when i present hsp83 gene trees and regulatory elements. diverse group….some might not understand how you can infer duplication on a gene tree. 
+
+**Slide 27: call it hsc70-4  instead of hsp70.**
+
+What is going on with bombus? 
+
+
+
+==Slide 30: have contrasting slide, meaning show hsp orthologues not heat inducible!==
+
+Slide 31: Flat title. Conservation and innovation——say something about the evolutionary dynamics of hsps….they are conserved in fucntion, but there is alot of opportunity for innovation. Switch between housekeeping to inducible. There is more to be explored….i.e. subfunctionalization. Not a simple answer, there is a complex answer. Conserved function but the individual players is not static!
+
+
+
+One time to make general statements about the implications of the work Im doing. Generalize so you can make general comments about biology. dont overstate but think critically!
+
+Slide 33: both hypotheses don't belong on the same slide
+
+Ask…whether there are adpative shifts in upper thermal limits when ants colonize novel environments. 
+
+==This is what i want to know….==
+
+Extension or enhancement of thermal limits. If you live in a warmer place, can you withstand higher temperatures.  
+
+==if so, how do you do it?== Are hsps involved, how!?
+
+**important**
+
+Then go to the clade. species are structured along the cline. colonieze east coast over X million years. and they have colonized open environments. 
+
+==Bonnie comments==
+
+When i go into the predictions, make it explicit that they are predictions. 
+
+Four main questions was confusing. I only have 3 points, but bonnie was expecting 4. 
+
+Make sure im' clear on DW and FW
+
+**MIstake** : I'm assuming that everybody will understand a phylogenetically informed appraoch. Give overview of approach! What is the phylogeny doing? Set up the audience to understand. More important to be understandable than lenght. 
+
+Slide 35-40 I need to use titles!1
+
+
+
+==Conclusion to CTmax part: I set up conflict, but my conclusion does not resolve the conflict.== Needs to be in plain english. 
+
+Are the differences in CTmax explained by differences in how Hsps are used? 
+
+**How does graded protection help/work?**
+
+
+
+Tolerance mechanism is not a driver, it's a response to something else that is reducing the incidence of protein denaturing. 
+
+Max is more about repair. 
+
+three possibilities: 
+
+1. protection - active
+2. repair - active
+3. tolerance - passive
+
+Frame your question! Think about this to tell a precise story. 
+
+
+
+RXN norm slides: connect it to something. Issue with how people study this. ANOVA approaches misses elements of adaptive changes in responses 
+
+
+
+DW buffer thermal environment compared to FW.  Use data to decide whether i focus on habitat differences or to include cline in ctmax. 
+
+
+
+For cahpter 2 conclusion: wrap up the whole chapter…thermal limits and hsp. Evolutionary lability or flexibilty in how hsps are used can lead or ability to colonize new habitats. LInk hsps back to habitat. integrate the data better
+
+Natural shift to last question: The data i have might suggest, in the framework of climat change….DF species might be more protected because they dont get exposed to extremes. HOWEVER, climate change is not about change in temprature….but the constellation of chagnes associated with climate change . INcreases in temperature, other things are changing….other stressors can lead species to become more vulnerable. 
+
+**Goals instead of topics.** Last part could be integrating my results with current climate chagne patterns. 
+
+
+
+Slide 68: hypothesis slide for multiple stressors section
+
+I have "or", split up the hypothesis
+
+Slide 70: x axis in predictions could be severity. Overall, predictions are abstract. Explain cross protection or susceptibility mechanisms. ie extra stressor improves or reduces them. NO need for complex prediction slides. Why would another stressor can ever help you? (link back to HSPs…but don't need to add the data;; but you need the explanation)
+
+You need methods: treatments, knockdown time explanation. All results need statistics.  Play with overall conclusion. 
+
 ------
 <div id='id-section28'/>
 ### Page 28:
