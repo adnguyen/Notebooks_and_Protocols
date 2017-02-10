@@ -1535,13 +1535,14 @@ A{HSPs} --> B[Sense]
 A --> C[Repair]
 B --> L(Turn on when proteins unfold)
 L --> H{Increase Inflection point}
-C --> P[Protect]
-C --> T[Tolerate]
-P --> E(Pre-emptively turn on)
-T --> R(Turn on higher)
+C --> E(Pre-emptively turn on)
+C --> R(Turn on higher)
 R --> V{Increase Max expression}
 E --> F{Increase Constitutive Expression}
 E --> Y{Slow Expression rate}
+F --> P[Protect]
+Y --> P
+V --> T[Tolerate]
 ```
 
 

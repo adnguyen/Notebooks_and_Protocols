@@ -26,7 +26,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 7: 2017-02-03](#id-section7). Installing trinity onto UVM cluster
 * [Page 8: 2017-02-06](#id-section8). Week 4, Day 6, RNA-seq
 * [Page 9: 2017-02-08](#id-section9). Week 4, Day 7, RNA-seq cont'd + paper discussion DePanis et al. 2016; MolEco
-* [Page 10:](#id-section10).
+* [Page 10: 2017-02-10](#id-section10). Prepping for leading journal club discussion: 2015-02-15; Zhao et al. 2016; *MBE*
 * [Page 11:](#id-section11).
 * [Page 12:](#id-section12).
 * [Page 13:](#id-section13).
@@ -1538,10 +1538,209 @@ instructor meeting:
   * DEseq2 in R for transcriptomic analyses
 
 
-
 ------
 <div id='id-section10'/>
-### Page 10:
+### Page 10: 2017-02-10. Prepping for leading journal club discussion: 2015-02-15; Zhao et al. 2016; *MBE*
+
+reference:
+
+Zhao X, Bergland AO, Behrman EL, Gregory BD, Petrov DA, Schmidt PS. 2016. Global Transcriptional Profiling of Diapause and Climatic Adaptation in Drosophila melanogaster. Mol Biol Evol 33:707–720.
+
+
+
+**Background + Objecives**
+
+
+
+* Fruit flies occur across a latitudinal gradient, with northern populations experiencing more seasonality. 
+* Diapause is a life history strategy characterized by inactivity and metabolic arrest—driven environmental cues including nutrient availability, temperature, photoperiod
+* Diapause varies across latitude
+
+
+
+==Goal is to understand the mechanisms that allow organisms to adapt to distinct environments==
+
+* latitudinal gradients are great because environments differ continuously along this axis. 
+* But! Not only can environments vary through space…but also time, especially, within a season. 
+* Fruit flies originated in tropics of Africa, but have expanded world wide. And there are signatures of clinal varatiion in thse popualtions from australia, NA, SA, Africa. 
+* Not only is there clinal variation in SNPS, but there are also seasonal SNPs too. 
+* Northern lat SNPs are similar to those from SNPs associated with summer. (and vice versa)
+* So you have SNPs resonding to the environment through space and time…..soooo
+
+**Focus: Diapause phenotype**
+
+* Induced by photoperiod and moderately low temperatures
+* results in halt in reproduction
+* increased lipid storage
+* increased stress tolerance
+
+Diapause varies along cline. (90% in temperate, 30% nootropics)
+
+
+
+Fundamental lief history trade-off: somatic maintenance and reproduction. 
+
+
+
+```mermaid
+graph TD
+C(Benign conditions) --> I[High reproduction]
+C --> T[Low survival]
+E[Stressful unfavorable conditions] --> R(Higher survival)
+E --> V[Low reproduction]
+R --> A{Diapause}
+V --> A
+T--> B{Non-diapause}
+I --> B
+```
+
+Candidates for diapause: 
+
+* Dp110
+* timeless
+* cough potato
+* circadian clock
+* insulin and insulin like growth factor
+
+
+
+## Questions 
+
+1. What are the common underlying mechanisms of adaptation to the environment?  (gathered from intro)
+2. What are the genes and transcripts that are diff expressed as a function of diapause phenotype? 
+3. Are the genes previously id as being associated with variance in diapause, diff regulated in diapause vs non diapause
+4. Are the DE genes segregating for SNPs that vary in frequency with latitude and season? 
+5. Is there tissue specificity? 
+
+
+
+## Hypotheses
+
+1. Diapause is one major determinant of adaptation to spatial and temporal environmental heterogeneity in fruit flies
+
+Prediction:
+
+If the natural variation of diapause does play critical roles in adaptation to environmental heterogeneity, genes differentially regulated as a function of the diapause phenotype are likely under spatially and/or temporally varying selectively pressures, thus genetic polymorphisms on these genes or in vicinity of these genes are likely to show clinal and seasonal patterns as they may have distinct cis-regulatory functions that regulates gene expression in diapausing nondiapausing individuals
+
+
+
+Basically: Variation in gene expression associated with diapause should be under selection. One way to visualize this is how these genes vary across space(latitude) and time(season)
+
+2. Maternal epigenetic effects: They hypothesized that higher level regulatory mechanisms such as local sharing of regulatory elements and chromatin structure may also be involved in the regulation of diapause in D. melanogaster,
+3. ​
+
+Methods
+
+
+
+1. Collected flies from 4 popoulations (northern) east coast us: sampled in october with 50 isofemale lines each orchard
+   * Bowdoin maine,
+   * shoreham vt
+   * harvard mass
+   * middlefield ct
+2. Treatment: reared at 25 C 12L :12D; 11 C 9L:15D
+   * dissected, scored oocytes as :
+     * D = arrest before vitellogenesis (before stage 8)
+     * ND = vitellogenin was observed (stage 8 or later)
+3. Measured gxp for heads and ovaries ( 2 tissue types)
+   * 92 flies in D_head or O_ovary; 106 flies pooled into ND_head_ND_ovary
+4. Sequencing: 100bps short reads
+5. Used EBSeq (empirical baysian approach) to call genes and isoforms for gene expression. Measured RPKM ( Reads Per Kilobase of transcript per Million mapped reads)
+6. Analaysis: vitellogenesis and oogenesis excluded from analysis. 
+7. Location dependent expression: Looked at autocorrelation in the log2 fold changes along each chromosome (used moran's I as the metric of autocorrelation). This was compared to a randomly generated chromosome arm.
+8. Test if DE genes are enriched in season/clinal sets
+
+```mermaid
+
+graph TD
+a(Bowdoin, Maine)--- A
+b(Shoreham, VT) --- A
+c(Harvard, MA) --- A
+d(Middlefield, CT) --- A
+A{50 isofemale lines for each population} --> B(Treatment) 
+B -->|11C,9L:15D|C(Check ND or D)
+C --> D[Dissect head or ovary]
+D --> E[RNA-seq]
+E --> G[Autocorrelation]
+E --> N[Differential gene expression]
+N --> V[Functional enrichment]
+
+```
+
+
+
+
+
+## Results
+
+**Fig 1.** Shows log2 fold change (D over ND) vs RPKM. So higher values of log2 fold change = diapausing individuals having more gxp. This is a plot to simply show no relationship between how highlly expressed a gene is  with expression differences. 
+
+**thoughts**
+
+Bad figure. What happened to the populations? That is the more interesting result.
+
+
+
+**Table 1. Summary of gene expression level differences**
+
+Number of genes that are differentially expressed between D and ND for head or ovary.
+
+
+
+**Table 2. Isoform level differential expression**
+
+Isoforms diff expressed between D and ND for head or ovary. 
+
+
+
+**Fig2. Venn diagram of overlap between DE of genes or isoforms for head and ovary.**
+
+* Higher number of genes with at least 1 DE isofrom in both head and ovary.
+* Moderate amount of overlap
+* Lowest amount of just overall DE at the gene level
+
+**Table 3. Enriched KEGG pathways.**
+
+* Head has more pathways than ovaries
+  * more genes downregulated
+* ​
+
+**Table 4. Gene-level expression** 
+
+Candidate genes were not differentially expressed. Why is this? 
+
+1. cpo
+2. tim
+3. dp110
+
+**Table 5. Transcript level expression**
+
+Some of the cp, tim, and dp110 isoforms are differentially expressed. 
+
+
+
+**Fig3. Density as a function of moran's I (autocorrelation) for each chromosome and each heard or ovary.**
+
+* The distributions represent the null expectation in the correlation of gxp due to position on the chromosome
+* It looks like all but X head chromosomes have autocorrelated gxp. 
+
+**Table 6. Summary of overlapping genes DDE and clinal /seasonal genes**
+
+* lots of clinal genes are differentially expressed
+* less seasonal genes that are differentially expressed
+
+
+
+**Fig 4. Enrichment of DE genes that are clinal are seasonal.**
+
+Only downregulated in the head were enriched under clinal and seasonal. 
+
+
+
+Take home
+
+
+
 ------
 <div id='id-section11'/>
 ### Page 11:
