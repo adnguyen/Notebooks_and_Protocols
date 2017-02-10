@@ -13,6 +13,10 @@ This repo shares my protocols and notebooks of ongoing work with the aim of capt
 
 
 # List of Notebooks by year
+* [2017_Notebook](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md): This notebook logs     
+	* climate cascade meetings and projects (dissertation work)
+	* Conferences (SICB)
+	
 * [2016_Notebook](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_notebook.md): This notebook logs:
   * climate cascade meetings
   * related climate cascade projects (Hsp modulation paper; thermal niche paper; Adaptive shifts in Hsp gxp as a function-valued trait paper; proteome stability project; range limits paper
@@ -23,9 +27,8 @@ This repo shares my protocols and notebooks of ongoing work with the aim of capt
   * Evolution meeting
   * Phylogenetics of Aphaenogaster    
 
-* [2017_Notebook](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md): This notebook logs     
-	* climate cascade meetings and projects (dissertation work)
-	* Conferences (SICB)
+* 2015 (before I found markdown, so these aren't perfectly formatted)    
+	* 
 
 
 # List of protocols
