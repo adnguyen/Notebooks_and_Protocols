@@ -27,7 +27,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 8: 2017-02-06](#id-section8). Week 4, Day 6, RNA-seq
 * [Page 9: 2017-02-08](#id-section9). Week 4, Day 7, RNA-seq cont'd + paper discussion DePanis et al. 2016; MolEco
 * [Page 10: 2017-02-10](#id-section10). Prepping for leading journal club discussion: 2015-02-15; Zhao et al. 2016; *MBE*
-* [Page 11:](#id-section11).
+* [Page 11: 2017-02-13](#id-section11). Week 5, Day 8, RNA-seq mapping and paper discussion: Johnston et al. 2016, *Molecular Ecology*
 * [Page 12:](#id-section12).
 * [Page 13:](#id-section13).
 * [Page 14:](#id-section14).
@@ -1745,7 +1745,193 @@ Take home
 
 ------
 <div id='id-section11'/>
-### Page 11:
+### Page 11: 2017-02-13. Week 5, Day 8, RNA-seq mapping and paper discussion: Johnston et al. 2016, *Molecular Ecology*
+
+## Info update- Transcriptomics : Lauren Ash
+
+
+
+Glossary:
+
+1. sequence coverage: the average number of reads that align/cover known reference bases
+2. read depth: total number of bases sequenced/aligned at a given reference base position
+3. statistical noise: unexplained variation/randomness
+4. power: probability of rejecting a false null hypothesis
+5. Biological variation: natural variation in gene expression measurements due to environmental or genetic differences
+
+
+
+1. **Background**
+   * can measure differential gene expression (within population and among )
+   * topics: diseases resistance, mating behavior, adaptive signfiicance 
+   * connect molecular mechanisms to phenotypic/behavioral plasticity 
+   * limitations: reference genomc quality, availability of genes, expense per smaple lib prep
+2. **Issues**
+   * under utiilization of biological replicates
+   * requiring independent library preparations 
+   * doesn't include pooled samples (unless pooled samples that were replicated)
+     * 23/158 studies (15%) have more than 3 biological replicates
+     * derive broad biological conclusions
+     * prioritize sequencing depth over replication 
+   * wide dynamic range can make it noisy
+     1. poisson counting error (error associated with any counting experiment)
+     2. non-poisson technical variance (processing, quality, different lanes, storage)
+     3. biological variance (usually the largest)
+3. R exercise
+   * so cool, 
+4. Gerenal rules of thumb
+   1. more biological replicates more than increasing depth
+   2. sequence more than 10 reads of depth per transcript
+      * 10-20 million mapped reads per sample is sufficient
+   3. Use at least 3 biological replicates per condition
+   4. conduct a pilot experiment 
+      1. answer 2 questions:
+         * What is the and most powerful experiment that I can afford? 
+         * What is the smallest fold change I can detect?
+         * 7 tools in R to estimate power
+
+
+
+## Coding: 
+
+workflow:
+
+1. clean adn evaluate reads (fastq)
+2. Make and evaluate transcriptome assembly (fasta)
+3. Map cleaned reads to transcriptome assembly (.sam files)
+4. Extract data:
+   1. read counts: number of reads that uniquely map to each gene
+   2. get SNPs
+
+
+
+**Transdecoder** predicts open reading frames.
+
+
+
+## Beginning to map reads to reference transcriptome
+
+* Using BWA to do this: Copying script
+
+```UNIX
+cp /data/scripts/bwaaln.sh .
+```
+
+* waht does the script look like? 
+
+
+
+```
+#!/bin/bash 
+ 
+# To run from present directory and save output: ./bwaaln.sh > output.bwaaln.txt 
+
+myLeft='20_5-14_H_0_R1_clean_paired.fa'
+echo $myLeft
+
+myRight=${myLeft/_R1.fq.gz_left/_R2.fq.gz_right}
+echo $myRight
+
+myShort=`echo $myLeft | cut -c1-11`
+echo $myShort
+
+# bwa index /data/project_data/assembly/longest_orfs.cds  # This only needs to be done once on the reference
+
+bwa aln /data/project_data/assembly/longest_orfs.cds /data/project_data/fastq/cleanreads/$myLeft > $myLeft".sai"
+bwa aln /data/project_data/assembly/longest_orfs.cds /data/project_data/fastq/cleanreads/$myRight > $myRight".sai"
+bwa sampe -r '@RG\tID:'"$myShort"'\tSM:'"$myShort"'\tPL:Illumina' \
+        -P /data/project_data/assembly/longest_orfs.cds $myLeft".sai" $myRight".sai" \
+        /data/project_data/fastq/cleanreads/$myLeft \
+        /data/project_data/fastq/cleanreads/$myRight > $myShort"_bwaaln.sam"
+        
+```
+
+* Options for bwa align
+
+
+
+```
+ bwa aln
+
+Usage:   bwa aln [options] <prefix> <in.fq>
+
+Options: -n NUM    max #diff (int) or missing prob under 0.02 err rate (float) [0.04]
+         -o INT    maximum number or fraction of gap opens [1]
+         -e INT    maximum number of gap extensions, -1 for disabling long gaps [-1]
+         -i INT    do not put an indel within INT bp towards the ends [5]
+         -d INT    maximum occurrences for extending a long deletion [10]
+         -l INT    seed length [32]
+         -k INT    maximum differences in the seed [2]
+         -m INT    maximum entries in the queue [2000000]
+         -t INT    number of threads [1]
+         -M INT    mismatch penalty [3]
+         -O INT    gap open penalty [11]
+         -E INT    gap extension penalty [4]
+         -R INT    stop searching when there are >INT equally best hits [30]
+         -q INT    quality threshold for read trimming down to 35bp [0]
+         -f FILE   file to write output to instead of stdout
+         -B INT    length of barcode
+         -L        log-scaled gap penalty for long deletions
+         -N        non-iterative mode: search for all n-difference hits (slooow)
+         -I        the input is in the Illumina 1.3+ FASTQ-like format
+         -b        the input read file is in the BAM format
+         -0        use single-end reads only (effective with -b)
+         -1        use the 1st read in a pair (effective with -b)
+         -2        use the 2nd read in a pair (effective with -b)
+         -Y        filter Casava-filtered sequences
+
+```
+
+* Run default parameters 
+  * Only thing that would change is altering the maximum SNP differences  between mapping sequence to reference sequence
+  * ​
+* ==Should end up with `.sai` files!!!==
+
+output:
+
+```
+ls
+20_5-14_H_0_bwaaln.sam              bwaaln.sh
+20_5-14_H_0_R1_clean_paired.fa.sai  trim_example.sh
+20_5-14_H_0_R2_clean_paired.fa.sai
+```
+
+
+
+* ==What the header should look like:  `Transcript_Contigs::Read_ID==`
+
+```
+head 20_5-14_H_0_bwaaln.sam 
+@SQ	SN:TRINITY_DN37_c0_g1::TRINITY_DN37_c0_g1_i1::g.1::m.1	LN:303
+@SQ	SN:TRINITY_DN120_c0_g2::TRINITY_DN120_c0_g2_i1::g.2::m.2	LN:381
+@SQ	SN:TRINITY_DN125_c0_g1::TRINITY_DN125_c0_g1_i1::g.3::m.3	LN:642
+@SQ	SN:TRINITY_DN125_c0_g2::TRINITY_DN125_c0_g2_i1::g.4::m.4	LN:528
+@SQ	SN:TRINITY_DN159_c0_g1::TRINITY_DN159_c0_g1_i1::g.5::m.5	LN:696
+@SQ	SN:TRINITY_DN159_c0_g1::TRINITY_DN159_c0_g1_i1::g.6::m.6	LN:396
+@SQ	SN:TRINITY_DN191_c0_g1::TRINITY_DN191_c0_g1_i1::g.7::m.7	LN:309
+@SQ	SN:TRINITY_DN192_c0_g1::TRINITY_DN192_c0_g1_i1::g.8::m.8	LN:318
+@SQ	SN:TRINITY_DN192_c0_g2::TRINITY_DN192_c0_g2_i1::g.9::m.9	LN:321
+@SQ	SN:TRINITY_DN293_c0_g1::TRINITY_DN293_c0_g1_i1::g.10::m.10	LN:315
+```
+
+* ==What the tail should look like: `vim tail_version_sam.txt`==
+
+```
+J00160:63:HHHT2BBXX:4:2228:14296:49089	77	*	0	0	*	CTCTGCCCCGACGGCCGGGTATAGGCGGCACGCTCAGCGCCATCCATTTTCAGGGCTAGTTGATTCGGCAGGTGAGTTGTTACACACTCCT	JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJFJJJJJJFFJJJJJJFFJJJJJJJJ7FJJJJJJJJJFJJF	RG:Z:20_5-14_H_0
+J00160:63:HHHT2BBXX:4:2228:14296:49089	141	*	0	0	*	TCGGAATCCGCTAAGGAGTGTGTAACAACTCACCTGCCGAATCAACTAGCCCTGAAAATGGATGGCGCTGAGCGTGCCGCCTATACCCGGC	FJJJAJJJJJJJJFJJFFJJJJJJJJFJJJJJJJJJJJJJJJJJJJJJJJJJ<FJJJJ-FJJJJJJJJJJAJJJJJJJFJJJJJAJJJJJF	RG:Z:20_5-14_H_0
+J00160:63:HHHT2BBXX:4:2228:15026:49089	77	*	0	0	*	TTTTTCGTCACTACCTCCCCGTGTCGGGAGTGGGTAATTTGCGCGCCTGCTGCCTTCCTTGGATGTGGTAGCCGTTTCTCAAGCTCCCTC	JJJJJJJJFJJJJFJAJJJJFAJJJAJJAJ7FJJ<AJJFJFAJFAFJ<<JFAJJFJJJJJAF<AJFFJ-FJFJJFJFAJJJJFJJJFJJF	RG:Z:20_5-14_H_0
+J00160:63:HHHT2BBXX:4:2228:15026:49089	141	*	0	0	*	GGTTCGATTCCGGAGAGGGAGCTTGAGAAACGGCTACCACATCCAAGGAAGGCAGCAGGCGCGCAAATTACCCACTCCCGACACGGGGAGG	JJJJJJJJJJJJJFJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJFJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ	RG:Z:20_5-14_H_0
+J00160:63:HHHT2BBXX:4:2228:22008:49089	83	TRINITY_DN30310_c1_g10::TRINITY_DN30310_c1_g10_i1::g.7248::m.7248	168	60	91M	=	70	-189	CCTCGCTCCCCGGGCGAAAGGGAATCGGGTCAATATTCCCGAACCCGGAGGCGGAGCCCTCCGTCTTCGTGGCGGTCCGAGCTGTAAAGCG	JJFJJJFJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJFJJJJJJJJJJJJJJJJJJJJJJJJ	RG:Z:20_5-14_H_0	XT:A:U	NM:i:SM:i:37	AM:i:37	X0:i:1	X1:i:0	XM:i:0	XO:i:0	XG:i:0	MD:Z:91
+J00160:63:HHHT2BBXX:4:2228:22008:49089	163	TRINITY_DN30310_c1_g10::TRINITY_DN30310_c1_g10_i1::g.7248::m.7248	70	60	91M	=	168	189	CCATGTGAACAGCAGTTGTACATGGGTCAGTCGATCCTAAGCCCCAGGGAAGTTCCGCTCCGAGCGGAGGCGGGCGCCCCTCTCCATGTGA	FJJJJJJJJJJJJJJFFJJJJJJJJJFJJJJJJJJJJJFFJJJJJJJJJJFJFJJJJJJFFJJJJJJJJJJJJJJJJJJJFJJJJJJJFJA	RG:Z:20_5-14_H_0	XT:A:U	NM:i:SM:i:37	AM:i:37	X0:i:1	X1:i:0	XM:i:0	XO:i:0	XG:i:0	MD:Z:91
+J00160:63:HHHT2BBXX:4:2228:24647:49089	77	*	0	0	*	ACGGGCGATGTGTGCGCATTCTAGGGCTTTGAGTTGTTCATGGGCATTTTCTTTTGCTCATTACTGCTGAATCCTGTTTCAAATGGGGCTA	JFJJJJFFJJJJJJJJJFJJJJJJJJJJFJJAJJJJJJJFJJJJJJJFJJJJJJJJJF<JJJJJJJFAFJJFFFJJJJJJJJJJJJJ<JJA	RG:Z:20_5-14_H_0
+J00160:63:HHHT2BBXX:4:2228:24647:49089	141	*	0	0	*	GGATAAGTGAGCTACAATCATAAATATAAGAATAAAAATATGTATGAATAATGAACTGATAGCCCCATTTGAAACAGGATTCAGCAGTAAT	AAJJJJ<JJJJFFJJJJJJJJJJJJJJJJJJJFJJJJJJJJJJJFFJJJJJJJJJJ<-FFFFFAFFFAFJJJJJJJJJJJFAJFJJFJJJJ	RG:Z:20_5-14_H_0
+J00160:63:HHHT2BBXX:4:2228:30168:49089	77	*	0	0	*	TCTTGAAATCTGTGGGTTTCTCGTATAGTTCAATTACAACAGGTCCTGGTTTCAACTCGTCCATTTCCATGAAGGCAAAACACTTGGTGCT	JJJFFJJJJJJJJJJJAJJJJJJJJJJJJJJJFJJJJJJJJJJJJJJJJJJJJJJJFJJJFFAFAJFJJJJFFFJJJJFFJJJJFJJJFJJ	RG:Z:20_5-14_H_0
+J00160:63:HHHT2BBXX:4:2228:30168:49089	141	*	0	0	*	GAGTTTAAGCATTTCAAAGTGAAAAAGCGCACTATCAGCACCAAGTGTTTTGCCTTCATGGAAATGGACGAGTTG	JJJJJJJJJJJJJFJJAJJJJJJJJJJJJJJJJFJJJJJJJJFJJJJJJJJJJJJJJJJJJJJJJJJJJJJJFAF	RG:Z:20_5-14_H_0
+
+```
+
+
+
 ------
 <div id='id-section12'/>
 ### Page 12:
