@@ -1549,6 +1549,32 @@ V --> T[Tolerate]
 
 
 
+
+
+### 2017-02-15: Alternative way of displaying to get at passive vs active for tolerance
+
+
+
+```mermaid
+graph TD
+A{HSPs} --> C[Sense and Repair]
+C --> L(Turn on when proteins unfold)
+C --> R(Turn on higher)
+L --> H{Increase Inflection point}
+C --> E(Pre-emptively turn on)
+R --> V{Increase Max expression}
+E --> F{Increase Constitutive Expression}
+E --> Y{Slow Expression rate}
+F --> P[Protect]
+Y --> P
+V --active--> T[Tolerate]
+H --passive--> T
+```
+
+
+
+
+
 ------
 <div id='id-section28'/>
 ### Page 28: 2017-02-14. Status of projects + PHD Progress
