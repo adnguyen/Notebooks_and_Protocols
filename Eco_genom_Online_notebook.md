@@ -8,7 +8,7 @@
 fill in your description here!
 
 
-## Date started: (year-month-day)   
+## Date started: (2017-02-15)   
 ## Date end:   (year-month-day)    
 
 ## Philosophy   
@@ -22,8 +22,8 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * All notebooks should have a table of contents which has the "Page", date, and title (information that allows the reader to understand your work).     
 * Also, one of the perks of keeping all activities in a single document is that you can **search and find elements quickly**.     
 * You can document anything you'd like, aside from logging your research activities. For example:
-	* feel free to log all/any ideas for your research project([example](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_notebook.md#page-39-2016-06-13-post-doc-project-idea-assessing-current-impacts-of-climate-change-in-natural-populations)) as an entry,     
-	* or write down notes for a paper([example](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_notebook.md#id-section36).      
+  * feel free to log all/any ideas for your research project([example](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_notebook.md#page-39-2016-06-13-post-doc-project-idea-assessing-current-impacts-of-climate-change-in-natural-populations)) as an entry,     
+  * or write down notes for a paper([example](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_notebook.md#id-section36).      
 
 * Lastly, you can share specific entries because of the three "#" automatically creates a link when the notebook renders on github.      
 
@@ -97,43 +97,53 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 <div id='id-section1'/>
 ### Page 1: 2016-07-18. Ecological genomics, first class
 
+==Here I am cd'ing into my scripts directory==
+
+```
+cd /scripts/
+```
+
+
+
+
+
 ### **Steve and Melissa's intro**    
 * Steve: It is a young field, trying to establish it's own identity    
-	* Ecological genomics institute, KSU: emphasis on adaptation to environment   
-	* Gordon Research Conference: Integrating different levels of biological organization on **ANY SYSTEM**; approach and tool focused! Field going towards new data and new analytic techniques  
-	* Intro to eco genomics, oxford press; Using technology to address ecological issues such as nutrient cycling, population structure, life history vairation , trophic interaction, stress responess, and adpatation to environmental change   
+  * Ecological genomics institute, KSU: emphasis on adaptation to environment   
+  * Gordon Research Conference: Integrating different levels of biological organization on **ANY SYSTEM**; approach and tool focused! Field going towards new data and new analytic techniques  
+  * Intro to eco genomics, oxford press; Using technology to address ecological issues such as nutrient cycling, population structure, life history vairation , trophic interaction, stress responess, and adpatation to environmental change   
 
 * DATA driven: next gen sequencing revolutionizes biology
-	* creats a new problem--large datasets!!! how to make sense? 
-	* not data limited and potentially computationally limited   
+  * creats a new problem--large datasets!!! how to make sense? 
+  * not data limited and potentially computationally limited   
 
 * Where is the field headed    
-	* Molecular Ecology Journal(flagship journal representative o the field)  
-		* ALL systems:  corals, protists, daphnia, coral, lemurs, dandelions, steve studies trees 
-		* model organism constraint disappearing!   
-	* What types of questions are asked?  
-		* How do genes correspond with circadian rythm?  
-		* How does the microbiome influence the organism? 
-		* How does epigenetic variation influence evolutionary responses? or contribute to phenotypic variation?  
-		* What are the patterns of genetic diversity that can give us insights on population dynamics?  
-		* What are constraints and tradeoffs and genetic mechanisms of traits? 
+  * Molecular Ecology Journal(flagship journal representative o the field)  
+    * ALL systems:  corals, protists, daphnia, coral, lemurs, dandelions, steve studies trees 
+    * model organism constraint disappearing!   
+  * What types of questions are asked?  
+    * How do genes correspond with circadian rythm?  
+    * How does the microbiome influence the organism? 
+    * How does epigenetic variation influence evolutionary responses? or contribute to phenotypic variation?  
+    * What are the patterns of genetic diversity that can give us insights on population dynamics?  
+    * What are constraints and tradeoffs and genetic mechanisms of traits? 
 
 * Methods?   
-	* De novo genome assembly; sequencing a DNA book from scratch!!    
-		* RNA-seq; transcriptomic profiling     
-	* 16 s metagenomic sequencing      
-	* Rad-seq/GBS for estiamting population structure and genetic diversity     
+  * De novo genome assembly; sequencing a DNA book from scratch!!    
+    * RNA-seq; transcriptomic profiling     
+  * 16 s metagenomic sequencing      
+  * Rad-seq/GBS for estiamting population structure and genetic diversity     
 
 * Proccesses studied?    
-	* All evo and eco stuff; speciation, hybridization, local adaptation, genetic basis of local adaptation, genetic architecture of complex phenotypes, genes controlling host-pathogen evolutionary dynamics, pop structure, gene flow, epigenetics     
-	
+  * All evo and eco stuff; speciation, hybridization, local adaptation, genetic basis of local adaptation, genetic architecture of complex phenotypes, genes controlling host-pathogen evolutionary dynamics, pop structure, gene flow, epigenetics     
+
 * Goals of the course!    
-	1. Learn how ecology and genomes shape each other   
-	2. Think creatively about major questions, and pose testable hypotheses to those questions using appropriate genomic data    
-	3. Think about careful experimental design and statistical analysis---shown by reading papers   
-	4. Achive working knowledge and level of comfort for bioinformatics routines for ecological genomics studies   
-	
-### Melissa background	  
+  1. Learn how ecology and genomes shape each other   
+  2. Think creatively about major questions, and pose testable hypotheses to those questions using appropriate genomic data    
+  3. Think about careful experimental design and statistical analysis---shown by reading papers   
+  4. Achive working knowledge and level of comfort for bioinformatics routines for ecological genomics studies   
+
+  ### Melissa background  
 
 **Background, what drove Melissa and Steve to ecological genomics?**       
 
@@ -147,20 +157,20 @@ Melissa has a data set with 96 sea stars and then the 16s microbiome. Would be c
 
 * Inspired by Yanis Antonivics (an **OG**)   
 * At the time, just so stories: **Adaptatationist programme**    
-	* Just go out and go by feeling in a natural history way and prescribe an adaptation story   
-	* Janis wrote a creed to quantify the operational relationship between traits, environment, and genetics     
+  * Just go out and go by feeling in a natural history way and prescribe an adaptation story   
+  * Janis wrote a creed to quantify the operational relationship between traits, environment, and genetics     
 * Yanis was on Steve's committee and Steve was interested in adaptation with respect to invasion biology because organisms need to respond to novel environments     
-	* Phenotypes can relate to the environment, but what is the genetic basis of local adaptation (in situ)? There are other confounding issues: demographic effects, plasticity     
+  * Phenotypes can relate to the environment, but what is the genetic basis of local adaptation (in situ)? There are other confounding issues: demographic effects, plasticity     
 * Steve thinks about environment-phenotype-genetics triangle. Basically a path diagram that feeds back on each other.    
-	* Relationship between genes and phenotype ---GWAS (Genome wide association study)    
-	* Relationship between genetics and environment --- Fst, clines between allele frequencies and environment    
+  * Relationship between genes and phenotype ---GWAS (Genome wide association study)    
+  * Relationship between genetics and environment --- Fst, clines between allele frequencies and environment    
 * Invasion history is tough because of demographic history    
 * He decided to focus on trees; large population size, straddle huge environmental gradients so the opportunity for selection is high   
-	* positive relationship between Growing season length and traits    
-	* Did a  reciprocal transplant of different populations to identify the extent of local adaptation in large established common gardens    
-	* SK does GBS (genotype by sequencing)      
-	* Problem with field: validating key gene candidates            
-  
+  * positive relationship between Growing season length and traits    
+  * Did a  reciprocal transplant of different populations to identify the extent of local adaptation in large established common gardens    
+  * SK does GBS (genotype by sequencing)      
+  * Problem with field: validating key gene candidates            
+
 
 ------
 <div id='id-section2'/>

@@ -28,7 +28,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 9: 2017-02-08](#id-section9). Week 4, Day 7, RNA-seq cont'd + paper discussion DePanis et al. 2016; MolEco
 * [Page 10: 2017-02-10](#id-section10). Prepping for leading journal club discussion: 2015-02-15; Zhao et al. 2016; *MBE*
 * [Page 11: 2017-02-13](#id-section11). Week 5, Day 8, RNA-seq mapping and paper discussion: Johnston et al. 2016, *Molecular Ecology*
-* [Page 12:](#id-section12).
+* [Page 12: 2017-02-15](#id-section12).  Week 5, Day 9, Sam info update, ANBE paper discussion, Zhao et al. 2016; *MBE*
 * [Page 13:](#id-section13).
 * [Page 14:](#id-section14).
 * [Page 15:](#id-section15).
@@ -1631,8 +1631,6 @@ Basically: Variation in gene expression associated with diapause should be under
 
 Methods
 
-
-
 1. Collected flies from 4 popoulations (northern) east coast us: sampled in october with 50 isofemale lines each orchard
    * Bowdoin maine,
    * shoreham vt
@@ -1937,7 +1935,85 @@ J00160:63:HHHT2BBXX:4:2228:30168:49089	141	*	0	0	*	GAGTTTAAGCATTTCAAAGTGAAAAAGCG
 
 ------
 <div id='id-section12'/>
-### Page 12:
+### Page 12: 2017-02-15. Week 5, Day 9, Sam info update, ANBE paper discussion, Zhao et al. 2016; *MBE*
+
+
+
+## Sam Alger; SNPs and pop genomics 
+
+Drawbacks:
+
+1. lots of money
+2. complex data
+3. functionally relevant? to organism?
+
+Ways to get around this: SNP data from expressed sequences. 
+
+AA==A==TGC
+
+AA==C==TGC
+
+
+
+**Glossary:**
+
+SNPs- single nucleotide polymorphism
+
+Indels - insertion deletions.
+
+Fat: % of genetic material explaiend by differences among populations
+
+
+
+**Workflow:** 
+
+1. Tissue: breadth of tissue, dev stages
+   * exon skipping produce splice variants
+2. pool and sequence, create sequencel libraries; ~30-100 million paired end long reads
+3. process raw sequence data for quality and errors
+   * important for SNP detection
+4. digital normalization of sequence data
+   * removing high coverage reads + associated errors
+   * loss of quantitative info
+5. assemble your cleaned paired end reads
+6. prune assembled transcripts; remove DNA contamination, non coding RNA and gene fragments
+7. Use reference genome for assembly; or use COGs (conserved orthologue genomes) **Assembly evaluation**
+
+**SNP detection:**
+
+* Software- constant patterns of sequence variation 
+* Sequence errors will have low frequency and will be removed
+* artifacts caused by indels, filter SNP clusters near indels, check quality scores
+
+**Validate SNPs**
+
+* Confirm by designing primers and sanger sequencing
+* mass spec
+
+**Practical Application**
+
+1. What is the genetic structure of populations?
+2. How are they related? 
+3. How natural selection is acting on loci?
+
+General approaches: 
+
+1. Using outliers
+   * For a given locus, what is the level of differentiation compared to differentiation across the genome (FST)
+2. Non-outlier approach: test high Fst loci for other features associated with selection 
+   1. fitness
+   2. enrichment for certain functional roles
+
+> The beginning for understanding how selection can act on populations!
+
+
+
+
+
+
+
+
+
 ------
 <div id='id-section13'/>
 ### Page 13:
