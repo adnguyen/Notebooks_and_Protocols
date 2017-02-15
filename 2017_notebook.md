@@ -1570,10 +1570,14 @@ V --> T[Tolerate]
 2. **Thesis related**   
    - **Defense talk:** 
      - Required defense talk in biolunch: ==Feb 24 (Friday)==     
-   - Working title: Evolutionary Innovations of Ants to Thermally Stressful Environments     
+     - Working title: Evolutionary Innovations of Ants to Thermally Stressful Environments     
    - Formatting:    
      - Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
-       - started filling in introduction, need to do discussion
+       - CH1. Introduction — started filling in outline
+       - **CH2. Hsp functional diversity paper — done (published)**
+       - CH3. Hsp rxn norm paper - 
+       - **CH4. Multiple stressors paper — done (In review)**
+       - CH5. Conclusion — have outline
    - Deadlines: 
      1. Intent to graduate: February 1st for May.   —**done**
      2. Send defense committe form to grad college—**done**
