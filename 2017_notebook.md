@@ -53,7 +53,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 25: 2017-02-07](#id-section25). How far down do Aphaenogaster colonies go in the winter?
 * [Page 26: 2017-02-07](#id-section26).  A definition of a trade-off
 * [Page 27: 2017-02-09](#id-section27). SHC lab meeting: Practice talk for biolunch and dissertation defense
-* [Page 28:](#id-section28).
+* [Page 28: 2017-02-14](#id-section28). Status of projects + PHD Progress
 * [Page 29:](#id-section29).
 * [Page 30:](#id-section30).
 * [Page 31:](#id-section31).
@@ -1551,7 +1551,36 @@ V --> T[Tolerate]
 
 ------
 <div id='id-section28'/>
-### Page 28:
+### Page 28: 2017-02-14. Status of projects + PHD Progress
+
+1. Project updates:    
+   - **Hsp gene expression + Ctmax project:**
+     - NJG made comments 2017-02-13, and I fixed them today 
+     - Send out for SHC lab meeting 2017-02-16 to go over next week (2017-02-23)
+     - Submit to PNAS in May?   
+   - **Multiple stressors ms:**   
+     - Resubmitted 2017-02-13; in review (today)
+   - **Range limits ms**: SHC lab gave verbal edit, still need to incorporate     
+   - **Thermal niche ms:** Lacy to check intro, and add refs.    	
+   - **Stressed in nature MS: Samples to rerun.**       
+     - **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
+   - **Proteome stability project:**    
+     - **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
+       - Rerun mass spec, but loading more proteins (Bethany)
+2. **Thesis related**   
+   - **Defense talk:** 
+     - Required defense talk in biolunch: ==Feb 24 (Friday)==     
+   - Working title: Evolutionary Innovations of Ants to Thermally Stressful Environments     
+   - Formatting:    
+     - Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
+       - started filling in introduction, need to do discussion
+   - Deadlines: 
+     1. Intent to graduate: February 1st for May.   —**done**
+     2. Send defense committe form to grad college—**done**
+     3. ==Graduate college format check March 4th==
+     4. Defense notice 3 weeks before defense  (oral defense by March 24th—*flexible*).   
+     5. Final thesis April 7th.  
+
 ------
 <div id='id-section29'/>
 ### Page 29:

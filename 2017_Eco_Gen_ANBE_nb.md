@@ -1930,7 +1930,10 @@ J00160:63:HHHT2BBXX:4:2228:30168:49089	141	*	0	0	*	GAGTTTAAGCATTTCAAAGTGAAAAAGCG
 
 ```
 
-
+* Melissa code hack suggestion: 
+  1. `screen`
+  2. `bash bwaaln.sh`
+  3. control + a + d
 
 ------
 <div id='id-section12'/>
