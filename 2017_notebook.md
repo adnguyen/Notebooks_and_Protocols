@@ -2224,7 +2224,7 @@ N containing models:    1               1
 
 
 
-Correlation between predictors: 
+### Correlation between predictors: 
 
 ```R
 knitr::kable(round(cor(data.frame(jj[,6:14],basalxp)),3))
@@ -2280,6 +2280,12 @@ F-statistic: 7.929 on 1 and 30 DF,  p-value: 0.008515
 ```
 
 
+
+### Rational for determining how many PCs to include in analysis
+
+Found a source [here](http://strata.uga.edu/8370/lecturenotes/principalComponents.html):
+
+> Because reduction of dimensionality is a goal of principal components analysis, several criteria have been proposed for determining how many PCs should be examined and how many should be ignored. One common criteria is to ignore principal components at the point at which the next PC offers little increase in the total explained variation. A second criteria is to include all those PCs up to a predetermined total percent explained variation, such as 90%. A third standard is to ignore components whose explained variation is less than 1 when a correlation matrix is used or less than the average variation explained when a covariance matrix is used, with the idea being that such a PC offers less than one variable’s worth of information. A fourth standard is to ignore the last PCs whose explained variation is all roughly equal.
 
 
 
