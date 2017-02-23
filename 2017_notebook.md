@@ -60,7 +60,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 32: 2017-02-22](#id-section32). Resistance vs Tolerance strategies to stress; paper notes-**Núñez-Farfán et al. 2007**; The Evolution of Resistance and Tolerance to Herbivores; Annu. Rev. Ecol. Evol. Syst.
 * [Page 33: 2017-02-23](#id-section33).  Multiple regression models testing effect of Hsp parameters on Ctmax
 * [Page 34: 2017-02-23](#id-section34). SHC lab meeting: Going over hxp rxn norm paper. 
-* [Page 35:](#id-section35).
+* [Page 35: 2017-02-23](#id-section35). What are Evolutionary Innovations? 
 * [Page 36:](#id-section36).
 * [Page 37:](#id-section37).
 * [Page 38:](#id-section38).
@@ -2312,7 +2312,79 @@ Methods
 
 ------
 <div id='id-section35'/>
-### Page 35:
+### Page 35: 2017-02-23. What are Evolutionary Innovations? 
+
+
+
+Reading this paper:   
+
+Hunter JP. 1998. Key innovations and the ecology of macroevolution. Trends in Ecology & Evolution 13:31–36.
+
+Different definitions: 
+
+Miller 1949: 
+
+> key adjustments in the morphological and physiological mechanism which are essential to the origin of new major groups
+
+I like this definition because it describes the emergence of traits with a diversification of a clade. 
+
+
+
+**Van Valen 1981:** 
+
+> A key character, in the adaptive sense, is a structure or element of physiology that makes a taxon more or less committed to a way of life different from, or appreciably more efficient  than, that of its ancestors. 
+
+I like how this definition highlights the traits in a new species do better than ancestral ones. So there is a time aspect. 
+
+**Levinton 1988:**
+
+> key innovation is necessary,but not sufficient for a subsequent radiation
+
+**Baum & Larson 1991:**
+
+>  a trait that greatly modifies the selective regime of the linearge in which it evolves
+
+Don't think this is exactly right. Modifies does not have a direction of effect. 
+
+**Rosenzweig & McCord 1991:**
+
+> a key adaptation is a change in the mathematical rule governing a trade-off constraint so taht after the change, the trade-off is less severe
+
+I wouldnt call this a key innovation. Instead, I'd call it breaking a trade off.
+
+**Erwin 1992:** 
+
+> Key Innovations characterize particular clades and are both necessary and sufficient to explain diversification within the clade
+
+What the...
+
+**Heard and Hauser 1995:**
+
+> An evolutionary change in individual trats that causally linked to an increased diversification rate in the resulting clade (for which it is a synapomorphy)
+
+But this definition excludes new species(forms) that have been able to persist in new environments, but have low diversification rates. 
+
+This paper also proposes 3 mechanisms:
+
+1. allowing escape from competition via invasion into a new adaptive zone
+2. decreasing probability of extinction by increasing population density via increased individual fitness
+3. favoring reproduction or ecological specialization
+
+I think point 3 captures point 1 and 2 simultaneously. 
+
+
+
+My own words:
+
+Evolutionary Innovations: 
+
+1. Critical adaptations that facilitate the emergence of new species. 
+2. The evolution of critical traits that have enabled species to diversify
+3. Adaptations that have enabled species to diversify
+4. Evolutionary change in a characteristic that enhances persistance in a new species compared to ancestors
+
+
+
 ------
 <div id='id-section36'/>
 ### Page 36:
