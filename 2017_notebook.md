@@ -2112,7 +2112,7 @@ F-statistic: 12.61 on 6 and 34 DF,  p-value: 1.926e-07
 
 
 
-Model averaging with mumin package
+### Model averaging with mumin package
 
 ```R
 selmod<-dredge(regmod)
@@ -2247,7 +2247,7 @@ knitr::kable(round(cor(data.frame(jj[,6:14],basalxp)),3))
 
 
 
-Another set of analyses: 
+### Another set of analyses: 
 
 > Also, can you test the relationship between the PCs and CTmax without the open habitat species?  This is to see if the same axis of variation also underlies CTmax variation without the big jump associated with the habitat shift.
 
