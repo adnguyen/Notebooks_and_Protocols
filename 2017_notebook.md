@@ -2289,6 +2289,9 @@ F-statistic: 7.929 on 1 and 30 DF,  p-value: 0.008515
 
 Overall feedback:
 
+* Add Katie Miller in the acknowledgements
+* ​
+
 
 
 Introduction
