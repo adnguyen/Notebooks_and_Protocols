@@ -54,11 +54,11 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 26: 2017-02-07](#id-section26).  A definition of a trade-off
 * [Page 27: 2017-02-09](#id-section27). SHC lab meeting: Practice talk for biolunch and dissertation defense
 * [Page 28: 2017-02-14](#id-section28). Status of projects + PHD Progress
-* [Page 29:](#id-section29).
-* [Page 30:](#id-section30).
-* [Page 31:](#id-section31).
-* [Page 32:](#id-section32).
-* [Page 33:](#id-section33).
+* [Page 29: 2017-02-15.](#id-section29) **Aphaenogaster, Hsp rxn norm paper stats revisited**: regression without open habitat;Sampling info ; PCA effective number of dimensions calculation for Hsps
+* [Page 30: 2017-02-20](#id-section30). prep for committee meeting 2017-02-24, 2:00PM
+* [Page 31: 2017-02-21](#id-section31). Measuring evolutionary rates in darwins and haldanes  
+* [Page 32: 2017-02-22](#id-section32). Resistance vs Tolerance strategies to stress; paper notes-**Núñez-Farfán et al. 2007**; The Evolution of Resistance and Tolerance to Herbivores; Annu. Rev. Ecol. Evol. Syst.
+* [Page 33: 2017-02-23](#id-section33).  Multiple regression models testing effect of Hsp parameters on Ctmax
 * [Page 34:](#id-section34).
 * [Page 35:](#id-section35).
 * [Page 36:](#id-section36).
@@ -1579,6 +1579,8 @@ H --passive--> T
 <div id='id-section28'/>
 ### Page 28: 2017-02-14. Status of projects + PHD Progress
 
+Updated again: 2017-02-16
+
 1. Project updates:    
    - **Hsp gene expression + Ctmax project:**
      - NJG made comments 2017-02-13, and I fixed them today 
@@ -1587,9 +1589,9 @@ H --passive--> T
    - **Multiple stressors ms:**   
      - Resubmitted 2017-02-13; in review (today)
    - **Range limits ms**: SHC lab gave verbal edit, still need to incorporate     
-   - **Thermal niche ms:** Lacy to check intro, and add refs.    	
+     - **Thermal niche ms:** Lacy to check intro, and add refs.    
    - **Stressed in nature MS: Samples to rerun.**       
-     - **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**           
+     - There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.           
    - **Proteome stability project:**    
      - **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
        - Rerun mass spec, but loading more proteins (Bethany)
@@ -1600,9 +1602,9 @@ H --passive--> T
    - Formatting:    
      - Introduction (> 3 pages), manuscripts, then synthesis/conclusion (~3 pages) ; SHC and NJG agree
        - CH1. Introduction — started filling in outline
-       - **CH2. Hsp functional diversity paper — done (published)**
+       - **CH2. Hsp functional diversity paper — done (published)**; in thesis now
        - CH3. Hsp rxn norm paper - 
-       - **CH4. Multiple stressors paper — done (In review)**
+       - **CH4. Multiple stressors paper — done (In review)**; in thesis now
        - CH5. Conclusion — have outline
    - Deadlines: 
      1. Intent to graduate: February 1st for May.   —**done**
@@ -1613,19 +1615,630 @@ H --passive--> T
 
 ------
 <div id='id-section29'/>
-### Page 29:
+### Page 29: 2017-02-15. Aphaenogaster, Hsp rxn norm paper stats revisited: 
+
+From previous analysis, I've found that there is a main effect of Tmax and Habitat type on CTmax in Aphaenogaster. 
+
+```R
+library(MASS)
+#constructing model
+umod<-lm(KO_temp_worker~bio5*habitat_v2+I(bio5^2),data=Aph.dat)
+#model selection
+summary(stepAIC(umod,direction="both"))
+
+Coefficients:
+                       Estimate Std. Error t value
+(Intercept)          -4.4102626 12.5885230  -0.350
+bio5                  0.2990131  0.0862737   3.466
+habitat_v2flat woods  1.5151487  0.2472431   6.128
+I(bio5^2)            -0.0004877  0.0001469  -3.320
+                     Pr(>|t|)    
+(Intercept)          0.726851    
+bio5                 0.000792 ***
+habitat_v2flat woods 1.96e-08 ***
+I(bio5^2)            0.001275 ** 
+---
+Signif. codes:  
+0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8192 on 96 degrees of freedom
+Multiple R-squared:   0.47,	Adjusted R-squared:  0.4534 
+F-statistic: 28.37 on 3 and 96 DF,  p-value: 3.191e-13
+```
+
+
+
+Ok, what if I take out flat woods species, do I still get clinal variation? 
+
+```R
+#subset data
+aphsub<-subset(Aph.dat,Aph.dat$habitat_v2!="flat woods")
+#construct model without habitat, sinece only focusing on deciduous forest species
+umod2<-lm(KO_temp_worker~bio5+I(bio5^2),data=aphsub)
+#model selection
+summary(stepAIC(umod2),direction="both")
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)   
+(Intercept) -3.1939844 13.5824985  -0.235  0.81468   
+bio5         0.2905107  0.0931214   3.120  0.00251 **
+I(bio5^2)   -0.0004730  0.0001586  -2.982  0.00379 **
+---
+Signif. codes:  
+0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8754 on 81 degrees of freedom
+Multiple R-squared:  0.208,	Adjusted R-squared:  0.1885 
+F-statistic: 10.64 on 2 and 81 DF,  p-value: 7.893e-05
+```
+
+
+
+## General info on sampling 
+
+**Species numbers**
+
+```R
+table(droplevels(Aph.dat$rad_seq_species))
+
+     ashmeadi     floridana         fulva 
+            9             9             9 
+  lamellidens      miamiana         picea 
+            4            13            26 
+        rudis tennesseensis 
+           28             2 
+```
+
+**Habitat numbers**
+
+```R
+table(droplevels(Aph.dat$habitat_v2))
+
+deciduous forest       flat woods 
+              84               16 
+```
+
+**Number of sites:**
+
+```R
+ length(unique(Aph.dat$site))
+[1] 34
+```
+
+**Range of Tmax * 10**
+
+```R
+ range(Aph.dat$bio5)
+[1] 249 333
+```
+
+
+
+### For pca of hsp parameters:
+
+```R
+> pchsp$sdev
+   Comp.1    Comp.2    Comp.3    Comp.4    Comp.5 
+2.1385967 1.3517804 1.0759241 1.0023266 0.8465922 
+   Comp.6    Comp.7    Comp.8    Comp.9   Comp.10 
+0.8464922 0.7749836 0.6587774 0.5320244 0.4468818 
+  Comp.11   Comp.12 
+0.3442608 0.2738906 
+```
+
+Here are the eigenvalues, and I want to get the number of dimensions $\frac{\lambda_{total}}{\lambda_{1}}$
+
+```R
+sum(pchsp$sdev)/pchsp$sdev[1]
+4.81275 
+```
+
+Closer to 1 means that most of the variation mong these traits is captured by first pc. The larger the number, more PCs capture most of the variation among these traits. 
+
+My session:
+
+```R
+> sessionInfo()
+R version 3.3.1 (2016-06-21)
+Platform: x86_64-apple-darwin13.4.0 (64-bit)
+Running under: OS X 10.12.2 (Sierra)
+
+locale:
+[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets 
+[6] methods   base     
+
+other attached packages:
+[1] MASS_7.3-45   ggplot2_2.2.1 raster_2.5-8 
+[4] sp_1.2-4     
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_0.12.9      lattice_0.20-34  assertthat_0.1  
+ [4] grid_3.3.1       plyr_1.8.4       nlme_3.1-131    
+ [7] gtable_0.2.0     scales_0.4.1     lazyeval_0.2.0  
+[10] tools_3.3.1      munsell_0.4.3    colorspace_1.3-2
+[13] knitr_1.15.1     tibble_1.2   
+```
+
+
+
 ------
 <div id='id-section30'/>
-### Page 30:
+### Page 30: 2017-02-20. prep for committee meeting 2017-02-24, 2:00PM   
+
+### Layout and progress of my chapters
+
+* <u>Abstract:</u> (3/4 page)
+
+
+
+
+* <u>CH1:  Introduction</u> (3-6 pages)
+
+  ​
+
+* <u>CH2: The evolution of heat shock protein sequences, cis-regulatory elements, and expression profiles in the eusocial Hymenoptera</u> (==published BMC Evolutionary Biology==)
+
+  ​
+
+* <u>Ch3: Molecular adaptations of protection and tolerance predict upper thermal limits in eastern forest ants</u> (==aiming to submit to PNAS==)
+
+  * writing in pnas format but will need to reformat for thesis layout?
+
+
+
+
+
+* <u>CH4: Effects of desiccation and starvation on thermal tolerance and the heat shock response in forest ants</u> (==In 2nd round of reviews, Journal of Comparative Physiology B==)
+
+
+
+
+
+* <u>CH5: Conclusions and future directions</u> (3 pages)
+
+
+
+### Timeline for completing my dissertation this term.  
+
+Important dates: 
+
+* Oral defense: March 24th is latest, but can be later, ==March 27th-31st.== 
+  * Send out abstract and notification of oral defense 3 weeks prior
+* ==Thesis due April 7th.==
+
+### Set a date for my oral defense. Please bring your calendars.
+
+
+
+### Future post doc plans
+
+```mermaid
+graph TD
+M{Future} --> A
+M --> D
+
+A[NSF plant genomics postdoctoral fellow] --> B(Finish Dissertation Fall 2017)
+B --> C(Start NSF post doc Jan 1st 2018)
+D[UFlorida] --> N(Finish dissertation April 2017)
+N --> P[Start post doc June 1st 2017]
+```
+
+
+
+
+
 ------
 <div id='id-section31'/>
-### Page 31:
+### Page 31: 2017-02-21. Measuring evolutionary rates in darwins and haldanes  
+
+I thought this was [cool](http://www.biology.ualberta.ca/courses.hp/biol606/OldLecs/rateunits.html):
+
+a darwin ($d$): a change by a factor $e$ per million years
+
+
+
+$$rate (d) =  \frac{ln(x_2)- ln(x_1)}{\Delta t}$$
+
+
+
+* $ln(x_1)$ and $ln(x_2)$ are two sample means of natural logarthms of measurements
+* $\Delta t$ is the time difference between the two samples in millions of years
+
+
+
+a haldane (h): a change by a factor of one standard deviation per generation
+
+$$rate(h) = \frac{\frac{lnx_2}{Sln_x}-\frac{lnx_1}{Slnx}}{t_2 - t_1}$$
+
+* $ln(x_1)$ and $ln(x_2)$ are two sample means of natural logarthms of measurements
+* $Slnx$ is the pooled standard deviation of $lnx_1$ and $lnx_2$ values
+* $t_2 - t_1$ is the time difference between two samples, measured in generations
+
+
+
+
 ------
 <div id='id-section32'/>
-### Page 32:
+### Page 32: 2017-02-22. Resistance vs Tolerance strategies to stress; paper notes-**Núñez-Farfán et al. 2007**; The Evolution of Resistance and Tolerance to Herbivores; Annu. Rev. Ecol. Evol. Syst.
+
+I want to get a sense of how the herbivore-plant literature uses certain words for responding to stress and potentially adopt that framework in temperature stress. 
+
+1. **Resistance:** Constitutive or induced response of plants against herbivory to avoid or reduce the amount of damage
+2. **Tolerance:**  Response of plants induced after consumption to buffer the negative fitness effect of damage. 
+
+These definitions seem inter-related. For example, an induced response that can avoid or reduce damage could also buffer the negative effects of damage. So, a molecule (secondaryy compound) can participate in both resistance and tolerance. I think the difference is the timing of herbivory. Meaning, if a molecule turns on early, it is acting to resist herbivory damage. But if a molecule turns on after herbivory, then it's action will tolerate the damage already done. 
+
+In the coral literature, they like to use ["frontloading"](http://www.pnas.org/content/110/4/1387.full) as another term for resistance. 
+
+```
+ref: Barshis DJ, Ladner JT, Oliver TA, et al (2013) Genomic basis for coral resilience to climate change. PNAS 110:1387–1392. doi: 10.1073/pnas.1210224110
+```
+
+**In Fineblum and Rausher 1995;** they explain tolerance as the amount of reduced fitness for a given amount of damage, but resistance is the amount of damage a plant experiences for a given abundance of herbivores. 
+
+```
+ref:   Fineblum WL, Rausher MD (1995) Tradeoff between resistance and tolerance to herbivore damage in a morning glory. Nature 377:517–520. doi: 10.1038/377517a0
+```
+
+**A diff expalantion of tolerance and resistance by Mauricio et al. 1997:**
+
+<u>Resistance:</u> Traits that reduce the amount of damage a plant experienced. 
+
+<u>Tolerance:</u> Ability of plant to sustain a fixed amount of herbivore damage without reduction in fitness.
+
+A gem in this paper for the definition of a trade off:
+
+> For example, a negative correlation between two characters, both within and across species, is often taken to indicate the existence of tradeoffs between those characters (Cheverud 1984, Tilman 1990).
+
+```
+ref:   Mauricio R, Rausher MD, Burdick DS (1997) Variation in the Defense Strategies of Plants: Are Resistance and Tolerance Mutually Exclusive? Ecology 78:1301–1311. doi: 10.1890/0012-9658(1997)078[1301:VITDSO]2.0.CO;2
+```
+
+
+
+In a diff system, but another [paper's definition](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1000150): 
+
+>  Two routes to decreasing susceptibility to infection are resistance (the ability to clear pathogens) and tolerance (the ability to limit damage in response to pathogens).
+
+```
+ref:   Ayres JS, Schneider DS (2009) The Role of Anorexia in Resistance and Tolerance to Infections in Drosophila. PLOS Biology 7:e1000150. doi: 10.1371/journal.pbio.1000150
+```
+
+Makes no sense….clearing pathogens limits the damage…And clearing a pathogen involves sensing and then responding to pathogens. 
+
+> The first, resistance, is the ability of the host to reduce pathogen levels. The second, tolerance, is the ability to limit the impact of infections.
+
+This makes more sense. 
+
+**Thoughts:** 
+
+I think there are two distinct parts of stress:
+
+1. Whether you encounter it at all. This should involve resistance because there can be ways for organisms to avoid or reduce the amount of stress
+2. What do you do when you encounter stress? You can limit the damage caused by it. 
+
+But there is a continuum right? Especially for temperature. 
+
+### How would I define resistance or tolerance in terms of thermal stress biology? Or more generally?  
+
+Resistance is a response (either induced or already present) that impedes disruption of a complex trait/biological system from a perturbation. 
+
+Tolerance is a response that mitigates the disruption of a complex trait/biological system from a perturbation. 
+
+Not sure about these definitions. In real biology, how would this work?
+
+```
+		 resistance
+		|-----
+		|	  \
+		|	   \
+fitness  |		 \
+		|		   -------
+		|           tolerance
+		______________________
+		      leaf damage
+```
+
+The amount of leaf damage that does not decrease fitness is resistance. The part where the curve begins to change is tolerance. Can use a breakpoint analysis. 
+
+```
+		 
+		|		--------
+		|	   /  		 \
+		|	 /	   		  \
+fitness  |	/	 			\
+		|/
+		|           
+		______________________
+		      Temperature
+```
+
+The slope at the ends would indicate tolerance. But the width of topt may be resistance. 
+
+Not sure this works. 
+
+
+
+
+
+
+
 ------
 <div id='id-section33'/>
-### Page 33:
+### Page 33: 2017-02-23. Multiple regression models testing effect of Hsp parameters on Ctmax
+
+Data structure:
+
+```R
+'data.frame':	41 obs. of  81 variables:
+ $ n                  : int  1 2 3 4 5 6 7 8 9 10 ...
+ $ colony.id2         : Factor w/ 41 levels "ALA1","ALA4",..: 1 2 3 4 5 6 7 8 9 10 ...
+ $ hsc70              : num  23 22.1 22.5 22.9 23.8 ...
+ $ hsp83              : num  22.4 22.1 22.3 22.4 21.6 ...
+ $ hsp40              : num  24.4 24 25.1 25.2 25.4 ...
+ $ FC_hsc70_1468_max  : num  47.6 29.1 17 30.2 43.7 ...
+ $ FC_hsc70_1468_slope: num  1.026 1.071 1.01 0.391 0.909 ...
+ $ FC_hsc70_1468_Tm   : num  37.2 36.3 36.5 35.6 36.1 ...
+ $ FC_hsp40_541_max   : num  8.5 4.62 21.96 5.79 7.06 ...
+ $ FC_hsp40_541_slope : num  2.4311 1.3566 2.6054 0.8119 0.0455 ...
+ $ FC_hsp40_541_Tm    : num  37.3 35.3 40.9 35.3 33.1 ...
+ $ FC_Hsp83_279_max   : num  5.8 6.46 8.86 7.61 4.3 ...
+ $ FC_Hsp83_279_slope : num  2.0964 1.2968 1.757 0.0497 1.0885 ...
+ $ FC_Hsp83_279_Tm    : num  37 35 35.1 33.1 34.7 ...
+ $ Collection.date    : int  20141011 20141013 20150614 20150622 20140626 20140626 20140626 20140626 20140626 20140626 ...
+ $ site               : Factor w/ 16 levels "Alachua Co","Avon",..: 1 1 2 3 4 4 4 4 4 4 ...
+ $ state              : Factor w/ 8 levels "FL","MA","MD",..: 1 1 4 4 3 3 3 3 3 3 ...
+ $ queen_satus        : Factor w/ 4 levels "","?","QL","QR": 4 3 1 1 4 4 4 4 4 4 ...
+ $ location           : Factor w/ 16 levels "ALA","AVON","BING",..: 1 1 2 3 4 4 4 4 4 4 ...
+ $ lat                : num  29.7 29.7 44.8 45 39 ...
+ $ lon                : num  -82.4 -82.4 -70.3 -69.9 -77.2 ...
+ $ genus              : Factor w/ 1 level "Aphaenogaster": 1 1 1 1 1 1 1 1 1 1 ...
+ $ species            : Factor w/ 10 levels "?","ashmeadi",..: 7 7 8 8 4 9 9 4 9 4 ...
+ $ rad_seq_species    : Factor w/ 8 levels "ashmeadi","floridana",..: 5 5 6 6 3 7 7 3 7 3 ...
+ $ colony.id          : Factor w/ 41 levels "Ala1","Ala4",..: 1 2 3 4 5 6 7 8 9 10 ...
+ $ Alt_names          : Factor w/ 41 levels "ALA1","ALA4",..: 1 2 3 4 5 6 7 8 9 10 ...
+ $ KO_temp_worker     : num  42 41.8 40.4 41.3 40.9 ...
+ $ mean_ind_weight_mg : num  0.664 0.509 NA NA 0.936 ...
+ $ habitat            : Factor w/ 7 levels "deciduous forest",..: 2 2 4 4 1 1 1 1 1 1 ...
+ $ habitat_v2         : Factor w/ 2 levels "deciduous forest",..: 1 1 1 1 1 1 1 1 1 1 ...
+ $ nest.location      : Factor w/ 4 levels "log","sand","soil",..: 3 3 1 3 1 1 1 4 4 4 ...
+ $ collectors         : Factor w/ 10 levels "ANBE","ANBE, KM, Lloyd Davis",..: 9 10 7 7 6 6 6 6 6 6 ...
+ $ bio1               : int  204 204 47 53 125 125 125 125 125 125 ...
+ $ bio2               : int  131 131 122 126 119 119 119 119 119 119 ...
+ $ bio3               : int  47 47 29 29 33 33 33 33 33 33 ...
+ $ bio4               : int  5357 5357 9908 10071 8523 8523 8523 8523 8523 8523 ...
+ $ bio5               : int  329 329 249 259 304 304 304 304 304 304 ...
+ $ bio6               : int  55 55 -164 -164 -51 -51 -51 -51 -51 -51 ...
+ $ bio7               : int  274 274 413 423 355 355 355 355 355 355 ...
+ $ bio8               : int  268 268 1 7 212 212 212 212 212 212 ...
+ $ bio9               : int  173 173 -74 -70 12 12 12 12 12 12 ...
+ $ bio10              : int  268 268 170 178 233 233 233 233 233 233 ...
+ $ bio11              : int  132 132 -87 -84 12 12 12 12 12 12 ...
+ $ bio12              : int  1336 1336 1102 1052 1038 1038 1038 1038 1038 1038 ...
+ $ bio13              : int  202 202 113 106 102 102 102 102 102 102 ...
+ $ bio14              : int  56 56 69 64 70 70 70 70 70 70 ...
+ $ bio15              : int  41 41 12 13 12 12 12 12 12 12 ...
+ $ bio16              : int  547 547 305 291 292 292 292 292 292 292 ...
+ $ bio17              : int  189 189 231 211 221 221 221 221 221 221 ...
+ $ bio18              : int  547 547 296 286 291 291 291 291 291 291 ...
+ $ bio19              : int  277 277 243 229 221 221 221 221 221 221 ...
+ $ Axis.1             : num  0.0182 0.0223 0.02 0.0241 -0.2567 ...
+ $ Axis.2             : num  0.0222 0.0285 0.0254 0.032 -0.0406 ...
+ $ Axis.3             : num  -0.00426 -0.00794 -0.00581 -0.00954 -0.03383 ...
+ $ Axis.4             : num  -2.54e-03 -2.59e-03 -6.49e-04 -5.45e-04 -6.64e-05 ...
+ $ Axis.5             : num  1.84e-02 2.04e-02 -4.40e-02 -4.99e-02 2.88e-05 ...
+ $ Axis.6             : num  0.030309 0.030923 -0.002887 -0.00572 0.000598 ...
+ $ Axis.7             : num  -1.59e-02 -2.35e-02 6.21e-05 -4.11e-03 7.34e-04 ...
+ $ Axis.8             : num  -4.06e-05 -6.81e-04 4.91e-05 -3.62e-04 6.84e-05 ...
+ $ Axis.9             : num  2.55e-04 -2.88e-03 -2.03e-05 -1.81e-03 1.54e-04 ...
+ $ Axis.10            : num  9.55e-03 -2.53e-02 2.81e-04 1.53e-03 -1.75e-05 ...
+ $ Axis.11            : num  -5.18e-04 4.02e-03 1.38e-03 2.43e-03 9.36e-05 ...
+ $ Axis.12            : num  4.51e-04 -5.99e-04 2.49e-03 1.36e-02 -5.69e-06 ...
+ $ Axis.13            : num  -2.00e-04 1.58e-04 -3.37e-05 -3.96e-05 -1.12e-06 ...
+ $ Axis.14            : num  3.96e-03 -2.98e-03 1.20e-04 3.63e-06 -1.76e-05 ...
+ $ Axis.15            : num  1.55e-02 -5.38e-03 2.16e-04 4.29e-04 -1.33e-06 ...
+ $ Axis.16            : num  6.07e-03 1.51e-02 -1.57e-04 -1.69e-04 4.88e-06 ...
+ $ Axis.17            : num  -6.39e-04 4.58e-04 3.19e-04 -2.48e-04 -2.03e-05 ...
+ $ Axis.18            : num  2.72e-03 -1.99e-03 -1.47e-03 1.22e-03 9.44e-05 ...
+ $ Axis.19            : num  0.001861 -0.000881 -0.003553 0.006455 0.000168 ...
+ $ Axis.20            : num  1.30e-04 -4.88e-05 -5.60e-04 1.14e-03 1.80e-05 ...
+ $ Comp.1             : num  -3.711 -3.711 3.836 3.629 0.736 ...
+ $ Comp.2             : num  -0.252 -0.252 0.376 0.955 -0.848 ...
+ $ rRNA18s            : num  10.87 9.64 9.82 10.18 9.86 ...
+ $ n.y                : int  1 2 4 5 7 8 9 10 11 12 ...
+ $ hsc70.1            : num  12.1 12.5 12.7 12.7 13.9 ...
+ $ hsp83.1            : num  11.6 12.4 12.5 12.2 11.8 ...
+ $ hsp40.1            : num  13.6 14.3 15.2 15 15.5 ...
+```
+
+
+
+Calculating basal expression. Subtracting ct values of hsp83,hsc70-4, and hsp40 from 18srRNA ct values. And then log2 transforming the data to get a measure of basal expression 
+
+```R
+basalxp<-log2(jj[,3:5] - jj[,74])
+jj<-data.frame(jj,basalxp)
+```
+
+
+
+Constructing the multiple regression model:
+
+```R
+regmod<-lm(KO_temp_worker~hsc70.1+hsp83.1+hsp40.2+FC_hsc70_1468_max+FC_hsc70_1468_slope+FC_hsc70_1468_Tm+FC_hsp40_541_max+FC_hsp40_541_slope+FC_hsp40_541_Tm+FC_Hsp83_279_max+FC_Hsp83_279_slope+FC_Hsp83_279_Tm,data=jj)
+```
+
+Model selection based on AIC in both directions (forward and backwards):
+
+```R
+summary(stepAIC(regmod,direction="both"))
+#output
+Call:
+lm(formula = KO_temp_worker ~ hsp40.2 + FC_hsc70_1468_max + FC_hsp40_541_slope + 
+    FC_hsp40_541_Tm + FC_Hsp83_279_max + FC_Hsp83_279_slope, 
+    data = jj)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.92378 -0.28655  0.00972  0.25208  0.97126 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        37.809870   2.777111  13.615 2.53e-15 ***
+hsp40.2            -1.429154   0.673488  -2.122  0.04120 *  
+FC_hsc70_1468_max   0.042233   0.006797   6.213 4.56e-07 ***
+FC_hsp40_541_slope -0.336009   0.127642  -2.632  0.01266 *  
+FC_hsp40_541_Tm     0.224272   0.049786   4.505 7.46e-05 ***
+FC_Hsp83_279_max   -0.063139   0.022459  -2.811  0.00813 ** 
+FC_Hsp83_279_slope  0.251070   0.109254   2.298  0.02784 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4913 on 34 degrees of freedom
+Multiple R-squared:   0.69,	Adjusted R-squared:  0.6353 
+F-statistic: 12.61 on 6 and 34 DF,  p-value: 1.926e-07
+```
+
+
+
+Model averaging with mumin package
+
+```R
+selmod<-dredge(regmod)
+selmod
+```
+
+* top 2 models
+
+```R
+summary(model.avg(selmod[1:2]))
+#output
+(conditional average) 
+                    Estimate Std. Error Adjusted SE z value Pr(>|z|)    
+(Intercept)        36.527394   3.299388    3.371523  10.834  < 2e-16 ***
+FC_hsc70_1468_max   0.041943   0.006899    0.007150   5.866  < 2e-16 ***
+FC_hsp40_541_slope -0.329519   0.129646    0.134355   2.453  0.01418 *  
+FC_hsp40_541_Tm     0.218131   0.051123    0.052921   4.122 3.76e-05 ***
+FC_Hsp83_279_max   -0.062754   0.022766    0.023598   2.659  0.00783 ** 
+FC_Hsp83_279_slope  0.252757   0.110742    0.114788   2.202  0.02767 *  
+hsp40.2            -1.429154   0.673488    0.698325   2.047  0.04070 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Relative variable importance: 
+                     FC_hsc70_1468_max FC_hsp40_541_slope
+Importance:          1.00              1.00              
+N containing models:    2                 2              
+                     FC_hsp40_541_Tm FC_Hsp83_279_max FC_Hsp83_279_slope
+Importance:          1.00            1.00             1.00              
+N containing models:    2               2                2              
+                     hsp40.2
+Importance:          0.73   
+N containing models:    1   
+```
+
+
+
+* Top 10 models
+
+```R
+summary(model.avg(selmod[1:10]))
+#output
+(conditional average) 
+                     Estimate Std. Error Adjusted SE z value Pr(>|z|)    
+(Intercept)         36.694206   3.447945    3.544068  10.354  < 2e-16 ***
+FC_hsc70_1468_max    0.040852   0.007579    0.007834   5.215    2e-07 ***
+FC_hsp40_541_slope  -0.323397   0.136255    0.141024   2.293 0.021836 *  
+FC_hsp40_541_Tm      0.217875   0.055173    0.057078   3.817 0.000135 ***
+FC_Hsp83_279_max    -0.059538   0.023868    0.024679   2.413 0.015842 *  
+FC_Hsp83_279_slope   0.252246   0.113812    0.117985   2.138 0.032522 *  
+hsp40.2             -1.446654   0.685537    0.711032   2.035 0.041893 *  
+FC_hsc70_1468_Tm     0.139557   0.128507    0.132953   1.050 0.293870    
+hsc70.1              0.071127   0.087273    0.090593   0.785 0.432381    
+hsp83.1              0.056570   0.095056    0.098671   0.573 0.566426    
+FC_hsc70_1468_slope  0.103600   0.201892    0.209571   0.494 0.621065    
+FC_Hsp83_279_Tm     -0.030072   0.072190    0.074936   0.401 0.688195    
+FC_hsp40_541_max    -0.008143   0.019715    0.020465   0.398 0.690716    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Relative variable importance: 
+                     FC_hsc70_1468_max FC_hsp40_541_slope FC_hsp40_541_Tm FC_Hsp83_279_max hsp40.2
+Importance:          1.00              1.00               1.00            1.00             0.89   
+N containing models:   10                10                 10              10                9   
+                     FC_Hsp83_279_slope FC_hsc70_1468_Tm hsc70.1 hsp83.1 FC_hsc70_1468_slope
+Importance:          0.87               0.15             0.09    0.07    0.07               
+N containing models:    8                  2                1       1       1               
+                     FC_Hsp83_279_Tm FC_hsp40_541_max
+Importance:          0.06            0.06            
+N containing models:    1               1                 
+```
+
+
+
+* Delta 4 AICc criterion
+
+```R
+summary(model.avg(selmod, subset = delta < 4))
+
+(conditional average) 
+                     Estimate Std. Error Adjusted SE z value Pr(>|z|)    
+(Intercept)         36.694206   3.447945    3.544068  10.354  < 2e-16 ***
+FC_hsc70_1468_max    0.040852   0.007579    0.007834   5.215    2e-07 ***
+FC_hsp40_541_slope  -0.323397   0.136255    0.141024   2.293 0.021836 *  
+FC_hsp40_541_Tm      0.217875   0.055173    0.057078   3.817 0.000135 ***
+FC_Hsp83_279_max    -0.059538   0.023868    0.024679   2.413 0.015842 *  
+FC_Hsp83_279_slope   0.252246   0.113812    0.117985   2.138 0.032522 *  
+hsp40.2             -1.446654   0.685537    0.711032   2.035 0.041893 *  
+FC_hsc70_1468_Tm     0.139557   0.128507    0.132953   1.050 0.293870    
+hsc70.1              0.071127   0.087273    0.090593   0.785 0.432381    
+hsp83.1              0.056570   0.095056    0.098671   0.573 0.566426    
+FC_hsc70_1468_slope  0.103600   0.201892    0.209571   0.494 0.621065    
+FC_Hsp83_279_Tm     -0.030072   0.072190    0.074936   0.401 0.688195    
+FC_hsp40_541_max    -0.008143   0.019715    0.020465   0.398 0.690716    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Relative variable importance: 
+                     FC_hsc70_1468_max FC_hsp40_541_slope FC_hsp40_541_Tm FC_Hsp83_279_max hsp40.2
+Importance:          1.00              1.00               1.00            1.00             0.89   
+N containing models:   10                10                 10              10                9   
+                     FC_Hsp83_279_slope FC_hsc70_1468_Tm hsc70.1 hsp83.1 FC_hsc70_1468_slope
+Importance:          0.87               0.15             0.09    0.07    0.07               
+N containing models:    8                  2                1       1       1               
+                     FC_Hsp83_279_Tm FC_hsp40_541_max
+Importance:          0.06            0.06            
+N containing models:    1               1            
+```
+
+
+
+Correlation between predictors: 
+
+```R
+knitr::kable(round(cor(data.frame(jj[,6:14],basalxp)),3))
+```
+
+|                     | FC_hsc70_1468_max | FC_hsc70_1468_slope | FC_hsc70_1468_Tm | FC_hsp40_541_max | FC_hsp40_541_slope | FC_hsp40_541_Tm | FC_Hsp83_279_max | FC_Hsp83_279_slope | FC_Hsp83_279_Tm |  hsc70 |  hsp83 | hsp40 |
+| :------------------ | ----------------: | ------------------: | ---------------: | ---------------: | -----------------: | --------------: | ---------------: | -----------------: | --------------: | -----: | -----: | ----: |
+| FC_hsc70_1468_max   |             1.000 |               0.522 |            0.599 |            0.425 |              0.289 |           0.295 |            0.645 |              0.216 |           0.453 |  0.271 |  0.165 | 0.117 |
+| FC_hsc70_1468_slope |             0.522 |               1.000 |            0.507 |            0.331 |              0.378 |           0.368 |            0.310 |              0.363 |           0.195 |  0.081 |  0.126 | 0.069 |
+| FC_hsc70_1468_Tm    |             0.599 |               0.507 |            1.000 |            0.416 |              0.340 |           0.617 |            0.500 |              0.425 |           0.783 |  0.262 |  0.119 | 0.233 |
+| FC_hsp40_541_max    |             0.425 |               0.331 |            0.416 |            1.000 |              0.648 |           0.665 |            0.543 |              0.442 |           0.396 |  0.291 |  0.261 | 0.199 |
+| FC_hsp40_541_slope  |             0.289 |               0.378 |            0.340 |            0.648 |              1.000 |           0.609 |            0.280 |              0.380 |           0.223 |  0.286 |  0.312 | 0.070 |
+| FC_hsp40_541_Tm     |             0.295 |               0.368 |            0.617 |            0.665 |              0.609 |           1.000 |            0.477 |              0.401 |           0.661 |  0.225 |  0.265 | 0.222 |
+| FC_Hsp83_279_max    |             0.645 |               0.310 |            0.500 |            0.543 |              0.280 |           0.477 |            1.000 |              0.474 |           0.630 |  0.170 |  0.216 | 0.113 |
+| FC_Hsp83_279_slope  |             0.216 |               0.363 |            0.425 |            0.442 |              0.380 |           0.401 |            0.474 |              1.000 |           0.491 | -0.062 | -0.031 | 0.044 |
+| FC_Hsp83_279_Tm     |             0.453 |               0.195 |            0.783 |            0.396 |              0.223 |           0.661 |            0.630 |              0.491 |           1.000 |  0.218 |  0.086 | 0.282 |
+| hsc70               |             0.271 |               0.081 |            0.262 |            0.291 |              0.286 |           0.225 |            0.170 |             -0.062 |           0.218 |  1.000 |  0.728 | 0.146 |
+| hsp83               |             0.165 |               0.126 |            0.119 |            0.261 |              0.312 |           0.265 |            0.216 |             -0.031 |           0.086 |  0.728 |  1.000 | 0.059 |
+| hsp40               |             0.117 |               0.069 |            0.233 |            0.199 |              0.070 |           0.222 |            0.113 |              0.044 |           0.282 |  0.146 |  0.059 | 1.000 |
+
+
+
 ------
 <div id='id-section34'/>
 ### Page 34:

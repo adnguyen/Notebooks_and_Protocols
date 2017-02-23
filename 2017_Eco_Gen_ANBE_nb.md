@@ -29,7 +29,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 10: 2017-02-10](#id-section10). Prepping for leading journal club discussion: 2015-02-15; Zhao et al. 2016; *MBE*
 * [Page 11: 2017-02-13](#id-section11). Week 5, Day 8, RNA-seq mapping and paper discussion: Johnston et al. 2016, *Molecular Ecology*
 * [Page 12: 2017-02-15](#id-section12).  Week 5, Day 9, Sam info update, ANBE paper discussion, Zhao et al. 2016; *MBE*
-* [Page 13:](#id-section13).
+* [Page 13: 2017-02-22](#id-section13). Week 6, Day 10, RNA-seq and paper discussion; Dixon et al. 2016; Genomic determinants of coral heat tolerance across latitudes.
 * [Page 14:](#id-section14).
 * [Page 15:](#id-section15).
 * [Page 16:](#id-section16).
@@ -2017,12 +2017,12 @@ General approaches:
    * Uniquly mapped reads
 
 
-   * ```
-     grep -c XT:A:U 20_5-14_H_0_bwaaln.sam 
-     1,737,572
-     ```
+*  ```
+   grep -c XT:A:U 20_5-14_H_0_bwaaln.sam 
+   1,737,572
+   ```
 
-   * ​
+*  ​
 
    * ```
      grep -c X0:i:1 20_5-14_H_0_bwaaln.sam 
@@ -2112,10 +2112,54 @@ General approaches:
 
 
 
-
 ------
 <div id='id-section13'/>
-### Page 13:
+### Page 13: 2017-02-22. Week 6, Day 10, RNA-seq and paper discussion; Dixon et al. 2016; Genomic determinants of coral heat tolerance across latitudes. 
+
+**Notes:**
+
+* Steve wants me to install DADI, it has dependencies. 
+* day off from info updates 
+
+**Glossary:** 
+
+haplotypes: tightly linked genes
+
+KOG: 
+
+
+
+### Coding: analysing gene expression data with DESEQ2 in R
+
+
+
+1. Copy data files from server
+
+```UNIX
+scp adnguyen@pbio381.uvm.edu:/data/project_data/DGE/* .
+
+```
+
+2. path of new folder
+
+```UNIX
+2017-02-22_DEseq2_tutorial.Rmd	countsdata_trim.txt
+DESeq2_exploreSSW_trim.R	countstatsummary.txt
+cols_data_trim.txt		explore_expression_data.R
+```
+
+​	Data and script files
+
+3. ​
+
+
+
+
+
+
+
+
+
 ------
 <div id='id-section14'/>
 ### Page 14:
