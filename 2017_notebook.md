@@ -59,7 +59,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 31: 2017-02-21](#id-section31). Measuring evolutionary rates in darwins and haldanes  
 * [Page 32: 2017-02-22](#id-section32). Resistance vs Tolerance strategies to stress; paper notes-**Núñez-Farfán et al. 2007**; The Evolution of Resistance and Tolerance to Herbivores; Annu. Rev. Ecol. Evol. Syst.
 * [Page 33: 2017-02-23](#id-section33).  Multiple regression models testing effect of Hsp parameters on Ctmax
-* [Page 34:](#id-section34).
+* [Page 34: 2017-02-23](#id-section34). SHC lab meeting: Going over hxp rxn norm paper. 
 * [Page 35:](#id-section35).
 * [Page 36:](#id-section36).
 * [Page 37:](#id-section37).
@@ -1970,6 +1970,14 @@ Not sure this works.
 <div id='id-section33'/>
 ### Page 33: 2017-02-23. Multiple regression models testing effect of Hsp parameters on Ctmax
 
+Doing a multiple regression as requested by SHC.
+
+> Could you do the straight-up regression?  The PCA does a good job showing a single axis along which expression profiles vary, but the first most basic question is whether hsps are telling you the main story about CTmax.
+>
+> Sara
+
+
+
 Data structure:
 
 ```R
@@ -2239,9 +2247,66 @@ knitr::kable(round(cor(data.frame(jj[,6:14],basalxp)),3))
 
 
 
+Another set of analyses: 
+
+> Also, can you test the relationship between the PCs and CTmax without the open habitat species?  This is to see if the same axis of variation also underlies CTmax variation without the big jump associated with the habitat shift.
+
+
+
+Assembling dataset with pcs of hsp params with original data:
+
+```R
+jj3<-data.frame(jj,hspparams)
+
+summary(jj3$habitat_v2)
+#deciduous forest       flat woods 
+ #             32                9 
+
+noop<-subset(jj3,jj3$habitat_v2!="flat woods")
+#summary(lm(KO_temp_worker~pc1+pc2+pc3,data=noop))
+summary(lm(KO_temp_worker~pc1,data=noop))
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 41.36600    0.09696 426.630  < 2e-16 ***
+pc1         -0.16944    0.06017  -2.816  0.00852 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4823 on 30 degrees of freedom
+Multiple R-squared:  0.2091,	Adjusted R-squared:  0.1827 
+F-statistic: 7.929 on 1 and 30 DF,  p-value: 0.008515
+
+```
+
+
+
+
+
 ------
 <div id='id-section34'/>
-### Page 34:
+### Page 34: 2017-02-23. SHC lab meeting: Going over hxp rxn norm paper. 
+
+Overall feedback:
+
+
+
+Introduction
+
+
+
+Results
+
+
+
+Discussion
+
+
+
+Methods
+
+
+
 ------
 <div id='id-section35'/>
 ### Page 35:
