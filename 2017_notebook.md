@@ -61,7 +61,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 33: 2017-02-23](#id-section33).  Multiple regression models testing effect of Hsp parameters on Ctmax
 * [Page 34: 2017-02-23](#id-section34). SHC lab meeting: Going over hxp rxn norm paper. 
 * [Page 35: 2017-02-23](#id-section35). What are Evolutionary Innovations? 
-* [Page 36:](#id-section36).
+* [Page 36: 2017-02-24](#id-section36). Last biolunch and committee meeting notes
 * [Page 37:](#id-section37).
 * [Page 38:](#id-section38).
 * [Page 39:](#id-section39).
@@ -2293,6 +2293,12 @@ Found a source [here](http://strata.uga.edu/8370/lecturenotes/principalComponent
 <div id='id-section34'/>
 ### Page 34: 2017-02-23. SHC lab meeting: Going over hxp rxn norm paper. 
 
+Announcements
+
+2017 lab refresher
+
+==ssh in into the gotelli lab server==
+
 Overall feedback:
 
 * Add Katie Miller in the acknowledgements
@@ -2390,10 +2396,57 @@ Evolutionary Innovations:
 4. Evolutionary change in a characteristic that enhances persistance in a new species compared to ancestors
 
 
-
 ------
 <div id='id-section36'/>
-### Page 36:
+### Page 36: 2017-02-24. Last biolunch and committee meeting notes.
+
+
+
+### Last biolunch
+
+Nate:
+
+* Ants are still here…problem with yesterday's adaptation is today's constraint
+  * go through argument: yesterday's adaptation is today's constraint—generalizable to the whole clade? ; cross susceptibility, 
+* Ants should be resilient
+
+Aimee: 
+
+* Range limits question; can't they move? Then they'd be resilient.
+
+Melanie Lloyd: 
+
+* I should change fold induction as delta delta CT
+
+Brent's comments:
+
+* semantics; evolutionary innovations makes it sound like something is novel, but it is tweaking an already established molecular mechanism. 
+  * careful if you're using evo inn for a paper
+* fitting lines to HSR; what I'm looking at is the kinetics of the heat sohck response. How does that change across evo time and diff time
+* describing HSR; summarize it a little quicker(i had 3 slides) it could be more succinct so you can get into your experiments. 
+* motivation for importance: showing some data that actually substantiates that Hsps are important for thermal tolerance. (good example in drosophila). Hsps are not just a biomarker of stress. Higher hsps = confers greater heat tolerance.  Link Hsp with upper thrmal limits better.
+* Setting up predictions for protective vs tolerance: show previously published data showing each protection /tolerance….but tell everybody that people dont systematically look at Hsps and it's role in upper thermal limits. Protection (George's papers; Dong Millers in limpets 2008 or 2009 ish).
+* Presenting Hsps gene phylogneies: make it clear which paralogues and orthologues correspond with each species 
+* 1st chapter is less well rounded; I went too fast. 
+* Why use thermal performance curves? Take it out? 
+* At the very end; safety margins but I never plot safety margins. I have my own data, plot it out! And describe it
+* "I don't believe it". Small heat shock proteins , ants have small hsps.  A matter of miscommunication
+
+
+
+NJG:
+
+* Change his picture
+* Too many "um"s
+* I can start with climate change and ants have adaptations to buffer it's effects. 
+
+Committee meeting:
+
+* SHC wants me to add proteome stability work if I get NSF. 
+* Send out multiple stressors manuscript
+* Date set as March 29th
+
+
 ------
 <div id='id-section37'/>
 ### Page 37:

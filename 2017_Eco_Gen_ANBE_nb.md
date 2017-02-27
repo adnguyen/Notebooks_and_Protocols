@@ -30,7 +30,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 11: 2017-02-13](#id-section11). Week 5, Day 8, RNA-seq mapping and paper discussion: Johnston et al. 2016, *Molecular Ecology*
 * [Page 12: 2017-02-15](#id-section12).  Week 5, Day 9, Sam info update, ANBE paper discussion, Zhao et al. 2016; *MBE*
 * [Page 13: 2017-02-22](#id-section13). Week 6, Day 10, RNA-seq and paper discussion; Dixon et al. 2016; Genomic determinants of coral heat tolerance across latitudes.
-* [Page 14:](#id-section14).
+* [Page 14: 2017-02-27](#id-section14).  Week 7, Day 11, RNA-seq and paper discussion (Edwards et al. 2016; *PNAS*)-phylogeography; Scott  Edwards visit
 * [Page 15:](#id-section15).
 * [Page 16:](#id-section16).
 * [Page 17:](#id-section17).
@@ -2159,10 +2159,18 @@ cols_data_trim.txt		explore_expression_data.R
 
 
 
-
 ------
 <div id='id-section14'/>
-### Page 14:
+### Page 14: 2017-02-27: Week 7, Day 11, RNA-seq and paper discussion (Edwards et al. 2016; *PNAS*)-phylogeography; Scott  Edwards visit.
+
+
+
+
+
+
+
+
+
 ------
 <div id='id-section15'/>
 ### Page 15:
