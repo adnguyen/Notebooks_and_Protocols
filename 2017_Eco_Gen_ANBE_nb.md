@@ -2163,9 +2163,96 @@ cols_data_trim.txt		explore_expression_data.R
 <div id='id-section14'/>
 ### Page 14: 2017-02-27: Week 7, Day 11, RNA-seq and paper discussion (Edwards et al. 2016; *PNAS*)-phylogeography; Scott  Edwards visit.
 
+glossary:
+
+Coalescent- 
+
+Reticulation
+
+purifying/background selection-
+
+gene trees vs species- 
+
+recombination- 
+
+introgression- 
 
 
 
+incomplete lineage sorting. population size and time.
+
+large population size and short time allows to undergo incomplete lineage sorting to be represented in a divergence event. 
+
+
+
+t/Ne
+
+large t/Ne = resemble species tree
+
+small t/Ne = Incomplete lineage sorting
+
+SKeller: genomes are collections of evolutionary history (think of the problem as a sampling problem)
+
+* How many samples do you have to grab? Is it a finite set of solutions? 
+* How many histories are there? 
+
+Mpespeni: Is there a saturation  such athat when you sample, the more sample doesn't improve the species tree? 
+
+Edwards: 5-10 loci is generally "good enough" to resolve species. 
+
+Assumption: we can estimate these gene trees accurately. Rapid radiations might be tough to figure out what the gene trees actually are. 
+
+Do we want to estimate the trees? Other statistics? Edwards likes gene trees. Hard to estimate gene trees from a SNP. How granular do you want to analyze the data? 
+
+Kilpatrick: Radiations deep or recent in time? 
+
+Edwards: Can detect heterogeneity in deep rapid radiations in one of his papers. You can have short branch lengths that happened a long time ago. Can you tell? Yes, with the right type of data. 
+
+
+
+Recombination! Another kind of reticulation: Causes gene boundaries to become blurry. 
+
+
+
+==Hudson's MS== Check this program out for coalescent modeling for SNP data. 
+
+
+
+### Coding:
+
+1. move new data
+
+   * ```UNIX
+     scp adnguyen@pbio381.uvm.edu:/data/project_data/DGE/* . 
+     ```
+
+2. Deseq2
+
+   * go over 5 models
+
+3. Your models
+
+
+
+Cool way to sample a dataframe (I always forget)
+
+```R
+dds <- dds[sample(nrow(dds), 1200), ]
+dim(dds)
+>[1] 1200   77
+```
+
+
+
+So we randomly sampled a subset (10%) so we can construct models and run it more quickly. 
+
+
+
+Sort dataset based on p-values
+
+```R
+res <- res[order(res$padj),]
+```
 
 
 

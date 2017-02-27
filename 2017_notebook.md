@@ -62,7 +62,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 34: 2017-02-23](#id-section34). SHC lab meeting: Going over hxp rxn norm paper. 
 * [Page 35: 2017-02-23](#id-section35). What are Evolutionary Innovations? 
 * [Page 36: 2017-02-24](#id-section36). Last biolunch and committee meeting notes
-* [Page 37:](#id-section37).
+* [Page 37: 2017-02-27](#id-section37). Mappies in R for Zamira
 * [Page 38:](#id-section38).
 * [Page 39:](#id-section39).
 * [Page 40:](#id-section40).
@@ -2412,7 +2412,7 @@ Nate:
 
 Aimee: 
 
-* Range limits question; can't they move? Then they'd be resilient.
+* Range limits question; can't they move? Then, they'd be resilient.
 
 Melanie Lloyd: 
 
@@ -2440,6 +2440,33 @@ NJG:
 * Too many "um"s
 * I can start with climate change and ants have adaptations to buffer it's effects. 
 
+Melissa's comments:
+
+* Ants are everywhere and can adapt to anything; but it doesn't show finer scale phylogenetic relationshps on that 
+* There is constraint based on evo history and that may limit future adaptive potential 
+* Have broad map; and then have differences in species ranges and some species dont have a large range; some are secluded. 
+  * show map of ant species distributions (show number); they're not all everywhere
+* set audiance up for conclusion;by showing in differences in how species inhabit the world ; there is potential for specialization and diversification 
+* Spent a long time on Hsps and HSEs without us knowing where it is going. It is nice to have outline for 2 stories. Suggest brief outline slide
+* Tighten up what I say about HSE and Hsps. Make it shorter.
+* General comment: Innovations. Not the right word. Morphological trait based thing. 
+* =="I'd like to tackle" in my dissertation: Say , the question that "I have addressed"==
+* Don't call them chapters: talk for 3 questions. "Call it my research" or refer to it that way. 
+* for multiple stressors part: there is a biotic and abiotic effect on species
+* in multiple stressors part: say sequentially so that people know. 
+* When people interrupt me: Say "Great" instead of, where was I? 
+* Conclusion: These results suggest that if species didnt adapt in a warm environment they may face exctintion. 
+* ==Set up why this idea of yesterday's adaptation is today's constraint is a novel conclusion==
+* Make habitat pictures up front. Make pictures the same size. 
+* describe the word passive in slide 63; be more explicit in what the Tm shift means
+* Show the people what journey they're about to go on. 
+  * Tell them what you're about to tell them
+  * Tell them
+  * Tell them what you told them
+* ​
+
+
+
 Committee meeting:
 
 * SHC wants me to add proteome stability work if I get NSF. 
@@ -2447,9 +2474,159 @@ Committee meeting:
 * Date set as March 29th
 
 
+
+
+
+
+
+
 ------
 <div id='id-section37'/>
-### Page 37:
+### Page 37: 2017-02-27. MapPies in R for Zamira
+
+
+
+[mapPies syntax](http://rgraphgallery.blogspot.com/2013/04/rg-plot-bar-or-pie-chart-over-world-map.html)   
+
+Libraries:
+
+```R
+#for data parsing
+library(dplyr)
+library(tidyr)
+library(reshape2)
+library(plyr)
+#phylogenetics packages
+library(ape) 
+library(geiger) 
+library(ade4) 
+library(adephylo)
+library(phytools)
+library(MPSEM)
+#for grabbing data from worldclim
+library(raster) 
+libaray(maps)
+library(sp) 
+library(dismo) 
+
+#Statistics
+library(vegan) # variance partitioning function 
+library(MASS)
+library(MuMIn)
+options(na.action = "na.fail")
+#Dealing with matrices
+#library(spaa)
+```
+
+
+
+
+
+```R
+w <- getData('worldclim', var='bio', res=2.5)
+dbio1 <- extract(w, ant_dat[,c("lon","lat")])
+ant_dat_clim <- cbind(ant_dat, dbio1[,1:19])
+str(ant_dat_clim) #data structure
+>'data.frame':	115 obs. of  39 variables:
+ $ n                 : int  1 2 3 4 5 6 7 8 9 10 ...
+ $ Collection.date   : int  20140520 20140520 20140520 20140616 20140616 20140616 20140616 20140616 20140616 20140617 ...
+ $ site              : Factor w/ 45 levels "Alachua Co","Avon",..: 36 36 36 22 22 22 22 22 22 25 ...
+ $ state             : Factor w/ 17 levels "","AZ","CA","FL",..: 12 12 12 4 4 4 4 4 4 4 ...
+ $ queen_satus       : Factor w/ 4 levels "","?","QL","QR": 4 4 4 3 3 4 3 4 4 4 ...
+ $ location          : Factor w/ 42 levels "ALA","AVON","BF",..: 34 34 34 20 20 20 20 20 20 23 ...
+ $ lat               : num  40.4 40.4 40.4 29.8 29.8 ...
+ $ lon               : num  -75.2 -75.2 -75.2 -82 -82 ...
+ $ genus             : Factor w/ 7 levels "Aphaenogaster",..: 1 1 1 1 1 1 1 1 1 1 ...
+ $ species           : Factor w/ 16 levels "","?","ashmeadi",..: 14 14 15 7 7 7 3 3 3 7 ...
+ $ rad_seq_species   : Factor w/ 15 levels "","ashmeadi",..: 14 14 14 7 7 7 2 2 2 7 ...
+ $ colony.id         : Factor w/ 115 levels "Ala1","Ala2",..: 101 102 103 57 58 59 60 61 62 86 ...
+ $ colony.id2        : Factor w/ 115 levels "09-A","10-A",..: 92 93 94 58 59 60 61 62 63 77 ...
+ $ Alt_names         : Factor w/ 115 levels "09-A","10-A",..: 103 104 105 61 62 63 64 65 66 90 ...
+ $ KO_temp_worker    : num  42 41.9 41.6 42.5 42.4 ...
+ $ mean_ind_weight_mg: num  1.369 0.969 0.784 1.289 1.206 ...
+ $ habitat           : Factor w/ 10 levels "","city","deciduous forest",..: 3 3 3 9 9 9 8 8 8 6 ...
+ $ habitat_v2        : Factor w/ 4 levels "city","deciduous forest",..: 2 2 2 4 4 4 4 4 4 4 ...
+ $ nest.location     : Factor w/ 5 levels "","log","sand",..: 2 2 2 3 3 3 3 3 3 3 ...
+ $ collectors        : Factor w/ 18 levels "ANBE","ANBE, KM, Lloyd Davis",..: 1 1 1 2 2 2 2 2 2 2 ...
+ $ bio1              : num  108 108 108 202 202 202 202 202 202 205 ...
+ $ bio2              : num  114 114 114 125 125 125 125 125 125 127 ...
+ $ bio3              : num  31 31 31 46 46 46 46 46 46 47 ...
+ $ bio4              : num  8758 8758 8758 5361 5361 ...
+ $ bio5              : num  293 293 293 326 326 326 326 326 326 327 ...
+ $ bio6              : num  -67 -67 -67 56 56 56 56 56 56 61 ...
+ $ bio7              : num  360 360 360 270 270 270 270 270 270 266 ...
+ $ bio8              : num  197 197 197 266 266 266 266 266 266 268 ...
+ $ bio9              : num  -8 -8 -8 171 171 171 171 171 171 174 ...
+ $ bio10             : num  219 219 219 266 266 266 266 266 266 268 ...
+ $ bio11             : num  -8 -8 -8 129 129 129 129 129 129 134 ...
+ $ bio12             : num  1162 1162 1162 1319 1319 ...
+ $ bio13             : num  116 116 116 196 196 196 196 196 196 191 ...
+ $ bio14             : num  74 74 74 58 58 58 58 58 58 57 ...
+ $ bio15             : num  12 12 12 42 42 42 42 42 42 41 ...
+ $ bio16             : num  327 327 327 533 533 533 533 533 533 537 ...
+ $ bio17             : num  250 250 250 197 197 197 197 197 197 195 ...
+ $ bio18             : num  323 323 323 533 533 533 533 533 533 537 ...
+ $ bio19             : num  250 250 250 259 259 259 259 259 259 262 ...
+dim(ant_dat_clim) # dimensions
+>[1] 115  39
+#grabbing summary of sampling
+samples<-as.data.frame(summary(ant_dat_clim$rad_seq_species),rownames=T);samples$species<-rownames(samples)
+names(samples)<-c("number","species")
+knitr::kable(samples)
+
+```
+
+|               | number | species       |
+| :------------ | -----: | :------------ |
+|               |      2 |               |
+| ashmeadi      |      9 | ashmeadi      |
+| barbatus      |      3 | barbatus      |
+| caespetum     |      1 | caespetum     |
+| Camponotus    |      1 | Camponotus    |
+| Crematogaster |      1 | Crematogaster |
+| floridana     |      9 | floridana     |
+| Formica       |      1 | Formica       |
+| fulva         |     10 | fulva         |
+| lamellidens   |      4 | lamellidens   |
+| miamiana      |     13 | miamiana      |
+| pergandei     |      4 | pergandei     |
+| picea         |     26 | picea         |
+| rudis         |     29 | rudis         |
+| tennesseensis |      2 | tennesseensis |
+
+
+
+MapPies
+
+```R
+dpar<-ddply(ant_dat_clim,.(rad_seq_species,site),summarize,total=length(rad_seq_species))
+
+widepar<-dcast(dpar,site~rad_seq_species)[,-2]
+gh<-ant_dat_clim[!duplicated(ant_dat_clim$site),]
+gh1<-gh[order(gh$site),]
+
+widepar$lat<-gh1$lat
+widepar$lon<-gh1$lon
+widepar[is.na(widepar)]<-0
+head(widepar)
+widepar<-widepar[,-3:-6]
+widepar<-widepar[,-4]
+widepar<-widepar[,-7]
+
+library(rworldmap)
+plot(w, 5, xlim=c(-85,-67), ylim=c(25,47.5),col="white", axes=TRUE, legend=F,main="",box=FALSE)
+map("state", c('florida', 'south carolina', 'north carolina', 'georgia', 'virginia', 'west virginia', 'maryland', 'delaware', 'new jersey', 'rhode island', 'new york', 'connecticut', 'massachusetts', 'pennyslvania', 'vermont', 'new hampshire', 'maine', 'alabama', 'tennessee', 'kentucky', 'ohio','iowa','illinois','arkansas','missouri','minnesota','wisconsin','michigan','louisiana','mississippi',"texas","arizona","illinois","california","oregon","utah","washington","kansas","new mexico","montana","idaho","wyoming","north dakota","south dakota","nebraska","oklahoma"), add = TRUE)
+
+mapPies(widepar,nameX="lon",nameY="lat",nameZs=c("picea","fulva","rudis","floridana","ashmeadi","tennesseensis","miamiana","lamellidens"),zColours=c("blue","purple","orange","red","darkred","darkorchid1","darksalmon","goldenrod"),xlim=c(-85,-67), ylim=c(25,47.5),landCol="gray50",addCatLegend = TRUE,add=TRUE,font=3)
+#mapBars(widepar,nameX="lon",nameY="lat",nameZs=c("picea","fulva","rudis","floridana","ashmeadi","tennesseensis","miamiana","lamellidens"),zColours=c("blue","purple","orange","red","darkred","darkorchid1","darksalmon","goldenrod"),xlim=c(-85,-67), ylim=c(25,47.5),landCol="gray50",addCatLegend = TRUE,add=TRUE)
+```
+
+
+
+![](https://cloud.githubusercontent.com/assets/4654474/23382676/2a9fd94c-fd11-11e6-822e-075f160d10ca.jpeg)
+
+
+
 ------
 <div id='id-section38'/>
 ### Page 38:
