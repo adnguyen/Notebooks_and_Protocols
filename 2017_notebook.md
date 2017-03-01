@@ -2696,7 +2696,63 @@ Multiple R-squared:  0.5096,	Adjusted R-squared:  0.4723
 F-statistic: 13.66 on 7 and 92 DF,  p-value: 5.403e-12
 ```
 
-Results: It looks like ashmeadi is the reference and all species differ except lamellidens and floridana. 
+Results: It looks like ashmeadi is the reference and all species differ except lamellidens and floridana. I should just do an ANOVA and do a post hoc test to see which ones are diff. 
+
+```R
+summary(aov(KO_temp_worker~rad_seq_species,data=Aph.dat))
+                Df Sum Sq Mean Sq F value  Pr(>F)    
+rad_seq_species  7  61.94   8.848   13.66 5.4e-12 ***
+Residuals       92  59.61   0.648                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+
+
+### OK, let's see the pairwise comparisons:
+
+```R
+TukeyHSD(aov(KO_temp_worker~rad_seq_species,data=Aph.dat))
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = KO_temp_worker ~ rad_seq_species, data = Aph.dat)
+
+$rad_seq_species
+                                 diff        lwr         upr     p adj
+floridana-ashmeadi        -0.03981481 -1.2168021  1.13717250 1.0000000
+picea-ashmeadi            -2.30737179 -3.2729871 -1.34175651 0.0000000
+rudis-ashmeadi            -1.47025119 -2.4269575 -0.51354490 0.0001832
+miamiana-ashmeadi         -1.85705641 -2.9397273 -0.77438555 0.0000196
+lamellidens-ashmeadi      -0.71458333 -2.2149536  0.78578698 0.8174237
+fulva-ashmeadi            -1.79611111 -2.9730984 -0.61912380 0.0002086
+tennesseensis-ashmeadi    -2.05833333 -4.0101460 -0.10652069 0.0312332
+picea-floridana           -2.26755698 -3.2331723 -1.30194170 0.0000000
+rudis-floridana           -1.43043638 -2.3871427 -0.47373009 0.0003020
+miamiana-floridana        -1.81724160 -2.8999125 -0.73457074 0.0000314
+lamellidens-floridana     -0.67476852 -2.1751388  0.82560180 0.8573138
+fulva-floridana           -1.75629630 -2.9332836 -0.57930899 0.0003129
+tennesseensis-floridana   -2.01851852 -3.9703312 -0.06670587 0.0373589
+rudis-picea                0.83712060  0.1571201  1.51712110 0.0057326
+miamiana-picea             0.45031538 -0.3977942  1.29842501 0.7206279
+lamellidens-picea          1.59278846  0.2518094  2.93376752 0.0088873
+fulva-picea                0.51126068 -0.4543546  1.47687597 0.7234944
+tennesseensis-picea        0.24903846 -1.5830877  2.08116465 0.9998835
+miamiana-rudis            -0.38680522 -1.2247575  0.45114704 0.8401083
+lamellidens-rudis          0.75566786 -0.5789103  2.09024602 0.6506387
+fulva-rudis               -0.32585992 -1.2825662  0.63084637 0.9639642
+tennesseensis-rudis       -0.58808214 -2.4155286  1.23936427 0.9736163
+lamellidens-miamiana       1.14247308 -0.2851081  2.57005430 0.2161909
+fulva-miamiana             0.06094530 -1.0217256  1.14361616 0.9999997
+tennesseensis-miamiana    -0.20127692 -2.0977077  1.69515385 0.9999782
+fulva-lamellidens         -1.08152778 -2.5818981  0.41884254 0.3406000
+tennesseensis-lamellidens -1.34375000 -3.5060138  0.81851376 0.5358888
+tennesseensis-fulva       -0.26222222 -2.2140349  1.68959042 0.9998923
+```
+
+
+
+
 
 ### Figures:
 
