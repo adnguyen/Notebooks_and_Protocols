@@ -63,8 +63,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 35: 2017-02-23](#id-section35). What are Evolutionary Innovations? 
 * [Page 36: 2017-02-24](#id-section36). Last biolunch and committee meeting notes
 * [Page 37: 2017-02-27](#id-section37). Mappies in R for Zamira
-* [Page 38:](#id-section38).
-* [Page 39:](#id-section39).
+* [Page 38: 2017-02-28](#id-section38). Questions to think about from SHC
+* [Page 39: 2017-02-28](#id-section39). More analyses for hsp rxn norm paper
 * [Page 40:](#id-section40).
 * [Page 41:](#id-section41).
 * [Page 42:](#id-section42).
@@ -2436,7 +2436,7 @@ Brent's comments:
 
 NJG:
 
-* Change his picture
+* Change his picture 
 * Too many "um"s
 * I can start with climate change and ants have adaptations to buffer it's effects. 
 
@@ -2629,10 +2629,160 @@ mapPies(widepar,nameX="lon",nameY="lat",nameZs=c("picea","fulva","rudis","florid
 
 ------
 <div id='id-section38'/>
-### Page 38:
+### Page 38: 2017-02-28. Questions to think about from SHC
+
+In regards to a new paper in JEB finding that cataglyphis ants have higher constitutive protection than induced response. 
+
+
+
+SHC
+
+> A good opportunity for you to think about why you found the results that you did – desert Cataglyphis show a shift from induced to constitutive protection, while the Aphaenogaster you surveyed do not.  What might be going on? 
+
+ me:
+
+> One possibility is genetic assimilation where an inducible response evolved into a constitutive one. In other words, evolving into an extremely hot environment requires constant protection from protein damage, while Aphaenogaster turns on Hsps when they encounter protein damage.
+
+SHC
+
+> That’s a mechanistic process, not an explanation for *why* Cataglyphis would make this change while Aphaenogaster would not. 
+
+me:
+
+> Disagree. I explained the why. Maybe you’re looking for this: Temperature variation shapes the plasticity in the heat shock response. If Aphaenogaster live in a more variable environment, then the HSR should be more plastic, while Cataglyphis lives in constant, extreme heat has a less plastic HSR and is constantly on to cope with heat stress. 
+
+SHC:
+
+> Yes, that is in fact better – your first answer was genetic assimilation, with the why partially implied in a follow-up sentence.  But genetic assimilation is a how answer, not a why.  Your PNAS discussion paragraphs will need to have the topics of discussion clearly separated out, not combined into one. ==Do you think you might have seen constitutively higher levels of Hsps if you had included the western members of the genus, or members of the outgroup?  What is the value of looking at the set of species you’ve included instead of (or in addition to) looking at species inhabiting environmental extremes?==
+
+ 
+
+ 
+
+
+
 ------
 <div id='id-section39'/>
-### Page 39:
+### Page 39: 2017-02-28. More analyses for hsp rxn norm paper
+
+
+
+From SHC:
+
+> Another question for you regarding the PNAS analyses.  I am wondering whether the significant effect of “phylogeny” you are picking up is really just a significant effect of species (ie conspecifics are really genetically similar, much more so than species are to one another, and really phenotypically similar and live in really similar environments).  I know the independent contrasts was pretty sparse, but perhaps you could color the points on your scatterplot by species and add best-fit lines to show 1) whether the species differ, and 2) whether there are relationships between environment and CTmax within species.  Just to have a look at it. 
+
+
+
+Constructed a model to test the interaction of Tmax and species id(factor), Tmax and habitat type:
+
+```R
+umod2<-lm(KO_temp_worker~bio5*habitat_v2+bio5*rad_seq_species,data=Aph.dat)
+summary(stepAIC(umod2,direction="both"))
+>Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  42.80833    0.26831 159.546  < 2e-16 ***
+rad_seq_speciesfloridana     -0.03981    0.37945  -0.105  0.91666    
+rad_seq_speciesfulva         -1.79611    0.37945  -4.733 7.97e-06 ***
+rad_seq_specieslamellidens   -0.71458    0.48371  -1.477  0.14301    
+rad_seq_speciesmiamiana      -1.85706    0.34904  -5.320 7.25e-07 ***
+rad_seq_speciespicea         -2.30737    0.31131  -7.412 5.91e-11 ***
+rad_seq_speciesrudis         -1.47025    0.30843  -4.767 6.98e-06 ***
+rad_seq_speciestennesseensis -2.05833    0.62925  -3.271  0.00151 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8049 on 92 degrees of freedom
+Multiple R-squared:  0.5096,	Adjusted R-squared:  0.4723 
+F-statistic: 13.66 on 7 and 92 DF,  p-value: 5.403e-12
+```
+
+Results: It looks like ashmeadi is the reference and all species differ except lamellidens and floridana. 
+
+### Figures:
+
+Points and linear model fits are colored by species
+
+![](https://cloud.githubusercontent.com/assets/4654474/23439757/3e476e08-fde6-11e6-9686-2763797cbeea.jpeg)
+
+Figure with points colored gray but lines are by species
+
+![](https://cloud.githubusercontent.com/assets/4654474/23439758/3e48fdae-fde6-11e6-82d5-d79eb77a289d.jpeg)
+
+
+
+Barplot option:
+
+![](https://cloud.githubusercontent.com/assets/4654474/23440067/eb3fbbfa-fde7-11e6-809a-1ef30e5305a6.jpeg)
+
+
+
+**SDiamond suggested I do include species as a random effect:** 
+
+umod3  = additive model between tmax and habitat
+
+umod4= interaction between tmax and habitat
+
+Used anova to compare models
+
+```R
+library(lmerTest) # gives p-values for lmer model
+umod3<-lmer(KO_temp_worker~bio5+habitat_v2+(1|rad_seq_species),data=Aph.dat)
+umod4<-lmer(KO_temp_worker~bio5*habitat_v2+(1|rad_seq_species),data=Aph.dat)
+
+anova(umod3,umod4)
+>refitting model(s) with ML (instead of REML)
+Data: Aph.dat
+Models:
+object: KO_temp_worker ~ bio5 + habitat_v2 + (1 | rad_seq_species)
+..1: KO_temp_worker ~ bio5 * habitat_v2 + (1 | rad_seq_species)
+       Df    AIC    BIC  logLik deviance  Chisq Chi Df Pr(>Chisq)
+object  5 259.29 272.31 -124.64   249.28                         
+..1     6 259.85 275.48 -123.92   247.85 1.4396      1     0.2302
+```
+
+
+
+**Results: models dont differ so go with simpler one (umod3)**
+
+```R
+summary(umod3)
+>Linear mixed model fit by REML t-tests use Satterthwaite approximations to degrees
+  of freedom [lmerMod]
+Formula: KO_temp_worker ~ bio5 + habitat_v2 + (1 | rad_seq_species)
+   Data: Aph.dat
+
+REML criterion at convergence: 260.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.5651 -0.3550  0.1815  0.5893  1.2790 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ rad_seq_species (Intercept) 0.1556   0.3944  
+ Residual                    0.6672   0.8168  
+Number of obs: 100, groups:  rad_seq_species, 8
+
+Fixed effects:
+                      Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)          36.942002   1.979357  7.224000  18.664 2.23e-07 ***
+bio5                  0.014058   0.006477  7.811000   2.171   0.0626 .  
+habitat_v2flat woods  1.050133   0.379272  9.094000   2.769   0.0216 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) bio5  
+bio5        -0.995       
+hbtt_v2fltw  0.243 -0.284
+```
+
+Results: We find a significnat effect of habitat type and Tmax is marginally significant. I also included a quadratic term which made no difference. 
+
+
+
+
+
 ------
 <div id='id-section40'/>
 ### Page 40:
