@@ -65,7 +65,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 37: 2017-02-27](#id-section37). Mappies in R for Zamira
 * [Page 38: 2017-02-28](#id-section38). Questions to think about from SHC
 * [Page 39: 2017-02-28](#id-section39). More analyses for hsp rxn norm paper
-* [Page 40:](#id-section40).
+* [Page 40: 2017-03-04](#id-section40). Visit at UF; feedback on dissertation talk
 * [Page 41:](#id-section41).
 * [Page 42:](#id-section42).
 * [Page 43:](#id-section43).
@@ -2841,7 +2841,109 @@ Results: We find a significnat effect of habitat type and Tmax is marginally sig
 
 ------
 <div id='id-section40'/>
-### Page 40:
+### Page 40: 2017-03-04. Visit at UF; feedback on dissertation talk.
+
+Reflecting on visit at UF. 
+
+**Dissertation talk:**
+
+Clancy- part of habitat shifts I see may be due to fire disturbance in flat woods.
+
+Leigh- "I don't believe that the CTmax shifts are related to temperature differences"
+
+In the same vain…some PI named Rob that I met at "zoocial" suggested that I just use land cover. I think I'll use this: https://www.mrlc.gov/nlcd2011.php (this is land cover)
+
+[tree cover data](https://catalog.data.gov/dataset/nlcd-2011-percent-tree-canopy-cartographic)
+
+
+
+I got a ton of questions on migration…what the…I didnt focus on this or research this at all. Hmm maybe it would be nice to include pop gen data? Is there viability selection on colony founding among different habitats? 
+
+**Individual meetings:**
+
+Brett: Thought my data were interesting. Suggested to follow up with a biology letters paper by including range size for each species. 
+
+Dan Holt: Consider the effects of both abiotic and biotic interactions in setting range limits. You should read one of his old papers. Also, comparing regression tree with maxent models would be a small paper. He tries to publish in American Naturalist every year. It is his favorite journal too.
+
+Bryony: Being more computational will help you. 
+
+Michael: BAMM still up in the air. 
+
+Christine Miller: Quant gen of sexual selection. males have fancy legs and compete for mates. Doing a phylogenetic approach- reconstructing ancestral states of host plants and morphological innovations.
+
+Baer: mutation accumulation in C. elegans. Has done some networks on metabolites. Odd way to plot things, should try fitness on y and metabolite on x. 
+
+
+
+### Getting tree canopy cover data
+
+NLCD 2011 Percent Tree Canopy (Cartographic) [data download](https://catalog.data.gov/dataset/nlcd-2011-percent-tree-canopy-cartographic)
+
+> The National Land Cover Database 2011 (NLCD2011) USFS percent tree canopy product was produced through a cooperative project conducted by the Multi-Resolution Land Characteristics (MRLC) Consortium (www.mrlc.gov). The MRLC Consortium is a partnership of federal agencies, consisting of the U.S. Geological Survey, the National Oceanic and Atmospheric Administration, the U.S. Environmental Protection Agency, the U.S. Department of Agriculture (USDA) National Agricultural Statistics Service, the U.S. Forest Service, the National Park Service, the U.S. Fish and Wildlife Service, the Bureau of Land Management, NASA, and the U.S. Army Corps of Engineers. One of the primary goals of the project was to generate current, consistent, and seamless national land cover, percent tree canopy, and percent impervious cover at medium spatial resolution. This product is the cartographic version of the NLCD2011 percent tree canopy cover dataset for CONUS at medium spatial resolution (30 m). It was produced by the USDA Forest Service Remote Sensing Applications Center (RSAC). Tree canopy values range from 0 to 100 percent. The analytic tree canopy layer was produced using a Random Forests? regression algorithm. The cartographic product is a filtered version of the regression algorithm output.
+
+Sessioninfo
+
+```R
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets 
+[6] methods   base     
+
+other attached packages:
+[1] dismo_1.1-4  raster_2.5-8 sp_1.2-4    
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_0.12.9      lattice_0.20-34  assertthat_0.1  
+ [4] grid_3.3.1       plyr_1.8.4       gtable_0.2.0    
+ [7] scales_0.4.1     ggplot2_2.2.1    lazyeval_0.2.0  
+[10] rpart_4.1-10     rgdal_1.2-5      tools_3.3.1     
+[13] munsell_0.4.3    yaml_2.1.14      colorspace_1.3-2
+[16] knitr_1.15.1     tibble_1.2      
+```
+
+
+
+
+
+```R
+x<-raster("nlcd_2011_USFS_tree_canopy_2011_edition_2014_03_31/cartographic_product/nlcd2011_usfs_treecanopy_cartographic_3-31-2014.img")
+
+plot(x)
+b<-read.csv("20160517_ANBE_ant_sampling.csv",skip=6) # original dataset
+b<-b[-87,] #getting rid of only NA
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/23591907/6f93cefa-01c6-11e7-8d4b-4be62732b1e2.jpeg)
+
+Linking coords with image projections
+
+```R
+
+coords <- b[, c("lon", "lat")]
+
+names(coords) <- c("x", "y")
+coordinates(coords) <- ~x + y
+proj4string(coords) <- CRS("+proj=longlat +ellps=WGS84 +datum=WGS84")
+crs_args <- x@crs@projargs
+sites_transformed <- spTransform(coords, CRS(crs_args))
+
+
+  #extract land cover data for each point, given buffer size
+#Landcover <- extract(x, sites_transformed, buffer=30)
+Landcover <- extract(x, sites_transformed, buffer=20)
+
+Landcover
+b$tree_canopy_20<-unlist(lapply(Landcover, `[[`, 1))
+
+```
+
+
+
+
+
+
+
+
+
 ------
 <div id='id-section41'/>
 ### Page 41:
