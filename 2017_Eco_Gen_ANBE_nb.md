@@ -31,7 +31,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 12: 2017-02-15](#id-section12).  Week 5, Day 9, Sam info update, ANBE paper discussion, Zhao et al. 2016; *MBE*
 * [Page 13: 2017-02-22](#id-section13). Week 6, Day 10, RNA-seq and paper discussion; Dixon et al. 2016; Genomic determinants of coral heat tolerance across latitudes.
 * [Page 14: 2017-02-27](#id-section14).  Week 7, Day 11, RNA-seq and paper discussion (Edwards et al. 2016; *PNAS*)-phylogeography; Scott  Edwards visit
-* [Page 15:](#id-section15).
+* [Page 15: 2017-03-06](#id-section15). Week 8, Day 13, Population genomics; paper discussion- Gayral et al. 2013
 * [Page 16:](#id-section16).
 * [Page 17:](#id-section17).
 * [Page 18:](#id-section18).
@@ -1149,6 +1149,9 @@ What are unigenes? *Trinity components containing clusters of ‘contigs’ repr
 
    * ```UNIX
       cd project_data/fastq/
+      ```
+     ```
+
      ```
 
 2. Files: 
@@ -2022,7 +2025,7 @@ General approaches:
    1,737,572
    ```
 
-*  ​
+* ​
 
    * ```
      grep -c X0:i:1 20_5-14_H_0_bwaaln.sam 
@@ -2260,7 +2263,508 @@ res <- res[order(res$padj),]
 
 ------
 <div id='id-section15'/>
-### Page 15:
+### Page 15: 2017-03-6. Week 8, Day 13, Population genomics; paper discussion- Gayral et al. 2013.
+
+**Glossary:** 
+
+Paralog: Gene duplicate
+
+pie: pairwise nucleotide diversity
+
+SFS: Site frequency spectrum= histogram of allele frequencies
+
+Ne = Effective population size
+
+
+
+**Skeller info update: Population genomics**: 
+
+- SNPs and lots of them (genome wide)
+- Sampling unit is individuals *within species*
+
+Questions:
+
+1. What shapes population structure? 
+2. Diversity within and among populations
+3. What is the effect of selection? : synonymous and nonsynonymous mutations
+   * positive or negative/purifying
+4. How does recombination promote diversity?
+
+Pipeline for analysis
+
+```mermaid
+graph TD
+
+A{Raw Reads} --> B(cleaned)
+B --> C{Assembled}
+C --> D[Mapped reads]
+D --transcriptomics--> E[Count number]
+E --> P[Differential Gene Expression]
+D --population genomics--> G[Call SNPs and Genotypes]
+G --> N(Allele Frequencies or SFS or PIE)
+
+
+
+```
+
+### A. What are the challenges of calling SNPs?
+
+<u>Sequencing Error (Illumina 1%) ; 1 in  100 there is a sequencing error</u>
+
+* Apply filter: minor allele frequency 
+* Apply filter: Check the depth 
+
+### B. What are the challenges with calling genotypes?
+
+<u>Calling homozygous (AA), heterozygous (AT), homozygous (TT)? It is a multinomial distribution</u>
+
+* If genotype is AT heterozygous, predict A = T = 0.5
+
+* use multinomial dsitribution to say how likely it is a heterozygoute. Each genotypic class has a probability
+
+* | genotype | probability (referred to as genotype likelihood or genotype prob) |
+  | -------- | ---------------------------------------- |
+  | AA       | low                                      |
+  | AT       | high                                     |
+  | TT       | low                                      |
+
+Bayesian folks: Use those probabilities and propogate those uncertainties to further analyses. (Not common but field is going that way)
+
+<u>Another problem: paralogues; duplicated gene on separate genome or in synteny</u>
+
+* Snps can differ between paralogues; it would predict heterozygotes, but that isnt true because there are 2 copies!
+
+
+* HWE = 1 = $p^2 + 2pq + q^2$
+* Look at heterozygous; it will violate HWE and get rid of them.  **NOT ACTUALLY A SNP**
+
+### C. Diversity metrics 
+
+* $\pi$ = expected heterozygosity
+  * * for sequences $i$ and $j$, $\pi = \sum X_i * X_j * \pi_{ij}$ 
+    * can be scaled by the number of sites
+    * $\pi_{syn} = 4 *Ne * \mu$  (neutral genetic change)
+    * $\pi_{nonsyn}$
+    * $\frac{\pi_{nonsyn}}{\pi_{syn}}$ estimates the strength of selection
+    * What drives Ne up and down? 
+
+
+
+### Paper discussion: Gayral et al. 2013
+
+Reference free population genomics study
+
+Expectation:  
+
+> Our expectation is that small-Ne species should show a lower pN, a lower pS, and a higher pN/pS ratio than large-Ne species. This is because genetic drift, which is enhanced in small populations, is expected to reduce the neutral and selected levels of genomic diversity, but to increase the relative probability of slightly deleterious, non-synonymous mutations (relatively to neutral, synonymous mutations) segregating at observable frequency.
+
+
+
+Where do mutations happen? During meiosis. In a big population there is more meosis. Mice in the sewers of NYC compared to a black rhino populations. They are no where close!
+
+
+
+Paralogue filtering: nothing to map to so it is hard to ID'ing a paralogue.
+
+Figure 2: SFS differs in test method than standard method (samtools). New method can id more rare alleles. New method can call heterozygotes is better.  Rare alleles occur more often in heterozygote individuals. 
+
+
+
+### 2017-03-06 coding session; Population genomics
+
+Mistake: pseudoreplication in calling SNPs because multiple individuals are represented under varying conditions. So we need to analyze and call SNPs at the individual level and not smaple level (93)
+
+Approach to fix:
+
+1. take same files and merge them for every individual.
+2. Call SNPs separately and then compare SNPs across replicates. 
+
+use vcftools:
+
+```UNIX
+$ vcftools
+
+VCFtools (0.1.14)
+© Adam Auton and Anthony Marcketta 2009
+
+Process Variant Call Format files
+
+For a list of options, please go to:
+	https://vcftools.github.io/man_latest.html
+
+Alternatively, a man page is available, type:
+	man vcftools
+
+Questions, comments, and suggestions should be emailed to:
+	vcftools-help@lists.sourceforge.net
+```
+
+move into directory with data:
+
+```UNIX
+cd /data/project_data/snps/reads2snps/
+```
+
+check out a portion of the vcf file that has called SNPs
+
+```
+head head_SSW_bamlist.txt.vcf 
+
+##fileformat=VCFv4.0
+##source=reads2snp
+##phasing=unphased
+##FILTER=<ID=multi,Description="At least one individual shows more than 2 alleles">
+##FILTER=<ID=unres,Description="Insufficient sequencing depth or uncertain genotyping in all individuals">
+##FILTER=<ID=para,Description="Suspicion of paralogy">
+##INFO=<ID=N,Number=1,Type=Integer,Description="Number of genotyped individuals">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	03_5-08_S_2	07_5-08_S_1	08_5-08_H_0	09_5-08_H_0	10_5-08_H_0	14_5-08_S_2	15_5-08_H_0	19_5-11_H_0	20_5-08_H_0	22_5-08_S_1	23_5-17_S_2	24_5-08_H_0	26_5-08_S_2	27_5-08_H_0	28_5-08_S_1	29_5-08_S_2	31_6-12_H_0	32_6-12_H_0	33_6-12_H_0	34_6-12_H_0	35_6-12_H_0	36_6-12_S_1	37_6-12_H_0	38_6-12_H_0
+TRINITY_DN47185_c0_g1_TRINITY_DN47185_c0_g1_i2_g.24943_m.24943	1	.	unres	N=0	GT	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.
+
+```
+
+unres = unresolved. 
+
+depth filter of 10 reads per genotype call and filters out genotype prob calls less than prob of 95%.
+
+
+
+Summarize data vcf file for us:
+
+```UNIX
+vcftools --vcf SSW_bamlist.txt.vcf 
+```
+
+output
+
+```UNIX
+
+VCFtools - 0.1.14
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf SSW_bamlist.txt.vcf
+
+After filtering, kept 24 out of 24 Individuals
+After filtering, kept 7472775 out of a possible 7472775 Sites
+Run Time = 22.00 seconds
+```
+
+Check number of individuals. Some are not real. 
+
+Finding the number of unresolved:
+
+```UNIX
+ grep "unres" SSW_bamlist.txt.vcf | wc
+ 5631864 185851488 1028494934
+```
+
+5.6 million are unresolved!!
+
+Check for paralogy
+
+```UNIX
+grep "para" SSW_bamlist.txt.vcf | wc
+   4354  143652  795592
+```
+
+4,354 incidence of paralogy
+
+<u>1.8 million SNPs left!!!</u>
+
+
+
+More filtering: 
+
+1. biallelic vs multi-allelic SNPs; filter number of alleles; min number = 2 and max = 2
+
+
+
+```
+$ vcftools --vcf SSW_bamlist.txt.vcf --min-alleles 2 --max-alleles 2
+
+VCFtools - 0.1.14
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf SSW_bamlist.txt.vcf
+	--max-alleles 2
+	--min-alleles 2
+
+After filtering, kept 24 out of 24 Individuals
+After filtering, kept 20319 out of a possible 7472775 Sites
+Run Time = 19.00 seconds
+```
+
+
+
+2. Minor allele frequency (MAF):  gets rid of very rare SNPs (based on user-defined threshold)
+
+1/48 = 0.02
+
+```UNIX
+$ vcftools --vcf SSW_bamlist.txt.vcf --maf 0.02
+
+VCFtools - 0.1.14
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf SSW_bamlist.txt.vcf
+	--maf 0.02
+
+After filtering, kept 24 out of 24 Individuals
+After filtering, kept 5656584 out of a possible 7472775 Sites
+Run Time = 70.00 seconds
+```
+
+retained 5.6 million SNPs
+
+3. Proportion of missing data. Get rid of sites fewer than 80% of our samples have data. Allow 20% of missing data.
+
+```UNIX
+$ vcftools --vcf SSW_bamlist.txt.vcf --max-missing 0.80
+
+VCFtools - 0.1.14
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf SSW_bamlist.txt.vcf
+	--max-missing 0.8
+
+After filtering, kept 24 out of 24 Individuals
+After filtering, kept 100219 out of a possible 7472775 Sites
+Run Time = 68.00 seconds
+```
+
+**OK! Now we can combine filters!** and output it into a file
+
+```UNIX
+$ vcftools --vcf SSW_bamlist.txt.vcf --min-alleles 2 --max-alleles 2 --maf 0.02 --max-missing 0.8 --recode --out ~/mydata/2017-03-06_SNPcallfilter
+
+VCFtools - 0.1.14
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf SSW_bamlist.txt.vcf
+	--maf 0.02
+	--max-alleles 2
+	--min-alleles 2
+	--max-missing 0.8
+	--out /users/a/d/adnguyen/mydata/2017-03-06_SNPcallfilter
+	--recode
+
+After filtering, kept 24 out of 24 Individuals
+Outputting VCF file...
+```
+
+Output of file
+
+```UNIX
+2017-03-06_SNPcallfilter.log
+2017-03-06_SNPcallfilter.recode.vcf
+```
+
+
+
+What the files look like: 
+
+```UNIX
+head 2017-03-06_SNPcallfilter.recode.vcf 
+##fileformat=VCFv4.0
+##source=reads2snp
+##phasing=unphased
+##FILTER=<ID=multi,Description="At least one individual shows more than 2 alleles">
+##FILTER=<ID=unres,Description="Insufficient sequencing depth or uncertain genotyping in all individuals">
+##FILTER=<ID=para,Description="Suspicion of paralogy">
+##INFO=<ID=N,Number=1,Type=Integer,Description="Number of genotyped individuals">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	03_5-08_S_2	07_5-08_S_1	08_5-08_H_0	09_5-08_H_0	10_5-08_H_0	14_5-08_S_2	15_5-08_H_0	19_5-11_H_0	20_5-08_H_0	22_5-08_S_1	23_5-17_S_2	24_5-08_H_0	26_5-08_S_2	27_5-08_H_0	28_5-08_S_1	29_5-08_S_2	31_6-12_H_0	32_6-12_H_0	33_6-12_H_0	34_6-12_H_0	35_6-12_H_0	36_6-12_S_1	37_6-12_H_0	38_6-12_H_0
+TRINITY_DN45147_c0_g1_TRINITY_DN45147_c0_g1_i3_g.18680_m.18680	2127	.	PASS	.	GT	0|0	0|0	0|0	0|0	.	0|0	0|1	0|0	0|0	0|0	0|0	.	0|0	0|0	0|0	0|0	0|0	0|0	0|0	0|0	.	0|0	0|0
+
+```
+
+
+
+Looking at hardy weinburg equilibrium
+
+```UNIX
+$ vcftools --vcf 2017-03-06_SNPcallfilter.recode.vcf --hardy
+
+VCFtools - 0.1.14
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf 2017-03-06_SNPcallfilter.recode.vcf
+	--hardy
+
+After filtering, kept 24 out of 24 Individuals
+Outputting HWE statistics (but only for biallelic loci)
+	HWE: Only using fully diploid SNPs.
+After filtering, kept 1180 out of a possible 1180 Sites
+Run Time = 0.00 seconds
+```
+
+stored as:
+
+```U
+out.hwe
+out.log
+```
+
+
+
+What out.hwe would look like:
+
+```UNIX
+head out.hwe 
+CHR	POS	OBS(HOM1/HET/HOM2)	E(HOM1/HET/HOM2)	ChiSq_HWE	P_HWE	P_HET_DEFICIT	P_HET_EXCESS
+TRINITY_DN45147_c0_g1_TRINITY_DN45147_c0_g1_i3_g.18680_m.18680	4566	23/1/0	23.01/0.98/0.011.086464e-02	1.000000e+00	1.000000e+00	1.000000e+00
+TRINITY_DN45147_c0_g1_TRINITY_DN45147_c0_g1_i3_g.18680_m.18680	4665	21/3/0	21.09/2.81/0.091.066667e-01	1.000000e+00	1.000000e+00	9.361702e-01
+TRINITY_DN46874_c5_g2_TRINITY_DN46874_c5_g2_i2_g.23776_m.23776	978	23/1/0	23.01/0.98/0.011.086464e-02	1.000000e+00	1.000000e+00	1.000000e+00
+TRINITY_DN46874_c5_g2_TRINITY_DN46874_c5_g2_i2_g.23776_m.23776	1404	23/1/0	23.01/0.98/0.011.086464e-02	1.000000e+00	1.000000e+00	1.000000e+00
+TRINITY_DN46874_c5_g2_TRINITY_DN46874_c5_g2_i2_g.23776_m.23776	1722	20/4/0	20.17/3.67/0.171.983471e-01	1.000000e+00	1.000000e+00	8.737589e-01
+TRINITY_DN46874_c5_g2_TRINITY_DN46874_c5_g2_i2_g.23776_m.23776	3426	23/1/0	23.01/0.98/0.011.086464e-02	1.000000e+00	1.000000e+00	1.000000e+00
+TRINITY_DN46874_c5_g2_TRINITY_DN46874_c5_g2_i2_g.23776_m.23776	3729	21/3/0	21.09/2.81/0.091.066667e-01	1.000000e+00	1.000000e+00	9.361702e-01
+TRINITY_DN46874_c5_g2_TRINITY_DN46874_c5_g2_i2_g.23776_m.23776	3912	19/5/0	19.26/4.48/0.263.244997e-01	1.000000e+00	1.000000e+00	7.943262e-01
+TRINITY_DN46347_c1_g3_TRINITY_DN46347_c1_g3_i1_g.21992_m.21992	115	19/5/0	19.26/4.48/0.263.244997e-01	1.000000e+00	1.000000e+00	7.943262e-01
+
+```
+
+Can do R in the command line!
+
+```R
+b<-read.table("out.hwe",header=TRUE)
+```
+
+Structure of data:
+
+```R
+> str(b)
+'data.frame':	442 obs. of  8 variables:
+ $ CHR               : Factor w/ 111 levels "TRINITY_DN35598_c0_g1_TRINITY_DN35598_c0_g1_i1_g.5802_m.5802",..: 65 65 100 100 100 100 100 100 88 88 ...
+ $ POS               : int  4566 4665 978 1404 1722 3426 3729 3912 115 141 ...
+ $ OBS.HOM1.HET.HOM2.: Factor w/ 27 levels "10/11/3","11/0/13",..: 27 22 27 27 20 27 22 18 18 27 ...
+ $ E.HOM1.HET.HOM2.  : Factor w/ 16 levels "10.01/10.98/3.01",..: 14 12 14 14 11 14 12 10 10 14 ...
+ $ ChiSq_HWE         : num  0.0109 0.1067 0.0109 0.0109 0.1983 ...
+ $ P_HWE             : num  1 1 1 1 1 1 1 1 1 1 ...
+ $ P_HET_DEFICIT     : num  1 1 1 1 1 1 1 1 1 1 ...
+ $ P_HET_EXCESS      : num  1 0.936 1 1 0.874 ...
+
+```
+
+Which ones have heterozygous excess?
+
+```R
+> b[which(b$P_HET_EXCESS < 0.001 ),]
+[1] CHR                POS                OBS.HOM1.HET.HOM2. E.HOM1.HET.HOM2.  
+[5] ChiSq_HWE          P_HWE              P_HET_DEFICIT      P_HET_EXCESS      
+<0 rows> (or 0-length row.names)
+
+```
+
+Go into the rows and tell us the rows that satisfy some criteria
+
+
+
+Let's look at deficit
+
+```R
+> b[which(b$P_HET_DEFICIT < 0.01 ),]
+                                                                 CHR POS
+277 TRINITY_DN45155_c27_g2_TRINITY_DN45155_c27_g2_i2_g.18743_m.18743 216
+291 TRINITY_DN45155_c27_g1_TRINITY_DN45155_c27_g1_i1_g.18742_m.18742  99
+293 TRINITY_DN45155_c27_g1_TRINITY_DN45155_c27_g1_i1_g.18742_m.18742 138
+401     TRINITY_DN39079_c3_g1_TRINITY_DN39079_c3_g1_i1_g.8354_m.8354 244
+406     TRINITY_DN39696_c4_g1_TRINITY_DN39696_c4_g1_i1_g.8926_m.8926 283
+    OBS.HOM1.HET.HOM2. E.HOM1.HET.HOM2. ChiSq_HWE        P_HWE P_HET_DEFICIT
+277             22/0/2  20.17/3.67/0.17        24 1.418440e-03  1.418440e-03
+291            11/0/13  5.04/11.92/7.04        24 9.114786e-08  9.114786e-08
+293             19/0/5  15.04/7.92/1.04        24 6.498371e-06  6.498371e-06
+401            13/0/11  7.04/11.92/5.04        24 9.114786e-08  9.114786e-08
+406            13/0/11  7.04/11.92/5.04        24 9.114786e-08  9.114786e-08
+    P_HET_EXCESS
+277            1
+291            1
+293            1
+401            1
+406            1
+```
+
+Evidence of non-random mating; inbreeding
+
+
+
+**Linkage equilibrium**
+
+Association of SNPs at one locus with SNPS at another.
+
+Too many pairs; so you can set windows. 
+
+--geno-r2
+
+genotypes of different loci
+
+```UNIX
+$ vcftools --vcf 2017-03-06_SNPcallfilter.recode.vcf --geno-r2
+
+VCFtools - 0.1.14
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf 2017-03-06_SNPcallfilter.recode.vcf
+	--max-alleles 2
+	--min-alleles 2
+	--geno-r2
+
+After filtering, kept 24 out of 24 Individuals
+Outputting Pairwise LD (bi-allelic only)
+	LD: Only using diploid individuals.
+After filtering, kept 1180 out of a possible 1180 Sites
+Run Time = 3.00 seconds
+
+```
+
+look at file
+
+```
+head out.geno.ld 
+CHR	POS1	POS2	N_INDV	R^2
+TRINITY_DN45147_c0_g1_TRINITY_DN45147_c0_g1_i3_g.18680_m.18680	2127	2217	19	0.00653595
+TRINITY_DN45147_c0_g1_TRINITY_DN45147_c0_g1_i3_g.18680_m.18680	2127	2235	19	0.00308642
+TRINITY_DN45147_c0_g1_TRINITY_DN45147_c0_g1_i3_g.18680_m.18680	2127	2244	19	0.00308642
+TRINITY_DN45147_c0_g1_TRINITY_DN45147_c0_g1_i3_g.18680_m.18680	2127	2276	19	0.00308642
+TRINITY_DN45147_c0_g1_TRINITY_DN45147_c0_g1_i3_g.18680_m.18680	2127	2277	19	0.00308642
+TRINITY_DN45147_c0_g1_TRINITY_DN45147_c0_g1_i3_g.18680_m.18680	2127	2535	20	0.0557276
+TRINITY_DN45147_c0_g1_TRINITY_DN45147_c0_g1_i3_g.18680_m.18680	2127	2805	19	0.00308642
+TRINITY_DN45147_c0_g1_TRINITY_DN45147_c0_g1_i3_g.18680_m.18680	2127	2970	20	0.00277008
+TRINITY_DN45147_c0_g1_TRINITY_DN45147_c0_g1_i3_g.18680_m.18680	2127	2994	20	0.0430622
+
+```
+
+
+
+Bring file into R
+
+```R
+> LD<-read.table("out.geno.ld",header=TRUE)
+> names(LD)
+[1] "CHR"    "POS1"   "POS2"   "N_INDV" "R.2"   
+```
+
+Look at distance between pos 1 and 2
+
+```R
+> LD$dist<-abs(LD$POS1 - LD$POS2)
+> names(LD)
+[1] "CHR"    "POS1"   "POS2"   "N_INDV" "R.2"    "dist"  
+```
+
+Can the distance predict LD? 
+
+
+
+
+
 ------
 <div id='id-section16'/>
 ### Page 16:
