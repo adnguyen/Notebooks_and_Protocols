@@ -2962,6 +2962,32 @@ b$tree_canopy_20<-unlist(lapply(Landcover, `[[`, 1))
 
 
 
+Formatting dissertation:
+
+> **Word did not find any entries for your table of
+> contents.**
+>
+> In your document, select the words to include in the table of contents, and
+> then on the Home tab, under Styles, click a heading style. Repeat for each
+> heading that you want to include, and then insert the table of contents in your
+> document. To manually create a table of contents, on the Document Elements tab,
+> under Table of Contents, point to a style and then click the down arrow button.
+> Click one of the styles under Manual Table of Contents, and then type the
+> entries manually.The caption here should match
+> that in the body of the document exactly.
+
+
+
+Questions to ask and things to go over with Sean for thesis format check.
+
+1. What do I need? Print out of thesis?
+2. Double check format for papers in review and already published one
+3. Go over defense notice
+4. Go over formatting for 3rd chapter, hsp rxn norms
+5. ​
+
+
+
 ------
 <div id='id-section42'/>
 ### Page 42:
