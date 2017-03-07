@@ -66,7 +66,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 38: 2017-02-28](#id-section38). Questions to think about from SHC
 * [Page 39: 2017-02-28](#id-section39). More analyses for hsp rxn norm paper
 * [Page 40: 2017-03-04](#id-section40). Visit at UF; feedback on dissertation talk
-* [Page 41:](#id-section41).
+* [Page 41: 2017-03-07](#id-section41). To do.
 * [Page 42:](#id-section42).
 * [Page 43:](#id-section43).
 * [Page 44:](#id-section44).
@@ -2946,7 +2946,22 @@ b$tree_canopy_20<-unlist(lapply(Landcover, `[[`, 1))
 
 ------
 <div id='id-section41'/>
-### Page 41:
+### Page 41: 2017-03-07. To do.
+
+
+
+1. Hsp rxn norm analyses: Is there a way to include intraspecific variation? 
+   * I should include species as a random effect in my regression models with CTmax and Hsp parameters
+   * Try the jive model: [dryad](http://datadryad.org/resource/doi:10.5061/dryad.n4vp0/1) and [paper](https://academic.oup.com/sysbio/article-lookup/doi/10.1093/sysbio/syw010)
+   * I could try [phylocurve](https://cran.r-project.org/web/packages/phylocurve/phylocurve.pdf) for my analyses of CTmax and Hsp rxn norms. 
+
+- [x] KGribble itinerary march 20th
+- [ ] format check for thesis
+- [x] Thermal niche paper edits
+- [ ] ​
+
+
+
 ------
 <div id='id-section42'/>
 ### Page 42:
