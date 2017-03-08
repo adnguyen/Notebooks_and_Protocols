@@ -32,7 +32,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 13: 2017-02-22](#id-section13). Week 6, Day 10, RNA-seq and paper discussion; Dixon et al. 2016; Genomic determinants of coral heat tolerance across latitudes.
 * [Page 14: 2017-02-27](#id-section14).  Week 7, Day 11, RNA-seq and paper discussion (Edwards et al. 2016; *PNAS*)-phylogeography; Scott  Edwards visit
 * [Page 15: 2017-03-06](#id-section15). Week 8, Day 13, Population genomics; paper discussion- Gayral et al. 2013
-* [Page 16:](#id-section16).
+* [Page 16: 2017-03-08](#id-section16). Week 8, Day 14, Population genomics part 2; Paper Discussion- [Romiguier et al. 2014](http://www.nature.com/nature/journal/v515/n7526/full/nature13685.html)
 * [Page 17:](#id-section17).
 * [Page 18:](#id-section18).
 * [Page 19:](#id-section19).
@@ -2767,7 +2767,130 @@ Can the distance predict LD?
 
 ------
 <div id='id-section16'/>
-### Page 16:
+### Page 16: 2017-03-08. Week 8, Day 14, Population genomics part 2; Paper Discussion- [Romiguier et al. 2014](http://www.nature.com/nature/journal/v515/n7526/full/nature13685.html)
+
+
+
+Kattia info update: Rate of evolution
+
+
+
+1. effective pop size
+2. mutation
+   * substitution
+   * 5 types
+   * variation
+   * mutation rate
+3. effective pop size + linkage
+4. NERR + spatiotemporal variation
+
+
+
+**Effective population size**
+
+Ne= effective population size; number of individuals that exchange genes; estimate inside the genome
+
+S= selection coefficient
+
+4 methods to estimate NE:
+
+1. From species life history- $Ne= \frac{4 * males * females}{males + females}$
+2. From variance in allele frequences between genotypes (needs at least 2 generations sampled); look at amount of drift from earlier to later generation; the amount of drift relates to the number of individuals that are reproducing; salman biologists try to use this 
+3. Genetic polymorphism
+4. Correlated trait  (Body size ~ Ne)
+
+Ne vary across genomes: depending on genetic hitchhiking, background selection, sex chromosomes and autosomes number ()
+
+genetic hitchhiking is also known as selecive sweep. 
+
+Males have a higher mutation rate than females. 
+
+Hitchhiking and background selection is in the absence of recombination. 
+
+
+
+**Mutation can occur at 2 levels:** 
+
+1. whole gene or chromosome 
+   * duplication
+   * inversion
+   * deletion
+   * translocation
+2. base level = point mutation
+   * substitution rate
+     * transition - changes between purine to purine or pyrimidine to pyrimidine
+     * transversion - purine to pyrimidine
+   * synonymous - silent sites; amino acid does not change
+   * non-synonymous - replacement mutations; results in a change in amino acid
+3. classes taht fit into syn and non-syn
+   * neutral -  $\omega = 0 , < \frac{1}{Ne}$; no natural selection, drift, more common in large genomes
+   * slightly deleterious; small effect on fitness $\omega$
+     * depends on ploidy, ie. $n = \frac{1}{Ne}$
+     * $2n = \frac{1}{2Ne}$
+   * slightly advantage
+   * deleterious; negative on $\omega$; lower substitution rate
+   * advantageous
+
+**mutation rate $\mu$** influenced by
+
+1. generation time- short generation time = higher mutation
+2. selection; reduces mutation rate (controversial)
+
+
+
+**Effect of linkage?** 
+
+Ne and sub rate could be influenced by:
+
+1. selective sweeps
+2. clonal interference (2 diff individuals have unique mutations and they compete for increasing in frequency)
+
+
+
+**Skeller adding:**
+
+$\Theta = Ne * \mu $  in bacteria
+
+for diploid hemaphrotidic
+
+$\Theta = 2Ne * \mu $  
+
+for diploid separate sex it is 
+
+$\Theta = 4Ne * \mu $  
+
+
+
+How do you estimate $\Theta$?
+
+Grab neutral sites!
+
+$\pi_{syn} = \Theta$
+
+then rearrange:
+
+$\pi_{syn} = 4* Ne * \mu$
+
+$Ne = \frac{\pi_{syn}}{4* \mu}$
+
+
+
+### Paper discussion
+
+Coding session:
+
+change directory into where data are: 
+
+```UNIX
+cd /data/project_data/snps/reads2snps/
+```
+
+
+
+
+
+
+
 ------
 <div id='id-section17'/>
 ### Page 17:
