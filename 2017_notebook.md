@@ -67,7 +67,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 39: 2017-02-28](#id-section39). More analyses for hsp rxn norm paper
 * [Page 40: 2017-03-04](#id-section40). Visit at UF; feedback on dissertation talk
 * [Page 41: 2017-03-07](#id-section41). To do.
-* [Page 42:](#id-section42).
+* [Page 42: 2017-03-09](#id-section42). General reading notes
 * [Page 43:](#id-section43).
 * [Page 44:](#id-section44).
 * [Page 45:](#id-section45).
@@ -1962,6 +1962,18 @@ Not sure this works.
 
 
 
+### Update: 2017-03-09
+
+
+
+Another paper with a definition to think about:
+
+> Plant defence against any type of stress may involve resistance (traits that reduce damage) or tolerance (traits that reduce the negative fitness impacts of damage).
+
+ref:   Agrawal AA, Conner JK, Stinchcombe JR (2004) Evolution of plant resistance and tolerance to frost damage. *Ecology Letters*, **7**, 1199–1208.
+
+
+
 
 
 
@@ -2987,10 +2999,76 @@ Questions to ask and things to go over with Sean for thesis format check.
 5. ​
 
 
-
 ------
 <div id='id-section42'/>
-### Page 42:
+### Page 42: 2017-03-09. General reading notes:
+
+
+
+ref:   Huey RB, Kearney MR, Krockenberger A *et al.* (2012) Predicting organismal vulnerability to climate warming: roles of behaviour, physiology and adaptation. *Philosophical Transactions of the Royal Society B: Biological Sciences*, **367**, 1665–1679.
+
+> Williams et al. [5] developed an integrative framework for assessing traits that promote vulnerability. They proposed that the vulnerability of a species depends on its sensitivity to environmental change, its exposure to that change, its resilience or ability to recover from perturbations and its potential to adapt to change.
+
+
+
+A general framework to think about organismal response to climate warming: 
+
+1. thermal sensitivity
+2. exposure
+3. recovery  or resiliency
+4. adaptive potential
+
+How do yo measure these things? 
+
+1. thermal performance curves
+2. location, properties of TPCs, behavioral reg, look at life stages
+3. ?
+4. adaptive potential, additive genetic variance
+
+
+
+**Looking for good ref for responding to climate change by acclimation, adaptation, and/or migration.**
+
+refs:
+
+  Moritz C, Agudo R (2013) The Future of Species Under Climate Change: Resilience or Decline? *Science*, **341**, 504–508.
+
+  Wiens JJ (2016) Climate-Related Local Extinctions Are Already Widespread among Plant and Animal Species. *PLOS Biology*, **14**, e2001104.
+
+  Chen I-C, Hill JK, Ohlemüller R, Roy DB, Thomas CD (2011) Rapid Range Shifts of Species Associated with High Levels of Climate Warming. *Science*, **333**, 1024–1026. (range shifts)
+
+
+
+**Papers on action potentials and CTmax**
+
+refs: 
+
+  Miller NA, Stillman JH (2012) Neural Thermal Performance in Porcelain Crabs, Genus Petrolisthes. *Physiological and Biochemical Zoology*, **85**, 29–39.
+
+
+
+What is K+ conductance doing? 
+
+>For insects, it has been demonstrated that increasing temperature in Locusta migratoria increases the K conductance.of neurons, resulting in nerve transmission failures; that similar failures can be induced by adding K to the extracellular fluid (simulating increased K conductance; Money et al. 2009); and that such failures can be prevented by pharmacologically blocking K channels (Wu et al. 2001).
+
+
+
+Hhigher survival to heat stress is associated with decrease nerve membrane K+ conductance
+
+> Additionally, increased survival after sublethal heat stress has also been associated with a decrease in nerve membrane K conductance (Ramirez et al.1999; Money et al. 2009).
+
+
+
+Review of action potentials:
+
+> High permeability indicates that particle *mass* moves easily through a membrane. High conductance indicates that electrical *charge* moves easily through a membrane.
+
+Conductance is the inverse of electrical resistance. If conductance is low, then the resistance of that ion to move across the membrane is high. 
+
+K+ more concentrated inside cells. 
+
+
+
 ------
 <div id='id-section43'/>
 ### Page 43:
