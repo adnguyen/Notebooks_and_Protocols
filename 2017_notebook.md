@@ -68,7 +68,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 40: 2017-03-04](#id-section40). Visit at UF; feedback on dissertation talk
 * [Page 41: 2017-03-07](#id-section41). To do.
 * [Page 42: 2017-03-09](#id-section42). General reading notes
-* [Page 43:](#id-section43).
+* [Page 43: 2017-03-09](#id-section43). Dissertation format check with Sean M.
 * [Page 44:](#id-section44).
 * [Page 45:](#id-section45).
 * [Page 46:](#id-section46).
@@ -3071,7 +3071,19 @@ K+ more concentrated inside cells.
 
 ------
 <div id='id-section43'/>
-### Page 43:
+### Page 43: 2017-03-09. Dissertation format check with Sean M.
+
+1. fix citation page
+   * Citation page needs page number "ii"
+   * need periods between names
+2. some of the pages looked messed up at the bottom, can lower page margin at the bottom of page
+3. Upon defense, sign defense form, scan and upload alongside thesis online. 
+   * be vigilante for emails because you'll get follow up emails to verify that the formatting is ok
+
+
+
+
+
 ------
 <div id='id-section44'/>
 ### Page 44:
