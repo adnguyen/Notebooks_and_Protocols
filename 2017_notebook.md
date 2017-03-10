@@ -69,7 +69,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 41: 2017-03-07](#id-section41). To do.
 * [Page 42: 2017-03-09](#id-section42). General reading notes
 * [Page 43: 2017-03-09](#id-section43). Dissertation format check with Sean M.
-* [Page 44:](#id-section44).
+* [Page 44: 2017-03-10](#id-section44). General phylogenetics workflow
 * [Page 45:](#id-section45).
 * [Page 46:](#id-section46).
 * [Page 47:](#id-section47).
@@ -3111,7 +3111,30 @@ K+ more concentrated inside cells.
 
 ------
 <div id='id-section45'/>
-### Page 45:
+### Page 45: 2017-03-10. General phylogenetics workflow
+
+Drew this up for Emily M. a while ago and just sticking it here for future reference. 
+
+```mermaid
+graph TD
+A{Phylogeny}
+C((Species list)) --> D(Get Sequences)
+D --> E{Character Matrix}
+E --> K(Model Substitution/Partition finder)
+K --> L
+E --> L(Analyses)
+L --> T(Maximum Likelihood)
+T --> A
+L --> W[Bayesian]
+W --> A
+L --> H[BEAST]
+H --> B{Ultrametricized Phylogeny}
+```
+
+
+
+
+
 ------
 <div id='id-section46'/>
 ### Page 46:
