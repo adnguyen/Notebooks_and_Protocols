@@ -70,9 +70,9 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 42: 2017-03-09](#id-section42). General reading notes
 * [Page 43: 2017-03-09](#id-section43). Dissertation format check with Sean M.
 * [Page 44: 2017-03-10](#id-section44). General phylogenetics workflow
-* [Page 45:](#id-section45).
-* [Page 46:](#id-section46).
-* [Page 47:](#id-section47).
+* [Page 45: 2017-03-10](#id-section45). SHC lab schedule 
+* [Page 46:2017-03-13](#id-section46). Meeting with SHC for dissertation timeline
+* [Page 47: ](#id-section47). 
 * [Page 48:](#id-section48).
 * [Page 49:](#id-section49).
 * [Page 50:](#id-section50).
@@ -3137,7 +3137,58 @@ H --> B{Ultrametricized Phylogeny}
 
 ------
 <div id='id-section46'/>
-### Page 46:
+### Page 46: 2017-03-13: Meeting with SHC for dissertation timeline.
+
+
+
+Does SHC need to read over every piece before I send out? 
+
+Make sure committe members ar ok with me sending stuff out a week out of defene dat. 
+
+I should send out my thesis 2 weeks ahead of time. Send out March 15th? 17th? 20th? 
+
+<u>Layout:</u>
+
+* Abstract: (3/4 page)
+  * SHC needs to read
+* CH1: Introduction (3-6 pages)
+  * 5 pages with references
+  * SHC needs to read
+* CH2: The evolution of heat shock protein sequences, cis-regulatory elements, and expression profiles in the eusocial Hymenoptera (published BMC Evolutionary Biology)
+* Ch3: Molecular adaptations of protection and tolerance predict upper thermal limits in eastern forest ants (aiming to submit to PNAS)
+  * go over title, 
+  * SHC needs to read the whole thing (abstract, intro, results, discussion, methods)
+  * I still need to tweak the introduction and discussion
+* CH4: Effects of desiccation and starvation on thermal tolerance and the heat shock response in forest ants (In 2nd round of reviews, Journal of Comparative Physiology B)
+* CH5: Conclusions and future directions (3 pages)
+  * ~ 1 page, have outline, need to fill out
+
+
+
+**Go over dissertation talk.**
+
+Are there any glaring things I need to fix? 
+
+Biggest worry: PHylogenetic, PNAS chapter. ==Conclusions felt short, stilted and peices didnt stitch together.== 
+
+Treat phylogenetic part of statistics ; using species as a random effect—not over-ascribing effects of phylogeny. Random effect- there is an independent effect of habitat and temperature. Change in stats might change how I told the story. 
+
+
+
+Amanda suggestion: Broader implications? What types of changes we'd expect to see? turnover? certain populations within a species go extinct. Focus on turnover, different areas where ants are locally adapted to climate. Stick with a consistent flow. Specific—>meaning for ants on a large scale. What else do we need to understand? Expecting to hear a broad statement, but didnt hear it and came to a conclusion on it's own. 
+
+
+
+My own notes: 
+
+* incorporate ch1 and2 better…dynamic shifts at the gene copy level, and also how they are regulated. 
+* Hsps are absoltuely critical for coping with heat stress. 
+* hsps can be adaptively tuned over relatively short to broad evolutionary time scales. 
+* Evolution of tolerance may make sense because Hsps are costly, and always activating them slows growth, so they should be only turned on when stress is encountered. 
+* To respond to climate change, species will need to turn on Hsps all the time? 
+
+
+
 ------
 <div id='id-section47'/>
 ### Page 47:
