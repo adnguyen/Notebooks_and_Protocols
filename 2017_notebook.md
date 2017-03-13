@@ -3173,6 +3173,20 @@ Biggest worry: PHylogenetic, PNAS chapter. ==Conclusions felt short, stilted and
 
 Treat phylogenetic part of statistics ; using species as a random effect—not over-ascribing effects of phylogeny. Random effect- there is an independent effect of habitat and temperature. Change in stats might change how I told the story. 
 
+In the ms itself, for reference:
+
+> Colonies within different lineages differed in CTmax between forest habitats (β=1.37 ± 0.253; t=5.38, p <0.001) and with the local thermal extremes (Tmax, β=0.013 ± 0.003; t=3.52, p <0.001; Full model: F2,97=33.58; R2=0.40, p<0.001; Fig 2B). 
+
+
+
+Need to change to random effects model
+
+Changed sentence to: 
+
+> When including species as a random effect, colonies within different lineages differed in CTmax between forest habitats (β=1.05 ± 0.379; t=2.76, p <0.05) and with the local thermal extremes (Tmax, β=0.014 ± 0.006; t=2.17, p <0.001;Fig 2B). 
+
+
+
 
 
 Amanda suggestion: Broader implications? What types of changes we'd expect to see? turnover? certain populations within a species go extinct. Focus on turnover, different areas where ants are locally adapted to climate. Stick with a consistent flow. Specific—>meaning for ants on a large scale. What else do we need to understand? Expecting to hear a broad statement, but didnt hear it and came to a conclusion on it's own. 
