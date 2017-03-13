@@ -71,8 +71,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 43: 2017-03-09](#id-section43). Dissertation format check with Sean M.
 * [Page 44: 2017-03-10](#id-section44). General phylogenetics workflow
 * [Page 45: 2017-03-10](#id-section45). SHC lab schedule 
-* [Page 46:2017-03-13](#id-section46). Meeting with SHC for dissertation timeline
-* [Page 47: ](#id-section47). 
+* [Page 46: 2017-03-13](#id-section46). Meeting with SHC for dissertation timeline
+* [Page 47: 2017-03-13](#id-section47).  SHC analysis suggestion hsp rxn norm paper
 * [Page 48:](#id-section48).
 * [Page 49:](#id-section49).
 * [Page 50:](#id-section50).
@@ -3205,7 +3205,223 @@ My own notes:
 
 ------
 <div id='id-section47'/>
-### Page 47:
+### Page 47: 2017-03-13. SHC analysis suggestion hsp rxn norm paper
+
+SHC:
+
+> Can you try separating out the deciduous forest species and graph CTmax against PC1, and in a second graph make a box plot comparison of PC1 for deciduous versus pine forest) to show that variation along PC1 significantly explains both patterns of CTmax variation?
+
+Subset, plot, and construct model:
+
+```R
+decj<-subset(jj3,jj3$habitat_v2=="deciduous forest") #subset
+ggplot(decj,aes(x=pc1,y=KO_temp_worker))+geom_point(size=5,col="darkgray")+T+stat_smooth(method="lm",colour="black",size=2.5)+xlab("PC1 scores")+ylab("CTmax (°C)") # figure
+summary(lm(KO_temp_worker~pc1,data=decj)) # model
+
+>Call:
+lm(formula = KO_temp_worker ~ pc1, data = decj)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.17476 -0.33930  0.08233  0.34954  0.80763 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 41.36600    0.09696 426.630  < 2e-16 ***
+pc1         -0.16944    0.06017  -2.816  0.00852 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4823 on 30 degrees of freedom
+Multiple R-squared:  0.2091,	Adjusted R-squared:  0.1827 
+F-statistic: 7.929 on 1 and 30 DF,  p-value: 0.008515
+```
+
+
+
+![](https://cloud.githubusercontent.com/assets/4654474/23876306/3a46bcf0-0813-11e7-9462-0cd5c87b9d4c.jpeg)
+
+
+
+Figure with CTmax v pc1 for deciduous species only.
+
+Looks funky, let's double check:
+
+```R
+> decj$rad_seq_species
+ [1] miamiana      miamiana      picea         picea        
+ [5] fulva         rudis         rudis         fulva        
+ [9] rudis         fulva         rudis         rudis        
+[13] lamellidens   fulva         lamellidens   picea        
+[17] picea         miamiana      rudis         tennesseensis
+[21] picea         rudis         rudis         rudis        
+[25] rudis         rudis         rudis         rudis        
+[29] rudis         rudis         tennesseensis rudis  
+```
+
+
+
+Ok, no floridana and ashmeadi. 
+
+
+
+Species as a random effect (deciduous species)
+
+```R
+summary(lmer(KO_temp_worker~pc1+(1|rad_seq_species),data=decj))
+Linear mixed model fit by REML t-tests use Satterthwaite
+  approximations to degrees of freedom [lmerMod]
+Formula: KO_temp_worker ~ pc1 + (1 | rad_seq_species)
+   Data: decj
+
+REML criterion at convergence: 48.1
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.3133 -0.5270  0.1981  0.5917  1.1821 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ rad_seq_species (Intercept) 0.06714  0.2591  
+ Residual                    0.19680  0.4436  
+Number of obs: 32, groups:  rad_seq_species, 6
+
+Fixed effects:
+            Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept) 41.41169    0.15293  3.72800 270.791 3.84e-09 ***
+pc1         -0.16222    0.05958 29.70000  -2.723   0.0107 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+    (Intr)
+pc1 -0.385
+```
+
+
+
+
+
+### **Second part of email:** Ok I need to show from the original dataset, the difference in pc1 between forest types:
+
+```R
+ggplot(jj3,aes(x=habitat_v2,y=pc1,fill=habitat_v2))+T+geom_boxplot()+xlab("Forest Type")+ylab("PC1")+scale_fill_manual(name = "", values = c("royalblue3","red"))
+
+summary(aov(pc1~habitat_v2,data=jj3))
+            Df Sum Sq Mean Sq F value   Pr(>F)    
+habitat_v2   1   85.9   85.90   32.96 1.18e-06 ***
+Residuals   39  101.6    2.61                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+
+
+
+
+![](https://cloud.githubusercontent.com/assets/4654474/23876461/00b8d0e4-0814-11e7-80d2-9c043529a067.jpeg)
+
+
+
+Species as a random effect: testing diff in pc1 between habitats (spmo1)
+
+```R
+summary(lmer(pc1~habitat_v2+(1|rad_seq_species),data=jj3))
+Linear mixed model fit by REML t-tests use Satterthwaite
+  approximations to degrees of freedom [lmerMod]
+Formula: pc1 ~ habitat_v2 + (1 | rad_seq_species)
+   Data: jj3
+
+REML criterion at convergence: 153.7
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.5600 -0.7065 -0.2086  0.8903  1.7499 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ rad_seq_species (Intercept) 0.06065  0.2463  
+ Residual                    2.56500  1.6016  
+Number of obs: 41, groups:  rad_seq_species, 8
+
+Fixed effects:
+                     Estimate Std. Error      df t value
+(Intercept)            0.8154     0.3120  2.2230   2.614
+habitat_v2flat woods  -3.5297     0.6448  4.3620  -5.474
+                     Pr(>|t|)   
+(Intercept)            0.1082   
+habitat_v2flat woods   0.0042 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr)
+hbtt_v2fltw -0.484
+
+```
+
+Species as a random effect: testing effect of habitats and Tmax on pc1 (spmo2)
+
+```R
+summary(spmo2)
+Linear mixed model fit by REML t-tests use Satterthwaite
+  approximations to degrees of freedom [lmerMod]
+Formula: pc1 ~ habitat_v2 + bio5 + (1 | rad_seq_species)
+   Data: jj3
+
+REML criterion at convergence: 160.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.5469 -0.6572 -0.1900  0.8795  1.6959 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ rad_seq_species (Intercept) 0.1626   0.4032  
+ Residual                    2.5805   1.6064  
+Number of obs: 41, groups:  rad_seq_species, 8
+
+Fixed effects:
+                       Estimate Std. Error         df t value
+(Intercept)           0.9865287  4.3710242  6.3260000   0.226
+habitat_v2flat woods -3.5514575  0.7964546  4.1000000  -4.459
+bio5                 -0.0004003  0.0145931  6.6500000  -0.027
+                     Pr(>|t|)  
+(Intercept)            0.8286  
+habitat_v2flat woods   0.0106 *
+bio5                   0.9789  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) hbt_2w
+hbtt_v2fltw  0.427       
+bio5        -0.997 -0.464
+```
+
+
+
+Ok, let's compare models: 1 with habitat, 1 with habitat and tmax
+
+```R
+
+
+anova(spmo1,spmo2)
+refitting model(s) with ML (instead of REML)
+Data: jj3
+Models:
+object: pc1 ~ habitat_v2 + (1 | rad_seq_species)
+..1: pc1 ~ habitat_v2 + bio5 + (1 | rad_seq_species)
+       Df    AIC    BIC  logLik deviance Chisq Chi Df
+object  4 161.57 168.42 -76.784   153.57             
+..1     5 163.57 172.14 -76.784   153.57     0      1
+       Pr(>Chisq)
+object           
+..1        0.9955
+```
+
+
+
 ------
 <div id='id-section48'/>
 ### Page 48:
