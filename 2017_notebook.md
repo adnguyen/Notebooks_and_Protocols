@@ -73,7 +73,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 45: 2017-03-10](#id-section45). SHC lab schedule 
 * [Page 46: 2017-03-13](#id-section46). Meeting with SHC for dissertation timeline
 * [Page 47: 2017-03-13](#id-section47).  SHC analysis suggestion hsp rxn norm paper
-* [Page 48:](#id-section48).
+* [Page 48: 2017-03-14](#id-section48). Reading notes- Armstrong et al. 2011; hsp70 and neurophysiology
 * [Page 49:](#id-section49).
 * [Page 50:](#id-section50).
 * [Page 51:](#id-section51).
@@ -3422,9 +3422,100 @@ object
 
 
 
+Temperature range:
+
+```R
+range(Aph.dat$bio5)/10
+[1] 24.9 33.3
+```
+
+
+
+Notes from SHC for the discussion:
+
+
+
+> - Samepattern of change associated with change in thermal stress within deciduousforest as with shift to more open habitat – common regulatory control such that response can be tuned up or down in a coordinated fashion  in response to selection?  
+> - Studyof extreme thermophiles suggests a shift from induced to constitutiveprotection, but this may not be representative of thermal diversification in seasonalenvironments (or less extreme? Or non-desert?). Why not?
+> - Protectionis usually thought of in terms of baseline levels, but important to rememberthat this can also be achieved through the induction response via graded orearly-onset protection.  Shift to a moregraded response suggests a change in trigger of Hsp gene expression (fromdirect feedback from denatured proteins to some other temperature sensor –something like HSR1 non-coding RNA?)
+
+
+
+Taking out a part of my intro:
+
+> Therefore, the patterns of Hsp gene expression may reveal evolutionary adaptations for
+> coping with high temperature (Somero 2011). Evidence for the protection
+> mechanism would be elevated levels of Hsp gene expression at relatively benign
+> temperatures such that organisms are prepared for future lethal temperatures.
+> For example, experimentally elevating Hsps at sublethal levels in fruit flies increased
+> survival to extreme heat shock (Cavicchi et al. 1995). Evidence for the
+> tolerance mechanism would be the increase of Hsp gene expression in concert
+> with temperature increases. For example, the onset of Hsp induction positively
+> corresponds with thermal limits in marine snails species (Lars and Somero 2002).
+
+This paragrpah doesn't make that much sense but it has good citations:
+
+> Among studies, evidence supporting the protection and
+> tolerance mechanism by is mixed. For example, in controlled heat-shock
+> experiments warm-climate populations or species may express Hsps at lower (Dahlhoff
+> and Rank 2000; Bedulina et al. 2013) or higher levels (Dietz and Somero 1992;
+> Tomanek and Somero 2000). In some cases, warm- and -cool adapted populations or
+> species lack adaptive variation in Hsp expression altogether (Madeira et al.
+> 2015; Lockwood et al. 2010; Jensen et al. 2010), which might imply no role for Hsps
+> in extending upper thermal limits. Moreover, Hsps participate in many other
+> biological processes unrelated to heat (Sørensen et al. 2003). For example,
+> Hsps can induce in response to oxidative, desiccation, and osmotic stress (Morris
+> et al. 2013). However, detailed knockout studies definitively show that thermally
+> responsive Hsps are required for mounting a heat shock response (Bettencourt et
+> al. 2008). Perhaps adaptive tuning of Hsp gene induction is not possible with rapid
+> temperature selection (Sikkink et al. 2014) or in quickly diversifying clades. 
+
+
+
+2017-03-14: Plopping my discussion here for reference. A lot of it has to be re-written.  
+
+> Thetransition from closed canopy forests (deciduous) to open canopy pine/oaksavanna, supported by phylogenetic reconstruction and ancestral trait analyses(Fig ), was accompanied by increased upper thermal limits (CTmax; Fig ). The extensionof CTmax was associated with differences in the reaction norms of Hspexpression that reflected both protection and tolerance mechanisms. In supportof the protection mechanism, colonies with higher CTmax had higher expressionat the low end of the temperature gradient simply by slowing expression ratesfor *hsp70* and *hsp40*. In support of the tolerance mechanism, colonies with higher CTmaxexpressed all three Hsps at a higher temperature (Tm) and also to a highermagnitude (maximum expression). Out of the parameters that significantlyexplained variation in CTmax, six out of twelve parameters diverged betweenforest type (Fig). The adaptive modification of Hsps altogether highlightscomplex and non-linear patterns of gene expression.  
+>
+> ​            The structure of habitats is known alterthe thermal experiences of ectotherms (Brett et al. 2014). For temperate forestants, local environmental temperatures and habitat type have shaped thevariation in thermal traits (Fig ). Deciduous forests species are significantlybuffered from thermal stress than flat woods species due to higher canopy cover(Supplemental), especially over the growing season where foraging activity ishighest. These species are known to utilize behavioral thermal regulation suchas migrating to new nesting locations when they experience unsuitableenvironments and workers may maintain optimal body temperatures by avoidingsolar radiation in the leaf litter, also known as the Bogert effect (Bogert1945). Despite these behavioral activities, forest ants still experienceselection from the thermal environment because there was still clinal variationin Ctmax (Fig 2). In contrast to deciduous forest species, flat woods speciesnest near the surface (13-92 cm in depth; Tschinkel 2011) and are not known tomigrate whole at all (), which subjects them to thermal stress because surfacesoil can become superheated (Porter and Gates 1969; Angilletta 2009). Ifforagers navigate through superheated surface boundary layers, they must rely physiologicalmechanisms to withstand heat stress (). Thermal extremes are known to structurethe diversity of upper thermal limits in ant communities even within the samelocation (Kaspari 2015). For example, in the tropics, ants possess greaterCTmax in the canopy and experience more heat bouts than ants in the leaf litter(Kaspari 2015).
+>
+> ​            The phenotypic divergence of CTmax inforest ants were explained by 68% of the variation in parameters that representthe sigmoidal shape of Hsp expression. The parameters themselves are correlatedshow large amounts of independent axes of variation for which selection canoperate upon and in fact, we find roughly five effective numbers of dimensionsfrom a PCA analysis (λtotal/λPC1; supplemental). Perhaps high dimensionality is reflected bythe fact that Hsps play other critical roles in the cell (Morris et al. 2013)and are highly pleiotropic. However, only the first PC, which best captured thecorrelation between slope, Tm, max, but not basal gene expression, related themost to CTmax. Each parameter of the Hsp reaction norm captures the non-linearaspect of Hsp gene expression where detection of adaptive variation or lack thereofdepends on the sampled temperature. For example, when sampled at a singletemperature slice along the temperature gradient, differences in Hsp reactionnorms between open and closed forest habitats showed lower, higher, or nodifference at all in Hsp expression. Therefore, sampling dictates where onefinds adaptive variation of a trait without a function-valued approach. This isone of the first studies to our knowledge, to empirically capture thenon-linear process of Hsp gene induction as a function-valued trait(Stinchecombe).
+>
+> ​            The net effect of shifts in Hsp expressionparameters suggests that colonies with higher CTmax can better maintain proteinhomeostasis in subtle ways that are highly dynamic. For 2/3 Hsps, we foundevidence for protection through graded, but not constitutive means.Constitutive protection may strictly be modulated under different acclimationtemperatures (Helms Cahan et al. 2017), which was kept constant (25 °C) in our study, but greater thermal extremes may be neededfor species to evolve elevated Hsp expression (Willot et al. 2017). On theother hand, graded protection allows for pre-emptive Hsp expression byelevating expression at the lower end of the temperature gradient when the expressionrate is slower. Interestingly, slower expression rate also results in lowerexpression values before reaching maximum expression levels (Fig 1). However,colonies with higher Ctmax compensate by simultaneously elevating maximumexpression to add greater repair at lethal temperatures. Because Hsps act as asensor for protein denaturation (Richter et al. 2010; Craig and Gross 1991), enhancedtolerance (Tm) suggests that the whole proteome is robust to denaturing forspecies in open canopy forests. Very few amino acid changes are needed toevolve greater protein stability (Somero 2004; Lockwood and Somero 2012),however, these changes need to be distributed across many proteins across thewhole proteome (Field 2001). Another route to greater protein stabilityinvolves changing osmolytes and their concentrations to enable higher meltingtemperatures across all proteins (Stillman and Somero 2001). 
+>
+> ​            Protein homeostasis
+
+
+
 ------
 <div id='id-section48'/>
-### Page 48:
+### Page 48: 2017-03-14. Reading notes- Armstrong et al. 2011; hsp70 and neurophysiology
+
+
+
+reference:
+
+  Armstrong GAB, Xiao C, Krill JL *et al.* (2011) Glial Hsp70 Protects K+ Homeostasis in the Drosophila Brain during Repetitive Anoxic Depolarization. *PLoS ONE*, **6**, e28994.
+
+
+
+**Objective:** Interesting paper where these authors wanted to understand the role of hsp70 in the ion homeostasis of neurons. 
+
+**Hypothesis:** Hsp70 help maintain K+ ion balance in the brain
+
+**Methods:** To test for the role of hsp70, they began by manipulating fruit flies by treating them with ouabain, which caused loss of electrical activity in neurons. Ouabain is an inhibitor of Na/K ATPase pump.K gets pumped into cells, and NA gets pumped out. So if it is inhibited, K+ will accumulate outside of cells.  Another way they disrupted ion balance was that they put the flies under anoxic conditions (by $N_2$ gas). Their main read out was K+ outside of the cells. Then they measured hsp70 expression in the brain. 
+
+**Results:** Their oubain treatment worked. In hsp70 null background, there were more surges (K+ spikes). The surges were less when Hsp70 was induced in the brain relative to controls. 
+
+
+
+
+
+
+
+
+
+
+
 ------
 <div id='id-section49'/>
 ### Page 49:
