@@ -2855,7 +2855,7 @@ Results: We find a significnat effect of habitat type and Tmax is marginally sig
 
 ------
 <div id='id-section40'/>
-### Page 40: 2017-03-04. Visit at UF; feedback on dissertation talk.
+### Page 40: 2017-03-04. Visit at UF; feedback on dissertation talk.    
 
 Reflecting on visit at UF. 
 
