@@ -2845,7 +2845,9 @@ bio5        -0.995
 hbtt_v2fltw  0.243 -0.284
 ```
 
-Results: We find a significnat effect of habitat type and Tmax is marginally significant. I also included a quadratic term which made no difference. 
+Results: We find a significnat effect of habitat type and Tmax is marginally significant. I also included a quadratic term which made no difference.       
+
+
 
 
 
