@@ -3205,7 +3205,6 @@ My own notes:
 * To respond to climate change, species will need to turn on Hsps all the time? 
 
 
-
 ------
 <div id='id-section47'/>
 ### Page 47: 2017-03-13. SHC analysis suggestion hsp rxn norm paper
