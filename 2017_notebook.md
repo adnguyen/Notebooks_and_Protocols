@@ -3489,8 +3489,11 @@ This paragrpah doesn't make that much sense but it has good citations:
 
 
 ------
+
+
 <div id='id-section48'/>
-### Page 48: 2017-03-14. Reading notes- Armstrong et al. 2011; hsp70 and neurophysiology
+
+### Page 48: 2017-03-14. Reading notes- Armstrong et al. 2011; hsp70 and neurophysiology      
 
 
 
@@ -3571,7 +3574,7 @@ also need to understand how the environment influences thermal experiences
 
 <div id='id-section50'/>
 
-### Page 50:
+### Page 50:      
 
 
 
@@ -3580,7 +3583,7 @@ also need to understand how the environment influences thermal experiences
 
 <div id='id-section51'/>
 
-### Page 51:
+### Page 51:    
 
 
 
