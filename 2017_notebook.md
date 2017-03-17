@@ -3003,8 +3003,13 @@ Questions to ask and things to go over with Sean for thesis format check.
 
 
 ------
+
+
 <div id='id-section42'/>
-### Page 42: 2017-03-09. General reading notes:
+
+### Page 42: 2017-03-09. General reading notes:     
+
+
 
 
 
@@ -3073,8 +3078,13 @@ K+ more concentrated inside cells.
 
 
 ------
+
+
 <div id='id-section43'/>
-### Page 43: 2017-03-09. Dissertation format check with Sean M.
+
+### Page 43: 2017-03-09. Dissertation format check with Sean M.    
+
+
 
 1. fix citation page
    * Citation page needs page number "ii"
@@ -3087,8 +3097,11 @@ K+ more concentrated inside cells.
 
 
 ------
+
+
 <div id='id-section44'/>
-### Page 44: 2017-03-09. SHC Lab agenda.
+
+### Page 44: 2017-03-09. SHC Lab agenda.     
 
 
 
@@ -3113,8 +3126,13 @@ K+ more concentrated inside cells.
 
 
 ------
+
+
 <div id='id-section45'/>
-### Page 45: 2017-03-10. General phylogenetics workflow
+
+### Page 45: 2017-03-10. General phylogenetics workflow    
+
+
 
 Drew this up for Emily M. a while ago and just sticking it here for future reference. 
 
@@ -3139,8 +3157,13 @@ H --> B{Ultrametricized Phylogeny}
 
 
 ------
+
+
 <div id='id-section46'/>
-### Page 46: 2017-03-13: Meeting with SHC for dissertation timeline.
+
+### Page 46: 2017-03-13: Meeting with SHC for dissertation timeline.    
+
+
 
 
 
@@ -3206,8 +3229,13 @@ My own notes:
 
 
 ------
+
+
 <div id='id-section47'/>
-### Page 47: 2017-03-13. SHC analysis suggestion hsp rxn norm paper
+
+### Page 47: 2017-03-13. SHC analysis suggestion hsp rxn norm paper    
+
+
 
 SHC:
 
