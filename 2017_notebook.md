@@ -74,7 +74,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 46: 2017-03-13](#id-section46). Meeting with SHC for dissertation timeline
 * [Page 47: 2017-03-13](#id-section47).  SHC analysis suggestion hsp rxn norm paper
 * [Page 48: 2017-03-14](#id-section48). Reading notes- Armstrong et al. 2011; hsp70 and neurophysiology
-* [Page 49:](#id-section49).
+* [Page 49: 2017-03-16](#id-section49). Writing notes
 * [Page 50:](#id-section50).
 * [Page 51:](#id-section51).
 * [Page 52:](#id-section52).
@@ -3519,8 +3519,48 @@ reference:
 
 
 ------
+
+
 <div id='id-section49'/>
-### Page 49:
+
+### Page 49: 2017-02-16. Writing notes      
+
+
+
+A little tidbit I wrote up that ended up not fitting in with the paragraph:
+
+> To diminish the cost of protein denaturation, irreversibly damaged proteins are degraded by the 26S proteasome when marked with ubiquitin (Ronai
+> 2016). Ubiquitination and 26S proteasome activity is higher in cold tolerant compared
+> to warm tolerant species under temperature increases (Hofmann and Somero 1996;
+> Todgham et al. 2016). In cold tolerant species Higher temperature sensitivity
+> to protein damage matches with Hsp expression occurring at lower temperatures
+> and further supports that they have less stable proteomes. Therefore clearance
+> of denatured proteins is not likely a source of stress resistance. Instead, the stability of the proteome itself
+> most likely provides stress resistance because unfolding at higher temperatures
+> does not require any additional repair (Hsp) and breakdown (26S proteasome)
+> responses that are costly (Hoekstra and Montooth 2013).
+
+I couldn't fix it so I took it out, but it has good ideas and refs.
+
+
+
+<u>Interesting paper that compares the metabolome under different stressors:</u> 
+
+ref:   Robert Michaud M, Benoit JB, Lopez-Martinez G *et al.* (2008) Metabolomics reveals unique and shared metabolic changes in response to heat shock, freezing and desiccation in the Antarctic midge, Belgica antarctica. *Journal of Insect Physiology*, **54**, 645–655.
+
+They measured the metabolome of antarctic midge under desiccation, heat shock, cold shock, and controls. The clustering looks like (newick format):
+
+(desiccation,(cold,(control,heat)))
+
+
+
+<u>last paragraph of dissertation conclusion:</u> 
+
+oberg or pelini paper on ctmax and water weight figure suggests that there is a trade off in 1 subfamily but not another.
+
+cool idea to measure adaptive potential or trade offs between stressors across a whole clade. 
+
+also need to understand how the environment influences thermal experiences
 
 
 
