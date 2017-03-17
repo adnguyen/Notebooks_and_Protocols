@@ -75,7 +75,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 47: 2017-03-13](#id-section47).  SHC analysis suggestion hsp rxn norm paper
 * [Page 48: 2017-03-14](#id-section48). Reading notes- Armstrong et al. 2011; hsp70 and neurophysiology
 * [Page 49: 2017-03-16](#id-section49). Writing notes
-* [Page 50:](#id-section50).
+* [Page 50: 2017-03-17](#id-section50). Writing notes
 * [Page 51:](#id-section51).
 * [Page 52:](#id-section52).
 * [Page 53:](#id-section53).
@@ -3602,7 +3602,53 @@ also need to understand how the environment influences thermal experiences
 
 <div id='id-section50'/>
 
-### Page 50:      
+### Page 50: 2017-03-17. Writing notes
+
+
+
+For the conclusion of my thesis, my thoughts are a little scattered. I took this part out:
+
+> Not only can the HSF-HSE cascade participate in responding to heat stress, but also it appears to be important for development (Gonsalves et al. 2011; Li et al. 2016) and may be critical for otherbiological processes. HSF-HSE binding is associated with transcriptionally active regions that are independent of bound chromatin locations under heat shock (Li et al. 2016), suggesting that the HSF has additional function outside the HSR. In fact, HSF binding can co-localize with the E2F transcription factor, which is known to permit development in insects and is influenced by nutritional stress (Britton and Edgar 1998). It is possible for social insects to utilize the cooperation between HSF and E2F to produce alternative reproductive phenotypes, which are in large part driven by environmental cues (Smith et al. 2008). If stressors besides temperature alter the chromatin structure to enforce a closed (heterochromatin) state to deny HSF-HSE binding. Therefore, even if proteins become unfolded under desiccation or starvation,Hsp may not be able to become induced which may explain the cross-susceptibility to coping with heat stress. 
+
+Hard to fit this in. 
+
+
+
+For my hsp rxn discussion, I need to rewrite it, starting with a re-outline for each paragraph:
+
+First part: Focus on CTmax
+
+1. Summary of findings for CTmax and forest types, evolutionary transitions
+2. How forest types alter the thermal experiences and in turn, selective regimes. But I need to tie this back to clinal vaariation that I found too
+3. Flat woods forests—SHC had problems with examples at the end. Hmmm tie back to selective regimes?
+
+
+
+Second part: Focus on hsp rxn norms
+
+4. The transition into flat woods and increase in CTmax were accompanied by dynamic changes in Hsp expression profiles that were captured with a function-valued approach. 
+
+   * function valued approach allowed for novel approach to quantify different strategies for hsp expression that correlate with upper thermal limits 
+   * THis is a novel approach over traditional comparisons of typical constitutive and induced expression because
+   * Hsp parameters can evolve separately, but the first pc explained 40% of the variation in CTmax
+
+   - give overall relationship, slower expression rate, higher Tm and higher maximum values
+   - hsp paramters explained 40% of the variation
+   - Furthermore, these parameters can evolve independently
+
+5. Active part of Hsps
+
+   * induced instead of constitutive proteciton, simply by altering expression rate
+     * may not be the most important mechanism
+     * interestingly, slower expression rate causes higher expression at the low end of the gradient, but lower expression at the higher end of the gradient before reaching max expression values.
+   * Instead higher expression or enhanced response shows investment into active repair for flat woods forests species
+
+6. Passive parts of Hsps: 
+
+   * hsps are sensors and the higher onset of induction suggests they can resist protein unfolding
+   * ​
+
+7. Conclusion: 
 
 
 
