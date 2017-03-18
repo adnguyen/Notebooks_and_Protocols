@@ -3652,6 +3652,26 @@ Second part: Focus on hsp rxn norms
 
 
 
+Taking out a part, has good ideas, but poorly organized:
+
+
+
+> Hsps expression responds to the thermal sensitivities of enzyme kinetics (Dahlhoff
+> and Rank 2000) and protein aggregation (Willot et al. 2016). Very few amino
+> acid changes are needed to evolve greater protein stability (Somero
+> 2004;Lockwood and Somero 2012) and are enriched in charged amino acids (Leuenberger
+> et al. 2017). However, amino acid changes need to be distributed across many
+> proteins across the whole proteome (Field 2001), which is extremely difficult
+> because many mutations are deleterious and requires high mutation rates. A more
+> attainable route to greater proteome stability involves increasing osmolytes
+> that which can non-specifically extend melting temperatures across all proteins
+> (Stillman and Somero 2001). For example, trehalose is known to act as a
+> chaperone and can stabilize proteins (Richter et al. 2010). 
+
+
+
+
+
 ------
 
 
