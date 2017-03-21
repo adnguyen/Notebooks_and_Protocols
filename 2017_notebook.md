@@ -76,8 +76,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 48: 2017-03-14](#id-section48). Reading notes- Armstrong et al. 2011; hsp70 and neurophysiology
 * [Page 49: 2017-03-16](#id-section49). Writing notes
 * [Page 50: 2017-03-17](#id-section50). Writing notes
-* [Page 51:](#id-section51).
-* [Page 52:](#id-section52).
+* [Page 51: 2017-03-20](#id-section51). Writing notes
+* [Page 52: 2017-03-21](#id-section52). Writing notes
 * [Page 53:](#id-section53).
 * [Page 54:](#id-section54).
 * [Page 55:](#id-section55).
@@ -3677,16 +3677,62 @@ Taking out a part, has good ideas, but poorly organized:
 
 <div id='id-section51'/>
 
-### Page 51:    
+### Page 51: 2017-03-20. Writing notes.    
+
+Some more writing notes: basically stuff I'm taking out of my discussion. 
+
+
+
+> Traditional approaches with comparisons between constitutive and induced responses may miss the subtle responses found in our study because of unsampled variation. For example, a single measurement of Hsp expression at the middle of the temperature gradient reveals no evidence for adaptive variation between forest types. 
 
 
 
 ------
 
 
+
 <div id='id-section52'/>
 
-### Page 52:
+### Page 52: 2017-03-21. Writing notes     
+
+The part that the reviewer wanted me to take out in my discussion because it was too fruit fly focused in my first paper (Nguyen et al. 2016; *BMC Evo Biol*)
+
+>Among different species of *Drosophila*, the primacy of *hsp70*'s role in the heat shock response is
+>achieved through an evolutionary increase in copy number from 2 to 5 [16,20]. We
+>detected minimal copy number variation in either *hsp83* or *hsc70*, although
+>it is important to note that lack of detailed manual annotation of non-*Drosophila* genomes may make it difficult
+>to detect highly similar copies should they be present.  Nevertheless, this suggests that Hymenopteran
+>(and other insect) Hsps may be recruited to the heat shock response primarily through
+>expansions in cis-regulatory HSEs across the entire promoter region, along with
+>transcriptional enhancement associated with introns that are lacking in *D. melanogaster *(Additional files 7-8: Figures
+>S4-5)[23-25,54-55]. 
+
+**Hsp rxn norm paper**
+
+Took this out of my discussion, couldn't fit it in...
+
+> Broadly in ants, the divergence in upper thermal limits is associated with open to forested habitats and nesting locations (Diamond et al. 2012). However, within our study, we were able to recover divergence in upper thermal limits within forest types that differ in canopy cover. 
+
+Part of discussion I'm saving:
+
+> Acclimation temperature in natural populations change within a season and Hsps are known to track seasonal fluctuations (Dietz and Somero 2004; Banerjee et al. 2014).             
+
+
+
+SHC comments and outline for discussion: 
+
+> - Primarymode of action of Hsps is enhanced response to damage – how much more?  
+>
+> -      Butalso evidence that more heat-tolerant species are better able to toleratethermal stress through other means: protein sequence evolution, osmolyteconcentrations, metabolic depression and gene expression downregulation(Stanton-Geddes).  Because Hsps areexpensive, the more frequent the heat stress, the more costly active responseis.  
+>
+> -      Protectionless important contributor to higher thermal tolerance.  Protection is usually thought of in terms ofbaseline levels, but important to remember that this can also be achievedthrough the induction response via graded or early-onset protection.  Shift to a more graded response suggests achange in trigger of Hsp gene expression (from direct feedback from denaturedproteins to some other temperature sensor – something like HSR1 non-codingRNA?)
+>
+> -      Studyof extreme thermophiles suggests a shift from induced to constitutiveprotection, but this may not be representative of evolved thermal strategies inseasonal environments (or less extreme? Or non-desert?).  Probably not the case that the elevation isoccurring in genes other than the ones sampled here – positive associationbetween inducibility and baseline elevation in hot—desert vs. temperate antcomparison (other literature on the likelihood that non-inducible forms areinvolved in heat-associated chaperoning?) . Why not?  Energetically costly andretards enzyme activity, slowing growth. Most useful when stress is chronic or predictable – typical of speciesliving in predictably extreme environments such as hot deserts (in ants:  Pogonomyrmex and Cataglyphis, desert flies,other taxa).  For temperate species,stress is predictable on timescales that are shorter than the individual’slifetime, making baseline shifts more profitable as a plastic acclimationstrategy.  Evidence that this is whatoccurs in Aphaenogaster (JCB paper), loads of other literature on seasonalacclimation.  
+>
+> -      Samepattern of change associated with change in thermal stress within deciduousforest as with shift to more open habitat – common regulatory control such thatresponse can be tuned up or down in a coordinated fashion  in response to selection?  Any idea of a model that would explainpattern?  HSF binding affinity, etc.?
+
+
+
 ------
 <div id='id-section53'/>
 ### Page 53:

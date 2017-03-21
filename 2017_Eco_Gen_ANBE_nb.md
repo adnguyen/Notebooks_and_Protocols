@@ -33,7 +33,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 14: 2017-02-27](#id-section14).  Week 7, Day 11, RNA-seq and paper discussion (Edwards et al. 2016; *PNAS*)-phylogeography; Scott  Edwards visit
 * [Page 15: 2017-03-06](#id-section15). Week 8, Day 13, Population genomics; paper discussion- Gayral et al. 2013
 * [Page 16: 2017-03-08](#id-section16). Week 8, Day 14, Population genomics part 2; Paper Discussion- [Romiguier et al. 2014](http://www.nature.com/nature/journal/v515/n7526/full/nature13685.html)
-* [Page 17:](#id-section17).
+* [Page 17: 2017-03-20](#id-section17). Week 9, Day 15, Population genomics part 3; paper discussion Gompert et al. 2014
 * [Page 18:](#id-section18).
 * [Page 19:](#id-section19).
 * [Page 20:](#id-section20).
@@ -2893,7 +2893,55 @@ cd /data/project_data/snps/reads2snps/
 
 ------
 <div id='id-section17'/>
-### Page 17:
+### Page 17: 2017-03-20. Week 9, Day 15, Population genomics part 3; paper discussion Gompert et al. 2014
+
+
+
+Info update: Dr. Kilpatrick:
+
+
+
+Global ancestry
+
+Local ancestry; chromosome is a mosaic. Which ancestry each of these segments come from? 
+
+
+
+Model based: 
+
+1. STRUCTURE (global)- bayesian program; allelic frequency distribution and ; under assumption of HWE and linkage equilibirum. Does not explicitly model linkage diequilibrium. 
+2. ADMIXTURE: ML approach; similar model in model. Assign populations or clusters or ancestors and their allelic frequencies. Difference—optimizes 2 matrices; ancestry matrix and gene flow matrix. 
+
+
+
+Waterson's theta = richness
+
+expected heterozygosity = evenness
+
+
+
+$\theta$ and pi diverge when populations are expanding and bottlenecks
+
+$\theta$ is higher when populations are expanding; but smaller when in bottlenecks (double check this)
+
+### coding:
+
+1. get final vcf data ; n=24
+2. Filtering
+3. output to home directory
+4. Estimate allele frequencies between healthy and sick individuals (raw differences; $f$(H)-$f$(S))
+   * Find SNPs that deviate from Healthy and sick
+   * another way to cacluate is FST
+5. Output to local machine and analyze in R 
+6. estimate $\pi_{syn}$, $[Math Processing Error]\pi_{nonsyn}$,
+7. ​
+
+
+
+
+
+
+
 ------
 <div id='id-section18'/>
 ### Page 18:
