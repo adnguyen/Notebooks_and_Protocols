@@ -229,10 +229,14 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 
 
 ------
-<div id='id-section1'/>
-### Page 1: 2017-01-01. Society for Integrative and Comparative Physiology (SICB) meeting in New Orleans     
 
-### Table of talks I'd like to attend     
+ <div id='id-section1'/> 
+
+### Page 1: 2017-01-01. Society for Integrative and Comparative Physiology (SICB) meeting in New Orleans       
+
+
+### Table of talks I'd like to attend       
+
 
 | Date            | Time        | Room                   | Speaker                          | Title                                    |
 | :-------------- | :---------- | :--------------------- | :------------------------------- | :--------------------------------------- |
@@ -321,8 +325,11 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 | Sunday, Jan8    | 15:00       | 222                    | Leary                            | Acute Stress is a Target of Intra- and Intersexual Selection in the Green Treefrog, Hyla cinerea: Implications for Fitness, Honest Signals, and the Evolution of Endocrine-based Acoustic Armaments |
 
 ------
-<div id='id-section2'/>
-### Page 2: 2017-01-03. Yearly Goals
+
+ <div id='id-section2'/> 
+
+### Page 2: 2017-01-03. Yearly Goals  
+
 
 1. Submit and Publish 3 manuscripts: range limits, Hsp rxn norm, and multiple stressors (also thermal niche paper).    
 2. Get a post doc. This'll probably involve learning a new study system. And also sending out tons of applications.      
@@ -335,8 +342,11 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 7. Learn more physiology: Q10, metabolism related topics, lipid membranes, metabolites.   
 
 ------
-<div id='id-section3'/>
-### Page 3: 2017-01-10. Status of Projects    
+
+ <div id='id-section3'/> 
+
+### Page 3: 2017-01-10. Status of Projects      
+
 
 1. Project updates:    
     * **Hsp gene expression + Ctmax project:**
@@ -367,8 +377,11 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 
 
 ------
-<div id='id-section4'/>
-### Page 4: 2017-01-17. Displaying hierarchical structure of a repo or set of directories in the terminal with tree command
+
+ <div id='id-section4'/> 
+
+### Page 4: 2017-01-17. Displaying hierarchical structure of a repo or set of directories in the terminal with tree command  
+
 
 1. In the terminal, [install the tree command](https://rschu.me/list-a-directory-with-tree-command-on-mac-os-x-3b2d4c4a4827#.wk0u34bpj)
    * You may have to install the [homebrew](http://brew.sh/)    
@@ -390,8 +403,11 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 ```
 
 ------
-<div id='id-section5'/>
-### Page 5: 2017-01-17. Project idea: The impact of temperature variation on ant colonly level performance.     
+
+ <div id='id-section5'/> 
+
+### Page 5: 2017-01-17. Project idea: The impact of temperature variation on ant colonly level performance.       
+
 
 **Background**   
 Ant colonies experience temperature fluctuations throughout the day and season. In response to temperature variation, ants must be able to forage under cool and hot conditions. One way to achieve high performance in the face of temperature variation is for the colony to match individual level performance with shifting temperatures. For example, for colonies with diverse genetic structures, some genotypes may forage better under cool or hot conditions. Multiply mated queens (*Pogonomyrmex*) will produce offspring with more phenotypic variation in traits, compared to singly mated queens (*Aphaenogaster*).     
@@ -434,19 +450,26 @@ I should do a power analysis to see how many ants and colonies I'd need to sampl
 
 It is possible that we won't find anything at all. But maybe because we're pool-sequencing, we can pick up the microbiome? And maybe that is structured diurnally or throughout the season.    
 
-### Another idea: Compare parasite load between ant colonies with high and low number of fathers.  
+### Another idea: Compare parasite load between ant colonies with high and low number of fathers.    
+
 
 Quick and dirty: One of the benefits of a diverse genetic background in a colony is disease resistance. So, test this by pool-seq experiment and measuring the parasite loads for ~30 individuals, potentially across a whole phylogeny of ants that vary in number of daddys and number of queens. Parasite load from different taxanomic groups (fungus, nemotodes, bacteria, viruses) can be mapped onto the phylogeny!
 
 ------
-<div id='id-section6'/>
-### Page 6: 2017-01-17. Tutorial for making fancy documents(Cover letters) in latex and rendering into pdf!
+
+ <div id='id-section6'/> 
+
+### Page 6: 2017-01-17. Tutorial for making fancy documents(Cover letters) in latex and rendering into pdf!  
+
 
 I took this [cool template](https://www.sharelatex.com/templates/cover-letters/awesome-cv-cover-letter) for making a cover letter, which was in ".tex" format. Then converted the tex file into pdf using [this tutorial](http://economistry.com/2013/01/installing-and-using-latex-for-mac/), which involve installing mactex, sublime text 2, and skim. 
 
 ------
-<div id='id-section7'/>
-### Page 7: 2017-01-19. Making sense of reviewer comment; multiple stressors ms   
+
+ <div id='id-section7'/> 
+
+### Page 7: 2017-01-19. Making sense of reviewer comment; multiple stressors ms     
+
 
 **Is there any direct evidence that heat shock proteins prevent heat knockdown?**    
 
@@ -458,14 +481,18 @@ Calabria et al. 2012 find differences in basal hsp70 protein expression but not 
 2. O(3+4+8)/O(3+4+8)    
 3. O(st)/O(st): lower hsp70 basal expression and thermal tolerance under fast ramp;   
 
-### References:    
+### References:      
+
 
 1. Calabria G, Dolgova O, Rego C, et al (2012) Hsp70 protein levels and thermotolerance in Drosophila subobscura: a reassessment of the thermal co-adaptation hypothesis. Journal of Evolutionary Biology 25:691–700. doi: 10.1111/j.1420-9101.2012.02463.x
 
 
 ------
-<div id='id-section8'/>
-### Page 8: 2017-01-19. Notes from SICB    
+
+ <div id='id-section8'/> 
+
+### Page 8: 2017-01-19. Notes from SICB      
+
 
 **2017-01-05; Met with Joel Kingsolver**    
 
@@ -491,8 +518,11 @@ Went over data and Dan liked how Iparsed out all the predictions for the shifts 
 * When 1 finger moves the other finger but can move back = **tolerance**     
 
 ------
-<div id='id-section9'/>
-### Page 9: 2017-01-20. Status of projects
+
+ <div id='id-section9'/> 
+
+### Page 9: 2017-01-20. Status of projects  
+
 
 1. Project updates:    
     * **Hsp gene expression + Ctmax project:**
@@ -524,8 +554,11 @@ Went over data and Dan liked how Iparsed out all the predictions for the shifts 
 
 
 ------
-<div id='id-section10'/>
-### Page 10: 2017-01-26. Hoffmann et al. 2013, Functional Ecology Paper notes    
+
+ <div id='id-section10'/> 
+
+### Page 10: 2017-01-26. Hoffmann et al. 2013, Functional Ecology Paper notes      
+
 
 Starting off intro with constraints on upper thermal limits. 
 
@@ -553,8 +586,11 @@ Paper argues that mid-latitude species are most prone to heat stress (presently 
 
 
 ------
-<div id='id-section11'/>
-### Page 11: 2017-01-26. Notes on teaching statements   
+
+ <div id='id-section11'/> 
+
+### Page 11: 2017-01-26. Notes on teaching statements     
+
 
 This science [article](http://www.sciencemag.org/careers/2006/04/writing-teaching-statement) has interesting advice. The teaching statement is usually a writing filter to weed out applicants who have not thought stuff through. Illuminates the character of the writer. It should be 1-2 pages. 
 
@@ -583,10 +619,14 @@ A good quote:
 
 
 ------
-<div id='id-section12'/>
-### Page 12: 2017-01-26. SHC lab meeting, organizational    
 
-### Write down 3 concrete goals and timeline for the semester: 
+ <div id='id-section12'/> 
+
+### Page 12: 2017-01-26. SHC lab meeting, organizational      
+
+
+### Write down 3 concrete goals and timeline for the semester:   
+
 
 1. Publish the multiple stressors manuscript
    * deadline is Feb 12 to submit revisions
@@ -605,15 +645,19 @@ Benchmark goals
 
 3/3- Constant revisions on PNAS paper
 
-### Set schedule 
+### Set schedule   
+
 
 I have a biolunch talk (dissertation requirement talk) February 24th. Give practice talk February 10th. 
 
 Tentative: Thursdays 4-5PM
 
 ------
-<div id='id-section13'/>
-### Page 13: 2017-01-26. Bubliy & Loeschke 2005 paper notes
+
+ <div id='id-section13'/> 
+
+### Page 13: 2017-01-26. Bubliy & Loeschke 2005 paper notes  
+
 
 **Correlated response to selection for stress resistance.** 
 
@@ -654,8 +698,11 @@ Upper and lower thermal limits can equally respond to selection after X generati
 
 
 ------
-<div id='id-section14'/>
-### Page 14: 2017-01-26. Mitchell & Hoffmann 2010, Functional Ecology; Thermal ramping influences evolutionary potential
+
+ <div id='id-section14'/> 
+
+### Page 14: 2017-01-26. Mitchell & Hoffmann 2010, Functional Ecology; Thermal ramping influences evolutionary potential  
+
 
 In fruit flies, they measured upper thermal limits as knockdown time in a static and ramping experiment. They did this in  a quantitative genetic design, so they could estimate the narrow-sense heritability (partition out variation to the additive genetic component).  They also measured this for ~11 species.  (looks like a lot of work)
 
@@ -692,8 +739,11 @@ This paper contrasts a little bit with van Heraawarden & Sgrò paper, where they
 
 
 ------
-<div id='id-section15'/>
-### Page 15: 2017-01-27. Embedding calender into webpage
+
+ <div id='id-section15'/> 
+
+### Page 15: 2017-01-27. Embedding calender into webpage  
+
 
 [Followed this tutorial](http://denisecase.github.io/2015/07/10/add-calender-to-site/): 
 
@@ -707,15 +757,19 @@ This paper contrasts a little bit with van Heraawarden & Sgrò paper, where they
 
 
 
-### 2017-01-31 Update  
+### 2017-01-31 Update    
+
 
 Calendar doesn't show up on my iphone or ipad (safari), what is the point? Taking the calendar out. 
 
 
 
 ------
-<div id='id-section16'/>
-### Page 16: 2017-01-31. Sørensen et al. 2003; Ecology letters, The Evolutionary and ecological role of heat shock proteins
+
+ <div id='id-section16'/> 
+
+### Page 16: 2017-01-31. Sørensen et al. 2003; Ecology letters, The Evolutionary and ecological role of heat shock proteins  
+
 
 Trying to get a handle on how this paper frames the role of Hsps with upper thermal limits. From the abstract, they mention it as a resistance mechanism. 
 
@@ -779,14 +833,18 @@ This is a pretty old study. Looking up papers that cite it that look cool/intere
 
 
 
-### Overall thoughts:
+### Overall thoughts:  
+
 
 Not very informative in terms of what Hsps are actually doing and how they relate to upper thermal limits. What is the difference between protection and resistance? Tolerance? Some consistent wording would be nice. The paper focused too much on costs and benefits rather than adaptive variation. This is nice to know but what aspect of the thermal ecology do Hsps relate to? I would have hoped there would be a better discussion fo basal vs induced hsps. 
 
 ------
 
-<div id='id-section17'/>
-### Page 17: 2017-01-31. List of Adaptive Variation in Hsps lit table
+
+ <div id='id-section17'/> 
+
+### Page 17: 2017-01-31. List of Adaptive Variation in Hsps lit table  
+
 
 
 | Author           | Year | Journal                                  | Taxa                     | Life.Stage    | Hsp                | Expression.type | Comparison    | Basal.warm.vs.cold.adapted.    | Induction..warm.vs.cold.adapted.       | Trade.off.between.basal.induc | HS_assay     | notes                                    |
@@ -839,8 +897,11 @@ Not very informative in terms of what Hsps are actually doing and how they relat
 | Nguyen           | 2016 | BMC Evo Bio                              | ants                     | adults        | hsp40              | gene            | interspecific | lower                          | higher                                 | No                            | static       |                                          |
 
 ------
-<div id='id-section18'/>
-### Page 18: 2017-01-31. Status of projects: writing
+
+ <div id='id-section18'/> 
+
+### Page 18: 2017-01-31. Status of projects: writing  
+
 
 1. Project updates:    
    - **Hsp gene expression + Ctmax project:**
@@ -874,8 +935,11 @@ Not very informative in terms of what Hsps are actually doing and how they relat
 
 
 ------
-<div id='id-section19'/>
-### Page 19: 2017-01-31. SHC lab meeting reading: Ranga et al. 2017; Evol Ecol: Sibling Drosophila species (Drosophila leontia and Drosophila kikkawai) show divergence for thermotolerance along a latitudinal gradient
+
+ <div id='id-section19'/> 
+
+### Page 19: 2017-01-31. SHC lab meeting reading: Ranga et al. 2017; Evol Ecol: Sibling Drosophila species (Drosophila leontia and Drosophila kikkawai) show divergence for thermotolerance along a latitudinal gradient  
+
 
 This study compares the different aspects of lower and upper thermal limits between two closely related species (*Drosophila*) in India across a wide climate gradient (8 -32 degrees north): 
 
@@ -1001,8 +1065,11 @@ aov(Thermal trait~ Latitude * Species)
 
 
 
-<div id='id-section20'/>
-### Page 20: 2017-02-02. SHC lab meeting: reading Ranga et al. 2017; lab discussion
+
+ <div id='id-section20'/> 
+
+### Page 20: 2017-02-02. SHC lab meeting: reading Ranga et al. 2017; lab discussion  
+
 
 
 
@@ -1056,8 +1123,11 @@ B --> E(Isofemale line 3)
 
 
 ------
-<div id='id-section21'/>
-### Page 21: 2017-02-03. Todgham et al. 2017; JEB, The effect of temperature adaptation on the ubiquitin-proteasome pathway in notothenioid fishes
+
+ <div id='id-section21'/> 
+
+### Page 21: 2017-02-03. Todgham et al. 2017; JEB, The effect of temperature adaptation on the ubiquitin-proteasome pathway in notothenioid fishes  
+
 
 Ref: Todgham AE, Crombie TA, Hofmann GE. 2016. The effect of temperature adaptation on the ubiquitin-proteasome pathway in notothenioid fishes. The Journal of Experimental Biology:jeb.145946.
 
@@ -1065,7 +1135,9 @@ Ref: Todgham AE, Crombie TA, Hofmann GE. 2016. The effect of temperature adaptat
 
 **Background**
 
-Ubiquitin tags proteins for degradation through the proteasome(protein chomper). In the face of heat stress, different species can adaptively modulate this pathway to cope with the deleterious effects of protein damage. <u>Antarctic species live in -1.9C while new zealand species live in 10C .</u>
+Ubiquitin tags proteins for degradation through the proteasome(protein chomper). In the face of heat stress, different species can adaptively modulate this pathway to cope with the deleterious effects of protein damage. 
+ <u>Antarctic species live in -1.9C while new zealand species live in 10C .</u> 
+
 
 
 
@@ -1147,8 +1219,11 @@ Cool method to test for proteasome activity: (Coux et al., 1996)
 3.  peptidylglutamylpeptide hydrolyzing activities, which cleaves after acidic residues .
 
 ------
-<div id='id-section22'/>
-### Page 22: 2017-02-06. **Tomanek & Somero 2002**; JEB Paper notes
+
+ <div id='id-section22'/> 
+
+### Page 22: 2017-02-06. **Tomanek & Somero 2002**; JEB Paper notes  
+
 
 Reference:   
 
@@ -1192,9 +1267,12 @@ Figures are uninterpretable.
 
 
 
-<div id='id-section23'/>
 
-### Page 23: 2017-02-06. Tomanek 2010; JEB
+ <div id='id-section23'/> 
+
+
+### Page 23: 2017-02-06. Tomanek 2010; JEB  
+
 
 Reference:
 
@@ -1232,10 +1310,15 @@ Some species lack HSR:
 **Argues that the variation in the thermal reaction norms of Hsp expression is related to the temperature variation different taxanomic groups experience.**
 
 ------
-<div id='id-section24'/>
-### Page 24: 2017-02-06. **Parcel & Lindquist 1994;** cold spring harbor , paper notes 
 
-<u>Title: Heat Shock proteins and stress tolerance</u>
+ <div id='id-section24'/> 
+
+### Page 24: 2017-02-06. **Parcel & Lindquist 1994;** cold spring harbor , paper notes   
+
+
+
+ <u>Title: Heat Shock proteins and stress tolerance</u> 
+
 
 * ​
 * Protection (resistance) and tolerance are assumed to be the same (conflated). 
@@ -1280,8 +1363,11 @@ Where is hsp70 localized during HS?
 
 
 ------
-<div id='id-section25'/>
-### Page 25: 2017-02-07. How far down do Aphaenogaster colonies go in the winter?
+
+ <div id='id-section25'/> 
+
+### Page 25: 2017-02-07. How far down do Aphaenogaster colonies go in the winter?  
+
 
 Lubertazzi 2012 has the answer. 
 
@@ -1307,8 +1393,11 @@ reference:
 Lubertazzi D. 2012. The Biology and Natural History of *Aphaenogaster rudis*. Psyche: A Journal of Entomology [Internet] 2012. Available from: http://www.hindawi.com/journals/psyche/2012/752815/abs
 
 ------
-<div id='id-section26'/>
-### Page 26: 2017-02-07. A definition of a trade-off.
+
+ <div id='id-section26'/> 
+
+### Page 26: 2017-02-07. A definition of a trade-off.  
+
 
 Reading Saltz et al. 2017, Trait Correlations in the Genomics Era; published in *TREE*
 
@@ -1368,8 +1457,11 @@ reference
 
 
 ------
-<div id='id-section27'/>
-### Page 27: 2017-02-09. SHC lab meeting: Practice talk for biolunch and dissertation defense
+
+ <div id='id-section27'/> 
+
+### Page 27: 2017-02-09. SHC lab meeting: Practice talk for biolunch and dissertation defense  
+
 
 
 
@@ -1551,7 +1643,8 @@ V --> T[Tolerate]
 
 
 
-### 2017-02-15: Alternative way of displaying to get at passive vs active for tolerance
+### 2017-02-15: Alternative way of displaying to get at passive vs active for tolerance  
+
 
 
 
@@ -1576,8 +1669,11 @@ H --passive--> T
 
 
 ------
-<div id='id-section28'/>
-### Page 28: 2017-02-14. Status of projects + PHD Progress
+
+ <div id='id-section28'/> 
+
+### Page 28: 2017-02-14. Status of projects + PHD Progress  
+
 
 Updated again: 2017-02-16
 
@@ -1614,8 +1710,11 @@ Updated again: 2017-02-16
      5. Final thesis April 7th.  
 
 ------
-<div id='id-section29'/>
-### Page 29: 2017-02-15. Aphaenogaster, Hsp rxn norm paper stats revisited: 
+
+ <div id='id-section29'/> 
+
+### Page 29: 2017-02-15. Aphaenogaster, Hsp rxn norm paper stats revisited:   
+
 
 From previous analysis, I've found that there is a main effect of Tmax and Habitat type on CTmax in Aphaenogaster. 
 
@@ -1714,7 +1813,8 @@ deciduous forest       flat woods
 
 
 
-### For pca of hsp parameters:
+### For pca of hsp parameters:  
+
 
 ```R
 > pchsp$sdev
@@ -1765,25 +1865,37 @@ loaded via a namespace (and not attached):
 
 
 ------
-<div id='id-section30'/>
-### Page 30: 2017-02-20. prep for committee meeting 2017-02-24, 2:00PM   
 
-### Layout and progress of my chapters
+ <div id='id-section30'/> 
 
-* <u>Abstract:</u> (3/4 page)
+### Page 30: 2017-02-20. prep for committee meeting 2017-02-24, 2:00PM     
 
 
+### Layout and progress of my chapters  
 
 
-* <u>CH1:  Introduction</u> (3-6 pages)
+* 
+ <u>Abstract:</u> 
+ (3/4 page)
+
+
+
+
+* 
+ <u>CH1:  Introduction</u> 
+ (3-6 pages)
 
   ​
 
-* <u>CH2: The evolution of heat shock protein sequences, cis-regulatory elements, and expression profiles in the eusocial Hymenoptera</u> (==published BMC Evolutionary Biology==)
+* 
+ <u>CH2: The evolution of heat shock protein sequences, cis-regulatory elements, and expression profiles in the eusocial Hymenoptera</u> 
+ (==published BMC Evolutionary Biology==)
 
   ​
 
-* <u>Ch3: Molecular adaptations of protection and tolerance predict upper thermal limits in eastern forest ants</u> (==aiming to submit to PNAS==)
+* 
+ <u>Ch3: Molecular adaptations of protection and tolerance predict upper thermal limits in eastern forest ants</u> 
+ (==aiming to submit to PNAS==)
 
   * writing in pnas format but will need to reformat for thesis layout?
 
@@ -1791,17 +1903,22 @@ loaded via a namespace (and not attached):
 
 
 
-* <u>CH4: Effects of desiccation and starvation on thermal tolerance and the heat shock response in forest ants</u> (==In 2nd round of reviews, Journal of Comparative Physiology B==)
+* 
+ <u>CH4: Effects of desiccation and starvation on thermal tolerance and the heat shock response in forest ants</u> 
+ (==In 2nd round of reviews, Journal of Comparative Physiology B==)
 
 
 
 
 
-* <u>CH5: Conclusions and future directions</u> (3 pages)
+* 
+ <u>CH5: Conclusions and future directions</u> 
+ (3 pages)
 
 
 
-### Timeline for completing my dissertation this term.  
+### Timeline for completing my dissertation this term.    
+
 
 Important dates: 
 
@@ -1809,11 +1926,13 @@ Important dates:
   * Send out abstract and notification of oral defense 3 weeks prior
 * ==Thesis due April 7th.==
 
-### Set a date for my oral defense. Please bring your calendars.
+### Set a date for my oral defense. Please bring your calendars.  
 
 
 
-### Future post doc plans
+
+### Future post doc plans  
+
 
 ```mermaid
 graph TD
@@ -1831,8 +1950,11 @@ N --> P[Start post doc June 1st 2017]
 
 
 ------
-<div id='id-section31'/>
-### Page 31: 2017-02-21. Measuring evolutionary rates in darwins and haldanes  
+
+ <div id='id-section31'/> 
+
+### Page 31: 2017-02-21. Measuring evolutionary rates in darwins and haldanes    
+
 
 I thought this was [cool](http://www.biology.ualberta.ca/courses.hp/biol606/OldLecs/rateunits.html):
 
@@ -1861,8 +1983,11 @@ $$rate(h) = \frac{\frac{lnx_2}{Sln_x}-\frac{lnx_1}{Slnx}}{t_2 - t_1}$$
 
 
 ------
-<div id='id-section32'/>
-### Page 32: 2017-02-22. Resistance vs Tolerance strategies to stress; paper notes-**Núñez-Farfán et al. 2007**; The Evolution of Resistance and Tolerance to Herbivores; Annu. Rev. Ecol. Evol. Syst.
+
+ <div id='id-section32'/> 
+
+### Page 32: 2017-02-22. Resistance vs Tolerance strategies to stress; paper notes-**Núñez-Farfán et al. 2007**; The Evolution of Resistance and Tolerance to Herbivores; Annu. Rev. Ecol. Evol. Syst.  
+
 
 I want to get a sense of how the herbivore-plant literature uses certain words for responding to stress and potentially adopt that framework in temperature stress. 
 
@@ -1885,9 +2010,13 @@ ref:   Fineblum WL, Rausher MD (1995) Tradeoff between resistance and tolerance 
 
 **A diff expalantion of tolerance and resistance by Mauricio et al. 1997:**
 
-<u>Resistance:</u> Traits that reduce the amount of damage a plant experienced. 
 
-<u>Tolerance:</u> Ability of plant to sustain a fixed amount of herbivore damage without reduction in fitness.
+ <u>Resistance:</u> 
+ Traits that reduce the amount of damage a plant experienced. 
+
+
+ <u>Tolerance:</u> 
+ Ability of plant to sustain a fixed amount of herbivore damage without reduction in fitness.
 
 A gem in this paper for the definition of a trade off:
 
@@ -1922,7 +2051,8 @@ I think there are two distinct parts of stress:
 
 But there is a continuum right? Especially for temperature. 
 
-### How would I define resistance or tolerance in terms of thermal stress biology? Or more generally?  
+### How would I define resistance or tolerance in terms of thermal stress biology? Or more generally?    
+
 
 Resistance is a response (either induced or already present) that impedes disruption of a complex trait/biological system from a perturbation. 
 
@@ -1962,7 +2092,8 @@ Not sure this works.
 
 
 
-### Update: 2017-03-09
+### Update: 2017-03-09  
+
 
 
 
@@ -1979,8 +2110,11 @@ ref:   Agrawal AA, Conner JK, Stinchcombe JR (2004) Evolution of plant resistanc
 
 
 ------
-<div id='id-section33'/>
-### Page 33: 2017-02-23. Multiple regression models testing effect of Hsp parameters on Ctmax
+
+ <div id='id-section33'/> 
+
+### Page 33: 2017-02-23. Multiple regression models testing effect of Hsp parameters on Ctmax  
+
 
 Doing a multiple regression as requested by SHC.
 
@@ -2124,7 +2258,8 @@ F-statistic: 12.61 on 6 and 34 DF,  p-value: 1.926e-07
 
 
 
-### Model averaging with mumin package
+### Model averaging with mumin package  
+
 
 ```R
 selmod<-dredge(regmod)
@@ -2236,7 +2371,8 @@ N containing models:    1               1
 
 
 
-### Correlation between predictors: 
+### Correlation between predictors:   
+
 
 ```R
 knitr::kable(round(cor(data.frame(jj[,6:14],basalxp)),3))
@@ -2259,7 +2395,8 @@ knitr::kable(round(cor(data.frame(jj[,6:14],basalxp)),3))
 
 
 
-### Another set of analyses: 
+### Another set of analyses:   
+
 
 > Also, can you test the relationship between the PCs and CTmax without the open habitat species?  This is to see if the same axis of variation also underlies CTmax variation without the big jump associated with the habitat shift.
 
@@ -2293,7 +2430,8 @@ F-statistic: 7.929 on 1 and 30 DF,  p-value: 0.008515
 
 
 
-### Rational for determining how many PCs to include in analysis
+### Rational for determining how many PCs to include in analysis  
+
 
 Found a source [here](http://strata.uga.edu/8370/lecturenotes/principalComponents.html):
 
@@ -2302,8 +2440,11 @@ Found a source [here](http://strata.uga.edu/8370/lecturenotes/principalComponent
 
 
 ------
-<div id='id-section34'/>
-### Page 34: 2017-02-23. SHC lab meeting: Going over hxp rxn norm paper. 
+
+ <div id='id-section34'/> 
+
+### Page 34: 2017-02-23. SHC lab meeting: Going over hxp rxn norm paper.   
+
 
 Announcements
 
@@ -2335,8 +2476,11 @@ Methods
 
 
 ------
-<div id='id-section35'/>
-### Page 35: 2017-02-23. What are Evolutionary Innovations? 
+
+ <div id='id-section35'/> 
+
+### Page 35: 2017-02-23. What are Evolutionary Innovations?   
+
 
 
 
@@ -2409,12 +2553,16 @@ Evolutionary Innovations:
 
 
 ------
-<div id='id-section36'/>
-### Page 36: 2017-02-24. Last biolunch and committee meeting notes.
+
+ <div id='id-section36'/> 
+
+### Page 36: 2017-02-24. Last biolunch and committee meeting notes.  
 
 
 
-### Last biolunch
+
+### Last biolunch  
+
 
 Nate:
 
@@ -2493,8 +2641,11 @@ Committee meeting:
 
 
 ------
-<div id='id-section37'/>
-### Page 37: 2017-02-27. MapPies in R for Zamira
+
+ <div id='id-section37'/> 
+
+### Page 37: 2017-02-27. MapPies in R for Zamira  
+
 
 
 
@@ -2640,8 +2791,11 @@ mapPies(widepar,nameX="lon",nameY="lat",nameZs=c("picea","fulva","rudis","florid
 
 
 ------
-<div id='id-section38'/>
-### Page 38: 2017-02-28. Questions to think about from SHC
+
+ <div id='id-section38'/> 
+
+### Page 38: 2017-02-28. Questions to think about from SHC  
+
 
 In regards to a new paper in JEB finding that cataglyphis ants have higher constitutive protection than induced response. 
 
@@ -2674,8 +2828,11 @@ SHC:
 
 
 ------
-<div id='id-section39'/>
-### Page 39: 2017-02-28. More analyses for hsp rxn norm paper
+
+ <div id='id-section39'/> 
+
+### Page 39: 2017-02-28. More analyses for hsp rxn norm paper  
+
 
 
 
@@ -2721,7 +2878,8 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 
 
 
-### OK, let's see the pairwise comparisons:
+### OK, let's see the pairwise comparisons:  
+
 
 ```R
 TukeyHSD(aov(KO_temp_worker~rad_seq_species,data=Aph.dat))
@@ -2766,7 +2924,8 @@ tennesseensis-fulva       -0.26222222 -2.2140349  1.68959042 0.9998923
 
 
 
-### Figures:
+### Figures:  
+
 
 Points and linear model fits are colored by species
 
@@ -2854,9 +3013,12 @@ Results: We find a significnat effect of habitat type and Tmax is marginally sig
 
 
 ------
-<div id='id-section40'/>
 
-### Page 40: 2017-03-04. Visit at UF; feedback on dissertation talk.    
+ <div id='id-section40'/> 
+
+
+### Page 40: 2017-03-04. Visit at UF; feedback on dissertation talk.      
+
 
 Reflecting on visit at UF. 
 
@@ -2890,7 +3052,8 @@ Baer: mutation accumulation in C. elegans. Has done some networks on metabolites
 
 
 
-### Getting tree canopy cover data
+### Getting tree canopy cover data  
+
 
 NLCD 2011 Percent Tree Canopy (Cartographic) [data download](https://catalog.data.gov/dataset/nlcd-2011-percent-tree-canopy-cartographic)
 
@@ -2960,8 +3123,11 @@ b$tree_canopy_20<-unlist(lapply(Landcover, `[[`, 1))
 
 
 ------
-<div id='id-section41'/>
-### Page 41: 2017-03-07. To do.
+
+ <div id='id-section41'/> 
+
+### Page 41: 2017-03-07. To do.  
+
 
 
 
@@ -3005,9 +3171,12 @@ Questions to ask and things to go over with Sean for thesis format check.
 ------
 
 
-<div id='id-section42'/>
 
-### Page 42: 2017-03-09. General reading notes:     
+ <div id='id-section42'/> 
+
+
+### Page 42: 2017-03-09. General reading notes:       
+
 
 
 
@@ -3080,9 +3249,12 @@ K+ more concentrated inside cells.
 ------
 
 
-<div id='id-section43'/>
 
-### Page 43: 2017-03-09. Dissertation format check with Sean M.    
+ <div id='id-section43'/> 
+
+
+### Page 43: 2017-03-09. Dissertation format check with Sean M.      
+
 
 
 
@@ -3099,9 +3271,12 @@ K+ more concentrated inside cells.
 ------
 
 
-<div id='id-section44'/>
 
-### Page 44: 2017-03-09. SHC Lab agenda.     
+ <div id='id-section44'/> 
+
+
+### Page 44: 2017-03-09. SHC Lab agenda.       
+
 
 
 
@@ -3128,9 +3303,12 @@ K+ more concentrated inside cells.
 ------
 
 
-<div id='id-section45'/>
 
-### Page 45: 2017-03-10. General phylogenetics workflow    
+ <div id='id-section45'/> 
+
+
+### Page 45: 2017-03-10. General phylogenetics workflow      
+
 
 
 
@@ -3159,9 +3337,12 @@ H --> B{Ultrametricized Phylogeny}
 ------
 
 
-<div id='id-section46'/>
 
-### Page 46: 2017-03-13: Meeting with SHC for dissertation timeline.    
+ <div id='id-section46'/> 
+
+
+### Page 46: 2017-03-13: Meeting with SHC for dissertation timeline.      
+
 
 
 
@@ -3173,7 +3354,9 @@ Make sure committe members ar ok with me sending stuff out a week out of defene 
 
 I should send out my thesis 2 weeks ahead of time. Send out March 15th? 17th? 20th? 
 
-<u>Layout:</u>
+
+ <u>Layout:</u> 
+
 
 * Abstract: (3/4 page)
   * SHC needs to read
@@ -3231,9 +3414,12 @@ My own notes:
 ------
 
 
-<div id='id-section47'/>
 
-### Page 47: 2017-03-13. SHC analysis suggestion hsp rxn norm paper    
+ <div id='id-section47'/> 
+
+
+### Page 47: 2017-03-13. SHC analysis suggestion hsp rxn norm paper      
+
 
 
 
@@ -3332,7 +3518,8 @@ pc1 -0.385
 
 
 
-### **Second part of email:** Ok I need to show from the original dataset, the difference in pc1 between forest types:
+### **Second part of email:** Ok I need to show from the original dataset, the difference in pc1 between forest types:  
+
 
 ```R
 ggplot(jj3,aes(x=habitat_v2,y=pc1,fill=habitat_v2))+T+geom_boxplot()+xlab("Forest Type")+ylab("PC1")+scale_fill_manual(name = "", values = c("royalblue3","red"))
@@ -3519,9 +3706,12 @@ This paragrpah doesn't make that much sense but it has good citations:
 ------
 
 
-<div id='id-section48'/>
 
-### Page 48: 2017-03-14. Reading notes- Armstrong et al. 2011; hsp70 and neurophysiology      
+ <div id='id-section48'/> 
+
+
+### Page 48: 2017-03-14. Reading notes- Armstrong et al. 2011; hsp70 and neurophysiology        
+
 
 
 
@@ -3552,9 +3742,12 @@ reference:
 ------
 
 
-<div id='id-section49'/>
 
-### Page 49: 2017-02-16. Writing notes      
+ <div id='id-section49'/> 
+
+
+### Page 49: 2017-02-16. Writing notes        
+
 
 
 
@@ -3575,7 +3768,9 @@ I couldn't fix it so I took it out, but it has good ideas and refs.
 
 
 
-<u>Interesting paper that compares the metabolome under different stressors:</u> 
+
+ <u>Interesting paper that compares the metabolome under different stressors:</u> 
+ 
 
 ref:   Robert Michaud M, Benoit JB, Lopez-Martinez G *et al.* (2008) Metabolomics reveals unique and shared metabolic changes in response to heat shock, freezing and desiccation in the Antarctic midge, Belgica antarctica. *Journal of Insect Physiology*, **54**, 645–655.
 
@@ -3585,7 +3780,9 @@ They measured the metabolome of antarctic midge under desiccation, heat shock, c
 
 
 
-<u>last paragraph of dissertation conclusion:</u> 
+
+ <u>last paragraph of dissertation conclusion:</u> 
+ 
 
 oberg or pelini paper on ctmax and water weight figure suggests that there is a trade off in 1 subfamily but not another.
 
@@ -3600,9 +3797,12 @@ also need to understand how the environment influences thermal experiences
 ------
 
 
-<div id='id-section50'/>
 
-### Page 50: 2017-03-17. Writing notes
+ <div id='id-section50'/> 
+
+
+### Page 50: 2017-03-17. Writing notes  
+
 
 
 
@@ -3675,9 +3875,12 @@ Taking out a part, has good ideas, but poorly organized:
 ------
 
 
-<div id='id-section51'/>
 
-### Page 51: 2017-03-20. Writing notes.    
+ <div id='id-section51'/> 
+
+
+### Page 51: 2017-03-20. Writing notes.      
+
 
 Some more writing notes: basically stuff I'm taking out of my discussion. 
 
@@ -3691,9 +3894,12 @@ Some more writing notes: basically stuff I'm taking out of my discussion.
 
 
 
-<div id='id-section52'/>
 
-### Page 52: 2017-03-21. Writing notes     
+ <div id='id-section52'/> 
+
+
+### Page 52: 2017-03-21. Writing notes       
+
 
 The part that the reviewer wanted me to take out in my discussion because it was too fruit fly focused in my first paper (Nguyen et al. 2016; *BMC Evo Biol*)
 
@@ -3772,452 +3978,896 @@ in response to this sentence:
 ------
 
 
-<div id='id-section53'/>
 
-### Page 53:
-
+ <div id='id-section53'/> 
 
 
-------
-<div id='id-section54'/>
-### Page 54:
-------
-<div id='id-section55'/>
-### Page 55:
-------
-<div id='id-section56'/>
-### Page 56:
-------
-<div id='id-section57'/>
-### Page 57:
-------
-<div id='id-section58'/>
-### Page 58:
-------
-<div id='id-section59'/>
-### Page 59:
-------
-<div id='id-section60'/>
-### Page 60:
-------
-<div id='id-section61'/>
-### Page 61:
-------
-<div id='id-section62'/>
-### Page 62:
-------
-<div id='id-section63'/>
-### Page 63:
-------
-<div id='id-section64'/>
-### Page 64:
-------
-<div id='id-section65'/>
-### Page 65:
-------
-<div id='id-section66'/>
-### Page 66:
-------
-<div id='id-section67'/>
-### Page 67:
-------
-<div id='id-section68'/>
-### Page 68:
-------
-<div id='id-section69'/>
-### Page 69:
-------
-<div id='id-section70'/>
-### Page 70:
-------
-<div id='id-section71'/>
-### Page 71:
-------
-<div id='id-section72'/>
-### Page 72:
-------
-<div id='id-section73'/>
-### Page 73:
-------
-<div id='id-section74'/>
-### Page 74:
-------
-<div id='id-section75'/>
-### Page 75:
-------
-<div id='id-section76'/>
-### Page 76:
-------
-<div id='id-section77'/>
-### Page 77:
-------
-<div id='id-section78'/>
-### Page 78:
-------
-<div id='id-section79'/>
-### Page 79:
-------
-<div id='id-section80'/>
-### Page 80:
-------
-<div id='id-section81'/>
-### Page 81:
-------
-<div id='id-section82'/>
-### Page 82:
-------
-<div id='id-section83'/>
-### Page 83:
-------
-<div id='id-section84'/>
-### Page 84:
-------
-<div id='id-section85'/>
-### Page 85:
-------
-<div id='id-section86'/>
-### Page 86:
-------
-<div id='id-section87'/>
-### Page 87:
-------
-<div id='id-section88'/>
-### Page 88:
-------
-<div id='id-section89'/>
-### Page 89:
-------
-<div id='id-section90'/>
-### Page 90:
-------
-<div id='id-section91'/>
-### Page 91:
-------
-<div id='id-section92'/>
-### Page 92:
-------
-<div id='id-section93'/>
-### Page 93:
-------
-<div id='id-section94'/>
-### Page 94:
-------
-<div id='id-section95'/>
-### Page 95:
-------
-<div id='id-section96'/>
-### Page 96:
-------
-<div id='id-section97'/>
-### Page 97:
-------
-<div id='id-section98'/>
-### Page 98:
-------
-<div id='id-section99'/>
-### Page 99:
-------
-<div id='id-section100'/>
-### Page 100:
-------
-<div id='id-section101'/>
-### Page 101:
-------
-<div id='id-section102'/>
-### Page 102:
-------
-<div id='id-section103'/>
-### Page 103:
-------
-<div id='id-section104'/>
-### Page 104:
-------
-<div id='id-section105'/>
-### Page 105:
-------
-<div id='id-section106'/>
-### Page 106:
-------
-<div id='id-section107'/>
-### Page 107:
-------
-<div id='id-section108'/>
-### Page 108:
-------
-<div id='id-section109'/>
-### Page 109:
-------
-<div id='id-section110'/>
-### Page 110:
-------
-<div id='id-section111'/>
-### Page 111:
-------
-<div id='id-section112'/>
-### Page 112:
-------
-<div id='id-section113'/>
-### Page 113:
-------
-<div id='id-section114'/>
-### Page 114:
-------
-<div id='id-section115'/>
-### Page 115:
-------
-<div id='id-section116'/>
-### Page 116:
-------
-<div id='id-section117'/>
-### Page 117:
-------
-<div id='id-section118'/>
-### Page 118:
-------
-<div id='id-section119'/>
-### Page 119:
-------
-<div id='id-section120'/>
-### Page 120:
-------
-<div id='id-section121'/>
-### Page 121:
-------
-<div id='id-section122'/>
-### Page 122:
-------
-<div id='id-section123'/>
-### Page 123:
-------
-<div id='id-section124'/>
-### Page 124:
-------
-<div id='id-section125'/>
-### Page 125:
-------
-<div id='id-section126'/>
-### Page 126:
-------
-<div id='id-section127'/>
-### Page 127:
-------
-<div id='id-section128'/>
-### Page 128:
-------
-<div id='id-section129'/>
-### Page 129:
-------
-<div id='id-section130'/>
-### Page 130:
-------
-<div id='id-section131'/>
-### Page 131:
-------
-<div id='id-section132'/>
-### Page 132:
-------
-<div id='id-section133'/>
-### Page 133:
-------
-<div id='id-section134'/>
-### Page 134:
-------
-<div id='id-section135'/>
-### Page 135:
-------
-<div id='id-section136'/>
-### Page 136:
-------
-<div id='id-section137'/>
-### Page 137:
-------
-<div id='id-section138'/>
-### Page 138:
-------
-<div id='id-section139'/>
-### Page 139:
-------
-<div id='id-section140'/>
-### Page 140:
-------
-<div id='id-section141'/>
-### Page 141:
-------
-<div id='id-section142'/>
-### Page 142:
-------
-<div id='id-section143'/>
-### Page 143:
-------
-<div id='id-section144'/>
-### Page 144:
-------
-<div id='id-section145'/>
-### Page 145:
-------
-<div id='id-section146'/>
-### Page 146:
-------
-<div id='id-section147'/>
-### Page 147:
-------
-<div id='id-section148'/>
-### Page 148:
-------
-<div id='id-section149'/>
-### Page 149:
-------
-<div id='id-section150'/>
-### Page 150:
-------
-<div id='id-section151'/>
-### Page 151:
-------
-<div id='id-section152'/>
-### Page 152:
-------
-<div id='id-section153'/>
-### Page 153:
-------
-<div id='id-section154'/>
-### Page 154:
-------
-<div id='id-section155'/>
-### Page 155:
-------
-<div id='id-section156'/>
-### Page 156:
-------
-<div id='id-section157'/>
-### Page 157:
-------
-<div id='id-section158'/>
-### Page 158:
-------
-<div id='id-section159'/>
-### Page 159:
-------
-<div id='id-section160'/>
-### Page 160:
-------
-<div id='id-section161'/>
-### Page 161:
-------
-<div id='id-section162'/>
-### Page 162:
-------
-<div id='id-section163'/>
-### Page 163:
-------
-<div id='id-section164'/>
-### Page 164:
-------
-<div id='id-section165'/>
-### Page 165:
-------
-<div id='id-section166'/>
-### Page 166:
-------
-<div id='id-section167'/>
-### Page 167:
-------
-<div id='id-section168'/>
-### Page 168:
-------
-<div id='id-section169'/>
-### Page 169:
-------
-<div id='id-section170'/>
-### Page 170:
-------
-<div id='id-section171'/>
-### Page 171:
-------
-<div id='id-section172'/>
-### Page 172:
-------
-<div id='id-section173'/>
-### Page 173:
-------
-<div id='id-section174'/>
-### Page 174:
-------
-<div id='id-section175'/>
-### Page 175:
-------
-<div id='id-section176'/>
-### Page 176:
-------
-<div id='id-section177'/>
-### Page 177:
-------
-<div id='id-section178'/>
-### Page 178:
-------
-<div id='id-section179'/>
-### Page 179:
-------
-<div id='id-section180'/>
-### Page 180:
-------
-<div id='id-section181'/>
-### Page 181:
-------
-<div id='id-section182'/>
-### Page 182:
-------
-<div id='id-section183'/>
-### Page 183:
-------
-<div id='id-section184'/>
-### Page 184:
-------
-<div id='id-section185'/>
-### Page 185:
-------
-<div id='id-section186'/>
-### Page 186:
-------
-<div id='id-section187'/>
-### Page 187:
-------
-<div id='id-section188'/>
-### Page 188:
-------
-<div id='id-section189'/>
-### Page 189:
-------
-<div id='id-section190'/>
-### Page 190:
-------
-<div id='id-section191'/>
-### Page 191:
-------
-<div id='id-section192'/>
-### Page 192:
-------
-<div id='id-section193'/>
-### Page 193:
-------
-<div id='id-section194'/>
-### Page 194:
-------
-<div id='id-section195'/>
-### Page 195:
-------
-<div id='id-section196'/>
-### Page 196:
-------
-<div id='id-section197'/>
-### Page 197:
-------
-<div id='id-section198'/>
-### Page 198:
-------
-<div id='id-section199'/>
-### Page 199:
-------
-<div id='id-section200'/>
-### Page 200:
+### Page 53:  
+
+
+
+
+------
+
+ <div id='id-section54'/> 
+
+### Page 54:  
+
+------
+
+ <div id='id-section55'/> 
+
+### Page 55:  
+
+------
+
+ <div id='id-section56'/> 
+
+### Page 56:  
+
+------
+
+ <div id='id-section57'/> 
+
+### Page 57:  
+
+------
+
+ <div id='id-section58'/> 
+
+### Page 58:  
+
+------
+
+ <div id='id-section59'/> 
+
+### Page 59:  
+
+------
+
+ <div id='id-section60'/> 
+
+### Page 60:  
+
+------
+
+ <div id='id-section61'/> 
+
+### Page 61:  
+
+------
+
+ <div id='id-section62'/> 
+
+### Page 62:  
+
+------
+
+ <div id='id-section63'/> 
+
+### Page 63:  
+
+------
+
+ <div id='id-section64'/> 
+
+### Page 64:  
+
+------
+
+ <div id='id-section65'/> 
+
+### Page 65:  
+
+------
+
+ <div id='id-section66'/> 
+
+### Page 66:  
+
+------
+
+ <div id='id-section67'/> 
+
+### Page 67:  
+
+------
+
+ <div id='id-section68'/> 
+
+### Page 68:  
+
+------
+
+ <div id='id-section69'/> 
+
+### Page 69:  
+
+------
+
+ <div id='id-section70'/> 
+
+### Page 70:  
+
+------
+
+ <div id='id-section71'/> 
+
+### Page 71:  
+
+------
+
+ <div id='id-section72'/> 
+
+### Page 72:  
+
+------
+
+ <div id='id-section73'/> 
+
+### Page 73:  
+
+------
+
+ <div id='id-section74'/> 
+
+### Page 74:  
+
+------
+
+ <div id='id-section75'/> 
+
+### Page 75:  
+
+------
+
+ <div id='id-section76'/> 
+
+### Page 76:  
+
+------
+
+ <div id='id-section77'/> 
+
+### Page 77:  
+
+------
+
+ <div id='id-section78'/> 
+
+### Page 78:  
+
+------
+
+ <div id='id-section79'/> 
+
+### Page 79:  
+
+------
+
+ <div id='id-section80'/> 
+
+### Page 80:  
+
+------
+
+ <div id='id-section81'/> 
+
+### Page 81:  
+
+------
+
+ <div id='id-section82'/> 
+
+### Page 82:  
+
+------
+
+ <div id='id-section83'/> 
+
+### Page 83:  
+
+------
+
+ <div id='id-section84'/> 
+
+### Page 84:  
+
+------
+
+ <div id='id-section85'/> 
+
+### Page 85:  
+
+------
+
+ <div id='id-section86'/> 
+
+### Page 86:  
+
+------
+
+ <div id='id-section87'/> 
+
+### Page 87:  
+
+------
+
+ <div id='id-section88'/> 
+
+### Page 88:  
+
+------
+
+ <div id='id-section89'/> 
+
+### Page 89:  
+
+------
+
+ <div id='id-section90'/> 
+
+### Page 90:  
+
+------
+
+ <div id='id-section91'/> 
+
+### Page 91:  
+
+------
+
+ <div id='id-section92'/> 
+
+### Page 92:  
+
+------
+
+ <div id='id-section93'/> 
+
+### Page 93:  
+
+------
+
+ <div id='id-section94'/> 
+
+### Page 94:  
+
+------
+
+ <div id='id-section95'/> 
+
+### Page 95:  
+
+------
+
+ <div id='id-section96'/> 
+
+### Page 96:  
+
+------
+
+ <div id='id-section97'/> 
+
+### Page 97:  
+
+------
+
+ <div id='id-section98'/> 
+
+### Page 98:  
+
+------
+
+ <div id='id-section99'/> 
+
+### Page 99:  
+
+------
+
+ <div id='id-section100'/> 
+
+### Page 100:  
+
+------
+
+ <div id='id-section101'/> 
+
+### Page 101:  
+
+------
+
+ <div id='id-section102'/> 
+
+### Page 102:  
+
+------
+
+ <div id='id-section103'/> 
+
+### Page 103:  
+
+------
+
+ <div id='id-section104'/> 
+
+### Page 104:  
+
+------
+
+ <div id='id-section105'/> 
+
+### Page 105:  
+
+------
+
+ <div id='id-section106'/> 
+
+### Page 106:  
+
+------
+
+ <div id='id-section107'/> 
+
+### Page 107:  
+
+------
+
+ <div id='id-section108'/> 
+
+### Page 108:  
+
+------
+
+ <div id='id-section109'/> 
+
+### Page 109:  
+
+------
+
+ <div id='id-section110'/> 
+
+### Page 110:  
+
+------
+
+ <div id='id-section111'/> 
+
+### Page 111:  
+
+------
+
+ <div id='id-section112'/> 
+
+### Page 112:  
+
+------
+
+ <div id='id-section113'/> 
+
+### Page 113:  
+
+------
+
+ <div id='id-section114'/> 
+
+### Page 114:  
+
+------
+
+ <div id='id-section115'/> 
+
+### Page 115:  
+
+------
+
+ <div id='id-section116'/> 
+
+### Page 116:  
+
+------
+
+ <div id='id-section117'/> 
+
+### Page 117:  
+
+------
+
+ <div id='id-section118'/> 
+
+### Page 118:  
+
+------
+
+ <div id='id-section119'/> 
+
+### Page 119:  
+
+------
+
+ <div id='id-section120'/> 
+
+### Page 120:  
+
+------
+
+ <div id='id-section121'/> 
+
+### Page 121:  
+
+------
+
+ <div id='id-section122'/> 
+
+### Page 122:  
+
+------
+
+ <div id='id-section123'/> 
+
+### Page 123:  
+
+------
+
+ <div id='id-section124'/> 
+
+### Page 124:  
+
+------
+
+ <div id='id-section125'/> 
+
+### Page 125:  
+
+------
+
+ <div id='id-section126'/> 
+
+### Page 126:  
+
+------
+
+ <div id='id-section127'/> 
+
+### Page 127:  
+
+------
+
+ <div id='id-section128'/> 
+
+### Page 128:  
+
+------
+
+ <div id='id-section129'/> 
+
+### Page 129:  
+
+------
+
+ <div id='id-section130'/> 
+
+### Page 130:  
+
+------
+
+ <div id='id-section131'/> 
+
+### Page 131:  
+
+------
+
+ <div id='id-section132'/> 
+
+### Page 132:  
+
+------
+
+ <div id='id-section133'/> 
+
+### Page 133:  
+
+------
+
+ <div id='id-section134'/> 
+
+### Page 134:  
+
+------
+
+ <div id='id-section135'/> 
+
+### Page 135:  
+
+------
+
+ <div id='id-section136'/> 
+
+### Page 136:  
+
+------
+
+ <div id='id-section137'/> 
+
+### Page 137:  
+
+------
+
+ <div id='id-section138'/> 
+
+### Page 138:  
+
+------
+
+ <div id='id-section139'/> 
+
+### Page 139:  
+
+------
+
+ <div id='id-section140'/> 
+
+### Page 140:  
+
+------
+
+ <div id='id-section141'/> 
+
+### Page 141:  
+
+------
+
+ <div id='id-section142'/> 
+
+### Page 142:  
+
+------
+
+ <div id='id-section143'/> 
+
+### Page 143:  
+
+------
+
+ <div id='id-section144'/> 
+
+### Page 144:  
+
+------
+
+ <div id='id-section145'/> 
+
+### Page 145:  
+
+------
+
+ <div id='id-section146'/> 
+
+### Page 146:  
+
+------
+
+ <div id='id-section147'/> 
+
+### Page 147:  
+
+------
+
+ <div id='id-section148'/> 
+
+### Page 148:  
+
+------
+
+ <div id='id-section149'/> 
+
+### Page 149:  
+
+------
+
+ <div id='id-section150'/> 
+
+### Page 150:  
+
+------
+
+ <div id='id-section151'/> 
+
+### Page 151:  
+
+------
+
+ <div id='id-section152'/> 
+
+### Page 152:  
+
+------
+
+ <div id='id-section153'/> 
+
+### Page 153:  
+
+------
+
+ <div id='id-section154'/> 
+
+### Page 154:  
+
+------
+
+ <div id='id-section155'/> 
+
+### Page 155:  
+
+------
+
+ <div id='id-section156'/> 
+
+### Page 156:  
+
+------
+
+ <div id='id-section157'/> 
+
+### Page 157:  
+
+------
+
+ <div id='id-section158'/> 
+
+### Page 158:  
+
+------
+
+ <div id='id-section159'/> 
+
+### Page 159:  
+
+------
+
+ <div id='id-section160'/> 
+
+### Page 160:  
+
+------
+
+ <div id='id-section161'/> 
+
+### Page 161:  
+
+------
+
+ <div id='id-section162'/> 
+
+### Page 162:  
+
+------
+
+ <div id='id-section163'/> 
+
+### Page 163:  
+
+------
+
+ <div id='id-section164'/> 
+
+### Page 164:  
+
+------
+
+ <div id='id-section165'/> 
+
+### Page 165:  
+
+------
+
+ <div id='id-section166'/> 
+
+### Page 166:  
+
+------
+
+ <div id='id-section167'/> 
+
+### Page 167:  
+
+------
+
+ <div id='id-section168'/> 
+
+### Page 168:  
+
+------
+
+ <div id='id-section169'/> 
+
+### Page 169:  
+
+------
+
+ <div id='id-section170'/> 
+
+### Page 170:  
+
+------
+
+ <div id='id-section171'/> 
+
+### Page 171:  
+
+------
+
+ <div id='id-section172'/> 
+
+### Page 172:  
+
+------
+
+ <div id='id-section173'/> 
+
+### Page 173:  
+
+------
+
+ <div id='id-section174'/> 
+
+### Page 174:  
+
+------
+
+ <div id='id-section175'/> 
+
+### Page 175:  
+
+------
+
+ <div id='id-section176'/> 
+
+### Page 176:  
+
+------
+
+ <div id='id-section177'/> 
+
+### Page 177:  
+
+------
+
+ <div id='id-section178'/> 
+
+### Page 178:  
+
+------
+
+ <div id='id-section179'/> 
+
+### Page 179:  
+
+------
+
+ <div id='id-section180'/> 
+
+### Page 180:  
+
+------
+
+ <div id='id-section181'/> 
+
+### Page 181:  
+
+------
+
+ <div id='id-section182'/> 
+
+### Page 182:  
+
+------
+
+ <div id='id-section183'/> 
+
+### Page 183:  
+
+------
+
+ <div id='id-section184'/> 
+
+### Page 184:  
+
+------
+
+ <div id='id-section185'/> 
+
+### Page 185:  
+
+------
+
+ <div id='id-section186'/> 
+
+### Page 186:  
+
+------
+
+ <div id='id-section187'/> 
+
+### Page 187:  
+
+------
+
+ <div id='id-section188'/> 
+
+### Page 188:  
+
+------
+
+ <div id='id-section189'/> 
+
+### Page 189:  
+
+------
+
+ <div id='id-section190'/> 
+
+### Page 190:  
+
+------
+
+ <div id='id-section191'/> 
+
+### Page 191:  
+
+------
+
+ <div id='id-section192'/> 
+
+### Page 192:  
+
+------
+
+ <div id='id-section193'/> 
+
+### Page 193:  
+
+------
+
+ <div id='id-section194'/> 
+
+### Page 194:  
+
+------
+
+ <div id='id-section195'/> 
+
+### Page 195:  
+
+------
+
+ <div id='id-section196'/> 
+
+### Page 196:  
+
+------
+
+ <div id='id-section197'/> 
+
+### Page 197:  
+
+------
+
+ <div id='id-section198'/> 
+
+### Page 198:  
+
+------
+
+ <div id='id-section199'/> 
+
+### Page 199:  
+
+------
+
+ <div id='id-section200'/> 
+
+### Page 200:  
+
 
 
