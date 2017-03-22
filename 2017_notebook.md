@@ -3719,17 +3719,30 @@ Part of discussion I'm saving:
 
 
 
+Another part: This is at the end of the proteome stability part
+
+> Therelative contribution of all of these mechanisms are unknown and typically
+> studied in isolation. Nonetheless, resisting heat stress as inferred from the
+> onset of Hsp induction appears to be a critical feature of Hsp expression
+> profiles that is associated with shifts in upper thermal limits.
+
+Maybe I don't even want to pop off on how proteomes can be stable:
+
+> Higher proteome stability can be achieved by expressing more thermally stable isoforms (Mastrangelo et al. 2012), protein-protein interactions (Storey and Wu 2013), accumulation of protective osmolytes (Hottiger et al. 1994; Somero 2003), and evolved differences in amino acid sequence (Lockwood[ and Somero 2012; Fields et al. 2015). 
+
+
+
 SHC comments and outline for discussion: 
 
 > - Primarymode of action of Hsps is enhanced response to damage – how much more?  
 >
-> -      Butalso evidence that more heat-tolerant species are better able to toleratethermal stress through other means: protein sequence evolution, osmolyteconcentrations, metabolic depression and gene expression downregulation(Stanton-Geddes).  Because Hsps areexpensive, the more frequent the heat stress, the more costly active responseis.  
+> - Butalso evidence that more heat-tolerant species are better able to toleratethermal stress through other means: protein sequence evolution, osmolyteconcentrations, metabolic depression and gene expression downregulation(Stanton-Geddes).  Because Hsps areexpensive, the more frequent the heat stress, the more costly active responseis.  
 >
-> -      Protectionless important contributor to higher thermal tolerance.  Protection is usually thought of in terms ofbaseline levels, but important to remember that this can also be achievedthrough the induction response via graded or early-onset protection.  Shift to a more graded response suggests achange in trigger of Hsp gene expression (from direct feedback from denaturedproteins to some other temperature sensor – something like HSR1 non-codingRNA?)
+> - Protectionless important contributor to higher thermal tolerance.  Protection is usually thought of in terms ofbaseline levels, but important to remember that this can also be achievedthrough the induction response via graded or early-onset protection.  Shift to a more graded response suggests achange in trigger of Hsp gene expression (from direct feedback from denaturedproteins to some other temperature sensor – something like HSR1 non-codingRNA?)
 >
-> -      Studyof extreme thermophiles suggests a shift from induced to constitutiveprotection, but this may not be representative of evolved thermal strategies inseasonal environments (or less extreme? Or non-desert?).  Probably not the case that the elevation isoccurring in genes other than the ones sampled here – positive associationbetween inducibility and baseline elevation in hot—desert vs. temperate antcomparison (other literature on the likelihood that non-inducible forms areinvolved in heat-associated chaperoning?) . Why not?  Energetically costly andretards enzyme activity, slowing growth. Most useful when stress is chronic or predictable – typical of speciesliving in predictably extreme environments such as hot deserts (in ants:  Pogonomyrmex and Cataglyphis, desert flies,other taxa).  For temperate species,stress is predictable on timescales that are shorter than the individual’slifetime, making baseline shifts more profitable as a plastic acclimationstrategy.  Evidence that this is whatoccurs in Aphaenogaster (JCB paper), loads of other literature on seasonalacclimation.  
+> - Studyof extreme thermophiles suggests a shift from induced to constitutiveprotection, but this may not be representative of evolved thermal strategies inseasonal environments (or less extreme? Or non-desert?).  Probably not the case that the elevation isoccurring in genes other than the ones sampled here – positive associationbetween inducibility and baseline elevation in hot—desert vs. temperate antcomparison (other literature on the likelihood that non-inducible forms areinvolved in heat-associated chaperoning?) . Why not?  Energetically costly andretards enzyme activity, slowing growth. Most useful when stress is chronic or predictable – typical of speciesliving in predictably extreme environments such as hot deserts (in ants:  Pogonomyrmex and Cataglyphis, desert flies,other taxa).  For temperate species,stress is predictable on timescales that are shorter than the individual’slifetime, making baseline shifts more profitable as a plastic acclimationstrategy.  Evidence that this is whatoccurs in Aphaenogaster (JCB paper), loads of other literature on seasonalacclimation.  
 >
-> -      Samepattern of change associated with change in thermal stress within deciduousforest as with shift to more open habitat – common regulatory control such thatresponse can be tuned up or down in a coordinated fashion  in response to selection?  Any idea of a model that would explainpattern?  HSF binding affinity, etc.?
+> - Samepattern of change associated with change in thermal stress within deciduousforest as with shift to more open habitat – common regulatory control such thatresponse can be tuned up or down in a coordinated fashion  in response to selection?  Any idea of a model that would explainpattern?  HSF binding affinity, etc.?
 
 
 
