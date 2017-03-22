@@ -1,7 +1,7 @@
-#Species responses to climate change project
+# Species responses to climate change project
 
 ### Author: ANTdrew D. Nguyen     
-###Affiliation     
+### Affiliation     
 
 ## Projects title/descriptions
 
