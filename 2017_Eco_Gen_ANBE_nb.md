@@ -34,7 +34,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 15: 2017-03-06](#id-section15). Week 8, Day 13, Population genomics; paper discussion- Gayral et al. 2013
 * [Page 16: 2017-03-08](#id-section16). Week 8, Day 14, Population genomics part 2; Paper Discussion- [Romiguier et al. 2014](http://www.nature.com/nature/journal/v515/n7526/full/nature13685.html)
 * [Page 17: 2017-03-20](#id-section17). Week 9, Day 15, Population genomics part 3; paper discussion Gompert et al. 2014
-* [Page 18:](#id-section18).
+* [Page 18: 2017-03-22](#id-section18). Week 9, Day 16, Population genomics part 4; paper discussion
 * [Page 19:](#id-section19).
 * [Page 20:](#id-section20).
 * [Page 21:](#id-section21).
@@ -2933,7 +2933,7 @@ $\theta$ is higher when populations are expanding; but smaller when in bottlenec
    * Find SNPs that deviate from Healthy and sick
    * another way to cacluate is FST
 5. Output to local machine and analyze in R 
-6. estimate $\pi_{syn}$, $[Math Processing Error]\pi_{nonsyn}$,
+6. estimate $\pi_{syn}$, $\pi_{nonsyn}$,
 7. ​
 
 
@@ -2941,10 +2941,173 @@ $\theta$ is higher when populations are expanding; but smaller when in bottlenec
 
 
 
-
 ------
+
+
 <div id='id-section18'/>
-### Page 18:
+
+### Page 18: 2017-03-22. Week 9, Day 16, Population genomics part 4; paper discussion
+
+**Glossary:**
+
+Ascertainment bias- bias introduced by sampling design that induces a nonrandom sample
+
+Sympatric speciation- presence of gene flow, via diversifying selection; alleles under selection are divergent; neutral alleles appear homogenous
+
+Allopatric Speciation-absence of gene flow; physical isolation
+
+Islands of differntiation: genomic regions with increased diff due to natural selection
+
+Allele frequency spectrum- dist of counts of snps with an observed frequency (histogram of allele frequencies)
+
+Gene flow- transfer of genes from one population to another
+
+Diversifying selection- seleciton that favors different alleles in different parts of the species range
+
+**Info update from Erin Keller:** Inferring history of divergence
+
+<u>Genomic scans:</u> 
+
+1. distribution of differentiation in the genome   
+   * High fst  —> region under selection
+   * extended to island models and metapopulations
+
+
+2. gene vs population trees
+   * compare assumed pop trees to gene trees
+   * compare differnt gene trees
+   * measure introgression: D-statistic determines introgression
+     * ABBA-BABA approach: 
+     * D=0 means no introgression
+     * D =/= 0
+   * Limitations- throws out data, requires many genomes, same value multiple explanations
+
+
+
+<u>Model-based methods:</u>
+
+Shape of Allele frequency spectrum(AFS) can get a sense of population processes. 
+
+| Sample | 1    | 2    | 3    | 4    | 5    |
+| ------ | ---- | ---- | ---- | ---- | ---- |
+| 1      | 0    | 1    | 1    | 0    | 1    |
+
+etc…to create AFS
+
+Assumptions:
+
+* All alleles/snps are independent
+* free recombination among snps
+* mutation rates are equal
+
+Limitations:
+
+* computationally challenging
+* lose lots of data
+* expensive for models with more than 3 populations
+
+
+
+<u>Geneology sampling</u>
+
+* multiple regions sampled to produce 1 tree
+  * estimates Ne, migration, admixture
+
+Assumptions:
+
+* Free recombination among different genes
+* complete linkage within a gene
+* mutations can differ among snps
+* no major recombination at the most recent common ancestor
+
+
+
+<u>Likelihood-free method</u>
+
+ABC- approximate bayesian comp. Use simulations under models of interest. 
+
+
+
+<u>Historical gene flow and LD patterns</u>
+
+Distribution of haplotype lengths: Assumes a haplotype as a migrant and enters a population of interest. Over time, these genomes recombine and see the slow shortening of sequence lenght. Based on lengths of original mirgrant, you can get a sense of time of when migrant entered populations. Recombination leads to smaller fragments over time. Many demographic events can produce similar pattern. Problems with identifying migrant. 
+
+Skeller: single genome- look at blocks of heterozygosity and homozygosity and gives an estimate population size during a recent history. 
+
+
+
+Approximation of conditional likelihood: Ancestral recombination graphs (ARGs). Gene tree that bifurcates based on recombination. estimate migration and coalescent events. 
+
+Limitations: complex-difficult to estimate recombination rates. Multiple completing recombination trees
+
+```
+Advantages of whole genome: recombination rates, lots of information, large "area" for genome scans
+
+Limitations of next gen: ascertainment bias, throw out data
+```
+
+
+
+**Paper discussion:**
+
+
+
+**Coding session: Population genomics part 4**
+
+finish part 3 first
+
+output: 
+
+> cat SSW_bamlist.txt.sum 
+>
+> \################################################################################
+>
+> \#                              Biological Summary                              #
+>
+> \################################################################################
+>
+> Selected ingroup species: sp
+>
+> Number of analyzed individual: 24 (from 1 population(s))
+>
+> Total number of contig used for sequence analysis: 1113
+>
+> Total number of SNPs: 5040
+>
+>   - Biallelic: 4991
+>
+>   - Triallelic: 49
+>
+>   - Quadriallelic: 0
+>
+> Fit:
+>
+> Average Fit: -0.0507419 [-0.06817; -0.031933]
+>
+> (Fit calculated in 902 contigs)
+>
+> Weir & Cockerham Fit (Evolution 1984):
+>
+> Average Weir & Cockerham Fit: 0.00703754 [-0.017669; 0.032047]
+>
+> (Fit calculated in 902 contigs)
+>
+> piN/piS ratio:
+>
+> Average piS in focal species: 0.00585312 [0.005172; 0.006598]
+>
+> Average piN in focal species: 0.00154546 [0.00133; 0.001782]
+>
+> Average piN / average piS: 0.264041 [0.223914; 0.310575]
+>
+> (piS and piN calculated in 902 contigs of average length 50)
+
+FIT is similar to FST but accounts for inbreeding. It ranges from 0-1, whereby 1 = more homozygosity. This number is low, so it suggests no inbreeding and may hint at little or no population structure. 
+
+
+
+
+
 ------
 <div id='id-section19'/>
 ### Page 19:

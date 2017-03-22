@@ -3746,6 +3746,20 @@ SHC comments and outline for discussion:
 
 
 
+SHC comment on my conclusion:
+
+> Do you have anything to say about this?  Is there evidence from your work of local
+> adaptation to environmental conditions *within*
+> species?  
+
+in response to this sentence:
+
+> Further adaptive modifications in the heat shock response will depend on the adaptive
+> potential of Hsp expression (Huey et al. 2012; Tedeschi et al. 2016; Diamond
+> 2016). 
+
+
+
 ------
 
 
