@@ -3760,6 +3760,15 @@ in response to this sentence:
 
 
 
+2017-03-22: taking the significance out before I submit thesis.
+
+> The types evolutionary changes expected for species to persist in a warming world
+> are poorly understood. We found that surviving upper thermal extremes involves
+> coping with the deleterious effects of heat stress by protecting against and
+> tolerating it. 
+
+
+
 ------
 
 
