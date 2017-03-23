@@ -79,7 +79,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 51: 2017-03-20](#id-section51). Writing notes
 * [Page 52: 2017-03-21](#id-section52). Writing notes
 * [Page 53: 2017-03-22](#id-section53). Prepping for oral defense, reading notes
-* [Page 54:](#id-section54).
+* [Page 54: 2017-03-23](#id-section54). To do list
 * [Page 55:](#id-section55).
 * [Page 56:](#id-section56).
 * [Page 57:](#id-section57).
@@ -4023,12 +4023,23 @@ Stability is defined as the distribution of microstates considered to be in the 
 7. ​
 
 
-
 ------
 
  <div id='id-section54'/> 
 
-### Page 54:  
+### Page 54: 2017-03-23. To do list  
+
+1. Dissertation defense talk:
+   * write out script for parts where I changed the slides
+2. Multiple stressor ms reivisions
+   * SHC-do waht the reveiwers say; so they want relative expression to the initial timepoint
+3. Ecological genomics overall hw feedback
+
+
+
+
+
+
 
 ------
 
