@@ -78,7 +78,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 50: 2017-03-17](#id-section50). Writing notes
 * [Page 51: 2017-03-20](#id-section51). Writing notes
 * [Page 52: 2017-03-21](#id-section52). Writing notes
-* [Page 53:](#id-section53).
+* [Page 53: 2017-03-22](#id-section53). Prepping for oral defense, reading notes
 * [Page 54:](#id-section54).
 * [Page 55:](#id-section55).
 * [Page 56:](#id-section56).
@@ -1875,45 +1875,45 @@ loaded via a namespace (and not attached):
 
 
 * 
- <u>Abstract:</u> 
- (3/4 page)
+   <u>Abstract:</u> 
+    (3/4 page)
 
 
 
 
 * 
- <u>CH1:  Introduction</u> 
- (3-6 pages)
+   <u>CH1:  Introduction</u> 
+    (3-6 pages)
 
   ​
 
 * 
- <u>CH2: The evolution of heat shock protein sequences, cis-regulatory elements, and expression profiles in the eusocial Hymenoptera</u> 
- (==published BMC Evolutionary Biology==)
+   <u>CH2: The evolution of heat shock protein sequences, cis-regulatory elements, and expression profiles in the eusocial Hymenoptera</u> 
+    (==published BMC Evolutionary Biology==)
 
   ​
 
 * 
- <u>Ch3: Molecular adaptations of protection and tolerance predict upper thermal limits in eastern forest ants</u> 
- (==aiming to submit to PNAS==)
+   <u>Ch3: Molecular adaptations of protection and tolerance predict upper thermal limits in eastern forest ants</u> 
+    (==aiming to submit to PNAS==)
 
-  * writing in pnas format but will need to reformat for thesis layout?
-
-
-
-
-
-* 
- <u>CH4: Effects of desiccation and starvation on thermal tolerance and the heat shock response in forest ants</u> 
- (==In 2nd round of reviews, Journal of Comparative Physiology B==)
+* writing in pnas format but will need to reformat for thesis layout?
 
 
 
 
 
 * 
- <u>CH5: Conclusions and future directions</u> 
- (3 pages)
+   <u>CH4: Effects of desiccation and starvation on thermal tolerance and the heat shock response in forest ants</u> 
+    (==In 2nd round of reviews, Journal of Comparative Physiology B==)
+
+
+
+
+
+* 
+   <u>CH5: Conclusions and future directions</u> 
+    (3 pages)
 
 
 
@@ -3770,7 +3770,7 @@ I couldn't fix it so I took it out, but it has good ideas and refs.
 
 
  <u>Interesting paper that compares the metabolome under different stressors:</u> 
- 
+
 
 ref:   Robert Michaud M, Benoit JB, Lopez-Martinez G *et al.* (2008) Metabolomics reveals unique and shared metabolic changes in response to heat shock, freezing and desiccation in the Antarctic midge, Belgica antarctica. *Journal of Insect Physiology*, **54**, 645–655.
 
@@ -3782,7 +3782,7 @@ They measured the metabolome of antarctic midge under desiccation, heat shock, c
 
 
  <u>last paragraph of dissertation conclusion:</u> 
- 
+
 
 oberg or pelini paper on ctmax and water weight figure suggests that there is a trade off in 1 subfamily but not another.
 
@@ -3981,9 +3981,46 @@ in response to this sentence:
 
  <div id='id-section53'/> 
 
+### Page 53: 2017-03-22. Prepping for oral defense, reading notes 
 
-### Page 53: 
+Submitted thesis to committee. What types of questions will I get for my defense? 
 
+
+
+1. What types of mechanisms increase proteome stability? Why does a proteome need to be stable? 
+
+ref:   Fields PA (2001) Review: Protein function at thermal extremes: balancing stability and flexibility. *Comparative Biochemistry and Physiology Part A: Molecular & Integrative Physiology*, **129**, 417–431.
+
+> Stability is needed to ensure the appropriate geometry for ligand binding, as well as to avoid denaturation, while flexibility is necessary to allow catalysis at a metabolically appropriate rate
+
+as to avoid denaturation, while flexibility is necessary to allow catalysis at a metabolically appropriate rate.
+
+a. A stable protein is needed to bind a substrate but also not unfold and aggregate. 
+
+b. Flexibilty is needed for catalysis because it involves domains in the protein to move. 
+
+Stability is defined as the distribution of microstates considered to be in the native form—not sure I like this definition
+
+
+
+2. What facilitates protein folding?
+   * Hsps 
+   * protein-solvant interactions
+   * it is a challenge to refold proteins because the number of microstates outnumbers the atoms in the universe
+   * hydrophobic effect—non-polar residues are usually in the interior of globular proteins
+3. How far do Aphaenogaster migrate? 
+   * deciduous forest ones move around a lot, but less than 1 meter
+   * ​
+4. Across the whole clade, is there evidence for phylogenetic niche conservatism?
+   * potentially, the western clade is a bit reversed. There is more diversity in open canopy species and 1 or 2 closed canopy species. 
+5. What is the geographical history of NA Aphaenogaster?
+   * There is evidence for a diversification event from asia to na. A. japonica is loacted in japan and is sister to all of NA aphaenogaster species and this split occurred ~ 16 may, roughly the same timing as the bering strait. 
+   * Part of the Stenamini tribe, and Myrmecine subfamily
+   * Genus is polyphyletic and needs to include Messor.
+6. What about membrane stability? 
+   * Adaptive to shift phospholipid head groups, enrich for PC and lipid saturation to confer stability
+   * Under heat stress, lipids melt and become more fluid like, so organisms respond by becoming more rigid
+7. ​
 
 
 
