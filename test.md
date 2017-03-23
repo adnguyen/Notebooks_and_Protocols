@@ -1072,7 +1072,7 @@ low counts [2]   : 2, 0.17%
 (mean count < 0)
 [1] see 'cooksCutoff' argument of ?results
 [2] see 'independentFiltering' argument of ?results
-#```
+```
 
 Is that correct?
 
@@ -1082,7 +1082,7 @@ Similar to other models but the desgin this time is "~ score"
 
 ```
 run lines 220-262
-#```
+```
 
 After trying to run line 220 and got this message
 
@@ -1092,7 +1092,7 @@ the design formula contains a numeric variable with integer values,
   specifying a model with increasing fold change for higher values.
   did you mean for this to be a factor? if so, first convert
   this variable to a factor using the factor() function
-#```
+```
 
 Continued running the other commands anyways and ended with this:
 
@@ -1115,7 +1115,8 @@ Take aways:
 
 
 
-Tried running a few **plots** but don't know enough about them to troubleshoot yet.  Will ask for help/try again later.
+Tried running a few **plots** but don't know enough about them to troubleshoot yet.  Will ask for help/try again later.   
+
 
 ------
 
