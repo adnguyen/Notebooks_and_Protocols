@@ -80,7 +80,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 52: 2017-03-21](#id-section52). Writing notes
 * [Page 53: 2017-03-22](#id-section53). Prepping for oral defense, reading notes
 * [Page 54: 2017-03-23](#id-section54). To do list
-* [Page 55:](#id-section55).
+* [Page 55: 2017-3-24](#id-section55). multiple stressors reviewer comments
 * [Page 56:](#id-section56).
 * [Page 57:](#id-section57).
 * [Page 58:](#id-section58).
@@ -4061,7 +4061,75 @@ Stability is defined as the distribution of microstates considered to be in the 
 
  <div id='id-section55'/> 
 
-### Page 55:  
+### Page 55: 2017-03-24. multiple stressors reviewer comments  
+
+On putting stuff online, NJG:
+
+> Well, the reviews are certainly confidential at all times (even after publication) when you are a reviewer. But the reviews are not confidential once the journal gives them to you as an author, so I don't see any harm in having the on your webpage. However, if any of the reviews were signed (the authors revealed their identity), I would not post those because the authors might not appreciate it.
+
+
+
+Reviewer comments:
+
+> Reviewer #2: The authors have thoroughly addressed the
+> review comments, and in my opinion the manuscript reads much better. The water
+> content results and effects of starvation on dry weight are nice additions. I
+> only have a couple of minor comments to consider before revision:
+>
+> 
+>
+> 1.      Be careful with tense. When discussing the current
+>         results, past tense is typically used, when discussing published results, the
+>         present tense is typically used. For example, in line 39, "impairs"
+>         should read "impaired," and in line 86 "reduced" should be
+>         "reduces." Those were the only two that stuck out to me, but make
+>         sure tense is consistent.
+>
+>
+>
+> 2.      Line 143: Change "2" to "two"
+>
+>
+>
+> 3.      Line 148: Space needed after "used"
+>
+>
+>
+> 4.      Line 167: Comma needed after "status"
+>
+>
+>
+> 5.      In Figures 2 and 4, it would be helpful to clearly
+>         indicate in the caption which group is serving as the reference for the 2-ΔΔCt
+>         calculations. Also, the authors might want to consider plotting the control
+>         groups on the gene expression figures. That is, the control group can be
+>         included by setting the mean = 1 scaling the variance accordingly. It is also
+>         unclear whether there was a single reference/control group for the induction
+>         experiments, or whether each time point had its own room temperature control
+>         that served as a reference. If it was the latter, connecting the points with
+>         lines is somewhat misleading, because each point is relative to a different
+>         control group. Personally, I think it makes sense to use a single reference
+>         group (for example, room temperature controls after the first time point), then
+>         express everything relative to that group.
+
+
+
+Basically I see two approaches to addressing #5, which was the most important suggestion: 
+
+
+
+```mermaid
+graph TD
+. --> A[Explain controls better]
+A --> C[and display barplots]
+. --> B[Re-calculate gxp from controls and first time point]
+```
+
+
+
+
+
+
 
 ------
 
