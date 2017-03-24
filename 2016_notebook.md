@@ -140,10 +140,13 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 * [Page 102: 2016-11-22](#id-section102). climate cascade to do list
 * [Page 103: 2016-12-06](#id-section103). climate cascade update
 * [Page 104: 2016-12-19](#id-section104). climate cascade update
-* [Page 105: 2016-12-20](#id-section105). Reading a few papers
+* [Page 105: 2016-12-20](#id-section105). Reading a few papers   
+
 
 ------
-<div id='id-section1'/>
+
+<div id='id-section1'/>  
+
 ### Page 1: 2016-05-13. Indirect genetic effects.
 
 **Q:**How does the social environment impact traits of individuals? Or what is the contribution of indirect genetic effects on an individual? 
@@ -157,7 +160,9 @@ In ant colonies, sisters are highly related if the queen mated once.
 This isnt a new [idea: Linksvayer 2007](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0000994). What would be interesting is to test the role of IGE in thermal ecology. Take a Northern(experiecnes cold) ant species and Southern (experiences warm) ant species and do a cross foster experiment. One outcome is that ants reared in the warm tolerant species will reare young in a way so that the baby has greater thermal tolerance than being reared by its own (cold tolerant genotype/species).    
 
 ------
-<div id='id-section2'/>
+
+<div id='id-section2'/>  
+
 ### Page 2: 2016-05-13. Comparing G matrices of different populations      
 
 Since I've been an RA since January 2015, I've been able to teach myself things. One of my emerging obsessions is understanding how multiple traits evolve or respond to selection. For example a thermal performance curve is multivariate and how can this curve change? 
@@ -191,14 +196,18 @@ There is another cool paper to read about comparing G matrices by [Aguirre et al
 4. Decompose G into eigenvectors; like Kingsolver, I believe   
 
 ------
-<div id='id-section3'/>
+
+<div id='id-section3'/>  
+
 ### Page 3: 2016-05-16. Complete ddRAD-seq samples: processing      
 
 ddrad-seq data are in! SHC processed short reads in STACKS and produced a fasta file. 
 
 From SHC:      
 > *Hi Andrew,
-> I have run all your samples against your index and through the STACKs pipeline - I used a minimum threshold of 5 reads to call a SNP, a maximum # of SNPs per tag of 6, and a minimum number of individuals that had to have a genotype call at a SNP of 10 individuals.  The stats of genotype calls and heterozygosity across all your samples is in the excel spreadsheet - I highlighted those with <25% calls in yellow, and would not use those because they mess up the polarity inference for the SNPs and make the tree more ambiguous.  The exception would probably be NOVCOC, since you will need an outgroup and none of the putative outgroup taxa meet the threshold.  I've attached a NJ tree using all the >25% taxa plus NOVCOC, and it seems to resolve very nicely bootstrap-wise.  I do not know what many of these samples are, so no clue if it is biologically reasonable.  
+> I have run all your samples against your index and through the STACKs pipeline - I used a minimum threshold of 5 reads to call a SNP, a maximum # of SNPs per tag of 6, and a minimum number of individuals that had to have a genotype call at a SNP of 10 individuals.  The stats of genotype calls and heterozygosity across all your samples is in the excel spreadsheet - I highlighted those with 
+<25% calls in yellow, and would not use those because they mess up the polarity inference for the SNPs and make the tree more ambiguous.  The exception would probably be NOVCOC, since you will need an outgroup and none of the putative outgroup taxa meet the threshold.  I've attached a NJ tree using all the >  
+25% taxa plus NOVCOC, and it seems to resolve very nicely bootstrap-wise.  I do not know what many of these samples are, so no clue if it is biologically reasonable.  
 > You'll find your fasta file in my scratch space here:
 > Andrew_RADseq_051516/final_Andrew_sam_files/m5_output_refmap/Andrew_SNP_sequences_m5_filter6_ind10.fas
 > Sara*    
@@ -500,7 +509,9 @@ For ML distance matrix with raxml, you need a fasta file and tree. Piece of code
 > nohup nice -n 19 ./raxmlHPC -f x -p 12345 -s ~/Desktop/2015_ANBE_common_garden/20150818_Andrew_SNP_sequences_nooutgr.fasta -m GTRGAMMA -t ~/Desktop/2015_ANBE_common_garden/RAxML_bestTree.20150819_commongarden_raxml_v2 -n 20150828_commongarden_pairwise_ML_distance &
 
 ------
-<div id='id-section4'/>
+
+<div id='id-section4'/>  
+
 ### Page 4: 2016-05-13. Aphaenogaster morphological IDs     
 
 For JSG phytotron project (and also partly Lchick's thermal niche paper). 
@@ -647,7 +658,9 @@ For JSG phytotron project (and also partly Lchick's thermal niche paper).
 
 
 
-<div id='id-section5'/>
+
+<div id='id-section5'/>  
+
 ### Page 5: 2016-05-13. Sequencing qPCR amplicons; Curtis and ANBE experiments     
 
 Sample list and plate layout for sanger sequencing. Amplicons ~ 100bps and were [Qiagen PCR purified following manufacturer's instructions](https://www.qiagen.com/us/shop/sample-technologies/dna/dna-clean-up/qiaquick-pcr-purification-kit#orderinginformation). Added ~3 ng template,with 2 uM primer in 11.6 uL volume. Curtis' chamber samples are on here and my own ANBE gene expression experiment. Submitting to [vermont cancer center](http://www.uvm.edu/medicine/vtcancercenter/?Page=facilities_dnaanalysis.html&SM=facilitiessubmenu.html).      
@@ -755,7 +768,9 @@ If interested in protocols , see [here](https://github.com/adnguyen/Dissertation
 | H12  | Ted6          | hsp40_641   |
 
 ------
-<div id='id-section6'/>
+
+<div id='id-section6'/>  
+
 ### Page 6: 2016-05-17 Phylogenetics results from 2016-05-16 (CIPRES RaxML analysis)
 
 Results from [2016-05-16](#id-section3) ML tree using RaxML black box on CIPRES.     
@@ -780,7 +795,9 @@ When comparing with the NJ tree, the placement of *A. picea* is different.
 ##Rerunning analysis without PB07-23 to double check this sample doesnt skew ingroup relationships.      
 
 ------
-<div id='id-section7'/>
+
+<div id='id-section7'/>  
+
 ### Page 7: 2016-05-17. ABI steponeplus machine maintenance.     
 
 **Machine Problem**: It freezes mid run without giving an error, even while operating stand alone. Sometimes when it freezes, the door wont release plate. And it also has trouble connecting to laptop even after restart.    
@@ -812,7 +829,9 @@ Didn't know we were getting a loaner. He didn't mention cost.
 20160520 update: Machine sent out
 
 ------
-<div id='id-section8'/>
+
+<div id='id-section8'/>  
+
 ### Page 8: 2016-05-18.Phylogenetic results without pogo sample  
 The results of phylogenetic analysis of SNP matrix from [Page 3: 2016-05-16](#id-section3). Complete ddRAD-seq samples: processing. I excluded pogos, and it still needs further parsing. 
 
@@ -841,7 +860,9 @@ write.tree(x2,"20160518_ML_tree_BL_BS_RAxML_parsed.newick") # new file name
 ### Parsing out bootstraps below 100
 ```R
 x2$node.label<-as.numeric(as.character(x2$node.label))
-x2$node.label<-ifelse(x2$node.label>90,x2$node.label,"")
+x2$node.label
+<-ifelse(x2$node.label>  
+90,x2$node.label,"")
 
 x2$node.label[1]<-""
 x2$node.label
@@ -863,7 +884,9 @@ Summary: Same topology without pogo sample.
 
 
 ------
-<div id='id-section9'/>   
+
+<div id='id-section9'/>  
+   
 ### Page 9: 2016-05-18. Agarose gel electrophoresis of qPCR amplicons; Curtis and ANBE samples    
 We wanted to check for specificity on a gel. Although, agarose gels don't completely pick up primer dimers. Even so, we acquire fluorescence at a higher temperature where those primer dimers disappear.   
 
@@ -942,7 +965,9 @@ Showing pictures that focus on bottom part
 ###Summary: Amplicons are specific. NO double bands.    
 
 ------
-<div id='id-section10'/>
+
+<div id='id-section10'/>  
+
 ### Page 10: 2016-05-18. RaxML ML pairwise distance matrix
 
 * Used SNP matrix found here: [Page 3: 2016-05-16](#id-section3)
@@ -969,7 +994,9 @@ Snippet of output:
 
 
 ------
-<div id='id-section11'/>
+
+<div id='id-section11'/>  
+
 ### Page 11: 2016-05-18. ABI steponeplus machine maintenance update    
 
 Update from, [Page 7: 2016-05-17](#id-section7). ABI steponeplus machine maintenance.
@@ -999,7 +1026,9 @@ Update from, [Page 7: 2016-05-17](#id-section7). ABI steponeplus machine mainten
 # 2016-05-26 update: we received loaner.   
 
 ------
-<div id='id-section12'/>
+
+<div id='id-section12'/>  
+
 ### Page 12: 2016-05-19. Getting whole rad loci with pyRAD [tutorial](http://nbviewer.jupyter.org/gist/dereneaton/dc6241083c912519064e/tutorial_pairddRAD_3.0.4-merged.ipynb) and/or stacks   
 
 Previous analyses concatenate SNPS, but many studies use whole rad loci.     
@@ -1033,7 +1062,9 @@ SHC email:
 
 ### I could use the population function/module in [stacks](http://catchenlab.life.illinois.edu/stacks/comp/populations.php). 
 ------
-<div id='id-section13'/>
+
+<div id='id-section13'/>  
+
 ### Page 13: 2016-05-20. Evolution of proteome stability project        
 
 We are interested in the adaptive variation in how proteins unfold between 2 different ant species. [Github repo](https://github.com/adnguyen/2016_Protein_stability_evolution)   
@@ -1122,7 +1153,9 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 ![](https://cloud.githubusercontent.com/assets/4654474/15428283/6679dffe-1e68-11e6-802d-0c3720407761.jpeg)
 
 ------
-<div id='id-section14'/>
+
+<div id='id-section14'/>  
+
 ### Page 14: 2016-05-24. Evolution of proteome stability project: Polyacrylamide gels for colony level replicates (*A. rudis* vs *P. barbatus*)    
 Amanda Meyer is working on this project:      
 1. Samples stored at -80C, we took 30 uL and speed vacuumed (took 1 hr) and then resuspended in 60 uL of 1X sample buffer     
@@ -1149,7 +1182,9 @@ Polyacrylamide Gels:
 Need to destain and trypsin digest.    
 
 ------
-<div id='id-section15'/>
+
+<div id='id-section15'/>  
+
 ### Page 15: 2016-05-24. Degenerate Hsp primer design from 2015-05-28     
 
 **Primer design from 2015-05-28 referenced here**     
@@ -1202,7 +1237,9 @@ I don't use all of these anymore. But here are the ones that I've tested for spe
 
 
 ------
-<div id='id-section16'/>
+
+<div id='id-section16'/>  
+
 ### Page 16: 2016-05-24](#id-section16). Sequencing analysis continued from [Page 5: 2016-05-16](#id-section5).    
 
 **Sharing screenshots of sanger sequenced samples mapped to reference transcript (*P. barbatus*)**    
@@ -1227,7 +1264,9 @@ I don't use all of these anymore. But here are the ones that I've tested for spe
 Most of samples mapped really well! Generally, the sequencing with the forward primer recovers the reverse primer, and vice versa. 
 
 ------
-<div id='id-section17'/>
+
+<div id='id-section17'/>  
+
 ###Page 17: 2016-05-25. Double check samples for SHC; JSG phytotron exp and MS.        
 
 ###email sent 2016-05-18: 
@@ -1246,7 +1285,9 @@ Need to double check these samples.
 
 
 ------
-<div id='id-section18'/>
+
+<div id='id-section18'/>  
+
 ### Page 18: 2016-05-31. Learning model selection and model averaging!    
 
 ###I'm learning model averaging! 
@@ -1501,7 +1542,9 @@ F-statistic: 87.96 on 6 and 32 DF,  p-value: < 2.2e-16
 
 ```
 
-<div id='id-section18.5'/>
+
+<div id='id-section18.5'/>  
+
 #SHC suggestion: Just include all phylo axes in all analyses     
 ```R
 full.max<-lm(Ctmax~bio5*Axis.1+bio5*Axis.2+bio5*Axis.3+bio5*Axis.4+Rearing.temp,data=merg)
@@ -1634,7 +1677,9 @@ Probably a poor way to show output, but you can see the consistency with model a
 | Axis.4:bio5  | -0.06684784  | 1.259095332 | 1.298786073 | 0.05146948  | 0.9589514          | NA   | Axis.4:bio6  | 0.070484176  | 1.61820244 | 1.66039021  | 0.04245037  | 0.9661397          | NA   | Axis.3:bio7  | -0.08611658  | 0.98198428  | 1.00527754  | 0.08566448  | 0.9317331          |
 
 ------
-<div id='id-section19'/>
+
+<div id='id-section19'/>  
+
 ### Page 19: 2016-06-01 Variance partitioning: thermal tolerance breadth example    
 
 **Partitioning variation into phylogenetic (Axes 1-4), ecological (Tmax or Tmin or TAR), and phylogenetic + ecological components** using the varpart() function in the vegan R package:   
@@ -1694,7 +1739,9 @@ anova(c)
 **Only showing code for CTmax** I also applied variance paritioning for Ctmin and thermal tolerance breadth
 
 
-<div id='id-section19.5'/>
+
+<div id='id-section19.5'/>  
+
 ###Summary of results: Proportion of variance assigned to each component   
 **Please scroll right to see the whole table, this table is wide**    
 
@@ -1717,7 +1764,9 @@ Note-Bolded values represents significant variance component. The combined phylo
 ![](https://cloud.githubusercontent.com/assets/4654474/15729238/54f6fa6a-2830-11e6-9ea8-a0857c178f04.jpg)
 
 ------
-<div id='id-section20'/>
+
+<div id='id-section20'/>  
+
 ###Notes from climate cascade meeting, 2016-06-01    
 
 **I have meetings with SHC and NJG every week, so I'll start logging our discussions here**
@@ -1739,7 +1788,9 @@ For the phytroton gxp paper:
 
 
 ------
-<div id='id-section21'/>
+
+<div id='id-section21'/>  
+
 ### Page 21: 2016-06-02. Levine's test for raw residuals   
 
 We(SHC) suspect that the variance in field samples (for CTmax) is larger than the ones in the phytotron for A. picea.
@@ -1831,7 +1882,9 @@ boxplot(lt[,1]~lt[,2],ylab="raw residuals",las=1)
 ##Summary: Yes, sig diff in variance between field and phyto.    
 
 ------
-<div id='id-section22'/>
+
+<div id='id-section22'/>  
+
 ### Page 22: 2016-06-02. **Brute force fitting nls() functions in R!!**  
 
 I googled *how to fit nls even when failing to converge in R* and found this [gem](http://r.789695.n4.nabble.com/avoiding-termination-of-nls-given-convergence-failure-td886557.html).
@@ -1840,7 +1893,9 @@ Basically, use [nls2()](https://cran.r-project.org/web/packages/nls2/nls2.pdf) t
 
 
 
-<div id='id-section23'/>
+
+<div id='id-section23'/>  
+
 ###Page 23: 2016-06-02. Literature reference for thermal niche paper to help write manuscript   
 
 **Probably not comprehensive, but here it is:**     
@@ -1874,7 +1929,9 @@ Thermal breadth = 1 if they analyze it, 0 if they don't.
 
 
 ------
-<div id='id-section24'/>
+
+<div id='id-section24'/>  
+
 ### Page 24: 2016-06-03. Proteome stability project: Organizational entry   
 
 Today is Amanda's last day, so sad. She was working on the proteome stability project. Here I'll log all the organizational info that I'll need in the future:  
@@ -1970,17 +2027,23 @@ Today is Amanda's last day, so sad. She was working on the proteome stability pr
 |                     70.1 |          70 |
 
 ------
-<div id='id-section25'/>
+
+<div id='id-section25'/>  
+
 ### Page 25: 2016-06-03. ggplot reference, updating a figure from [Page 20: 2016-06-02](#id-section20)   
 
 **For JSG gxp ms that SHC is writing. Adding axis 2 into boxplot for hsp40 basal xp.**
 
 ###code for manipulating data so that I convert different axes into factors! There is probably a better way of doing this, but...
 ```R
-mergy<-subset(merg,merg$Axis.2> -0.1) # excluding axis 2 samples
+mergy
+<-subset(merg,merg$Axis.2>  
+ -0.1) # excluding axis 2 samples
 sub<-subset(merg,merg$Axis.2< -0.1)# taking out samples separating axis 2
 sub$axis3_desig<-rep("zAxis 2 A. picea",3) #naming factors based on axis2
-mergy$axis3_desig<-ifelse(mergy$Axis.3<= -0.044,"North",ifelse(mergy$Axis.3>0.05,"South","A. picea")) # axis 3 designations!
+mergy$axis3_desig
+<-ifelse(mergy$Axis.3<= -0.044,"North",ifelse(mergy$Axis.3>  
+0.05,"South","A. picea")) # axis 3 designations!
 mergy<-rbind(mergy,sub) # combine them!
 mergy<-mergy[-54,] # 54th row has an NA
 ```
@@ -2020,7 +2083,9 @@ ylab(expression(paste("Hsp40 basal expression (",2^paste(Delta,Delta,"CT"),")"))
 ![](https://cloud.githubusercontent.com/assets/4654474/15782778/8f5642c0-2979-11e6-8645-e037fe954ad3.png)
 
 ------
-<div id='id-section26'/>
+
+<div id='id-section26'/>  
+
 ###Page 26: 2016-06-03 What is a cell type?    
 
 I was having lunch with Federico and thought: When I go to seminars and cell biologists use markers to indicate cell types, how do they know? What exactly is a cell type?    
@@ -2042,7 +2107,9 @@ Feder suggests to read:
 
 
 ------
-<div id='id-section27'/>
+
+<div id='id-section27'/>  
+
 ###Page 27: 2016-06-03. qPCR plate layout and using the loaner ABI steponeplus [Page 11: 2016-05-18](#id-section11)   
 
 I started up the aBI steponeplus loaner today. 
@@ -2094,7 +2161,9 @@ All colonies had double peaks. So they're not usable. For these colonies, only h
 **Silvia asked me to show her how to isolate RNA next Monday (2016-06-03)**, so I can isoalte CJ8( a colony I thought I isolated RNA from, but I didn't). **It is in box 54**
 
 ------
-<div id='id-section28'/>
+
+<div id='id-section28'/>  
+
 ###Page 28: 2016-06-03. Papers showing differences between fast static vs slow dynamic temperature treatments.     
 
 There is a large argument in the literature about how to best temperature treat ectotherms. One thing to point out, many fruit fly studies plot their heat tolerance traits against latitude, why not against local temperatures (Tmax, MAT)?     
@@ -2111,7 +2180,9 @@ Our group has argued that different temperature treatments represent different a
 
 
 ------
-<div id='id-section29'/>
+
+<div id='id-section29'/>  
+
 ###Page 29: 2016-06-06. Isolating RNA: colony CJ8; showing Sylvia    
 
 Isolated RNA and converted to cDNA. [link to protocols](https://github.com/adnguyen/Dissertation_temperature_adaptation_ants/blob/master/ANBE_protocols.md)     
@@ -2176,7 +2247,9 @@ Samples:
 
 
 ------
-<div id='id-section30'/>
+
+<div id='id-section30'/>  
+
 ###Page 30: 2016-06-07. **Brute force fitting nls function in R revisited ** [Page 22: 2016-06-02](#id-section22)    
 
 ### I tried this on my desktop to play with the data quick and dirty, but it should go in my dissertation repo:  
@@ -2265,7 +2338,9 @@ names(fits)[7]<-"parameter"# renaming column
 knitr::kable(fits)
 ```
 
-<div id='id-section30.1'/>
+
+<div id='id-section30.1'/>  
+
 ###Won'tfit with test colony
 
 **Trying fits by removing test colony**
@@ -2317,7 +2392,9 @@ fits<-ddply(mlong,.(Colony,gene),Boltz)
 
 ###looks like it works when there is no poor fit.  
 
-<div id='id-section30.2'/>
+
+<div id='id-section30.2'/>  
+
 #Ok, I figured out how to suppress errors and let the funciton loop with [**failwith()** function](http://stackoverflow.com/questions/4137736/how-do-i-ignore-errors-and-continue-processing-list-items). 
 
 ```R
@@ -2464,7 +2541,9 @@ qplot(x=T,y=gxp,data=subset(mlong,mlong$gene=="FC_hsc70_1468"),colour=Colony)+ge
 
 
 ------
-<div id='id-section31'/>
+
+<div id='id-section31'/>  
+
 ### Page 31: 2016-06-08. Redoing online notebook template
 
 [I updated my online notebook template.](https://github.com/adnguyen/adnguyen.github.io/blob/master/_posts/20160421_online_notebook.md#id-section1). I probably should have done this from the start. But there is a table of contents with 200 entries with automatic links to those entries. 
@@ -2498,7 +2577,9 @@ write.csv(six,"ffff.csv")
 For this you want this syntax:
 ```
 ------ 
-<div id='id-section1'/>
+
+<div id='id-section1'/>  
+
 ```
 1. R manipulations
 
@@ -2506,7 +2587,9 @@ For this you want this syntax:
 b<-rep("------",200)
 c<-rep("<div id='id-section",200)
 d<-seq(1:200)
-e<-paste(d,"'/>",sep="")
+e
+<-paste(d,"'/>  
+",sep="")
 
 
 m<-paste(c,e,sep="")
@@ -2526,7 +2609,9 @@ write.csv(m1,"testy.csv")
 
 
 ------
-<div id='id-section32'/>
+
+<div id='id-section32'/>  
+
 ### Page 32: 2016-06-08. qPCRs, 18s rRNA for Duke2, HF2, Kite 4, Kite8, 60 C annealing
 
 Ran qpcr plate (96 well) on loaner ABI steponeplus. Samples were already 1/10 diluted, and for 18s, I dilute 1/10 again to have a 1/100 dilution.     
@@ -2568,7 +2653,9 @@ Sample colonies:
 4. SHC8
 
 ------
-<div id='id-section33'/>
+
+<div id='id-section33'/>  
+
 ### Page 33: 2016-06-08. Climate cascade meeting.     
 
 SHC can't make it. KM going to process samples. ANBE + NJG meet
@@ -2583,7 +2670,9 @@ NJG suggestions:
 * ​
 
 ------
-<div id='id-section34'/>
+
+<div id='id-section34'/>  
+
 ### Page 34: 2016-06-09; 2016-06-10. qPCRs: Duke1, CJ2, SHC8, CJ5    
 
 1. hsc70-4 h2 1468, 60C annealing results: only Duke1 worked
@@ -2594,7 +2683,9 @@ NJG suggestions:
 
 
 ------
-<div id='id-section35'/>
+
+<div id='id-section35'/>  
+
 ###  Page 35: 2016-06-10. ABI steponeplus machine fix and sending back instrument.  
 
 ### machine repaired    
@@ -2624,7 +2715,9 @@ NJG suggestions:
    Instrument Services  
    Life Sciences Solutions
 
-<div id='id-section35'/>
+
+<div id='id-section35'/>  
+
 ### 2016-06-13 update
 
 We received the repaired machine back. 
@@ -2632,7 +2725,9 @@ We received the repaired machine back.
 [Here](https://github.com/adnguyen/Dissertation_temperature_adaptation_ants/files/311989/doc014592.pdf) is the decomtamination form for the loaner. 
 
 ------
-<div id='id-section36'/>
+
+<div id='id-section36'/>  
+
 ### Page 36: 2016-06-10. Thoughts on Kingsolver & Woods 2016, AmNat. [ref here](http://www.journals.uchicago.edu/doi/abs/10.1086/684786)    
 
 reference:
@@ -2651,7 +2746,9 @@ But here is a fig for proteome stability (prop non-denatured) as a function of T
 
 The black line is 10 min incubations, the red line is 20 min. I fit a non-linear logistic curve to it [link](#id-section13). This captures the incurring costs associated with temperature AND time without an acclimation response. It'd be interesting to develop a model from this....
 
-<div id='id-section36.5'/>
+
+<div id='id-section36.5'/>  
+
 ### 2016-06-11. Follow up model  
 
 ![](https://cloud.githubusercontent.com/assets/4654474/15988168/03e34804-3014-11e6-9490-4cab8fd871df.jpg)
@@ -2663,7 +2760,9 @@ Anyway, I'd call this the "thermostat" model.
 * Craig EA, Gross CA. 1991. Is hsp70 the cellular thermometer? Trends in Biochemical Sciences 16:135–140.
 
 
-<div id='id-section36.6'/>
+
+<div id='id-section36.6'/>  
+
 ### 2016-06-13. Predictions of thermostat model    
 
 1. There is some temperature where the costs associated with macromolecular damage exceeds any type of physiological response (transcription, translation), resulting in inhibited growth.
@@ -2682,7 +2781,9 @@ Other thoughts:
 2. In aquatic systems, oxygen limitation seems to be the mechanism for upper thermal limits. Is there a way to make one global model so that we can make predictions for any ectotherm?   
 
 ------
-<div id='id-section37'/>
+
+<div id='id-section37'/>  
+
 ### Page 37: 2016-06-11. Quantifying natural selection in natural populations    
 
 I've been reading more Kingsolver (specifically [Kingsolver et al. 2001](http://www.jstor.org/stable/pdf/10.1086/319193.pdf?_=1465693479574);[Kingsolver & Diamond 2011](http://www.jstor.org/stable/pdf/10.1086/658341.pdf) which led me to think about quantifying modes of selection in nature. Basically all you need to do is regress traits against relative fitness (fitness of individual / mean fitness of population). The slope is the magnitude of direction selection. Also, if you want to detect disruptive or stabilizing, then you can add a quadratic term. It'd be interesting to apply this technique to assess the fitness consequences of climate change. So take a species and measure fitness and traits along a transect to pick up the warm-edge, core, and cool-edge populations. 
@@ -2695,7 +2796,9 @@ Refs for me to read:
 
 
 ------
-<div id='id-section38'/>
+
+<div id='id-section38'/>  
+
 ### Page 38: 2016-06-13. qPCR update for Duke1,CJ2,SHC8,CJ5. Randomizing samples treated at 25C(reference for basal expression) for qpcrs.     
 
 Running qpcr for Duke1/CJ2/SHC8/CJ5; hsc70-4 h2 50C annealing.   
@@ -2790,7 +2893,9 @@ write.csv(sample(d$colonies),"ra.csv")
 I'll arrange these samples in rows of 12 in pcr strip tubes, dilute 1/10 and then I can multichannel the samples into a 96 well qpcr plate.    
 
 ------
-<div id='id-section39'/>
+
+<div id='id-section39'/>  
+
 ### Page 39: 2016-06-13. Post doc project idea: Assessing current impacts of climate change in natural populations. 
 
 **Alternate title: Quantifying the intensity of selection associated with climate change.**     
@@ -2824,7 +2929,9 @@ I'll arrange these samples in rows of 12 in pcr strip tubes, dilute 1/10 and the
 2. I can also measure phenotypic selection for allele frequencies!  (Dr. Goodnight's suggestion) 
 
 ------
-<div id='id-section40'/>
+
+<div id='id-section40'/>  
+
 ### Page 40: 2016-06-14. qPCR's: Diluting samples for quantifying basal expression and repeats   
 
 **Diluting samples for basal expression:**   
@@ -2843,7 +2950,9 @@ I also diluted the 1:10 cDNA samples again at 1:10 to run 18s rRNA. So I added 2
 
 All in all, it took ~ 3 hours from organization to completion. 
 
-<div id='id-section40.1'/>
+
+<div id='id-section40.1'/>  
+
 ## Updated plate layout:   
 
 | Row  | Column | Colony             |
@@ -2950,7 +3059,9 @@ Ran 18s rRNA for following colonies:
 **results**: all worked     
 
 
-<div id='id-section40.5'/>
+
+<div id='id-section40.5'/>  
+
 #Update of samples:   
 
 | Status       | X18s | hsc70.4_1468_1592_degen | hsp83_279_392_degen | hsp83_1583_1682_degen | hsp40_424_525degen |
@@ -2960,7 +3071,9 @@ Ran 18s rRNA for following colonies:
 | total        |   67 |                      67 |                  67 |                    65 |                 67 |
 
 ------
-<div id='id-section41'/>
+
+<div id='id-section41'/>  
+
 ### Page 41: 2016-06-15. qPCRs to quantify basal expression. **(Evolution of stress response project)**   
 
 I probably should have mentioned this earlier, but since all the samples are on 1 plate, I'll be quantifying 4 genes in a replicated randomized block design.  
@@ -2976,7 +3089,9 @@ So for each gene, run 2 plates. Samples on the plate were already previously ran
 
 
 ------
-<div id='id-section42'/>
+
+<div id='id-section42'/>  
+
 ### Page 42: 2016-06-15. Evolution talks I want to attend.
 
 Not a comprehensive list, but a start. 
@@ -3002,7 +3117,9 @@ Not a comprehensive list, but a start.
 | Sunday, June 19   | Parker,Joseph            | MR9AB     | 11:15AM | An inordinate fondness for rove beetles: evolution and diversification of ant social parasites | Adaptation                             |
 
 ------
-<div id='id-section43'/>
+
+<div id='id-section43'/>  
+
 ###Page 43: 2016-06-16. Figure for curve fitting: see  [Success with **failwith()**](#id-section30.2) and [Status update of samples.](#id-section40.5)     
 
 **Hsp70, 40, 83 from top to bottom**
@@ -3010,7 +3127,9 @@ Not a comprehensive list, but a start.
 ![](https://cloud.githubusercontent.com/assets/4654474/16124570/7f83264e-33bd-11e6-95b4-f6b4e04ca936.jpeg)
 
 ------
-<div id='id-section44'/>
+
+<div id='id-section44'/>  
+
 ### Page 44: 2016-07-18. Summary statistics for modulation of Hsp paper. 
 ### Overall means    
 |       |   mean xp |
@@ -3037,7 +3156,9 @@ Not a comprehensive list, but a start.
 |           26 |   14.320365 | 2.334319 |    42.62233 | 2.565149 |   14.086744 | 2.299683 |
 
 ------
-<div id='id-section45'/>
+
+<div id='id-section45'/>  
+
 ### Page 45: 2016-07-19.  Meeting with [VGN proteomics facility](https://vgn.uvm.edu/proteomics)
 
 Meeting with Wai and Bethany to finish up the comparative proteomics project (Amanda was working on this). 
@@ -3049,7 +3170,9 @@ Timeline:
 * First week of August for sending me a dataset  
 
 ------
-<div id='id-section46'/>
+
+<div id='id-section46'/>  
+
 ### Page 46: 2016-07-21. Reference samples for mapping index; Hsp modulation and thermal niche paper.   
 
 From SHC:    
@@ -3062,7 +3185,9 @@ From SHC:
 
 
 ------
-<div id='id-section47'/>
+
+<div id='id-section47'/>  
+
 ###Page 47: 2016-07-26. Learning mixed effects stat models   
 
 Mixed effects stat models let you include random or fixed variables, implemented in (lme4 package](http://lme4.r-forge.r-project.org/lMMwR/lrgprt.pdf). The difference? Summarized [here](https://dynamicecology.wordpress.com/2015/11/04/is-it-a-fixed-or-random-effect/) in dynamic ecology blog. 
@@ -3143,7 +3268,9 @@ question.
 ```
 
 ------
-<div id='id-section48'/>
+
+<div id='id-section48'/>  
+
 ### Page 48: 2016-07-27. Meeting with Steve Keller to discuss post doc idea (started here: [Page 37: 2016-06-11](#id-section37). Quantifying natural selection in natural populations )     
 
 Raw notes from notebook:
@@ -3170,7 +3297,9 @@ Post doc grants:
 2. Fullbright for international opportunities   
 
 ------
-<div id='id-section49'/>
+
+<div id='id-section49'/>  
+
 ###Page 49:2016-07-28. Quantitative genetics and the molecular basis of complex traits
 
 Molecular biologists and quantitative genetics are intersted in,at some level, the molecular basis of complex traits. However, each field uses different approaches to this problem. Traditionally, the molecular biologist will manipulate a gene within a single genotype to observe its effect on a phenotype. On the other hand, a quantitative geneticist will take many different genotypes, shuffle genes around by mating individuals with each other, and then statistically assign the effect of genotypes in general on a phenotype.
@@ -3180,7 +3309,9 @@ It'd be interesting to merge both approaches: Knock out or in a gene for many ge
 [Paaby lab](http://genaamics.org/research/) is doing a bit of this. She gave a talk earlier this year? Anyway, she picked a well known developmental pathway in worms(*C. elegans*) and used RNAi for many different species(I think) for a panel of genes. 
 
 ------
-<div id='id-section50'/>
+
+<div id='id-section50'/>  
+
 ###Page 50: 2016-08-02. Picking a plant system for post doc idea  
 
 
@@ -3210,7 +3341,9 @@ Perrenial with wide distribution from Canada to Mexico. We could look at episodi
 **Cool technique to QTL with function valued traits** [here](http://g3journal.org/content/6/1/79)
 
 ------
-<div id='id-section51'/>
+
+<div id='id-section51'/>  
+
 ###Page 51: 2016-08-02; 2016-08-03. Climate cascade meeting    
 
 1. Project updates:    
@@ -3235,7 +3368,9 @@ Perrenial with wide distribution from Canada to Mexico. We could look at episodi
 
 
 ------
-<div id='id-section52'/>
+
+<div id='id-section52'/>  
+
 ### Page 52: 2016-08-04. Following up stats, range limits project   
 
 ### analysis of data with pre treatment temperature as continuous within an anova  
@@ -3350,7 +3485,9 @@ Residuals	34	531992	15647
 Interaction non-significant; the change was caused by a mistake made by consolidating scripts. 
 
 ------
-<div id='id-section53'/>
+
+<div id='id-section53'/>  
+
 ### Page 53: 2016-08-08. Post doc ideas part 2
 
 ## 1. How does selection operate on the life histories of poplar? [Similar to this post doc listing] (http://evol.mcmaster.ca/~brian/evoldir/PostDocs/INRAFrance.EvolQuantGenetics)       
@@ -3396,7 +3533,9 @@ Analysis: Determine shifts in growth reaction norms.
 
 
 ------
-<div id='id-section54'/>
+
+<div id='id-section54'/>  
+
 ###Page 54: 2016-08-10. Climate cascade meeting   
 
 1. Project updates:    
@@ -3414,7 +3553,9 @@ Analysis: Determine shifts in growth reaction norms.
 
 
 ------
-<div id='id-section55'/>
+
+<div id='id-section55'/>  
+
 ### Page 55: 2016-08-11.  Overlaying raster files in a map in R     
 
 Good link to show how to overlay [here](http://geoscripting-wur.github.io/IntroToRaster/). I've had to use this to plot climate cut offs (example: [here](https://github.com/adnguyen/Dissertation_temperature_adaptation_ants/files/414102/20160811_node1_tmax_cutoff_11X10dim_mod.pdf)) 
@@ -3453,7 +3594,9 @@ points(dbio2$Lon,dbio2$Lat,pch=16,col=dbio2$coco)
 ```
 
 ------
-<div id='id-section56'/>
+
+<div id='id-section56'/>  
+
 ###Page 56: 2016-08-16 range limits paper, data analysis of chill coma recovery time (CCRT) revisited     
 
 From my G matrix anlaysis, I find variation in the cooler-warmer axis. So for my statistics for relating CCRT to local environment (to see if they're locally adapted), I used an ANCOVA:
@@ -3608,7 +3751,9 @@ prtrt_Tm5:T -0.674  0.496  0.497  0.997 -0.677  0.497  0.499
 ```
 
 ------
-<div id='id-section57'/>
+
+<div id='id-section57'/>  
+
 ### Page 57: 2016-08-25. Hsp modulation follow up stats
 
 ```
@@ -3639,7 +3784,9 @@ zAxis 2 A. picea-South     1.3438760  0.3706435  2.3171085 0.0031663
 ```
 
 ------
-<div id='id-section58'/>
+
+<div id='id-section58'/>  
+
 ### Page 58: 2016-08-29 & 30. Climate cascade meeting  
 
 1. Project updates:    
@@ -3678,7 +3825,9 @@ There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets r
 
 
 ------
-<div id='id-section59'/>
+
+<div id='id-section59'/>  
+
 ### Page 59: 2016-09-01. SHC lab meeting Fall 2016   
 
 | Room | Date         | Activity                                 | Person.in.Charge | Breakfast |
@@ -3714,7 +3863,9 @@ There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets r
 **Tuesday morning (2016-09-06)**: Schedule time to look for ants, collect ~ 20. 
 
 ------
-<div id='id-section60'/>
+
+<div id='id-section60'/>  
+
 ### 2016-09-01: Paper notes: Paccard et al. 2016
 
 ref: 
@@ -3742,7 +3893,9 @@ Separate or the same item?
 
 
 ------
-<div id='id-section61'/>
+
+<div id='id-section61'/>  
+
 ### Page 61: 2016-09-06. Playing with rpart with range limit data    
 
 **Using bioclim variables to classify presence-absence**    
@@ -3931,7 +4084,9 @@ Confusion matrix indicating 85.2% accuracy
 | present |     11 |      41 |
 
 ------
-<div id='id-section62'/>
+
+<div id='id-section62'/>  
+
 ### Page 62: 2016-09-06. Climate cascade meeting  
 
 1. Project updates:    
@@ -3958,7 +4113,9 @@ Notes:  Only NJG and ANBE in attendance.
 
 * **Go over thesis layout next time**
 ------
-<div id='id-section63'/>
+
+<div id='id-section63'/>  
+
 ###Page 63: 2016-09-07.  PCA update for range limit data  ; see * [Page 63: 2016-09-07](#id-section63). PCA update for range limit data
 
 **Aaron wants to explore PCA decomposition of bioclim variables**
@@ -4076,10 +4233,14 @@ Aaron
 ```
 
 ------
-<div id='id-section64'/>
+
+<div id='id-section64'/>  
+
 
 ------
-<div id='id-section65'/>
+
+<div id='id-section65'/>  
+
 <<<<<<< HEAD
 =======
 ### Page 65:2016-09-12. variable importance    
@@ -4089,7 +4250,9 @@ Aaron
 [Youtube version](https://www.youtube.com/watch?v=tD8HZuWqIQw&list=UUq4pm1i_VZqxKVVOz5qRBIA&index=16)
 
 ------
-<div id='id-section66'/>     
+
+<div id='id-section66'/>  
+     
 ### Page 66: 2016-09-13. climate cascade meeting       
 
 1. Project updates:    
@@ -4117,7 +4280,9 @@ Aaron
 
 
 ------
-<div id='id-section67'/>
+
+<div id='id-section67'/>  
+
 ### Page 68: 2016-09-14. SICB meeting    
 
 ### Venue:   Hilton New Orleans Riverside      
@@ -4138,7 +4303,9 @@ Budget:
    
 
 ------
-<div id='id-section68'/>
+
+<div id='id-section68'/>  
+
 ### Page 68: 2016-09-19; 2016-09-20. Climate cascade meeting
 
  1. Project updates:    
@@ -4165,7 +4332,9 @@ Budget:
   * Abstract? I have one written up for NSF post doc fellowship
 
 ------
-<div id='id-section69'/>
+
+<div id='id-section69'/>  
+
 ### Page 69: 2016-09-21. qpcr redos for 18s rRNA    
 
 Table of colonies with unstable HSG as determined by linear regression (18s  ~ Temp).
@@ -4183,7 +4352,9 @@ others: Yates3, Duke8
 
 
 ------
-<div id='id-section70'/>
+
+<div id='id-section70'/>  
+
 ### Page 70: 2016-09-26. selecting poplar clones    
 
 Overall goal: Make a map highlighting climate gradient and plotting potential sites to select clones from. The magnitiude of the points will relate to the GSL.   
@@ -4244,7 +4415,9 @@ range of GSLs: 2.016667-4.833333 months
 
 
 ------
-<div id='id-section71'/>
+
+<div id='id-section71'/>  
+
 ### Page 71: 2016-09-26 and 2016-09-27. Climate cascade meeting    
 
 1. Project updates:    
@@ -4273,7 +4446,9 @@ range of GSLs: 2.016667-4.833333 months
 
 
 ------
-<div id='id-section72'/>
+
+<div id='id-section72'/>  
+
 ### Page 72: 2016-09-27. evolution of hsp gxp data analysis
 
 # Exploring different approaches  
@@ -4419,7 +4594,9 @@ F-statistic: 6.384 on 3 and 28 DF,  p-value: 0.00196
 
 
 ------
-<div id='id-section73'/>
+
+<div id='id-section73'/>  
+
 ### Page 73: 2016-09-28. building ultrametric trees   
 
 I need to build ultrametric trees to do phylogenetic analyses. They need to be ultrametric to meet the assumptions of Homoscedasticity. I'll be using [BEAST 2.3.1](http://beast.bio.ed.ac.uk/). And I'll build 2 types; 1 with BL differences across whole phylogeny and another with species as polytomies. 
@@ -4456,7 +4633,9 @@ Cannot get it to work. YULE model best for species. But I have pop and species.
 
 
 ------
-<div id='id-section74'/>
+
+<div id='id-section74'/>  
+
 ### Page 74: 2016-09-28. phylogenetic regressions (PGLS) and anovas    
 
 Did PGLS in 3 ways:    
@@ -4725,7 +4904,9 @@ blog: http://phytools.blogspot.com
 ```
 
 ------
-<div id='id-section74.1'/>
+
+<div id='id-section74.1'/>  
+
 ### 2016-09-28. SHC suggestion: ancestral trait reconsturction -> regressions/anovas    
 
 [summary pdf figs](https://github.com/adnguyen/Dissertation_temperature_adaptation_ants/files/499091/20160928_ATR_figs.pdf)
@@ -4735,7 +4916,9 @@ blog: http://phytools.blogspot.com
 
 
 ------
-<div id='id-section74.2'/>
+
+<div id='id-section74.2'/>  
+
 ### 2016-09-29. PIC
 
 **Dataset**     
@@ -4777,7 +4960,9 @@ blog: http://phytools.blogspot.com
 
 
 ------
-<div id='id-section75'/> 
+
+<div id='id-section75'/>  
+ 
 ### Page 75: 2016-10-03 and 2016-10-04.Climate cascade meeting   
 
 1. Project updates:    
@@ -4820,7 +5005,9 @@ blog: http://phytools.blogspot.com
     5. Final thesis April 7th.   
 
 ------
-<div id='id-section76'/>
+
+<div id='id-section76'/>  
+
 ### Page 76: 2016-10-03. Membrane stability    
 
 
@@ -4887,7 +5074,9 @@ Holmstrup, M., K. Hedlund, and H. Boriss. 2002. Drought acclimation and lipid co
 
 ​	
 ------
-<div id='id-section77'/>
+
+<div id='id-section77'/>  
+
 ### Page 77: 2016-10-04 Lab Safety Officer (LSO) meeting.   
 
 Department of Risk Management and Safety- Francis Churchill mainly speaking
@@ -4984,7 +5173,9 @@ Safety Audits at UVM: LabCliq. LSO can do corrective actions but the PI has to u
 
 ​	
 ------
-<div id='id-section78'/>
+
+<div id='id-section78'/>  
+
 ### Page 78: 2016-10-05. Hsp gxp function valued trait fig  
 
 Boltzmann function and fit to dataset
@@ -5067,7 +5258,9 @@ box()
 ![](https://cloud.githubusercontent.com/assets/4654474/19113928/ceaa3140-8ad9-11e6-8693-a8cb0c175eb9.jpeg)
 
 ------
-<div id='id-section79'/>
+
+<div id='id-section79'/>  
+
 ### Page 79: 2016-10-06. SHC lab meeting: NSF post doc app    
 
 Lab safety stuff: 
@@ -5111,7 +5304,9 @@ Notes:
 
 ​	
 ------
-<div id='id-section80'/>
+
+<div id='id-section80'/>  
+
 ### Page 80: 2016-10-07. Prepping cliamte cascade meeting   
 1. Project updates:    
     * Gene expression project:
@@ -5153,7 +5348,9 @@ Notes:
 
 ​	
 ------
-<div id='id-section81'/>
+
+<div id='id-section81'/>  
+
 ### Page 81: 2016-10-11.  ANCOVA models for testing interaction of hsp gxp parameter and habitat on CTmax   
 
 
@@ -5354,7 +5551,9 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 
 
 ------
-<div id='id-section82'/>
+
+<div id='id-section82'/>  
+
 ### Page 82: 2016-10-11. variance partitioning in CTmax of aphaeno
 
 * **Phylogenetic axes = first 9**
@@ -5388,7 +5587,9 @@ $indfract
 
 
 ------
-<div id='id-section83'/>
+
+<div id='id-section83'/>  
+
 ### Page 83: 2016-10-12.  Testing effect of MAT on Hsp gxp and looking at correlations between phylogeny and climate.   
 
 ```R
@@ -5571,7 +5772,9 @@ log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2 + mergy$Axis.3
 - mergy$Axis.3        1  0.002884 4.1926 -144.37
 - mergy$Axis.2        1  0.008699 4.1984 -144.29
 - mergy$bio5          1  0.017061 4.2068 -144.18
-<none>                            4.1897 -142.41
+
+<none>  
+                            4.1897 -142.41
 - mergy$Rearing_Temp  1  0.257200 4.4469 -140.96
 
 Step:  AIC=-144.37
@@ -5580,7 +5783,9 @@ log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2
                      Df Sum of Sq    RSS     AIC
 - mergy$Axis.2        1  0.009219 4.2018 -146.25
 - mergy$bio5          1  0.021070 4.2137 -146.08
-<none>                            4.1926 -144.37
+
+<none>  
+                            4.1926 -144.37
 - mergy$Rearing_Temp  1  0.254448 4.4471 -142.96
 
 Step:  AIC=-146.25
@@ -5588,14 +5793,18 @@ log10(x) ~ mergy$bio5 + mergy$Rearing_Temp
 
                      Df Sum of Sq    RSS     AIC
 - mergy$bio5          1   0.01849 4.2203 -147.99
-<none>                            4.2018 -146.25
+
+<none>  
+                            4.2018 -146.25
 - mergy$Rearing_Temp  1   0.29906 4.5009 -144.26
 
 Step:  AIC=-147.99
 log10(x) ~ mergy$Rearing_Temp
 
                      Df Sum of Sq    RSS     AIC
-<none>                            4.2203 -147.99
+
+<none>  
+                            4.2203 -147.99
 - mergy$Rearing_Temp  1   0.30548 4.5258 -145.94
 Start:  AIC=-151.28
 log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2 + mergy$Axis.3
@@ -5604,7 +5813,9 @@ log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2 + mergy$Axis.3
 - mergy$Axis.3        1  0.006133 3.6020 -153.18
 - mergy$bio5          1  0.014353 3.6102 -153.05
 - mergy$Axis.2        1  0.125441 3.7213 -151.29
-<none>                            3.5959 -151.28
+
+<none>  
+                            3.5959 -151.28
 - mergy$Rearing_Temp  1  0.211236 3.8071 -149.97
 
 Step:  AIC=-153.18
@@ -5612,7 +5823,9 @@ log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2
 
                      Df Sum of Sq    RSS     AIC
 - mergy$bio5          1  0.011172 3.6132 -155.00
-<none>                            3.6020 -153.18
+
+<none>  
+                            3.6020 -153.18
 - mergy$Axis.2        1  0.128482 3.7305 -153.15
 - mergy$Rearing_Temp  1  0.218797 3.8208 -151.76
 
@@ -5620,7 +5833,9 @@ Step:  AIC=-155
 log10(x) ~ mergy$Rearing_Temp + mergy$Axis.2
 
                      Df Sum of Sq    RSS     AIC
-<none>                            3.6132 -155.00
+
+<none>  
+                            3.6132 -155.00
 - mergy$Axis.2        1   0.13788 3.7510 -154.83
 - mergy$Rearing_Temp  1   0.22616 3.8393 -153.48
 Start:  AIC=-127.73
@@ -5629,7 +5844,9 @@ log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2 + mergy$Axis.3
                      Df Sum of Sq    RSS     AIC
 - mergy$Axis.3        1   0.03867 5.4351 -129.32
 - mergy$bio5          1   0.10859 5.5051 -128.58
-<none>                            5.3965 -127.73
+
+<none>  
+                            5.3965 -127.73
 - mergy$Axis.2        1   0.42509 5.8216 -125.33
 - mergy$Rearing_Temp  1   0.64013 6.0366 -123.23
 
@@ -5638,7 +5855,9 @@ log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2
 
                      Df Sum of Sq    RSS     AIC
 - mergy$bio5          1   0.14392 5.5791 -129.80
-<none>                            5.4351 -129.32
+
+<none>  
+                            5.4351 -129.32
 - mergy$Axis.2        1   0.41361 5.8488 -127.06
 - mergy$Rearing_Temp  1   0.67128 6.1064 -124.56
 
@@ -5646,7 +5865,9 @@ Step:  AIC=-129.8
 log10(x) ~ mergy$Rearing_Temp + mergy$Axis.2
 
                      Df Sum of Sq    RSS     AIC
-<none>                            5.5791 -129.80
+
+<none>  
+                            5.5791 -129.80
 - mergy$Axis.2        1   0.47047 6.0495 -127.11
 - mergy$Rearing_Temp  1   0.63445 6.2135 -125.56
 Start:  AIC=-88.85
@@ -5655,7 +5876,9 @@ log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2 + mergy$Axis.3
                      Df Sum of Sq    RSS     AIC
 - mergy$Axis.2        1   0.02655 10.576 -90.709
 - mergy$bio5          1   0.27432 10.824 -89.365
-<none>                            10.549 -88.854
+
+<none>  
+                            10.549 -88.854
 - mergy$Axis.3        1   0.47944 11.029 -88.277
 - mergy$Rearing_Temp  1   0.48666 11.036 -88.239
 
@@ -5664,7 +5887,9 @@ log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.3
 
                      Df Sum of Sq    RSS     AIC
 - mergy$bio5          1   0.29726 10.873 -91.101
-<none>                            10.576 -90.709
+
+<none>  
+                            10.576 -90.709
 - mergy$Rearing_Temp  1   0.46041 11.036 -90.237
 - mergy$Axis.3        1   0.49173 11.068 -90.073
 
@@ -5673,14 +5898,18 @@ log10(x) ~ mergy$Rearing_Temp + mergy$Axis.3
 
                      Df Sum of Sq    RSS     AIC
 - mergy$Axis.3        1   0.36201 11.235 -91.201
-<none>                            10.873 -91.101
+
+<none>  
+                            10.873 -91.101
 - mergy$Rearing_Temp  1   0.50260 11.376 -90.480
 
 Step:  AIC=-91.2
 log10(x) ~ mergy$Rearing_Temp
 
                      Df Sum of Sq    RSS     AIC
-<none>                            11.235 -91.201
+
+<none>  
+                            11.235 -91.201
 - mergy$Rearing_Temp  1   0.56062 11.796 -90.377
 Start:  AIC=-126.78
 log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2 + mergy$Axis.3
@@ -5689,7 +5918,9 @@ log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2 + mergy$Axis.3
 - mergy$Axis.2        1    0.0042  5.4901 -128.735
 - mergy$Axis.3        1    0.0404  5.5262 -128.354
 - mergy$bio5          1    0.1532  5.6391 -127.182
-<none>                             5.4859 -126.780
+
+<none>  
+                             5.4859 -126.780
 - mergy$Rearing_Temp  1    4.5602 10.0461  -93.689
 
 Step:  AIC=-128.74
@@ -5698,14 +5929,18 @@ log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.3
                      Df Sum of Sq     RSS      AIC
 - mergy$Axis.3        1    0.0392  5.5292 -130.323
 - mergy$bio5          1    0.1609  5.6509 -129.060
-<none>                             5.4901 -128.735
+
+<none>  
+                             5.4901 -128.735
 - mergy$Rearing_Temp  1    4.8078 10.2978  -94.254
 
 Step:  AIC=-130.32
 log10(x) ~ mergy$bio5 + mergy$Rearing_Temp
 
                      Df Sum of Sq     RSS      AIC
-<none>                             5.5292 -130.323
+
+<none>  
+                             5.5292 -130.323
 - mergy$bio5          1     0.204  5.7332 -130.221
 - mergy$Rearing_Temp  1     4.770 10.2992  -96.246
 Start:  AIC=-80.6
@@ -5713,7 +5948,9 @@ log10(x) ~ mergy$bio5 + mergy$Rearing_Temp + mergy$Axis.2 + mergy$Axis.3
 
                      Df Sum of Sq    RSS     AIC
 - mergy$bio5          1    0.1822 12.346 -81.733
-<none>                            12.164 -80.595
+
+<none>  
+                            12.164 -80.595
 - mergy$Rearing_Temp  1    0.7613 12.925 -79.074
 - mergy$Axis.2        1    1.1960 13.360 -77.156
 - mergy$Axis.3        1    3.4308 15.595 -68.185
@@ -5722,7 +5959,9 @@ Step:  AIC=-81.73
 log10(x) ~ mergy$Rearing_Temp + mergy$Axis.2 + mergy$Axis.3
 
                      Df Sum of Sq    RSS     AIC
-<none>                            12.346 -81.733
+
+<none>  
+                            12.346 -81.733
 - mergy$Rearing_Temp  1    0.8276 13.174 -79.970
 - mergy$Axis.2        1    1.3181 13.664 -77.849
 - mergy$Axis.3        1    3.9458 16.292 -67.648
@@ -5855,7 +6094,9 @@ Multiple R-squared:  0.3049,	Adjusted R-squared:  0.2663
 F-statistic: 7.897 on 3 and 54 DF,  p-value: 0.0001852
 ```
 
-<div id='id-section83.5'/>
+
+<div id='id-section83.5'/>  
+
 ### 2016-11-01 adding full models with automated stepAIC
 
 ```R
@@ -5869,7 +6110,9 @@ log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 +
 - merg$Axis.2        1   0.00563 4.2671 -137.75
 - merg$Axis.1        1   0.03032 4.2918 -137.42
 - merg$bio5          1   0.05267 4.3142 -137.12
-<none>                           4.2615 -135.83
+
+<none>  
+                           4.2615 -135.83
 - merg$Rearing_Temp  1   0.32622 4.5877 -133.62
 
 Step:  AIC=-137.82
@@ -5879,7 +6122,9 @@ log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2
 - merg$Axis.2        1   0.00557 4.2671 -139.75
 - merg$Axis.1        1   0.03288 4.2944 -139.39
 - merg$bio5          1   0.05995 4.3215 -139.03
-<none>                           4.2616 -137.82
+
+<none>  
+                           4.2616 -137.82
 - merg$Rearing_Temp  1   0.32790 4.5895 -135.60
 
 Step:  AIC=-139.75
@@ -5888,7 +6133,9 @@ log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1
                     Df Sum of Sq    RSS     AIC
 - merg$Axis.1        1   0.02927 4.2964 -141.36
 - merg$bio5          1   0.05486 4.3220 -141.02
-<none>                           4.2671 -139.75
+
+<none>  
+                           4.2671 -139.75
 - merg$Rearing_Temp  1   0.35722 4.6243 -137.17
 
 Step:  AIC=-141.36
@@ -5896,14 +6143,18 @@ log10(x) ~ merg$bio5 + merg$Rearing_Temp
 
                     Df Sum of Sq    RSS     AIC
 - merg$bio5          1   0.02771 4.3241 -142.99
-<none>                           4.2964 -141.36
+
+<none>  
+                           4.2964 -141.36
 - merg$Rearing_Temp  1   0.33717 4.6336 -139.05
 
 Step:  AIC=-142.99
 log10(x) ~ merg$Rearing_Temp
 
                     Df Sum of Sq    RSS     AIC
-<none>                           4.3241 -142.99
+
+<none>  
+                           4.3241 -142.99
 - merg$Rearing_Temp  1    0.3481 4.6722 -140.58
 Start:  AIC=-147.19
 log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 + 
@@ -5914,7 +6165,9 @@ log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 +
 - merg$Axis.3        1  0.009894 3.5008 -149.03
 - merg$bio5          1  0.016701 3.5076 -148.92
 - merg$Axis.2        1  0.046939 3.5379 -148.43
-<none>                           3.4909 -147.19
+
+<none>  
+                           3.4909 -147.19
 - merg$Rearing_Temp  1  0.215627 3.7065 -145.78
 
 Step:  AIC=-149.05
@@ -5924,7 +6177,9 @@ log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.2 + merg$Axis.3
 - merg$Axis.3        1  0.005260 3.5053 -150.96
 - merg$bio5          1  0.008554 3.5086 -150.91
 - merg$Axis.2        1  0.057491 3.5575 -150.12
-<none>                           3.5000 -149.05
+
+<none>  
+                           3.5000 -149.05
 - merg$Rearing_Temp  1  0.210727 3.7107 -147.71
 
 Step:  AIC=-150.96
@@ -5933,7 +6188,9 @@ log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.2
                     Df Sum of Sq    RSS     AIC
 - merg$bio5          1  0.006235 3.5115 -152.86
 - merg$Axis.2        1  0.059127 3.5644 -152.01
-<none>                           3.5053 -150.96
+
+<none>  
+                           3.5053 -150.96
 - merg$Rearing_Temp  1  0.218048 3.7233 -149.52
 
 Step:  AIC=-152.86
@@ -5941,14 +6198,18 @@ log10(x) ~ merg$Rearing_Temp + merg$Axis.2
 
                     Df Sum of Sq    RSS     AIC
 - merg$Axis.2        1  0.065809 3.5773 -153.80
-<none>                           3.5115 -152.86
+
+<none>  
+                           3.5115 -152.86
 - merg$Rearing_Temp  1  0.225290 3.7368 -151.31
 
 Step:  AIC=-153.8
 log10(x) ~ merg$Rearing_Temp
 
                     Df Sum of Sq    RSS    AIC
-<none>                           3.5773 -153.8
+
+<none>  
+                           3.5773 -153.8
 - merg$Rearing_Temp  1   0.18654 3.7639 -152.9
 Start:  AIC=-122.77
 log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 + 
@@ -5959,7 +6220,9 @@ log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 +
 - merg$Axis.1        1   0.03695 5.0833 -124.37
 - merg$bio5          1   0.09873 5.1451 -123.69
 - merg$Axis.2        1   0.14349 5.1899 -123.20
-<none>                           5.0464 -122.77
+
+<none>  
+                           5.0464 -122.77
 - merg$Rearing_Temp  1   0.61137 5.6577 -118.37
 
 Step:  AIC=-124.58
@@ -5969,7 +6232,9 @@ log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2
 - merg$Axis.1        1   0.06171 5.1257 -125.90
 - merg$Axis.2        1   0.13474 5.1987 -125.11
 - merg$bio5          1   0.15531 5.2193 -124.89
-<none>                           5.0640 -124.58
+
+<none>  
+                           5.0640 -124.58
 - merg$Rearing_Temp  1   0.62522 5.6892 -120.06
 
 Step:  AIC=-125.9
@@ -5978,14 +6243,18 @@ log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.2
                     Df Sum of Sq    RSS     AIC
 - merg$bio5          1   0.11746 5.2431 -126.63
 - merg$Axis.2        1   0.17282 5.2985 -126.04
-<none>                           5.1257 -125.90
+
+<none>  
+                           5.1257 -125.90
 - merg$Rearing_Temp  1   0.66713 5.7928 -121.05
 
 Step:  AIC=-126.63
 log10(x) ~ merg$Rearing_Temp + merg$Axis.2
 
                     Df Sum of Sq    RSS     AIC
-<none>                           5.2431 -126.63
+
+<none>  
+                           5.2431 -126.63
 - merg$Axis.2        1   0.21853 5.4617 -126.35
 - merg$Rearing_Temp  1   0.63456 5.8777 -122.23
 Start:  AIC=-85.77
@@ -5997,7 +6266,9 @@ log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 +
 - merg$bio5          1   0.14357 10.399 -86.979
 - merg$Axis.3        1   0.17560 10.431 -86.803
 - merg$Rearing_Temp  1   0.34221 10.597 -85.900
-<none>                           10.255 -85.771
+
+<none>  
+                           10.255 -85.771
 - merg$Axis.1        1   0.51791 10.773 -84.963
 
 Step:  AIC=-87.25
@@ -6007,7 +6278,9 @@ log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.3
 - merg$bio5          1   0.09885 10.449 -88.705
 - merg$Axis.3        1   0.20541 10.555 -88.127
 - merg$Rearing_Temp  1   0.28656 10.636 -87.690
-<none>                           10.350 -87.247
+
+<none>  
+                           10.350 -87.247
 - merg$Axis.1        1   0.45249 10.802 -86.808
 
 Step:  AIC=-88.71
@@ -6015,7 +6288,9 @@ log10(x) ~ merg$Rearing_Temp + merg$Axis.1 + merg$Axis.3
 
                     Df Sum of Sq    RSS     AIC
 - merg$Rearing_Temp  1   0.30750 10.756 -89.052
-<none>                           10.449 -88.705
+
+<none>  
+                           10.449 -88.705
 - merg$Axis.3        1   0.37408 10.823 -88.700
 - merg$Axis.1        1   0.60533 11.054 -87.495
 
@@ -6023,7 +6298,9 @@ Step:  AIC=-89.05
 log10(x) ~ merg$Axis.1 + merg$Axis.3
 
               Df Sum of Sq    RSS     AIC
-<none>                     10.756 -89.052
+
+<none>  
+                     10.756 -89.052
 - merg$Axis.3  1   0.42229 11.178 -88.857
 - merg$Axis.1  1   0.71553 11.472 -87.381
 Start:  AIC=-122.03
@@ -6035,7 +6312,9 @@ log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 +
 - merg$Axis.2        1    0.0329 5.4610 -123.689
 - merg$Axis.1        1    0.0409 5.4690 -123.605
 - merg$Axis.3        1    0.0666 5.4947 -123.338
-<none>                           5.4281 -122.033
+
+<none>  
+                           5.4281 -122.033
 - merg$Rearing_Temp  1    4.5125 9.9406  -89.546
 
 Step:  AIC=-124.03
@@ -6045,7 +6324,9 @@ log10(x) ~ merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 + merg$Axis.3
 - merg$Axis.2        1    0.0357 5.4639 -125.659
 - merg$Axis.3        1    0.0798 5.5080 -125.200
 - merg$Axis.1        1    0.1695 5.5977 -124.279
-<none>                           5.4282 -124.032
+
+<none>  
+                           5.4282 -124.032
 - merg$Rearing_Temp  1    4.5125 9.9407  -91.545
 
 Step:  AIC=-125.66
@@ -6054,7 +6335,9 @@ log10(x) ~ merg$Rearing_Temp + merg$Axis.1 + merg$Axis.3
                     Df Sum of Sq     RSS      AIC
 - merg$Axis.3        1    0.0784  5.5423 -126.847
 - merg$Axis.1        1    0.1733  5.6372 -125.879
-<none>                            5.4639 -125.659
+
+<none>  
+                            5.4639 -125.659
 - merg$Rearing_Temp  1    4.5377 10.0016  -93.197
 
 Step:  AIC=-126.85
@@ -6062,14 +6345,18 @@ log10(x) ~ merg$Rearing_Temp + merg$Axis.1
 
                     Df Sum of Sq     RSS      AIC
 - merg$Axis.1        1    0.1750  5.7173 -127.075
-<none>                            5.5423 -126.847
+
+<none>  
+                            5.5423 -126.847
 - merg$Rearing_Temp  1    4.4787 10.0209  -95.087
 
 Step:  AIC=-127.07
 log10(x) ~ merg$Rearing_Temp
 
                     Df Sum of Sq     RSS      AIC
-<none>                            5.7173 -127.075
+
+<none>  
+                            5.7173 -127.075
 - merg$Rearing_Temp  1    4.7398 10.4571  -94.659
 Start:  AIC=-78.04
 log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 + 
@@ -6077,7 +6364,9 @@ log10(x) ~ merg$bio5 + merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 +
 
                     Df Sum of Sq    RSS     AIC
 - merg$bio5          1    0.1636 11.382 -79.225
-<none>                           11.219 -78.036
+
+<none>  
+                           11.219 -78.036
 - merg$Axis.1        1    0.4666 11.685 -77.754
 - merg$Rearing_Temp  1    0.6847 11.903 -76.718
 - merg$Axis.2        1    0.9679 12.186 -75.402
@@ -6087,7 +6376,9 @@ Step:  AIC=-79.23
 log10(x) ~ merg$Rearing_Temp + merg$Axis.1 + merg$Axis.2 + merg$Axis.3
 
                     Df Sum of Sq    RSS     AIC
-<none>                           11.382 -79.225
+
+<none>  
+                           11.382 -79.225
 - merg$Axis.1        1    0.4311 11.813 -79.144
 - merg$Rearing_Temp  1    0.6969 12.079 -77.897
 - merg$Axis.2        1    0.8346 12.217 -77.263
@@ -6228,7 +6519,9 @@ F-statistic: 6.218 on 4 and 51 DF,  p-value: 0.0003732
 ```
 
 ------
-<div id='id-section84'/>
+
+<div id='id-section84'/>  
+
 ### Page 84: 2016-10-12]. Updating climate cascade to do list. 
 
 1. Project updates:    
@@ -6271,7 +6564,9 @@ F-statistic: 6.218 on 4 and 51 DF,  p-value: 0.0003732
 
 
 ------
-<div id='id-section85'/>
+
+<div id='id-section85'/>  
+
 ### Page 85: 2016-10-14. Paper note: Puentes, A., G. Granath, and J. Ågren. 2016. Similarity in G matrix structure among natural populations of Arabidopsis lyrata. Evolution 70:2370–2386.   
 
 
@@ -6283,7 +6578,9 @@ But Puentes et al. focus on A. lyrata in thier native range(Norway-Sweden) and i
 ### Summary of findings: G is stable between Norway and Sweden populations
 
 ------
-<div id='id-section86'/>
+
+<div id='id-section86'/>  
+
 ### Page 86: 2016-10-14.  [Wiley House Style Guide](https://authorservices.wiley.com/bauthor/House_style_guide_US4520101451884.pdf)    
 
 I'll need to follow these general writing rules for submitting a ms to Evolution. 
@@ -6375,7 +6672,9 @@ common error before “however” and “nevertheless”).
 ```
 
 ------
-<div id='id-section87'/>
+
+<div id='id-section87'/>  
+
 ### Page 87: 2016-10-14. NSF post doc app meeting: Keller Lab
 
 ### SK background to grant
@@ -6436,7 +6735,9 @@ NSF use to have bioinformatics post doc competition and replaced with narrowly d
 
 ​	
 ------
-<div id='id-section88'/>
+
+<div id='id-section88'/>  
+
 ### Page 88: 2016-10-18. Climate cascade meeting   
 
 1. Project updates:    
@@ -6478,7 +6779,9 @@ NSF use to have bioinformatics post doc competition and replaced with narrowly d
     5. Final thesis April 7th.  
 
 ------
-<div id='id-section89'/>
+
+<div id='id-section89'/>  
+
 ### Page 89: 2016-10-25.  Climate cascade updated list   
 
 1. Project updates:    
@@ -6523,7 +6826,9 @@ NSF use to have bioinformatics post doc competition and replaced with narrowly d
 
 
 ------
-<div id='id-section90'/>
+
+<div id='id-section90'/>  
+
 ### Page 90: 2016-10-25. Meeting with M Pespeni   
 
 Meeting time, Wednesday 2-4; 2016-10-26   
@@ -6564,7 +6869,9 @@ I think it is fun to think about the evolutionary potential to environmental cha
 * Try to talk to Mike Angiletta, Rus Lande. (Genetic accomodation and assimilation)  
 
 ------
-<div id='id-section91'/>
+
+<div id='id-section91'/>  
+
 ### Page 91: 2016-10-26 SICB meeting talk    
 
 [details for my talk](http://sicb.org/meetings/2017/schedule/abstractdetails.php?id=5)
@@ -6572,7 +6879,9 @@ I think it is fun to think about the evolutionary potential to environmental cha
 125-7  Sunday, Jan. 8 11:45    
 
 ------
-<div id='id-section92'/>
+
+<div id='id-section92'/>  
+
 ### Page 92: 2016-10-27. Proteome stability project update  
 
 * reminder: generated unfolding reaction norms for 6 ant colonies (3 colonies per species).   
@@ -6586,7 +6895,9 @@ I think it is fun to think about the evolutionary potential to environmental cha
   ​
 
 ------
-<div id='id-section93'/>
+
+<div id='id-section93'/>  
+
 ### Page 93: 2016-10-31.  CTmax and Hsp reaction norm stats   
 
 Stats overview: 
@@ -6877,7 +7188,9 @@ F-statistic: 7.487 on 2 and 44 DF,  p-value: 0.00159
 
 
 ------
-<div id='id-section94'/>
+
+<div id='id-section94'/>  
+
 ### Page 94: 2016-10-31; 2016-11-01. Climate cascade meeting setup and notes    
 
 1. Project updates:    
@@ -6919,12 +7232,16 @@ F-statistic: 7.487 on 2 and 44 DF,  p-value: 0.00159
 
 
 ------
-<div id='id-section95'/>
+
+<div id='id-section95'/>  
+
 ### Page 95: 2016-11-02. Ancestral trait reconstruction and CTmax PGLS ANBE common garden
 
 **Ancestral trait reconstruction**
 ```R
-cols<-ifelse(esthab[,1]>esthab[,2],"blue","red")
+cols
+<-ifelse(esthab[,1]>  
+esthab[,2],"blue","red")
 par(mar=c(1,1,1,1))
 plot(ult.tree1,cex=.5)
 nodelabels(pch=19,cex=.75,col=cols)
@@ -7362,7 +7679,9 @@ F-statistic:  2.19 on 2 and 5 DF,  p-value: 0.2074
 
 
 ------
-<div id='id-section96'/>
+
+<div id='id-section96'/>  
+
 ### Page 96: 2016-11-03. notes from skype meeting with KG, potential post doc opp    
 
 Marine Biological Labs, [Hibbitt Early Career Fellows Program](http://www.mbl.edu/research/hibbitt-early-career-fellows-program/)   
@@ -7387,7 +7706,9 @@ MBL are conveners; convening power
 
 
 ------
-<div id='id-section97'/>
+
+<div id='id-section97'/>  
+
 ### Page 97: 2016-11-04. ms in prep
 
 **first authored**   
@@ -7409,7 +7730,9 @@ MBL are conveners; convening power
 
 ​	
 ------
-<div id='id-section98'/>
+
+<div id='id-section98'/>  
+
 ### Page 98: 2016-11-08.  climate cascade meeting   
 
 1. Project updates:    
@@ -7451,7 +7774,9 @@ MBL are conveners; convening power
 
 ​	
 ------
-<div id='id-section99'/>
+
+<div id='id-section99'/>  
+
 ### Page 99: 2016-11-08. writing session with NJG   
 **Writing Hsp reaction norm + CTmax ms in PNAS format**   
 
@@ -7466,7 +7791,9 @@ MBL are conveners; convening power
     * Frazier et al. 2006, *AmNat*; the alternative is shifts in rxn norm horizontally, but not vertically= perfect-compensation hypothesis. In other words, biochemical adaptation can overcome rate-limiting effects of low temperature so that rmax is independent of Topt. Not mentioned in this explanation is that there can be constraints at higher temperatures that can potentially cause this pattern. 
 
 ------
-<div id='id-section99.1'/>
+
+<div id='id-section99.1'/>  
+
 ### 1. among colony variance
 ```R
 ddply(Aph.dat,.(habitat_v2),summarize,CTmax=mean(KO_temp_worker),var=var(KO_temp_worker))
@@ -7475,7 +7802,9 @@ ddply(Aph.dat,.(habitat_v2),summarize,CTmax=mean(KO_temp_worker),var=var(KO_temp
 2       flat woods 42.77917 0.1750000
 ```
 
-<div id='id-section99.2'/>
+
+<div id='id-section99.2'/>  
+
 ### PCA of cliamte variables
 
 ```R
@@ -7512,7 +7841,9 @@ knitr::kable(round(bclim$loadings[,1:2],3))
 | bio19 | -0.145 | -0.385 |
 
 ------
-<div id='id-section99.3'/>
+
+<div id='id-section99.3'/>  
+
 
 ### **regression models; taking first two pcas that explain 86% of variation**
 
@@ -7619,7 +7950,9 @@ F-statistic: 20.23 on 3 and 96 DF,  p-value: 3.043e-10
 ```
 
 ------
-<div id='id-section99.4'/>
+
+<div id='id-section99.4'/>  
+
 ### Hsps; pcas and variance partitioning of CTmax 
 
 ```R
@@ -7678,7 +8011,9 @@ F-statistic: 9.767 on 3 and 37 DF,  p-value: 6.991e-05
 ![](https://cloud.githubusercontent.com/assets/4654474/20145096/c45b01f2-a66c-11e6-8d64-86898a420add.jpeg)   
 
 ------
-<div id='id-section99.5'/>
+
+<div id='id-section99.5'/>  
+
 ### Variance partitioning
 
 ```R
@@ -7741,7 +8076,9 @@ Use function ‘rda’ to test significance of fractions of interest
 
 
 ------
-<div id='id-section100'/>
+
+<div id='id-section100'/>  
+
 ### Page 100: 2016-11-14 & 2016-11-15. climate cascade meeting     
 
 1. Project updates:    
@@ -7777,7 +8114,9 @@ Use function ‘rda’ to test significance of fractions of interest
 
 
 ------
-<div id='id-section101'/>
+
+<div id='id-section101'/>  
+
 
 ### Page 101: 2016-11-16Hsp reaction norm stats; adding quadratic term
 
@@ -7805,7 +8144,9 @@ F-statistic: 28.37 on 3 and 96 DF,  p-value: 3.191e-13
 ```
 
 ------
-<div id='id-section102'/>
+
+<div id='id-section102'/>  
+
 ### Page 102: 2016-11-22.  climate cascade to do list     
 
 1. Project updates:    
@@ -7845,7 +8186,11 @@ F-statistic: 28.37 on 3 and 96 DF,  p-value: 3.191e-13
 
 
 ------
-<div id='id-section103'/>
+
+
+<div id='id-section103'/>  
+  
+
 ### Page 103: 2016-12-06. climate cascade update
 
 
@@ -7886,7 +8231,9 @@ F-statistic: 28.37 on 3 and 96 DF,  p-value: 3.191e-13
       4. Defense notice 3 weeks before defense  (oral defense by March 24th).   
       5. Final thesis April 7th.  
 ------
-<div id='id-section104'/>
+
+<div id='id-section104'/>  
+
 ### Page 104: 2016-12-19. climate cascade update
 
 
@@ -7922,7 +8269,9 @@ F-statistic: 28.37 on 3 and 96 DF,  p-value: 3.191e-13
 
 
 ------
-<div id='id-section105'/>
+
+<div id='id-section105'/>  
+
 ### Page 105: 2016-12-20. Reading a few papers
 
 
