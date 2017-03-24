@@ -3993,8 +3993,6 @@ ref:   Fields PA (2001) Review: Protein function at thermal extremes: balancing 
 
 > Stability is needed to ensure the appropriate geometry for ligand binding, as well as to avoid denaturation, while flexibility is necessary to allow catalysis at a metabolically appropriate rate
 
-as to avoid denaturation, while flexibility is necessary to allow catalysis at a metabolically appropriate rate.
-
 a. A stable protein is needed to bind a substrate but also not unfold and aggregate. 
 
 b. Flexibilty is needed for catalysis because it involves domains in the protein to move. 
@@ -4008,20 +4006,42 @@ Stability is defined as the distribution of microstates considered to be in the 
    * protein-solvant interactions
    * it is a challenge to refold proteins because the number of microstates outnumbers the atoms in the universe
    * hydrophobic effect—non-polar residues are usually in the interior of globular proteins
+
 3. How far do Aphaenogaster migrate? 
    * deciduous forest ones move around a lot, but less than 1 meter
    * ​
+
 4. Across the whole clade, is there evidence for phylogenetic niche conservatism?
    * potentially, the western clade is a bit reversed. There is more diversity in open canopy species and 1 or 2 closed canopy species. 
+
 5. What is the geographical history of NA Aphaenogaster?
    * There is evidence for a diversification event from asia to na. A. japonica is loacted in japan and is sister to all of NA aphaenogaster species and this split occurred ~ 16 may, roughly the same timing as the bering strait. 
    * Part of the Stenamini tribe, and Myrmecine subfamily
    * Genus is polyphyletic and needs to include Messor.
+
 6. What about membrane stability? 
    * Adaptive to shift phospholipid head groups, enrich for PC and lipid saturation to confer stability
    * Under heat stress, lipids melt and become more fluid like, so organisms respond by becoming more rigid
-7. ​
 
+   ​
+
+   ​
+
+   2017-3-24 cont'd:
+
+7. What can pass through a lipid bilayer(pure)? 
+
+   * Things that can pass
+     * hydrophobic molecules such as gas, steroids
+     * small uncharged polar molecules: urea, water, glycerol, ethanol
+   * Things that CANT pass
+     * Large uncharged polar molecules: sugars
+     * Ions cannot pass (NA+, K+, H+, CA2+)
+       * In active transport: 3 NA+ goes out, 2 K+ goes in and produces a negative membrane potential
+       * ​
+
+
+------
 
 ------
 
@@ -4030,15 +4050,11 @@ Stability is defined as the distribution of microstates considered to be in the 
 ### Page 54: 2017-03-23. To do list  
 
 1. Dissertation defense talk:
-   * write out script for parts where I changed the slides
+   * write out script for parts where I changed the slides (done, need to practice)
 2. Multiple stressor ms reivisions
    * SHC-do waht the reveiwers say; so they want relative expression to the initial timepoint
-3. Ecological genomics overall hw feedback
-
-
-
-
-
+3. Ecological genomics overall hw feedback (sent to MP and SK 2017-03-24)
+4. ​
 
 
 ------
