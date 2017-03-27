@@ -35,7 +35,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 16: 2017-03-08](#id-section16). Week 8, Day 14, Population genomics part 2; Paper Discussion- [Romiguier et al. 2014](http://www.nature.com/nature/journal/v515/n7526/full/nature13685.html)
 * [Page 17: 2017-03-20](#id-section17). Week 9, Day 15, Population genomics part 3; paper discussion Gompert et al. 2014
 * [Page 18: 2017-03-22](#id-section18). Week 9, Day 16, Population genomics part 4; paper discussion
-* [Page 19:](#id-section19).
+* [Page 19: 2017-03-27](#id-section19). Week 10, Day 17, Population genomics; paper discussion
 * [Page 20:](#id-section20).
 * [Page 21:](#id-section21).
 * [Page 22:](#id-section22).
@@ -3074,7 +3074,7 @@ output:
 >
 > Total number of SNPs: 5040
 >
->   - Biallelic: 4991
+> - Biallelic: 4991
 >
 >   - Triallelic: 49
 >
@@ -3110,7 +3110,14 @@ FIT is similar to FST but accounts for inbreeding. It ranges from 0-1, whereby 1
 
 ------
 <div id='id-section19'/>
-### Page 19:
+### Page 19: 2017-03-27. Week 10, Day 17, Population genomics; paper discussion
+
+
+
+
+
+
+
 ------
 <div id='id-section20'/>
 ### Page 20:
