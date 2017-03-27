@@ -34,8 +34,8 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 15: 2017-03-06](#id-section15). Week 8, Day 13, Population genomics; paper discussion- Gayral et al. 2013
 * [Page 16: 2017-03-08](#id-section16). Week 8, Day 14, Population genomics part 2; Paper Discussion- [Romiguier et al. 2014](http://www.nature.com/nature/journal/v515/n7526/full/nature13685.html)
 * [Page 17: 2017-03-20](#id-section17). Week 9, Day 15, Population genomics part 3; paper discussion Gompert et al. 2014
-* [Page 18: 2017-03-22](#id-section18). Week 9, Day 16, Population genomics part 4; paper discussion
-* [Page 19: 2017-03-27](#id-section19). Week 10, Day 17, Population genomics; paper discussion
+* [Page 18: 2017-03-22](#id-section18). Week 9, Day 16, Population genomics part 4; paper discussion; Inferring Demographic processes with SNPs
+* [Page 19: 2017-03-27](#id-section19). Week 10, Day 17, Population genomics-detecting signatures of natural selection; selection scans; paper discussion- Laurent et al. 2016, MolEco
 * [Page 20:](#id-section20).
 * [Page 21:](#id-section21).
 * [Page 22:](#id-section22).
@@ -3110,9 +3110,72 @@ FIT is similar to FST but accounts for inbreeding. It ranges from 0-1, whereby 1
 
 ------
 <div id='id-section19'/>
-### Page 19: 2017-03-27. Week 10, Day 17, Population genomics; paper discussion
+### Page 19: 2017-03-27. Week 10, Day 17, Population genomics-detecting signatures of natural selection; selection scans; paper discussion- Laurent et al. 2016, MolEco
+
+Separate out neutral processes(demography,bottlenecks) and selection. Selection acts locally on the genome, whereas neutral processes act across the whole genome. 
+
+<u>Glossary:</u>
+
+Selective sweep: pattern whereby a single adaptive allele sweeps through population(goes to near fixation)
+
+hard sweeps: single adaptive allele in common genetic background
+
+soft sweep: > 1 adaptive alleles in diff genetic backgrounds
+
+<u>Dr. Brody Info Update: Selective Sweeps</u>
+
+Big picture questioN: What maintains variation or produces variation? What reduces genetic variation amongm embers of populations. How do we discover those patterns and what do those patterns mean? 
+
+Why do we care?  Heuristic perspective. Who else might care? Conservation, human population, We care about selection and other poplations evolve. HOw do we interpret those signatures? Predict when they might occur. 
 
 
+
+### Selective sweeps
+
+Not only do adaptive alelles become favored, but the genes linked to it are increasing in the population. Linked genes that may not be adaptive are refereed to as hitchhiking genes. 
+
+Pleuni Pennings: Stanford University. Her phd students have 2 minute youtube videos for each of their papers.
+
+<u>Sweeps can be hard on a local scale but soft on a global scale!!!</u>
+
+$\theta$ is a rate in which a mutation enters a population
+
+$\theta = 2*Ne* \mu$
+
+What influences the ability for alleles to become fixed? 
+
+* Population size
+* Fitness effects
+
+Small populations should fix alleles more rapidly.
+
+
+
+Suppose we see differences in alleles in gene regions among populations. Populations are habitat or healthy and sick. 
+
+<u>What are alternative hypotheses?</u> Limitations?
+
+* Drift!
+* Functional differences may be neutral
+* Cause and effect
+
+
+
+<u>Steven leading discussion</u>
+
+Think about genetic targets of adaptation (local adaptaiton). How do selective sweeps happen and how are they distinguished?
+
+*Tajima's D*: 
+
+D = 0 = neutrally evolving
+
+D = negative =  all alleles are recent and rare within the population (We expect this under selection)
+
+D = positive = rare mutations are missing relative to what we expect from a random mutation processs. 
+
+
+
+ 
 
 
 
