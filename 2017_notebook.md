@@ -81,8 +81,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 53: 2017-03-22](#id-section53). Prepping for oral defense, reading notes
 * [Page 54: 2017-03-23](#id-section54). To do list
 * [Page 55: 2017-3-24](#id-section55). multiple stressors reviewer comments
-* [Page 56:](#id-section56).
-* [Page 57:](#id-section57).
+* [Page 56: 2017-03-28](#id-section56). Definition of phenotypic plasticity
+* [Page 57: 2017-03-28](#id-section57). Meeting with new lab tech, KB
 * [Page 58:](#id-section58).
 * [Page 59:](#id-section59).
 * [Page 60:](#id-section60).
@@ -4079,11 +4079,11 @@ Reviewer comments:
 > 
 >
 > 1.      Be careful with tense. When discussing the current
->         results, past tense is typically used, when discussing published results, the
->         present tense is typically used. For example, in line 39, "impairs"
->         should read "impaired," and in line 86 "reduced" should be
->         "reduces." Those were the only two that stuck out to me, but make
->         sure tense is consistent.
+>       results, past tense is typically used, when discussing published results, the
+>       present tense is typically used. For example, in line 39, "impairs"
+>       should read "impaired," and in line 86 "reduced" should be
+>       "reduces." Those were the only two that stuck out to me, but make
+>       sure tense is consistent.
 >
 >
 >
@@ -4100,17 +4100,17 @@ Reviewer comments:
 >
 >
 > 5.      In Figures 2 and 4, it would be helpful to clearly
->         indicate in the caption which group is serving as the reference for the 2-ΔΔCt
->         calculations. Also, the authors might want to consider plotting the control
->         groups on the gene expression figures. That is, the control group can be
->         included by setting the mean = 1 scaling the variance accordingly. It is also
->         unclear whether there was a single reference/control group for the induction
->         experiments, or whether each time point had its own room temperature control
->         that served as a reference. If it was the latter, connecting the points with
->         lines is somewhat misleading, because each point is relative to a different
->         control group. Personally, I think it makes sense to use a single reference
->         group (for example, room temperature controls after the first time point), then
->         express everything relative to that group.
+>       indicate in the caption which group is serving as the reference for the 2-ΔΔCt
+>       calculations. Also, the authors might want to consider plotting the control
+>       groups on the gene expression figures. That is, the control group can be
+>       included by setting the mean = 1 scaling the variance accordingly. It is also
+>       unclear whether there was a single reference/control group for the induction
+>       experiments, or whether each time point had its own room temperature control
+>       that served as a reference. If it was the latter, connecting the points with
+>       lines is somewhat misleading, because each point is relative to a different
+>       control group. Personally, I think it makes sense to use a single reference
+>       group (for example, room temperature controls after the first time point), then
+>       express everything relative to that group.
 
 
 
@@ -4135,13 +4135,117 @@ A --> C[and display barplots]
 
  <div id='id-section56'/> 
 
-### Page 56:  
+### Page 56: 2017-03-28.  Definition of phenotypic plasticity  and general paper reading   
+
+Scheiner 1993; *Annual Review of Ecology and Systematics*
+
+  Scheiner SM (1993) Genetics and Evolution of Phenotypic Plasticity. *Annual Review of Ecology and Systematics*, **24**, 35–68.
+
+Scheiner defines phenotypic plasticity as the general effect of the environment on phenptypes, including when the effect is 0. 
+
+One way to represent phenotypic plasticity is a *norm of reaction* or *reaction norm*. He refers to the reaction norm as the specific form of that(environmental) effect. These terms can be interchangable he argues. Plasticity itself is the specific change in a trait with respect to the environment, regardless of the genotype. 
+
+Angilletta 2009 defines plasticity as the derivative of a reaction norm. He cites a good reference for how plasticity is defined: Debat and David 2001. 
+
+ref: Debat V, David P (2001) Mapping phenotypes: canalization, plasticity and developmental stability. Trends in Ecology & Evolution, 16, 555–561.
+
+
+I like this quote:    
+
+> The relationship between genotype and phenotype is not one to one.
+
+Hard to understand:   
+> This duality is the basis of ‘genetic assimilation’, the process by which a response to unusual environments can be converted by selection into a permanent, genetically determined, phenotypic change.
+
+The response can be genetic itself. Poor definition. I'd define genetic assimilation as the evolution of a plastic response into a fixed one.   
+
+Wow, this dude named Woltereck made up the term "reaction norm" in 1909.     
+
+Definitions of plasticity from this paper:
+
+1. Bradshaw 1965: Plasticity is shown by a genotype when its expression is able to be atlered by environmental influences. This may or many not be adaptive.    
+
+other definitions are junk. They don't include Scheiner into this paper...what the....
+
+
+### Making sense of JSG's paper:   
+
+JSG discusses 3 potential mechanisms of temperature adaptation that is mediated by the transcriptome:   
+
+1. Enhanced response hypothesis    
+ * Inducing a stronger transcriptional response to provide protection.    
+  * Prediction: cool adapted species strongly upregulate genes at low temperature and down regulate at higher temps
+
+2. Tolerance hypothesis     
+ * Not really framed as a hypothesis....
+
+> proposes that existing inducible stress responses become insufficient or prohibitively costly as environmental stressors increase in frequency, resulting in a shift away from induced response in favor of structural changes    
+
+What the...does this mean? 
+
+	* I think the hypothesis is this: A shift away from induced response in favor of structural changes.  Makes no sense to me...    
+	* This hypothesis predicts adaptation to stress to be associated with lower transcriptional responsiveness and less sensitivity to temperature perturbations. 
+	*  I'd describe this as resistance.   
+
+3. Genetic Assimilation hypothesis 
+ * Selection shifts inducible expression to constitutive expression of stress related genes.   
+
 
 ------
 
  <div id='id-section57'/> 
 
-### Page 57:  
+### Page 57: 2017-03-28. Meeting with new lab tech, KB.   
+
+Curtis' project needs to be finished. 
+
+Status: 
+
+- **There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.**  
+
+
+
+Workflow
+
+
+
+```mermaid
+graph TD
+A[Isolate RNA] --> B[Dilute to single concentration]
+A --> C(Check quality, RIN)
+B --> D[qPCR]
+
+```
+
+1. ==Stressed in nature project==
+   * RNA isolations
+   * qPCR , measuring gene expression
+   * data analysis and reproducible science
+     * Github, tracks different versions and facilitates online sharing
+     * R, main software for data analysis
+2. Maintenance of website
+3. Protein related assays
+   * protein isolations
+   * unfolding curves troubleshooting
+   * ​
+4. Proteome stability data analysis 
+5. ==Lab orientation and lab safety.== 
+
+
+
+Monday, Tuesday, Wednesdays. Wednesday leave at 3:45PM. Maybe Fridays. 
+
+Plan for  April 3rd-5th: 
+
+1. Lab orientation and safety
+2. Set up github account
+3. Set up R and R studio
+4. Organize samples. Find them and place them all in a known location. Prepare for RNA isolations. 
+   * Let's print out the protocol
+
+April 10th
+
+Begin isolations Monday and Tuesday 
 
 ------
 
