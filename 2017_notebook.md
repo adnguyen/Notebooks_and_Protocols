@@ -83,8 +83,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 55: 2017-3-24](#id-section55). multiple stressors reviewer comments
 * [Page 56: 2017-03-28](#id-section56). Definition of phenotypic plasticity
 * [Page 57: 2017-03-28](#id-section57). Meeting with new lab tech, KB
-* [Page 58:](#id-section58).
-* [Page 59:](#id-section59).
+* [Page 58: 2017-03-31](#id-section58). Making thesis fixes, notes
+* [Page 59: 2017-03-31](#id-section59). To do list
 * [Page 60:](#id-section60).
 * [Page 61:](#id-section61).
 * [Page 62:](#id-section62).
@@ -4173,11 +4173,11 @@ other definitions are junk. They don't include Scheiner into this paper...what t
 JSG discusses 3 potential mechanisms of temperature adaptation that is mediated by the transcriptome:   
 
 1. Enhanced response hypothesis    
- * Inducing a stronger transcriptional response to provide protection.    
+* Inducing a stronger transcriptional response to provide protection.    
   * Prediction: cool adapted species strongly upregulate genes at low temperature and down regulate at higher temps
 
 2. Tolerance hypothesis     
- * Not really framed as a hypothesis....
+* Not really framed as a hypothesis....
 
 > proposes that existing inducible stress responses become insufficient or prohibitively costly as environmental stressors increase in frequency, resulting in a shift away from induced response in favor of structural changes    
 
@@ -4188,7 +4188,7 @@ What the...does this mean?
 	*  I'd describe this as resistance.   
 
 3. Genetic Assimilation hypothesis 
- * Selection shifts inducible expression to constitutive expression of stress related genes.   
+* Selection shifts inducible expression to constitutive expression of stress related genes.   
 
 
 ------
@@ -4251,13 +4251,82 @@ Begin isolations Monday and Tuesday
 
  <div id='id-section58'/> 
 
-### Page 58:  
+### Page 58: 2017-03-31. Making thesis fixes, notes  
+
+Adding notes from JPreston and Blockwood for Hsp rxn norm chapter.
+
+<u>JP:</u>
+
+*In contrast, increases in the inflection point indicates later onset of protein damage (stress resistance; Fig. 1C*
+
+> Does this mean there is another mechanism that stops protein damage at moderate temperatures OR that Hsps can evolve to bemore potent at lower levels?
+
+*If thermal tolerance is achieved via greater responsiveness to protein damage, this should be reflected in higher peak expression levels….*
+
+> **To test this don't you need to know how muchprotein damage there is? What if protein damage is the same between two speciesat a moderate temperature, but one of the species (the more tolerant species) takes longer to ramp up Hsps? Doesn't this mean that the tolerant species is less responsive to protein damage at least at moderate temperatures?
+
+I'll add Brent's later.
+
+<u>Blockwood:</u>
+
+For the intro
+
+2nd paragraph in intro
+
+> It would be good to include a statement and reference to studies that justify the protective effect of the HSR *in vivo*, i.e. Welte, et al. 1993, Feder et al. 1995, etc. wherein Hsp over expression was engineered with transgenic constructs and increases in whole-organism heat tolerance were measured. This is important because many in the field are confused by thinking of the HSR as a “stress” response and thus see Hsps as bioindicators of stress rather than the protective molecular “heroes” that they are. 
+
+3rd paragraph in intro:
+
+> You need to cite Brian Bettencourt’s work. He tracked alleles of Hsp70 that corresponded to high and low expression in the Australian Drosophila. So, you could probably say something more than just “currently unclear” because we do know something about natural populations. There’s also the copepod work out of Ron Burton’s lab that has done quite a lot to address this question in recent years.
+
+In response to:
+
+*Hsp gene expression usuallyfollows a non-linear, logistic function (Kingsolver & Woods 2016);...*
+
+> Is this really the only reference for this statement? Is this based off of insects only? Or do they cite more broadly into the marine literature? One of the best references for timecourse of hsp expression is Buckley and Somero 2006
+
+For the discussion
+
+> Two major considerations: First, I think you need a set of statements about other mechanisms of thermal tolerance. Your hsp expression explains 40% of the variation, but what about the other 60%? It’s not all about proteins. This is particularly an important consideration for anyone who appreciates the physiology that underlies CTmax, which likely has a neural (membrane) basis. Further, for aerobic eukaryotes, the membranes of the mitochondria are an important factor. This sort of relates to the OCCLT hypothesis by Portner too. Check out Dahlhoff and Somero 1991 (abalone mitochondria) as well as Stillman and Somero 1999 (porcelain crab heat tolerance). Second, you should briefly discuss the obvious alternative
+> hypothesis that the evolution of CTmax may not have accompanied or been driven
+> by the colonization of different habitats, but rather the species had different
+> CTmax prior to sorting themselves based on their thermal preferences.
+
+
 
 ------
 
  <div id='id-section59'/> 
 
-### Page 59:  
+### Page 59: 2017-03-31. To do list.   
+
+Project updates:    
+
+- **Hsp gene expression + Ctmax project:**
+  - Lot of it has to be reviewed and rewritten
+    - For intro and discussion: take Brent's comments and rewrite adding refs
+    - Methods need to be shrunk for PNAS format
+    - Need to do an analysis that can account for intra and interspecific variation
+    -    
+  - Submit to PNAS  
+- ==**Multiple stressors ms:**==   
+  - In SHC's hands
+- **Range limits ms**: SHC lab gave verbal edit, still need to incorporate     
+  - focus on 1 end of thermal niche breadth(although it is nice to mention it because CTmin decreases across lat)--CTmin. 
+  - Dicussion needs to talk about cold adaptation; why trade-offs?
+  - Walk through results better
+- **Thermal niche ms:** 
+  - ?? Lacy's hands	
+- ==**Stressed in nature MS: Samples to rerun.**==       
+  - <u>There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 4 gene targets ran in duplicates is 2 plates per gene = 8 plates total.  2 days for 8 plates.</u>        
+    - I need to find the samples and organize them! Half of the samples are in the chest freezer, half are in our own -80C. 
+    - qPCR
+    - Analyze the data   
+- **Proteome stability project:**    
+  - **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
+    - Rerun mass spec, but loading more proteins (Bethany)
+
+
 
 ------
 

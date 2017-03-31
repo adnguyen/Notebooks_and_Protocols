@@ -3183,7 +3183,28 @@ D = positive = rare mutations are missing relative to what we expect from a rand
 
 ------
 <div id='id-section20'/>
-### Page 20:
+### Page 20: 2017-03-29. Week 10, Day 18
+
+Lauren Ashlock info update
+
+Admixture coding session:
+
+For a dataset of *i* individuals in *j* SNPs.
+
+$Pr(G|K,Q,P)$
+
+G = genotype
+
+Q = ancestry (proportion of an individual's genome)
+
+P = allele frequency
+
+
+
+
+
+
+
 ------
 <div id='id-section21'/>
 ### Page 21:
