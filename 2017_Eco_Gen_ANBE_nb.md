@@ -36,8 +36,8 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 17: 2017-03-20](#id-section17). Week 9, Day 15, Population genomics part 3; paper discussion Gompert et al. 2014
 * [Page 18: 2017-03-22](#id-section18). Week 9, Day 16, Population genomics part 4; paper discussion; Inferring Demographic processes with SNPs
 * [Page 19: 2017-03-27](#id-section19). Week 10, Day 17, Population genomics-detecting signatures of natural selection; selection scans; paper discussion- Laurent et al. 2016, MolEco
-* [Page 20:](#id-section20).
-* [Page 21:](#id-section21).
+* [Page 20: 2017-03-29 ](#id-section20). Week 10, Day 18
+* [Page 21: 2017-04-03](#id-section21). Karl's guest lecture; FST and FST outlier
 * [Page 22:](#id-section22).
 * [Page 23:](#id-section23).
 * [Page 24:](#id-section24).
@@ -3207,7 +3207,54 @@ P = allele frequency
 
 ------
 <div id='id-section21'/>
-### Page 21:
+### Page 21: 2017-04-03. Karl's guest lecture; FST and FST outlier
+
+Concepts:
+
+1. Inbreeding produces structured populations
+2. selective sweeps change allele frequencies in populations
+3. Empirical p-values created from a distribution of putataively neutral loci are super useful for finding natural selection
+4. Methods: OutFlank 2015
+
+
+
+Two questions to consider:
+
+1. What challenges do outlier detection methods face? 
+2. How is LD (linkage disequilibrium) our friend or foe? 
+
+
+
+**Inbreeding coefficient and Structured Populations**
+
+F-statistics: created by Sewell Wright
+
+* Considers heterozygosity
+  * at the individual *I*
+  * Subpopulation (*S*)
+  * Total populations (*T*)
+* Heterozygosity: 2 alelles sampled from a population are identical by descent. 
+
+Fst: $\frac{H_t - H_s}{H_t}$
+
+Fis: $\frac{Expected (H_s)-Obsrved(H_s)}{Expected(H_s)}$
+
+Fit: $\frac{H_t - H_I}{H_t}$
+
+
+
+Inbreeding influences Fst. 
+
+Inbreeding coefficient goes from 0-1; 0 = no inbreeding, 1 is completely inbreeding. 
+
+Inbreeding at the local within pop scale, is concave. At the regional level/scale, genetic variation is higher. 
+
+Total genetic variation
+
+
+
+
+
 ------
 <div id='id-section22'/>
 ### Page 22:
