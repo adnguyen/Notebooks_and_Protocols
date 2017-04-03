@@ -207,6 +207,8 @@ These steps include samples + a negative control and -multiscribe control.
 | nuclease free water| na| na| 3.2| 32|
 |total|||10|100|     
 
+
+
 3) I like to make a master mix with (# of samples + 4 rxns). So if you have 6 samples, make a master mix of 10  
 4) Add everything except multiscribe (table B). Take 1 rxn out (9 uL) for -multiscribe control
 5) Add mulitscribe to master mix ( but subtract a uL)
