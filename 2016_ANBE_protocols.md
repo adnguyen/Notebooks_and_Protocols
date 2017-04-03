@@ -1,26 +1,27 @@
-#All lab protocols from temperature treating ants to quantifying gene expression    
-###Author: [Andrew D. Nguyen](https://adnguyen.github.io/), PhD Candidate    
-###Affiliation: University of Vermont      
+# All lab protocols from temperature treating ants to quantifying gene expression    
+### Author: [Andrew D. Nguyen](https://adnguyen.github.io/), PhD Candidate    
+### Affiliation: University of Vermont      
 Mentors/Advisors: [Dr. Sara Helms Cahan](http://shelmscahan.github.io/) and [Dr. Nick Gotelli](http://www.uvm.edu/~ngotelli/homepage.html)
 
 Date Initiated: 20160324   
 
-Last date modified: 20160426    
+Last date modified: 2017-04-03     
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.    
 
 
-# Table of contents
-- [Lab-acclimating ants](#id-section0)
-- [Workflow](#id-section1)
-- [Heat shock experiments](#id-section2)
+# Table of contents    
+- [Lab-acclimating ants](#id-section0)   
+- [Workflow](#id-section1)   
+- [Heat shock experiments](#id-section2)   
 - [RNA isolations](#id-section3)
 - [cDNA synthesis](#id-section4)
 - [quantitative real time PCR](#id-section5)
 
 
-<div id='id-section0'/>
-## Lab-acclimating ants  
+<div id='id-section0'/>    
+
+## Lab-acclimating ants     
 
 **Lab-acclimation at 25 C in the [Gotelli lab!](http://www.uvm.edu/~ngotelli/homepage.html)**    
 ![](https://cloud.githubusercontent.com/assets/4654474/14787126/1b5cd0a4-0ad0-11e6-8a08-d818ba53d15a.jpg)   
@@ -45,8 +46,9 @@ Notes:
 * Visually inspect colonies while feeding to get rid of old water tubes. Make new water tubes if they need it.   
 
 
-<div id='id-section1'/>
-##Workflow
+<div id='id-section1'/>    
+
+## Workflow    
 
 The workflow for my gene expression projects usually follows this trajectory:
 
@@ -60,8 +62,10 @@ The workflow for my gene expression projects usually follows this trajectory:
 4) Quantitative real time PCR    
 
 
-<div id='id-section2'/>
-##Heat shock experiments 
+<div id='id-section2'/>   
+
+## Heat shock experiments     
+
 There is a large discussion for how we should heat shock ectotherms: static (dunk at 1 temp) , dynamic (heating over time). I've done both. 
 
 See these refs if interested:  
@@ -73,7 +77,8 @@ Pro slow ramp:
 * Terblanche JS, Hoffmann AA, Mitchell KA, Rako L, Roux PC le, Chown SL. 2011. Ecologically relevant measures of tolerance to potentially lethal temperatures. J Exp Biol 214:3713–3725.
 * Overgaard J, Kristensen TN, Sørensen JG. 2012. Validity of Thermal Ramping Assays Used to Assess Thermal Tolerance in Arthropods. PLoS ONE 7:e32758.
 
-### General Waterbath set up
+### General Waterbath set up    
+
 **Automated water bath**   
 ![](https://cloud.githubusercontent.com/assets/4654474/14787150/31ba1280-0ad0-11e6-9693-2a4158421275.jpg)
 
@@ -107,8 +112,10 @@ https://www.polyscience.com/products/circulating-baths/heated-circulators/integr
 
 
 
-<div id='id-section3'/>
-##RNA isolations
+<div id='id-section3'/>    
+
+## RNA isolations    
+
 This protocol outlines how I have isolated RNA with little short cuts that speed up this process
 
 **Notes, reagents and supplies:**   
@@ -215,8 +222,10 @@ These steps include samples + a negative control and -multiscribe control.
 8) Store -20C until you need to dilute for qPCR. Prior to qPCR, dilute cDNA 1/10.      
  
  
-<div id='id-section5'/>
-##Quantitative real time PCR
+<div id='id-section5'/>    
+
+## Quantitative real time PCR    
+
  * Power Sybr green kit (ThermoFisher USA) : https://www.thermofisher.com/order/catalog/product/4367659      
  * Thermocycler: ABI steponeplus; https://www.thermofisher.com/order/catalog/product/4376600     
  * 96 well plates: https://www.thermofisher.com/order/catalog/product/4346907      
