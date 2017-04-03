@@ -184,11 +184,14 @@ Notes: Everything should be done on ICE!
 These steps include samples + a negative control and -multiscribe control.    
 
 1) Set up for 20 uL rxns: For each sample, add 50ng of RNA into a pcr strip tube into a final volume of 10 uL 
-* ex:     
+* ex:       
+
 
 |Sample ID| Treatment| Qubit/nanodrop Quantification (ng/uL)| uL sample for 50ng| nuclease free water to add| total volume|
 |---|---|---|---|---|---|
-|Ant1| Heat shocked| 6.53 | 7.66| 2.34| 10|   
+|Ant1| Heat shocked| 6.53 | 7.66| 2.34| 10|      
+
+
 
 
 
@@ -204,7 +207,9 @@ These steps include samples + a negative control and -multiscribe control.
 | Rnase inhibitor     | 5000 units(or 40U/uL) | 4 units    | 1              | 10      |
 | RT Multiscribe      | 50 U/ uL              | 5 U/uL     | 1              | 10      |
 | nuclease free water | na                    | na         | 3.2            | 32      |
-| total               |                       |            | 10             | 100     |
+| total               |                       |            | 10             | 100     |     
+
+
 
 
 3) I like to make a master mix with (# of samples + 4 rxns). So if you have 6 samples, make a master mix of 10  
