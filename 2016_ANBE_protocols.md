@@ -189,7 +189,8 @@ These steps include samples + a negative control and -multiscribe control.
 
 |Sample ID| Treatment| Qubit/nanodrop Quantification (ng/uL)| uL sample for 50ng| nuclease free water to add| total volume|
 |---|---|---|---|---|---|
-|Ant1| Heat shocked| 6.53 | 7.66| 2.34| 10
+|Ant1| Heat shocked| 6.53 | 7.66| 2.34| 10| 
+
 
 
 2) Set up reaction, here is a typical set up; dont add anything yet, just set up master mix calculations       
