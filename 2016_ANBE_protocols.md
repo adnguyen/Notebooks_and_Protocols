@@ -25,7 +25,7 @@ Last date modified: 2017-04-03
 
 **Lab-acclimation at 25 C in the [Gotelli lab!](http://www.uvm.edu/~ngotelli/homepage.html)**    
 ![](https://cloud.githubusercontent.com/assets/4654474/14787126/1b5cd0a4-0ad0-11e6-8a08-d818ba53d15a.jpg)   
- 
+
  **Ants are reared in tupperware (22X16cm) containers**   
  They are housed in fluon-lined(insect-a-slip) containers so that they stay inside the tupperware. We fill in the container with sand and place mealworms and honey water for them to eat!     
  ![](https://cloud.githubusercontent.com/assets/4654474/14787149/2fcdadd8-0ad0-11e6-93ab-83a844e5fa7e.jpg)     
@@ -54,9 +54,9 @@ The workflow for my gene expression projects usually follows this trajectory:
 
 1) Experimentally manipulate ants  (heat shocks typically); flash freeze and store at -80C until we need to quantify gene expression    
 2) Homogenize (break up ants) in buffer and isolate RNA     
-  * Quantify with nanodrop or qubit    
+* Quantify with nanodrop or qubit    
   * If it's you're first time, check intactness of RNA with RNA analyzer (get RIN estimates)     
-  
+
 
 3) Convert (~50-100ng) RNA to cDNA      
 4) Quantitative real time PCR    
@@ -98,7 +98,7 @@ Depending on organism, you might want to test out which temperature will give a 
 **Dynamic heat shock (ramping heat shock):**    
 **Notes:**     
 * We used a programmable circulating water bath from polyscience: 
-https://www.polyscience.com/products/circulating-baths/heated-circulators/integrated-heated-baths/performance-programmable-controller      
+  https://www.polyscience.com/products/circulating-baths/heated-circulators/integrated-heated-baths/performance-programmable-controller      
 * It took us a while, but we ramped the water bath to an internal thermometer at 0.1 C / min     
 * Glass tubes: WWR borosilicate glass tubes 16 X 150 mm ; https://us.vwr.com/store/catalog/product.jsp?product_id=4675780      
 
@@ -132,26 +132,25 @@ This protocol outlines how I have isolated RNA with little short cuts that speed
 
 **Steps for RNA isolation:**     
 1) Set up all the tubes you need for the experiment      
- * For each sample, I set out 3 X 1.5 mL eppendorf tubes and label them  
+* For each sample, I set out 3 X 1.5 mL eppendorf tubes and label them  
    * 1 tube for transfer ant homogenate
    * 1 tube for 70% ethanol 
    * 1 tube for eluting into
-   
 
- * Set up homogenizing tubes ( 1 tube per sample) 
+* Set up homogenizing tubes ( 1 tube per sample) 
    * Add 1 scoop of grinding beads 
    * Add 350 uL RLT with BME and RNA carrier ( add concentrations here)        
 
 
 2)  More set up
- * Make fresh 70% and 80% ethanol. I usually do this in a 15mL conical. Add 350 uL 70% ethanol into one of your 1.5 mL eppendorf tubes      
- * Take out rneazy spin columns out of package and keep them refrigerated, label them      
- * Prepare DNase I by adding 10uL DNase and 70uL RDD buffer together. Make master mix so you can add to all of your samples.    *DNase I is sensitive to mechanical forces and can denature!! Be careful in how you pipete        
- 
+* Make fresh 70% and 80% ethanol. I usually do this in a 15mL conical. Add 350 uL 70% ethanol into one of your 1.5 mL eppendorf tubes      
+* Take out rneazy spin columns out of package and keep them refrigerated, label them      
+* Prepare DNase I by adding 10uL DNase and 70uL RDD buffer together. Make master mix so you can add to all of your samples.    *DNase I is sensitive to mechanical forces and can denature!! Be careful in how you pipete        
+
 3) Get liquid nitrogen and place samples(ants in 1.5mL tubes) into liquid nitrogen     
 4) Quickly transfer tubes with ants from liquid nitrogen into homogenizing tubes (it has 350 uL of RLT buffer with BME and RNA carrier) and use bullet blender under highest settings for 1-3 minutes
- * Pogonomyrmex barbatus usually takes 3 minutes and double the amount of grinding beads (2 scoops)
- * Aphaenogaster usually takes 1 minute
+* Pogonomyrmex barbatus usually takes 3 minutes and double the amount of grinding beads (2 scoops)
+* Aphaenogaster usually takes 1 minute
 
 5) Spin down for 30 seconds, highest rpms (~14,000g)     
 6) Transfer supernatant into new 1.5mL tube; spin down 30 seconds, highest rpms       
@@ -178,7 +177,7 @@ Rin values: http://www.genomics.agilent.com/article.jsp?pageId=2181&_requestid=2
 * We use the high capacity cDNA synthesis kit : http://www.thermofisher.com/order/catalog/product/4368813?icid=cvc-rt-rt-pcr-c1t1   
 * I also like to use RNAseOUT to be doubly sure my RNA does not get degraded: https://www.thermofisher.com/order/catalog/product/10777019    
 * I like using these pcr strip tubes: http://www.simport.com/products/pcr/pcr-strips/low-profile-amplitube-pcr-reaction-strips-t320-2lpn.html     
- 
+
 
 **Steps:**  
 Notes: Everything should be done on ICE!   
@@ -189,27 +188,29 @@ These steps include samples + a negative control and -multiscribe control.
 
 |Sample ID| Treatment| Qubit/nanodrop Quantification (ng/uL)| uL sample for 50ng| nuclease free water to add| total volume|
 |---|---|---|---|---|---|
-|Ant1| Heat shocked| 6.53 | 7.66| 2.34| 10
+|Ant1| Heat shocked| 6.53 | 7.66| 2.34| 10|   
+
 
 
 2) Set up reaction, here is a typical set up; dont add anything yet, just set up master mix calculations       
 
 **Table B for reaction set up for cDNA synthesis**        
 
-|  Reagent |Inital conc.   |Final conc   |uL to add 1rxn  | 10 rxns|     
-|---|---|---|---|---|---|     
-|  RT Buffer | 10x  | 1x  | 1 | 10 |    
-|  dNTPs | 25x or 100 mM  | 1x or 4 mM  | .8  | 8  |    
-|  RT Random Primers | 10x  | 1x  | 1  | 10  |   
-|Rnase inhibitor | 5000 units(or 40U/uL)| 4 units| 1| 10|
-|RT Multiscribe| 50 U/ uL | 5 U/uL | 1| 10|
-| nuclease free water| na| na| 3.2| 32|
-|total|||10|100|     
+| Reagent             | Inital conc.          | Final conc | uL to add 1rxn | 10 rxns |
+| ------------------- | --------------------- | ---------- | -------------- | ------- |
+| RT Buffer           | 10x                   | 1x         | 1              | 10      |
+| dNTPs               | 25x or 100 mM         | 1x or 4 mM | .8             | 8       |
+| RT Random Primers   | 10x                   | 1x         | 1              | 10      |
+| Rnase inhibitor     | 5000 units(or 40U/uL) | 4 units    | 1              | 10      |
+| RT Multiscribe      | 50 U/ uL              | 5 U/uL     | 1              | 10      |
+| nuclease free water | na                    | na         | 3.2            | 32      |
+| total               |                       |            | 10             | 100     |
+
 
 3) I like to make a master mix with (# of samples + 4 rxns). So if you have 6 samples, make a master mix of 10  
 4) Add everything except multiscribe (table B). Take 1 rxn out (9 uL) for -multiscribe control
 5) Add mulitscribe to master mix ( but subtract a uL)
- * So if you have a 10 rxm master mix, you took out 9 uL in step 3 and now add 9 uL of multiscribe beccause you have a 9rxn master mix now)    
+* So if you have a 10 rxm master mix, you took out 9 uL in step 3 and now add 9 uL of multiscribe beccause you have a 9rxn master mix now)    
 
 6) Dispense 10 uL of master mix into tubes with your samples to reach 20 uL reaction      
 7) PCR with following conditions:      
@@ -220,75 +221,76 @@ These steps include samples + a negative control and -multiscribe control.
 
 
 8) Store -20C until you need to dilute for qPCR. Prior to qPCR, dilute cDNA 1/10.      
- 
- 
+
+
 <div id='id-section5'/>    
 
 ## Quantitative real time PCR    
 
- * Power Sybr green kit (ThermoFisher USA) : https://www.thermofisher.com/order/catalog/product/4367659      
- * Thermocycler: ABI steponeplus; https://www.thermofisher.com/order/catalog/product/4376600     
- * 96 well plates: https://www.thermofisher.com/order/catalog/product/4346907      
+* Power Sybr green kit (ThermoFisher USA) : https://www.thermofisher.com/order/catalog/product/4367659      
+* Thermocycler: ABI steponeplus; https://www.thermofisher.com/order/catalog/product/4376600     
+* 96 well plates: https://www.thermofisher.com/order/catalog/product/4346907      
 
 
 
 ### Primer list ([design scheme](http://adnguyen.github.io/blog/2016/04/12/Primer_design))
 
 
-|	Gene	|	Primer 5'-3'	|	Amplicon Length (bps)	|
-|---|---|---|
-|	18s rRNA (forward)	|	CTCTTTCTTGATTCGGTGGGTG	|		|
-|	18s rRNA (reverse)	|	TTAGCAGGCTAGAGTCTCGTTC	|	100	|
-|	GAPDH (forward)	|	TAAGATTGCCGTCTTCAGCG	|		|
-|	GAPDH (reverse)	|	ATGCCTTCTCGATGGTTGTG	|	110	|
-|	β-actin (forward)	|	TAAGATTATCGCTCCACCCG	|		|
-|	β-actin (reverse)	|	CTCGTCGTATTCCTGCTTCG	|	112	|
-|	Ef1-β (forward)	|	GGTTCAGATGAAGAGGAAGATG	|		|
-|	Ef1-β (reverse)	|	TCATCTCCCCAACTTTTCAC	|	111	|
-|	hsp83 (forward)	|	AGTGCTACGAGCAATTCAGC	|		|
-|	hsp83 (reverse)	|	CGGATGCAGAAGTGTGATAACG	|	105	|
-|	hsc70-4_1 (forward)	|	CTTAATGTCTCCGCCGTGGATAAG	|		|
-|	hsc70-4_1 (reverse)	|	CTCAGCTTCGTTTACCATCCTCTC	|	115	|
-|	hsc70-4_2 (forward)	|	GATCAAGAGGAACACGACGATACC	|		|
-|	hsc70-4_2 (reverse)	|	GCTCTTTCTCCCTCATAGACTTGG	|	105	|
-|	Bip(forward)	|	GGTACAGTGATAGGAATTGATCTGGG	|		|
-|	Bip(reverse)	|	TAAGAAGGCGTGATTCGGTTACC	|	112	|
-|	hsc70-5 (forward)	|	CGTTTAGTTGGTATGCCTGC	|		|
-|	hsc70-5 (reverse)	|	CAGGATCTTCAAATCTCCGTCC	|	100	|
-|	hsp60 (forward)	|	GTTGAAGAAGGAATCGTTCCCG	|		|
-|	hsp60 (reverse)	|	CGATCTTGATTCCAGTCTCCTG	|	109	|
-|	hsp40 (forward)	|	GATATGGATCCCTTTGGACTCG	|		|
-|	hsp40 (reverse)	|	CCCTTTACAAGTATTCGGACTCG	|	120	|
-|	l2efl_#4 (forward)	|	TTTCCGGAGTAAGCTCGTTC	|		|
-|	l2efl_#4 (reverse)	|	GACAGAAGTCTCGCATTCTTCC	|	117	|
+| Gene                | Primer 5'-3'               | Amplicon Length (bps) |
+| ------------------- | -------------------------- | --------------------- |
+| 18s rRNA (forward)  | CTCTTTCTTGATTCGGTGGGTG     |                       |
+| 18s rRNA (reverse)  | TTAGCAGGCTAGAGTCTCGTTC     | 100                   |
+| GAPDH (forward)     | TAAGATTGCCGTCTTCAGCG       |                       |
+| GAPDH (reverse)     | ATGCCTTCTCGATGGTTGTG       | 110                   |
+| β-actin (forward)   | TAAGATTATCGCTCCACCCG       |                       |
+| β-actin (reverse)   | CTCGTCGTATTCCTGCTTCG       | 112                   |
+| Ef1-β (forward)     | GGTTCAGATGAAGAGGAAGATG     |                       |
+| Ef1-β (reverse)     | TCATCTCCCCAACTTTTCAC       | 111                   |
+| hsp83 (forward)     | AGTGCTACGAGCAATTCAGC       |                       |
+| hsp83 (reverse)     | CGGATGCAGAAGTGTGATAACG     | 105                   |
+| hsc70-4_1 (forward) | CTTAATGTCTCCGCCGTGGATAAG   |                       |
+| hsc70-4_1 (reverse) | CTCAGCTTCGTTTACCATCCTCTC   | 115                   |
+| hsc70-4_2 (forward) | GATCAAGAGGAACACGACGATACC   |                       |
+| hsc70-4_2 (reverse) | GCTCTTTCTCCCTCATAGACTTGG   | 105                   |
+| Bip(forward)        | GGTACAGTGATAGGAATTGATCTGGG |                       |
+| Bip(reverse)        | TAAGAAGGCGTGATTCGGTTACC    | 112                   |
+| hsc70-5 (forward)   | CGTTTAGTTGGTATGCCTGC       |                       |
+| hsc70-5 (reverse)   | CAGGATCTTCAAATCTCCGTCC     | 100                   |
+| hsp60 (forward)     | GTTGAAGAAGGAATCGTTCCCG     |                       |
+| hsp60 (reverse)     | CGATCTTGATTCCAGTCTCCTG     | 109                   |
+| hsp40 (forward)     | GATATGGATCCCTTTGGACTCG     |                       |
+| hsp40 (reverse)     | CCCTTTACAAGTATTCGGACTCG    | 120                   |
+| l2efl_#4 (forward)  | TTTCCGGAGTAAGCTCGTTC       |                       |
+| l2efl_#4 (reverse)  | GACAGAAGTCTCGCATTCTTCC     | 117                   |
+
 
 **Steps:**      
 Notes: 
- * I load 4 uL of cDNA into 6 uL of power sybr green master mix for 10 uL reactions   
- * Samples are run in duplicates or triplicates  
- * Starting out, I like to run my amplicons on agraose gels and sanger sequence them (another good line of evidence that you're detecting 1 product in addition to the the melt curve analysis at the end of the qpcr)        
- * I use geneious version R6 (http://www.geneious.com/) to design primers and visualize sequences       
+* I load 4 uL of cDNA into 6 uL of power sybr green master mix for 10 uL reactions   
+* Samples are run in duplicates or triplicates  
+* Starting out, I like to run my amplicons on agraose gels and sanger sequence them (another good line of evidence that you're detecting 1 product in addition to the the melt curve analysis at the end of the qpcr)        
+* I use geneious version R6 (http://www.geneious.com/) to design primers and visualize sequences       
 
 1) Prep cDNA: From previous step, you should have diluted 1/10. So you'll have 0.25 ng/uL now. I usually do this by adding 5 uL cDNA into 45 uL nuclease free water.    
 2) Prep sybr green master mix: I add 250 nM of Forward and 250 nM of Reverse primer with power sybr green. 
 
-|Reagent| Inital conc. | Final conc.| uL for 1 rxn| 10 rxn set up|
-|---|---|---|---|----|
-|Power sybr green| 2x| 1x| 5| 50|
-|Forward Primer| 10 uM| 250 nM|.25|2.5|
-|Reverse Primer| 10 uM| 250 nM|.25|2.5|
-|nuclease free water|na|na|.5|5| 
-|cDNA| 0.25 ng/ul| .1 ng/uL| 4| na|
-|Total|||10||   
+| Reagent             | Inital conc. | Final conc. | uL for 1 rxn | 10 rxn set up |
+| ------------------- | ------------ | ----------- | ------------ | ------------- |
+| Power sybr green    | 2x           | 1x          | 5            | 50            |
+| Forward Primer      | 10 uM        | 250 nM      | .25          | 2.5           |
+| Reverse Primer      | 10 uM        | 250 nM      | .25          | 2.5           |
+| nuclease free water | na           | na          | .5           | 5             |
+| cDNA                | 0.25 ng/ul   | .1 ng/uL    | 4            | na            |
+| Total               |              |             | 10           |               |
 
 3) Load master mix into plate (6 uL)    
 4) Load cDNA ( 4uL)    
 5) place in ABI steponeplus for following rxn:     
- * qpcr steps   
+* qpcr steps   
   1. 95 C, 10 minutes     
   2. 40 cycles of: 95 C for 15s, 60 C for 60 seconds and fluorescence acquisition,         
-  
- * Melt curve analysis    
+
+* Melt curve analysis    
   1. Reactions were heated to 95C 15 s    
   2. From 60 C, slowly heat up and measure fluoresence         
 
