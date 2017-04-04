@@ -11,7 +11,7 @@
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.    
 
-### General Lab protocols found [here for heat shocks and RNA related experiments](https://github.com/adnguyen/Dissertation_temperature_adaptation_ants/blob/master/ANBE_protocols.md) and [here for protein related experiments](https://github.com/adnguyen/2016_Protein_stability_evolution/blob/master/Documents/Protocols/Protocols.md).     
+### General Lab protocols found [here for heat shocks and RNA related experiments](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_ANBE_protocols.md) and [here for protein related experiments](https://github.com/adnguyen/2016_Protein_stability_evolution/blob/master/Documents/Protocols/Protocols.md).     
 
 
 **Introduction:**    
@@ -4307,7 +4307,7 @@ Project updates:
     - For intro and discussion: take Brent's comments and rewrite adding refs
     - Methods need to be shrunk for PNAS format
     - Need to do an analysis that can account for intra and interspecific variation
-    -    
+    - ​
   - Submit to PNAS  
 - ==**Multiple stressors ms:**==   
   - In SHC's hands
@@ -4325,7 +4325,6 @@ Project updates:
 - **Proteome stability project:**    
   - **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
     - Rerun mass spec, but loading more proteins (Bethany)
-
 
 
 ------

@@ -13,9 +13,9 @@ I wish I started an online notebook earlier, but maybe it's not too late? Anyway
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.    
 
-###General Lab protocols found [here for heat shocks and RNA related experiments](https://github.com/adnguyen/Dissertation_temperature_adaptation_ants/blob/master/ANBE_protocols.md) and [here for protein related experiments](https://github.com/adnguyen/2016_Protein_stability_evolution/blob/master/Documents/Protocols/Protocols.md).     
+### General Lab protocols found [here for heat shocks and RNA related experiments](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_ANBE_protocols.md) and [here for protein related experiments](https://github.com/adnguyen/2016_Protein_stability_evolution/blob/master/Documents/Protocols/Protocols.md).     
 
-###Table of Contents (Layout follows Page number: Date. Title of entry)     
+### Table of Contents (Layout follows Page number: Date. Title of entry)     
 
 * [Page 1: 2016-05-13](#id-section1). Indirect genetic effects   
 * [Page 2: 2016-05-13](#id-section2). Comparing G matrices of different populations 
