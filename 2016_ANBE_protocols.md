@@ -187,9 +187,9 @@ These steps include samples + a negative control and -multiscribe control.
 * ex:       
 
 
-|Sample ID| Treatment| Qubit/nanodrop Quantification (ng/uL)| uL sample for 50ng| nuclease free water to add| total volume|
-|---|---|---|---|---|---|
-|Ant1| Heat shocked| 6.53 | 7.66| 2.34| 10|      
+| Sample ID | Treatment    | Qubit/nanodrop Quantification (ng/uL) | uL sample for 50ng | nuclease free water to add | total volume |
+| --------- | ------------ | ------------------------------------- | ------------------ | -------------------------- | ------------ |
+| Ant1      | Heat shocked | 6.53                                  | 7.66               | 2.34                       | 10           |
 
 
 
@@ -201,13 +201,13 @@ These steps include samples + a negative control and -multiscribe control.
 
 | Reagent             | Inital conc.          | Final conc | uL to add 1rxn | 10 rxns |
 | ------------------- | --------------------- | ---------- | -------------- | ------- |
-| RT Buffer           | 10x                   | 1x         | 1              | 10      |
+| RT Buffer           | 10x                   | 1x         | 2              | 20      |
 | dNTPs               | 25x or 100 mM         | 1x or 4 mM | .8             | 8       |
-| RT Random Primers   | 10x                   | 1x         | 1              | 10      |
+| RT Random Primers   | 10x                   | 1x         | 2              | 20      |
 | Rnase inhibitor     | 5000 units(or 40U/uL) | 4 units    | 1              | 10      |
 | RT Multiscribe      | 50 U/ uL              | 5 U/uL     | 1              | 10      |
 | nuclease free water | na                    | na         | 3.2            | 32      |
-| total               |                       |            | 10             | 100     |     
+| total               |                       |            | 10             | 100     |
 
 
 
