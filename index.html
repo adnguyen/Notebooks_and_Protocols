@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>README.md</title><link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Raleway:600,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'><style type='text/css'>html, body {overflow-x: initial !important;}.CodeMirror { height: auto; }
+<title>README.md</title><style type='text/css'>html, body {overflow-x: initial !important;}.CodeMirror { height: auto; }
 .CodeMirror-scroll { overflow-y: hidden; overflow-x: auto; }
 .CodeMirror-lines { padding: 4px 0px; }
 .CodeMirror pre { }
@@ -232,144 +232,238 @@ a.md-print-anchor { border: none !important; display: inline-block !important; p
 .MathJax_SVG * { -webkit-transition: none; transition: none; }
 
 
-@include-when-export url(http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic);
-@include-when-export url(http://fonts.googleapis.com/css?family=Raleway:600,400&subset=latin,latin-ext);
+@import-when-export url(http://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic);
+@import-when-export url(http://fonts.googleapis.com/css?family=Lato:900,300);
 
 
-
-@charset "UTF-8";
-@font-face {
-    font-family: 'TeXGyreAdventor';
-    src: url('file:///Users/andrewnguyen/Library/Application%20Support/abnerworks.Typora/themes/texgyreadventor-regular.otf');
-    font-weight: normal;
-    font-style: normal;
-
-}
+/**
+ * forked from pixyll.com
+ * MIT license
+ */
 
 @charset "UTF-8";
 @font-face {
-	font-family: 'TeXGyreAdventor';
+	font-family: 'Merriweather';
 	font-style: normal;
-	font-weight: normal;
-	src: url(file:///Users/andrewnguyen/Library/Application%20Support/abnerworks.Typora/themes/gothic/texgyreadventor-regular.otf);
+	font-weight: 300;
+	src: local('Merriweather Light'), local('Merriweather-Light'), url(file:///Users/andrewnguyen/Library/Application%20Support/abnerworks.Typora/themes/pixyll/Merriweather-Light.ttf);
 }
 @font-face {
-	font-family: 'TeXGyreAdventor';
+	font-family: 'Merriweather';
 	font-style: normal;
-	font-weight: bold;
-	src: url(file:///Users/andrewnguyen/Library/Application%20Support/abnerworks.Typora/themes/gothic/texgyreadventor-bold.otf);
+	font-weight: 900;
+	src: local('Merriweather Heavy'), local('Merriweather-Heavy'), url(file:///Users/andrewnguyen/Library/Application%20Support/abnerworks.Typora/themes/pixyll/Merriweather-Bold.ttf);
 }
 @font-face {
-	font-family: 'TeXGyreAdventor';
+	font-family: 'Merriweather';
 	font-style: italic;
-	font-weight: normal;
-	src: url(file:///Users/andrewnguyen/Library/Application%20Support/abnerworks.Typora/themes/gothic/texgyreadventor-italic.otf);
+	font-weight: 300;
+	src: local('Merriweather Light Italic'), local('Merriweather-LightItalic'), url(file:///Users/andrewnguyen/Library/Application%20Support/abnerworks.Typora/themes/pixyll/Merriweather-LightItalic.ttf);
 }
 @font-face {
-	font-family: 'TeXGyreAdventor';
+	font-family: 'Merriweather';
 	font-style: italic;
-	font-weight: bold;
-	src: url(file:///Users/andrewnguyen/Library/Application%20Support/abnerworks.Typora/themes/gothic/texgyreadventor-bolditalic.otf);
+	font-weight: 900;
+	src: local('Merriweather Heavy Italic'), local('Merriweather-HeavyItalic'), url(file:///Users/andrewnguyen/Library/Application%20Support/abnerworks.Typora/themes/pixyll/Merriweather-HeavyItalic.ttf);
 }
 
-html,
-body,
-#write{
-	background: #fcfcfc;
-	font-family: 'TeXGyreAdventor', "Century Gothic", 'Yu Gothic', 'Raleway', "STHeiti", sans-serif;
-	font-weight: 400;
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Lato Light'), local('Lato-Light'), url(file:///Users/andrewnguyen/Library/Application%20Support/abnerworks.Typora/themes/pixyll/Lato-Light.ttf);
 }
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 900;
+	src: local('Lato Black'), local('Lato-Blcak'), url(file:///Users/andrewnguyen/Library/Application%20Support/abnerworks.Typora/themes/pixyll/Lato-Black.ttf);
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Lato Black'), local('Lato-Blcak'), url(file:///Users/andrewnguyen/Library/Application%20Support/abnerworks.Typora/themes/pixyll/Lato-Black.ttf);
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: italic;
+	font-weight: 900;
+	src: local('Lato BlackItalic'), local('Lato-BlackItalic'), url(file:///Users/andrewnguyen/Library/Application%20Support/abnerworks.Typora/themes/pixyll/Lato-BlackItalic.ttf);
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: italic;
+	font-weight: bold;
+	src: local('Lato BlackItalic'), local('Lato-BlackItalic'), url(file:///Users/andrewnguyen/Library/Application%20Support/abnerworks.Typora/themes/pixyll/Lato-BlackItalic.ttf);
+}
+
 h1,
+.h1,
+.f1 {
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
 h2,
+.h2,
+.f2 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
 h3,
+.h3,
+.f3 {
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+p,
+.p,
+.f4,
 h4,
 h5,
-h6 {
-	color: #111;
-	font-family: 'TeXGyreAdventor', "Century Gothic", 'Yu Gothic', 'Ubuntu', "STHeiti", sans-serif;
+h6,
+dl,
+ol,
+ul,
+pre[cid],
+div[cid],
+#typora-source {
+	font-size: 1.125rem;
+	line-height: 1.5rem;
 }
 
-html {
-	font-size:16px;
+h4 {
+	font-size: 1.13rem;
+}
+/*
+ Pixyll
+ A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff.
+ Best served with BASSCSS (http://jxnblk.github.io/basscss)
+ Crafted with <3 by John Otander (@4lpine) - ©2015 John Otander MIT License http://opensource.org/licenses/MIT
+
+*/
+
+body {
+	font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", "STSong", Serif;
+	line-height: 1.5rem;
+	font-weight: 400;
 }
 
 #write {
 	max-width: 914px;
-	text-align: justify;
-	overflow-x: hidden;
+	color: #333;
 }
 
-#write>h1:first-child {
-	margin-top: 2.75rem;
+img {
+	width: auto;
+	max-width: 100%;
 }
-#write>h2:first-child {
-	margin-top: 1.75rem;
+body {
+	font-size: 1.5rem;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
-#write>h3:first-child {
-	margin-top: 1rem;
+
+.md-table-edit {
+	background: #ededed;
+    padding-top: 4px;
 }
-#write>h4:first-child {
-	margin-top: 0.5rem;
-}
-h1 {
-	font-weight: normal;
-	line-height: 4rem;
-	margin: 0 0 1.75rem;
-	padding: 20px 30px;
-	text-align: center;
-	text-transform: uppercase;
-	margin-top: 4rem;
-}
-h2 {
-	font-weight: normal;
-	line-height: 3rem;
-	margin: 0 0 1.9375rem;
-	padding: 0 30px;
-	text-align: center;
-	text-transform: uppercase;
-	margin-top: 3rem
-}
-h3 {
-	font-weight: normal;
-}
-h4 {
-	font-weight: normal;
-}
-h5 {
+
+table {
+	width: 100%;
 	font-size: 1.125rem;
-	font-weight: normal;
 }
-h6 {
-	font-size: 1rem;
-	font-weight: bold;
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td,
+table > tfoot > tr > th,
+table > tfoot > tr > td {
+	padding: 12px;
+	line-height: 1.2;
+	vertical-align: top;
+	border-top: 1px solid #333;
+}
+table > thead > tr > th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #333;
+}
+table > caption + thead > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > th,
+table > thead:first-child > tr:first-child > td {
+	border-top: 0;
+}
+table > tbody + tbody {
+	border-top: 2px solid #333;
 }
 p {
-	color: #111;
+	font-weight: 300;
+	line-height: 1.5;
+}
+abbr {
+	border-bottom: 1px black dotted;
+	cursor: help;
+}
+pre,
+code {
+	font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+code,
+.md-fences  {
+	color: #7a7a7a;
+}
+
+.md-fences .CodeMirror.CodeMirror-wrap {
+	top: -1.5em;
+    margin-bottom: -1.5em;
+}
+
+.md-fences {
+	padding: 1.125em;
+	margin-bottom: 0.88em;
 	font-size: 1rem;
-	line-height: 1.75rem;
-	margin: 0 0 1.25rem;
+	border: 1px solid #7a7a7a;
 }
-#write>h3.md-focus:before {
-	left: -1.875rem;
-	top: 0.5rem;
-	padding: 2px;
+
+blockquote {
+	padding: 1.33em;
+	font-style: italic;
+	border-left: 5px solid #7a7a7a;
+	color: #555;
 }
-#write>h4.md-focus:before {
-	left: -1.875rem;
-	top: 0.3125rem;
-	padding: 2px;
+blockquote em {
+	color: #000;
 }
-#write>h5.md-focus:before {
-	left: -1.875rem;
-	top: 0.25rem;
-	padding: 2px;
+blockquote footer {
+	font-size: .85rem;
+	font-style: normal;
+	background-color: #fff;
+	color: #7a7a7a;
+	border-color: transparent;
 }
-#write>h6.md-focus:before {
-	left: -1.875rem;
-	top: .125rem;
-	padding: 2px;
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: 900;
+	line-height: 1.2;
+	margin: 1em 0 0.5em;
 }
-/*@media screen and (min-width: 48em) {
+@media screen and (min-width: 48em) {
 	.h1,
 	h1 {
 		font-size: 3.250rem;
@@ -384,30 +478,24 @@ p {
 	}
 	.h4,
 	h4 {
-		font-size: 1.250rem;
-	}
-	.h5,
-	h5 {
-		font-size: 1.150rem;
-	}
-	.h6,
-	h6 {
-		font-size: 1rem;
+		font-size: 1.3rem;
 	}
 	#write>h4.md-focus:before,
 	#write>h5.md-focus:before,
-	#write>h6.md-focus:before {
+	#write>h6.md-focus:before{
 		top: 1px;
 	}
-	p {
+	.p,
+	p,
+	li {
 		font-size: 1.25rem;
 		line-height: 1.8;
 	}
 	table {
 		font-size: 1.25rem;
 	}
-}*/
-@media screen and (max-width: 48em) {
+}
+@media (max-width: 48em) {
 	blockquote {
 		margin-left: 1rem;
 		margin-right: 0;
@@ -427,194 +515,218 @@ p {
 	}
 	.h4,
 	h4 {
-		font-size: 1.250rem;
-	}
-	.h5,
-	h5 {
-		font-size: 1.150rem;
-	}
-	.h6,
-	h6 {
-		font-size: 1rem;
+		font-size: 1.3rem;
 	}
 }
-a,
-.md-def-url {
-	color: #990000;
-	text-decoration: none;
+@media screen and (min-width: 64em) {
+	.h1,
+	h1 {
+		font-size: 4.498rem;
+	}
+	.h2,
+	h2 {
+		font-size: 2.29rem;
+	}
+	.h3,
+	h3 {
+		font-size: 1.9rem;
+	}
+	.h4,
+	h4 {
+		font-size: 1.591rem;
+	}
+	#write>h4.md-focus:before{
+		top:4px;
+	}
 }
-a:hover {
+a {
+	color: #463F5C;
 	text-decoration: underline;
 }
-table {
-	margin-bottom: 20px
+
+#write {
+	padding-top: 2rem;
 }
-table th,
-table td {
-	padding: 8px;
-	line-height: 1.25rem;
-	vertical-align: top;
-	border-top: 1px solid #ddd
+
+#write pre.md-meta-block {
+	min-height: 35px;
+	padding: 0.5em 1em;
+	white-space: pre;
+	border: 0px;
+
+	border-left: 30px #f8f8f8 solid;
+	border-right: 30px #f8f8f8 solid;
+	width: 100vw;
+	max-width: calc(100% + 60px);
+
+	margin-left: -30px;
+	margin-bottom: 2em;
+	margin-top: -2010px;
+	padding-top: 2000px;
+	padding-bottom: 10px;
+	line-height: 1.5em;
+	color: #7a7a7a;
+	background-color: #fafafa;
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: 300;
+	clear: both;
+	padding-left: 0;
+	font-size:1.125rem;
 }
-table th {
-	font-weight: bold
+.md-image>.md-meta {
+	color: #463F5C
 }
-table thead th {
-	vertical-align: bottom
+.footnotes {
+	font-size:1.1rem;
 }
-table caption+thead tr:first-child th,
-table caption+thead tr:first-child td,
-table colgroup+thead tr:first-child th,
-table colgroup+thead tr:first-child td,
-table thead:first-child tr:first-child th,
-table thead:first-child tr:first-child td {
-	border-top: 0
+.md-tag {
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
 }
-table tbody+tbody {
-	border-top: 2px solid #ddd
+.code-tooltip {
+	background: white;
 }
-code, .md-fences {
-	padding: .5em;
-	/*background: #f0f0f0;*/
-	border: 1px solid #ccc;
-	padding: .1em;
-	font-size: 0.9em;
-	margin-left: 0.2em;
-	margin-right: 0.2em;
+.code-tooltip-content {
+	font-size: 1.1rem;
 }
-.md-fences {
-	margin: 0 0 20px;
-	font-size: 1em;
-	padding: 0.3em 1em;
-  	padding-top: 0.4em;
-}
+
 .task-list{
 	padding-left: 0;
 }
 
 .task-list-item {
-	padding-left:2.125rem;
+	padding-left:34px;
 }
 
-.task-list-item input {
-	top: 3px;
-
+.task-list-item input{
+	width: 1.25rem;
+	height: 1.25rem;
+	display: block;
+	-webkit-appearance: initial;
+	top: -2px;
 }
 
-.task-list-item input:before {
-	content: "";
-	display: inline-block;
-	width: 1rem;
-	height: 1rem;
-	vertical-align: middle;
-	text-align: center;
-	border: 1px solid gray;
-	background-color: #fdfdfd;
-	margin-left: 0;
-	margin-top: -0.8rem;
-}
-.task-list-item input:checked:before,
-.task-list-item input[checked]:before{
-	content: '\25FC';
-	/*◘*/
-	font-size: 0.8125rem;
-	line-height: 0.9375rem;
-	margin-top: -1rem;
-}
-
-/* Chrome 29+ */
-@media screen and (-webkit-min-device-pixel-ratio:0)
-  and (min-resolution:.001dpcm) {
-    .task-list-item input:before {
-    	margin-top: -0.2rem;
-    }
-
-    .task-list-item input:checked:before,
-	.task-list-item input[checked]:before {
-		margin-top: -0.2rem;
-	}
-}
-
-blockquote {
-	margin: 0 0 1.11111rem;
-	padding: 0.5rem 1.11111rem 0 1.05556rem;
-	border-left: 1px solid gray;
-}
-blockquote,
-blockquote p {
-	line-height: 1.6;
-	color: #6f6f6f;
-}
-#write pre.md-meta-block {
-	min-height: 30px;
-	background: #f8f8f8;
-	padding: 1.5em;
-	font-weight: 300;
-	font-size: 1em;
-	padding-bottom: 1.5em;
-	padding-top: 3em;
-    margin-top: -1.5em;
-	color: #999;
-	border-left: 1000px #f8f8f8 solid;
-	margin-left: -1000px;
-	border-right: 1000px #f8f8f8 solid;
-	margin-right: -1000px;
-	margin-bottom: 2em;
-}
-.MathJax_Display {
-	font-size: 0.9em;
-	margin-top: 0.5em;
-	margin-bottom: 0;
-}
-p.mathjax-block,
-.mathjax-block {
-	padding-bottom: 0;
-}
-.mathjax-block>.code-tooltip {
-	bottom: 5px;
+.task-list-item input:focus{
+	outline: none;
 	box-shadow: none;
 }
-.md-image>.md-meta {
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-}
-.md-image>img {
-	margin-top: 2px;
-}
-.md-image>.md-meta:first-of-type:before {
-	padding-left: 4px;
+
+.task-list-item input:before{
+	border: 1px solid #555;
+	border-radius: 1.5rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	background: #fff;
+	content: ' ';
+	transition: background-color 200ms ease-in-out;
+	display: block;
 }
 
+.task-list-item input:checked:before,
+.task-list-item input[checked]:before{
+	background: #333;
+	border-width: 2px;
+	display:inline-block;
+	transition: background-color 200ms ease-in-out;
+}
+
+.task-list-item input:checked:after,
+.task-list-item input[checked]:after {
+	opacity: 1;
+}
+
+.task-list-item input:after {
+	opacity: 1;
+	-webkit-transition: opacity 0.05s ease-in-out;
+	-moz-transition: opacity 0.05s ease-in-out;
+	transition: opacity 0.05s ease-in-out;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 0.4375rem;
+	left: 0.28125rem;
+	width: 0.9375rem;
+	height: 0.5rem;
+	border: 3px solid #fff;
+	border-top: 0;
+	border-right: 0;
+	content: ' ';
+	opacity: 0;
+}
+
+.md-tag {
+	color:inherit;
+}
+
+.md-toc:focus .md-toc-content{
+	margin-top: 19px;
+}
+
+#outline-dropmenu {
+	background-color:white;
+	font-size:1rem !important;
+}
+
+#outline-content li, #outline-content ul {
+	font-size:1rem !important;
+}
+
+.outline-title {
+	line-height: inherit;
+	margin-top: 10px;
+}
+
+.outline-expander {
+	width: 18px;
+}
+
+.outline-expander:before {
+ 	content: "+";
+	font-family: inherit;
+	color: rgb(108, 108, 108); 
+  	font-size: 1.5rem;
+ 	top: 0.1rem;
+}
+
+.outline-expander:hover:before {
+	content: "+";
+}
+
+.outline-item-open>.outline-item>.outline-expander:before{
+	content: "-";
+}
+
+/** source code mode */
 #typora-source {
-	color: #555;
+	font-family: Courier, monospace;
+    color: #6A6A6A;
 }
 
-/** ui for windows **/
-#md-searchpanel {
-    border-bottom: 1px solid #ccc;
+.os-windows #typora-source {
+	font-family: inherit;
 }
 
-#md-searchpanel .btn {
-    border: 1px solid #ccc;
+.cm-s-typora-default .cm-header, 
+.cm-s-typora-default .cm-property,
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+	color: #428bca;
 }
 
-#md-notification:before {
-	top: 14px;
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number {
+	color: #777777;
 }
 
-#md-notification {
-	background: #eee;
-}
 
-.megamenu-menu-panel .btn {
-	border: 1px solid #ccc;
+.md-diagram-panel {
+	margin-top: 24px;
+	margin-left: -1.2em;
 }
 
 
 </style>
 </head>
 <body class='typora-export' >
-<div  id='write'  class = 'is-mac'><h1><a name='header-c4' class='md-header-anchor '></a>Notebook and protocols</h1><h3><a name='header-c6' class='md-header-anchor '></a>Author: Andrew D. Nguyen</h3><h3><a name='header-c7' class='md-header-anchor '></a>website: <a href='https://adnguyen.github.io/' target='_blank' >https://adnguyen.github.io/</a></h3><h3><a name='header-c8' class='md-header-anchor '></a>email: <a href='mailto:anbe642@gmail.com' target='_blank' >anbe642@gmail.com</a></h3><p>Date started: 2016-10-04  <br/>
-Last date modified: ongoing  <br/></p><p>This repo shares my protocols and notebooks of ongoing work with the aim of capturing the process of science as it is happening and making it transparent and reproducible. Template for making an online notebook found <a href='https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/Online_notebook_template.md'>here</a>.</p><h2><a name='header-c15' class='md-header-anchor '></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</h2><p></p><h1><a name='header-c19' class='md-header-anchor '></a>List of Notebooks by year</h1><ul><li><p><a href='https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md'>2017_Notebook</a>: This notebook logs   <br/></p><ul><li>climate cascade meetings and projects (dissertation work)</li><li>Conferences (SICB)</li></ul></li><li><p><a href='https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_notebook.md'>2016_Notebook</a>: This notebook logs:</p><ul><li>climate cascade meetings</li><li>related climate cascade projects (Hsp modulation paper; thermal niche paper; Adaptive shifts in Hsp gxp as a function-valued trait paper; proteome stability project; range limits paper</li><li>post doc ideas (selection gradients, quantitative genetics in natural populations)</li><li>journal clubbing by myself- indirect genetic effects, Kingsolver phys model, membrane stability</li><li>fixing machines - ABI steponeplus</li><li>curve fitting for subsets of dataset</li><li>Evolution meeting</li><li>Phylogenetics of Aphaenogaster  <br/></li></ul></li><li><p>2015 (before I found markdown, so these aren&#39;t perfectly formatted)  <br/></p><ul><li><a href='https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2015_hmmscan_notebook.md'>HMM scans</a></li><li><a href='https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2015_phylogenomics_rad_seq_ANBE.md'>RAD-seq phylogenetics</a> <br/></li></ul></li></ul><h1><a name='header-c69' class='md-header-anchor '></a>List of protocols</h1><ul><li><a href='https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_ANBE_protocols.md'>Heat shocking, RNA isolations, and QPCR</a></li><li><a href='https://github.com/adnguyen/2016_Protein_stability_evolution/blob/master/Documents/Protocols/Protocols.md'>Protein related</a><br/></li></ul><h1><a name='header-c77' class='md-header-anchor '></a>Notes</h1><p>Referencing some syntax for pandoc for converting md to html:</p><pre class='md-fences mock-cm' style='display:block;position:relative'>pandoc -o output.html input.txt</pre></div>
+<div  id='write'  class = 'is-mac'><h1><a name='header-n0' class='md-header-anchor '></a>Notebook and protocols</h1><h3><a name='header-n2' class='md-header-anchor '></a>Author: Andrew D. Nguyen</h3><h3><a name='header-n3' class='md-header-anchor '></a>website: <a href='https://adnguyen.github.io/' target='_blank' >https://adnguyen.github.io/</a></h3><h3><a name='header-n4' class='md-header-anchor '></a>email: <a href='mailto:anbe642@gmail.com' target='_blank' >anbe642@gmail.com</a></h3><p>Date started: 2016-10-04  <br/>
+Last date modified: ongoing  <br/></p><p>This repo shares my protocols and notebooks of ongoing work with the aim of capturing the process of science as it is happening and making it transparent and reproducible. Template for making an online notebook found <a href='https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/Online_notebook_template.md'>here</a>.</p><h2><a name='header-n11' class='md-header-anchor '></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</h2><p></p><h1><a name='header-n14' class='md-header-anchor '></a>List of Notebooks by year</h1><ul><li><p><a href='https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_Eco_Gen_ANBE_nb.md'>2017 Ecoological Genomics Notebook</a>. This notebook logs the activities throughout the semester  <br/></p><ul><li><p>I was a TA for Pbio381 at the University of Vermont, Spring 2017 <br/></p></li><li><p>Check out our overall <a href='Images/Overall_workflow_eco_genomics.html'>workflow</a></p></li><li><p>We learned: </p><ul><li>different sequencing platforms and strategies</li><li>population genomics- Admixture, demography</li><li>differential gene expression with RNA-seq</li><li>gene annotation with BLAST and GO  <br/></li></ul></li></ul></li><li><p><a href='https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md'>2017_Notebook</a>: This notebook logs   <br/></p><ul><li>climate cascade meetings and projects (dissertation work)</li><li>Conferences (SICB)</li><li>Writing notes for dissertation</li><li>Paper readings on Hsps; proteasome, tolerance vs resistance</li></ul></li><li><p><a href='https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_notebook.md'>2016_Notebook</a>: This notebook logs:</p><ul><li>climate cascade meetings</li><li>related climate cascade projects (Hsp modulation paper; thermal niche paper; Adaptive shifts in Hsp gxp as a function-valued trait paper; proteome stability project; range limits paper</li><li>post doc ideas (selection gradients, quantitative genetics in natural populations)</li><li>journal clubbing by myself- indirect genetic effects, Kingsolver phys model, membrane stability</li><li>fixing machines - ABI steponeplus</li><li>curve fitting for subsets of dataset</li><li>Evolution meeting</li><li>Phylogenetics of Aphaenogaster  <br/></li></ul></li><li><p>2015 (before I found markdown, so these aren&#39;t perfectly formatted)  <br/></p><ul><li><a href='https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2015_hmmscan_notebook.md'>HMM scans</a></li><li><a href='https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2015_phylogenomics_rad_seq_ANBE.md'>RAD-seq phylogenetics</a> <br/></li></ul></li></ul><h1><a name='header-n96' class='md-header-anchor '></a>List of protocols</h1><ul><li><a href='https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_ANBE_protocols.md'>Heat shocking, RNA isolations, and QPCR</a></li><li><a href='https://github.com/adnguyen/2016_Protein_stability_evolution/blob/master/Documents/Protocols/Protocols.md'>Protein related</a><br/></li></ul><h1><a name='header-n104' class='md-header-anchor '></a>Notes</h1><p>Referencing some syntax for pandoc for converting md to html:</p><pre class='md-fences mock-cm' style='display:block;position:relative'>pandoc -o output.html input.txt</pre></div>
 </body>
 </html>
