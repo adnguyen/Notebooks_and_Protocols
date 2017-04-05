@@ -37,8 +37,8 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 18: 2017-03-22](#id-section18). Week 9, Day 16, Population genomics part 4; paper discussion; Inferring Demographic processes with SNPs
 * [Page 19: 2017-03-27](#id-section19). Week 10, Day 17, Population genomics-detecting signatures of natural selection; selection scans; paper discussion- Laurent et al. 2016, MolEco
 * [Page 20: 2017-03-29 ](#id-section20). Week 10, Day 18
-* [Page 21: 2017-04-03](#id-section21). Karl's guest lecture; FST and FST outlier
-* [Page 22:](#id-section22).
+* [Page 21: 2017-04-03](#id-section21). Week 11, Day 19 Karl's guest lecture; FST and FST outlier
+* [Page 22: 2017-04-05](#id-section22). Week 11, Day 20; Annotation
 * [Page 23:](#id-section23).
 * [Page 24:](#id-section24).
 * [Page 25:](#id-section25).
@@ -3257,7 +3257,54 @@ Total genetic variation
 
 ------
 <div id='id-section22'/>
-### Page 22:
+### Page 22: 2017-04-05. Week 11, Day 20; Annotation
+
+Melissa info update on annotations:
+
+Annotations take a long time. Imagine a funnel. Broad to specific
+
+1. **Processing raw reads:** started with a fastq file using the program trimmomatic
+2. **Transcriptome assembly:** Used program trinity to get a .fasta file
+3. a) Map reads: .sam file using BWA
+4. b) Annotate: .fasta files use BLAST
+
+
+
+```mermaid
+graph TD
+A[Process raw reads] --trimmomatic--> B[fastq file]
+B --Trinity--> C[Transcriptome assembly fasta format]
+C --BWA--> D[Map reads sam file]
+C --BLAST--> E[Gene Annotation]
+D --DESeq2--> T[DGE counts table]
+D --PCA/DAPCA/Admixture--> G[Population genomics vcf format]
+T --> H[Genes that are different or under selection]
+G --> H
+E --> H 
+H --Functional Enrichment Analysis--> Z[Infer biological function]
+
+```
+
+
+
+For the annotation: 
+
+Blast2Go—need to pay
+
+Brute force
+
+Pipelines: Trinotate
+
+
+
+BLAST: taking a fasta file and search a database (NCBI non-redundant)
+
+Blastp: proteins
+
+Blastx: translate all 6 reading frames
+
+
+
 ------
 <div id='id-section23'/>
 ### Page 23:
