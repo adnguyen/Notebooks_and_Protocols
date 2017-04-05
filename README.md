@@ -12,10 +12,22 @@ This repo shares my protocols and notebooks of ongoing work with the aim of capt
 
 
 
-# List of Notebooks by year
+# List of Notebooks by year    
+
+* [2017 Ecoological Genomics Notebook](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_Eco_Gen_ANBE_nb.md). This notebook logs the activities throughout the semester    
+	* I was a TA for Pbio381 at the University of Vermont, Spring 2017   
+	* Check out our overall [workflow](Images/Overall_workflow_eco_genomics.html)
+	* We learned: 
+		* different sequencing platforms and strategies
+		* population genomics- Admixture, demography
+		* differential gene expression with RNA-seq
+		* gene annotation with BLAST and GO    
+ 
 * [2017_Notebook](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md): This notebook logs     
   * climate cascade meetings and projects (dissertation work)
   * Conferences (SICB)
+  * Writing notes for dissertation
+  * Paper readings on Hsps; proteasome, tolerance vs resistance
 
 * [2016_Notebook](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_notebook.md): This notebook logs:
   * climate cascade meetings
