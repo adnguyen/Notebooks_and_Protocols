@@ -4298,7 +4298,7 @@ For the discussion
 
  <div id='id-section59'/> 
 
-### Page 59: 2017-03-31. To do list.   
+### Page 59: 2017-03-31. To do list; project update    
 
 Project updates:    
 
@@ -4331,7 +4331,40 @@ Project updates:
 
  <div id='id-section60'/> 
 
-### Page 60:  
+### Page 60: 2017-04-07. Project updates      
+
+
+Project updates:    
+
+- **Hsp gene expression + Ctmax project:**
+  - Lot of it has to be reviewed and rewritten
+    - For intro and discussion: take Brent's comments and rewrite adding refs
+    - Methods need to be shrunk for PNAS format
+    - Need to do an analysis that can account for intra and interspecific variation
+  - Submit to PNAS  
+  
+- **Multiple stressors ms:**   
+  - In SHC's hands
+
+- **Range limits ms**: SHC lab gave verbal edit, still need to incorporate     
+  - focus on 1 end of thermal niche breadth(although it is nice to mention it because CTmin decreases across lat)--CTmin. 
+  - Dicussion needs to talk about cold adaptation; why trade-offs?
+  - Walk through results better
+
+- **Thermal niche ms:** 
+  - ?? Lacy's hands	
+  
+- ==**Stressed in nature MS: Samples to rerun.**==       
+  - <u>There are 74 samples: 3 days of RNA isolation + cDNA synthesis. 6 gene targets ran in duplicates is 2 plates per gene = 12 plates total</u>        
+
+    
+- **Proteome stability project:**    
+  - **~130 proteins for rudis, ~250 proteins for pogos**(we got 500 proteins last time); labelling is ok
+    - Rerun mass spec, but loading more proteins
+    - Need gapdh values
+
+
+
 
 ------
 
