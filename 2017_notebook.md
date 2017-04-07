@@ -25,7 +25,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * Stress in nature: Are ants stressed under experimental warming that projects climate change? Ants were collected from warming chambers (0-5 C increase from ambient) and we measured their stress response.    
 * ​
 
-###Table of Contents (Layout follows Page number: Date. Title of entry)    
+### Table of Contents (Layout follows Page number: Date. Title of entry)    
 * [Page 1: 2017-01-01](#id-section1). SICB meeting
 * [Page 2: 2017-01-03](#id-section2). Yearly goals
 * [Page 3: 2017-01-10](#id-section3). Status of projects
