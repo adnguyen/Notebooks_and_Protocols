@@ -3381,9 +3381,58 @@ Blastx: translate all 6 reading frames
     
 ### Page 23: 2017-04-10,Week 12, Day 21; Metagenomics, paper discussion Ziegler et al. 2017    
 
-Announcements: 
+Announcements:    
+
+1. SSW projects; metagenomics    
+2. Microbiome vs metagenome    
+3. Process of generating and analyzing data   
+4. Microbial revolution
+5. Big questions...
+
 
 Info update: SKeller; Metagenomics
+
+What kind of data do we have?   
+
+1. RNA  -> sequencing --> Differential gene expression; what is diversity and structure of the samples? IS there evidence for selection?    
+2. Metagenomics: Amplify 16s rRNA gene. 
+
+What microbes are present? What are they doing?      
+
+
+**What is a microbiome?** (Who are they?)    
+Assemblage of microbial taxa associated with host or environment. This includes: pathogens, symbionts, mutualists, and commensals   
+
+Holobiont is host + microbiome
+
+How do you measure a microbiome?    
+
+1. 16s rRNA   
+2. ITS : Internal transcribed spacer    
+
+**Metagenomics**  (What are they doing)   
+
+Genes being expressed by he microbiome, FUNCTION. The focus is more on RNA-seq or shot gun DNA seq.
+
+How do we process these data?!?!   
+
+1. Sample tissue and extract DNA or RNA.    
+2. PCR target: 16s rRNA.    
+3. Library prep: barcode samples    
+4. Cluster sequences based on similiarity  (97%)-- OTUs
+5. BLAST OTU's to a database to ID taxonomy.
+
+REVOLUTION!
+
+Most microbes are not culturable.     
+
+### Big question!!?!?    
+
+
+
+
+
+
 
 
 Glossary:   
