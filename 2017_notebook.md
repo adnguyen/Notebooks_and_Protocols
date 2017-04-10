@@ -85,8 +85,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 57: 2017-03-28](#id-section57). Meeting with new lab tech, KB
 * [Page 58: 2017-03-31](#id-section58). Making thesis fixes, notes
 * [Page 59: 2017-03-31](#id-section59). To do list
-* [Page 60:](#id-section60).
-* [Page 61:](#id-section61).
+* [Page 60: 2017-04-07](#id-section60). Project updates    
+* [Page 61: 2017-04-10](#id-section61). To do and project updates
 * [Page 62:](#id-section62).
 * [Page 63:](#id-section63).
 * [Page 64:](#id-section64).
@@ -4370,7 +4370,19 @@ Project updates:
 
  <div id='id-section61'/> 
 
-### Page 61:  
+### Page 61: 2017-04-10. To do and project updates    
+
+I'm meeting with Wai today at proteomics facility. Ask about:
+
+1. Gapdh values   
+2. redoing runs: We only found 120-200 proteins, but last time we found 500 proteins.    
+
+**Organize stressed in nature project.** 
+
+* Input RNA values into spreadsheet.   
+* Curtis diluted cDNA 1/10 before qpcr; threshold on the machine is 0.5 I think; 
+	* So I need to dilute cDNA to prep for qpcrs. 
+ 
 
 ------
 
