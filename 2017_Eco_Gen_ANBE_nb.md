@@ -13,7 +13,8 @@ I am the teaching assistant, but I will follow the tutorials and log what I've d
 Science should be reproducible and one of the best ways to achieve this is by logging research activities in a notebook. Because science/biology has increasingly become computational, it is easier to document computational projects in an electronic form, which can be shared online through Github.    
 
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.  
+ <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>  
+.  
 
 
 ### Table of contents for 60 entries (Format is *Page: Date(with year-month-day). Title*)        
@@ -39,7 +40,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 20: 2017-03-29 ](#id-section20). Week 10, Day 18
 * [Page 21: 2017-04-03](#id-section21). Week 11, Day 19 Karl's guest lecture; FST and FST outlier
 * [Page 22: 2017-04-05](#id-section22). Week 11, Day 20; Annotation
-* [Page 23:](#id-section23).
+* [Page 23: 2017-04-10](#id-section23). Week 12, Day 21, paper discussion Ziegler et al. 2017
 * [Page 24:](#id-section24).
 * [Page 25:](#id-section25).
 * [Page 26:](#id-section26).
@@ -79,7 +80,8 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 60:](#id-section60).
 
 ------
-<div id='id-section1'/>
+ <div id='id-section1'/>  
+
 ### Page 1: 2016-07-18. Ecological genomics, first class
 
 ### **Steve and Melissa's intro**    
@@ -148,7 +150,8 @@ Melissa has a data set with 96 sea stars and then the 16s microbiome. Would be c
 
 
 ------
-<div id='id-section2'/>
+ <div id='id-section2'/>  
+
 ### Page 2: 2017-01-20. Readings for 2017-01-25 Monday    
 
 First, showing how I structured the readings in the repo: 
@@ -229,7 +232,8 @@ So my plan is to place my papers in the "papers" directory, within a particular 
      5. Understanding the role of genomic architecture in adaptation      
 
 ------
-<div id='id-section3'/>
+ <div id='id-section3'/>  
+
 ### Page 3: 2017-01-23. Day 2, course notes      
 
 ### Course materials    
@@ -360,7 +364,8 @@ Step 1: Goal-oriented; which platform to use?
  
 
 ------
-<div id='id-section4'/>
+ <div id='id-section4'/>  
+
 ### Page 4: 2017-01-25. Week 2, Day 3, class notes (paper discussions and student project development)
 
 **Tasks**
@@ -624,7 +629,8 @@ Set up new webpage for course:
 
 
 ------
-<div id='id-section5'/>
+ <div id='id-section5'/>  
+
 ### Page 5: 2017-01-30. Week 3, Day 4, class notes , Group presentations of project ideas
 
 
@@ -780,22 +786,28 @@ We need to figure out how to do this.
 
 
 ------
-<div id='id-section6'/>
+ <div id='id-section6'/>  
+
 ### Page 6: 2017-02-01. Week 3, Day 5, info-updates; command line unix tutorial 
 
 ## Announcements
 
-1. <usStarters</u>
+1.  <usStarters</u>  
+
    * Send link to Github notebook to Antdrew (adnguyen@uvm.edu)
    * sign-ups (folkds sitting in , too!)
    * Project proposals due by email next ==Monday February 6th.==
    * We start transcriptomics next week!
-2. <u>Info-update Blitz</u>
-3. <u>Unix tutorial</u> 
+2.  <u>Info-update Blitz</u>  
 
-### <u>2. Info Updates</u>
+3.  <u>Unix tutorial</u>  
+ 
 
-* <u>Whole genome sequencing</u> 
+###  <u>2. Info Updates</u>  
+
+
+*  <u>Whole genome sequencing</u>  
+ 
   * **applications**
     * high power and high resolution for pop gen, effective pop size, genetic relatedness, inbreeding, admixture events, conservations(monitoring or control breeding)
     * new ones too! screen for adaptive potential, inbreeding depression, impacts of genetic variation, plastic responses
@@ -816,7 +828,8 @@ We need to figure out how to do this.
     * Platforms:
       * Short reads: Illumina (150bp), Solid (50bp)
       * Longer reads: Pacific bioscience (5kb); Ion torrent (~500 bps)
-    * <u>Knowing your organism!</u>
+    *  <u>Knowing your organism!</u>  
+
       * Genome size! (K-mer approach: unique element of DNA seq length)
       * Know repetitive content and error rates of sequencing
         * GC content too
@@ -858,7 +871,8 @@ A -->|Yes| C[ YOu good]
   * ==Limitations==
     * some transcripts may not be reflected in the protein abundance
   * Workflow
-    * <u>Considerations:</u>
+    *  <u>Considerations:</u>  
+
       * prot coding or regulatory non coding?
       * ref genome?
       * alt splicing?
@@ -867,16 +881,19 @@ A -->|Yes| C[ YOu good]
       * Choice of tissue type
         * Small organisms- pool organisms
       * Biological replicates!?
-    * <u>Wet lab</u>
+    *  <u>Wet lab</u>  
+
       * RNASE free; DNASE free (nuclease free)
       * Get rid of ribosomal RNA; so enrich for poly-AAA tails
       * Single end or paired end 
-    * <u>Sequencing platforms</u>
+    *  <u>Sequencing platforms</u>  
+
       * Roche 454 sequencing - out of date
       * Hi-seq by Illumina
       * Think about error profiles
       * coverage (100 million bps with  > 100 bps per read )
-    * <u>Computational</u>
+    *  <u>Computational</u>  
+
       * Programming: Unix , python, R
       * De novo assembly: consruct contigs (stretches of RNA)
       * Map to reference genome!
@@ -897,7 +914,8 @@ E --> F(Read quantification, marker development)
 F --> G(Biological inferences)
 ```
 
-* **<u>Amplicon-seq</u>** (Hannah): 16s rRNA as example - IDs prokaryotes such as bacteria (18s r RNA, fungi, protozoa)
+* ** <u>Amplicon-seq</u>  
+** (Hannah): 16s rRNA as example - IDs prokaryotes such as bacteria (18s r RNA, fungi, protozoa)
   * Methods
     * Library prep 
       * extract —> check quality and quantity —> pcr with specific primers
@@ -943,7 +961,8 @@ C --> D(Align Sequences!)
 
 
 
-<u>Glossary</u>
+ <u>Glossary</u>  
+
 
 Amplicon-seq: targeted approach for analyzing genetic variation in a specifc genomic region 
 
@@ -951,7 +970,8 @@ Amplicon: Targeted gene (region) to abe amplified via pca with specific primers
 
 
 
-* *<u>GBS or Rad-seq</u>**
+* * <u>GBS or Rad-seq</u>  
+**
 
 There is a continuum in how much sequence you can get (completeness of samples):
 
@@ -1012,7 +1032,8 @@ cp /data/project_data/ssw_samples.txt .
 ```
 
 ------
-<div id='id-section7'/>
+ <div id='id-section7'/>  
+
 ### Page 7: 2017-02-03. Installing trinity into the cluster 
 
 Get the tar and zip file here: https://github.com/trinityrnaseq/trinityrnaseq/releases; 
@@ -1056,7 +1077,8 @@ tar -xvf Trinity-v2.3.2.tar
 
 
 
-<div id='id-section8'/>
+ <div id='id-section8'/>  
+
 ### Page 8: 2017-02-06. Week 4, Day 6, RNA-seq
 
 ## Class outline:
@@ -1328,7 +1350,8 @@ TrimmomaticPE: Completed successfully
 * ​
 
 ------
-<div id='id-section9'/>
+ <div id='id-section9'/>  
+
 ### Page 9: 2017-02-08. Week 4, Day 7, RNA-seq cont'd + paper discussion DePanis et al. 2016; MolEco
 
 Transcriptomics take 2: 
@@ -1424,7 +1447,8 @@ Practical:
 
 
 
-<u>Moved the trimmomatic files into this path:</u>
+ <u>Moved the trimmomatic files into this path:</u>  
+
 
 
 
@@ -1432,7 +1456,8 @@ Practical:
 /users/a/d/adnguyen/mydata/2017-02-08_cleanread
 ```
 
-<u>Ok now, run fastqc to check files</u>
+ <u>Ok now, run fastqc to check files</u>  
+
 
 
 
@@ -1442,7 +1467,8 @@ fastqc 20*
 
 
 
-<u>What do I get?</u>
+ <u>What do I get?</u>  
+
 
 ```
 [adnguyen@pbio381 2017-02-08_cleanreads]$ ls
@@ -1462,7 +1488,8 @@ fastqc 20*
 
 
 
-<u>Now, I'll move it back to my computer: So in my home computer, this is my working directory.</u>
+ <u>Now, I'll move it back to my computer: So in my home computer, this is my working directory.</u>  
+
 
 
 
@@ -1472,14 +1499,16 @@ fastqc 20*
 
 
 
-<u>Now we can move files from server to my home computer</u>
+ <u>Now we can move files from server to my home computer</u>  
+
 
 ```
 scp adnguyen@pbio381.uvm.edu:~/mydata/2017-02-08_cleanreads/*.html .
 
 ```
 
-<u>This is what i get</u>
+ <u>This is what i get</u>  
+
 
 ```
 andrewnguyen$ ls
@@ -1542,7 +1571,8 @@ instructor meeting:
 
 
 ------
-<div id='id-section10'/>
+ <div id='id-section10'/>  
+
 ### Page 10: 2017-02-10. Prepping for leading journal club discussion: 2015-02-15; Zhao et al. 2016; *MBE*
 
 reference:
@@ -1745,7 +1775,8 @@ Take home
 * Gene expression is autocorrelated. 
 
 ------
-<div id='id-section11'/>
+ <div id='id-section11'/>  
+
 ### Page 11: 2017-02-13. Week 5, Day 8, RNA-seq mapping and paper discussion: Johnston et al. 2016, *Molecular Ecology*
 
 ## Info update- Transcriptomics : Lauren Ash
@@ -1854,7 +1885,8 @@ bwa sampe -r '@RG\tID:'"$myShort"'\tSM:'"$myShort"'\tPL:Illumina' \
 ```
  bwa aln
 
-Usage:   bwa aln [options] <prefix> <in.fq>
+Usage:   bwa aln [options]  <prefix> <in.fq>  
+
 
 Options: -n NUM    max #diff (int) or missing prob under 0.02 err rate (float) [0.04]
          -o INT    maximum number or fraction of gap opens [1]
@@ -1937,7 +1969,8 @@ J00160:63:HHHT2BBXX:4:2228:30168:49089	141	*	0	0	*	GAGTTTAAGCATTTCAAAGTGAAAAAGCG
   3. control + a + d
 
 ------
-<div id='id-section12'/>
+ <div id='id-section12'/>  
+
 ### Page 12: 2017-02-15. Week 5, Day 9, Sam info update, ANBE paper discussion, Zhao et al. 2016; *MBE*
 
 
@@ -2045,7 +2078,8 @@ General approaches:
 
      * ```
        Traceback (most recent call last):
-         File "countxpression_PE.py", line 159, in <module>
+         File "countxpression_PE.py", line 159, in  <module>  
+
            countxpression(file, sys.argv[1], sys.argv[2], 0, 'text', file[:-4]+'_counts.txt', sys.argv[3])
          File "countxpression_PE.py", line 68, in countxpression
            contigs[cols[2]][1]+=1     #add a count to that contig for the 'top' hit for reads that optimally align to multiple contigs (all the other good hits are often not printed with current bwa settings)
@@ -2116,7 +2150,8 @@ General approaches:
 
 
 ------
-<div id='id-section13'/>
+ <div id='id-section13'/>  
+
 ### Page 13: 2017-02-22. Week 6, Day 10, RNA-seq and paper discussion; Dixon et al. 2016; Genomic determinants of coral heat tolerance across latitudes. 
 
 **Notes:**
@@ -2163,7 +2198,8 @@ cols_data_trim.txt		explore_expression_data.R
 
 
 ------
-<div id='id-section14'/>
+ <div id='id-section14'/>  
+
 ### Page 14: 2017-02-27: Week 7, Day 11, RNA-seq and paper discussion (Edwards et al. 2016; *PNAS*)-phylogeography; Scott  Edwards visit.
 
 glossary:
@@ -2262,7 +2298,8 @@ res <- res[order(res$padj),]
 
 
 ------
-<div id='id-section15'/>
+ <div id='id-section15'/>  
+
 ### Page 15: 2017-03-6. Week 8, Day 13, Population genomics; paper discussion- Gayral et al. 2013.
 
 **Glossary:** 
@@ -2309,14 +2346,16 @@ G --> N(Allele Frequencies or SFS or PIE)
 
 ### A. What are the challenges of calling SNPs?
 
-<u>Sequencing Error (Illumina 1%) ; 1 in  100 there is a sequencing error</u>
+ <u>Sequencing Error (Illumina 1%) ; 1 in  100 there is a sequencing error</u>  
+
 
 * Apply filter: minor allele frequency 
 * Apply filter: Check the depth 
 
 ### B. What are the challenges with calling genotypes?
 
-<u>Calling homozygous (AA), heterozygous (AT), homozygous (TT)? It is a multinomial distribution</u>
+ <u>Calling homozygous (AA), heterozygous (AT), homozygous (TT)? It is a multinomial distribution</u>  
+
 
 * If genotype is AT heterozygous, predict A = T = 0.5
 
@@ -2330,7 +2369,8 @@ G --> N(Allele Frequencies or SFS or PIE)
 
 Bayesian folks: Use those probabilities and propogate those uncertainties to further analyses. (Not common but field is going that way)
 
-<u>Another problem: paralogues; duplicated gene on separate genome or in synteny</u>
+ <u>Another problem: paralogues; duplicated gene on separate genome or in synteny</u>  
+
 
 * Snps can differ between paralogues; it would predict heterozygotes, but that isnt true because there are 2 copies!
 
@@ -2413,11 +2453,16 @@ head head_SSW_bamlist.txt.vcf
 ##fileformat=VCFv4.0
 ##source=reads2snp
 ##phasing=unphased
-##FILTER=<ID=multi,Description="At least one individual shows more than 2 alleles">
-##FILTER=<ID=unres,Description="Insufficient sequencing depth or uncertain genotyping in all individuals">
-##FILTER=<ID=para,Description="Suspicion of paralogy">
-##INFO=<ID=N,Number=1,Type=Integer,Description="Number of genotyped individuals">
-##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FILTER= <ID=multi,Description="At least one individual shows more than 2 alleles">  
+
+##FILTER= <ID=unres,Description="Insufficient sequencing depth or uncertain genotyping in all individuals">  
+
+##FILTER= <ID=para,Description="Suspicion of paralogy">  
+
+##INFO= <ID=N,Number=1,Type=Integer,Description="Number of genotyped individuals">  
+
+##FORMAT= <ID=GT,Number=1,Type=String,Description="Genotype">  
+
 #CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	03_5-08_S_2	07_5-08_S_1	08_5-08_H_0	09_5-08_H_0	10_5-08_H_0	14_5-08_S_2	15_5-08_H_0	19_5-11_H_0	20_5-08_H_0	22_5-08_S_1	23_5-17_S_2	24_5-08_H_0	26_5-08_S_2	27_5-08_H_0	28_5-08_S_1	29_5-08_S_2	31_6-12_H_0	32_6-12_H_0	33_6-12_H_0	34_6-12_H_0	35_6-12_H_0	36_6-12_S_1	37_6-12_H_0	38_6-12_H_0
 TRINITY_DN47185_c0_g1_TRINITY_DN47185_c0_g1_i2_g.24943_m.24943	1	.	unres	N=0	GT	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.	.|.
 
@@ -2470,7 +2515,8 @@ grep "para" SSW_bamlist.txt.vcf | wc
 
 4,354 incidence of paralogy
 
-<u>1.8 million SNPs left!!!</u>
+ <u>1.8 million SNPs left!!!</u>  
+
 
 
 
@@ -2573,11 +2619,16 @@ head 2017-03-06_SNPcallfilter.recode.vcf
 ##fileformat=VCFv4.0
 ##source=reads2snp
 ##phasing=unphased
-##FILTER=<ID=multi,Description="At least one individual shows more than 2 alleles">
-##FILTER=<ID=unres,Description="Insufficient sequencing depth or uncertain genotyping in all individuals">
-##FILTER=<ID=para,Description="Suspicion of paralogy">
-##INFO=<ID=N,Number=1,Type=Integer,Description="Number of genotyped individuals">
-##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FILTER= <ID=multi,Description="At least one individual shows more than 2 alleles">  
+
+##FILTER= <ID=unres,Description="Insufficient sequencing depth or uncertain genotyping in all individuals">  
+
+##FILTER= <ID=para,Description="Suspicion of paralogy">  
+
+##INFO= <ID=N,Number=1,Type=Integer,Description="Number of genotyped individuals">  
+
+##FORMAT= <ID=GT,Number=1,Type=String,Description="Genotype">  
+
 #CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	03_5-08_S_2	07_5-08_S_1	08_5-08_H_0	09_5-08_H_0	10_5-08_H_0	14_5-08_S_2	15_5-08_H_0	19_5-11_H_0	20_5-08_H_0	22_5-08_S_1	23_5-17_S_2	24_5-08_H_0	26_5-08_S_2	27_5-08_H_0	28_5-08_S_1	29_5-08_S_2	31_6-12_H_0	32_6-12_H_0	33_6-12_H_0	34_6-12_H_0	35_6-12_H_0	36_6-12_S_1	37_6-12_H_0	38_6-12_H_0
 TRINITY_DN45147_c0_g1_TRINITY_DN45147_c0_g1_i3_g.18680_m.18680	2127	.	PASS	.	GT	0|0	0|0	0|0	0|0	.	0|0	0|1	0|0	0|0	0|0	0|0	.	0|0	0|0	0|0	0|0	0|0	0|0	0|0	0|0	.	0|0	0|0
 
@@ -2658,7 +2709,8 @@ Which ones have heterozygous excess?
 > b[which(b$P_HET_EXCESS < 0.001 ),]
 [1] CHR                POS                OBS.HOM1.HET.HOM2. E.HOM1.HET.HOM2.  
 [5] ChiSq_HWE          P_HWE              P_HET_DEFICIT      P_HET_EXCESS      
-<0 rows> (or 0-length row.names)
+ <0 rows>  
+ (or 0-length row.names)
 
 ```
 
@@ -2766,7 +2818,8 @@ Can the distance predict LD?
 
 
 ------
-<div id='id-section16'/>
+ <div id='id-section16'/>  
+
 ### Page 16: 2017-03-08. Week 8, Day 14, Population genomics part 2; Paper Discussion- [Romiguier et al. 2014](http://www.nature.com/nature/journal/v515/n7526/full/nature13685.html)
 
 
@@ -2892,7 +2945,8 @@ cd /data/project_data/snps/reads2snps/
 
 
 ------
-<div id='id-section17'/>
+ <div id='id-section17'/>  
+
 ### Page 17: 2017-03-20. Week 9, Day 15, Population genomics part 3; paper discussion Gompert et al. 2014
 
 
@@ -2944,7 +2998,8 @@ $\theta$ is higher when populations are expanding; but smaller when in bottlenec
 ------
 
 
-<div id='id-section18'/>
+ <div id='id-section18'/>  
+
 
 ### Page 18: 2017-03-22. Week 9, Day 16, Population genomics part 4; paper discussion
 
@@ -2966,7 +3021,8 @@ Diversifying selection- seleciton that favors different alleles in different par
 
 **Info update from Erin Keller:** Inferring history of divergence
 
-<u>Genomic scans:</u> 
+ <u>Genomic scans:</u>  
+ 
 
 1. distribution of differentiation in the genome   
    * High fst  —> region under selection
@@ -2984,7 +3040,8 @@ Diversifying selection- seleciton that favors different alleles in different par
 
 
 
-<u>Model-based methods:</u>
+ <u>Model-based methods:</u>  
+
 
 Shape of Allele frequency spectrum(AFS) can get a sense of population processes. 
 
@@ -3008,7 +3065,8 @@ Limitations:
 
 
 
-<u>Geneology sampling</u>
+ <u>Geneology sampling</u>  
+
 
 * multiple regions sampled to produce 1 tree
   * estimates Ne, migration, admixture
@@ -3022,13 +3080,15 @@ Assumptions:
 
 
 
-<u>Likelihood-free method</u>
+ <u>Likelihood-free method</u>  
+
 
 ABC- approximate bayesian comp. Use simulations under models of interest. 
 
 
 
-<u>Historical gene flow and LD patterns</u>
+ <u>Historical gene flow and LD patterns</u>  
+
 
 Distribution of haplotype lengths: Assumes a haplotype as a migrant and enters a population of interest. Over time, these genomes recombine and see the slow shortening of sequence lenght. Based on lengths of original mirgrant, you can get a sense of time of when migrant entered populations. Recombination leads to smaller fragments over time. Many demographic events can produce similar pattern. Problems with identifying migrant. 
 
@@ -3109,12 +3169,14 @@ FIT is similar to FST but accounts for inbreeding. It ranges from 0-1, whereby 1
 
 
 ------
-<div id='id-section19'/>
+ <div id='id-section19'/>  
+
 ### Page 19: 2017-03-27. Week 10, Day 17, Population genomics-detecting signatures of natural selection; selection scans; paper discussion- Laurent et al. 2016, MolEco
 
 Separate out neutral processes(demography,bottlenecks) and selection. Selection acts locally on the genome, whereas neutral processes act across the whole genome. 
 
-<u>Glossary:</u>
+ <u>Glossary:</u>  
+
 
 Selective sweep: pattern whereby a single adaptive allele sweeps through population(goes to near fixation)
 
@@ -3122,7 +3184,8 @@ hard sweeps: single adaptive allele in common genetic background
 
 soft sweep: > 1 adaptive alleles in diff genetic backgrounds
 
-<u>Dr. Brody Info Update: Selective Sweeps</u>
+ <u>Dr. Brody Info Update: Selective Sweeps</u>  
+
 
 Big picture questioN: What maintains variation or produces variation? What reduces genetic variation amongm embers of populations. How do we discover those patterns and what do those patterns mean? 
 
@@ -3136,7 +3199,8 @@ Not only do adaptive alelles become favored, but the genes linked to it are incr
 
 Pleuni Pennings: Stanford University. Her phd students have 2 minute youtube videos for each of their papers.
 
-<u>Sweeps can be hard on a local scale but soft on a global scale!!!</u>
+ <u>Sweeps can be hard on a local scale but soft on a global scale!!!</u>  
+
 
 $\theta$ is a rate in which a mutation enters a population
 
@@ -3153,7 +3217,8 @@ Small populations should fix alleles more rapidly.
 
 Suppose we see differences in alleles in gene regions among populations. Populations are habitat or healthy and sick. 
 
-<u>What are alternative hypotheses?</u> Limitations?
+ <u>What are alternative hypotheses?</u>  
+ Limitations?
 
 * Drift!
 * Functional differences may be neutral
@@ -3161,7 +3226,8 @@ Suppose we see differences in alleles in gene regions among populations. Populat
 
 
 
-<u>Steven leading discussion</u>
+ <u>Steven leading discussion</u>  
+
 
 Think about genetic targets of adaptation (local adaptaiton). How do selective sweeps happen and how are they distinguished?
 
@@ -3182,7 +3248,8 @@ D = positive = rare mutations are missing relative to what we expect from a rand
 
 
 ------
-<div id='id-section20'/>
+ <div id='id-section20'/>  
+
 ### Page 20: 2017-03-29. Week 10, Day 18
 
 Lauren Ashlock info update
@@ -3205,8 +3272,10 @@ P = allele frequency
 
 
 
-------
-<div id='id-section21'/>
+------  
+
+ <div id='id-section21'/>  
+
 ### Page 21: 2017-04-03. Karl's guest lecture; FST and FST outlier
 
 Concepts:
@@ -3256,7 +3325,8 @@ Total genetic variation
 
 
 ------
-<div id='id-section22'/>
+ <div id='id-section22'/>  
+
 ### Page 22: 2017-04-05. Week 11, Day 20; Annotation
 
 Melissa info update on annotations:
@@ -3305,119 +3375,160 @@ Blastx: translate all 6 reading frames
 
 
 
-------
-<div id='id-section23'/>
+------  
+
+ <div id='id-section23'/>  
+    
+
+
 ### Page 23:
 ------
-<div id='id-section24'/>
+ <div id='id-section24'/>  
+
 ### Page 24:
 ------
-<div id='id-section25'/>
+ <div id='id-section25'/>  
+
 ### Page 25:
 ------
-<div id='id-section26'/>
+ <div id='id-section26'/>  
+
 ### Page 26:
 ------
-<div id='id-section27'/>
+ <div id='id-section27'/>  
+
 ### Page 27:
 ------
-<div id='id-section28'/>
+ <div id='id-section28'/>  
+
 ### Page 28:
 ------
-<div id='id-section29'/>
+ <div id='id-section29'/>  
+
 ### Page 29:
 ------
-<div id='id-section30'/>
+ <div id='id-section30'/>  
+
 ### Page 30:
 ------
-<div id='id-section31'/>
+ <div id='id-section31'/>  
+
 ### Page 31:
 ------
-<div id='id-section32'/>
+ <div id='id-section32'/>  
+
 ### Page 32:
 ------
-<div id='id-section33'/>
+ <div id='id-section33'/>  
+
 ### Page 33:
 ------
-<div id='id-section34'/>
+ <div id='id-section34'/>  
+
 ### Page 34:
 ------
-<div id='id-section35'/>
+ <div id='id-section35'/>  
+
 ### Page 35:
 ------
-<div id='id-section36'/>
+ <div id='id-section36'/>  
+
 ### Page 36:
 ------
-<div id='id-section37'/>
+ <div id='id-section37'/>  
+
 ### Page 37:
 ------
-<div id='id-section38'/>
+ <div id='id-section38'/>  
+
 ### Page 38:
 ------
-<div id='id-section39'/>
+ <div id='id-section39'/>  
+
 ### Page 39:
 ------
-<div id='id-section40'/>
+ <div id='id-section40'/>  
+
 ### Page 40:
 ------
-<div id='id-section41'/>
+ <div id='id-section41'/>  
+
 ### Page 41:
 ------
-<div id='id-section42'/>
+ <div id='id-section42'/>  
+
 ### Page 42:
 ------
-<div id='id-section43'/>
+ <div id='id-section43'/>  
+
 ### Page 43:
 ------
-<div id='id-section44'/>
+ <div id='id-section44'/>  
+
 ### Page 44:
 ------
-<div id='id-section45'/>
+ <div id='id-section45'/>  
+
 ### Page 45:
 ------
-<div id='id-section46'/>
+ <div id='id-section46'/>  
+
 ### Page 46:
 ------
-<div id='id-section47'/>
+ <div id='id-section47'/>  
+
 ### Page 47:
 ------
-<div id='id-section48'/>
+ <div id='id-section48'/>  
+
 ### Page 48:
 ------
-<div id='id-section49'/>
+ <div id='id-section49'/>  
+
 ### Page 49:
 ------
-<div id='id-section50'/>
+ <div id='id-section50'/>  
+
 ### Page 50:
 ------
-<div id='id-section51'/>
+ <div id='id-section51'/>  
+
 ### Page 51:
 ------
-<div id='id-section52'/>
+ <div id='id-section52'/>  
+
 ### Page 52:
 ------
-<div id='id-section53'/>
+ <div id='id-section53'/>  
+
 ### Page 53:
 ------
-<div id='id-section54'/>
+ <div id='id-section54'/>  
+
 ### Page 54:
 ------
-<div id='id-section55'/>
+ <div id='id-section55'/>  
+
 ### Page 55:
 ------
-<div id='id-section56'/>
+ <div id='id-section56'/>  
+
 ### Page 56:
 ------
-<div id='id-section57'/>
+ <div id='id-section57'/>  
+
 ### Page 57:
 ------
-<div id='id-section58'/>
+ <div id='id-section58'/>  
+
 ### Page 58:
 ------
-<div id='id-section59'/>
+ <div id='id-section59'/>  
+
 ### Page 59:
 ------
-<div id='id-section60'/>
+ <div id='id-section60'/>  
+
 ### Page 60:
 
 ------
