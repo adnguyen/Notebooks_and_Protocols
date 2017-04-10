@@ -3381,7 +3381,10 @@ Blastx: translate all 6 reading frames
     
 ### Page 23: 2017-04-10,Week 12, Day 21; Metagenomics, paper discussion Ziegler et al. 2017    
 
+Announcements: 
+
 Info update: SKeller; Metagenomics
+
 
 Glossary:   
 
