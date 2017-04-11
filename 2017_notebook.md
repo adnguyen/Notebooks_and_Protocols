@@ -87,7 +87,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 59: 2017-03-31](#id-section59). To do list
 * [Page 60: 2017-04-07](#id-section60). Project updates    
 * [Page 61: 2017-04-10](#id-section61). To do and project updates
-* [Page 62:](#id-section62).
+* [Page 62: 2017-04-11](#id-section62). Hsp rxn norm project: Species efficiency curves  
 * [Page 63:](#id-section63).
 * [Page 64:](#id-section64).
 * [Page 65:](#id-section65).
@@ -4388,7 +4388,68 @@ I'm meeting with Wai today at proteomics facility. Ask about:
 
  <div id='id-section62'/> 
 
-### Page 62:  
+### Page 62: 2017-04-11. Hsp rxn norm project: Species efficiency curves    
+
+### Workflow
+
+```mermaid
+graph TD
+A[qPCR Amplicon] --> B[PCR Purify]
+B --> C(Quantify with nanodrop or qubit)
+C --> D[Dilute to set amount]
+D --> F(Serial dilute 1:10)
+F --> K[qPCR]
+K --> G(ANCOVA analysis)
+
+```
+
+
+### Species list   
+
+|species       |hsp70   |hsp40   |hsp83_279 |
+|:-------------|:-------|:-------|:---------|
+|ashmeadi      |FB2     |LPR4    |LPR4      |
+|barbatus      |PB17-10 |PB17-10 |PB17-10   |
+|crematogaster |x       |x       |X         |
+|floridana     |FB1     |KH7     |KH7       |
+|fulva         |CJ6     |CJ6     |DUKE7     |
+|lamellidens   |DUKE8   |DUKE9   |DUKE9     |
+|miamiana      |ALA1    |ALA4    |ALA4      |
+|pergandei     |EXIT    |        |EXIT      |
+|picea         |AVON    |TED4    |PHIL      |
+|rudis         |POP1    |LEX13   |POP2      |
+|tenn.         |        |SR45    |LEX9      |   
+
+
+
+### PCR purify amplicons    
+
+Used Qiagen pcr purify kit according to manufacturer's instructions:
+
+1. took 20 uL of amplicon and added 100 uL (5 vol) of PB buffer    
+2. Transferred to column, spun top speed 1 min   
+3. wash with PE buffer 750 uL, spin top speed 1 min
+4. Spin again, top speed 1 min
+5. Place column in new tubes (with labels) and elute
+6. Eluted by adding 30 uL h20 into center of column and waiting 1 min; spun top speed 1 min
+
+
+| ISOLATION_ORDER|HSP70   |HSP40   |HSP83         |
+|---------------:|:-------|:-------|:-------------|
+|               1|FB2     |LPR4    |DUKE9         |
+|               2|PB17-10 |PB17-10 |LPR4          |
+|               3|x       |x       |PHIL          |
+|               4|FB1     |KH7     |KH7           |
+|               5|CJ6     |CJ6     |ALA4          |
+|               6|DUKE8   |DUKE9   |CREMATOGASTER |
+|               7|ALA1    |ALA4    |LEX9          |
+|               8|EXIT    |        |DUKE7         |
+|               9|AVON    |TED4    |EXIT          |
+|              10|POP1    |LEX13   |PB17-10       |
+|              11|        |SR45    |POP2          |    
+
+
+Next I should quantify and then load set amount for first dilution step. THen dilute 1:10 8 times. 
 
 ------
 
