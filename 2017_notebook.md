@@ -4471,18 +4471,18 @@ RNA quant and 1:10 dilution calculations
 |pergandei    |EXIT          |HSP70 |            6.37|      1.57|   98.43|
 |picea        |AVON          |HSP70 |            5.25|      1.90|   98.10|
 |rudis        |POP1          |HSP70 |            5.13|      1.95|   98.05|
-|tenn.        |              |HSP70 |              |        |      |
+|tenn.        |              |HSP70 |              NA|        NA|      NA|
 |ashmeadi     |LPR4          |HSP40 |            2.06|      4.85|   95.15|
-|barbatus     |PB17-10       |HSP40 |            2.82|      3.55|   96.45|
-|crematogster |CREMATOGASTER |HSP40 |            2.35|      4.26|   95.74|
-|floridana    |KH7           |HSP40 |            2.48|      4.03|   95.97|
-|fulva        |CJ6           |HSP40 |            2.45|      4.08|   95.92|
-|lamellidens  |DUKE9         |HSP40 |            0.97|     10.33|   89.67|
-|miamiana     |ALA4          |HSP40 |            4.77|      2.10|   97.90|
-|pergandei    |              |HSP40 |              |        |      |
-|picea        |TED4          |HSP40 |            2.46|      4.07|   95.93|
-|rudis        |LEX13         |HSP40 |            2.77|      3.61|   96.39|
-|tenn.        |SR45          |HSP40 |            6.26|      1.60|   98.40|
+|rudis        |LEX13         |HSP40 |            2.82|      3.55|   96.45|
+|miamiana     |ALA4          |HSP40 |            2.35|      4.26|   95.74|
+|tenn.        |SR45          |HSP40 |            2.48|      4.03|   95.97|
+|lamellidens  |DUKE9         |HSP40 |            2.45|      4.08|   95.92|
+|fulva        |CJ6           |HSP40 |            0.97|     10.33|   89.67|
+|barbatus     |PB17-10       |HSP40 |            4.77|      2.10|   97.90|
+|pergandei    |              |HSP40 |              NA|        NA|      NA|
+|floridana    |KH7           |HSP40 |            2.46|      4.07|   95.93|
+|picea        |TED4          |HSP40 |            2.77|      3.61|   96.39|
+|crematogster |CREMATOGASTER |HSP40 |            6.26|      1.60|   98.40|
 |lamellidens  |DUKE9         |HSP83 |            7.36|      1.36|   98.64|
 |ashmeadi     |LPR4          |HSP83 |           12.50|      0.80|   99.20|
 |picea        |PHIL          |HSP83 |            9.50|      1.05|   98.95|
@@ -4494,6 +4494,7 @@ RNA quant and 1:10 dilution calculations
 |pergandei    |EXIT          |HSP83 |            8.14|      1.23|   98.77|
 |barbatus     |PB17-10       |HSP83 |            8.07|      1.24|   98.76|
 |rudis        |POP2          |HSP83 |            7.64|      1.31|   98.69| 
+
 
 Dilute 1: 10 = 0.1ng /uL. Then dilute 1:10  (=0.01ng/uL)for first well for efficiency curve.  Dilute by adding 10 uL of sample with 90 uL of water.
 
@@ -4518,7 +4519,8 @@ or....
 6. 1 E-7
 7. 1 E-8
 8. h20
-  
+ 
+### qPCR  
 
 ------
 
