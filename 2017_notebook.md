@@ -4520,7 +4520,28 @@ or....
 7. 1 E-8
 8. h20
  
-### qPCR  
+### qPCR     
+
+Set up hsp70, hsp40, and hsp83 qpcr plates. I made master mix for 100 rxns:   
+
+| Reagent             | Inital conc. | Final conc. | uL for 1 rxn | 100 rxn set up |
+| ------------------- | ------------ | ----------- | ------------ | ------------- |
+| Power sybr green    | 2x           | 1x          | 5            | 500            |
+| Forward Primer      | 10 uM        | 250 nM      | .25          | 25           |
+| Reverse Primer      | 10 uM        | 250 nM      | .25          | 25           |
+| nuclease free water | na           | na          | .5           | 50             |
+| cDNA                | 0.25 ng/ul   | .1 ng/uL    | 4            | na            |
+| Total               |              |             | 10           | 600              |    
+
+Loaded 6 uL master mix into plate and then added 4 uL of template (DNA).    
+
+Loaded dilutions for each species H-A. Each species is a row. 
+
+### Results: Hsp70    
+
+It looks like the dilution didn't work for crematogaster and floridana (Fb1). I didn't mix well for initial 1:10 dilution.
+
+I still need to run hsp40 and hsp83. 
 
 ------
 
