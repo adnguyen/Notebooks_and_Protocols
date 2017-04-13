@@ -41,7 +41,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 21: 2017-04-03](#id-section21). Week 11, Day 19 Karl's guest lecture; FST and FST outlier
 * [Page 22: 2017-04-05](#id-section22). Week 11, Day 20; Annotation
 * [Page 23: 2017-04-10](#id-section23). Week 12, Day 21, paper discussion Ziegler et al. 2017
-* [Page 24:](#id-section24).
+* [Page 24: 2017-04-12](#id-section24). Week 12, Day 22, KTyler info update; microbiome; paper discussion Bolnick et al. 2014
 * [Page 25:](#id-section25).
 * [Page 26:](#id-section26).
 * [Page 27:](#id-section27).
@@ -3446,11 +3446,50 @@ Glossary:
 ------
  <div id='id-section24'/>  
 
-### Page 24:
+### Page 24: 2017-04-12. Week 12, Day 22, KTyler info update; microbiome; paper discussion Bolnick et al. 2014   
+
+KTyler info update:
+
+Microbiome can be beneficial    
+
+* digestive    
+* immune   
+* vitamins   
+* xenobiotics  
+* pathogens    
+
+Heritability: proportion of variance in a host-trait     
+* measured across population    
+* explained by genetics   
+
+Approaches:   
+1. Can be direct: twin pairs- monozygotic = 100% genes;    
+2. GWAS - Humans; 
+	* Microbiome is the trait
+
+3. Cross study: QTL's     
+	* MICE! They found immune functions
+	* plants- species richness and abundance of ind taxa
+	* flies - immunity ,barrier defense
+	
+Limitations: 
+ 
+* MB expensive    
+* small sample sizes; lack of power     
+* Not all microbial taxa are sequenced, missing taxa    
+* Meta analyses
+
+Future: 
+
+
 ------
+
  <div id='id-section25'/>  
 
 ### Page 25:
+
+
+
 ------
  <div id='id-section26'/>  
 

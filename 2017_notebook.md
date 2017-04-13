@@ -88,7 +88,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 60: 2017-04-07](#id-section60). Project updates    
 * [Page 61: 2017-04-10](#id-section61). To do and project updates
 * [Page 62: 2017-04-11](#id-section62). Hsp rxn norm project: Species efficiency curves  
-* [Page 63:](#id-section63).
+* [Page 63: 2017-04-12](#id-section63). Hsp rxn norm proj: amplicon quant
 * [Page 64:](#id-section64).
 * [Page 65:](#id-section65).
 * [Page 66:](#id-section66).
@@ -4455,7 +4455,50 @@ Next I should quantify and then load set amount for first dilution step. THen di
 
  <div id='id-section63'/> 
 
-### Page 63:  
+### Page 63: 2017-4-13. Hsp rxn norm proj: amplicon quant  
+
+RNA quant and 1:10 dilution calculations    
+
+|Species      |Colony        |Gene  | ampliconDNAconc| X10ngcDNA| h20cDNA|
+|:------------|:-------------|:-----|---------------:|---------:|-------:|
+|ashmeadi     |FB2           |HSP70 |            8.34|      1.20|   98.80|
+|barbatus     |PB17-10       |HSP70 |            6.12|      1.63|   98.37|
+|crematogster |CREMATOGASTER |HSP70 |            4.65|      2.15|   97.85|
+|floridana    |FB1           |HSP70 |            8.50|      1.18|   98.82|
+|fulva        |CJ6           |HSP70 |            6.71|      1.49|   98.51|
+|lamellidens  |DUKE8         |HSP70 |            2.64|      3.79|   96.21|
+|miamiana     |ALA1          |HSP70 |            6.37|      1.57|   98.43|
+|pergandei    |EXIT          |HSP70 |            6.37|      1.57|   98.43|
+|picea        |AVON          |HSP70 |            5.25|      1.90|   98.10|
+|rudis        |POP1          |HSP70 |            5.13|      1.95|   98.05|
+|tenn.        |              |HSP70 |              |        |      |
+|ashmeadi     |LPR4          |HSP40 |            2.06|      4.85|   95.15|
+|barbatus     |PB17-10       |HSP40 |            2.82|      3.55|   96.45|
+|crematogster |CREMATOGASTER |HSP40 |            2.35|      4.26|   95.74|
+|floridana    |KH7           |HSP40 |            2.48|      4.03|   95.97|
+|fulva        |CJ6           |HSP40 |            2.45|      4.08|   95.92|
+|lamellidens  |DUKE9         |HSP40 |            0.97|     10.33|   89.67|
+|miamiana     |ALA4          |HSP40 |            4.77|      2.10|   97.90|
+|pergandei    |              |HSP40 |              |        |      |
+|picea        |TED4          |HSP40 |            2.46|      4.07|   95.93|
+|rudis        |LEX13         |HSP40 |            2.77|      3.61|   96.39|
+|tenn.        |SR45          |HSP40 |            6.26|      1.60|   98.40|
+|lamellidens  |DUKE9         |HSP83 |            7.36|      1.36|   98.64|
+|ashmeadi     |LPR4          |HSP83 |           12.50|      0.80|   99.20|
+|picea        |PHIL          |HSP83 |            9.50|      1.05|   98.95|
+|floridana    |KH7           |HSP83 |            9.69|      1.03|   98.97|
+|miamiana     |ALA4          |HSP83 |            4.77|      2.10|   97.90|
+|crematogster |CREMATOGASTER |HSP83 |            6.12|      1.63|   98.37|
+|tenn.        |LEX9          |HSP83 |           11.10|      0.90|   99.10|
+|fulva        |DUKE7         |HSP83 |            9.25|      1.08|   98.92|
+|pergandei    |EXIT          |HSP83 |            8.14|      1.23|   98.77|
+|barbatus     |PB17-10       |HSP83 |            8.07|      1.24|   98.76|
+|rudis        |POP2          |HSP83 |            7.64|      1.31|   98.69| 
+
+
+
+
+  
 
 ------
 
