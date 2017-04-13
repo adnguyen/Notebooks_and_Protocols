@@ -4495,9 +4495,29 @@ RNA quant and 1:10 dilution calculations
 |barbatus     |PB17-10       |HSP83 |            8.07|      1.24|   98.76|
 |rudis        |POP2          |HSP83 |            7.64|      1.31|   98.69| 
 
+Dilute 1: 10 = 0.1ng /uL. Then dilute 1:10  (=0.01ng/uL)for first well for efficiency curve.  Dilute by adding 10 uL of sample with 90 uL of water.
 
+### Dilute step for efficiency curve (in concentration of ng/uL)   
 
+1. 0.01
+2. 0.001
+3. 0.0001
+4. 0.00001
+5. 0.000001
+6. 0.0000001
+7. 0.00000001
+8. h20
 
+or....
+
+1. 1 E-2
+2. 1 E-3
+3. 1 E-4
+4. 1 E-5
+5. 1 E-6
+6. 1 E-7
+7. 1 E-8
+8. h20
   
 
 ------
