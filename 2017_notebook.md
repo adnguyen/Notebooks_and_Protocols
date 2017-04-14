@@ -4631,7 +4631,7 @@ A. h20
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25046795/70f55bba-2101-11e7-91c2-79f793163888.jpeg)
 
-**stats**    
+**stats**: Fitting ANCOVA model to determine whether species differ in their  hsp83 primer efficiency (relationship between cycle threshold and dilution of template amplicons)    
 
 ```R
 str(hsp83)
