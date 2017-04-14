@@ -4535,19 +4535,88 @@ Set up hsp70, hsp40, and hsp83 qpcr plates. I made master mix for 100 rxns:
 
 Loaded 6 uL master mix into plate and then added 4 uL of template (DNA).    
 
-Loaded dilutions for each species H-A. Each species is a row. 
+Loaded dilutions for each species H-A. Each species is a row.   
+
+
+* qpcr steps   
+  1. 95 C, 10 minutes     
+  2. 40 cycles of: 95 C for 15s, 55 C for 60 seconds and then 70 C for fluorescence acquisition,         
+
+* Melt curve analysis    
+  1. Reactions were heated to 95C 15 s    
+  2. From 60 C, slowly heat up and measure fluoresence   
+  
 
 ### Results: Hsp70    
 
 It looks like the dilution didn't work for crematogaster and floridana (Fb1). I didn't mix well for initial 1:10 dilution.
 
-I still need to run hsp40 and hsp83. 
+I still need to run hsp40 and hsp83.  
+
+Plate layout: 
+
+Species are loaded as columns:
+
+1. FB2
+2. PB17-10
+3. CREMATO
+4. FB1
+5. CJ6
+6. DUKE8
+7. ALA1
+8. EXIT
+9. AVON
+10. POP11  
+
+Dilution steps are rows: 
+
+H. 1 E-2
+G. 1 E-3
+F. 1 E-4
+E. 1 E-5
+D. 1 E-6
+C. 1 E-7
+B. 1 E-8
+A. h20
+
+### hsp70 melt curves   
+
+![](https://cloud.githubusercontent.com/assets/4654474/25042674/f7cf2cca-20e7-11e7-97ef-67e73e6899d6.jpg)
 
 ------
 
  <div id='id-section64'/> 
 
-### Page 64:  
+### Page 64: 2017-4-14. Hsp rxn norm project: Species efficiency curves cont'd    
+
+### qPCR: Hsp83 279prim   
+
+
+Species are loaded as columns:
+
+1. DUKE9   
+2. LPR4
+3. PHIL
+4. KH7
+5. ALA4
+6. CREMATOGASTER
+7. LEX9
+8. DUKE7
+9. EXIT
+10. PB17-10
+11. POP2  
+
+Dilution steps are rows: 
+
+H. 1 E-2
+G. 1 E-3
+F. 1 E-4
+E. 1 E-5
+D. 1 E-6
+C. 1 E-7
+B. 1 E-8
+A. h20
+
 
 ------
 
