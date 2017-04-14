@@ -4549,6 +4549,8 @@ Loaded dilutions for each species H-A. Each species is a row.
 
 ### Results: Hsp70    
 
+**0.5 fluoresence threshold**
+
 It looks like the dilution didn't work for crematogaster and floridana (Fb1). I didn't mix well for initial 1:10 dilution.
 
 I still need to run hsp40 and hsp83.  
@@ -4620,6 +4622,46 @@ C. 1 E-7
 B. 1 E-8    
 A. h20     
 
+### hsp83 melt curve    
+
+![](https://cloud.githubusercontent.com/assets/4654474/25046504/d307ea2c-20ff-11e7-895d-16daed294d05.jpg)
+
+
+### Hsp83 effieciency curve
+
+![](https://cloud.githubusercontent.com/assets/4654474/25046795/70f55bba-2101-11e7-91c2-79f793163888.jpeg)
+
+**stats**    
+
+```R
+str(hsp83)
+
+'data.frame':	77 obs. of  6 variables:
+ $ Well_letter: Factor w/ 7 levels "B","C","D","E",..: 7 6 5 4 3 2 1 7 6 5 ...
+ $ Well_num   : int  5 5 5 5 5 5 5 6 6 6 ...
+ $ Sample.Name: Factor w/ 11 levels "ALA4","CREMATOGASTER",..: 1 1 1 1 1 1 1 2 2 2 ...
+ $ Ct         : num  6.77 10.33 13.8 17.46 20.65 ...
+ $ Dilution   : num  1e-02 1e-03 1e-04 1e-05 1e-06 1e-07 1e-08 1e-02 1e-03 1e-04 ...
+ $ log_dil    : int  -2 -3 -4 -5 -6 -7 -8 -2 -3 -4 ...
+ 
+mod2<-aov(Ct~log_dil*Sample.Name,data=hsp83)
+summary(mod2)
+
+Df Sum Sq Mean Sq   F value   Pr(>F)
+log_dil              1   3497    3497 36481.640  < 2e-16
+Sample.Name         10      5       1     5.730 7.82e-06
+log_dil:Sample.Name 10      1       0     0.728    0.695
+Residuals           55      5       0                   
+                       
+log_dil             ***
+Sample.Name         ***
+log_dil:Sample.Name    
+Residuals              
+---
+Signif. codes:  
+0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+```
 
 ------
 
