@@ -90,7 +90,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 62: 2017-04-11](#id-section62). Hsp rxn norm project: Species efficiency curves  
 * [Page 63: 2017-04-13](#id-section63). Hsp rxn norm proj: amplicon quant
 * [Page 64: 2017-04-14](#id-section64). Hsp rxn norm project: Species efficiency curves cont'd    
-* [Page 65:](#id-section65).
+* [Page 65: 2017-04-14](#id-section65). Proteome stability project: Meeting with Wai
 * [Page 66:](#id-section66).
 * [Page 67:](#id-section67).
 * [Page 68:](#id-section68).
@@ -4588,6 +4588,27 @@ A. h20
 
 Looks like a single product. 
 
+**stats**: Fitting ANCOVA model to determine whether species differ in their  hsp70 primer efficiency (relationship between cycle threshold and dilution of template amplicons)    
+
+
+```R
+summary(mod1)
+                    Df Sum Sq Mean Sq   F value   Pr(>F)
+log_dil              1 2742.1  2742.1 74884.671  < 2e-16
+Sample.Name          7    5.2     0.7    20.392 2.36e-11
+log_dil:Sample.Name  7    0.4     0.1     1.684    0.141
+Residuals           40    1.5     0.0                   
+                       
+log_dil             ***
+Sample.Name         ***
+log_dil:Sample.Name    
+Residuals              
+---
+Signif. codes:  
+0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+
 ------
 
  <div id='id-section64'/> 
@@ -4663,11 +4684,48 @@ Signif. codes:
 
 ```
 
+### Hsp40 data
+
+melt curves:
+
+![](https://cloud.githubusercontent.com/assets/4654474/25056596/ed97c104-2137-11e7-80e7-421366896e9e.jpg)
+
+note: the curves on the left side are hsp70, not hsp40.    
+
+### sp efficiency curves
+
+![](https://cloud.githubusercontent.com/assets/4654474/25056685/6b79dc92-2138-11e7-9659-6174899ad17d.jpeg)
+
+**stats**: Fitting ANCOVA model to determine whether species differ in their  hsp40 primer efficiency (relationship between cycle threshold and dilution of template amplicons)    
+
+```R
+
+                    Df Sum Sq Mean Sq  F value   Pr(>F)
+log_dil              1  429.8   429.8 2649.521  < 2e-16
+Sample.Name          6   33.7     5.6   34.614 5.83e-08
+log_dil:Sample.Name  6    2.0     0.3    2.066    0.119
+Residuals           15    2.4     0.2                  
+                       
+log_dil             ***
+Sample.Name         ***
+log_dil:Sample.Name    
+Residuals              
+---
+Signif. codes:  
+0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
 ------
 
  <div id='id-section65'/> 
 
-### Page 65:  
+### Page 65: 2017-04-14. Proteome stability project: Meeting with Wai    
+
+1. gapdh for loading control
+2. which samples to analyze? second run or rerun?
+3. proteome search for phosphorylated/ubiquitinated database. 
+
+got 1 and3  down, and searched for both second run and rerun. 
 
 ------
 
