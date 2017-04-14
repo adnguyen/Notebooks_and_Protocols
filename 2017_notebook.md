@@ -88,8 +88,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 60: 2017-04-07](#id-section60). Project updates    
 * [Page 61: 2017-04-10](#id-section61). To do and project updates
 * [Page 62: 2017-04-11](#id-section62). Hsp rxn norm project: Species efficiency curves  
-* [Page 63: 2017-04-12](#id-section63). Hsp rxn norm proj: amplicon quant
-* [Page 64:](#id-section64).
+* [Page 63: 2017-04-13](#id-section63). Hsp rxn norm proj: amplicon quant
+* [Page 64: 2017-04-14](#id-section64). Hsp rxn norm project: Species efficiency curves cont'd    
 * [Page 65:](#id-section65).
 * [Page 66:](#id-section66).
 * [Page 67:](#id-section67).
