@@ -4570,18 +4570,21 @@ Species are loaded as columns:
 
 Dilution steps are rows: 
 
-H. 1 E-2
-G. 1 E-3
-F. 1 E-4
-E. 1 E-5
-D. 1 E-6
-C. 1 E-7
-B. 1 E-8
-A. h20
+H. 1 E-2   
+
+G. 1 E-3   
+F. 1 E-4   
+E. 1 E-5   
+D. 1 E-6    
+C. 1 E-7   
+B. 1 E-8    
+A. h20    
 
 ### hsp70 melt curves   
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25042674/f7cf2cca-20e7-11e7-97ef-67e73e6899d6.jpg)
+
+Looks like a single product. 
 
 ------
 
@@ -4608,14 +4611,14 @@ Species are loaded as columns:
 
 Dilution steps are rows: 
 
-H. 1 E-2
-G. 1 E-3
-F. 1 E-4
-E. 1 E-5
-D. 1 E-6
-C. 1 E-7
-B. 1 E-8
-A. h20
+H. 1 E-2   
+G. 1 E-3   
+F. 1 E-4   
+E. 1 E-5    
+D. 1 E-6    
+C. 1 E-7    
+B. 1 E-8    
+A. h20     
 
 
 ------
