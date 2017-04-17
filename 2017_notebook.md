@@ -4727,6 +4727,14 @@ Signif. codes:
 
 got 1 and3  down, and searched for both second run and rerun. 
 
+next steps:
+
+1. Normalize to gapdh, but I need to find the best peptide that is stable: 
+	* vVDLIEYVAkA; this peptide looks the most stable. And it does not align with pogo gapdh   
+	* Blastp sequence against pogo genome: 
+
+2. reanalyze unfolding curves with peptide level data
+
 ------
 
  <div id='id-section66'/> 
