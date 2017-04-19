@@ -91,7 +91,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 63: 2017-04-13](#id-section63). Hsp rxn norm proj: amplicon quant
 * [Page 64: 2017-04-14](#id-section64). Hsp rxn norm project: Species efficiency curves cont'd    
 * [Page 65: 2017-04-14](#id-section65). Proteome stability project: Meeting with Wai
-* [Page 66:](#id-section66).
+* [Page 66: 2017-04-19](#id-section66). Proteome stability project: Data analysis
 * [Page 67:](#id-section67).
 * [Page 68:](#id-section68).
 * [Page 69:](#id-section69).
@@ -4739,7 +4739,212 @@ next steps:
 
  <div id='id-section66'/> 
 
-### Page 66:  
+### Page 66: 2017-04-19. Proteome stability project: Data analysis   
+
+Testing to see if there are differences in the unfolding characteristics of proteins between a warm tolerant (pogos) and cool tolerant species (aphaeno).  
+
+Data related: Need to parse out the ones with enough replicates (ones = peptides)   
+
+```R
+countrep<-ddply(glob3,.(Protein.Group.Accessions,Sequence,Modifications),summarize,gene=length(X36))
+head(countrep)
+[1] 1 5
+```
+
+Keep the ones with 5 (2 pogos and 3 aphaeno
+```R
+
+genes6colony<-subset(countrep,countrep$gene==5)
+genes6colony<-droplevels(genes6colony)
+dim(genes6colony)
+[1] 202   4
+
+#### Combining dataset based on accessions that have representative colonies for all 5. 
+Allcombined<-glob3[glob3$Sequence %in% genes6colony$Sequence,]
+dim(Allcombined)
+[1] 1052   27
+```
+
+
+Change to wide format:   
+
+```R
+comlong<-gather(Allcombined,temperature,unfolding,X30:X65.2)
+dim(comlong)
+[1] 10520    19
+
+#making species and colony a factor
+comlong$species<-as.factor(comlong$species)
+comlong$colony<-as.factor(comlong$colony)
+```
+
+### Making the temperature actually temperatures:    
+
+```R
+comlong$temperature<-as.numeric(sapply(strsplit(comlong$temperature,"X"),'[',2))
+```
+
+### Fitting unfolding curves for each colony and for each protein(Accession) and modification 
+
+```R
+
+paramfit<-ddply(comlong,.(species,colony,Protein.Group.Accessions,Sequence),failwith(f=UFfun))
+
+head(paramfit)
+summary(paramfit$colony)
+species colony Protein.Group.Accessions
+1 Aphaenogaster   AR13                365266869
+2 Aphaenogaster   AR13                365266869
+3 Aphaenogaster   AR13                365266869
+4 Aphaenogaster   AR13                769831122
+5 Aphaenogaster   AR13                769831122
+6 Aphaenogaster   AR13                769831122
+          Sequence    Estimate Std. Error
+1       AYQEAFDIAK  0.22414403 0.08297519
+2       AYQEAFDIAK 41.73987807 1.78323939
+3       AYQEAFDIAK  0.04075972 0.09419904
+4 SLPFYTEVLGMTLLQK  0.23564075 0.09353631
+5 SLPFYTEVLGMTLLQK 42.24986247 1.80218447
+6 SLPFYTEVLGMTLLQK  0.05660541 0.09785435
+     t value     Pr(>|t|) param
+1  2.7013381 3.057976e-02 slope
+2 23.4067722 6.595211e-08    Tm
+3  0.4326978 6.782526e-01   min
+4  2.5192435 3.985459e-02 slope
+5 23.4436947 6.523650e-08    Tm
+6  0.5784660 5.810753e-01   min
+
+## Count the colonies
+summary(paramfit$colony)
+AR13  ARY   D1  P45  P53 
+ 537  384  561  531  573 
+```
+
+Only compare the ones with fits for each colony
+
+```R
+num<-ddply(paramfit,.(Protein.Group.Accessions,Sequence),summarize,length(colony))
+reppep<-subset(num,num$..1==15)
+
+dim(reppep)
+[1] 102   3
+
+parparamfit<-paramfit[paramfit$Sequence %in% reppep$Sequence,]
+dim(parparamfit)
+[1] 1530    9
+
+##original
+dim(paramfit)
+[1] 2586    9
+```
+
+Grabbing the parameters:   
+
+```R
+slope<-subset(parparamfit,parparamfit$param=="slope")
+Tm<-subset(parparamfit,parparamfit$param=="Tm")
+min<-subset(parparamfit,parparamfit$param=="min")
+```
+
+###Statistics: Fitting anova for every peptide   
+
+First, wrote an anova function to grab p values
+```R
+aovfit <- function(dat) {
+  aov_fit <- summary(aov(Estimate~species, dat))[[1]][["Pr(>F)"]][1]
+}
+```
+
+Implement the fit with ddply
+
+```R
+li<-ddply(paramfit,.(Sequence),summarize,length=length(colony));dim(li)
+IDs4mod<-subset(li,li$length==15)
+dim(li)
+[1] 200   2
+> IDs4mod<-subset(li,li$length==15)
+> dim(IDs4mod)
+[1] 102   2
+
+###actual fit
+totalmod<-ddply(fitdat,.(Sequence,param),failwith(f=aovfit))
+```
+
+### Significant differences (Note: peptide level analysis)
+
+No FDR 
+
+```R
+totalmod[which(totalmod$V1<0.05),]
+           Sequence param         V1
+126    INVYYNEASGGK    Tm 0.03304835
+132 IQPVLTSGAGVVTNR    Tm 0.03132238
+261   TVLIMELINNVAK    Tm 0.04274057
+```
+
+With FDR
+
+```R
+newp<-p.adjust(totalmod$V1,method="hochberg")
+newp[which(newp<0.05)]
+numeric(0)
+```
+
+### TM
+
+```R
+Tm<-subset(Tm,Tm$Estimate<60) # subsetting out outliers
+
+Tmav<-ddply(Tm,.(species,Protein.Group.Accessions,Sequence),summarize,Estimate=mean(Estimate))
+head(Tmav)
+
+species Protein.Group.Accessions
+1 Aphaenogaster                365266869
+2 Aphaenogaster                769831122
+3 Aphaenogaster                769832256
+4 Aphaenogaster                769833958
+5 Aphaenogaster                769834659
+6 Aphaenogaster                769835104
+           Sequence Estimate
+1        AYQEAFDIAK 45.18603
+2  SLPFYTEVLGMTLLQK 47.02508
+3          GIFIVAAK 44.87442
+4 AKPVVSFIAGLTAPPGR 42.15132
+5         AADTSLYVK 45.31757
+6         LAYGTALAK 44.53871
+```
+
+Plotting peptide level
+
+```R
+ggplot(Tmav, aes(x=Estimate,colour=species, fill=species)) +geom_histogram(binwidth=1, alpha=.5, position="identity")+geom_density(alpha=0.25)+ggcol+ggcol2
+```
+![](https://cloud.githubusercontent.com/assets/4654474/25201832/2ab2c47a-2521-11e7-9c5b-2919834febae.jpeg)   
+
+```R
+summarySE(Tmav,measurevar = "Estimate",groupvars="species")
+        species   N Estimate       sd        se
+1 Aphaenogaster 102 43.13312 1.488930 0.1474261
+2  Pogonomyrmex 101 42.95960 2.996347 0.2981477
+         ci
+1 0.2924536
+2 0.5915165
+```   
+
+Plotting protein level
+
+```R
+ggplot(protlevel, aes(x=Estimate,colour=species, fill=species)) +geom_histogram(binwidth=1, alpha=.5, position="identity")+ggcol+ggcol2
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25201910/72236d6e-2521-11e7-8fd8-8bf18f72b224.jpeg)     
+
+```R
+protlevel<-summarySE(Tmav,measurevar = "Estimate",groupvars=c("species","Protein.Group.Accessions"))
+```
+
+
+
 
 ------
 
