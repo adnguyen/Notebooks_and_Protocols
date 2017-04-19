@@ -42,7 +42,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 22: 2017-04-05](#id-section22). Week 11, Day 20; Annotation
 * [Page 23: 2017-04-10](#id-section23). Week 12, Day 21, paper discussion Ziegler et al. 2017
 * [Page 24: 2017-04-12](#id-section24). Week 12, Day 22, KTyler info update; microbiome; paper discussion Bolnick et al. 2014
-* [Page 25:](#id-section25).
+* [Page 25: 2017-04-19](#id-section25). Week 13, Day 24, microbiome cont'd
 * [Page 26:](#id-section26).
 * [Page 27:](#id-section27).
 * [Page 28:](#id-section28).
@@ -3486,7 +3486,50 @@ Future:
 
  <div id='id-section25'/>  
 
-### Page 25:
+### Page 25: 201704-19. Week 13, Day 24, microbiome cont'd.     
+
+info update Aburnham:    
+
+Outline:
+
+**Rarefying vs rarefaction**
+
+rarefying = normalization of the data, subsampling depending on lowest N    
+
+rarefaction = not normalization; estimate species richness (extrapolation process)     
+
+Is what you find depend on method(sampling) or is it real?     
+
+
+**Methods:**           
+
+* Past-    
+
+	* proportions; high rate of false positives
+	* heteroskedasticity    
+	* reduced power
+	
+* Rarefying (reads = sampling effort)    
+
+	1. Find smallest N (Nlmin)  reads
+	2. discard libraries fewerr than Nlmin
+	3. Subsample the reads from larger N's to the smallest N.   
+
+What does this do? Normalizes the data. Removing the large descrepancy in read numbers.    
+
+Problems!   
+
+- high rate of false positives   
+- requires ommission of actual data     
+- reduces power   
+- adding another level of uncertainty    
+
+**USE A MIXTURE MODEL**    
+
+What does this do? 
+
+
+
 
 
 
