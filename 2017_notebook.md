@@ -4921,6 +4921,8 @@ ggplot(Tmav, aes(x=Estimate,colour=species, fill=species)) +geom_histogram(binwi
 ```
 ![](https://cloud.githubusercontent.com/assets/4654474/25201832/2ab2c47a-2521-11e7-9c5b-2919834febae.jpeg)   
 
+### Statistics: Testing differences in overall Tm between aphaeno and pogos.   
+
 ```R
 summarySE(Tmav,measurevar = "Estimate",groupvars="species")
         species   N Estimate       sd        se
@@ -4929,6 +4931,11 @@ summarySE(Tmav,measurevar = "Estimate",groupvars="species")
          ci
 1 0.2924536
 2 0.5915165
+
+summary(aov(Estimate~species,data=Tmav))
+             Df Sum Sq Mean Sq F value Pr(>F)
+species       1    1.5   1.528   0.274  0.601
+Residuals   201 1121.7   5.581  
 ```   
 
 Plotting protein level
@@ -4941,6 +4948,11 @@ ggplot(protlevel, aes(x=Estimate,colour=species, fill=species)) +geom_histogram(
 
 ```R
 protlevel<-summarySE(Tmav,measurevar = "Estimate",groupvars=c("species","Protein.Group.Accessions"))
+
+summary(aov(Estimate~species,data=protlevel))
+             Df Sum Sq Mean Sq F value Pr(>F)
+species       1    0.0   0.024   0.004   0.95
+Residuals   100  596.3   5.963   
 ```
 
 
@@ -4978,17 +4990,49 @@ summarySE(slav,measurevar = "Estimate",groupvars="species")
 Slope differences between aphaneo (blue) and pogo (red)
 ![](https://cloud.githubusercontent.com/assets/4654474/25229939/51da7ea6-25a0-11e7-8b64-fc82a181d21a.jpeg)
 
+### Statistics: Testing overall differences in slope between aphaeno and pogo
+
 ```R
-summary(aov(Estimate~species,data=minav))
-             Df Sum Sq Mean Sq F value  Pr(>F)   
-species       1 0.0357 0.03574   7.294 0.00755 **
-Residuals   187 0.9162 0.00490                   
+summary(aov(Estimate~species,data=slav))
+             Df Sum Sq Mean Sq F value  Pr(>F)
+species       1  7.935   7.935   58.84 7.1e-13
+Residuals   202 27.240   0.135                
+               
+species     ***
+Residuals      
 ---
 Signif. codes:  
 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
+### Min value, stats and plots   
 
+```R
+ggplot(minav, aes(x=Estimate, colour=species,fill=species)) +
+    geom_histogram(binwidth=.05, alpha=.5, position="identity")+ggcol+ggcol2
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25230246/4aa4c438-25a1-11e7-9374-ecf524d10387.jpeg)
+
+### Statistics: Testing differences in min (overall) between aphaeno and pogo
+
+```R
+summary(aov(Estimate~species,data=minav))
+             Df Sum Sq Mean Sq F value Pr(>F)   
+species       1 0.0392 0.03920   7.949 0.0053 **
+Residuals   199 0.9813 0.00493                  
+---
+Signif. codes:  
+0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+summarySE(minav,measurevar = "Estimate",groupvars="species")
+        species   N  Estimate         sd
+1 Aphaenogaster 102 0.1704008 0.05211795
+2  Pogonomyrmex  99 0.1983332 0.08493514
+           se         ci
+1 0.005160446 0.01023694
+2 0.008536302 0.01694001
+```
 
 ------
 
