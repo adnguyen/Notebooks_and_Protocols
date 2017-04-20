@@ -5049,10 +5049,55 @@ Previous analysis didn't control for loading (gapdh).
 
 updated figs:   
 
-![](https://cloud.githubusercontent.com/assets/4654474/25244796/1dca7a46-25d0-11e7-84c9-55dae9db2860.jpeg)
+![](https://cloud.githubusercontent.com/assets/4654474/25247579/382fda9e-25d9-11e7-96ab-4fddb1558479.jpeg)
 
- 
+### Statistics: Difference in whole proteome unfolding properties between aphaeno and pogo   
 
+**Tm**    
+
+```R
+summarySE(Tm,measurevar = "Estimate",groupvars="species")
+        species   N Estimate       sd        se        ci
+1 Aphaenogaster 187 43.29463 1.789420 0.1308553 0.2581514
+2  Pogonomyrmex 171 46.40236 4.081091 0.3120889 0.6160686
+> kruskal.test(Estimate~species,data=Tm)
+
+	Kruskal-Wallis rank sum test
+
+data:  Estimate by species
+Kruskal-Wallis chi-squared = 57.497, df = 1, p-value = 3.385e-14
+```
+
+**Slope**     
+
+```R
+summarySE(slope,measurevar = "Estimate",groupvars="species")
+        species   N  Estimate        sd         se         ci
+1 Aphaenogaster 181 0.5841720 0.4585716 0.03408536 0.06725829
+2  Pogonomyrmex 181 0.5394447 0.7583165 0.05636522 0.11122159
+> kruskal.test(Estimate~species,data=slope)
+
+	Kruskal-Wallis rank sum test
+
+data:  Estimate by species
+Kruskal-Wallis chi-squared = 41.402, df = 1, p-value = 1.239e-10
+
+```
+
+**Min**     
+
+```R
+summarySE(min,measurevar = "Estimate",groupvars="species")
+        species   N  Estimate        sd          se         ci
+1 Aphaenogaster 187 0.2240141 0.1080232 0.007899435 0.01558401
+2  Pogonomyrmex 163 0.2633765 0.1235183 0.009674700 0.01910478
+kruskal.test(Estimate~species,data=min)
+
+	Kruskal-Wallis rank sum test
+
+data:  Estimate by species
+Kruskal-Wallis chi-squared = 15.451, df = 1, p-value = 8.469e-05
+```
 ------
 
  <div id='id-section68'/> 
