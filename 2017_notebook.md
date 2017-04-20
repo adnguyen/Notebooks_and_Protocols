@@ -4846,7 +4846,7 @@ Tm<-subset(parparamfit,parparamfit$param=="Tm")
 min<-subset(parparamfit,parparamfit$param=="min")
 ```
 
-###Statistics: Fitting anova for every peptide   
+### Statistics: Fitting anova for every peptide   
 
 First, wrote an anova function to grab p values
 ```R
@@ -4866,7 +4866,7 @@ dim(li)
 > dim(IDs4mod)
 [1] 102   2
 
-###actual fit
+### actual fit
 totalmod<-ddply(fitdat,.(Sequence,param),failwith(f=aovfit))
 ```
 
@@ -4890,7 +4890,7 @@ newp[which(newp<0.05)]
 numeric(0)
 ```
 
-### TM
+### TM stats and plots
 
 ```R
 Tm<-subset(Tm,Tm$Estimate<60) # subsetting out outliers
@@ -4943,6 +4943,50 @@ ggplot(protlevel, aes(x=Estimate,colour=species, fill=species)) +geom_histogram(
 protlevel<-summarySE(Tmav,measurevar = "Estimate",groupvars=c("species","Protein.Group.Accessions"))
 ```
 
+
+### Slope stats and plots     
+
+
+Peptide level   
+
+```R
+slav<-ddply(slope,.(species,Sequence),summarize,Estimate=mean(Estimate))
+>head(slav)
+ species          Sequence  Estimate
+1 Aphaenogaster         AADTSLYVK 0.3528855
+2 Aphaenogaster      ADLVNNLGTIAK 0.3598534
+3 Aphaenogaster       AGIPLNDNFVK 0.3501090
+4 Aphaenogaster           AIDVAVK 1.0661180
+5 Aphaenogaster   AILVDLEPGTMDSVR 0.4839904
+6 Aphaenogaster AKPVVSFIAGLTAPPGR 0.7463137
+
+ggplot(slav, aes(x=Estimate,colour=species, fill=species)) +
+    geom_histogram(binwidth=.1, alpha=.5, position="identity")+ggcol+ggcol2
+```
+![](https://cloud.githubusercontent.com/assets/4654474/25202128/407b85ac-2522-11e7-9231-684d369c7ae7.jpeg)
+
+```R
+summarySE(slav,measurevar = "Estimate",groupvars="species")
+        species   N  Estimate        sd
+1 Aphaenogaster 102 0.7693194 0.4620566
+2  Pogonomyrmex 102 0.3748694 0.2370752
+          se         ci
+1 0.04575042 0.09075652
+2 0.02347395 0.04656600
+```
+
+Slope differences between aphaneo (blue) and pogo (red)
+![](https://cloud.githubusercontent.com/assets/4654474/25229939/51da7ea6-25a0-11e7-8b64-fc82a181d21a.jpeg)
+
+```R
+summary(aov(Estimate~species,data=minav))
+             Df Sum Sq Mean Sq F value  Pr(>F)   
+species       1 0.0357 0.03574   7.294 0.00755 **
+Residuals   187 0.9162 0.00490                   
+---
+Signif. codes:  
+0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
 
 
 
