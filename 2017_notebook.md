@@ -5034,6 +5034,11 @@ summarySE(minav,measurevar = "Estimate",groupvars="species")
 2 0.008536302 0.01694001
 ```
 
+### Slope and Min parameter figure both changing: 
+
+![](https://cloud.githubusercontent.com/assets/4654474/25230732/1c1bd320-25a3-11e7-86a3-289a16a809f6.jpeg)   
+
+
 ------
 
  <div id='id-section67'/> 
