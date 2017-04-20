@@ -5043,7 +5043,15 @@ summarySE(minav,measurevar = "Estimate",groupvars="species")
 
  <div id='id-section67'/> 
 
-### Page 67:  
+### Page 67: 2017-04-20. Proteome stability project: Re-analysis with normalizing with gapdh   
+
+Previous analysis didn't control for loading (gapdh).   
+
+updated figs:   
+
+![](https://cloud.githubusercontent.com/assets/4654474/25244796/1dca7a46-25d0-11e7-84c9-55dae9db2860.jpeg)
+
+ 
 
 ------
 
