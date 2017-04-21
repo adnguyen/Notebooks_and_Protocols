@@ -5106,15 +5106,14 @@ Kruskal-Wallis chi-squared = 15.451, df = 1, p-value = 8.469e-05
 
 ### The numbers we get:   
 
-|Species     | CommonPeptides_2| Tm_ave| CI_95|
-|:-----------|----------------:|------:|-----:|
-|A. rudis    |              121|  43.14| 0.421|
-|P. barbatus |              729|  47.31| 0.329|  
+|Species     | CommonPeptides_2| Tm_ave| CI_95| Slope| CI_95.1|   Min| CI_95.2|
+|:-----------|----------------:|------:|-----:|-----:|-------:|-----:|-------:|
+|A. rudis    |              121|  43.14| 0.421| 0.548|  0.0958| 0.173|  0.0166|
+|P. barbatus |              729|  47.31| 0.329| 0.455|  0.0315| 0.254|  0.0081|   
 
 
 
-
-### Statistics: differences in overall proteome stability
+### Statistics: differences in overall proteome stability (Tm)
 
 ```R
  kruskal.test(Estimate~species,data=combined)
@@ -5130,6 +5129,40 @@ p-value < 2.2e-16
 figure:   
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25279309/fd2f5f96-2673-11e7-8fe2-f3d9e0bde7b4.jpeg)
+
+### Statistics: differences in overall unfolding rate (slope)
+
+```R
+ kruskal.test(Estimate~species,data=sl.ave.spec)
+
+	Kruskal-Wallis rank sum test
+
+data:  Estimate by species
+Kruskal-Wallis chi-squared = 1, df = 1,
+p-value = 0.3173
+```
+
+figure: 
+
+![](https://cloud.githubusercontent.com/assets/4654474/25280358/b104b248-2677-11e7-9164-4f9c1df3efe8.jpeg)   
+
+### Statistics: differences in overall min unfolding    
+
+```R
+kruskal.test(Estimate~species,data=min.ave)
+
+	Kruskal-Wallis rank sum test
+
+data:  Estimate by species
+Kruskal-Wallis chi-squared = 65.718, df = 1,
+p-value = 5.203e-16
+
+```
+
+fig:  
+
+![](https://cloud.githubusercontent.com/assets/4654474/25280740/f70a5df0-2678-11e7-9670-a3a6ed550f3e.jpeg)
+
 
 ------
 
