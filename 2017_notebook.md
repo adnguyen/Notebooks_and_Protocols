@@ -5164,6 +5164,21 @@ fig:
 ![](https://cloud.githubusercontent.com/assets/4654474/25280740/f70a5df0-2678-11e7-9670-a3a6ed550f3e.jpeg)
 
 
+### Summary and future directions    
+
+1. There were more peptides identified in pogo than aphaenogaster.     
+
+	* Grab fast file with ORFs from Matt Lau. 
+	* And he needs to send me an annotation table (with gene IDs, GO and Kegg)
+	* I need to get an annotation table for pogos    
+	
+2. One thing to explore is to do an enrichment analysis for proteins that have high Tms
+	* Also, if I have aa sequences, I can determine contribution of    
+		* length   
+		* aa properties or IDs   
+		
+		
+
 ------
 
  <div id='id-section69'/> 
