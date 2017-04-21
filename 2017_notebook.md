@@ -92,8 +92,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 64: 2017-04-14](#id-section64). Hsp rxn norm project: Species efficiency curves cont'd    
 * [Page 65: 2017-04-14](#id-section65). Proteome stability project: Meeting with Wai
 * [Page 66: 2017-04-19](#id-section66). Proteome stability project: Data analysis
-* [Page 67:](#id-section67).
-* [Page 68:](#id-section68).
+* [Page 67: 2017-04-20](#id-section67).  Proteome stability project: Re-analysis with normalizing with gapdh     
+* [Page 68: 2017-04-21](#id-section68). Proteome Stability project: More data analysis; fitting curves separately to each species    
 * [Page 69:](#id-section69).
 * [Page 70:](#id-section70).
 * [Page 71:](#id-section71).
@@ -5102,7 +5102,34 @@ Kruskal-Wallis chi-squared = 15.451, df = 1, p-value = 8.469e-05
 
  <div id='id-section68'/> 
 
-### Page 68:  
+### Page 68: 2017-04-21. Proteome Stability project: More data analysis; fitting curves separately to each species    
+
+### The numbers we get:   
+
+|Species     | CommonPeptides_2| Tm_ave| CI_95|
+|:-----------|----------------:|------:|-----:|
+|A. rudis    |              121|  43.14| 0.421|
+|P. barbatus |              729|  47.31| 0.329|  
+
+
+
+
+### Statistics: differences in overall proteome stability
+
+```R
+ kruskal.test(Estimate~species,data=combined)
+
+	Kruskal-Wallis rank sum test
+
+data:  Estimate by species
+Kruskal-Wallis chi-squared = 97.849, df = 1,
+p-value < 2.2e-16
+
+```
+
+figure:   
+
+![](https://cloud.githubusercontent.com/assets/4654474/25279309/fd2f5f96-2673-11e7-8fe2-f3d9e0bde7b4.jpeg)
 
 ------
 
