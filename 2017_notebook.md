@@ -5177,7 +5177,7 @@ fig:
 		* length   
 		* aa properties or IDs   
 		
-		
+3. Searched database for PTMs such as phosphorylation and ubiquitination and found no siginficant modificatoins.    
 
 ------
 
