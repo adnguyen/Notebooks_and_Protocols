@@ -6,8 +6,9 @@
 ## Overall Description of notebook      
 I am the teaching assistant, but I will follow the tutorials and log what I've done here. 
 
-## Date started: (2017-01-18)   
-## Date end:   ongoing    
+## Date started: 2017-01-18   
+## Date end/last modified:   2017-04-23       
+
 
 ## Philosophy   
 Science should be reproducible and one of the best ways to achieve this is by logging research activities in a notebook. Because science/biology has increasingly become computational, it is easier to document computational projects in an electronic form, which can be shared online through Github.    
@@ -43,41 +44,6 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 23: 2017-04-10](#id-section23). Week 12, Day 21, paper discussion Ziegler et al. 2017
 * [Page 24: 2017-04-12](#id-section24). Week 12, Day 22, KTyler info update; microbiome; paper discussion Bolnick et al. 2014
 * [Page 25: 2017-04-19](#id-section25). Week 13, Day 24, microbiome cont'd
-* [Page 26:](#id-section26).
-* [Page 27:](#id-section27).
-* [Page 28:](#id-section28).
-* [Page 29:](#id-section29).
-* [Page 30:](#id-section30).
-* [Page 31:](#id-section31).
-* [Page 32:](#id-section32).
-* [Page 33:](#id-section33).
-* [Page 34:](#id-section34).
-* [Page 35:](#id-section35).
-* [Page 36:](#id-section36).
-* [Page 37:](#id-section37).
-* [Page 38:](#id-section38).
-* [Page 39:](#id-section39).
-* [Page 40:](#id-section40).
-* [Page 41:](#id-section41).
-* [Page 42:](#id-section42).
-* [Page 43:](#id-section43).
-* [Page 44:](#id-section44).
-* [Page 45:](#id-section45).
-* [Page 46:](#id-section46).
-* [Page 47:](#id-section47).
-* [Page 48:](#id-section48).
-* [Page 49:](#id-section49).
-* [Page 50:](#id-section50).
-* [Page 51:](#id-section51).
-* [Page 52:](#id-section52).
-* [Page 53:](#id-section53).
-* [Page 54:](#id-section54).
-* [Page 55:](#id-section55).
-* [Page 56:](#id-section56).
-* [Page 57:](#id-section57).
-* [Page 58:](#id-section58).
-* [Page 59:](#id-section59).
-* [Page 60:](#id-section60).
 
 ------
  <div id='id-section1'/>  
@@ -3532,146 +3498,5 @@ What does this do?
 
 
 
-
-------
- <div id='id-section26'/>  
-
-### Page 26:
-------
- <div id='id-section27'/>  
-
-### Page 27:
-------
- <div id='id-section28'/>  
-
-### Page 28:
-------
- <div id='id-section29'/>  
-
-### Page 29:
-------
- <div id='id-section30'/>  
-
-### Page 30:
-------
- <div id='id-section31'/>  
-
-### Page 31:
-------
- <div id='id-section32'/>  
-
-### Page 32:
-------
- <div id='id-section33'/>  
-
-### Page 33:
-------
- <div id='id-section34'/>  
-
-### Page 34:
-------
- <div id='id-section35'/>  
-
-### Page 35:
-------
- <div id='id-section36'/>  
-
-### Page 36:
-------
- <div id='id-section37'/>  
-
-### Page 37:
-------
- <div id='id-section38'/>  
-
-### Page 38:
-------
- <div id='id-section39'/>  
-
-### Page 39:
-------
- <div id='id-section40'/>  
-
-### Page 40:
-------
- <div id='id-section41'/>  
-
-### Page 41:
-------
- <div id='id-section42'/>  
-
-### Page 42:
-------
- <div id='id-section43'/>  
-
-### Page 43:
-------
- <div id='id-section44'/>  
-
-### Page 44:
-------
- <div id='id-section45'/>  
-
-### Page 45:
-------
- <div id='id-section46'/>  
-
-### Page 46:
-------
- <div id='id-section47'/>  
-
-### Page 47:
-------
- <div id='id-section48'/>  
-
-### Page 48:
-------
- <div id='id-section49'/>  
-
-### Page 49:
-------
- <div id='id-section50'/>  
-
-### Page 50:
-------
- <div id='id-section51'/>  
-
-### Page 51:
-------
- <div id='id-section52'/>  
-
-### Page 52:
-------
- <div id='id-section53'/>  
-
-### Page 53:
-------
- <div id='id-section54'/>  
-
-### Page 54:
-------
- <div id='id-section55'/>  
-
-### Page 55:
-------
- <div id='id-section56'/>  
-
-### Page 56:
-------
- <div id='id-section57'/>  
-
-### Page 57:
-------
- <div id='id-section58'/>  
-
-### Page 58:
-------
- <div id='id-section59'/>  
-
-### Page 59:
-------
- <div id='id-section60'/>  
-
-### Page 60:
 
 ------
