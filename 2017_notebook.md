@@ -94,7 +94,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 66: 2017-04-19](#id-section66). Proteome stability project: Data analysis
 * [Page 67: 2017-04-20](#id-section67).  Proteome stability project: Re-analysis with normalizing with gapdh     
 * [Page 68: 2017-04-21](#id-section68). Proteome Stability project: More data analysis; fitting curves separately to each species    
-* [Page 69:](#id-section69).
+* [Page 69: 2017-04-24](#id-section69). Post doc project ideas: Diapause timing and circadian clocks
 * [Page 70:](#id-section70).
 * [Page 71:](#id-section71).
 * [Page 72:](#id-section72).
@@ -5183,13 +5183,98 @@ fig:
 
  <div id='id-section69'/> 
 
-### Page 69:  
+### Page 69: 2017-04-24. Post doc project ideas: Diapause timing and circadian clocks.      
+
+Papers I'm reading, refs: 
+
+Levy, R. C., G. M. Kozak, C. B. Wadsworth, B. S. Coates, and E. B. Dopman. 2015. Explaining the sawtooth: latitudinal periodicity in a circadian gene correlates with shifts in generation number. Journal of Evolutionary Biology 28:40–53.
+
+
+
+
+Question? What are the molecular targets of selection in temporally diverging reproductively isolated populations?   
+
+Hypothesis: Circadian clock/rhythm genes mediate shifts in the timing of life history strategies.  
+
+Experimental approach: 
+
+* Knockdown period, timeless, cry1 in Z and E strains with RNAi, inhibitors and compare entry, duration, and exit to diapause.
+	* Which inhibitors?  
+* To determine if inhibitors perturb protein protein interactions, I will measure the proteome correlates of circ clocks with immunoprecipitation.
+
+Predictions: 
+
+* Z strain (univoltine) will phenocopy E strain. 
+* Both strains will delay?    
+
+
 
 ------
 
  <div id='id-section70'/> 
 
-### Page 70:  
+### Page 70:  2017-04-25. Proteome stability, individual colony variation and other stats   
+
+No filter for common peptides. So this figure has a mix of unique and overlapping peptides among all colonies.   
+
+![](https://cloud.githubusercontent.com/assets/4654474/25397100/154fd86e-29b5-11e7-8aff-88f5ca5d20b4.jpeg)   
+
+
+### Revisiting Statistics: ANOVAs for each parameter and each gene: 
+
+function I used
+```R
+aovfit <- function(dat) {
+  aov_fit <- summary(aov(Estimate~species, dat))[[1]][["Pr(>F)"]][1]
+}
+```
+
+
+**peptide level :**    
+
+
+```R
+totalmod<-ddply(fitdat,.(Sequence,param),failwith(f=aovfit))
+totalmod[which(totalmod$V1<0.05),]
+             Sequence param          V1       adj
+1           AADTSLYVK   min 0.001916678 0.2970850
+7     AILVDLEPGTMDSVR   min 0.037236005 0.9920444
+13         ALGLPIERPK   min 0.042182366 0.9920444
+26      APFDPPGPPGTPK slope 0.034160311 0.9920444
+42       DAGTISGLVVMR    Tm 0.045975707 0.9920444
+61       INVYYNEASGGK   min 0.012364019 0.9920444
+76         LLEELEQGQK   min 0.015446495 0.9920444
+79         LPVVAATIYR   min 0.012437384 0.9920444
+93       NPVCTDYFSGQK    Tm 0.019241119 0.9920444
+100         SSLPEHVVK   min 0.001634925 0.2550484
+108         TIVDITSHK    Tm 0.014540086 0.9920444
+129 VIDPFTIKPIDAQTIIK    Tm 0.006483948 0.9920444
+142       VVPPILLETGK   min 0.018339626 0.9920444
+```
+
+**protein level :**     
+
+```R
+protmod1<-ddply(proteinlev,.(Protein.Group.Accessions,param),failwith(f=aovfit))
+protmod1[protmod1$V1<0.05,]
+  Protein.Group.Accessions param          V1       
+7                 769834659   min 0.001916678 
+13                769835200   min 0.015446495 
+17                769838592 slope 0.034160311 
+24                769842741    Tm 0.045975707 
+54                769850975    Tm 0.035431063 
+55                769851924   min 0.028747970 
+
+
+protmod1$adj<-p.adjust(protmod1$V1,method="hochberg")
+protmod1[protmod1$adj<0.05,]
+[1] Protein.Group.Accessions param                   
+[3] V1                       adj                     
+<0 rows> (or 0-length row.names)
+```
+
+
+It looks like there are whol proteome wide changes in stability(unfolding) that are hard to detect(we have low power maybe bc of sample sizes) at the peptide/protein level. 
 
 ------
 
