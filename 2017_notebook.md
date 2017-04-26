@@ -5289,7 +5289,8 @@ It looks like there are whol proteome wide changes in stability(unfolding) that 
 	
 	* 2 more plates, 18s rRNA; RIN values in
 	* Need to analyze data; show results next week.    
-	
+
+	* Get the deltas too to get at the past historical temperatures they were experiencing. Do regression with deltas. 	
 
 - **Proteome stability project:**
 
@@ -5305,6 +5306,8 @@ It looks like there are whol proteome wide changes in stability(unfolding) that 
 			* aa properties or IDs   
 		
 	3. Searched database for PTMs such as phosphorylation and ubiquitination and found no siginficant modificatoins.    
+
+
 
 
 ------
