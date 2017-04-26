@@ -95,8 +95,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 67: 2017-04-20](#id-section67).  Proteome stability project: Re-analysis with normalizing with gapdh     
 * [Page 68: 2017-04-21](#id-section68). Proteome Stability project: More data analysis; fitting curves separately to each species    
 * [Page 69: 2017-04-24](#id-section69). Post doc project ideas: Diapause timing and circadian clocks
-* [Page 70:](#id-section70).
-* [Page 71:](#id-section71).
+* [Page 70: 2017-04-25](#id-section70). Proteome stability, individual colony variation and other stats   
+* [Page 71: 2017-04-26](#id-section71). Climate cascade meeting: Project updates; to do list
 * [Page 72:](#id-section72).
 * [Page 73:](#id-section73).
 * [Page 74:](#id-section74).
@@ -5276,11 +5276,36 @@ protmod1[protmod1$adj<0.05,]
 
 It looks like there are whol proteome wide changes in stability(unfolding) that are hard to detect(we have low power maybe bc of sample sizes) at the peptide/protein level. 
 
+
+
 ------
 
  <div id='id-section71'/> 
 
-### Page 71:  
+### Page 71: 2017-04-26. Climate cascade meeting: Project updates; to do list     
+
+
+- **Stressed in nature MS: Samples to rerun.**       
+	
+	* 2 more plates, 18s rRNA; RIN values in
+	* Need to analyze data; show results next week.    
+	
+
+- Proteome stability project:
+
+	1. There were more peptides identified in pogo than aphaenogaster.     
+
+		* Grab fast file with ORFs from Matt Lau. 
+		* And he needs to send me an annotation table (with gene IDs, GO and Kegg)
+		* I need to get an annotation table for pogos    
+	
+	2. One thing to explore is to do an enrichment analysis for proteins that have high Tms
+		* Also, if I have aa sequences, I can determine contribution of    
+			* length   
+			* aa properties or IDs   
+		
+	3. Searched database for PTMs such as phosphorylation and ubiquitination and found no siginficant modificatoins.    
+
 
 ------
 
