@@ -5291,7 +5291,7 @@ It looks like there are whol proteome wide changes in stability(unfolding) that 
 	* Need to analyze data; show results next week.    
 	
 
-- Proteome stability project:
+- **Proteome stability project:**
 
 	1. There were more peptides identified in pogo than aphaenogaster.     
 
