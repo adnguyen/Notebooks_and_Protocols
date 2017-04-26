@@ -5307,6 +5307,27 @@ It looks like there are whol proteome wide changes in stability(unfolding) that 
 		
 	3. Searched database for PTMs such as phosphorylation and ubiquitination and found no siginficant modificatoins.    
 
+Notes from SHC and NGotelli:   
+
+1. Do a randomization test: 
+	* Shuffle the labels-- go to the colony level   
+	* Compare different medians
+
+2. Do KS test to determine difference in cumulative density function
+
+3. Plot density curves
+
+4. Plot Aph Tm vs Pogo Tm  
+
+5. Create story board for manuscript  ; focus on narrative and then construct figures accordingly   
+
+6. Try to analyze by block which might account for variation intraspecific variation      
+
+7. NGotelli comment: Aph Tms are within the range of pogo Tms     
+
+
+
+
 
 
 
