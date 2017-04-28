@@ -97,7 +97,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 69: 2017-04-24](#id-section69). Post doc project ideas: Diapause timing and circadian clocks
 * [Page 70: 2017-04-25](#id-section70). Proteome stability, individual colony variation and other stats   
 * [Page 71: 2017-04-26](#id-section71). Climate cascade meeting: Project updates; to do list
-* [Page 72:](#id-section72).
+* [Page 72: 2017-04-28](#id-section72). Stressed in nature project: data analysis
 * [Page 73:](#id-section73).
 * [Page 74:](#id-section74).
 * [Page 75:](#id-section75).
@@ -5335,7 +5335,131 @@ Notes from SHC and NGotelli:
 
  <div id='id-section72'/> 
 
-### Page 72:  
+### Page 72: 2017-04-28. Stressed in nature project: data analysis    
+
+Quick and dirty: ants were sampled at warming chambers for 2 sites; duke forest and harvard forest.     
+
+Looking at bait temperatures against targeted delta chambers  
+
+![](https://cloud.githubusercontent.com/assets/4654474/25533286/275388ee-2bfe-11e7-832e-00562158866d.jpeg)
+
+```R
+summary(lm(baittemp.ave~Delta*Site,data=warm))
+
+Call:
+lm(formula = baittemp.ave ~ Delta * Site, data = warm)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.2807 -2.0306 -0.2349  1.5072  5.8855 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  25.94661    0.28228  91.919   <2e-16 ***
+Delta         0.21358    0.09977   2.141   0.0333 *  
+SiteHF        0.31354    0.53701   0.584   0.5599    
+Delta:SiteHF  0.24087    0.16926   1.423   0.1561    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.417 on 230 degrees of freedom
+Multiple R-squared:  0.107,	Adjusted R-squared:  0.09532 
+F-statistic: 9.183 on 3 and 230 DF,  p-value: 9.19e-06
+
+```
+
+The lines are not sig diff. Delta and bait temp are weakly correlated too. 
+
+### Getting gene counts from [MCMC.qpcr](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0071448)
+
+Tutorial [here](http://journals.plos.org/plosone/article/file?type=supplementary&id=info:doi/10.1371/journal.pone.0071448.s002)
+
+getting gene counts   
+
+```R
+gene<-c("CT_18s","CT_40","CT_70","CT_83","CT_actin") # list the genes
+amp<-data.frame(gene,efficiency=rep(2,length(gene))) # input efficiencies
+names(warm)[6]<-"sample" # rename sample
+
+
+### getting gene counts  
+dd<-cq2counts(data=warm,genecols=c(14:18),condcols=c(13,5:6,2:4,20:21),Cq1=37,effic=amp)
+dd$baittemp.ave<-as.numeric(as.character(dd$baittemp.ave))
+dd$RIN_Value<-as.numeric(as.character(dd$RIN_Value))
+dd$Year_collect<-as.numeric(as.character(dd$Year_collect))
+str(dd)
+
+'data.frame':	1135 obs. of  11 variables:
+ $ count         : num  713721 1704598 2884720 444863 1145861 ...
+ $ gene          : Factor w/ 5 levels "CT_18s","CT_40",..: 1 1 1 1 1 1 1 1 1 1 ...
+ $ Isolation.Date: Factor w/ 29 levels "20150624","20150710",..: 1 2 19 7 18 11 3 3 15 14 ...
+ $ Cham          : Factor w/ 15 levels "1","2","3","4",..: 1 5 13 1 8 11 14 4 15 2 ...
+ $ Sample        : Factor w/ 3 levels "1","2","3": 2 2 2 2 2 3 2 2 3 3 ...
+ $ Year_collect  : num  2014 2014 2014 2013 2014 ...
+ $ Site          : Factor w/ 2 levels "DF","HF": 1 1 1 1 1 2 1 1 1 2 ...
+ $ Vial.me       : Factor w/ 238 levels "","DF 1.1","DF 1.2",..: 3 34 14 54 48 153 18 32 77 159 ...
+ $ RIN_Value     : num  7 6 5.5 1 2.9 1 1 1.1 2 1 ...
+ $ baittemp.ave  : num  28.6 28.1 28.6 29.8 32.7 ...
+ $ Siteyear      : chr  "DF 2014" "DF 2014" "DF 2014" "DF 2013" ...
+```
+
+### Statistics: Fitting an ANOVA to test interaction between gene, year, baittemp,year collected, and delta. 
+
+
+```R
+
+summary(stepAIC(fullmod,direction="both"))
+
+Step:  AIC=1508.51
+log(count + 1) ~ RIN_Value + gene + Site + Year_collect + baittemp.ave + 
+    Delta + gene:Site + gene:Year_collect + Site:Year_collect + 
+    gene:baittemp.ave + Site:baittemp.ave + Year_collect:baittemp.ave + 
+    Site:Delta + Year_collect:Delta + baittemp.ave:Delta + gene:Site:Year_collect + 
+    gene:Year_collect:baittemp.ave + Site:Year_collect:baittemp.ave + 
+    Site:Year_collect:Delta + Site:baittemp.ave:Delta
+
+                                  Df Sum of Sq    RSS    AIC
+<none>                                         3678.1 1508.5
+- Site:Year_collect:baittemp.ave   1     8.487 3686.6 1509.1
+- gene:Site:Year_collect           4    31.985 3710.1 1510.3
+- Site:Year_collect:Delta          9    74.585 3752.7 1513.3
++ Year_collect:baittemp.ave:Delta  9    42.338 3635.8 1513.4
++ gene:Site:baittemp.ave           4     5.817 3672.3 1514.7
+- gene:Year_collect:baittemp.ave   4    57.795 3735.9 1518.2
+- RIN_Value                        1    58.863 3737.0 1524.5
+- Site:baittemp.ave:Delta          9   213.129 3891.3 1554.4
++ gene:Delta                      36    53.133 3625.0 1564.0
+                                 Df Sum Sq Mean Sq  F value   Pr(>F)    
+RIN_Value                         1   2509    2509  714.820  < 2e-16 ***
+gene                              4  20041    5010 1427.529  < 2e-16 ***
+Site                              1     18      18    5.027 0.025162 *  
+Year_collect                      1    663     663  188.912  < 2e-16 ***
+baittemp.ave                      1      2       2    0.544 0.460803    
+Delta                             9    103      11    3.261 0.000637 ***
+gene:Site                         4     71      18    5.031 0.000511 ***
+gene:Year_collect                 4    221      55   15.734 1.64e-12 ***
+Site:Year_collect                 1     64      64   18.251 2.11e-05 ***
+gene:baittemp.ave                 4    150      38   10.706 1.66e-08 ***
+Site:baittemp.ave                 1    136     136   38.667 7.25e-10 ***
+Year_collect:baittemp.ave         1    973     973  277.328  < 2e-16 ***
+Site:Delta                        9    184      20    5.819 6.19e-08 ***
+Year_collect:Delta                9    273      30    8.630 1.46e-12 ***
+baittemp.ave:Delta                9    146      16    4.613 5.32e-06 ***
+gene:Site:Year_collect            4     19       5    1.342 0.252392    
+gene:Year_collect:baittemp.ave    4     59      15    4.187 0.002279 ** 
+Site:Year_collect:baittemp.ave    1     95      95   27.031 2.41e-07 ***
+Site:Year_collect:Delta           9     61       7    1.946 0.042393 *  
+Site:baittemp.ave:Delta           9    213      24    6.747 1.89e-09 ***
+Residuals                      1048   3678       4                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+### Plotting estimated slope between bait temp and gene count, against years; genes are colored, site are different symbols      
+
+![](https://cloud.githubusercontent.com/assets/4654474/25536233/08f65e30-2c08-11e7-8c01-c54a86f3eed0.jpeg)
+
+
 
 ------
 
