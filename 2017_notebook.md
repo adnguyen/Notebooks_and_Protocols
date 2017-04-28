@@ -5407,7 +5407,7 @@ str(dd)
 
 
 ```R
-
+fullmod<-aov(log(count+1)~RIN_Value+gene*Site*Year_collect*baittemp.ave*Delta,data=dd)
 summary(stepAIC(fullmod,direction="both"))
 
 Step:  AIC=1508.51
@@ -5455,10 +5455,195 @@ Residuals                      1048   3678       4
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
-### Plotting estimated slope between bait temp and gene count, against years; genes are colored, site are different symbols      
+### Plotting:
+
+Estimated slope between bait temp and gene count, against years; genes are colored, site are different symbols      
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25536233/08f65e30-2c08-11e7-8c01-c54a86f3eed0.jpeg)
 
+Estimated slope between bait temp and gene count, against genes
+
+![](https://cloud.githubusercontent.com/assets/4654474/25541321/329f0002-2c1c-11e7-8b97-58085ac81bcf.jpeg)
+
+
+### Statistics: 18s 
+
+```R
+mod5<-aov(log(count+1)~RIN_Value+Site*Year_collect*baittemp.ave*Delta,data=gxp18s)
+
+Step:  AIC=494.96
+log(count + 1) ~ Site + Year_collect + baittemp.ave + Delta + 
+    Site:Year_collect + Site:baittemp.ave + Year_collect:baittemp.ave + 
+    Site:Delta + Year_collect:Delta + baittemp.ave:Delta + Site:Year_collect:baittemp.ave
+
+                                  Df Sum of Sq    RSS    AIC
+<none>                                         1782.5 494.96
++ RIN_Value                        1    14.778 1767.7 495.05
+- baittemp.ave:Delta               1    19.913 1802.4 495.52
+- Site:Year_collect:baittemp.ave   1    20.865 1803.3 495.64
++ Year_collect:baittemp.ave:Delta  1     5.637 1776.8 496.24
++ Site:Year_collect:Delta          1     3.601 1778.9 496.50
+- Year_collect:Delta               1    28.524 1811.0 496.62
++ Site:baittemp.ave:Delta          1     0.017 1782.4 496.96
+- Site:Delta                       1    64.748 1847.2 501.17
+                                Df Sum Sq Mean Sq F value   Pr(>F)    
+Site                             1  111.4   111.4  13.620 0.000283 ***
+Year_collect                     1  906.3   906.3 110.844  < 2e-16 ***
+baittemp.ave                     1   73.4    73.4   8.982 0.003042 ** 
+Delta                            1    0.0     0.0   0.001 0.975781    
+Site:Year_collect                1    2.1     2.1   0.258 0.612198    
+Site:baittemp.ave                1   58.5    58.5   7.152 0.008053 ** 
+Year_collect:baittemp.ave        1  212.9   212.9  26.033 7.29e-07 ***
+Site:Delta                       1   65.0    65.0   7.944 0.005269 ** 
+Year_collect:Delta               1   50.0    50.0   6.116 0.014160 *  
+baittemp.ave:Delta               1   19.1    19.1   2.330 0.128354    
+Site:Year_collect:baittemp.ave   1   20.9    20.9   2.552 0.111612    
+Residuals                      218 1782.5     8.2                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+### Statistics: actin
+
+```R
+mod4<-aov(log(count+1)~RIN_Value+Site*Year_collect*baittemp.ave*Delta,data=gxpactin)
+Start:  AIC=295.09
+log(count + 1) ~ RIN_Value + Site * Year_collect * baittemp.ave * 
+    Delta
+
+                                       Df Sum of Sq    RSS    AIC
+<none>                                              717.50 295.08
+- Site:Year_collect:baittemp.ave:Delta  1    8.0973 725.60 295.62
+- RIN_Value                             1   25.0229 742.53 300.83
+                                      Df Sum Sq Mean Sq F value   Pr(>F)    
+RIN_Value                              1  429.7   429.7 125.168  < 2e-16 ***
+Site                                   1    9.8     9.8   2.865  0.09203 .  
+Year_collect                           1  110.3   110.3  32.137 4.73e-08 ***
+baittemp.ave                           1    3.2     3.2   0.936  0.33439    
+Delta                                  1    0.0     0.0   0.008  0.92832    
+Site:Year_collect                      1   23.4    23.4   6.824  0.00965 ** 
+Site:baittemp.ave                      1   19.5    19.5   5.692  0.01793 *  
+Year_collect:baittemp.ave              1  224.0   224.0  65.243 5.21e-14 ***
+Site:Delta                             1    2.2     2.2   0.649  0.42141    
+Year_collect:Delta                     1   27.2    27.2   7.916  0.00537 ** 
+baittemp.ave:Delta                     1    1.0     1.0   0.299  0.58478    
+Site:Year_collect:baittemp.ave         1   37.2    37.2  10.835  0.00117 ** 
+Site:Year_collect:Delta                1    1.6     1.6   0.479  0.48975    
+Site:baittemp.ave:Delta                1    0.0     0.0   0.003  0.95749    
+Year_collect:baittemp.ave:Delta        1    0.0     0.0   0.011  0.91665    
+Site:Year_collect:baittemp.ave:Delta   1    8.1     8.1   2.359  0.12610    
+Residuals                            209  717.5     3.4                     
+---
+```
+
+
+### Statistics: hsp70     
+
+```R
+mod1<-aov(log(count+1)~RIN_Value+Site*Year_collect*baittemp.ave*Delta,data=gxp70)
+
+Step:  AIC=200.41
+log(count + 1) ~ RIN_Value + Site + Year_collect + baittemp.ave + 
+    Delta + Site:Year_collect + Site:baittemp.ave + Year_collect:baittemp.ave + 
+    Site:Delta + Year_collect:Delta + Site:Year_collect:Delta
+
+                                 Df Sum of Sq    RSS    AIC
+<none>                                        494.75 200.41
+- Site:baittemp.ave               1     4.583 499.33 200.52
++ baittemp.ave:Delta              1     0.689 494.06 202.09
++ Site:Year_collect:baittemp.ave  1     0.002 494.75 202.40
+- Site:Year_collect:Delta         1    15.443 510.19 205.44
+- RIN_Value                       1    32.820 527.57 213.11
+- Year_collect:baittemp.ave       1   152.325 647.07 259.87
+                           Df Sum Sq Mean Sq F value   Pr(>F)    
+RIN_Value                   1  353.3   353.3 154.963  < 2e-16 ***
+Site                        1   12.4    12.4   5.454 0.020431 *  
+Year_collect                1   27.1    27.1  11.898 0.000675 ***
+baittemp.ave                1    7.9     7.9   3.449 0.064641 .  
+Delta                       1    0.1     0.1   0.053 0.818551    
+Site:Year_collect           1    0.6     0.6   0.263 0.608702    
+Site:baittemp.ave           1   14.8    14.8   6.502 0.011462 *  
+Year_collect:baittemp.ave   1  120.5   120.5  52.858 6.41e-12 ***
+Site:Delta                  1    1.2     1.2   0.541 0.463016    
+Year_collect:Delta          1   26.7    26.7  11.696 0.000748 ***
+Site:Year_collect:Delta     1   15.4    15.4   6.773 0.009890 ** 
+Residuals                 217  494.7     2.3                     
+---
+```
+
+### Statistics: hsp40
+
+```R
+mod2<-aov(log(count+1)~RIN_Value+Site*Year_collect*baittemp.ave*Delta,data=gxp40)
+
+Step:  AIC=117.76
+log(count + 1) ~ RIN_Value + Site + Year_collect + baittemp.ave + 
+    Delta + Site:Year_collect + Site:baittemp.ave + Year_collect:baittemp.ave + 
+    Site:Delta + Year_collect:Delta + baittemp.ave:Delta + Site:Year_collect:Delta + 
+    Year_collect:baittemp.ave:Delta
+
+                                  Df Sum of Sq    RSS    AIC
+<none>                                         332.63 117.76
+- Site:Year_collect:Delta          1    3.1659 335.79 117.87
++ Site:baittemp.ave:Delta          1    1.0630 331.56 119.05
+- RIN_Value                        1    5.0316 337.66 119.10
+- Year_collect:baittemp.ave:Delta  1    5.3788 338.00 119.33
++ Site:Year_collect:baittemp.ave   1    0.3536 332.27 119.53
+- Site:baittemp.ave                1    7.4288 340.05 120.67
+                                 Df Sum Sq Mean Sq F value   Pr(>F)    
+RIN_Value                         1  262.9  262.92 164.412  < 2e-16 ***
+Site                              1    0.6    0.59   0.368 0.544494    
+Year_collect                      1   79.0   78.96  49.376 2.97e-11 ***
+baittemp.ave                      1    1.1    1.12   0.699 0.404232    
+Delta                             1    0.1    0.07   0.046 0.829526    
+Site:Year_collect                 1    7.9    7.94   4.962 0.026977 *  
+Site:baittemp.ave                 1   17.3   17.28  10.807 0.001187 ** 
+Year_collect:baittemp.ave         1  114.3  114.34  71.500 4.87e-15 ***
+Site:Delta                        1    9.8    9.81   6.133 0.014068 *  
+Year_collect:Delta                1   22.1   22.13  13.841 0.000256 ***
+baittemp.ave:Delta                1    5.2    5.16   3.228 0.073855 .  
+Site:Year_collect:Delta           1    4.3    4.26   2.664 0.104143    
+Year_collect:baittemp.ave:Delta   1    5.4    5.38   3.363 0.068086 .  
+Residuals                       208  332.6    1.60                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+
+### Statistics: hsp83
+
+
+```R
+mod3<-aov(log(count+1)~RIN_Value+Site*Year_collect*baittemp.ave*Delta,data=gxp83)
+Step:  AIC=368.17
+log(count + 1) ~ RIN_Value + Site + Year_collect + baittemp.ave + 
+    Delta + Site:Year_collect + Site:baittemp.ave + Year_collect:baittemp.ave + 
+    Year_collect:Delta + baittemp.ave:Delta + Year_collect:baittemp.ave:Delta
+
+                                  Df Sum of Sq    RSS    AIC
+<none>                                         1031.6 368.17
++ Site:Delta                       1     8.143 1023.5 368.37
++ Site:Year_collect:baittemp.ave   1     2.224 1029.4 369.68
+- Site:baittemp.ave                1    20.209 1051.8 370.60
+- Year_collect:baittemp.ave:Delta  1    31.913 1063.5 373.12
+- RIN_Value                        1    58.793 1090.4 378.81
+- Site:Year_collect                1    71.242 1102.8 381.40
+                                 Df Sum Sq Mean Sq F value   Pr(>F)    
+RIN_Value                         1 1073.4  1073.4 224.743  < 2e-16 ***
+Site                              1    0.0     0.0   0.001  0.97546    
+Year_collect                      1  227.3   227.3  47.590 5.73e-11 ***
+baittemp.ave                      1   26.7    26.7   5.595  0.01890 *  
+Delta                             1    0.2     0.2   0.038  0.84575    
+Site:Year_collect                 1   46.4    46.4   9.723  0.00207 ** 
+Site:baittemp.ave                 1   38.9    38.9   8.154  0.00472 ** 
+Year_collect:baittemp.ave         1  361.6   361.6  75.718 8.44e-16 ***
+Year_collect:Delta                1   55.4    55.4  11.591  0.00079 ***
+baittemp.ave:Delta                1    0.3     0.3   0.060  0.80745    
+Year_collect:baittemp.ave:Delta   1   31.9    31.9   6.682  0.01040 *  
+Residuals                       216 1031.6     4.8                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
 
 
 ------
