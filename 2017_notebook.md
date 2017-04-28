@@ -5603,6 +5603,76 @@ Residuals                 217  494.7     2.3
 ---
 ```
 
+dredging: 
+
+```R
+mod1<-aov(log(count+1)~RIN_Value+Site*Year_collect*baittemp.ave*Delta,data=gxp70)
+h70d<-dredge(mod1)
+summary(model.avg(h70d,delta<4))
+(conditional average) 
+                                   Estimate Std. Error Adjusted SE z value
+(Intercept)                      -4.151e+04  5.773e+03   5.800e+03   7.157
+baittemp.ave                      1.506e+03  2.155e+02   2.166e+02   6.954
+Delta                            -2.422e+02  1.055e+03   1.058e+03   0.229
+RIN_Value                         2.611e-01  6.662e-02   6.697e-02   3.899
+SiteHF                            2.422e+03  6.509e+03   6.533e+03   0.371
+Year_collect                      2.062e+01  2.867e+00   2.881e+00   7.158
+baittemp.ave:Year_collect        -7.480e-01  1.071e-01   1.076e-01   6.954
+Delta:SiteHF                     -1.244e+03  4.719e+02   4.745e+02   2.622
+Delta:Year_collect                1.202e-01  5.238e-01   5.254e-01   0.229
+SiteHF:Year_collect              -1.305e+00  3.347e+00   3.359e+00   0.389
+Delta:SiteHF:Year_collect         6.179e-01  2.344e-01   2.357e-01   2.622
+baittemp.ave:SiteHF              -6.104e+01  3.187e+02   3.198e+02   0.191
+baittemp.ave:Delta               -2.946e+01  6.526e+01   6.549e+01   0.450
+baittemp.ave:SiteHF:Year_collect  1.456e-01  3.212e-01   3.225e-01   0.451
+baittemp.ave:Delta:Year_collect   4.222e-02  4.320e-02   4.344e-02   0.972
+                                 Pr(>|z|)    
+(Intercept)                       < 2e-16 ***
+baittemp.ave                      < 2e-16 ***
+Delta                             0.81891    
+RIN_Value                        9.66e-05 ***
+SiteHF                            0.71089    
+Year_collect                      < 2e-16 ***
+baittemp.ave:Year_collect         < 2e-16 ***
+Delta:SiteHF                      0.00875 ** 
+Delta:Year_collect                0.81900    
+SiteHF:Year_collect               0.69760    
+Delta:SiteHF:Year_collect         0.00875 ** 
+baittemp.ave:SiteHF               0.84862    
+baittemp.ave:Delta                0.65281    
+baittemp.ave:SiteHF:Year_collect  0.65174    
+baittemp.ave:Delta:Year_collect   0.33112    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Relative variable importance: 
+                     baittemp.ave Delta RIN_Value Site Year_collect
+Importance:          1.00         1.00  1.00      1.00 1.00        
+N containing models:   10           10    10        10   10        
+                     baittemp.ave:Year_collect Delta:Year_collect
+Importance:          1.00                      1.00              
+N containing models:   10                        10              
+                     Site:Year_collect Delta:Site Delta:Site:Year_collect
+Importance:          0.92              0.81       0.81                   
+N containing models:    9                 7          7                   
+                     baittemp.ave:Site baittemp.ave:Delta
+Importance:          0.61              0.28              
+N containing models:    7                 4              
+                     baittemp.ave:Site:Year_collect
+Importance:          0.13                          
+N containing models:    2                          
+                     baittemp.ave:Delta:Year_collect
+Importance:          0.10                           
+N containing models:    2  
+```
+
+fig showing the bait temp by year interaction    
+
+![](https://cloud.githubusercontent.com/assets/4654474/25542976/c37a7ec0-2c22-11e7-9651-839f47b276f1.jpeg)   
+
+fig showing delta by site by year interaction    
+
+![](https://cloud.githubusercontent.com/assets/4654474/25543090/236cb032-2c23-11e7-924e-2e2120af38fa.jpeg)
 
 ### Statistics: hsp40
 
