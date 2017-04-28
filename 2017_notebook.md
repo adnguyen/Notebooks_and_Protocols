@@ -5455,6 +5455,38 @@ Residuals                      1048   3678       4
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
+
+### model selection with dredge() function in MuMin package
+
+cant do full model: 
+
+```R
+fullmod2<-aov(log(count+1)~RIN_Value+gene+Site*Year_collect*baittemp.ave,data=dd)
+a<-dredge(fullmod2)
+```
+
+```R
+get.models(a,subset=delta<4)
+
+summary(aov(formula = log(count + 1) ~ baittemp.ave + gene + RIN_Value + 
+    Site + Year_collect + baittemp.ave:Site + baittemp.ave:Year_collect + 
+    Site:Year_collect + baittemp.ave:Site:Year_collect + 1, data = dd))
+    
+  Df Sum Sq Mean Sq  F value   Pr(>F)    
+baittemp.ave                      1     62      62   13.439 0.000258 ***
+gene                              4  19917    4979 1072.077  < 2e-16 ***
+RIN_Value                         1   2579    2579  555.191  < 2e-16 ***
+Site                              1     24      24    5.262 0.021984 *  
+Year_collect                      1    650     650  139.901  < 2e-16 ***
+baittemp.ave:Site                 1    126     126   27.070 2.33e-07 ***
+baittemp.ave:Year_collect         1    838     838  180.393  < 2e-16 ***
+Site:Year_collect                 1    171     171   36.839 1.75e-09 ***
+baittemp.ave:Site:Year_collect    1    100     100   21.439 4.08e-06 ***
+Residuals                      1122   5211       5        
+```
+
+
+
 ### Plotting:
 
 Estimated slope between bait temp and gene count, against years; genes are colored, site are different symbols      
@@ -5570,6 +5602,7 @@ Site:Year_collect:Delta     1   15.4    15.4   6.773 0.009890 **
 Residuals                 217  494.7     2.3                     
 ---
 ```
+
 
 ### Statistics: hsp40
 
