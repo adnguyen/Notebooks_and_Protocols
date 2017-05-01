@@ -6174,9 +6174,25 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 ```
 
 
-Yeah non of this is right...vial.me should not be a random effect.    
+Yeah non of this is right...vial.me should not be a random effect. Vial.me should be labeled as the "sample" .       
 
 Also, how do I deal with the fact that the chambers are repeatedly sampled? I have to include a repeated measures aspect into model.  
+
+
+Also the model looks so complicated. What am I testing?  
+
+Main effects: Rin_VAlue - to control for quality 
+
+Interactions: 
+
+3 way between, Site*Julianday* Delta    
+
+3 way between, Site*Julianday* bait temperature     
+
+Other varibles: 
+1. collection date     
+2. Year collected    
+
 
 ------
 
