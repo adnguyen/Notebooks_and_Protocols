@@ -98,7 +98,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 70: 2017-04-25](#id-section70). Proteome stability, individual colony variation and other stats   
 * [Page 71: 2017-04-26](#id-section71). Climate cascade meeting: Project updates; to do list
 * [Page 72: 2017-04-28](#id-section72). Stressed in nature project: data analysis
-* [Page 73:](#id-section73).
+* [Page 73: 2017-04-30](#id-section73). Stressed in nature project: Re-analysis
 * [Page 74:](#id-section74).
 * [Page 75:](#id-section75).
 * [Page 76:](#id-section76).
@@ -5753,7 +5753,430 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 
  <div id='id-section73'/> 
 
-### Page 73:  
+### Page 73: 2017-04-30. Stressed in nature project: Re-analysis     
+
+To analyze all genes into 1 model; using the MCMC.qpcr package:   
+
+some data parsing first:      
+
+```R
+> warm<-read.csv("../Data/20170427_final_dataset_2013_2014_years_HF_DF.csv",skip=10)
+> warm$baittemp.ave<-apply(warm[,8:11],1,mean,na.rm=TRUE)
+> warm<-warm[!is.na(warm$RIN_Value),]
+> warm$Cham<-as.factor(warm$Cham)
+> warm$Sample<-as.factor(warm$Sample)
+> warm$Collection.Date<-as.factor(as.character(warm$Collection.Date))
+> chd<-read.csv("../Data/2017_chamber_dat.csv")
+> chd$Cham<-as.factor(chd$Cham)
+> str(chd)
+'data.frame':	30 obs. of  3 variables:
+ $ Cham : Factor w/ 15 levels "1","2","3","4",..: 1 2 3 4 5 6 7 8 9 10 ...
+ $ Site : Factor w/ 2 levels "DF","HF": 2 2 2 2 2 2 2 2 2 2 ...
+ $ Delta: num  5.5 4 2 0 5 0 3 1.5 2.5 4.5 ...
+> warm<-inner_join(warm,chd,by=c("Cham","Site"))
+```
+
+getting gene counts:    
+
+```R
+gene<-c("CT_18s","CT_40","CT_70","CT_83","CT_actin") # list the genes
+amp<-data.frame(gene,efficiency=rep(2,length(gene))) # input efficiencies
+names(warm)[6]<-"sample"
+
+dd<-cq2counts(data=warm,genecols=c(14:18),condcols=c(13,5:6,1:4,20:22),Cq1=34,effic=amp)
+
+### more data mainpulations; changing between factor/class
+dd$baittemp.ave<-as.numeric(as.character(dd$baittemp.ave))
+dd$RIN_Value<-as.numeric(as.character(dd$RIN_Value))
+dd$Year_collect<-as.numeric(as.character(dd$Year_collect))
+dd$Siteyear<-paste(dd$Site,dd$Year_collect) # for plotting purposes
+dd$Delta<-as.numeric(as.character(dd$Delta))
+
+``` 
+
+Getting Julian days:    
+
+```R
+### messing with dates
+dd$Collection.Date<-as.character(dd$Collection.Date)
+v<-paste(substr(dd$Collection.Date,1,4),"-",substr(dd$Collection.Date,5,6),"-",substr(dd$Collection.Date,7,8))
+dd$Date<-gsub(" ", "", v, fixed = TRUE)
+dd$JulianDay<-as.numeric(format(as.Date(dd$Date),"%j"))
+
+ddply(dd,.(Year_collect),summarize,max=max(JulianDay)) ## finding the latest julian day
+
+dd$Jdaycont<-ifelse(dd$Year_collect==2013,dd$JulianDay,dd$JulianDay+253) ## adding 
+#latest julian day to make it continuous
+```
+
+### Statistics: specifying bayesian model to include all genes, no control genes
+
+```R
+mm=mcmc.qpcr(
+fixed="RIN_Value+Jdaycont*Site*baittemp.ave*Delta",
+random="Vial.me",
+data=dd)
+```
+
+### output
+
+```R
+ Iterations = 3001:12991
+ Thinning interval  = 10
+ Sample size  = 1000 
+
+ DIC: 13001.7 
+
+ G-structure:  ~sample
+
+       post.mean  l-95% CI u-95% CI eff.samp
+sample    0.0292 1.741e-43  0.07663    608.2
+
+               ~idh(gene):Vial.me
+
+                     post.mean  l-95% CI u-95% CI eff.samp
+geneCT_18s.Vial.me    0.001257 3.491e-16 0.004498    40.48
+geneCT_40.Vial.me     0.027512 2.233e-07 0.126707    41.07
+geneCT_70.Vial.me     0.001494 1.029e-13 0.009846    36.60
+geneCT_83.Vial.me     0.005245 1.123e-09 0.021233    40.93
+geneCT_actin.Vial.me  0.003338 4.250e-08 0.020209    25.33
+
+ R-structure:  ~idh(gene):units
+
+                   post.mean l-95% CI u-95% CI eff.samp
+geneCT_18s.units       8.187   6.7688    9.743   1000.0
+geneCT_40.units        1.162   0.9151    1.435    271.7
+geneCT_70.units        2.078   1.7054    2.483   1000.0
+geneCT_83.units        4.406   3.6245    5.385    208.8
+geneCT_actin.units     3.114   2.5009    3.740    809.4
+
+ Location effects: count ~ 0 + gene + +gene:RIN_Value + gene:Jdaycont * Site * baittemp.ave * Delta 
+
+                                                 post.mean   l-95% CI   u-95% CI eff.samp
+geneCT_18s                                      -2.133e+01 -2.668e+01 -1.618e+01   1121.3
+geneCT_40                                       -3.130e+01 -3.629e+01 -2.598e+01   1150.3
+geneCT_70                                       -2.838e+01 -3.349e+01 -2.302e+01   1139.9
+geneCT_83                                       -3.257e+01 -3.746e+01 -2.696e+01   1155.2
+geneCT_actin                                    -3.005e+01 -3.514e+01 -2.487e+01   1159.6
+SiteHF                                           8.902e+00 -8.067e+00  2.217e+01   1000.0
+baittemp.ave                                     1.260e+00  1.054e+00  1.453e+00   1147.9
+Delta                                            1.813e+00  2.477e-01  3.300e+00   1000.0
+geneCT_18s:RIN_Value                             1.818e-01 -5.029e-02  4.004e-01   1000.0
+geneCT_40:RIN_Value                              1.044e-01  1.507e-02  2.070e-01    458.6
+geneCT_70:RIN_Value                              2.444e-01  1.194e-01  3.594e-01   1000.0
+geneCT_83:RIN_Value                              2.985e-01  1.199e-01  4.684e-01   1000.0
+geneCT_actin:RIN_Value                           1.592e-01  1.092e-02  3.006e-01   1000.0
+geneCT_18s:Jdaycont                              1.614e-01  1.377e-01  1.902e-01   1000.0
+geneCT_40:Jdaycont                               1.152e-01  9.677e-02  1.310e-01   1000.0
+geneCT_70:Jdaycont                               1.088e-01  9.180e-02  1.295e-01   1000.0
+geneCT_83:Jdaycont                               1.274e-01  1.028e-01  1.507e-01   1000.0
+geneCT_actin:Jdaycont                            1.258e-01  1.065e-01  1.466e-01   1000.0
+SiteHF:baittemp.ave                             -3.373e-01 -8.651e-01  2.879e-01   1000.0
+SiteHF:Delta                                    -1.691e+00 -5.332e+00  2.575e+00    912.4
+baittemp.ave:Delta                              -7.949e-02 -1.408e-01 -2.348e-02   1000.0
+geneCT_18s:Jdaycont:SiteHF                      -6.293e-02 -1.508e-01  2.361e-02   1000.0
+geneCT_40:Jdaycont:SiteHF                       -3.240e-02 -8.934e-02  2.572e-02   1000.0
+geneCT_70:Jdaycont:SiteHF                       -4.520e-02 -1.026e-01  1.781e-02   1000.0
+geneCT_83:Jdaycont:SiteHF                       -6.173e-02 -1.316e-01  1.224e-02   1000.0
+geneCT_actin:Jdaycont:SiteHF                    -5.739e-02 -1.235e-01  1.120e-02   1000.0
+geneCT_18s:Jdaycont:baittemp.ave                -5.828e-03 -6.852e-03 -4.893e-03   1000.0
+geneCT_40:Jdaycont:baittemp.ave                 -4.200e-03 -4.832e-03 -3.531e-03   1000.0
+geneCT_70:Jdaycont:baittemp.ave                 -4.032e-03 -4.785e-03 -3.365e-03   1104.7
+geneCT_83:Jdaycont:baittemp.ave                 -4.441e-03 -5.307e-03 -3.522e-03   1000.0
+geneCT_actin:Jdaycont:baittemp.ave              -4.509e-03 -5.234e-03 -3.713e-03   1000.0
+geneCT_18s:Jdaycont:Delta                       -1.136e-02 -1.954e-02 -3.116e-03   1000.0
+geneCT_40:Jdaycont:Delta                        -7.652e-03 -1.244e-02 -2.561e-03   1000.0
+geneCT_70:Jdaycont:Delta                        -6.787e-03 -1.287e-02 -1.802e-03   1000.0
+geneCT_83:Jdaycont:Delta                        -6.808e-03 -1.368e-02 -3.982e-04    890.1
+geneCT_actin:Jdaycont:Delta                     -4.889e-03 -1.087e-02  1.344e-03    747.7
+SiteHF:baittemp.ave:Delta                        4.847e-02 -9.596e-02  1.992e-01   1000.0
+geneCT_18s:Jdaycont:SiteHF:baittemp.ave          2.659e-03 -6.000e-04  5.992e-03   1000.0
+geneCT_40:Jdaycont:SiteHF:baittemp.ave           1.274e-03 -8.384e-04  3.507e-03   1000.0
+geneCT_70:Jdaycont:SiteHF:baittemp.ave           1.723e-03 -6.570e-04  3.918e-03   1000.0
+geneCT_83:Jdaycont:SiteHF:baittemp.ave           2.440e-03 -1.164e-04  5.299e-03   1000.0
+geneCT_actin:Jdaycont:SiteHF:baittemp.ave        2.146e-03 -4.782e-04  4.648e-03   1000.0
+geneCT_18s:Jdaycont:SiteHF:Delta                 4.693e-03 -1.550e-02  2.612e-02   1018.7
+geneCT_40:Jdaycont:SiteHF:Delta                  1.524e-03 -1.189e-02  1.431e-02    882.5
+geneCT_70:Jdaycont:SiteHF:Delta                  7.593e-03 -8.370e-03  2.111e-02   1000.0
+geneCT_83:Jdaycont:SiteHF:Delta                  2.915e-03 -1.576e-02  1.984e-02   1000.0
+geneCT_actin:Jdaycont:SiteHF:Delta               5.448e-03 -1.136e-02  2.111e-02   1000.0
+geneCT_18s:Jdaycont:baittemp.ave:Delta           4.781e-04  1.641e-04  7.779e-04   1000.0
+geneCT_40:Jdaycont:baittemp.ave:Delta            3.269e-04  1.358e-04  5.056e-04   1000.0
+geneCT_70:Jdaycont:baittemp.ave:Delta            2.900e-04  1.029e-04  5.131e-04   1000.0
+geneCT_83:Jdaycont:baittemp.ave:Delta            3.028e-04  5.222e-05  5.459e-04    904.2
+geneCT_actin:Jdaycont:baittemp.ave:Delta         2.241e-04  9.050e-06  4.616e-04    749.3
+geneCT_18s:Jdaycont:SiteHF:baittemp.ave:Delta   -1.847e-04 -9.327e-04  6.063e-04   1000.0
+geneCT_40:Jdaycont:SiteHF:baittemp.ave:Delta    -2.955e-05 -5.167e-04  4.537e-04    881.9
+geneCT_70:Jdaycont:SiteHF:baittemp.ave:Delta    -2.312e-04 -7.787e-04  3.257e-04   1000.0
+geneCT_83:Jdaycont:SiteHF:baittemp.ave:Delta    -9.858e-05 -6.929e-04  6.199e-04   1000.0
+geneCT_actin:Jdaycont:SiteHF:baittemp.ave:Delta -1.592e-04 -7.268e-04  4.714e-04   1000.0
+                                                 pMCMC    
+geneCT_18s                                      <0.001 ***
+geneCT_40                                       <0.001 ***
+geneCT_70                                       <0.001 ***
+geneCT_83                                       <0.001 ***
+geneCT_actin                                    <0.001 ***
+SiteHF                                           0.232    
+baittemp.ave                                    <0.001 ***
+Delta                                            0.024 *  
+geneCT_18s:RIN_Value                             0.122    
+geneCT_40:RIN_Value                              0.040 *  
+geneCT_70:RIN_Value                             <0.001 ***
+geneCT_83:RIN_Value                              0.002 ** 
+geneCT_actin:RIN_Value                           0.032 *  
+geneCT_18s:Jdaycont                             <0.001 ***
+geneCT_40:Jdaycont                              <0.001 ***
+geneCT_70:Jdaycont                              <0.001 ***
+geneCT_83:Jdaycont                              <0.001 ***
+geneCT_actin:Jdaycont                           <0.001 ***
+SiteHF:baittemp.ave                              0.236    
+SiteHF:Delta                                     0.420    
+baittemp.ave:Delta                               0.014 *  
+geneCT_18s:Jdaycont:SiteHF                       0.142    
+geneCT_40:Jdaycont:SiteHF                        0.282    
+geneCT_70:Jdaycont:SiteHF                        0.134    
+geneCT_83:Jdaycont:SiteHF                        0.100 .  
+geneCT_actin:Jdaycont:SiteHF                     0.110    
+geneCT_18s:Jdaycont:baittemp.ave                <0.001 ***
+geneCT_40:Jdaycont:baittemp.ave                 <0.001 ***
+geneCT_70:Jdaycont:baittemp.ave                 <0.001 ***
+geneCT_83:Jdaycont:baittemp.ave                 <0.001 ***
+geneCT_actin:Jdaycont:baittemp.ave              <0.001 ***
+geneCT_18s:Jdaycont:Delta                        0.004 ** 
+geneCT_40:Jdaycont:Delta                         0.002 ** 
+geneCT_70:Jdaycont:Delta                         0.020 *  
+geneCT_83:Jdaycont:Delta                         0.044 *  
+geneCT_actin:Jdaycont:Delta                      0.146    
+SiteHF:baittemp.ave:Delta                        0.540    
+geneCT_18s:Jdaycont:SiteHF:baittemp.ave          0.098 .  
+geneCT_40:Jdaycont:SiteHF:baittemp.ave           0.266    
+geneCT_70:Jdaycont:SiteHF:baittemp.ave           0.130    
+geneCT_83:Jdaycont:SiteHF:baittemp.ave           0.080 .  
+geneCT_actin:Jdaycont:SiteHF:baittemp.ave        0.114    
+geneCT_18s:Jdaycont:SiteHF:Delta                 0.688    
+geneCT_40:Jdaycont:SiteHF:Delta                  0.840    
+geneCT_70:Jdaycont:SiteHF:Delta                  0.330    
+geneCT_83:Jdaycont:SiteHF:Delta                  0.728    
+geneCT_actin:Jdaycont:SiteHF:Delta               0.520    
+geneCT_18s:Jdaycont:baittemp.ave:Delta          <0.001 ***
+geneCT_40:Jdaycont:baittemp.ave:Delta           <0.001 ***
+geneCT_70:Jdaycont:baittemp.ave:Delta            0.010 *  
+geneCT_83:Jdaycont:baittemp.ave:Delta            0.016 *  
+geneCT_actin:Jdaycont:baittemp.ave:Delta         0.068 .  
+geneCT_18s:Jdaycont:SiteHF:baittemp.ave:Delta    0.654    
+geneCT_40:Jdaycont:SiteHF:baittemp.ave:Delta     0.902    
+geneCT_70:Jdaycont:SiteHF:baittemp.ave:Delta     0.430    
+geneCT_83:Jdaycont:SiteHF:baittemp.ave:Delta     0.756    
+geneCT_actin:Jdaycont:SiteHF:baittemp.ave:Delta  0.620    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+"control genes" are not stable...or constant across treatments    
+
+model diagnostics    
+
+![](https://cloud.githubusercontent.com/assets/4654474/25568339/9e962e6c-2dce-11e7-8992-f83ba65ba21f.jpeg)
+  
+  
+### Statistics: fitting with control genes 
+
+```R
+mm2=mcmc.qpcr(
+fixed="RIN_Value+Jdaycont*Site*baittemp.ave*Delta",
+random="Vial.me", controls=c("CT_18s","CTactin"),
+data=dd)
+summary(mm2)
+```
+  
+Output:   
+
+```R
+ Iterations = 3001:12991
+ Thinning interval  = 10
+ Sample size  = 1000 
+
+ DIC: 12982.46 
+
+ G-structure:  ~sample
+
+       post.mean  l-95% CI  u-95% CI eff.samp
+sample   0.06628 2.181e-54 6.863e-05     1000
+
+               ~idh(gene):Vial.me
+
+                     post.mean  l-95% CI u-95% CI eff.samp
+geneCT_40.Vial.me      0.01051 5.492e-08  0.06105    13.28
+geneCT_70.Vial.me      0.22941 1.663e-04  0.78709    37.78
+geneCT_83.Vial.me      0.59330 4.545e-07  2.71722    11.88
+geneCT_actin.Vial.me   0.27245 1.185e-06  1.28528    13.71
+geneCT_18s.Vial.me     0.03488 4.961e-20  0.06262    28.64
+
+ R-structure:  ~idh(gene):units
+
+                   post.mean l-95% CI u-95% CI eff.samp
+geneCT_40.units        1.190   0.9469    1.459   587.04
+geneCT_70.units        1.871   1.2816    2.486    79.41
+geneCT_83.units        3.884   1.7517    5.411    21.65
+geneCT_actin.units     2.852   1.7793    3.839    23.67
+geneCT_18s.units       8.109   6.6364    9.655   908.67
+
+ Location effects: count ~ 0 + gene + +gene:RIN_Value + gene:Jdaycont * Site * baittemp.ave * Delta 
+
+                                                 post.mean   l-95% CI   u-95% CI eff.samp  pMCMC    
+geneCT_40                                       -3.107e+01 -3.559e+01 -2.616e+01   1000.0 <0.001 ***
+geneCT_70                                       -2.817e+01 -3.312e+01 -2.354e+01   1022.4 <0.001 ***
+geneCT_83                                       -3.231e+01 -3.692e+01 -2.722e+01   1000.0 <0.001 ***
+geneCT_actin                                    -2.982e+01 -3.456e+01 -2.496e+01   1057.2 <0.001 ***
+geneCT_18s                                      -2.112e+01 -2.561e+01 -1.617e+01   1000.0 <0.001 ***
+SiteHF                                           8.508e+00 -6.382e+00  2.209e+01   1000.0  0.250    
+baittemp.ave                                     1.251e+00  1.050e+00  1.419e+00   1000.0 <0.001 ***
+Delta                                            1.712e+00  2.057e-01  3.224e+00   1000.0  0.034 *  
+geneCT_40:RIN_Value                              9.921e-02 -4.455e-03  1.961e-01   1000.0  0.062 .  
+geneCT_70:RIN_Value                              2.465e-01  1.478e-01  3.764e-01   1000.0 <0.001 ***
+geneCT_83:RIN_Value                              2.911e-01  1.060e-01  4.576e-01   1000.0  0.002 ** 
+geneCT_actin:RIN_Value                           1.520e-01  1.671e-03  2.945e-01   1000.0  0.050 .  
+geneCT_18s:RIN_Value                             1.747e-01 -4.381e-02  4.105e-01   1000.0  0.134    
+geneCT_40:Jdaycont                               1.145e-01  9.705e-02  1.315e-01    979.5 <0.001 ***
+geneCT_70:Jdaycont                               1.083e-01  8.998e-02  1.263e-01   1000.0 <0.001 ***
+geneCT_83:Jdaycont                               1.272e-01  1.059e-01  1.501e-01    843.5 <0.001 ***
+geneCT_actin:Jdaycont                            1.255e-01  1.066e-01  1.468e-01   1103.4 <0.001 ***
+geneCT_18s:Jdaycont                              1.609e-01  1.345e-01  1.875e-01    912.4 <0.001 ***
+SiteHF:baittemp.ave                             -3.221e-01 -8.854e-01  2.107e-01   1000.0  0.248    
+SiteHF:Delta                                    -1.603e+00 -5.566e+00  1.967e+00    890.2  0.404    
+baittemp.ave:Delta                              -7.549e-02 -1.310e-01 -1.567e-02   1000.0  0.010 ** 
+geneCT_40:Jdaycont:SiteHF                       -2.990e-02 -8.217e-02  2.259e-02    967.4  0.298    
+geneCT_70:Jdaycont:SiteHF                       -4.375e-02 -1.042e-01  1.393e-02   1000.0  0.134    
+geneCT_83:Jdaycont:SiteHF                       -6.178e-02 -1.275e-01  1.679e-02   1000.0  0.096 .  
+geneCT_actin:Jdaycont:SiteHF                    -5.675e-02 -1.209e-01  6.528e-03   1000.0  0.076 .  
+geneCT_18s:Jdaycont:SiteHF                      -5.912e-02 -1.412e-01  2.562e-02   1000.0  0.172    
+geneCT_40:Jdaycont:baittemp.ave                 -4.167e-03 -4.829e-03 -3.517e-03   1000.0 <0.001 ***
+geneCT_70:Jdaycont:baittemp.ave                 -4.012e-03 -4.651e-03 -3.302e-03   1000.0 <0.001 ***
+geneCT_83:Jdaycont:baittemp.ave                 -4.431e-03 -5.231e-03 -3.613e-03   1000.0 <0.001 ***
+geneCT_actin:Jdaycont:baittemp.ave              -4.495e-03 -5.236e-03 -3.742e-03   1000.0 <0.001 ***
+geneCT_18s:Jdaycont:baittemp.ave                -5.801e-03 -6.805e-03 -4.873e-03    874.7 <0.001 ***
+geneCT_40:Jdaycont:Delta                        -7.386e-03 -1.297e-02 -2.928e-03   1000.0  0.004 ** 
+geneCT_70:Jdaycont:Delta                        -6.513e-03 -1.160e-02 -5.976e-04   1000.0  0.016 *  
+geneCT_83:Jdaycont:Delta                        -6.738e-03 -1.344e-02 -1.580e-04   1000.0  0.050 *  
+geneCT_actin:Jdaycont:Delta                     -4.677e-03 -1.078e-02  9.420e-04   1000.0  0.126    
+geneCT_18s:Jdaycont:Delta                       -1.088e-02 -1.775e-02 -2.091e-03    913.1  0.006 ** 
+SiteHF:baittemp.ave:Delta                        4.473e-02 -9.274e-02  1.865e-01    883.6  0.540    
+geneCT_40:Jdaycont:SiteHF:baittemp.ave           1.180e-03 -8.438e-04  3.177e-03    953.9  0.268    
+geneCT_70:Jdaycont:SiteHF:baittemp.ave           1.667e-03 -4.613e-04  4.046e-03   1000.0  0.146    
+geneCT_83:Jdaycont:SiteHF:baittemp.ave           2.443e-03 -5.353e-04  4.971e-03   1000.0  0.080 .  
+geneCT_actin:Jdaycont:SiteHF:baittemp.ave        2.120e-03 -2.446e-04  4.658e-03   1000.0  0.080 .  
+geneCT_18s:Jdaycont:SiteHF:baittemp.ave          2.511e-03 -7.564e-04  5.644e-03   1000.0  0.138    
+geneCT_40:Jdaycont:SiteHF:Delta                  1.144e-03 -1.164e-02  1.390e-02    911.9  0.846    
+geneCT_70:Jdaycont:SiteHF:Delta                  7.344e-03 -6.505e-03  2.243e-02    780.1  0.320    
+geneCT_83:Jdaycont:SiteHF:Delta                  2.850e-03 -1.492e-02  1.992e-02    706.7  0.758    
+geneCT_actin:Jdaycont:SiteHF:Delta               5.225e-03 -1.075e-02  2.028e-02    904.6  0.516    
+geneCT_18s:Jdaycont:SiteHF:Delta                 3.949e-03 -1.684e-02  2.472e-02   1118.7  0.712    
+geneCT_40:Jdaycont:baittemp.ave:Delta            3.160e-04  1.453e-04  5.166e-04   1000.0  0.002 ** 
+geneCT_70:Jdaycont:baittemp.ave:Delta            2.795e-04  7.007e-05  4.703e-04   1000.0  0.006 ** 
+geneCT_83:Jdaycont:baittemp.ave:Delta            2.992e-04  6.755e-05  5.555e-04   1000.0  0.020 *  
+geneCT_actin:Jdaycont:baittemp.ave:Delta         2.154e-04 -1.270e-05  4.238e-04   1000.0  0.048 *  
+geneCT_18s:Jdaycont:baittemp.ave:Delta           4.596e-04  1.451e-04  7.155e-04    905.2  0.004 ** 
+geneCT_40:Jdaycont:SiteHF:baittemp.ave:Delta    -1.369e-05 -4.662e-04  4.803e-04    896.1  0.958    
+geneCT_70:Jdaycont:SiteHF:baittemp.ave:Delta    -2.208e-04 -7.666e-04  2.911e-04    807.4  0.426    
+geneCT_83:Jdaycont:SiteHF:baittemp.ave:Delta    -9.532e-05 -6.881e-04  5.898e-04    696.0  0.790    
+geneCT_actin:Jdaycont:SiteHF:baittemp.ave:Delta -1.489e-04 -7.156e-04  4.260e-04    899.7  0.634    
+geneCT_18s:Jdaycont:SiteHF:baittemp.ave:Delta   -1.549e-04 -9.061e-04  6.138e-04   1116.7  0.702    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```  
+  
+### Statistics: "Classic" model (delta delta ct) with control genes 
+
+
+```R
+summary(classicmod)
+
+ Iterations = 3001:12991
+ Thinning interval  = 10
+ Sample size  = 1000 
+
+ DIC: 4920.499 
+
+ G-structure:  ~idh(gene):Vial.me
+
+                     post.mean  l-95% CI u-95% CI eff.samp
+geneCT_40.Vial.me     0.005448 2.373e-14  0.02023    39.20
+geneCT_70.Vial.me     0.009244 1.900e-09  0.06938    15.33
+geneCT_83.Vial.me     3.759275 2.403e+00  5.27956   795.80
+geneCT_actin.Vial.me  1.428124 4.243e-01  2.41822   297.78
+geneCT_18s.Vial.me    6.480444 4.572e+00  8.27869   882.87
+
+               ~idh(gene):sample
+
+                    post.mean   l-95% CI  u-95% CI eff.samp
+geneCT_40.sample    7.525e-04  5.851e-59 6.254e-08   1000.0
+geneCT_70.sample    1.611e-02  2.763e-59 2.056e-02    808.5
+geneCT_83.sample    2.277e-40 2.463e-138 1.892e-46      0.0
+geneCT_actin.sample 8.960e-04  9.595e-62 3.760e-07    488.2
+geneCT_18s.sample   2.551e-02  5.330e-65 1.510e-02    812.1
+
+ R-structure:  ~units
+
+      post.mean l-95% CI u-95% CI eff.samp
+units     3.251    2.838    3.664    662.3
+
+ Location effects: count ~ 0 + gene + +gene:RIN_Value + gene:Site * Jdaycont * Delta 
+
+                                    post.mean   l-95% CI   u-95% CI eff.samp  pMCMC    
+geneCT_40                          -2.6284204 -3.7176141 -1.4323167    879.9 <0.001 ***
+geneCT_70                          -3.2528194 -4.3525418 -2.0888514   1000.0 <0.001 ***
+geneCT_83                          -5.3863914 -7.0044499 -3.6856766   1000.0 <0.001 ***
+geneCT_actin                       -3.5034426 -4.7385966 -2.0511151   1150.8 <0.001 ***
+geneCT_18s                         -4.1354609 -6.0388715 -2.1572579   1000.0 <0.001 ***
+Jdaycont                            0.0069301 -0.0022933  0.0161707   1000.0  0.156    
+Delta                              -1.0012178 -1.7488433  0.0055000   1000.0  0.028 *  
+geneCT_40:RIN_Value                 0.2189257  0.0713273  0.3608404   1000.0  0.004 ** 
+geneCT_70:RIN_Value                 0.3380169  0.1844881  0.4760341   1000.0 <0.001 ***
+geneCT_83:RIN_Value                 0.4467853  0.2559811  0.6592500   1000.0 <0.001 ***
+geneCT_actin:RIN_Value              0.3079191  0.1534536  0.4931644   1000.0 <0.001 ***
+geneCT_18s:RIN_Value                0.3417462  0.1006646  0.5934699   1000.0  0.008 ** 
+geneCT_40:SiteHF                   -0.1231226 -1.9166395  2.0395052   1000.0  0.918    
+geneCT_70:SiteHF                    1.5101947 -0.4924095  3.4462324    892.6  0.126    
+geneCT_83:SiteHF                   -1.1804353 -4.2953270  1.6625582   1000.0  0.496    
+geneCT_actin:SiteHF                -0.1028772 -2.7037113  2.3326229    870.1  0.922    
+geneCT_18s:SiteHF                   2.1563027 -1.3683731  5.5980660   1000.0  0.244    
+Jdaycont:Delta                      0.0020503 -0.0008895  0.0044592   1000.0  0.132    
+geneCT_40:SiteDF:Jdaycont          -0.0028295 -0.0141627  0.0061651   1000.0  0.592    
+geneCT_70:SiteDF:Jdaycont          -0.0029284 -0.0130408  0.0068426   1000.0  0.584    
+geneCT_83:SiteDF:Jdaycont           0.0019250 -0.0073718  0.0139120   1000.0  0.722    
+geneCT_actin:SiteDF:Jdaycont       -0.0004737 -0.0103707  0.0100169   1000.0  0.944    
+geneCT_18s:SiteDF:Jdaycont         -0.0012918 -0.0123587  0.0089910   1000.0  0.822    
+geneCT_40:SiteHF:Jdaycont          -0.0006130 -0.0113985  0.0103346   1000.0  0.894    
+geneCT_70:SiteHF:Jdaycont          -0.0062379 -0.0176881  0.0048022   1000.0  0.280    
+geneCT_83:SiteHF:Jdaycont           0.0080759 -0.0042720  0.0206776   1000.0  0.214    
+geneCT_actin:SiteHF:Jdaycont       -0.0006060 -0.0120543  0.0114044   1000.0  0.964    
+geneCT_40:SiteDF:Delta              0.8353265 -0.0849807  1.7891522   1000.0  0.090 .  
+geneCT_70:SiteDF:Delta              0.9272206 -0.1068245  1.8419725   1000.0  0.066 .  
+geneCT_83:SiteDF:Delta              0.8385269 -0.2175849  1.8485020   1000.0  0.118    
+geneCT_actin:SiteDF:Delta           1.0904933 -0.0078081  1.9762069   1000.0  0.032 *  
+geneCT_18s:SiteDF:Delta             0.7533491 -0.3674505  1.8339046   1000.0  0.188    
+geneCT_40:SiteHF:Delta              0.6427846 -0.3309434  1.6253035   1000.0  0.222    
+geneCT_70:SiteHF:Delta              0.5351106 -0.4302433  1.5825929   1000.0  0.298    
+geneCT_83:SiteHF:Delta              0.7188371 -0.3859249  1.9097256   1000.0  0.230    
+geneCT_actin:SiteHF:Delta           0.5040863 -0.6524067  1.4469885   1000.0  0.362    
+geneCT_40:SiteDF:Jdaycont:Delta    -0.0014557 -0.0041871  0.0013708   1000.0  0.284    
+geneCT_70:SiteDF:Jdaycont:Delta    -0.0018350 -0.0043511  0.0014005   1000.0  0.214    
+geneCT_83:SiteDF:Jdaycont:Delta    -0.0013770 -0.0046490  0.0014063   1000.0  0.378    
+geneCT_actin:SiteDF:Jdaycont:Delta -0.0023920 -0.0055308  0.0004937   1000.0  0.126    
+geneCT_18s:SiteDF:Jdaycont:Delta   -0.0010735 -0.0043216  0.0021393   1000.0  0.494    
+geneCT_40:SiteHF:Jdaycont:Delta    -0.0010914 -0.0040039  0.0019467   1000.0  0.496    
+geneCT_70:SiteHF:Jdaycont:Delta    -0.0003770 -0.0032484  0.0029631   1000.0  0.820    
+geneCT_83:SiteHF:Jdaycont:Delta    -0.0012333 -0.0048577  0.0022097   1000.0  0.498    
+geneCT_actin:SiteHF:Jdaycont:Delta -0.0004587 -0.0036330  0.0028876   1000.0  0.764    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+```
+
+
+Yeah non of this is right...vial.me should not be a random effect.    
+
+Also, how do I deal with the fact that the chambers are repeatedly sampled? I have to include a repeated measures aspect into model.  
 
 ------
 
