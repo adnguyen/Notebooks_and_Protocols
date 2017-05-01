@@ -99,7 +99,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 71: 2017-04-26](#id-section71). Climate cascade meeting: Project updates; to do list
 * [Page 72: 2017-04-28](#id-section72). Stressed in nature project: data analysis
 * [Page 73: 2017-04-30](#id-section73). Stressed in nature project: Re-analysis
-* [Page 74:](#id-section74).
+* [Page 74: 2017-05-01](#id-section74). Stressed in nature project: re-analysis
 * [Page 75:](#id-section75).
 * [Page 76:](#id-section76).
 * [Page 77:](#id-section77).
@@ -6198,7 +6198,69 @@ Other varibles:
 
  <div id='id-section74'/> 
 
-### Page 74:  
+### Page 74: 2017-05-01. Stressed in nature project: re-analysis   
+
+**I dont have enough samples per chamber to include it as a random effect.**    
+
+```R
+sumda<-ddply(dd,.(Site,Collection.Date,Delta,Cham,gene),summarize,num=length(Date))
+> range(sumda$num)
+[1] 1 3
+```
+I'll need to average the genes.   
+
+```R
+ddave<-ddply(dd,.(Site,Year_collect,Collection.Date,Delta,gene,Cham),summarize,count=mean(count),RIN_Value=mean(RIN_Value),baittemp.ave=mean(baittemp.ave))
+'data.frame':	454 obs. of  9 variables:
+ $ Site           : Factor w/ 2 levels "DF","HF": 1 1 1 1 1 1 1 1 1 1 ...
+ $ Year_collect   : num  2013 2013 2013 2013 2013 ...
+ $ Collection.Date: Factor w/ 7 levels "20130626","20130702",..: 2 2 2 2 2 2 2 2 2 2 ...
+ $ Delta          : num  0 0 0 0 0 0 0 0 0 0 ...
+ $ gene           : Factor w/ 5 levels "CT_18s","CT_40",..: 1 1 1 1 1 1 2 2 2 2 ...
+ $ Cham           : Factor w/ 15 levels "1","2","3","4",..: 2 5 11 13 14 15 2 5 11 13 ...
+ $ count          : num  1172618 579994 1640821 11910265 737550 ...
+ $ RIN_Value      : num  4.9 2.87 2.7 2.67 1.87 ...
+ $ baittemp.ave   : num  23.2 23.8 23.3 23.4 23.8 ...
+```
+
+Models don't converge when testing for ...  
+
+```R
+mod22<-glm(log(count+1)~RIN_Value+Site*baittemp.ave*Year_collect*Delta,family=poisson,data=gxp70)
+```
+
+
+Parsing out hsp70 to visualize:   
+
+###  counts vs bait temp colored by year
+
+![](https://cloud.githubusercontent.com/assets/4654474/25594598/44816218-2e8f-11e7-9717-b269d58f9c7a.jpeg)  
+
+### counts vs bait temp colored by site and colleciton
+
+![](https://cloud.githubusercontent.com/assets/4654474/25594657/86396e44-2e8f-11e7-8fe9-cfed62bc6c13.jpeg)
+
+### coutns vs julian day colored by site
+
+![](https://cloud.githubusercontent.com/assets/4654474/25595035/4c25a630-2e91-11e7-9a9f-ac22670cb80a.jpeg)
+
+
+# OK SHOWING ALL GENES   
+
+### counts vs bait   
+
+![](https://cloud.githubusercontent.com/assets/4654474/25596104/805506c2-2e95-11e7-8b2e-5918774a44f5.jpeg)
+
+
+### counts vs delta    
+
+![](https://cloud.githubusercontent.com/assets/4654474/25596162/d777a2f2-2e95-11e7-9c01-21ae614a110a.jpeg)    
+
+
+### coutns vs julian day    
+
+![](https://cloud.githubusercontent.com/assets/4654474/25596226/271dd7f4-2e96-11e7-9e0b-9ad30ffdb773.jpeg)
+
 
 ------
 
