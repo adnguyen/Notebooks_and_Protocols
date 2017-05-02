@@ -6329,6 +6329,14 @@ ggplot(dd,aes(x=JulianDay,y=log(count+1),color=Site))+geom_point()+geom_smooth(s
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25625515/b37f8c44-2f2a-11e7-8f96-6b90ab7fcce1.jpeg)
 
+
+### Site level differences    
+
+```R
+ggplot(dd,aes(x=baittemp.ave,y=log(count+1),color=gene))+geom_point()+geom_smooth(method="lm",se=FALSE)+facet_grid(.~Site)
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25626869/dc0f44fc-2f2e-11e7-95ee-dcd8657acb84.jpeg)
 ------
 
  <div id='id-section75'/> 
