@@ -6262,7 +6262,7 @@ Parsing out hsp70 to visualize:
 ### counts vs bait   
 
 ```R
-ggplot(dd,aes(x=baittemp.ave,y=log(count+1),colour=paste(Year_collect,Collection.Date,Site)))+geom_point(size=0.5)+stat_smooth(size=3,method="lm",se=FALSE)+facet_grid(.~gene)
+ggplot(dd,aes(x=baittemp.ave,y=log(count+1),colour=paste(Year_collect,Collection.Date,Site)))+geom_point(size=0.5)+stat_smooth(size=3,method="lm",se=FALSE)+facet_grid(.~gene) 
 ```
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25622159/8c3fccce-2f21-11e7-8606-677623552d5a.jpeg)
@@ -6279,13 +6279,55 @@ ggplot(dd,aes(x=Delta,y=log(count+1),colour=paste(Year_collect,Collection.Date,S
 
 ### coutns vs julian day    
 
+numbers for each collection day
 ```R
-ggplot(dd,aes(x=factor(Jdaycont),y=log(count+1),color=Site))+geom_boxplot()
+summary(factor(dd$Jdaycont))
+177 183 233 253 563 589 619 
+143 251 192 230 240 164 136 
+
+ddply(dd,.(Site,JulianDay),summarize,length(Delta))
+  Site JulianDay length(Delta)
+1   DF       183           251
+2   DF       198           240
+3   DF       253           230
+4   DF       254           136
+5   HF       177           143
+6   HF       224           164
+7   HF       233           192
+
+ddply(dd,.(Site,Year_collect,JulianDay),summarize,length(Delta))
+  Site Year_collect JulianDay length(Delta)
+1   DF         2013       183           251
+2   DF         2013       253           230
+3   DF         2014       198           240
+4   DF         2014       254           136
+5   HF         2013       177           143
+6   HF         2013       233           192
+7   HF         2014       224           164
 ```
 
-![](https://cloud.githubusercontent.com/assets/4654474/25622781/97f7d97e-2f23-11e7-96eb-737c28c85b30.jpeg)
+### plots by continuous days
 
+```R
+ggplot(dd,aes(x=factor(Jdaycont),y=log(count+1),color=Site))+
+geom_boxplot()+facet_grid(.~gene)
+```
 
+![](https://cloud.githubusercontent.com/assets/4654474/25624014/31c2b374-2f26-11e7-9d0d-0d19580cc94e.jpeg)
+
+```R
+ggplot(dd,aes(x=Jdaycont,y=log(count+1),color=Site))+geom_point()+stat_smooth()+facet_grid(.~gene)
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25624134/81fa07de-2f26-11e7-8a04-8a67f344614a.jpeg)
+
+### plot just by day
+
+```R
+ggplot(dd,aes(x=JulianDay,y=log(count+1),color=Site))+geom_point()+geom_smooth(se=FALSE)+facet_grid(.~gene)
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25625515/b37f8c44-2f2a-11e7-8f96-6b90ab7fcce1.jpeg)
 
 ------
 
