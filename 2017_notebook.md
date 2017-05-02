@@ -6198,7 +6198,7 @@ Other varibles:
 
  <div id='id-section74'/> 
 
-### Page 74: 2017-05-01. Stressed in nature project: re-analysis   
+### Page 74: 2017-05-01 & 2017-05-02. Stressed in nature project: re-analysis   
 
 **I dont have enough samples per chamber to include it as a random effect.**    
 
@@ -6222,6 +6222,18 @@ ddave<-ddply(dd,.(Site,Year_collect,Collection.Date,Delta,gene,Cham),summarize,c
  $ RIN_Value      : num  4.9 2.87 2.7 2.67 1.87 ...
  $ baittemp.ave   : num  23.2 23.8 23.3 23.4 23.8 ...
 ```
+
+### Figures for environmental conditions   
+
+bait temp vs julian day
+
+![](https://cloud.githubusercontent.com/assets/4654474/25621287/fb2ee67c-2f1e-11e7-9262-656fbe5689ba.jpeg)
+
+plot with bait temp vs delta; colored by year, collection date, site
+
+![](https://cloud.githubusercontent.com/assets/4654474/25621567/ba89ccee-2f1f-11e7-894a-a975a97d7b46.jpeg)   
+
+![](https://cloud.githubusercontent.com/assets/4654474/25621926/dd38a1b0-2f20-11e7-9db7-39aac71568ec.jpeg)
 
 Models don't converge when testing for ...  
 
@@ -6249,17 +6261,26 @@ Parsing out hsp70 to visualize:
 
 ### counts vs bait   
 
-![](https://cloud.githubusercontent.com/assets/4654474/25596104/805506c2-2e95-11e7-8b2e-5918774a44f5.jpeg)
+```R
+ggplot(dd,aes(x=baittemp.ave,y=log(count+1),colour=paste(Year_collect,Collection.Date,Site)))+geom_point(size=0.5)+stat_smooth(size=3,method="lm",se=FALSE)+facet_grid(.~gene)
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25622159/8c3fccce-2f21-11e7-8606-677623552d5a.jpeg)
 
 
 ### counts vs delta    
 
-![](https://cloud.githubusercontent.com/assets/4654474/25596162/d777a2f2-2e95-11e7-9c01-21ae614a110a.jpeg)    
+```R
+ggplot(dd,aes(x=Delta,y=log(count+1),colour=paste(Year_collect,Collection.Date,Site)))+geom_point(size=0.5)+stat_smooth(size=3,method="lm",se=FALSE)+facet_grid(.~gene)
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25622267/e1302436-2f21-11e7-977d-60c4fa7db45c.jpeg)    
 
 
 ### coutns vs julian day    
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25596226/271dd7f4-2e96-11e7-9e0b-9ad30ffdb773.jpeg)
+
 
 
 ------
