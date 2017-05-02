@@ -6279,7 +6279,11 @@ ggplot(dd,aes(x=Delta,y=log(count+1),colour=paste(Year_collect,Collection.Date,S
 
 ### coutns vs julian day    
 
-![](https://cloud.githubusercontent.com/assets/4654474/25596226/271dd7f4-2e96-11e7-9e0b-9ad30ffdb773.jpeg)
+```R
+ggplot(dd,aes(x=factor(Jdaycont),y=log(count+1),color=Site))+geom_boxplot()
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25622781/97f7d97e-2f23-11e7-96eb-737c28c85b30.jpeg)
 
 
 
