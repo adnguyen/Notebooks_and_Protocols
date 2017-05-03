@@ -100,7 +100,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 72: 2017-04-28](#id-section72). Stressed in nature project: data analysis
 * [Page 73: 2017-04-30](#id-section73). Stressed in nature project: Re-analysis
 * [Page 74: 2017-05-01](#id-section74). Stressed in nature project: re-analysis
-* [Page 75:](#id-section75).
+* [Page 75: 2017-05-03](#id-section75). Stressed in nature project: Analyses...again    
 * [Page 76:](#id-section76).
 * [Page 77:](#id-section77).
 * [Page 78:](#id-section78).
@@ -6341,7 +6341,129 @@ ggplot(dd,aes(x=baittemp.ave,y=log(count+1),color=gene))+geom_point()+geom_smoot
 
  <div id='id-section75'/> 
 
-### Page 75:  
+### Page 75: 2017-05-03. Stressed in nature project: Analyses...again      
+
+Using mcmc.qpcr package. 
+
+### Model 1: Testing for site by temperature interaction while controlling for season
+
+Model testing for the effect of Site by bait temp and site by delta, controlling for RIN and Julian Day (globla fixed effects); including chamber as a random effect. 
+
+* Fixed effects: Site * bait + Site * Delta
+* Global fixed effects: RIN value (rna quality) and Julian Day continuous
+* Random factor: Chamber
+
+```R
+mm=mcmc.qpcr(
+fixed="Site*baittemp.ave+Site*Delta",
+random=c("Cham"),globalFixed=c("RIN_Value","Jdaycont"),
+data=dd,pr=TRUE,vprior="iw",nitt=50000,geneSpecRes = TRUE,pl=TRUE)
+summary(mm)
+```  
+
+### Model 1 output    
+
+```R
+Iterations = 3001:49991
+ Thinning interval  = 10
+ Sample size  = 4700 
+
+ DIC: 15013.3 
+
+ G-structure:  ~sample
+
+       post.mean l-95% CI u-95% CI eff.samp
+sample     2.971    2.338    3.624     3132
+
+               ~idh(gene):Cham
+
+                  post.mean l-95% CI u-95% CI eff.samp
+geneCT_18s.Cham      0.5831   0.1978   1.0303     4700
+geneCT_40.Cham       0.3985   0.1705   0.7036     4811
+geneCT_70.Cham       0.3942   0.1666   0.6862     4700
+geneCT_83.Cham       0.4886   0.2011   0.8666     4700
+geneCT_actin.Cham    0.4596   0.1884   0.8179     4996
+geneCT_gapdh.Cham    0.5304   0.1953   0.9395     4700
+
+ R-structure:  ~idh(gene):units
+
+                   post.mean l-95% CI u-95% CI eff.samp
+geneCT_18s.units      4.7506   3.7644   5.6788     4700
+geneCT_40.units       0.4917   0.3377   0.6555     2027
+geneCT_70.units       0.7914   0.6072   0.9920     3157
+geneCT_83.units       2.1489   1.6681   2.6629     1060
+geneCT_actin.units    1.2714   0.9745   1.5733     2346
+geneCT_gapdh.units    1.7054   1.3214   2.1022     2197
+
+ Location effects: count ~ 0 + gene + RIN_Value + Jdaycont + +gene:Site * baittemp.ave + gene:Site * Delta 
+
+                                  post.mean   l-95% CI   u-95% CI eff.samp   pMCMC    
+geneCT_18s                        16.110765  12.281529  19.996436     4700 < 2e-04 ***
+geneCT_40                         -2.531363  -4.724173  -0.348647     3418 0.02170 *  
+geneCT_70                         -1.967982  -4.259055   0.126263     3489 0.07404 .  
+geneCT_83                         -4.654332  -7.732704  -1.898907     3394 0.00213 ** 
+geneCT_actin                       1.126526  -1.291423   3.750314     3925 0.36681    
+geneCT_gapdh                       0.552040  -2.374267   3.209835     4382 0.68936    
+RIN_Value                          0.199144   0.079509   0.314567     4253 < 2e-04 ***
+Jdaycont                           0.006478   0.004881   0.008213     4700 < 2e-04 ***
+baittemp.ave                       0.040939  -0.247876   0.344168     4700 0.80255    
+Delta                             -0.112723  -0.400060   0.198869     4700 0.47489    
+geneCT_18s:SiteHF                 -8.646499 -19.103973   2.627596     4932 0.11277    
+geneCT_40:SiteHF                  -5.705043 -13.030149   1.312838     4172 0.12511    
+geneCT_70:SiteHF                  -3.986178 -11.408322   3.139362     4700 0.28638    
+geneCT_83:SiteHF                 -11.059021 -19.950986  -2.446486     2618 0.01447 *  
+geneCT_actin:SiteHF               -5.294406 -13.214177   2.828587     4700 0.18426    
+geneCT_gapdh:SiteHF                1.198255  -6.731170   9.986804     4021 0.78298    
+geneCT_18s:SiteDF:baittemp.ave    -0.215198  -0.549081   0.125987     4700 0.20511    
+geneCT_40:SiteDF:baittemp.ave      0.052836  -0.250665   0.373404     4700 0.74894    
+geneCT_70:SiteDF:baittemp.ave      0.151878  -0.162515   0.459935     4700 0.35064    
+geneCT_83:SiteDF:baittemp.ave      0.202728  -0.118489   0.515906     4067 0.20809    
+geneCT_actin:SiteDF:baittemp.ave   0.007118  -0.314216   0.317920     4700 0.95447    
+geneCT_gapdh:SiteDF:baittemp.ave   0.027289  -0.276939   0.361853     4102 0.87106    
+geneCT_18s:SiteHF:baittemp.ave     0.213395  -0.135902   0.543047     4418 0.21830    
+geneCT_40:SiteHF:baittemp.ave      0.302935   0.085426   0.506891     3002 0.01021 *  
+geneCT_70:SiteHF:baittemp.ave      0.330920   0.091069   0.539425     3979 0.00511 ** 
+geneCT_83:SiteHF:baittemp.ave      0.648529   0.382448   0.926608     2402 < 2e-04 ***
+geneCT_actin:SiteHF:baittemp.ave   0.201615  -0.048443   0.451531     3650 0.11660    
+geneCT_18s:SiteDF:Delta            0.232695  -0.186446   0.635062     4700 0.26596    
+geneCT_40:SiteDF:Delta             0.116132  -0.245279   0.480588     4700 0.53617    
+geneCT_70:SiteDF:Delta             0.047066  -0.308663   0.421765     4700 0.79745    
+geneCT_83:SiteDF:Delta             0.204531  -0.174726   0.591889     4700 0.28723    
+geneCT_actin:SiteDF:Delta          0.070546  -0.317046   0.432616     4700 0.71787    
+geneCT_gapdh:SiteDF:Delta          0.248740  -0.106857   0.664952     4700 0.20851    
+geneCT_18s:SiteHF:Delta           -0.298719  -0.669543   0.080339     4700 0.11872    
+geneCT_40:SiteHF:Delta            -0.140106  -0.379562   0.099732     3397 0.26298    
+geneCT_70:SiteHF:Delta            -0.062122  -0.301972   0.191591     4311 0.63106    
+geneCT_83:SiteHF:Delta            -0.155097  -0.457374   0.136096     4052 0.31745    
+geneCT_actin:SiteHF:Delta          0.031560  -0.229501   0.318134     4183 0.80255    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+diagnostics:  
+
+![](https://cloud.githubusercontent.com/assets/4654474/25673382/327b2faa-3005-11e7-85b5-b377bea46a0c.jpeg)
+
+### Model 2: Testing for site by temperature by season (julian day) interaction 
+
+Model testing for effect of Site by bait temp by julian day continuous; controlling for RIN and including chamber as a random effect
+* Fixed effects: Site * bait + Site * Delta
+* Global fixed effects: RIN value (rna quality) and Julian Day continuous
+* Random factor: Chamber
+
+```R
+mm2=mcmc.qpcr(
+fixed="Site*baittemp.ave*Jdaycont",
+random=c("Cham"),globalFixed=c("RIN_Value"),
+data=dd,pr=TRUE,vprior="iw",nitt=50000,include=0,geneSpecRes = TRUE,pl=TRUE)
+summary(mm2)
+
+```
+
+### MOdel 2 output: 
+
+```R
+```
 
 ------
 
