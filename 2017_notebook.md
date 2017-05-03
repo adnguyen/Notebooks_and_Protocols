@@ -6345,7 +6345,7 @@ ggplot(dd,aes(x=baittemp.ave,y=log(count+1),color=gene))+geom_point()+geom_smoot
 
 Using mcmc.qpcr package. 
 
-### Model 1: Testing for site by temperature interaction while controlling for season
+### Model 1: Naive - Testing for site by temperature interaction while controlling for season     
 
 Model testing for the effect of Site by bait temp and site by delta, controlling for RIN and Julian Day (globla fixed effects); including chamber as a random effect. 
 
@@ -6361,7 +6361,7 @@ data=dd,pr=TRUE,vprior="iw",nitt=50000,geneSpecRes = TRUE,pl=TRUE)
 summary(mm)
 ```  
 
-### Model 1 output    
+### Model 1 output: Naive - Testing for site by temperature interaction while controlling for season    
 
 ```R
 Iterations = 3001:49991
@@ -6444,7 +6444,7 @@ diagnostics:
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25673382/327b2faa-3005-11e7-85b5-b377bea46a0c.jpeg)
 
-### Model 2: Testing for site by temperature by season (julian day) interaction 
+### Model 2: Naive-Testing for site by temperature by season (julian day) interaction 
 
 Model testing for effect of Site by bait temp by julian day continuous; controlling for RIN and including chamber as a random effect
 * Fixed effects: Site * bait + Site * Delta
@@ -6460,7 +6460,7 @@ summary(mm2)
 
 ```
 
-### MOdel 2 output: 
+### MOdel 2 output: Naive-Testing for site by temperature by season (julian day) interaction      
 
 ```R
 
@@ -6550,6 +6550,182 @@ geneCT_actin:SiteHF:baittemp.ave:Jdaycont -3.494e-04 -1.347e-03  7.197e-04     4
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
+
+diagnostics      
+
+![](https://cloud.githubusercontent.com/assets/4654474/25673696/341932b6-3006-11e7-8ff7-ca6ada6d5d17.jpeg)
+
+
+### Model 3: Soft normalization- Including 18s, actin, and gapdh to normalize   
+
+Model testing for effect of Site by bait temp; controlling for RIN and julian day continuous and including chamber as a random effect
+* Fixed effects: Site * bait + Site * Delta
+* Global fixed effects: RIN value (rna quality) and Julian Day continuous
+* Random factor: Chamber   
+
+```R
+softnorm=mcmc.qpcr(fixed="Site*baittemp.ave+Site*Delta",random="Cham",data=dd,pr=TRUE,vprior="iw",nitt=10000,geneSpecRes = TRUE,pl=TRUE,normalize=TRUE,controls=c("CT_actin","CT_gapdh","CT_18s"),globalFixed=c("RIN_Value","Jdaycont"))
+summary(softnorm)
+
+```
+
+### Model 3 output: Soft normalization- Including 18s, actin, and gapdh to normalize   
+
+```R
+
+ Iterations = 3001:9991
+ Thinning interval  = 10
+ Sample size  = 700 
+
+ DIC: 9005.386 
+
+ G-structure:  ~sample
+
+       post.mean l-95% CI u-95% CI eff.samp
+sample     2.517    1.983    3.093      700
+
+               ~idh(gene):Cham
+
+               post.mean l-95% CI u-95% CI eff.samp
+geneNORM.Cham     0.4293   0.1489   0.7762    518.2
+geneCT_40.Cham    0.3077   0.1190   0.5434    700.0
+geneCT_70.Cham    0.3022   0.1199   0.5436    700.0
+geneCT_83.Cham    0.4124   0.1460   0.7656    700.0
+
+ R-structure:  ~idh(gene):units
+
+                post.mean l-95% CI u-95% CI eff.samp
+geneNORM.units     1.1929   0.9095   1.4661    474.6
+geneCT_40.units    0.3536   0.2313   0.4828    304.2
+geneCT_70.units    0.7093   0.5239   0.8606    485.2
+geneCT_83.units    2.5393   1.9813   3.1185    115.3
+
+ Location effects: count ~ gene + RIN_Value + Jdaycont + Site * baittemp.ave + Site * Delta + gene:Site * baittemp.ave + gene:Site * Delta 
+
+                               post.mean   l-95% CI   u-95% CI eff.samp   pMCMC   
+(Intercept)                     8.684991   6.169046  11.086840    577.4 < 0.001 **
+geneCT_40                      -9.671732 -12.106692  -7.552922    468.7 < 0.001 **
+geneCT_70                      -9.182214 -11.530024  -7.134289    514.8 < 0.001 **
+geneCT_83                     -11.866716 -14.977469  -8.537719    535.9 < 0.001 **
+RIN_Value                       0.211073   0.107941   0.331795    700.0 < 0.001 **
+Jdaycont                        0.005798   0.004379   0.007320    700.0 < 0.001 **
+SiteHF                         -4.721952 -11.937967   3.212892    411.7 0.20286   
+baittemp.ave                   -0.113720  -0.214446  -0.025546    438.3 0.01429 * 
+Delta                           0.084153  -0.108549   0.293981    700.0 0.41143   
+SiteHF:baittemp.ave             0.209194  -0.101481   0.482602    700.0 0.14857   
+SiteHF:Delta                   -0.203374  -0.514559   0.153917    700.0 0.23429   
+geneCT_40:SiteHF               -1.897398  -6.878381   3.333412    700.0 0.48000   
+geneCT_70:SiteHF               -0.323395  -6.073259   5.043501    610.0 0.92000   
+geneCT_83:SiteHF               -7.705725 -14.989465   0.375533    601.6 0.06857 . 
+geneCT_40:SiteDF:baittemp.ave   0.157087   0.069875   0.242143    505.6 < 0.001 **
+geneCT_70:SiteDF:baittemp.ave   0.256887   0.166474   0.339240    515.3 < 0.001 **
+geneCT_83:SiteDF:baittemp.ave   0.308844   0.178066   0.427849    599.9 < 0.001 **
+geneCT_40:SiteHF:baittemp.ave   0.230984   0.060239   0.419166    700.0 0.01429 * 
+geneCT_70:SiteHF:baittemp.ave   0.266757   0.080296   0.462425    542.0 0.00857 **
+geneCT_83:SiteHF:baittemp.ave   0.597438   0.342265   0.859273    494.2 < 0.001 **
+geneCT_40:SiteDF:Delta         -0.065660  -0.240177   0.106559    700.0 0.42286   
+geneCT_70:SiteDF:Delta         -0.127074  -0.322574   0.049327    882.0 0.15429   
+geneCT_83:SiteDF:Delta          0.015443  -0.224270   0.231865    700.0 0.90857   
+geneCT_40:SiteHF:Delta         -0.124124  -0.320080   0.061610    700.0 0.22571   
+geneCT_70:SiteHF:Delta         -0.050784  -0.270149   0.156429    700.0 0.66571   
+geneCT_83:SiteHF:Delta         -0.166027  -0.435081   0.113876    607.6 0.26000   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+diagnostics   
+
+![](https://cloud.githubusercontent.com/assets/4654474/25673956/3df7b8e2-3007-11e7-89f0-0672a00dafbb.jpeg)    
+
+
+### Model 4: Soft normalization- Including 18s, actin, and gapdh to normalize; include interaction with season    
+
+Model testing for effect of Site by bait temp by julian day continuous; controlling for RIN and including chamber as a random effect
+* Fixed effects: Site * bait + Site * Delta
+* Global fixed effects: RIN value (rna quality) and Julian Day continuous
+* Random factor: Chamber
+
+
+```R
+softnorm2=mcmc.qpcr(fixed="Site*baittemp.ave*Jdaycont",random="Cham",data=dd,pr=TRUE,vprior="iw",nitt=10000,geneSpecRes = TRUE,pl=TRUE,normalize=TRUE,controls=c("CT_actin","CT_gapdh","CT_18s"),globalFixed=c("RIN_Value"))
+summary(softnorm2)
+```
+
+### Model 4 output: Soft normalization- Including 18s, actin, and gapdh to normalize; include interaction with season     
+
+```R
+Iterations = 3001:9991
+ Thinning interval  = 10
+ Sample size  = 700 
+
+ DIC: 9005.803 
+
+ G-structure:  ~sample
+
+       post.mean l-95% CI u-95% CI eff.samp
+sample     1.818    1.433    2.249    610.9
+
+               ~idh(gene):Cham
+
+               post.mean l-95% CI u-95% CI eff.samp
+geneNORM.Cham     0.3805   0.1372   0.6941    790.7
+geneCT_40.Cham    0.2881   0.1069   0.5029    700.0
+geneCT_70.Cham    0.2813   0.1253   0.4923    700.0
+geneCT_83.Cham    0.3909   0.1561   0.6891    700.0
+
+ R-structure:  ~idh(gene):units
+
+                post.mean l-95% CI u-95% CI eff.samp
+geneNORM.units     0.8994   0.7000   1.0903    700.0
+geneCT_40.units    0.3020   0.2036   0.3963    344.5
+geneCT_70.units    0.5810   0.4347   0.7147    576.4
+geneCT_83.units    1.1998   0.9383   1.4820    237.8
+
+ Location effects: count ~ gene + RIN_Value + Site * baittemp.ave * Jdaycont + gene:Site * baittemp.ave * Jdaycont 
+
+                                        post.mean   l-95% CI   u-95% CI eff.samp   pMCMC   
+(Intercept)                            -8.661e+00 -1.331e+01 -4.130e+00    700.0 < 0.001 **
+geneCT_40                              -1.903e+00 -6.363e+00  2.411e+00    700.0 0.39143   
+geneCT_70                              -5.688e+00 -9.774e+00 -1.181e+00    700.0 0.00857 **
+geneCT_83                              -2.090e+01 -2.622e+01 -1.549e+01    700.0 < 0.001 **
+RIN_Value                               1.981e-01  9.955e-02  3.036e-01    575.0 < 0.001 **
+SiteHF                                  1.648e+01  4.298e+00  2.825e+01    700.0 0.00286 **
+baittemp.ave                            5.477e-01  3.813e-01  7.313e-01    700.0 < 0.001 **
+Jdaycont                                6.788e-02  5.544e-02  8.040e-02    700.0 < 0.001 **
+SiteHF:baittemp.ave                    -6.478e-01 -1.100e+00 -1.991e-01    700.0 < 0.001 **
+SiteHF:Jdaycont                        -7.108e-02 -1.052e-01 -4.008e-02    700.0 < 0.001 **
+baittemp.ave:Jdaycont                  -2.314e-03 -2.771e-03 -1.835e-03    700.0 < 0.001 **
+geneCT_40:SiteHF                       -1.646e+01 -2.491e+01 -6.981e+00    485.8 < 0.001 **
+geneCT_70:SiteHF                       -1.118e+01 -2.052e+01 -2.765e+00    700.0 0.02571 * 
+geneCT_83:SiteHF                       -1.103e+01 -2.284e+01 -5.886e-01    700.0 0.04571 * 
+SiteHF:baittemp.ave:Jdaycont            2.783e-03  1.619e-03  4.034e-03    700.0 < 0.001 **
+geneCT_40:SiteDF:baittemp.ave          -1.120e-01 -2.825e-01  5.198e-02    700.0 0.19429   
+geneCT_70:SiteDF:baittemp.ave           1.504e-01 -2.890e-02  3.083e-01    700.0 0.08571 . 
+geneCT_83:SiteDF:baittemp.ave           6.275e-01  4.305e-01  8.497e-01    700.0 < 0.001 **
+geneCT_40:SiteHF:baittemp.ave           5.121e-01  2.556e-01  7.882e-01    373.2 < 0.001 **
+geneCT_70:SiteHF:baittemp.ave           5.965e-01  3.218e-01  9.269e-01    700.0 < 0.001 **
+geneCT_83:SiteHF:baittemp.ave           9.978e-01  6.902e-01  1.447e+00    618.8 < 0.001 **
+geneCT_40:SiteDF:Jdaycont              -2.229e-02 -3.189e-02 -1.169e-02    700.0 < 0.001 **
+geneCT_70:SiteDF:Jdaycont              -1.194e-02 -2.321e-02 -1.849e-03    700.0 0.02571 * 
+geneCT_83:SiteDF:Jdaycont               2.635e-02  1.412e-02  4.098e-02    700.0 < 0.001 **
+geneCT_40:SiteHF:Jdaycont               2.447e-02  5.219e-03  4.679e-02    700.0 0.01714 * 
+geneCT_70:SiteHF:Jdaycont               2.317e-02  1.383e-03  4.789e-02    700.0 0.05143 . 
+geneCT_83:SiteHF:Jdaycont               4.817e-02  1.820e-02  7.441e-02    700.0 0.00286 **
+geneCT_40:SiteDF:baittemp.ave:Jdaycont  7.573e-04  3.373e-04  1.118e-03    700.0 < 0.001 **
+geneCT_70:SiteDF:baittemp.ave:Jdaycont  3.523e-04 -4.856e-05  7.660e-04    700.0 0.10857   
+geneCT_83:SiteDF:baittemp.ave:Jdaycont -9.246e-04 -1.390e-03 -3.810e-04    700.0 < 0.001 **
+geneCT_40:SiteHF:baittemp.ave:Jdaycont -1.025e-03 -1.816e-03 -3.201e-04    700.0 0.00857 **
+geneCT_70:SiteHF:baittemp.ave:Jdaycont -1.041e-03 -1.925e-03 -2.063e-04    700.0 0.02571 * 
+geneCT_83:SiteHF:baittemp.ave:Jdaycont -1.651e-03 -2.635e-03 -5.883e-04    700.0 0.00571 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+diagnostics    
+
+![](https://cloud.githubusercontent.com/assets/4654474/25674145/d8256856-3007-11e7-9b0c-111571c8c3b1.jpeg)
+
+
 
 ------
 
