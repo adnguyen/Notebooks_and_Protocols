@@ -6964,6 +6964,10 @@ diagnostics
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25675813/c571f124-300d-11e7-9ce0-1ca6f3a01893.jpeg)
 
+### plotting hsp70 for this model 6 against delta and site and collection date
+
+![](https://cloud.githubusercontent.com/assets/4654474/25676777/4e666f70-3011-11e7-8e9b-2f7bdf0d54c5.jpeg)
+
 
 ### Using a more simple approach: ANOVA 
 
