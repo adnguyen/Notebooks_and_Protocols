@@ -6964,6 +6964,52 @@ diagnostics
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25675813/c571f124-300d-11e7-9ce0-1ca6f3a01893.jpeg)
 
+
+### Using a more simple approach: ANOVA 
+
+Testing the effect of gene by site by delta by season(julian day) and gene by site by bait temp by season(julian day)
+
+```R
+glob2<-aov(log(count+1)~RIN_Value+gene*Site*Jdaycont*Delta+gene*Site*Jdaycont*baittemp.ave,data=ddave)
+```
+
+output: 
+
+```R
+                                 Df Sum Sq Mean Sq  F value   Pr(>F)    
+RIN_Value                         1   1223  1223.4  887.552  < 2e-16 ***
+gene                              5   9337  1867.3 1354.741  < 2e-16 ***
+Site                              1      5     4.7    3.379 0.066662 .  
+Jdaycont                          1     76    75.7   54.889 5.93e-13 ***
+Delta                             1      1     1.1    0.828 0.363410    
+baittemp.ave                      1      4     4.2    3.054 0.081167 .  
+gene:Site                         5     36     7.3    5.287 9.74e-05 ***
+gene:Jdaycont                     5     72    14.5   10.512 1.39e-09 ***
+Site:Jdaycont                     1     30    29.7   21.582 4.40e-06 ***
+gene:Delta                        5      2     0.4    0.301 0.912386    
+Site:Delta                        1      1     1.1    0.770 0.380517    
+Jdaycont:Delta                    1      4     3.6    2.623 0.105977    
+gene:baittemp.ave                 5     55    11.0    7.967 3.19e-07 ***
+Site:baittemp.ave                 1     41    40.8   29.587 8.60e-08 ***
+Jdaycont:baittemp.ave             1    448   447.8  324.912  < 2e-16 ***
+gene:Site:Jdaycont                5     11     2.2    1.596 0.159755    
+gene:Site:Delta                   5      3     0.7    0.498 0.778013    
+gene:Jdaycont:Delta               5      1     0.1    0.092 0.993462    
+Site:Jdaycont:Delta               1     20    19.8   14.387 0.000168 ***
+gene:Site:baittemp.ave            5      9     1.9    1.360 0.237899    
+gene:Jdaycont:baittemp.ave        5     24     4.8    3.480 0.004242 ** 
+Site:Jdaycont:baittemp.ave        1     14    14.2   10.283 0.001434 ** 
+gene:Site:Jdaycont:Delta          5      6     1.2    0.870 0.501010    
+gene:Site:Jdaycont:baittemp.ave   5      9     1.8    1.339 0.246378    
+Residuals                       472    651     1.4                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+diagnostics:   
+
+![](https://cloud.githubusercontent.com/assets/4654474/25676158/0949ebf8-300f-11e7-919c-d71ad8c6b3ca.jpeg)
+
 ------
 
  <div id='id-section76'/> 
