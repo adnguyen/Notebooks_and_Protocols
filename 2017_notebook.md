@@ -6463,6 +6463,92 @@ summary(mm2)
 ### MOdel 2 output: 
 
 ```R
+
+ Iterations = 3001:49991
+ Thinning interval  = 10
+ Sample size  = 4700 
+
+ DIC: 15023.12 
+
+ G-structure:  ~sample
+
+       post.mean l-95% CI u-95% CI eff.samp
+sample     1.917    1.514    2.347     3390
+
+               ~idh(gene):Cham
+
+                  post.mean l-95% CI u-95% CI eff.samp
+geneCT_18s.Cham      0.6301   0.2387   1.1668     4700
+geneCT_40.Cham       0.3843   0.1727   0.6856     4700
+geneCT_70.Cham       0.3639   0.1597   0.6361     4700
+geneCT_83.Cham       0.4681   0.1787   0.8216     4700
+geneCT_actin.Cham    0.4103   0.1743   0.7152     5230
+geneCT_gapdh.Cham    0.4443   0.1841   0.7888     5332
+
+ R-structure:  ~idh(gene):units
+
+                   post.mean l-95% CI u-95% CI eff.samp
+geneCT_18s.units      4.4459   3.6026   5.2871   4700.0
+geneCT_40.units       0.3735   0.2619   0.4933   2511.4
+geneCT_70.units       0.6003   0.4567   0.7375   3188.9
+geneCT_83.units       1.1112   0.8506   1.3815    905.5
+geneCT_actin.units    1.1518   0.9038   1.4147   2207.6
+geneCT_gapdh.units    1.0840   0.8476   1.3569   1719.8
+
+ Location effects: count ~ 0 + gene + RIN_Value + +gene:Site * baittemp.ave * Jdaycont 
+
+                                           post.mean   l-95% CI   u-95% CI eff.samp    pMCMC    
+geneCT_18s                                -2.697e+00 -1.060e+01  5.214e+00     4700 0.518723    
+geneCT_40                                 -1.215e+01 -1.585e+01 -7.936e+00     2962  < 2e-04 ***
+geneCT_70                                 -1.587e+01 -1.993e+01 -1.200e+01     4076  < 2e-04 ***
+geneCT_83                                 -3.134e+01 -3.626e+01 -2.646e+01     2357  < 2e-04 ***
+geneCT_actin                              -1.958e+01 -2.451e+01 -1.468e+01     4107  < 2e-04 ***
+geneCT_gapdh                              -2.243e+01 -2.731e+01 -1.775e+01     3686  < 2e-04 ***
+RIN_Value                                  2.047e-01  1.102e-01  3.090e-01     4147 0.000426 ***
+baittemp.ave                              -1.958e-01 -6.238e-01  2.510e-01     4700 0.382979    
+Jdaycont                                  -5.680e-04 -3.427e-02  3.148e-02     4700 0.972340    
+geneCT_18s:SiteHF                          1.539e+01 -3.751e+00  3.350e+01     4700 0.108936    
+geneCT_40:SiteHF                           1.293e+00 -1.058e+01  1.215e+01     3853 0.809362    
+geneCT_70:SiteHF                           6.747e+00 -5.146e+00  1.809e+01     4700 0.250638    
+geneCT_83:SiteHF                           7.440e+00 -6.279e+00  2.034e+01     2260 0.265957    
+geneCT_actin:SiteHF                        1.731e+01  4.324e+00  3.092e+01     3714 0.011064 *  
+geneCT_gapdh:SiteHF                        2.841e+01  1.519e+01  4.106e+01     4490  < 2e-04 ***
+baittemp.ave:Jdaycont                      4.655e-04 -7.468e-04  1.643e-03     4700 0.425532    
+geneCT_18s:SiteDF:baittemp.ave             7.159e-01  1.879e-01  1.248e+00     4700 0.007234 ** 
+geneCT_40:SiteDF:baittemp.ave              6.869e-01  1.890e-01  1.132e+00     4101 0.002979 ** 
+geneCT_70:SiteDF:baittemp.ave              9.480e-01  4.694e-01  1.406e+00     4497  < 2e-04 ***
+geneCT_83:SiteDF:baittemp.ave              1.435e+00  9.523e-01  1.918e+00     4700  < 2e-04 ***
+geneCT_actin:SiteDF:baittemp.ave           1.057e+00  5.651e-01  1.514e+00     4700  < 2e-04 ***
+geneCT_gapdh:SiteDF:baittemp.ave           1.147e+00  6.529e-01  1.612e+00     4506  < 2e-04 ***
+geneCT_18s:SiteHF:baittemp.ave             1.760e-01 -4.193e-01  7.441e-01     4700 0.566383    
+geneCT_40:SiteHF:baittemp.ave              6.176e-01  3.030e-01  9.288e-01     3589  < 2e-04 ***
+geneCT_70:SiteHF:baittemp.ave              6.932e-01  3.741e-01  1.028e+00     4700  < 2e-04 ***
+geneCT_83:SiteHF:baittemp.ave              1.085e+00  7.130e-01  1.493e+00     2729  < 2e-04 ***
+geneCT_actin:SiteHF:baittemp.ave           3.454e-01 -6.321e-02  7.128e-01     3574 0.085532 .  
+geneCT_18s:SiteDF:Jdaycont                 7.762e-02  3.948e-02  1.162e-01     4700  < 2e-04 ***
+geneCT_40:SiteDF:Jdaycont                  5.000e-02  1.422e-02  8.342e-02     4497 0.002553 ** 
+geneCT_70:SiteDF:Jdaycont                  6.005e-02  2.730e-02  9.631e-02     4472 0.000851 ***
+geneCT_83:SiteDF:Jdaycont                  9.879e-02  6.440e-02  1.345e-01     4700  < 2e-04 ***
+geneCT_actin:SiteDF:Jdaycont               7.954e-02  4.401e-02  1.142e-01     4700  < 2e-04 ***
+geneCT_gapdh:SiteDF:Jdaycont               8.735e-02  5.198e-02  1.232e-01     4700  < 2e-04 ***
+geneCT_18s:SiteHF:Jdaycont                 4.785e-03 -3.861e-02  5.004e-02     4700 0.826383    
+geneCT_40:SiteHF:Jdaycont                  2.291e-02  1.350e-04  4.613e-02     4243 0.051064 .  
+geneCT_70:SiteHF:Jdaycont                  2.117e-02 -3.446e-03  4.640e-02     4700 0.092766 .  
+geneCT_83:SiteHF:Jdaycont                  4.531e-02  1.793e-02  7.605e-02     3481 0.002128 ** 
+geneCT_actin:SiteHF:Jdaycont               5.129e-03 -2.447e-02  3.241e-02     4202 0.741702    
+geneCT_18s:SiteDF:baittemp.ave:Jdaycont   -3.044e-03 -4.453e-03 -1.623e-03     4700  < 2e-04 ***
+geneCT_40:SiteDF:baittemp.ave:Jdaycont    -2.162e-03 -3.423e-03 -8.991e-04     4509 0.000851 ***
+geneCT_70:SiteDF:baittemp.ave:Jdaycont    -2.556e-03 -3.897e-03 -1.369e-03     4493  < 2e-04 ***
+geneCT_83:SiteDF:baittemp.ave:Jdaycont    -3.850e-03 -5.103e-03 -2.532e-03     4700  < 2e-04 ***
+geneCT_actin:SiteDF:baittemp.ave:Jdaycont -3.274e-03 -4.538e-03 -1.981e-03     4700  < 2e-04 ***
+geneCT_gapdh:SiteDF:baittemp.ave:Jdaycont -3.486e-03 -4.756e-03 -2.131e-03     4700  < 2e-04 ***
+geneCT_18s:SiteHF:baittemp.ave:Jdaycont   -2.595e-04 -1.828e-03  1.393e-03     4700 0.745106    
+geneCT_40:SiteHF:baittemp.ave:Jdaycont    -1.062e-03 -1.879e-03 -2.114e-04     4265 0.014894 *  
+geneCT_70:SiteHF:baittemp.ave:Jdaycont    -1.059e-03 -1.937e-03 -1.224e-04     4700 0.018723 *  
+geneCT_83:SiteHF:baittemp.ave:Jdaycont    -1.640e-03 -2.709e-03 -6.076e-04     3510 0.003404 ** 
+geneCT_actin:SiteHF:baittemp.ave:Jdaycont -3.494e-04 -1.347e-03  7.197e-04     4217 0.517872    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
 ------
