@@ -7845,6 +7845,282 @@ Model fitting
 classicmod<-mcmc.qpcr.classic(fixed="Site+baittemp.ave+Delta+Site:baittemp.ave+Site:Delta",globalRandom="Cham",globalFixed=c("RIN_Value","Jdaycont"),data=ctmeth,controls=c("CT_actin","CT_gapdh"),pr=T,pl=T,nitt=50000)
 ```
 
+diagnostics   
+
+![](https://cloud.githubusercontent.com/assets/4654474/25761246/31ff4328-31a8-11e7-91a5-fdba62590b8d.jpeg)
+
+
+output:    
+
+```R
+Iterations = 3001:49991
+ Thinning interval  = 10
+ Sample size  = 4700 
+
+ DIC: 10316.62 
+
+ G-structure:  ~idh(gene):Cham
+
+                  post.mean   l-95% CI  u-95% CI eff.samp
+geneCT_40.Cham    2.168e-03  2.843e-63 1.743e-08   134.26
+geneCT_70.Cham    5.678e-02  5.842e-49 3.045e-01    78.55
+geneCT_83.Cham    6.201e-18 6.381e-108 4.589e-33     0.00
+geneCT_gapdh.Cham 1.519e-03  1.681e-39 4.673e-03   364.01
+geneCT_actin.Cham 7.960e-05  2.641e-49 2.683e-07   615.45
+geneCT_18s.Cham   3.017e-05  2.951e-56 1.972e-09   401.62
+
+               ~idh(gene):sample
+
+                    post.mean l-95% CI u-95% CI eff.samp
+geneCT_40.sample       1.8769   1.3605    2.436   4700.0
+geneCT_70.sample       1.5604   1.0790    2.072    706.6
+geneCT_83.sample       2.1509   1.5688    2.778   4700.0
+geneCT_gapdh.sample    0.7484   0.4714    1.062   4004.1
+geneCT_actin.sample    1.7336   1.2430    2.231   5279.4
+geneCT_18s.sample      2.6897   2.0524    3.357   4700.0
+
+ R-structure:  ~units
+
+      post.mean l-95% CI u-95% CI eff.samp
+units     1.676     1.55    1.797     4988
+
+ Location effects: count ~ 0 + gene + RIN_Value + Jdaycont + +gene:Site + gene:baittemp.ave + gene:Delta + gene:Site:baittemp.ave + gene:Site:Delta 
+
+                                  post.mean   l-95% CI   u-95% CI eff.samp   pMCMC    
+geneCT_40                         1.399e+00 -7.993e-01  3.874e+00   4700.0 0.24511    
+geneCT_70                         7.141e-01 -1.508e+00  2.982e+00   4700.0 0.52851    
+geneCT_83                        -1.465e+00 -4.054e+00  8.896e-01   4700.0 0.23617    
+geneCT_gapdh                      3.971e-02 -1.760e+00  1.890e+00   4955.7 0.97447    
+geneCT_actin                     -1.757e+00 -3.932e+00  3.514e-01   4700.0 0.10468    
+geneCT_18s                        5.140e+00  2.722e+00  7.495e+00   5052.1 < 2e-04 ***
+RIN_Value                        -3.748e-02 -8.486e-02  1.419e-02   4700.0 0.14894    
+Jdaycont                         -4.573e-05 -7.047e-04  6.020e-04   4700.0 0.87787    
+geneCT_40:SiteHF                 -3.176e+00 -9.216e+00  2.793e+00   4700.0 0.29957    
+geneCT_70:SiteHF                 -7.646e+00 -1.329e+01 -1.757e+00   4700.0 0.01064 *  
+geneCT_83:SiteHF                 -1.059e+01 -1.697e+01 -4.130e+00   4542.6 0.00128 ** 
+geneCT_gapdh:SiteHF              -2.480e+00 -7.021e+00  2.227e+00   4700.0 0.29702    
+geneCT_actin:SiteHF               1.344e+00 -4.488e+00  7.702e+00   4924.3 0.65957    
+geneCT_18s:SiteHF                -3.452e+00 -1.021e+01  3.342e+00   4700.0 0.32809    
+geneCT_40:baittemp.ave           -5.011e-02 -1.392e-01  3.826e-02   4700.0 0.27532    
+geneCT_70:baittemp.ave           -2.405e-02 -1.078e-01  6.303e-02   4700.0 0.57532    
+geneCT_83:baittemp.ave            5.755e-02 -3.511e-02  1.517e-01   4700.0 0.22085    
+geneCT_gapdh:baittemp.ave         1.086e-02 -6.153e-02  7.812e-02   4940.6 0.74426    
+geneCT_actin:baittemp.ave         9.179e-02  1.157e-02  1.746e-01   4700.0 0.02766 *  
+geneCT_18s:baittemp.ave          -2.113e-01 -3.014e-01 -1.217e-01   4891.3 < 2e-04 ***
+geneCT_40:Delta                  -4.476e-02 -1.834e-01  9.682e-02   4700.0 0.52851    
+geneCT_70:Delta                  -7.246e-02 -2.236e-01  8.242e-02    587.3 0.33064    
+geneCT_83:Delta                   1.839e-02 -1.273e-01  1.684e-01   4700.0 0.79489    
+geneCT_gapdh:Delta                5.717e-03 -1.051e-01  1.103e-01   4700.0 0.92681    
+geneCT_actin:Delta               -6.490e-02 -2.030e-01  7.087e-02   4700.0 0.34085    
+geneCT_18s:Delta                  1.006e-01 -5.750e-02  2.662e-01   4700.0 0.22383    
+geneCT_40:SiteHF:baittemp.ave     1.466e-01 -7.800e-02  3.808e-01   4700.0 0.20468    
+geneCT_70:SiteHF:baittemp.ave     3.269e-01  1.113e-01  5.461e-01   4700.0 0.00426 ** 
+geneCT_83:SiteHF:baittemp.ave     4.085e-01  1.596e-01  6.436e-01   4700.0 0.00170 ** 
+geneCT_gapdh:SiteHF:baittemp.ave  8.618e-02 -9.165e-02  2.573e-01   4700.0 0.33617    
+geneCT_actin:SiteHF:baittemp.ave -1.129e-01 -3.417e-01  1.177e-01   4924.1 0.31745    
+geneCT_18s:SiteHF:baittemp.ave    2.030e-01 -5.703e-02  4.546e-01   4700.0 0.12128    
+geneCT_40:SiteHF:Delta           -7.663e-02 -3.230e-01  1.895e-01   5225.8 0.54766    
+geneCT_70:SiteHF:Delta           -2.160e-01 -4.589e-01  2.999e-02   4700.0 0.08766 .  
+geneCT_83:SiteHF:Delta           -1.278e-01 -3.876e-01  1.310e-01   4700.0 0.33447    
+geneCT_gapdh:SiteHF:Delta        -9.679e-02 -2.957e-01  9.375e-02   4700.0 0.31234    
+geneCT_actin:SiteHF:Delta         2.710e-01  2.563e-02  5.100e-01   4700.0 0.02979 *  
+geneCT_18s:SiteHF:Delta          -2.297e-01 -5.112e-01  6.177e-02   4700.0 0.11957    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+
+# Manually calculating delta delta CT method   
+
+### data parsing 
+
+```R
+x<-read.csv("../Data/20170427_final_dataset_2013_2014_years_HF_DF_del.csv",skip=10)
+str(x)
+x$baittemp.ave<-apply(x[,8:11],1,mean,na.rm=TRUE)
+x$Cham<-as.factor(as.character(x$Cham))
+x2<-inner_join(x,chd,by=c("Cham","Site"))
+
+#julian day
+v2<-paste(substr(x2$Collection.Date,1,4),"-",substr(x2$Collection.Date,5,6),"-",substr(x2$Collection.Date,7,8))
+x2$Date<-as.character(gsub(" ", "", v2, fixed = TRUE))
+x2$JulianDay<-as.numeric(format(as.Date(x2$Date),"%j"))
+x2$Jdaycont<-ifelse(x2$Year_collect==2013,x2$JulianDay,x2$JulianDay+365)
+x2<-x2[!is.na(x2$RIN_Value),]
+x3<-na.omit(x2[,-8:-11])
+
+hkg<-cbind(x3$CT_18s,x3$CT_actin,x3$CT_gapdh)
+x3$geomean<-apply(hkg,1,function(x){exp(mean(log(x)))})
+
+globalmean<-apply(x3[,10:15],2,mean)
+deltaCTnum<-data.frame(t(apply(x3[,10:15],1,function(x){globalmean-x})))
+deltaCTden<-mean(x3$geomean)-x3$geomean
+
+##calculating delta delta ct
+gxp<-data.frame(log2(apply(deltaCTnum,2,function(x){2^(x)/2^(deltaCTden)})))
+names(gxp)<-c("fc18s","fchsp40","fchsp70","fchsp83","fcactin","fcgapdh")
+
+findat<-data.frame(x3,gxp)
+str(findat)
+
+##convert to long format 
+findat.long<-gather(findat,gene,FC,fc18s:fcgapdh)
+
+```
+
+
+### Anovas    
+
+```R
+fullmod2<-aov(FC~RIN_Value+Jdaycont+gene*Site*baittemp.ave+gene*Site*Delta,data=findat.long)
+tep:  AIC=1611.21
+FC ~ RIN_Value + Jdaycont + gene + Site + baittemp.ave + Delta + 
+    gene:Site + gene:baittemp.ave + Site:baittemp.ave + Site:Delta
+
+                         Df Sum of Sq    RSS    AIC
+<none>                                4385.2 1611.2
+- RIN_Value               1     7.679 4392.9 1611.4
+- Site:baittemp.ave       1    14.268 4399.4 1613.2
+- Site:Delta              1    14.417 4399.6 1613.3
++ gene:Site:baittemp.ave  5    24.236 4360.9 1614.4
++ gene:Delta              5     2.085 4383.1 1620.6
+- gene:Site               5   185.321 4570.5 1652.4
+- Jdaycont                1   197.915 4583.1 1663.8
+- gene:baittemp.ave       5   306.347 4691.5 1684.7
+                    Df Sum Sq Mean Sq F value   Pr(>F)    
+RIN_Value            1     46    46.0  12.719 0.000376 ***
+Jdaycont             1    115   114.8  31.747 2.18e-08 ***
+gene                 5      0     0.0   0.000 1.000000    
+Site                 1     63    63.3  17.505 3.07e-05 ***
+baittemp.ave         1    460   460.4 127.347  < 2e-16 ***
+Delta                1      1     0.9   0.262 0.608759    
+gene:Site            5    161    32.1   8.889 2.66e-08 ***
+gene:baittemp.ave    5    306    61.3  16.948 3.18e-16 ***
+Site:baittemp.ave    1      5     5.4   1.505 0.220175    
+Site:Delta           1     14    14.4   3.988 0.046046 *  
+Residuals         1213   4385     3.6                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+
+### Statistics: linear models   
+
+```R
+fullmod3<-lm(FC~RIN_Value+Jdaycont+gene*Site*baittemp.ave+
+gene*Site*Delta,data=findat.long)
+
+Call:
+lm(formula = FC ~ RIN_Value + Jdaycont + gene * Site * baittemp.ave + 
+    gene * Site * Delta, data = findat.long)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-9.8693 -1.0781 -0.0503  1.0091  9.5413 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      2.453e+00  1.625e+00   1.510 0.131335    
+RIN_Value                        4.992e-02  3.426e-02   1.457 0.145368    
+Jdaycont                        -3.134e-03  4.237e-04  -7.397 2.61e-13 ***
+genefcactin                     -5.834e+00  2.294e+00  -2.543 0.011114 *  
+genefcgapdh                     -7.245e+00  2.294e+00  -3.158 0.001627 ** 
+genefchsp40                     -9.305e+00  2.294e+00  -4.056 5.31e-05 ***
+genefchsp70                     -1.310e+01  2.294e+00  -5.709 1.43e-08 ***
+genefchsp83                     -1.592e+01  2.294e+00  -6.939 6.46e-12 ***
+SiteHF                           1.644e+00  4.042e+00   0.407 0.684228    
+baittemp.ave                    -7.262e-02  6.232e-02  -1.165 0.244167    
+Delta                            5.386e-02  8.458e-02   0.637 0.524364    
+genefcactin:SiteHF              -1.749e+00  5.672e+00  -0.308 0.757798    
+genefcgapdh:SiteHF               8.873e+00  5.672e+00   1.565 0.117957    
+genefchsp40:SiteHF               8.031e-01  5.672e+00   0.142 0.887418    
+genefchsp70:SiteHF               2.035e+00  5.672e+00   0.359 0.719756    
+genefchsp83:SiteHF              -5.688e+00  5.672e+00  -1.003 0.316148    
+genefcactin:baittemp.ave         2.601e-01  8.791e-02   2.958 0.003156 ** 
+genefcgapdh:baittemp.ave         3.145e-01  8.791e-02   3.578 0.000361 ***
+genefchsp40:baittemp.ave         3.783e-01  8.791e-02   4.303 1.82e-05 ***
+genefchsp70:baittemp.ave         5.163e-01  8.791e-02   5.873 5.55e-09 ***
+genefchsp83:baittemp.ave         6.291e-01  8.791e-02   7.156 1.45e-12 ***
+SiteHF:baittemp.ave             -1.865e-02  1.534e-01  -0.122 0.903285    
+genefcactin:Delta               -1.346e-01  1.195e-01  -1.126 0.260301    
+genefcgapdh:Delta               -1.052e-01  1.195e-01  -0.880 0.378968    
+genefchsp40:Delta               -1.222e-01  1.195e-01  -1.022 0.306847    
+genefchsp70:Delta               -1.268e-01  1.195e-01  -1.060 0.289178    
+genefchsp83:Delta               -1.001e-01  1.195e-01  -0.837 0.402580    
+SiteHF:Delta                    -1.694e-01  1.597e-01  -1.061 0.288975    
+genefcactin:SiteHF:baittemp.ave -6.741e-02  2.151e-01  -0.313 0.754003    
+genefcgapdh:SiteHF:baittemp.ave -4.580e-01  2.151e-01  -2.129 0.033428 *  
+genefchsp40:SiteHF:baittemp.ave -1.128e-01  2.151e-01  -0.525 0.599933    
+genefchsp70:SiteHF:baittemp.ave -1.472e-01  2.151e-01  -0.684 0.493905    
+genefchsp83:SiteHF:baittemp.ave  1.194e-01  2.151e-01   0.555 0.578921    
+genefcactin:SiteHF:Delta         5.114e-01  2.255e-01   2.267 0.023544 *  
+genefcgapdh:SiteHF:Delta         4.643e-01  2.255e-01   2.058 0.039760 *  
+genefchsp40:SiteHF:Delta         3.145e-01  2.255e-01   1.394 0.163497    
+genefchsp70:SiteHF:Delta         3.197e-01  2.255e-01   1.418 0.156581    
+genefchsp83:SiteHF:Delta         1.927e-01  2.255e-01   0.854 0.393119    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.902 on 1198 degrees of freedom
+Multiple R-squared:  0.2203,	Adjusted R-squared:  0.1962 
+F-statistic: 9.147 on 37 and 1198 DF,  p-value: < 2.2e-16
+```
+
+With model selection    
+
+```R
+Call:
+lm(formula = FC ~ RIN_Value + Jdaycont + gene + Site + baittemp.ave + 
+    Delta + gene:Site + gene:baittemp.ave + Site:baittemp.ave + 
+    Site:Delta, data = findat.long)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-10.2877  -1.0909  -0.0054   1.0415  10.0486 
+
+Coefficients:
+                           Estimate Std. Error t value Pr(>|t|)    
+(Intercept)               2.403e+00  1.476e+00   1.628 0.103837    
+RIN_Value                 4.992e-02  3.425e-02   1.457 0.145257    
+Jdaycont                 -3.134e-03  4.236e-04  -7.399 2.55e-13 ***
+genefcactin              -6.521e+00  2.039e+00  -3.199 0.001416 ** 
+genefcgapdh              -5.735e+00  2.039e+00  -2.813 0.004988 ** 
+genefchsp40              -9.209e+00  2.039e+00  -4.517 6.89e-06 ***
+genefchsp70              -1.281e+01  2.039e+00  -6.284 4.60e-10 ***
+genefchsp83              -1.682e+01  2.039e+00  -8.249 4.11e-16 ***
+SiteHF                    3.943e+00  1.732e+00   2.277 0.022962 *  
+baittemp.ave             -6.304e-02  5.609e-02  -1.124 0.261332    
+Delta                    -4.429e-02  3.462e-02  -1.280 0.200961    
+genefcactin:SiteHF       -2.324e+00  4.035e-01  -5.761 1.06e-08 ***
+genefcgapdh:SiteHF       -2.496e+00  4.035e-01  -6.185 8.46e-10 ***
+genefchsp40:SiteHF       -1.520e+00  4.035e-01  -3.767 0.000173 ***
+genefchsp70:SiteHF       -1.215e+00  4.035e-01  -3.012 0.002647 ** 
+genefchsp83:SiteHF       -1.964e+00  4.035e-01  -4.868 1.28e-06 ***
+genefcactin:baittemp.ave  2.758e-01  7.720e-02   3.572 0.000368 ***
+genefcgapdh:baittemp.ave  2.487e-01  7.720e-02   3.222 0.001306 ** 
+genefchsp40:baittemp.ave  3.651e-01  7.720e-02   4.730 2.51e-06 ***
+genefchsp70:baittemp.ave  4.955e-01  7.720e-02   6.419 1.96e-10 ***
+genefchsp83:baittemp.ave  6.556e-01  7.720e-02   8.493  < 2e-16 ***
+SiteHF:baittemp.ave      -1.296e-01  6.526e-02  -1.987 0.047184 *  
+SiteHF:Delta              1.310e-01  6.560e-02   1.997 0.046046 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.901 on 1213 degrees of freedom
+Multiple R-squared:  0.2109,	Adjusted R-squared:  0.1966 
+F-statistic: 14.74 on 22 and 1213 DF,  p-value: < 2.2e-16
+```
+
+figures   
+
+Differences between hf and df with bait and delta 
+![](https://cloud.githubusercontent.com/assets/4654474/25764055/11249c28-31b4-11e7-84c8-3de4520a210f.jpeg)
+
+
+Parse out by gene 
+
+![](https://cloud.githubusercontent.com/assets/4654474/25764085/3174cdc2-31b4-11e7-8730-f33fa32fe9f8.jpeg)
+
 
 ------
 
