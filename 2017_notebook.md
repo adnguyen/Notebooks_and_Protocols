@@ -8111,7 +8111,30 @@ Multiple R-squared:  0.2109,	Adjusted R-squared:  0.1966
 F-statistic: 14.74 on 22 and 1213 DF,  p-value: < 2.2e-16
 ```
 
-figures   
+### Statistics with random effects   
+
+```R
+fullmod5<-lme(FC~RIN_Value+Jdaycont+gene*Site*baittemp.ave+gene*Site*Delta,random=~1|Cham2,data=findat.long)
+summary(fullmod5)
+anova(fullmod5)
+                       numDF denDF   F-value p-value
+(Intercept)                1  1175   0.03058  0.8612
+RIN_Value                  1  1175  13.28986  0.0003
+Jdaycont                   1  1175  35.65154  <.0001
+gene                       5  1175   0.00000  1.0000
+Site                       1    23  12.21883  0.0019
+baittemp.ave               1  1175 122.07718  <.0001
+Delta                      1    23   0.13595  0.7157
+gene:Site                  5  1175   8.95546  <.0001
+gene:baittemp.ave          5  1175  17.07517  <.0001
+Site:baittemp.ave          1  1175   2.17829  0.1402
+gene:Delta                 5  1175   0.11621  0.9888
+Site:Delta                 1    23   2.95385  0.0991
+gene:Site:baittemp.ave     5  1175   1.39975  0.2216
+gene:Site:Delta            5  1175   1.37753  0.2300
+```
+
+### Figures   
 
 Differences between hf and df with bait and delta 
 ![](https://cloud.githubusercontent.com/assets/4654474/25764055/11249c28-31b4-11e7-84c8-3de4520a210f.jpeg)
@@ -8122,10 +8145,17 @@ Differences between hf and df with bait and delta
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25764085/3174cdc2-31b4-11e7-8730-f33fa32fe9f8.jpeg)
 
+
+![](https://cloud.githubusercontent.com/assets/4654474/25764790/8beded1c-31b7-11e7-8297-c3c2c8979004.jpeg)
+
 **loess**    
   
-![](https://cloud.githubusercontent.com/assets/4654474/25764549/5fce2e28-31b6-11e7-8eef-aee830d24eef.jpeg)
+![](https://cloud.githubusercontent.com/assets/4654474/25764549/5fce2e28-31b6-11e7-8eef-aee830d24eef.jpeg)    
 
+
+Difference in FC of different genes between sites
+
+![](https://cloud.githubusercontent.com/assets/4654474/25765217/d78c273c-31b9-11e7-9633-8cc24fa00465.jpeg)
 
 ------
 
