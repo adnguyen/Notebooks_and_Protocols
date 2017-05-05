@@ -7818,6 +7818,32 @@ geneCT_40:SiteHF:Delta         -0.165264  -0.366331   0.039326     3576 0.109787
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
+Showing effect of bait temp on gxp     
+
+LInear fit   
+![](https://cloud.githubusercontent.com/assets/4654474/25708359/444a1dae-30b4-11e7-879b-b52e503fa304.jpeg)
+
+Loess fit   
+![](https://cloud.githubusercontent.com/assets/4654474/25760911/e146d082-31a6-11e7-87cb-433d99137296.jpeg)
+
+
+### Refitting classic mod   
+
+Parsing data
+```R
+ctmeth<-cq2log(data=warm,genecols=c(14:19),condcols=c(13,5:6,1:4,20:27),noamp=37,effic=amp)
+ctmeth$RIN_Value<-as.numeric(as.character(ctmeth$RIN_Value))
+ctmeth$Delta<-as.numeric(as.character(ctmeth$Delta))
+ctmeth$baittemp.ave<-as.numeric(as.character(ctmeth$baittemp.ave))
+ctmeth$Jdaycont<-as.numeric(as.character(ctmeth$Jdaycont))
+str(ctmeth)
+```
+
+Model fitting    
+
+```R
+classicmod<-mcmc.qpcr.classic(fixed="Site+baittemp.ave+Delta+Site:baittemp.ave+Site:Delta",globalRandom="Cham",globalFixed=c("RIN_Value","Jdaycont"),data=ctmeth,controls=c("CT_actin","CT_gapdh"),pr=T,pl=T,nitt=50000)
+```
 
 
 ------
