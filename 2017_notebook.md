@@ -8117,9 +8117,14 @@ Differences between hf and df with bait and delta
 ![](https://cloud.githubusercontent.com/assets/4654474/25764055/11249c28-31b4-11e7-84c8-3de4520a210f.jpeg)
 
 
-Parse out by gene 
+
+**Parse out by gene**    
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25764085/3174cdc2-31b4-11e7-8730-f33fa32fe9f8.jpeg)
+
+**loess**    
+  
+![](https://cloud.githubusercontent.com/assets/4654474/25764549/5fce2e28-31b6-11e7-8eef-aee830d24eef.jpeg)
 
 
 ------
