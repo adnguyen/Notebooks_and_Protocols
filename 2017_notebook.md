@@ -7338,7 +7338,9 @@ Models:
 ### Harvad forest naive model      
 
 ```R
-HFnonnorm=mcmc.qpcr(fixed="baittemp.ave+Delta",random="Cham",data=ddHF,pr=TRUE,vprior="iw",nitt=50000,geneSpecRes =FALSE,pl=TRUE,include=0,controls=c("CT_18s","CT_actin","CT_gapdh"),globalFixed=c("RIN_Value","Jdaycont"),m.fix=1.5)
+HFnonnorm=mcmc.qpcr(fixed="baittemp.ave+Delta",random="Cham",data=ddHF,pr=TRUE,
+vprior="iw",nitt=50000,geneSpecRes =FALSE,pl=TRUE,include=0,controls=c("CT_18s","CT_actin","CT_gapdh"),
+globalFixed=c("RIN_Value","Jdaycont"),m.fix=1.5)
 summary(HFsoftnorm)
 ```
 
@@ -7408,7 +7410,9 @@ Relationship between normalized log2 abundance vs bait temp.
 **based on naive model, I should normalize based on actin and 18s**   
 
 ```R
-HFsoftnorm2=mcmc.qpcr(fixed="baittemp.ave+Delta",random="Cham",data=ddHF,pr=TRUE,vprior="iw",nitt=50000,geneSpecRes = TRUE,pl=TRUE,normalize=TRUE,controls=c("CT_18s","CT_actin","CT_gapdh"),globalFixed=c("RIN_Value","Jdaycont"),m.fix=1.5)#+Delta
+HFsoftnorm2=mcmc.qpcr(fixed="baittemp.ave+Delta",random="Cham",
+data=ddHF,pr=TRUE,vprior="iw",nitt=50000,geneSpecRes = TRUE,pl=TRUE,normalize=TRUE,controls=c("CT_18s","CT_actin","CT_gapdh"),
+globalFixed=c("RIN_Value","Jdaycont"),m.fix=1.5)
 ```
 
 ### Harvard forest soft norm based on actin and 18s output and figures    
@@ -7470,7 +7474,9 @@ geneCT_40:Delta            -0.218815  -0.588207   0.167011     4486 0.26340
 ### Harvard forest soft normalization based on 3 ref sets: 18s, actin, gapdh    
 
 ```R
-HFsoftnorm2=mcmc.qpcr(fixed="baittemp.ave+Delta",random="Cham",data=ddHF,pr=TRUE,vprior="iw",nitt=50000,geneSpecRes = TRUE,pl=TRUE,normalize=TRUE,controls=c("CT_18s","CT_actin","CT_gapdh"),globalFixed=c("RIN_Value","Jdaycont"),m.fix=1.5)#+Delta
+HFsoftnorm2=mcmc.qpcr(fixed="baittemp.ave+Delta",random="Cham",data=ddHF,
+pr=TRUE,vprior="iw",nitt=50000,geneSpecRes = TRUE,pl=TRUE,normalize=TRUE,controls=c("CT_18s","CT_actin","CT_gapdh"),
+globalFixed=c("RIN_Value","Jdaycont"),m.fix=1.5)#+Delta
 summary(HFsoftnorm2)
 ```
 ### Output hf soft norm 18s actin gapdh      
@@ -7530,7 +7536,10 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 ### DF naive model 
 
 ```R
-DFnaive=mcmc.qpcr(fixed="baittemp.ave+Delta",random=c("Cham"),data=ddDF,pr=TRUE,vprior="iw",nitt=50000,pl=TRUE,include=0,controls=c("CT_18s","CT_actin","CT_gapdh"),globalFixed=c("RIN_Value","Jdaycont"),m.fix=2,geneSpecRes=FALSE)
+DFnaive=mcmc.qpcr(fixed="baittemp.ave+Delta",random=c("Cham"),
+data=ddDF,pr=TRUE,vprior="iw",nitt=50000,pl=TRUE,
+include=0,controls=c("CT_18s","CT_actin","CT_gapdh"),
+globalFixed=c("RIN_Value","Jdaycont"),m.fix=2,geneSpecRes=FALSE)
 ```
 ### DF naive model output   
 
@@ -7595,7 +7604,9 @@ All genes are going down...I'll try fitting a soft norm with 3 ref genes
 So here i'd test, whether hsps are changing at a faster/slower rate than the ref set along bait temp. 
 
 ```R
-DFsoftnorm2=mcmc.qpcr(fixed="baittemp.ave+Delta",random="Cham",data=ddDF,pr=TRUE,vprior="iw",nitt=50000,geneSpecRes = TRUE,pl=TRUE,normalize=TRUE,controls=c("CT_18s","CT_actin","CT_gapdh"),globalFixed=c("RIN_Value","Jdaycont"),m.fix=1.5)
+DFsoftnorm2=mcmc.qpcr(fixed="baittemp.ave+Delta",random="Cham",data=ddDF,
+pr=TRUE,vprior="iw",nitt=50000,geneSpecRes = TRUE,pl=TRUE,normalize=TRUE,controls=c("CT_18s","CT_actin","CT_gapdh"),
+globalFixed=c("RIN_Value","Jdaycont"),m.fix=1.5)
 ```
 
 ### Duke forest soft norm with 3 refs output and figs    
@@ -7648,6 +7659,166 @@ geneCT_40:Delta         -0.001807  -0.260435   0.259638     4989 0.99617
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
+
+### Lets look at combined SOFT Normalized model: test for site * bait temp interaction     
+
+model construction:  
+
+```R
+mm=mcmc.qpcr(
+fixed="Site+baittemp.ave+Delta+Site:baittemp.ave+Site:Delta",
+random=c("Cham2"),globalFixed=c("RIN_Value","Jdaycont"),controls=c("CT_actin","CT_gapdh","CT_18s"),include=0,data=dd,pr=TRUE,vprior="iw",nitt=50000,geneSpecRes = FALSE,pl=TRUE)
+summary(mm)
+```
+
+```R
+
+ Iterations = 3001:49991
+ Thinning interval  = 10
+ Sample size  = 4700 
+
+ DIC: 37218.42 
+
+ G-structure:  ~sample
+
+       post.mean l-95% CI u-95% CI eff.samp
+sample     6.274    5.005    7.636    672.2
+
+               ~idh(gene):Cham2
+
+                   post.mean l-95% CI u-95% CI eff.samp
+geneCT_40.Cham2       0.4176   0.1896   0.7132     4700
+geneCT_70.Cham2       0.3976   0.1855   0.6655     4700
+geneCT_83.Cham2       0.3950   0.1747   0.6653     4700
+geneCT_18s.Cham2      0.5834   0.2599   1.0168     4700
+geneCT_gapdh.Cham2    0.5542   0.2432   0.9563     4700
+geneCT_actin.Cham2    0.4558   0.1924   0.7927     4700
+
+ R-structure:  ~units
+
+      post.mean l-95% CI u-95% CI eff.samp
+units     2.898    2.713    3.064     3033
+
+ Location effects: count ~ 0 + gene + RIN_Value + Jdaycont + +gene:Site + gene:baittemp.ave + gene:Delta + gene:Site:baittemp.ave + gene:Site:Delta 
+
+                                  post.mean   l-95% CI   u-95% CI eff.samp    pMCMC    
+geneCT_40                         11.822062   9.005032  14.432795     3697  < 2e-04 ***
+geneCT_70                         13.794258  11.133172  16.508019     3917  < 2e-04 ***
+geneCT_83                          8.620266   5.721065  11.238058     4442  < 2e-04 ***
+geneCT_18s                        29.771465  27.161697  32.606825     4700  < 2e-04 ***
+geneCT_gapdh                      15.096474  12.192159  17.705313     3620  < 2e-04 ***
+geneCT_actin                      12.489472   9.796855  15.269530     4465  < 2e-04 ***
+RIN_Value                         -0.113658  -0.265027   0.028872     4482 0.123404    
+Jdaycont                           0.010066   0.007892   0.012371     4700  < 2e-04 ***
+geneCT_40:SiteHF                 -21.975881 -32.487062 -11.289222     4700  < 2e-04 ***
+geneCT_70:SiteHF                 -25.065039 -35.036285 -14.541056     4700  < 2e-04 ***
+geneCT_83:SiteHF                 -25.060015 -35.575939 -14.371653     4700  < 2e-04 ***
+geneCT_18s:SiteHF                -23.153648 -33.472287 -12.514714     4955  < 2e-04 ***
+geneCT_gapdh:SiteHF              -23.363184 -33.619975 -12.762416     4700  < 2e-04 ***
+geneCT_actin:SiteHF              -17.705744 -28.052297  -7.287786     4700 0.000426 ***
+geneCT_40:baittemp.ave            -0.388470  -0.485090  -0.282392     3288  < 2e-04 ***
+geneCT_70:baittemp.ave            -0.335051  -0.433817  -0.235877     4026  < 2e-04 ***
+geneCT_83:baittemp.ave            -0.200785  -0.296581  -0.091502     4205  < 2e-04 ***
+geneCT_18s:baittemp.ave           -0.625554  -0.726443  -0.527732     4700  < 2e-04 ***
+geneCT_gapdh:baittemp.ave         -0.421660  -0.523804  -0.322599     3495  < 2e-04 ***
+geneCT_actin:baittemp.ave         -0.311388  -0.411320  -0.209647     4582  < 2e-04 ***
+geneCT_40:Delta                    0.149857  -0.141126   0.431712     4700 0.306809    
+geneCT_70:Delta                    0.140155  -0.153728   0.429957     4700 0.328511    
+geneCT_83:Delta                    0.187249  -0.098200   0.467758     4700 0.196170    
+geneCT_18s:Delta                   0.248577  -0.058683   0.554538     4700 0.119574    
+geneCT_gapdh:Delta                 0.227091  -0.084731   0.525936     4700 0.148511    
+geneCT_actin:Delta                 0.139773  -0.171241   0.414983     4700 0.358298    
+geneCT_40:SiteHF:baittemp.ave      0.892454   0.505511   1.308730     4700  < 2e-04 ***
+geneCT_70:SiteHF:baittemp.ave      1.016732   0.626500   1.401237     4550  < 2e-04 ***
+geneCT_83:SiteHF:baittemp.ave      0.998540   0.591417   1.386713     4700  < 2e-04 ***
+geneCT_18s:SiteHF:baittemp.ave     0.970596   0.565018   1.357887     4991  < 2e-04 ***
+geneCT_gapdh:SiteHF:baittemp.ave   0.913561   0.529752   1.315875     4700  < 2e-04 ***
+geneCT_actin:SiteHF:baittemp.ave   0.654713   0.280649   1.062279     4700 0.000851 ***
+geneCT_40:SiteHF:Delta            -0.490708  -0.949807   0.053141     4480 0.058723 .  
+geneCT_70:SiteHF:Delta            -0.609615  -1.101972  -0.106584     4700 0.017447 *  
+geneCT_83:SiteHF:Delta            -0.542245  -1.046443  -0.056325     4924 0.034043 *  
+geneCT_18s:SiteHF:Delta           -0.518337  -1.054346  -0.012797     4700 0.052340 .  
+geneCT_gapdh:SiteHF:Delta         -0.536793  -1.043260   0.003550     4700 0.049787 *  
+geneCT_actin:SiteHF:Delta         -0.194960  -0.696403   0.310583     4700 0.459574    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+
+
+### Lets look at combined SOFT Normalized model: test for site * bait temp interaction     
+
+...while controlling for 3 reference genes.... actin, 18s, gapdh
+
+
+Model construction   
+
+```R
+softnorm=mcmc.qpcr(fixed="Site+baittemp.ave+Delta+Site:baittemp.ave+Site:Delta",
+globalRandom="Cham2",data=dd,pr=TRUE,vprior="iw",nitt=50000,
+geneSpecRes =FALSE,pl=TRUE,normalize=TRUE,controls=c("CT_actin","CT_gapdh","CT_18s"),
+globalFixed=c("RIN_Value","Jdaycont"),m.fix=2)
+```
+
+
+output:   
+
+```R
+ Iterations = 3001:49991
+ Thinning interval  = 10
+ Sample size  = 4700 
+
+ DIC: 20307.05 
+
+ G-structure:  ~sample
+
+       post.mean l-95% CI u-95% CI eff.samp
+sample     4.488    3.603    5.441     4700
+
+               ~Cham2
+
+      post.mean  l-95% CI u-95% CI eff.samp
+Cham2   0.05307 2.383e-09   0.2132     1238
+
+ R-structure:  ~units
+
+      post.mean l-95% CI u-95% CI eff.samp
+units     1.597    1.482    1.725     2090
+
+ Location effects: count ~ gene + RIN_Value + Jdaycont + Site + baittemp.ave + Delta + Site:baittemp.ave + Site:Delta + gene:Site + gene:baittemp.ave + gene:Delta + gene:Site:baittemp.ave + gene:Site:Delta 
+
+                               post.mean   l-95% CI   u-95% CI eff.samp    pMCMC    
+(Intercept)                    20.765616  18.518837  23.010194     3192  < 2e-04 ***
+geneCT_83                      -9.101701 -11.154752  -7.040275     4334  < 2e-04 ***
+geneCT_70                      -4.481281  -6.436953  -2.265938     4700 0.000426 ***
+geneCT_40                      -6.981607  -9.163210  -4.942460     3594  < 2e-04 ***
+RIN_Value                      -0.009514  -0.147358   0.121073     4269 0.881702    
+Jdaycont                        0.008601   0.006671   0.010532     3976  < 2e-04 ***
+SiteHF                        -20.033476 -29.109914 -11.837664     4176  < 2e-04 ***
+baittemp.ave                   -0.518049  -0.608928  -0.436984     2785  < 2e-04 ***
+Delta                           0.160806  -0.037144   0.380270     4700 0.124681    
+SiteHF:baittemp.ave             0.792163   0.465078   1.113011     4215  < 2e-04 ***
+SiteHF:Delta                   -0.272132  -0.629893   0.103980     4700 0.155319    
+geneCT_83:SiteHF               -8.761300 -13.821726  -3.439695     4046 0.000426 ***
+geneCT_70:SiteHF               -6.710382 -11.733099  -1.388099     4244 0.007234 ** 
+geneCT_40:SiteHF               -3.267049  -8.625278   1.738584     3598 0.216596    
+geneCT_83:baittemp.ave          0.204517   0.127550   0.283634     4319  < 2e-04 ***
+geneCT_70:baittemp.ave          0.090717   0.009584   0.167971     4700 0.028511 *  
+geneCT_40:baittemp.ave          0.059822  -0.017174   0.143952     3497 0.146383    
+geneCT_83:Delta                 0.037275  -0.076766   0.147296     4403 0.512766    
+geneCT_70:Delta                -0.010336  -0.125017   0.093081     4700 0.853191    
+geneCT_40:Delta                -0.005442  -0.115911   0.108092     4444 0.934894    
+geneCT_83:SiteHF:baittemp.ave   0.335731   0.128712   0.518240     4106 0.000426 ***
+geneCT_70:SiteHF:baittemp.ave   0.286206   0.090584   0.478491     4299 0.003404 ** 
+geneCT_40:SiteHF:baittemp.ave   0.147327  -0.038703   0.354963     3555 0.130638    
+geneCT_83:SiteHF:Delta         -0.183220  -0.391793   0.014840     3846 0.081277 .  
+geneCT_70:SiteHF:Delta         -0.281034  -0.475357  -0.071999     3531 0.006809 ** 
+geneCT_40:SiteHF:Delta         -0.165264  -0.366331   0.039326     3576 0.109787    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+
 
 ------
 
