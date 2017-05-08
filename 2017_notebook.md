@@ -8417,7 +8417,8 @@ head(gxp)
 same model construction   
 
 ```R
-fullmod5<-lme(FC~RIN_Value+Jdaycont+gene*Site*baittemp.ave+gene*Site*Delta,random=~1|Cham2/Vial.me,data=findat.long,method="ML")
+fullmod5<-lme(FC~RIN_Value+Jdaycont+gene*Site*baittemp.ave+gene*Site*Delta,
+random=~1|Cham2/Vial.me,data=findat.long,method="ML")
 
 anova(summary(stepAIC(fullmod5,direction="both")))
 ```
