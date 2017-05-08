@@ -103,7 +103,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 75: 2017-05-03](#id-section75). Stressed in nature project: Analyses...again    
 * [Page 76: 2017-05-04](#id-section76). Stressed in nature project: Analyses, including technical replicates    
 * [Page 77: 2017-05-05](#id-section77). Stressed in nature project: Analyses with recoded data and splitting by site    
-* [Page 78:](#id-section78).
+* [Page 78: 2017-05-08](#id-section78). quantifying gene stability with geNorm      
 * [Page 79:](#id-section79).
 * [Page 80:](#id-section80).
 * [Page 81:](#id-section81).
@@ -8161,7 +8161,238 @@ Difference in FC of different genes between sites
 
  <div id='id-section78'/> 
 
-### Page 78:  
+### Page 78:  2017-05-08. quantifying gene stability with geNorm in the SLqPCR package      
+
+MCMC.qpcr package can convert raw ct values into a table for geNORM. geNORM evaluates gene expression stability. Below is the code....    
+
+* for the 3 reference genes    
+
+```R
+stable<-cq2genorm(warm,genes=c("CT_actin","CT_gapdh","CT_18s"),noamp=37,effic=amp)
+head(stable)
+```
+
+* for all 6 genes    
+
+```R
+all<-cq2genorm(warm,genes=c("CT_actin","CT_gapdh","CT_18s","CT_70","CT_83","CT_40"),noamp=37,effic=amp)
+```
+
+### The selectHKgenes function: 
+
+```
+This function can be used to determine a set of reference/housekeeping (HK) genes for gene expression experiments. The default method "Vandesompele" was proposed by Vandesompele et al. (2002).
+
+If method = "Vandesompele" a list with the following components is returnd
+ranking	ranking of genes from best to worst where the two most stable genes cannot be ranked
+variation pairwise variation during stepwise selection
+meanM average expression stability M
+```
+
+What is stability M? How is it measured?   
+
+From their paper (Vandesompele); they determine the pariwise variation for every control gene as the SD of log transformed expression ratios. They define this as gene-stability measure M -- average variation of a particular gene with all other control genes. 
+
+* LOW M = most stable. 
+
+
+1. Evaluating stability for 3 ref sets:    
+
+```R
+selectHKgenes(stable,geneSymbol=c("actin","gapdh","18s"))
+###############################################################
+Step  1 :
+gene expression stability values M:
+   gapdh    actin      18s 
+4.109859 4.417064 5.242474 
+average expression stability M:	 4.589799 
+gene with lowest stability (largest M value):	 18s 
+Pairwise variation, ( 2 / 3 ):	 1.662695 
+###############################################################
+Step  2 :
+gene expression stability values M:
+  actin   gapdh 
+3.28445 3.28445 
+average expression stability M:	 3.28445 
+$ranking
+      1       1       3 
+"actin" "gapdh"   "18s" 
+
+$variation
+     2/3 
+1.662695 
+
+$meanM
+       3        2 
+4.589799 3.284450 
+```
+
+2. Eval all 6 genes     
+
+```R
+selectHKgenes(all,geneSymbol=c("CT_actin","CT_gapdh","CT_18s","CT_70","CT_83","CT_40"))
+###############################################################
+Step  1 :
+gene expression stability values M:
+   CT_70    CT_40    CT_83 CT_gapdh CT_actin   CT_18s 
+3.213355 3.274018 3.618803 3.692725 3.713486 4.898314 
+average expression stability M:	 3.735117 
+gene with lowest stability (largest M value):	 CT_18s 
+Pairwise variation, ( 5 / 6 ):	 0.7470254 
+###############################################################
+Step  2 :
+gene expression stability values M:
+   CT_70    CT_40 CT_actin    CT_83 CT_gapdh 
+2.880148 2.963412 3.254438 3.287504 3.382089 
+average expression stability M:	 3.153518 
+gene with lowest stability (largest M value):	 CT_gapdh 
+Pairwise variation, ( 4 / 5 ):	 0.5661937 
+###############################################################
+Step  3 :
+gene expression stability values M:
+   CT_70    CT_40    CT_83 CT_actin 
+2.758816 2.838390 3.162911 3.244434 
+average expression stability M:	 3.001138 
+gene with lowest stability (largest M value):	 CT_actin 
+Pairwise variation, ( 3 / 4 ):	 0.702729 
+###############################################################
+Step  4 :
+gene expression stability values M:
+   CT_70    CT_40    CT_83 
+2.498380 2.659493 3.115653 
+average expression stability M:	 2.757842 
+gene with lowest stability (largest M value):	 CT_83 
+Pairwise variation, ( 2 / 3 ):	 0.9826598 
+###############################################################
+Step  5 :
+gene expression stability values M:
+  CT_70   CT_40 
+2.04222 2.04222 
+average expression stability M:	 2.04222 
+$ranking
+         1          1          3          4          5          6 
+   "CT_70"    "CT_40"    "CT_83" "CT_actin" "CT_gapdh"   "CT_18s" 
+
+$variation
+      5/6       4/5       3/4       2/3 
+0.7470254 0.5661937 0.7027290 0.9826598 
+
+$meanM
+       6        5        4        3        2 
+3.735117 3.153518 3.001138 2.757842 2.042220 
+```
+
+It looks like the ref set is more variable than the gene set we're interested in. Anyway, when looking at the control set, gapdh and actin are the most stable. I should try to calculate relative expression using the geometric mean of these 2. 
+
+
+OK, lets look at the model without including 18s as a HKG.   
+
+data parsing: i just need to alter this line of code  
+
+```R
+#hkg<-cbind(x3$CT_18s,x3$CT_actin,x3$CT_gapdh)
+hkg<-cbind(x3$CT_actin,x3$CT_gapdh)
+
+```
+
+### Statistics: linear mixed effects models   
+
+```R
+fullmod5<-lme(FC~RIN_Value+Jdaycont+gene*Site*baittemp.ave+gene*Site*Delta,random=~1|Cham2/Vial.me,data=findat.long)
+anova(fullmod5)
+                     numDF denDF   F-value p-value
+(Intercept)                1  1006  0.097464  0.7550
+RIN_Value                  1  1006  0.002386  0.9611
+Jdaycont                   1  1006  7.053760  0.0080
+gene                       5  1006  0.000000  1.0000
+Site                       1    23 18.638167  0.0003
+baittemp.ave               1  1006  4.349922  0.0373
+Delta                      1    23  0.094197  0.7617
+gene:Site                  5  1006  9.628759  <.0001
+gene:baittemp.ave          5  1006 18.358946  <.0001
+Site:baittemp.ave          1   169  1.410071  0.2367
+gene:Delta                 5  1006  0.124950  0.9868
+Site:Delta                 1    23  3.457577  0.0758
+gene:Site:baittemp.ave     5  1006  1.504986  0.1855
+gene:Site:Delta            5  1006  1.481099  0.1933
+```
+
+Ok, let's do model selection: forward and backwards:   
+
+```R
+anova(summary(stepAIC(fullmod5,direction="both")))
+                  numDF denDF   F-value p-value
+(Intercept)           1  1022  0.061735  0.8038
+Jdaycont              1  1022  4.757535  0.0294
+gene                  5  1022  0.000000  1.0000
+Site                  1    23 24.925993  <.0001
+baittemp.ave          1  1022  4.687937  0.0306
+Delta                 1    23  0.080154  0.7796
+gene:Site             5  1022  9.591095  <.0001
+gene:baittemp.ave     5  1022 18.287133  <.0001
+Site:baittemp.ave     1   169  1.137005  0.2878
+Site:Delta            1    23  3.889363  0.0607
+```
+
+Ok, let's look at the parameter estimates:    
+
+```R
+summary(stepAIC(fullmod5,direction="both"))
+Fixed effects: FC ~ Jdaycont + gene + Site + baittemp.ave + Delta + gene:Site +      gene:baittemp.ave + Site:baittemp.ave + Site:Delta 
+                              Value Std.Error   DF   t-value p-value
+(Intercept)                7.079159 1.5735006 1022  4.498987  0.0000
+Jdaycont                  -0.000706 0.0004481 1022 -1.575720  0.1154
+genefcactin               -6.521205 1.9626275 1022 -3.322691  0.0009
+genefcgapdh               -5.734743 1.9626275 1022 -2.921972  0.0036
+genefchsp40               -9.208631 1.9626275 1022 -4.691991  0.0000
+genefchsp70              -12.810381 1.9626275 1022 -6.527159  0.0000
+genefchsp83              -16.817619 1.9626275 1022 -8.568931  0.0000
+SiteHF                    -1.669959 2.4053577   23 -0.694266  0.4945
+baittemp.ave              -0.289514 0.0600672 1022 -4.819841  0.0000
+Delta                      0.033287 0.0527495   23  0.631046  0.5342
+genefcactin:SiteHF        -2.324439 0.3884348 1022 -5.984117  0.0000
+genefcgapdh:SiteHF        -2.495652 0.3884348 1022 -6.424894  0.0000
+genefchsp40:SiteHF        -1.519840 0.3884348 1022 -3.912729  0.0001
+genefchsp70:SiteHF        -1.215410 0.3884348 1022 -3.128994  0.0018
+genefchsp83:SiteHF        -1.964134 0.3884348 1022 -5.056534  0.0000
+genefcactin:baittemp.ave   0.275771 0.0743151 1022  3.710831  0.0002
+genefcgapdh:baittemp.ave   0.248739 0.0743151 1022  3.347080  0.0008
+genefchsp40:baittemp.ave   0.365116 0.0743151 1022  4.913071  0.0000
+genefchsp70:baittemp.ave   0.495528 0.0743151 1022  6.667932  0.0000
+genefchsp83:baittemp.ave   0.655617 0.0743151 1022  8.822116  0.0000
+SiteHF:baittemp.ave        0.163719 0.0907195  169  1.804667  0.0729
+SiteHF:Delta              -0.191388 0.0970456   23 -1.972147  0.0607
+
+```
+
+It looks like there is an overall site effect such that HF has lower expression in all 6 genes than DF. Each gene has a sig slope/relationship with bait temp, but they differ in magnitudie. This relationship does not differ sig between sites. 
+
+### Some plots     
+
+**Plotting FC vs bait temp**     
+
+Loess fits for fold change vs bait temp for all genes colored by sites   
+
+![](https://cloud.githubusercontent.com/assets/4654474/25804223/a4353002-33c8-11e7-9de5-ae3060d2cea6.jpeg)
+
+Linear fits for fold change vs bait temp for all genes colored by sites     
+
+![](https://cloud.githubusercontent.com/assets/4654474/25804251/c9830f50-33c8-11e7-8a4f-3e3b808b6ad6.jpeg)    
+The site level diffeerences are not sig....     
+
+Linear fits for fold change vs bait temp for all genes         
+![](https://cloud.githubusercontent.com/assets/4654474/25804272/ee7101a0-33c8-11e7-9e08-b0a74e1dd1ea.jpeg)   
+
+**Plotting FC vs gene for each site**    
+
+```R
+findat.long$gene<-as.factor(findat.long$gene)
+gg<-summarySE(findat.long,measurevar ="FC",groupvars=c("Site","gene"))
+ggplot(gg,aes(x=Site,y=FC,colour=gene,group=gene))+geom_errorbar(aes(ymin=FC-se,ymax=FC+se),width=.4,position=position_dodge(.5))+geom_point(size=3,position=position_dodge(.5))+geom_line(position=position_dodge(.5))
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25804396/abdf9788-33c9-11e7-8dbf-c143c3601930.jpeg)
+
 
 ------
 
