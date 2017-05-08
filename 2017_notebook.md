@@ -8455,9 +8455,14 @@ delta * site interaction significant this time.
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25813504/da113404-33e7-11e7-923b-c87ad7290ab9.jpeg)   
 
+### Plots: FC vs bait, 2 panel sites   
 
+loess 
+![](https://cloud.githubusercontent.com/assets/4654474/25814124/4d10ca30-33ea-11e7-9e4b-686df997ac91.jpeg)
 
+linear    
 
+![](https://cloud.githubusercontent.com/assets/4654474/25814165/785d3322-33ea-11e7-8464-087fb0f5bab3.jpeg)
 ------
 
  <div id='id-section79'/> 
