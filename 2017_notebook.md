@@ -8393,6 +8393,70 @@ ggplot(gg,aes(x=Site,y=FC,colour=gene,group=gene))+geom_errorbar(aes(ymin=FC-se,
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25804396/abdf9788-33c9-11e7-8dbf-c143c3601930.jpeg)
 
+### Redoing stats with more precise efficiencies this time    
+
+data parsing:    
+
+```R
+gxp1<-data.frame(log2(apply(deltaCTnum[,1:2],2,function(x){2^(x)/1.93^(deltaCTden)}))) # 18 eff = 2
+gxp2<-data.frame(log2(apply(deltaCTnum[,2:4],2,function(x){1.97^(x)/1.93^(deltaCTden)}))) # hsp effic = 1.97
+gxp3<-data.frame(log2(apply(deltaCTnum[,5:6],2,function(x){1.93^(x)/1.93^(deltaCTden)}))) # gapdh and actin eff = 1.93
+gxp<-data.frame(CT_18s=gxp1[,1],gxp2,gxp3)
+names(gxp)<-c("fc18s","fchsp40","fchsp70","fchsp83","fcactin","fcgapdh")
+
+head(gxp)
+        fc18s     fchsp40   fchsp70     fchsp83    fcactin     fcgapdh
+1 -3.35598720  0.08869005 -0.196357 -5.10857584 -0.2974979  0.33337142
+2 -4.22295350 -1.71440629 -1.573938 -3.08692726 -0.3648462  0.39693007
+3  1.15712657  3.13068058  2.927802  0.79659331 -0.5778360  0.60227319
+4 -4.22385927  0.17671276  1.997721  1.55194331  1.0106763 -0.98797586
+5  0.04264102  3.54676875  2.529053  3.67969085 -0.6733599  0.69267514
+6  4.67288683  0.14506857  1.144392  0.03931094  0.1147508 -0.06922802
+```
+
+same model construction   
+
+```R
+fullmod5<-lme(FC~RIN_Value+Jdaycont+gene*Site*baittemp.ave+gene*Site*Delta,random=~1|Cham2/Vial.me,data=findat.long,method="ML")
+
+anova(summary(stepAIC(fullmod5,direction="both")))
+```
+
+model output 
+
+```R
+Step:  AIC=5133.09
+FC ~ gene + Site + baittemp.ave + Delta + gene:Site + gene:baittemp.ave + 
+    Site:baittemp.ave + Site:Delta
+
+                         Df    AIC
+<none>                      5133.1
++ Jdaycont                1 5134.4
++ RIN_Value               1 5134.8
+- Site:baittemp.ave       1 5135.1
+- Site:Delta              1 5135.4
++ gene:Site:baittemp.ave  5 5135.8
++ gene:Delta              5 5142.5
+- gene:Site               5 5178.8
+- gene:baittemp.ave       5 5213.8
+                  numDF denDF   F-value p-value
+(Intercept)           1  1023  0.077408  0.7809
+gene                  5  1023  0.000000  1.0000
+Site                  1    23 27.835461  <.0001
+baittemp.ave          1  1023  4.074081  0.0438
+Delta                 1    23  0.115459  0.7371
+gene:Site             5  1023  9.620273  <.0001
+gene:baittemp.ave     5  1023 18.634274  <.0001
+Site:baittemp.ave     1   169  1.592226  0.2087
+Site:Delta            1    23  4.344712  0.0484
+```
+
+delta * site interaction significant this time.  
+
+![](https://cloud.githubusercontent.com/assets/4654474/25813504/da113404-33e7-11e7-923b-c87ad7290ab9.jpeg)   
+
+
+
 
 ------
 
