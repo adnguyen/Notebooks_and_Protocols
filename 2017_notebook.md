@@ -8496,7 +8496,202 @@ loess
 
 linear    
 
-![](https://cloud.githubusercontent.com/assets/4654474/25814165/785d3322-33ea-11e7-8464-087fb0f5bab3.jpeg)
+![](https://cloud.githubusercontent.com/assets/4654474/25814165/785d3322-33ea-11e7-8464-087fb0f5bab3.jpeg)    
+
+
+### Meeting notes with SHC, 1pm    
+
+* do analysis for each gene, take out hkg    
+	* hkg is good first start, but take them out, get slapped!     
+* Consider taking residuals from regression model including julian day and rin values    
+* Need info on summer temperatures    
+	* mean, min, max monthly temperatures in growing season.     
+	* get experienced temperature from chambers (average across 5 years)        
+* 
+
+### Model without HKGs
+
+```R
+findat.long<-gather(findat,gene,FC,fchsp40:fchsp83) #taking out control genes
+fullmod5<-lme(FC~RIN_Value+Jdaycont+gene*Site*baittemp.ave+gene*Site*Delta,random=~1|Cham2/Vial.me,data=findat.long)
+
+anova(fullmod5)
+                       numDF denDF   F-value p-value
+(Intercept)                1   406  0.069148  0.7927
+RIN_Value                  1   406  0.412211  0.5212
+Jdaycont                   1   406 10.681845  0.0012
+gene                       2   406  0.000000  1.0000
+Site                       1    23 14.303692  0.0010
+baittemp.ave               1   406 27.960798  <.0001
+Delta                      1    23  0.227509  0.6379
+gene:Site                  2   406  1.682853  0.1871
+gene:baittemp.ave          2   406 10.552477  <.0001
+Site:baittemp.ave          1   169  1.437611  0.2322
+gene:Delta                 2   406  0.017785  0.9824
+Site:Delta                 1    23  2.201969  0.1514
+gene:Site:baittemp.ave     2   406  1.054346  0.3494
+gene:Site:Delta            2   406  0.301835  0.7396
+```
+
+model selection based on AIC     
+
+```R
+Formula: ~1 | Vial.me %in% Cham2
+        (Intercept) Residual
+StdDev:    1.246812 1.510167
+
+Fixed effects: FC ~ Jdaycont + gene + Site + baittemp.ave + Delta + gene:Site +      gene:baittemp.ave + Site:baittemp.ave + Site:Delta 
+                             Value Std.Error  DF   t-value p-value
+(Intercept)              -1.642948  1.549218 413 -1.060502  0.2895
+Jdaycont                 -0.001323  0.000605 413 -2.187980  0.0292
+genefchsp70              -3.523216  1.636554 413 -2.152826  0.0319
+genefchsp83              -7.443079  1.636554 413 -4.548019  0.0000
+SiteHF                   -5.118212  3.216726  23 -1.591124  0.1252
+baittemp.ave              0.067622  0.059515 413  1.136224  0.2565
+Delta                     0.020335  0.070936  23  0.286661  0.7769
+genefchsp70:SiteHF        0.297792  0.323900 413  0.919396  0.3584
+genefchsp83:SiteHF       -0.434606  0.323900 413 -1.341793  0.1804
+genefchsp70:baittemp.ave  0.127569  0.061968 413  2.058619  0.0402
+genefchsp83:baittemp.ave  0.284167  0.061968 413  4.585681  0.0000
+SiteHF:baittemp.ave       0.233840  0.121765 169  1.920421  0.0565
+SiteHF:Delta             -0.213972  0.130397  23 -1.640922  0.1144
+
+
+
+anova(summary(stepAIC(fullmod5,direction="both")))
+
+Step:  AIC=2519.29
+FC ~ Jdaycont + gene + Site + baittemp.ave + Delta + gene:Site + 
+    gene:baittemp.ave + Site:baittemp.ave + Site:Delta
+
+                         Df    AIC
+<none>                      2519.3
+- Site:Delta              1 2520.0
+- gene:Site               2 2520.5
++ RIN_Value               1 2520.8
+- Site:baittemp.ave       1 2521.0
++ gene:Site:baittemp.ave  2 2521.1
+- Jdaycont                1 2522.1
++ gene:Delta              2 2523.2
+- gene:baittemp.ave       2 2536.3
+                  numDF denDF   F-value p-value
+(Intercept)           1   413  0.044025  0.8339
+Jdaycont              1   413  4.633790  0.0319
+gene                  2   413  0.000000  1.0000
+Site                  1    23 21.076865  0.0001
+baittemp.ave          1   413 29.836209  <.0001
+Delta                 1    23  0.169841  0.6841
+gene:Site             2   413  1.682588  0.1872
+gene:baittemp.ave     2   413 10.550810  <.0001
+Site:baittemp.ave     1   169  1.819052  0.1792
+Site:Delta            1    23  2.692626  0.1144
+```
+
+### Statistics: linear mixed effects models for each gene
+
+**hsp70**
+
+```R
+hsp70<-subset(findat.long,findat.long$gene=="fchsp70")
+fullmod6<-lme(FC~RIN_Value+Jdaycont+Site*baittemp.ave+Site*Delta,random=~1|Cham2/Vial.me,data=hsp70,method="ML")
+summary(stepAIC(fullmod6,direction="both"))
+
+ Formula: ~1 | Vial.me %in% Cham2
+         (Intercept) Residual
+StdDev: 0.0002263996 1.677996
+
+Fixed effects: FC ~ Jdaycont + Site + baittemp.ave 
+                 Value Std.Error  DF   t-value p-value
+(Intercept)  -6.364371 1.3026365 170 -4.885761   0e+00
+Jdaycont     -0.004589 0.0006572   7 -6.981991   2e-04
+SiteHF        0.788088 0.2736238  25  2.880187   8e-03
+baittemp.ave  0.289517 0.0499854   7  5.792034   7e-04
+ Correlation: 
+             (Intr) Jdycnt SiteHF
+Jdaycont     -0.025              
+SiteHF        0.178  0.173       
+baittemp.ave -0.974 -0.168 -0.281
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-2.1274266 -0.6098562 -0.1545382  0.3930239  3.7842314 
+
+Number of Observations: 206
+Number of Groups: 
+             Cham2 Vial.me %in% Cham2 
+                27                197 
+```
+
+**hsp83**    
+
+```R
+hsp83<-subset(findat.long,findat.long$gene=="fchsp83")
+fullmod7<-lme(FC~RIN_Value+Jdaycont+Site*baittemp.ave+Site*Delta,
+random=~1|Cham2/Vial.me,data=hsp83,method="ML")
+#summary(fullmod7)
+summary(stepAIC(fullmod7,direction="both"))
+
+Fixed effects: FC ~ RIN_Value + Jdaycont + Site * baittemp.ave + Site * Delta 
+                        Value Std.Error  DF   t-value p-value
+(Intercept)         -9.915097  1.528096 169 -6.488532  0.0000
+RIN_Value            0.149878  0.082116   6  1.825203  0.1178
+Jdaycont             0.002731  0.001028   6  2.655774  0.0377
+SiteHF              -7.726510  4.135596  23 -1.868294  0.0745
+baittemp.ave         0.295245  0.058582   6  5.039819  0.0024
+Delta                0.008764  0.091198  23  0.096100  0.9243
+SiteHF:baittemp.ave  0.329418  0.157427 169  2.092515  0.0379
+SiteHF:Delta        -0.292487  0.166271  23 -1.759101  0.0919
+ Correlation: 
+                    (Intr) RIN_Vl Jdycnt SiteHF bttmp. Delta  StHF:.
+RIN_Value           -0.147                                          
+Jdaycont             0.089 -0.691                                   
+SiteHF              -0.404  0.291 -0.225                            
+baittemp.ave        -0.964  0.057 -0.164  0.377                     
+Delta                0.017 -0.070  0.040 -0.022 -0.129              
+SiteHF:baittemp.ave  0.401 -0.305  0.246 -0.993 -0.386  0.068       
+SiteHF:Delta        -0.019  0.111 -0.099  0.343  0.081 -0.553 -0.427
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-1.90917202 -0.24335576  0.07299595  0.29028657  1.92310971 
+
+Number of Observations: 206
+Number of Groups: 
+             Cham2 Vial.me %in% Cham2 
+                27                197 
+```
+
+**hsp40**    
+
+```R
+hsp40<-subset(findat.long,findat.long$gene=="fchsp40")
+fullmod8<-lme(FC~RIN_Value+Jdaycont+Site*baittemp.ave+Site*Delta,random=~1|Cham2/Vial.me,data=hsp40,method="ML")
+
+summary(stepAIC(fullmod8,direction="both"))
+
+Fixed effects: FC ~ Jdaycont + Site + baittemp.ave 
+                  Value Std.Error  DF   t-value p-value
+(Intercept)  -2.8557557 1.4687690 170 -1.944319  0.0535
+Jdaycont     -0.0032511 0.0007497   7 -4.336718  0.0034
+SiteHF        0.5809013 0.2956002  25  1.965159  0.0606
+baittemp.ave  0.1430383 0.0564215   7  2.535174  0.0389
+ Correlation: 
+             (Intr) Jdycnt SiteHF
+Jdaycont     -0.025              
+SiteHF        0.195  0.183       
+baittemp.ave -0.974 -0.170 -0.295
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-2.1019055 -0.6332219 -0.2321619  0.4740407  3.0532535 
+
+Number of Observations: 206
+Number of Groups: 
+             Cham2 Vial.me %in% Cham2 
+                27                197 
+```
+
+
 ------
 
  <div id='id-section79'/> 
