@@ -8484,6 +8484,10 @@ delta * site interaction significant this time.
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25813504/da113404-33e7-11e7-923b-c87ad7290ab9.jpeg)   
 
+bait temp * site interaction sig   
+
+![](https://cloud.githubusercontent.com/assets/4654474/25814710/6b65e4dc-33ec-11e7-9b7a-5f59683421e3.jpeg)
+
 ### Plots: FC vs bait, 2 panel sites   
 
 loess 
