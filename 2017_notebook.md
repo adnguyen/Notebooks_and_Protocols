@@ -8451,6 +8451,35 @@ Site:baittemp.ave     1   169  1.592226  0.2087
 Site:Delta            1    23  4.344712  0.0484
 ```
 
+Ok lets look at parameter estimates   
+
+```R
+Fixed effects: FC ~ gene + Site + baittemp.ave + Delta + gene:Site + gene:baittemp.ave +      Site:baittemp.ave + Site:Delta 
+                              Value Std.Error   DF   t-value p-value
+(Intercept)                6.958985 1.5282717 1023  4.553500  0.0000
+genefcactin               -6.449641 1.9157589 1023 -3.366624  0.0008
+genefcgapdh               -5.703602 1.9157589 1023 -2.977202  0.0030
+genefchsp40               -9.119674 1.9157589 1023 -4.760346  0.0000
+genefchsp70              -12.642891 1.9157589 1023 -6.599417  0.0000
+genefchsp83              -16.562754 1.9157589 1023 -8.645531  0.0000
+SiteHF                    -1.966949 2.3055972   23 -0.853119  0.4024
+baittemp.ave              -0.294889 0.0580370 1023 -5.081056  0.0000
+Delta                      0.031595 0.0512302   23  0.616729  0.5435
+genefcactin:SiteHF        -2.292505 0.3791587 1023 -6.046293  0.0000
+genefcgapdh:SiteHF        -2.454918 0.3791587 1023 -6.474644  0.0000
+genefchsp40:SiteHF        -1.523837 0.3791587 1023 -4.018994  0.0001
+genefchsp70:SiteHF        -1.226045 0.3791587 1023 -3.233592  0.0013
+genefchsp83:SiteHF        -1.958443 0.3791587 1023 -5.165232  0.0000
+genefcactin:baittemp.ave   0.272656 0.0725404 1023  3.758675  0.0002
+genefcgapdh:baittemp.ave   0.247013 0.0725404 1023  3.405179  0.0007
+genefchsp40:baittemp.ave   0.361846 0.0725404 1023  4.988197  0.0000
+genefchsp70:baittemp.ave   0.489415 0.0725404 1023  6.746790  0.0000
+genefchsp83:baittemp.ave   0.646013 0.0725404 1023  8.905556  0.0000
+SiteHF:baittemp.ave        0.175617 0.0868661  169  2.021694  0.0448
+SiteHF:Delta              -0.195618 0.0938489   23 -2.084397  0.0484
+summary(stepAIC(fullmod5,direction="both"))
+```
+
 delta * site interaction significant this time.  
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25813504/da113404-33e7-11e7-923b-c87ad7290ab9.jpeg)   
