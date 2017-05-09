@@ -110,7 +110,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 	* [Meeting with SHC](#id-section78.4)
 	* [Linear mixed effects models for only hsps](#id-section78.5), excluding housekeeping genes
 	* [Separating linear mixed effects models](#id-section78.6) for each HSP gene
-* [Page 79:](#id-section79).
+* [Page 79: 2017-05-09](#id-section79). Proteome stability project: addressing notes from 2017-04-26 climate cascade meeting
 * [Page 80:](#id-section80).
 * [Page 81:](#id-section81).
 * [Page 82:](#id-section82).
@@ -8716,7 +8716,117 @@ Number of Groups:
 
  <div id='id-section79'/> 
 
-### Page 79:  
+### Page 79:  2017-05-09. Proteome stability project: addressing notes from 2017-04-26 climate cascade meeting     
+
+Notes from SHC and NGotelli:
+1. Do a randomization test:
+
+	* Shuffle the labels-- go to the colony level
+	* Compare different medians
+
+**For dataset with unique and overlapping peptides between aphaeno and pogo**     
+
+```R
+ddply(combined,.(species),summarize,median=median(Estimate))
+        species   median
+1 Aphaenogaster 43.24474
+2  Pogonomyrmex 46.72500
+```
+
+Accompanying plot   
+
+```R
+Tmbox<-ggplot(combined, aes(x=species,y=Estimate,colour=species))+geom_boxplot()+ggcol
+Tmbox
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25865430/e085d612-34c0-11e7-84cd-18b87eb62bb1.jpeg)
+
+2. Do KS test to determine difference in cumulative density function (Kolmogorov-Smirnov test)
+
+	* What is KS test? Null hypothesis is 2 vectors , x and y are drawn from the same continuous distribution. Alternative is that they are not.    
+
+**For dataset with unique and overlapping peptides between aphaeno and pogo**     
+
+```R
+ks.test(Tmaph.ave$Estimate,Tmpog.ave$Estimate)
+
+	Two-sample Kolmogorov-Smirnov test
+
+data:  Tmaph.ave$Estimate and Tmpog.ave$Estimate
+D = 0.47254, p-value < 2.2e-16
+alternative hypothesis: two-sided
+```
+
+associated cumulative prob plot    
+
+![](https://cloud.githubusercontent.com/assets/4654474/25864668/466c2920-34be-11e7-9d45-1d0a46a10588.jpeg)
+
+
+Shuffling species IDs for 1 case    
+
+```R
+spec<-c("Aphaenogaster","Pogonomyrmex")
+combined$shuffle<-sample(spec,length(combined$Sequence),replace=TRUE)
+
+shufaph<-subset(combined,combined$shuffle=="Aphaenogaster")
+shufpog<-subset(combined,combined$shuffle=="Pogonomyrmex")
+
+ks.test(shufpog$Estimate,shufaph$Estimate)
+Two-sample Kolmogorov-Smirnov test
+
+data:  shufpog$Estimate and shufaph$Estimate
+D = 0.072021, p-value = 0.2211
+alternative hypothesis: two-sided
+```
+
+Shuffling species IDs and replicating it for 1000 cases
+
+Wrote a function: It is a little specific to our data      
+It basically randomizes names to our dataset and computes the KS test D statistic   
+```R
+rando<-function(data=combined){
+    data$shuffle<-sample(spec,length(data$Sequence),replace=TRUE)
+    shufaph<-subset(data,data$shuffle=="Aphaenogaster")
+    shufpog<-subset(data,data$shuffle=="Pogonomyrmex")
+    y=ks.test(shufaph$Estimate,shufpog$Estimate)
+    #print(round(y$p.value,3))
+    print(as.vector(round(y[[1]],3)))
+    #print(as.vector(cbind(round(y[[1]],3),round(y$p.value,3))))
+}
+rando()
+```
+
+Used the replicate function to repeat rando()
+```R
+distks<-replicate(1000,rando())
+distks<-data.frame(distks)
+```
+
+Accompanying figure: gray is the randomized distribution of D statistics, the line is the D statistic from our analysis    
+
+```R
+ggplot(distks,aes(x=distks))+geom_histogram(binwidth=.01)+
+xlim(0,.6)+geom_vline(xintercept=0.47254)+xlab("D statistic from KS test")
+
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25865236/478caada-34c0-11e7-9403-141d533c121b.jpeg)
+
+3. Plot density curves
+
+**For dataset with unique and overlapping peptides between aphaeno and pogo**     
+
+![](https://cloud.githubusercontent.com/assets/4654474/25863113/85a7f5de-34b8-11e7-8bc0-038869fff497.jpeg)
+
+
+4. Plot Aph Tm vs Pogo Tm
+
+Create story board for manuscript ; focus on narrative and then construct figures accordingly
+
+Try to analyze by block which might account for variation intraspecific variation
+
+NGotelli comment: Aph Tms are within the range of pogo Tms     
 
 ------
 
