@@ -104,6 +104,12 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 76: 2017-05-04](#id-section76). Stressed in nature project: Analyses, including technical replicates    
 * [Page 77: 2017-05-05](#id-section77). Stressed in nature project: Analyses with recoded data and splitting by site    
 * [Page 78: 2017-05-08](#id-section78). quantifying gene stability with geNorm      
+	* [Linear mixed effects models for all genes](#id-section78.1).  
+	* [More precise delta delta CT calculations](#id-section78.2)
+	* [Corresponding plots](#id-section78.3)
+	* [Meeting with SHC](#id-section78.4)
+	* [Linear mixed effects models for all genes](#id-section78.5)
+	* [Separating linear mixed effects models for each gene](#id-section78.6)
 * [Page 79:](#id-section79).
 * [Page 80:](#id-section80).
 * [Page 81:](#id-section81).
@@ -8295,6 +8301,8 @@ hkg<-cbind(x3$CT_actin,x3$CT_gapdh)
 
 ```
 
+ <div id='id-section78.1'/> 
+ 
 ### Statistics: linear mixed effects models   
 
 ```R
@@ -8393,6 +8401,8 @@ ggplot(gg,aes(x=Site,y=FC,colour=gene,group=gene))+geom_errorbar(aes(ymin=FC-se,
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25804396/abdf9788-33c9-11e7-8dbf-c143c3601930.jpeg)
 
+ <div id='id-section78.2'/> 
+ 
 ### Redoing stats with more precise efficiencies this time    
 
 data parsing:    
@@ -8480,7 +8490,9 @@ SiteHF:baittemp.ave        0.175617 0.0868661  169  2.021694  0.0448
 SiteHF:Delta              -0.195618 0.0938489   23 -2.084397  0.0484
 summary(stepAIC(fullmod5,direction="both"))
 ```
-
+ 
+ <div id='id-section78.3'/> 
+ 
 delta * site interaction significant this time.  
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25813504/da113404-33e7-11e7-923b-c87ad7290ab9.jpeg)   
@@ -8499,6 +8511,8 @@ linear
 ![](https://cloud.githubusercontent.com/assets/4654474/25814165/785d3322-33ea-11e7-8464-087fb0f5bab3.jpeg)    
 
 
+<div id='id-section78.4'/> 
+
 ### Meeting notes with SHC, 1pm    
 
 * do analysis for each gene, take out hkg    
@@ -8508,6 +8522,9 @@ linear
 	* mean, min, max monthly temperatures in growing season.     
 	* get experienced temperature from chambers (average across 5 years)        
 * 
+
+
+<div id='id-section78.5'/> 
 
 ### Model without HKGs
 
@@ -8586,6 +8603,9 @@ gene:baittemp.ave     2   413 10.550810  <.0001
 Site:baittemp.ave     1   169  1.819052  0.1792
 Site:Delta            1    23  2.692626  0.1144
 ```
+
+
+<div id='id-section78.6'/> 
 
 ### Statistics: linear mixed effects models for each gene
 
