@@ -8820,7 +8820,14 @@ xlim(0,.6)+geom_vline(xintercept=0.47254)+xlab("D statistic from KS test")
 ![](https://cloud.githubusercontent.com/assets/4654474/25863113/85a7f5de-34b8-11e7-8bc0-038869fff497.jpeg)
 
 
-4. Plot Aph Tm vs Pogo Tm
+4. Plot Aph Tm vs Pogo Tm    
+
+With accession numbers!    
+
+![](https://cloud.githubusercontent.com/assets/4654474/25875059/99c4bacc-34e3-11e7-898e-0979c023b4aa.jpeg)     
+
+Wth just points
+![](https://cloud.githubusercontent.com/assets/4654474/25875080/b2ff10b4-34e3-11e7-9dd0-6b097597628f.jpeg)
 
 Create story board for manuscript ; focus on narrative and then construct figures accordingly
 
@@ -8875,6 +8882,98 @@ ggplot(uniq,aes(x=uniq))+geom_histogram(binwidth=.01)+xlim(0,.6)+geom_vline(xint
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25873979/843f0798-34de-11e7-876c-a5bb6a56d044.jpeg)
 
+
+### common peptides, but doign KS test for slope and min      
+
+slope
+```R
+slav.wide<-spread(slav, species,Estimate )#cool way to integrate data into ks test by converting from long to wide format
+ks.test(slav.wide$Aphaenogaster,slav.wide$Pogonomyrmex)
+
+	Two-sample Kolmogorov-Smirnov test
+
+data:  slav.wide$Aphaenogaster and slav.wide$Pogonomyrmex
+D = 0.19231, p-value = 0.2935
+alternative hypothesis: two-sided
+
+```
+
+slope density plot   
+
+```R
+slplot3<-ggplot(slav, aes(x=Estimate,colour=species, fill=species)) +geom_density(alpha=.5, position="identity")+ggcol+ggcol2
+slplot3
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25874646/6f7d6f5e-34e1-11e7-9cca-845a73b57cf0.jpeg)
+
+
+min
+ 
+```R
+ks.test(minav.wide$Aphaenogaster,minav.wide$Pogonomyrmex)
+
+	Two-sample Kolmogorov-Smirnov test
+
+data:  minav.wide$Aphaenogaster and minav.wide$Pogonomyrmex
+D = 0.46314, p-value = 2.204e-05
+alternative hypothesis: two-sided
+```
+
+Figure    
+
+```R
+minplot3<-ggplot(minav, aes(x=Estimate, colour=species,fill=species)) +
+    geom_density(alpha=.5, position="identity")+ggcol+ggcol2
+minplot3
+```
+
+
+### Ok, KS tests for common and unique peptides for SLOPE AND MIN    
+
+SLOPE   
+
+```R
+ks.test(minav.wide$Aphaenogaster,minav.wide$Pogonomyrmex)
+
+	Two-sample Kolmogorov-Smirnov test
+
+data:  minav.wide$Aphaenogaster and minav.wide$Pogonomyrmex
+D = 0.46314, p-value = 2.204e-05
+alternative hypothesis: two-sided
+```
+
+
+slope figure   
+```R
+slplot3<-ggplot(sl.ave, aes(x=Estimate,colour=species, fill=species)) +geom_density(alpha=.5, position="identity")+ggcol+ggcol2
+slplot3
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25874857/81008c7e-34e2-11e7-8b8c-f9d1faeae01d.jpeg)
+
+
+
+MIN
+
+```R
+ks.test(minav.wide$Aphaenogaster,minav.wide$Pogonomyrmex)
+
+	Two-sample Kolmogorov-Smirnov test
+
+data:  minav.wide$Aphaenogaster and minav.wide$Pogonomyrmex
+D = 0.22756, p-value = 0.003121
+alternative hypothesis: two-sided
+```
+
+min fig
+
+```R
+minplot3<-ggplot(min.ave, aes(x=Estimate,colour=species, fill=species)) +geom_density(alpha=.5, position="identity")+ggcol+ggcol2
+minplot3
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25874877/9adb5430-34e2-11e7-8658-e23bd3ec69f5.jpeg)
 ------
 
  <div id='id-section80'/> 
