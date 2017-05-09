@@ -108,8 +108,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 	* [More precise delta delta CT calculations](#id-section78.2)
 	* [Corresponding plots](#id-section78.3)
 	* [Meeting with SHC](#id-section78.4)
-	* [Linear mixed effects models for all genes](#id-section78.5)
-	* [Separating linear mixed effects models for each gene](#id-section78.6)
+	* [Linear mixed effects models for only hsps](#id-section78.5), excluding housekeeping genes
+	* [Separating linear mixed effects models](#id-section78.6) for each HSP gene
 * [Page 79:](#id-section79).
 * [Page 80:](#id-section80).
 * [Page 81:](#id-section81).
@@ -8301,7 +8301,7 @@ hkg<-cbind(x3$CT_actin,x3$CT_gapdh)
 
 ```
 
- <div id='id-section78.1'/> 
+<div id='id-section78.1'/> 
  
 ### Statistics: linear mixed effects models   
 
