@@ -8828,6 +8828,53 @@ Try to analyze by block which might account for variation intraspecific variatio
 
 NGotelli comment: Aph Tms are within the range of pogo Tms     
 
+
+
+### Redoing KS test with common peptides     
+
+```R
+suba<-subset(Tmav,Tmav$species=="Aphaenogaster")
+subp<-subset(Tmav,Tmav$species=="Pogonomyrmex")
+ks.test(suba$Estimate,subp$Estimate)
+Two-sample Kolmogorov-Smirnov test
+
+data:  suba$Estimate and subp$Estimate
+D = 0.31891, p-value = 0.009158
+alternative hypothesis: two-sided
+```
+
+accompanying density plot
+
+![](https://cloud.githubusercontent.com/assets/4654474/25874242/a8bb4dd8-34df-11e7-93a1-3bd150a61379.jpeg)   
+
+
+try randomization and t test?        
+
+```R
+uniq<-replicate(1000,rando(data=Tmav))
+hist(uniq)
+uniq<-data.frame(uniq)    
+# do t test 1 sided? 
+t.test(uniq$uniq,mu=0.31891,alternative="less")
+One Sample t-test
+
+data:  uniq$uniq
+t = -93.229, df = 999, p-value < 2.2e-16
+alternative hypothesis: true mean is less than 0.31891
+95 percent confidence interval:
+      -Inf 0.1681551
+sample estimates:
+mean of x 
+ 0.165445 
+```
+
+Accmpanying Figure 
+```R
+ggplot(uniq,aes(x=uniq))+geom_histogram(binwidth=.01)+xlim(0,.6)+geom_vline(xintercept= 0.31891)+xlab("D statistic from KS test")
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25873979/843f0798-34de-11e7-876c-a5bb6a56d044.jpeg)
+
 ------
 
  <div id='id-section80'/> 
