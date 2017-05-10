@@ -8820,7 +8820,7 @@ xlim(0,.6)+geom_vline(xintercept=0.47254)+xlab("D statistic from KS test")
 ![](https://cloud.githubusercontent.com/assets/4654474/25863113/85a7f5de-34b8-11e7-8bc0-038869fff497.jpeg)
 
 
-4. Plot Aph Tm vs Pogo Tm    
+4. Plot Aph Tm vs Pogo Tm; COMMON PEPTIDES!        
 
 With accession numbers!    
 
@@ -8828,6 +8828,36 @@ With accession numbers!
 
 Wth just points
 ![](https://cloud.githubusercontent.com/assets/4654474/25875080/b2ff10b4-34e3-11e7-9dd0-6b097597628f.jpeg)
+
+Plot with SEs    
+
+![](https://cloud.githubusercontent.com/assets/4654474/25878536/741b32ae-34f9-11e7-92d8-f0672a193dbe.jpeg)
+
+Plot with SEs with color for error bars   
+
+```R
+ggplot(TT,aes(y=Aphaenogaster,x=Pogonomyrmex))+geom_errorbar(aes(ymax=Aphaenogaster+Ase,ymin=Aphaenogaster-Ase),colour="royalblue")+geom_errorbarh(aes(xmax=Pogonomyrmex+Pse,xmin=Pogonomyrmex-Pse),colour="red")+geom_point(size=3)+geom_abline(slope=1)
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25878771/3496f922-34fb-11e7-9f8f-ec34062a08e5.jpeg)
+
+
+Calculating offsets and showing the largest offsets:   
+
+```R
+TT$offset<-TT$Pogonomyrmex-TT$Aphaenogaster
+knitr::kable(subset(TT,TT$offset>8))
+
+```
+
+|   |Protein.Group.Accessions |Sequence      | Aphaenogaster| Pogonomyrmex|      Ase|      Pse|   offset|    randoff|
+|:--|:------------------------|:-------------|-------------:|------------:|--------:|--------:|--------:|----------:|
+|7  |769838592                |APFDPPGPPGTPK |      40.57204|     49.86469| 1.514251| 4.267933| 9.292642|         NA|
+|9  |769842741                |DAGTISGLVVMR  |      42.74541|     51.01181| 1.896613| 3.944651| 8.266397|         NA|
+|19 |769849050                |GASLQDLMSK    |      44.78217|     53.89990| 4.565298| 4.257023| 9.117733|  0.0332116|
+|47 |769862662                |FFDMVEYFFHR   |      43.32144|     51.36331| 3.983255| 8.796392| 8.041870| -4.2309084|
+
+
 
 Create story board for manuscript ; focus on narrative and then construct figures accordingly
 
@@ -8974,6 +9004,52 @@ minplot3
 ```
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25874877/9adb5430-34e2-11e7-8658-e23bd3ec69f5.jpeg)
+
+
+### Example of unfolding curves between species for  TWITCHIN-like    
+
+```R
+aphfit$species<-rep("Aphaenogaster",length(aphfit$colony))
+pogfit$species<-rep("Pogonomyrmex",length(pogfit$colony))
+f<-rbind(aphfit,pogfit)
+names(f)
+pep1<-subset(f,f$Sequence=="SDPSEVTPLITTK")
+
+feeder<-dcast(pep1,species+colony~param,value.var="Estimate")
+
+list_predictions<-sapply(split(feeder,list(feeder$colony,feeder$species)),function(x) {fud(T=seq(30,65,.1),Tm=x$Tm,slope=x$slope,min=x$min)})
+
+predi<-as.data.frame(do.call("rbind", list_predictions),stringAsFactors=FALSE)
+predi$Sample<-row.names(predi)
+
+nom<-as.data.frame(matrix(unlist(strsplit(predi$Sample,"[.]")),ncol=2,byrow=TRUE))
+names(nom)<-c("colony","species")
+predictions<-cbind(predi,nom)
+
+conv<-gather(predictions,colony,uf,V1:V351)
+conv<-conv[order(conv$Sample),]#sort
+
+conv$T<-rep(seq(30,65,.1),nrow(predi))
+
+
+###overlay actual points  
+
+atwitch<-subset(aph,aph$Sequence=="SDPSEVTPLITTK" & aph$colony!="ARY")
+
+ptwitch<-subset(pog,pog$Sequence=="SDPSEVTPLITTK")
+
+
+##without points
+ggplot(conv,aes(y=uf,x=T,colour=colony))+geom_point()+xlab("Temperature")+ylab("Proportion non-denatured")#+geom_point(data=atwitch,aes(x=temperature,y=unfolding,colour=colony),size=3)+geom_point(data=ptwitch,aes(x=temperature,y=unfolding,colour=colony),size=3)
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25899054/5b33c2b6-355c-11e7-9330-730c226176c6.jpeg)
+
+![](https://cloud.githubusercontent.com/assets/4654474/25899056/5f98a9f2-355c-11e7-8e2e-c61d06cce74f.jpeg)
+
+
+![](https://cloud.githubusercontent.com/assets/4654474/25899081/7d029174-355c-11e7-8815-d22f9f179ca4.jpeg)
+
 ------
 
  <div id='id-section80'/> 
