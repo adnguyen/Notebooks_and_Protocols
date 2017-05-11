@@ -9304,17 +9304,38 @@ ggplot(GSL.long,aes(x=baittemp.ave,y=PredictedFC,colour=Site))+geom_point(colour
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25953136/7a58cd24-3630-11e7-8578-ed30b88a0e19.jpeg)
 
+### for hsp40, estimate temp for FC at 0     
+
+```R
+##predict bait temp from 0 FC
+#HF 
+HFzero_hsp40<-subset(GSL,GSL$Site=="HF" & GSL$hsp40pred<0.01 & GSL$hsp40pred>-.01)
+mean(HFzero_hsp40$baittemp.ave)
+###DF 
+DFzero_hsp40<-subset(GSL,GSL$Site=="DF" & GSL$hsp40pred<0.01 & GSL$hsp40pred>-.01)
+mean(DFzero_hsp40$baittemp.ave)
+
+```
+
+* HF = 20.49022
+* DF = 24.31707
+
+
+Density plot of "Stress"    
+
 ```R
 ##histograms/desnity
 ggplot(GSL.long,aes(x=PredictedFC,colour=Site,fill=Site))+geom_density(alpha=0.5)+facet_grid(gene~.)
 ```
 
-Density plot of "Stress"    
-
 ![](https://cloud.githubusercontent.com/assets/4654474/25952947/00da5530-3630-11e7-8813-5d2bff8228b4.jpeg)
 
+plots with all bait temps experienced for 5 years(days are not averaged)    
+
+![](https://cloud.githubusercontent.com/assets/4654474/25956429/bb3fe9d6-3639-11e7-805a-06fed128a43f.jpeg)
 
 
+![](https://cloud.githubusercontent.com/assets/4654474/25956684/60318526-363a-11e7-8cca-3db443c9deb6.jpeg)
 
 ------
 
