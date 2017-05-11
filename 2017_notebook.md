@@ -111,7 +111,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 	* [Linear mixed effects models for only hsps](#id-section78.5), excluding housekeeping genes
 	* [Separating linear mixed effects models](#id-section78.6) for each HSP gene
 * [Page 79: 2017-05-09](#id-section79). Proteome stability project: addressing notes from 2017-04-26 climate cascade meeting
-* [Page 80:](#id-section80).
+* [Page 80: 2017-05-11](#id-section80).  Stress in nature project: parsing out chamber data     
 * [Page 81:](#id-section81).
 * [Page 82:](#id-section82).
 * [Page 83:](#id-section83).
@@ -9055,7 +9055,87 @@ ggplot(conv,aes(y=uf,x=T,colour=colony))+geom_point()+xlab("Temperature")+ylab("
 
  <div id='id-section80'/> 
 
-### Page 80:  
+### Page 80: 2017-05-11 Stress in nature project: parsing out chamber data    
+
+
+From meeting with SHC from (Page 77: 2017-05-05.):  
+
+* Need info on summer temperatures    
+		* mean, min, max monthly temperatures in growing season.
+		* get experienced temperature from chambers (average across 5 years)
+
+The parsed dataset, I'll show script on website. I basically turned the columns into a factor so I can take averages across them and then just subset the variables I want   
+
+```R
+
+cdave<-ddply(cdlong,.(Site,year,Delta,Cham,envfac,doy),summarize,value=mean(value,na.rm=TRUE))
+dim(cdave)
+str(cdave)
+'data.frame':	380312 obs. of  7 variables:
+ $ Site  : chr  "DF" "DF" "DF" "DF" ...
+ $ year  : num  2010 2010 2010 2010 2010 2010 2010 2010 2010 2010 ...
+ $ Delta : num  0 0 0 0 0 0 0 0 0 0 ...
+ $ Cham  : chr  "11" "11" "11" "11" ...
+ $ envfac: chr  "avecat" "avecat" "avecat" "avecat" ...
+ $ doy   : int  2 3 4 5 6 7 8 9 10 54 ...
+ $ value : num  -4.82 -4.43 -3.23 -2.85 -1.13 ...
+```
+
+For example...for the average chamber air temp...
+
+```R
+ave<-subset(cdave,cdave$envfac=="avecat")
+```
+
+
+![](https://cloud.githubusercontent.com/assets/4654474/25947866/4023b49a-361f-11e7-8ab6-2eafc0d11657.jpeg)    
+
+ 
+I'll learn tidyverse one of these days...    
+ 
+and for max(max has weird extreme low values ):     
+
+```R
+max<-subset(cdave,cdave$envfac=="maxcat" & cdave$value>-50)
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25947888/5392e096-361f-11e7-9873-3d6796c2e7d3.jpeg)
+
+
+### density plots for max, whole range of temps   
+
+```R
+ggplot(max,aes(x=value,fill=Site))+geom_density(alpha=.5)+facet_grid(Delta~.)+scale_x_continuous(breaks=seq(-10,45,5),labels=seq(-10,45,5),limits=c(-20,45))
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25948098/2ce13ffa-3620-11e7-8cb3-55c75b4c574b.jpeg)
+
+
+### plots from 15 C cutoff (GSL) TEMPERATURE
+Densities of temperatures vs julian day (doy) for each year and site    
+
+![](https://cloud.githubusercontent.com/assets/4654474/25947413/5666120e-361d-11e7-9bcd-14e38fd0540b.jpeg)
+
+### Let's look at the soil organic layer    
+
+```R
+soilorg.max<-subset(cdave,cdave$envfac=="SOmax")
+###plotting 
+O<-scale_x_continuous(breaks=seq(-10,45,5),labels=seq(-10,45,5),limits=c(-20,45))
+```
+
+histogram   
+
+![](ttps://cloud.githubusercontent.com/assets/4654474/25948425/5ae07e7e-3621-11e7-8c5e-018dfc98bc38.jpeg)
+
+
+density 
+
+![](https://cloud.githubusercontent.com/assets/4654474/25948455/74ffa532-3621-11e7-9643-97777a817d02.jpeg)
+
+separate out by year    
+
+![](https://cloud.githubusercontent.com/assets/4654474/25948572/1b7d88ca-3622-11e7-839c-82a7994fc4a2.jpeg)
 
 ------
 
