@@ -9137,6 +9137,140 @@ separate out by year
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25948572/1b7d88ca-3622-11e7-839c-82a7994fc4a2.jpeg)
 
+
+### averaging soil organic layer across all years    
+
+parsing it out: Taking averages and SD for all env factors then subsetting   
+   
+```R
+cdave.deltas<-ddply(cdave,.(envfac,Site,Delta),
+summarize,dave=mean(value,na.rm=TRUE),
+sd=sd(value,na.rm=TRUE)/sqrt(length(Delta)))
+
+SOmaxDelta<-subset(cdave.deltas,cdave.deltas$envfac=="SOmax" & cdave.deltas$dave > -25)
+head(SOmaxDelta)
+```
+
+
+Fig    
+```R
+ggplot(SOmaxDelta,aes(x=Delta,y=dave,colour=Site))+geom_point(size=3)+stat_smooth(method="lm")
+
+![](https://cloud.githubusercontent.com/assets/4654474/25951498/ee490d7a-362b-11e7-9a69-07705dd05a1c.jpeg)
+
+stats: has experimental warming done anything? Yes  
+
+```R
+m2<-lm(dave~Delta*Site,data=SOmaxDelta)
+summary(m2)
+
+Call:
+lm(formula = dave ~ Delta * Site, data = SOmaxDelta)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.31033 -0.20202  0.03446  0.12334  0.35954 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept)  15.04818    0.15514  97.000  < 2e-16
+Delta         0.56336    0.04384  12.852 7.57e-10
+SiteHF       -6.49663    0.21940 -29.612 2.11e-15
+Delta:SiteHF -0.15103    0.06199  -2.436   0.0269
+                
+(Intercept)  ***
+Delta        ***
+SiteHF       ***
+Delta:SiteHF *  
+---
+Signif. codes:  
+0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2236 on 16 degrees of freedom
+Multiple R-squared:  0.9969,	Adjusted R-squared:  0.9963 
+F-statistic:  1705 on 3 and 16 DF,  p-value: < 2.2e-16
+
+```
+
+### Let's explore all temperature realted factors    
+
+```R
+m3<-aov(dave~Delta*Site*envfac,data=cdave.deltas)
+summary(m3)
+                  Df Sum Sq Mean Sq  F value   Pr(>F)    
+Delta               1  168.4   168.4  542.359  < 2e-16 ***
+Site                1 1917.8  1917.8 6176.185  < 2e-16 ***
+envfac              7  356.2    50.9  163.869  < 2e-16 ***
+Delta:Site          1    1.9     1.9    6.153   0.0144 *  
+Delta:envfac        7   80.2    11.5   36.913  < 2e-16 ***
+Site:envfac         7   90.1    12.9   41.469  < 2e-16 ***
+Delta:Site:envfac   7   12.8     1.8    5.873 6.29e-06 ***
+Residuals         128   39.7     0.3                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+m4<-lm(dave~Delta*Site*envfac,data=cdave.deltas)
+
+Call:
+lm(formula = dave ~ Delta * Site * envfac, data = cdave.deltas)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.27956 -0.17976  0.02498  0.19049  1.86445 
+
+Coefficients:
+                          Estimate Std. Error t value Pr(>|t|)    
+(Intercept)               15.46048    0.38658  39.993  < 2e-16 ***
+Delta                      1.46191    0.10923  13.384  < 2e-16 ***
+SiteHF                    -7.06618    0.54670 -12.925  < 2e-16 ***
+envfacmaxcat               0.45721    0.54670   0.836 0.404538    
+envfacmincat              -0.62281    0.54670  -1.139 0.256743    
+envfacSIave               -0.29921    0.54670  -0.547 0.585132    
+envfacSImax               -0.39879    0.54670  -0.729 0.467064    
+envfacSOave               -0.95765    0.54670  -1.752 0.082226 .  
+envfacSOmax               -0.41230    0.54670  -0.754 0.452141    
+envfacSOmin               -1.13297    0.54670  -2.072 0.040238 *  
+Delta:SiteHF              -0.54810    0.15448  -3.548 0.000543 ***
+Delta:envfacmaxcat         0.03926    0.15448   0.254 0.799809    
+Delta:envfacmincat        -0.02588    0.15448  -0.168 0.867195    
+Delta:envfacSIave         -1.44304    0.15448  -9.341 3.89e-16 ***
+Delta:envfacSImax         -1.38286    0.15448  -8.952 3.44e-15 ***
+Delta:envfacSOave         -1.17475    0.15448  -7.605 5.39e-12 ***
+Delta:envfacSOmax         -0.89854    0.15448  -5.817 4.53e-08 ***
+Delta:envfacSOmin         -1.17982    0.15448  -7.637 4.53e-12 ***
+SiteHF:envfacmaxcat       -0.03313    0.77316  -0.043 0.965886    
+SiteHF:envfacmincat        0.18968    0.77316   0.245 0.806592    
+SiteHF:envfacSIave         0.50090    0.77316   0.648 0.518237    
+SiteHF:envfacSImax         1.08374    0.77316   1.402 0.163424    
+SiteHF:envfacSOave         1.07415    0.77316   1.389 0.167151    
+SiteHF:envfacSOmax         0.56955    0.77316   0.737 0.462679    
+SiteHF:envfacSOmin         1.16451    0.77316   1.506 0.134486    
+Delta:SiteHF:envfacmaxcat  0.04352    0.21846   0.199 0.842412    
+Delta:SiteHF:envfacmincat -0.07099    0.21846  -0.325 0.745751    
+Delta:SiteHF:envfacSIave   0.88124    0.21846   4.034 9.38e-05 ***
+Delta:SiteHF:envfacSImax   0.70702    0.21846   3.236 0.001541 ** 
+Delta:SiteHF:envfacSOave   0.67109    0.21846   3.072 0.002599 ** 
+Delta:SiteHF:envfacSOmax   0.39708    0.21846   1.818 0.071465 .  
+Delta:SiteHF:envfacSOmin   0.67203    0.21846   3.076 0.002564 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.5572 on 128 degrees of freedom
+Multiple R-squared:  0.9851,	Adjusted R-squared:  0.9815 
+F-statistic:   273 on 31 and 128 DF,  p-value: < 2.2e-16
+
+```
+
+Let's plot this out   
+
+```R
+ggplot(cdave.deltas,aes(x=Delta,y=dave,colour=Site))+geom_point(size=3)+stat_smooth(method="lm")+facet_grid(.~envfac)
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25951979/60ef03f6-362d-11e7-97c8-89ab18bac6f5.jpeg)
+
+
 ------
 
  <div id='id-section81'/> 
