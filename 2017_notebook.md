@@ -9271,6 +9271,51 @@ ggplot(cdave.deltas,aes(x=Delta,y=dave,colour=Site))+geom_point(size=3)+stat_smo
 ![](https://cloud.githubusercontent.com/assets/4654474/25951979/60ef03f6-362d-11e7-97c8-89ab18bac6f5.jpeg)
 
 
+### Focus: on GSL of soil organic temperature (MAX) that is above 15 C 
+
+![](https://cloud.githubusercontent.com/assets/4654474/25952346/71076b92-362e-11e7-9281-c212f131951d.jpeg)
+
+
+### ok given the temps experienced in SO layer, how much stress are they experiencing? 
+
+```R
+GSL.long<-gather(GSL,gene,PredictedFC,hsp83pred:hsp40pred)
+str(GSL.long)
+'data.frame':	63027 obs. of  11 variables:
+ $ X           : int  1700 1710 1711 1712 1713 1714 1715 1716 1717 1718 ...
+ $ Site        : Factor w/ 2 levels "DF","HF": 1 1 1 1 1 1 1 1 1 1 ...
+ $ year        : int  2010 2010 2010 2010 2010 2010 2010 2010 2010 2010 ...
+ $ Delta       : num  0 0 0 0 0 0 0 0 0 0 ...
+ $ Cham        : int  11 11 11 11 11 11 11 11 11 11 ...
+ $ envfac      : Factor w/ 1 level "SOmax": 1 1 1 1 1 1 1 1 1 1 ...
+ $ doy         : int  71 89 90 91 92 93 94 95 96 97 ...
+ $ baittemp.ave: num  15.8 18.2 16.6 19.2 21 ...
+ $ Jdaycont    : int  71 89 90 91 92 93 94 95 96 97 ...
+ $ gene        : chr  "hsp83pred" "hsp83pred" "hsp83pred" "hsp83pred" ...
+ $ PredictedFC : num  -4.67 -3.91 -4.37 -3.61 -3.06 ...
+```
+
+**scatter plot with predicted lines and the region where we constructed the model** 
+
+```R
+ggplot(GSL.long,aes(x=baittemp.ave,y=PredictedFC,colour=Site))+geom_point(colour="gray")+stat_smooth(method="lm")+facet_grid(.~gene)+geom_vline(xintercept=range(findat.long$baittemp.ave))
+
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25953136/7a58cd24-3630-11e7-8578-ed30b88a0e19.jpeg)
+
+```R
+##histograms/desnity
+ggplot(GSL.long,aes(x=PredictedFC,colour=Site,fill=Site))+geom_density(alpha=0.5)+facet_grid(gene~.)
+```
+
+Density plot of "Stress"    
+
+![](https://cloud.githubusercontent.com/assets/4654474/25952947/00da5530-3630-11e7-8813-5d2bff8228b4.jpeg)
+
+
+
+
 ------
 
  <div id='id-section81'/> 
