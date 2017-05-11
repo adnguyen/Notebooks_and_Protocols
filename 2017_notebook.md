@@ -9335,7 +9335,9 @@ plots with all bait temps experienced for 5 years(days are not averaged)
 ![](https://cloud.githubusercontent.com/assets/4654474/25956429/bb3fe9d6-3639-11e7-805a-06fed128a43f.jpeg)
 
 
-![](https://cloud.githubusercontent.com/assets/4654474/25956684/60318526-363a-11e7-8cca-3db443c9deb6.jpeg)
+![](https://cloud.githubusercontent.com/assets/4654474/25956684/60318526-363a-11e7-8cca-3db443c9deb6.jpeg)    
+
+### Meeting with SHC and NJG
 
 ------
 
