@@ -9560,7 +9560,7 @@ SiteHF           3.524131  1.110366  25  3.173847  0.0040
 bait_to_sensor   0.579430  0.228556   7  2.535174  0.0389
 ```
 
-### OK, new sets of predictions    
+### OK, new sets of predictions: Predict every time of day for every year    
 
 GSL data, defined as temps throughout the year above 15C for soil organic sensor temp (max):  
 
@@ -9579,7 +9579,7 @@ GSL data, defined as temps throughout the year above 15C for soil organic sensor
  $ value   : num  17.1 18.4 16 17.8 16.1 ...
 ```
 
-### Density plots    
+### Density plots:  Predict every time of day for every year        
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25999835/9c98f688-36f4-11e7-9beb-e32f2fab4710.jpeg)
 
@@ -9587,6 +9587,11 @@ GSL data, defined as temps throughout the year above 15C for soil organic sensor
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25999607/c34eb1ce-36f3-11e7-9e84-6df40b8281c9.jpeg)
 
+### Predict every day temp, averaged for each year and time of day   
+
+![](https://cloud.githubusercontent.com/assets/4654474/26000494/2fea7518-36f7-11e7-94ae-40d8be33e8f2.jpeg)   
+
+![](https://cloud.githubusercontent.com/assets/4654474/26000518/47544c60-36f7-11e7-8057-99fe68ae7bf6.jpeg)
 
 ------
 
