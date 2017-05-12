@@ -112,7 +112,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 	* [Separating linear mixed effects models](#id-section78.6) for each HSP gene
 * [Page 79: 2017-05-09](#id-section79). Proteome stability project: addressing notes from 2017-04-26 climate cascade meeting
 * [Page 80: 2017-05-11](#id-section80).  Stress in nature project: parsing out chamber data     
-* [Page 81:](#id-section81).
+* [Page 81:2017-05-11](#id-section81). Stress in nature project:  Parsing chamber data  
 * [Page 82:](#id-section82).
 * [Page 83:](#id-section83).
 * [Page 84:](#id-section84).
@@ -9337,13 +9337,256 @@ plots with all bait temps experienced for 5 years(days are not averaged)
 
 ![](https://cloud.githubusercontent.com/assets/4654474/25956684/60318526-363a-11e7-8cca-3db443c9deb6.jpeg)    
 
-### Meeting with SHC and NJG
+### Meeting with SHC and NJG     
+
+* NJG: show figures with delta having no effect as the first figure   
+
+* Ignore IR data, use a correction factor. Plot censor vs bait temp 
+* SHC: consider taking residuals without julian day and then regression with julian day
+
+
+Proteomics project:  
+
+* use quantile function to get tail probability    
+* shuffle colonies   
 
 ------
 
  <div id='id-section81'/> 
 
-### Page 81:  
+### Page 81: 2017-05-12. Stress in nature project:  More Parsing chamber data      
+
+I have to relate chamber data with bait temps(which were taken with an IR gun).   
+
+Took gxp data set with year, julian day, bait temp, site, and deltas 
+
+```R
+names(chamcoll)<-c("year","doy","baittemp.ave","Site","Delta")
+str(chamcoll)
+'data.frame':	206 obs. of  6 variables:
+ $ year          : int  2014 2014 2014 2013 2014 2013 2013 2013 2013 2013 ...
+ $ doy           : int  254 254 254 253 254 177 253 253 183 177 ...
+ $ baittemp.ave  : num  28.6 28.1 28.6 29.8 32.7 ...
+ $ Site          : Factor w/ 2 levels "DF","HF": 1 1 1 1 1 2 1 1 1 2 ...
+ $ Delta         : num  3.5 0 0 3.5 5 0 0 2 0 4 ...
+```  
+
+Merg with soil organic temp    
+
+ data structure    
+ 
+```R
+str(cdlongSO)
+'data.frame':	1130623 obs. of  10 variables:
+ $ datetime: Factor w/ 105782 levels "1/1/10 0:00",..: 1 1 1 1 2 2 2 2 13 13 ...
+ $ doy     : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ Cham    : chr  "1" "2" "3" "4" ...
+ $ year    : num  2010 2010 2010 2010 2010 2010 2010 2010 2010 2010 ...
+ $ SImin   : num  7.32 5.69 7.22 7.49 7.38 ...
+ $ Site    : chr  "DF" "DF" "DF" "DF" ...
+ $ Delta   : num  3.5 0 4.5 2 3.5 0 4.5 2 3.5 0 ...
+ $ Cham2   : int  16 17 18 19 16 17 18 19 16 17 ...
+ $ envfac  : chr  "SOmax" "SOmax" "SOmax" "SOmax" ...
+ $ value   : num  10.2 5.96 10.16 9.39 9.99 ...
+```
+
+
+actual merger code   
+
+```R
+mergT<-inner_join(cdlongSO,chamcoll,by=c("year","doy","Site","Delta"))
+dim(mergT)
+str(merT)
+'data.frame':	8352 obs. of  12 variables:
+ $ datetime      : Factor w/ 105782 levels "1/1/10 0:00",..: 38795 38795 38795 38795 38795 38795 38795 38795 38795 38795 ...
+ $ doy           : int  183 183 183 183 183 183 183 183 183 183 ...
+ $ Cham          : chr  "1" "1" "2" "2" ...
+ $ year          : num  2013 2013 2013 2013 2013 ...
+ $ SImin         : num  22.6 22.6 21.6 21.6 21.6 ...
+ $ Site          : chr  "DF" "DF" "DF" "DF" ...
+ $ Delta         : num  3.5 3.5 0 0 0 0 0 0 0 0 ...
+ $ Cham2         : int  16 16 17 17 17 17 17 17 17 17 ...
+ $ envfac        : chr  "SOmax" "SOmax" "SOmax" "SOmax" ...
+ $ value         : num  24 24 22.5 22.5 22.5 ...
+ $ baittemp.ave  : num  25.1 24.6 23.8 23.2 24.1 ...
+ $ bait_to_sensor: num  25.9 25.6 25.2 24.9 25.4 ...
+```
+
+regression analysis   
+
+```R
+temppredmod<-lm(value~baittemp.ave+Site,mergT)
+summary(temppredmod)
+Call:
+lm(formula = value ~ baittemp.ave + Site, data = mergT)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-6.0705 -1.0548  0.0664  1.1669  6.6001 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  17.820942   0.236386   75.39   <2e-16 ***
+baittemp.ave  0.201048   0.008956   22.45   <2e-16 ***
+SiteHF       -4.561699   0.046961  -97.14   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.952 on 8349 degrees of freedom
+Multiple R-squared:  0.5307,	Adjusted R-squared:  0.5306 
+F-statistic:  4720 on 2 and 8349 DF,  p-value: < 2.2e-16
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25997084/8030a25e-36e8-11e7-98ad-2a3a41c6a1fe.jpeg)
+
+
+regressions when I take the average julian day for that temp.    
+
+```R
+dayavemergT<-ddply(mergT,.(Site,doy,Delta,year),summarize,T=max(value),baittemp.ave=mean(baittemp.ave))
+
+```
+
+Fitting model to test effect of site by bait temp interaction on chamber sensor soil organic max temperature  
+```R
+temppredmod<-lm(T~baittemp.ave+Site,dayavemergT)
+summary(temppredmod)
+
+Call:
+lm(formula = T ~ baittemp.ave + Site, data = dayavemergT)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.33662 -0.72673 -0.05928  0.57283  3.11921 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  14.64434    1.55389   9.424 1.20e-13 ***
+baittemp.ave  0.45050    0.05778   7.797 8.09e-11 ***
+SiteHF       -7.09908    0.29178 -24.330  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.158 on 63 degrees of freedom
+Multiple R-squared:  0.9056,	Adjusted R-squared:  0.9026 
+F-statistic: 302.2 on 2 and 63 DF,  p-value: < 2.2e-16
+```
+
+![](https://cloud.githubusercontent.com/assets/4654474/25998038/1c0e38cc-36ed-11e7-920d-484f108001b9.jpeg)
+
+### OK projecting predictions: Predict sensor dating given the site and bait temp measured in the field   
+
+
+### Redoing stats with bait to sensor temperatures   
+
+global model 
+
+```R
+fullmod5<-lme(FC~RIN_Value+Jdaycont+gene*Site*bait_to_sensor+gene*Site*Delta,random=~1|Cham2/Vial.me,data=findat.long,method="ML")
+aicmod1<-anova(summary(stepAIC(fullmod5,direction="both")))
+aicmod1
+
+         numDF denDF   F-value p-value
+(Intercept)             1   413  0.044025  0.8339
+Jdaycont                1   413  4.633789  0.0319
+gene                    2   413  0.000000  1.0000
+Site                    1    23 21.076861  0.0001
+bait_to_sensor          1   413 29.836210  <.0001
+Delta                   1    23  0.169841  0.6841
+gene:Site               2   413  1.682588  0.1872
+gene:bait_to_sensor     2   413 10.550810  <.0001
+Site:bait_to_sensor     1   169  1.819053  0.1792
+Site:Delta              1    23  2.692626  0.1144
+```
+
+Similar results: gene by temp(sensor) interaction. Site effect 
+
+### figures by each gene 
+```R
+ggplot(findat.long,aes(x=bait_to_sensor,y=FC,colour=Site))+geom_point()+stat_smooth(method="lm")+facet_grid(gene~.)
+```
+![](https://cloud.githubusercontent.com/assets/4654474/25997932/9d55b87a-36ec-11e7-9769-636950877da4.jpeg)
+
+Regression models for each gene: 
+
+Hsp83
+
+```R
+fullmod7<-lme(FC~RIN_Value+Jdaycont+Site*bait_to_sensor+Site*Delta,random=~1|Cham2/Vial.me,data=hsp83,method="ML")
+fullmod7sel<-summary(stepAIC(fullmod7,direction="both"))
+fullmod7sel
+Fixed effects: FC ~ RIN_Value + Jdaycont + Site * bait_to_sensor + Site * Delta 
+                           Value Std.Error  DF   t-value p-value
+(Intercept)           -30.817003  5.635039 169 -5.468818  0.0000
+RIN_Value               0.149878  0.082116   6  1.825203  0.1178
+Jdaycont                0.002731  0.001028   6  2.655774  0.0377
+SiteHF                -18.194313 12.534387  23 -1.451552  0.1601
+bait_to_sensor          1.196000  0.237310   6  5.039819  0.0024
+Delta                   0.008764  0.091198  23  0.096100  0.9243
+SiteHF:bait_to_sensor   1.334430  0.637716 169  2.092515  0.0379
+SiteHF:Delta           -0.292487  0.166271  23 -1.759101  0.0919
+```
+
+hsp70
+
+```R
+fullmod6<-lme(FC~RIN_Value+Jdaycont+Site*bait_to_sensor+Site*Delta,random=~1|Cham2/Vial.me,data=hsp70,method="ML")
+fullmod6sel<-summary(stepAIC(fullmod6,direction="both"))
+fullmod6sel
+Fixed effects: FC ~ Jdaycont + Site + bait_to_sensor 
+                    Value Std.Error  DF   t-value p-value
+(Intercept)    -26.860864  4.816424 170 -5.576931   0e+00
+Jdaycont        -0.004589  0.000657   7 -6.981999   2e-04
+SiteHF           6.745361  0.987155  25  6.833136   0e+00
+bait_to_sensor   1.172801  0.202485   7  5.792038   7e-04
+ Correlation: 
+```
+
+hsp40
+
+```R
+hsp40<-subset(findat.long,findat.long$gene=="fchsp40")
+#fullmod8<-lme(FC~RIN_Value+Jdaycont+Site*baittemp.ave+Site*Delta,random=~1|Cham2/Vial.me,data=hsp40,method="ML")
+fullmod8<-lme(FC~RIN_Value+Jdaycont+Site*bait_to_sensor+Site*Delta,random=~1|Cham2/Vial.me,data=hsp40,method="ML")
+
+fullmod8sel<-summary(stepAIC(fullmod8,direction="both"))
+fullmod8sel
+
+Fixed effects: FC ~ Jdaycont + Site + bait_to_sensor 
+                    Value Std.Error  DF   t-value p-value
+(Intercept)    -12.982176  5.435435 170 -2.388434  0.0180
+Jdaycont        -0.003251  0.000750   7 -4.336718  0.0034
+SiteHF           3.524131  1.110366  25  3.173847  0.0040
+bait_to_sensor   0.579430  0.228556   7  2.535174  0.0389
+```
+
+### OK, new sets of predictions    
+
+GSL data, defined as temps throughout the year above 15C for soil organic sensor temp (max):  
+
+```R
+ str(GSL)
+'data.frame':	500848 obs. of  10 variables:
+ $ X       : int  5687362 5687364 5687366 5687368 5687370 5687372 5687376 5687456 5687460 5687464 ...
+ $ datetime: Factor w/ 50384 levels "1/1/11 11:00",..: 135 135 136 136 137 137 138 142 143 144 ...
+ $ doy     : int  18 18 18 18 18 18 18 19 19 19 ...
+ $ Cham    : int  1 3 1 3 1 3 3 3 3 3 ...
+ $ year    : int  2010 2010 2010 2010 2010 2010 2010 2010 2010 2010 ...
+ $ Site    : Factor w/ 2 levels "DF","HF": 1 1 1 1 1 1 1 1 1 1 ...
+ $ Delta   : num  3.5 4.5 3.5 4.5 3.5 4.5 4.5 4.5 4.5 4.5 ...
+ $ Cham2   : int  16 18 16 18 16 18 18 18 18 18 ...
+ $ envfac  : Factor w/ 1 level "SOmax": 1 1 1 1 1 1 1 1 1 1 ...
+ $ value   : num  17.1 18.4 16 17.8 16.1 ...
+```
+
+### Density plots    
+
+![](https://cloud.githubusercontent.com/assets/4654474/25999835/9c98f688-36f4-11e7-9beb-e32f2fab4710.jpeg)
+
+### Checking the temperature range of where we constructed our model to temperature predictions of fold change (FC).   
+
+![](https://cloud.githubusercontent.com/assets/4654474/25999607/c34eb1ce-36f3-11e7-9e84-6df40b8281c9.jpeg)
+
 
 ------
 
