@@ -112,8 +112,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 	* [Separating linear mixed effects models](#id-section78.6) for each HSP gene
 * [Page 79: 2017-05-09](#id-section79). Proteome stability project: addressing notes from 2017-04-26 climate cascade meeting
 * [Page 80: 2017-05-11](#id-section80).  Stress in nature project: parsing out chamber data     
-* [Page 81:2017-05-11](#id-section81). Stress in nature project:  Parsing chamber data  
-* [Page 82:](#id-section82).
+* [Page 81: 2017-05-11](#id-section81). Stress in nature project:  Parsing chamber data  
+* [Page 82: 2017-05-16](#id-section82). Removing the history of large files in github through terminal    
 * [Page 83:](#id-section83).
 * [Page 84:](#id-section84).
 * [Page 85:](#id-section85).
@@ -9597,7 +9597,16 @@ GSL data, defined as temps throughout the year above 15C for soil organic sensor
 
  <div id='id-section82'/> 
 
-### Page 82:  
+### Page 82: 2017-05-16. Removing the history of large files in github through terminal       
+
+Link [http://stackoverflow.com/questions/16877530/completely-remove-a-file-from-whole-git-repository](http://stackoverflow.com/questions/16877530/completely-remove-a-file-from-whole-git-repository)    
+
+```UNIX
+$ git filter-branch --tree-filter 'rm -f passwords.txt' HEAD
+Rewrite 6b9b3cf04e7c5686a9cb838c3f36a8cb6a0fc2bd (21/21)
+Ref 'refs/heads/master' was rewritten   
+```
+
 
 ------
 
