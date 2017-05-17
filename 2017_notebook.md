@@ -114,7 +114,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 80: 2017-05-11](#id-section80).  Stress in nature project: parsing out chamber data     
 * [Page 81: 2017-05-11](#id-section81). Stress in nature project:  Parsing chamber data  
 * [Page 82: 2017-05-16](#id-section82). Removing the history of large files in github through terminal    
-* [Page 83:](#id-section83).
+* [Page 83: 2017-05-16](#id-section83). Stress in nature project: meeting with SHC    
 * [Page 84:](#id-section84).
 * [Page 85:](#id-section85).
 * [Page 86:](#id-section86).
@@ -9612,7 +9612,14 @@ Ref 'refs/heads/master' was rewritten
 
  <div id='id-section83'/> 
 
-### Page 83:  
+### Page 83: 2017-05-16 Stress in nature project: meeting with SHC      
+
+
+**Convert bait temp to sensor temperature by the timing of sampling**    
+
+Also, check the IR gun used for HF to see if it is overestimating temperatures.    
+
+
 
 ------
 
