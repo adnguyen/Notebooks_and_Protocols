@@ -114,7 +114,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 80: 2017-05-11](#id-section80).  Stress in nature project: parsing out chamber data     
 * [Page 81: 2017-05-11](#id-section81). Stress in nature project:  Parsing chamber data  
 * [Page 82: 2017-05-16](#id-section82). Removing the history of large files in github through terminal    
-* [Page 83: 2017-05-16](#id-section83). Stress in nature project: meeting with SHC    
+* [Page 83: 2017-05-16](#id-section83). Stress in nature project: meeting with SHC   
+	* [2017-05-18](#id-section83.1) Meeting with SHC, stressed in nature project 
 * [Page 84:](#id-section84).
 * [Page 85:](#id-section85).
 * [Page 86:](#id-section86).
@@ -9610,7 +9611,7 @@ Ref 'refs/heads/master' was rewritten
 
 ------
 
- <div id='id-section83'/> 
+<div id='id-section83'/> 
 
 ### Page 83: 2017-05-16 Stress in nature project: meeting with SHC      
 
@@ -9620,7 +9621,33 @@ Ref 'refs/heads/master' was rewritten
 Also, check the IR gun used for HF to see if it is overestimating temperatures.    
 
 
+<div id='id-section83.1'/> 
 
+2017-05-18: Meeting with SHC    
+
+Checked IR gun with thermometer: 
+
+1. IR gun    
+	* Ice = 0.2-0.4
+	* Aphaenogaster Benchtop = 20.2 
+	* Pogonomyrmex benchtop = 28.3   
+	
+2. thermometer    
+	* Ice = 0.2
+	* Aphaenogaster Benchtop = 18.8
+	* Pogonomyrmex benchtop = 27.3   
+
+At ice, they are similar, but not at higher temperatures. Real test would be to compare IR guns...     
+
+
+### More data to explore    
+
+* Make figures similar to Kingsolver et al. 2013 Functional Ecology: Measure thermal safety margin(thermal buffer, SDiamond prefers this!!) across the whole season!     
+ 
+	* I need CTmax. Where to get it?  From Lacy's field survey
+
+* Make figure of density of growing season length!	
+	
 ------
 
  <div id='id-section84'/> 
