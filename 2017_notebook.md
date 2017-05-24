@@ -9762,9 +9762,9 @@ ggsave(filename = "test2.png", plot = final)
 
 from KMiller: 
 
-```
-1 through 12 were chambers, 13 through 15 didn't have chambers, the chambers (in 1-12) which had temperature treatments that were 0 (i.e. control chambers) were as follows: HF = chambers 4, 6, and 11; DF = chambers 2, 5, and 11.
-```
+
+> 1 through 12 were chambers, 13 through 15 didn't have chambers, the chambers (in 1-12) which had temperature treatments that were 0 (i.e. control chambers) were as follows: HF = chambers 4, 6, and 11; DF = chambers 2, 5, and 11.
+
  
 
 ------
