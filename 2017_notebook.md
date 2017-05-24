@@ -116,8 +116,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 82: 2017-05-16](#id-section82). Removing the history of large files in github through terminal    
 * [Page 83: 2017-05-16](#id-section83). Stress in nature project: meeting with SHC   
 	* [2017-05-18](#id-section83.1) Meeting with SHC, stressed in nature project 
-* [Page 84:](#id-section84).
-* [Page 85:](#id-section85).
+* [Page 84: 2017-05-22](#id-section84). Meeting with SHC and NJG, stressed in nature project
+* [Page 85: 2017-05-24](#id-section85). Harvard + Duke Forest chamber info
 * [Page 86:](#id-section86).
 * [Page 87:](#id-section87).
 * [Page 88:](#id-section88).
@@ -9652,13 +9652,120 @@ At ice, they are similar, but not at higher temperatures. Real test would be to 
 
  <div id='id-section84'/> 
 
-### Page 84:  
+### Page 84: 2017-05-22. Meeting with SHC and NJG, stressed in nature project    
+
+Go over figures:   
+
+Make outline with key take homes in a narrative form.  Create abstract. 
+
+1. create a figure with sites and chambers and plots. Mimick Diamond (green and orange) Science advances pictures. Have bait card inset photo in figure.   
+
+2. figure 2, y axis --take out calcs, and then log2(fold change). X -axis: "Experimental Temperature Increase","Experimental warming amount".    
+
+3. figure 3. Density plots for predicted log2(fold change). Insets with summed gxp values.         
+
+4. Anova tables. Does functional ecology let anova tables in?    
+
+5. 
+
+hsp gxp rxn     
+
+1. for figure 1, place C past D to show active vs passive mechanisms   
+2. get rid of fig 2 phylogeny and just have panel B   
+3. fig 2 c move to fig 3. Fig 3, make numbers more readable and make shorten width. 
+4. fig 4, move stress resistance to the end to keep it consistent with fig 1. Make fig 4 into 3 panel fig- top with 12 panels of ctmax vs gxp. Bottom rows split between pc biplot and then regression with ctmax and and pc1. 
+5. getr id of fig s2. 
+6. move fig s4 (see point # 4). 
+
+2017-05-23: figure insets:  
+
+cool stack overflow thread [https://stackoverflow.com/questions/5219671/it-is-possible-to-create-inset-graphs](https://stackoverflow.com/questions/5219671/it-is-possible-to-create-inset-graphs)    
+
+```R
+require(ggplot2)
+
+plot1 = qplot(1.00*mpg, 1.00*wt, data=mtcars)  # Make sure x and y values are floating values in plot 1
+plot2 = qplot(hp, cyl, data=mtcars)
+plot(plot1)
+
+# Specify position of plot2 (in percentages of plot1)
+# This is in the top left and 25% width and 25% height
+xleft   = 0.05
+xright  = 0.30
+ybottom = 0.70
+ytop    = 0.95 
+
+# Calculate position in plot1 coordinates
+# Extract x and y values from plot1
+l1 = ggplot_build(plot1)
+x1 = l1$panel$ranges[[1]]$x.range[1]
+x2 = l1$panel$ranges[[1]]$x.range[2]
+y1 = l1$panel$ranges[[1]]$y.range[1]
+y2 = l1$panel$ranges[[1]]$y.range[2]
+xdif = x2-x1
+ydif = y2-y1
+xmin  = x1 + (xleft*xdif)
+xmax  = x1 + (xright*xdif)
+ymin  = y1 + (ybottom*ydif)
+ymax  = y1 + (ytop*ydif) 
+
+# Get plot2 and make grob
+g2 = ggplotGrob(plot2)
+plot3 = plot1 + annotation_custom(grob = g2, xmin=xmin, xmax=xmax, ymin=ymin, ymax=ymax)
+plot(plot3)
+
+ggsave(filename = "test.png", plot = plot3)
+
+
+# Try and make a weird combination of plots
+g1 <- ggplotGrob(plot1)
+g2 <- ggplotGrob(plot2)
+g3 <- ggplotGrob(plot3)
+
+require("gridExtra")
+require("grid")
+
+
+t1 = arrangeGrob(g1,ncol=1, left = textGrob("A", y = 1, vjust=1, gp=gpar(fontsize=20)))
+t2 = arrangeGrob(g2,ncol=1, left = textGrob("B", y = 1, vjust=1, gp=gpar(fontsize=20)))
+t3 = arrangeGrob(g3,ncol=1, left = textGrob("C", y = 1, vjust=1, gp=gpar(fontsize=20)))
+
+final = arrangeGrob(t1,t2,t3, layout_matrix = cbind(c(1,2), c(3,3)))
+grid.arrange(final)
+
+ggsave(filename = "test2.png", plot = final)
+```
 
 ------
 
  <div id='id-section85'/> 
 
-### Page 85:  
+### Page 85: 2017-04-24. Harvard + Duke Forest chamber info     
+
+[1] "|   | Cham| Longitude| Latitude|Site | Delta| Cham2|col     |"
+ [2] "|:--|----:|---------:|--------:|:----|-----:|-----:|:-------|"
+ [3] "|2  |    2| -79.07716| 36.03567|DF   |   0.0|    17|#FF8C00 |"
+ [4] "|5  |    5| -79.07718| 36.03559|DF   |   0.0|    20|#FA8F0D |"
+ [5] "|11 |   11| -79.07739| 36.03538|DF   |   0.0|    26|#F5931B |"
+ [6] "|13 |   13| -79.07692| 36.03547|DF   |   0.0|    28|#F19628 |"
+ [7] "|14 |   14| -79.07692| 36.03532|DF   |   0.0|    29|#EC9A36 |"
+ [8] "|15 |   15| -79.07726| 36.03527|DF   |   0.0|    30|#E79D43 |"
+ [9] "|6  |    6| -79.07710| 36.03554|DF   |   1.5|    21|#E3A151 |"
+[10] "|4  |    4| -79.07719| 36.03574|DF   |   2.0|    19|#DEA55F |"
+[11] "|10 |   10| -79.07732| 36.03542|DF   |   2.5|    25|#D9A86C |"
+[12] "|7  |    7| -79.07731| 36.03558|DF   |   3.0|    22|#D5AC7A |"
+[13] "|1  |    1| -79.07727| 36.03570|DF   |   3.5|    16|#D0AF87 |"
+[14] "|12 |   12| -79.07717| 36.03541|DF   |   4.0|    27|#CBB395 |"
+[15] "|3  |    3| -79.07700| 36.03571|DF   |   4.5|    18|#C7B6A2 |"
+[16] "|8  |    8| -79.07728| 36.03552|DF   |   5.0|    23|#C2BAB0 |"
+[17] "|9  |    9| -79.07749| 36.03554|DF   |   5.5|    24|#BEBEBE |"   
+
+from KMiller: 
+
+```
+1 through 12 were chambers, 13 through 15 didn't have chambers, the chambers (in 1-12) which had temperature treatments that were 0 (i.e. control chambers) were as follows: HF = chambers 4, 6, and 11; DF = chambers 2, 5, and 11.
+```
+ 
 
 ------
 
