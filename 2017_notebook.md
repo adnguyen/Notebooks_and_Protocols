@@ -118,7 +118,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 	* [2017-05-18](#id-section83.1) Meeting with SHC, stressed in nature project 
 * [Page 84: 2017-05-22](#id-section84). Meeting with SHC and NJG, stressed in nature project
 * [Page 85: 2017-05-24](#id-section85). Harvard + Duke Forest chamber info
-* [Page 86:](#id-section86).
+* [Page 86: 2017-05-30](#id-section86). Multi Multi-panel figures in R    
 * [Page 87:](#id-section87).
 * [Page 88:](#id-section88).
 * [Page 89:](#id-section89).
@@ -9771,7 +9771,26 @@ from KMiller:
 
  <div id='id-section86'/> 
 
-### Page 86:  
+### Page 86: 2017-05-30. Multi Multi-panel figures in R    
+
+(https://stackoverflow.com/questions/30299529/ggplot2-define-plot-layout-with-grid-arrange-as-argument-of-do-call)[https://stackoverflow.com/questions/30299529/ggplot2-define-plot-layout-with-grid-arrange-as-argument-of-do-call]
+
+```R
+require(ggplot2)
+require(gridExtra)
+
+df <- data.frame(value1 = rnorm(200),
+                 value2 = rnorm(200),
+                 value3 = rnorm(200),
+                 value4 = rnorm(200))
+
+p1 <- ggplot(df) + geom_density(aes(x=value1))
+p2 <- ggplot(df) + geom_density(aes(x=value2))
+p3 <- ggplot(df) + geom_density(aes(x=value3))
+p4 <- ggplot(df) + geom_density(aes(x=value4))
+
+grid.arrange(p1, arrangeGrob(p2,p3,p4, ncol=3), heights=c(2.5/4, 1.5/4), ncol=1)
+```
 
 ------
 
