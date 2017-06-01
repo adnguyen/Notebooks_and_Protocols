@@ -9819,7 +9819,7 @@ Specifically, I'm looking at figure 2, where they find adaptive variation in Km 
 
 What is Kcat? It is the turnover number: expressed as the number of molecules turned into product per minute.   
 
-
+Kcat can be caluclated as Vmax/enzyme concentration. 
 
   
 ------
