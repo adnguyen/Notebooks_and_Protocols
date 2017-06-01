@@ -119,7 +119,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 84: 2017-05-22](#id-section84). Meeting with SHC and NJG, stressed in nature project
 * [Page 85: 2017-05-24](#id-section85). Harvard + Duke Forest chamber info
 * [Page 86: 2017-05-30](#id-section86). Multi Multi-panel figures in R    
-* [Page 87:](#id-section87).
+* [Page 87: 2017-06-01](#id-section87). Protein stability thoughts
 * [Page 88:](#id-section88).
 * [Page 89:](#id-section89).
 * [Page 90:](#id-section90).
@@ -9796,8 +9796,32 @@ grid.arrange(p1, arrangeGrob(p2,p3,p4, ncol=3), heights=c(2.5/4, 1.5/4), ncol=1)
 
  <div id='id-section87'/> 
 
-### Page 87:  
+### Page 87: 2017-06-01. Protein stability thoughts    
 
+Trying to understand the relationship between stability (3D structure of protein) and kinetics (how a reaction is occuring). Both should be related (structure + function).  
+
+Reading Brent and George's paper:   
+
+Lockwood BL, Somero GN. 2012. Functional Determinants of Temperature Adaptation in Enzymes of Cold- versus Warm-Adapted Mussels (Genus Mytilus). Mol Biol Evol 29:3061–3070.
+
+Specifically, I'm looking at figure 2, where they find adaptive variation in Km for **IDH** between cool (*M. trossolus*)  vs warm adapted (*M. galloprovincialis*) mussel. There was no differences in Km between the two species for PK or PEPCK.     
+
+  
+1. I think the relationship between Km (substrate in units of uM or M) and temperature pretty interesting. 
+	* Km is lower at lower temperatures. 
+	* In other words, Substrate-enzyme affinity is higher at lower temperatures.   
+	* This relationship differs between enzymes. Why?    
+		* Do they differ between reversible and non-reversible reactions?    
+	
+2. Warm adapted species has lower Km than cool adapted species for IDH. So, under higher temperatures, the warm adapted species' IDH enzyme can still bind to substrate. This may be related to the stability between these enzymes.     	
+
+
+
+What is Kcat? It is the turnover number: expressed as the number of molecules turned into product per minute.   
+
+
+
+  
 ------
 
  <div id='id-section88'/> 
