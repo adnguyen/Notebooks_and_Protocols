@@ -9849,9 +9849,10 @@ To help write my ms better, here is a list of the updated figures and supplement
 
 Ok, now tables:   
 
-* Table S1. Regression models: relationship between CTmax and hsp parameters 
-* Table S2. Regression models: relationship between CTmax and PC1    
-* Table S3. Regression models: relationship between hsp parameters and environment   
+* Table S1. Variance partitioning table at species and colony level   
+* Table S2. Regression models: relationship between CTmax and hsp parameters 
+* Table S3. Regression models: relationship between CTmax and PC1    
+* Table S4. Regression models: relationship between hsp parameters and environment   
 
 
 I need to test the significance of variance components for phylo and local env in vegan package   
@@ -9895,6 +9896,18 @@ anova(rda.eco2)
 |Phylogeny and Environment |0.46     |NA          |        |0.43     |NA          |        |
 |Full model                |0.82     |F4,3=9.02   |0.068   |0.47     |F12,87=8.14 |< 0.001 |
 |Residuals                 |0.18     |            |        |0.53     |            |        |
+
+
+Restructuring results:     
+
+1. summary stats (range of ctmax range, phylogeny, Tmax range)
+2. species level analyses of CTmax- var part, PGLS 
+3. colony level random effects model of CTmax 
+4. Ctmax and hsp params 
+
+New body figure layout:   
+
+
 
 
 ------
