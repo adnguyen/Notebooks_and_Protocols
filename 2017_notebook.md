@@ -9891,7 +9891,7 @@ anova(rda.eco2)
 |Independent Phylogeny     |0.11     |F2,3= 2.5   |0.22    |0.04     |F3,87=1.84  |0.61    |
 |Independent Environment   |0.25     |F2,3= 4.5   |0.11    |0.00     |F9,87=1.84  |0.09    |
 |Phylogeny                 |0.57     |F2,5= 5.65  |0.08    |0.47     |F9,90=10.83 |< 0.005 |
-|Environment               |0.71     |F2,5= 9.67  |0.05    |0.42     |F3,96=25.03 |< 0.005 |
+|Environment               |0.71     |F2,5= 9.67  |< 0.05    |0.42     |F3,96=25.03 |< 0.005 |
 |Phylogeny and Environment |0.46     |NA          |        |0.43     |NA          |        |
 |Full model                |0.82     |F4,3=9.02   |0.068   |0.47     |F12,87=8.14 |< 0.001 |
 |Residuals                 |0.18     |            |        |0.53     |            |        |
