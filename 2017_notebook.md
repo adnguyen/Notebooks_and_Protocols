@@ -120,7 +120,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 85: 2017-05-24](#id-section85). Harvard + Duke Forest chamber info
 * [Page 86: 2017-05-30](#id-section86). Multi Multi-panel figures in R    
 * [Page 87: 2017-06-01](#id-section87). Protein stability thoughts
-* [Page 88:](#id-section88).
+* [Page 88: 2017-06-06](#id-section88).  Hsp gxp rxn norm paper: writing notes
 * [Page 89:](#id-section89).
 * [Page 90:](#id-section90).
 * [Page 91:](#id-section91).
@@ -9826,7 +9826,76 @@ Kcat can be caluclated as Vmax/enzyme concentration.
 
  <div id='id-section88'/> 
 
-### Page 88:  
+### Page 88: 2017-06-06.  Hsp gxp rxn norm paper: writing notes
+
+To help write my ms better, here is a list of the updated figures and supplemental figs:    
+
+**Body Figures**    
+
+1. Predictions figure: Fold induction vs temperature for each parameter    
+2. Non-phylogenetic controlled analysis: CTmax vs environment    
+3. Phylogenetic analysis: ancestral trait reconstruction and variance partitioning   
+4. CTmax vs hsp params   
+5. hsp params vs habitat type    
+6. Methods figure: example of fitting boltzmann to hsp gxp 
+
+**Supplemental**     
+
+* Fig. S1. - map of collection sites with pie charts showing sample size   
+* Fig. S2. - CTmax mapped onto phylogeny with colonies. So phylogeny + barplot with CTmax values for all colonies    
+* Fig. S3. - boxplot of habitat(yaxis) vs each gxp parameter    
+* Fig S4. - boxplot of hsp pca1 (yaxis) vs forest type    
+
+
+Ok, now tables:   
+
+* Table S1. Regression models: relationship between CTmax and hsp parameters 
+* Table S2. Regression models: relationship between CTmax and PC1    
+* Table S3. Regression models: relationship between hsp parameters and environment   
+
+
+I need to test the significance of variance components for phylo and local env in vegan package   
+
+
+Reference code for me to work off of   
+
+```R
+#testing the significance for each fraction
+#fraction a+ b + c: 
+rda.all2<-rda(Aph.dat$KO_temp_worker~bio1+bio5+habitat_v2+Axis.1 + Axis.2+ Axis.3 +Axis.4+Axis.5+Axis.6+Axis.7+Axis.8+Axis.9,data=Aph.dat)
+anova(rda.all2)
+
+#fraction a: Phylogeny
+rda.phy_eco2<-rda(Aph.dat$KO_temp_worker~ Axis.1 + Axis.2+ Axis.3 +Axis.4+Axis.5+Axis.6+Axis.7+Axis.8+Axis.9+Condition(bio1+bio5+habitat_v2),data=Aph.dat)
+anova(rda.phy_eco2)
+
+#fraction c: Ecology
+rda.eco_phy2<-rda(Aph.dat$KO_temp_worker~bio1+bio5+habitat_v2+Condition(Axis.1 + Axis.2+ Axis.3 +Axis.4+Axis.5+Axis.6+Axis.7+Axis.8+Axis.9),data=Aph.dat)
+anova(rda.eco_phy2)
+
+
+## a + b: All phylogeny
+rda.phy2<-rda(Aph.dat$KO_temp_worker~Axis.1 + Axis.2+ Axis.3 +Axis.4+Axis.5+Axis.6+Axis.7+Axis.8+Axis.9,data=Aph.dat)
+anova(rda.phy2)
+
+## b+ c: All ecology
+rda.eco2<-rda(Aph.dat$KO_temp_worker~bio1+bio5+habitat_v2,data=Aph.dat)
+anova(rda.eco2)
+```
+
+### Variance partitioning: summary table
+
+|                         |Species  |      |     |Colony   |         |    |
+|:-------------------------|:--------|:-----------|:-------|:--------|:-----------|:-------|
+|Variance Component        |Variance |F-statistic |P-value |Variance |F-statistic |P-value |
+|Independent Phylogeny     |0.11     |F2,3= 2.5   |0.22    |0.04     |F3,87=1.84  |0.61    |
+|Independent Environment   |0.25     |F2,3= 4.5   |0.11    |0.00     |F9,87=1.84  |0.09    |
+|Phylogeny                 |0.57     |F2,5= 5.65  |0.08    |0.47     |F9,90=10.83 |< 0.005 |
+|Environment               |0.71     |F2,5= 9.67  |0.05    |0.42     |F3,96=25.03 |< 0.005 |
+|Phylogeny and Environment |0.46     |NA          |        |0.43     |NA          |        |
+|Full model                |0.82     |F4,3=9.02   |0.068   |0.47     |F12,87=8.14 |< 0.001 |
+|Residuals                 |0.18     |            |        |0.53     |            |        |
+
 
 ------
 
