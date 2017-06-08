@@ -9907,7 +9907,12 @@ Restructuring results:
 
 New body figure layout:   
 
-
+1. Predictions figure: Fold induction vs temperature for each parameter    
+2. Non-phylogenetic controlled analysis: CTmax vs environment    
+3. Phylogenetic analysis: ancestral trait reconstruction and variance partitioning   
+4. CTmax vs hsp params   
+5. hsp params vs habitat type    
+6. Methods figure: example of fitting boltzmann to hsp gxp 
 
 
 ------
