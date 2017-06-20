@@ -121,7 +121,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 86: 2017-05-30](#id-section86). Multi Multi-panel figures in R    
 * [Page 87: 2017-06-01](#id-section87). Protein stability thoughts
 * [Page 88: 2017-06-06](#id-section88).  Hsp gxp rxn norm paper: writing notes
-* [Page 89:](#id-section89).
+* [Page 89: 2071-06-20](#id-section89). Project idea: Viability selection on ant founding queens  
 * [Page 90:](#id-section90).
 * [Page 91:](#id-section91).
 * [Page 92:](#id-section92).
@@ -9919,7 +9919,33 @@ New body figure layout:
 
  <div id='id-section89'/> 
 
-### Page 89:  
+### Page 89: 2017-06-20. Project idea: Viability selection on ant founding queens     
+
+Natural selection can act upon the individuals at the beginning of their lifestages prior to sexual maturity, also known as viability selection. This is known as the "invisible fraction" of selection because people often times don't measure this (Mojica and Kelly 2010). The greatest opportunity for viability selection in ants are when queens mate and found new colonies. We assume 99% of these queens die! Furthermore, for Aphaenogaster picea nad rudis,t here seems to be no population structure, suggesting that they are panmictic or they are a 1 randomly mating population. So how should colonies invest in queens? In warmer climates, queens should be smaller (temperature size rule) than cooler climates. But queen size is important for surviving colony founding. So, queen size could positively match the local thermal environment due to spatially variable selection. Meaning, all colonies may produce smaller-larger queens, but the ones that are mismatched don't "make" it. 
+
+I should read more in plants bc the life history is the same.  
+
+Mojica and Kelly 2010 found evidence for viability selection in mimulus. Large flowers had lower viability but higher fecundity than small flowers nad was associated with a QTL.  
+
+ref:
+Mojica JP, Kelly JK. 2010. Viability selection prior to trait expression is an essential component of natural selection. Proceedings of the Royal Society B: Biological Sciences 277:2945–2950.  
+
+In ants, you expect something else: larger ants, more fecund and viable. 
+
+In ants, a cool experiment would be:  
+
+1. Collect 150 new mated queens from 10 sites from whole range. Clip leg to genotype?  
+2. Divy up 50 queens into 3-6 temperature treatments per site  
+3. Measure initial size, weight?
+4. Track survival, measure dry weight, morphometrics. 
+5. Do a GWAS for viability selection. 
+6. assay foragers
+
+
+Some questions to think about: 
+
+1. What is the seasonal timing of nuptial flights in ants? Take a site and measure how different species mate throughout the growing season?   
+2. 
 
 ------
 
