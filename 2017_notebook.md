@@ -9930,7 +9930,7 @@ Mojica and Kelly 2010 found evidence for viability selection in mimulus. Large f
 ref:
 Mojica JP, Kelly JK. 2010. Viability selection prior to trait expression is an essential component of natural selection. Proceedings of the Royal Society B: Biological Sciences 277:2945–2950.  
 
-In ants, you expect something else: larger ants, more fecund and viable. 
+In ants, you expect something else: larger ants, more fecund and viable.   
 
 In ants, a cool experiment would be:  
 
