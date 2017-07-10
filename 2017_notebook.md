@@ -121,8 +121,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 86: 2017-05-30](#id-section86). Multi Multi-panel figures in R    
 * [Page 87: 2017-06-01](#id-section87). Protein stability thoughts
 * [Page 88: 2017-06-06](#id-section88).  Hsp gxp rxn norm paper: writing notes
-* [Page 89: 2071-06-20](#id-section89). Project idea: Viability selection on ant founding queens  
-* [Page 90:](#id-section90).
+* [Page 89: 2017-06-20](#id-section89). Project idea: Viability selection on ant founding queens  
+* [Page 90: 2017-07-10](#id-section90). Meeting with Dan Hahn    
 * [Page 91:](#id-section91).
 * [Page 92:](#id-section92).
 * [Page 93:](#id-section93).
@@ -9951,7 +9951,23 @@ Some questions to think about:
 
  <div id='id-section90'/> 
 
-### Page 90:  
+### Page 90:  2017-07-10. Meeting with Dan Hahn    
+
+A few notes:   
+
+1. Meeting this Friday to chat about papers and come up with a to do list.    
+2. Shadow Chinwin and Chao  to see how to work with Eastern Cornborer/ Rhagoletis. I need to gain hands on skills with working with the organisms    
+3. Check out the science individual development plan---DH wants done by August 1st. (http://myidp.sciencecareers.org/)       
+4. Make a mendeley reading group that anybody can access. NIce thing is we can add our own notes  
+5. Go over data management practices   
+6. Lab Safety training? Chao showed me around lab, I have to sign something  
+
+
+For field sampling:   
+* Plan to go out into the field August-September; depends on fruiting time   
+* Collect larvae that has infested fruits (Apple and Hawthorne) around Michigan and Illinois
+	* Late in season, collect around Florida because there are many Hawthorne varieties    
+	
 
 ------
 
