@@ -9956,7 +9956,7 @@ Some questions to think about:
 A few notes:   
 
 1. Meeting this Friday to chat about papers and come up with a to do list.    
-2. Shadow Chinwin and Chao  to see how to work with Eastern Cornborer/ Rhagoletis. I need to gain hands on skills with working with the organisms    
+2. Shadow Chinwin and Chao  to see how to work with Eastern Cornborer/ Rhagoletis. I need to gain hands on skills with working with the organisms       
 3. Check out the science individual development plan---DH wants done by August 1st. (http://myidp.sciencecareers.org/)       
 4. Make a mendeley reading group that anybody can access. NIce thing is we can add our own notes  
 5. Go over data management practices   
