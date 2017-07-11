@@ -123,7 +123,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 88: 2017-06-06](#id-section88).  Hsp gxp rxn norm paper: writing notes
 * [Page 89: 2017-06-20](#id-section89). Project idea: Viability selection on ant founding queens  
 * [Page 90: 2017-07-10](#id-section90). Meeting with Dan Hahn    
-* [Page 91:](#id-section91).
+* [Page 91: 2017-07-11](#id-section91). Reading rhagoletis papers   
 * [Page 92:](#id-section92).
 * [Page 93:](#id-section93).
 * [Page 94:](#id-section94).
@@ -9973,7 +9973,124 @@ For field sampling:
 
  <div id='id-section91'/> 
 
-### Page 91:  
+### Page 91: 2017-07-11. Reading Rhagoletis papers:   
+
+refs:   
+1. Feder, J. L., Stolz, U., Lewis, K. M., Perry, W., Roethele, J. B., & Rogers, A. (1997). THE EFFECTS OF WINTER LENGTH ON THE GENETICS OF APPLE AND HAWTHORN RACES OF RHAGOLETIS POMONELLA (DIPTERA: TEPHRITIDAE). Evolution, 51(6), 1862–1876. http://doi.org/10.1111/j.1558-5646.1997.tb05109.x      
+
+2. Feder, J. L., Roethele, J. B., Wlazlo, B., & Berlocher, S. H. (1997). Selective maintenance of allozyme differences among sympatric host races of the apple maggot fly (sympatric speciation͞fitness trade-offs͞host plant phenology͞Rhagoletis pomonella͞host x environment interactions). Evolution, 94, 11417–11421. Retrieved from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC23485/pdf/pq011417.pdf      
+
+3. Feder, J. L., Stolz, U., Lewis, K. M., Perry, W., Roethele, J. B., & Rogers, A. (1997). The Effects of Winter Length on the Genetics of Apple and Hawthorn Races of Rhagoletis pomonella (Diptera: Tephritidae). Source: Evolution Evolution, 51(516), 1862–1876. Retrieved from http://www.jstor.org/stable/2411008     
+
+4. Feder, J. L., & Filchak, K. E. (1999). It’s about time: the evidence for host plant-mediated selection in the apple maggot fly, Rhagoletis pomonella, and its implications for fitness trade-offs in phytophagous insects. In Proceedings of the 10th International Symposium on Insect-Plant Relationships (pp. 211–225). Dordrecht: Springer Netherlands. http://doi.org/10.1007/978-94-017-1890-5_27      
+
+
+------    
+
+Feder, J. L., Stolz, U., Lewis, K. M., Perry, W., Roethele, J. B., & Rogers, A. (1997). THE EFFECTS OF WINTER LENGTH ON THE GENETICS OF APPLE AND HAWTHORN RACES OF RHAGOLETIS POMONELLA (DIPTERA: TEPHRITIDAE). Evolution, 51(6), 1862–1876. http://doi.org/10.1111/j.1558-5646.1997.tb05109.x   
+
+* Host plant associated fitness trade-offs --compound noun that is difficult to understand   
+
+**Goal: determine effects of winter length on the genetics of apple maggot flies**     
+
+How this relates to trade-offs, not sure and not clear. 
+
+**Their observation: apple trres fruit earlier and for apple maggot flies to exploit this fruit, they must survive extended winter conditions**
+
+Apple maggots are facultataive diapausers   
+
+But longer winters should select for slower metabolism and longer diapause duration.   
+
+**Experimental design: Took fruit from apples and hawthorne and incubated at 4C from 1 week to 2 years.**    
+
+**Predictions**: longer cold periods will select against allowzyme markers associated with faster dev rates (typically found in hawthorne)    
+
+Result: longer cold periods retained allele frequencies that were more apple like(longer dev time) 
+
+Conclusion: Before and during winter selects against certain host races of apple maggots.  
+
+
+background:   
+
+MOdels of sympatric speciation for plant feeding insects:  
+1. mating on that specific plant   -this can act as a pre-zygotic barrier
+2. performance on the plant--this point can act as a post zygotic barrier (Dethier 1954 citation)  
+
+Trade-offs in plant performance can manifest in the plant phenology and insect development.   
+
+Insects must match their life history timing with plant phenology, otherwise they can starve.   
+
+###Rhagoletis is a good system to understand trade-offs in plant performance    
+
+Apple and Hawthorne races are genetically differentiated at 6 allowzymes that map to 3 genomic regions. 
+
+linkage group: 
+
+1. Aat-2, Dia-2
+2. Acon-2, Mpi
+3. Had
+
+
+LInkage disequilibrium between loci, but not among loci.  
+
+**Problem**: fitness trade offs is a missing piece of the story. For reciprocal transplants, there are no differences in feeding specialization.    
+
+Natural history notes: Apple fruits peak 3 weeks earlier than hawthorne. Eclosion is 10 days earlier. Apple flies overwinter ~1 week longer than hawthorn flies. 
+ 
+**Diapause trade-off hypothesis**: differential selection such that hawthorne race develops faster (shorter diapause) and applie flies develop slower (longer diapause).
+
+Diapause duration is shaped by plant phenology.    
+
+### Predictions: 
+
+1. there should be an optimal overwintering period   
+	* long enough to allow for diapause to end   
+	* short enough to prevent energy loss as pupae   
+2. apple flies should survive longer winters and eclose later than hawthorn flies under common conditions   
+3. earlier eclosing adults should have higher allele freq of:   
+	1. Me 100
+	2. Acon-2 95
+	3. Mpi 37
+	4. Aat-2 +75
+	5. Dia-2 100  
+	6. Had 100 
+	7. IDH should have no pattern
+4. short overwintering periods should favor these alleles and should be associated with earlier eclosion.   
+
+
+
+### Results   
+
+Figure 1: Prob could be represetned as a cumulative density function.   
+
+In panel A, Apple race eclose at a higher proportion across the extreme ends of time in cold treatment. 
+
+In panel B, apple race take longer to eclose than hawthorn race.   
+
+Fig 2. almost un interpretable. But it appears that longer heating periods changes the distrirubtion from shorter to longer days to eclosion 
+
+Fig3, allele freq associated with earlier eclosion times as a function of days to eclosion   
+
+They dont show IDH.....
+
+The frequency of these alleles decrease through time, which is what you'd expect if they're alleles associated with earlier days to eclosion. 
+
+
+### Discussion 
+
+diapause trade off hypothesis more laid out: earlier apple fruits in the season selects for slower development rates in apple flies. Apple flies should have lower metabolic rates and have a higher propensity to undero diapause. Length of winter is potentially an important agent of selection then. 
+
+
+All 4 predictions supported:   
+
+1. optimal survivorship was cold treatment over  15-19 weeks. Pupae may not be able to terminate diapause in < 15 weeks and they may not have enough energy stores > 19 weeks.  
+2. Apple flies had higher survivorship tahn hawthorn flies under longer cold treatments 
+3. allozyme patterns matched adult eclosion patterns. Earlier associated aleles were higher that resembled hawthorn race. 
+
+### Thoughts:  
+
+Paper is not really testing a trade off, but more about differences in life histories between host plants. To truly evaluate a trade off , there needs to be a comparison between each race on each host plant.  
+
 
 ------
 
