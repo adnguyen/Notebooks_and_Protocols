@@ -10119,6 +10119,23 @@ In these same alleles, they differ in allele freq between host fruit. For exampl
 Natural history question: How far down in the soil do these rhagoletis go?  Looking at figure 6.   
 
 
+Feder, J. L., Roethele, J. B., Wlazlo, B., & Berlocher, S. H. (1997). Selective maintenance of allozyme differences among sympatric host races of the apple maggot fly (sympatric speciation͞fitness trade-offs͞host plant phenology͞Rhagoletis pomonella͞host x environment interactions). Evolution, 94, 11417–11421. Retrieved from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC23485/pdf/pq011417.pdf     
+
+This paper was interested in testing the effect of prewinter temperatures on the eclosion outcomes of maggot flies on hawthorn. There are known loci that differ between apple and hawthorn. Here they focused on prewinter treatments of haw flies to see if they resemble apple like in their eclosion times and allele frequencies. 
+
+Apple flies have longer pre winter period than haw flies. 
+
+fig 1. The amount of pupae eclosing decreases with longer periods of heat before they overwinter. They prewintered from 2-32 days. 
+
+fig 2. allele frequences for 3 loci decrease through time (number of days pupae heated before overwintering)  ; similar story for figure 3.  
+
+fig 4. Negative relationship between allel freq and growing degree days. Acon-2 95 is high when there is a shorter growing season. This is important because haw race have higher allele freq than apple race. SO the previous patterns show that the allele freqs become more apple like (low allele freq). 
+
+
+THese alleles are associated with how pre-diapause temperatures influence eclosion.   
+
+
+
 
 
 ------
