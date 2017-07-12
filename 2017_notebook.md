@@ -124,7 +124,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 89: 2017-06-20](#id-section89). Project idea: Viability selection on ant founding queens  
 * [Page 90: 2017-07-10](#id-section90). Meeting with Dan Hahn    
 * [Page 91: 2017-07-11](#id-section91). Reading rhagoletis papers   
-* [Page 92:](#id-section92).
+* [Page 92: 2017-07-12](#id-section92).  Meeting prep with Dan: To do/progress list     
 * [Page 93:](#id-section93).
 * [Page 94:](#id-section94).
 * [Page 95:](#id-section95).
@@ -9980,7 +9980,7 @@ refs:
 
 2. Feder, J. L., Roethele, J. B., Wlazlo, B., & Berlocher, S. H. (1997). Selective maintenance of allozyme differences among sympatric host races of the apple maggot fly (sympatric speciation͞fitness trade-offs͞host plant phenology͞Rhagoletis pomonella͞host x environment interactions). Evolution, 94, 11417–11421. Retrieved from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC23485/pdf/pq011417.pdf      
 
-3. Feder, J. L., Stolz, U., Lewis, K. M., Perry, W., Roethele, J. B., & Rogers, A. (1997). The Effects of Winter Length on the Genetics of Apple and Hawthorn Races of Rhagoletis pomonella (Diptera: Tephritidae). Source: Evolution Evolution, 51(516), 1862–1876. Retrieved from http://www.jstor.org/stable/2411008     
+3. Filchak, K. E., Feder, J. L., Roethel, J. B., Stolz, U., & Roethele, J. B. (1999). A Field Test for Host-Plant Dependent Selection on Larvae of the Apple Maggot Fly, A FIELD TEST FOR HOST-PLANT DEPENDENT SELECTION ON LARVAE OF THE APPLE MAGGOT FLY, RHAGOLETIS POMONELLA. Source: Evolution Evolution, 53(531), 187–200. Retrieved from http://www.jstor.org/stable/2640931    
 
 4. Feder, J. L., & Filchak, K. E. (1999). It’s about time: the evidence for host plant-mediated selection in the apple maggot fly, Rhagoletis pomonella, and its implications for fitness trade-offs in phytophagous insects. In Proceedings of the 10th International Symposium on Insect-Plant Relationships (pp. 211–225). Dordrecht: Springer Netherlands. http://doi.org/10.1007/978-94-017-1890-5_27      
 
@@ -10001,7 +10001,7 @@ Apple maggots are facultataive diapausers
 
 But longer winters should select for slower metabolism and longer diapause duration.   
 
-**Experimental design: Took fruit from apples and hawthorne and incubated at 4C from 1 week to 2 years.**    
+**Experimental design: Took fruit from apples and hawthorne and incubated at 4C from 1 week to 2 years. They measured survival and # of days to eclosion**    
 
 **Predictions**: longer cold periods will select against allowzyme markers associated with faster dev rates (typically found in hawthorne)    
 
@@ -10067,6 +10067,8 @@ In panel A, Apple race eclose at a higher proportion across the extreme ends of 
 
 In panel B, apple race take longer to eclose than hawthorn race.   
 
+**Apple races survive over a longer range of cold storage, but it takes longer for them to eclose** 
+
 Fig 2. almost un interpretable. But it appears that longer heating periods changes the distrirubtion from shorter to longer days to eclosion 
 
 Fig3, allele freq associated with earlier eclosion times as a function of days to eclosion   
@@ -10087,16 +10089,70 @@ All 4 predictions supported:
 2. Apple flies had higher survivorship tahn hawthorn flies under longer cold treatments 
 3. allozyme patterns matched adult eclosion patterns. Earlier associated aleles were higher that resembled hawthorn race. 
 
+
 ### Thoughts:  
 
 Paper is not really testing a trade off, but more about differences in life histories between host plants. To truly evaluate a trade off , there needs to be a comparison between each race on each host plant.  
+
+## 2017-07-12; cont'd    
+
+
+Feder, J. L., & Filchak, K. E. (1999). It’s about time: the evidence for host plant-mediated selection in the apple maggot fly, Rhagoletis pomonella, and its implications for fitness trade-offs in phytophagous insects. In Proceedings of the 10th International Symposium on Insect-Plant Relationships (pp. 211–225). Dordrecht: Springer Netherlands. http://doi.org/10.1007/978-94-017-1890-5_27    
+
+Benjamin Walsh in 1860's made the first observation of flies shifting from hawthorn to apple. 
+
+3 major conclusions to date:   
+
+1. The difference in developmental timing has facilitated the shift between hawthorn to apple for rhagoletis   
+2. host-specific tradeoffs between occupying different fruits is shaped by selection at different life stages (larvae, pupae)   
+3. There is a lot of genetic diversity for development, which may allow Rhagoletis to host shift easily     
+
+
+
+
+
+
 
 
 ------
 
  <div id='id-section92'/> 
 
-### Page 92:  
+### Page 92: 2017-07-12. Meeting prep with Dan: To do/progress list     
+
+
+1. Paper discussion on Rhagoletis    
+	* Thoughts on mendeley?     
+	* Future papers to read   
+	* Dynmaic QTL idea to integrate genetic basis of traits over life histories   
+	
+2. Meeting with PIs July 19th-- set time?    
+3. Which meeting to go to?  
+	* Evolution 2018  
+		* Montpellier, France Aug 18-22
+	* Entomological Society of America 
+		* November 5-8 Denver Colorado      
+		* meet Rhagoletis family   
+		* Pricing:   
+			* Registration- $475 before Sept 13th 2017   
+			* I need to sign up to be a member; costs covered?  
+			* Hotel: $159-201/night
+		* SHould I present?    
+		
+	* SICB 2018     
+		* San Fran, Ca; Jan3-7
+4. When are we collecting?   
+	* Plan to go out into the field August-September; depends on fruiting time   
+	* Collect larvae that has infested fruits (Apple and Hawthorne) around Michigan and Illinois    
+5. Complete Science IDP by August 1st.   
+6. Shadow Xinwin and Chao    
+7. Go over data management practices?   
+	* Get NIH guidelines?   
+	* Go over data and directories?   
+8. Which fellowships should I be thinking about apply to?     
+	* NSF? 
+	* USDA?  
+
 
 ------
 
