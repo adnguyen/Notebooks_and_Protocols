@@ -10110,6 +10110,13 @@ Benjamin Walsh in 1860's made the first observation of flies shifting from hawth
 
 
 
+When shifted from cold to warm, hawthorn flies alleles change as a function of days to eclosion. For example, Dia-2 is high early on in freq, but declines with longer eclosion times. 
+
+This allele also exhibits clinal variation where is it is high in the north and low in the south. The north has later springs, which could mean that these flies need to eclose more quickly to maximize activity/performance/growth over the limited or short growing season. 
+
+In these same alleles, they differ in allele freq between host fruit. For example, the earlier eclosion associated allele, Dia-2 100, is overall higher in hawthorn than apple.   
+
+Natural history question: How far down in the soil do these rhagoletis go?  Looking at figure 6.   
 
 
 
@@ -10145,7 +10152,9 @@ Benjamin Walsh in 1860's made the first observation of flies shifting from hawth
 	* Plan to go out into the field August-September; depends on fruiting time   
 	* Collect larvae that has infested fruits (Apple and Hawthorne) around Michigan and Illinois    
 5. Complete Science IDP by August 1st.   
-6. Shadow Xinwin and Chao    
+6. Shadow Qinwin and Chao    
+	* Meeting with Qinwin July 18th, 10 AM 
+	   
 7. Go over data management practices?   
 	* Get NIH guidelines?   
 	* Go over data and directories?   
