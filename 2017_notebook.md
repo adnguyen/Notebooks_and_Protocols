@@ -10159,6 +10159,11 @@ first ttwo linked groups had snps related to lower number of  days in the haws. 
 
 
 
+Rnadom thought:   
+
+Entering a state of developmental arrest, known as diapause, represents a life-history strategy to cope/survive with unfavorable environmental conditions. 
+
+
 ------
 
  <div id='id-section92'/> 
