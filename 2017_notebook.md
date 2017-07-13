@@ -125,7 +125,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 90: 2017-07-10](#id-section90). Meeting with Dan Hahn    
 * [Page 91: 2017-07-11](#id-section91). Reading rhagoletis papers   
 * [Page 92: 2017-07-12](#id-section92).  Meeting prep with Dan: To do/progress list     
-* [Page 93:](#id-section93).
+* [Page 93: 2017-07-13](#id-section93). Project status; dissertation
 * [Page 94:](#id-section94).
 * [Page 95:](#id-section95).
 * [Page 96:](#id-section96).
@@ -10184,7 +10184,26 @@ THese alleles are associated with how pre-diapause temperatures influence eclosi
 
  <div id='id-section93'/> 
 
-### Page 93:  
+### Page 93: 2017-07-17. Project status; dissertation; climate cascade    
+
+1. Hsp rxn norm paper: 
+	* Rearranged figures; so results need to be rewritten; introduction needs tweaking; discussion needs to be finished    
+	* Plan to work on this once I send out range limits paper to AEllison   
+2. Range limits paper:   
+	* Need to rewrite introduction, tweak results, finish discussion    
+	* Send a draft to AEllison by end of July 2017   
+3. Proteome stability project:    
+	* Still in data gathering + analysis step   
+	* Wai needs to HPLC fractionate tryptic peptides to ID more of them    
+	* ANBE needs gene annotations for aphaenogaster    
+
+4. Thermal niche paper    
+	* In lchick's hands   
+	* Nsanders wants to look at it.   
+5. Aphaeno genomes project:    
+	* Mlau needs to annotate-get GO's and KOGs      
+6. Stressed in nature project:   
+	* IN SHC's hands; goal to have draft by end of summer    	 
 
 ------
 
