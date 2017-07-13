@@ -10132,9 +10132,30 @@ fig 2. allele frequences for 3 loci decrease through time (number of days pupae 
 fig 4. Negative relationship between allel freq and growing degree days. Acon-2 95 is high when there is a shorter growing season. This is important because haw race have higher allele freq than apple race. SO the previous patterns show that the allele freqs become more apple like (low allele freq). 
 
 
-THese alleles are associated with how pre-diapause temperatures influence eclosion.   
+These alleles are associated with how pre-diapause temperatures influence eclosion.   
 
 
+### 2017-07-13  reading cont'd    
+
+Filchak, K. E., Feder, J. L., Roethel, J. B., Stolz, U., & Roethele, J. B. (1999). A Field Test for Host-Plant Dependent Selection on Larvae of the Apple Maggot Fly, A FIELD TEST FOR HOST-PLANT DEPENDENT SELECTION ON LARVAE OF THE APPLE MAGGOT FLY, RHAGOLETIS POMONELLA. Source: Evolution Evolution, 53(531), 187–200. Retrieved from http://www.jstor.org/stable/2640931    
+
+
+Previous studies show that feeding habit does not differ between races on apple or hawthorn. One possibility that previous studies missed is that rotting fruit can be a selective force on larvae. They wanted to test the effect of fruit rot on larvael eclosion
+
+**Experimental set up: they varied fruit rot by rearing fruit in the field and in a garage. The garage is suppose to rot the fruit less than the field. And they watned to associate whether timing of exit of hawthorns/apple is related to linked loci (3)**
+
+first ttwo linked groups had snps related to lower number of  days in the haws.   More alleles of loci related to high frequency that eclose earlier were also related to less time in the haws. So these loci are related to faster development. 
+
+# summary table 
+
+| Linkage_Group|Allele    |race             |eclosion_pattern_time |pupae.dev |during.winter.treatment        |pre.winter.treatment |GDD                                |Clinal.pattern                      |larvae_haw_exit |larvae_exit_v_time          |
+|-------------:|:---------|:----------------|:---------------------|:---------|:------------------------------|:--------------------|:----------------------------------|:-----------------------------------|:---------------|:---------------------------|
+|             1|Aat-2 75+ |higher hawthorne |high earlier on       |shorter   |but higher in hawthorn         |higher earlier       |                                   |                                    |A/A shorter     |sometimes higher earlier on |
+|             1|Dia-2 100 |higher hawthorne |high earlier on       |shorter   |higher in hawthorne            |higher earlier       |                                   |higher north and in hawthorn        |A/A shorter     |sometimes higher ealrier on |
+|             2|Me100     |higher hawthorne |high earlier on       |shorter   |higher earlier on and hawthorn |higher earlier       |                                   |higher in north and in hawthorn     |A/A shorter     |higher earlier on           |
+|             2|Acon-2 95 |higher hawthorne |high earlier on       |shorter   |higher earlier on and hawthorn |higher earlier       |higher hawthorn and with lower GDD |higher in north; no cline for apple |A/A shorter     |higher earlier on           |
+|             2|Mpi 37    |higher hawthorne |high earlier on       |shorter   |higher earlier on              |higher earlier       |                                   |                                    |A/A shorter     |sometimes higher earlier on |
+|             3|Had100    |higher hawthorne |high earlier on       |shorter   |higher in hawthron             |Ushaped              |                                   |                                    |no diff         |no relationship             |   
 
 
 
@@ -10144,6 +10165,7 @@ THese alleles are associated with how pre-diapause temperatures influence eclosi
 
 ### Page 92: 2017-07-12. Meeting prep with Dan: To do/progress list     
 
+Set meeting in stone?  Fridays 2PM?    
 
 1. Paper discussion on Rhagoletis    
 	* Thoughts on mendeley?     
@@ -10187,11 +10209,13 @@ THese alleles are associated with how pre-diapause temperatures influence eclosi
 ### Page 93: 2017-07-17. Project status; dissertation; climate cascade    
 
 1. Hsp rxn norm paper: 
-	* Rearranged figures; so results need to be rewritten; introduction needs tweaking; discussion needs to be finished    
+	* Rearranged figures; so results need to be rewritten; introduction needs tweaking; discussion needs to be finished    ; goal mid july send out
 	* Plan to work on this once I send out range limits paper to AEllison   
+	* Submission goal: December 2017
 2. Range limits paper:   
 	* Need to rewrite introduction, tweak results, finish discussion    
 	* Send a draft to AEllison by end of July 2017   
+	* Submission goal: December 2017
 3. Proteome stability project:    
 	* Still in data gathering + analysis step   
 	* Wai needs to HPLC fractionate tryptic peptides to ID more of them    
@@ -10200,6 +10224,7 @@ THese alleles are associated with how pre-diapause temperatures influence eclosi
 4. Thermal niche paper    
 	* In lchick's hands   
 	* Nsanders wants to look at it.   
+	* Submission goal: yesterday  
 5. Aphaeno genomes project:    
 	* Mlau needs to annotate-get GO's and KOGs      
 6. Stressed in nature project:   
