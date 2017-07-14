@@ -10246,10 +10246,13 @@ Set meeting in stone?  Fridays 2PM?
 1. Paper discussion on Rhagoletis    
 	* Thoughts on mendeley?     
 	* Future papers to read   
+		* Dan gave me 3
 	* Dynmaic QTL idea to integrate genetic basis of traits over life histories   
+
+
 	
-2. Meeting with PIs July 19th-- set time?    
-3. Which meeting to go to?  
+2. Meeting with PIs July 19th-- set time?  2 or 3pm      
+3. Which meeting to go to?  I can go to both Evolution and ESA. 
 	* Evolution 2018  
 		* Montpellier, France Aug 18-22
 	* Entomological Society of America 
@@ -10259,13 +10262,16 @@ Set meeting in stone?  Fridays 2PM?
 			* Registration- $475 before Sept 13th 2017   
 			* I need to sign up to be a member; costs covered?  
 			* Hotel: $159-201/night
-		* SHould I present?    
+		* SHould I present?   
+			* Late breaking abstract   
+			* I can present or not   
 		
 	* SICB 2018     
 		* San Fran, Ca; Jan3-7
 4. When are we collecting?   
 	* Plan to go out into the field August-September; depends on fruiting time   
 	* Collect larvae that has infested fruits (Apple and Hawthorne) around Michigan and Illinois    
+	
 5. Complete Science IDP by August 1st.   
 6. Shadow Qinwin and Chao    
 	* Meeting with Qinwin July 18th, 10 AM 
@@ -10273,10 +10279,28 @@ Set meeting in stone?  Fridays 2PM?
 7. Go over data management practices?   
 	* Get NIH guidelines?   
 	* Go over data and directories?   
+	
 8. Which fellowships should I be thinking about apply to?     
 	* NSF? 
 	* USDA?  
-  
+
+Funding opportunities:   
+
+Blair(department head) brought up to Dan. 
+* Sloan INformatics fellowships     
+* USDA post docs   
+* NIH Rick Kirkeinstein?    
+	* somebody teaching how to apply for this    
+
+Goal by year 2: Have a killer job talk; 
+
+Hvae componenents
+1. old work
+2. post doc work 
+3. future work 
+
+Rhagoletis- polygenic system
+European COrnborer- 1 major effect loci 
 
 ------
 
