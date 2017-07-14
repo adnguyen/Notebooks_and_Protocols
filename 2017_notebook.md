@@ -126,7 +126,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 91: 2017-07-11](#id-section91). Reading rhagoletis papers   
 * [Page 92: 2017-07-12](#id-section92).  Meeting prep with Dan: To do/progress list     
 * [Page 93: 2017-07-13](#id-section93). Project status; dissertation
-* [Page 94:](#id-section94).
+* [Page 94: 2017-07-14](#id-section94). Meeting with Dan, 2pm
 * [Page 95:](#id-section95).
 * [Page 96:](#id-section96).
 * [Page 97:](#id-section97).
@@ -10239,7 +10239,44 @@ Set meeting in stone?  Fridays 2PM?
 
  <div id='id-section94'/> 
 
-### Page 94:  
+### Page 94: 2017-07-14. Meeting with Dan   
+
+Set meeting in stone?  Fridays 2PM?    
+
+1. Paper discussion on Rhagoletis    
+	* Thoughts on mendeley?     
+	* Future papers to read   
+	* Dynmaic QTL idea to integrate genetic basis of traits over life histories   
+	
+2. Meeting with PIs July 19th-- set time?    
+3. Which meeting to go to?  
+	* Evolution 2018  
+		* Montpellier, France Aug 18-22
+	* Entomological Society of America 
+		* November 5-8 Denver Colorado      
+		* meet Rhagoletis family   
+		* Pricing:   
+			* Registration- $475 before Sept 13th 2017   
+			* I need to sign up to be a member; costs covered?  
+			* Hotel: $159-201/night
+		* SHould I present?    
+		
+	* SICB 2018     
+		* San Fran, Ca; Jan3-7
+4. When are we collecting?   
+	* Plan to go out into the field August-September; depends on fruiting time   
+	* Collect larvae that has infested fruits (Apple and Hawthorne) around Michigan and Illinois    
+5. Complete Science IDP by August 1st.   
+6. Shadow Qinwin and Chao    
+	* Meeting with Qinwin July 18th, 10 AM 
+	   
+7. Go over data management practices?   
+	* Get NIH guidelines?   
+	* Go over data and directories?   
+8. Which fellowships should I be thinking about apply to?     
+	* NSF? 
+	* USDA?  
+  
 
 ------
 
