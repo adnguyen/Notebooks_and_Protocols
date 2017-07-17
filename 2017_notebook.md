@@ -10258,6 +10258,9 @@ Set meeting in stone?  Fridays 2PM?
 	* Entomological Society of America 
 		* November 5-8 Denver Colorado      
 		* meet Rhagoletis family   
+		* Symposium:  
+			* Genomics of Adaptation: Linking the Next Generation of Genome-Wide Analysis to Understand and Manage Complex Traits
+Organizers: Gregory Ragland, Glen Hood, Scott Egan, Daniel Hahn, and Meredith Doellman
 		* Pricing:   
 			* Registration- $475 before Sept 13th 2017   
 			* I need to sign up to be a member; costs covered?  
@@ -10332,6 +10335,15 @@ Then they compared the allele frequences throughout different durations of a win
 Under higher temp(26C), alelles started at a higher frequency, but were lower throughout longer overwintering. What does this mean? These alleles are referenced such that they are higher for shorter eclosion periods. Under low temperatures these alleles are lower in frequency , presumably because lower temperatures hinder growth and earlier eclosion. So an alelle's performance shifts depending no rearing temperature. 
 
 Experiments only focused on haw -reared fruit.  
+
+Take home: The performance of an alelle depends on the rearing temperature. For eclosion under different overwintering lengths, early eclosion alleles can increase in frequency under high temperatures. 
+
+
+Roethele, J. B., Romero-Severson, J., & Feder, J. L. (2001). Evidence for Broad-Scale Conservation of Linkage Map Relationships Between Rhagoletis pomonella (Diptera: Tephritidae) and Drosophila melanogaster (Diptera: Drosophilidae). Annals of the Entomological Society of America, 94(6), 936–947. https://doi.org/10.1603/0013-8746(2001)094[0936:EFBSCO]2.0.CO;2  
+
+
+
+
 
 ------
 
