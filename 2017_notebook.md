@@ -127,7 +127,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 92: 2017-07-12](#id-section92).  Meeting prep with Dan: To do/progress list     
 * [Page 93: 2017-07-13](#id-section93). Project status; dissertation
 * [Page 94: 2017-07-14](#id-section94). Meeting with Dan, 2pm
-* [Page 95:](#id-section95).
+* [Page 95: 2017-07-17](#id-section95). Rhagoletis reading batch 2   
 * [Page 96:](#id-section96).
 * [Page 97:](#id-section97).
 * [Page 98:](#id-section98).
@@ -10318,7 +10318,20 @@ Next time, chat about trade-offs.
 
  <div id='id-section95'/> 
 
-### Page 95:  
+### Page 95: 2017-07-17. Rhagoletis reading batch 2    
+
+Filchak, K. E., Roethele, J. B., & Feder, J. L. (2000). Natural selection and sympatric divergence in the apple maggot Rhagoletis pomonella. Nature, 407(6805), 739–742. https://doi.org/10.1038/35037578
+
+
+Nature paper showing gene-environment interaction   
+
+Figure 1: Seasonal distribution of flies on respective hosts. Panel A shows the distribution of infested larcae on host fruit through July to october. Apple is earlier. Panel B shows the larvae emerging from fruit as a function of the same time frame. Apple is earlier than haw
+
+Then they compared the allele frequences throughout different durations of a wintering lengths, reared at a low(22) and high(26C) temp. FOr figure 2, for all 3 alleles, there was a significant interaction between temperature and overwintering length on allele frequences. 
+
+Under higher temp(26C), alelles started at a higher frequency, but were lower throughout longer overwintering. What does this mean? These alleles are referenced such that they are higher for shorter eclosion periods. Under low temperatures these alleles are lower in frequency , presumably because lower temperatures hinder growth and earlier eclosion. So an alelle's performance shifts depending no rearing temperature. 
+
+Experiments only focused on haw -reared fruit.  
 
 ------
 
