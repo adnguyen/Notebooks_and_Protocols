@@ -10302,6 +10302,18 @@ Hvae componenents
 Rhagoletis- polygenic system
 European COrnborer- 1 major effect loci 
 
+
+Papers to journal club:    
+
+Roethele, J. B., Romero-Severson, J., & Feder, J. L. (2001). Evidence for Broad-Scale Conservation of Linkage Map Relationships Between Rhagoletis pomonella (Diptera: Tephritidae) and Drosophila melanogaster (Diptera: Drosophilidae). Annals of the Entomological Society of America, 94(6), 936–947. https://doi.org/10.1603/0013-8746(2001)094[0936:EFBSCO]2.0.CO;2
+
+Filchak, K. E., Roethele, J. B., & Feder, J. L. (2001). Effects of photoperiod and light intensity on the genetics of diapause in the apple maggot (Diptera : Tephritidae). Annals of the Entomological Society of America, 94(6), 902–908. https://doi.org/10.1603/0013-8746(2001)094{[}0902:EOPALI]2.0.CO;2
+
+Filchak, K. E., Roethele, J. B., & Feder, J. L. (2000). Natural selection and sympatric divergence in the apple maggot Rhagoletis pomonella. Nature, 407(6805), 739–742. https://doi.org/10.1038/35037578
+
+
+Next time, chat about trade-offs. 
+
 ------
 
  <div id='id-section95'/> 
