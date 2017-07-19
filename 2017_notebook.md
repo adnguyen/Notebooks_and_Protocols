@@ -128,8 +128,13 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 93: 2017-07-13](#id-section93). Project status; dissertation
 * [Page 94: 2017-07-14](#id-section94). Meeting with Dan, 2pm
 * [Page 95: 2017-07-17](#id-section95). Rhagoletis reading batch 2   
+<<<<<<< HEAD
 * [Page 96: 2017-07-19](#id-section96). 
 * [Page 97:](#id-section97).
+=======
+* [Page 96: 2017-07-17](#id-section96). UF communication tips   
+* [Page 97:](#id-section97). 
+>>>>>>> origin/master
 * [Page 98:](#id-section98).
 * [Page 99:](#id-section99).
 * [Page 100:](#id-section100).
@@ -10349,6 +10354,7 @@ Roethele, J. B., Romero-Severson, J., & Feder, J. L. (2001). Evidence for Broad-
 
  <div id='id-section96'/> 
 
+<<<<<<< HEAD
 ### Page 96: 2017-07-19. UF computing center, tutorial/workshop   
 
 ```
@@ -10412,13 +10418,123 @@ Try interactive jobs, not on home directory, but in working directory.
 If you have a problem, don't email, submit a ticket!   
 
 
+=======
+### Page 96: UF communication tips:   
+
+[http://postdoc.aa.ufl.edu/programs/postdoc-research-symposium/communication-tips/](http://postdoc.aa.ufl.edu/programs/postdoc-research-symposium/communication-tips/)
+
+From Keynote Workshop Presenter: Kevin Folta
+A Few Good Tips in Science Communication
+
+* The best science is arrested if not communicated.  Make every effort to share your discoveries, make them understandable to public audiences.  Think about how you’d describe your findings to a non-scientist in an elevator, and practice that message.    
+
+* Write every day.  Start a blog and paraphrase the scientific work in your field for a common audience.  Write about the scientific facets of a controversial topic.  Practice generating clever prose.   
+
+* Cool it, scientist.  Yes, we know you’re smart.  Dial it down a notch and talk to us.  Communicate.  The best talks, grant proposals and papers make the problem understandable and urgent, the effects clear and personal, and the solutions realistic and immediate.   
+
+* Tell a story-- don’t crush the reader or listener in jargon and statistics.
+Remember your audience.  The opportunity to share your science might be rare. When you are asked to write, speak, or report about your work think about your audience, spend time considering how to make the message most appropriate and effective.  Always prepare well and leave them wanting more.   
+
+* Understand rhetoric.  Revisit the ancient art of how to frame a persuasive campaign.  Use it. Read about how advertisers reach an audience.  Use these devices in your presentations, proposals and papers.   
+
+* Don’t forget about “priming”.  Psychology says that we make decisions in our brains before we know we made a decision.  Make your work beautiful.  Only submit it if it has a halo—if it screams about your care, attention to detail, and professionalism.  
+
+
+
+## I need to write a teaching and research statement; both 1-2 pages    
+
+Watching this: 
+[https://www.youtube.com/watch?v=DbRdTXDkE7s](https://www.youtube.com/watch?v=DbRdTXDkE7s)
+
+Make it easier for the reader. Make it organized (your application). Capture interest in first page.   
+
+Panel usually approaches application...
+     
+1. Cover letter
+2. glance at cv
+3. research statement   
+
+"Have to make a case for yourself"    
+
+
+Detailed parts is important for comparing top 10. For initial screen, don't get discarded.   
+   
+
+
+**Look for background (in CV) and what are you going to do**   
+
+IN teaching statement, state "I can teach these courses"  
+
+I could teach:  
+1. Evolution   
+2. Insect Physiology    
+3. General biology   
+4. Evolutionary Physiology   
+5. Macroecology?   
+6. Cell biology?  
+
+Advanced stuff...
+
+1. Intro to biostats
+2. Data science (R, open science)   
+   
+>>>>>>> origin/master
 
 
 ------
 
  <div id='id-section97'/> 
 
-### Page 97:  
+### Page 97: 2017-07-18.  Qinwin training me on european cornborer (ECB)   
+
+Rearing room for Adults , pupae, larvae: Enter 3252 and the two strains are located in 2 separate rooms:  
+
+* Left side (3251): BE, bivoltine strain (use yellow tape)   
+* Right side (3253): UZ, univoltine strain (pink tape)   
+
+
+Rearing:   
+1. Tray with vermiculite layer with a cage on top.   
+2. Sponge that is watered everyday to maintain humidity  
+3. wax paper on top of cage so that this allows adults to lay eggs  
+4. Conditions: 25 C; 14L:10D photoperiod ; also good for Rhagoletis. 
+
+### Eggs 
+
+To extract eggs, take the wax paper and cut into little pieces. Place the wax + egg paper into a clear container with a lid with NO holes (Keeps humidity). Label container with respective colored tape with Name and Date.    
+
+It takes 5 days to hatch. Before they do, the eggs turn black (day 4). Add diet to the bottom of the clear container(with wax paper on top) and use a new lid that has a mesh hole (small). Too large of a hole will dry out the diet.   
+
+### Diet   
+
+ECB diet is ready made. Just add powder and boiling water. Then it solidifies. It is made in room 3143. Takes around 4 minutes.   
+
+### Larval care   
+
+Larvae are stored in a 26 C incubator(blue in the hallway) with 16L:8D photoperiod. 
+
+**Same incubator also used for diapause termination or from switching short to long photoperiod**. 
+
+It takes 20-21 days to pupate.   
+
+
+Qinwin's project:  
+
+Ecdysteroid terminates diapause by promoting growth. IN fact, larvae without this hormone don'tpupate. TO compare the effects of ecdysone between strains, she dosed (0, 0.1, 0.4, 0.7, and 1 ug) ECB larvae with ecdysone and measured pupation day. Bivoltine (BE strain) pupated faster as a result(compared to UZ strain). 
+
+Qinwin's pathway dissection: 
+
+Photoperiod --> PDF --> PDFGR in prostaglandin --> ecdysone in prostoglandin   
+
+
+### Diapause induction 
+
+Room is 3140, which has many incubators that can differ in photoperiod. The conditions are 12L:12D 23 C. 
+
+
+
+
+  
 
 ------
 
