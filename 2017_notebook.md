@@ -128,14 +128,9 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 93: 2017-07-13](#id-section93). Project status; dissertation
 * [Page 94: 2017-07-14](#id-section94). Meeting with Dan, 2pm
 * [Page 95: 2017-07-17](#id-section95). Rhagoletis reading batch 2   
-<<<<<<< HEAD
-* [Page 96: 2017-07-19](#id-section96). 
-* [Page 97:](#id-section97).
-=======
 * [Page 96: 2017-07-17](#id-section96). UF communication tips   
-* [Page 97:](#id-section97). 
->>>>>>> origin/master
-* [Page 98:](#id-section98).
+* [Page 97: 2017-07-18](#id-section97). Qinwin ECB training   
+* [Page 98: 2017-07-19](#id-section98). UF computing center, tutorial/workshop     
 * [Page 99:](#id-section99).
 * [Page 100:](#id-section100).
 * [Page 101:](#id-section101).
@@ -10478,7 +10473,6 @@ Advanced stuff...
 1. Intro to biostats
 2. Data science (R, open science)   
    
->>>>>>> origin/master
 
 
 ------
@@ -10540,7 +10534,67 @@ Room is 3140, which has many incubators that can differ in photoperiod. The cond
 
  <div id='id-section98'/> 
 
-### Page 98:  
+### Page 98:  2017-07-19. UF computing center, tutorial/workshop   
+
+```
+Navigating UF’s High-Performance Computing Environment
+with
+Ying Zhang, Applications Specialist
+University of Florida Informatics Institute and Information Technology 
+```
+
+Ying; started out as high performance computing center. This is what it started out as. There is a huge computing cluster 10,000's computing cores. For large scale computing; parallel, run thousands of nodes. This is used for physics/chem/engineering/math.  
+
+But in the last 5 years, more and more biologists need computing power!   
+
+Fastest growing user body. Accomodating everybody! Because of sequencing   
+
+Support ~500 software software installed bio   
+
+**Cluster called: HiPerGator**      
+
+Let you run 100s of jobs at the same time. Data within a day instead of a month!   
+
+website: https://www.rc.ufl.edu/  
+
+outlines services; there is a wikipage (https://wiki.rc.ufl.edu/doc/UFRC_Help_and_Documentation)[https://wiki.rc.ufl.edu/doc/UFRC_Help_and_Documentation]
+
+Do not provide license. If usergroup has it, then only access to user group. There are 2 bioinformatics specialists has office hours in genetics buildings (ICBR).  
+
+Tuesday and Thursday mornings. 
+
+> Oleksandr Moskalenko	Bioinformatics Specialist	om@rc.ufl.edu
+
+In the florida museum; need to email him      
+
+> Matt Gitzendanner	Bioinformatics Specialist	magitz@hpc.ufl.edu
+
+(works for a quarter of the time); matt does some training; he's out for summer; but in the fall there are training sessions every 2 weeks in the physics building.        
+
+
+Signed up for hipergator: https://www.rc.ufl.edu/access/request-account/  
+Dan needs to approve.   
+
+Getting started: https://wiki.rc.ufl.edu/doc/Getting_Started   
+
+```
+ssh <username>@hpg2.rc.ufl.edu  
+```  
+
+2 policies for use:   
+
+1. Don't run programs on login node; to see if script is working, try a test node
+	* acc can get suspended      
+2. Do not run programs from home directory. Your job will get killed; limited storage   
+
+
+Sample scripts for submitting jobs:   
+
+(https://wiki.rc.ufl.edu/doc/Sample_SLURM_Scripts)[https://wiki.rc.ufl.edu/doc/Sample_SLURM_Scripts]
+
+Try interactive jobs, not on home directory, but in working directory.     
+
+If you have a problem, don't email, submit a ticket!   
 
 ------
 
