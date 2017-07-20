@@ -131,8 +131,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 96: 2017-07-17](#id-section96). UF communication tips   
 * [Page 97: 2017-07-18](#id-section97). Qinwin ECB training   
 * [Page 98: 2017-07-19](#id-section98). UF computing center, tutorial/workshop     
-* [Page 99:](#id-section99).
-* [Page 100:](#id-section100).
+* [Page 99: 2017-07-19](#id-section99). Prep to do list, meeting Friday   
+* [Page 100: 2017-07-19](#id-section100). Skype meeting with TPowell, GRagland.    
 * [Page 101:](#id-section101).
 * [Page 102:](#id-section102).
 * [Page 103:](#id-section103).
@@ -10342,78 +10342,8 @@ Take home: The performance of an alelle depends on the rearing temperature. For 
 Roethele, J. B., Romero-Severson, J., & Feder, J. L. (2001). Evidence for Broad-Scale Conservation of Linkage Map Relationships Between Rhagoletis pomonella (Diptera: Tephritidae) and Drosophila melanogaster (Diptera: Drosophilidae). Annals of the Entomological Society of America, 94(6), 936–947. https://doi.org/10.1603/0013-8746(2001)094[0936:EFBSCO]2.0.CO;2  
 
 
+-----   
 
-
-
-------
-
- <div id='id-section96'/> 
-
-<<<<<<< HEAD
-### Page 96: 2017-07-19. UF computing center, tutorial/workshop   
-
-```
-Navigating UF’s High-Performance Computing Environment
-with
-Ying Zhang, Applications Specialist
-University of Florida Informatics Institute and Information Technology 
-```
-
-Ying; started out as high performance computing center. This is what it started out as. There is a huge computing cluster 10,000's computing cores. For large scale computing; parallel, run thousands of nodes. This is used for physics/chem/engineering/math.  
-
-But in the last 5 years, more and more biologists need computing power!   
-
-Fastest growing user body. Accomodating everybody! Because of sequencing   
-
-Support ~500 software software installed bio   
-
-**Cluster called: HiPerGator**      
-
-Let you run 100s of jobs at the same time. Data within a day instead of a month!   
-
-website: https://www.rc.ufl.edu/  
-
-outlines services; there is a wikipage (https://wiki.rc.ufl.edu/doc/UFRC_Help_and_Documentation)[https://wiki.rc.ufl.edu/doc/UFRC_Help_and_Documentation]
-
-Do not provide license. If usergroup has it, then only access to user group. There are 2 bioinformatics specialists has office hours in genetics buildings (ICBR).  
-
-Tuesday and Thursday mornings. 
-
-> Oleksandr Moskalenko	Bioinformatics Specialist	om@rc.ufl.edu
-
-In the florida museum; need to email him      
-
-> Matt Gitzendanner	Bioinformatics Specialist	magitz@hpc.ufl.edu
-
-(works for a quarter of the time); matt does some training; he's out for summer; but in the fall there are training sessions every 2 weeks in the physics building.        
-
-
-Signed up for hipergator: https://www.rc.ufl.edu/access/request-account/  
-Dan needs to approve.   
-
-Getting started: https://wiki.rc.ufl.edu/doc/Getting_Started   
-
-```
-ssh <username>@hpg2.rc.ufl.edu  
-```  
-
-2 policies for use:   
-
-1. Don't run programs on login node; to see if script is working, try a test node
-	* acc can get suspended      
-2. Do not run programs from home directory. Your job will get killed; limited storage   
-
-
-Sample scripts for submitting jobs:   
-
-(https://wiki.rc.ufl.edu/doc/Sample_SLURM_Scripts)[https://wiki.rc.ufl.edu/doc/Sample_SLURM_Scripts]
-
-Try interactive jobs, not on home directory, but in working directory.     
-
-If you have a problem, don't email, submit a ticket!   
-
-
-=======
 ### Page 96: UF communication tips:   
 
 [http://postdoc.aa.ufl.edu/programs/postdoc-research-symposium/communication-tips/](http://postdoc.aa.ufl.edu/programs/postdoc-research-symposium/communication-tips/)
@@ -10600,13 +10530,126 @@ If you have a problem, don't email, submit a ticket!
 
  <div id='id-section99'/> 
 
-### Page 99:  
+### Page 99: 2017-07-19.  Prep to do list, meeting Friday
+
+Set meeting in stone?  Fridays 2PM?    
+
+1. Paper discussion on Rhagoletis    
+	* Roethele, J. B., Romero-Severson, J., & Feder, J. L. (2001). Evidence for Broad-Scale Conservation of Linkage Map Relationships Between Rhagoletis pomonella (Diptera: Tephritidae) and Drosophila melanogaster (Diptera: Drosophilidae). Annals of the Entomological Society of America, 94(6), 936–947. https://doi.org/10.1603/0013-8746(2001)094[0936:EFBSCO]2.0.CO;2    
+	* Filchak, K. E., Roethele, J. B., & Feder, J. L. (2001). Effects of photoperiod and light intensity on the genetics of diapause in the apple maggot (Diptera : Tephritidae). Annals of the Entomological Society of America, 94(6), 902–908. https://doi.org/10.1603/0013-8746(2001)094{[}0902:EOPALI]2.0.CO;2    
+	* Filchak, K. E., Roethele, J. B., & Feder, J. L. (2000). Natural selection and sympatric divergence in the apple maggot Rhagoletis pomonella. Nature, 407(6805), 739–742. https://doi.org/10.1038/35037578    
+
+2. Meetings to attend:  
+	* Entomological Society of America 
+		* November 5-8 Denver Colorado      
+		* meet Rhagoletis family   
+		* Symposium:  
+			* Genomics of Adaptation: Linking the Next Generation of Genome-Wide Analysis to Understand and Manage Complex Traits
+Organizers: Gregory Ragland, Glen Hood, Scott Egan, Daniel Hahn, and Meredith Doellman
+		* Pricing:   
+			* Registration- $475 before Sept 13th 2017   
+			* I need to sign up to be a member; costs covered?  
+			* Hotel: $159-201/night
+	* Evolution 2018  
+		* Montpellier, France Aug 18-22   
+		
+3. When are we collecting?   
+	* Plan to go out into the field August-September; depends on fruiting time   
+	* Collect larvae that has infested fruits (Apple and Hawthorne) around Michigan and Illinois    
+	
+4. Complete Science IDP by August 1st. Done.    
+
+
+other notes:   
+
+1. Oriented with hipergator computing, met with Ying 2017-07-19   
+2. switch out desk   
+
+# Future stuff:   
+
+### Funding opportunities:   
+
+Blair(department head) brought up to Dan. 
+* Sloan INformatics fellowships     
+* USDA post docs   
+* NIH Rick Kirkeinstein?    
+	* somebody teaching how to apply for this    
+
+### Goal by year 2: Have a killer job talk; 
+
+Hvae componenents
+1. old work
+2. post doc work 
+3. future work 
+
+Rhagoletis- polygenic system
+European COrnborer- 1 major effect loci 
+
 
 ------
 
  <div id='id-section100'/> 
 
-### Page 100:  
+### Page 100:  2017-07-19. Skype meeting with TPowell, GRagland.    
+
+Next week is earliest to collect apples. 
+
+GRagland: qPCR samples needed   
+
+Grant, MI; good for pop gen sample  - no wasps  
+
+Tpowell , what are the sites?  
+
+Lancing looks "good". Haw trees, apartments good.  
+
+Urbana, IL  has the greatest phenological separation. Apples earlier, hawthorn is later in the south. It is also the easiest site to collect at. Closest to gainesville.  
+
+Dont get anything, yet.  
+
+AUgust 12, dan's bday.  we could collect then.    
+
+Are we doing latitudinal cline?   
+
+Me: Do Circadian Rythm clocks. 
+
+Non-diapause class making it through the winter! Need to explore this.  
+
+2 goals for our discussion today: 
+
+1. when and where are labs collecting?
+2. How do we address diapause issue? 1 lab, or a couple of labs doing it? Have stuff standardized.   
+
+
+Tpowell doing warming experiments. Control, climate change condition and measuring phenology in flies and wasps. Use data to design warming based selection experiments  
+
+Alicia started noaa station data and compiling it.   
+
+
+Gainesville greenhaw flies; 30 tubes in a box. Tpowell wants that. 
+
+Greg needs urbana for qpcr validation. Number? 4-5 reps /time point/hose race.  couple of hundred pupae per host race 
+
+Tpowell needs to heavily sample  1 site.  
+
+
+wrap up
+
+1. tom watns urbana, but send greg some samples for qpcr 
+2. some point, go into -80 to figure out greek stuff, and green haw stuff   
+3. Greg has a freezer item: 
+
+
+Who is doing diapause classing?  
+Greg is going to do developmental biology. Take haw flies, class pre-winter and then track cell proliferation and brain morphogenesis. Track individuals. Continuing undergrad. 
+
+Pete dataset? What do we want to know? 
+
+Is it regressing? Cell prolife? 
+
+**Write up experimental goals and plans.**  Need action item completed. Deadline = Wednesday. 
+
+
+
 
 ------
 
