@@ -10655,7 +10655,61 @@ Is it regressing? Cell prolife?
 
  <div id='id-section101'/> 
 
-### Page 101:  
+### Page 101:  2017-07-21. Meeting with Dan friday 2pm    
+
+ 1. Paper discussion on Rhagoletis    
+	* Roethele, J. B., Romero-Severson, J., & Feder, J. L. (2001). Evidence for Broad-Scale Conservation of Linkage Map Relationships Between Rhagoletis pomonella (Diptera: Tephritidae) and Drosophila melanogaster (Diptera: Drosophilidae). Annals of the Entomological Society of America, 94(6), 936–947. https://doi.org/10.1603/0013-8746(2001)094[0936:EFBSCO]2.0.CO;2    
+	* Filchak, K. E., Roethele, J. B., & Feder, J. L. (2001). Effects of photoperiod and light intensity on the genetics of diapause in the apple maggot (Diptera : Tephritidae). Annals of the Entomological Society of America, 94(6), 902–908. https://doi.org/10.1603/0013-8746(2001)094{[}0902:EOPALI]2.0.CO;2    
+	* Filchak, K. E., Roethele, J. B., & Feder, J. L. (2000). Natural selection and sympatric divergence in the apple maggot Rhagoletis pomonella. Nature, 407(6805), 739–742. https://doi.org/10.1038/35037578    
+
+2. Meetings to attend:  
+	* Entomological Society of America 
+		* November 5-8 Denver Colorado      
+		* meet Rhagoletis family   
+		* Symposium:  
+			* Genomics of Adaptation: Linking the Next Generation of Genome-Wide Analysis to Understand and Manage Complex Traits
+Organizers: Gregory Ragland, Glen Hood, Scott Egan, Daniel Hahn, and Meredith Doellman
+		* Pricing:   
+			* Registration- $475 before Sept 13th 2017   
+			* I need to sign up to be a member; costs covered?  
+			* Hotel: $159-201/night
+	* Evolution 2018  
+		* Montpellier, France Aug 18-22   
+		
+3. When are we collecting?   
+	* Plan to go out into the field August-September; depends on fruiting time   
+	* Collect larvae that has infested fruits (Apple and Hawthorne) around Michigan and Illinois    
+	
+4. Complete Science IDP by August 1st. Done.    
+	* Send to Dan   
+	
+5. I need a new desk: Monday, pick up truck?  
+	
+other notes:   
+
+1. Oriented with hipergator computing, met with Ying 2017-07-19   
+2. met with Qinwin or rearing ECB   
+
+# Future stuff:   
+
+### Funding opportunities:   
+
+Blair(department head) brought up to Dan.  Where to find this stuff? 
+* Sloan INformatics fellowships     
+* USDA post docs   
+* NIH Rick Kirkeinstein?    
+	* somebody teaching how to apply for this    
+
+### Goal by year 2: Have a killer job talk; 
+
+Hvae componenents
+1. old work
+2. post doc work    
+	* Rhagoletis- polygenic system
+	* European COrnborer- 1 major effect loci 
+
+3. future work 
+
 
 ------
 
