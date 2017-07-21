@@ -10689,6 +10689,8 @@ other notes:
 
 1. Oriented with hipergator computing, met with Ying 2017-07-19   
 2. met with Qinwin or rearing ECB   
+3. Q: What are the general rules for co-authorship in the lab?   
+
 
 # Future stuff:   
 
@@ -10696,6 +10698,8 @@ other notes:
 
 Blair(department head) brought up to Dan.  Where to find this stuff? 
 * Sloan INformatics fellowships     
+	* using existing datasets in the lab; complex genomic architecture problem (diffuse, inversions)    
+	* charlie baer; c elegans; genomic architecture        
 * USDA post docs   
 * NIH Rick Kirkeinstein?    
 	* somebody teaching how to apply for this    
@@ -10709,6 +10713,44 @@ Hvae componenents
 	* European COrnborer- 1 major effect loci 
 
 3. future work 
+
+### Prof dev:   
+
+Seminar series: There are 2 for biology
+
+1. pop bio group, friday   
+2. actual seminar series   
+
+Dan will show me a writing book.   
+
+going over IDP: 
+
+Important- teaching in a classroom setting. Boost yourself so that your're marketable. Show that you can teach a full course. norm- 1.5 to 2 courses a year 
+
+1. 5 week block of teaching intro bio classes   
+2. Upper level- grad level course   
+
+What kind of PI do I want to be?  
+Dan is 13 years- transition to doing research to manager. 
+Greg is in the middle, hands on  
+
+College of Ag, tehre is a the teacher's college, held in our building. Post docs might be able to attend, 1 day /week course that helps you teach. Faculty level certification course. Pair that with mentored-teaching experience. Take over 1-2 weeks Dan's physiology course.  Dan and I could teach a graduate seminar.  I'll be an instructor of recrod. I'll get an official evaluation.  
+
+Thre is a course for mol techniques in the deparmtent; and leigh awas a co-instructor of record. 
+
+Try to do this in your 2nd year.  I could teach a data science.  
+
+### Rules for Co-authorship?    
+
+*more generous than less generous*    
+
+Make a substantial contribution   
+
+1. collecting data     
+2. data analysis   
+3. data collecting   
+
+### Revisit IDP in 6 months
 
 
 ------
