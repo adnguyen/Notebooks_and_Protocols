@@ -133,9 +133,9 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 98: 2017-07-19](#id-section98). UF computing center, tutorial/workshop     
 * [Page 99: 2017-07-19](#id-section99). Prep to do list, meeting Friday   
 * [Page 100: 2017-07-19](#id-section100). Skype meeting with TPowell, GRagland.    
-* [Page 101:](#id-section101).
-* [Page 102:](#id-section102).
-* [Page 103:](#id-section103).
+* [Page 101: 2017-07-21](#id-section101). Meeting with Dan 2pm friday
+* [Page 102: 2017-07-21](#id-section102). notes on rhagoletis paper genomic structure
+* [Page 103: 2017-07-21](#id-section103). Diapause reading papers   
 * [Page 104:](#id-section104).
 * [Page 105:](#id-section105).
 * [Page 106:](#id-section106).
@@ -10715,13 +10715,117 @@ Hvae componenents
 
  <div id='id-section102'/> 
 
-### Page 102:  
+### Page 102: 2017-07-21. notes on Rhagoletis paper; genomic mapping 
+
+ref: Roethele, J. B., Romero-Severson, J., & Feder, J. L. (2001). Evidence for Broad-Scale Conservation of Linkage Map Relationships Between Rhagoletis pomonella (Diptera: Tephritidae) and Drosophila melanogaster (Diptera: Drosophilidae). Annals of the Entomological Society of America, 94(6), 936–947. 
+
+
+### intro
+
+First, not all of the rhagoletis markers map to fruit fly chromosomes. In fruit flies, chromosome 4 is not mapped at all. 
+
+1. Rhagoletis has 6 chromosomes (linkage groups)  
+	* How do they know it is 6 chromosomes?  
+	* linkage group 1 and 2 are target loci responsible for divergent diapause timing in apple maggots    
+2. fruit flies have 3 or 4 chromosomes   
+
+### Some terminology
+
+Need to look up definition for synteny:  
+
+```
+In classical genetics, synteny describes the physical co-localization of genetic loci on the same chromosome within an individual or species. Today, however, biologists usually refer to synteny as the conservation of blocks of order within two sets of chromosomes that are being compared with each other.
+```
+
+Two diff def, confusing as hell.   
+
+Also need to look up types of inversion. pericentric vs paracentric:   
+
+1. **Paracentric** does not include the centromere and the breaks in the chromosome occur on 1 arm.    
+2. **Pericentric** involves a inversion when there are breaks on each chromosome arm, so the inversion includes the centromere.
+
+This paper argues that there are PARAcentric inversions. Authors don't really have a clue because there could be pericentric inversions too, at least for chromosome 2.  
+
+-----    
+
+Some of my hand written notes. I copied figure 4 but placed the rhagoletis linkage groups on the fruit fly chromosomes. 
+
+![](https://user-images.githubusercontent.com/4654474/28471858-81a3db78-6e0c-11e7-86ee-292d0c59a5e7.JPG)    
+
+From the paper, it says the chromosome 2 and 3 are a product of chromosome fusings for each arm. Looks like this is true because for chromosome 3, one arm is linakge 1 and the other is linkage 2. 
+
+Authors think the common ancestor of rhagoletis and fruit fly is 6. But you cant tell from these data because there is no outgroup! The reverse could be true: ancestral state is 3/4 and rhagoletis expanded it's chromosome numbers. 
+
+Structural differences: 
+1. chromosome 2 is most likely a product of a bunch of translocations   
+2. chromosome 3 is most likely a product of chromosomal fusions 
+3. the sex chromosome switched? 
+
+So, chromosome 3 should be target for selection in fruit flies for modulating differences in diapause timing. But....
+
+Many of the loci responsible for seasonal timing are mapped to different parts of fruit fyly genome. Period is on the x chromosome. So seasonal timing should be a polygenic trait in fruit flies too.   
+
 
 ------
 
  <div id='id-section103'/> 
 
-### Page 103:  
+### Page 103: Diapause reading papers    
+
+1. Koštál, V. (2006). Eco-physiological phases of insect diapause. Journal of Insect Physiology, 52(2), 113–127. https://doi.org/10.1016/j.jinsphys.2005.09.008  
+
+2. Dambroski, H. R., & Feder, J. L. (2007). Host plant and latitude-related diapause variation in Rhagoletis pomonella: A test for multifaceted life history adaptation on different stages of diapause development. Journal of Evolutionary Biology, 20(6), 2101–2112. https://doi.org/10.1111/j.1420-9101.2007.01435.x  
+
+
+## Koštál, V. (2006). Eco-physiological phases of insect diapause. Journal of Insect Physiology, 52(2), 113–127. https://doi.org/10.1016/j.jinsphys.2005.09.008    
+
+Paper focuses on synthesizing all of the previous ways scientists use diapause and arriving at a consensus with words.   
+
+### Defining diapause  
+
+In defining diapause, author argues that it is a specific term for dormancy. Here is how I'd interpret his definitions and my thoughts:       
+
+1. Dormancy: any state of suppressed metabolism and development. He argues that it is adaptive-no, it doesn't have anything to do with adaptation, so just leave that part out. Just define the term and then overlay what the term could mean after the fact.     
+
+2. Quiescence: a short term suppression of metabolism and development which can be resumed given favorable environmental conditions.  
+
+3. Diapause: long term suppression of metabolism and development which significantly shifts away from direct development. 
+
+Author's definitions are so obscure, imprecise, and non-direct. The way I've described dormancy is basically short vs long term. I don't lump dormancy depth into the def, but maybe I should because that is part of the process?   
+
+### stages of diapause   
+
+Author subdivides diapause into 3 main stages:  
+1. pre-diapause   
+2. diapause   
+3. post-diapause    
+
+**Pre-diapause**    
+
+Diapause is initiated in advance to unfavorable conditions by cues such as photoperiod and temperature. The process might be fixed and completely genetically deteremined  without any external cues, known as obligatory diapause.   
+
+1. induction phase - when organisms receive cues to start diapause   
+2. preparation phase -fixed into entering in diapause by shifting direct development into storage potentially     
+
+
+**Diapause**: direction development is arrested   
+
+1. initiation - direct development completely stops   
+2. Maintenance - utilizing stored reserves for somatic maintenance in the face of unfavorable environments   
+3. Termination - when the enviornment becomes more favorable and the organism begins direct development again  
+	* direct development could begin
+	* direct development begins again   
+	
+**Pose-diapause**:   
+
+Author defines it as environmentally driven inhibition or lowering of development following termination of diapause.   
+
+### summary  
+
+Diapause is a dynamic and gradual process by which insects enter in a state of dormancy when they encounter unfavorable environmental conditions. These conditions could be related to food availability, photoperiod, and temperature. This allows organisms in thermally extreme cold environments to match their life history timing when the environment is favorable. Although the author realizes that diapause is continuous, he attempted to define critical moments in diapause to provide a framework for studying it.   
+
+There are a lot of good references to old papers and this paper is a good resource for them! 
+
 
 ------
 
