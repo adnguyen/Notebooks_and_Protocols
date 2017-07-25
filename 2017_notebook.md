@@ -136,7 +136,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 101: 2017-07-21](#id-section101). Meeting with Dan 2pm friday
 * [Page 102: 2017-07-21](#id-section102). notes on rhagoletis paper genomic structure
 * [Page 103: 2017-07-21](#id-section103). Diapause reading papers   
-* [Page 104:](#id-section104).
+* [Page 104: 2017-07-24](#id-section104). Dambroski and Feder 2012; Journal of evo bio paper    
 * [Page 105:](#id-section105).
 * [Page 106:](#id-section106).
 * [Page 107:](#id-section107).
@@ -10873,7 +10873,69 @@ There are a lot of good references to old papers and this paper is a good resour
 
  <div id='id-section104'/> 
 
-### Page 104: 
+### Page 104: 2017-07-24. Dambroski and Feder 2012; Journal of evo bio paper    
+
+Dambroski, H. R., & Feder, J. L. (2007). Host plant and latitude-related diapause variation in Rhagoletis pomonella: A test for multifaceted life history adaptation on different stages of diapause development. Journal of Evolutionary Biology, 20(6), 2101–2112. https://doi.org/10.1111/j.1420-9101.2007.01435.x  
+
+IT turns out that the Rhagoletis system is more complex than described because there are facultative diapausers. Meaning, not all of these flies diapause at a deep level and they actually vary in this.   
+
+Recap: 
+(flies)Apples have longer development than haws, presumably because apple flies are in diapause for a longer duration. The alelles in the papers I've been reading are associated with earlier eclosion, or faster development and are more "haw" like. In haws, these alleles can shift in their alelle frequency over overwintering duration dependin gon the pre-winter temperature conditions.   
+
+Work through figures in paper first: 
+
+Fig1. The illustration of the life history timing of the Rhagoletis system. in panel A, they show the progression of life stages as adults, on fruit, and diapausing pupae. panel b shows how apple flies have a longer pre-winter period than hawthron flies.   
+
+fig 2. The distribution of the different host races. It looks lie Haws have the widest distribution.  
+
+fig 3. This shows the # of flies eclosing against the # of days eclosion for haw and apple races. There are "3" populations.  
+
+1. *ND flies*- flies that don't diapause or have a shallow diapause and go into direct development.  
+2. *SD flies*- shallow diapausers, ones that can exit diapause faster.   
+3. *CD flies*- chill-dependent diapausers- ones that need to be in cold conditions to diapause. 
+
+Fig4- survivorship plotted against lat (N-S). Overall, apples have higher survival at higher latittudes, but converge in survivorship at the lowest latitude.     
+
+
+Fig 5- 
+
+* Panel a: Relative %CD flies against latitude (N-S). There is a positive relationship. Looks like an interaction between lat and host race. the % of CD(chill dependent diapausers) is higher as you move south.  And the CD flies are overall, higher in apple than hawthorn. This suggests that southern populations need to be primed to diapause by cold temperatures than northern populations. Also, the apple race is more primed to diapause by cold temperatures than hawthorn flies.      
+
+* Panel b: Relative ND(non-diapausers) against latitude.  There is a negative relationship. There is more of a % of flies that don't diapause in the north than in the south. There is a higher %  of ND in haws than apple. Doesn't make sense because you'd expect the opposite pattern.   
+
+* panel c: SD+ND vs lat (N-S); positive relationship for apple, but not haws. This panel c looks like or resembles a. 
+
+Thoughts:   
+
+1. It looks like for haws, the % into CD,ND, and SD are uniformally distributed, which could suggest taht ti bet hedges equally into these different strageties. In contrast, the apple race looks like it invests more in CD flies. so they only invest in CD if they're chilled.  
+
+
+Figure 6: 
+
+* Panel A: Survival vs apple, hawthorn, and their reciprical crosses. Apple had the highest surv, followed by hybrids. Haws had lower survival.    
+
+* Panel B: % abs of chill depenndent CD flies vs apple, hawthorn, and their reciprical crosses. Same story as panel A.   
+
+* Panel C: Relative %CD diapause flies vs apple, hawthorn, and their reciprical crosses. Applies and A x H cross had higher relative %CD flies than H x A cross and hawthorn.    
+
+* Panel D: % ND vs apple, hawthorn, and their reciprical crosses. % of ND flies are higher for hawthorn. The corsses are intermediate.   
+
+
+Thoughts: What does this mean?   
+
+## Note: In reading the methods, the % is expressed within the class that survived the overwintering treatmnt.     
+
+So in fig 5. Applies have higher %CD and SD surviorship, but lower %ND survivorship. Lat patterns still the same: positive relationshp between %CD/%SD with lat. Neg relationship between %ND and lat. 
+
+
+Fr figure 6. this oculd mean that apples have higher survival in CD and overall, but low survival for ND. 
+
+Figure 7. shows mean $ of days to eclosion vs lat. Overall, for the 5 month overwintering treatment, hawthorn have longer developmental times than apple. This is consistent with the paper we prev read: 
+
+Feder, J. L., Stolz, U., Lewis, K. M., Perry, W., Roethele, J. B., & Rogers, A. (1997). THE EFFECTS OF WINTER LENGTH ON THE GENETICS OF APPLE AND HAWTHORN RACES OF RHAGOLETIS POMONELLA (DIPTERA: TEPHRITIDAE). Evolution, 51(6), 1862–1876. https://doi.org/10.1111/j.1558-5646.1997.tb05109.x    
+
+ 
+
 
 ------
 
