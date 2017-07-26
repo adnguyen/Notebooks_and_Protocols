@@ -10932,10 +10932,12 @@ Fr figure 6. this oculd mean that apples have higher survival in CD and overall,
 
 Figure 7. shows mean $ of days to eclosion vs lat. Overall, for the 5 month overwintering treatment, hawthorn have longer developmental times than apple. This is consistent with the paper we prev read: 
 
-Feder, J. L., Stolz, U., Lewis, K. M., Perry, W., Roethele, J. B., & Rogers, A. (1997). THE EFFECTS OF WINTER LENGTH ON THE GENETICS OF APPLE AND HAWTHORN RACES OF RHAGOLETIS POMONELLA (DIPTERA: TEPHRITIDAE). Evolution, 51(6), 1862–1876. https://doi.org/10.1111/j.1558-5646.1997.tb05109.x    
+Feder, J. L6., Stolz, U., Lewis, K. M., Perry, W., Roethele, J. B., & Rogers, A. (1997). THE EFFECTS OF WINTER LENGTH ON THE GENETICS OF APPLE AND HAWTHORN RACES OF RHAGOLETIS POMONELLA (DIPTERA: TEPHRITIDAE). Evolution, 51(6), 1862–1876. https://doi.org/10.1111/j.1558-5646.1997.tb05109.x    
 
  
+2017-07-26, revisited paper:   
 
+In fig 5 b, the prop of non-diapausing flies is higher in the haw race than apple race. Why is that? It seems like overall, Apple pupae are higher quality, which may mean low quality flies (that don't have enough energy stores to survive the winter) may not opt into a diapausing strategy. 
 
 ------
 
