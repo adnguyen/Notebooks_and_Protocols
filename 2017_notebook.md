@@ -137,7 +137,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 102: 2017-07-21](#id-section102). notes on rhagoletis paper genomic structure
 * [Page 103: 2017-07-21](#id-section103). Diapause reading papers   
 * [Page 104: 2017-07-24](#id-section104). Dambroski and Feder 2012; Journal of evo bio paper    
-* [Page 105:](#id-section105).
+* [Page 105: 2017-07-26](#id-section105). diapause paper by Wilsterman et al. 
 * [Page 106:](#id-section106).
 * [Page 107:](#id-section107).
 * [Page 108:](#id-section108).
@@ -10943,7 +10943,30 @@ In fig 5 b, the prop of non-diapausing flies is higher in the haw race than appl
 
  <div id='id-section105'/> 
 
-### Page 105:  
+### Page 105: 2017-07-26. diapause paper by Wilsterman et al.     
+
+Different systems have different language for how they describe dormancy (diapause, hibernation, torpor). This paper tries to integrate different fields with a common set of words that describe dormancy.   
+
+They break down dormancy into a few stages:   
+
+1. **Preparation**: remodeling morphology and physiology   
+	* super non-specific description    
+2. **Initiation**: decline in sensitivity to environmental conditions that promote growth, development. Stopping activity, cell cycle(growth), and suppression of development.  
+	* How this is different than preparation, I have no clue       
+3. **Maintenance**: refractoriness to environmental conditions that will later trigger the completion of dormancy   
+	* hard to aggree with this definition. It is so abstract that I barely know what it means. They are defining this stage by the resistance to warm temperatures, but the emphasis should really be how this stage is charactereized by hardiness to winter conditions. Organisms achieve hardiness by....    
+4. **Potentiation** : sensitivity to environmental conditions that trigger development increases, but not yet because conditions are still unfavorable. 
+	* Definition could benefit from more directness. 
+	* Increased sensitivity to environmental conditions that promote development   
+	      
+5. **Activation** : growth resumes because favorable conditions return.    
+   
+
+Important distinction: Is dormancy obligate or facultative? Obligate is when species are hard-wired to enter dormancy, while facultative requires environmental cues to enter dormancy. It'd be interesting to know, what is the relative proportions of both of these strategies. It feels like obligate dormancy is rare. 
+
+The order of the stages in dormancy are off. Induction written first, then preparation but the authors led with preparation. 
+
+
 
 ------
 
