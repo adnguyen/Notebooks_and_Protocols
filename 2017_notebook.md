@@ -138,7 +138,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 103: 2017-07-21](#id-section103). Diapause reading papers   
 * [Page 104: 2017-07-24](#id-section104). Dambroski and Feder 2012; Journal of evo bio paper    
 * [Page 105: 2017-07-26](#id-section105). diapause paper by Wilsterman et al. 
-* [Page 106:](#id-section106).
+* [Page 106: 2017-07-27](#id-section106). Meeting with Dan; progress and to do list      
 * [Page 107:](#id-section107).
 * [Page 108:](#id-section108).
 * [Page 109:](#id-section109).
@@ -10972,7 +10972,107 @@ The order of the stages in dormancy are off. Induction written first, then prepa
 
  <div id='id-section106'/> 
 
-### Page 106:  
+### Page 106: 2017-07-27. Meeting with Dan; progress and to do  list     
+
+ 1. Paper discussion on Rhagoletis    
+	* DAMBROSKI, H. R., & FEDER, J. L. (2007). Host plant and latitude-related diapause variation in Rhagoletis pomonella: a test for multifaceted life history adaptation on different stages of diapause development. Journal of Evolutionary Biology, 20(6), 2101–2112. https://doi.org/10.1111/j.1420-9101.2007.01435.x    
+	* Unpublished diapause paper    
+	* Next set of papers?    
+	
+	
+2. Meetings to attend:  
+	* Entomological Society of America 
+		* November 5-8 Denver Colorado      
+		* Symposium:  
+			* Genomics of Adaptation: Linking the Next Generation of Genome-Wide Analysis to Understand and Manage Complex Traits
+Organizers: Gregory Ragland, Glen Hood, Scott Egan, Daniel Hahn, and Meredith Doellman
+		* Pricing:   
+			* Registration- $475 before Sept 13th 2017   
+	* Evolution 2018  
+		* Montpellier, France Aug 18-22   
+		
+3. When are we collecting?   
+	* Dan is away July 31-Aug 10   
+	* Plan to go out into the field August-September; depends on fruiting time   
+	* Collect larvae that has infested fruits (Apple and Hawthorne) around Michigan and Illinois    
+
+4. Dan will show me books on writing.   
+	* The elements of style by William strunk jr and EB white   
+	* Style:  lessons in clarity and grace by Joe Williams and Joe Bizup   
+5. Review a manuscript while Dan is away?   
+    
+
+
+# Future stuff:   
+
+
+### Revisit IDP in 6 months
+
+**In december**    
+
+
+### Funding opportunities:   
+
+Blair(department head) brought up to Dan.  Where to find this stuff? 
+* Sloan INformatics fellowships     
+	* using existing datasets in the lab; complex genomic architecture problem (diffuse, inversions)    
+	* charlie baer; c elegans; genomic architecture        
+* USDA post docs   
+* NIH Rick Kirkeinstein?    
+	* somebody teaching how to apply for this    
+
+### Goal by year 2: Have a killer job talk; 
+
+Have components
+1. old work
+2. post doc work    
+	* Rhagoletis- polygenic system; diffuse genomic architecture    
+	* European COrnborer- 1 major effect loci 
+
+3. future work 
+
+### Prof dev:   
+
+Seminar series: There are 2 for biology where I can present my work   
+
+1. pop bio group, friday   
+2. actual seminar series   
+
+
+### PI development    
+
+Need to get there first, so I need to write a: 
+1. Research statement  
+2. Teaching statement   
+
+**Teaching**   
+
+Important- teaching in a classroom setting. Boost yourself so that your're marketable. Show that you can teach a full course. norm- 1.5 to 2 courses a year 
+
+1. 5 week block of teaching intro bio classes   
+2. Upper level- grad level course   
+
+College of Ag, tehre is a the teacher's college, held in our building. Post docs might be able to attend, 1 day /week course that helps you teach. Faculty level certification course. Pair that with mentored-teaching experience. Take over 1-2 weeks Dan's physiology course.  Dan and I could teach a graduate seminar.  I'll be an instructor of recrod. I'll get an official evaluation.  
+
+Try to do this in your 2nd year.  I could teach a data science.  
+
+### Grant related; writing/reviewing   
+
+**Dan mentioned reviewing grants together**; need permission from program officer
+
+
+### What kind of PI do I want to be?  
+Dan is 13 years- transition to doing research to manager. 
+Greg is in the middle, hands on  
+
+I want a set of documents for my lab that will help members get situated.   
+1. Ray Huey's guide to being a successful grad student/scientist   
+2. Data science practices ( data entry, storage)      
+3. Writing?   
+4. Expectations, rules?(co-authorship) , mentoring philosophy  
+    
+
+
 
 ------
 
