@@ -10978,6 +10978,7 @@ The order of the stages in dormancy are off. Induction written first, then prepa
 	* DAMBROSKI, H. R., & FEDER, J. L. (2007). Host plant and latitude-related diapause variation in Rhagoletis pomonella: a test for multifaceted life history adaptation on different stages of diapause development. Journal of Evolutionary Biology, 20(6), 2101–2112. https://doi.org/10.1111/j.1420-9101.2007.01435.x    
 	* Unpublished diapause paper    
 	* Next set of papers?    
+	* look up papers on pre-winter conditions. Do apple flies enter diapause earlier than haws?  Nature paper; 2000s   
 	
 	
 2. Meetings to attend:  
@@ -10995,11 +10996,15 @@ Organizers: Gregory Ragland, Glen Hood, Scott Egan, Daniel Hahn, and Meredith Do
 	* Dan is away July 31-Aug 10   
 	* Plan to go out into the field August-September; depends on fruiting time   
 	* Collect larvae that has infested fruits (Apple and Hawthorne) around Michigan and Illinois    
+	* experimental plan? Greg sent but not Tom
+	
 
 4. Dan will show me books on writing.   
 	* The elements of style by William strunk jr and EB white   
 	* Style:  lessons in clarity and grace by Joe Williams and Joe Bizup   
 5. Review a manuscript while Dan is away?   
+6. set up meeting with Chao to get training on respirometry 
+	* for rhagoletis check day  8 and 10 or 11). You can differentiate diapause and non-diapause classed
     
 
 
@@ -11052,7 +11057,7 @@ Important- teaching in a classroom setting. Boost yourself so that your're marke
 1. 5 week block of teaching intro bio classes   
 2. Upper level- grad level course   
 
-College of Ag, tehre is a the teacher's college, held in our building. Post docs might be able to attend, 1 day /week course that helps you teach. Faculty level certification course. Pair that with mentored-teaching experience. Take over 1-2 weeks Dan's physiology course.  Dan and I could teach a graduate seminar.  I'll be an instructor of recrod. I'll get an official evaluation.  
+College of Ag, there is a teacher's college, held in our building. Post docs might be able to attend, 1 day /week course that helps you teach. Faculty level certification course. Pair that with mentored-teaching experience. Take over 1-2 weeks Dan's physiology course.  Dan and I could teach a graduate seminar.  I'll be an instructor of recrod. I'll get an official evaluation.  
 
 Try to do this in your 2nd year.  I could teach a data science.  
 
