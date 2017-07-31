@@ -11119,8 +11119,8 @@ I want a set of documents for my lab that will help members get situated.
 	* Rearranged figures; so results need to be rewritten; introduction needs tweaking; discussion needs to be finished    
 		* Figure layout:   
 			* Predictions figure: Fold induction vs temperature for each parameter  
-			* Non-phylogenetic controlled analysis: CTmax vs environment   
 			* Phylogenetic analysis: ancestral trait reconstruction
+			* Non-phylogenetic controlled analysis: CTmax vs environment   
 			* CTmax vs hsp params   
 			* hsp params vs habitat type     
 			* Methods figure: example of fitting boltzmann to hsp gxp    
