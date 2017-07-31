@@ -11116,15 +11116,22 @@ I want a set of documents for my lab that will help members get situated.
 ### Page 108: 2017-07-31 Dissertation work progress/ list.    
 
 1. *Hsp rxn norm paper:*     
-	* Rearranged figures; so results need to be rewritten; introduction needs tweaking; discussion needs to be finished  
+	* Rearranged figures; so results need to be rewritten; introduction needs tweaking; discussion needs to be finished    
+		* Figure layout:   
+			* Predictions figure: Fold induction vs temperature for each parameter  
+			* Non-phylogenetic controlled analysis: CTmax vs environment   
+			* Phylogenetic analysis: ancestral trait reconstruction
+			* CTmax vs hsp params   
+			* hsp params vs habitat type     
+			* Methods figure: example of fitting boltzmann to hsp gxp    
 	* Working on this next!!!
 		* Send out Mid August  
 	* Submission goal: December 2017
 	
 2. **Range limits paper:**    
-	* Sent draft to co-authors by end of July 2017  
+	* Sent draft to co-authors 2017-07-28 
 		* AEllison wants to try overleaf, so far so good   
-		* figure out how to include figures   
+		* included figures  , but will take out at submission   
 	* Submission goal: December 2017   
 
 
