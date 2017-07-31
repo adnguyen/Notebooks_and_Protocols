@@ -140,7 +140,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 105: 2017-07-26](#id-section105). diapause paper by Wilsterman et al. 
 * [Page 106: 2017-07-27](#id-section106). Meeting with Dan; progress and to do list      
 * [Page 107:2017-07-28](#id-section107). Dissertation work progress/ list
-* [Page 108:](#id-section108).
+* [Page 108: 2017-07-31](#id-section108). Dissertation work progress/list
 * [Page 109:](#id-section109).
 * [Page 110:](#id-section110).
 * [Page 111:](#id-section111).
@@ -11113,7 +11113,42 @@ I want a set of documents for my lab that will help members get situated.
 
  <div id='id-section108'/> 
 
-### Page 108:  
+### Page 108: 2017-07-31 Dissertation work progress/ list.    
+
+1. *Hsp rxn norm paper:*     
+	* Rearranged figures; so results need to be rewritten; introduction needs tweaking; discussion needs to be finished  
+	* Working on this next!!!
+		* Send out Mid August  
+	* Submission goal: December 2017
+	
+2. **Range limits paper:**    
+	* Sent draft to co-authors by end of July 2017  
+		* AEllison wants to try overleaf, so far so good   
+		* figure out how to include figures   
+	* Submission goal: December 2017   
+
+
+3. Proteome stability project:    
+	* Still in data gathering + analysis step    
+	* Wai needs to HPLC fractionate tryptic peptides to ID more of them (emailed him 2017-07-27)
+		* He won't get to this for a few months 
+		* > I have been swamped with requests from investigators since Bethany left.  I should be able to start working on it in the next couple of months. 
+		
+	* ANBE needs gene annotations for aphaenogaster-tied to genome project    
+
+
+------
+
+4. Thermal niche paper    
+	* In lchick's hands   
+	* Nsanders wants to look at it.   
+	* Submission goal: yesterday  
+5. Aphaeno genomes project:    
+	* SHC needs to annotate-get GO's and KOGs      
+		* has for pogos, but need aphaeno
+
+6. Stressed in nature project:   
+	* IN SHC's hands; goal to have draft by end of summer    
 
 ------
 
