@@ -139,9 +139,9 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 104: 2017-07-24](#id-section104). Dambroski and Feder 2012; Journal of evo bio paper    
 * [Page 105: 2017-07-26](#id-section105). diapause paper by Wilsterman et al. 
 * [Page 106: 2017-07-27](#id-section106). Meeting with Dan; progress and to do list      
-* [Page 107:2017-07-28](#id-section107). Dissertation work progress/ list
+* [Page 107: 2017-07-28](#id-section107). Dissertation work progress/ list
 * [Page 108: 2017-07-31](#id-section108). Dissertation work progress/list
-* [Page 109:](#id-section109).
+* [Page 109: 2017-08-01](#id-section109). Paper notes: Hormonal control of diapause by Denlinger, Yocum, and Rinehart. Book chpater 10; 2012; and Thoughts    
 * [Page 110:](#id-section110).
 * [Page 111:](#id-section111).
 * [Page 112:](#id-section112).
@@ -11006,7 +11006,7 @@ Organizers: Gregory Ragland, Glen Hood, Scott Egan, Daniel Hahn, and Meredith Do
 7. Dan is buying set up for measuring circadian rythms:   
 	* Set up from trikinetic: http://www.trikinetics.com/
 		* data can be analyzed in R : https://github.com/jstaf/actmon
-
+8. update 2017-08-01; get travel pcard. Completed online training and signed agreement form. Linda says ~1 month to get the card.  
 
 # Future stuff:   
 
@@ -11161,7 +11161,55 @@ I want a set of documents for my lab that will help members get situated.
 
  <div id='id-section109'/> 
 
-### Page 109:  
+### Page 109:  2017-08-01; Paper notes: Hormonal control of diapause by Denlinger, Yocum, and Rinehart. Book chpater 10; 2012; and Thoughts    
+
+
+Diapause is  life history strategy where species opt to enter a state of developmental arrest by slowing metabolism to offset the costs of persisting in unfavorable conditions.  
+
+Photoperiod and temperature are main cures to induce diapause and they can covary or be decoupled. Diapause can happen at many life stages from egg to adult. Diapause can be induced transgenerationally when the mother has information about unfavorable conditions and promotes her offspring to diapause (Bombyx mori is an example).   
+
+What is the molecular basis of diapause?  
+
+Photorecepters appear to be important in receiving daylength information. Generally, shorter daylength induces diapause. There have been a bunch of brain transplant experiments to understand whether different stages still respond to light. 
+
+Circadian clock genes seem important:   
+
+molecular basis of circadian timekeepng in fruit flies. Stanewsky 2002; Price 004; Helfrich-forster 20009.  
+
+In fruit flies, 
+
+1. Period and Timeless heterodimerize and enter the nucleus  
+2. Per/Tim complex represses the transcriptional activity of Clk/Cyc (clock and cycle) 
+3. Clk/Cyc transcribe Period and Timeless
+
+This pathway represents an ossilating feedback network that produces temporal variation.  So either the pathway gets targeted by selection to shorten or lengthen circadian timing, and/or there is a modifier gene that tunes the circadian timing.   This pathway is integrated into the photoperiod response via cry(photoreceptor cryptochrome (CRY)which acts as a pacemaker. 
+
+Experimental evidence   
+
+1. RNAi knockdown of period caused animals to not enter diapause (R. pedestris).    
+2. Rnai knockdown of cycle induced diapause under non-diapause photoperiod conditions.   
+
+(look up ref: Ikeno et al. 2010)   
+
+Given this info, what might we expect for their role in rhagoletis and ECB?  
+
+1. For Rhagoletis, I have to double check the ref, but if it only pertains to photoperiod then we might just lat clines in period, but not between races. However, there is supposedly segregrating variation for period between races.  
+	* Hypothesis: Period may modulate the tmepo of diapause timing in rhagoletis 
+	* Apple: longer dev, longer cycles  (at 5 month overwinter duration) 
+	* Haw: 
+
+2. ECB, 
+	* E strain is bivoltine and Z is univoltine (generally)
+	* E has shorter diapause, but Z has longer diapause (Wadsworth et al. 2013, Journ of evo bio)   
+	* E should have shorter period cycling. 
+	
+	
+But what is period doing? Knocking it down should reduce heterodimerization of per/tim and lead to increased trxn of per/tim. What is the net effect? Circadian timing should extend. How does this cause animals to not opt into diapause?   
+
+
+Random thought which is a fantasized job talk title: **The physiology behind speciation: circadian clocks run seasonal timing to host fruiting phenology**   
+
+Wow! Sounds like a "nature" title   
 
 ------
 
