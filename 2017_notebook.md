@@ -11324,6 +11324,55 @@ So what does this mean? Recap
 Short light days promote diapause, longer light days promote reproduction. So higher expression of per may promote diapause. This makes sense in light of Denlinger reviewer, wehre RNai of per disrupted diapause programming. Therefore absolute expression matters, not necessarily the ossiclation.  
 
 
+### Reading review Dolezel, D. (2015). Photoperiodic time measurement in insects. Current Opinion in Insect Science, 7, 98–103. https://doi.org/10.1016/j.cois.2014.12.002    
+
+Proposed architecture of photoperiodic clock:   
+1. receptors sense light  
+2. meaurement of that light (photoperiodic clock   
+3. internal counter of successive days  
+4. output   
+
+What is output and why does it have no description? 
+
+For 1, light enters and receptors sense it.   FOr 2 and 3, clocks measure night length. For seasonal variation, something turns on though an internal counter. Nobody knows how this is achieved. For the output; it is diapause. Hormones are mportant, but depends on stage that they opt into diapause. 
+
+Establishment between photoperiod and circ clcoks was suggseted by Bunning 1936, wow! How did researchers find this out? They manipualted photperiod and measured circadian clock genes. 
+
+Meuti, M. E., & Denlinger, D. L. (2013). Evolutionary Links Between Circadian Clocks and Photoperiodic Diapause in Insects. Integrative and Comparative Biology, 53(1), 131–143. https://doi.org/10.1093/icb/ict023
+
+This gives a good run down of how circ clocks are linked to activity to photoperiod. 
+
+1. period and timeless proteins heterodimerize and can translocate into nucleus
+2. it inhibits clock and cycle 
+3. but clcok and cycle can increase the gxp o fperiod and timeless 
+4. this creates a feedback loop   
+
+This whole cycling process is integrated with pohotperiod with cryptochrome1 (cry1).  
+
+5. Cry1 binds to timeless and in the PRESENCE of light, degrades both timeless and cry1!  
+
+an additional complication: in lepidopterans, there is an paralogous cryptochrome (cry2) which is not responseive to light, yet it inhibits the expression of clock and cycle. 
+
+Therefore, cry2 may be an important negative regulator of circadian clocks.  
+
+The review doesnt say, but what does this mean for activity throughout the day? What isnt very clear is the relationshp between activity and the cycling of these genes. Gotta look this up. 
+
+Cool paragraph on the physiological resposnes during diapause:  
+
+> The ability to enter diapause has contributed to
+the evolutionary success of insects (Denlinger 2008). Insects in diapause are resistant to a range of envi- ronmental stresses, and these responses are mediated through physiological mechanisms, such as the gen- eration of polyols and heat shock proteins that en- hance survival at low temperatures; elevation of cuticular hydrocarbons that protect against desicca- tion; increased lipid stores and suppressed metabolic rates that enable diapausing insects to survive long periods without food; and boosts in immune re- sponses to combat increased attacks by pathogens (Denlinger 2002, 2008; Hahn and Denlinger 2011). 
+
+
+Current hypotheses:  
+
+Bunning hypothesis (Erwin Bunning 1936) or internal coicincidence model: light entrains circ clocks which is set to a light sensitive phase. 
+
+One way to test this hypothesis is to interupt night times. First use short photoperiods followed by brief pusles of light at different times throughout the extended night. "If light falls on the sensitive phase, a long day response is elciited". Wtf....
+
+Nanda-Hamner resonance experiments. Subject short period of light followed by periods of darkness to create Light:Dark cycles that range from 24072 hours. (Nanda an Hamner 1958). LIght responses should follow day light length. 
+
+
+
 
 ------
 
