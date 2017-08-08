@@ -144,7 +144,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 109: 2017-08-01](#id-section109). Paper notes: Hormonal control of diapause by Denlinger, Yocum, and Rinehart. Book chpater 10; 2012; and Thoughts    
 * [Page 110: 2017-08-07](#id-section110). Reading notes   
 * [Page 111: 2017-08-07](#id-section111). Getting oriented on respirometry   
-* [Page 112:](#id-section112).
+* [Page 112: 2017-08-08](#id-section112). Reading on circadian clocks
 * [Page 113:](#id-section113).
 * [Page 114:](#id-section114).
 * [Page 115:](#id-section115).
@@ -11289,7 +11289,41 @@ General steps:
 
  <div id='id-section112'/> 
 
-### Page 112:  
+### Page 112:  2017-07-08. Reading on circadian clocks     
+
+Looked up David [Dolezel](http://www.entu.cas.cz/en/departments/department-of-molecular-biology-and-genetics/laboratory-of-molecular-chronobiology/) as Dan suggested and works on chronobiology   
+
+Reading: 
+[link](http://www.eje.cz/pdfs/eje/2003/02/07.pdf)
+or [here](https://www.eje.cz/artkey/eje-200302-0007_Period_gene_expression_in_relation_to_seasonality_and_circadian_rhythms_in_the_linden_bug_Pyrrhocoris_apterus.php)
+
+Title: Period gene expression in relation to seasonality and circadian rhythms in the linden bug, Pyrrhocoris apterus (Heteroptera)    
+
+Have to look up stuff I don't know. 
+
+Tau- 1 circadian period length. It is usually in the unit of hours. But what is 1 period length? Period is the distance between the peak of actvity in  a wavey function (focus on x axis; makes sense because stime  is on the x axis). Amplitude is the absolute max height at peak activity (focus on y axis). 
+
+
+This study was interested in how day length influenced activity thoruhgout the day and a critical circadian clock gene, period. Their experimental approach was to expose animals (linden bugs) to 3 treatments:constant darkness after long day entrainment; short day, and constant darkness after short day. Barely have a clue for the justification of these treatments....
+
+I'm guessig that they want to compare short vs long daays, but the added darkness after long day entrainment treatment is to observe the clock wihtout any light stimulation.  
+
+They have two strain:   
+1. Photoperiod sensitive: wild type, maintained under diapause preventing long days - these go into diapause  
+2. Photoperiod insensitive: maintained in short days - these don't go itno dipaause
+
+Next they compared mRNA levels of period. Short days looked less cyclical tahn long days (figure 2). Cant really tell at all. **HOwever, when comparing overall expression levels, longer days had overall lower epression than short days (fig 3).** - main result     
+
+
+
+It looks liek the magnitude of period is related to the signal transdusction of photoperiod.  
+
+
+So what does this mean? Recap
+
+Short light days promote diapause, longer light days promote reproduction. So higher expression of per may promote diapause. This makes sense in light of Denlinger reviewer, wehre RNai of per disrupted diapause programming. Therefore absolute expression matters, not necessarily the ossiclation.  
+
+
 
 ------
 
