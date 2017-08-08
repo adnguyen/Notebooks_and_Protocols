@@ -142,8 +142,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 107: 2017-07-28](#id-section107). Dissertation work progress/ list
 * [Page 108: 2017-07-31](#id-section108). Dissertation work progress/list
 * [Page 109: 2017-08-01](#id-section109). Paper notes: Hormonal control of diapause by Denlinger, Yocum, and Rinehart. Book chpater 10; 2012; and Thoughts    
-* [Page 110:](#id-section110).
-* [Page 111:](#id-section111).
+* [Page 110: 2017-08-07](#id-section110). Reading notes   
+* [Page 111: 2017-08-07](#id-section111). Getting oriented on respirometry   
 * [Page 112:](#id-section112).
 * [Page 113:](#id-section113).
 * [Page 114:](#id-section114).
@@ -11215,13 +11215,75 @@ Wow! Sounds like a "nature" title
 
  <div id='id-section110'/> 
 
-### Page 110:  
+### Page 110: 2017-08-07. Reading notes   
+
+
+> As far as reading, please check out some papers on clocks. Do you still have the general review I sent you a while ago? IF not, I’’l try to find it and resend. Also look up papers by Dvaid Doelzel and/or Shin Goto as authors. The have written some good stuff in recent years and may have useful reviews   
+
+Keeping time without a spine in review; Denlinger et al.  
+
+One interesting point that is brought is that organisms can move/migrate such that they avoid unfavorable conditions. Defniteily one strategy to escape harsh winters.   
+
+Daylength predicts the onset of unfavorable winter conditions.   
+
+* short day length = signal for diapause   
+* long day length = continuous growth 
+
+Big question: What causes animals to opt into diapause strategies?   
+
+* Evolutionarily, it is to optimize activity and reproduction with favorable conditions  
+* Mechanistically, it is probl due to hormone control and circadian clocks.    
+
+
+Approaches for studying circadian timing in animals:   
+1. Nanda-Hamner protocol- different groups of organisms are exposed to different light-day lengths   
+
+2.  Bunsow night interruption: night time is interrupted with light pulses. . 
+
+[good reference for both methods](https://books.google.com/books?id=bRWd5bGhXM4C&pg=PA397&lpg=PA397&dq=bunsow+night+interruption+protocol&source=bl&ots=fjqvAGLuPS&sig=EOe3UHmk774A3eFzZSESlqp3FDQ&hl=en&sa=X&ved=0ahUKEwi0-vyK8MXVAhVEPCYKHZ75CdcQ6AEIKDAA#v=onepage&q=bunsow%20night%20interruption%20protocol&f=false)  
+
+One interesting hypothesis: Circadian clocks and photoperiodic timers are integrated and linked. One problem tackling this is that circadian clocks are pleiotropic and affect many different phenotypes, often simultaniously. For example, circadian genes are transcription factors, so their downstream effects can be realyl large. 
+
+
+----   
+
+
+Cool paper on the interaction between day length and cold tolerance: http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004603 ; Pegoraro et al. 2014
+
+* done in frtui flies   
+* measured ccrt (chill coma recovery time ) between short day (winter) and long day length(summer) and different sexes. 
+* Sig diff between day length for females but not males.   
+* These differences went away in mutants of timless, clock and period.  
+	* So is the stress response tuned by clocks? Or are mutants just overall in poor quality?   
+* Comparisons between short and long associated allelic variants show that:  
+* for period, 2 allelic variants differ in CCRT. Genotype B has greater cold tolerance than genotype A (lower recovery time). 
 
 ------
 
  <div id='id-section111'/> 
 
-### Page 111:  
+### Page 111: 2017-08-07. Getting oriented in respirometry with Chao    
+
+The main goal of respirometry is to estimate metabolic rate by measuring the release of CO2 from the animal (in this case, ectotherms). The measurements take place over a time interval to basically get co2/second.   
+
+Set up: 
+	* Li-cor (LI-6262)- instrument that measures co2   
+	* MFC - Mass flow controller - controls the flow rate (mL/min) 
+	* Purge system- getting rid of water co2 from existing tubes/line   
+		* dririte - removes water   
+		* ascarite - remove co2   
+	* Expedata - computer program that displays co2 acquisition   
+  
+General steps:   
+
+1. Purge the system- air moves through the dririte, then through ascarite, then water to rehydrate the air (which is more consistent than ambient air).  
+2. Turn on Expedata and acquire c02. There are a set of markers that you can place in order to separate out sample readouts if you're doing continuous measurements.   
+3. The gas that goes through the detector is detected as a voltage. Detector goes from 0-5 volts. So set up standard curve that bounds voltage limits.  
+4. Ok, for each sample, purge, to clear the air and establish baseline for read outs. Keep track of time because you'll need to divide the read out by it (time) to get co2 rate.   
+5. 
+
+* Chao will show me to se tup a separate prog set up on expedata when I have my own pupae.    
+* For rhagoletis, I'll need to purge and then let them sit over night before I sample them. 
 
 ------
 
