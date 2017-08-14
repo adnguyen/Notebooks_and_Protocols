@@ -146,7 +146,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 111: 2017-08-07](#id-section111). Getting oriented on respirometry   
 * [Page 112: 2017-08-08](#id-section112). Reading on circadian clocks
 * [Page 113: 2017-08-14](#id-section113). Two new papers on niche breadth, related to range limits, thermal tolerance breadth projects         
-* [Page 114:](#id-section114).
+* [Page 114: 2017-08-14](#id-section114).  Meeting with Dan 2pm, update, to do's
 * [Page 115:](#id-section115).
 * [Page 116:](#id-section116).
 * [Page 117:](#id-section117).
@@ -11442,7 +11442,7 @@ Dont think this is true if im reading multidim specialization through speciation
 heterogeneity, which generally refer to variation experienced within and between individual lifetimes, respectively* I should reread this paper because I didnt grab this from taht paper    
 
 
-Hirst et al. paper, figures are impenetrable. They could have potted survival vs elevation with species as different lines....
+Hirst et al. paper, figures are impenetrable. They could have potted survival vs elevation with species as different lines....you know, show the range of elevation , assuming this is the axis of variation they care about.
 
 But from abstract they wanted to test the niche breadth- range size hypothesis: More speciose clades have more restricted distributions. The expectation is that more common species within a clade should have wider range sizes compared to relative taxa or sister taxa.  
 
@@ -11452,7 +11452,100 @@ But from abstract they wanted to test the niche breadth- range size hypothesis: 
 
  <div id='id-section114'/> 
 
-### Page 114:  
+### Page 114: 2017-07-14.  Meeting with Dan 2pm
+
+1. Paper readings: 
+	* Focusing on circadian clocks genes and rhythms 
+		* Tau, per/tim and cyc/clk daily rhythms, Bunning hypothesis, Nanda Hamner experiments  
+2. Meetings to attend:  
+	* Entomological Society of America 
+		* November 5-8 Denver Colorado      
+		* Symposium:  
+			* Genomics of Adaptation: Linking the Next Generation of Genome-Wide Analysis to Understand and Manage Complex Traits
+Organizers: Gregory Ragland, Glen Hood, Scott Egan, Daniel Hahn, and Meredith Doellman
+		* Pricing:   
+			* **Registration- $475 before Sept 13th 2017 before September 13**   
+	* Evolution 2018  
+		* Montpellier, France Aug 18-22   		
+3. When are we collecting?   
+4. Review a manuscript while Dan is away?   Yep, insect sociaux    
+5. set up meeting with Chao to get training on respirometry.   
+	* Chao showed me general set up, will need to do it myself to get the hang of it 
+6. update 2017-08-01; get travel pcard. Completed online training and signed agreement form. Linda says ~1 month to get the card.  
+7. Undergrad volunteer 
+	* Free Aug 17th-21st to meet. 
+8. Two ms to send out to the group for review: September? 
+
+# Future stuff:   
+
+
+### Revisit IDP in 6 months
+
+**In december**    
+
+
+### Funding opportunities:   
+
+Blair(department head) brought up to Dan.    
+* Sloan INformatics fellowships     
+	* using existing datasets in the lab; complex genomic architecture problem (diffuse, inversions)    
+	* charlie baer; c elegans; genomic architecture        
+* USDA post docs   
+* NIH Rick Kirkeinstein?    
+	* somebody teaching how to apply for this; emailed Blockwood for his proposal       
+
+### Goal by year 2: Have a killer job talk; 
+
+Have components
+1. old work
+2. post doc work    
+	* Rhagoletis- polygenic system; diffuse genomic architecture    
+	* European COrnborer- 1 major effect loci 
+
+3. future work 
+
+### Prof dev:   
+
+Seminar series: There are 2 for biology where I can present my work   
+
+1. pop bio group, friday   
+2. actual seminar series   
+
+
+### PI development    
+
+Need to get there first, so I need to write a: 
+1. Research statement  
+2. Teaching statement   
+
+**Teaching**   
+
+Important- teaching in a classroom setting. Boost yourself so that your're marketable. Show that you can teach a full course. norm- 1.5 to 2 courses a year 
+
+1. 5 week block of teaching intro bio classes   
+2. Upper level- grad level course   
+
+College of Ag, there is a teacher's college, held in our building. Post docs might be able to attend, 1 day /week course that helps you teach. Faculty level certification course. Pair that with mentored-teaching experience. Take over 1-2 weeks Dan's physiology course.  Dan and I could teach a graduate seminar.  I'll be an instructor of recrod. I'll get an official evaluation.  
+
+Try to do this in your 2nd year.  I could teach a data science.  
+
+### Grant related; writing/reviewing   
+
+**Dan mentioned reviewing grants together**; need permission from program officer
+
+
+### What kind of PI do I want to be?  
+Dan is 13 years- transition to doing research to manager. 
+Greg is in the middle, hands on  
+
+I want a set of documents for my lab that will help members get situated.   
+1. Ray Huey's guide to being a successful grad student/scientist   
+2. Data science practices ( data entry, storage)      
+3. Writing?   
+4. Expectations, rules?(co-authorship) , mentoring philosophy  
+    
+
+
 
 ------
 
