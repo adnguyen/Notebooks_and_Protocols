@@ -11547,6 +11547,26 @@ I want a set of documents for my lab that will help members get situated.
     
 
 
+### dissertation progress
+
+1. *Hsp rxn norm paper:*     
+	* **Sent out 2017-08-14**!!!   
+	* Submission goal: December 2017
+	
+2. **Range limits paper:**    
+	* Sent draft to co-authors 2017-07-28 
+		* AEllison wants to try overleaf, so far so good    
+	* Submission goal: December 2017   
+
+
+3. Proteome stability project:    
+	* Still in data gathering + analysis step    
+	* Wai needs to HPLC fractionate tryptic peptides to ID more of them (emailed him 2017-07-27)
+		* He won't get to this for a few months 
+		* > I have been swamped with requests from investigators since Bethany left.  I should be able to start working on it in the next couple of months. 
+		
+	* ANBE needs gene
+
 
 ------
 
