@@ -11456,7 +11456,8 @@ But from abstract they wanted to test the niche breadth- range size hypothesis: 
 
 1. Paper readings: 
 	* Focusing on circadian clocks genes and rhythms 
-		* Tau, per/tim and cyc/clk daily rhythms, Bunning hypothesis, Nanda Hamner experiments  
+		* Tau, per/tim and cyc/clk daily rhythms, Bunning hypothesis, Nanda Hamner experiments   
+		* dan says to look up carpet beetles,   
 2. Meetings to attend:  
 	* Entomological Society of America 
 		* November 5-8 Denver Colorado      
