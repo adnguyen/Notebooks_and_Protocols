@@ -145,7 +145,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 110: 2017-08-07](#id-section110). Reading notes   
 * [Page 111: 2017-08-07](#id-section111). Getting oriented on respirometry   
 * [Page 112: 2017-08-08](#id-section112). Reading on circadian clocks
-* [Page 113:](#id-section113).
+* [Page 113: 2017-08-14](#id-section113). Two new papers on niche breadth, related to range limits, thermal tolerance breadth projects         
 * [Page 114:](#id-section114).
 * [Page 115:](#id-section115).
 * [Page 116:](#id-section116).
@@ -11378,7 +11378,75 @@ Nanda-Hamner resonance experiments. Subject short period of light followed by pe
 
  <div id='id-section113'/> 
 
-### Page 113:  
+### Page 113: 2017-08-14. Two new papers on niche breadth, related to range limits, thermal tolerance breadth projects   
+
+Both refs have Jason Sexton, a cool guy!   
+
+refs:  
+
+1. Hirst, M. J., Griffin, P. C., Sexton, J. P., & Hoffmann, A. A. (2017). Testing the niche breadth-range size hypothesis: Habitat specialization versus performance in Australian alpine daisies. Ecology. https://doi.org/10.1002/ecy.1964
+
+2. Sexton, J. P., Montiel, J., Shay, J. E., Stephens, M. R., & Slatyer, R. A. (2017). Evolution of Ecological Niche Breadth. Annu. Rev. Ecol. Evol. Syst, 48, 183–206. https://doi.org/10.1146/annurev-ecolsys-110316    
+
+
+Skimming, but Sexton et al. 2017 has some nice definitions:   
+
+* Niche breadth - the variety of resources, habitats, or env used by a given species   
+	* I think this is a good def, but I don't think resources necessarily needs to be in there    
+	* my wording: the range of environments a species inhabits    
+	
+* Niche dimensions- by which the niche is quantified or measured; often interchangeable with the term niche axis.  
+	* I guess the word niche itself is a nebulous term, but niche dimensions grounds us in reality by focusing on what we can measure.   
+	* my wording: the measureable aspects of the environment that species inhabit   
+	
+* Fundamental niche: the range of environmental conditions and resources in which a species can survive and reproduce without the influence of predation or competition.   
+
+* Realized niche: the range of environmental conditions and resources in which a species can survive and reproduce in the presence of species interactions (predation and competition)    
+
+These different definitions of niches are functional, but I think it is good to realize that it is hard to tease apart +/- species interactions. I need to look up more specific cases.   
+
+**my wording:** The environment in which species inhabit. Or, the environment that promotes survival and reproduction for a species.    
+
+Let's keeep things simple and concise.....   
+
+
+* Local adaptation- a process of nat sel whereby resident pops evolve higher relative fitness in their local habitat than populations elsewhere   
+	* I think this is a good def, how would I word it?  
+	* Well I might want to separate out the process that generated local adaptation and what it actually is  
+		* When local populations have more optimal fitness than surrounding populations  
+		* Local adaptation can be brought about by natural selection where local populations have higher relative fitness than surrounding pops   
+		* The expectation or signature of local adaptation, for example, is clinal variation in a particualr trait.   
+		* hmm, the defs focus on fitness and the sig of local adaptation is usually measured as a trait; leap from trait to fitness, but one could argue that traits are a proxy of fitness     
+		
+* Niche filling: expansion of the realized niche to fill a greater proportion of the fundamental niche   
+	* wait what...why
+
+* Niche unfilling: contraction of the realized niche to fill a smaller proportion of the fundamental niche..
+
+These defs focus on how range limit dynamics in the +/- of species interactions. I dont havnt really thought about species distr this way. 
+
+
+Notes:
+
+* Confusing disucssion about phenotypic plasticity vs niche breadth. If phen plast is defined as *slope of the reaction norm*, then where does that leave niche breadtH? Well, the niche breadth for a perf curve is the distance between the lower and upper limits of performance. This is not inherently phen plast. TO assess whether limits are phen plast, you'd have to generate a perf curve of thermal limits vs env. This way, you can get the slope of the reaction norm. Not clearly laid out in this paper
+	* their def of phen plas is focused on individuals, I think the focus should be on genotypes      
+	
+> Brown (1984) envisaged species arising in localized regions that differ in several ecological respects from those occupied by parent species, thus promoting multidimensional specialization through speciation, but to-date, few direct tests of this idea have been made (but see Bonetti & Wiens 2014 for one example).    
+	
+Dont think this is true if im reading multidim specialization through speciation correctly...Apple maggot flies? 
+
+
+* I really like this part of the sentence: *Environmental heterogeneity—in space, time, or both—is ubiquitous yet uneven in nature...*    
+
+* *Levins (1968) distinguished between fine- and coarse-grained scales of environmental
+heterogeneity, which generally refer to variation experienced within and between individual lifetimes, respectively* I should reread this paper because I didnt grab this from taht paper    
+
+
+Hirst et al. paper, figures are impenetrable. They could have potted survival vs elevation with species as different lines....
+
+But from abstract they wanted to test the niche breadth- range size hypothesis: More speciose clades have more restricted distributions. The expectation is that more common species within a clade should have wider range sizes compared to relative taxa or sister taxa.  
+
+
 
 ------
 
