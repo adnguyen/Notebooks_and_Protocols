@@ -11576,7 +11576,13 @@ I want a set of documents for my lab that will help members get situated.
 
 1. Field collecting:    
 2. meeting with undergrad tomorrow 10AM  
-3. pcard activated, special procedures?   
+3. traveling to ESA arrangements
+	* pcard activated, special procedures?   
+	* Hotel covered
+	* Airfare
+	* Registration fee
+	* Member fee
+
 
 ------
 
