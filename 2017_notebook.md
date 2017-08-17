@@ -147,7 +147,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 112: 2017-08-08](#id-section112). Reading on circadian clocks
 * [Page 113: 2017-08-14](#id-section113). Two new papers on niche breadth, related to range limits, thermal tolerance breadth projects         
 * [Page 114: 2017-08-14](#id-section114).  Meeting with Dan 2pm, update, to do's
-* [Page 115:](#id-section115).
+* [Page 115: 2017-08-17](#id-section115). Meeting with Dan 12PM
 * [Page 116:](#id-section116).
 * [Page 117:](#id-section117).
 * [Page 118:](#id-section118).
@@ -11572,7 +11572,11 @@ I want a set of documents for my lab that will help members get situated.
 
  <div id='id-section115'/> 
 
-### Page 115:  
+### Page 115:  2017-08-17. meeting with Dan.    
+
+1. Field collecting:    
+2. meeting with undergrad tomorrow 10AM  
+3. pcard activated, special procedures?   
 
 ------
 
