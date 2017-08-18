@@ -11575,11 +11575,18 @@ I want a set of documents for my lab that will help members get situated.
 ### Page 115:  2017-08-17. meeting with Dan.    
 
 1. Field collecting:    
+	* pick up mini van tomorrow at airport; state contract rates are etter at enterprise; 
+	* grab mini van tomorrow; 2PM, i'll take it home and pick dan up saturday morning ; 7:45AM.  
+	* eat breakfast and pack a lunch   
+	* get to nashville 5PM; stay somewhere north of nashville ;   
+	* address : 1630 northwest 89th terrace , gainesvilel fl 32606; eagle point development 
+	
 2. meeting with undergrad tomorrow 10AM  
-3. traveling to ESA arrangements
+3. traveling to ESA arrangements; Nov 5-8
 	* pcard activated, special procedures?   
+		* start with travel auth form
 	* Hotel covered
-	* Airfare
+	* Airfare ; stay from 4-9?
 	* Registration fee
 	* Member fee
 
