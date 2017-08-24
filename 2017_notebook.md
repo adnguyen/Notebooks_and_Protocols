@@ -11681,6 +11681,33 @@ Number of tubs we've laid out in the lab. We poured applies into a tub with mesh
 
 ### Notes:  I need to autoclave vermiculite to provide a sterile environment for the larvae. 
 
+
+### Sorted flies today, summary    
+
+Table summary with how I think the data table can be laid out:   
+
+|Site    |Site_name |Host  |Collect_larvae |Date_fridge | Petri_dish| Petri_density|Resp_day |Resp_date |respirometry |individual |
+|:-------|:---------|:-----|:--------------|:-----------|----------:|-------------:|:--------|:---------|:------------|:----------|
+|Grant   |Ferris    |Apple |2017-08-24     |2017-09-06  |          1|            26|NA       |NA        |NA           |NA         |
+|Grant   |Ferris    |Apple |2017-08-24     |2017-09-06  |          2|            46|NA       |NA        |NA           |NA         |
+|Grant   |OG        |Apple |2017-08-24     |2017-09-06  |          1|            26|NA       |NA        |NA           |NA         |
+|Grant   |OG        |Apple |2017-08-24     |2017-09-06  |          2|            80|NA       |NA        |NA           |NA         |
+|Lansing |MSU       |Apple |2017-08-24     |2017-09-06  |          0|             0|NA       |NA        |NA           |NA         |   
+
+* Site is the city 
+* Site name is the micro site ID   
+* Host is apple or haw
+* When we collected larvae, date   
+* Date when we should stick em in fridge  
+* Petri dish block   
+* petri dish density = number of individuals in dish  
+* Resp day (7, 10, 11? ) 
+* REsp date- for blocking potentially 
+* Respirmetry - reading in C02   
+* Individual for when we measure each pupae; can prob get a sense of what lives from beginning to when we sample for resp   
+
+
+
 ------
 
  <div id='id-section117'/> 
