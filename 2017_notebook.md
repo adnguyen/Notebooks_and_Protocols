@@ -11668,6 +11668,12 @@ Number of tubs we've laid out in the lab. We poured applies into a tub with mesh
 6. Seal each petri dish with tape, and place the taped petri dishes into a container with saturated potassium chloride solution to keep the humidity (85%).
 
 
+![](https://user-images.githubusercontent.com/4654474/29672388-1788f106-88ba-11e7-8ce2-933e25909784.png)   
+
+![](https://user-images.githubusercontent.com/4654474/29672387-176b63ac-88ba-11e7-8f12-47325686cf78.png)    
+
+
+I need to autoclave vermiculite to provide a sterile environment for the larvae. 
 
 ------
 
