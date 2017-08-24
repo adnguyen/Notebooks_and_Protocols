@@ -11672,8 +11672,14 @@ Number of tubs we've laid out in the lab. We poured applies into a tub with mesh
 
 ![](https://user-images.githubusercontent.com/4654474/29672387-176b63ac-88ba-11e7-8f12-47325686cf78.png)    
 
+* Note: At the last few days of collection, the fruits will become very juicy so we sometimes clean the insects with water before moving into the vermiculite. Try to collect the insect at the same schedule every day   
 
-I need to autoclave vermiculite to provide a sterile environment for the larvae. 
+### Respirometry:   
+
+1.	Take the pupae out from the vermiculite at the day of respirometry. Normally we do purge in the afternoon and injection in the next morning. I can show you the details of respirometry later.
+
+
+### Notes:  I need to autoclave vermiculite to provide a sterile environment for the larvae. 
 
 ------
 
