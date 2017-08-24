@@ -148,7 +148,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 113: 2017-08-14](#id-section113). Two new papers on niche breadth, related to range limits, thermal tolerance breadth projects         
 * [Page 114: 2017-08-14](#id-section114).  Meeting with Dan 2pm, update, to do's
 * [Page 115: 2017-08-17](#id-section115). Meeting with Dan 12PM
-* [Page 116:](#id-section116).
+* [Page 116: 2017-08-24](#id-section116). Apple maggot collecting trip log       
 * [Page 117:](#id-section117).
 * [Page 118:](#id-section118).
 * [Page 119:](#id-section119).
@@ -11595,7 +11595,30 @@ I want a set of documents for my lab that will help members get situated.
 
  <div id='id-section116'/> 
 
-### Page 116:  
+### Page 116:  2017-08-24. Apple maggot collecting trip log   
+
+
+* We drove for 2 days 2017-08-19 to 2017-08-20 from fl to michigan   
+* Then we collected from 3 sites for Apple maggots on 2017-08-20   
+	* MSU - college campus; located in lansing   
+		* Close to campus we collected 1 site with Haws on the floor, somebody's front yard  
+	* Old grant (OG);     
+	* Ferris road;  
+* Drove back from michigan to florida for 2 days (Aug 22-23)   
+* On Aug 23, we put apples into bins with wiring to let the larvae fall to the bottom of the tub, which will make for easier collecting  
+
+
+### transfer bins to the lab:   
+
+![](https://user-images.githubusercontent.com/4654474/29671550-d8de3a4e-88b7-11e7-9bfd-9ea1bbcd093d.JPG)
+
+
+### applies in set up to collect larvae:   
+
+![](https://user-images.githubusercontent.com/4654474/29671461-9b0045dc-88b7-11e7-8aea-de1f07dd03f2.JPG)    
+
+![](https://user-images.githubusercontent.com/4654474/29671503-b9b3b0c2-88b7-11e7-9a99-f92392d0e16f.JPG)
+
 
 ------
 
