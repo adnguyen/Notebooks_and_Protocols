@@ -11644,6 +11644,29 @@ Number of tubs we've laid out in the lab. We poured applies into a tub with mesh
 |Grant| Ferris road| 18|   
 |Lansing| MSU| 25|   
 
+# Chao's protocol for handling Rhagoletis     
+
+### Preparation of tub for holding fruits with maggot!   
+
+1. Put paper towels into the bottom of tubs to absorb the fruit juice. (As fruits keeping rotting, you may need to increase the usage of paper towels)  
+
+2. Put the metal mesh into the tubs, and pour the fruits onto the metal mesh (don’t put too many apples in each tub).   
+
+3. Label all the tubs clearly especially when the fruits are collected from different spots.   
+
+### Collection of wandering larvae and puape   
+1. The wandering larvae will come out from the apple and drop into the tub. Take the metal mesh out so you can see the wandering larvae or pupae at the bottom of the tub.   
+
+2. Pick the larvae or pupae out from the tub very gently and put them into one or more petri dish for now depends on the number.   
+
+3. Clean the tub with paper towels and put the metal mesh with apples back.   
+
+4. Split the petri dish with all of your collections into several petri dishes with wet (not too wet) vermiculite. Put no more than 100 pupae or larvae into each petri dish.   
+
+5. Label the petri dishes with collection spot, race, collection date, fridge date (we transfer the insect into fridge 13 days after collection), and number of samples.   
+
+6. Seal each petri dish with tape, and place the taped petri dishes into a container with saturated potassium chloride solution to keep the humidity (85%).
+
 
 
 ------
