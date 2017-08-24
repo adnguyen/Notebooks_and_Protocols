@@ -11603,7 +11603,9 @@ I want a set of documents for my lab that will help members get situated.
 	* MSU - college campus; located in lansing   
 		* Close to campus we collected 1 site with Haws on the floor, somebody's front yard  
 	* Old grant (OG);     
-	* Ferris road;  
+		* parked on somebody's property and asked them to sample, across the street deep in the woods and also an apple tree by the road 
+	* Ferris road (grant);  
+		* dirt road, microsympatry between haws and apples  
 * Drove back from michigan to florida for 2 days (Aug 22-23)   
 * On Aug 23, we put apples into bins with wiring to let the larvae fall to the bottom of the tub, which will make for easier collecting  
 
@@ -11620,6 +11622,20 @@ I want a set of documents for my lab that will help members get situated.
 ![](https://user-images.githubusercontent.com/4654474/29671503-b9b3b0c2-88b7-11e7-9a99-f92392d0e16f.JPG)
 
 
+### MSU site pictures
+
+Haw tree that has fruit down!   
+
+![](https://user-images.githubusercontent.com/4654474/29671830-7d646476-88b8-11e7-9873-90d6ac5907c1.jpg)    
+
+Where we actually collected apples   
+
+![](https://user-images.githubusercontent.com/4654474/29671853-92bbfcda-88b8-11e7-83b7-8de830802ef8.jpg)
+
+Summary of collection:   
+|Site|Site Name|tubs|
+|---|---|---|
+|Grant|Old Grant|11|
 ------
 
  <div id='id-section117'/> 
