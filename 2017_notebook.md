@@ -149,7 +149,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 114: 2017-08-14](#id-section114).  Meeting with Dan 2pm, update, to do's
 * [Page 115: 2017-08-17](#id-section115). Meeting with Dan 12PM
 * [Page 116: 2017-08-24](#id-section116). Apple maggot collecting trip log       
-* [Page 117:](#id-section117).
+* [Page 117: 2017-08-25](#id-section117). Apple sampling   
 * [Page 118:](#id-section118).
 * [Page 119:](#id-section119).
 * [Page 120:](#id-section120).
@@ -11717,14 +11717,15 @@ Table summary with how I think the data table can be laid out:
 summary table 
 
 |Site    |Site_name  |Host  |Collect_fruit |Collect_larvae |Date_fridge | Petri_dish|Collector | Petri_density|
-|:-------|:----------|:-----|:-------------|:--------------|:-----------|----------:|:---------|-------------:|"
-|Grant   |Ferris     |Apple |2017-08-21    |2017-08-25     |2017-09-07  |          1|AN        |            23|"
-|Grant   |Ferris     |Apple |2017-08-21    |2017-08-25     |2017-09-07  |          2|PE        |            21|"
+|:-------|:----------|:-----|:-------------|:--------------|:-----------|----------:|:---------|-------------:|
+|Grant   |Ferris     |Apple |2017-08-21    |2017-08-25     |2017-09-07  |          1|AN        |            23|
+|Grant   |Ferris     |Apple |2017-08-21    |2017-08-25     |2017-09-07  |          2|PE        |            21|
 |Grant   |OG         |Apple |2017-08-21    |2017-08-25     |2017-09-07  |          1|AN        |            16|
-|Grant   |OG         |Apple |2017-08-21    |2017-08-25     |2017-09-07  |          2|PE        |            45|"
-|Lansing |MSU        |Apple |2017-08-21    |2017-08-25     |2017-09-07  |          0|          |             0|"
-|Lansing |Coll Halls |Haw   |2017-08-21    |2017-08-25     |2017-09-07  |          0|          |             0|"
-|Lansing |MilfordST  |Haw   |2017-08-21    |2017-08-25     |2017-09-07  |          1|AN        |             2|
+|Grant   |OG         |Apple |2017-08-21    |2017-08-25     |2017-09-07  |          2|PE        |            45|
+|Lansing |MSU        |Apple |2017-08-21    |2017-08-25     |2017-09-07  |          0|          |             0|
+|Lansing |Coll Halls |Haw   |2017-08-21    |2017-08-25     |2017-09-07  |          0|          |             0|
+|Lansing |MilfordST  |Haw   |2017-08-21    |2017-08-25     |2017-09-07  |          1|AN        |             2|   
+
 
 ------
 
