@@ -11712,7 +11712,19 @@ Table summary with how I think the data table can be laid out:
 
  <div id='id-section117'/> 
 
-### Page 117:  
+### Page 117:  2017-08-25. Apple sampling   
+
+summary table 
+
+|Site    |Site_name  |Host  |Collect_fruit |Collect_larvae |Date_fridge | Petri_dish|Collector | Petri_density|
+|:-------|:----------|:-----|:-------------|:--------------|:-----------|----------:|:---------|-------------:|"
+|Grant   |Ferris     |Apple |2017-08-21    |2017-08-25     |2017-09-07  |          1|AN        |            23|"
+|Grant   |Ferris     |Apple |2017-08-21    |2017-08-25     |2017-09-07  |          2|PE        |            21|"
+|Grant   |OG         |Apple |2017-08-21    |2017-08-25     |2017-09-07  |          1|AN        |            16|
+|Grant   |OG         |Apple |2017-08-21    |2017-08-25     |2017-09-07  |          2|PE        |            45|"
+|Lansing |MSU        |Apple |2017-08-21    |2017-08-25     |2017-09-07  |          0|          |             0|"
+|Lansing |Coll Halls |Haw   |2017-08-21    |2017-08-25     |2017-09-07  |          0|          |             0|"
+|Lansing |MilfordST  |Haw   |2017-08-21    |2017-08-25     |2017-09-07  |          1|AN        |             2|
 
 ------
 
