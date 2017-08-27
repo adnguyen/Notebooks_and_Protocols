@@ -151,7 +151,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 116: 2017-08-24](#id-section116). Apple maggot collecting trip log       
 * [Page 117: 2017-08-25](#id-section117). Apple sampling   
 * [Page 118: 2017-08-26](#id-section118). Sampling apple maggots
-* [Page 119:](#id-section119).
+* [Page 119: 2017-08-27](#id-section119). Sampling apple maggots    
 * [Page 120:](#id-section120).
 * [Page 121:](#id-section121).
 * [Page 122:](#id-section122).
@@ -11770,7 +11770,18 @@ Things for me to order:
 
  <div id='id-section119'/> 
 
-### Page 119:  
+### Page 119:  2017-08-27. Sampling apple maggots   
+
+summary table  
+
+|Site    |Site_name  |Host  |Collect_fruit |Collect_larvae |Date_fridge | Petri_dish|Collector | Petri_density|
+|:-------|:----------|:-----|:-------------|:--------------|:-----------|----------:|:---------|-------------:|
+|Grant   |Ferris     |Apple |2017-08-21    |2017-08-27     |2017-09-09  |          1|AN        |            81|
+|Grant   |OG         |Apple |2017-08-21    |2017-08-27     |2017-09-09  |          1|AN        |            96|
+|Lansing |MSU        |Apple |2017-08-21    |2017-08-27     |2017-09-09  |          0|          |             0|
+|Lansing |Coll Halls |Haw   |2017-08-21    |2017-08-27     |2017-09-09  |          1|AN        |             2|
+|Lansing |MilfordST  |Haw   |2017-08-21    |2017-08-27     |2017-09-09  |          1|AN        |             3|   
+
 
 ------
 
