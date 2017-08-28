@@ -11789,7 +11789,9 @@ summary table
 
 ### Page 120: 2017-08-28. Calibrating Li-cors (measures co2)   
 
-THe li-cors need to be calibrated to make sure the readings for co2 are right. The hahn lab has 2, which are stacked together (6262 and 7000). The 6262 cant be hooked up to the computer, but the 7000 one can.   
+
+
+THe li-cors need to be calibrated to make sure the readings for co2 are right. The hahn lab has 2, which are stacked together (6262 and 7000). The 6262 cant be hooked up to the computer, but the 7000 one can.   Calibrate once a month usually.   
 
 
 ![](https://user-images.githubusercontent.com/4654474/29782343-3d8a4d36-8bea-11e7-843a-a52b2e8440c6.JPG)
@@ -11858,7 +11860,23 @@ second page
 
 ### Page 121: 2017-08-28. Sampling apple maggots   
 
- 
+|Site    |Site_name  |Host  |Collect_fruit |Collect_larvae |Date_fridge | Petri_dish|Collector | Petri_density| |:-------|:----------|:-----|:-------------|:--------------|:-----------|----------:|:---------|-------------:|
+|Grant   |Ferris     |Apple |2017-08-21    |2017-08-28     |2017-09-10  |          1|PE        |           102|
+|Grant   |OG         |Apple |2017-08-21    |2017-08-28     |2017-09-10  |          1|AN        |            94|
+|Lansing |MSU        |Apple |2017-08-21    |2017-08-28     |2017-09-10  |          0|          |             0|
+|Lansing |Coll Halls |Haw   |2017-08-21    |2017-08-28     |2017-09-10  |          0|          |             0|
+|Lansing |MilfordST  |Haw   |2017-08-21    |2017-08-28     |2017-09-10  |          1|AN        |            11|    
+
+I should think about the fridge date. I want to measure wet mass and co2 production at 2 time points. Which ones? day 10 and 15? THen weigh mass day 9 and 14. Fridge a subset day 15.   
+
+written workflow:  
+
+![](https://user-images.githubusercontent.com/4654474/29789588-7f5ae62a-8c04-11e7-8d76-d0722937379e.jpg)
+
+
+I also need to get a physical notebook.   
+
+
 
 ------
 
