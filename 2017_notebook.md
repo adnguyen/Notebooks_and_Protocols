@@ -11801,7 +11801,7 @@ references for the tubing and samples--
 
 ![](https://user-images.githubusercontent.com/4654474/29782316-27eab006-8bea-11e7-92ab-1ecfa1970854.JPG)
 
-For calibration there are 3 general steps:  
+### For calibration there are 3 general steps:  
 
 1. calibrate the reference(A) and sample cells(B) with zero co2.    
 2. calibrate sample cell(B) with co2   
@@ -11811,9 +11811,46 @@ For calibration there are 3 general steps:
 
 ![](https://user-images.githubusercontent.com/4654474/29782317-27eab66e-8bea-11e7-9077-0bf8c0a9cfad.JPG)
 
+### more specific steps: 
+
+**You need two gas cylinders:  
+
+* N2 for control    
+* co2 for calibration  
+
+1. Connect N2 to both cells (B in and A in). The flow rate will be 150 mL/min
+	* Nitrogen will serve as the "zero"  
+	* Make sure A out and B out are not connected to anythign (connected to air).   
+	* The flow controllers go from 0-200 mL/min, so setting the interfaced control thingy to 75% will result in 150ml/min   
+	* make sure flow rate is the same for both cells 
+	* set up is in my written notes below 
+2. On the computer, go to "Remote", then "User Calibration"
+3. Under co2 action: click "Make cell A read 0". And click "Do co2 cal".  
+4. Then click "Make cell B read 0". and click "Do co2 cal"  
+
+![](https://user-images.githubusercontent.com/4654474/29782320-280ace72-8bea-11e7-8811-da5c8f4c678e.JPG)
+
+
+5. Calibrate sample cells with co2. Disconnect sample cell b, then connect co2 line.   	
+6. On the computer, go to "Remote", then "User Calibration"
+7. "Make cell B read", spent gas which is 465.8 for the tank. **This will be tank specific, so you have to look at the tag**
+8 Connect co2 to both A in and Bin. 
+9. On computer, "Make cell A" read the spent gas (465.8-again this is tank specific)    
+
+
+For the licor 6262, do the same, but you have you interface the machine. 
 
 **zero'ing manually the 6262 licor**  
 ![](https://user-images.githubusercontent.com/4654474/29782319-27eba006-8bea-11e7-9a61-d559882c0799.JPG)
+
+### my written notes   
+
+first page   
+![](https://user-images.githubusercontent.com/4654474/29782701-8df90e5a-8beb-11e7-9a40-908a81eb0422.JPG)
+
+second page  
+
+![](https://user-images.githubusercontent.com/4654474/29782700-8df80e38-8beb-11e7-98f7-10164fd4a617.JPG)   
 
 ------
 
