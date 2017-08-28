@@ -152,8 +152,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 117: 2017-08-25](#id-section117). Apple sampling   
 * [Page 118: 2017-08-26](#id-section118). Sampling apple maggots
 * [Page 119: 2017-08-27](#id-section119). Sampling apple maggots    
-* [Page 120:](#id-section120).
-* [Page 121:](#id-section121).
+* [Page 120: 2017-08-28](#id-section120). Calibrating Li-cors (measures co2)   
+* [Page 121: 2017-08-28](#id-section121). Sampling apple maggots
 * [Page 122:](#id-section122).
 * [Page 123:](#id-section123).
 * [Page 124:](#id-section124).
@@ -11787,13 +11787,41 @@ summary table
 
  <div id='id-section120'/> 
 
-### Page 120:  
+### Page 120: 2017-08-28. Calibrating Li-cors (measures co2)   
+
+THe li-cors need to be calibrated to make sure the readings for co2 are right. The hahn lab has 2, which are stacked together (6262 and 7000). The 6262 cant be hooked up to the computer, but the 7000 one can.   
+
+
+![](https://user-images.githubusercontent.com/4654474/29782343-3d8a4d36-8bea-11e7-843a-a52b2e8440c6.JPG)
+
+references for the tubing and samples--  
+
+1. A is the reference cell    
+2. B is the sample cell  
+
+![](https://user-images.githubusercontent.com/4654474/29782316-27eab006-8bea-11e7-92ab-1ecfa1970854.JPG)
+
+For calibration there are 3 general steps:  
+
+1. calibrate the reference(A) and sample cells(B) with zero co2.    
+2. calibrate sample cell(B) with co2   
+3. calibrate both cells with co2 
+
+**Flow rate hook ups**
+
+![](https://user-images.githubusercontent.com/4654474/29782317-27eab66e-8bea-11e7-9077-0bf8c0a9cfad.JPG)
+
+
+**zero'ing manually the 6262 licor**  
+![](https://user-images.githubusercontent.com/4654474/29782319-27eba006-8bea-11e7-9a61-d559882c0799.JPG)
 
 ------
 
  <div id='id-section121'/> 
 
-### Page 121:  
+### Page 121: 2017-08-28. Sampling apple maggots   
+
+ 
 
 ------
 
