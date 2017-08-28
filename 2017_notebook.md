@@ -11868,6 +11868,16 @@ second page
 |Lansing |Coll Halls |Haw   |2017-08-21    |2017-08-28     |2017-09-10  |          0|          |             0|
 |Lansing |MilfordST  |Haw   |2017-08-21    |2017-08-28     |2017-09-10  |          1|AN        |            11|    
 
+
+|Site    |Site_name  |Host  |Collect_fruit |Collect_larvae |Date_fridge | Petri_dish|Collector | Petri_density|
+|:-------|:----------|:-----|:-------------|:--------------|:-----------|----------:|:---------|-------------:|
+|Grant   |Ferris     |Apple |2017-08-21    |2017-08-28     |2017-09-10  |          1|PE        |           102|
+|Grant   |OG         |Apple |2017-08-21    |2017-08-28     |2017-09-10  |          1|AN        |            94|
+|Lansing |MSU        |Apple |2017-08-21    |2017-08-28     |2017-09-10  |          0|          |             0|
+|Lansing |Coll Halls |Haw   |2017-08-21    |2017-08-28     |2017-09-10  |          0|          |             0|
+|Lansing |MilfordST  |Haw   |2017-08-21    |2017-08-28     |2017-09-10  |          1|AN        |            11|
+
+
 I should think about the fridge date. I want to measure wet mass and co2 production at 2 time points. Which ones? day 10 and 15? THen weigh mass day 9 and 14. Fridge a subset day 15.   
 
 written workflow:  
