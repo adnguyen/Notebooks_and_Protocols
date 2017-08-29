@@ -11909,6 +11909,7 @@ The rotting tubs still have a lot of maggots coming out.PE dropped ferris.
 1. We took the first day set of pupae: 
 	* 2017-08-24, Ferris, apple, n=46
 	* took 9 pupae out 
+	* we included two blanks per block ( there were two blocks)   
 	
 ![](https://user-images.githubusercontent.com/4654474/29840241-48cc837c-8ccf-11e7-943f-9dc1261b2435.jpg)
 
@@ -11948,6 +11949,15 @@ picture of one
 
 Throughout process, document the date, start time, finish time, and any notes. Keep syringe set ups on rack and place back into the rearing room. For rhagoletis, we need to let them go over night so that enough co2 is accumulated for measurements.  
 
+
+
+Stuff I need to order, do, and think about:   
+
+1. Luer stockcocks -[3 way](https://www.coleparmer.com/p/polycarbonate-luer-stopcocks/7025?searchterm=Polycarbonate%20Luer%20Stopcocks#)
+2. order tubs with white grates 
+3. find a suitable fridge to overwinter these animals   
+4. order 5 mL  [syringe](https://www.fishersci.com/shop/products/airtite-all-plastic-norm-ject-syringes-17/1481729?searchHijack=true&searchTerm=1481729&searchType=RAPID&matchedCatNo=1481729)    
+5. get a notebook   
 
 
 ------
