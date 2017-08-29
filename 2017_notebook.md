@@ -154,8 +154,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 119: 2017-08-27](#id-section119). Sampling apple maggots    
 * [Page 120: 2017-08-28](#id-section120). Calibrating Li-cors (measures co2)   
 * [Page 121: 2017-08-28](#id-section121). Sampling apple maggots
-* [Page 122:](#id-section122).
-* [Page 123:](#id-section123).
+* [Page 122: 2017-08-29](#id-section122). Apple maggot sampling    
+* [Page 123: 2017-08-29](#id-section123). Rhatoletis respirometry- purging      
 * [Page 124:](#id-section124).
 * [Page 125:](#id-section125).
 * [Page 126:](#id-section126).
@@ -11885,13 +11885,70 @@ I also need to get a physical notebook.
 
  <div id='id-section122'/> 
 
-### Page 122:  
+### Page 122:  2017-08-29. Apple maggot sampling    
+
+summary table:  
+
+|Site    |Site_name  |Host  |Collect_fruit |Collect_larvae |Date_fridge | Petri_dish|Collector | Petri_density|
+|:-------|:----------|:-----|:-------------|:--------------|:-----------|----------:|:---------|-------------:|
+|Grant   |Ferris     |Apple |2017-08-21    |2017-08-29     |2017-09-11  |          1|PE        |            88|
+|Grant   |OG         |Apple |2017-08-21    |2017-08-28     |2017-09-10  |          1|AN        |           111|
+|Lansing |MSU        |Apple |2017-08-21    |2017-08-28     |2017-09-10  |          1|AN        |             2|
+|Lansing |Coll Halls |Haw   |2017-08-21    |2017-08-28     |2017-09-10  |          0|          |             0|
+|Lansing |MilfordST  |Haw   |2017-08-21    |2017-08-28     |2017-09-10  |          1|AN        |             8|    
+
+Notes: 
+The rotting tubs still have a lot of maggots coming out.PE dropped ferris.  
 
 ------
 
  <div id='id-section123'/> 
 
-### Page 123:  
+### Page 123: 2017-08-29. Rhatoletis respirometry- purging      
+
+1. We took the first day set of pupae: 
+	* 2017-08-24, Ferris, apple, n=46
+	* took 9 pupae out 
+	
+![](https://user-images.githubusercontent.com/4654474/29840241-48cc837c-8ccf-11e7-943f-9dc1261b2435.jpg)
+
+2. Placed them in syringe nozzle with 
+
+![](https://user-images.githubusercontent.com/4654474/29840239-48ab17fa-8ccf-11e7-805a-0bcecee373f3.jpg)
+
+	* do this for a set of blocks   
+
+3. Take the syringe and hook it up to the nozzle  
+
+syringe  
+![](https://user-images.githubusercontent.com/4654474/29840237-48a631e0-8ccf-11e7-9442-d92a226efede.jpg)
+
+syringe + nozzle   
+
+![](https://user-images.githubusercontent.com/4654474/29840236-48a5effa-8ccf-11e7-9ae3-7d153235d5c6.jpg)  
+
+4. Purging setup:   
+
+![](https://user-images.githubusercontent.com/4654474/29840238-48a91310-8ccf-11e7-9e79-275839a4facb.jpg)
+
+It looks like air moves through the dririte and then through the water for hydration.   
+
+5. Allow air flow for both tubes of dririte
+
+picture of one   
+
+![](https://user-images.githubusercontent.com/4654474/29840235-48a553ec-8ccf-11e7-9878-276828aad195.jpg)
+
+
+6. The pupae in the tubes are ready to be purged. Meaning we're removing the existing air and putting in air without co2 to standardize future co2 measurements.   
+
+7. First, twist white part until off is facing syringe to remove air in the connection. Then twist off toward you so that the off is pointed to you and pull air for 1 mL. Then twist the off towards the mesh. ***need to double check the steps!!****  
+
+![](https://user-images.githubusercontent.com/4654474/29840240-48b5119c-8ccf-11e7-9fd8-9c3ff80aa695.jpg)
+
+Throughout process, document the date, start time, finish time, and any notes. Keep syringe set ups on rack and place back into the rearing room.  
+
+
 
 ------
 
