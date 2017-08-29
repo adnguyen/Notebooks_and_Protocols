@@ -11946,7 +11946,7 @@ picture of one
 
 ![](https://user-images.githubusercontent.com/4654474/29840240-48b5119c-8ccf-11e7-9fd8-9c3ff80aa695.jpg)
 
-Throughout process, document the date, start time, finish time, and any notes. Keep syringe set ups on rack and place back into the rearing room.  
+Throughout process, document the date, start time, finish time, and any notes. Keep syringe set ups on rack and place back into the rearing room. For rhagoletis, we need to let them go over night so that enough co2 is accumulated for measurements.  
 
 
 
