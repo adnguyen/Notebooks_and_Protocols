@@ -11960,6 +11960,28 @@ Stuff I need to order, do, and think about:
 5. get a notebook   
 
 
+### 2017-08-30 Purging revisited:   
+
+When purging, it is important to get rid of the previous air. Here are the steps for purging when everything is turned on .   
+
+1. Turn the off button left to let air flow out from the connection and syringe. 
+
+![](https://user-images.githubusercontent.com/4654474/29890990-8d01f59a-8d97-11e7-8eb5-6e7396f910ba.jpg)
+
+2. Turn 180 degrees counter clockwise. This lets air from purger to syringe only and covers the outlet with the mesh  
+
+![](https://user-images.githubusercontent.com/4654474/29890991-8d0242a2-8d97-11e7-83d7-a481e0b183e4.jpg)
+
+3. For rhagoletis, pull 1 mL of air   
+
+![](https://user-images.githubusercontent.com/4654474/29890989-8d008de0-8d97-11e7-8278-81d26a7b53b6.jpg)  
+
+4. Turn nozzle clockwise (towards you) to shut off air going into syringe   
+
+![](https://user-images.githubusercontent.com/4654474/29890992-8d069d2a-8d97-11e7-8faa-38cfea42bded.jpg)   
+
+5. unplug! :-)
+
 ------
 
  <div id='id-section124'/> 
