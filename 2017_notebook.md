@@ -148,15 +148,15 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 113: 2017-08-14](#id-section113). Two new papers on niche breadth, related to range limits, thermal tolerance breadth projects         
 * [Page 114: 2017-08-14](#id-section114).  Meeting with Dan 2pm, update, to do's
 * [Page 115: 2017-08-17](#id-section115). Meeting with Dan 12PM
-* [Page 116: 2017-08-24](#id-section116). Apple maggot collecting trip log       
-* [Page 117: 2017-08-25](#id-section117). Apple sampling   
-* [Page 118: 2017-08-26](#id-section118). Sampling apple maggots
-* [Page 119: 2017-08-27](#id-section119). Sampling apple maggots    
+* [Page 116: 2017-08-24](#id-section116). Apple maggot collecting trip log and day 1 sampling      
+* [Page 117: 2017-08-25](#id-section117). Apple sampling day 2   
+* [Page 118: 2017-08-26](#id-section118). Sampling apple maggots  day 3
+* [Page 119: 2017-08-27](#id-section119). Sampling apple maggots day 4   
 * [Page 120: 2017-08-28](#id-section120). Calibrating Li-cors (measures co2)   
-* [Page 121: 2017-08-28](#id-section121). Sampling apple maggots
-* [Page 122: 2017-08-29](#id-section122). Apple maggot sampling    
-* [Page 123: 2017-08-29](#id-section123). Rhatoletis respirometry- purging      
-* [Page 124:](#id-section124).
+* [Page 121: 2017-08-28](#id-section121). Sampling apple maggots day 5
+* [Page 122: 2017-08-29](#id-section122). Apple maggot sampling  day 6  
+* [Page 123: 2017-08-29](#id-section123). Rhagoletis respirometry- purging      
+* [Page 124: 2017-08-30](#id-section124). Apple maggot sampling day 7
 * [Page 125:](#id-section125).
 * [Page 126:](#id-section126).
 * [Page 127:](#id-section127).
@@ -11682,7 +11682,7 @@ Number of tubs we've laid out in the lab. We poured applies into a tub with mesh
 ### Notes:  I need to autoclave vermiculite to provide a sterile environment for the larvae. 
 
 
-### Sorted flies today, summary    
+### Sorted flies today, summary   day 1 
 
 Table summary with how I think the data table can be laid out:   
 
@@ -11712,7 +11712,7 @@ Table summary with how I think the data table can be laid out:
 
  <div id='id-section117'/> 
 
-### Page 117:  2017-08-25. Apple sampling   
+### Page 117:  2017-08-25. Apple sampling  day 2 
 
 summary table 
 
@@ -11740,7 +11740,7 @@ Today we had the following "rotting tubs"
 
  <div id='id-section118'/> 
 
-### Page 118:  2017-08-26 Sampling apple maggots    
+### Page 118:  2017-08-26 Sampling apple maggots  day 3  
 
 summary of collecting     
 
@@ -11770,7 +11770,7 @@ Things for me to order:
 
  <div id='id-section119'/> 
 
-### Page 119:  2017-08-27. Sampling apple maggots   
+### Page 119:  2017-08-27. Sampling apple maggots  day 4  
 
 summary table  
 
@@ -11858,7 +11858,7 @@ second page
 
  <div id='id-section121'/> 
 
-### Page 121: 2017-08-28. Sampling apple maggots      
+### Page 121: 2017-08-28. Sampling apple maggots day 5     
 
 
 |Site    |Site_name  |Host  |Collect_fruit |Collect_larvae |Date_fridge | Petri_dish|Collector | Petri_density|
@@ -11885,7 +11885,7 @@ I also need to get a physical notebook.
 
  <div id='id-section122'/> 
 
-### Page 122:  2017-08-29. Apple maggot sampling    
+### Page 122:  2017-08-29. Apple maggot sampling  - day6  
 
 summary table:  
 
@@ -11986,7 +11986,24 @@ When purging, it is important to get rid of the previous air. Here are the steps
 
  <div id='id-section124'/> 
 
-### Page 124:  
+### Page 124: Apple maggot sampling day 7      
+
+summary table     
+
+|Site    |Site_name  |Host  |Collect_fruit | Collect_day|Collect_larvae |Date_fridge | Petri_dish|Collector | Petri_density|
+|:-------|:----------|:-----|:-------------|-----------:|:--------------|:-----------|----------:|:---------|-------------:|
+|Grant   |Ferris     |Apple |2017-08-21    |           7|2017-08-30     |2017-09-12  |          1|PE        |            87|
+|Grant   |OG         |Apple |2017-08-21    |           7|2017-08-30     |2017-09-12  |          1|AN        |           122|
+|Lansing |MSU        |Apple |2017-08-21    |           7|2017-08-30     |2017-09-12  |          0|          |             0|
+|Lansing |Coll Halls |Haw   |2017-08-21    |           7|2017-08-30     |2017-09-12  |          1|AN        |             2|
+|Lansing |MilfordST  |Haw   |2017-08-21    |           7|2017-08-30     |2017-09-12  |          1|AN        |            13|
+|        |           |      |              |          NA|               |            |         NA|total     |          1249|   
+
+with total so far... .   
+
+
+
+
 
 ------
 
