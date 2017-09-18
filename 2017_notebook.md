@@ -157,7 +157,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 122: 2017-08-29](#id-section122). Apple maggot sampling  day 6  
 * [Page 123: 2017-08-29](#id-section123). Rhagoletis respirometry- purging      
 * [Page 124: 2017-08-30](#id-section124). Apple maggot sampling day 7
-* [Page 125:](#id-section125).
+* [Page 125: 2017-09-18](#id-section125). Rhagoletis project update
 * [Page 126:](#id-section126).
 * [Page 127:](#id-section127).
 * [Page 128:](#id-section128).
@@ -12009,7 +12009,21 @@ with total so far... .
 
  <div id='id-section125'/> 
 
-### Page 125:  
+### Page 125:  2017-09-18. Rhagoletis project update:  
+
+
+No time to enter everything I'm doing everyday on electronic notebook, but it is in a physical notebook. 
+
+Here is our workflow(I'll add a picture later): 
+
+![]()
+
+Here is a calendar of what our group has been doing:  
+
+![](https://user-images.githubusercontent.com/4654474/30548438-2460e154-9c60-11e7-9fb1-804eabb03b89.png)
+
+
+
 
 ------
 
