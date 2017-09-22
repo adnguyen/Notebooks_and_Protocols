@@ -158,7 +158,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 123: 2017-08-29](#id-section123). Rhagoletis respirometry- purging      
 * [Page 124: 2017-08-30](#id-section124). Apple maggot sampling day 7
 * [Page 125: 2017-09-18](#id-section125). Rhagoletis project update
-* [Page 126:](#id-section126).
+* [Page 126: 2017-09-22](#id-section126). field notes from 2017-09-19 hawthorne collection 
 * [Page 127:](#id-section127).
 * [Page 128:](#id-section128).
 * [Page 129:](#id-section129).
@@ -12029,7 +12029,28 @@ Here is a calendar of what our group has been doing:
 
  <div id='id-section126'/> 
 
-### Page 126:  
+### Page 126:  2017-09-22; field notes from 2017-09-19 hawthorne collection 
+
+Collected hawthorne fruit from lansing and grant michigan with Greg and Mac. 
+
+### Lansing   
+
+this is the raintree site, trees are next to apartment complex. Typically, we collect haws/apple off of tree by laying a tarp and shaking branches so the fruit falls off.        
+
+![https://user-images.githubusercontent.com/4654474/30758097-08faefa8-9f9f-11e7-9c53-89c4ca408cd0.jpg]
+
+
+![https://user-images.githubusercontent.com/4654474/30758099-08ff66b4-9f9f-11e7-99bd-fe18dafe6e2b.jpg]
+
+### Grant
+
+We only collected on ferris road.   
+
+![https://user-images.githubusercontent.com/4654474/30758098-08fb9692-9f9f-11e7-8a24-7ec47c88b5b5.jpg]
+
+Collected 5-6 hours
+
+![https://user-images.githubusercontent.com/4654474/30758100-08fffeb2-9f9f-11e7-8387-7d9830a65df1.jpg]
 
 ------
 
