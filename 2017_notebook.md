@@ -12037,20 +12037,20 @@ Collected hawthorne fruit from lansing and grant michigan with Greg and Mac.
 
 this is the raintree site, trees are next to apartment complex. Typically, we collect haws/apple off of tree by laying a tarp and shaking branches so the fruit falls off.        
 
-![https://user-images.githubusercontent.com/4654474/30758097-08faefa8-9f9f-11e7-9c53-89c4ca408cd0.jpg]
+![](https://user-images.githubusercontent.com/4654474/30758097-08faefa8-9f9f-11e7-9c53-89c4ca408cd0.jpg)
 
 
-![https://user-images.githubusercontent.com/4654474/30758099-08ff66b4-9f9f-11e7-99bd-fe18dafe6e2b.jpg]
+![](https://user-images.githubusercontent.com/4654474/30758099-08ff66b4-9f9f-11e7-99bd-fe18dafe6e2b.jpg)
 
 ### Grant
 
 We only collected on ferris road.   
 
-![https://user-images.githubusercontent.com/4654474/30758098-08fb9692-9f9f-11e7-8a24-7ec47c88b5b5.jpg]
+![](https://user-images.githubusercontent.com/4654474/30758098-08fb9692-9f9f-11e7-8a24-7ec47c88b5b5.jpg)
 
 Collected 5-6 hours
 
-![https://user-images.githubusercontent.com/4654474/30758100-08fffeb2-9f9f-11e7-8387-7d9830a65df1.jpg]
+![](https://user-images.githubusercontent.com/4654474/30758100-08fffeb2-9f9f-11e7-8387-7d9830a65df1.jpg)
 
 ------
 
