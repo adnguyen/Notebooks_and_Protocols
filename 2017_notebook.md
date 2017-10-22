@@ -11874,7 +11874,7 @@ I should think about the fridge date. I want to measure wet mass and co2 product
 
 written workflow:  
 
-![](https://user-images.githubusercontent.com/4654474/29789588-7f5ae62a-8c04-11e7-8d76-d0722937379e.jpg)
+!()[https://user-images.githubusercontent.com/4654474/29789588-7f5ae62a-8c04-11e7-8d76-d0722937379e.jpg]
 
 
 I also need to get a physical notebook.   
