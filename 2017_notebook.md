@@ -159,7 +159,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 124: 2017-08-30](#id-section124). Apple maggot sampling day 7
 * [Page 125: 2017-09-18](#id-section125). Rhagoletis project update
 * [Page 126: 2017-09-22](#id-section126). field notes from 2017-09-19 hawthorne collection 
-* [Page 127:](#id-section127).
+* [Page 127: 2017-11-10](#id-section127). Overall project status, planning, to do 's
 * [Page 128:](#id-section128).
 * [Page 129:](#id-section129).
 * [Page 130:](#id-section130).
@@ -12056,8 +12056,47 @@ Collected 5-6 hours
 
  <div id='id-section127'/> 
 
-### Page 127:  
+### Page 127: 2017-11-10. Overall project status, planning, to do 's  
 
+**Dissertation**    
+
+1. Hsp rxn norm paper: 
+	* SHC comments: mainly intro , results focus  
+	* Plan to work on this once I send out range limits paper to AEllison   
+	* Submission goal: December 2017
+2. Range limits paper:   
+	* Address SHC and Hahn lab comments     
+	* Send out to collabs end of Nov 
+	* Submission goal: December 2017
+3. Proteome stability project:    
+	* Still in data gathering + analysis step   
+	* Wai needs to HPLC fractionate tryptic peptides to ID more of them    
+	* ANBE needs gene annotations for aphaenogaster    
+
+4. Thermal niche paper    
+	* In lchick's hands   
+	* Nsanders wants to look at it.   
+	* Submission goal: yesterday  
+5. Aphaeno genomes project:    
+	* Mlau needs to annotate-get GO's and KOGs      
+6. Stressed in nature project:   
+	* IN SHC's hands; goal to have draft by end of summer    	 
+	
+**Post doc**  
+
+1. Circadian Rhythms   
+	* Need to input all of the resp and weight data for day 11 and day 15  
+	* Plot and show data (mass specific metabolic rate), consistent with Greg's work?  
+	* Analyze Trikinetics data with wavelet analysis
+		* Discrete wavelet analysis to give interval bouts of activity    
+		
+2. Meta-analysis of Circ Rhythms
+	* read more papers and make an excel spreadsheet    
+	* What shapes variation in biological rythms? day-season ?   
+	
+	
+	
+	
 ------
 
  <div id='id-section128'/> 
