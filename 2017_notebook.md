@@ -160,7 +160,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 125: 2017-09-18](#id-section125). Rhagoletis project update
 * [Page 126: 2017-09-22](#id-section126). field notes from 2017-09-19 hawthorne collection 
 * [Page 127: 2017-11-10](#id-section127). Overall project status, planning, to do 's
-* [Page 128:](#id-section128).
+* [Page 128: 2017-11-14](#id-section128). Prepping meeting with Dan ; Thursday 2017-11-16    
 * [Page 129:](#id-section129).
 * [Page 130:](#id-section130).
 * [Page 131:](#id-section131).
