@@ -12121,6 +12121,34 @@ this shows the coefficients that break down the biological rhytms into different
 
 ![](https://user-images.githubusercontent.com/4654474/32800800-5222f54e-c949-11e7-8b9d-61ea3730297c.png)
 
+
+**Code dump** 
+
+```R
+### Tanya Leise suggestion 
+Jcirc <- floor(log2(round(24/.1)))
+DJt_circ <- wavMRDSum(co1.3.1$count,levels=Jcirc,keep.smooth=FALSE, keep.details=TRUE,reflect=TRUE,wavelet="s12",xform="modwt")
+DJt_circ
+
+#plot(co1.3.1$count,type="l",col="red")
+#points(DJt_circ,col="purple")
+plot(DJt_circ,col="purple")
+
+library(pracma)
+IBL<-data.frame(findpeaks(DJt_circ))
+names(IBL)<-c("Height","mid_time","initial_time","final_time")
+#plot(IBL)
+diff(IBL$mid_time)
+
+plot(IBL$mid_time[-1],diff(IBL$mid_time),xlab="time (.1 hr)",ylab="interval in .1 hr",type="l")
+lines(loess(diff(IBL$mid_time)~IBL$mid_time[-1],span=1))
+
+plot(IBL[,2:1])
+plot(diff(IBL$mid_time),IBL[-1,1])
+lines(loess(IBL[-1,1]~diff(IBL$mid_time)))
+```
+
+
 	* Status of the rigs: 
 		* rigs 1-2 = 16L:8D cycle 
 		* rigs 3-6 = free run (complete darkness)   
