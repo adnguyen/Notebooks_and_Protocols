@@ -12101,7 +12101,40 @@ Collected 5-6 hours
 
  <div id='id-section128'/> 
 
-### Page 128:  
+### Page 128: 2017-11-14. Prepping meeting with Dan ; Thursday 2017-11-16
+
+1. Show some biological rhythm data   
+	* Show interval bout data vs time of day   
+	
+
+**Discrete Wavelet Analysis**
+
+![](https://user-images.githubusercontent.com/4654474/32393704-f4a8ad0a-c0b0-11e7-855d-6c4fd0605922.png)
+
+this shows the coefficients that break down the biological rhytms into different period slices
+
+**This shows that when you add all the details**    
+
+![](https://user-images.githubusercontent.com/4654474/32801059-f2e7529a-c949-11e7-88cf-ef535d78a535.png)
+
+**Interval bout figure**
+
+![](https://user-images.githubusercontent.com/4654474/32800800-5222f54e-c949-11e7-8b9d-61ea3730297c.png)
+
+	* Status of the rigs: 
+		* rigs 1-2 = 16L:8D cycle 
+		* rigs 3-6 = free run (complete darkness)   
+
+2. Undergrad proposal writing for SURF    
+	* she knows R and wants to learn more 
+	* 
+3. Greg looking for samples:    
+	* *GJR drawer 1, box/slot 2, and the box should say "Mexican pupae" on them.* 
+
+4. Read more papers for meta-analysis    
+	* What exact papers should I target?   
+
+
 
 ------
 
