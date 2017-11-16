@@ -12161,6 +12161,17 @@ lines(loess(IBL[-1,1]~diff(IBL$mid_time)))
 
 4. Read more papers for meta-analysis    
 	* What exact papers should I target?   
+	* **before doing this, phil trans paper on field/wild clocks before deciding what to do** 
+	
+
+
+2017-11-16: Meeting notes 
+
+Mike wade suggestion on on setting up behavioral assays with volatiles; talk to Tom, Shannon, Cheyenne, and read more 
+
+
+
+for #2,made 3rd round of edits and sent to out
 
 
 
