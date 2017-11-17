@@ -161,7 +161,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 126: 2017-09-22](#id-section126). field notes from 2017-09-19 hawthorne collection 
 * [Page 127: 2017-11-10](#id-section127). Overall project status, planning, to do 's
 * [Page 128: 2017-11-14](#id-section128). Prepping meeting with Dan ; Thursday 2017-11-16    
-* [Page 129:](#id-section129).
+* [Page 129: 2017-11-17](#id-section129). Rhago notes , looked at  Feder papers again; refs- [Page 91: 2017-07-11](#id-section91). Reading rhagoletis papers     
+
 * [Page 130:](#id-section130).
 * [Page 131:](#id-section131).
 * [Page 132:](#id-section132).
@@ -12179,7 +12180,28 @@ for #2,made 3rd round of edits and sent to out
 
  <div id='id-section129'/> 
 
-### Page 129:  
+### Page 129:  2017-11-17: Rhago notes , looked at  Feder papers again; refs- [Page 91: 2017-07-11](#id-section91). Reading rhagoletis papers   
+
+Feder et al. 1997; PNAS
+
+![](https://user-images.githubusercontent.com/4654474/32958303-0d7d2a00-cb8c-11e7-99df-c1a96d1208af.JPG)
+
+
+It possible for diapause depth to differ or become decoupled from diapause exit? Yes, if the rate of diapause termination is more directly related to eclosion timing. Ragland has a phys paper on how termination is biphasic, it'd be interesting to test this hypothesis by determining whether the first initial increase in metabolic rate or just overall metabolic rate in diapaused individuals better explains eclosion timing.   
+
+![](https://user-images.githubusercontent.com/4654474/32958304-0d924dae-cb8c-11e7-8e71-c5ff11407e98.JPG)
+
+Feder et al. 1997; Evolution
+
+![](https://user-images.githubusercontent.com/4654474/32958305-0da663ca-cb8c-11e7-8e7f-8bdb7b3d099e.JPG)
+
+![](https://user-images.githubusercontent.com/4654474/32958306-0db831f4-cb8c-11e7-961a-a3fd4b158904.JPG)
+
+
+Different way of thinking about "haw" alleles. Higher freq in me100 for example is overall higher in earlier eclosers, but there is a main effect of host. It is important to remember that hosts are different environments! So differences are not purely due to genetics. There really needs to be a reciprocal transplant of maggots on host fruit to determine if the performance under different genetic backgrounds is real. 
+
+![](https://user-images.githubusercontent.com/4654474/32958307-0dcb8c90-cb8c-11e7-9597-1be59edbf649.JPG)   
+
 
 ------
 
