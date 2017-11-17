@@ -9032,7 +9032,7 @@ conv<-conv[order(conv$Sample),]#sort
 conv$T<-rep(seq(30,65,.1),nrow(predi))
 
 
-###overlay actual points  
+### overlay actual points  
 
 atwitch<-subset(aph,aph$Sequence=="SDPSEVTPLITTK" & aph$colony!="ARY")
 
@@ -9120,7 +9120,7 @@ Densities of temperatures vs julian day (doy) for each year and site
 
 ```R
 soilorg.max<-subset(cdave,cdave$envfac=="SOmax")
-###plotting 
+### plotting 
 O<-scale_x_continuous(breaks=seq(-10,45,5),labels=seq(-10,45,5),limits=c(-20,45))
 ```
 
@@ -9311,7 +9311,7 @@ ggplot(GSL.long,aes(x=baittemp.ave,y=PredictedFC,colour=Site))+geom_point(colour
 #HF 
 HFzero_hsp40<-subset(GSL,GSL$Site=="HF" & GSL$hsp40pred<0.01 & GSL$hsp40pred>-.01)
 mean(HFzero_hsp40$baittemp.ave)
-###DF 
+### DF 
 DFzero_hsp40<-subset(GSL,GSL$Site=="DF" & GSL$hsp40pred<0.01 & GSL$hsp40pred>-.01)
 mean(DFzero_hsp40$baittemp.ave)
 
@@ -10019,7 +10019,7 @@ Trade-offs in plant performance can manifest in the plant phenology and insect d
 
 Insects must match their life history timing with plant phenology, otherwise they can starve.   
 
-###Rhagoletis is a good system to understand trade-offs in plant performance    
+### Rhagoletis is a good system to understand trade-offs in plant performance    
 
 Apple and Hawthorne races are genetically differentiated at 6 allowzymes that map to 3 genomic regions. 
 
