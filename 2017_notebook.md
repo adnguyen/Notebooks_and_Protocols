@@ -1,13 +1,11 @@
-
-
 # 2017 General Notebook
 
 ### Author: Andrew D. Nguyen, [Evolutionary Physiologist](https://adnguyen.github.io)      
-### Affiliation: Biology Department, University of Vermont      
+### Affiliation: Biology Department, University of Vermont  ; University of Florida, Department of Entomology and Nematology    
 ### Contact: anbe642@gmail.com     
 
 ### Date started: 2017-01-01    
-### Date end (last modified): ongoing   
+### Date end (last modified): 2017-12-31   
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.    
 
@@ -23,7 +21,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * Multiple stressors: Understanding how progressive desiccation and starvation impacts thermal tolerances in *A. picea*. We pre-treated with desiccation and starvation and then measured KO-time. We also measured the stress response.        
 * Thermal niche paper: Collaborative paper understanding how the environment shapes the ability to withstand cold and hot temperatures. In field and in a common garden, we measured upper and lower thermal limits of ants from GA-Maine (2 species).    
 * Stress in nature: Are ants stressed under experimental warming that projects climate change? Ants were collected from warming chambers (0-5 C increase from ambient) and we measured their stress response.    
-* ​
+* ​Biological rhythms in *Rhagoletis*: Determining the relationship between behavioral rhythms in adult *Rhagoletis* and diapause exit timing + depth(eclosion and mass specific metabolic rate). 
 
 ### Table of Contents (Layout follows Page number: Date. Title of entry)    
 * [Page 1: 2017-01-01](#id-section1). SICB meeting
