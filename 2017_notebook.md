@@ -161,8 +161,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 128: 2017-11-14](#id-section128). Prepping meeting with Dan ; Thursday 2017-11-16    
 * [Page 129: 2017-11-17](#id-section129). Rhago notes , looked at  Feder papers again; refs- [Page 91: 2017-07-11](#id-section91). Reading rhagoletis papers     
 
-* [Page 130:](#id-section130).
-* [Page 131:](#id-section131).
+* [Page 130: 2017-11-19 to 2017-11-20](#id-section130). Initial reading of Philosophical Transactions B review articles on [wild clocks](http://rstb.royalsocietypublishing.org/content/372/1734) (http://rstb.royalsocietypublishing.org/content/372/1734)      
+* [Page 131: 2017-11-21](#id-section131). Figured out code to subset out a dataframe based on a  time interval    
 * [Page 132:](#id-section132).
 * [Page 133:](#id-section133).
 * [Page 134:](#id-section134).
@@ -12205,13 +12205,202 @@ Different way of thinking about "haw" alleles. Higher freq in me100 for example 
 
  <div id='id-section130'/> 
 
-### Page 130:  
+### Page 130: 2017-11-19  Initial reading of Philosophical Transactions B review articles on [wild clocks](http://rstb.royalsocietypublishing.org/content/372/1734) (http://rstb.royalsocietypublishing.org/content/372/1734)    
+
+Preface: Wild Clocks- preface and glossary 
+
+Chronobiologist; programmes....annoying term.   
+
+Outlines, compares, contrasts chronobiologist(lab) and ecologist; and approach to studying time---basically lab vs ecological setting. 
+
+They want to unite these two apprpoaches and thinking. 
+
+Summary of papers in the whole issue 
+
+1. Describe diff timing phenotypes as chronotypes and how they can be phenotypically plastic  ; a new area for integration between fields 
+2. next two articles talk about new tools that advance both feilds.   
+3. NExt 3 describe both chronobio and eco approaches in seasonal biology  
+4. 3 final ones consider interspecific interactions in setting biological timing (plant-pollinator interactions)
+
+
+
+### First paper in issue- Two sides of a coin: eco and chrono perspectives of timing in the wild   
+
+ref- Review article: Two sides of a coin: ecological and chronobiological perspectives of timing in the wild
+Barbara Helm, Marcel E. Visser, William Schwartz, Noga Kronfeld-Schor, Menno Gerkema, Theunis Piersma, Guy Bloch
+Phil. Trans. R. Soc. B 2017 372 20160246; DOI: 10.1098/rstb.2016.0246. Published 9 October 2017
+
+Key questions: 
+
+Chronobiologist    
+* How do organisms time biological processes? 
+
+Ecologist   
+* Why do they do it?   
+
+Timing can be both abiotic (light intensity)  and biotic ( veg cover). Organisms can respond to whatever timing cue by altering behaviors ( ie. migration). So the combination of external and internal timing influence the ultimate expression of when organisms do things. 
+
+**Focus on chronobiologists:**      
+
+> It identifies effects of components of time that act to modify internal clock time through entrainment of the clock (synchronization of internal clock time by environmental cues or ‘zeitgebers’ [25])   
+
+What the...
+
+Zeitgeber is the signal/cue that organisms synchronize their internal clock with? Don't know why chronobiologists would care about this per se. Its an abstraction that means very little on its own.  I really have no clue what this thing is and why it matters.        
+
+
+I'm assuming that chronobiologists just care about the internal clock? And how organisms can respond to different cues and match their clocks accordingly.   
+
+> Thus, chronobiologists increasingly conclude that pure consideration of internal clocks and photic entrainment, although perfected in laboratory settings, has insufficient explanatory power in the real world.     
+
+No citation with this claim...needs a meta analysis to support.    
+
+Paragraph focusing on ecological perspective doesn't link back to "Why do they do it" question. And the examples are focused on interspecific interactions. What they needed was to link back was to relate timing with fitness.   
+
+It seems like the big discrepancy between small scale and large scale temporal biologist is asking questions in terms of proximate or ultimate mechanisms.   
+
+> Importantly, therefore, an organism can be thought of as consisting of many clocks (millions in complex multi-cellular organisms; [45]) that are co-ordinated within the body in various ways (the ‘second revolution’ in chronobiology; [40]).   
+
+What....the emphasis should be on traits/characteristics which occur at certain times...not on "timing" in general. 
+
+
+Introduces chronotype without actually explaining what it is....   
+
+
+2017-11-20 cont'd    
+
+**Focus on Ecology:**     
+
+
+history- ecology minded chronobiologists ; Pat DeCoursey, Eberhard Gwinner, Serge Daan 
+
+thoughts: ecology inherently considers timing in its very definition-- study of how organisms interact with their environment over space and time  
+
+temporal niche- temporal segregation of resource use among potentially competing species or individuals sharing the same habitat   
+
+a good example would be the timing of bees and flowers whereby each party shifts their foraging or flowering time, respectively.   
+
+The things that shape timing    
+
+> Macro-ecologists
+have recently identified large-scale patterns in daily timing of mammals across the globe [68,71]. The proportion of nocturnal species is highest in arid regions and lowest at extremely high latitudes, while crepuscularity (activity during dawn and dusk) is correlated with longer twilight durations. Cathemerality (activity that is spread across day and night) is also more common in cold habitats and under long hours of daylight and twilight in the northern Holarctic region [68,72]    
+
+* Nocturnal species highest in arid regions and lowest at the poles    
+* dawn/dusk activity correlated with longer twilight durations    
+* activity over night and day is more common in cold habitats and under long daylight hours   
+
+
+**Converging key concepts of both fields** 
+
+**One problem they mention: plasticity**    
+
+Many studies focus on the ridgitity of rhythms, but there is a lot of plasticity. (I have no clue in what way they mean, they should define plasticity explicitly. ). This could be a source for the differences between the field and lab. (no duh, they are diff environments....). There is "less" plasticity int he lab....but during an entrainment or free-run experiment, animals may not respond consistently if you're analyzing at the unit of the day. 
+
+I think they mean plasticity as the ability to change timing in response to different environments.   
+
+but, then this:  
+
+> To some authors, a biological rhythm in a behaviour or physiological process in itself is seen as ‘plasticity’ (‘endogenous’ plasticity [102]; table 1a).    
+
+These authors would benefit from a more quantitative way of thinking about plasticity. Yes, behavior vs time can be imagined as plasticity, for a genotype!!!!, but how much this "matters" in an evolutionary framework is comparing among plasticity among genotypes. And plasticity can be imagined as the slope of the reaction norm    
+
+**And the link between the lab and field biologist could be this: Go out in the field and identify critical factors shaping variation in the timing of a trait; then go into the lab and dissect out that timing trait, even the molecular basis of it, by manipulating the critical factors identified from ecology. If we know the key genetic constituents and the important environmental factors, we can predict(with a predictive model) the timing of that trait out in nature....functional outcomes: inform species responses to climate change; predict matchiness between biocontrol agent and pest species;** They mention this later on in the article!        
+
+**Introducing more jargon: malleable temporal programme**; seriously wtf...        
+
+
+> Binary distinction between plasticity through the clock (entrainment) versus plasticity outside the clock (masking) falls short of capturing the ability of animals to adjust their rhythms to the environment    
+
+What...I didnt even know entrainment and masking was related to plasticity.....
+ 
+> Such plasticity is enhanced by its mechanistic complexity, whose many parts and multiple oscillators offer numerous ways of adjusting internal clock time, and thereby making the system less rigid. Therefore, complexity could be the key to addressing the apparent paradox of ‘How can a biological system be rigid and conserved, but at the same time plastic’? Resolving this paradox requires us to understand how the system works—what are the gears, how do they work together and how do they respond to ecologically relevant factors, such that the timing system as a whole generates plasticity.    
+
+
+
+------
+
+Reading this: Rattenborg, N. C., de la Iglesia, H. O., Kempenaers, B., Lesku, J. A., Meerlo, P., & Scriba, M. F. (2017). Sleep research goes wild: new methods and approaches to investigate the ecology, evolution and functions of sleep. Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences, 372(1734), 20160251. https://doi.org/10.1098/rstb.2016.0251    
+
+> The temporal programme of behaviours and physiology expressed by an organism is driven by a vast network of clocks and rhythms distributed across tissues throughout the body.   
+
+somebody tell me what "the temporal programme" is?   
+
+Organisms comprise of characteristics whose functional consequences are largely determined by the timing in their expression. This timing usually varies among different characteristics themselves.....
+
+
+Hypothalamus in mammals is the place where decisions about timing are made, specifically, the suprachiasmatic nucleus(SCN). It allows for organisms to take in light cues and entrain to it. It also transmits this information to other parts of the body. All non-SCN is known as the 'peripheral timing system'.    
+
+Why not just describe the process of how organisms receive input from external signals and respond to them....? That's basically figure 1. Because many external forces are cyclical in nature, organisms can respond cyclically as well in order to maximize survival and reproduction...
+
+All the things that can influence the cyclical behavior of animals (Zeitgebers):      
+
+* light  
+* predators  
+* food availability   
+
+cool walk through of how SCN ablated individuals(assuming mice) are arhytmic under controlled conditions; under natural conditions(light, social interactions, social cues, ambient temp, fear), SCN ablated individuals regain rhythmicity.     
+
+**this suggests that there is timing independent of SCN.** So there should be a role for peripheral tissues in contributing to the timing of behaviors/phys   
+
+Interesting point: blood glucose can be cyclical even if it is constant in the blood, but the cells in different tissues cycle their cell surface receptors..     
+ 
+
+Glucocorticoids can modulate input from Zeitgebers for peripheral tissues. 
+
+
 
 ------
 
  <div id='id-section131'/> 
 
-### Page 131:  
+### Page 131:  2017-11-21. Figured out code to subset out a dataframe based on a  time interval     
+
+```R
+#specify time interval:   
+
+t<-interval("2017-11-01 00:01:00","2017-11-13 23:00:00", tzone = tz(start))
+t
+
+##
+read in monitor data and change month into a number
+x<-read.table("Monitor6.txt")
+x$V3<-match(x$V3,month.abb)
+
+```
+
+   V1 V2 V3 V4       V5 V6 V7 V8 V9 V10 V11 V12 V13 V14 V15 V16 V17 V18 V19 V20
+1 46586 12 11 17 20:41:00  1  0  0  0   0   0   0   0   0   0   0   0   0   0   0
+2 46587 12 11 17 20:42:09  1  0  0  0   0   0   0   0   0   0   0   0   0   0   0
+3 46588 12 11 17 20:44:50  1  0  0  0   0   0   0   0   0   0   0   0   0   0   0
+4 46589 12 11 17 20:47:18  1  0  0  0   0   0   0   0   0   0   0   0   0   0   0
+5 46590 12 11 17 20:52:13  1  0  0  0   0   0   0   0   0   0   0   0   0   0   0
+6 46591 12 11 17 20:57:19  1  0  0  0   0   0   0   0   0   0   0   0   0   0   0
+  V21 V22 V23 V24 V25 V26 V27 V28 V29 V30 V31 V32 V33 V34 V35 V36 V37 V38 V39 V40
+1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+5   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  V41 V42 V43 V44
+1   0   0   0   0
+2   0   0   0   0
+3   0   0   0   0
+4   0   0   0   0
+5   0   0   0   0
+6   0   0   0   0
+
+```R
+#convert to time vector 
+test<-data.frame(time=strptime(time,"%Y-%m-%d %H:%M:%S",tz=tz(start)))
+
+#subset
+head(subset(test,time %within% t))
+```
+
+
+
+
 
 ------
 
