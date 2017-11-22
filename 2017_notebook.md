@@ -163,7 +163,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 
 * [Page 130: 2017-11-19 to 2017-11-20](#id-section130). Initial reading of Philosophical Transactions B review articles on [wild clocks](http://rstb.royalsocietypublishing.org/content/372/1734) (http://rstb.royalsocietypublishing.org/content/372/1734)      
 * [Page 131: 2017-11-21](#id-section131). Figured out code to subset out a dataframe based on a  time interval    
-* [Page 132:](#id-section132).
+* [Page 132: 2017-11-21](#id-section132). Field clocks reviews - methods in field chronobiology    
 * [Page 133:](#id-section133).
 * [Page 134:](#id-section134).
 * [Page 135:](#id-section135).
@@ -12355,6 +12355,8 @@ Glucocorticoids can modulate input from Zeitgebers for peripheral tissues.
 
 ### Page 131:  2017-11-21. Figured out code to subset out a dataframe based on a  time interval     
 
+This'll be useful for parsing out individual behavioral count data (from trikinetics rigs) based on monitor, position in monitor, then date+time. 
+
 ```R
 #specify time interval:   
 
@@ -12406,7 +12408,36 @@ head(subset(test,time %within% t))
 
  <div id='id-section132'/> 
 
-### Page 132:  
+### Page 132: 2017-11-21. Field clocks reviews - methods in field chronobiology    
+
+ref: Methods in field chronobiology
+Davide M. Dominoni, Susanne Åkesson, Raymond Klaassen, Kamiel Spoelstra, Martin Bulla
+Phil. Trans. R. Soc. B 2017 372 20160247; DOI: 10.1098/rstb.2016.0247. Published 9 October 2017   
+
+Critical questions:   
+
+1. How variable are rhythms within and between, taxa, species, populations, individuals?   
+2. What drives such variation? (env , internal state, sociality, anthropogenic disturbance, climate change)   
+3. Are rhythms of captive animals comparable to rhythms of animals in the wild?    
+4. How can we disentangle the relative contribution fo genes vs environmental drivers of rhythmicity in wild species?    
+5. Is variation in rhythms associated to fitness?   
+
+case study: incubation rhytms of biparental care in shorebirds. They incubate at different times, this varies among species and individuals. There is high phylo signal and the lenght of encubation is related to latitude, and some proxy for predation risk. 
+
+
+a diff approach: 
+
+insect migration- lidar tech; lazer beam detection 
+
+
+Another case study targeting whether we can relate circ to fitness: Measuring fitness consequences of circ organization in the wild. They created lesions in SCN in antelope squrrels and chipmunks and tracked their rhythms. Related to survival but not fitness? 
+
+Release of CK1etau tau allele reduces endogenous circ period; so they released control mice vs tau mutants and tau mutants reduced in frequency. 
+
+needs statistical methods  
+
+
+
 
 ------
 
