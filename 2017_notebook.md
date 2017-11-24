@@ -164,7 +164,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 130: 2017-11-19 to 2017-11-20](#id-section130). Initial reading of Philosophical Transactions B review articles on [wild clocks](http://rstb.royalsocietypublishing.org/content/372/1734) (http://rstb.royalsocietypublishing.org/content/372/1734)      
 * [Page 131: 2017-11-21](#id-section131). Figured out code to subset out a dataframe based on a  time interval    
 * [Page 132: 2017-11-21](#id-section132). Field clocks reviews - methods in field chronobiology    
-* [Page 133:](#id-section133).
+* [Page 133: 2017-11-24](#id-section133). Prep for meeting with Dan, 2017-11-28  + some thoughts on diapause + to do list          
 * [Page 134:](#id-section134).
 * [Page 135:](#id-section135).
 * [Page 136:](#id-section136).
@@ -12443,7 +12443,56 @@ needs statistical methods
 
  <div id='id-section133'/> 
 
-### Page 133:  
+### Page 133:  2017-11-24. Prep for meeting with Dan, 2017-11-28 + thoughts on diapause + to do list      
+
+Main stuff to talk about:   
+
+1. Reading 3 papers on odors in Rhago system  
+
+	* Linn, C. E., Dambroski, H. R., Feder, J. L., Berlocher, S. H., Nojima, S., & Roelofs, W. L. (2004). Postzygotic isolating factor in sympatric speciation in Rhagoletis flies: Reduced response of hybrids to parental host-fruit odors. Retrieved from http://www.pnas.org/content/101/51/17753.full.pdf   
+	
+	* Linn, C., Feder, J. L., Nojima, S., Dambroski, H. R., Berlocher, S. H., & Roelofs, W. (n.d.). Fruit odor discrimination and sympatric host race formation in Rhagoletis. Retrieved from http://www.pnas.org/content/100/20/11490.full.pdf    
+	
+	* Dambroski, H. R., Linn, C., Berlocher, S. H., Forbes, A. A., Roelofs, W., & Feder, J. L. (n.d.). THE GENETIC BASIS FOR FRUIT ODOR DISCRIMINATION IN RHAGOLETIS FLIES AND ITS SIGNIFICANCE FOR SYMPATRIC HOST SHIFTS. Source: Evolution, 59(9), 1953–1964. https://doi.org/10.1554/05-133.1     
+	
+
+Stuff on my mind that would be nice to discuss  
+
+
+1. Diapause phases:   
+
+Ragland 2009 JIP paper on biphasic MR. First logrithmic increase is termination? Then, the following exponential increase is post diapause?  
+
+ref:   
+
+Biphasic metabolic rate trajectory of pupal diapause termination and post-diapause development in a tephritid fly. (2009). Journal of Insect Physiology, 55(4), 344–350. https://doi.org/10.1016/J.JINSPHYS.2008.12.013    
+
+Has Dan Read the Kostal et al. 2017, PNAS paper? 
+
+refs: 
+
+Koštál, V., St Etina, T., Poupardin, R., Korbelová, J., & Bruce, A. W. (n.d.). Conceptual framework of the eco-physiological phases of insect diapause development justified by transcriptomic profiling. https://doi.org/10.1073/pnas.1707281114
+
+Koštál, V. (2006). Eco-physiological phases of insect diapause. Journal of Insect Physiology, 52(2), 113–127. https://doi.org/10.1016/j.jinsphys.2005.09.008
+
+Argues for distinct phases of diapause, but not very clear that they are separated -.-. They should have used a discriminant analysis, which would show better separation, suggesting that certain aspects of the transcriptome are associated with transitions in diapause among phases.   
+
+2. "Early eclosing alleles"   
+
+3. Data analysis 
+	* Show some figures   
+	* for mass specific metabolic rate, some values are negative   
+
+
+to do: 
+
+1. check undergrad schedules 
+2. get back to writing manuscripts
+3. generate spreadsheet for samples that need to be transferred to free run 
+	* update dataset   
+4. set up animals in trikinetics   
+
+
 
 ------
 
