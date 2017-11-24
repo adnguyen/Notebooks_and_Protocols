@@ -12491,7 +12491,7 @@ to do:
 3. generate spreadsheet for samples that need to be transferred to free run 
 	* update dataset   
 4. set up animals in trikinetics   
-
+5. write up methods so it is less painful later on   
 
 
 ------
