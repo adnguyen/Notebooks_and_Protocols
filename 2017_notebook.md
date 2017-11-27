@@ -1,5 +1,3 @@
-word processing and then adding [words you want to hyperlink](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#id-section90).
-
 
 
 # 2017 General Notebook
