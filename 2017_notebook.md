@@ -1,15 +1,18 @@
+<<<<<<< HEAD
 word processing and then adding [words you want to hyperlink](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#id-section90).
 
 
 
+=======
+>>>>>>> origin/master
 # 2017 General Notebook
 
 ### Author: Andrew D. Nguyen, [Evolutionary Physiologist](https://adnguyen.github.io)      
-### Affiliation: Biology Department, University of Vermont      
+### Affiliation: Biology Department, University of Vermont  ; University of Florida, Department of Entomology and Nematology    
 ### Contact: anbe642@gmail.com     
 
 ### Date started: 2017-01-01    
-### Date end (last modified): ongoing   
+### Date end (last modified): 2017-12-31   
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.    
 
@@ -25,7 +28,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * Multiple stressors: Understanding how progressive desiccation and starvation impacts thermal tolerances in *A. picea*. We pre-treated with desiccation and starvation and then measured KO-time. We also measured the stress response.        
 * Thermal niche paper: Collaborative paper understanding how the environment shapes the ability to withstand cold and hot temperatures. In field and in a common garden, we measured upper and lower thermal limits of ants from GA-Maine (2 species).    
 * Stress in nature: Are ants stressed under experimental warming that projects climate change? Ants were collected from warming chambers (0-5 C increase from ambient) and we measured their stress response.    
-* ​
+* ​Biological rhythms in *Rhagoletis*: Determining the relationship between behavioral rhythms in adult *Rhagoletis* and diapause exit timing + depth(eclosion and mass specific metabolic rate). 
 
 ### Table of Contents (Layout follows Page number: Date. Title of entry)    
 * [Page 1: 2017-01-01](#id-section1). SICB meeting
@@ -161,13 +164,14 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 124: 2017-08-30](#id-section124). Apple maggot sampling day 7
 * [Page 125: 2017-09-18](#id-section125). Rhagoletis project update
 * [Page 126: 2017-09-22](#id-section126). field notes from 2017-09-19 hawthorne collection 
-* [Page 127:](#id-section127).
-* [Page 128:](#id-section128).
-* [Page 129:](#id-section129).
-* [Page 130:](#id-section130).
-* [Page 131:](#id-section131).
-* [Page 132:](#id-section132).
-* [Page 133:](#id-section133).
+* [Page 127: 2017-11-10](#id-section127). Overall project status, planning, to do 's
+* [Page 128: 2017-11-14](#id-section128). Prepping meeting with Dan ; Thursday 2017-11-16    
+* [Page 129: 2017-11-17](#id-section129). Rhago notes , looked at  Feder papers again; refs- [Page 91: 2017-07-11](#id-section91). Reading rhagoletis papers     
+
+* [Page 130: 2017-11-19 to 2017-11-20](#id-section130). Initial reading of Philosophical Transactions B review articles on [wild clocks](http://rstb.royalsocietypublishing.org/content/372/1734) (http://rstb.royalsocietypublishing.org/content/372/1734)      
+* [Page 131: 2017-11-21](#id-section131). Figured out code to subset out a dataframe based on a  time interval    
+* [Page 132: 2017-11-21](#id-section132). Field clocks reviews - methods in field chronobiology    
+* [Page 133: 2017-11-24](#id-section133). Prep for meeting with Dan, 2017-11-28  + some thoughts on diapause + to do list          
 * [Page 134:](#id-section134).
 * [Page 135:](#id-section135).
 * [Page 136:](#id-section136).
@@ -9035,7 +9039,7 @@ conv<-conv[order(conv$Sample),]#sort
 conv$T<-rep(seq(30,65,.1),nrow(predi))
 
 
-###overlay actual points  
+### overlay actual points  
 
 atwitch<-subset(aph,aph$Sequence=="SDPSEVTPLITTK" & aph$colony!="ARY")
 
@@ -9123,7 +9127,7 @@ Densities of temperatures vs julian day (doy) for each year and site
 
 ```R
 soilorg.max<-subset(cdave,cdave$envfac=="SOmax")
-###plotting 
+### plotting 
 O<-scale_x_continuous(breaks=seq(-10,45,5),labels=seq(-10,45,5),limits=c(-20,45))
 ```
 
@@ -9314,7 +9318,7 @@ ggplot(GSL.long,aes(x=baittemp.ave,y=PredictedFC,colour=Site))+geom_point(colour
 #HF 
 HFzero_hsp40<-subset(GSL,GSL$Site=="HF" & GSL$hsp40pred<0.01 & GSL$hsp40pred>-.01)
 mean(HFzero_hsp40$baittemp.ave)
-###DF 
+### DF 
 DFzero_hsp40<-subset(GSL,GSL$Site=="DF" & GSL$hsp40pred<0.01 & GSL$hsp40pred>-.01)
 mean(DFzero_hsp40$baittemp.ave)
 
@@ -10022,7 +10026,7 @@ Trade-offs in plant performance can manifest in the plant phenology and insect d
 
 Insects must match their life history timing with plant phenology, otherwise they can starve.   
 
-###Rhagoletis is a good system to understand trade-offs in plant performance    
+### Rhagoletis is a good system to understand trade-offs in plant performance    
 
 Apple and Hawthorne races are genetically differentiated at 6 allowzymes that map to 3 genomic regions. 
 
@@ -11876,7 +11880,7 @@ I should think about the fridge date. I want to measure wet mass and co2 product
 
 written workflow:  
 
-![](https://user-images.githubusercontent.com/4654474/29789588-7f5ae62a-8c04-11e7-8d76-d0722937379e.jpg)
+!()[https://user-images.githubusercontent.com/4654474/29789588-7f5ae62a-8c04-11e7-8d76-d0722937379e.jpg]
 
 
 I also need to get a physical notebook.   
@@ -12039,62 +12043,463 @@ Collected hawthorne fruit from lansing and grant michigan with Greg and Mac.
 
 this is the raintree site, trees are next to apartment complex. Typically, we collect haws/apple off of tree by laying a tarp and shaking branches so the fruit falls off.        
 
-![https://user-images.githubusercontent.com/4654474/30758097-08faefa8-9f9f-11e7-9c53-89c4ca408cd0.jpg]
+![](https://user-images.githubusercontent.com/4654474/30758097-08faefa8-9f9f-11e7-9c53-89c4ca408cd0.jpg)
 
 
-![https://user-images.githubusercontent.com/4654474/30758099-08ff66b4-9f9f-11e7-99bd-fe18dafe6e2b.jpg]
+![](https://user-images.githubusercontent.com/4654474/30758099-08ff66b4-9f9f-11e7-99bd-fe18dafe6e2b.jpg)
 
 ### Grant
 
 We only collected on ferris road.   
 
-![https://user-images.githubusercontent.com/4654474/30758098-08fb9692-9f9f-11e7-8a24-7ec47c88b5b5.jpg]
+![](https://user-images.githubusercontent.com/4654474/30758098-08fb9692-9f9f-11e7-8a24-7ec47c88b5b5.jpg)
 
 Collected 5-6 hours
 
-![https://user-images.githubusercontent.com/4654474/30758100-08fffeb2-9f9f-11e7-8387-7d9830a65df1.jpg]
+![](https://user-images.githubusercontent.com/4654474/30758100-08fffeb2-9f9f-11e7-8387-7d9830a65df1.jpg)
 
 ------
 
  <div id='id-section127'/> 
 
-### Page 127:  
+### Page 127: 2017-11-10. Overall project status, planning, to do 's  
 
+**Dissertation**    
+
+1. Hsp rxn norm paper: 
+	* SHC comments: mainly intro , results focus  
+	* Plan to work on this once I send out range limits paper to AEllison   
+	* Submission goal: December 2017
+2. Range limits paper:   
+	* Address SHC and Hahn lab comments     
+	* Send out to collabs end of Nov 
+	* Submission goal: December 2017
+3. Proteome stability project:    
+	* Still in data gathering + analysis step   
+	* Wai needs to HPLC fractionate tryptic peptides to ID more of them    
+	* ANBE needs gene annotations for aphaenogaster    
+
+4. Thermal niche paper    
+	* In lchick's hands   
+	* Nsanders wants to look at it.   
+	* Submission goal: yesterday  
+5. Aphaeno genomes project:    
+	* Mlau needs to annotate-get GO's and KOGs      
+6. Stressed in nature project:   
+	* IN SHC's hands; goal to have draft by end of summer    	 
+	
+**Post doc**  
+
+1. Circadian Rhythms   
+	* Need to input all of the resp and weight data for day 11 and day 15  
+	* Plot and show data (mass specific metabolic rate), consistent with Greg's work?  
+	* Analyze Trikinetics data with wavelet analysis
+		* Discrete wavelet analysis to give interval bouts of activity    
+		
+2. Meta-analysis of Circ Rhythms
+	* read more papers and make an excel spreadsheet    
+	* What shapes variation in biological rythms? day-season ?   
+	
+	
+	
+	
 ------
 
  <div id='id-section128'/> 
 
-### Page 128:  
+### Page 128: 2017-11-14. Prepping meeting with Dan ; Thursday 2017-11-16
+
+1. Show some biological rhythm data   
+	* Show interval bout data vs time of day   
+	
+
+**Discrete Wavelet Analysis**
+
+![](https://user-images.githubusercontent.com/4654474/32393704-f4a8ad0a-c0b0-11e7-855d-6c4fd0605922.png)
+
+this shows the coefficients that break down the biological rhytms into different period slices
+
+**This shows that when you add all the details**    
+
+![](https://user-images.githubusercontent.com/4654474/32801059-f2e7529a-c949-11e7-88cf-ef535d78a535.png)
+
+**Interval bout figure**
+
+![](https://user-images.githubusercontent.com/4654474/32800800-5222f54e-c949-11e7-8b9d-61ea3730297c.png)
+
+
+**Code dump** 
+
+```R
+### Tanya Leise suggestion 
+Jcirc <- floor(log2(round(24/.1)))
+DJt_circ <- wavMRDSum(co1.3.1$count,levels=Jcirc,keep.smooth=FALSE, keep.details=TRUE,reflect=TRUE,wavelet="s12",xform="modwt")
+DJt_circ
+
+#plot(co1.3.1$count,type="l",col="red")
+#points(DJt_circ,col="purple")
+plot(DJt_circ,col="purple")
+
+library(pracma)
+IBL<-data.frame(findpeaks(DJt_circ))
+names(IBL)<-c("Height","mid_time","initial_time","final_time")
+#plot(IBL)
+diff(IBL$mid_time)
+
+plot(IBL$mid_time[-1],diff(IBL$mid_time),xlab="time (.1 hr)",ylab="interval in .1 hr",type="l")
+lines(loess(diff(IBL$mid_time)~IBL$mid_time[-1],span=1))
+
+plot(IBL[,2:1])
+plot(diff(IBL$mid_time),IBL[-1,1])
+lines(loess(IBL[-1,1]~diff(IBL$mid_time)))
+```
+
+
+	* Status of the rigs: 
+		* rigs 1-2 = 16L:8D cycle 
+		* rigs 3-6 = free run (complete darkness)   
+
+2. Undergrad proposal writing for SURF    
+	* she knows R and wants to learn more 
+	* 
+3. Greg looking for samples:    
+	* *GJR drawer 1, box/slot 2, and the box should say "Mexican pupae" on them.* 
+
+4. Read more papers for meta-analysis    
+	* What exact papers should I target?   
+	* **before doing this, phil trans paper on field/wild clocks before deciding what to do** 
+	
+
+
+2017-11-16: Meeting notes 
+
+Mike wade suggestion on on setting up behavioral assays with volatiles; talk to Tom, Shannon, Cheyenne, and read more 
+
+
+
+for #2,made 3rd round of edits and sent to out
+
+
 
 ------
 
  <div id='id-section129'/> 
 
-### Page 129:  
+### Page 129:  2017-11-17: Rhago notes , looked at  Feder papers again; refs- [Page 91: 2017-07-11](#id-section91). Reading rhagoletis papers   
+
+Feder et al. 1997; PNAS
+
+![](https://user-images.githubusercontent.com/4654474/32958303-0d7d2a00-cb8c-11e7-99df-c1a96d1208af.JPG)
+
+
+It possible for diapause depth to differ or become decoupled from diapause exit? Yes, if the rate of diapause termination is more directly related to eclosion timing. Ragland has a phys paper on how termination is biphasic, it'd be interesting to test this hypothesis by determining whether the first initial increase in metabolic rate or just overall metabolic rate in diapaused individuals better explains eclosion timing.   
+
+![](https://user-images.githubusercontent.com/4654474/32958304-0d924dae-cb8c-11e7-8e71-c5ff11407e98.JPG)
+
+Feder et al. 1997; Evolution
+
+![](https://user-images.githubusercontent.com/4654474/32958305-0da663ca-cb8c-11e7-8e7f-8bdb7b3d099e.JPG)
+
+![](https://user-images.githubusercontent.com/4654474/32958306-0db831f4-cb8c-11e7-961a-a3fd4b158904.JPG)
+
+
+Different way of thinking about "haw" alleles. Higher freq in me100 for example is overall higher in earlier eclosers, but there is a main effect of host. It is important to remember that hosts are different environments! So differences are not purely due to genetics. There really needs to be a reciprocal transplant of maggots on host fruit to determine if the performance under different genetic backgrounds is real. 
+
+![](https://user-images.githubusercontent.com/4654474/32958307-0dcb8c90-cb8c-11e7-9597-1be59edbf649.JPG)   
+
 
 ------
 
  <div id='id-section130'/> 
 
-### Page 130:  
+### Page 130: 2017-11-19  Initial reading of Philosophical Transactions B review articles on [wild clocks](http://rstb.royalsocietypublishing.org/content/372/1734) (http://rstb.royalsocietypublishing.org/content/372/1734)    
+
+Preface: Wild Clocks- preface and glossary 
+
+Chronobiologist; programmes....annoying term.   
+
+Outlines, compares, contrasts chronobiologist(lab) and ecologist; and approach to studying time---basically lab vs ecological setting. 
+
+They want to unite these two apprpoaches and thinking. 
+
+Summary of papers in the whole issue 
+
+1. Describe diff timing phenotypes as chronotypes and how they can be phenotypically plastic  ; a new area for integration between fields 
+2. next two articles talk about new tools that advance both feilds.   
+3. NExt 3 describe both chronobio and eco approaches in seasonal biology  
+4. 3 final ones consider interspecific interactions in setting biological timing (plant-pollinator interactions)
+
+
+
+### First paper in issue- Two sides of a coin: eco and chrono perspectives of timing in the wild   
+
+ref- Review article: Two sides of a coin: ecological and chronobiological perspectives of timing in the wild
+Barbara Helm, Marcel E. Visser, William Schwartz, Noga Kronfeld-Schor, Menno Gerkema, Theunis Piersma, Guy Bloch
+Phil. Trans. R. Soc. B 2017 372 20160246; DOI: 10.1098/rstb.2016.0246. Published 9 October 2017
+
+Key questions: 
+
+Chronobiologist    
+* How do organisms time biological processes? 
+
+Ecologist   
+* Why do they do it?   
+
+Timing can be both abiotic (light intensity)  and biotic ( veg cover). Organisms can respond to whatever timing cue by altering behaviors ( ie. migration). So the combination of external and internal timing influence the ultimate expression of when organisms do things. 
+
+**Focus on chronobiologists:**      
+
+> It identifies effects of components of time that act to modify internal clock time through entrainment of the clock (synchronization of internal clock time by environmental cues or ‘zeitgebers’ [25])   
+
+What the...
+
+Zeitgeber is the signal/cue that organisms synchronize their internal clock with? Don't know why chronobiologists would care about this per se. Its an abstraction that means very little on its own.  I really have no clue what this thing is and why it matters.        
+
+
+I'm assuming that chronobiologists just care about the internal clock? And how organisms can respond to different cues and match their clocks accordingly.   
+
+> Thus, chronobiologists increasingly conclude that pure consideration of internal clocks and photic entrainment, although perfected in laboratory settings, has insufficient explanatory power in the real world.     
+
+No citation with this claim...needs a meta analysis to support.    
+
+Paragraph focusing on ecological perspective doesn't link back to "Why do they do it" question. And the examples are focused on interspecific interactions. What they needed was to link back was to relate timing with fitness.   
+
+It seems like the big discrepancy between small scale and large scale temporal biologist is asking questions in terms of proximate or ultimate mechanisms.   
+
+> Importantly, therefore, an organism can be thought of as consisting of many clocks (millions in complex multi-cellular organisms; [45]) that are co-ordinated within the body in various ways (the ‘second revolution’ in chronobiology; [40]).   
+
+What....the emphasis should be on traits/characteristics which occur at certain times...not on "timing" in general. 
+
+
+Introduces chronotype without actually explaining what it is....   
+
+
+2017-11-20 cont'd    
+
+**Focus on Ecology:**     
+
+
+history- ecology minded chronobiologists ; Pat DeCoursey, Eberhard Gwinner, Serge Daan 
+
+thoughts: ecology inherently considers timing in its very definition-- study of how organisms interact with their environment over space and time  
+
+temporal niche- temporal segregation of resource use among potentially competing species or individuals sharing the same habitat   
+
+a good example would be the timing of bees and flowers whereby each party shifts their foraging or flowering time, respectively.   
+
+The things that shape timing    
+
+> Macro-ecologists
+have recently identified large-scale patterns in daily timing of mammals across the globe [68,71]. The proportion of nocturnal species is highest in arid regions and lowest at extremely high latitudes, while crepuscularity (activity during dawn and dusk) is correlated with longer twilight durations. Cathemerality (activity that is spread across day and night) is also more common in cold habitats and under long hours of daylight and twilight in the northern Holarctic region [68,72]    
+
+* Nocturnal species highest in arid regions and lowest at the poles    
+* dawn/dusk activity correlated with longer twilight durations    
+* activity over night and day is more common in cold habitats and under long daylight hours   
+
+
+**Converging key concepts of both fields** 
+
+**One problem they mention: plasticity**    
+
+Many studies focus on the ridgitity of rhythms, but there is a lot of plasticity. (I have no clue in what way they mean, they should define plasticity explicitly. ). This could be a source for the differences between the field and lab. (no duh, they are diff environments....). There is "less" plasticity int he lab....but during an entrainment or free-run experiment, animals may not respond consistently if you're analyzing at the unit of the day. 
+
+I think they mean plasticity as the ability to change timing in response to different environments.   
+
+but, then this:  
+
+> To some authors, a biological rhythm in a behaviour or physiological process in itself is seen as ‘plasticity’ (‘endogenous’ plasticity [102]; table 1a).    
+
+These authors would benefit from a more quantitative way of thinking about plasticity. Yes, behavior vs time can be imagined as plasticity, for a genotype!!!!, but how much this "matters" in an evolutionary framework is comparing among plasticity among genotypes. And plasticity can be imagined as the slope of the reaction norm    
+
+**And the link between the lab and field biologist could be this: Go out in the field and identify critical factors shaping variation in the timing of a trait; then go into the lab and dissect out that timing trait, even the molecular basis of it, by manipulating the critical factors identified from ecology. If we know the key genetic constituents and the important environmental factors, we can predict(with a predictive model) the timing of that trait out in nature....functional outcomes: inform species responses to climate change; predict matchiness between biocontrol agent and pest species;** They mention this later on in the article!        
+
+**Introducing more jargon: malleable temporal programme**; seriously wtf...        
+
+
+> Binary distinction between plasticity through the clock (entrainment) versus plasticity outside the clock (masking) falls short of capturing the ability of animals to adjust their rhythms to the environment    
+
+What...I didnt even know entrainment and masking was related to plasticity.....
+ 
+> Such plasticity is enhanced by its mechanistic complexity, whose many parts and multiple oscillators offer numerous ways of adjusting internal clock time, and thereby making the system less rigid. Therefore, complexity could be the key to addressing the apparent paradox of ‘How can a biological system be rigid and conserved, but at the same time plastic’? Resolving this paradox requires us to understand how the system works—what are the gears, how do they work together and how do they respond to ecologically relevant factors, such that the timing system as a whole generates plasticity.    
+
+
+
+------
+
+Reading this: Rattenborg, N. C., de la Iglesia, H. O., Kempenaers, B., Lesku, J. A., Meerlo, P., & Scriba, M. F. (2017). Sleep research goes wild: new methods and approaches to investigate the ecology, evolution and functions of sleep. Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences, 372(1734), 20160251. https://doi.org/10.1098/rstb.2016.0251    
+
+> The temporal programme of behaviours and physiology expressed by an organism is driven by a vast network of clocks and rhythms distributed across tissues throughout the body.   
+
+somebody tell me what "the temporal programme" is?   
+
+Organisms comprise of characteristics whose functional consequences are largely determined by the timing in their expression. This timing usually varies among different characteristics themselves.....
+
+
+Hypothalamus in mammals is the place where decisions about timing are made, specifically, the suprachiasmatic nucleus(SCN). It allows for organisms to take in light cues and entrain to it. It also transmits this information to other parts of the body. All non-SCN is known as the 'peripheral timing system'.    
+
+Why not just describe the process of how organisms receive input from external signals and respond to them....? That's basically figure 1. Because many external forces are cyclical in nature, organisms can respond cyclically as well in order to maximize survival and reproduction...
+
+All the things that can influence the cyclical behavior of animals (Zeitgebers):      
+
+* light  
+* predators  
+* food availability   
+
+cool walk through of how SCN ablated individuals(assuming mice) are arhytmic under controlled conditions; under natural conditions(light, social interactions, social cues, ambient temp, fear), SCN ablated individuals regain rhythmicity.     
+
+**this suggests that there is timing independent of SCN.** So there should be a role for peripheral tissues in contributing to the timing of behaviors/phys   
+
+Interesting point: blood glucose can be cyclical even if it is constant in the blood, but the cells in different tissues cycle their cell surface receptors..     
+ 
+
+Glucocorticoids can modulate input from Zeitgebers for peripheral tissues. 
+
+
 
 ------
 
  <div id='id-section131'/> 
 
-### Page 131:  
+### Page 131:  2017-11-21. Figured out code to subset out a dataframe based on a  time interval     
+
+This'll be useful for parsing out individual behavioral count data (from trikinetics rigs) based on monitor, position in monitor, then date+time. 
+
+```R
+#specify time interval:   
+
+t<-interval("2017-11-01 00:01:00","2017-11-13 23:00:00", tzone = tz(start))
+t
+
+##
+read in monitor data and change month into a number
+x<-read.table("Monitor6.txt")
+x$V3<-match(x$V3,month.abb)
+
+```
+
+   V1 V2 V3 V4       V5 V6 V7 V8 V9 V10 V11 V12 V13 V14 V15 V16 V17 V18 V19 V20
+1 46586 12 11 17 20:41:00  1  0  0  0   0   0   0   0   0   0   0   0   0   0   0
+2 46587 12 11 17 20:42:09  1  0  0  0   0   0   0   0   0   0   0   0   0   0   0
+3 46588 12 11 17 20:44:50  1  0  0  0   0   0   0   0   0   0   0   0   0   0   0
+4 46589 12 11 17 20:47:18  1  0  0  0   0   0   0   0   0   0   0   0   0   0   0
+5 46590 12 11 17 20:52:13  1  0  0  0   0   0   0   0   0   0   0   0   0   0   0
+6 46591 12 11 17 20:57:19  1  0  0  0   0   0   0   0   0   0   0   0   0   0   0
+  V21 V22 V23 V24 V25 V26 V27 V28 V29 V30 V31 V32 V33 V34 V35 V36 V37 V38 V39 V40
+1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+5   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  V41 V42 V43 V44
+1   0   0   0   0
+2   0   0   0   0
+3   0   0   0   0
+4   0   0   0   0
+5   0   0   0   0
+6   0   0   0   0
+
+```R
+#convert to time vector 
+test<-data.frame(time=strptime(time,"%Y-%m-%d %H:%M:%S",tz=tz(start)))
+
+#subset
+head(subset(test,time %within% t))
+```
+
+
+
+
 
 ------
 
  <div id='id-section132'/> 
 
-### Page 132:  
+### Page 132: 2017-11-21. Field clocks reviews - methods in field chronobiology    
+
+ref: Methods in field chronobiology
+Davide M. Dominoni, Susanne Åkesson, Raymond Klaassen, Kamiel Spoelstra, Martin Bulla
+Phil. Trans. R. Soc. B 2017 372 20160247; DOI: 10.1098/rstb.2016.0247. Published 9 October 2017   
+
+Critical questions:   
+
+1. How variable are rhythms within and between, taxa, species, populations, individuals?   
+2. What drives such variation? (env , internal state, sociality, anthropogenic disturbance, climate change)   
+3. Are rhythms of captive animals comparable to rhythms of animals in the wild?    
+4. How can we disentangle the relative contribution fo genes vs environmental drivers of rhythmicity in wild species?    
+5. Is variation in rhythms associated to fitness?   
+
+case study: incubation rhytms of biparental care in shorebirds. They incubate at different times, this varies among species and individuals. There is high phylo signal and the lenght of encubation is related to latitude, and some proxy for predation risk. 
+
+
+a diff approach: 
+
+insect migration- lidar tech; lazer beam detection 
+
+
+Another case study targeting whether we can relate circ to fitness: Measuring fitness consequences of circ organization in the wild. They created lesions in SCN in antelope squrrels and chipmunks and tracked their rhythms. Related to survival but not fitness? 
+
+Release of CK1etau tau allele reduces endogenous circ period; so they released control mice vs tau mutants and tau mutants reduced in frequency. 
+
+needs statistical methods  
+
+
+
 
 ------
 
  <div id='id-section133'/> 
 
-### Page 133:  
+### Page 133:  2017-11-24. Prep for meeting with Dan, 2017-11-28 + thoughts on diapause + to do list      
+
+Main stuff to talk about:   
+
+1. Reading 3 papers on odors in Rhago system  
+
+	* Linn, C. E., Dambroski, H. R., Feder, J. L., Berlocher, S. H., Nojima, S., & Roelofs, W. L. (2004). Postzygotic isolating factor in sympatric speciation in Rhagoletis flies: Reduced response of hybrids to parental host-fruit odors. Retrieved from http://www.pnas.org/content/101/51/17753.full.pdf   
+	
+	* Linn, C., Feder, J. L., Nojima, S., Dambroski, H. R., Berlocher, S. H., & Roelofs, W. (n.d.). Fruit odor discrimination and sympatric host race formation in Rhagoletis. Retrieved from http://www.pnas.org/content/100/20/11490.full.pdf    
+	
+	* Dambroski, H. R., Linn, C., Berlocher, S. H., Forbes, A. A., Roelofs, W., & Feder, J. L. (n.d.). THE GENETIC BASIS FOR FRUIT ODOR DISCRIMINATION IN RHAGOLETIS FLIES AND ITS SIGNIFICANCE FOR SYMPATRIC HOST SHIFTS. Source: Evolution, 59(9), 1953–1964. https://doi.org/10.1554/05-133.1     
+	
+
+Stuff on my mind that would be nice to discuss  
+
+
+1. Diapause phases:   
+
+Ragland 2009 JIP paper on biphasic MR. First logrithmic increase is termination? Then, the following exponential increase is post diapause?  
+
+ref:   
+
+Biphasic metabolic rate trajectory of pupal diapause termination and post-diapause development in a tephritid fly. (2009). Journal of Insect Physiology, 55(4), 344–350. https://doi.org/10.1016/J.JINSPHYS.2008.12.013    
+
+Has Dan Read the Kostal et al. 2017, PNAS paper? 
+
+refs: 
+
+Koštál, V., St Etina, T., Poupardin, R., Korbelová, J., & Bruce, A. W. (n.d.). Conceptual framework of the eco-physiological phases of insect diapause development justified by transcriptomic profiling. https://doi.org/10.1073/pnas.1707281114
+
+Koštál, V. (2006). Eco-physiological phases of insect diapause. Journal of Insect Physiology, 52(2), 113–127. https://doi.org/10.1016/j.jinsphys.2005.09.008
+
+Argues for distinct phases of diapause, but not very clear that they are separated -.-. They should have used a discriminant analysis, which would show better separation, suggesting that certain aspects of the transcriptome are associated with transitions in diapause among phases.   
+
+2. "Early eclosing alleles"   
+
+3. Data analysis 
+	* Show some figures   
+	* for mass specific metabolic rate, some values are negative   
+
+
+to do: 
+
+1. check undergrad schedules 
+2. get back to writing manuscripts
+3. generate spreadsheet for samples that need to be transferred to free run 
+	* update dataset   
+4. set up animals in trikinetics   
+5. write up methods so it is less painful later on   
+
 
 ------
 
