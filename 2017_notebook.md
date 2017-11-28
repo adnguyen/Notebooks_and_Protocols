@@ -12493,7 +12493,7 @@ to do:
 4. set up animals in trikinetics   
 5. write up methods so it is less painful later on   
 
-2017-11-28 meeting with Dan    
+### 2017-11-28 meeting with Dan     
 
 Fellowship opportunity with [Mozilla](https://science.mozilla.org/programs/fellowships)    
 
