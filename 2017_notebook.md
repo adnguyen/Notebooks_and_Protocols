@@ -165,7 +165,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 131: 2017-11-21](#id-section131). Figured out code to subset out a dataframe based on a  time interval    
 * [Page 132: 2017-11-21](#id-section132). Field clocks reviews - methods in field chronobiology    
 * [Page 133: 2017-11-24](#id-section133). Prep for meeting with Dan, 2017-11-28  + some thoughts on diapause + to do list          
-* [Page 134:](#id-section134).
+* [Page 134: 2017-11-28](#id-section134). Reading paper for lab meeting Overgaard and MacMillan 2017; Ann Rev Phys    
 * [Page 135:](#id-section135).
 * [Page 136:](#id-section136).
 * [Page 137:](#id-section137).
@@ -12493,12 +12493,75 @@ to do:
 4. set up animals in trikinetics   
 5. write up methods so it is less painful later on   
 
+2017-11-28 meeting with Dan    
+
+Fellowship opportunity with [Mozilla](https://science.mozilla.org/programs/fellowships)    
+
+
+Supplement request REU program, 6K  ; asking 
+
+-10 hour/week, spring, 30hr week summer 
+-1 paragraph highlighting my experience with REU(committment to mentoring) and Tat's traits and she'll benefit from this experience-excellent career biologist   
+
+Kylie for 3 credit , 10 hour   /week     
+- have to write a report at the end; showing sufficient udnerstanding about project and outcome  ; 4-6 pages ; 10 references    
+
+Dan looking at data,
+
+- What predicts non-diapause/diapause , using eclosions and metabolic rate, and weights  ; discriminant analysis  ; classificaiton tree 
+- 
+
+Going to biological rhythms [conference:](https://srbr.org/meetings/upcoming-meeting/registration/)     
+
+-Look into sable training for respirometry     
+
+
 
 ------
 
  <div id='id-section134'/> 
 
-### Page 134:  
+### Page 134: 2017-11-28. Reading paper for lab meeting Overgaard and MacMillan 2017; Ann Rev Phys 
+
+ref: Overgaard, J., & Macmillan, H. A. (2017). The Integrative Physiology of Insect Chill Tolerance. Annu. Rev. Physiol, 79, 187–208. https://doi.org/10.1146/annurev-physiol-022516-034142    
+
+Key negative impact of cold temperature is disruption of behaviors/motor function because cells are unable to maintain ion flux sufficient enough to fire action potentials.    
+
+Cold tolerance defined by freeze-tolerant (ice in the extracellular fluid) or avoidance (lowering freezing point of extracellular fluid). What....the heck?     
+
+SCP = super cooling point   
+
+**Chill susceptible** - dying to cold above freezing points or sensitive to low temperatures  
+ 
+**Chill tolerant** -  withstanding low temperatures to some degree but still die at temperatures above the SCP  
+ 
+### Measurements of cold susceptibility    
+
+CTmin - temperature at which motor function is lost  
+
+CCO - chill coma onset temperture ; temperature that induces complete paralysis   
+
+CCRT -  chill coma recovery time ; time required to recover the ability to stand following cold exposure   
+
+LT 50 - temperature at which 50% of individuals survive a given exposure duration    
+
+Lt50 ; time at a given temp that causes 50% mortality   
+
+Survival 
+
+**Ion homeostasis**  
+
+Main cause of cold damage: loss of motor function due to disuprtion of membrane function. One example is loss of membrane potential. Resting is usually -70mV but the onset of cold coma is when the membrane potential is -40 mV . This is called membrane depolarization, which can be simulated in locusts by adding extracellular K+ and reduces muscle force production in vitro.   
+	* This is cool, because it'd be interesting to determine what other threats to cold damage there are by comparing to a simulated K+ in the extracellular space    
+
+Cold damage can cause more extracellular K+ surrounding neurons, impairing the nervous system. K+ might be adaptive because it shuts down activity in the face of cold.      
+
+### Disruption of ion and water balance linked to chill injury    
+
+Two reasons:   
+
+1. cooling causes phase change in cell membranes and they lose their selective permeability   (refs 103; 104; look up )   
+2. ion balance is lost more gradually during cold exposures because thermaodynamics of passive diffusion are only slightly affected by temperature    
 
 ------
 
