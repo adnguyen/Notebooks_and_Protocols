@@ -166,7 +166,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 132: 2017-11-21](#id-section132). Field clocks reviews - methods in field chronobiology    
 * [Page 133: 2017-11-24](#id-section133). Prep for meeting with Dan, 2017-11-28  + some thoughts on diapause + to do list          
 * [Page 134: 2017-11-28](#id-section134). Reading paper for lab meeting Overgaard and MacMillan 2017; Ann Rev Phys    
-* [Page 135:](#id-section135).
+* [Page 135: 2017-11-29](#id-section135). Notes on how to analyze biological rhythm data     
 * [Page 136:](#id-section136).
 * [Page 137:](#id-section137).
 * [Page 138:](#id-section138).
@@ -12567,7 +12567,94 @@ Two reasons:
 
  <div id='id-section135'/> 
 
-### Page 135:  
+### Page 135: 2017-11-29. Notes on how to analyze biological rhythm data      
+
+Behaviors are cyclical and can be captured as a cosine function. Behaviors are time series essentially beacuse measurements depend on the preceding measurement. A periodogram is used to ID the dominant frequencies /periods/cycles(properties of a cosine function)  in a time series.   
+
+Discrete Fourier Transform, (synonymous with periodogram)   
+
+**one of the major goals is to estimate the dominant frequencies that occur in a stationary time series**   
+
+a good [resource:](https://onlinecourses.science.psu.edu/stat510/?q=book/export/html/52)    
+ 
+> Interpretation and Use: A relatively large value of P(j/n) indicates relatively more importance for the frequency j/n (or near j/n) in explaining the oscillation in the observed series.  P(j/n) is proportional to the squared correlation between the observed series and a cosine wave with frequency j/n.  The dominant frequencies might be used to fit cosine (or sine) waves to the data, or might be used simply to describe the important periodicities in the series.
+
+Fourier transform explained  https://www.r-bloggers.com/the-fourier-transform-explained-in-one-sentence/
+   
+
+
+### Trying different time intervals: 6 min (.1hr), 15 min(.25 hr), 30 min (0.5 hr)     
+
+30 min   
+
+![](https://user-images.githubusercontent.com/4654474/33392565-74245f6c-d50a-11e7-8b3f-78f2cbbb5776.png)    
+
+```R
+library(TSA)
+
+#30 min
+p0<-periodogram(counts30$counts30)
+p0
+
+dd0<-data.frame(freq=p0$freq,p0$spec)
+order0<-dd0[order(-dd0$p0.spec),]
+top0<-head(order0,10);top0
+1/top0$freq/2/24 # convert frequency into period and in units in days   
+```
+Vector of days of most important periods  
+
+[1] 18.000000  1.000000  0.972973  1.028571  9.000000  1.090909  1.058824  6.000000 36.000000  1.285714
+
+
+15 min  
+
+
+![](https://user-images.githubusercontent.com/4654474/33392564-74176bea-d50a-11e7-81fe-84f65761cfdd.png)   
+
+
+```R
+# 15 min 
+p<-periodogram(counts15$counts15)
+p
+
+dd<-data.frame(freq=p$freq,p$spec)
+order<-dd[order(-dd$p.spec),]
+top2<-head(order,10);top2
+
+1/top2$freq
+
+(1/top2$freq)/4 # to get hours 
+(1/top2$freq)/4/24 # days
+
+
+```
+Vector of days of most important periods     
+
+ [1] 17.5781250  0.9765625  1.0044643  1.0653409  1.0340074  1.0986328  8.7890625 35.1562500  0.9501689  1.2555804    
+ 
+ 
+6 min   
+
+![](https://user-images.githubusercontent.com/4654474/33392563-74065fee-d50a-11e7-8d52-4cdc8c405c7b.png)
+ 
+```R
+
+### 6 min
+p2<-periodogram(counts06$counts06,plot=TRUE,xlim=c(0,.02))
+dd2<-data.frame(freq=p2$freq,p2$spec)
+order2<-dd2[order(-dd2$p2.spec),]
+top10<-head(order2,10);top2
+1/top10$freq
+
+(1/top10$freq)/10 # to get hours 
+(1/top10$freq)/10/24 # days
+
+```
+
+Vector of days of most important periods     
+
+[1] 16.8750000  0.9642857  0.9926471  1.0227273  1.0546875  1.0887097 33.7500000  1.2500000  8.4375000  1.1637931
+   
 
 ------
 
