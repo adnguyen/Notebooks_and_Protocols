@@ -12655,6 +12655,72 @@ Vector of days of most important periods
 
 [1] 16.8750000  0.9642857  0.9926471  1.0227273  1.0546875  1.0887097 33.7500000  1.2500000  8.4375000  1.1637931
    
+**Diff way to do spectral analysis/periodogram; 15 min bins**    
+
+
+![](https://user-images.githubusercontent.com/4654474/33393494-59c7b576-d50d-11e7-9068-dfa4b27af27d.png)    
+
+```R
+##15 min bins
+sa1<-spectrum(counts15$counts15)
+
+spx<-sa1$freq/.25
+spy<-2*sa1$spec
+
+plot(spy~spx,xlab="freq",ylab="spectral density",type="l",xlim=c(0,.5))
+plot(spy~spx,xlab="freq",ylab="spectral density",type="l",xlim=c(0,.2))
+
+raw.spec1<-spec.pgram(counts15$counts15,taper=0,kernel=c(1,1,1),spans=3,detrend=FALSE)
+plot(raw.spec1,log="no",xlim=c(0,.02))
+1/.01*4/24
+
+rs2<-data.frame(f=raw.spec1$freq,s=raw.spec1$spec)
+1/head(rs2[order(rs2$s,decreasing=TRUE),],10)
+
+1/head(rs2[order(rs2$s,decreasing=TRUE),],10)[,1]/4/24 
+```
+Vector of days of most important periods    
+
+[1] 17.5781250  0.9765625  1.0044643  1.0653409  1.0340074  1.0986328  8.7890625 35.1562500  0.9501689  1.2555804
+
+Biological rhythms may not be stationary (non-stationary) and it is good to check this assumption with wavelet analyses. Wavelets transform the data into a set of small wavelets that are bounded which can be shrunk or expanded to fit the data.   
+
+### Doing a continuous wavelet analysis   
+
+We'll try to find the dominant period signal in the data (although we can get the instantaneous peak along each time point and the amplitude can vary).   
+
+![](https://user-images.githubusercontent.com/4654474/33393665-e83a2a1e-d50d-11e7-9111-45cb5bfa21f2.png)   
+
+```R
+library(dplR)
+##15 min
+wave.out <- morlet(y1 = counts15$counts15, p2 = 8, dj = 0.1, siglvl = 0.95)
+wave.out$period <- wave.out$period*4/24
+
+levs <- quantile(wave.out$Power, c(0, 0.25, 0.5, 0.75, 0.95, 1))
+#wavelet.plot(wave.out, wavelet.levels = levs)
+wavelet.plot(wave.out)
+
+
+wave.avg <- data.frame(power = apply(wave.out$Power, 2, mean), period = (wave.out$period))
+
+findpeaks(wave.avg$power)
+wave.avg[findpeaks(wave.avg$power)[2,2],] #period in days 
+
+plot(wave.avg$period, wave.avg$power, type = "l")
+abline(v=wave.avg[findpeaks(wave.avg$power)[2,2],])
+```
+**The period is very similar to previous estimates with periodograms**       
+
+wave.avg[findpeaks(wave.avg$power)[2,2],] #period in days
+      power   period
+67 32174.79 16.70188    
+
+
+
+![](https://user-images.githubusercontent.com/4654474/33393771-418697a6-d50e-11e7-88f1-aec08a94cd72.png)
+
+
 
 ------
 
