@@ -12712,9 +12712,10 @@ abline(v=wave.avg[findpeaks(wave.avg$power)[2,2],])
 ```
 **The period is very similar to previous estimates with periodograms**       
 
-wave.avg[findpeaks(wave.avg$power)[2,2],] #period in days
-      power   period
-67 32174.79 16.70188    
+wave.avg[findpeaks(wave.avg$power)[2,2],] #period in days   
+power   period     
+      
+32174.79 16.70188    
 
 
 
