@@ -166,8 +166,9 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 132: 2017-11-21](#id-section132). Field clocks reviews - methods in field chronobiology    
 * [Page 133: 2017-11-24](#id-section133). Prep for meeting with Dan, 2017-11-28  + some thoughts on diapause + to do list          
 * [Page 134: 2017-11-28](#id-section134). Reading paper for lab meeting Overgaard and MacMillan 2017; Ann Rev Phys    
-* [Page 135: 2017-11-29](#id-section135). Notes on how to analyze biological rhythm data     
-* [Page 136:](#id-section136).
+* [Page 135: 2017-11-29](#id-section135). Notes on how to analyze biological rhythm data  
+	* [2017-11-30 update](id-section135.1). dates not ordered, affecting results for wavelet anlayses, not periodogram analyses though     
+* [Page 136: 2017-11-30](#id-section136). Continuous Wavelet analyses for different time bins: 6 min, 15 min, 30 min, 1 hr     
 * [Page 137:](#id-section137).
 * [Page 138:](#id-section138).
 * [Page 139:](#id-section139).
@@ -12725,7 +12726,12 @@ power   period
 
 ![](https://user-images.githubusercontent.com/4654474/33393771-418697a6-d50e-11e7-88f1-aec08a94cd72.png)
 
-# yeah, mistake with the data itself, needed to convert date into a numeric and order the dates   
+------
+
+ <div id='id-section135.1'/>   
+ 
+
+# 2017-11-30 update: yeah, mistake with the data itself, needed to convert date into a numeric and order the dates   
 
 
 test code to show how to order dates:   
@@ -12749,14 +12755,130 @@ test code to show how to order dates:
 [10] "2017-10-25" "2017-10-26" "2017-10-27" "2017-10-28" "2017-10-29" "2017-10-30" "2017-10-31" "2017-11-01" "2017-11-02"
 [19] "2017-11-03" "2017-11-04" "2017-11-05" "2017-11-06" "2017-11-07" "2017-11-08" "2017-11-09" "2017-11-10" "2017-11-11"
 [28] "2017-11-12" "2017-11-13" "2017-11-14" "2017-11-15" "2017-11-16" "2017-11-17" "2017-11-18" "2017-11-19"
-```
+```  
+
+**results dont change much for the spectral analysis, but it does for the wavelet analyses** 
+
+
+
 
 ------
 
  <div id='id-section136'/> 
 
-### Page 136:  
+### Page 136:  2017-11-30. Continuous Wavelet analyses for different time bins: 6 min, 15 min, 30 min, 1 hr      
 
+**Take home/thoughts**: 
+* smaller time scales lets you detect daily fluctuations better and larger time scales lets you detect long term fluctuations better. 
+* All time bins can detect 24 hour periods      
+* Prob want to play with 1 hour time bin to detect period changes on the order of days  
+* 6 min bins good for detecting period within days    
+* See below to basically take the dominant period in the transformation  
+
+
+6 min time bins   
+
+![](https://user-images.githubusercontent.com/4654474/33451740-f0e6d556-d5dd-11e7-8cb4-b0ca5973fda8.png)  
+
+15 min time bins 
+
+![](https://user-images.githubusercontent.com/4654474/33451741-f0feb5fe-d5dd-11e7-833b-7026949cdfe4.png)  
+
+30 min time bins   
+
+![](https://user-images.githubusercontent.com/4654474/33451742-f119fb20-d5dd-11e7-9e5f-2a2d2d4dc053.png)  
+
+
+1 hr time bins
+
+![](https://user-images.githubusercontent.com/4654474/33451739-f0d1869c-d5dd-11e7-90f3-d32b313c3aa9.png)     
+
+
+### Code  
+
+
+```R
+library(dplR)
+
+# try 1 hour interval
+
+wave.out00 <- morlet(y1 = counts60$counts60, p2 = 8, dj = 0.1, siglvl = 0.95)
+#wave.out00$period <- wave.out00$period
+wavelet.plot(wave.out00)
+
+### 30 min
+wave.out0 <- morlet(y1 = counts30$counts30, p2 = 8, dj = 0.1, siglvl = 0.95)
+#wave.out0$period <- wave.out0$period/2/24
+wave.out0$period <- wave.out0$period/2
+wavelet.plot(wave.out0)
+
+##15 min
+wave.out <- morlet(y1 = counts15$counts15,counts15$day, p2 = 8, dj = 0.1, siglvl = 0.95)
+#wave.out$period <- wave.out$period/4/24
+wave.out$period <- wave.out$period/4
+
+#levs <- quantile(wave.out$Power, c(0, 0.25, 0.5, 0.75, 0.95, 1))
+#wavelet.plot(wave.out, wavelet.levels = levs)
+wavelet.plot(wave.out)
+
+
+wave.avg <- data.frame(power = apply(wave.out$Power, 2, mean), period = (wave.out$period))
+
+findpeaks(wave.avg$power)
+wave.avg[findpeaks(wave.avg$power)[2,2],] #period in hours 
+
+plot(wave.avg$period, wave.avg$power, type = "l")
+abline(v=wave.avg[findpeaks(wave.avg$power)[2,2],])
+
+##6 min
+wave.out2 <- morlet(y1 = counts06$counts06, p2 = 8, dj = 0.1, siglvl = 0.95)
+wave.out2$period <- wave.out2$period/10
+
+levs <- quantile(wave.out$Power, c(0, 0.25, 0.5, 0.75, 0.95, 1))
+#wavelet.plot(wave.out, wavelet.levels = levs)
+wavelet.plot(wave.out2)
+
+```
+
+
+### Finding the dominant period from the wavelet analysis   
+
+general code: 
+
+**6 min time bin example**     
+
+```R
+wave.avg2 <- data.frame(power = apply(wave.out2$Power, 2, mean), period = (wave.out2$period))
+
+findpeaks(wave.avg2$power)
+wave.avg2[findpeaks(wave.avg2$power)[3,2],] #period in hours
+   power   period
+80 12979.82 24.67491
+
+plot(wave.avg2$period, wave.avg2$power, type = "l")
+abline(v=wave.avg2[findpeaks(wave.avg2$power)[3,2],])
+```
+
+Fig showing power vs period   
+
+![](https://user-images.githubusercontent.com/4654474/33452244-9542df04-d5df-11e7-93d0-b1db29ffbff8.png)
+
+
+
+**15/30/60 min have same values **   
+
+```R
+wave.avg[findpeaks(wave.avg$power)[2,2],] #period in hours
+      power   period
+67 32160.23 25.05282
+```
+
+
+Fig showing power vs period   
+
+![](https://user-images.githubusercontent.com/4654474/33452245-95546fd0-d5df-11e7-8f58-4ab54626a938.png)
+
+  
 ------
 
  <div id='id-section137'/> 
