@@ -12571,6 +12571,18 @@ Two reasons:
 
 Behaviors are cyclical and can be captured as a cosine function. Behaviors are time series essentially beacuse measurements depend on the preceding measurement. A periodogram is used to ID the dominant frequencies /periods/cycles(properties of a cosine function)  in a time series.   
 
+Period (T) is the number of time steps it takes to complete a single cycle of cosine function   
+
+Frequency is omega = 1/T; fraction of the cycle that's completed in a single time period    
+
+converting freq to period:  
+
+> The dominant peak area occurs somewhere around a frequency of 0.05.  Investigation of the periodogram values indicates that the peak occurs at nearly exactly this frequency.  This corresponds to a period of about 1/.05 = 20 time periods.  That’s 10 years, since this is semi-annual data.  Thus there appears to be a dominant periodicity of about 10 years in sunspot activity.
+
+so confused about the units of [frequency](http://www.itl.nist.gov/div898/software/dataplot/refman1/ch2/periodog.pdf)   
+
+> The frequency is measured in cycles per unit time where unit time is defined to be the distance between adjacent points. A frequency of 0 corresponds to an infinite cycle while a frequency of 0.5 corresponds to a cycle of 2 data points. Equi-spaced time series are inherently limited to detecting frequencies between 0 and 0.5.
+
 Discrete Fourier Transform, (synonymous with periodogram)   
 
 **one of the major goals is to estimate the dominant frequencies that occur in a stationary time series**   
@@ -12662,14 +12674,6 @@ Vector of days of most important periods
 
 ```R
 ##15 min bins
-sa1<-spectrum(counts15$counts15)
-
-spx<-sa1$freq/.25
-spy<-2*sa1$spec
-
-plot(spy~spx,xlab="freq",ylab="spectral density",type="l",xlim=c(0,.5))
-plot(spy~spx,xlab="freq",ylab="spectral density",type="l",xlim=c(0,.2))
-
 raw.spec1<-spec.pgram(counts15$counts15,taper=0,kernel=c(1,1,1),spans=3,detrend=FALSE)
 plot(raw.spec1,log="no",xlim=c(0,.02))
 1/.01*4/24
