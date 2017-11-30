@@ -12774,7 +12774,7 @@ test code to show how to order dates:
 * Prob want to play with 1 hour time bin to detect period changes on the order of days  
 * 6 min bins good for detecting period within days    
 * See below to basically take the dominant period in the transformation  
-
+* **Remember power is equivalent to the amplitude squared!!!**
 
 6 min time bins   
 
@@ -12878,6 +12878,49 @@ Fig showing power vs period
 
 ![](https://user-images.githubusercontent.com/4654474/33452245-95546fd0-d5df-11e7-8f58-4ab54626a938.png)
 
+### A cool thing to explore is taking a slice of the period and plotting power vs time   
+
+**this'll let you explore the amplitude at a given period across time**   
+
+
+to my understanding, this is very similar to discrete wavelet analysis   
+
+trying it out for 6 min time bins  
+
+identify the periods I want:  
+
+```R
+wave.out2$period
+ [1]  0.1033044  0.1107189  0.1186656  0.1271826  0.1363109  0.1460944  0.1565801  0.1678184  0.1798633  0.1927728
+[11]  0.2066087  0.2214378  0.2373311  0.2543652  0.2726219  0.2921889  0.3131603  0.3356369  0.3597267  0.3855455
+[21]  0.4132175  0.4428755  0.4746622  0.5087304  0.5452437  0.5843777  0.6263205  0.6712737  0.7194534  0.7710910
+[31]  0.8264349  0.8857510  0.9493244  1.0174607  1.0904874  1.1687555  1.2526411  1.3425475  1.4389068  1.5421821
+[41]  1.6528698  1.7715020  1.8986489  2.0349215  2.1809748  2.3375109  2.5052822  2.6850950  2.8778135  3.0843642
+[51]  3.3057397  3.5430041  3.7972977  4.0698429  4.3619496  4.6750219  5.0105644  5.3701899  5.7556271  6.1687284
+[61]  6.6114793  7.0860081  7.5945954  8.1396859  8.7238993  9.3500438 10.0211288 10.7403799 11.5112541 12.3374567
+[71] 13.2229587 14.1720162 15.1891909 16.2793717 17.4477986 18.7000875 20.0422575 21.4807598 23.0225083 24.6749134
+[81] 26.4459174
+```
+
+Grab the 4 and 8 hour periods I care about (54 and 64)     
+
+```R
+#4 hour rhythms
+plot(wave.out2$x/10/24,wave.out2$Power[,54])
+findpeaks(wave.out2$Power[,54])
+
+#8 hour rhythms
+plot(wave.out2$x/10/24,wave.out2$Power[,64])
+findpeaks(wave.out2$Power[,64])
+```
+
+**4 hour**   
+
+![](https://user-images.githubusercontent.com/4654474/33453049-3c45dcc8-d5e2-11e7-9746-01dc46aa350d.png)
+
+**8 hour**   
+
+![](https://user-images.githubusercontent.com/4654474/33453048-3c33c984-d5e2-11e7-8e81-39bbfe990b5c.png)    
   
 ------
 
