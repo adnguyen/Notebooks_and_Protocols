@@ -12596,7 +12596,9 @@ Fourier transform explained  https://www.r-bloggers.com/the-fourier-transform-ex
    
 
 
-### Trying different time intervals: 6 min (.1hr), 15 min(.25 hr), 30 min (0.5 hr)     
+### Trying different time intervals: 6 min (.1hr), 15 min(.25 hr), 30 min (0.5 hr) on h4o4 
+
+### some notes: h4o4, 35 days, first 8 days are entrainment (16L:8D), remaining days are free-run (dark)    
 
 30 min   
 
@@ -12690,7 +12692,7 @@ Vector of days of most important periods
 
 Biological rhythms may not be stationary (non-stationary) and it is good to check this assumption with wavelet analyses. Wavelets transform the data into a set of small wavelets that are bounded which can be shrunk or expanded to fit the data.   
 
-### Doing a continuous wavelet analysis   
+### Doing a continuous wavelet analysis  on h4o4   
 
 We'll try to find the dominant period signal in the data (although we can get the instantaneous peak along each time point and the amplitude can vary).   
 
@@ -12926,7 +12928,75 @@ findpeaks(wave.out2$Power[,64])
 
  <div id='id-section137'/> 
 
-### Page 137:  
+### Page 137: 2017-12-03. Discrete wavelet analysis on h404; 15 min bins    
+
+The discrete wavelet analysis lets you look at the  power for a given period window.   
+
+### Ok, we can set the window, looking at the circadian window (detail)   
+
+```R
+#circadian detail
+Jcirc <- floor(log2(round(24/.25)))
+DJt_circ <- wavMRDSum(counts15$counts15,levels=Jcirc ,keep.smooth=FALSE, keep.details=TRUE,reflect=TRUE,wavelet="s12",xform="modwt")
+
+plot(counts15$day,DJt_circ,col=rgb(0,0,.5,.5),type="l")
+```
+
+### Plotting the circadian detail itself    
+
+![](https://user-images.githubusercontent.com/4654474/33526408-ccf69888-d80e-11e7-97b9-b26a37bf41ee.png)   
+
+
+Calculating bout intervals ( I'm thinking about it as instantaneous period), taking mid points of peak amplitudes and subtracting them from the next peak midpoint (units are in time then).   
+
+
+```R
+library(pracma)
+IBL<-data.frame(findpeaks(DJt_circ))
+names(IBL)<-c("Height","mid_time","initial_time","final_time")
+IBL
+diff(IBL$mid_time)/4
+hist(diff(IBL$mid_time)/4)
+```    
+
+### Plotting histogram to see the range of values   (x axis is in days )    
+
+![](https://user-images.githubusercontent.com/4654474/33526331-8771b44c-d80d-11e7-9549-95e87ad4bb70.png)
+
+### Ok, plotting bout intervals vs time    
+
+```R
+plot(IBL$mid_time[-35]/4/24,diff(IBL$mid_time)/4,xlab="time (day)",ylab="interval in hr",las=1)
+#lines(loess(diff(IBL$mid_time)~IBL$mid_time[-31],span=1))
+s<-(IBL$mid_time[-35]/4/24)
+lines(loess(diff(IBL$mid_time)/4~s,span=1))
+abline(v=8,lty="dotdash")
+```
+
+![](https://user-images.githubusercontent.com/4654474/33526370-3b57ed6e-d80e-11e7-8a54-beb71d0a4d0c.png)   
+
+Notes: I'm analyzing both entrainment and free run data together. I could separate.    
+
+
+### Looking at highest detail to explore if we want to see if there are more long term patterns    
+
+```R
+#highest detail
+DJt_circ <- wavMRDSum(counts15$counts15,levels=8 ,keep.smooth=FALSE, keep.details=TRUE,reflect=TRUE,wavelet="s12",xform="modwt")  
+```
+wavelet detail   
+
+![](https://user-images.githubusercontent.com/4654474/33526708-1de0e7d6-d813-11e7-9391-c49f7eaf6df3.png)   
+
+histogram  
+
+![](https://user-images.githubusercontent.com/4654474/33526734-6b9e33fc-d813-11e7-83d6-b9e432a0dd74.png)
+
+bout intervals   
+
+![](https://user-images.githubusercontent.com/4654474/33526751-9c937a8a-d813-11e7-98e3-013f0bb1f390.png)   
+
+
 
 ------
 
