@@ -169,7 +169,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 135: 2017-11-29](#id-section135). Notes on how to analyze biological rhythm data  
 	* [2017-11-30 update](id-section135.1). dates not ordered, affecting results for wavelet anlayses, not periodogram analyses though     
 * [Page 136: 2017-11-30](#id-section136). Continuous Wavelet analyses for different time bins: 6 min, 15 min, 30 min, 1 hr     
-* [Page 137:](#id-section137).
+* [Page 137: 2017-12-03](#id-section137). Discrete wavelet analysis on h404; 15 min bins    
 * [Page 138:](#id-section138).
 * [Page 139:](#id-section139).
 * [Page 140:](#id-section140).
