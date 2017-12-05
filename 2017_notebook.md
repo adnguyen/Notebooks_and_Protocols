@@ -170,7 +170,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 	* [2017-11-30 update](id-section135.1). dates not ordered, affecting results for wavelet anlayses, not periodogram analyses though     
 * [Page 136: 2017-11-30](#id-section136). Continuous Wavelet analyses for different time bins: 6 min, 15 min, 30 min, 1 hr     
 * [Page 137: 2017-12-03](#id-section137). Discrete wavelet analysis on h404; 15 min bins    
-* [Page 138:](#id-section138).
+* [Page 138: 2017-12-05](#id-section138). Prepping meeting with Dan on 2017-12-07, 10:30AM
 * [Page 139:](#id-section139).
 * [Page 140:](#id-section140).
 * [Page 141:](#id-section141).
@@ -13002,7 +13002,80 @@ bout intervals
 
  <div id='id-section138'/> 
 
-### Page 138:  
+### Page 138: 2017-12-05. Prepping meeting with Dan on 2017-12-07, 10:30AM   
+
+Stuff to go over:  
+
+1. Go over data analysis   
+	* Discriminant analysis - difficult to separate  non-diapause(high and low MR), diapause   
+	* Analyzing biological rhythms   
+		* [Periodograms](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#trying-different-time-intervals-6-min-1hr-15-min25-hr-30-min-05-hr-on-h4o4)  at different time bins    
+		* [Continuous wavelet anlaysis](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#page-136--2017-11-30-continuous-wavelet-analyses-for-different-time-bins-6-min-15-min-30-min-1-hr) at different time bins -[identifying dominant period](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#finding-the-dominant-period-from-the-wavelet-analysis)   
+		* [Discrete wavelet analysis](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#page-137-2017-12-03-discrete-wavelet-analysis-on-h404-15-min-bins)  
+
+
+**summary table**    
+
+| Time_bin|Method      | Frequency_level| Estimate_day| Estimate_hr|
+|--------:|:-----------|---------------:|------------:|-----------:|
+|     1.00|Periodogram |               1|   18.0000000|   432.00000|
+|     1.00|Periodogram |               2|    1.0580000|    25.41176|
+|     0.50|Periodogram |               1|   18.0000000|   432.00000|
+|     0.50|Periodogram |               2|    0.9729000|    23.35135|
+|     0.25|Periodogram |               1|   16.8750000|   405.00000|
+|     0.25|Periodogram |               2|    1.0227000|    24.54545|
+|     0.10|Periodogram |               1|   16.8750000|   405.00000|
+|     0.10|Periodogram |               2|    0.9926000|    23.82353|
+|     1.00|CWT         |               2|    1.0438670|    25.05282|
+|     0.50|CWT         |               2|    1.0438670|    25.05282|
+|     0.25|CWT         |               2|    1.0438670|    25.05282|
+|     0.10|CWT         |               2|    1.0281213|    24.67491|
+|     0.25|DWT         |               2|    0.9353554|    22.44853|   
+
+
+
+2. Paper discussions  
+
+refs:   
+
+	* Helm, B., Visser, M. E., Schwartz, W., Kronfeld-Schor, N., Gerkema, M., Piersma, T., & Bloch, G. (2017). Two sides of a coin: ecological and chronobiological perspectives of timing in the wild. Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences, 372(1734), 20160246. https://doi.org/10.1098/rstb.2016.0246   
+	* Bulla, M., Valcu, M., Dokter, A. M., Dondua, A. G., Kosztolányi, A., Rutten, A. L., … Kempenaers, B. (2016). Unexpected diversity in socially synchronized rhythms of shorebirds. Nature, 540(7631), 109–113. https://doi.org/10.1038/nature20563   
+
+
+3. Decide about when to take Rhagos out of fridge    
+
+|         |      |month (30 day intervals) |        |
+|:----------|:-----------|:------------------------|:----------|
+|Cohort_day |Cohort_date |4                        |5          |
+|2          |2017-08-25  |2017-12-23               |2018-01-22 |
+|3          |2017-08-26  |2017-12-24               |2018-01-23 |
+|4          |2017-08-27  |2017-12-25               |2018-01-24 |
+|5          |2017-08-28  |2017-12-26               |2018-01-25 |
+|10         |2017-09-02  |2017-12-31               |2018-01-30 |
+|11         |2017-09-03  |2018-01-01               |2018-01-31 |
+|12         |2017-09-04  |2018-01-02               |2018-02-01 |
+|13         |2017-09-05  |2018-01-03               |2018-02-02 |
+|14         |2017-09-06  |2018-01-04               |2018-02-03 |
+|16         |2017-09-08  |2018-01-06               |2018-02-05 |
+|18         |2017-09-10  |2018-01-08               |2018-02-07 |
+|19         |2017-09-11  |2018-01-09               |2018-02-08 |
+|20         |2017-09-12  |2018-01-10               |2018-02-09 |
+|1          |2017-09-22  |2018-01-21               |2018-02-20 |
+|2          |2017-09-23  |2018-01-22               |2018-02-21 |
+|3          |2017-09-24  |2018-01-23               |2018-02-22 |
+|4          |2017-09-25  |2018-01-24               |2018-02-23 |
+|5          |2017-09-26  |2018-01-25               |2018-02-24 |
+|6          |2017-09-27  |2018-01-26               |2018-02-25 |
+|7          |2017-09-28  |2018-01-27               |2018-02-26 |
+|8          |2017-09-29  |2018-01-28               |2018-02-27 |
+|9          |2017-09-30  |2018-01-29               |2018-02-28 |
+|10         |2017-10-01  |2018-01-30               |2018-03-01 |
+|11         |2017-10-02  |2018-01-31               |2018-03-02 |
+|12         |2017-10-03  |2018-02-01               |2018-03-03 |      
+
+
+
+ 
 
 ------
 
