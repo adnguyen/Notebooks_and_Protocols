@@ -13038,9 +13038,9 @@ Stuff to go over:
 
 refs:   
 
-	* Helm, B., Visser, M. E., Schwartz, W., Kronfeld-Schor, N., Gerkema, M., Piersma, T., & Bloch, G. (2017). Two sides of a coin: ecological and chronobiological perspectives of timing in the wild. Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences, 372(1734), 20160246. https://doi.org/10.1098/rstb.2016.0246     
+* Helm, B., Visser, M. E., Schwartz, W., Kronfeld-Schor, N., Gerkema, M., Piersma, T., & Bloch, G. (2017). Two sides of a coin: ecological and chronobiological perspectives of timing in the wild. Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences, 372(1734), 20160246. https://doi.org/10.1098/rstb.2016.0246     
 	
-	* Bulla, M., Valcu, M., Dokter, A. M., Dondua, A. G., Kosztolányi, A., Rutten, A. L., … Kempenaers, B. (2016). Unexpected diversity in socially synchronized rhythms of shorebirds. Nature, 540(7631), 109–113. https://doi.org/10.1038/nature20563     
+* Bulla, M., Valcu, M., Dokter, A. M., Dondua, A. G., Kosztolányi, A., Rutten, A. L., … Kempenaers, B. (2016). Unexpected diversity in socially synchronized rhythms of shorebirds. Nature, 540(7631), 109–113. https://doi.org/10.1038/nature20563     
 	
 	
 
