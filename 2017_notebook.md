@@ -13007,7 +13007,47 @@ bout intervals
 Stuff to go over:  
 
 1. Go over data analysis   
-	* Discriminant analysis - difficult to separate  non-diapause(high and low MR), diapause   
+	* Discriminant analysis - difficult to separate  non-diapause(high and low MR), diapause    
+
+just to recap, here is eclosion data:   
+
+![](https://user-images.githubusercontent.com/4654474/33722529-39499612-db38-11e7-95c7-d3f16d4dcd70.png)
+
+pre-designated groups based on cut off:   
+
+```R
+trait2$groups<-ifelse(trait2$MR15< 0.00375,ifelse(trait2$eclosion_days<35,"non-diapause_lowMR","diapause"),"non-diapause_highMR")
+```
+
+see fig for day 15 mr   
+
+![](https://user-images.githubusercontent.com/4654474/33722488-1d4b9d02-db38-11e7-883f-9c49ed0af3eb.png)
+
+
+So I'm trying to discriminate diapause classs based on: MR, weight, eclosion day.   
+
+```R
+fit2<-qda(groups~mass_day10+mass_day14+MR11+MR15+eclosion_days,data=trait2,CV=FALSE)
+```
+
+Discriminant anaysis biplots: predicted groups   
+
+![](https://user-images.githubusercontent.com/4654474/33722402-d515c800-db37-11e7-938e-d723cd87c7b5.png)    
+
+Discriminant anaysis biplots: pre-designated groups   
+
+![](https://user-images.githubusercontent.com/4654474/33722303-9da1df76-db37-11e7-9d0c-3edc5dc991c9.png)	  
+
+Confusion matrix
+	
+|                    | diapause| non-diapause_highMR| non-diapause_lowMR|
+|:-------------------|--------:|-------------------:|------------------:|
+|diapause            |       21|                  17|                  0|
+|non-diapause_highMR |       26|                 120|                  2|
+|non-diapause_lowMR  |        0|                   3|                  4|   
+
+**75.12% accurrate**   
+
 	* Analyzing biological rhythms   
 		* [Periodograms](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#trying-different-time-intervals-6-min-1hr-15-min25-hr-30-min-05-hr-on-h4o4)  at different time bins    
 		* [Continuous wavelet anlaysis](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#page-136--2017-11-30-continuous-wavelet-analyses-for-different-time-bins-6-min-15-min-30-min-1-hr) at different time bins -[identifying dominant period](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#finding-the-dominant-period-from-the-wavelet-analysis)   
@@ -13076,6 +13116,8 @@ refs:
 |11         |2017-10-02  |2018-01-31               |2018-03-02 |
 |12         |2017-10-03  |2018-02-01               |2018-03-03 |      
 
+
+2017-12-07 meeting with Dan Notes:   
 
 
  
