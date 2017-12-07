@@ -13048,10 +13048,10 @@ Confusion matrix
 
 **75.12% accurrate**   
 
-	* Analyzing biological rhythms   
-		* [Periodograms](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#trying-different-time-intervals-6-min-1hr-15-min25-hr-30-min-05-hr-on-h4o4)  at different time bins    
-		* [Continuous wavelet anlaysis](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#page-136--2017-11-30-continuous-wavelet-analyses-for-different-time-bins-6-min-15-min-30-min-1-hr) at different time bins -[identifying dominant period](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#finding-the-dominant-period-from-the-wavelet-analysis)   
-		* [Discrete wavelet analysis](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#page-137-2017-12-03-discrete-wavelet-analysis-on-h404-15-min-bins)  
+* Analyzing biological rhythms   
+	* [Periodograms](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#trying-different-time-intervals-6-min-1hr-15-min25-hr-30-min-05-hr-on-h4o4)  at different time bins    
+	* [Continuous wavelet anlaysis](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#page-136--2017-11-30-continuous-wavelet-analyses-for-different-time-bins-6-min-15-min-30-min-1-hr) at different time bins -[identifying dominant period](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#finding-the-dominant-period-from-the-wavelet-analysis)   
+	* [Discrete wavelet analysis](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#page-137-2017-12-03-discrete-wavelet-analysis-on-h404-15-min-bins)  
 
 
 **summary table**    
