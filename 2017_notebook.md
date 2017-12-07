@@ -13119,8 +13119,17 @@ refs:
 
 2017-12-07 meeting with Dan Notes:   
 
+For next week:   
 
- 
+* scale up to handful of more individuals. 
+* do at all possible bins   
+* all analyses  
+
+Email Tom's data to Tom, Dan, and Greg to coordinate and decide what time to take samples out of the fridge 4, 4.5 or 5 months. 
+
+Go over next week and read 2 more papers, (I choose).   
+
+Monday go to dimensions biodiv data wrangling meeting.   
 
 ------
 
