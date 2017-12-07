@@ -13129,6 +13129,14 @@ Email Tom's data to Tom, Dan, and Greg to coordinate and decide what time to tak
 
 Go over next week and read 2 more papers, (I choose).   
 
+1. Research article: Marine biorhythms: bridging chronobiology and ecology
+Martin Bulla, Thomas Oudman, Allert I. Bijleveld, Theunis Piersma, Charalambos P. Kyriacou
+Phil. Trans. R. Soc. B 2017 372 20160253; DOI: 10.1098/rstb.2016.0253. Published 9 October 2017     
+2. Review article: Flexible clock systems: adjusting the temporal programme
+Daan R. van der Veen, Sjaak J. Riede, Paul D. Heideman, Michaela Hau, Vincent van der Vinne, Roelof A. Hut
+Phil. Trans. R. Soc. B 2017 372 20160254; DOI: 10.1098/rstb.2016.0254. Published 9 October 2017       
+
+
 Monday go to dimensions biodiv data wrangling meeting.   
 
 ------
