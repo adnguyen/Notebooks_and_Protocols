@@ -13165,7 +13165,7 @@ These data were manually extracted from the trikinetics monitors and are a repre
 
 ### ok, i'll estimate the dominant period with periodogram   
 
-making a function first  
+making a function first: estimate the dominant 3 peaks of the periodogram and convert to days     
 
 ```R
 ##making a function to grab top period values 
