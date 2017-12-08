@@ -171,7 +171,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 136: 2017-11-30](#id-section136). Continuous Wavelet analyses for different time bins: 6 min, 15 min, 30 min, 1 hr     
 * [Page 137: 2017-12-03](#id-section137). Discrete wavelet analysis on h404; 15 min bins    
 * [Page 138: 2017-12-05](#id-section138). Prepping meeting with Dan on 2017-12-07, 10:30AM
-* [Page 139:](#id-section139).
+* [Page 139: 2017-12-08](#id-section139). behavioral data (trikinetics) data parsing update--fixing date order again; update from [2017-11-30 update](id-section135.1).
 * [Page 140:](#id-section140).
 * [Page 141:](#id-section141).
 * [Page 142:](#id-section142).
@@ -13143,7 +13143,28 @@ Monday go to dimensions biodiv data wrangling meeting.
 
  <div id='id-section139'/> 
 
-### Page 139:  
+### Page 139:  2017-12-08. behavioral data (trikinetics) data parsing update--fixing date order again; update from [2017-11-30 update](id-section135.1).   
+
+
+Showing code to accurately order dates:  
+
+```R
+bins15=c(paste0(rep(c(paste0(0,0:9),10:23), each=4),":", c("00",15,30,45))[-1],"24:00")
+all.data$bins15=cut(all.data$time2,breaks=seq(0,24,.25),labels=bins15)
+
+nall.data15<-ddply(all.data,.(uniqueID,date,experiment,bins15),summarize,counts=sum(counts))
+nall.data15_2<-na.omit(ddply(nall.data15,.(uniqueID,experiment),transform,order(date)))
+nall.data15_3<-ddply(nall.data15_2,.(uniqueID),transform,time=seq(1,length(bins15),1))
+#write.csv(nall.data15_3,"2017-12-08_15min_bins_subset_behavior.csv")
+ggplot(nall.data15_3,aes(x=time,y=counts))+geom_line()+facet_grid(uniqueID~.,scales="free")
+```
+
+![](https://user-images.githubusercontent.com/4654474/33779601-927e23c2-dc1b-11e7-8d8a-a6a6b57f2ee8.png)   
+
+These data were manually extracted from the trikinetics monitors and are a represented set of individuals to estimate biological rhythms    
+
+
+
 
 ------
 
