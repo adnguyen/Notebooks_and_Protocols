@@ -13146,7 +13146,7 @@ Monday go to dimensions biodiv data wrangling meeting.
 ### Page 139:  2017-12-08. behavioral data (trikinetics) data parsing update--fixing date order again; update from [2017-11-30 update](id-section135.1).   
 
 
-Showing code to accurately order dates:  
+Showing code to accurately order dates for 15 min bin:  
 
 ```R
 bins15=c(paste0(rep(c(paste0(0,0:9),10:23), each=4),":", c("00",15,30,45))[-1],"24:00")
@@ -13163,9 +13163,113 @@ ggplot(nall.data15_3,aes(x=time,y=counts))+geom_line()+facet_grid(uniqueID~.,sca
 
 These data were manually extracted from the trikinetics monitors and are a represented set of individuals to estimate biological rhythms    
 
+### ok, i'll estimate the dominant period with periodogram   
+
+making a function first  
+
+```R
+##making a function to grab top period values 
+per.fun<-function(ts=nall.data15_3$counts){
+m<-data.frame(freq=periodogram(ts,plot=FALSE)$freq,spec=periodogram(ts,plot=FALSE)$spec)
+return(1/(m[order(m$spec,decreasing=TRUE),][1:3,1])/4/24)
+}
+```
+
+Using function in ddply, so estimate dominant 3 peaks for each unique id
+
+```R
+### using function in ddply 
+## for each unique ID
+test<-ddply(nall.data15_3,.(uniqueID),function(sub) per.fun(sub$counts))
+#summary(nall.data15_3$uniqueID)
+test
+```
+
+|uniqueID |         V1|         V2|         V3|
+|:--------|----------:|----------:|----------:|
+|a10o49   |  0.9411765|  0.9795918|  0.8727273|
+|a10o73   |  0.9615385|  1.0000000| 25.0000000|
+|a10w12   |  1.0000000|  0.9600000| 24.0000000|
+|a10w15   |  0.9469697|  1.0416667| 10.4166667|
+|a11w26   | 20.8333333|  0.9920635|  0.9469697|
+|a12b43   | 45.0000000|  0.9782609|  0.9574468|
+|a12b6    | 41.6666667|  1.0162602|  1.1574074|
+|a12w40   | 45.0000000| 22.5000000| 11.2500000|
+|a13o11   |  0.9991776| 37.9687500|  0.9492187|
+|a13o28   | 25.0000000|  8.3333333|  0.8928571|
+|a2b23    |  0.8823529|  1.0000000|  7.5000000|
+|a2b26    |  1.0000000|  0.9375000| 30.0000000|
+|a3o51    |  0.5000000| 30.0000000| 10.0000000|
+|a4o15    | 27.0000000|  1.0000000|  0.9642857|
+|a4w66    | 31.2500000|  7.8125000| 15.6250000|
+|a5b25    | 30.0000000|  0.9090909|  0.9677419|
+|a5w63    |  0.9000000|  0.9310345| 27.0000000|
+|a5w73    |  1.0000000|  0.9642857| 13.5000000|
+|h2b25    |  1.0101010| 33.3333333| 16.6666667|
+|h4o4     |  1.0227273| 33.7500000|  0.9642857|
+|h4w10    |  1.0000000|  0.5000000|  0.9411765|
+|h5o22    | 30.0000000| 15.0000000|  1.0000000|  
 
 
 
+
+Using function in ddply, so estimate dominant 3 peaks for each unique id and expeirment (entrianment vs free run )    
+
+
+```R
+### for each unique ID and experiment  
+test2<-ddply(nall.data15_3,.(uniqueID,experiment),function(sub) per.fun(sub$counts))
+test2
+```  
+
+|uniqueID |experiment  |         V1|         V2|         V3|
+|:--------|:-----------|----------:|----------:|----------:|
+|a10o49   |Entrainment |  1.0000000|  0.5000000| 10.0000000|
+|a10o49   |Free-run    |  0.9492187| 37.9687500|  0.8629261|
+|a10o73   |Entrainment |  1.0000000|  1.1250000|  0.5294118|
+|a10o73   |Free-run    |  0.9803922|  0.9259259|  0.3333333|
+|a10w12   |Entrainment |  1.0000000|  0.5000000|  1.1111111|
+|a10w12   |Free-run    |  0.9991776| 37.9687500|  9.4921875|
+|a10w15   |Entrainment |  1.0714286|  0.9375000|  0.5000000|
+|a10w15   |Free-run    |  1.0044643|  0.9375000| 14.0625000|
+|a11w26   |Entrainment |  0.9375000|  1.0714286|  0.5000000|
+|a11w26   |Free-run    |  0.9375000| 14.0625000|  0.1019022|
+|a12b43   |Entrainment |  1.0416667|  0.5208333|  0.3472222|
+|a12b43   |Free-run    | 37.5000000|  0.9615385|  0.9868421|
+|a12b6    |Entrainment |  0.9375000|  1.0546875|  8.4375000|
+|a12b6    |Free-run    | 32.5520833| 10.8506944|  1.2520032|
+|a12w40   |Entrainment |  1.0416667|  0.4901961|  0.3333333|
+|a12w40   |Free-run    | 37.5000000| 12.5000000|  9.3750000|
+|a13o11   |Entrainment |  1.0416667|  0.4901961|  1.6666667|
+|a13o11   |Free-run    | 30.0000000|  0.9677419|  1.0000000|
+|a13o28   |Entrainment |  1.0416667|  0.3333333|  0.4901961|
+|a13o28   |Free-run    | 16.6666667|  8.3333333|  5.5555556|
+|a2b23    |Entrainment |  0.9375000|  9.3750000|  0.5208333|
+|a2b23    |Free-run    |  0.8680556|  0.9920635|  0.9469697|
+|a2b26    |Entrainment |  4.6875000|  9.3750000|  0.2533784|
+|a2b26    |Free-run    |  1.0044643|  0.9171196| 10.5468750|
+|a3o51    |Entrainment |  0.4901961|  0.9259259|  8.3333333|
+|a3o51    |Free-run    |  0.9920635| 20.8333333|  0.4960317|
+|a4o15    |Entrainment |  8.4375000|  0.2636719|  0.3515625|
+|a4o15    |Free-run    |  0.9868421|  0.3348214|  0.1785714|
+|a4w66    |Entrainment |  1.0125000|  7.5937500|  0.8933824|
+|a4w66    |Free-run    | 16.0000000|  4.0000000|  8.0000000|
+|a5b25    |Entrainment |  1.0416667|  0.4934211|  0.3348214|
+|a5b25    |Free-run    |  0.9057971| 20.8333333| 10.4166667|
+|a5w63    |Entrainment |  8.4375000|  0.7670455|  0.7031250|
+|a5w63    |Free-run    |  0.8928571|  0.9375000|  9.3750000|
+|a5w73    |Entrainment |  0.9375000|  1.0546875|  4.2187500|
+|a5w73    |Free-run    |  0.9868421| 18.7500000|  0.9375000|
+|h2b25    |Entrainment |  1.0416667|  0.9259259|  0.3333333|
+|h2b25    |Free-run    | 25.0000000| 12.5000000|  1.0000000|
+|h4o4     |Entrainment |  1.0416667|  0.9259259|  8.3333333|
+|h4o4     |Free-run    |  1.2400794| 13.0208333| 26.0416667|
+|h4w10    |Entrainment |  1.0000000|  0.5000000|  0.3333333|
+|h4w10    |Free-run    |  1.0714286|  0.9375000|  0.1785714|
+|h5o22    |Entrainment |  1.0416667|  0.9375000|  9.3750000|
+|h5o22    |Free-run    | 10.4166667|  0.9920635|  0.1163873|   
+
+  
 ------
 
  <div id='id-section140'/> 
