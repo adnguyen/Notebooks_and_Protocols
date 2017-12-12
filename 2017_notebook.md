@@ -172,8 +172,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 137: 2017-12-03](#id-section137). Discrete wavelet analysis on h404; 15 min bins    
 * [Page 138: 2017-12-05](#id-section138). Prepping meeting with Dan on 2017-12-07, 10:30AM
 * [Page 139: 2017-12-08](#id-section139). behavioral data (trikinetics) data parsing update--fixing date order again; update from [2017-11-30 update](id-section135.1).
-* [Page 140: 2017-12-12](#id-section140). Dimensions of biodiversity workshop: managing big data 
-* [Page 141:](#id-section141).
+* [Page 140: 2017-12-11](#id-section140). Dimensions of biodiversity workshop: managing big data 
+* [Page 141: 2017-12-12](#id-section141). paper notes- Bulla et al. 2017 on Marine Biorhythms and van der Veen et al. 2017 on flexible clock systems     
 * [Page 142:](#id-section142).
 * [Page 143:](#id-section143).
 * [Page 144:](#id-section144).
