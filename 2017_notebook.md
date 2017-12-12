@@ -172,7 +172,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 137: 2017-12-03](#id-section137). Discrete wavelet analysis on h404; 15 min bins    
 * [Page 138: 2017-12-05](#id-section138). Prepping meeting with Dan on 2017-12-07, 10:30AM
 * [Page 139: 2017-12-08](#id-section139). behavioral data (trikinetics) data parsing update--fixing date order again; update from [2017-11-30 update](id-section135.1).
-* [Page 140:](#id-section140).
+* [Page 140: 2017-12-12](#id-section140). Dimensions of biodiversity workshop: managing big data 
 * [Page 141:](#id-section141).
 * [Page 142:](#id-section142).
 * [Page 143:](#id-section143).
@@ -13274,13 +13274,93 @@ test2
 
  <div id='id-section140'/> 
 
-### Page 140:  
+### Page 140:  2017-12-11. Dimensions of biodiversity workshop: managing big data   
+
+Mainly stayed the first part of day where PIs went over their projects and data management challenges   
+
+![](https://user-images.githubusercontent.com/4654474/33902278-84453fe6-df42-11e7-8fae-8218f657c238.JPG)    
+
+![](https://user-images.githubusercontent.com/4654474/33902279-845814ae-df42-11e7-8ca7-9a95943b5c93.JPG)    
+
+![](https://user-images.githubusercontent.com/4654474/33902280-84aeb570-df42-11e7-8ca3-bf0e879cb1ae.JPG)    
+
+![](https://user-images.githubusercontent.com/4654474/33902281-84c062ca-df42-11e7-8c44-1faac4b78472.JPG)    
+
+![](https://user-images.githubusercontent.com/4654474/33902282-84d1f468-df42-11e7-9e0b-030c6f89658d.JPG)    
+
+
 
 ------
 
  <div id='id-section141'/> 
 
-### Page 141:  
+### Page 141:  2017-12-12. paper notes- Bulla et al. 2017 on Marine Biorhythms and van der Veen et al. 2017 on flexible clock systems   
+
+
+refs: 
+
+* Research article: Marine biorhythms: bridging chronobiology and ecology
+Martin Bulla, Thomas Oudman, Allert I. Bijleveld, Theunis Piersma, Charalambos P. Kyriacou
+Phil. Trans. R. Soc. B 2017 372 20160253; DOI: 10.1098/rstb.2016.0253. Published 9 October 2017     
+
+Rhythms on earth driven by rotations of the Earth on its axis (24 hr), movement of moon + rotation of sun exerting different gravitational pull on the oceans (tidal/lunar cycles- 15 dys ), and tilted movement of earth around sun ( seasonal).  
+
+3 goals: 
+
+1. highlight scarcity of data on intertidal "higher" vetebrates in the context of biological rhythms  
+2. talk about new studies on circadian clocks genes in intertidal behaviora/phys of arthropods and worms  
+3. Discuss value of collaborations between chronobio and ecologists 
+
+Shorebirds are a good example to study tidal rhythms. Their period should be reflected by tidal period. So they're shocasing shorebirds and they're using novel automated tracking tech to describe foraging rhythms of red knots at Bacn d'Arguin, and their wintering groounds on coatal Mauritanian. In Mauritanian, it is an environment with tidal rhythms and have diel fluctuations in light intensity. 
+
+Natural history: red knots are long distance migratory shorebirds that breed in the high arctic, live in coastal intertidal environments for res of year. They eat hard shelled moluscs. 
+
+**INdividual rhytms are unknown**   
+
+At high tides, birds generally close to the roost and as the tide retreats, birds moved away from it. This reflects foraging strategy. Low tide- feeds, high tide- stay at roost. 
+
+To see the genetic componenet of this trait, we will need a common garden and free run birds to quantify their endogenous clock. 
+
+on page 3, they highlight a potential pitfall of estimating biological rhythms with a periodogram because this analysis picks up the dominant period. 
+
+**Molecular studies of tidal rhythms**   
+
+other variables might be important such as species interactions that can alter an entrained biological rhythm.  
+
+four orgs that have been used to study tidal rhythms   
+1. *Eurydice pulchra* - marine isopod   
+2. *Apteronemobius asahinai* - mangrove cricket    
+3. *Clunio marinus* - marine midge   
+4. *Platynereis dumerilii* - bristle worm  
+
+marine isopod lives on euro coasts, as tide comes in it swims out of sandy burrows and forages. as the tide goes out, it goes back into the sand so it isnt dragged out to thesea. IT has a 12.4 hr rhythm , set by vibrations and influenced by temp. KO of period gene has no effect on circatidal swimming periodicity of 12.4 hrs. pharmacologically inhibiting Casein Kinase 1$\epsilon$ lengthened tidal swimming and circadian chromatophore cycle. CK1$\epsilon$ phosphorylates period. (look up interaction). Altogetrher this suggests, unique and common pathways for tidal and circadian rhythms. 
+
+marine midge - during full and new mooon, millions of males and females emerge from sea in low tide (more habitat exposure), where they develop from eggs to pupae. adaults only live for a few hours, so they need to synchronize with themselves and in low tide. Suggest 2 clocks: circalulnar and circadian. Think tey did some genomics of some sort and found that calcium/calmodulin-dependent kinase II.1 (CaMKII) associated with circadian adaptations. For the lunar related phenotype, and found a QTL it looksl ike. But in this region, they didnt find any clock genes. 
+
+Bristle worm - spawns monthyl rhythm - number of worms are sexual peak at new moon and troughs at full moon. It looks like they are entrained by moonlight ; recapitulated in the lab. The strength of rhythm is moldulated by phases of the moon, suggests cross talk between 2 ossilators. Treatment of CK1 kinase inhibitor (used in Eurydice) impaired circadian movement/gxp, but not circalunar maturiyt. Molecularly, these things can be independent. 
+
+Next big thing: Find tidal/lunar genes. Bridging the gap will simply involve longer time series data. 
+   
+
+   
+* Review article: Flexible clock systems: adjusting the temporal programme
+Daan R. van der Veen, Sjaak J. Riede, Paul D. Heideman, Michaela Hau, Vincent van der Vinne, Roelof A. Hut
+Phil. Trans. R. Soc. B 2017 372 20160254; DOI: 10.1098/rstb.2016.0254. Published 9 October 2017       
+
+in mammalian systems, the suprachiasmatic nucleus of hypothalamus coordinates biological rhythms. It can be entrained to light and dark cycle. All non-scn clocks are known as PERIPHERAL TIMING SYSTEM and every cell in the body can express a circadian clock. So the peripheral timing system is complext. SCN may at as a conductor to orchestrate peripheral clocks
+
+There are many external inputs from the environment and occur simultaneously in nature. 
+
+Temporal niche faces two challenges: how to align circ rhythms of multiple tissues with each other and what is the most benefical internal alignment pattern for any given eivironmental temporal niche?
+
+exmple: 
+1. liver entrained by food
+2. SCN entrained by light dark   
+
+
+Glucocorticoids are key zeitgebers for peripheral tissues. It can interfere with zeitgebers such as food availability. 
+
+This paper is like a big laundry list..w.tf.
 
 ------
 
