@@ -13346,10 +13346,38 @@ test3
 
 
 ```R
-ggplot(test3,aes(x=experiment,y=period,group=uniqueID,colour=uniqueID))+geom_point()+geom_line()
+ggplot(test3,aes(x=experiment,y=period,group=uniqueID,colour=uniqueID))+geom_point()+geom_line()  
 ```
 
 ![](https://user-images.githubusercontent.com/4654474/33959958-257d203e-e017-11e7-9077-24c656008dd0.png)
+
+
+### Discrete wavelet analysis   
+
+creating the function to id bouts, height, length of activity in time per peak
+```R
+## creating function for discrete wavelet analysis
+### getting the circadian detail  
+dwa<-function(time){
+  DJt_circ <- wavMRDSum(time,levels=6 ,keep.smooth=FALSE, keep.details=TRUE,reflect=TRUE,wavelet="s12",xform="modwt")
+  IBL<-data.frame(findpeaks(DJt_circ))
+  names(IBL)<-c("Height","mid_time","initial_time","final_time")
+  #return(diff(IBL$mid_time)/4)
+  return(data.frame(cbind(IBL[,-3:-4],bout=as.numeric(c("NA",diff(IBL$mid_time)/4))),act_length=IBL[,4]-IBL[,3]))
+}
+
+```
+
+Finding the bouts, height, act time,time ,for each unique ID 
+
+```R
+test4<-ddply(nall.data15_3,.(uniqueID),function(sub) dwa(sub$counts))
+test4
+
+ggplot(test4,aes(x=mid_time/4/24,y=bout))+geom_line()+facet_grid(uniqueID~.)
+```
+
+![](https://user-images.githubusercontent.com/4654474/33961032-97d35498-e01a-11e7-8254-31f4f0e81afc.png)
 
 
 ------
