@@ -13276,8 +13276,82 @@ Comparing the min value across treatments and hosts
 
 ![](https://user-images.githubusercontent.com/4654474/33958444-6c98a6aa-e012-11e7-8601-c780fee1eac2.png)
 
+### Trying to find dominant peak with continuous wavelet analysis   
 
-  
+```R
+#function to find dominant peak with continuous wavelet anlaysis (dplr package)
+cwa<-function(series=counts15$counts15){
+  wave.out <- morlet(y1 = series, p2 = 8, dj = 0.1, siglvl = 0.95)
+  wave.out$period <- wave.out$period/4
+  wave.avg <- data.frame(power = apply(wave.out$Power, 2, mean), period = (wave.out$period))
+  aa<-data.frame(findpeaks(wave.avg$power))
+  line<-aa[order(aa,decreasing=TRUE),][1,2]
+  return(wave.avg[line,][2])
+  }
+
+cwa()
+
+#applying function for each unique id and experiment
+test3<-ddply(nall.data15_3,.(uniqueID,experiment),function(sub) cwa(sub$counts))
+test3
+```
+
+
+|uniqueID |experiment  |   period|
+|:--------|:-----------|--------:|
+|a10o49   |Entrainment | 25.05282|
+|a10o49   |Free-run    | 21.80975|
+|a10o73   |Entrainment | 23.37511|
+|a10o73   |Free-run    | 23.37511|
+|a10w12   |Entrainment | 23.37511|
+|a10w12   |Free-run    | 23.37511|
+|a10w15   |Entrainment | 23.37511|
+|a10w15   |Free-run    | 23.37511|
+|a11w26   |Entrainment | 23.37511|
+|a11w26   |Free-run    | 21.80975|
+|a12b43   |Entrainment | 25.05282|
+|a12b43   |Free-run    | 23.37511|
+|a12b6    |Entrainment | 23.37511|
+|a12b6    |Free-run    | 28.77814|
+|a12w40   |Entrainment | 23.37511|
+|a12w40   |Free-run    | 23.37511|
+|a13o11   |Entrainment | 23.37511|
+|a13o11   |Free-run    | 23.37511|
+|a13o28   |Entrainment | 23.37511|
+|a13o28   |Free-run    | 21.80975|
+|a2b23    |Entrainment | 21.80975|
+|a2b23    |Free-run    | 21.80975|
+|a2b26    |Entrainment | 21.80975|
+|a2b26    |Free-run    | 23.37511|
+|a3o51    |Entrainment | 23.37511|
+|a3o51    |Free-run    | 23.37511|
+|a4o15    |Entrainment | 23.37511|
+|a4o15    |Free-run    | 23.37511|
+|a4w66    |Entrainment | 23.37511|
+|a4w66    |Free-run    | 12.52641|
+|a5b25    |Entrainment | 25.05282|
+|a5b25    |Free-run    | 21.80975|
+|a5w63    |Entrainment | 23.37511|
+|a5w63    |Free-run    | 23.37511|
+|a5w73    |Entrainment | 23.37511|
+|a5w73    |Free-run    | 23.37511|
+|h2b25    |Entrainment | 23.37511|
+|h2b25    |Free-run    | 21.80975|
+|h4o4     |Entrainment | 23.37511|
+|h4o4     |Free-run    | 28.77814|
+|h4w10    |Entrainment | 23.37511|
+|h4w10    |Free-run    | 21.80975|
+|h5o22    |Entrainment | 23.37511|
+|h5o22    |Free-run    | 20.34921|  
+
+
+```R
+ggplot(test3,aes(x=experiment,y=period,group=uniqueID,colour=uniqueID))+geom_point()+geom_line()
+```
+
+![](https://user-images.githubusercontent.com/4654474/33959958-257d203e-e017-11e7-9077-24c656008dd0.png)
+
+
 ------
 
  <div id='id-section140'/> 
