@@ -13269,6 +13269,14 @@ test2
 |h5o22    |Entrainment |  1.0416667|  0.9375000|  9.3750000|
 |h5o22    |Free-run    | 10.4166667|  0.9920635|  0.1163873|   
 
+
+### 2017-12-13. Adding figures 
+
+Comparing the min value across treatments and hosts   
+
+![](https://user-images.githubusercontent.com/4654474/33958444-6c98a6aa-e012-11e7-8601-c780fee1eac2.png)
+
+
   
 ------
 
