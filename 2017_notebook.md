@@ -13476,7 +13476,14 @@ This paper is like a big laundry list..w.tf.
 
  <div id='id-section142'/> 
 
-### Page 142:  
+### Page 142: 2017-12-13. Prepping meeting with Dan, 9AM , 2017-12-14   
+
+1. DIscuss analyses  
+	* scaled to periodogram, cwt, and dwt to ~ 22 individuals 
+	* try more bins  
+2. Paper discussions  
+
+3.  
 
 ------
 
