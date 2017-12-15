@@ -13485,6 +13485,33 @@ This paper is like a big laundry list..w.tf.
 
 3.  
 
+
+Dan's suggestion for circadian rhythm analysis; 
+* What do other pepole do to decide which dominant peaks in periodogram to choose from?   
+* particular in fourier transform approach; somebody develop stats? what is heuristic for picking out circadian rhythm  
+* What is going on with continuous wavelet? Binning at lower time give more fine estimates?   
+* Focus on fourier transform data.  
+* look up some general methods papers 
+
+
+paper discussion
+* Read the base papers in the review for marine biorhythms. Do the midge papers.Charalambos P. Kyriacou papers      
+*  
+
+
+metaanalysis ideas given what we've read   
+
+* compare different rhtyms, circ more or less flexible than other rhthms (short, longer)
+* are different components of biological rhythms heritable  
+* what env factors best explain bio rhythms   
+	* light
+	* temp
+	* food 
+* What's the potential for evolution ?  
+
+Organize evolution and biological rhtyhms meeting (tell Dan about time line)   
+
+
 ------
 
  <div id='id-section143'/> 
