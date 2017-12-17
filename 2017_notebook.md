@@ -13541,13 +13541,13 @@ One way to test if the data is rhythmic is to statistically test it with an auto
 
 Any function can show certain mimimal properties called "Dirichlet Conditions" and be approximated by a harmonic series of orthogonal sine and cosine terms.  
 
-$$f(t) \cong a_0/2 + a_1sint + a_2 sin2t+…+b_1cost +b_2cos2t$$
+$f(t) \cong a_0/2 + a_1sint + a_2 sin2t+…+b_1cost +b_2cos2t$     
 
 *if the function consists of an ordered set of values x(t), then the "power" in the series is the ensemble average of the squared values.* If the mean is 0, this is the variance.  
 
 The fourier transform is an extension of a fit of the fourier series and has the property that the coefficients approximate the power spectrum. Power at each frequency  can be computed for a continuous serise as:  
 
-$$F(\omega) = \int_{-\infty}^{\infty} f(t)e^{(-i\omega t)} dt$$   
+$F(\omega) = \int_{-\infty}^{\infty} f(t)e^{(-i\omega t)} dt$     
 
 **Compromises in fourier analysis**   
 
