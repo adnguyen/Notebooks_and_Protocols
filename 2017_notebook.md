@@ -174,9 +174,9 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 139: 2017-12-08](#id-section139). behavioral data (trikinetics) data parsing update--fixing date order again; update from [2017-11-30 update](id-section135.1).
 * [Page 140: 2017-12-11](#id-section140). Dimensions of biodiversity workshop: managing big data 
 * [Page 141: 2017-12-12](#id-section141). paper notes- Bulla et al. 2017 on Marine Biorhythms and van der Veen et al. 2017 on flexible clock systems     
-* [Page 142:](#id-section142).
-* [Page 143:](#id-section143).
-* [Page 144:](#id-section144).
+* [Page 142: 2017-12-13](#id-section142). Prepping meeting with Dan, 9AM , 2017-12-14    
+* [Page 143: 2017-12-17](#id-section143). Douse 2013; MESA paper      
+* [Page 144: 2017-12-17](#id-section144). [Time series analysis demo](http://www.stat.pitt.edu/stoffer/tsa4/tsaEZ.pdf)   
 * [Page 145:](#id-section145).
 * [Page 146:](#id-section146).
 * [Page 147:](#id-section147).
@@ -13516,13 +13516,63 @@ Organize evolution and biological rhtyhms meeting (tell Dan about time line)
 
  <div id='id-section143'/> 
 
-### Page 143:  
+### Page 143: 2017-12-17. Douse 2013; Maximum entropy spectral analysis (MESA) paper      
+
+
+Dowse, H. B. (n.d.). Maximum entropy spectral analysis for circadian rhythms: theory, history and practice. Retrieved from https://pdfs.semanticscholar.org/d564/6a61fad1e03e61681fc1ec3694c4e36b7456.pdf   
+
+Developed by John Parker Burg in 1960s to address shortcomings of fourier analysis. Go over fourier analysis and how MESA covers it's weaknesses.  
+
+*Sampling frequency must be no less than twice the frequency of the cyclic process of interest*
+
+2 important things to consider: 
+
+1. resolution - ability to separate two frequencies as being distinct. Very similar to optical resolution where two objects in an image want to be separated. Resolution is limited by the number of cycles in the data set, or in optics, diameter of the lens. 
+
+2. Discern periodic signal in the presence of noise , aka, sensitivity  
+
+
+
+**Autocovariance and autocorrelation functions**   
+
+One way to test if the data is rhythmic is to statistically test it with an autocorrelation analysis. 
+
+**Fourier analysis**   
+
+Any function can show certain mimimal properties called "Dirichlet Conditions" and be approximated by a harmonic series of orthogonal sine and cosine terms.  
+
+$$f(t) \cong a_0/2 + a_1sint + a_2 sin2t+…+b_1cost +b_2cos2t$$
+
+*if the function consists of an ordered set of values x(t), then the "power" in the series is the ensemble average of the squared values.* If the mean is 0, this is the variance.  
+
+The fourier transform is an extension of a fit of the fourier series and has the property that the coefficients approximate the power spectrum. Power at each frequency  can be computed for a continuous serise as:  
+
+$$F(\omega) = \int_{-\infty}^{\infty} f(t)e^{(-i\omega t)} dt$$   
+
+**Compromises in fourier analysis**   
+
+
+**Maximum entropy spectral analysis**     
+
+
+**Data conditioning**   
+
+
 
 ------
 
  <div id='id-section144'/> 
 
-### Page 144:  
+### Page 144: 2017-12-17. [Time series analysis demo](http://www.stat.pitt.edu/stoffer/tsa4/tsaEZ.pdf)   
+
+Following this demo: http://www.stat.pitt.edu/stoffer/tsa4/tsaEZ.pdf  
+
+Common approaches to time series: 
+
+1. time domain approach 
+2. frequency domain approach   
+
+
 
 ------
 
