@@ -13543,14 +13543,25 @@ Any function can show certain mimimal properties called "Dirichlet Conditions" a
 
 $f(t) \cong a_0/2 + a_1sint + a_2 sin2t+…+b_1cost +b_2cos2t$     
 
+![](https://user-images.githubusercontent.com/4654474/34083904-d493dad2-e345-11e7-83d2-167c5b1ecc5c.gif)   
+
 *if the function consists of an ordered set of values x(t), then the "power" in the series is the ensemble average of the squared values.* If the mean is 0, this is the variance.  
 
 The fourier transform is an extension of a fit of the fourier series and has the property that the coefficients approximate the power spectrum. Power at each frequency  can be computed for a continuous serise as:  
 
 $F(\omega) = \int_{-\infty}^{\infty} f(t)e^{(-i\omega t)} dt$     
 
+![](https://user-images.githubusercontent.com/4654474/34083906-d78bd5e6-e345-11e7-93f0-36cfb323a3d9.gif)   
+
+exponential function consolidates sine and cosine terms. F(w) is the spectrum of the function, with $\omega$ as the angular velocity ( akak $2\pi f), where f is the frequency. This is also known as the **periodogram** of the function. 
+
+If the spectrum is calculated directly from data sampled at intervals, it is known as the **Discrete Fourier Transform**.  This is rare and fourier spectra are produced from either autocovariance or autocorrelation.  One reason to use autocovariance is that the output is equlivalent to partitioning the variance in the signal by frequency and the area under the curve is the power.  
+
 **Compromises in fourier analysis**   
 
+~1/3 of the data are used to compute the correlation coefficients because autocov or autocorr functions lose power with each power of points lost. THis adversely affects the resolution in the spectrum. 
+
+Solution - pad out the rest of the function with 0's. Fast fourier transform constrains input series to $2^N$ points.   
 
 **Maximum entropy spectral analysis**     
 
