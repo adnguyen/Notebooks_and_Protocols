@@ -177,7 +177,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 142: 2017-12-13](#id-section142). Prepping meeting with Dan, 9AM , 2017-12-14    
 * [Page 143: 2017-12-17](#id-section143). Douse 2013; MESA paper      
 * [Page 144: 2017-12-17](#id-section144). [Time series analysis demo](http://www.stat.pitt.edu/stoffer/tsa4/tsaEZ.pdf)   
-* [Page 145:](#id-section145).
+* [Page 145: 2017-12-18](#id-section145). Costantini et al. 2010; *Ecology Letters*; **Ecological processes in a hormetic framework    
 * [Page 146:](#id-section146).
 * [Page 147:](#id-section147).
 * [Page 148:](#id-section148).
@@ -13561,14 +13561,55 @@ If the spectrum is calculated directly from data sampled at intervals, it is kno
 
 ~1/3 of the data are used to compute the correlation coefficients because autocov or autocorr functions lose power with each power of points lost. THis adversely affects the resolution in the spectrum. 
 
-Solution - pad out the rest of the function with 0's. Fast fourier transform constrains input series to $2^N$ points.   
+Solution - pad out the rest of the function with 0's. Fast fourier transform constrains input series to $2^N$ points.
+
+Problem- adding 0s adds side lobes 
 
 **Maximum entropy spectral analysis**     
 
+gives highest possible resolution while eliminating side lobes. "linchpin" of technique is the stochastic modelling. System moves forward in term as a function of previous values + noise. example is a Markov process:   
+
+![](https://user-images.githubusercontent.com/4654474/34084091-ef8c56ae-e348-11e7-8ce6-e3f30c8a09d2.gif)   
+
+* t is time
+* a is the cofficient derived from the data
+* Zt is white noise 
+
+This process can be extended by going backwards earlier in time , with each weighted by a coffecient derived from the known observed data.  
+
+
+![](https://user-images.githubusercontent.com/4654474/34084126-5c75fe46-e349-11e7-814d-64767ded03ac.gif)  
+
+a, b,c are the model's coefficients and p is the order of the filter   
+
+The model can be used to predict future values based on what is known from the past. Entropy = ignorance in information theory, so calculating values that max ignorance means the values are the most honest. The spectrum is calculated from the coefficients as follows:   
+
+![](https://user-images.githubusercontent.com/4654474/34084175-2e670b34-e34a-11e7-9eed-8dc3facf71e2.gif)  
+
+* Again, S(w) is the spectral power as a function of angular velocity   
+* P is the power passed by the power error filter   
+* a_k is the set of PEF coefficients  
+
+Number of coefficients is important, generally N/4 or N/3, 
 
 **Data conditioning**   
 
+section on how to deal wit data prior to analysis 
 
+1. detrending step which fits a line by regression and subtrracts it, removing linear trend and mean. DC component can obsure rhythmic one  ?
+2. Removal of non-linear component through filters
+	* look into Butterworth filter    
+
+examples of analysis at work: 
+
+1. fruit fly cryptochrome gene - Krishnan eta l. 2001 Nature; Plautz et al. 1997 J Biol Rhythms  
+2. lunar rhythmicity in marine systems (Hamming 1983) --odd citation 
+3. Ultradian and circ rhythms in premature infants -- Tenriero et al. 1991   
+4. Electroencephalography and ulradian period in rats to study models of sleep-wake dynamics - Stephenson et al. 2012 J Biol Rhythms 
+5. ulradian in mice loco activity -- Dowse et al. 2010 J Exp Biol 
+6. Vertical migration in anarctic krill - Gaten et al. 2008 J Genetics   
+7. cardiac pacemaker in fly heart - Dowse et al. 1995 J Neurogenet; Bodmer et al. 2005  
+8. Mating in drosophila control under period gene -- Alt et al. 1998 Anim Behav   
 
 ------
 
@@ -13589,7 +13630,95 @@ Common approaches to time series:
 
  <div id='id-section145'/> 
 
-### Page 145:  
+### Page 145:  2017-12-18. Costantini et al. 2010; *Ecology Letters*; **Ecological processes in a hormetic framework 
+
+
+Paradox: sublethal stressors can confer resistance/tolerance to future stressors  
+
+This occurs when stressors are at low levels, hence sublethal. What the stressor does is actually "prime" physiological processes such that they are prepared later in life. Termed "hormesis"   
+
+So unclear what hormesis is by the way they describe it... 
+
+Problem they outline: even though hormesis happens, its unclear how other use the word and how you can test it.  
+
+Most work done on toxicology and human health. Check Calabrese & Blain 2005  
+
+Argument: provides conceptual link between prevailing environmental circumstances and organism function. So this is good for eco and evo biologists 
+
+They want to frame hormesis in the context of fitness consequences. They say Darwinian fitness, but fitness is just fine guys.   
+
+**What is hormesis?**  
+
+mid 1880s German pharmacologist Hugo Shulz found that small doses of disinfectants stimulated yeast growth, but was lethal at high doses. People thought this was cool, but homeopathy ruined everything. These authors like to site Calabrese a lot. Anyway, non-linear dose responses have been established between organisms and chemicals/env stressors. 
+
+Hormesis was coined by Chester Southam and John Ehrlich 1943. It is used in two different ways. 
+
+1. response to env stressor varies with level of exposure  
+	1. linear no-threshold model - level of exposure to stressor always negatively affects fitness
+	2. threshold model - fitness is maintained in the face of a stressor up until a certain point where higher doses/exposure negatively affects fitness
+	3. hormetic model - Fitness is increased at lower doses/exposure but is negatively affected at higher doses/exposure.     
+
+**good example in fruit flies(Gibbs et al. 2003)** 
+
+2. "priming" or "conditioning" effect where exposure to a low level of stressor results in the organism being better to cope with exposure to higher levels in the future.  AKA Conditioning hormesis 
+
+
+**Underlying mechanisms**    
+
+* chagnes in gxp in pathways that respond to stressors 
+	* ie hsps, antioxidant enzymes, hormones   
+	* Early life conditioning may have the strongest hormetic effect 
+		* may be due to epigenetic modifications 
+		
+
+### Environmental Agents 
+
+**Nutrition**   
+
+* Non-essential dietary compounds can generate hormetic responses
+* Dietary restriction  
+	* hsp upreg in liver of rats ; increasing cryoprotective molecules and reducing levels of oxidative stress 
+	* mito activity can change 
+
+* they argue that a group that was starved earlier in life might fare better (fitness) as adults compared to fully fed group earlier in life (as adults) . 
+
+
+**temperature**
+
+**physical activity**   
+
+**immune system** 
+
+### Hormesis and phenotypic plasticity  
+
+Hormesis might increase the stress tolerance and response of an organism ; conditioning hormesis might translate into increase in phenotypic plasticity 
+
+**hormesis and fitness**  
+
+THey argue there has to be a link. Because there are energetic trade-offs among life history traits, not all traits can exhibit a hormetic response at the same time.  ex: fitness trade-off between longevity and reproduction in respose to heat stress (Maynard Smith 1958; Le Bourg et al. 200; Le Bourg 2005; Sorensen et al. 2007,2008)   
+
+
+Also should consider some costs associated with mounting a hormetic response. Not only measure ATP< but also other nutrients. If it is too costly, then organisms won't mount a hormetic response. 
+
+### Perspective and conclusions  
+
+Low hanging fruit: compare hormetic response under early and late life sublethal stress exposure    
+
+Need to udnerstand hormesis in the context of multiple stressors  
+
+
+Thoughts: 
+
+Overall, interesting paper. I think how they described hormesis was useful in that there were two cases, one being an overall fitness increase at low doses and the other focusing on the timing of exposure that confers fitness advantage. I'm more use to thinking about hormesis in terms of the 2nd case: prior exposure conferring resistance/tolerance to future stressors. They could have done a better job of putting everything in an evolutionary framework. Like...why would this matter in a natural setting. 
+
+* They could have laid out some ecology, for example, under which conditions do you expect more or less hormetic response? For temperature, you'd expect more hormesis for cold tolerance in northern, more variable enviornments. This relates to my range limits ms, and could use this as a citation.  
+	* ants are long lived, so they experience the environmental variation throughout(within) their life time, giving the possibility for hormesis 
+
+* For example, what is the adaptive potential for a hormetic response? They could have added some quantitative genetics in there. 
+
+* It's also fun to think about adding more layers given this framework. For example, basically exploring platicity of plasticity. Measure fitness along an env gradient(temp for example) and overlay that with another (desiccation for example). And you can see how beta shifts with desiccation. 
+
+
 
 ------
 
