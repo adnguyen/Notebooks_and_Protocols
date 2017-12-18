@@ -177,7 +177,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 142: 2017-12-13](#id-section142). Prepping meeting with Dan, 9AM , 2017-12-14    
 * [Page 143: 2017-12-17](#id-section143). Douse 2013; MESA paper      
 * [Page 144: 2017-12-17](#id-section144). [Time series analysis demo](http://www.stat.pitt.edu/stoffer/tsa4/tsaEZ.pdf)   
-* [Page 145: 2017-12-18](#id-section145). Costantini et al. 2010; *Ecology Letters*; **Ecological processes in a hormetic framework    
+* [Page 145: 2017-12-18](#id-section145). Costantini et al. 2010; *Ecology Letters*; **Ecological processes in a hormetic framework**    
 * [Page 146:](#id-section146).
 * [Page 147:](#id-section147).
 * [Page 148:](#id-section148).
@@ -13543,7 +13543,7 @@ Any function can show certain mimimal properties called "Dirichlet Conditions" a
 
 $f(t) \cong a_0/2 + a_1sint + a_2 sin2t+…+b_1cost +b_2cos2t$     
 
-![](https://user-images.githubusercontent.com/4654474/34083904-d493dad2-e345-11e7-83d2-167c5b1ecc5c.gif)   
+![](https://user-images.githubusercontent.com/4654474/34118704-a02daf0e-e3ed-11e7-98db-1fe965722500.gif)   
 
 *if the function consists of an ordered set of values x(t), then the "power" in the series is the ensemble average of the squared values.* If the mean is 0, this is the variance.  
 
@@ -13630,7 +13630,7 @@ Common approaches to time series:
 
  <div id='id-section145'/> 
 
-### Page 145:  2017-12-18. Costantini et al. 2010; *Ecology Letters*; **Ecological processes in a hormetic framework 
+### Page 145:  2017-12-18. Costantini et al. 2010; *Ecology Letters*; Ecological processes in a hormetic framework 
 
 
 Paradox: sublethal stressors can confer resistance/tolerance to future stressors  
@@ -13707,7 +13707,7 @@ Low hanging fruit: compare hormetic response under early and late life sublethal
 Need to udnerstand hormesis in the context of multiple stressors  
 
 
-Thoughts: 
+**Thoughts:** 
 
 Overall, interesting paper. I think how they described hormesis was useful in that there were two cases, one being an overall fitness increase at low doses and the other focusing on the timing of exposure that confers fitness advantage. I'm more use to thinking about hormesis in terms of the 2nd case: prior exposure conferring resistance/tolerance to future stressors. They could have done a better job of putting everything in an evolutionary framework. Like...why would this matter in a natural setting. 
 
@@ -13724,7 +13724,154 @@ Overall, interesting paper. I think how they described hormesis was useful in th
 
  <div id='id-section146'/> 
 
-### Page 146:  
+### Page 146:  2017-12-18. Trying spectral analysis with spectrum() function    
+
+scaling up spectrum() function   
+
+```R
+sa.an<-function(ts=counts15$counts15){
+  sa1<-spectrum(ts,method=c("pgram","ar"),plot=FALSE,demean=TRUE,detrend=TRUE,tape=.2)
+  spx<-sa1$freq
+  spy<-2*sa1$spec
+  pw<-data.frame(spx,spy)
+  cc<-head(pw[order(pw$spy,decreasing=TRUE),],4)
+  return(1/cc[,1]/4)  ## hours 
+  #return(1/cc[,1]/4/24)  ## days 
+  
+}
+sa.an()
+```
+
+Units are in hours  
+
+```R
+# 270.00000  26.12903 810.00000  23.14286
+
+```
+
+Operate function for each unique ID and experiment 
+
+```R
+### for each unique ID and experiment  
+test10<-ddply(nall.data15_3,.(uniqueID,experiment),function(sub) sa.an(sub$counts))
+test10   
+```
+
+|uniqueID |experiment  |         V1|         V2|         V3|         V4|
+|:--------|:-----------|----------:|----------:|----------:|----------:|
+|a10o49   |Entrainment |  24.000000|  12.000000| 240.000000|  30.000000|
+|a10o49   |Free-run    |  22.781250|  20.710227|  21.191861|  10.013736|
+|a10o73   |Entrainment |  24.000000|  21.600000|  19.636364|  12.000000|
+|a10o73   |Free-run    |  23.529412|  22.222222|  12.121212|   8.000000|
+|a10w12   |Entrainment |  24.000000|  12.000000|   8.000000|  21.818182|
+|a10w12   |Free-run    |  23.980263|  23.365385|  11.682692|  24.628378|
+|a10w15   |Entrainment |  22.500000|  25.714286|  12.000000|   1.764706|
+|a10w15   |Free-run    |  24.107143|  22.500000|   3.214286|  12.053571|
+|a11w26   |Entrainment |  22.500000|  25.714286|  12.000000|   8.181818|
+|a11w26   |Free-run    |  22.500000|   8.035714|  21.093750|   7.670454|
+|a12b43   |Entrainment |  25.000000|  12.500000|  22.222222|   8.333333|
+|a12b43   |Free-run    |  23.684210|  23.076923|  21.951220|  22.500000|
+|a12b6    |Entrainment |  22.500000|  25.312500|  11.911765|  20.250000|
+|a12b6    |Free-run    | 195.312500|  23.674242| 260.416667|  26.041667|
+|a12w40   |Entrainment |  25.000000|  22.222222|  11.764706|   8.000000|
+|a12w40   |Free-run    | 900.000000| 450.000000|  23.684210| 300.000000|
+|a13o11   |Entrainment |  25.000000|  11.764706|  22.222222|   2.000000|
+|a13o11   |Free-run    |  23.225807| 720.000000|  24.000000|  22.500000|
+|a13o28   |Entrainment |  25.000000|   8.000000|  22.222222|  11.764706|
+|a13o28   |Free-run    | 400.000000|  21.052632|  25.000000|  23.529412|
+|a2b23    |Entrainment |  22.500000|  12.500000|  13.235294| 225.000000|
+|a2b23    |Free-run    |  20.833333|  23.809524|  22.727273|  10.869565|
+|a2b26    |Entrainment |   6.081081|  18.750000|   4.326923|  22.500000|
+|a2b26    |Free-run    |  24.107143|  22.010870|  25.312500|  11.005435|
+|a3o51    |Entrainment |  22.222222|  11.764706|  25.000000|   4.347826|
+|a3o51    |Free-run    |  23.809524|  11.904762|   4.950495|  12.195122|
+|a4o15    |Entrainment |   3.432203|  25.312500|   5.955882|   8.437500|
+|a4o15    |Free-run    |  23.684210|   4.285714|   8.035714|  11.842105|
+|a4w66    |Entrainment |  24.300000|  21.441177| 182.250000|  28.038462|
+|a4w66    |Free-run    |  96.000000|  76.800000| 128.000000|  64.000000|
+|a5b25    |Entrainment |  25.000000|  11.842105|  22.500000|   8.035714|
+|a5b25    |Free-run    |  21.739130|  23.809524|  12.195122| 250.000000|
+|a5w63    |Entrainment | 202.500000|  22.500000|  25.312500|  11.911765|
+|a5w63    |Free-run    |  21.428571|  22.500000|  25.000000|  10.975610|
+|a5w73    |Entrainment |  22.500000|  25.312500|  20.250000| 101.250000|
+|a5w73    |Free-run    |  23.684210|  22.500000| 450.000000| 112.500000|
+|h2b25    |Entrainment |  25.000000|  22.222222|  20.000000|   8.000000|
+|h2b25    |Free-run    | 600.000000| 200.000000|  24.000000|  75.000000|
+|h4o4     |Entrainment |  25.000000|  22.222222|  20.000000| 100.000000|
+|h4o4     |Free-run    | 208.333333|  29.761905|  26.041667| 312.500000|
+|h4w10    |Entrainment |  24.000000|  12.000000|   8.000000|  12.705882|
+|h4w10    |Free-run    |   4.285714|  25.714286|  22.500000|  20.000000|
+|h5o22    |Entrainment |  25.000000|  22.500000|   8.035714|  28.125000|
+|h5o22    |Free-run    | 250.000000|  23.809524|   2.793296| 166.666667|   
+
+
+Values are everywhere, trying to take th eaverage circ timing/period by taking average of values between 20 and 30 hours in data set. 
+
+```R
+##taking circadian value 
+
+test10.merg$circ_time<-apply(test10.merg[,3:6],1,function(x){mean(subset(x,x<30 & x > 20))})
+
+```
+diff between fly and wasp  
+
+![](https://user-images.githubusercontent.com/4654474/34120607-42a9174a-e3f4-11e7-82a4-2fe1999591dc.png)
+
+no relationship between eclosion days vs circ time   
+
+![](https://user-images.githubusercontent.com/4654474/34120608-42b8eec2-e3f4-11e7-81e6-1cdfc39d9077.png)  
+
+compare previous fig with just comparing the dominant period   
+
+![](https://user-images.githubusercontent.com/4654474/34120672-7580017e-e3f4-11e7-9cac-45ebb6988760.png)   
+
+overlaying and adding entrainment vs free run   
+
+![](https://user-images.githubusercontent.com/4654474/34120781-cf231658-e3f4-11e7-8292-cf16a08fa9c5.png)   
+
+doesnt look like much of a pattern  
+
+
+### stats: testing interaction between organism and circ time on eclosion days 
+
+not a balanced design, but just seeing how the stats come out   
+
+```R
+summary(aov(eclosion_days~organism*circ_time,data=test10.merg))
+                   Df Sum Sq Mean Sq F value   Pr(>F)    
+organism            1   6417    6417  33.587 9.96e-07 ***
+circ_time           1      0       0   0.001    0.972    
+organism:circ_time  1    190     190   0.994    0.325    
+Residuals          39   7452     191                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+1 observation deleted due to missingness
+```
+
+ok what about diff in circ time between organisms? yes
+
+```R
+summary(aov(circ_time~organism,data=test10.merg)) 
+           Df Sum Sq Mean Sq F value  Pr(>F)   
+organism     1   7.57   7.572   8.286 0.00632 **
+Residuals   41  37.47   0.914                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+1 observation deleted due to missingness
+```  
+
+no differences between host races 
+
+```R
+tt<-subset(test10.merg,organism!="wasp")
+summary(aov(circ_time~Host,data=tt))
+    Df Sum Sq Mean Sq F value Pr(>F)
+Host         1  0.006  0.0064   0.011  0.918
+Residuals   33 19.677  0.5963               
+1 observation deleted due to missingness
+```   
+
+
 
 ------
 
