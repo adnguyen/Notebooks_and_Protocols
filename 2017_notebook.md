@@ -180,7 +180,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 145: 2017-12-18](#id-section145). Costantini et al. 2010; *Ecology Letters*; **Ecological processes in a hormetic framework**    
 * [Page 146: 2017-12-18](#id-section146). Trying spectral analysis with spectrum() function   
 * [Page 147: 2017-12-18](#id-section147). Table of contents of physical notebook: NB#001; Apple Maggots; year 2017; grant # 108398
-* [Page 148:](#id-section148).
+* [Page 148: 2017-12-18](#id-section148). Chao leading lab meeting   
 * [Page 149:](#id-section149).
 * [Page 150:](#id-section150).
 * [Page 151:](#id-section151).
@@ -13904,7 +13904,18 @@ Residuals   33 19.677  0.5963
 
  <div id='id-section148'/> 
 
-### Page 148:  
+### Page 148:  2017-12-18. Chao leading lab meeting    
+
+![](https://user-images.githubusercontent.com/4654474/34130686-cb580e1c-e416-11e7-8e35-99fec2121d85.JPG)  
+
+![](https://user-images.githubusercontent.com/4654474/34130687-cb653132-e416-11e7-9b5e-ac39174aed9c.JPG)  
+
+![](https://user-images.githubusercontent.com/4654474/34130688-cb76291a-e416-11e7-9db0-8337e1f754b0.JPG)  
+
+![](https://user-images.githubusercontent.com/4654474/34130725-ebb0d400-e416-11e7-92af-c6e30ef24a5a.JPG)  
+
+![](https://user-images.githubusercontent.com/4654474/34130726-ebc43ebe-e416-11e7-9fe4-b8ce282149fd.JPG)
+
 
 ------
 
