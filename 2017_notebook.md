@@ -178,7 +178,7 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 143: 2017-12-17](#id-section143). Douse 2013; MESA paper      
 * [Page 144: 2017-12-17](#id-section144). [Time series analysis demo](http://www.stat.pitt.edu/stoffer/tsa4/tsaEZ.pdf)   
 * [Page 145: 2017-12-18](#id-section145). Costantini et al. 2010; *Ecology Letters*; **Ecological processes in a hormetic framework**    
-* [Page 146:](#id-section146).
+* [Page 146: 2017-12-18](#id-section146). Table of contents of physical notebook: NB#001; Apple Maggots; year 2017; grant # 108398
 * [Page 147:](#id-section147).
 * [Page 148:](#id-section148).
 * [Page 149:](#id-section149).
@@ -13877,7 +13877,28 @@ Residuals   33 19.677  0.5963
 
  <div id='id-section147'/> 
 
-### Page 147:  
+### Page 147: 2017-12-18. Table of contents of physical notebook: NB#001; Apple Maggots; year 2017; grant # 108398    
+
+![](https://user-images.githubusercontent.com/4654474/34123641-38d019f8-e3fe-11e7-8265-c1bb089438c6.JPG)  
+
+![](https://user-images.githubusercontent.com/4654474/34123642-38e35f2c-e3fe-11e7-8dd2-50e522425829.JPG)  
+
+![](https://user-images.githubusercontent.com/4654474/34123644-39076e44-e3fe-11e7-9e34-6f4b88b15a8e.JPG)
+
+![](https://user-images.githubusercontent.com/4654474/34123646-3935fe12-e3fe-11e7-8c51-cc4f94df126c.JPG)  
+
+![](https://user-images.githubusercontent.com/4654474/34123648-395f7fc6-e3fe-11e7-8983-abe85077011a.JPG)   
+
+
+![](https://user-images.githubusercontent.com/4654474/34123643-38f456a6-e3fe-11e7-97dc-4ba07e641dd0.JPG)  
+
+
+![](https://user-images.githubusercontent.com/4654474/34123645-391b3a0a-e3fe-11e7-9598-975f634cba39.JPG)  
+
+![](https://user-images.githubusercontent.com/4654474/34123647-394a38b4-e3fe-11e7-8f0a-5a4038ae6e1e.JPG)   
+
+![](https://user-images.githubusercontent.com/4654474/34123649-396fc8e0-e3fe-11e7-87bb-f90e6b499635.JPG)   
+
 
 ------
 
