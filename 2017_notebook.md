@@ -178,8 +178,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 143: 2017-12-17](#id-section143). Douse 2013; MESA paper      
 * [Page 144: 2017-12-17](#id-section144). [Time series analysis demo](http://www.stat.pitt.edu/stoffer/tsa4/tsaEZ.pdf)   
 * [Page 145: 2017-12-18](#id-section145). Costantini et al. 2010; *Ecology Letters*; **Ecological processes in a hormetic framework**    
-* [Page 146: 2017-12-18](#id-section146). Table of contents of physical notebook: NB#001; Apple Maggots; year 2017; grant # 108398
-* [Page 147:](#id-section147).
+* [Page 146: 2017-12-18](#id-section146). Trying spectral analysis with spectrum() function   
+* [Page 147: 2017-12-18](#id-section147). Table of contents of physical notebook: NB#001; Apple Maggots; year 2017; grant # 108398
 * [Page 148:](#id-section148).
 * [Page 149:](#id-section149).
 * [Page 150:](#id-section150).
