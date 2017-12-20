@@ -13489,28 +13489,7 @@ This paper is like a big laundry list..w.tf.
 
  <div id='id-section143'/> 
 
-### Page 143:  meeting with Franscesco   
-
-works on ants species that works on alpine environment - above the tree line ; cold winters   ; also worked on fruit flies in the same environment   
-
-work on ms together 
-
-Built genomes for 4 other ant genomes (tetramorium ) that dont live in mountains to compare with alpine one.   
-
-Built mito genomes (20 of them). Built phylogeny of the ants. 
-
-pull up accension numbers for hsc70-4 
-
-check hsc70 gene phylogeny 
-
-actionable items: 
-
-1. look at phylogeny of hsps ; give reccommendations; are the clusters right? 
-2. write the results 
-
-
-
-
+### Page 143:  
 
 ------
 
