@@ -13921,7 +13921,99 @@ Residuals   33 19.677  0.5963
 
  <div id='id-section149'/> 
 
-### Page 149:  
+### Page 149:  2017-12-20. continuous wavelet analysis revisted: 6 min bins and exploring power vs period to id multiple dominant peaks    
+
+### Exploring multiple dominant peaks   
+
+reworking function to include time bins that I can divide to calculate period   
+
+```R
+cwa<-function(series=counts15$counts15,N=4){
+  wave.out <- morlet(y1 = series, p2 = 8, dj = 0.1, siglvl = 0.95)
+  wave.out$period <- wave.out$period/N
+  wave.avg <- data.frame(power = apply(wave.out$Power, 2, mean), period = (wave.out$period))
+  aa<-data.frame(findpeaks(wave.avg$power))
+  line<-aa[order(aa,decreasing=TRUE),][1,2]
+  return(wave.avg[line,][2])
+  }
+
+cwa()
+```
+
+estimating period for 6 min bins for each unique ID and experiment   
+
+```R
+test3.6<-ddply(nall.data06_3,.(uniqueID,experiment),function(sub) cwa(sub$counts,N=10))
+knitr::kable(test3.6)
+```
+
+|uniqueID |experiment  |   period|
+|:--------|:-----------|--------:|
+|a10o49   |Entrainment | 24.67491|
+|a10o49   |Free-run    | 21.48076|
+|a10o73   |Entrainment | 23.02251|
+|a10o73   |Free-run    | 23.02251|
+|a10w12   |Entrainment | 24.67491|
+|a10w12   |Free-run    | 23.02251|
+|a10w15   |Entrainment | 24.67491|
+|a10w15   |Free-run    | 23.02251|
+|a11w26   |Entrainment | 23.02251|
+|a11w26   |Free-run    |       NA|
+|a12b43   |Entrainment | 24.67491|
+|a12b43   |Free-run    | 23.02251|
+|a12b6    |Entrainment | 23.02251|
+|a12b6    |Free-run    | 10.74038|
+|a12w40   |Entrainment | 24.67491|
+|a12w40   |Free-run    | 24.67491|
+|a13o11   |Entrainment | 24.67491|
+|a13o11   |Free-run    | 23.02251|
+|a13o28   |Entrainment | 24.67491|
+|a13o28   |Free-run    | 21.48076|
+|a2b23    |Entrainment | 21.48076|
+|a2b23    |Free-run    | 21.48076|
+|a2b26    |Entrainment |       NA|
+|a2b26    |Free-run    | 23.02251|
+|a3o51    |Entrainment | 23.02251|
+|a3o51    |Free-run    |       NA|
+|a4o15    |Entrainment |       NA|
+|a4o15    |Free-run    | 24.67491|
+|a4w66    |Entrainment | 24.67491|
+|a4w66    |Free-run    | 13.22296|
+|a5b25    |Entrainment | 24.67491|
+|a5b25    |Free-run    | 23.02251|
+|a5w63    |Entrainment | 23.02251|
+|a5w63    |Free-run    | 23.02251|
+|a5w73    |Entrainment | 23.02251|
+|a5w73    |Free-run    | 23.02251|
+|h2b25    |Entrainment | 23.02251|
+|h2b25    |Free-run    | 23.02251|
+|h4o4     |Entrainment | 24.67491|
+|h4o4     |Free-run    | 10.74038|
+|h4w10    |Entrainment | 24.67491|
+|h4w10    |Free-run    | 23.02251|
+|h5o22    |Entrainment | 24.67491|
+|h5o22    |Free-run    |       NA|  
+
+some estimates are NA, which is odd. Why...
+
+I'll explore the power vs period spectrum..   
+
+function to grab power vs period and then estimating it for each unique ID and experiment   
+
+```R
+cwa.1<-function(series=counts15$counts15,N=4){
+  wave.out <- morlet(y1 = series, p2 = 8, dj = 0.1, siglvl = 0.95)
+  wave.out$period <- wave.out$period/N
+  return(data.frame(power = apply(wave.out$Power, 2, mean), period = (wave.out$period)))
+
+  }
+
+tt3<-ddply(nall.data06_3,.(uniqueID,experiment),function(sub) cwa.1(sub$counts,N=10))
+
+ggplot(tt3,aes(x=period,y=power))+facet_wrap(uniqueID~experiment,scale="free")+geom_line()
+```
+
+![](https://user-images.githubusercontent.com/4654474/34223321-e73070c6-e58c-11e7-9f37-1ff29e0d7189.png)   
 
 ------
 
