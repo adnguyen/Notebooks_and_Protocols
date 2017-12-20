@@ -174,13 +174,13 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 139: 2017-12-08](#id-section139). behavioral data (trikinetics) data parsing update--fixing date order again; update from [2017-11-30 update](id-section135.1).
 * [Page 140: 2017-12-11](#id-section140). Dimensions of biodiversity workshop: managing big data 
 * [Page 141: 2017-12-12](#id-section141). paper notes- Bulla et al. 2017 on Marine Biorhythms and van der Veen et al. 2017 on flexible clock systems     
-* [Page 142:](#id-section142).
-* [Page 143:](#id-section143).
-* [Page 144:](#id-section144).
-* [Page 145:](#id-section145).
-* [Page 146:](#id-section146).
-* [Page 147:](#id-section147).
-* [Page 148:](#id-section148).
+* [Page 142: 2017-12-13](#id-section142). Prepping meeting with Dan, 9AM , 2017-12-14    
+* [Page 143: 2017-12-17](#id-section143). Douse 2013; MESA paper      
+* [Page 144: 2017-12-17](#id-section144). [Time series analysis demo](http://www.stat.pitt.edu/stoffer/tsa4/tsaEZ.pdf)   
+* [Page 145: 2017-12-18](#id-section145). Costantini et al. 2010; *Ecology Letters*; **Ecological processes in a hormetic framework**    
+* [Page 146: 2017-12-18](#id-section146). Trying spectral analysis with spectrum() function   
+* [Page 147: 2017-12-18](#id-section147). Table of contents of physical notebook: NB#001; Apple Maggots; year 2017; grant # 108398
+* [Page 148: 2017-12-18](#id-section148). Chao leading lab meeting   
 * [Page 149:](#id-section149).
 * [Page 150:](#id-section150).
 * [Page 151:](#id-section151).
@@ -13485,47 +13485,535 @@ This paper is like a big laundry list..w.tf.
 
 3.  
 
+
+Dan's suggestion for circadian rhythm analysis; 
+* What do other pepole do to decide which dominant peaks in periodogram to choose from?   
+* particular in fourier transform approach; somebody develop stats? what is heuristic for picking out circadian rhythm  
+* What is going on with continuous wavelet? Binning at lower time give more fine estimates?   
+* Focus on fourier transform data.  
+* look up some general methods papers 
+
+
+paper discussion
+* Read the base papers in the review for marine biorhythms. Do the midge papers.Charalambos P. Kyriacou papers      
+*  
+
+
+metaanalysis ideas given what we've read   
+
+* compare different rhtyms, circ more or less flexible than other rhthms (short, longer)
+* are different components of biological rhythms heritable  
+* what env factors best explain bio rhythms   
+	* light
+	* temp
+	* food 
+* What's the potential for evolution ?  
+
+Organize evolution and biological rhtyhms meeting (tell Dan about time line)   
+
+
 ------
 
  <div id='id-section143'/> 
 
-### Page 143:  
+### Page 143: 2017-12-17. Douse 2013; Maximum entropy spectral analysis (MESA) paper      
+
+
+Dowse, H. B. (n.d.). Maximum entropy spectral analysis for circadian rhythms: theory, history and practice. Retrieved from https://pdfs.semanticscholar.org/d564/6a61fad1e03e61681fc1ec3694c4e36b7456.pdf   
+
+Developed by John Parker Burg in 1960s to address shortcomings of fourier analysis. Go over fourier analysis and how MESA covers it's weaknesses.  
+
+*Sampling frequency must be no less than twice the frequency of the cyclic process of interest*
+
+2 important things to consider: 
+
+1. resolution - ability to separate two frequencies as being distinct. Very similar to optical resolution where two objects in an image want to be separated. Resolution is limited by the number of cycles in the data set, or in optics, diameter of the lens. 
+
+2. Discern periodic signal in the presence of noise , aka, sensitivity  
+
+
+
+**Autocovariance and autocorrelation functions**   
+
+One way to test if the data is rhythmic is to statistically test it with an autocorrelation analysis. 
+
+**Fourier analysis**   
+
+Any function can show certain mimimal properties called "Dirichlet Conditions" and be approximated by a harmonic series of orthogonal sine and cosine terms.  
+
+$f(t) \cong a_0/2 + a_1sint + a_2 sin2t+…+b_1cost +b_2cos2t$     
+
+![](https://user-images.githubusercontent.com/4654474/34118704-a02daf0e-e3ed-11e7-98db-1fe965722500.gif)   
+
+*if the function consists of an ordered set of values x(t), then the "power" in the series is the ensemble average of the squared values.* If the mean is 0, this is the variance.  
+
+The fourier transform is an extension of a fit of the fourier series and has the property that the coefficients approximate the power spectrum. Power at each frequency  can be computed for a continuous serise as:  
+
+$F(\omega) = \int_{-\infty}^{\infty} f(t)e^{(-i\omega t)} dt$     
+
+![](https://user-images.githubusercontent.com/4654474/34083906-d78bd5e6-e345-11e7-93f0-36cfb323a3d9.gif)   
+
+exponential function consolidates sine and cosine terms. F(w) is the spectrum of the function, with $\omega$ as the angular velocity ( akak $2\pi f), where f is the frequency. This is also known as the **periodogram** of the function. 
+
+If the spectrum is calculated directly from data sampled at intervals, it is known as the **Discrete Fourier Transform**.  This is rare and fourier spectra are produced from either autocovariance or autocorrelation.  One reason to use autocovariance is that the output is equlivalent to partitioning the variance in the signal by frequency and the area under the curve is the power.  
+
+**Compromises in fourier analysis**   
+
+~1/3 of the data are used to compute the correlation coefficients because autocov or autocorr functions lose power with each power of points lost. THis adversely affects the resolution in the spectrum. 
+
+Solution - pad out the rest of the function with 0's. Fast fourier transform constrains input series to $2^N$ points.
+
+Problem- adding 0s adds side lobes 
+
+**Maximum entropy spectral analysis**     
+
+gives highest possible resolution while eliminating side lobes. "linchpin" of technique is the stochastic modelling. System moves forward in term as a function of previous values + noise. example is a Markov process:   
+
+![](https://user-images.githubusercontent.com/4654474/34084091-ef8c56ae-e348-11e7-8ce6-e3f30c8a09d2.gif)   
+
+* t is time
+* a is the cofficient derived from the data
+* Zt is white noise 
+
+This process can be extended by going backwards earlier in time , with each weighted by a coffecient derived from the known observed data.  
+
+
+![](https://user-images.githubusercontent.com/4654474/34084126-5c75fe46-e349-11e7-814d-64767ded03ac.gif)  
+
+a, b,c are the model's coefficients and p is the order of the filter   
+
+The model can be used to predict future values based on what is known from the past. Entropy = ignorance in information theory, so calculating values that max ignorance means the values are the most honest. The spectrum is calculated from the coefficients as follows:   
+
+![](https://user-images.githubusercontent.com/4654474/34084175-2e670b34-e34a-11e7-9eed-8dc3facf71e2.gif)  
+
+* Again, S(w) is the spectral power as a function of angular velocity   
+* P is the power passed by the power error filter   
+* a_k is the set of PEF coefficients  
+
+Number of coefficients is important, generally N/4 or N/3, 
+
+**Data conditioning**   
+
+section on how to deal wit data prior to analysis 
+
+1. detrending step which fits a line by regression and subtrracts it, removing linear trend and mean. DC component can obsure rhythmic one  ?
+2. Removal of non-linear component through filters
+	* look into Butterworth filter    
+
+examples of analysis at work: 
+
+1. fruit fly cryptochrome gene - Krishnan eta l. 2001 Nature; Plautz et al. 1997 J Biol Rhythms  
+2. lunar rhythmicity in marine systems (Hamming 1983) --odd citation 
+3. Ultradian and circ rhythms in premature infants -- Tenriero et al. 1991   
+4. Electroencephalography and ulradian period in rats to study models of sleep-wake dynamics - Stephenson et al. 2012 J Biol Rhythms 
+5. ulradian in mice loco activity -- Dowse et al. 2010 J Exp Biol 
+6. Vertical migration in anarctic krill - Gaten et al. 2008 J Genetics   
+7. cardiac pacemaker in fly heart - Dowse et al. 1995 J Neurogenet; Bodmer et al. 2005  
+8. Mating in drosophila control under period gene -- Alt et al. 1998 Anim Behav   
 
 ------
 
  <div id='id-section144'/> 
 
-### Page 144:  
+### Page 144: 2017-12-17. [Time series analysis demo](http://www.stat.pitt.edu/stoffer/tsa4/tsaEZ.pdf)   
+
+Following this demo: http://www.stat.pitt.edu/stoffer/tsa4/tsaEZ.pdf  
+
+Common approaches to time series: 
+
+1. time domain approach 
+2. frequency domain approach   
+
+
 
 ------
 
  <div id='id-section145'/> 
 
-### Page 145:  
+### Page 145:  2017-12-18. Costantini et al. 2010; *Ecology Letters*; Ecological processes in a hormetic framework 
+
+
+Paradox: sublethal stressors can confer resistance/tolerance to future stressors  
+
+This occurs when stressors are at low levels, hence sublethal. What the stressor does is actually "prime" physiological processes such that they are prepared later in life. Termed "hormesis"   
+
+So unclear what hormesis is by the way they describe it... 
+
+Problem they outline: even though hormesis happens, its unclear how other use the word and how you can test it.  
+
+Most work done on toxicology and human health. Check Calabrese & Blain 2005  
+
+Argument: provides conceptual link between prevailing environmental circumstances and organism function. So this is good for eco and evo biologists 
+
+They want to frame hormesis in the context of fitness consequences. They say Darwinian fitness, but fitness is just fine guys.   
+
+**What is hormesis?**  
+
+mid 1880s German pharmacologist Hugo Shulz found that small doses of disinfectants stimulated yeast growth, but was lethal at high doses. People thought this was cool, but homeopathy ruined everything. These authors like to site Calabrese a lot. Anyway, non-linear dose responses have been established between organisms and chemicals/env stressors. 
+
+Hormesis was coined by Chester Southam and John Ehrlich 1943. It is used in two different ways. 
+
+1. response to env stressor varies with level of exposure  
+	1. linear no-threshold model - level of exposure to stressor always negatively affects fitness
+	2. threshold model - fitness is maintained in the face of a stressor up until a certain point where higher doses/exposure negatively affects fitness
+	3. hormetic model - Fitness is increased at lower doses/exposure but is negatively affected at higher doses/exposure.     
+
+**good example in fruit flies(Gibbs et al. 2003)** 
+
+2. "priming" or "conditioning" effect where exposure to a low level of stressor results in the organism being better to cope with exposure to higher levels in the future.  AKA Conditioning hormesis 
+
+
+**Underlying mechanisms**    
+
+* chagnes in gxp in pathways that respond to stressors 
+	* ie hsps, antioxidant enzymes, hormones   
+	* Early life conditioning may have the strongest hormetic effect 
+		* may be due to epigenetic modifications 
+		
+
+### Environmental Agents 
+
+**Nutrition**   
+
+* Non-essential dietary compounds can generate hormetic responses
+* Dietary restriction  
+	* hsp upreg in liver of rats ; increasing cryoprotective molecules and reducing levels of oxidative stress 
+	* mito activity can change 
+
+* they argue that a group that was starved earlier in life might fare better (fitness) as adults compared to fully fed group earlier in life (as adults) . 
+
+
+**temperature**
+
+**physical activity**   
+
+**immune system** 
+
+### Hormesis and phenotypic plasticity  
+
+Hormesis might increase the stress tolerance and response of an organism ; conditioning hormesis might translate into increase in phenotypic plasticity 
+
+**hormesis and fitness**  
+
+THey argue there has to be a link. Because there are energetic trade-offs among life history traits, not all traits can exhibit a hormetic response at the same time.  ex: fitness trade-off between longevity and reproduction in respose to heat stress (Maynard Smith 1958; Le Bourg et al. 200; Le Bourg 2005; Sorensen et al. 2007,2008)   
+
+
+Also should consider some costs associated with mounting a hormetic response. Not only measure ATP< but also other nutrients. If it is too costly, then organisms won't mount a hormetic response. 
+
+### Perspective and conclusions  
+
+Low hanging fruit: compare hormetic response under early and late life sublethal stress exposure    
+
+Need to udnerstand hormesis in the context of multiple stressors  
+
+
+**Thoughts:** 
+
+Overall, interesting paper. I think how they described hormesis was useful in that there were two cases, one being an overall fitness increase at low doses and the other focusing on the timing of exposure that confers fitness advantage. I'm more use to thinking about hormesis in terms of the 2nd case: prior exposure conferring resistance/tolerance to future stressors. They could have done a better job of putting everything in an evolutionary framework. Like...why would this matter in a natural setting. 
+
+* They could have laid out some ecology, for example, under which conditions do you expect more or less hormetic response? For temperature, you'd expect more hormesis for cold tolerance in northern, more variable enviornments. This relates to my range limits ms, and could use this as a citation.  
+	* ants are long lived, so they experience the environmental variation throughout(within) their life time, giving the possibility for hormesis 
+
+* For example, what is the adaptive potential for a hormetic response? They could have added some quantitative genetics in there. 
+
+* It's also fun to think about adding more layers given this framework. For example, basically exploring platicity of plasticity. Measure fitness along an env gradient(temp for example) and overlay that with another (desiccation for example). And you can see how beta shifts with desiccation. 
+
+
 
 ------
 
  <div id='id-section146'/> 
 
-### Page 146:  
+### Page 146:  2017-12-18. Trying spectral analysis with spectrum() function    
+
+scaling up spectrum() function   
+
+```R
+sa.an<-function(ts=counts15$counts15){
+  sa1<-spectrum(ts,method=c("pgram","ar"),plot=FALSE,demean=TRUE,detrend=TRUE,tape=.2)
+  spx<-sa1$freq
+  spy<-2*sa1$spec
+  pw<-data.frame(spx,spy)
+  cc<-head(pw[order(pw$spy,decreasing=TRUE),],4)
+  return(1/cc[,1]/4)  ## hours 
+  #return(1/cc[,1]/4/24)  ## days 
+  
+}
+sa.an()
+```
+
+Units are in hours  
+
+```R
+# 270.00000  26.12903 810.00000  23.14286
+
+```
+
+Operate function for each unique ID and experiment 
+
+```R
+### for each unique ID and experiment  
+test10<-ddply(nall.data15_3,.(uniqueID,experiment),function(sub) sa.an(sub$counts))
+test10   
+```
+
+|uniqueID |experiment  |         V1|         V2|         V3|         V4|
+|:--------|:-----------|----------:|----------:|----------:|----------:|
+|a10o49   |Entrainment |  24.000000|  12.000000| 240.000000|  30.000000|
+|a10o49   |Free-run    |  22.781250|  20.710227|  21.191861|  10.013736|
+|a10o73   |Entrainment |  24.000000|  21.600000|  19.636364|  12.000000|
+|a10o73   |Free-run    |  23.529412|  22.222222|  12.121212|   8.000000|
+|a10w12   |Entrainment |  24.000000|  12.000000|   8.000000|  21.818182|
+|a10w12   |Free-run    |  23.980263|  23.365385|  11.682692|  24.628378|
+|a10w15   |Entrainment |  22.500000|  25.714286|  12.000000|   1.764706|
+|a10w15   |Free-run    |  24.107143|  22.500000|   3.214286|  12.053571|
+|a11w26   |Entrainment |  22.500000|  25.714286|  12.000000|   8.181818|
+|a11w26   |Free-run    |  22.500000|   8.035714|  21.093750|   7.670454|
+|a12b43   |Entrainment |  25.000000|  12.500000|  22.222222|   8.333333|
+|a12b43   |Free-run    |  23.684210|  23.076923|  21.951220|  22.500000|
+|a12b6    |Entrainment |  22.500000|  25.312500|  11.911765|  20.250000|
+|a12b6    |Free-run    | 195.312500|  23.674242| 260.416667|  26.041667|
+|a12w40   |Entrainment |  25.000000|  22.222222|  11.764706|   8.000000|
+|a12w40   |Free-run    | 900.000000| 450.000000|  23.684210| 300.000000|
+|a13o11   |Entrainment |  25.000000|  11.764706|  22.222222|   2.000000|
+|a13o11   |Free-run    |  23.225807| 720.000000|  24.000000|  22.500000|
+|a13o28   |Entrainment |  25.000000|   8.000000|  22.222222|  11.764706|
+|a13o28   |Free-run    | 400.000000|  21.052632|  25.000000|  23.529412|
+|a2b23    |Entrainment |  22.500000|  12.500000|  13.235294| 225.000000|
+|a2b23    |Free-run    |  20.833333|  23.809524|  22.727273|  10.869565|
+|a2b26    |Entrainment |   6.081081|  18.750000|   4.326923|  22.500000|
+|a2b26    |Free-run    |  24.107143|  22.010870|  25.312500|  11.005435|
+|a3o51    |Entrainment |  22.222222|  11.764706|  25.000000|   4.347826|
+|a3o51    |Free-run    |  23.809524|  11.904762|   4.950495|  12.195122|
+|a4o15    |Entrainment |   3.432203|  25.312500|   5.955882|   8.437500|
+|a4o15    |Free-run    |  23.684210|   4.285714|   8.035714|  11.842105|
+|a4w66    |Entrainment |  24.300000|  21.441177| 182.250000|  28.038462|
+|a4w66    |Free-run    |  96.000000|  76.800000| 128.000000|  64.000000|
+|a5b25    |Entrainment |  25.000000|  11.842105|  22.500000|   8.035714|
+|a5b25    |Free-run    |  21.739130|  23.809524|  12.195122| 250.000000|
+|a5w63    |Entrainment | 202.500000|  22.500000|  25.312500|  11.911765|
+|a5w63    |Free-run    |  21.428571|  22.500000|  25.000000|  10.975610|
+|a5w73    |Entrainment |  22.500000|  25.312500|  20.250000| 101.250000|
+|a5w73    |Free-run    |  23.684210|  22.500000| 450.000000| 112.500000|
+|h2b25    |Entrainment |  25.000000|  22.222222|  20.000000|   8.000000|
+|h2b25    |Free-run    | 600.000000| 200.000000|  24.000000|  75.000000|
+|h4o4     |Entrainment |  25.000000|  22.222222|  20.000000| 100.000000|
+|h4o4     |Free-run    | 208.333333|  29.761905|  26.041667| 312.500000|
+|h4w10    |Entrainment |  24.000000|  12.000000|   8.000000|  12.705882|
+|h4w10    |Free-run    |   4.285714|  25.714286|  22.500000|  20.000000|
+|h5o22    |Entrainment |  25.000000|  22.500000|   8.035714|  28.125000|
+|h5o22    |Free-run    | 250.000000|  23.809524|   2.793296| 166.666667|   
+
+
+Values are everywhere, trying to take th eaverage circ timing/period by taking average of values between 20 and 30 hours in data set. 
+
+```R
+##taking circadian value 
+
+test10.merg$circ_time<-apply(test10.merg[,3:6],1,function(x){mean(subset(x,x<30 & x > 20))})
+
+```
+diff between fly and wasp  
+
+![](https://user-images.githubusercontent.com/4654474/34120607-42a9174a-e3f4-11e7-82a4-2fe1999591dc.png)
+
+no relationship between eclosion days vs circ time   
+
+![](https://user-images.githubusercontent.com/4654474/34120608-42b8eec2-e3f4-11e7-81e6-1cdfc39d9077.png)  
+
+compare previous fig with just comparing the dominant period   
+
+![](https://user-images.githubusercontent.com/4654474/34120672-7580017e-e3f4-11e7-9cac-45ebb6988760.png)   
+
+overlaying and adding entrainment vs free run   
+
+![](https://user-images.githubusercontent.com/4654474/34120781-cf231658-e3f4-11e7-8292-cf16a08fa9c5.png)   
+
+doesnt look like much of a pattern  
+
+
+### stats: testing interaction between organism and circ time on eclosion days 
+
+not a balanced design, but just seeing how the stats come out   
+
+```R
+summary(aov(eclosion_days~organism*circ_time,data=test10.merg))
+                   Df Sum Sq Mean Sq F value   Pr(>F)    
+organism            1   6417    6417  33.587 9.96e-07 ***
+circ_time           1      0       0   0.001    0.972    
+organism:circ_time  1    190     190   0.994    0.325    
+Residuals          39   7452     191                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+1 observation deleted due to missingness
+```
+
+ok what about diff in circ time between organisms? yes
+
+```R
+summary(aov(circ_time~organism,data=test10.merg)) 
+           Df Sum Sq Mean Sq F value  Pr(>F)   
+organism     1   7.57   7.572   8.286 0.00632 **
+Residuals   41  37.47   0.914                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+1 observation deleted due to missingness
+```  
+
+no differences between host races 
+
+```R
+tt<-subset(test10.merg,organism!="wasp")
+summary(aov(circ_time~Host,data=tt))
+    Df Sum Sq Mean Sq F value Pr(>F)
+Host         1  0.006  0.0064   0.011  0.918
+Residuals   33 19.677  0.5963               
+1 observation deleted due to missingness
+```   
+
+
 
 ------
 
  <div id='id-section147'/> 
 
-### Page 147:  
+### Page 147: 2017-12-18. Table of contents of physical notebook: NB#001; Apple Maggots; year 2017; grant # 108398    
+
+![](https://user-images.githubusercontent.com/4654474/34123641-38d019f8-e3fe-11e7-8265-c1bb089438c6.JPG)  
+
+![](https://user-images.githubusercontent.com/4654474/34123642-38e35f2c-e3fe-11e7-8dd2-50e522425829.JPG)  
+
+![](https://user-images.githubusercontent.com/4654474/34123644-39076e44-e3fe-11e7-9e34-6f4b88b15a8e.JPG)
+
+![](https://user-images.githubusercontent.com/4654474/34123646-3935fe12-e3fe-11e7-8c51-cc4f94df126c.JPG)  
+
+![](https://user-images.githubusercontent.com/4654474/34123648-395f7fc6-e3fe-11e7-8983-abe85077011a.JPG)   
+
+
+![](https://user-images.githubusercontent.com/4654474/34123643-38f456a6-e3fe-11e7-97dc-4ba07e641dd0.JPG)  
+
+
+![](https://user-images.githubusercontent.com/4654474/34123645-391b3a0a-e3fe-11e7-9598-975f634cba39.JPG)  
+
+![](https://user-images.githubusercontent.com/4654474/34123647-394a38b4-e3fe-11e7-8f0a-5a4038ae6e1e.JPG)   
+
+![](https://user-images.githubusercontent.com/4654474/34123649-396fc8e0-e3fe-11e7-87bb-f90e6b499635.JPG)   
+
 
 ------
 
  <div id='id-section148'/> 
 
-### Page 148:  
+### Page 148:  2017-12-18. Chao leading lab meeting    
+
+![](https://user-images.githubusercontent.com/4654474/34130686-cb580e1c-e416-11e7-8e35-99fec2121d85.JPG)  
+
+![](https://user-images.githubusercontent.com/4654474/34130687-cb653132-e416-11e7-9b5e-ac39174aed9c.JPG)  
+
+![](https://user-images.githubusercontent.com/4654474/34130688-cb76291a-e416-11e7-9db0-8337e1f754b0.JPG)  
+
+![](https://user-images.githubusercontent.com/4654474/34130725-ebb0d400-e416-11e7-92af-c6e30ef24a5a.JPG)  
+
+![](https://user-images.githubusercontent.com/4654474/34130726-ebc43ebe-e416-11e7-9fe4-b8ce282149fd.JPG)
+
 
 ------
 
  <div id='id-section149'/> 
 
-### Page 149:  
+### Page 149:  2017-12-20. continuous wavelet analysis revisted: 6 min bins and exploring power vs period to id multiple dominant peaks    
+
+### Exploring multiple dominant peaks   
+
+reworking function to include time bins that I can divide to calculate period   
+
+```R
+cwa<-function(series=counts15$counts15,N=4){
+  wave.out <- morlet(y1 = series, p2 = 8, dj = 0.1, siglvl = 0.95)
+  wave.out$period <- wave.out$period/N
+  wave.avg <- data.frame(power = apply(wave.out$Power, 2, mean), period = (wave.out$period))
+  aa<-data.frame(findpeaks(wave.avg$power))
+  line<-aa[order(aa,decreasing=TRUE),][1,2]
+  return(wave.avg[line,][2])
+  }
+
+cwa()
+```
+
+estimating period for 6 min bins for each unique ID and experiment   
+
+```R
+test3.6<-ddply(nall.data06_3,.(uniqueID,experiment),function(sub) cwa(sub$counts,N=10))
+knitr::kable(test3.6)
+```
+
+|uniqueID |experiment  |   period|
+|:--------|:-----------|--------:|
+|a10o49   |Entrainment | 24.67491|
+|a10o49   |Free-run    | 21.48076|
+|a10o73   |Entrainment | 23.02251|
+|a10o73   |Free-run    | 23.02251|
+|a10w12   |Entrainment | 24.67491|
+|a10w12   |Free-run    | 23.02251|
+|a10w15   |Entrainment | 24.67491|
+|a10w15   |Free-run    | 23.02251|
+|a11w26   |Entrainment | 23.02251|
+|a11w26   |Free-run    |       NA|
+|a12b43   |Entrainment | 24.67491|
+|a12b43   |Free-run    | 23.02251|
+|a12b6    |Entrainment | 23.02251|
+|a12b6    |Free-run    | 10.74038|
+|a12w40   |Entrainment | 24.67491|
+|a12w40   |Free-run    | 24.67491|
+|a13o11   |Entrainment | 24.67491|
+|a13o11   |Free-run    | 23.02251|
+|a13o28   |Entrainment | 24.67491|
+|a13o28   |Free-run    | 21.48076|
+|a2b23    |Entrainment | 21.48076|
+|a2b23    |Free-run    | 21.48076|
+|a2b26    |Entrainment |       NA|
+|a2b26    |Free-run    | 23.02251|
+|a3o51    |Entrainment | 23.02251|
+|a3o51    |Free-run    |       NA|
+|a4o15    |Entrainment |       NA|
+|a4o15    |Free-run    | 24.67491|
+|a4w66    |Entrainment | 24.67491|
+|a4w66    |Free-run    | 13.22296|
+|a5b25    |Entrainment | 24.67491|
+|a5b25    |Free-run    | 23.02251|
+|a5w63    |Entrainment | 23.02251|
+|a5w63    |Free-run    | 23.02251|
+|a5w73    |Entrainment | 23.02251|
+|a5w73    |Free-run    | 23.02251|
+|h2b25    |Entrainment | 23.02251|
+|h2b25    |Free-run    | 23.02251|
+|h4o4     |Entrainment | 24.67491|
+|h4o4     |Free-run    | 10.74038|
+|h4w10    |Entrainment | 24.67491|
+|h4w10    |Free-run    | 23.02251|
+|h5o22    |Entrainment | 24.67491|
+|h5o22    |Free-run    |       NA|  
+
+some estimates are NA, which is odd. Why...
+
+I'll explore the power vs period spectrum..   
+
+function to grab power vs period and then estimating it for each unique ID and experiment   
+
+```R
+cwa.1<-function(series=counts15$counts15,N=4){
+  wave.out <- morlet(y1 = series, p2 = 8, dj = 0.1, siglvl = 0.95)
+  wave.out$period <- wave.out$period/N
+  return(data.frame(power = apply(wave.out$Power, 2, mean), period = (wave.out$period)))
+
+  }
+
+tt3<-ddply(nall.data06_3,.(uniqueID,experiment),function(sub) cwa.1(sub$counts,N=10))
+
+ggplot(tt3,aes(x=period,y=power))+facet_wrap(uniqueID~experiment,scale="free")+geom_line()
+```
+
+![](https://user-images.githubusercontent.com/4654474/34223321-e73070c6-e58c-11e7-9f37-1ff29e0d7189.png)   
 
 ------
 
