@@ -181,8 +181,8 @@ Notebook for 2017 new year. It'll log the rest of my dissertation and potentiall
 * [Page 146: 2017-12-18](#id-section146). Trying spectral analysis with spectrum() function   
 * [Page 147: 2017-12-18](#id-section147). Table of contents of physical notebook: NB#001; Apple Maggots; year 2017; grant # 108398
 * [Page 148: 2017-12-18](#id-section148). Chao leading lab meeting   
-* [Page 149:](#id-section149).
-* [Page 150:](#id-section150).
+* [Page 149: 2017-12-20](#id-section149). 2017-12-20. continuous wavelet analysis revisted: 6 min bins and exploring power vs period to id multiple dominant peaks    
+* [Page 150: 2017-12-21](#id-section150). Meeting with Dan   
 * [Page 151:](#id-section151).
 * [Page 152:](#id-section152).
 * [Page 153:](#id-section153).
@@ -14015,11 +14015,224 @@ ggplot(tt3,aes(x=period,y=power))+facet_wrap(uniqueID~experiment,scale="free")+g
 
 ![](https://user-images.githubusercontent.com/4654474/34223321-e73070c6-e58c-11e7-9f37-1ff29e0d7189.png)   
 
+
+
 ------
 
  <div id='id-section150'/> 
 
-### Page 150:  
+### Page 150: 2017-12-21 Meeting with Dan    
+
+### Dan could not make meeting , but still prepping stuff to talk about 
+
+1. Paper discussion  
+
+* Dowse, H. B. (n.d.). Maximum entropy spectral analysis for circadian rhythms: theory, history and practice. Retrieved from https://pdfs.semanticscholar.org/d564/6a61fad1e03e61681fc1ec3694c4e36b7456.pdf   
+
+
+
+2. Data discussion 
+	* show spectral analysis    
+	
+
+```
+from last time,   
+Dan's suggestion for circadian rhythm analysis;
+
+* What do other pepole do to decide which dominant peaks in periodogram to choose from?
+* particular in fourier transform approach; somebody develop stats? what is heuristic for picking out circadian rhythm
+* What is going on with continuous wavelet? Binning at lower time give more fine estimates?
+* Focus on fourier transform data.
+* look up some general methods papers
+```
+
+Still running into problem with how to estimate peaks. 
+
+* use findpeak function 
+
+### What the dataset looks like altogether   
+
+```R
+knitr::kable(ddply(test10.merg,.(organism,experiment,Host),summarize,count=length(organism)))
+```  
+
+|organism |experiment  |Host  | count|
+|:--------|:-----------|:-----|-----:|
+|fly      |Entrainment |Apple |    15|
+|fly      |Entrainment |Haw   |     3|
+|fly      |Free-run    |Apple |    15|
+|fly      |Free-run    |Haw   |     3|
+|wasp     |Entrainment |Apple |     1|
+|wasp     |Entrainment |Haw   |     3|
+|wasp     |Free-run    |Apple |     1|
+|wasp     |Free-run    |Haw   |     3|
+
+reworking function to use findpeaks() function in pracma package 
+
+```R
+sa.an<-function(ts=counts15$counts15){
+  sa1<-spectrum(ts,method=c("pgram","ar"),plot=FALSE,demean=TRUE,detrend=TRUE,tape=.2)
+  spx<-sa1$freq
+  spy<-2*sa1$spec
+  pw<-data.frame(spx,spy)
+  cc1<-pw[order(pw$spy,decreasing=TRUE),]
+  cc2<-subset(cc1,spx<0.05)
+  cc2$density<-density(cc2$spy,n=length(cc2$spy))$y
+  cc2$t<-density(cc2$spy,n=length(cc2$spy))$x
+  #cc<-findpeaks(cc2[,3],minpeakheight=1E-6)
+  cc<-findpeaks(cc2[,1])
+  cc2[order(cc2$density,decreasing=TRUE),]
+  out<-1/cc2[cc[,2],][,1]/4
+  #out<-1/cc2[cc[,2],][,1]/4/24
+  return(out[1:4])
+  ## hours 
+  
+  
+}
+
+sa.an()
+```
+
+[1] 26.12903 23.14286 21.89189 21.31579
+
+
+estimating biological rhtyhms for each unique ID and experiment   
+
+```R
+### for each unique ID and experiment  
+test10<-ddply(nall.data15_3,.(uniqueID,experiment),function(sub) sa.an(sub$counts))
+knitr::kable(cbind(test10[,1:2],round(test10[,3:6],3)))
+
+```
+
+
+|uniqueID |experiment  |     V1|     V2|     V3|     V4|
+|:--------|:-----------|------:|------:|------:|------:|
+|10o49    |Entrainment | 12.000|  8.000|  6.000|  7.500|
+|10o49    |Free-run    | 20.710| 10.014| 18.984| 22.226|
+|10o73    |Entrainment |  8.000|  7.714|  6.353|  6.000|
+|10o73    |Free-run    |  7.843|  9.302|  5.970|  6.557|
+|10w12    |Entrainment |  8.000| 12.632| 13.333|  8.571|
+|10w12    |Free-run    | 11.683|  7.594|  7.409|  5.457|
+|10w15    |Entrainment |  6.000|  5.455|  9.474|  5.294|
+|10w15    |Free-run    |  6.027|  5.357|  5.533| 10.227|
+|11w26    |Entrainment |  6.000|  6.667|  7.500|  7.200|
+|11w26    |Free-run    |  8.036|  5.819|  5.037|  5.444|
+|12b43    |Entrainment | 12.500|  8.333|  5.882|  7.692|
+|12b43    |Free-run    | 21.951| 12.000| 21.429| 20.000|
+|12b6     |Entrainment | 11.912|  5.956| 18.409|  6.328|
+|12b6     |Free-run    | 23.674| 26.042| 27.902| 30.048|
+|12w40    |Entrainment |  8.000|  6.061|  5.714|  5.263|
+|12w40    |Free-run    | 23.684| 75.000| 90.000| 24.324|
+|13o11    |Entrainment | 11.765|  8.000|  5.128|  5.405|
+|13o11    |Free-run    |  7.500|  5.902|  5.854|  5.714|
+|13o28    |Entrainment |  8.000|  6.667|  5.263|  6.061|
+|13o28    |Free-run    | 21.053|  8.511|  9.091|  8.696|
+|2b23     |Entrainment | 12.500| 11.842| 16.071| 11.250|
+|2b23     |Free-run    | 10.870| 10.417| 16.129| 10.638|
+|2b26     |Entrainment |  8.654|  5.625|  8.333|  5.921|
+|2b26     |Free-run    | 22.011| 11.005|  5.219|  6.027|
+|3o51     |Entrainment | 11.765|  6.250|  6.061|  5.882|
+|3o51     |Free-run    | 11.905|  9.434|  8.065|  8.333|
+|4o15     |Entrainment |  5.956|  6.328|  5.786|  8.100|
+|4o15     |Free-run    |  8.036|  6.000|  5.921| 10.976|
+|4w66     |Entrainment | 21.441| 11.391| 11.045|  5.975|
+|4w66     |Free-run    | 76.800| 54.857| 42.667| 12.000|
+|5b25     |Entrainment | 11.842|  8.036|  7.759|  6.081|
+|5b25     |Free-run    | 12.195| 11.628| 11.364|  5.208|
+|5w63     |Entrainment | 22.500| 11.912|  5.956|  5.625|
+|5w63     |Free-run    | 10.976|  8.036|  5.921|  5.422|
+|5w73     |Entrainment | 20.250|  6.532|  7.788| 10.125|
+|5w73     |Free-run    | 22.500| 11.250|  7.627|  8.333|
+|h2b25    |Entrainment |  8.000|  6.061|  5.263|  5.882|
+|h2b25    |Free-run    | 24.000|  8.000|  8.108|  9.091|
+|h4o4     |Entrainment | 20.000|  8.000| 11.765|  6.061|
+|h4o4     |Free-run    | 26.042| 52.083| 23.148| 27.174|
+|h4w10    |Entrainment |  8.000| 18.000|  5.838|  6.000|
+|h4w10    |Free-run    |  5.143|  5.294|  6.000|  6.923|
+|h5o22    |Entrainment |  8.036| 12.500|  6.081|  5.921|
+|h5o22    |Free-run    | 23.810| 22.727|  5.556|  5.155|
+
+Merge dataset with original one with eclosion data.   
+
+```R
+###match data with eclosion data 
+
+### have to adjust uniqueID dataframe in test10 to match orig.dat
+test10$uniqueID<-as.factor(ifelse(substr(test10$uniqueID,1,1)=="a",substr(test10$uniqueID,2,10),substr(test10$uniqueID,1,10)))
+
+##orig.dat
+orig.dat<-read.csv("../Data/2017-11-17_subset_host_comparison_trik_data_extract.csv")
+
+test10.merg<-inner_join(test10,orig.dat,by="uniqueID")
+
+```
+
+Since dominant periods are at different time scales, I explored comparing biological rhythms at the same scale among individuals. Have to extract and summarize that data from the 4 columns   
+
+```R
+test10.merg$circ_time<-apply(test10.merg[,3:6],1,function(x){mean(subset(x,x<35 & x > 20))})
+
+test10.merg$ult_time<-apply(test10.merg[,3:6],1,function(x){mean(subset(x,x<20))})
+test10.merg$day_time<-apply(test10.merg[,3:6],1,function(x){mean(subset(x,x>48))})
+
+```
+
+### Comparisons for each specific biological rhythms among organisms: flies vs wasps   
+
+```R
+ab<-ggplot(test10.merg,aes(x=organism,y=circ_time))+geom_boxplot()
+cd<-ggplot(test10.merg,aes(x=organism,y=ult_time))+geom_boxplot()
+grid.arrange(cd,ab,ncol=2)
+```   
+
+![](https://user-images.githubusercontent.com/4654474/34272652-0e9405e2-e65f-11e7-95bf-4bf18a55a2b3.png)
+
+### Relationship to eclosion days, for circ time 
+
+![](https://user-images.githubusercontent.com/4654474/34273171-3d9fe674-e661-11e7-9b62-d8f6be489240.png)  
+
+stats
+
+```R
+ summary(aov(eclosion_days~organism+circ_time,data=test10.merg))
+            Df Sum Sq Mean Sq F value   Pr(>F)    
+organism     1   4227    4227  28.411 3.23e-05 ***
+circ_time    1    739     739   4.966   0.0375 *  
+Residuals   20   2976     149                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+21 observations deleted due to missingness
+```
+
+
+### Reminders : from 2017-12-13
+
+metaanalysis ideas given what we've read
+
+compare different rhtyms, circ more or less flexible than other rhthms (short, longer)
+are different components of biological rhythms heritable
+what env factors best explain bio rhythms
+* light
+* temp
+* food
+
+What's the potential for evolution ?
+
+**Organize evolution and biological rhtyhms meeting (tell Dan about time line)**   
+
+* Evolution 2018: Montpillier France; 
+	* August 19-22
+	* Post doc travel grant: http://evolutionmontpellier2018.org/travel-grants   
+		* Deadline is January 17th 
+
+* Biological rhythms meeting 2018: https://srbr.org/meetings/upcoming-meeting/registration/
+	* May 12-16 2018
+	* registration: 
+		* early(nov 15-march 1) reg non member - **$725**  ; **$425 member**
+		* late ( march 2 to onsite) reg non member - **$825**; **$525 member**
+		* early(nov 15-march 1) post doc non member - **$475**  ; **$425 post doc member**
+		* late ( march 2 to onsite) post doc non member - **$575**; **$525 post doc member**
 
 ------
 
