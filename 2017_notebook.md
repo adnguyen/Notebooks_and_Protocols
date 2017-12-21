@@ -14037,7 +14037,8 @@ ggplot(tt3,aes(x=period,y=power))+facet_wrap(uniqueID~experiment,scale="free")+g
 
 
 from last time,   
-Dan's suggestion for circadian rhythm analysis;
+Dan's suggestion for circadian rhythm analysis;  
+
 ```
 * What do other pepole do to decide which dominant peaks in periodogram to choose from?
 * particular in fourier transform approach; somebody develop stats? what is heuristic for picking out circadian rhythm
