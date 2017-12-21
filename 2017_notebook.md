@@ -14035,10 +14035,10 @@ ggplot(tt3,aes(x=period,y=power))+facet_wrap(uniqueID~experiment,scale="free")+g
 	* show spectral analysis    
 	
 
-```
+
 from last time,   
 Dan's suggestion for circadian rhythm analysis;
-
+```
 * What do other pepole do to decide which dominant peaks in periodogram to choose from?
 * particular in fourier transform approach; somebody develop stats? what is heuristic for picking out circadian rhythm
 * What is going on with continuous wavelet? Binning at lower time give more fine estimates?
@@ -14091,6 +14091,7 @@ sa.an<-function(ts=counts15$counts15){
 }
 
 sa.an()
+
 ```
 
 [1] 26.12903 23.14286 21.89189 21.31579
@@ -14204,6 +14205,8 @@ Residuals   20   2976     149
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 21 observations deleted due to missingness
 ```
+
+ultradian not significant.   
 
 
 ### Reminders : from 2017-12-13
