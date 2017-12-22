@@ -14236,7 +14236,22 @@ What's the potential for evolution ?
 		* early(nov 15-march 1) reg non member - **$725**  ; **$425 member**
 		* late ( march 2 to onsite) reg non member - **$825**; **$525 member**
 		* early(nov 15-march 1) post doc non member - **$475**  ; **$425 post doc member**
-		* late ( march 2 to onsite) post doc non member - **$575**; **$525 post doc member**
+		* late ( march 2 to onsite) post doc non member - **$575**; **$525 post doc member**    
+		
+		
+2017-12-22. actual meeting   
+
+Look into Cold spring harbor protocols 
+	* set up trikinetics
+	* data analysis 
+	* data handling  
+	
+Basically, look at protocols online, actually check papers that have similar data structure like ours. Look up drosophila work. 
+
+**Analyze existing, publicly available datasets** to see if we can recapitulate results.    
+
+How do we separate signal from noise?      
+		
 
 ------
 
