@@ -21,7 +21,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 
 # Table of contents (Layout follows Page number: Date. Title of entry)    
 * [Page 1: 2018-01-01 ](#id-section1). Yearly goals: recap from last year and this year's
-* [Page 2:  ](#id-section2). 
+* [Page 2: 2018-01-01 ](#id-section2). Evolution meeting prep/thoughts 
 * [Page 3:  ](#id-section3).
 * [Page 4:  ](#id-section4).
 * [Page 5:  ](#id-section5).
@@ -282,11 +282,68 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 7. Apply for and secure external funding  
 
 
+
 ------
 
 <div id='id-section2'/>    
     
-### Page 2: 
+### Page 2: 2018-01-01. Evolution meeting prep/thoughts  
+
+Presenting poster on Rhagoletis and talk on thermal adaptation in Aphaeno   
+
+thoughts on the talk - I can draw from all of my projects to construct a nice story. I want to give my talk in the evolutionary physiology symposium (s69). The flow of the story will be from field metrics of stress responses due to experimental warming and then dissecting out the possible mechanisms of those stress responses, pitched in terms of physiological strategies organisms can adopt. I want to shift away from this gene does this towards a more complete understanding of what the genes tell us about the whole organism and what they're doing!  
+ 
+
+Title:  
+* Physiological strategies of temperature adaptation in ants  
+* Responding to environmental change will require temperature adaptation involving tolerance  
+* Adaptive responses to environmental change will require physiological shifts in... 
+* Evolutionary innovations to environmental change in the common woodland ant 
+
+1. Stressed in nature - yes! Ants show a stress response to experimental warming. 
+	* this'll highlight the field relevance and impact !
+2. Are these differences due to adaptations? If so, what kinds? And what does this response mean?  
+3. Ants can withstand heat stress by resistance and/or tolerance
+4. Common garden experiments: 
+	* measuring the stress kinetics show that protection and tolerance , but not basal gxp
+	* under acclimation, yes basal gxp can change 
+5. punchline, these types of adaptations are unique and can only be detected with a rxn norm approach, because shifts in basal are found in the majority of other studies. 	
+
+Potential opening: 
+
+*I'm broadly interested in how organisms operate. And we can access how organisms operate by perturbing them and observing them under different contexts. For example, one big experiment that is happening right now is climate warming. So the main question in our research group is how will organisms respond to climate warming? ...Chamber stuff...source of selection....what is the actual source of selection? does it match up? Phylo context of ctmax*...mechanisms behind variation in CTmax ...phys strategies (resistance and tolerance)...
+
+reminders from last year:  
+
+**Organize evolution and biological rhtyhms meeting (tell Dan about time line)**   
+
+* Evolution 2018: Montpillier France; 
+	* August 19-22
+	* Post doc travel grant: http://evolutionmontpellier2018.org/travel-grants   
+		* Deadline is January 17th 
+
+* Biological rhythms meeting 2018: https://srbr.org/meetings/upcoming-meeting/registration/
+	* May 12-16 2018
+	* registration: 
+		* early(nov 15-march 1) reg non member - **$725**  ; **$425 member**
+		* late ( march 2 to onsite) reg non member - **$825**; **$525 member**
+		* early(nov 15-march 1) post doc non member - **$475**  ; **$425 post doc member**
+		* late ( march 2 to onsite) post doc non member - **$575**; **$525 post doc member**    
+		
+		
+2017-12-22. actual meeting   
+
+Look into Cold spring harbor protocols 
+	* set up trikinetics
+	* data analysis 
+	* data handling  
+	
+Basically, look at protocols online, actually check papers that have similar data structure like ours. Look up drosophila work. 
+
+**Analyze existing, publicly available datasets** to see if we can recapitulate results.    
+
+How do we separate signal from noise?      
+ 
 
 ------
 
