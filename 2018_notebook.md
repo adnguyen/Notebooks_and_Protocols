@@ -10,7 +10,7 @@
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.    
 
 **Introduction:**    
-Notebook for 2018 new year. It'll log the rest of my dissertation, post doc projects, and general project ideas
+Notebook for 2018 new year. It'll log the rest of my dissertation, post doc projects, meetings, papers I've read, and general project ideas.
 
 ## List of projects and description   
 * Hsp rxn norm: Understanding how the local thermal environment shapes thermal tolerance and stress response (using Hsps as a proxy for stress) in forest ants of the genus *Aphaenogaster*. CTmax and rxn norm of Hsp expression measured across forest ants from Fl to Maine.   
@@ -20,7 +20,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * ​Biological rhythms in *Rhagoletis*: Determining the relationship between behavioral rhythms in adult *Rhagoletis* and diapause exit timing + depth(eclosion and mass specific metabolic rate). 
 
 # Table of contents (Layout follows Page number: Date. Title of entry)    
-* [Page 1:  ](#id-section1). 
+* [Page 1: 2018-01-01 ](#id-section1). Yearly goals: recap from last year and this year's
 * [Page 2:  ](#id-section2). 
 * [Page 3:  ](#id-section3).
 * [Page 4:  ](#id-section4).
@@ -227,15 +227,66 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 
 <div id='id-section1'/>    
     
-### Page 1: 2016-07-08.  test      
+### Page 1: 2017-01-01. Yearly goals: recap from last year and this year's    
 
+**2017 recap of goals**  
+
+1. Submit and Publish 3 manuscripts: range limits, Hsp rxn norm, and multiple stressors (also thermal niche paper).    
+	* Published multiple stressors ms
+	* Still ned to submit and publish 3-5 other ms:  
+		* proteome stability proj
+		* range limits
+		* hsp rxn norm
+		* stressed in nature (SHC is lead) 
+		* thermal niche paper with Lacy  
+		
+2. Get a post doc. This'll probably involve learning a new study system. And also sending out tons of applications.      
+	* at UF! Yay!
+3. Learn and build a shiny app.    
+	* did not do this at all  
+4. Learn and become more proficient in statistics (Machine learning?, Baysian, predictive modelling, mixed effects modelling, eigentensor analyses).     
+	* Quantitative genetics: more statistical genetics   
+		* just dabbled in all of this, but didn't really learn much more 
+		* Instead, I learned more about time series analyses, so that is something statistical   
+	
+5. Form new collaborations? It'd be awesome to work with Brent Sinclair, Brent Lockwood, Joel Kingsolver, Caroline Williams, Jon Stillman, Alex Gunderson.     
+	* didn't form any new collabs with any of these people   
+	* formed one with European colleague studying temperature adaptation in an alpine ant
+	
+6. Participate in a meta-analysis? Would be cool. 
+	* Dan and I are coming up with a meta analysis related to biological timing or diapause  
+	
+7. Learn more physiology: Q10, metabolism related topics, lipid membranes, metabolites.         
+	* Learned some respirometry!   
+
+
+
+
+**2018 year goals**   
+
+1. Submit and publish range limits, hsp rxn norm, and thermal niche papers.    
+
+2. Build a data science course   
+
+3. Solidify meta analysis ideas and start the project  
+
+4. Learn and become more proficient at analyzing biological rhythm data; analyze Rhagoletis biological rhythm data to a point where I have a cool story to tell.
+
+5. Start working on european cornborers: 
+	* Learn rearing, diapause biology (induction, termination) 
+	* experiment on behavioral rhythms  
+	* do experiments to understand the molecular basis of behavioral rhythms, specifically focusing on period   
+	
+6. Start constructing a teaching and research statement  
+
+7. Apply for and secure external funding  
 
 
 ------
 
 <div id='id-section2'/>    
     
-### Page 2: 2016-06-16 title        
+### Page 2: 
 
 ------
 

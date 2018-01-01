@@ -1,8 +1,3 @@
----
-output:
-  html_document: default
-  pdf_document: default
----
 # 2017 General Notebook
 
 ### Author: Andrew D. Nguyen, [Evolutionary Physiologist](https://adnguyen.github.io)      
