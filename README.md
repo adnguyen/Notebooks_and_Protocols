@@ -5,7 +5,7 @@
 Date started: 2016-10-04    
 Last date modified: ongoing    
 
-This repo shares my protocols and notebooks of ongoing work with the aim of capturing the process of science as it is happening and making it transparent and reproducible. Template for making an online notebook found [here](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/Online_notebook_template.md).
+This repo shares my protocols and notebooks of ongoing work with the aim of capturing the process of science as it is happening and making it transparent and reproducible. Template for making an online notebook found [here](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/Online_notebook_template.md). View github repo [here](https://github.com/adnguyen/Notebooks_and_Protocols).
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 ------
@@ -14,7 +14,7 @@ This repo shares my protocols and notebooks of ongoing work with the aim of capt
 
 # List of Notebooks by year    
 
-* [2018](). This notebook log: 
+* [2018_Notebook](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2018_notebook.md). This notebook log: 
   * dissertation projects (hsp rxn norm, range limits, proteome stability project, stressed in nature, thermal niche)
   * post doc projects (biological rhythms of *Rhagoletis*, meta-analysis of biological rhythms)
   * paper readings on biological rhythms and thermal adaptation
