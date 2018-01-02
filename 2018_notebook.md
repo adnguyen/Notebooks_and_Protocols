@@ -22,7 +22,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 # Table of contents (Layout follows Page number: Date. Title of entry)    
 * [Page 1: 2018-01-01 ](#id-section1). Yearly goals: recap from last year and this year's
 * [Page 2: 2018-01-01 ](#id-section2). Evolution meeting prep/thoughts 
-* [Page 3:  ](#id-section3).
+* [Page 3: 2018-01-02 ](#id-section3). Range limits ms edits 
 * [Page 4:  ](#id-section4).
 * [Page 5:  ](#id-section5).
 * [Page 6:  ](#id-section6).
@@ -349,7 +349,86 @@ How do we separate signal from noise?
 
 <div id='id-section3'/>    
     
-### Page 3:  
+### Page 3: 2018-01-02. Range limits ms edits   
+
+Addressing some ms edits here:  
+
+from SHC in results section-*Determining the relationship between cold-tolerance and climate*: 
+
+>You need to test how much of the variation in Tmin is explained by the combination of Tmax and seasonality.   
+
+Not sure if this is right to do, but it seems better to just state how Tmin is correlated with Tmax and seasonality. 
+
+
+correlation between tmin with Tmax and sd
+
+```R
+cor.test(dbio2$SD,dbio2$Tmin)
+
+	Pearson's product-moment correlation
+
+data:  dbio2$SD and dbio2$Tmin
+t = -22.766, df = 100, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.9422686 -0.8773033
+sample estimates:
+       cor 
+-0.9155697 
+```
+
+
+```R
+cor.test(dbio2$Tmax,dbio2$Tmin)
+
+	Pearson's product-moment correlation
+
+data:  dbio2$Tmax and dbio2$Tmin
+t = 2.3546, df = 100, p-value = 0.0205
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.03633252 0.40558545
+sample estimates:
+     cor 
+0.229188 
+```
+
+take home: Tmin has high correlation with SD and not Tmax   
+
+
+but i'll do the regression here to show it: 
+
+```R
+summary(lm(Tmin~Tmax+SD,data=dbio2))
+
+Call:
+lm(formula = Tmin ~ Tmax + SD, data = dbio2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.7794 -2.3577 -0.8954  1.5918 16.5544 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 88.3238275 11.3484853   7.783 6.98e-12 ***
+Tmax         0.6692606  0.0359986  18.591  < 2e-16 ***
+SD          -0.0418123  0.0008353 -50.058  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3.935 on 99 degrees of freedom
+Multiple R-squared:  0.964,	Adjusted R-squared:  0.9633 
+F-statistic:  1325 on 2 and 99 DF,  p-value: < 2.2e-16
+```
+
+Dan wants G matrix--- put in supplement:  
+
+|                | pretreat_Temp-5| pretreat_Temp0| pretreat_Temp25| pretreat_Temp5|
+|:---------------|---------------:|--------------:|---------------:|--------------:|
+|pretreat_Temp-5 |         3328.40|       -2175.66|        -5635.48|         287.85|
+|pretreat_Temp0  |        -2175.66|       15856.71|       -16232.99|       -8876.65|
+|pretreat_Temp25 |        -5635.48|      -16232.99|        38801.25|       17335.45|
+|pretreat_Temp5  |          287.85|       -8876.65|        17335.45|       24394.16|
 
 ------
 
@@ -361,7 +440,14 @@ How do we separate signal from noise?
 
 <div id='id-section5'/>    
     
-### Page 5:  
+### Page 5:  2018-01-02. to do list this month, 2018 january
+
+1. range limits ms - send out by end of this week (jan 5)
+2. hsp rxn norm ms (send out Jan 19?) 
+3. evolution conference submission of abstract, and also for travel grant jan 15
+4. construct evolution talk, quick and dirty just to  have the slides together 
+5. read more on time series analyses 
+6. biological rhythms conference - register as member and for conference just to get out of the way 
 
 ------
 
