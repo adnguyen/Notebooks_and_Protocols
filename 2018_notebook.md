@@ -23,8 +23,8 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 1: 2018-01-01 ](#id-section1). Yearly goals: recap from last year and this year's
 * [Page 2: 2018-01-01 ](#id-section2). Evolution meeting prep/thoughts 
 * [Page 3: 2018-01-02 ](#id-section3). Range limits ms edits 
-* [Page 4:  ](#id-section4).
-* [Page 5:  ](#id-section5).
+* [Page 4: 2018-01-02 ](#id-section4). to do list this month, 2018 january
+* [Page 5: 2018-01-03 ](#id-section5). range limits ms , stats for single regressions of CCRT on Tmin
 * [Page 6:  ](#id-section6).
 * [Page 7:  ](#id-section7).
 * [Page 8:  ](#id-section8).
@@ -430,17 +430,22 @@ Dan wants G matrix--- put in supplement:
 |pretreat_Temp25 |        -5635.48|      -16232.99|        38801.25|       17335.45|
 |pretreat_Temp5  |          287.85|       -8876.65|        17335.45|       24394.16|
 
+
+**2018-01-03 entry**
+
+```
+% * <shelmscahan@gmail.com> 2017-12-26T17:27:46.052Z:
+% The fact that there is a threshold does not imply that environmental change is steep.  Even if a change is very very gradual, if an organism has a lower limit, at some point they will hit it.  You don;t even have an indirect density indicator of this (ie they stay really numerous right up to the boundary until they suddenly drop out).  To say the gradient is steep would mean actually mapping out what happens to environmental predictors across the transect from present to absent.  You have not done this.  I have removed steep from this paragraph (obviously if you are super opposed you could add it back over my objection).
+```  
+
+
+Makes no sense, this is the whole point of modelling exercise. 
+
 ------
 
 <div id='id-section4'/>    
     
-### Page 4:  
-
-------
-
-<div id='id-section5'/>    
-    
-### Page 5:  2018-01-02. to do list this month, 2018 january
+### Page 4:  2018-01-02. to do list this month, 2018 january
 
 1. range limits ms - send out by end of this week (jan 5)
 2. hsp rxn norm ms (send out Jan 19?) 
@@ -448,6 +453,215 @@ Dan wants G matrix--- put in supplement:
 4. construct evolution talk, quick and dirty just to  have the slides together 
 5. read more on time series analyses 
 6. biological rhythms conference - register as member and for conference just to get out of the way 
+
+------
+
+<div id='id-section5'/>    
+    
+### Page 5:  2018-01-03. range limits ms , stats for single regressions of CCRT on Tmin     
+
+
+**basal data**
+
+```R
+ksub<-subset(k.dat,k.dat$pretreat_Temp=="25")
+ksub$coldplot<-max(ksub$treatment_recovery_s)-ksub$treatment_recovery_s
+ str(ksub)
+'data.frame':	21 obs. of  47 variables:
+ $ Colony              : Factor w/ 21 levels "Avon","Avon_2",..: 21 5 8 4 14 13 1 2 9 3 ...
+ $ Date                : Factor w/ 11 levels "","07-Jul-15",..: 3 4 4 5 6 6 7 7 8 9 ...
+ $ Plot                : Factor w/ 17 levels "","19:01","19:03",..: 11 1 15 8 4 5 2 3 16 14 ...
+ $ State               : Factor w/ 2 levels "Maine","Vermont": 1 1 1 1 1 1 1 1 1 1 ...
+ $ County              : Factor w/ 5 levels "","Franklin ",..: 5 4 3 5 4 2 2 2 3 4 ...
+ $ Town                : Factor w/ 17 levels "Avon","Bingham",..: 17 5 7 4 13 12 1 1 8 2 ...
+ $ Lat                 : num  44.6 45 45.1 44.7 44.7 ...
+ $ Lon                 : num  -69.3 -69.5 -68.6 -69.4 -69.8 ...
+ $ Altitude_ft         : int  510 543 315 468 203 411 857 852 250 470 ...
+ $ Temp                : num  20.6 22.5 27.7 23.9 23 23.6 23.9 24.6 18.8 20 ...
+ $ Wind.Speed          : num  0 0 0.7 0 0 0 0 0 0 0 ...
+ $ Humidity            : num  83.5 72.6 56.3 71.6 73.2 67.6 54.6 68.7 81.2 78 ...
+ $ Wind.Chill          : num  20.6 23.8 27.6 23.8 22.4 22.9 24 24.6 19.2 20.6 ...
+ $ Heat.Stress.Index   : num  20.9 22.2 31.9 25.7 22.8 22.1 24.9 28.6 18.7 20.5 ...
+ $ Barometric.Pressure : num  29.4 29.3 29.6 29.4 29.7 ...
+ $ soil_temp           : num  14.5 15 16 15 17 15 15 14.5 15 15 ...
+ $ canopy_photo        : Factor w/ 17 levels "","19:1 Avon",..: 10 16 14 7 17 4 2 3 15 13 ...
+ $ Tree.Species        : Factor w/ 17 levels "","birch, conifers",..: 3 17 5 12 7 8 14 13 2 6 ...
+ $ Understory          : Factor w/ 11 levels ""," new growth conifers",..: 1 5 7 2 2 1 1 6 8 1 ...
+ $ Habitat.Photo.Number: Factor w/ 18 levels "","19:1 Avon",..: 10 17 14 7 18 4 2 3 15 13 ...
+ $ Nest_substrate      : Factor w/ 10 levels "","Branch and leaf litter",..: 6 3 9 9 9 9 8 2 9 5 ...
+ $ CTmax               : num  40.9 36.8 40.7 41.2 39.5 ...
+ $ MAT                 : num  6.7 5.4 5.7 6.6 6.3 5.9 4.7 4.7 5.7 5.3 ...
+ $ MDR                 : num  12.2 12.5 12.2 12.4 12.6 12.5 12.2 12.2 12 12.6 ...
+ $ ISO                 : num  0.29 0.29 0.29 0.3 0.3 0.3 0.29 0.29 0.29 0.29 ...
+ $ SD                  : num  97.7 101.5 98.4 98.8 99.2 ...
+ $ Tmax                : num  26.8 26 26.1 26.9 26.8 26.2 24.9 24.9 25.9 25.9 ...
+ $ Tmin                : num  -13.9 -16.3 -15.1 -14.4 -15 -15 -16.4 -16.4 -14.8 -16.4 ...
+ $ TAR                 : num  40.7 42.3 41.2 41.3 41.8 41.2 41.3 41.3 40.7 42.3 ...
+ $ TWQ                 : num  2.1 0.6 1.2 1.9 1.6 1.3 0.1 0.1 1.3 0.7 ...
+ $ TDQ                 : num  -5.1 -6.9 -6.2 -5.4 -5.8 -6 -7.4 -7.4 -6.1 -7 ...
+ $ TwarmQ              : num  18.9 18 18 18.9 18.6 18.1 17 17 18 17.8 ...
+ $ TminQ               : num  -6.5 -8.4 -7.6 -6.8 -7.1 -7.3 -8.7 -8.7 -7.4 -8.4 ...
+ $ AP                  : int  1094 1065 1046 1069 1057 1106 1102 1102 1079 1052 ...
+ $ PWM                 : int  116 109 113 112 108 113 113 113 118 106 ...
+ $ PDM                 : int  73 67 75 69 68 73 69 69 79 64 ...
+ $ PSD                 : int  12 12 12 12 11 10 12 12 12 13 ...
+ $ PWQ                 : int  316 298 303 306 297 310 305 305 316 291 ...
+ $ PDQ                 : int  238 217 230 226 224 244 231 231 242 211 ...
+ $ PwarmQ              : int  262 280 258 265 271 279 296 296 257 286 ...
+ $ PminQ               : int  254 237 257 242 237 254 243 243 270 229 ...
+ $ pretreat_Temp       : int  25 25 25 25 25 25 25 25 25 25 ...
+ $ pre                 : num  0 0 0 0 0 0 0 0 0 0 ...
+ $ treatment_recovery_s: num  577 624 745 816 724 ...
+ $ diff                : num  -577 -624 -745 -816 -724 ...
+ $ coldplot            : num  541 494 373 302 394 ...
+ $ hard.zero           : num  -153 -335 -386 -309 -264 ...
+```
+
+**basal regression**
+
+```R
+summary(lm(coldplot~Tmin,data=ksub))
+
+Call:
+lm(formula = coldplot ~ Tmin, data = ksub)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-333.63  -82.44   -5.63   90.37  266.36 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)  -889.43     413.86  -2.149  0.04473 * 
+Tmin          -89.93      27.62  -3.256  0.00416 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 141.1 on 19 degrees of freedom
+Multiple R-squared:  0.3581,	Adjusted R-squared:  0.3244 
+F-statistic:  10.6 on 1 and 19 DF,  p-value: 0.004157
+```
+
+
+**hardening data** 
+
+```R
+zero<-subset(k.dat,k.dat$pretreat_Temp=="0")
+ksub$hard.zero<-ksub$treatment_recovery_s-zero$treatment_recovery_s
+nbn3<-ddply(ksub,.(Colony,pretreat_Temp),summarize,CCRT=mean(hard.zero),Tmin=mean(Tmin))
+str(nbn3)
+'data.frame':	21 obs. of  4 variables:
+ $ Colony       : Factor w/ 21 levels "Avon","Avon_2",..: 1 2 3 4 5 6 7 8 9 10 ...
+ $ pretreat_Temp: int  25 25 25 25 25 25 25 25 25 25 ...
+ $ CCRT         : num  41 -72.3 -346.4 -309.2 -334.8 ...
+ $ Tmin         : num  -16.4 -16.4 -16.4 -14.4 -16.3 -15.2 -13.6 -15.1 -14.8 -13.5 ...
+```
+
+**hardening regression** 
+
+```R
+summary(lm(CCRT~Tmin,data=nbn3))
+
+Call:
+lm(formula = CCRT ~ Tmin, data = nbn3)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-402.13  -96.13   26.98  137.37  236.14 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept) -1346.45     516.54  -2.607   0.0173 *
+Tmin          -73.85      34.47  -2.142   0.0453 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 176.1 on 19 degrees of freedom
+Multiple R-squared:  0.1945,	Adjusted R-squared:  0.1522 
+F-statistic: 4.589 on 1 and 19 DF,  p-value: 0.04534
+
+```
+
+SHC comments to address too: 
+
+```
+% What % improvement do your hardening results represent?  This would tell you whether 4.8 minutes is really too short to be able to detect hardening given the inherent measurement error in such experiments.  If it is 10%, that would be almost a minute improvement, which seems quite feasible.  
+```
+
+how to calculate this... 
+
+```R
+###stitching together 0 and 25 C pre-treatment
+nn<-rbind(zero,ksub)
+#calculating the difference in the max CCRT (for the data which includes 0) from all other measurements of CCRT
+
+## this is to put everything on the same scale and have higher values as more cold tolerant
+nn$delta<-max(nn$treatment_recovery_s)-nn$treatment_recovery_s
+```
+
+lets look at the data:  
+
+```R
+ggplot(nn,aes(x=Tmin,y=delta,colour=factor(pretreat_Temp)))+geom_point()+stat_smooth(method="lm")
+```
+
+![](https://user-images.githubusercontent.com/4654474/34528687-9d2477f2-f077-11e7-80b0-c342e49352f0.png)
+
+
+```R
+##convert long to wide format to get  0 and 25 as diff columns
+nn2<-melt(nn,id.vars=c("pretreat_Temp","Colony"),measure.vars=c("delta"))
+wide.nn<-spread(nn2,pretreat_Temp,value)[-19,-2]
+
+
+##dataset
+knitr::kable(wide.nn)
+```
+
+|   |Colony       |        0|       25|
+|:--|:------------|--------:|--------:|
+|1  |Avon         | 688.4167| 729.4167|
+|2  |Avon_2       | 666.7500| 594.4167|
+|3  |Bingham      | 803.4167| 457.0000|
+|4  |Burnham      | 610.7500| 301.5000|
+|5  |Cambridge    | 828.7500| 494.0000|
+|6  |Canaan       | 711.7500| 605.7500|
+|7  |cent2        | 503.5000| 298.7500|
+|8  |Greenbush    | 758.7500| 373.0000|
+|9  |Greenfield   | 778.0833| 532.7500|
+|10 |Hampden      | 612.0000| 271.7500|
+|11 |Monroe       | 702.7500| 582.0000|
+|12 |New Portland | 613.0000| 655.5000|
+|13 |New Sharon   | 609.7500| 398.0000|
+|14 |Norridgewock | 657.2500| 393.5000|
+|15 |Palmyra      | 822.7500| 318.2500|
+|16 |Phillips     | 646.4167| 679.5000|
+|17 |Saponac      | 723.7500| 564.0833|
+|18 |ted1         | 766.2500| 328.0000|
+|20 |ted8         | 701.5000| 424.0000|
+|21 |Unity        | 694.2500| 541.0000|
+
+
+### calculating % improvement 
+
+so this is the calculation of the amount of seconds changed, scaled by the total time/value at 25 C to calculate improvement of hardening ability. 
+
+% percent changed 
+```R
+round(abs(wide.nn$`0`-wide.nn$`25`)/wide.nn$`25`,3)*100
+ [1]   5.6  12.2  75.8 102.6  67.8  17.5  68.5 103.4  46.1 125.2  20.7   6.5  53.2  67.0
+[15] 158.5   4.9  28.3 133.6  65.4  28.3
+```
+
+range of % changed
+
+```R
+range(round(abs(wide.nn$`0`-wide.nn$`25`)/wide.nn$`25`,3)*100)
+
+ 4.9 158.5
+
+```
+
+
 
 ------
 
