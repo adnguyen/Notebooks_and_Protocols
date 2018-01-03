@@ -581,10 +581,12 @@ F-statistic: 4.589 on 1 and 19 DF,  p-value: 0.04534
 
 ```
 
-SHC comments to address too: 
+### SHC comments to address on % hardening improvement from 25 C pre-treatment temp: 
 
 ```
-% What % improvement do your hardening results represent?  This would tell you whether 4.8 minutes is really too short to be able to detect hardening given the inherent measurement error in such experiments.  If it is 10%, that would be almost a minute improvement, which seems quite feasible.  
+% What % improvement do your hardening results represent? 
+This would tell you whether 4.8 minutes is really too short to be able to detect hardening given the inherent measurement error in such experiments.
+If it is 10%, that would be almost a minute improvement, which seems quite feasible.  
 ```
 
 how to calculate this... 
@@ -659,6 +661,46 @@ range(round(abs(wide.nn$`0`-wide.nn$`25`)/wide.nn$`25`,3)*100)
 
  4.9 158.5
 
+```
+
+### lets look at this in terms of minutes instead of seconds 
+
+```R
+##lets look at the amount of time that has changed itself
+
+wide.nn$minutes_change<-abs(wide.nn$`0`-wide.nn$`25`)/60
+#range of minutes 
+```
+
+
+|   |Colony       |        0|       25| minutes_change|
+|:--|:------------|--------:|--------:|--------------:|
+|1  |Avon         | 688.4167| 729.4167|      0.6833333|
+|2  |Avon_2       | 666.7500| 594.4167|      1.2055556|
+|3  |Bingham      | 803.4167| 457.0000|      5.7736111|
+|4  |Burnham      | 610.7500| 301.5000|      5.1541667|
+|5  |Cambridge    | 828.7500| 494.0000|      5.5791667|
+|6  |Canaan       | 711.7500| 605.7500|      1.7666667|
+|7  |cent2        | 503.5000| 298.7500|      3.4125000|
+|8  |Greenbush    | 758.7500| 373.0000|      6.4291667|
+|9  |Greenfield   | 778.0833| 532.7500|      4.0888889|
+|10 |Hampden      | 612.0000| 271.7500|      5.6708333|
+|11 |Monroe       | 702.7500| 582.0000|      2.0125000|
+|12 |New Portland | 613.0000| 655.5000|      0.7083333|
+|13 |New Sharon   | 609.7500| 398.0000|      3.5291667|
+|14 |Norridgewock | 657.2500| 393.5000|      4.3958333|
+|15 |Palmyra      | 822.7500| 318.2500|      8.4083333|
+|16 |Phillips     | 646.4167| 679.5000|      0.5513889|
+|17 |Saponac      | 723.7500| 564.0833|      2.6611111|
+|18 |ted1         | 766.2500| 328.0000|      7.3041667|
+|20 |ted8         | 701.5000| 424.0000|      4.6250000|
+|21 |Unity        | 694.2500| 541.0000|      2.5541667|
+
+**ok, the range in minutes?**
+
+```R
+range(wide.nn$minutes_change)
+[1] 0.5513889 8.4083333
 ```
 
 
