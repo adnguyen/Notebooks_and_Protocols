@@ -25,7 +25,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 3: 2018-01-02 ](#id-section3). Range limits ms edits 
 * [Page 4: 2018-01-02 ](#id-section4). to do list this month, 2018 january
 * [Page 5: 2018-01-03 ](#id-section5). range limits ms , stats for single regressions of CCRT on Tmin
-* [Page 6:  ](#id-section6).
+* [Page 6: 2018-01-05 ](#id-section6). UPDATE: to do list this month, 2018 january
 * [Page 7:  ](#id-section7).
 * [Page 8:  ](#id-section8).
 * [Page 9:  ](#id-section9).
