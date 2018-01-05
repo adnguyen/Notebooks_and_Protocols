@@ -571,7 +571,7 @@ Residuals:
 Coefficients:
             Estimate Std. Error t value Pr(>|t|)  
 (Intercept) -1346.45     516.54  -2.607   0.0173 *
-Tmin          -73.85      34.47  -2.142   0.0453 *
+Tmin          73.85      34.47  -2.142   0.0453 *
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
@@ -703,8 +703,17 @@ range(wide.nn$minutes_change)
 [1] 0.5513889 8.4083333
 ```
 
+### taking this paragraph out of discussion   
 
+```
+The patterns of cold hardening observed in this study suggest that \textit{A. picea} are exposed to conditions in the field that are at or near their physiological limits.  \textit{Aphaenogaster picea} colonies were the most cold tolerant at 0  \degree C pre-treatment temperatures, with a substantial decline in hardening ability when exposed to -5 \degree C, yet, soil temperatures in Maine at ant-wintering depths typically range from 0  to -5  \degree C, with even lower temperatures possible on a short-term basis (Schaefer et al. 2009).  Maintaining performance below 0  \degree C pre-treated temperatures may impose significant physiological challenges due to tissue damage from freezing selecting for both constitutive and inducible mechanisms to counter stressful mean temperatures and pulses of more extreme conditions (Bale 2002). 
+```
 
+2018-01-04: not sure if I want to expand on this idea, but leaving it here   
+
+```
+negative correlation in aphaenogaster; 0 was the optimal performance for many colonies, anything past that might be a constraint because tissues begin to become damaged from freezing.
+```
 ------
 
 <div id='id-section6'/>    
