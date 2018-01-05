@@ -718,7 +718,30 @@ negative correlation in aphaenogaster; 0 was the optimal performance for many co
 
 <div id='id-section6'/>    
     
-### Page 6:  
+### Page 6:  2018-01-05. UPDATE: to do list this month, 2018 january
+
+1. range limits ms - send out by end of this week (jan 5)
+	* done, tweaked results little, major tweaks discussion, rewrote abstract  
+2. hsp rxn norm ms (send out Jan 19?) 
+	* work on next, what needs to be done? 
+	* From [2018_nb_page108](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#page-108-2017-07-31-dissertation-work-progress-list):
+		* Rearranged figures; so results need to be rewritten; introduction needs tweaking; discussion needs to be finished
+			* Figure layout:
+				* Predictions figure: Fold induction vs temperature for each parameter
+				* Phylogenetic analysis: ancestral trait reconstruction
+				* Non-phylogenetic controlled analysis: CTmax vs environment
+				* CTmax vs hsp params
+				* hsp params vs habitat type
+				* Methods figure: example of fitting boltzmann to hsp gxp
+		* SHC has comments on results 
+		
+3. evolution conference submission of abstract, and also for travel grant jan 15
+	* submitted both!  
+4. construct evolution talk, quick and dirty just to  have the slides together 
+5. read more on time series analyses 
+6. biological rhythms conference - register as member and for conference just to get out of the way 
+
+not done anything for 4-6. 
 
 ------
 
