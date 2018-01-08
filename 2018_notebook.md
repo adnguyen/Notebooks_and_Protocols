@@ -26,7 +26,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 4: 2018-01-02 ](#id-section4). to do list this month, 2018 january
 * [Page 5: 2018-01-03 ](#id-section5). range limits ms , stats for single regressions of CCRT on Tmin
 * [Page 6: 2018-01-05 ](#id-section6). UPDATE: to do list this month, 2018 january
-* [Page 7:  ](#id-section7).
+* [Page 7: 2018-01-08 ](#id-section7). To do list
 * [Page 8:  ](#id-section8).
 * [Page 9:  ](#id-section9).
 * [Page 10:  ](#id-section10).
@@ -747,7 +747,20 @@ not done anything for 4-6.
 
 <div id='id-section7'/>    
     
-### Page 7:  
+### Page 7: 2018-01-08. To do list   
+
+1. Set up weekly meeting with Dan    
+	* Fridays 3pm, starting next week
+	* Dan says I need to understand the Rhagoletis system better   
+		* Dan will send out paper  
+2. Set up schedule with undergrad researchers  
+	* Cwu - try to set her up with Qinwen working on the ECB system ; can she get paid too ? 
+	* KLennon: Monday, Tuesday, Sund: 1-3pm; Thursday 10:30Am-12:30PM
+	* Tat: M,W,F,Sat: 7-9PM; Thursday 9AM-11AM  
+	* Taariq : working on script to assemble trik data with master datasheet 
+3. Start working on Hsp rxn norm paper   
+
+
 
 ------
 
