@@ -27,7 +27,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 5: 2018-01-03 ](#id-section5). range limits ms , stats for single regressions of CCRT on Tmin
 * [Page 6: 2018-01-05 ](#id-section6). UPDATE: to do list this month, 2018 january
 * [Page 7: 2018-01-08 ](#id-section7). To do list
-* [Page 8:  ](#id-section8).
+* [Page 8: 2018-01-08 ](#id-section8). Removing DS_store in github repo
 * [Page 9:  ](#id-section9).
 * [Page 10:  ](#id-section10).
 * [Page 11:  ](#id-section11).
@@ -766,7 +766,19 @@ not done anything for 4-6.
 
 <div id='id-section8'/>    
     
-### Page 8:  
+### Page 8: 2018-01-08.  Removing DS_store in github repo
+
+plaguing my existence... good solutions [here](https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository)
+
+1. In terminal where project is located: 
+
+```
+find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
+```
+
+2. then add ".DS_Store" in gitignore, and save  
+
+
 
 ------
 
