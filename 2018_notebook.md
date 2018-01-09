@@ -786,6 +786,11 @@ find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
     
 ### Page 9:  2018-01-09. reading biological rhythms workshop I: Introduction by Kuhlman et al. 2007; Cold spring harbor    
 
+
+ref:   
+Kuhlman, S. J., Mackey, S. R., & Duffy, J. F. (2007). Biological Rhythms Workshop I: introduction to chronobiology. Cold Spring Harbor Symposia on Quantitative Biology, 72, 1–6. https://doi.org/10.1101/sqb.2007.72.059
+
+
 This paper gives a timeline of chronobiology 
 
 ### a little bit of history or historical context
