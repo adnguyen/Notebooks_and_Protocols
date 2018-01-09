@@ -29,7 +29,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 7: 2018-01-08 ](#id-section7). To do list
 * [Page 8: 2018-01-08 ](#id-section8). Removing DS_store in github repo
 * [Page 9: 2018-01-09 ](#id-section9). reading biological rhythms workshop I: Introduction by Kuhlman et al. 2007; Cold spring harbor
-* [Page 10:  ](#id-section10).
+* [Page 10: 2018-01-09 ](#id-section10). Updated to do list
 * [Page 11:  ](#id-section11).
 * [Page 12:  ](#id-section12).
 * [Page 13:  ](#id-section13).
