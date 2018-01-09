@@ -28,7 +28,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 6: 2018-01-05 ](#id-section6). UPDATE: to do list this month, 2018 january
 * [Page 7: 2018-01-08 ](#id-section7). To do list
 * [Page 8: 2018-01-08 ](#id-section8). Removing DS_store in github repo
-* [Page 9:  ](#id-section9).
+* [Page 9: 2018-01-09 ](#id-section9). reading biological rhythms workshop I: Introduction by Kuhlman et al. 2007; Cold spring harbor
 * [Page 10:  ](#id-section10).
 * [Page 11:  ](#id-section11).
 * [Page 12:  ](#id-section12).
@@ -784,13 +784,66 @@ find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
 
 <div id='id-section9'/>    
     
-### Page 9:  
+### Page 9:  2018-01-09. reading biological rhythms workshop I: Introduction by Kuhlman et al. 2007; Cold spring harbor    
+
+This paper gives a timeline of chronobiology 
+
+### a little bit of history or historical context
+
+- An astronomer, Jean-Jacque D'Ortous deMairan (1729) made one of the first observations that organisms exhibit cyclical behavior: leaf movements in heliotrope plants continue in constant darkness. (Free run experimetn ) 
+
+- Franz Halberg 1959 coined the term *circadian*, circa = about, dies= day, to refer to daily rhythms that persist under free run. 
+
+- The most well known circadian rhythms occur in single cells, whereby transcription and translation form feedback loops.  
+
+- Biological rhythms are suppose to be or presumed adaptive.    
+
+- It was Bunning 1935 who first discovered that biological rhythms are heritable and have a genetic basis; daily rhythms could be extended to seasonal rhythms.  
+
+- Ronald Konopka and Seymour Benzer 1971 mutgenized fruit flies to understand the rhythnsm of pupal eclosion and locomotor activity (have to read this paper!).These flies could be non-rhythnmic, or rhythmic over short or longer time scales. All phenotypes were found to be within the Period gene (region/locus). 
+
+- Ok, wow, we can manipulate the timing of organisms, but what are some of the functional consequences? 
+	* Karl von Frisch and Beling showed that bees use their clocks to visit flowers at the time of the day when the flower opens 
+	* Kramer showed that birds' migration patterns are rhythmic
+	* DeCoursey et al. 2000 show that chipmucks modulate rhythms to avoid predation  
+	* Steve Reppert showed that monarch butterflies likely use biological rhythms to initiate migration and track seasonal changes  	
+
+### Some terminology   
+
+- "Black-box" experiments are used to probe mechanisms of clock function (Moore-Ede et al. 1982)
+	* no clue what this means, wtf
+	
+- Overt outputs - observable, measurable rhythmic outputs ( leaf movement) 
+- a rhythm is considered to be circadian if the oscillation has a 24 hour period(approx) 
+	* but why... the main argument is the relative role of env vs genetics on biological rhythms  
+	
+
 
 ------
 
 <div id='id-section10'/>    
     
-### Page 10:  
+### Page 10: 2018-01-09. Updated to do list
+
+
+1. Read papers for discussion with Dan 
+	* still waiting for dan as to what they are
+2. Set up schedule with undergrad researchers  
+	* Cwu - try to set her up with Qinwen working on the ECB system ; can she get paid too ? ---sent out coordinating email  
+	* KLennon: Monday, Tuesday, Sund: 1-3pm; Thursday 10:30Am-12:30PM -- got keys
+	* Tat: M,W,F,Sat: 7-9PM; Thursday 9AM-11AM   -- got keys
+	* Taariq : working on script to assemble trik data with master datasheet (meeeting wednesday 10AM)
+3. Start working on Hsp rxn norm paper   
+	* set up github repo, so data are accessible and can work on it from anywhere 
+	* still need to start....
+4. thermal niche ms
+	* Lchick to send me a version by end of week to edit 
+5. range limits ms
+	* sent out, 
+	* submit soon? February...please!?
+6. euro collab ms
+	* wait for results of tests of selection, then help write results and discussion 
+
 
 ------
 
