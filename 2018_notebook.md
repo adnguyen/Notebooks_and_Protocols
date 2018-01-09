@@ -816,7 +816,67 @@ This paper gives a timeline of chronobiology
 - Overt outputs - observable, measurable rhythmic outputs ( leaf movement) 
 - a rhythm is considered to be circadian if the oscillation has a 24 hour period(approx) 
 	* but why... the main argument is the relative role of env vs genetics on biological rhythms  
-	
+
+**Free running period**	
+
+* process of organism's rhythm syncrhonizes to external cycling cue is known as entrainment  
+* Free run is the cyclical behavior in the absence of the cue (so darkness if light entrained)
+* Diurnal orgs have shorter free run (faster clock) under high light intensity than low light intensity 
+	* citation? 
+* Free run in diurnal orgs found by Jurgen Aschoff, known as, "Aschoff's Rule" (Aschoff and Wever 1962)  
+* The degree of free run change is influneced by prior experience to entrainment cue (light), known as *aftereffect*. fuck these words, wtf? Keep the terms the same among disciplines ---acclimation ! 
+
+**Two properties of circ rhythms that are often focused in experimental studies**    
+
+1. ability of rhythm to be reset, or phase-shifted, by transient exposure to time cues such as light
+2. temperature-compensation
+
+bad writing....very little clue about what they're talking about. Why would this matter? Presenting a question and hypothesis helps.   
+
+
+### Phase shifting and phase-response curve    
+
+This is a manipulation aimed at resetting the clock such that the rhythms differ between manipulated vs unmanipulated. If you do this with an external cue (light), then it can show that the cue and changes to that cue is important for setting biological rhythms. 
+
+* If you set this manipulation at different times of the day, then it'll show that sensitivity to resetting differs at differnt parts fo the cycle (Hastings and Sweeney 1958)
+
+
+Possible that the clock doesnt reset at all.   
+
+### Temperature-compensation   
+
+Expectation: clock should not change despite changes in ambient temperature 
+
+What? this is garbage. One could expect this under the "hotter is better" hypothesis whereby biochemical reactions simply speed up as a function of temperature. So the clock should change by getting shorter andf aster.   
+
+uncited claim : freer un period changes little over a temp range  
+
+
+bad....
+
+They need to parse out these ideas better. In the face of temperature changes, the organism can maintain their biological clock. For example, they can initiate behaviors at the same time of the day. This would be robustness of biological rhythms. But, temperature itself can act as an entrainment cue too. 
+
+### Concept of Clock    
+
+Would have been nice to explain jargon before talking about it. Organizational problem here.  
+ 
+Chandrashekaran 1998 - 
+
+Clock - endogenous nature of rhythms ( innate, rather than learned), a way of measuring time for the organism. 
+
+Bad definition. This should be described like any other trait, which has a genetic and environmental basis. 
+
+
+### Thoughts   
+
+Aside from citations pointing to some cool studies, historical context, and defining some words (entrainment, free run), this paper doesn't have a good conceptual description of biological clocks. Why would phase shift matter, why would someone want to know that, how is it applicable to some greater concept of how organisms work? smh. 
+
+
+
+
+
+
+
 
 
 ------
