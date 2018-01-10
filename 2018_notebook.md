@@ -31,7 +31,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 9: 2018-01-09 ](#id-section9). reading biological rhythms workshop I: Introduction by Kuhlman et al. 2007; Cold spring harbor
 * [Page 10: 2018-01-09 ](#id-section10). Updated to do list
 * [Page 11: 2018-01-10 ](#id-section11). Reading Wadsworth et al. 2013; Journal of Evo Biol. Developmental exit to diapause and how it relates to the evolution of insect seasonality 
-* [Page 12:  ](#id-section12).
+* [Page 12: 2018-01-10 ](#id-section12). Meeting AMellison on range limits paper
 * [Page 13:  ](#id-section13).
 * [Page 14:  ](#id-section14).
 * [Page 15:  ](#id-section15).
@@ -922,18 +922,68 @@ Wadsworth, C. B., Woods, W. A., Hahn, D. A., & Dopman, E. B. (2013). One phase o
 A little background: These authors are working on the european cornborer (ECB), where two strains differ in their seasonal emergence.  
 
 1. E strain = earlier emerging strain 
+	* this strain is bivoltine, so it has two generations per year
+	* ID'd by $PDD^S$ allele
 2. Z strain = later emerging strain 
+	* this strain is univoltine, so 1 generation per year 
+	* ID'd by $PDD^L$ allele
 
-Main Question: What part of diapause is critical for seasonal timing? In this case, emergence. 
+### Main Question: What part of diapause is critical for seasonal timing? In this case, emergence. 
 
-Hypothesis: 
+Hypothesis: The timing of diapause termination causes the differences in emergence timing between E and Z strains.  
+
+### Experimental approach: 
+
+* Induce diapause  in 12:12 L:D at constant 23 C. (Glover 1992) for both strains, E and Z
+* ECB diapauses as larvae; measured metabolic rates and modeled its trajectory with a function 
+
+I messed around with the function [here](http://adnguyen.github.io/demos/2018-01-10_phases_of_diapause_exit.html). It is basically an exponential model with 3 parameters: 
+
+* a = presistent metabolic increase that defines the start of termination   
+* b = rate of metabolic increase during diapause termination   
+* c = initial metabolic rate during diapuse maintenance phase   
+
+### Major results: diapause termination corresponds with metrics of emergence timing int he field (# breeding adults and pupae)   
+
+E strain, which has earlier emergence timing, has shorter time of diapause break (diapause termination) than Z strain. It looks like the difference amounts to 22 days (Z-E, 34-12).   
+
+
+### Discussion points
+
+* similar thing happens in swallowtail butterflies (*Papilio*) (Scriber & Ording 2005) 
+	* northern ones are univoltine with obligate pupal diapause and produce earlier summer flights
+	* southern ones are bivoltine and more facultative, producing diapause and non-diapausing phenotypes
+
 
 
 ------
 
 <div id='id-section12'/>    
     
-### Page 12:  
+### Page 12: 2018-01-10. Meeting AMellison on range limits paper
+
+
+* In the CART model, scale the bioclim variables first.
+
+For figure 3.
+
+* For vertical variation, say constant for the loadings (panel b)
+* panel a, additive response rather than additive variation ; because the sd doesn't change, the eigenvector remains constant 
+* for panel c,d ; more than just horizontal shift, both shift in level and in variance. You want to show a step function in the loadings
+* simulate distributions and then compute the variance-covariance matrix and then plot the loadings 
+* Set up a new set of panels and set up the null expectations  
+
+### Take home: 
+
+think about how to write the patterns of perf curves and how it maps to the loadings. Look back at Kingsolver et al. 2015 and see how he writes it. 
+
+
+* Citizen science idea--I should write this out , later. But it deals with species distribution modeling. One problem you'll encounter is that there is error from citizens! You have to account for error of detection. 
+	* talk to matt fitzpatrick about proj	
+	* AMellison said it would be a good idea to apply for grant   
+* AMEllison is trying to push out genome paper with MLau   
+
+
 
 ------
 
