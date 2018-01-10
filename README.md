@@ -52,11 +52,9 @@ This repo shares my protocols and notebooks of ongoing work with the aim of capt
 * [Heat shocking, RNA isolations, and QPCR](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_ANBE_protocols.md)
 * [Protein related](https://github.com/adnguyen/2016_Protein_stability_evolution/blob/master/Documents/Protocols/Protocols.md)
 
-### University of Florida, Hahn Lab protocols 
+###[University of Florida, Hahn Lab protocols](https://adnguyen.github.io/Hahn_lab_protocols/)
 
-* [Gene and protein expression experiments](https://adnguyen.github.io/Hahn_lab_protocols/)   
-
-# Notes 
+# Notes
 
 Referencing some syntax for pandoc for converting md to html:
 

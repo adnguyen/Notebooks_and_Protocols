@@ -30,7 +30,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 8: 2018-01-08 ](#id-section8). Removing DS_store in github repo
 * [Page 9: 2018-01-09 ](#id-section9). reading biological rhythms workshop I: Introduction by Kuhlman et al. 2007; Cold spring harbor
 * [Page 10: 2018-01-09 ](#id-section10). Updated to do list
-* [Page 11:  ](#id-section11).
+* [Page 11: 2018-01-10 ](#id-section11). Reading Wadsworth et al. 2013; Journal of Evo Biol. Developmental exit to diapause and how it relates to the evolution of insect seasonality 
 * [Page 12:  ](#id-section12).
 * [Page 13:  ](#id-section13).
 * [Page 14:  ](#id-section14).
@@ -914,7 +914,20 @@ Aside from citations pointing to some cool studies, historical context, and defi
 
 <div id='id-section11'/>    
     
-### Page 11:  
+### Page 11:  2018-01-10. Reading Wadsworth et al. 2013; Journal of Evo Biol. Developmental exit to diapause and how it relates to the evolution of insect seasonality   
+
+ref: 
+Wadsworth, C. B., Woods, W. A., Hahn, D. A., & Dopman, E. B. (2013). One phase of the dormancy developmental pathway is critical for the evolution of insect seasonality. Journal of Evolutionary Biology, 26(11), 2359–2368. https://doi.org/10.1111/jeb.12227   
+
+A little background: These authors are working on the european cornborer (ECB), where two strains differ in their seasonal emergence.  
+
+1. E strain = earlier emerging strain 
+2. Z strain = later emerging strain 
+
+Main Question: What part of diapause is critical for seasonal timing? In this case, emergence. 
+
+Hypothesis: 
+
 
 ------
 
