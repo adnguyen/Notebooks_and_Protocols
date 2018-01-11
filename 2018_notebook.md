@@ -975,6 +975,8 @@ For figure 3.
 
 2018-01-11 update: [done here](http://adnguyen.github.io/demos/2018-01-10_simulate_perf_curves.html); look identical to my figures
 
+For standardizing variables, seems like the consensus is no, unless you're comparing with other predictive models: [1](https://stats.stackexchange.com/questions/89162/standardizing-inputs-for-cart),[2](https://stats.stackexchange.com/questions/51523/log-transformation-in-cart-analysis/51534#51534)
+
 ### Take home: 
 
 think about how to write the patterns of perf curves and how it maps to the loadings. Look back at Kingsolver et al. 2015 and see how he writes it. 
