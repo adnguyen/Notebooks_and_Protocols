@@ -973,6 +973,8 @@ For figure 3.
 * simulate distributions and then compute the variance-covariance matrix and then plot the loadings 
 * Set up a new set of panels and set up the null expectations  
 
+2018-01-11 update: [done here](http://adnguyen.github.io/demos/2018-01-10_simulate_perf_curves.html); look identical to my figures
+
 ### Take home: 
 
 think about how to write the patterns of perf curves and how it maps to the loadings. Look back at Kingsolver et al. 2015 and see how he writes it. 
