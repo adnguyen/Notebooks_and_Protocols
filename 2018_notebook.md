@@ -28,11 +28,11 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 6: 2018-01-05 ](#id-section6). UPDATE: to do list this month, 2018 january
 * [Page 7: 2018-01-08 ](#id-section7). To do list
 * [Page 8: 2018-01-08 ](#id-section8). Removing DS_store in github repo
-* [Page 9: 2018-01-09 ](#id-section9). reading biological rhythms workshop I: Introduction by Kuhlman et al. 2007; Cold spring harbor
+* [Page 9: 2018-01-09 ](#id-section9). reading biological rhythms workshop I: Introduction by **Kuhlman et al. 2007**; Cold spring harbor
 * [Page 10: 2018-01-09 ](#id-section10). Updated to do list
-* [Page 11: 2018-01-10 ](#id-section11). Reading Wadsworth et al. 2013; Journal of Evo Biol. Developmental exit to diapause and how it relates to the evolution of insect seasonality 
+* [Page 11: 2018-01-10 ](#id-section11). Reading **Wadsworth et al. 2013**; Journal of Evo Biol. Developmental exit to diapause and how it relates to the evolution of insect seasonality 
 * [Page 12: 2018-01-10 ](#id-section12). Meeting AMellison on range limits paper
-* [Page 13: 2018-01-12 ](#id-section13). Stålhandske et al. 2014; post winter development of a butterfly
+* [Page 13: 2018-01-12 ](#id-section13). **Stålhandske et al. 2014**; post winter development of a butterfly
 * [Page 14:  ](#id-section14).
 * [Page 15:  ](#id-section15).
 * [Page 16:  ](#id-section16).
@@ -1094,7 +1094,7 @@ Table 3: variance partitioning of growth for each phase, for each temperature le
 
 * Would have produced different plots to make it more understandable. Actually plot stuff across lat or the real env variables themselves.
 
-* Figure 1. give this fig, you'd expect faster dev rates for sweden than uk due to the differences in the slopes of the lines. Sweden is steeper, selecting for a phenotype that chagnes in response to it. 
+* Figure 1. give this fig, you'd expect faster dev rates for sweden than uk due to the differences in the slopes of the lines. Sweden is steeper, selecting for a phenotype that chagnes in response to it.  
 
 
 
