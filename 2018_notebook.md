@@ -33,7 +33,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 11: 2018-01-10 ](#id-section11). Reading **Wadsworth et al. 2013**; Journal of Evo Biol. Developmental exit to diapause and how it relates to the evolution of insect seasonality 
 * [Page 12: 2018-01-10 ](#id-section12). Meeting AMellison on range limits paper
 * [Page 13: 2018-01-12 ](#id-section13). **Stålhandske et al. 2014**; post winter development of a butterfly
-* [Page 14:  ](#id-section14).
+* [Page 14: 2018-01-12 ](#id-section14). working on hsp rxn norm paper 
 * [Page 15:  ](#id-section15).
 * [Page 16:  ](#id-section16).
 * [Page 17:  ](#id-section17).
@@ -1100,7 +1100,25 @@ Table 3: variance partitioning of growth for each phase, for each temperature le
 
 <div id='id-section14'/>    
     
-### Page 14:  
+### Page 14:  2018-01-12. working on **hsp rxn norm paper**   
+
+* Mainly working on results and tidying up sentences. 
+* There are 2 abstracts, taking out the one that got voted out!    
+
+**Abstract v2
+	Colonization into warm environments may involve mechanisms to cope with protein unfolding that is caused by high temperatures. These mechanisms include protection, tolerance, and resistance by heat shock proteins (Hsps), but the extent that contributes to physiological limits is poorly understood. We evaluated the relative importance of Hsp expression dynamics related to upper thermal limits (CTmax) of Eastern US forest ants in the genus Aphaenogaster whose geographical ranges encompass a climate gradient across two distinct forest types. Within this group, the evolutionary transition from closed canopy deciduous forests into open canopy pine forests occurred once and coincided with an increase in CTmax. Using a function-valued approach, we tested whether species divergence in CTmax between forest types corresponded with changes the Hsp expression kinetics that support the concerted roles of protection, tolerance and resistance. Protection was conferred with pre-emptive higher expression at the cooler end of the temperature gradient by slowing the overall expression rate. Greater tolerance was brought about by higher peak expression. Lastly, colonies with higher CTmax delayed their onset of expression, suggesting greater stress resistance to temperature perturbations. The upward extension of CTmax involved coordinated, adaptive, and dynamic shifts in the stress response that reflects better maintenance of protein homeostasis under temperature challenge and may have facilitated the diversification of forest ants into divergent thermal environments. These results lay out the expectation for the types of evolved mechanisms needed for surviving a warmer world in the future.**   
+	
+* I still need to tweak the other abstract and incorporate edits from Dan. 
+
+* Need to adjust results of topic sentences with this comment from SHC: 
+
+> It would be nice to have a statement of the objective and what you did to test it at the beginning of each results paragraph (To do X, we did Y).  The methods exist, but they are at the end so your readers will not know what is going on.   
+
+* Took out this sentence in intro, leave it here:  
+
+> The protective effects of Hsps are exemplified by enhanced thermal tolerance in flies with higher experimentally increased copy number (Welte et al. 1993; Feder 1995).   
+
+
 
 ------
 
