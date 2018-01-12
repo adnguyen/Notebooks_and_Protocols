@@ -32,7 +32,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 10: 2018-01-09 ](#id-section10). Updated to do list
 * [Page 11: 2018-01-10 ](#id-section11). Reading Wadsworth et al. 2013; Journal of Evo Biol. Developmental exit to diapause and how it relates to the evolution of insect seasonality 
 * [Page 12: 2018-01-10 ](#id-section12). Meeting AMellison on range limits paper
-* [Page 13:  ](#id-section13).
+* [Page 13: 2018-01-12 ](#id-section13). Stålhandske et al. 2014; post winter development of a butterfly
 * [Page 14:  ](#id-section14).
 * [Page 15:  ](#id-section15).
 * [Page 16:  ](#id-section16).
@@ -987,15 +987,116 @@ think about how to write the patterns of perf curves and how it maps to the load
 	* AMellison said it would be a good idea to apply for grant   
 * AMEllison is trying to push out genome paper with MLau   
 
+2018-01-12 update
+
+other projects I'm on that I've forgotten about    
+
+* genome paper  
+* phylo paper with Bernice
 
 
 ------
 
 <div id='id-section13'/>    
     
-### Page 13:  
+### Page 13: 2018-01-12. Stålhandske et al. 2014; post winter development of a butterfly
+
+Reading to discuss with Dan.   
+
+reference: 
+
+Stålhandske, S., Gotthard, K., Posledovich, D., & Leimar, O. (2014). Variation in two phases of post-winter development of a butterfly. Journal of Evolutionary Biology, 27(12), 2644–2653. https://doi.org/10.1111/jeb.12519    
+
+Wow, awesome sentence: 
+
+> Fine- tuning of the life cycle may be particularly important to match the phenology of potential mates and resources as well as for optimizing abiotic conditions at eclosion.
+
+------  
+
+Counter gradient variation is a term that has always confused me; wiki defines as: 
+
+> Countergradient variation is a type of phenotypic plasticity that occurs when the genetic components of populations cause phenotypic variation that opposes the phenotypic variation caused by an environmental gradient.
+
+Almost not understandable and too much to unpack. It sounds more like a trait that varies along an environmental gradient that is counter to expectations. Anyway, to me, this is not a useful term at all because it muddles how we should think about the environment and how organisms can respond to it. 
+
+One prime example is growth across a lat gradient. Populations in the cooler condition (northern) that grow faster than warmer populations (southern) is considered countergradient variation because warmer temperatures are suppose to increase growth rates. But maybe, the env variation that growth rates are responding to is not solely warm temperatures.
+
+Authors' def: 
+
+> Countergradient variation occurs when the inherent relationship between phenotype and environment given by a reaction norm is reduced or removed through genetic adaption across an environmental gra- dient (Conover & Schultz, 1995)  
+
+Totally diff definition than wikipedia. The concept is so abstract so that it is hard to interpret biologically. Angiletta's book doesn't have a good definiton. 
+
+This paper talks about other env variables as to explain the patterns described in countergradient variation....but if there are other env variables to consider other than temp, then that is cogradient variation ( organisms responding with the environmental ) ....see makes no sense. 
+
+> Populations that experience a shorter growing season or lower temperatures may compensate for this by a faster growth rate at any given temperature (Yamahira & Conover, 2002).  
+
+
+
+
 
 ------
+
+Citations for lat gradients: 
+
+> Intraspecific clines in life cycle traits often follow environmental gradients, such as temperature gradients along latitude (Bradford & Roff, 1995; Masaki, 1999; Gaston et al., 2008).
+
+------
+
+Paper is not really structured in a question-hypothesis framework. But they are interested in how the environment (latitude) shapes the variation in seasonal timing of these butterflies (*Anthocharis cardamines*). 
+
+### Natural history of *Anthocharis cardamines*:    
+
+* one life cycle a year (univoltine); diapause
+* lays eggs on buds and flowers of early flowering host plants (phenological specialist)  
+	* plants within the Brassicaceae
+* Females emerge first on flowers, then males follow
+* spring emergence is a function of both winter duration of diapause and the rate of post diapause development (they just want to study post witner development)  
+* found in europe, asia, and north africa  
+
+### Experimental approach: common garden of pops collected in 6 populations spanning lat and measuring growth rates   
+
+* reared on garlic mustard
+* collected eggs and placed in lab 
+* larvae hatched and reared to pupation in common garden 
+* simulated overwintering - 2 C 24 dark, 5 months  
+
+pupae then moved to 4 constant temperatures, post wintering after 5 months. 
+
+* pupae weighed every 48 hours and rate of weight loss was used as a proxy for rate of development 
+
+* stats mostly on females ; stats not explained very well.... what are they testing. 
+
+### Results: 
+
+Table 1: Linear models, evaluating predictors  that explain growth patterns. They only tested for local * temp interaction in the proportion variable. What about others? Ther perform model selection ? Also, what about local * initial pupal weight interaction? 
+
+How I'd show figure 2- 
+
+![](https://user-images.githubusercontent.com/4654474/34883079-839c6144-f786-11e7-9870-1590bdcb846b.jpg)   
+
+Northern pop have higher overall mean dev rate than southern populations. Prop in phase 1 didn't differ, it looks like. But in the model form table 1, there is a sig local X temp interaction. The y axis may be too large in units for us to see the interaction... 
+
+Table 2. local comparisons for each phase of growth; overall, most locals are diff 
+
+Fig 3. Weight loss is described as having 2 phases. 
+
+FIg 4. prop initial weight vs days for each time point. They could have displayed this better. Calculate the break point and then you'll have the time for each phase. (would be nice to have metabolic rate with these data, maybe have ot check other refs) Then test the effects of local + env(lat) on the timing of each phase. 
+
+Table 3: variance partitioning of growth for each phase, for each temperature level. First phase always explains more of the variation (> 50%!). 
+
+
+### Thoughts/future directions
+
+* Would have been cool if they measured life time reproductive success to determine fitness consequences of treatments.  
+
+* There needs to be a full factorial design on winter length and emergence temperatures to understand the relative importance on spring time emergence. Done is Rhagoletis for allele frequencies ; but would be nice to measure fitness   
+
+* Would have produced different plots to make it more understandable. Actually plot stuff across lat or the real env variables themselves.
+
+* Figure 1. give this fig, you'd expect faster dev rates for sweden than uk due to the differences in the slopes of the lines. Sweden is steeper, selecting for a phenotype that chagnes in response to it. 
+
+
 
 <div id='id-section14'/>    
     
