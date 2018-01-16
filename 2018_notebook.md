@@ -36,7 +36,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 14: 2018-01-12 ](#id-section14). working on hsp rxn norm paper 
 * [Page 15: 2018-01-16 ](#id-section15). meeting with KBora on qpcr troubleshooting
 * [Page 16: 2018-01-16 ](#id-section16). Transcript abundance vs. Gene expression terminology
-* [Page 17:  ](#id-section17).
+* [Page 17: 2018-01-16 ](#id-section17). Updated to do list
 * [Page 18:  ](#id-section18).
 * [Page 19:  ](#id-section19).
 * [Page 20:  ](#id-section20).
@@ -1164,7 +1164,48 @@ Doesn't seem like transcript abundance is a better term.
 
 <div id='id-section17'/>    
     
-### Page 17:  
+### Page 17:  2018-01-16. Updated to do list
+
+
+1. Read papers for discussion with Dan 
+
+refs:  
+
+* Wadsworth, C. B., Woods, W. A., Hahn, D. A., & Dopman, E. B. (2013). One phase of the dormancy developmental pathway is critical for the evolution of insect seasonality. Journal of Evolutionary Biology, 26(11), 2359–2368. https://doi.org/10.1111/jeb.12227  
+
+* Stålhandske, S., Gotthard, K., Posledovich, D., & Leimar, O. (2014). Variation in two phases of post-winter development of a butterfly. Journal of Evolutionary Biology, 27(12), 2644–2653. https://doi.org/10.1111/jeb.12519   
+
+* Ragland, G. J., Fuller, J., Feder, J. L., & Hahn, D. A. (n.d.). Biphasic metabolic rate trajectory of pupal diapause termination and post-diapause development in a tephritid fly. https://doi.org/10.1016/j.jinsphys.2008.12.013   
+
+Done, revisit before meeting to refresh. Also go over yearly goals with Dan.   
+
+2. Set up schedule with undergrad researchers  
+	* all done 
+	
+3. Start working on Hsp rxn norm paper   
+	* sent out today!   
+	
+4. thermal niche ms
+	* Lchick to send me a version this week and make this top priority   
+	
+5. range limits ms
+	* sent out, 
+	* submit soon? February...please!?
+6. euro collab ms
+	* wait for results of tests of selection, then help write results and discussion 
+
+
+More things to do:  
+
+Once I get all of these ms out the way, I can focus more on future projects. 
+
+* Revisit data analysis in R. I still need to assemble dataset that merges master datasheet with trikinetics
+	* I might need to parallel process because the data files are very large.  
+* Write up ideas about testing the molecular basis of eclosion shifts in ECB system so I can start working on it potentially.   
+* Start outlining online data science course I want to build.   
+
+
+
 
 ------
 
