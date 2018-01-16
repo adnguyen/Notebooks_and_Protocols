@@ -1141,7 +1141,7 @@ Recommendations:
 
 
 Kbora will send me melt curve pictures, amplification curves, and the datasheet. 
-
+The goal is to estimate the efficiency of the primers. Once you have this value, you can use it for delta delta CT calculations of gene expression. You should also sequence the amplicon to make sure the sequence is what you think it is (map abi sequencing files to reference sequence in geneious). 
 
 ------
 
