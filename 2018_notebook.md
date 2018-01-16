@@ -35,7 +35,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 13: 2018-01-12 ](#id-section13). **Stålhandske et al. 2014**; post winter development of a butterfly
 * [Page 14: 2018-01-12 ](#id-section14). working on hsp rxn norm paper 
 * [Page 15: 2018-01-16 ](#id-section15). meeting with KBora on qpcr troubleshooting
-* [Page 16:  ](#id-section16).
+* [Page 16: 2018-01-16 ](#id-section16). Transcript abundance vs. Gene expression terminology
 * [Page 17:  ](#id-section17).
 * [Page 18:  ](#id-section18).
 * [Page 19:  ](#id-section19).
@@ -1149,7 +1149,16 @@ The goal is to estimate the efficiency of the primers. Once you have this value,
 
 <div id='id-section16'/>    
     
-### Page 16:  
+### Page 16: 2018-01-16.  Transcript abundance vs. Gene expression terminology
+
+
+Thinking about one of Dan's comments on using a different term than gene expression: 
+
+> I almost always say transcript abundance rather than expression because you don’t know whether you are seeing new transcripts being produced or just having transcripts hang around longer. 
+
+Neither term tries to distinguish between the two. Both sound right, but gene expression is used more. I think its silently known, but gene expression can be a function of new transcripts being produced and the degradation of transcripts, which ultimately influence abundance of it. 
+
+Doesn't seem like transcript abundance is a better term. 
 
 ------
 
