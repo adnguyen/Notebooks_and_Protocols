@@ -34,7 +34,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 12: 2018-01-10 ](#id-section12). Meeting AMellison on range limits paper
 * [Page 13: 2018-01-12 ](#id-section13). **Stålhandske et al. 2014**; post winter development of a butterfly
 * [Page 14: 2018-01-12 ](#id-section14). working on hsp rxn norm paper 
-* [Page 15:  ](#id-section15).
+* [Page 15: 2018-01-16 ](#id-section15). meeting with KBora on qpcr troubleshooting
 * [Page 16:  ](#id-section16).
 * [Page 17:  ](#id-section17).
 * [Page 18:  ](#id-section18).
@@ -1124,9 +1124,28 @@ Table 3: variance partitioning of growth for each phase, for each temperature le
 
 <div id='id-section15'/>    
     
-### Page 15:  
+### Page 15: 2018-01-16. meeting with KBora on qpcr troubleshooting     
+
+KBora wants to quantify the *foraging* gene from ant brains of pogos  
+
+She has primers, but her reactions are coming up at around 30-40 CT (cycle thresholds). She wants to test out left over cDNA to see if primers work on my samples. 
+
+But lets check the melt curves: They look "good" , single peak. Primer only control wells don't have any amplification, which is good. Therefore, the good ones can be used for a standard.
+
+Recommendations: 
+
+1. take 50 uL amouont of "good" samples (mixed)
+2. pcr purify with qiagen kit
+3. quantify with qubit 
+4. dilute, 1/100 (generally , you can be more precise), then dilute 1/10 serially (12 times, so 1 row on qpcr plate; leave last sample as water for control). 
+
+
+Kbora will send me melt curve pictures, amplification curves, and the datasheet. 
+
 
 ------
+
+
 
 <div id='id-section16'/>    
     
