@@ -170,10 +170,14 @@ We have used two ways to quantify RNA: qubit and nanodrop
 * nanodrop: http://www.nanodrop.com/    
 
 Also, double check RIN values to check your technique. You can have high RNA concentrations but your RNA can be degraded. 
-Rin values: http://www.genomics.agilent.com/article.jsp?pageId=2181&_requestid=268830
+Rin values: http://www.genomics.agilent.com/article.jsp?pageId=2181&_requestid=268830 .    
 
-<div id='id-section4'/>
-## cDNA synthesis    
+<div id='id-section4'/> .     
+
+
+
+## cDNA synthesis      
+
 
 * We use the high capacity cDNA synthesis kit : http://www.thermofisher.com/order/catalog/product/4368813?icid=cvc-rt-rt-pcr-c1t1    
 * I also like to use RNAseOUT to be doubly sure my RNA does not get degraded: https://www.thermofisher.com/order/catalog/product/10777019    
