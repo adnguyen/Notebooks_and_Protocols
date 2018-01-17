@@ -1211,7 +1211,89 @@ Once I get all of these ms out the way, I can focus more on future projects.
 
 <div id='id-section18'/>    
     
-### Page 18:  
+### Page 18:  2018-01-17. ECB project idea   
+
+**Natural History** 
+
+European cornborers one of the best examples of speciation. They've become reproductively isolated in time and this has produced two strains ,  Z and E. ECB become rep isolated by the number of generations that are fit into a year. Univoltine Z strain has a single generation in the middle of the summer, while the bivoltine E strain emerges earlier and then later in the season. 
+
+**They diapause as larvae**
+
+A QTL analysis showed a suite of candidate genes related to circadian rhythms which may be  responsible for the divergence of seasonal timing in ECB. In Dopman's talk at Entsoc, he mentioned that different strains mated at different times of the day. THe panel of genes incldues cry1, a few unknown contigs, and period. 
+
+In period, they inferred that one allele that interacts with tim may be responsible in the differences in post diapause development. There are two alleles: 
+
+1. G allele - associated with later post diapause development
+2. T allele - associated with earlier post diapause development 
+
+(Are these alleles enriched in Z or E strains? )
+
+The G allele codes for an **Alanine (A)**, while the T allele codes for an **Aspartic Acid (D)**. This is interesting because aspartic acid is charged and alanine is not, so there may be differences in the intra or inter molecular level interactions. 
+
+### Question: How does the genetic variation in period ultimately cause divergence in post diapause development in the ECB system? 
+
+### Hypothesis: 
+
+One larger hypothesis is that period sets the tempo of development in ECB; Z strains have slower tempos than E strains. 
+
+We can break this bigger hypothesis down to explanations about the biological rhythms part itself and the molecular basis of those rhythms.   
+
+1. Z strains have slower biological rhythms
+	* Prediction: tau(time between peak bouts of activity that is cyclical) is shorter in Z strain than E strain. 
+
+2. The T allele (should be enriched in the Z strain) of period interacts more slowly with tim. 
+	* Predictions-
+		* Binding affinity with tim is lower 
+		* It binds with more partners and has less opportunity to bind to tim 
+		* IT binds to the same partners, but longer, and has less opportunity to bind to tim 
+		* Its expressed differently--slowly (not expected since the SNP of interest is intergenic) 
+		 
+### Experimental approach:
+
+1. Trikinetics system- measure post diapause development in larvae and measure feeding activity in adults 
+
+2. Purify different periods and measure dissociation constants (Biacore? ) with tim 
+	* Could use recombinant period protein with diff alleles, then do a pull down (immunoprecipitation) and measure the amount of tim (western blot) 
+	* Can do this in the present or absence of whole protein extracts from Z or E strains to determine the promiscuuity of period. 
+	
+
+3. A series of immunoprecipitation experiments coupled with mass spec  
+	* Take 2 days worth of samples at ~2 hour intervals and immunoprecipitate period and measure what is attached to period with mass spec 
+
+
+
+
+### Expected outcomes:  
+
+**Biological rhythms** 
+
+
+* Positive relationship between Tau (adults) and post diapause development (larvae)
+* Shorter tau in Z strain than E strain  
+* Shorter tau in T allele than G allele in period   
+
+**Tempo of molecular interactions**
+
+*  
+
+Big claim: The tempo of molecular clocks dictates broad scale physiological development that enables reproductive isolation within a season and has led to the emergence of new species. 
+
+### Thoughts: 
+
+* I wonder how abundant period and tim are though; it might be difficult to isolate. Need to find antibodies  
+	* [most antibodies](http://www.antibodies-online.com/antibody/307276/anti-Period+Homolog+1+Drosophila+PER1+C-Term+antibody/) are polyclonal for fruit fly period, targeting C terminus; mostly for westerns, elisas 
+	* [here](http://www.antibodies-online.com/antibody/152723/anti-Period+Homolog+1+Drosophila+PER1+antibody/)(vendor = ?, cat#=ABIN152723,) is good for IF, IHC, 
+* It would be nice to delve into the SNPs found in cry1   
+
+
+
+
+references: 
+
+Levy, R. C., Kozak, G. M., Wadsworth, C. B., Coates, B. S., & Dopman, E. B. (2015). Explaining the sawtooth: latitudinal periodicity in a circadian gene correlates with shifts in generation number. Journal of Evolutionary Biology, 28(1), 40–53. https://doi.org/10.1111/jeb.12562   
+
+Dopman, E. B., Robbins, P. S., & Seaman, A. (2009). COMPONENTS OF REPRODUCTIVE ISOLATION BETWEEN NORTH AMERICAN PHEROMONE STRAINS OF THE EUROPEAN CORN BORER. Evolution, 64(4), 881–902. https://doi.org/10.1111/j.1558-5646.2009.00883.x
+
 
 ------
 
