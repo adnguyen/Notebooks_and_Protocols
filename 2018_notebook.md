@@ -37,7 +37,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 15: 2018-01-16 ](#id-section15). meeting with KBora on qpcr troubleshooting
 * [Page 16: 2018-01-16 ](#id-section16). Transcript abundance vs. Gene expression terminology
 * [Page 17: 2018-01-16 ](#id-section17). Updated to do list
-* [Page 18:  ](#id-section18).
+* [Page 18: 2018-01-17 ](#id-section18). ECB project idea   
 * [Page 19:  ](#id-section19).
 * [Page 20:  ](#id-section20).
 * [Page 21:  ](#id-section21).
