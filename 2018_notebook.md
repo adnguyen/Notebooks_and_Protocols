@@ -1304,20 +1304,35 @@ Dopman, E. B., Robbins, P. S., & Seaman, A. (2009). COMPONENTS OF REPRODUCTIVE I
 
 1. IDP, or yearly goals 
 
-* originally didn't include ECB system in IDP. 
-* 
+	* originally didn't include ECB system in IDP. 
+	 
 
 2. papers 
 
 refs:  
 
-* Wadsworth, C. B., Woods, W. A., Hahn, D. A., & Dopman, E. B. (2013). One phase of the dormancy developmental pathway is critical for the evolution of insect seasonality. Journal of Evolutionary Biology, 26(11), 2359–2368. https://doi.org/10.1111/jeb.12227  
+	* Wadsworth, C. B., Woods, W. A., Hahn, D. A., & Dopman, E. B. (2013). One phase of the dormancy developmental pathway is critical for the evolution of insect seasonality. Journal of Evolutionary Biology, 26(11), 2359–2368. https://doi.org/10.1111/jeb.12227  
 
-* Stålhandske, S., Gotthard, K., Posledovich, D., & Leimar, O. (2014). Variation in two phases of post-winter development of a butterfly. Journal of Evolutionary Biology, 27(12), 2644–2653. https://doi.org/10.1111/jeb.12519   
+	* Stålhandske, S., Gotthard, K., Posledovich, D., & Leimar, O. (2014). Variation in two phases of post-winter development of a butterfly. Journal of Evolutionary Biology, 27(12), 2644–2653. https://doi.org/10.1111/jeb.12519   
 
-* Ragland, G. J., Fuller, J., Feder, J. L., & Hahn, D. A. (n.d.). Biphasic metabolic rate trajectory of pupal diapause termination and post-diapause development in a tephritid fly. https://doi.org/10.1016/j.jinsphys.2008.12.013   
+	* Ragland, G. J., Fuller, J., Feder, J. L., & Hahn, D. A. (n.d.). Biphasic metabolic rate trajectory of pupal diapause termination and post-diapause development in a tephritid fly. https://doi.org/10.1016/j.jinsphys.2008.12.013   
 
 Also, Tom's paper following up on Greg's work. 
+
+**Larger/overall hypothesis to frame: Apple flies are more responsive to favorable conditions than haw flies** 
+
+Predictions: 
+
+	1. Apples flies will terminate diapause earlier haw flies
+		* and it will correlate with eclosion timing 
+	2. Apple flies will have higher post diapause development than haw flies  
+	3. Apple flies will have higher baseline metabolic rate 
+
+Tom's predictions don't have the exponential phase of thhe curve in his analyses and predictions. 
+
+**Analyses**:  
+
+Paper needs to present the rational for why different phases of development were selected and how they varied between host races. 
 
 
 
