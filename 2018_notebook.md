@@ -38,8 +38,8 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 16: 2018-01-16 ](#id-section16). Transcript abundance vs. Gene expression terminology
 * [Page 17: 2018-01-16 ](#id-section17). Updated to do list
 * [Page 18: 2018-01-17 ](#id-section18). ECB project idea   
-* [Page 19:  ](#id-section19).
-* [Page 20:  ](#id-section20).
+* [Page 19: 2018-01-18 ](#id-section19). prepping meeting with Dan on 2018-01-19
+* [Page 20: 2018-01-18 ](#id-section20). starting a data science course  
 * [Page 21:  ](#id-section21).
 * [Page 22:  ](#id-section22).
 * [Page 23:  ](#id-section23).
@@ -1283,8 +1283,9 @@ Big claim: The tempo of molecular clocks dictates broad scale physiological deve
 * I wonder how abundant period and tim are though; it might be difficult to isolate. Need to find antibodies  
 	* [most antibodies](http://www.antibodies-online.com/antibody/307276/anti-Period+Homolog+1+Drosophila+PER1+C-Term+antibody/) are polyclonal for fruit fly period, targeting C terminus; mostly for westerns, elisas 
 	* [here](http://www.antibodies-online.com/antibody/152723/anti-Period+Homolog+1+Drosophila+PER1+antibody/)(vendor = ?, cat#=ABIN152723,) is good for IF, IHC, 
+	* have to align sequences to see how conserved C terminus is
+		* fruit fly [period](https://www.ncbi.nlm.nih.gov/gene/6641177) via ncbi
 * It would be nice to delve into the SNPs found in cry1   
-
 
 
 
@@ -1299,13 +1300,131 @@ Dopman, E. B., Robbins, P. S., & Seaman, A. (2009). COMPONENTS OF REPRODUCTIVE I
 
 <div id='id-section19'/>    
     
-### Page 19:  
+### Page 19:  2018-01-18. prepping meeting with Dan on 2018-01-19    
+
+1. IDP, or yearly goals 
+
+* originally didn't include ECB system in IDP. 
+* 
+
+2. papers 
+
+refs:  
+
+* Wadsworth, C. B., Woods, W. A., Hahn, D. A., & Dopman, E. B. (2013). One phase of the dormancy developmental pathway is critical for the evolution of insect seasonality. Journal of Evolutionary Biology, 26(11), 2359–2368. https://doi.org/10.1111/jeb.12227  
+
+* Stålhandske, S., Gotthard, K., Posledovich, D., & Leimar, O. (2014). Variation in two phases of post-winter development of a butterfly. Journal of Evolutionary Biology, 27(12), 2644–2653. https://doi.org/10.1111/jeb.12519   
+
+* Ragland, G. J., Fuller, J., Feder, J. L., & Hahn, D. A. (n.d.). Biphasic metabolic rate trajectory of pupal diapause termination and post-diapause development in a tephritid fly. https://doi.org/10.1016/j.jinsphys.2008.12.013   
+
+Also, Tom's paper following up on Greg's work. 
+
+
+
+3. ECB proj idea
+
+4. Conferences 
+	* Biological rhythms conference, May 12-16 2018; Amelia Island Florida 
+		* registration deadline is [march 1](https://srbr.org/meetings/upcoming-meeting/registration/)
+		* Should probably write up an abstract for a talk 
+	* [Evolution meeting](https://www.evolutionmeetings.org/evolution-2018---montpellier-france.html), August 19-22, 2018; Montpellier, France   
+		* 3500 abstracts received, but they can only accept 2000
 
 ------
 
 <div id='id-section20'/>    
     
-### Page 20:  
+### Page 20:  2018-01-18. starting a data science course  
+
+There is a really nice data science course by Christie Bahlai (who I follow on twitter). Its called [reproducible quantitative methods](https://cbahlai.github.io/rqm-template/). 
+
+It has 4 parts: 
+
+1. Data
+2. Analysis
+3. Communication 
+4. Opening your work 
+
+In my own course, I want to do something similar, but start off with the problem first. The thought experiment is this: Imagine working on a project and getting back to it in a year. Could you remember everything that you did? You'd have to log what you've done. This leads to solutions to the problem: project organization, meta data, readme file, version control, and electronic notebooks. 
+
+
+There is a nice [paper](https://peerj.com/preprints/3205.pdf) on a modern approach to teach statistics. 
+
+**paper notes**   
+
+10 organization blocks for intro statistics:  
+
+1. Data tables
+2. Data graphics
+3. Model functions
+4. Model training
+5. Effect size and covariates
+6. Displays of distributions 
+7. bootstrap replication 
+8. Prediction Error
+9. Comparing models
+10. Generalization and causality
+
+
+Hmmm, too list like. The main argument in the beginning that the paper makes is that there has  been a shift to learning statistics from algebra to showing stuff on the computer. 
+
+### Data
+
+go over: 
+
+1. tidy data 
+2. meaning of the unit of observation 
+3. distinction between continuous and categorical variables 
+4. difference between a data table and the presentation of information 
+
+Summary tables in a paper or textbook does not necessarily reflect a datatable, but it is a presentation of the info. For example, a contingency table can be broken down to individual level observations that make up the counts for each row + column. 
+
+
+### Data graphics, model functions, and model training , effect size and covariates 
+
+use ggplot for figs and use R in general for model functions/training. Use R code to explore different aspects of the model to understand the statistics. ie look at the model output(predictions) and see if it is consistent with model parameter estimates. 
+
+### Bootstrapp replication  
+
+Good way to show re-sampling and simulation in statistics.  
+
+### Take homes and conclusions: 
+
+
+intro stats should be taught more like data science (especially because datasets are really big now), an investigative process of problem solving and decision making. 
+
+### Ok, what is my layout? 
+
+1. How do we do science? Its not really linear, but it can be highly dynamic. 
+
+2. Present the problem: it is difficult to reproduce science (for others and your future self!!!) 
+	* go over thought experiment 
+
+3. ..stuck..
+
+
+some ideas to throw out: 
+
+1. repeat a dataset/project found github 
+2. have in class, student led discussions 
+	* using a package/function 
+3. have a larger data science project that will lead to a manuscript  
+	* leave slots open for students to work on project 
+	* students can even use their own dataset
+4. for weekly exercises, work on a single project and explore ins and outs or work on multiple different data sets
+	* data parsing exercises
+	* data plotting exercises 
+5. have students work on each other's project to see if it is reproducible?!? cool idea
+6. Encourage students to implement electronic notebook via github
+	* I find that being specific about usage is a good way for students to actually adopt this 
+7. grading break down 
+	* (Bi-)weekly exercises (30%)   
+		* coding + answer questions 
+	* Electronic notebook (30%)
+		* have them answer questions (replaces blog in Christie's syllabus) 
+	* Semester Project (30%)
+	* Participation (10%)
+
 
 ------
 
