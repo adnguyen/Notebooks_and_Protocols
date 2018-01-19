@@ -1311,15 +1311,20 @@ Dopman, E. B., Robbins, P. S., & Seaman, A. (2009). COMPONENTS OF REPRODUCTIVE I
 
 refs:  
 
-	* Wadsworth, C. B., Woods, W. A., Hahn, D. A., & Dopman, E. B. (2013). One phase of the dormancy developmental pathway is critical for the evolution of insect seasonality. Journal of Evolutionary Biology, 26(11), 2359–2368. https://doi.org/10.1111/jeb.12227  
 
-	* Stålhandske, S., Gotthard, K., Posledovich, D., & Leimar, O. (2014). Variation in two phases of post-winter development of a butterfly. Journal of Evolutionary Biology, 27(12), 2644–2653. https://doi.org/10.1111/jeb.12519   
+	* Wadsworth, C. B., Woods, W. A., Hahn, D. A., & Dopman, E. B. (2013). One phase of the dormancy developmental pathway is critical for the evolution of insect seasonality. Journal of Evolutionary Biology, 26(11), 2359–2368. https://doi.org/10.1111/jeb.12227     
 
-	* Ragland, G. J., Fuller, J., Feder, J. L., & Hahn, D. A. (n.d.). Biphasic metabolic rate trajectory of pupal diapause termination and post-diapause development in a tephritid fly. https://doi.org/10.1016/j.jinsphys.2008.12.013   
+
+	* Stålhandske, S., Gotthard, K., Posledovich, D., & Leimar, O. (2014). Variation in two phases of post-winter development of a butterfly. Journal of Evolutionary Biology, 27(12), 2644–2653. https://doi.org/10.1111/jeb.12519     
+
+
+	* Ragland, G. J., Fuller, J., Feder, J. L., & Hahn, D. A. (n.d.). Biphasic metabolic rate trajectory of pupal diapause termination and post-diapause development in a tephritid fly. https://doi.org/10.1016/j.jinsphys.2008.12.013      
+	
+	
 
 Also, Tom's paper following up on Greg's work. 
 
-**Larger/overall hypothesis to frame: Apple flies are more responsive to favorable conditions than haw flies** 
+**Larger/overall hypothesis to frame: Apple flies are more responsive to favorable conditions than haw flies** How can they do this? Well different parts of the diapause "program" can be adaptively modified that leads to divergence in emergence timing. 
 
 Predictions: 
 
@@ -1332,18 +1337,25 @@ Tom's predictions don't have the exponential phase of thhe curve in his analyses
 
 **Analyses**:  
 
-Paper needs to present the rational for why different phases of development were selected and how they varied between host races. 
+	* Paper needs to present the rational for why different phases of development were selected and how they varied between host races. 
 
+	* It is also a good point to do a pca on the traits, to see how they're correlated. Then , you can make arguments about how different parts of the diapause program can potentially evolve differently. 
 
+	* There needs to be a statistics section in methods so that reader can understand how the statistical approaches. 
 
 3. ECB proj idea
 
-4. Conferences 
+4. Update on Rhagoletis project
+	* Monday- removing plates from fridge 
+
+5. Conferences 
 	* Biological rhythms conference, May 12-16 2018; Amelia Island Florida 
 		* registration deadline is [march 1](https://srbr.org/meetings/upcoming-meeting/registration/)
 		* Should probably write up an abstract for a talk 
 	* [Evolution meeting](https://www.evolutionmeetings.org/evolution-2018---montpellier-france.html), August 19-22, 2018; Montpellier, France   
 		* 3500 abstracts received, but they can only accept 2000
+
+
 
 ------
 
