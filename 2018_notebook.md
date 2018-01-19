@@ -1337,11 +1337,11 @@ Tom's predictions don't have the exponential phase of thhe curve in his analyses
 
 **Analyses**:  
 
-	* Paper needs to present the rational for why different phases of development were selected and how they varied between host races. 
+* Paper needs to present the rational for why different phases of development were selected and how they varied between host races. 
 
-	* It is also a good point to do a pca on the traits, to see how they're correlated. Then , you can make arguments about how different parts of the diapause program can potentially evolve differently. 
+* It is also a good point to do a pca on the traits, to see how they're correlated. Then , you can make arguments about how different parts of the diapause program can potentially evolve differently. 
 
-	* There needs to be a statistics section in methods so that reader can understand how the statistical approaches. 
+* There needs to be a statistics section in methods so that reader can understand how the statistical approaches. 
 
 3. ECB proj idea
 
@@ -1354,6 +1354,27 @@ Tom's predictions don't have the exponential phase of thhe curve in his analyses
 		* Should probably write up an abstract for a talk 
 	* [Evolution meeting](https://www.evolutionmeetings.org/evolution-2018---montpellier-france.html), August 19-22, 2018; Montpellier, France   
 		* 3500 abstracts received, but they can only accept 2000
+
+
+### Meeting with Dan 2018-01-19 
+
+1. idp; 
+	* look up fellowships into the UF informatics institute/group  (pam)  ; UFBI  
+		* USDA post doctoral fellows  
+	* look into gordon conference or keystone meetings. 
+
+**new project**: brain transcripts and pool-seq data that I can explore  
+
+	* pop bio talk scheduled feb 2, 4pm
+		* check with Bob Holt to see if he can make it
+		* Brett Schaeffers 
+		* Ben Bizer? 
+		* who else works on range limits?  
+		
+2. Paper discussion  
+	* how do we make it more impactful? Pitch in terms developmental modules 
+	* look up developmental modules , Wagner Gunter 
+	* draft email to tpowell- ask for data 
 
 
 
