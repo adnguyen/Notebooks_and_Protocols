@@ -40,7 +40,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 18: 2018-01-17 ](#id-section18). ECB project idea   
 * [Page 19: 2018-01-18 ](#id-section19). prepping meeting with Dan on 2018-01-19
 * [Page 20: 2018-01-18 ](#id-section20). starting a data science course  
-* [Page 21:  ](#id-section21).
+* [Page 21: 2018-01-22 ](#id-section21). Rhago nature figures for biological rhythms project
 * [Page 22:  ](#id-section22).
 * [Page 23:  ](#id-section23).
 * [Page 24:  ](#id-section24).
@@ -1478,7 +1478,11 @@ some ideas to throw out:
 
 <div id='id-section21'/>    
     
-### Page 21:  
+### Page 21:  2018-01-22. Rhago nature figures for biological rhythms project   
+
+Drew this up on Friday. I'm trying to think about possible outcomes of the relationship between biological timing (circadian timing) and eclosion (days) under different treatment groups. If we genotype all of the samples, we can construct a relationship matrix and feed that into a mixed effects model to quantify the genetic architecture(Gmatrix, variance -covariance matrix) for each treatment. THen we can see how correlated they are. I think I'd expect greater correlation in free-run then entrainment, showing that they intrinsically diapause and can respond to photoperiod given the opportunity. 
+
+![](https://user-images.githubusercontent.com/4654474/35227251-90624dbc-ff5b-11e7-9692-16d22dbfa3b0.JPG)   
 
 ------
 
