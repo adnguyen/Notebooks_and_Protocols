@@ -41,9 +41,9 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 19: 2018-01-18 ](#id-section19). prepping meeting with Dan on 2018-01-19
 * [Page 20: 2018-01-18 ](#id-section20). starting a data science course  
 * [Page 21: 2018-01-22 ](#id-section21). Rhago nature figures for biological rhythms project
-* [Page 22:  ](#id-section22).
-* [Page 23:  ](#id-section23).
-* [Page 24:  ](#id-section24).
+* [Page 22: 2018-01-23 ](#id-section22). Meeting with Dan, Tom about termination ms
+* [Page 23: 2018-01-23 ](#id-section23). Reading Gunter et al. 2007, The road to modularity 
+* [Page 24: 2018-01-23 ](#id-section24). Strategies vs tactics (Mart R. Gross 1996)  
 * [Page 25:  ](#id-section25).
 * [Page 26:  ](#id-section26).
 * [Page 27:  ](#id-section27).
@@ -1488,19 +1488,85 @@ Drew this up on Friday. I'm trying to think about possible outcomes of the relat
 
 <div id='id-section22'/>    
     
-### Page 22:  
+### Page 22: 2018-01-23. Meeting with Dan, Tom about termination ms    
+
+Background:
+
+Dan has invited for me to work on ms trying to identify which diapause tactics are used to shift seasonal emergence timing (eclosion).  
+
+Rhagoletis follows a few phases in which they exit diapause. IN the kostal 2006 framework, when organisms are in diapause and meet favorable conditions, they terminate diapause and then begin post-diapause development. We can determine these developmental marks using a function valued trait approach by measuring metabolic rate across days out of overwintering.  The metabolic trajectory occurs in 2 or 3 phases. For the two phase model, mr intially increases and then plateaus, and this point corresponds and is interpretted as termination. Then, mr exponentially increases until eclosion, which interpretted as post-diapause development. The three phase model is the same, but there is initial drop in mr in the first few days.   
+
+
+
+Meeting: 
+
+1. Tom tried path analysis 
+2. PCA suggestion- good for figure display, but there can be compounding error when estimates with error are used in a follow up analysis 
+3. Dan wants to pitch paper in terms of developmental modules, developmental tactics/strategies (what is the difference?)
+4. contingency table of diff metabolic trajectories, limitations to interpretation 
+
+
+Tom will send me dataset and supplementals to Dan. 
+
+Action items for me: 
+
+1. look up and into developmental modules - scholar search Gunter Wagner
+2. look into the usage of tactics and strategies
+3. try pca analysis when tom sends me data
+4. write up flow of ideas 
+
+
 
 ------
 
 <div id='id-section23'/>    
     
-### Page 23:  
+### Page 23: 2018-01-23. Reading Gunter et al. 2007, The road to modularity 
+
+reference: 
+
+Wagner, G. P., Pavlicev, M., & Cheverud, J. M. (2007). The road to modularity. Nature Reviews Genetics, 8(12), 921–931. https://doi.org/10.1038/nrg2267
+
+Ok, what is modularity. From Dan's discussion, the different parts of the developmental trajectories as measured by metabolic rate is a "modular" process. 
+
+First par tof abstract describes modularity as: a network of interactions that can be subdivided into autonomous, internally highly connected components...(what?)
+
+Different Definitions: 
+
+* Variational module-a set of covarying traits that vary independently with the set of traits of interest. (So bad) 
+* Functional module- features that act together in performing some discrete physiological function 
+* Developmental module- embryo program that is quasi-autonomous ...definition is os bad. 
+* Quasi-autonomy - a lower than average grade of connectedness. The elements of modules are highly interaconnected but to an increased extent are unconnected with other modules - called quasi-independence 
+
+Don't see a good usage of these terms really. Traits can be correlated, just say that. But they're correlation says nothing abou ttheir interactions, which is a separate issue. 
+
+The term with best utility is a "functional module". In the ms, the work could be framed in terms where the diapause module compromises of termination and post-diapause development. Diapause timing is a functional module. Modules are often described as having features which can be or not be independent from one of another. 
+
+It can be viewed as an autonomous physiological proceess that is part of the organism.  
+
+
+One way to approach variational modules is to quantify the correlation matrix: a table of correlation coefficients among quantitative traits, which summarizes the correlation. Strong covarying traits are called variational modules. 
+
+
 
 ------
 
 <div id='id-section24'/>    
     
-### Page 24:  
+### Page 24:  2018-01-23. Strategies vs tactics (Mart R. Gross 1996)  
+
+ref:
+http://labs.eeb.utoronto.ca/gross/newGross1996.pdf  
+
+Paper on how to think about and use strategies vs tactics. 
+
+* Strategy- genetically based program (decision rule) that results in the allocation of somatic and reproductive effort of an organism (energy/development) among alternative phenotypes (tactics). 
+
+* Tactic-is a phenotype that results from a strategy. An example is the fight for accessto a mate, but alternative tactic may to sneak. The decision about which tactic is expressed is made by the strategy. 
+
+Very confusing. Strategy sounds liek a downstream afterfact of the expression of a tactic. 
+
+Maybe a strategy is an overall life history strategy (ie survive the cold) and a tactic is the mechanism by which a strategy is attained/achieved ( plastic vs constitutive mechanisms) 
 
 ------
 
