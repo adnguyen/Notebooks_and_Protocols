@@ -44,7 +44,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 22: 2018-01-23 ](#id-section22). Meeting with Dan, Tom about termination ms
 * [Page 23: 2018-01-23 ](#id-section23). Reading Gunter et al. 2007, The road to modularity 
 * [Page 24: 2018-01-23 ](#id-section24). Strategies vs tactics (Mart R. Gross 1996)  
-* [Page 25:  ](#id-section25).
+* [Page 25: 2018-01-24 ](#id-section25). revisiting thermal niche paper 
 * [Page 26:  ](#id-section26).
 * [Page 27:  ](#id-section27).
 * [Page 28:  ](#id-section28).
@@ -1572,7 +1572,39 @@ Maybe a strategy is an overall life history strategy (ie survive the cold) and a
 
 <div id='id-section25'/>    
     
-### Page 25:  
+### Page 25:  2018-01-24. revisiting thermal niche paper    
+
+one of SED's comments: 
+
+> But you never really look for plasticity. Where's the model with CTmax ~ rearing T 
+With species/population as a random effect?
+
+I thought the model selection part would "look" for the effect of acclimation if it was there? Anyway, I'll run an anova to test for the effect of acclimation temp on CTmin/max while blocking for species.
+
+**CTmax**  
+
+```R
+summary(aov(Ctmax~Acclimation+pc1_species,data=merg))
+            Df Sum Sq Mean Sq F value   Pr(>F)    
+Acclimation  1   0.06    0.06   0.235    0.631    
+pc1_species  1  49.22   49.22 199.089 3.06e-16 ***
+Residuals   36   8.90    0.25                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+**CTmin**
+
+```R
+summary(aov(CTmin~Acclimation*pc1_species,data=merg))
+                        Df Sum Sq Mean Sq F value   Pr(>F)    
+Acclimation              1   2.01    2.01   1.372    0.249    
+pc1_species              1 107.18  107.18  73.102 4.32e-10 ***
+Acclimation:pc1_species  1   0.36    0.36   0.247    0.623    
+Residuals               35  51.32    1.47                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
 
 ------
 
