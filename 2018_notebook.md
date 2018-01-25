@@ -45,7 +45,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 23: 2018-01-23 ](#id-section23). Reading Gunter et al. 2007, The road to modularity 
 * [Page 24: 2018-01-23 ](#id-section24). Strategies vs tactics (Mart R. Gross 1996)  
 * [Page 25: 2018-01-24 ](#id-section25). revisiting thermal niche paper 
-* [Page 26:  ](#id-section26).
+* [Page 26: 2018-01-25 ](#id-section26). Phenotypic Prediction Workshop 2018
 * [Page 27:  ](#id-section27).
 * [Page 28:  ](#id-section28).
 * [Page 29:  ](#id-section29).
@@ -1610,7 +1610,395 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 
 <div id='id-section26'/>    
     
-### Page 26:  
+### Page 26: 2018-01-25. [Phenotypic Prediction workshop 2018](http://ufgi.ufl.edu/seminars-events/phenotypic-prediction-workshop-2018/)  
+
+
+### Schedule
+
+* 7:30-8AM registration and breakfast
+* 8:10AM opening remarks
+* 8:10-9:00AM "The use of genomics in animal breding", Dr. Jack Dekkers, Iowa State University 
+* 9-9:50AM "Going beyond statistics - the case for biological whole genome models", Dr. Frank Technow, Dupont -Pioneer
+* 9:50-10:20AM coffee break
+* 10:20-11:10AM "Will Big Data Close the missing heritability gap?", Dr. Ana Vazquez, Michigan State University  
+* 11:10-12:00PM “High Throughput data (environmental, genomic and phenotypic covariates) for improving predictive ability under complex scenarios with applications in plant breeding.” Dr. Diego Jarquin, University of Nebraska-Lincoln  
+
+
+### Opening remarks: 
+
+Marcio
+
+event, 5th edition 
+
+2 main goals:
+
+1. bring people closer together, common goal of phenotype predition
+2. enable students to be exposed to these talks 
+ 
+questions can be posted on twiter (#UFPPW) from livestreamers  
+
+800 people registered 
+
+
+
+### "The use of genomics in animal breding", Dr. Jack Dekkers, Iowa State University 
+
+Netherlands, phd in wisconsin
+
+background is in animal breeding  
+
+PIC(pig improvement company) has been used a suite of markers starting 1991 (HAL gene). HAL gene associated with poor meat quality. Started off small number of SNPs and then more recently, many more markers were used for phenotype prediction. Genomic selection...whats that. 
+
+**Genomic Selection**
+
+Meuwissen et al. 2001. 
+
+1. Take reference population
+2. take phenotypes and genotype them (training data)
+3. estimate marker effects
+4. Genotype next generation and use model to predict 
+
+Genetic evaluation using high density SNPs
+
+1. SNP effects are fitted as random vs fixed effects 
+	* SNPs are random effects, enabling all SNPs to be fitted simultaneously
+2. General model
+	* Mixed effects model- PLUB(pedigree) or GBLUP(genomic relatedness
+	* use to estimate breeding values of new animals based on genotypes alone 
+	* Bayesian variable selection used to ID SNPs too
+
+
+![](https://user-images.githubusercontent.com/4654474/35390523-c2aa756a-01a9-11e8-903e-a30612d5f41d.png)  
+
+
+3. A relationship matrix including full pedigree and genomic information: Create relationship matrix from phenotype and genotype 
+	* H matrix
+
+**The promise of Genomic selection**  
+
+* ID phenotype at earlier age 
+* reduce need for costly phenotyping 
+* Reduce generation intervals 
+* INcrease accuracy for "difficult" traits
+	* reproduction, longevity, meat quality 
+	* disease resistance 
+	* crossbred performance in field 
+* Reduce rates of inbreeding/generation
+	* less emphasis on family information
+	* select on animal's 'own gneotypes (for markers)
+	
+**Outline**
+1. Implementation of GS in dairy cattle
+2. pig/poultry breeding programs
+3. predicting the accuracy of genomic prediction (how large? structure?)
+4. Genetic improvement of commercial X-bred performance 
+
+
+**Dairy Cattle**
+	
+Reliability = variance explained squared?  
+
+can genotype from embryo; selection decisions are faster(traditional way = progeny testing = 5 years vs DNA testing = 6 months)
+
+1.5 million holstein cows genotyped
+
+Genomic prediction = higher genetic gains ( doubling ) 
+
+
+**Pig/poultry**  
+
+more difficult 
+
+Typical breeding pyramid in pigs is a 3 way cross    
+
+* 3 breeding pops : 1 sire, 2 dam lines
+* Genomic prediction needs to be implemented in 3 lines , which are not that large 
+	* each company has their own pigs to themselves 
+* traits are not sex limited like in cattle 
+
+Challenges: 
+
+1. multiple lines
+2. limited training data per line
+3. limited opportunity to reduce L
+4. large # selection candidates
+5 limited value of each candidate
+
+Opportunities: 
+1. preselection of candidates for further testing
+2. selection for female reproduction, longevity
+3. feed efficiency
+4. selection for carcass/meat quality
+5. selection for disease resistance 
+6. selection for commercial crossbred performance
+
+THe money end, What is the relative cost and benefits of genotyping vs phenotyping? 
+* no money, invest in phenotyping
+* money, invest in genotyping 
+
+
+Training populations: 
+
+If heritability = 30%, you need about 5,000 individuals. Higher heritability = less individuals needed 
+
+
+**Prediction accuracy**
+
+P<-- Genetics
+P <--Environment
+
+P<-- Q(proprotion of genetic variation at the QTL that is captured by markers)
+P <--Environment
+
+Accuracy = q * rq
+
+(Dekkers 2007, JABG)
+
+q = proportion of genetic variance at QTL captured by markers 
+
+= Markers /(markers + effective # of chromosome segments)
+
+rq = accuracy with which markers effects are estimated 
+
+= sqrt((Nq^2h^2))/(Nq^2h^2 + Me))
+
+Me is a key parameter if you want to get a handle of how big of apopulation you need to obtain a certain accuracy 
+
+
+How large is Me? 
+
+Depends on effective population size, which depends on LD (linkage equilibrium) 
+
+It also depends on L, which is the size of the chromosome 
+
+Assume chromosomes are independent, but are not, but there are covariances betewen genotype and chromosomes
+
+by accountig for covariance, less individuals needed 
+
+
+
+**The need for re-training**
+
+Train on data prior to generation 1 
+
+GBLUP is higher accuracy than PBLUP 
+
+Relatedness matters for training and test datasets 
+
+Me can be estimated from G-A 
+(genomic and pedigree)
+
+Variance of deviation (Var(G-A)) = average LD(r^2) over all pairs of loci = 1/Me
+
+Me can be estimated from G-A 
+
+Relationship higher = Var(G-A) higher = Me lower = Ne smaller = increase genmic prediction accuracy
+
+*easier to predict close relatives*    
+
+Conclusion
+
+* hard to predict across breeds 
+* requires large datasets
+
+Questions:
+
+1. Why avoid inbreeding? 
+
+recessive deleterious mutants can selected out with inbreeding. so some is good. Works in corn, but in animals, its too costly. 
+
+2. Genomics can ID cause inbreeding depression. 
+
+3. What are we finding in terms of dominance? (non-additive variance) 
+
+Hard to capitalize on dominance because directed matings are limited. Breed bred lines to increase heterosis.
+
+### "Going beyond statistics - the case for biological whole genome models", Dr. Frank Technow, Dupont -Pioneer  
+
+phd from germany, bayesian methods, canada 
+
+3 sections
+
+1. role of prediction
+2. limits of predictability
+3. pushing the limits
+
+"Predictive analytics" 
+
+we can only observe phenotypes, but breeding values determine performance of next generation
+
+and overall genetic values determine success of variety 
+
+Falconer 1989 Intr. quant genetics pg 163
+
+Build upon predictive skills!  
+
+1. ground them in quant gen and biology
+2. incoporating novel types of data and info 
+3. develop powerful stat methods (whole genome prediction) 
+
+
+Paradigm shift from QTL detection to prediction of genetic values 
+
+Whole Genome regressions 
+* set of genotypes and phenotypes (estimation set)
+* regression of phenotype 
+
+What drives accuracy? 
+Cooper et al. 2014, genomic prediction --see ref 
+
+
+
+Linear models: 
+
+* based on linear mixed model 
+* determiend by data they were fitted on 
+* confined to context of observed data 
+* extrapolation risky 
+* modle of biology unrealistic
+
+
+Genetics is non-linear;yield is highly complex functio of : 
+
+1. traits on lower phys levels (component traits
+2. Environment and management practices 
+
+This generates the fitness landscape determined by (Sewell Wright 1932 )
+
+* G x E x M (interactions with environment and management) 
+* physiologicla (trait) and molecular (gene level ) epistasis 
+
+Why do the linear models still work? 
+
+* Constraining target populations of environment (TPE)
+	* homogeneous weather and soil conditions
+	* similar cropping systems
+* Constraining target pop of germplasm (TGE)
+	* heterotic groups 
+	* limiting diveristy (fixing genomic regions) 
+
+Biased sampling and making the biology easier ; takes away G x E
+
+
+Hill, Goddard, and Vissher (): 
+* molecular pathways imply non-linear gene action
+* genetic variance is mostly additive
+
+reason for paradox: most alleles are at extreme allele frequencies (what...)
+
+**Stepping out of the comfort zone**
+
+Comfort zone- known part of bio space
+* multi environment trials (MET) 
+* constrains make system linear
+* predictable with linear models 
+
+Why step out? 
+
+* adapting to climate change and more erratic weather patterns
+* increasing diversity for long-term genetic gains  
+
+MOdels should explore for adjacent possibilities 
+
+Ex: Multienvi field trials and they can test for Gx E and even G  x E x M
+
+downside of machine learning: no prior biological knowledge (a downside and upside)
+
+Biological model (aka first principles)
+
+1. captures univ causality of bio systems
+2. transcends specific data set and provides outside context 
+
+
+Causal models - a priori knowledge 
+
+
+Thought experiemnt: what is the area of rectangle 
+
+We need data. But we need more than data. We also need prior knowledge and outside context. 
+
+Crop growth models: 
+
+Are biological models that incorporate non-linear interactions within and between all system components
+
+* plant phys
+* env and management 
+
+Models are based on concepts of 
+
+* resource  capture, utliization, allocation
+* results of decades of biological research
+* widely used to study agronomic practices and cropping systems 
+* increasing interst in application to breeding and applie dgenetics 
+
+
+**it is a set of models** 
+
+Maize growth model
+
+Environemntal inputs - temp and solar radiation 
+
+Key phys inputs - radiation use efficiency , node number 
+
+Loop through model 
+
+Sounds like we don't need any SNP information. 
+
+
+Merging biology wiht WGP through bayesian statistics 
+
+BioGWP - a biological whole genome prediction model 
+
+* Bayesian herarchical generalized linear model 
+* CGM acts as a "link function"
+* genetics represented by latent physiological traits 
+* model for marker effects is "BayesA"
+* posterioer sample with metroplis within Gibbs algorithm 
+
+Think of this as a biostat machine that can integrate diverse sources of info such as : 
+
+* harvest phenotype
+* genomic data
+* biological insights
+* env
+* management
+
+into high resolution yield prediction 
+
+
+Proof of concept- 
+
+Integrating crop growth models into whole genome prediction with approximate Bayesian computation plos one 
+
+* simulated data
+* demonstrate ability to work with highly non-linear systems
+
+Which model was better? 
+
+Reduction to practice- requiremments
+
+* need accurate crop growth model 
+* need env soil 
+
+ARGOS: model genotype by transgene by env interaction 
+
+* transgene affects ethylene response 
+* maintains silk elongation under drought
+* protects yield potential
+* but effects vary by genetics/phys and env background 
+
+ARGOS affects silking - growth models need to incorporate this 
+
+
+
+### "Will Big Data Close the missing heritability gap?", Dr. Ana Vazquez, Michigan State University  
+
+
+### “High Throughput data (environmental, genomic and phenotypic covariates) for improving predictive ability under complex scenarios with applications in plant breeding.” Dr. Diego Jarquin, University of Nebraska-Lincoln    
+
+
+
+
 
 ------
 
