@@ -1945,7 +1945,7 @@ Loop through model
 Sounds like we don't need any SNP information. 
 
 
-Merging biology wiht WGP through bayesian statistics 
+**Merging biology wiht WGP through bayesian statistics** 
 
 BioGWP - a biological whole genome prediction model 
 
@@ -1966,7 +1966,7 @@ Think of this as a biostat machine that can integrate diverse sources of info su
 into high resolution yield prediction 
 
 
-Proof of concept- 
+**Proof of concept-** 
 
 Integrating crop growth models into whole genome prediction with approximate Bayesian computation plos one 
 
@@ -1993,10 +1993,103 @@ ARGOS affects silking - growth models need to incorporate this
 
 ### "Will Big Data Close the missing heritability gap?", Dr. Ana Vazquez, Michigan State University  
 
+GWAS associated with disease- genetic risk score based on GWAS significant variants
+
+* Problem: proportion of variance explaiend by GWA-sig hits remains lower than the trait heritability ; aka missing heritability 
+
+* there could be a large number of small-effect variants not detected . starndard gwas lack power to detect 
+
+* for complex disease, these variants can explain a sizable proportion of genetic variance 
+
+**Biobanks**
+
+* recruit data from thousands of patients
+
+* pairing genomics data with electornic medical records and extensive phenotyping 
+* same protocol, variable def for all patienets
+* all subjects are genotyped with same platform 
+
+**Landscape of factors that affect prediction accuracy for complex traits**
+
+* acess effects of sample size, number of markers, LD, estimation procedure 
+
+**Model: Human Height: A model complex trait**  
+
+* highly heritable (.8) 
+* no strong QTL 
+* extensively studied 
+* strong effect of age and gender 
+
+**Genotyping**
+
+* 600K SNPs
+* 
+
+
+Data from UKbiobank 
+
+* use interim release 
+	* 1k white people
+
+* full release 
+	* 4k white people 
+	
+science is so biased....
+
+**Workflow**
+
+1. pre-adjust standing height by age and gender
+2. GWS in training set , do a SNP -ranking
+
+
+Data partitions: Training and testing sets 
+
+* interim release
+	* 102k training, 80k test
+
+* full release
+	* 400k training, rest test ; rep 5 tiems 
+	
+adjusted SNP windows 
+
+3. Fit bayesian models to top - p SNPs
+4. assess prediction accuracy on test set 
+
+Whole Genome regression, predictions are derived using thousands of SNPs
+
+Challenges: 
+
+* curse of dimensionality --> bayesians, penalized to sovle 
+* Computation ; 
+* require large sample sizes
+
+
+Prediction: 
+
+* ..5-.6 as functin of sample size 
+* prediction accuracy increasing , but slow 
+* highest prediction .65, r^2 0.42
+
+More SNPs genomic heritability increases but prediction accuracy plateaus. The gap is reduc of accuracy on estimated efects. 
+
+
+How many markers are needed? Depends on sample size and number of SNPs
+
+Data partition into subsets--no clue why 
+
+Prediction accuracy has opt of ~5k snps, and any more markers reduce prediction accuracy .
+
+Increasing training size increases prediction accuracy. 
+
+
 
 ### “High Throughput data (environmental, genomic and phenotypic covariates) for improving predictive ability under complex scenarios with applications in plant breeding.” Dr. Diego Jarquin, University of Nebraska-Lincoln    
 
+Genomse to field idea: G x E project 
 
+genomes2fields.org
+
+gxe is problem: use it, reduce it, ignore it
 
 
 
