@@ -46,7 +46,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 24: 2018-01-23 ](#id-section24). Strategies vs tactics (Mart R. Gross 1996)  
 * [Page 25: 2018-01-24 ](#id-section25). revisiting thermal niche paper 
 * [Page 26: 2018-01-25 ](#id-section26). Phenotypic Prediction Workshop 2018
-* [Page 27:  ](#id-section27).
+* [Page 27: 2018-01-26 ](#id-section27). Meeting with Dan 
 * [Page 28:  ](#id-section28).
 * [Page 29:  ](#id-section29).
 * [Page 30:  ](#id-section30).
@@ -2097,7 +2097,34 @@ gxe is problem: use it, reduce it, ignore it
 
 <div id='id-section27'/>    
     
-### Page 27:  
+### Page 27:  2018-01-26. Meeting with Dan 
+
+
+1. Rhago projs 
+	* Discuss abstract and Tom needs to send me data 
+		* need flow of ideas for intro/discussion 
+	* Dan needs to send email to Greg about Brain transcriptome  
+	* taking samples out of fridge 
+
+2. Details on fellowships
+	* [UF bioinformatics post doc.](https://informatics.institute.ufl.edu/ufii-programs/ufii-fellows-program/post-doctoral-fellowship-program/) 
+		* app deadline is OCT 2nd for next year. 
+		* hs to follow the following [thrust areas or themes](https://informatics.institute.ufl.edu/about-us/). 
+		* need to work with 2 departments 
+
+3. Pop bio talk next friday feb 2
+	* bob holt and brett scheffers going 
+
+
+
+Conferences:   
+
+Biological rhythms conference, May 12-16 2018; Amelia Island Florida   
+	* registration deadline is march 1
+	* Should probably write up an abstract for a talk  
+	
+
+
 
 ------
 
