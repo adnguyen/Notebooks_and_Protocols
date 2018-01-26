@@ -2103,6 +2103,7 @@ gxe is problem: use it, reduce it, ignore it
 1. Rhago projs 
 	* Discuss abstract and Tom needs to send me data 
 		* need flow of ideas for intro/discussion 
+
 	* Dan needs to send email to Greg about Brain transcriptome  
 	* taking samples out of fridge 
 
@@ -2119,10 +2120,29 @@ gxe is problem: use it, reduce it, ignore it
 
 Conferences:   
 
-Biological rhythms conference, May 12-16 2018; Amelia Island Florida   
-	* registration deadline is march 1
-	* Should probably write up an abstract for a talk  
+Biological rhythms conference, May 12-16 2018; Amelia Island Florida    
+
+	* registration deadline is march 1   
+	* Should probably write up an abstract for a talk    
 	
+
+	
+-----
+
+Modules discussion: 
+
+2-3 modules, variation in termination, but post-diapause might be more environmentally driven (put discussion)    
+
+can pitch in terms of variational module  
+
+Dan, hit plant literature  to check if modules are used in terms of module selection  
+
+functional modules have diff genetic variation that nat sel can act upon, but also have diff ways that can resond to environment 
+
+
+future readings: 
+
+Michaels 2010, Dan will send more. 
 
 
 
