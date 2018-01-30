@@ -47,7 +47,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 25: 2018-01-24 ](#id-section25). revisiting thermal niche paper 
 * [Page 26: 2018-01-25 ](#id-section26). Phenotypic Prediction Workshop 2018
 * [Page 27: 2018-01-26 ](#id-section27). Meeting with Dan 
-* [Page 28:  ](#id-section28).
+* [Page 28: 2018-01-30 ](#id-section28). Readings in Rhagoletis, pop gen, directions of gene flow 
 * [Page 29:  ](#id-section29).
 * [Page 30:  ](#id-section30).
 * [Page 31:  ](#id-section31).
@@ -2150,7 +2150,47 @@ Michaels 2010, Dan will send more.
 
 <div id='id-section28'/>    
     
-### Page 28:  
+### Page 28:  2018-01-30. Readings in Rhagoletis, pop gen, directions of gene flow 
+
+references:
+
+* XIE, X., MICHEL, A. P., SCHWARZ, D., RULL, J., VELEZ, S., FORBES, A. A., … FEDER, J. L. (2008). Radiation and divergence in the Rhagoletis Pomonella species complex: inferences from DNA sequence data. Journal of Evolutionary Biology, 21(3), 900–913. https://doi.org/10.1111/j.1420-9101.2008.01507.x
+
+* Xie, X., Rull, J., Michel, A. P., Velez, S., Forbes, A. A., Lobo, N. F., … Feder, J. L. (2007). HAWTHORN-INFESTING POPULATIONS OF RHAGOLETIS POMONELLA IN MEXICO AND SPECIATION MODE PLURALITY. Evolution, 61(5), 1091–1105. https://doi.org/10.1111/j.1558-5646.2007.00091.x
+
+* Feder, J. L., Berlocher, S. H., Roethele, J. B., Dambroski, H., Smith, J. J., Perry, W. L., … Aluja, M. (n.d.). Allopatric genetic origins for sympatric host-plant shifts and race formation in Rhagoletis. Retrieved from http://www.pnas.org/content/pnas/100/18/10314.full.pdf
+
+These are a series of pop gen papers aiming to understand the population dynamics of Rhagoletis pomonella. How and in which way have populations differentiated?   
+
+
+### Feder et al. 2003   
+
+One issue with the sympatric speciation story in this system is that one can't excldue allopatric speciation. Perhaps apple maggot fly alleles were initially geographically separated before sympatric incipient speciation occurred.  
+
+Well in this system, the apple flies only occur in midwest and northeastern US and Canada, where as the haw flies extend far down into Mexico. So these authors wanted to understand the direction of gene flow between populations of haws and apple. They sampled flies from a disjunct mexican pop and compared with US populations. 
+
+Their approach to the study was to compare gene trees of different populations. Specifically, 3 nuclear and 1 mitochondrial loci. They estimated divergence timing and deteremined whether topologies were likely due to lineage sorting or introgression. 
+
+Lineage sorting is the random assortment of alleles into extant taxa and this produces gene relationships that are not necessarily reflective of species relationships. Introgression can do this too, but it is a directed process where an allele migrates from one lineage to another. 
+
+Ok, so how did they distinguish lineage sorting vs introgression? They performed a likelihood ratio test, where LR = ML1/ML2. They basically evaluated maximum likelihood estimates between models to see if they're stat sig diff. Ok, how did they do this? 
+
+The null model is lineage sorting (ML1), where they let N and SN nodes have different origin times among loci . This reflects independent origins of inversions on chromosome 1-3 in the common ancestor. 
+
+The alternative model is ML2, which is the introgression model , where the derived time of origin for N and SN/M nuclear nodes are the same across loci. 
+
+Results: ((N),(SN,M)) relationships for chromosome 1-3 and (US,M) for mitoDNA. 
+
+Fig 4 makes the modelling more sense now, because the timing of how genes diverge give a good indication of incomplete lineage sorting vs gene flow. WHen alleles show shifts later in time (1.1mya), then it is more likely due to gene flow. However, it might be harder to distinguish gene flow vs ILS at 1.1 mya. 
+
+Introgression model was supported. And they argue this has something to do with diapause with no data to show for it....  
+
+
+### Xie et al. 2007; Evolution   
+
+This study builds on previous work and looksl ike it is a snap shot or focus in on mexican and texas populations of rhagos. They use 15 nuc loci and 1 mito loci. 
+
+They're pitching the story as "speciation mode plurality". wtf...  I think this means that both allopatric and sympatric mechanisms contribute to speciation. 
 
 ------
 
