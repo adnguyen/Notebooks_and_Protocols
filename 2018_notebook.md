@@ -2163,7 +2163,7 @@ references:
 These are a series of pop gen papers aiming to understand the population dynamics of Rhagoletis pomonella. How and in which way have populations differentiated?   
 
 
-### Feder et al. 2003   
+### Feder et al. 2003 ; PNAS  
 
 One issue with the sympatric speciation story in this system is that one can't excldue allopatric speciation. Perhaps apple maggot fly alleles were initially geographically separated before sympatric incipient speciation occurred.  
 
@@ -2188,9 +2188,23 @@ Introgression model was supported. And they argue this has something to do with 
 
 ### Xie et al. 2007; Evolution   
 
-This study builds on previous work and looksl ike it is a snap shot or focus in on mexican and texas populations of rhagos. They use 15 nuc loci and 1 mito loci. 
+This study builds on previous work and looksl ike it is a snap shot or focus in on mexican and US populations of rhagos. They use 15 nuc loci and 1 mito loci. 
 
-They're pitching the story as "speciation mode plurality". wtf...  I think this means that both allopatric and sympatric mechanisms contribute to speciation. 
+They're pitching the story as "speciation mode plurality". wtf...  I think this means that both allopatric and sympatric mechanisms contribute to speciation.   
+
+They found for some genomic regions, there is pop structure as such, ((EVTM,SMO),US) but for other genomic regions (chromosome 1-3), the US is paraphyletic as such, (US,((US,SMO),EVTM). So SMO alleles have migrated or hve been retained into US populations. The differentiation may be due to allopatry, which produced and maintained the genetic variation for host races to diversify their phenology. 
+
+They argue that speciation can involve both allopatry and sympatry...but it is possible for them to be acting in isolation. Allopatry then sympatry, not allopatry and sympatry. Their argument makes very little sense. It does change how we view how genetic diversity can be maintained and how that maintenance can facilitate divergence in future populations/lineages. 
+
+One problem- they have not established the directionality of gene flow. 
+
+### Xie et al. 2008; J. Evol. Biol. 
+
+goals:   
+
+1. test whether any genetic signposts of divergence exist for rhagos (what? )
+2. nuclear loci are consistent with speciation mode plurality   
+3. whether patterns of genetic divergence vary across the genome 
 
 ------
 
