@@ -2293,6 +2293,16 @@ PC2:
 
 ![](https://user-images.githubusercontent.com/4654474/35644726-c58655fe-0697-11e8-8f6e-5f3336dec6a0.png)
 
+### plots by host race  
+
+PC1:
+
+![](https://user-images.githubusercontent.com/4654474/35645900-784471fa-069b-11e8-8f85-1a72966851cf.png)
+
+PC2
+
+![](https://user-images.githubusercontent.com/4654474/35645901-78545ae8-069b-11e8-8f81-46c02c908c26.png)
+
 ------
 
 <div id='id-section30'/>    
