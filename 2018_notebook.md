@@ -2264,7 +2264,34 @@ PC2 x host  interaction
 
 ![](https://user-images.githubusercontent.com/4654474/35644314-9db44352-0696-11e8-97fd-ff8e14617bf9.png)
 
+------
 
+Predictions based on PCs   
+
+sample code: 
+
+```R
+mean.trait<-c(1.5,35,1.3,20,4)
+
+pc2<-data.frame(t(apply(data.frame(dat.pca$scores[,2]),1,function(x){x*dat.pca$loadings[,1]+mean.trait})))
+
+pc2$X<-pc1$term+pc1$post_dd
+apply(pc2,2,range)
+
+#pred
+predpc2<-data.frame(apply(pc2,1,function(x){Tom(b=x[1],m=x[2],p=x[5],c=x[3],X=x[6])}))
+
+predpc2.long<-gather(predpc2,ind,mr,X1:X66)
+predpc2.long$t<-rep(seq(1,60,1),65)
+```
+
+PC1: 
+
+![](https://user-images.githubusercontent.com/4654474/35644709-b65ba638-0697-11e8-98e0-a99458a79fc3.png)
+
+PC2:
+
+![](https://user-images.githubusercontent.com/4654474/35644726-c58655fe-0697-11e8-8f6e-5f3336dec6a0.png)
 
 ------
 
