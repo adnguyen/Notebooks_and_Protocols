@@ -48,7 +48,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 26: 2018-01-25 ](#id-section26). Phenotypic Prediction Workshop 2018
 * [Page 27: 2018-01-26 ](#id-section27). Meeting with Dan 
 * [Page 28: 2018-01-30 ](#id-section28). Readings in Rhagoletis, pop gen, directions of gene flow 
-* [Page 29:  ](#id-section29).
+* [Page 29: 2018-01-31 ](#id-section29). Meeting with Dan , MR trajectories paper  
 * [Page 30:  ](#id-section30).
 * [Page 31:  ](#id-section31).
 * [Page 32:  ](#id-section32).
@@ -2210,7 +2210,61 @@ goals:
 
 <div id='id-section29'/>    
     
-### Page 29:  
+### Page 29: 2018-01-31. Meeting with Dan , MR trajectories paper  
+
+* Are the MR mass corrected? check with Tom. 
+
+* Check on c and remove it to see how the loadings change or whatever
+	* truncate last data point to see how  c shifts  
+	* c might be flawed 
+* another analytic approach? Partial correlation and regression with eclosion 
+
+Predict based on pcs 
+
+I did stats yesterday, but I'll dump the quick and dirty findings here: 
+
+PCA table: 
+
+|        | Comp.1| Comp.2| Comp.3| Comp.4|
+|:-------|------:|------:|------:|------:|
+|b       |  0.508|  0.319|  0.006|  0.622|
+|term    | -0.330| -0.697| -0.178|  0.611|
+|c       |  0.451| -0.162| -0.850| -0.185|
+|post_dd |  0.389| -0.600|  0.344| -0.390|
+|plat    |  0.528| -0.161|  0.357|  0.229|  
+
+
+**Summary:**
+4 pcs captured 96% of the variation in metabolic trajectories. The first pc represents the correlation between b,c,post dd, plat, that are altogether negatively correlated with termination. The second pc represents the correlation between term,c,post_dd, plat, that are altogether negatively correlated with b. 
+
+
+**Stat model:** 
+
+
+|               | Estimate| Std. Error| t value| Pr(>&#124;t&#124;)|
+|:--------------|--------:|----------:|-------:|------------------:|
+|(Intercept)    |   62.705|      0.631|  99.315|              **0.000**|
+|hostHaw        |    2.192|      0.811|   2.702|              **0.009**|
+|Comp.1         |   -6.294|      0.299| -21.068|              **0.000**|
+|Comp.2         |  -14.127|      0.472| -29.917|              **0.000**|
+|Comp.3         |   -2.100|      0.388|  -5.418|              **0.000**|
+|Comp.4         |   10.725|      0.678|  15.813|              **0.000**|
+|hostHaw:Comp.1 |   -1.203|      0.537|  -2.241|              **0.029**|
+|hostHaw:Comp.2 |   -3.213|      0.715|  -4.491|              **0.000**|
+
+
+PCA biplot between host races
+
+![](https://user-images.githubusercontent.com/4654474/35644311-9a859c26-0696-11e8-9dcf-0fd31743ffe7.png)
+
+PC1 x host interaction   
+![](https://user-images.githubusercontent.com/4654474/35644313-9c097fa4-0696-11e8-8d1c-1a1c31e90f55.png)
+
+PC2 x host  interaction  
+
+![](https://user-images.githubusercontent.com/4654474/35644314-9db44352-0696-11e8-97fd-ff8e14617bf9.png)
+
+
 
 ------
 
