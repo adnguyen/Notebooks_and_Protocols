@@ -2374,6 +2374,12 @@ ggplot(mdat,aes(x=leftover,y=eclosion,colour=host))+geom_point()+stat_smooth(met
 ![](https://user-images.githubusercontent.com/4654474/35688403-1832db5e-073f-11e8-8c14-0826cb1d90ac.png)
 
 
+### fixing plotting mistake for pc2 predictions from yesterday   
+
+
+![](https://user-images.githubusercontent.com/4654474/35689391-5f933b86-0741-11e8-8e78-78b8b9fc5f05.png)
+
+
 ------
 
 <div id='id-section31'/>    
