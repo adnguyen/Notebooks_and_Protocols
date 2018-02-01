@@ -49,7 +49,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 27: 2018-01-26 ](#id-section27). Meeting with Dan 
 * [Page 28: 2018-01-30 ](#id-section28). Readings in Rhagoletis, pop gen, directions of gene flow 
 * [Page 29: 2018-01-31 ](#id-section29). Meeting with Dan , MR trajectories paper  
-* [Page 30:  ](#id-section30).
+* [Page 30: 2018-02-01 ](#id-section30). follow up analysis; partial correlation of parameters
 * [Page 31:  ](#id-section31).
 * [Page 32:  ](#id-section32).
 * [Page 33:  ](#id-section33).
@@ -2307,7 +2307,72 @@ PC2
 
 <div id='id-section30'/>    
     
-### Page 30:  
+### Page 30:  2018-02-01. follow up analysis; partial correlation of parameters   
+
+Dan wants to know the sole effect of each parameter. I think this can be done with a multiple linear regression on the scaled parameters such that betas can be directly compared. 
+
+
+model construction: Testing effect of each parameter and interaction with host on eclosion
+
+```R
+fullmod3<-lm(dat$eclosion~stand.dat$term*dat$host+stand.dat$b*dat$host+stand.dat$c*dat$host+stand.dat$post_dd*dat$host+stand.dat$plat*dat$host)
+mp<-summary(stepAIC(fullmod3,direction="both"))
+```
+
+output: 
+
+```R
+knitr::kable(coef(mp))
+```
+
+|                           |  Estimate| Std. Error|   t value| Pr(>&#124;t&#124;)|
+|:--------------------------|---------:|----------:|---------:|------------------:|
+|(Intercept)                | 63.641181|  0.6866125| 92.688646|          0.0000000|
+|stand.dat$term             | 19.580301|  0.7211073| 27.153104|          0.0000000|
+|dat$hostHaw                |  1.540051|  0.8723161|  1.765474|          0.0827479|
+|stand.dat$c                | -1.141651|  0.3241461| -3.522026|          0.0008419|
+|stand.dat$post_dd          |  2.862625|  0.4133899|  6.924759|          0.0000000|
+|stand.dat$plat             | -1.043086|  0.4613302| -2.261040|          0.0275236|
+|stand.dat$term:dat$hostHaw |  2.284787|  0.8539093|  2.675679|          0.0096775|
+
+
+### Exploring the termination * host interaction 
+
+Take residuals from a regression from previous model but without the interaction term and then plotting those residuals against eclosion 
+
+model construction 
+
+```R
+fullmod4<-lm(dat$eclosion~stand.dat$term+dat$host+stand.dat$c+stand.dat$post_dd+stand.dat$plat)
+leftover<-as.vector(scale(resid(fullmod4)))
+
+```
+
+does the interaction persist? 
+
+```R
+pmod5<-lm(dat$eclosion~leftover*dat$host)
+
+knitr::kable(coef(summary(pmod5)))
+```
+
+|                     |  Estimate| Std. Error|    t value| Pr(>&#124;t&#124;)|
+|:--------------------|---------:|----------:|----------:|------------------:|
+|(Intercept)          | 47.533333|   2.663403| 17.8468395|          0.0000000|
+|leftover             | -2.128265|   2.497493| -0.8521605|          0.3974584|
+|dat$hostHaw          | 32.980952|   3.629607|  9.0866455|          0.0000000|
+|leftover:dat$hostHaw |  9.022192|   3.655032|  2.4684304|          0.0163889|
+
+
+ok, make into dataframe and plot:  
+
+```R
+mdat<-data.frame(eclosion=dat$eclosion,leftover,host=dat$host)
+ggplot(mdat,aes(x=leftover,y=eclosion,colour=host))+geom_point()+stat_smooth(method='lm')
+```
+
+![](https://user-images.githubusercontent.com/4654474/35688403-1832db5e-073f-11e8-8c14-0826cb1d90ac.png)
+
 
 ------
 
