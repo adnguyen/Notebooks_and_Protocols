@@ -1,6 +1,6 @@
 # TItle
 
-### Author:
+### Author: James brown
 ### Affiliation:     
 
 ## Projects title/descriptions
