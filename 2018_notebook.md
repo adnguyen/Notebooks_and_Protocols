@@ -2434,7 +2434,16 @@ Prep for meeting with Dan.
 
 	* Data analysis- identified 2 modules with PCA
 		* how is "c" influenced by resp
-	* 
+		* regress parameter estimates against parameter error to gauge bias
+	* How to proceed with Discussion? 
+
+4. Brain transcriptome paper
+	* Greg needs to send me dataset with metadata 
+	* Dan needs to send me a the research plan for the project  
+	
+
+
+
 
 ------
 
