@@ -50,7 +50,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 28: 2018-01-30 ](#id-section28). Readings in Rhagoletis, pop gen, directions of gene flow 
 * [Page 29: 2018-01-31 ](#id-section29). Meeting with Dan , MR trajectories paper  
 * [Page 30: 2018-02-01 ](#id-section30). follow up analysis; partial correlation of parameters
-* [Page 31:  ](#id-section31).
+* [Page 31: 2018-02-07 ](#id-section31).  Prep meeting with Dan 
 * [Page 32:  ](#id-section32).
 * [Page 33:  ](#id-section33).
 * [Page 34:  ](#id-section34).
@@ -2384,7 +2384,57 @@ ggplot(mdat,aes(x=leftover,y=eclosion,colour=host))+geom_point()+stat_smooth(met
 
 <div id='id-section31'/>    
     
-### Page 31:  
+### Page 31:  2018-02-07. Updates and Prep meeting with Dan   
+
+General Updates:
+
+1. Gave reproducible science workshop last Friday, 2018-02-02   
+	* overall many students benefitted from the structure I provided
+	* some students didn't even show up with laptops -.-...what
+	* not enough time to go over everything
+		* went over the layout of a project (publishable unit)
+		* got through github and highlighted how it could be used
+		* didnt get a chance to go over R, Rmarkdown, or markdown in general 
+		* didnt get a chance to go over metadata, 
+		* showed the nice features of my online notebook  
+2. Gave popbio talk on range limits of A. picea last Friday,2018-02-02  
+	* Dan suggests an additional slide describing how we need to know the ecology and the organisms themselves to ultimately understand range limits 
+	
+3. Been meeting with Taariq every week to parse trikinetics data and have it line up with each unique ID (fly); script works, but is slow and may need to run the script through hipergator
+
+Prep for meeting with Dan.
+
+1. Circadian rhythm project: ongoing
+	* taking samples out of the fridge still. 
+	* still a lull in eclosions for RT treated flies, is this the fraction that has a 2 year diapause? 
+	
+2. Paper readings
+
+* XIE, X., MICHEL, A. P., SCHWARZ, D., RULL, J., VELEZ, S., FORBES, A. A., … FEDER, J. L. (2008). Radiation and divergence in the Rhagoletis Pomonella species complex: inferences from DNA sequence data. Journal of Evolutionary Biology, 21(3), 900–913. https://doi.org/10.1111/j.1420-9101.2008.01507.x
+
+* Xie, X., Rull, J., Michel, A. P., Velez, S., Forbes, A. A., Lobo, N. F., … Feder, J. L. (2007). HAWTHORN-INFESTING POPULATIONS OF RHAGOLETIS POMONELLA IN MEXICO AND SPECIATION MODE PLURALITY. Evolution, 61(5), 1091–1105. https://doi.org/10.1111/j.1558-5646.2007.00091.x
+
+* Feder, J. L., Berlocher, S. H., Roethele, J. B., Dambroski, H., Smith, J. J., Perry, W. L., … Aluja, M. (n.d.). Allopatric genetic origins for sympatric host-plant shifts and race formation in Rhagoletis. Retrieved from http://www.pnas.org/content/pnas/100/18/10314.full.pdf
+
+3. MR trajectory paper  
+	* Took a stab at intro
+		* On the right track? 
+		* General outline:
+			1. Speciation story -> divergence in emergence timing -> related to eclosion differences between host races 
+			2. Diapause developmental programme  is highly modular with indpedent interconnected componnents that may or may not evolve independently í ragland biphasic model í related to termination, post-diapause development 
+			3. What drives the divergence in eclosion timing? Some say Deep diapause (Feder and Filchak ), but what aspects can change? 
+			4. Shifts in earlier eclosion timing by apple can be achieved by becoming more responsive to favorable conditions. But how this happens within the diapause module framework remains unclear. Modules that can change :  
+				1.	Elevate metabolic suppression during diapause 
+				2.	Elevate metabolic rate upon meeting favorable conditions
+				3.	Terminate diapause earlier 
+				4.	Develop faster post-diapause, after termination 
+
+			5. In this study paragraph. 
+		
+
+	* Data analysis- identified 2 modules with PCA
+		* how is "c" influenced by resp
+	* 
 
 ------
 
