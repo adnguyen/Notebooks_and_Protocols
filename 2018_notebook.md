@@ -2416,6 +2416,20 @@ Prep for meeting with Dan.
 
 * Feder, J. L., Berlocher, S. H., Roethele, J. B., Dambroski, H., Smith, J. J., Perry, W. L., … Aluja, M. (n.d.). Allopatric genetic origins for sympatric host-plant shifts and race formation in Rhagoletis. Retrieved from http://www.pnas.org/content/pnas/100/18/10314.full.pdf
 
+**General issues/thoughts**   
+
+Phylogenetic analyses assume non-reticulate evolution(gene flow between tips) , so it is not fully appropriate to describe populations. 
+
+* Papers need a structure analysis to:
+	* determine extent of admixture 
+	* determine population structure 
+* PNAS paper needed an outgroup, but subsequent papers had it
+* Parsimony trees? Need ML or bayesian approach to account for secondary mutations
+* Papers need to show which allele is enriched in apple ( should be SN haplotypes)
+* To establish stronger direction of gene flow, they should run partitioned D statstics (Eaton paper in sys biol.)
+* Try coalescant models? Ones that give you timing of divergence, then compare the timing of population of alleles?
+
+
 3. MR trajectory paper  
 	* Took a stab at intro
 		* On the right track? 
@@ -2436,6 +2450,17 @@ Prep for meeting with Dan.
 		* how is "c" influenced by resp
 		* regress parameter estimates against parameter error to gauge bias
 	* How to proceed with Discussion? 
+
+New figs: 
+
+**PC1 and PC 2 comparison**
+
+![](https://user-images.githubusercontent.com/4654474/35989530-57a7e62c-0ccf-11e8-8655-27de5e2d25eb.png)
+
+**Comparison among host races**
+
+![](https://user-images.githubusercontent.com/4654474/35989478-3aac51fc-0ccf-11e8-906e-333dea8d42d8.png)
+
 
 4. Brain transcriptome paper
 	* Greg needs to send me dataset with metadata 
