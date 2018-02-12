@@ -51,7 +51,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 29: 2018-01-31 ](#id-section29). Meeting with Dan , MR trajectories paper  
 * [Page 30: 2018-02-01 ](#id-section30). follow up analysis; partial correlation of parameters
 * [Page 31: 2018-02-07 ](#id-section31).  Prep meeting with Dan 
-* [Page 32:  ](#id-section32).
+* [Page 32: 2018-02-12 ](#id-section32). To do list 
 * [Page 33:  ](#id-section33).
 * [Page 34:  ](#id-section34).
 * [Page 35:  ](#id-section35).
@@ -2474,7 +2474,32 @@ New figs:
 
 <div id='id-section32'/>    
     
-### Page 32:  
+### Page 32:  2018-02-12. To do list 
+
+
+1. Biological rhythms project: 
+	* keep tracking eclosions and placing them into trikinetics set up. 
+	* Only 1 eclosion so far; eclosion needs to be calculated from days out of simulated overwintering 
+	* created a branch on github to preserve the project at today's time slice 
+
+2. Diapause exit proj
+	* work on intro, hide detailed info on Rhago, make more broad and highlight modules in the context of diapause biology
+	
+3. Thermal niche paper: 
+	* read over, send to lacy   
+
+4. Hsp rxn norm paper:
+	* NJGotelli- wants to get rid of pca analysis and just show the correlation matrix + a multiple linear regression  
+
+5. Proteome stability project: 
+	* Wai sent me email asking for details- I replied
+	* HPLC fractionation? 
+
+6. Biological rhythms conference
+	* wrote up abstract ; give it to Dan to read. 
+	* Deadline is Feb 21st. 
+	* need to register 
+
 
 ------
 
