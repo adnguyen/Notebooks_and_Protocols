@@ -2719,6 +2719,7 @@ Multiple linear regression Models deviate from models considering 1 predictor at
 
 2. **Diapause exit proj**
 	* work on intro, hide detailed info on Rhago, make more broad and highlight modules in the context of diapause biology
+		* almost done, need to look at it one more time and then send to Dan. 
 	
 3. **Thermal niche paper**: 
 	* **Sent to lacy**; tweaked abstract and figures   
@@ -2726,6 +2727,8 @@ Multiple linear regression Models deviate from models considering 1 predictor at
 4. **Hsp rxn norm paper**:
 	* NJGotelli- wants to get rid of pca analysis and just show the correlation matrix + a multiple linear regression  
 		* multiple linear regression diff than single regressions ; asking for NJG for response on how to proceed 
+		* SHC is in favor of pca bc it separates out expression kinetics from baseline gxp. 
+		* Fixed pca figure to make it more interprettable. 
 
 5. Proteome stability project: 
 	* Wai to HPLC fractionate
@@ -2736,7 +2739,7 @@ Multiple linear regression Models deviate from models considering 1 predictor at
 	* need to register 
 	* go over abstract 1more time and send it to Dan ---Friday 
 
-7. meeting with Brett Scheffers 
+7. meeting with Brett Scheffers ; Friday Feb 16 - 2:30PM
 	* agenda
 		* reciprocal transplant along lat gradient in Fl ; fruit flies in madagascar 
 
