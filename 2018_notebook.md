@@ -52,7 +52,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 30: 2018-02-01 ](#id-section30). follow up analysis; partial correlation of parameters
 * [Page 31: 2018-02-07 ](#id-section31).  Prep meeting with Dan 
 * [Page 32: 2018-02-12 ](#id-section32). To do list 
-* [Page 33:  ](#id-section33).
+* [Page 33: 2018-02-13 ](#id-section33). Re-analysis of hsp rxn norm proj
 * [Page 34:  ](#id-section34).
 * [Page 35:  ](#id-section35).
 * [Page 36:  ](#id-section36).
@@ -2505,7 +2505,88 @@ New figs:
 
 <div id='id-section33'/>    
     
-### Page 33:  
+### Page 33:  2018-02-13. Re-analysis of hsp rxn norm proj    
+
+
+NJG suggests that I should present a correlation matrix and use a multiple linear regression for testing the effect of hsp gxp parameters on CTmax. 
+
+One problem with multiple linear regression is that the variablies multicolinear: https://onlinecourses.science.psu.edu/stat501/node/347
+
+Let's take a look at the dataset: 
+
+```R
+ str(jj2)
+'data.frame':	41 obs. of  14 variables:
+ $ CTmax              : num  42 41.8 40.4 41.3 40.9 ...
+ $ hsc70              : num  23 22.1 22.5 22.9 23.8 ...
+ $ hsp83              : num  22.4 22.1 22.3 22.4 21.6 ...
+ $ hsp40              : num  24.4 24 25.1 25.2 25.4 ...
+ $ colony.id2         : chr  "ALA1" "ALA4" "Avon19-1" "Bing" ...
+ $ FC_hsc70_1468_max  : num  47.6 29.1 17 30.2 43.7 ...
+ $ FC_hsc70_1468_slope: num  1.026 1.071 1.01 0.391 0.909 ...
+ $ FC_hsc70_1468_Tm   : num  37.2 36.3 36.5 35.6 36.1 ...
+ $ FC_hsp40_541_max   : num  8.5 4.62 21.96 5.79 7.06 ...
+ $ FC_hsp40_541_slope : num  2.4311 1.3566 2.6054 0.8119 0.0455 ...
+ $ FC_hsp40_541_Tm    : num  37.3 35.3 40.9 35.3 33.1 ...
+ $ FC_Hsp83_279_max   : num  5.8 6.46 8.86 7.61 4.3 ...
+ $ FC_Hsp83_279_slope : num  2.0964 1.2968 1.757 0.0497 1.0885 ...
+ $ FC_Hsp83_279_Tm    : num  37 35 35.1 33.1 34.7 ...
+ - attr(*, "na.action")=Class 'omit'  Named int [1:3] 12 24 43
+  .. ..- attr(*, "names")= chr [1:3] "12" "24" "43"
+```
+### Construct full linear model 
+
+```R
+fullmod101<-lm(CTmax~FC_hsc70_1468_max+FC_hsc70_1468_slope+FC_hsc70_1468_Tm+FC_hsp40_541_max+FC_hsp40_541_slope+FC_hsp40_541_Tm+FC_hsp40_541_Tm+FC_Hsp83_279_max+FC_Hsp83_279_slope+FC_Hsp83_279_Tm+hsc70+hsp83+hsp40,data=jj2)
+knitr::kable(coef(summary(fullmod101)))
+```
+
+|                    |   Estimate| Std. Error|    t value| Pr(>&#124;t&#124;)|
+|:-------------------|----------:|----------:|----------:|------------------:|
+|(Intercept)         | 38.8001849|  6.4812766|  5.9865035|          0.0000019|
+|FC_hsc70_1468_max   |  0.0423297|  0.0092943|  4.5543913|          0.0000937|
+|FC_hsc70_1468_slope |  0.1118718|  0.2483733|  0.4504179|          0.6558775|
+|FC_hsc70_1468_Tm    |  0.1079948|  0.1667208|  0.6477582|          0.5224178|
+|FC_hsp40_541_max    | -0.0092906|  0.0210301| -0.4417765|          0.6620442|
+|FC_hsp40_541_slope  | -0.4047645|  0.1487466| -2.7211684|          0.0110578|
+|FC_hsp40_541_Tm     |  0.2557764|  0.0751077|  3.4054617|          0.0020140|
+|FC_Hsp83_279_max    | -0.0539052|  0.0266171| -2.0252106|          0.0524743|
+|FC_Hsp83_279_slope  |  0.2774153|  0.1308170|  2.1206376|          0.0429434|
+|FC_Hsp83_279_Tm     | -0.1136904|  0.1031364| -1.1023302|          0.2797033|
+|hsc70               | -0.0963486|  0.1741470| -0.5532604|          0.5844761|
+|hsp83               | -0.0486555|  0.1294554| -0.3758475|          0.7098629|
+|hsp40               | -0.1742460|  0.0642824| -2.7106345|          0.0113385|
+
+### Checking for multicollinearity 
+
+```R
+vif(fullmod101)
+  FC_hsc70_1468_max FC_hsc70_1468_slope    FC_hsc70_1468_Tm    FC_hsp40_541_max  FC_hsp40_541_slope     FC_hsp40_541_Tm 
+           3.534310            2.668820            5.039916            3.097313            2.447423            4.714042 
+   FC_Hsp83_279_max  FC_Hsp83_279_slope     FC_Hsp83_279_Tm               hsc70               hsp83               hsp40 
+           3.488256            2.150595            6.700810            1.914794            1.807223            1.162075
+```
+
+Generally, from the online stat tutorial, variance inflation factors above 4 requires further investigation. 
+
+### Model selection 
+
+```R
+fullmod102<-stepAIC(fullmod101,direction="both")
+knitr::kable(coef(summary(fullmod102)))
+```
+
+|                   |   Estimate| Std. Error|   t value| Pr(>&#124;t&#124;)|
+|:------------------|----------:|----------:|---------:|------------------:|
+|(Intercept)        | 36.7068907|  1.9933118| 18.415027|          0.0000000|
+|FC_hsc70_1468_max  |  0.0436305|  0.0064964|  6.716152|          0.0000001|
+|FC_hsp40_541_slope | -0.3756351|  0.1227514| -3.060128|          0.0042986|
+|FC_hsp40_541_Tm    |  0.2198404|  0.0466206|  4.715519|          0.0000400|
+|FC_Hsp83_279_max   | -0.0694954|  0.0214980| -3.232640|          0.0027264|
+|FC_Hsp83_279_slope |  0.2799913|  0.1040755|  2.690271|          0.0109871|
+|hsp40              | -0.1719737|  0.0585296| -2.938233|          0.0058917|
+
+
 
 ------
 
