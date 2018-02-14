@@ -2705,6 +2705,8 @@ Multiple R-squared:  0.3075,	Adjusted R-squared:  0.2305
 F-statistic: 3.996 on 4 and 36 DF,  p-value: 0.008775
 ```
 
+Multiple linear regression Models deviate from models considering 1 predictor at a time. 
+
 ------
 
 <div id='id-section34'/>    
@@ -2721,8 +2723,9 @@ F-statistic: 3.996 on 4 and 36 DF,  p-value: 0.008775
 3. **Thermal niche paper**: 
 	* **Sent to lacy**; tweaked abstract and figures   
 
-4. Hsp rxn norm paper:
+4. **Hsp rxn norm paper**:
 	* NJGotelli- wants to get rid of pca analysis and just show the correlation matrix + a multiple linear regression  
+		* multiple linear regression diff than single regressions ; asking for NJG for response on how to proceed 
 
 5. Proteome stability project: 
 	* Wai to HPLC fractionate
