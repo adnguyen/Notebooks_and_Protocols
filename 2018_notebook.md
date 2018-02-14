@@ -2586,13 +2586,156 @@ knitr::kable(coef(summary(fullmod102)))
 |FC_Hsp83_279_slope |  0.2799913|  0.1040755|  2.690271|          0.0109871|
 |hsp40              | -0.1719737|  0.0585296| -2.938233|          0.0058917|
 
+### 2018-02-14 update
 
+NJG comments: 
+
+```
+I strongly suggest you drop the PCA entirely. As is always the case, it really doesn't add anything beyond the underlying correlations of the variables. I would suggest a pairwise correlation matrix (or figure from R) for all of the variables, and then perhaps a multiple regression model for each HSP with CtMax as the response variable and the four expression parameters as the predictor variables.
+```
+
+Yeah, lets try this again... 
+
+Cool code to make correlation matrix heat map
+
+```R
+#make correlation matrix
+comat<-round(cor(na.omit(jj2)),2)
+
+##plot it with this library 
+library(ggcorrplot)
+b<-ggcorrplot(comat, hc.order = TRUE,lab=TRUE, type = "lower",
+   outline.col = "white",
+   ggtheme = ggplot2::theme_gray,
+   colors = c("#6D9EC1", "white", "#E46726"))
+
+b+theme(
+  axis.title.x = element_blank(),
+  axis.title.y = element_blank(),
+  panel.grid.major = element_blank(),
+  panel.border = element_blank(),
+  panel.background = element_blank(),
+  axis.ticks = element_blank(),)
+```
+
+### Stat models with hsp83 
+
+```R
+ summary(mod83)
+
+Call:
+lm(formula = KO_temp_worker ~ hsp83 + FC_Hsp83_279_slope + FC_Hsp83_279_Tm + 
+    FC_Hsp83_279_max, data = jj1)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.53807 -0.38594  0.01758  0.32602  2.01071 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        34.947040   5.117156   6.829 3.68e-08 ***
+hsp83               0.008037   0.153847   0.052   0.9586    
+FC_Hsp83_279_slope  0.084438   0.152880   0.552   0.5839    
+FC_Hsp83_279_Tm     0.172873   0.084410   2.048   0.0473 *  
+FC_Hsp83_279_max    0.019388   0.029765   0.651   0.5186    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7408 on 39 degrees of freedom
+Multiple R-squared:  0.2931,	Adjusted R-squared:  0.2206 
+F-statistic: 4.043 on 4 and 39 DF,  p-value: 0.007751
+```
+
+
+### Stat models with hsp70
+
+
+```R
+ summary(mod70)
+
+Call:
+lm(formula = KO_temp_worker ~ hsc70 + FC_hsc70_1468_max + FC_hsc70_1468_slope + 
+    FC_hsc70_1468_Tm, data = jj1)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.94204 -0.44307  0.07442  0.34417  1.02051 
+
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)         37.874723   5.735742   6.603 7.54e-08 ***
+hsc70               -0.244822   0.142811  -1.714  0.09441 .  
+FC_hsc70_1468_max    0.022367   0.008156   2.743  0.00916 ** 
+FC_hsc70_1468_slope  0.322339   0.219113   1.471  0.14928    
+FC_hsc70_1468_Tm     0.220416   0.120014   1.837  0.07390 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.594 on 39 degrees of freedom
+Multiple R-squared:  0.5456,	Adjusted R-squared:  0.499 
+F-statistic: 11.71 on 4 and 39 DF,  p-value: 2.435e-06
+```
+
+### Stat models with hsp40  
+
+```R
+summary(mod40)
+
+Call:
+lm(formula = KO_temp_worker ~ hsp40 + FC_hsp40_541_max + FC_hsp40_541_slope + 
+    FC_hsp40_541_Tm, data = jj1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.0548 -0.3409 -0.1021  0.3422  1.8449 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        37.51526    3.15733  11.882 5.12e-14 ***
+hsp40              -0.12503    0.08879  -1.408  0.16766    
+FC_hsp40_541_max    0.01542    0.02583   0.597  0.55435    
+FC_hsp40_541_slope -0.19096    0.19562  -0.976  0.33550    
+FC_hsp40_541_Tm     0.20127    0.07177   2.804  0.00808 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7137 on 36 degrees of freedom
+  (3 observations deleted due to missingness)
+Multiple R-squared:  0.3075,	Adjusted R-squared:  0.2305 
+F-statistic: 3.996 on 4 and 36 DF,  p-value: 0.008775
+```
 
 ------
 
 <div id='id-section34'/>    
     
-### Page 34:  
+### Page 34:  2018-02-14. Update to do list   
+
+
+1. Biological rhythms project: 
+	* keep tracking eclosions and placing them into trikinetics set up. 
+
+2. **Diapause exit proj**
+	* work on intro, hide detailed info on Rhago, make more broad and highlight modules in the context of diapause biology
+	
+3. **Thermal niche paper**: 
+	* **Sent to lacy**; tweaked abstract and figures   
+
+4. Hsp rxn norm paper:
+	* NJGotelli- wants to get rid of pca analysis and just show the correlation matrix + a multiple linear regression  
+
+5. Proteome stability project: 
+	* Wai to HPLC fractionate
+
+6. **Biological rhythms conference**
+	* Abstract basically approved by Dan 
+	* Deadline is Feb 21st. 
+	* need to register 
+	* go over abstract 1more time and send it to Dan ---Friday 
+
+7. meeting with Brett Scheffers 
+	* agenda
+		* reciprocal transplant along lat gradient in Fl ; fruit flies in madagascar 
 
 ------
 
