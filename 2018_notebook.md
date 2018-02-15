@@ -2780,6 +2780,7 @@ be prevented from evolving independent adaptations.
 
 Trait correlation has substantial consequences for their evolutionary trajectories. 
 
+**This paper uses morphology a lot as an example of modularity** One way  
 
 
 ### Also reading Melo & Marroig 2015; PNAS . Directional selection can drive the evolution of modularity in complex traits 
@@ -2801,6 +2802,19 @@ Instead, their simulations show that directional selection impacts modular struc
 
 
 Fig 2B. One cool interesting result if I'm understanding it right. The first pc explains consistant variation with increasing directional selction, but the second PC's variation increases with directional selection. 
+
+### What they do? 
+
+They simulated 10x10 (10 traits) G matrices that are controlled by many loci in a pouplation, that are subjected mutation, recombination. They essentially did a PCA of the gmatrix to identify trait correlations reflective of 2 modules
+
+**Approach** THey modelled populations under drift, stabilizing selection, and divergent natural selection. 
+
+The way they're describing module with respect to simulations is confusing. They split up the correlation within a PC(pc1 for example) such that negative or positive ones form the module. 
+
+In the methods, they describe" populations having variational modularity when the correlation between some sets of traits belonging to a module is higher than the correlation between traits of different modules. "
+
+So they determine modularity as the AVG ratio: ratio between the within and between module average correlation.
+
 
 ------
 
