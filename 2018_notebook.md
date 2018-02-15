@@ -53,8 +53,8 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 31: 2018-02-07 ](#id-section31).  Prep meeting with Dan 
 * [Page 32: 2018-02-12 ](#id-section32). To do list 
 * [Page 33: 2018-02-13 ](#id-section33). Re-analysis of hsp rxn norm proj
-* [Page 34:  ](#id-section34).
-* [Page 35:  ](#id-section35).
+* [Page 34: 2018-02-14 ](#id-section34). Update to do list   
+* [Page 35: 2018-02-15 ](#id-section35).  Paper reading: Melo et al. Ann rev; Modularity Genes Development and Evolution
 * [Page 36:  ](#id-section36).
 * [Page 37:  ](#id-section37).
 * [Page 38:  ](#id-section38).
@@ -2747,7 +2747,60 @@ Multiple linear regression Models deviate from models considering 1 predictor at
 
 <div id='id-section35'/>    
     
-### Page 35:  
+### Page 35:  2018-02-15. Paper reading: Melo et al. Ann rev; Modularity Genes Development and Evolution  
+
+ref: 
+
+Melo, D., Porto, A., Cheverud, J. M., & Marroig, G. (2016). Modularity: Genes, Development, and Evolution. Annu. Rev. Ecol. Evol. Syst, 47, 463–86. https://doi.org/10.1146/annurev-ecolsys-121415-032409
+
+Found new paper on modularity and trying to get a handle on what it actually means. 
+
+They describe a system being modular as: 
+
+If it can be divided into multiple sets of strongly interacting parts that are relatively autonomous with respect to each other. 
+
+For diapause, what is a module then? Is the whole diapause program 1 large module, with preparation, maintenance, and exit as distinct components. But for Rhagoletis, diapause exit can be broken down into a finer scale, such as termination and post diapause development.  
+
+Modularity can be applied to developmental processes; where modules are diff parts of embryo that interact with each other (induction and morphogenesis) or sets of interacting molecules that act independently in the patterning of multiple tissues. 
+
+**The same concept can be extended to adults, where modules consist of parts that act together in the performance of some physiological function.** 
+
+Variational modules are sets of traits that vary together and somewhat independently from other modules. Wait what...
+
+The way to approach modularity - estimate its correlational structure...not anything new here
+
+In this paper, they use genetic integration as genetic correlation. I should use the buzz word integration. 
+
+Interacting sentence here: 
+
+```
+If all features of an organism are completely integrated, the parts will
+be prevented from evolving independent adaptations.
+```
+
+Trait correlation has substantial consequences for their evolutionary trajectories. 
+
+
+
+### Also reading Melo & Marroig 2015; PNAS . Directional selection can drive the evolution of modularity in complex traits 
+
+ref: Melo, D., & Marroig, G. (2015). Directional selection can drive the evolution of modularity in complex traits. Proceedings of the National Academy of Sciences of the United States of America, 112(2), 470–5. https://doi.org/10.1073/pnas.1322632112
+
+
+Thispaper has a good description of modularity : 
+
+*Tendency for parts of many biological systems to be organized into semi-independent groups*
+
+They argue that response to selection depends on the patterns of modularity. 
+
+They approach modularity with PCA analysis of traits. 
+
+How traits are correlated is not depndent on drift and stabilizing selection. This makes sense when I think about Paccard et al. 2016(year?) where they find more traint independence at the edge of A. lyrata's range limit. They didn't investigate how selection is operating at the range limit. So, greater traint independence could be due to drift and that selection isn't operating at the range boundaries at all. 
+
+Instead, their simulations show that directional selection impacts modular structure of traits. When considering both stab and direct selection, stab is important for maintaining established trait correlation patterns. 
+
+
+Fig 2B. One cool interesting result if I'm understanding it right. The first pc explains consistant variation with increasing directional selction, but the second PC's variation increases with directional selection. 
 
 ------
 
