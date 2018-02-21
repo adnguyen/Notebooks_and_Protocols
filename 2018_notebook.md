@@ -2839,6 +2839,33 @@ So they determine modularity as the AVG ratio: ratio between the within and betw
 	* Set up rproj, simulate data
 	* Manipulating data from long to wide format
 	* Make associated plots (Kmiller's data would be nice ) 
+	
+	
+notes:
+
+SHC wants me to present regression on deciduos forest species :
+
+```R
+summary(lm(kdsub$jj.KO_temp_worker~kdsub$pchsp.scores...1.))
+
+Call:
+lm(formula = kdsub$jj.KO_temp_worker ~ kdsub$pchsp.scores...1.)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.01303 -0.29330  0.08219  0.34777  0.74836 
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)             41.47272    0.10029 413.525  < 2e-16 ***
+kdsub$pchsp.scores...1. 0.22837    0.06394  3.571  0.00141 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4485 on 26 degrees of freedom
+Multiple R-squared:  0.3291,	Adjusted R-squared:  0.3033 
+F-statistic: 12.76 on 1 and 26 DF,  p-value: 0.001414
+```
 
 ------
 
