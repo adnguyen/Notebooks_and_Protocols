@@ -55,7 +55,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 33: 2018-02-13 ](#id-section33). Re-analysis of hsp rxn norm proj
 * [Page 34: 2018-02-14 ](#id-section34). Update to do list   
 * [Page 35: 2018-02-15 ](#id-section35).  Paper reading: Melo et al. Ann rev; Modularity Genes Development and Evolution
-* [Page 36:  ](#id-section36).
+* [Page 36: 2018-02-21 ](#id-section36). Updated to do list
 * [Page 37:  ](#id-section37).
 * [Page 38:  ](#id-section38).
 * [Page 39:  ](#id-section39).
@@ -2820,7 +2820,25 @@ So they determine modularity as the AVG ratio: ratio between the within and betw
 
 <div id='id-section36'/>    
     
-### Page 36:  
+### Page 36:  2018-02-21. Updated to do list
+
+1. Biological rhythms project: 
+	* Taariq sent me prelim data set, where he's associated unique ID, entrainment vs free run to the trikinetics data
+		* I need to bin at different time intervals and estimate dominant periods with a spectral analysis 
+	* Create talk for biological rhythms conference - all set up with paper work and registration
+
+2. **Diapause exit proj**
+	* in Dan's hands
+	
+3. **Hsp rxn norm paper**:
+	* Fixed pca figure to make it more interprettable. 
+		* redid some figures to make PCA more interpretable; fixed intro, need to move onto results
+	* Make outline for discussion 
+
+4. Leading data wrangling workshop March 2 2018 for UF grad students 
+	* Set up rproj, simulate data
+	* Manipulating data from long to wide format
+	* Make associated plots (Kmiller's data would be nice ) 
 
 ------
 
