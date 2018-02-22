@@ -56,7 +56,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 34: 2018-02-14 ](#id-section34). Update to do list   
 * [Page 35: 2018-02-15 ](#id-section35).  Paper reading: Melo et al. Ann rev; Modularity Genes Development and Evolution
 * [Page 36: 2018-02-21 ](#id-section36). Updated to do list
-* [Page 37:  ](#id-section37).
+* [Page 37: 2018-02-22 ](#id-section37). Flow of ideas for the discussion of the hsp rxn norm ms  
 * [Page 38:  ](#id-section38).
 * [Page 39:  ](#id-section39).
 * [Page 40:  ](#id-section40).
@@ -2871,7 +2871,54 @@ F-statistic: 12.76 on 1 and 26 DF,  p-value: 0.001414
 
 <div id='id-section37'/>    
     
-### Page 37:  
+### Page 37: 2018-02-22. Flow of ideas for the discussion of the hsp rxn norm ms  
+
+
+Struggling to write the discussion here, so I'm writing out my ideas to get a better sense of where I want to go. 
+
+Current structure: 
+1. Summary paragraph
+2. Forest heterogeneity among forest types, focusign on deciduous forests
+3. Flat woods thermal experiences
+4. Evolutionary transition between closed to open habitat was accompanied by dynamic changes in the HSR 
+5. Cellular thermostat model discussion
+6. Reason why hsp kinetics differ and not baseline
+7. Conclusion- bringing it back to climate change
+
+SHC comment on discussion   
+
+```
+Is this really the key result?  Or is it that you have demonstrated a surprisingly large role of Hsp expression evolution in this process that is new and exciting?  I am not claiming I know what that key fnding is, but this spot is the most important location in your entire paper.  Think very carefully about what you want to put here.  
+```
+
+Ok, lets try to restructure it: 
+
+1. Summary paragraph
+	* Colonizing thermally stressful habitats requires ability to behav and phys adjust to stress
+	* Maybe contrast between divergent habitats where it is expected for baseline expression to increase, and non necessarily kinetics. I also should think about why other groups may not find strong differences in kinetics-it could be due to unsampled variation or missing variation that can be best captured with a function valued trait approach 
+	* Summary of results - CT max and habits
+	* Maybe say something about how this study is good because it decomposes the variation at different levels of biological organization 
+	* may need to mention the life history of ants: they usually stay in place and colony persistance willd epend on their ability to take the heat. Although, their offspring can migrate northward. Oh, maybe discuss how thermally adapted alleles can move northward. 
+
+2. How thermal ecology shapes thermal traits, the direction we expect them to evolve  and what types of mechanisms we'd expect to underlie their evolution. For example, how do organisms extend CTmax? 
+	* How clades evolve CTmax? Constrained? Largest signal was from habitats, not latitude. 
+	* hit on the fact that ants are long lived and display low plasticity for upper thermal limits (which is true for most insects), so they have to rely on evolution . 
+	* compare and contrast temperate regions, with tropical regions. We'd expect open habitats to resemble mechanisms in tropical regions  perhaps because they experience chronic temperature stress 
+		* think about how to integrate sub saharan african ants and their thermal phys 
+
+3. Transition into flat woods, accompanied by changes in kinetics, not baseline. Counter to what we expect. 
+	* End on explained variation
+	* touch on the remaining variation that could be explained 
+
+4. Discuss in the context of the thermostat model 
+
+5. Different strategies to cope with heat stress may have facilitated niche expansion in terrestrial ectotherms. 
+	* compare baseline expression used in sub saharan african ants, vs temperate forest ants 
+	* variability selects for plasticity 
+	* might be aproblem for cliamte change, if temperatures are increasing and becoming more stable. 
+	* Ants colonies don't move very far within their lifetime, so they have to take the heat where they are
+
+
 
 ------
 
