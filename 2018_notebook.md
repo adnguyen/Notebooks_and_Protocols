@@ -2931,7 +2931,7 @@ Stinchcombe, J. R., Izem, R., Heschel, M. S., McGoey, B. V., & Schmitt, J. (2010
 
 Cool paper by John Stinchcombe. Take home: the expression of the genetic architecture can change depending on the environment. In this case, they manipulated plants grown in shade or sun; at different densities. 
 
-
+table 4 is interesting and something I've been thinking about. If you plot each PC loading vs density , color coded by shade and sun. You can basically see the shift in the genetic architecture. 
 
 ------
 
