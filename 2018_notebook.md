@@ -57,7 +57,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 35: 2018-02-15 ](#id-section35).  Paper reading: Melo et al. Ann rev; Modularity Genes Development and Evolution
 * [Page 36: 2018-02-21 ](#id-section36). Updated to do list
 * [Page 37: 2018-02-22 ](#id-section37). Flow of ideas for the discussion of the hsp rxn norm ms  
-* [Page 38:  ](#id-section38).
+* [Page 38: 2018-02-27 ](#id-section38). Reading Stinchcombe et al. 2010; *Evolution*, ACROSS-ENVIRONMENT GENETIC CORRELATIONS AND THE FREQUENCY OF SELECTIVE ENVIRONMENTS SHAPE THE EVOLUTIONARY DYNAMICS OF GROWTH RATE IN IMPATIENS CAPENSIS  
 * [Page 39:  ](#id-section39).
 * [Page 40:  ](#id-section40).
 * [Page 41:  ](#id-section41).
@@ -2924,7 +2924,14 @@ Ok, lets try to restructure it:
 
 <div id='id-section38'/>    
     
-### Page 38:  
+### Page 38:  2018-02-27. Reading Stinchcombe et al. 2010; *Evolution*, ACROSS-ENVIRONMENT GENETIC CORRELATIONS AND THE FREQUENCY OF SELECTIVE ENVIRONMENTS SHAPE THE EVOLUTIONARY DYNAMICS OF GROWTH RATE IN IMPATIENS CAPENSIS  
+
+ref: 
+Stinchcombe, J. R., Izem, R., Heschel, M. S., McGoey, B. V., & Schmitt, J. (2010). ACROSS-ENVIRONMENT GENETIC CORRELATIONS AND THE FREQUENCY OF SELECTIVE ENVIRONMENTS SHAPE THE EVOLUTIONARY DYNAMICS OF GROWTH RATE IN IMPATIENS CAPENSIS. Evolution, no-no. https://doi.org/10.1111/j.1558-5646.2010.01060.x
+
+Cool paper by John Stinchcombe. Take home: the expression of the genetic architecture can change depending on the environment. In this case, they manipulated plants grown in shade or sun; at different densities. 
+
+
 
 ------
 
