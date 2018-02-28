@@ -58,7 +58,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 36: 2018-02-21 ](#id-section36). Updated to do list
 * [Page 37: 2018-02-22 ](#id-section37). Flow of ideas for the discussion of the hsp rxn norm ms  
 * [Page 38: 2018-02-27 ](#id-section38). Reading Stinchcombe et al. 2010; *Evolution*, ACROSS-ENVIRONMENT GENETIC CORRELATIONS AND THE FREQUENCY OF SELECTIVE ENVIRONMENTS SHAPE THE EVOLUTIONARY DYNAMICS OF GROWTH RATE IN IMPATIENS CAPENSIS  
-* [Page 39:  ](#id-section39).
+* [Page 39: 2018-02-28 ](#id-section39). Meeting with Tom, diapause exit ms
 * [Page 40:  ](#id-section40).
 * [Page 41:  ](#id-section41).
 * [Page 42:  ](#id-section42).
@@ -2937,7 +2937,23 @@ table 4 is interesting and something I've been thinking about. If you plot each 
 
 <div id='id-section39'/>    
     
-### Page 39:  
+### Page 39:  2018-02-28. Meeting with Tom, diapause exit ms  
+
+Meeting about data analysis. My quick and dirty approach found that the error of the estimate correlated with the estimates themselves. How can we control/account for this? 
+
+1. Regress estimate on error of the estimates. lm(Estimate ~ Error) 
+2. [Deming regression](https://cran.r-project.org/web/packages/deming/deming.pdf), where you can do single regressions and include measurement error. 
+
+Action items: 
+
+1. Tom to send us dataset with updated parameters and error
+2. I will re-analyze and explore whether the error matters
+	* If it does, try approaches outlined above
+3. Tom will read the intro and provide feedback
+4. Set the intro, methods, and results. Send to Greg for feedback. 
+
+
+
 
 ------
 
