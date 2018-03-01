@@ -3017,7 +3017,7 @@ Tweaking outline;
 	* Altogether kinetics explained less than half of the variation, suggesting other mechanisms are important, such as proteome , metabolome, and cell membrane dynamics
 	
 
-4. Protein homeostasis good candidate to understand a more full picture of temperature adaptation
+4. Protein homeostasis good candidate to understand a more full picture of temperature adaptation ( is it the source for resistance and tolerance? resistance and tolerance depends on homeostasis?)
 	* depends on the functional stability of the proteome
 		* degradation
 		* translation
