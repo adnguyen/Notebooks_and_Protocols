@@ -59,7 +59,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 37: 2018-02-22 ](#id-section37). Flow of ideas for the discussion of the hsp rxn norm ms  
 * [Page 38: 2018-02-27 ](#id-section38). Reading Stinchcombe et al. 2010; *Evolution*, ACROSS-ENVIRONMENT GENETIC CORRELATIONS AND THE FREQUENCY OF SELECTIVE ENVIRONMENTS SHAPE THE EVOLUTIONARY DYNAMICS OF GROWTH RATE IN IMPATIENS CAPENSIS  
 * [Page 39: 2018-02-28 ](#id-section39). Meeting with Tom, diapause exit ms
-* [Page 40:  ](#id-section40).
+* [Page 40: 2018-03-01 ](#id-section40).  discussion, hsp rxn norm ms
 * [Page 41:  ](#id-section41).
 * [Page 42:  ](#id-section42).
 * [Page 43:  ](#id-section43).
@@ -2959,7 +2959,62 @@ Action items:
 
 <div id='id-section40'/>    
     
-### Page 40:  
+### Page 40: 2018-03-01.  discussion, hsp rxn norm ms   
+
+Tweaking outline;
+
+
+
+1. Summary paragraph
+	* Colonizing thermally stressful habitats requires ability to behav and phys adjust to stress
+	* Maybe contrast between divergent habitats where it is expected for baseline expression to increase, and non necessarily kinetics. I also should think about why other groups may not find strong differences in kinetics-it could be due to unsampled variation or missing variation that can be best captured with a function valued trait approach 
+	* Summary of results - CT max and habits
+	* Maybe say something about how this study is good because it decomposes the variation at different levels of biological organization 
+	* may need to mention the life history of ants: they usually stay in place and colony persistance willd epend on their ability to take the heat. Although, their offspring can migrate northward. Oh, maybe discuss how thermally adapted alleles can move northward. 
+
+
+2. How thermal ecology shapes thermal traits, the direction we expect them to evolve  and what types of mechanisms we'd expect to underlie their evolution. For example, how do organisms extend CTmax? 
+	* How clades evolve CTmax? Constrained? Largest signal was from habitats, not latitude. 
+	* hit on the fact that ants are long lived and display low plasticity for upper thermal limits (which is true for most insects), so they have to rely on evolution . 
+	* compare and contrast temperate regions, with tropical regions. We'd expect open habitats to resemble mechanisms in tropical regions  perhaps because they experience chronic temperature stress 
+		* think about how to integrate sub saharan african ants and their thermal phys 
+
+3. Transition into flat woods, accompanied by changes in kinetics, not baseline. Counter to what we expect. 
+	* highlight function valued trait approach and how it can effectively detect subtle differences in rxn norm
+	* End on explained variation
+	* touch on the remaining variation that could be explained 
+
+4. **This should lead to other mechanisms -- focus on proteome stability and mention cool follow up approaches**
+	* cite the 2 papers that have proteome stability data out there 
+	* protein homeostasis is also a function of protein degradation, and hsp chaperoning activity
+
+5. Different strategies to cope with heat stress may have facilitated niche expansion in terrestrial ectotherms. 
+	* compare baseline expression used in sub saharan african ants, vs temperate forest ants 
+	* variability selects for plasticity 
+	* might be aproblem for cliamte change, if temperatures are increasing and becoming more stable. 
+	* Ants colonies don't move very far within their lifetime, so they have to take the heat where they are
+	
+	
+	
+### Ok, what are my topic and ending sentences for each paragraph ? s
+
+1. Colonization of thermally stressful environments depends on the ability to behaviorally and physiologically cope with temperature stress 
+	* Physiological adaptation played an important role in facilitating niche expansion in aphaeno
+	* transition from closed to open forests was accompanied by increase of upper thermal limits
+	* We evaluated the ability of these ants to resist and tolerate thermal perturbations and found shifts relating to both using a function valued trait approach and not in the types of mechanisms expected. 
+	* We found dynamic ,coordinated shfits in the Hsp expression parameters, not baseline expression , which also related to species divergence between habitats, and also when removing open canopy forested colonies; using a function valued trait approach
+	* Aphaenos likely use a common mechanism to cope with temperature stress in temperate forest ecosystems, opposite what is found in extremely warm habitats(cataglyphis). 
+
+2. Temperate Forest environments generate considerable heterogeneity in thermal microclimates that influences the thermal experiences of ectotherms (Scheffers et al. 2014). 
+	* our largest signal in shifts in ctmax were due to habitat, and less so latitude 
+		* solar radiation is htting forest dwelling insects more in open than closed habitat
+		* closed canopy forest species may benefit from bogert effect and not open canopy forest
+	* Expectations for the types of mechanisms to evolve; basal vs induced
+
+3. Transition into open canopy forests was accompanied by kinetics(induced responses) rather than baseline, counter to what we expect
+
+4. 
+	
 
 ------
 
