@@ -3017,10 +3017,13 @@ Tweaking outline;
 	* Altogether kinetics explained less than half of the variation, suggesting other mechanisms are important, such as proteome , metabolome, and cell membrane dynamics
 	
 
-4. Protein homeostasis also 
+4. Protein homeostasis good candidate to understand a more full picture of temperature adaptation
 	* depends on the functional stability of the proteome
 		* degradation
-	* follow up approaches: multiplex proteomics 
+		* translation
+		* chaperoning
+	* follow up approaches: multiplex proteomics  to find melting temperatuers
+	* How do all of these mechanisms interact?
 	
 5. Different strategies to cope with heat stress may have facilitated niche expansion in terrestrial ectotherms
 	* tempearate systems should evolve induction, troopical systems should evolve baseline
