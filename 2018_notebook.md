@@ -3011,10 +3011,26 @@ Tweaking outline;
 		* closed canopy forest species may benefit from bogert effect and not open canopy forest
 	* Expectations for the types of mechanisms to evolve; basal vs induced
 
-3. Transition into open canopy forests was accompanied by kinetics(induced responses) rather than baseline, counter to what we expect
-
-4. 
+3. Transition into open canopy forests and overall extension of CTmax was accompanied by kinetics(induced responses) rather than baseline, counter to what we expect
+	* By decomposing gene expression into functional parameters, we had high power to uncover variation in the expression pattersn fo hsps
+	* this could be why, some studies fail to see divergence in induction rather than baseline
+	* Altogether kinetics explained less than half of the variation, suggesting other mechanisms are important, such as proteome , metabolome, and cell membrane dynamics
 	
+
+4. Protein homeostasis also 
+	* depends on the functional stability of the proteome
+		* degradation
+	* follow up approaches: multiplex proteomics 
+	
+5. Different strategies to cope with heat stress may have facilitated niche expansion in terrestrial ectotherms
+	* tempearate systems should evolve induction, troopical systems should evolve baseline
+	* it is costly to constantly upregulate
+	* variability selects for plasticity and 
+	* Ants don't move, so they must rely on current mechanisms
+	* this may be a problem for future climate change when we expect more chronicly higher temperatures
+
+
+ok, now to fill in the whole discussion...
 
 ------
 
