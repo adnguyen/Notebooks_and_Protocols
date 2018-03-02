@@ -60,7 +60,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 38: 2018-02-27 ](#id-section38). Reading Stinchcombe et al. 2010; *Evolution*, ACROSS-ENVIRONMENT GENETIC CORRELATIONS AND THE FREQUENCY OF SELECTIVE ENVIRONMENTS SHAPE THE EVOLUTIONARY DYNAMICS OF GROWTH RATE IN IMPATIENS CAPENSIS  
 * [Page 39: 2018-02-28 ](#id-section39). Meeting with Tom, diapause exit ms
 * [Page 40: 2018-03-01 ](#id-section40).  discussion, hsp rxn norm ms
-* [Page 41:  ](#id-section41).
+* [Page 41: 2018-03-02 ](#id-section41). dissecting out some abstracts
 * [Page 42:  ](#id-section42).
 * [Page 43:  ](#id-section43).
 * [Page 44:  ](#id-section44).
@@ -3039,7 +3039,146 @@ ok, now to fill in the whole discussion...
 
 <div id='id-section41'/>    
     
-### Page 41:  
+### Page 41:  2018-03-02. Dissecting out abstracts Amnat
+
+ref:
+
+Angert, A. L., Bayly, M., Sheth, S. N., & Paul, J. R. (2017). Testing Range-Limit Hypotheses Using Range-Wide Habitat Suitability and Occupancy for the Scarlet Monkeyflower ( Erythranthe cardinalis ). The American Naturalist, E000–E000. https://doi.org/10.1086/695984  
+
+
+
+Determining the causes of geographic range limits is a
+fundamental problem in ecology, evolution, and conservation biology.
+Range limits arise because of fitness and dispersal limitation, which
+yield contrasting predictions about habitat suitability and occupancy
+of suitable habitat across geographic ranges. If a range edge is limited
+primarily by fitness, occupancy of suitable habitat should be high, habitat
+suitability should decline toward the edge, and no suitable habitat
+should exist beyond it. In contrast, a range edge limited primarily by
+dispersal should have unoccupied but suitable habitat at and beyond
+the edge. We built ecological niche models relating occurrence records
+for the scarlet monkeyflower (Erythranthe cardinalis) to climatic variables
+and applied these models to independent data from systematic,
+range-wide surveys of presence and absence to estimate the availability
+and occupancy of climatically suitable habitat. We found that fitness
+limitation predominated over dispersal limitation, but dispersal limitation
+also played a role at the poleward edge. These results are consistent
+with the hypothesis that dispersal limitation is more important
+along shallow environmental gradients and also suggest that synergy
+between dispersal and fitness limitation can contribute to colonization
+failure. The framework used here is validated by independent data and
+could be readily applied to inferring causes of range limits in many other
+species.
+
+
+THe first two sentences describe theory and background info. 
+
+*Determining the causes of geographic range limits is a
+fundamental problem in ecology, evolution, and conservation biology.
+Range limits arise because of fitness and dispersal limitation, which
+yield contrasting predictions about habitat suitability and occupancy
+of suitable habitat across geographic ranges.*
+
+Expectations based on theory and background info: 
+
+*If a range edge is limited
+primarily by fitness, occupancy of suitable habitat should be high, habitat
+suitability should decline toward the edge, and no suitable habitat
+should exist beyond it. In contrast, a range edge limited primarily by
+dispersal should have unoccupied but suitable habitat at and beyond
+the edge.* 
+
+So they've used the first 4 sentences to set up the background and expectations. Next, they get into their analytical approach and end with the justification. 
+
+*We built ecological niche models relating occurrence records
+for the scarlet monkeyflower (Erythranthe cardinalis) to climatic variables
+and applied these models to independent data from systematic,
+range-wide surveys of presence and absence to estimate the availability
+and occupancy of climatically suitable habitat.*   
+
+
+They state the result. 
+
+*We found that fitness
+limitation predominated over dispersal limitation, but dispersal limitation
+also played a role at the poleward edge.* 
+
+They put their results in a greater context and broaden to how these methods can be applied to other systems. 
+
+*These results are consistent
+with the hypothesis that dispersal limitation is more important
+along shallow environmental gradients and also suggest that synergy
+between dispersal and fitness limitation can contribute to colonization
+failure. The framework used here is validated by independent data and
+could be readily applied to inferring causes of range limits in many other
+species.*
+
+
+
+------
+
+ref:
+Burgess, S. C., Snyder, R. E., & Rountree, B. (2017). Collective Dispersal Leads to Variance in Fitness and Maintains Offspring Size Variation within Marine Populations. The American Naturalist, 000–000. https://doi.org/10.1086/695879
+
+Variance in fitness is well known to influence the outcome of evolution but is rarely considered in the theory of marine reproductive strategies. In coastal environments, turbulent mesoscale eddies can collect larvae into packets, resulting in collective dispersal. Larvae in packets return to the coast or are lost offshore in groups, producing variance in fitness. Using a Markov process to calculate fixation probabilities for competing phenotypes, we examine the evolution of offspring size and spawning duration in species with benthic adults and pelagic offspring. The offspring size that provides mothers with the highest mean fitness also generates the greatest variance in fitness, but pairwise invasion plots show that bet-hedging strategies are not evolutionarily stable; maximizing expected fitness correctly predicts the unique evolutionarily stable strategy. Nonetheless, fixation can take a long time. We find that selection to increase spawning duration as a risk avoidance strategy to reduce the negative impacts of stochastic recruitment success can allow multiple offspring sizes to coexist in a population for extended periods. This has two important consequences for offspring size: (1) coexistence occurs over a broader range of sizes and is longer when spawning duration is longer because longer spawning durations reduce variation in fitness and increase the time to fixation, and (2) longer spawning durations can compensate for having a nonoptimal size and even allow less optimal sizes to reach fixation. Collective dispersal and longer spawning durations could effectively maintain offspring size variation even in the absence of good and bad years or locations. Empirical comparisons of offspring size would therefore not always reflect environment-specific differences in the optimal size.
+
+This abstract starts directly off with the problem.
+
+*Variance in fitness is well known to influence the outcome of evolution but is rarely considered in the theory of marine reproductive strategies.*
+
+
+Then goes over background info on larvae and how there potentially variance in fitness.
+
+*In coastal environments, turbulent mesoscale eddies can collect larvae into packets, resulting in collective dispersal. Larvae in packets return to the coast or are lost offshore in groups, producing variance in fitness.*
+
+
+Next, the methods or approach sentence where they're modelling competing phenotypes related to fitness
+
+*Using a Markov process to calculate fixation probabilities for competing phenotypes, we examine the evolution of offspring size and spawning duration in species with benthic adults and pelagic offspring.*
+
+
+Results sentences-
+
+*The offspring size that provides mothers with the highest mean fitness also generates the greatest variance in fitness, but pairwise invasion plots show that bet-hedging strategies are not evolutionarily stable; maximizing expected fitness correctly predicts the unique evolutionarily stable strategy. Nonetheless, fixation can take a long time. We find that selection to increase spawning duration as a risk avoidance strategy to reduce the negative impacts of stochastic recruitment success can allow multiple offspring sizes to coexist in a population for extended periods.* 
+
+What the results mean-
+
+*This has two important consequences for offspring size: (1) coexistence occurs over a broader range of sizes and is longer when spawning duration is longer because longer spawning durations reduce variation in fitness and increase the time to fixation, and (2) longer spawning durations can compensate for having a nonoptimal size and even allow less optimal sizes to reach fixation.* 
+
+Broadening out the larger context-
+
+*Collective dispersal and longer spawning durations could effectively maintain offspring size variation even in the absence of good and bad years or locations. Empirical comparisons of offspring size would therefore not always reflect environment-specific differences in the optimal size.*
+
+
+------
+
+ref:   
+Burgess, S. C., Snyder, R. E., & Rountree, B. (2017). Collective Dispersal Leads to Variance in Fitness and Maintains Offspring Size Variation within Marine Populations. The American Naturalist, 000–000. https://doi.org/10.1086/695879
+
+
+
+Climate change is expected to favor smaller-bodied organisms through effects of temperature on physiological performance and food-web interactions, so much so that smaller body size has been touted as a universal response to global warming alongside range shifts and changing phenology. However, climate change involves more than warming. It is multivariate, and the interplay between climate variables may result in less straightforward predictions. We present a model that considers the simultaneous effect of multiple variables (temperature, CO2, and moisture) on herbivore body sizes within a tritrophic food web comprised of vegetation, herbivores, and a shared predator. The model accounts for climate effects on animal behavior, plant and animal metabolism, and plant quality to explore emergent effects on herbivore body size. Our analysis reveals that some common multivariate climate change scenarios may favor larger-bodied herbivores, challenging previous findings of shifts toward small-bodied herbivores in the face of rising temperatures.
+
+Opening with background info, to set up a contrast in the next sentence. 
+
+*Climate change is expected to favor smaller-bodied organisms through effects of temperature on physiological performance and food-web interactions, so much so that smaller body size has been touted as a universal response to global warming alongside range shifts and changing phenology.*
+
+Presents the problem (that climate change will impose selection from many different sources) and contrasts the previous sentence.
+
+*However, climate change involves more than warming. It is multivariate, and the interplay between climate variables may result in less straightforward predictions.* 
+
+Approach and methods sentence
+
+*We present a model that considers the simultaneous effect of multiple variables (temperature, CO2, and moisture) on herbivore body sizes within a tritrophic food web comprised of vegetation, herbivores, and a shared predator. The model accounts for climate effects on animal behavior, plant and animal metabolism, and plant quality to explore emergent effects on herbivore body size.* 
+
+Ends with a results sentence and no real conclusion. Maybe the result is the conclusion. But we have no clue under what variables can lead to larger bodied herbivores to do well... 
+
+*Our analysis reveals that some common multivariate climate change scenarios may favor larger-bodied herbivores, challenging previous findings of shifts toward small-bodied herbivores in the face of rising temperatures.*
+
+
+### Thoughts
+
+Abstracts for Amnat present background that lead to a gap in knowledge or problem or expectation. They usually have 1 methods/approach sentence and variable results/conclusion sections depending on what they want to highlight. 
 
 ------
 
