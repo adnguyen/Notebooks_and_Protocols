@@ -61,7 +61,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 39: 2018-02-28 ](#id-section39). Meeting with Tom, diapause exit ms
 * [Page 40: 2018-03-01 ](#id-section40).  discussion, hsp rxn norm ms
 * [Page 41: 2018-03-02 ](#id-section41). dissecting out some abstracts
-* [Page 42:  ](#id-section42).
+* [Page 42: 2018-03-06 ](#id-section42). Updates and proteostasis project development/ideas
 * [Page 43:  ](#id-section43).
 * [Page 44:  ](#id-section44).
 * [Page 45:  ](#id-section45).
@@ -3184,7 +3184,37 @@ Abstracts for Amnat present background that lead to a gap in knowledge or proble
 
 <div id='id-section42'/>    
     
-### Page 42:  
+### Page 42: 2018-03-06.  Updates and proteostasis project development/ideas
+
+Met with Dan yesterday to talk about project ideas for undergrad in the summer. The project focuses on dissecting out the evolutionary tactics organisms use to cope with heat stress at the molecular level.  
+
+Action items:   
+
+1. Send Dan two papers on proteome stability
+
+refs: 
+
+* Leuenberger, P., Ganscha, S., Kahraman, A., Cappelletti, V., Boersema, P. J., von Mering, C., … Picotti, P. (2017). Cell-wide analysis of protein thermal unfolding reveals determinants of thermostability. Science (New York, N.Y.), 355(6327), eaai7825. https://doi.org/10.1126/science.aai7825
+
+* Mikhail Savitski, P. M., M Reinhard, F. B., Franken, H., Werner, T., Fälth Savitski, M., Eberhard, D., … Drewes, G. (n.d.). Tracking cancer drugs in living cells by thermal profiling of the proteome. https://doi.org/10.1126/science.1255784
+
+2. Scour the literature to see what is known, what has been done, to figure out how we can contribute to the field. I'm making a google sheets to organize the literature, [here](https://docs.google.com/spreadsheets/d/1sdfqQ6vXOtwmQrKfetHUNkMNlSzdS7VmZz5TY-dYLms/edit?usp=sharing). 
+	* Dan wants to do something with prediction to try to pitch the idea for NIH funding. 
+	* What has been done in the DGRP? 
+
+Flow diagram of the determinants of proteostasis (protein homeostasis)
+
+![](https://user-images.githubusercontent.com/4654474/37040097-03263d3a-2127-11e8-9a7c-7b8db6727526.png)   
+
+
+### Types of questions we can ask 
+
+1. What are the relative contributions of different molecular tactics underlying proteostasis under temperature stress? 
+
+
+### Hypotheses 
+
+* Organisms rely on more stable proteome (resistance) than induced responses (tolerance) to cope with heat stress. 
 
 ------
 
