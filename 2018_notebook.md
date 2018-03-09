@@ -3211,6 +3211,8 @@ Flow diagram of the determinants of proteostasis (protein homeostasis)
 
 1. What are the relative contributions of different molecular tactics underlying proteostasis under temperature stress? 
 
+2. What evolutionary tactics at the molecular level enable adaptive changes in thermal tolerance? 
+
 
 ### Hypotheses 
 
