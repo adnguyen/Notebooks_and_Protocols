@@ -3224,6 +3224,16 @@ Flow diagram of the determinants of proteostasis (protein homeostasis)
     
 ### Page 43: 2018-03-09. Proj updates and proteome stability proj development
 
+1. Hsp rxn norm ms-Waiting on abstract, intro, results edits from SHC and NJG
+2. THermal niche ms- Lchick to send out
+3. Range limits ms- Waiting on discussion edits from SHC and NJG
+4. Biological rhythms - still tracking eclosions  from simulated overwintering 
+5. Rhagoletis Brain transcriptome proj- Dan to send me background info on the proj
+6. Proteome stability proj- write up a research plan 
+
+
+WRiting up research plan. 
+
 Background:
 
 The way organisms cope with temperature stress is multi-faceted and dynamical. Temperature stress can vary over the short and long term during an organism's lifespan. Ultimately, this stress causes macromolecular damage that disrupts biological function and can lead to negative fitness consequences. 
@@ -3231,7 +3241,7 @@ The way organisms cope with temperature stress is multi-faceted and dynamical. T
 Therefore, organisms should respond to temperature stress by diminishing the encounter of macromolecular damage (resistant) and/or controlling macromolecular damage (tolerance). One of the most important macromolecules are proteins, which provide structural and enzymatic functions inside the organism and the degree to which resistance and tolerance mechanisms are important depend on the type of stress applied. Short term heat bouts selects for resistance tactics such as evolving greater protein stability, while long term heat stress selects for tolerance by changing protein expression, or degrading and rescuing protein function. How organisms utilize a set a of tactics at the molecular level to face short term or long term stress is poorly understand. 
 
 
-**Study System**
+**Study System:** Fruit flies
 
 * DGRP http://dgrp2.gnets.ncsu.edu/
 * DSPR http://wfitch.bio.uci.edu/~dspr/
@@ -3249,9 +3259,12 @@ Main Questions:
 
 2. What are the relative contributions of molecular level tactics that organisms can use to respond to temperature stress?  
 	* **Hypothesis:** Thermally labile proteins are either not expressed and become broken down rapidly under heat stress . This would be detected in the long term treatment of stress. 
-		* **Approach:** Measure the thermal stability of using multiplex proteomics under short and long term heat stress and determine the shift in relative abundance of proteins. 
+		* **Approach:** Measure the thermal stability of using multiplex proteomics under short and long term heat stress and determine the shift in relative abundance of proteins. The mass spec will give the melting curves of every protein that can be detected. 
 		* **Expected outcomes:**
-	* **Hypothesis:**
+			* proteins with lower Tm (melting point) have lower 
+	* **Hypothesis:** More thermally labile proteins require molecular chaperoning  (hsp mediated or osmolyte mediated)
+		
+		
 
 
 
