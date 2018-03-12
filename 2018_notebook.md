@@ -3273,29 +3273,36 @@ Main Questions:
 
 			
 
-	* **Hypothesis:** More thermally labile proteins require molecular chaperoning  (hsp mediated or osmolyte mediated)  
+* **Hypothesis:** More thermally labile proteins require molecular chaperoning  (hsp mediated or osmolyte mediated)  
 	
-		* **Approach**- Metabolomics to measure the whole suite of metabolics  between short and long term temperature stress. Coupled with this experiment would be a pull down of Hsps90 and 70 to determine the relative effects of Hsp mediated vs osmolyte mediated chaperoning. 
-		* **Expected outcomes:** Either osmolytes or hsp mediated chaperoning plays  a larger role (for which proteins? Is it protein specific? ).    
+	* **Approach**- Metabolomics to measure the whole suite of metabolics  between short and long term temperature stress. Coupled with this experiment would be a pull down of Hsps90 and 70 to determine the relative effects of Hsp mediated vs osmolyte mediated chaperoning. 
+	* **Expected outcomes:** Either osmolytes or hsp mediated chaperoning plays  a larger role (for which proteins? Is it protein specific? ).    
 		
 		
 		
 
-![](https://user-images.githubusercontent.com/4654474/37298504-d12a119c-25f6-11e8-92a2-1ef6b73e9950.JPG)
+![](https://user-images.githubusercontent.com/4654474/37298504-d12a119c-25f6-11e8-92a2-1ef6b73e9950.JPG)  
+
 
 Hsps target labile proteins
 
-![](https://user-images.githubusercontent.com/4654474/37298505-d13673ce-25f6-11e8-9a49-9680670d3458.JPG)
+
+![](https://user-images.githubusercontent.com/4654474/37298505-d13673ce-25f6-11e8-9a49-9680670d3458.JPG)   
 
 
-	* **Hypothesis:** 
+
+
+	* **Hypothesis:**   
+	
 		
 
 2018-03-12. Tweaking the flow diagram of proteostasis. 
 		
 ![](https://user-images.githubusercontent.com/4654474/37293307-48d3964a-25e9-11e8-9e4a-88e0e3bec789.png)
 
-This one is not centered about the meaning of the different ways proteomes can be stable, but more about what are the types of fates or responses there are for stable and unstable proteins.
+This one is not centered about the meaning of the different ways proteomes can be stable, but more about what are the types of fates or responses there are for stable and unstable proteins.   
+
+
 
 
 ------
