@@ -62,7 +62,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 40: 2018-03-01 ](#id-section40).  discussion, hsp rxn norm ms
 * [Page 41: 2018-03-02 ](#id-section41). dissecting out some abstracts
 * [Page 42: 2018-03-06 ](#id-section42). Updates and proteostasis project development/ideas
-* [Page 43:  ](#id-section43).
+* [Page 43: 2018-03-09 & 2018-03-12 ](#id-section43). Proj updates and proteome stability proj development
 * [Page 44:  ](#id-section44).
 * [Page 45:  ](#id-section45).
 * [Page 46:  ](#id-section46).
