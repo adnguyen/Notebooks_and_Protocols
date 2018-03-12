@@ -3222,7 +3222,7 @@ Flow diagram of the determinants of proteostasis (protein homeostasis)
 
 <div id='id-section43'/>    
     
-### Page 43: 2018-03-09. Proj updates and proteome stability proj development
+### Page 43: 2018-03-09 & 2018-03-12. Proj updates and proteome stability proj development
 
 1. Hsp rxn norm ms-Waiting on abstract, intro, results edits from SHC and NJG
 2. THermal niche ms- Lchick to send out
@@ -3236,9 +3236,11 @@ WRiting up research plan.
 
 Background:
 
-The way organisms cope with temperature stress is multi-faceted and dynamical. Temperature stress can vary over the short and long term during an organism's lifespan. Ultimately, this stress causes macromolecular damage that disrupts biological function and can lead to negative fitness consequences. 
+The way organisms cope with temperature stress is multi-faceted and dynamical. Temperature stress can vary over the short and long term over an organism's lifespan. Ultimately, this stress causes macromolecular damage that disrupts biological function and can lead to negative fitness consequences. 
 
-Therefore, organisms should respond to temperature stress by diminishing the encounter of macromolecular damage (resistant) and/or controlling macromolecular damage (tolerance). One of the most important macromolecules are proteins, which provide structural and enzymatic functions inside the organism and the degree to which resistance and tolerance mechanisms are important depend on the type of stress applied. Short term heat bouts selects for resistance tactics such as evolving greater protein stability, while long term heat stress selects for tolerance by changing protein expression, or degrading and rescuing protein function. How organisms utilize a set a of tactics at the molecular level to face short term or long term stress is poorly understand. 
+Therefore, organisms should respond to temperature stress by diminishing the encounter of macromolecular damage (resistant) and/or controlling macromolecular damage (tolerance). One of the most important macromolecules are proteins, which provide structural and enzymatic functions inside the organism and the degree to which resistance and tolerance mechanisms are important depend on the magnitude and duration of stress. Short term heat bouts selects for resistance tactics such as evolving greater protein stability, while long term heat stress selects for tolerance by changing protein expression, or degrading and rescuing protein function. How organisms utilize a set a of tactics at the molecular level to face short term or long term stress is poorly understand. 
+
+However, quantitative genetic analyses of upper thermal limits ([in fruit flies](http://onlinelibrary.wiley.com/doi/10.1111/jeb.12090/full)) suggests independent and unique genetic components between dealing with hot temperatures over short and longer time scales. 
 
 
 **Study System:** Fruit flies
@@ -3254,18 +3256,41 @@ Main Questions:
 		* **Expected outcomes:** PCA decomposition of the Gmatrix will show different trait correlations.
 			1. All of the CTmax related traits could be negative correlated with CTmin along the first PC.
 			2. On the other hand, all of the treatment types (slow , fast, hardening) could share the same genetic arthicture. 
-		
+
+![](https://user-images.githubusercontent.com/4654474/37298502-d10593d0-25f6-11e8-86db-2f9f80938839.JPG)
+
+
 **Ultimate inference--** There is  common and divergent genetic basis of thermal traits This leads to the next question...
 
 2. What are the relative contributions of molecular level tactics that organisms can use to respond to temperature stress?  
-	* **Hypothesis:** Thermally labile proteins are either not expressed and become broken down rapidly under heat stress . This would be detected in the long term treatment of stress. 
+	* **Hypothesis:** Thermally labile proteins are either not expressed and become broken down rapidly under an acclimation response. 
+	
 		* **Approach:** Measure the thermal stability of using multiplex proteomics under short and long term heat stress and determine the shift in relative abundance of proteins. The mass spec will give the melting curves of every protein that can be detected. 
 		* **Expected outcomes:**
-			* proteins with lower Tm (melting point) have lower 
+			* proteins with lower Tm (melting point) have lower expression in long term vs short term responses. 
+			
+![](https://user-images.githubusercontent.com/4654474/37298503-d116f922-25f6-11e8-9896-fee40236c65a.JPG)
+			
+
 	* **Hypothesis:** More thermally labile proteins require molecular chaperoning  (hsp mediated or osmolyte mediated)
-		
+		* **Approach**- Metabolomics to measure the whole suite of metabolics  between short and long term temperature stress. Coupled with this experiment would be a pull down of Hsps90 and 70 to determine the relative effects of Hsp mediated vs osmolyte mediated chaperoning. 
+		* **Expected outcomes:** Either osmolytes or hsp mediated chaperoning plays  a larger role (for which proteins? Is it protein specific? ). 
+
+![](https://user-images.githubusercontent.com/4654474/37298504-d12a119c-25f6-11e8-92a2-1ef6b73e9950.JPG)
+
+Hsps target labile proteins
+
+![](https://user-images.githubusercontent.com/4654474/37298505-d13673ce-25f6-11e8-9a49-9680670d3458.JPG)
+
+
+	* **Hypothesis:** 
 		
 
+2018-03-12. Tweaking the flow diagram of proteostasis. 
+		
+![](https://user-images.githubusercontent.com/4654474/37293307-48d3964a-25e9-11e8-9e4a-88e0e3bec789.png)
+
+This one is not centered about the meaning of the different ways proteomes can be stable, but more about what are the types of fates or responses there are for stable and unstable proteins.
 
 
 ------
