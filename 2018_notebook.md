@@ -3263,13 +3263,14 @@ Main Questions:
 **Ultimate inference--** There is  common and divergent genetic basis of thermal traits This leads to the next question...
 
 2. What are the relative contributions of molecular level tactics that organisms can use to respond to temperature stress?  
-	* **Hypothesis:** Thermally labile proteins are either not expressed and become broken down rapidly under an acclimation response. 
+	* **Hypothesis:** Thermally labile proteins are either not expressed(or expression becomes altered) and become broken down rapidly under an acclimation response. 
 	
 		* **Approach:** Measure the thermal stability of using multiplex proteomics under short and long term heat stress and determine the shift in relative abundance of proteins. The mass spec will give the melting curves of every protein that can be detected. 
 		* **Expected outcomes:**
 			* proteins with lower Tm (melting point) have lower expression in long term vs short term responses. 
 			
 ![](https://user-images.githubusercontent.com/4654474/37298503-d116f922-25f6-11e8-9896-fee40236c65a.JPG)     
+
 
 			
 
@@ -3279,7 +3280,7 @@ Main Questions:
 	* **Expected outcomes:** Either osmolytes or hsp mediated chaperoning plays  a larger role (for which proteins? Is it protein specific? ).    
 		
 		
-		
+What to expect for Hsp pull down experiment: 		
 
 ![](https://user-images.githubusercontent.com/4654474/37298504-d12a119c-25f6-11e8-92a2-1ef6b73e9950.JPG)  
 
@@ -3289,11 +3290,15 @@ Hsps target labile proteins
 
 ![](https://user-images.githubusercontent.com/4654474/37298505-d13673ce-25f6-11e8-9a49-9680670d3458.JPG)   
 
+Not sure what to expect from metabolics because there could be so many metabolites. Doing multiple linear regressions of Tm on metabolite concentration could be a start....and then test interaction with treatment. This would suggest that there are context dependencies 
 
 
 
-	* **Hypothesis:**   
-	
+* **Hypothesis:** One way proteomes can become more stable or maintain stability is by expressing more stable splice variants (isoforms). 
+	* Approach - this would come out organically through multiplex mass spec
+	* Expected outcome:
+
+
 		
 
 2018-03-12. Tweaking the flow diagram of proteostasis. 
@@ -3302,7 +3307,13 @@ Hsps target labile proteins
 
 This one is not centered about the meaning of the different ways proteomes can be stable, but more about what are the types of fates or responses there are for stable and unstable proteins.   
 
+Ok, tweaked flow diagram some more: 
 
+![](https://user-images.githubusercontent.com/4654474/37301358-ba044c82-25fe-11e8-932d-0c8ebaeb32af.png)
+
+horizontal version
+
+![](https://user-images.githubusercontent.com/4654474/37301387-cee074f0-25fe-11e8-9654-eaee33a6c738.png)
 
 
 ------
