@@ -3269,13 +3269,17 @@ Main Questions:
 		* **Expected outcomes:**
 			* proteins with lower Tm (melting point) have lower expression in long term vs short term responses. 
 			
-![](https://user-images.githubusercontent.com/4654474/37298503-d116f922-25f6-11e8-9896-fee40236c65a.JPG)   
+![](https://user-images.githubusercontent.com/4654474/37298503-d116f922-25f6-11e8-9896-fee40236c65a.JPG)     
+
 			
 
 	* **Hypothesis:** More thermally labile proteins require molecular chaperoning  (hsp mediated or osmolyte mediated)  
 	
 		* **Approach**- Metabolomics to measure the whole suite of metabolics  between short and long term temperature stress. Coupled with this experiment would be a pull down of Hsps90 and 70 to determine the relative effects of Hsp mediated vs osmolyte mediated chaperoning. 
-		* **Expected outcomes:** Either osmolytes or hsp mediated chaperoning plays  a larger role (for which proteins? Is it protein specific? ). 
+		* **Expected outcomes:** Either osmolytes or hsp mediated chaperoning plays  a larger role (for which proteins? Is it protein specific? ).    
+		
+		
+		
 
 ![](https://user-images.githubusercontent.com/4654474/37298504-d12a119c-25f6-11e8-92a2-1ef6b73e9950.JPG)
 
