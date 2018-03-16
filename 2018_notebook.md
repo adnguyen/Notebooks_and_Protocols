@@ -63,7 +63,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 41: 2018-03-02 ](#id-section41). dissecting out some abstracts
 * [Page 42: 2018-03-06 ](#id-section42). Updates and proteostasis project development/ideas
 * [Page 43: 2018-03-09 & 2018-03-12 ](#id-section43). Proj updates and proteome stability proj development
-* [Page 44:  ](#id-section44).
+* [Page 44: 2018-03-16 ](#id-section44). Flow of ideas for evolution talk
 * [Page 45:  ](#id-section45).
 * [Page 46:  ](#id-section46).
 * [Page 47:  ](#id-section47).
@@ -3320,7 +3320,47 @@ horizontal version
 
 <div id='id-section44'/>    
     
-### Page 44:  
+### Page 44:  2018-03-16. Flow of ideas for evolution talk  
+
+
+Got picked to be in evolutionary physiology symposium 
+
+**S69:Organizers: Mathieu Buoro, Jacques Labonne, Matthew MacManes, Sylvie Oddou-Muratorio**
+
+*Evolutionary physiology, or the study of an animal’s or plant’s physiological processes within an integrative evolutionary, ecological, or comparative framework has grown in popularity over the past several years. Particularly in the light of adaptation, understanding how organisms respond to their ever-changing biotic or abiotic environments, by altering physiological processes, is foundational yet often an overlooked discipline within evolutionary biology.  This symposium aims to bring together a group of researchers interested in physiology across a wide variety of scales (e.g., from individual organisms to communities, including the exploration of feedback mechanisms between the two levels), physiological systems (e.g., neuro, endocrine, pulmonary, metabolic, photosynthetic), and approaches (e.g., modeling, genomic, molecular, population-level, field-based).  This symposium will promote discussion and collaboration with symposium participants and the audience members, allowing for the formation of a deep and synergistic understanding of the mechanisms that underlie physiological responses to our changing world. This is particularly timely, as newer methodological approaches, including high-throughput phenotyping is becoming more commonplace, and as evolutionary biology faces the great challenge of producing operational predictions about biodiversity dynamics in a context of rapid environmental and climatic change.*   
+
+
+I'll be presenting my hsp rxn norm work. Flow of ideas for talk: 
+
+* Varying environments pose a problem for populations and species to persist because living in each of them have different requirements. This is especially true for ectotherms where for example, environmental temperatures influence internal body temperatures and has consequences on how they perform.  High temperatuers damage proteins, leading to loss in biological activity and negative fitness consequences. 
+
+* Illustrate the thermal performance curves
+
+* How may we expect organisms to respond to high temperatures? And how have they historically adapted? 
+	* they need to resist or tolerate it 
+		* under resistance, proteins are more stable
+		* under tolerance, protein function may be recovered, or the toxic ones are discarded
+
+* So I'm asking two questions, how has selection operated on upper thermal limits and in what ways can organism resist and/or tolerate temperature stress? What are the adaptive ways species utilize their hsps to maintain proteostasis? 
+
+* Ants are a good system to approach these questions because: 
+	* They're everywhere, so they likely have adaptations that facilitate their diversificiations
+	* They're long-lived, so they're accustomed to responding to variable environments within their lifetimes and we'd expect plastic mechanisms to be critical for their performance
+	* common woodland ants 
+* Common woodland ants span a large lat gradient and 
+* In this system, we asked, what aspects of the local environment shapes their ability to take the heat? 
+	* we slow ramped heat shocked them , measured their ctmax
+* We found that habitat type to be more critical for shaping variation in ctmax
+	* Ancestral state reconstruction shows an evolutionary transition into open canopy forests
+	* this represents an evolutionary innovation
+* We then asked, ok, are ants resisting or tolerating the heat? 
+* Approach: we estimated tactics of resistance and tolerance by measuring the expression kinetics of critical proteins involved in the stress response. Go over each tactic. 
+
+* We found evidence for resistance and tolerance.   
+
+* Coordinated, adaptive shifts in the ways forest ants use hsps may have facilitated their divergence and diversification and lays out the expectations for the types of responses needed for a rapidly changing world. 
+
+
 
 ------
 
