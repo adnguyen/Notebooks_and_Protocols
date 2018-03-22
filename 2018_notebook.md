@@ -3451,6 +3451,27 @@ ggplot(ucterm,aes(x=Estimate,y=Eclosion,colour=host))+stat_smooth(method="lm")+g
 
 -------   
 
+### BUt...there is a relationship between parameter estimates and the error in those estimates. So our estimates may be biased.
+
+
+![](https://user-images.githubusercontent.com/4654474/37792583-886ab224-2de2-11e8-92bf-97d049e9ca34.png)   
+
+**some cod showing how to fit individual linear regression models to subsets of the data:**
+
+
+```R
+dat.mod<-comb.dat%>%
+  group_by(Param)%>% # create different subsets , based on param
+  do(res=scale(residuals(lm(Estimate~Error,data=.)))) # fit linear model and scale the residuals
+
+#checking order
+#dat.mod
+#comb.dat$Param
+comb.dat$Estimate.corr<-unlist(dat.mod[[2]])
+
+```
+
+
 
 ### Error corrected  
 
@@ -3490,11 +3511,15 @@ ggplot(comb.dat.wide,aes(x=termres,y=Eclosion,colour=host))+stat_smooth(method="
 
 ![](https://user-images.githubusercontent.com/4654474/37788967-1fff31dc-2dd9-11e8-8a54-2e0b43533d17.png)
 
-**PCA and then multiple linear regression
+**PCA and then multiple linear regression**   
 
 PCA loadings: 
 
+```R
+pca.param<-princomp(comb.dat.wide[,6:10])
+summary(pca.param)
 knitr::kable(round(pca.param$loadings[,1:3],3))
+```
 
 |     | Comp.1| Comp.2| Comp.3|
 |:----|------:|------:|------:|
@@ -3504,8 +3529,27 @@ knitr::kable(round(pca.param$loadings[,1:3],3))
 |plat | -0.596| -0.100| -0.115|
 |term |  0.305| -0.500| -0.692|
 
+regression model with pcs:
+
+```R
+ knitr::kable(summary(full.mod3)$coefficients)
+```
 
 
+|             |  Estimate| Std. Error|    t value| Pr(>&#124;t&#124;)|
+|:------------|---------:|----------:|----------:|------------------:|
+|(Intercept)  | 45.565024|   4.520428| 10.0798034|          0.0000000|
+|hostH        | 40.266333|   6.160305|  6.5364190|          0.0000000|
+|Comp.1       | -6.974462|   9.467399| -0.7366819|          0.4642351|
+|Comp.2       | -2.577335|   7.277889| -0.3541321|          0.7245024|
+|hostH:Comp.1 | 19.754392|  12.901890|  1.5311239|          0.1310834|
+|hostH:Comp.2 |  9.558117|   9.918091|  0.9637052|          0.3391271|
+
+No effect of PCs on eclosion. 
+
+### Take home: 
+
+IN the error corrected analysis, we found a term * host interaction, but not in the uncorrected analysis. The PCA doesn't add much, other than the fact that the correlational structure among parameters does not account for any of the variation in eclosion (in the corrected analysis). This might be a good talking point, because these parameters may be evolving independently and aren't constraining one another (covariation isn't functionally relevant).
 
 ------
 
