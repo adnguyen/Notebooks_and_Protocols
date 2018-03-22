@@ -64,7 +64,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 42: 2018-03-06 ](#id-section42). Updates and proteostasis project development/ideas
 * [Page 43: 2018-03-09 & 2018-03-12 ](#id-section43). Proj updates and proteome stability proj development
 * [Page 44: 2018-03-16 ](#id-section44). Flow of ideas for evolution talk
-* [Page 45:  ](#id-section45).
+* [Page 45: 2018-03-22 ](#id-section45). re-analysis of diapause exit in rhago
 * [Page 46:  ](#id-section46).
 * [Page 47:  ](#id-section47).
 * [Page 48:  ](#id-section48).
@@ -3366,7 +3366,146 @@ I'll be presenting my hsp rxn norm work. Flow of ideas for talk:
 
 <div id='id-section45'/>    
     
-### Page 45:  
+### Page 45:  2018-03-22. re-analysis of diapause exit in rhago   
+
+
+Tom sent me a data set where he refitted biphasic functions on a more accurate dataset. The problem with the last one was that it included metabolic rate measurements of adults. So this new dataset excluded those measurements. One additional concern is that there is error in the estimates of the function valued traits.  I'll do some multiple linear regressions to test the effect of function valued trait parameters and their interaction with host on eclosion timing. 
+
+### Uncorrected for estimate error 
+
+I'll scale the variables so that the betas are comparable for each continuous predictor. 
+
+**multiple linear regression** 
+
+```R
+uncor3<-data.frame(cbind(apply(uncor[,3:7],2,scale),uncor[,1:2],uncor[,8]))
+full.mod3<-lm(Eclosion~host*b+host*c1+host*EX+host*plat+host*term,data=uncor3)
+summary(full.mod3)
+knitr::kable(summary(stepAIC(full.mod3,direction="both"))$coefficients)
+
+```
+
+|            |   Estimate| Std. Error|     t value| Pr(>&#124;t&#124;)|
+|:-----------|----------:|----------:|-----------:|------------------:|
+|(Intercept) | 65.6028022|  0.3869879| 169.5215640|          0.0000000|
+|hostH       | -0.3691653|  0.5814205|  -0.6349368|          0.5280102|
+|c1          | -1.0671138|  0.2283625|  -4.6728942|          0.0000186|
+|EX          |  2.0582639|  0.5396524|   3.8140551|          0.0003383|
+|plat        | -0.5065150|  0.4281648|  -1.1829908|          0.2417236|
+|term        | 21.7178949|  0.2734226|  79.4297696|          0.0000000|
+|hostH:EX    |  1.0672529|  0.6319020|   1.6889531|          0.0966923|
+|hostH:plat  | -1.2750041|  0.6721143|  -1.8970048|          0.0628978|
+
+
+**PCA parameters and then multiple linear regression** 
+
+
+```R
+uncor<-dat%>%
+  dplyr::select(-one_of(n))
+uncor
+
+ucor.pca.param<-princomp(uncor[,3:7])
+summary(ucor.pca.param)
+knitr::kable(ucor.pca.param$loadings[,1:3])
+```
+**PC loadings**   
+
+
+|     |     Comp.1|     Comp.2|     Comp.3|
+|:----|----------:|----------:|----------:|
+|b    | -0.0001210| -0.0003812|  0.0154918|
+|plat | -0.0001587| -0.0019363|  0.0285725|
+|term |  0.9998725|  0.0159542|  0.0006682|
+|EX   |  0.0159609| -0.9998101| -0.0110578|
+|c1   | -0.0004855| -0.0110116|  0.9994103|
+
+Termination timing dominates pc1, so test for it's independent effect. 
+
+```R
+term.mod1<-lm(Eclosion~host*term,data=cdw.pc)
+knitr::kable(summary(term.mod1)$coefficients)
+```
+
+|            |   Estimate| Std. Error|    t value| Pr(>&#124;t&#124;)|
+|:-----------|----------:|----------:|----------:|------------------:|
+|(Intercept) | 47.7100883|   2.329147| 20.4839354|          0.0000000|
+|hostH       | 25.4743780|   3.031864|  8.4022175|          0.0000000|
+|term        | -0.7873064|   2.544022| -0.3094731|          0.7580163|
+|hostH:term  | 17.2524922|   3.140965|  5.4927366|          0.0000008|
+
+
+**Associated figure**   
+
+```R
+##grab only termination
+ucterm<-comb.dat%>%
+  filter(.,Param=="term")
+
+str(ucterm)
+ggplot(ucterm,aes(x=Estimate,y=Eclosion,colour=host))+stat_smooth(method="lm")+geom_point()
+```
+
+![](https://user-images.githubusercontent.com/4654474/37789693-ffe27c7c-2dda-11e8-92a2-943daa262a96.png)
+
+
+-------   
+
+
+### Error corrected  
+
+**Multiple linear regression**
+
+
+
+```R
+mod.sel1<-stepAIC(full.mod,direction="both")
+summary(mod.sel1)
+```
+
+|            |  Estimate| Std. Error|    t value| Pr(>&#124;t&#124;)|
+|:-----------|---------:|----------:|----------:|------------------:|
+|(Intercept) | 47.544006|   2.180970| 21.7994752|          0.0000000|
+|hostH       | 26.359097|   2.881963|  9.1462285|          0.0000000|
+|b           | -4.641483|   1.583192| -2.9317242|          0.0049345|
+|c1          |  3.857267|   2.143146|  1.7998158|          0.0774772|
+|EX          |  3.339120|   3.218459|  1.0374905|          0.3041309|
+|plat        |  2.916959|   2.527654|  1.1540184|          0.2535746|
+|term        | -1.750272|   2.902379| -0.6030472|          0.5490018|
+|hostH:c1    | -4.138989|   3.108044| -1.3317020|          0.1885522|
+|hostH:EX    | -6.483143|   3.962527| -1.6361135|          0.1076319|
+|hostH:plat  |  6.175939|   4.704094|  1.3128860|          0.1947736|
+|hostH:term  | 18.416788|   3.323757|  5.5409553|          0.0000009|
+
+**Figure showing the interaction between term and host on eclosion 
+
+standardized termination first: 
+
+```R
+
+comb.dat.wide$termres<-scale(residuals(lm(Eclosion~b+c1+EX+plat,data=comb.dat.wide)))
+ggplot(comb.dat.wide,aes(x=termres,y=Eclosion,colour=host))+stat_smooth(method="lm")+geom_point()+xlab("Standardized Termination Residuals")
+```
+
+
+![](https://user-images.githubusercontent.com/4654474/37788967-1fff31dc-2dd9-11e8-8a54-2e0b43533d17.png)
+
+**PCA and then multiple linear regression
+
+PCA loadings: 
+
+knitr::kable(round(pca.param$loadings[,1:3],3))
+
+|     | Comp.1| Comp.2| Comp.3|
+|:----|------:|------:|------:|
+|b    | -0.535|  0.052|  0.137|
+|c1   | -0.333|  0.478| -0.698|
+|EX   | -0.393| -0.713|  0.043|
+|plat | -0.596| -0.100| -0.115|
+|term |  0.305| -0.500| -0.692|
+
+
+
 
 ------
 
