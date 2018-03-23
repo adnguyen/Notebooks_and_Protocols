@@ -65,7 +65,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 43: 2018-03-09 & 2018-03-12 ](#id-section43). Proj updates and proteome stability proj development
 * [Page 44: 2018-03-16 ](#id-section44). Flow of ideas for evolution talk
 * [Page 45: 2018-03-22 ](#id-section45). re-analysis of diapause exit in rhago
-* [Page 46:  ](#id-section46).
+* [Page 46: 2018-03-23 ](#id-section46). Meeting with dan, plan of actions
 * [Page 47:  ](#id-section47).
 * [Page 48:  ](#id-section48).
 * [Page 49:  ](#id-section49).
@@ -3555,7 +3555,17 @@ IN the error corrected analysis, we found a term * host interaction, but not in 
 
 <div id='id-section46'/>    
     
-### Page 46:  
+### Page 46:  2018-03-23. Meeting with dan, plan of actions    
+
+Met with Dan. 
+
+1. Tom's re-analysis: write up results and methods, set figures 
+2. Proteostasis project: 
+	* Choose which lines? DSPR? DGRP? Look into papers about these lines and the pros and cons of using them
+	* For the lab meeting, just specify 1 project (prob proteome stability one) and send out paper. 
+	* 
+3. Range limits paragraph- GOOD to go!
+	* Sent out new version of ms to co-authors
 
 ------
 
