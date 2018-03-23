@@ -3560,12 +3560,14 @@ IN the error corrected analysis, we found a term * host interaction, but not in 
 Met with Dan. 
 
 1. Tom's re-analysis: write up results and methods, set figures 
+	* Settle on figures and send to Tom/Dan
 2. Proteostasis project: 
 	* Choose which lines? DSPR? DGRP? Look into papers about these lines and the pros and cons of using them
 	* For the lab meeting, just specify 1 project (prob proteome stability one) and send out paper. 
-	* 
+		* Sent! April 2nd, Monday.  
 3. Range limits paragraph- GOOD to go!
-	* Sent out new version of ms to co-authors
+	* Sent out new version of ms to co-authors!
+	* Nick to give me feed back next week 
 
 ------
 
