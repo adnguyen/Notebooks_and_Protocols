@@ -66,7 +66,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 44: 2018-03-16 ](#id-section44). Flow of ideas for evolution talk
 * [Page 45: 2018-03-22 ](#id-section45). re-analysis of diapause exit in rhago
 * [Page 46: 2018-03-23 ](#id-section46). Meeting with dan, plan of actions
-* [Page 47:  ](#id-section47).
+* [Page 47: 2018-04-02 ](#id-section47). Redundancy analysis
 * [Page 48:  ](#id-section48).
 * [Page 49:  ](#id-section49).
 * [Page 50:  ](#id-section50).
@@ -3573,7 +3573,16 @@ Met with Dan.
 
 <div id='id-section47'/>    
     
-### Page 47:  
+### Page 47:  2018-04-02. Redundancy analysis
+
+
+Thinking about how to analyze datasets where there are not only multiple predictor variables(X's), but also to include multiple response variables (Y's). Redundancy analysis combines PCAs with multiple linear regressions with the goal of displaying and explaining variation in set of response varaibles CONSTRAINED by second set of predictor variables. 
+
+ex: What variables best explain variation in fungal communities sampled along a gradient of fungicide toxicity? 
+
+A lot of outputs are graphical, there a stats table? 
+
+
 
 ------
 
