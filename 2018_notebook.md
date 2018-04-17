@@ -67,7 +67,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 45: 2018-03-22 ](#id-section45). re-analysis of diapause exit in rhago
 * [Page 46: 2018-03-23 ](#id-section46). Meeting with dan, plan of actions
 * [Page 47: 2018-04-02 ](#id-section47). Redundancy analysis
-* [Page 48:  ](#id-section48).
+* [Page 48: 2018-04-17 ](#id-section48). notes; rhagoletis brain transcriptome
 * [Page 49:  ](#id-section49).
 * [Page 50:  ](#id-section50).
 * [Page 51:  ](#id-section51).
@@ -3588,7 +3588,21 @@ A lot of outputs are graphical, there a stats table?
 
 <div id='id-section48'/>    
     
-### Page 48:  
+### Page 48:  2018-04-17. notes; rhagoletis brain transcriptome   
+
+Greg's group has analyzed data with edgeR and different clustering techniques to try to understand how host races differ in their transcriptional responses. They can have a common one which relates to just diapause. However, hosts can diverge in their transcriptional response and I'm still trying to understand what types of interactions are meaningful(or what they mean) in the context of race differences in diapause. They can start out diff early but then converge, or they can start out the same and differ in slopes.
+
+Perhaps we need to think about this in the context of diapause modules: maintanence. If metabolic rate is characterized by suppression. Overall, are there more lower expressed genes? Think about other possibilities.
+
+Meeting with Greg:
+
+* PI's want me to work on cerasi data
+* I need to be more familiar with the system - comparisons of low and high land 
+* Make the anlayses comparable with pomonella data. Are tehre similar modules? 
+* Try different clustering algorthms for diff expressed genes
+* Use edgeR to test the effect of time x host interaction 
+* Greg to send me dataset and scripts; I'll make a private github repo
+
 
 ------
 
