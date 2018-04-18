@@ -68,7 +68,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 46: 2018-03-23 ](#id-section46). Meeting with dan, plan of actions
 * [Page 47: 2018-04-02 ](#id-section47). Redundancy analysis
 * [Page 48: 2018-04-17 ](#id-section48). notes; rhagoletis brain transcriptome
-* [Page 49:  ](#id-section49).
+* [Page 49: 2018-04-18 ](#id-section49). update and biological rhythms notes
 * [Page 50:  ](#id-section50).
 * [Page 51:  ](#id-section51).
 * [Page 52:  ](#id-section52).
@@ -3608,7 +3608,54 @@ Meeting with Greg:
 
 <div id='id-section49'/>    
     
-### Page 49:  
+### Page 49:  2018-04-18. update and biological rhythms notes    
+
+status updates on projects:
+
+1. thermal niche ms- double checking data and then need to re-analyze
+	* shc thinks ctmin values might shift if there are mis-IDs
+2. hsp rxn norm ms- in shc's and njg's hands
+	* they need to look over the results 
+	* i still need to finish the discussion, it is written, but needs more citations, and need to revisit 
+3. cerasi data analysis
+	* Greg to get me dataset in 1 week
+	* create a github repo with research plan and hypotheses, expected outcomes 
+4. biological rhythms
+	* presenting a poster and datablitz 1 slide 1min talk at biological rhythms conference may 12-16. poster session is may 13 to 16. 
+	* data blitz talk is 8pm 
+	* posters are always up but I need to stand by mine on sunday 
+	* one thing i can test in my dataset is viability selection on MR. So does MR influence survival to adulthood? 
+5. evolution meeting - giving a talk and need to buy plane tickets, already registered
+
+
+notes on biological rhythms. We were low on trikinetics monitor space, so we had to move monitor #6 around between entrainment and free-run. This is the circ repo script, but also adding in my nb. The below also refers to physical notebook, not electronic.
+
+2018-04-18
+additional notes: 
+
+We were running low on trikinetics space, so we had to switch some monitors around. First, #1 and 2 are in entrainment, while 3,4,5,6 are in free-run conditions. We took out #6 from free run to entrainment on 2018-03-23,20:00 or 8:00PM (nb#002,page 178, parse on 227487) and then switched it back on 2018-04-05(parse on count number 241326; nb#003,page14-15). 
+
+To deal with monitor #6 having a combination of free-run and entrainment data counts, we will need to subset out the data from when #6 was in entrainment. We can take this subset and call it a diff monitor altogether ("6.2") and then assign different experimental classes for #6 and #6.2. 
+
+Another complication: There are samples in the move from entrainment to free-run in monitor #6 that needed to be moved to monitors #1 and #2. So this means some flies have had entrainment that were in 2 monitors. See notebook #003, page 14-15. Here is the list: 
+
+|uniqueID   | trik_monitor_6| trik_monitor_6_position| new_trik_monitor| new_trik_position|time  |date       |"
+ [2] |:----------|--------------:|-----------------------:|----------------:|-----------------:|:-----|:----------|
+|2b15       |              6|                       1|                2|                 1|20:30 |2018-04-18 |
+|19r23      |              6|                       2|                2|                 7|20:30 |2018-04-18 |
+|4o72 or 12 |              6|                       4|                2|                 9|20:30 |2018-04-18 |
+|18w11      |              6|                       8|                1|                 6|20:30 |2018-04-18 |
+|13r12      |              6|                       9|                1|                 9|20:30 |2018-04-18 |
+|10w6       |              6|                      11|                1|                20|20:30 |2018-04-18 |
+|11o16      |              6|                      14|                1|                21|20:30 |2018-04-18 |
+|12o67      |              6|                      16|                1|                23|20:30 |2018-04-18 |
+|11o40      |              6|                      22|                1|                28|20:30 |2018-04-18 |
+|11w11      |              6|                      25|                1|                29|20:30 |2018-04-18 |
+|18w22      |              6|                      27|                1|                30|20:30 |2018-04-18 |
+|12w53      |              6|                      28|                1|                32|20:30 |2018-04-18 |
+
+
+
 
 ------
 
