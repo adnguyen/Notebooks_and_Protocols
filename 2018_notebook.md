@@ -3639,8 +3639,8 @@ To deal with monitor #6 having a combination of free-run and entrainment data co
 
 Another complication: There are samples in the move from entrainment to free-run in monitor #6 that needed to be moved to monitors #1 and #2. So this means some flies have had entrainment that were in 2 monitors. See notebook #003, page 14-15. Here is the list: 
 
-|uniqueID   | trik_monitor_6| trik_monitor_6_position| new_trik_monitor| new_trik_position|time  |date       |"
- [2] |:----------|--------------:|-----------------------:|----------------:|-----------------:|:-----|:----------|
+|uniqueID   | trik_monitor_6| trik_monitor_6_position| new_trik_monitor| new_trik_position|time  |date       |
+|:----------|--------------:|-----------------------:|----------------:|-----------------:|:-----|:----------|
 |2b15       |              6|                       1|                2|                 1|20:30 |2018-04-18 |
 |19r23      |              6|                       2|                2|                 7|20:30 |2018-04-18 |
 |4o72 or 12 |              6|                       4|                2|                 9|20:30 |2018-04-18 |
