@@ -69,7 +69,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 47: 2018-04-02 ](#id-section47). Redundancy analysis
 * [Page 48: 2018-04-17 ](#id-section48). notes; rhagoletis brain transcriptome
 * [Page 49: 2018-04-18 ](#id-section49). update and biological rhythms notes
-* [Page 50:  ](#id-section50).
+* [Page 50: 2018-04-24 ](#id-section50). Reading *R. cerasi* papers
 * [Page 51:  ](#id-section51).
 * [Page 52:  ](#id-section52).
 * [Page 53:  ](#id-section53).
@@ -3661,7 +3661,58 @@ Another complication: There are samples in the move from entrainment to free-run
 
 <div id='id-section50'/>    
     
-### Page 50:  
+### Page 50:  2018-04-24. Reading *R. cerasi* papers
+
+I'm getting more familiar with the system.
+
+I'm encountering this word, Stenophagous, which refers to an animal that feeds on a limited variety of foods. Terrible word. 
+
+------
+
+Decomposing the abstract-
+
+No clear goals or objectives
+
+Approach: Measure diapause incidence at 5 constant temperatures for 2 populations. 
+
+Result: short winters or warmer temperatures influence dormancy (the abstract doesn't have a direction of effect)
+
+"Interestingly, extended chilling (longer than required for terminating diapause) ‘return’ pupae to another (facultative) cycle of dor- mancy enabling adults to emerge during the next appropriate ‘window of time’; a strategy first time reported for univoltine insects."
+
+What does this even mean? ....
+
+------
+
+
+Looking through figures first. 
+
+Why are they showing climate for each site as a table. How about a graph? 
+
+Figure 1: They plot proportion of pupae in stacked bar pots for each chilling period or 3 conditions: adults, overlaying(surviving pupae), and dead. They do this for each site and constant temperature. It is hard to see if there is a site by chilling period by class interaction. It looks like pupae are more alive at higher temperatures for all sites and under shorter chilling periods. 
+
+Table 3 says there is a: population by temperature interaction, population by chilling period, temperature by chilling period interaction. 
+
+Figure 2: Warmer population has less overlaying pupae at shorter chilling periods (months at 5 C) than cooler populations 
+
+Going over intro: 
+
+Their first hypothesis was that diapause intensity varies...
+They predict pupae from warm regions need short exposure to cold to terminate diapause than pupae from colder regions. 
+
+3rd hypothesis- pupae cannot meet their chilling requirements for diapause termation under warmer winter temperatures and/or short cold exposures. This will cause prolonged dormancy.
+
+Plain english: Populations that have evolved in warm or cold environments have different requirements for maintaining and terminating diapause. If conditions are unfavorable, these flies will continue to remain in dormancy. It probably takes less time in winter(cold temperatures) to maintain and terminate diapause in warm populations than cooler ones. 
+
+I wished they graphed the results better to see the population * temperature effects and other interactions. 
+
+ref: 
+
+Diapause termination of Rhagoletis cerasi pupae is regulated by local adaptation and phenotypic plasticity: escape in time through bet-hedging strategies
+
+
+ref: 
+
+Physiological and biological patterns of a highland and a coastal population of the European cherry fruit fly during diapause
 
 ------
 
