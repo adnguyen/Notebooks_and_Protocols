@@ -70,7 +70,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 48: 2018-04-17 ](#id-section48). notes; rhagoletis brain transcriptome
 * [Page 49: 2018-04-18 ](#id-section49). update and biological rhythms notes
 * [Page 50: 2018-04-24 ](#id-section50). Reading *R. cerasi* papers
-* [Page 51:  ](#id-section51).
+* [Page 51: 2018-04-25 ](#id-section51). Biological rhythms thoughts
 * [Page 52:  ](#id-section52).
 * [Page 53:  ](#id-section53).
 * [Page 54:  ](#id-section54).
@@ -3718,7 +3718,17 @@ Physiological and biological patterns of a highland and a coastal population of 
 
 <div id='id-section51'/>    
     
-### Page 51:  
+### Page 51: 2018-04-25. Biological rhythms thoughts
+
+One way to explore the data in the biological rhythms project is to test whether there is greater viability selection for flies that have high metabolic rate. 
+
+Ok, back up. The main question is this: What maintains the variation in metabolic rates prior to entering dormancy? We see a lot more variation in metabolic rates for early eclosers compared to late eclosers. Why? Is this a bet hedging strategy where ones with higher metabolic rates can be more readily active if future conditions are favorable? Is there a cost to having high metabolic rates? Feder suggests that early eclosers with high metabolic rates are "doomed", meaning they'll die when they encounter winter conditions. 
+
+
+Lets lay out the hypotheses:
+1. Flies with high metabolic rates face greater mortality under simulated overwintering
+
+We can compare this to flies that aren't forced to overwinter. 
 
 ------
 
