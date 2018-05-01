@@ -17,12 +17,12 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * Range limits: Identifying the factors/forces that set range limits in common forest ants (*Aphaenogaster picea*). Modelling + measured their cold physiology in forest ants of Maine and Vt.  
 * Thermal niche paper: Collaborative paper understanding how the environment shapes the ability to withstand cold and hot temperatures. In field and in a common garden, we measured upper and lower thermal limits of ants from GA-Maine (2 species).    
 * Stress in nature: Are ants stressed under experimental warming that projects climate change? Ants were collected from warming chambers (0-5 C increase from ambient) and we measured their stress response.    
-* ​Biological rhythms in *Rhagoletis*: Determining the relationship between behavioral rhythms in adult *Rhagoletis* and diapause exit timing + depth(eclosion and mass specific metabolic rate). 
+* ​Biological rhythms in *Rhagoletis*: Determining the relationship between behavioral rhythms in adult *Rhagoletis* and diapause exit timing + depth(eclosion and mass specific metabolic rate).
 
 # Table of contents (Layout follows Page number: Date. Title of entry)    
 * [Page 1: 2018-01-01 ](#id-section1). Yearly goals: recap from last year and this year's
-* [Page 2: 2018-01-01 ](#id-section2). Evolution meeting prep/thoughts 
-* [Page 3: 2018-01-02 ](#id-section3). Range limits ms edits 
+* [Page 2: 2018-01-01 ](#id-section2). Evolution meeting prep/thoughts
+* [Page 3: 2018-01-02 ](#id-section3). Range limits ms edits
 * [Page 4: 2018-01-02 ](#id-section4). to do list this month, 2018 january
 * [Page 5: 2018-01-03 ](#id-section5). range limits ms , stats for single regressions of CCRT on Tmin
 * [Page 6: 2018-01-05 ](#id-section6). UPDATE: to do list this month, 2018 january
@@ -30,10 +30,10 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 8: 2018-01-08 ](#id-section8). Removing DS_store in github repo
 * [Page 9: 2018-01-09 ](#id-section9). reading biological rhythms workshop I: Introduction by **Kuhlman et al. 2007**; Cold spring harbor
 * [Page 10: 2018-01-09 ](#id-section10). Updated to do list
-* [Page 11: 2018-01-10 ](#id-section11). Reading **Wadsworth et al. 2013**; Journal of Evo Biol. Developmental exit to diapause and how it relates to the evolution of insect seasonality 
+* [Page 11: 2018-01-10 ](#id-section11). Reading **Wadsworth et al. 2013**; Journal of Evo Biol. Developmental exit to diapause and how it relates to the evolution of insect seasonality
 * [Page 12: 2018-01-10 ](#id-section12). Meeting AMellison on range limits paper
 * [Page 13: 2018-01-12 ](#id-section13). **Stålhandske et al. 2014**; post winter development of a butterfly
-* [Page 14: 2018-01-12 ](#id-section14). working on hsp rxn norm paper 
+* [Page 14: 2018-01-12 ](#id-section14). working on hsp rxn norm paper
 * [Page 15: 2018-01-16 ](#id-section15). meeting with KBora on qpcr troubleshooting
 * [Page 16: 2018-01-16 ](#id-section16). Transcript abundance vs. Gene expression terminology
 * [Page 17: 2018-01-16 ](#id-section17). Updated to do list
@@ -42,16 +42,16 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 20: 2018-01-18 ](#id-section20). starting a data science course  
 * [Page 21: 2018-01-22 ](#id-section21). Rhago nature figures for biological rhythms project
 * [Page 22: 2018-01-23 ](#id-section22). Meeting with Dan, Tom about termination ms
-* [Page 23: 2018-01-23 ](#id-section23). Reading Gunter et al. 2007, The road to modularity 
+* [Page 23: 2018-01-23 ](#id-section23). Reading Gunter et al. 2007, The road to modularity
 * [Page 24: 2018-01-23 ](#id-section24). Strategies vs tactics (Mart R. Gross 1996)  
-* [Page 25: 2018-01-24 ](#id-section25). revisiting thermal niche paper 
+* [Page 25: 2018-01-24 ](#id-section25). revisiting thermal niche paper
 * [Page 26: 2018-01-25 ](#id-section26). Phenotypic Prediction Workshop 2018
-* [Page 27: 2018-01-26 ](#id-section27). Meeting with Dan 
-* [Page 28: 2018-01-30 ](#id-section28). Readings in Rhagoletis, pop gen, directions of gene flow 
+* [Page 27: 2018-01-26 ](#id-section27). Meeting with Dan
+* [Page 28: 2018-01-30 ](#id-section28). Readings in Rhagoletis, pop gen, directions of gene flow
 * [Page 29: 2018-01-31 ](#id-section29). Meeting with Dan , MR trajectories paper  
 * [Page 30: 2018-02-01 ](#id-section30). follow up analysis; partial correlation of parameters
-* [Page 31: 2018-02-07 ](#id-section31).  Prep meeting with Dan 
-* [Page 32: 2018-02-12 ](#id-section32). To do list 
+* [Page 31: 2018-02-07 ](#id-section31).  Prep meeting with Dan
+* [Page 32: 2018-02-12 ](#id-section32). To do list
 * [Page 33: 2018-02-13 ](#id-section33). Re-analysis of hsp rxn norm proj
 * [Page 34: 2018-02-14 ](#id-section34). Update to do list   
 * [Page 35: 2018-02-15 ](#id-section35).  Paper reading: Melo et al. Ann rev; Modularity Genes Development and Evolution
@@ -71,7 +71,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 49: 2018-04-18 ](#id-section49). update and biological rhythms notes
 * [Page 50: 2018-04-24 ](#id-section50). Reading *R. cerasi* papers
 * [Page 51: 2018-04-25 ](#id-section51). Biological rhythms thoughts
-* [Page 52:  ](#id-section52).
+* [Page 52: 2018-05-01 ](#id-section52). project update
 * [Page 53:  ](#id-section53).
 * [Page 54:  ](#id-section54).
 * [Page 55:  ](#id-section55).
@@ -226,7 +226,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 ------
 
 <div id='id-section1'/>    
-    
+
 ### Page 1: 2017-01-01. Yearly goals: recap from last year and this year's    
 
 **2017 recap of goals**  
@@ -237,25 +237,25 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 		* proteome stability proj
 		* range limits
 		* hsp rxn norm
-		* stressed in nature (SHC is lead) 
+		* stressed in nature (SHC is lead)
 		* thermal niche paper with Lacy  
-		
+
 2. Get a post doc. This'll probably involve learning a new study system. And also sending out tons of applications.      
 	* at UF! Yay!
 3. Learn and build a shiny app.    
 	* did not do this at all  
 4. Learn and become more proficient in statistics (Machine learning?, Baysian, predictive modelling, mixed effects modelling, eigentensor analyses).     
 	* Quantitative genetics: more statistical genetics   
-		* just dabbled in all of this, but didn't really learn much more 
+		* just dabbled in all of this, but didn't really learn much more
 		* Instead, I learned more about time series analyses, so that is something statistical   
-	
+
 5. Form new collaborations? It'd be awesome to work with Brent Sinclair, Brent Lockwood, Joel Kingsolver, Caroline Williams, Jon Stillman, Alex Gunderson.     
 	* didn't form any new collabs with any of these people   
 	* formed one with European colleague studying temperature adaptation in an alpine ant
-	
-6. Participate in a meta-analysis? Would be cool. 
+
+6. Participate in a meta-analysis? Would be cool.
 	* Dan and I are coming up with a meta analysis related to biological timing or diapause  
-	
+
 7. Learn more physiology: Q10, metabolism related topics, lipid membranes, metabolites.         
 	* Learned some respirometry!   
 
@@ -272,11 +272,11 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 
 4. Learn and become more proficient at analyzing biological rhythm data; analyze Rhagoletis biological rhythm data to a point where I have a cool story to tell.
 
-5. Start working on european cornborers: 
-	* Learn rearing, diapause biology (induction, termination) 
+5. Start working on european cornborers:
+	* Learn rearing, diapause biology (induction, termination)
 	* experiment on behavioral rhythms  
 	* do experiments to understand the molecular basis of behavioral rhythms, specifically focusing on period   
-	
+
 6. Start constructing a teaching and research statement  
 
 7. Apply for and secure external funding  
@@ -286,30 +286,30 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 ------
 
 <div id='id-section2'/>    
-    
+
 ### Page 2: 2018-01-01. Evolution meeting prep/thoughts  
 
 Presenting poster on Rhagoletis and talk on thermal adaptation in Aphaeno   
 
 thoughts on the talk - I can draw from all of my projects to construct a nice story. I want to give my talk in the evolutionary physiology symposium (s69). The flow of the story will be from field metrics of stress responses due to experimental warming and then dissecting out the possible mechanisms of those stress responses, pitched in terms of physiological strategies organisms can adopt. I want to shift away from this gene does this towards a more complete understanding of what the genes tell us about the whole organism and what they're doing!  
- 
+
 
 Title:  
 * Physiological strategies of temperature adaptation in ants  
 * Responding to environmental change will require temperature adaptation involving tolerance  
-* Adaptive responses to environmental change will require physiological shifts in... 
-* Evolutionary innovations to environmental change in the common woodland ant 
+* Adaptive responses to environmental change will require physiological shifts in...
+* Evolutionary innovations to environmental change in the common woodland ant
 
-1. Stressed in nature - yes! Ants show a stress response to experimental warming. 
+1. Stressed in nature - yes! Ants show a stress response to experimental warming.
 	* this'll highlight the field relevance and impact !
 2. Are these differences due to adaptations? If so, what kinds? And what does this response mean?  
 3. Ants can withstand heat stress by resistance and/or tolerance
-4. Common garden experiments: 
+4. Common garden experiments:
 	* measuring the stress kinetics show that protection and tolerance , but not basal gxp
-	* under acclimation, yes basal gxp can change 
+	* under acclimation, yes basal gxp can change
 5. punchline, these types of adaptations are unique and can only be detected with a rxn norm approach, because shifts in basal are found in the majority of other studies. 	
 
-Potential opening: 
+Potential opening:
 
 *I'm broadly interested in how organisms operate. And we can access how organisms operate by perturbing them and observing them under different contexts. For example, one big experiment that is happening right now is climate warming. So the main question in our research group is how will organisms respond to climate warming? ...Chamber stuff...source of selection....what is the actual source of selection? does it match up? Phylo context of ctmax*...mechanisms behind variation in CTmax ...phys strategies (resistance and tolerance)...
 
@@ -317,47 +317,47 @@ reminders from last year:
 
 **Organize evolution and biological rhtyhms meeting (tell Dan about time line)**   
 
-* Evolution 2018: Montpillier France; 
+* Evolution 2018: Montpillier France;
 	* August 19-22
 	* Post doc travel grant: http://evolutionmontpellier2018.org/travel-grants   
-		* Deadline is January 17th 
+		* Deadline is January 17th
 
 * Biological rhythms meeting 2018: https://srbr.org/meetings/upcoming-meeting/registration/
 	* May 12-16 2018
-	* registration: 
+	* registration:
 		* early(nov 15-march 1) reg non member - **$725**  ; **$425 member**
 		* late ( march 2 to onsite) reg non member - **$825**; **$525 member**
 		* early(nov 15-march 1) post doc non member - **$475**  ; **$425 post doc member**
 		* late ( march 2 to onsite) post doc non member - **$575**; **$525 post doc member**    
-		
-		
+
+
 2017-12-22. actual meeting   
 
-Look into Cold spring harbor protocols 
+Look into Cold spring harbor protocols
 	* set up trikinetics
-	* data analysis 
+	* data analysis
 	* data handling  
-	
-Basically, look at protocols online, actually check papers that have similar data structure like ours. Look up drosophila work. 
+
+Basically, look at protocols online, actually check papers that have similar data structure like ours. Look up drosophila work.
 
 **Analyze existing, publicly available datasets** to see if we can recapitulate results.    
 
 How do we separate signal from noise?      
- 
+
 
 ------
 
 <div id='id-section3'/>    
-    
+
 ### Page 3: 2018-01-02. Range limits ms edits   
 
 Addressing some ms edits here:  
 
-from SHC in results section-*Determining the relationship between cold-tolerance and climate*: 
+from SHC in results section-*Determining the relationship between cold-tolerance and climate*:
 
 >You need to test how much of the variation in Tmin is explained by the combination of Tmax and seasonality.   
 
-Not sure if this is right to do, but it seems better to just state how Tmin is correlated with Tmax and seasonality. 
+Not sure if this is right to do, but it seems better to just state how Tmin is correlated with Tmax and seasonality.
 
 
 correlation between tmin with Tmax and sd
@@ -373,8 +373,8 @@ alternative hypothesis: true correlation is not equal to 0
 95 percent confidence interval:
  -0.9422686 -0.8773033
 sample estimates:
-       cor 
--0.9155697 
+       cor
+-0.9155697
 ```
 
 
@@ -389,14 +389,14 @@ alternative hypothesis: true correlation is not equal to 0
 95 percent confidence interval:
  0.03633252 0.40558545
 sample estimates:
-     cor 
-0.229188 
+     cor
+0.229188
 ```
 
 take home: Tmin has high correlation with SD and not Tmax   
 
 
-but i'll do the regression here to show it: 
+but i'll do the regression here to show it:
 
 ```R
 summary(lm(Tmin~Tmax+SD,data=dbio2))
@@ -405,8 +405,8 @@ Call:
 lm(formula = Tmin ~ Tmax + SD, data = dbio2)
 
 Residuals:
-    Min      1Q  Median      3Q     Max 
--7.7794 -2.3577 -0.8954  1.5918 16.5544 
+    Min      1Q  Median      3Q     Max
+-7.7794 -2.3577 -0.8954  1.5918 16.5544
 
 Coefficients:
               Estimate Std. Error t value Pr(>|t|)    
@@ -417,7 +417,7 @@ SD          -0.0418123  0.0008353 -50.058  < 2e-16 ***
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 3.935 on 99 degrees of freedom
-Multiple R-squared:  0.964,	Adjusted R-squared:  0.9633 
+Multiple R-squared:  0.964,	Adjusted R-squared:  0.9633
 F-statistic:  1325 on 2 and 99 DF,  p-value: < 2.2e-16
 ```
 
@@ -439,25 +439,25 @@ Dan wants G matrix--- put in supplement:
 ```  
 
 
-Makes no sense, this is the whole point of modelling exercise. 
+Makes no sense, this is the whole point of modelling exercise.
 
 ------
 
 <div id='id-section4'/>    
-    
+
 ### Page 4:  2018-01-02. to do list this month, 2018 january
 
 1. range limits ms - send out by end of this week (jan 5)
-2. hsp rxn norm ms (send out Jan 19?) 
+2. hsp rxn norm ms (send out Jan 19?)
 3. evolution conference submission of abstract, and also for travel grant jan 15
-4. construct evolution talk, quick and dirty just to  have the slides together 
-5. read more on time series analyses 
-6. biological rhythms conference - register as member and for conference just to get out of the way 
+4. construct evolution talk, quick and dirty just to  have the slides together
+5. read more on time series analyses
+6. biological rhythms conference - register as member and for conference just to get out of the way
 
 ------
 
 <div id='id-section5'/>    
-    
+
 ### Page 5:  2018-01-03. range limits ms , stats for single regressions of CCRT on Tmin     
 
 
@@ -526,23 +526,23 @@ Call:
 lm(formula = coldplot ~ Tmin, data = ksub)
 
 Residuals:
-    Min      1Q  Median      3Q     Max 
--333.63  -82.44   -5.63   90.37  266.36 
+    Min      1Q  Median      3Q     Max
+-333.63  -82.44   -5.63   90.37  266.36
 
 Coefficients:
             Estimate Std. Error t value Pr(>|t|)   
-(Intercept)  -889.43     413.86  -2.149  0.04473 * 
+(Intercept)  -889.43     413.86  -2.149  0.04473 *
 Tmin          -89.93      27.62  -3.256  0.00416 **
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 141.1 on 19 degrees of freedom
-Multiple R-squared:  0.3581,	Adjusted R-squared:  0.3244 
+Multiple R-squared:  0.3581,	Adjusted R-squared:  0.3244
 F-statistic:  10.6 on 1 and 19 DF,  p-value: 0.004157
 ```
 
 
-**hardening data** 
+**hardening data**
 
 ```R
 zero<-subset(k.dat,k.dat$pretreat_Temp=="0")
@@ -556,7 +556,7 @@ str(nbn3)
  $ Tmin         : num  -16.4 -16.4 -16.4 -14.4 -16.3 -15.2 -13.6 -15.1 -14.8 -13.5 ...
 ```
 
-**hardening regression** 
+**hardening regression**
 
 ```R
 summary(lm(CCRT~Tmin,data=nbn3))
@@ -565,8 +565,8 @@ Call:
 lm(formula = CCRT ~ Tmin, data = nbn3)
 
 Residuals:
-    Min      1Q  Median      3Q     Max 
--402.13  -96.13   26.98  137.37  236.14 
+    Min      1Q  Median      3Q     Max
+-402.13  -96.13   26.98  137.37  236.14
 
 Coefficients:
             Estimate Std. Error t value Pr(>|t|)  
@@ -576,20 +576,20 @@ Tmin          73.85      34.47  -2.142   0.0453 *
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 176.1 on 19 degrees of freedom
-Multiple R-squared:  0.1945,	Adjusted R-squared:  0.1522 
+Multiple R-squared:  0.1945,	Adjusted R-squared:  0.1522
 F-statistic: 4.589 on 1 and 19 DF,  p-value: 0.04534
 
 ```
 
-### SHC comments to address on % hardening improvement from 25 C pre-treatment temp: 
+### SHC comments to address on % hardening improvement from 25 C pre-treatment temp:
 
 ```
-% What % improvement do your hardening results represent? 
+% What % improvement do your hardening results represent?
 This would tell you whether 4.8 minutes is really too short to be able to detect hardening given the inherent measurement error in such experiments.
 If it is 10%, that would be almost a minute improvement, which seems quite feasible.  
 ```
 
-how to calculate this... 
+how to calculate this...
 
 ```R
 ###stitching together 0 and 25 C pre-treatment
@@ -643,11 +643,11 @@ knitr::kable(wide.nn)
 |21 |Unity        | 694.2500| 541.0000|
 
 
-### calculating % improvement 
+### calculating % improvement
 
-so this is the calculation of the amount of seconds changed, scaled by the total time/value at 25 C to calculate improvement of hardening ability. 
+so this is the calculation of the amount of seconds changed, scaled by the total time/value at 25 C to calculate improvement of hardening ability.
 
-% percent changed 
+% percent changed
 ```R
 round(abs(wide.nn$`0`-wide.nn$`25`)/wide.nn$`25`,3)*100
  [1]   5.6  12.2  75.8 102.6  67.8  17.5  68.5 103.4  46.1 125.2  20.7   6.5  53.2  67.0
@@ -663,13 +663,13 @@ range(round(abs(wide.nn$`0`-wide.nn$`25`)/wide.nn$`25`,3)*100)
 
 ```
 
-### lets look at this in terms of minutes instead of seconds 
+### lets look at this in terms of minutes instead of seconds
 
 ```R
 ##lets look at the amount of time that has changed itself
 
 wide.nn$minutes_change<-abs(wide.nn$`0`-wide.nn$`25`)/60
-#range of minutes 
+#range of minutes
 ```
 
 
@@ -706,7 +706,7 @@ range(wide.nn$minutes_change)
 ### taking this paragraph out of discussion   
 
 ```
-The patterns of cold hardening observed in this study suggest that \textit{A. picea} are exposed to conditions in the field that are at or near their physiological limits.  \textit{Aphaenogaster picea} colonies were the most cold tolerant at 0  \degree C pre-treatment temperatures, with a substantial decline in hardening ability when exposed to -5 \degree C, yet, soil temperatures in Maine at ant-wintering depths typically range from 0  to -5  \degree C, with even lower temperatures possible on a short-term basis (Schaefer et al. 2009).  Maintaining performance below 0  \degree C pre-treated temperatures may impose significant physiological challenges due to tissue damage from freezing selecting for both constitutive and inducible mechanisms to counter stressful mean temperatures and pulses of more extreme conditions (Bale 2002). 
+The patterns of cold hardening observed in this study suggest that \textit{A. picea} are exposed to conditions in the field that are at or near their physiological limits.  \textit{Aphaenogaster picea} colonies were the most cold tolerant at 0  \degree C pre-treatment temperatures, with a substantial decline in hardening ability when exposed to -5 \degree C, yet, soil temperatures in Maine at ant-wintering depths typically range from 0  to -5  \degree C, with even lower temperatures possible on a short-term basis (Schaefer et al. 2009).  Maintaining performance below 0  \degree C pre-treated temperatures may impose significant physiological challenges due to tissue damage from freezing selecting for both constitutive and inducible mechanisms to counter stressful mean temperatures and pulses of more extreme conditions (Bale 2002).
 ```
 
 2018-01-04: not sure if I want to expand on this idea, but leaving it here   
@@ -717,13 +717,13 @@ negative correlation in aphaenogaster; 0 was the optimal performance for many co
 ------
 
 <div id='id-section6'/>    
-    
+
 ### Page 6:  2018-01-05. UPDATE: to do list this month, 2018 january
 
 1. range limits ms - send out by end of this week (jan 5)
 	* done, tweaked results little, major tweaks discussion, rewrote abstract  
-2. hsp rxn norm ms (send out Jan 19?) 
-	* work on next, what needs to be done? 
+2. hsp rxn norm ms (send out Jan 19?)
+	* work on next, what needs to be done?
 	* From [2018_nb_page108](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2017_notebook.md#page-108-2017-07-31-dissertation-work-progress-list):
 		* Rearranged figures; so results need to be rewritten; introduction needs tweaking; discussion needs to be finished
 			* Figure layout:
@@ -733,20 +733,20 @@ negative correlation in aphaenogaster; 0 was the optimal performance for many co
 				* CTmax vs hsp params
 				* hsp params vs habitat type
 				* Methods figure: example of fitting boltzmann to hsp gxp
-		* SHC has comments on results 
-		
+		* SHC has comments on results
+
 3. evolution conference submission of abstract, and also for travel grant jan 15
 	* submitted both!  
-4. construct evolution talk, quick and dirty just to  have the slides together 
-5. read more on time series analyses 
-6. biological rhythms conference - register as member and for conference just to get out of the way 
+4. construct evolution talk, quick and dirty just to  have the slides together
+5. read more on time series analyses
+6. biological rhythms conference - register as member and for conference just to get out of the way
 
-not done anything for 4-6. 
+not done anything for 4-6.
 
 ------
 
 <div id='id-section7'/>    
-    
+
 ### Page 7: 2018-01-08. To do list   
 
 1. Set up weekly meeting with Dan    
@@ -754,10 +754,10 @@ not done anything for 4-6.
 	* Dan says I need to understand the Rhagoletis system better   
 		* Dan will send out paper  
 2. Set up schedule with undergrad researchers  
-	* Cwu - try to set her up with Qinwen working on the ECB system ; can she get paid too ? 
+	* Cwu - try to set her up with Qinwen working on the ECB system ; can she get paid too ?
 	* KLennon: Monday, Tuesday, Sund: 1-3pm; Thursday 10:30Am-12:30PM
 	* Tat: M,W,F,Sat: 7-9PM; Thursday 9AM-11AM  
-	* Taariq : working on script to assemble trik data with master datasheet 
+	* Taariq : working on script to assemble trik data with master datasheet
 3. Start working on Hsp rxn norm paper   
 
 
@@ -765,12 +765,12 @@ not done anything for 4-6.
 ------
 
 <div id='id-section8'/>    
-    
+
 ### Page 8: 2018-01-08.  Removing DS_store in github repo
 
 plaguing my existence... good solutions [here](https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository)
 
-1. In terminal where project is located: 
+1. In terminal where project is located:
 
 ```
 find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
@@ -783,7 +783,7 @@ find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
 ------
 
 <div id='id-section9'/>    
-    
+
 ### Page 9:  2018-01-09. reading biological rhythms workshop I: Introduction by Kuhlman et al. 2007; Cold spring harbor    
 
 
@@ -791,13 +791,13 @@ ref:
 Kuhlman, S. J., Mackey, S. R., & Duffy, J. F. (2007). Biological Rhythms Workshop I: introduction to chronobiology. Cold Spring Harbor Symposia on Quantitative Biology, 72, 1–6. https://doi.org/10.1101/sqb.2007.72.059
 
 
-This paper gives a timeline of chronobiology 
+This paper gives a timeline of chronobiology
 
 ### a little bit of history or historical context
 
-- An astronomer, Jean-Jacque D'Ortous deMairan (1729) made one of the first observations that organisms exhibit cyclical behavior: leaf movements in heliotrope plants continue in constant darkness. (Free run experimetn ) 
+- An astronomer, Jean-Jacque D'Ortous deMairan (1729) made one of the first observations that organisms exhibit cyclical behavior: leaf movements in heliotrope plants continue in constant darkness. (Free run experimetn )
 
-- Franz Halberg 1959 coined the term *circadian*, circa = about, dies= day, to refer to daily rhythms that persist under free run. 
+- Franz Halberg 1959 coined the term *circadian*, circa = about, dies= day, to refer to daily rhythms that persist under free run.
 
 - The most well known circadian rhythms occur in single cells, whereby transcription and translation form feedback loops.  
 
@@ -805,10 +805,10 @@ This paper gives a timeline of chronobiology
 
 - It was Bunning 1935 who first discovered that biological rhythms are heritable and have a genetic basis; daily rhythms could be extended to seasonal rhythms.  
 
-- Ronald Konopka and Seymour Benzer 1971 mutgenized fruit flies to understand the rhythnsm of pupal eclosion and locomotor activity (have to read this paper!).These flies could be non-rhythnmic, or rhythmic over short or longer time scales. All phenotypes were found to be within the Period gene (region/locus). 
+- Ronald Konopka and Seymour Benzer 1971 mutgenized fruit flies to understand the rhythnsm of pupal eclosion and locomotor activity (have to read this paper!).These flies could be non-rhythnmic, or rhythmic over short or longer time scales. All phenotypes were found to be within the Period gene (region/locus).
 
-- Ok, wow, we can manipulate the timing of organisms, but what are some of the functional consequences? 
-	* Karl von Frisch and Beling showed that bees use their clocks to visit flowers at the time of the day when the flower opens 
+- Ok, wow, we can manipulate the timing of organisms, but what are some of the functional consequences?
+	* Karl von Frisch and Beling showed that bees use their clocks to visit flowers at the time of the day when the flower opens
 	* Kramer showed that birds' migration patterns are rhythmic
 	* DeCoursey et al. 2000 show that chipmucks modulate rhythms to avoid predation  
 	* Steve Reppert showed that monarch butterflies likely use biological rhythms to initiate migration and track seasonal changes  	
@@ -817,19 +817,19 @@ This paper gives a timeline of chronobiology
 
 - "Black-box" experiments are used to probe mechanisms of clock function (Moore-Ede et al. 1982)
 	* no clue what this means, wtf
-	
-- Overt outputs - observable, measurable rhythmic outputs ( leaf movement) 
-- a rhythm is considered to be circadian if the oscillation has a 24 hour period(approx) 
+
+- Overt outputs - observable, measurable rhythmic outputs ( leaf movement)
+- a rhythm is considered to be circadian if the oscillation has a 24 hour period(approx)
 	* but why... the main argument is the relative role of env vs genetics on biological rhythms  
 
-**Free running period**	
+**Free running period**
 
 * process of organism's rhythm syncrhonizes to external cycling cue is known as entrainment  
 * Free run is the cyclical behavior in the absence of the cue (so darkness if light entrained)
-* Diurnal orgs have shorter free run (faster clock) under high light intensity than low light intensity 
-	* citation? 
+* Diurnal orgs have shorter free run (faster clock) under high light intensity than low light intensity
+	* citation?
 * Free run in diurnal orgs found by Jurgen Aschoff, known as, "Aschoff's Rule" (Aschoff and Wever 1962)  
-* The degree of free run change is influneced by prior experience to entrainment cue (light), known as *aftereffect*. fuck these words, wtf? Keep the terms the same among disciplines ---acclimation ! 
+* The degree of free run change is influneced by prior experience to entrainment cue (light), known as *aftereffect*. fuck these words, wtf? Keep the terms the same among disciplines ---acclimation !
 
 **Two properties of circ rhythms that are often focused in experimental studies**    
 
@@ -841,7 +841,7 @@ bad writing....very little clue about what they're talking about. Why would this
 
 ### Phase shifting and phase-response curve    
 
-This is a manipulation aimed at resetting the clock such that the rhythms differ between manipulated vs unmanipulated. If you do this with an external cue (light), then it can show that the cue and changes to that cue is important for setting biological rhythms. 
+This is a manipulation aimed at resetting the clock such that the rhythms differ between manipulated vs unmanipulated. If you do this with an external cue (light), then it can show that the cue and changes to that cue is important for setting biological rhythms.
 
 * If you set this manipulation at different times of the day, then it'll show that sensitivity to resetting differs at differnt parts fo the cycle (Hastings and Sweeney 1958)
 
@@ -850,7 +850,7 @@ Possible that the clock doesnt reset at all.
 
 ### Temperature-compensation   
 
-Expectation: clock should not change despite changes in ambient temperature 
+Expectation: clock should not change despite changes in ambient temperature
 
 What? this is garbage. One could expect this under the "hotter is better" hypothesis whereby biochemical reactions simply speed up as a function of temperature. So the clock should change by getting shorter andf aster.   
 
@@ -859,22 +859,22 @@ uncited claim : freer un period changes little over a temp range
 
 bad....
 
-They need to parse out these ideas better. In the face of temperature changes, the organism can maintain their biological clock. For example, they can initiate behaviors at the same time of the day. This would be robustness of biological rhythms. But, temperature itself can act as an entrainment cue too. 
+They need to parse out these ideas better. In the face of temperature changes, the organism can maintain their biological clock. For example, they can initiate behaviors at the same time of the day. This would be robustness of biological rhythms. But, temperature itself can act as an entrainment cue too.
 
 ### Concept of Clock    
 
 Would have been nice to explain jargon before talking about it. Organizational problem here.  
- 
-Chandrashekaran 1998 - 
 
-Clock - endogenous nature of rhythms ( innate, rather than learned), a way of measuring time for the organism. 
+Chandrashekaran 1998 -
 
-Bad definition. This should be described like any other trait, which has a genetic and environmental basis. 
+Clock - endogenous nature of rhythms ( innate, rather than learned), a way of measuring time for the organism.
+
+Bad definition. This should be described like any other trait, which has a genetic and environmental basis.
 
 
 ### Thoughts   
 
-Aside from citations pointing to some cool studies, historical context, and defining some words (entrainment, free run), this paper doesn't have a good conceptual description of biological clocks. Why would phase shift matter, why would someone want to know that, how is it applicable to some greater concept of how organisms work? smh. 
+Aside from citations pointing to some cool studies, historical context, and defining some words (entrainment, free run), this paper doesn't have a good conceptual description of biological clocks. Why would phase shift matter, why would someone want to know that, how is it applicable to some greater concept of how organisms work? smh.
 
 
 
@@ -887,11 +887,11 @@ Aside from citations pointing to some cool studies, historical context, and defi
 ------
 
 <div id='id-section10'/>    
-    
+
 ### Page 10: 2018-01-09. Updated to do list
 
 
-1. Read papers for discussion with Dan 
+1. Read papers for discussion with Dan
 	* still waiting for dan as to what they are
 2. Set up schedule with undergrad researchers  
 	* Cwu - try to set her up with Qinwen working on the ECB system ; can she get paid too ? ---sent out coordinating email  
@@ -899,45 +899,45 @@ Aside from citations pointing to some cool studies, historical context, and defi
 	* Tat: M,W,F,Sat: 7-9PM; Thursday 9AM-11AM   -- got keys
 	* Taariq : working on script to assemble trik data with master datasheet (meeeting wednesday 10AM)
 3. Start working on Hsp rxn norm paper   
-	* set up github repo, so data are accessible and can work on it from anywhere 
+	* set up github repo, so data are accessible and can work on it from anywhere
 	* still need to start....
 4. thermal niche ms
-	* Lchick to send me a version by end of week to edit 
+	* Lchick to send me a version by end of week to edit
 5. range limits ms
-	* sent out, 
+	* sent out,
 	* submit soon? February...please!?
 6. euro collab ms
-	* wait for results of tests of selection, then help write results and discussion 
+	* wait for results of tests of selection, then help write results and discussion
 
 
 ------
 
 <div id='id-section11'/>    
-    
+
 ### Page 11:  2018-01-10. Reading Wadsworth et al. 2013; Journal of Evo Biol. Developmental exit to diapause and how it relates to the evolution of insect seasonality   
 
-ref: 
+ref:
 Wadsworth, C. B., Woods, W. A., Hahn, D. A., & Dopman, E. B. (2013). One phase of the dormancy developmental pathway is critical for the evolution of insect seasonality. Journal of Evolutionary Biology, 26(11), 2359–2368. https://doi.org/10.1111/jeb.12227   
 
 A little background: These authors are working on the european cornborer (ECB), where two strains differ in their seasonal emergence.  
 
-1. E strain = earlier emerging strain 
+1. E strain = earlier emerging strain
 	* this strain is bivoltine, so it has two generations per year
 	* ID'd by $PDD^S$ allele
-2. Z strain = later emerging strain 
-	* this strain is univoltine, so 1 generation per year 
+2. Z strain = later emerging strain
+	* this strain is univoltine, so 1 generation per year
 	* ID'd by $PDD^L$ allele
 
-### Main Question: What part of diapause is critical for seasonal timing? In this case, emergence. 
+### Main Question: What part of diapause is critical for seasonal timing? In this case, emergence.
 
 Hypothesis: The timing of diapause termination causes the differences in emergence timing between E and Z strains.  
 
-### Experimental approach: 
+### Experimental approach:
 
 * Induce diapause  in 12:12 L:D at constant 23 C. (Glover 1992) for both strains, E and Z
-* ECB diapauses as larvae; measured metabolic rates and modeled its trajectory with a function 
+* ECB diapauses as larvae; measured metabolic rates and modeled its trajectory with a function
 
-I messed around with the function [here](http://adnguyen.github.io/demos/2018-01-10_phases_of_diapause_exit.html). It is basically an exponential model with 3 parameters: 
+I messed around with the function [here](http://adnguyen.github.io/demos/2018-01-10_phases_of_diapause_exit.html). It is basically an exponential model with 3 parameters:
 
 * a = presistent metabolic increase that defines the start of termination   
 * b = rate of metabolic increase during diapause termination   
@@ -950,7 +950,7 @@ E strain, which has earlier emergence timing, has shorter time of diapause break
 
 ### Discussion points
 
-* similar thing happens in swallowtail butterflies (*Papilio*) (Scriber & Ording 2005) 
+* similar thing happens in swallowtail butterflies (*Papilio*) (Scriber & Ording 2005)
 	* northern ones are univoltine with obligate pupal diapause and produce earlier summer flights
 	* southern ones are bivoltine and more facultative, producing diapause and non-diapausing phenotypes
 
@@ -959,7 +959,7 @@ E strain, which has earlier emergence timing, has shorter time of diapause break
 ------
 
 <div id='id-section12'/>    
-    
+
 ### Page 12: 2018-01-10. Meeting AMellison on range limits paper
 
 
@@ -968,22 +968,22 @@ E strain, which has earlier emergence timing, has shorter time of diapause break
 For figure 3.
 
 * For vertical variation, say constant for the loadings (panel b)
-* panel a, additive response rather than additive variation ; because the sd doesn't change, the eigenvector remains constant 
+* panel a, additive response rather than additive variation ; because the sd doesn't change, the eigenvector remains constant
 * for panel c,d ; more than just horizontal shift, both shift in level and in variance. You want to show a step function in the loadings
-* simulate distributions and then compute the variance-covariance matrix and then plot the loadings 
+* simulate distributions and then compute the variance-covariance matrix and then plot the loadings
 * Set up a new set of panels and set up the null expectations  
 
 2018-01-11 update: [done here](http://adnguyen.github.io/demos/2018-01-10_simulate_perf_curves.html); look identical to my figures
 
 For standardizing variables, seems like the consensus is no, unless you're comparing with other predictive models: [1](https://stats.stackexchange.com/questions/89162/standardizing-inputs-for-cart),[2](https://stats.stackexchange.com/questions/51523/log-transformation-in-cart-analysis/51534#51534)
 
-### Take home: 
+### Take home:
 
-think about how to write the patterns of perf curves and how it maps to the loadings. Look back at Kingsolver et al. 2015 and see how he writes it. 
+think about how to write the patterns of perf curves and how it maps to the loadings. Look back at Kingsolver et al. 2015 and see how he writes it.
 
 
-* Citizen science idea--I should write this out , later. But it deals with species distribution modeling. One problem you'll encounter is that there is error from citizens! You have to account for error of detection. 
-	* talk to matt fitzpatrick about proj	
+* Citizen science idea--I should write this out , later. But it deals with species distribution modeling. One problem you'll encounter is that there is error from citizens! You have to account for error of detection.
+	* talk to matt fitzpatrick about proj
 	* AMellison said it would be a good idea to apply for grant   
 * AMEllison is trying to push out genome paper with MLau   
 
@@ -998,36 +998,36 @@ other projects I'm on that I've forgotten about
 ------
 
 <div id='id-section13'/>    
-    
+
 ### Page 13: 2018-01-12. Stålhandske et al. 2014; post winter development of a butterfly
 
 Reading to discuss with Dan.   
 
-reference: 
+reference:
 
 Stålhandske, S., Gotthard, K., Posledovich, D., & Leimar, O. (2014). Variation in two phases of post-winter development of a butterfly. Journal of Evolutionary Biology, 27(12), 2644–2653. https://doi.org/10.1111/jeb.12519    
 
-Wow, awesome sentence: 
+Wow, awesome sentence:
 
 > Fine- tuning of the life cycle may be particularly important to match the phenology of potential mates and resources as well as for optimizing abiotic conditions at eclosion.
 
 ------  
 
-Counter gradient variation is a term that has always confused me; wiki defines as: 
+Counter gradient variation is a term that has always confused me; wiki defines as:
 
 > Countergradient variation is a type of phenotypic plasticity that occurs when the genetic components of populations cause phenotypic variation that opposes the phenotypic variation caused by an environmental gradient.
 
-Almost not understandable and too much to unpack. It sounds more like a trait that varies along an environmental gradient that is counter to expectations. Anyway, to me, this is not a useful term at all because it muddles how we should think about the environment and how organisms can respond to it. 
+Almost not understandable and too much to unpack. It sounds more like a trait that varies along an environmental gradient that is counter to expectations. Anyway, to me, this is not a useful term at all because it muddles how we should think about the environment and how organisms can respond to it.
 
 One prime example is growth across a lat gradient. Populations in the cooler condition (northern) that grow faster than warmer populations (southern) is considered countergradient variation because warmer temperatures are suppose to increase growth rates. But maybe, the env variation that growth rates are responding to is not solely warm temperatures.
 
-Authors' def: 
+Authors' def:
 
 > Countergradient variation occurs when the inherent relationship between phenotype and environment given by a reaction norm is reduced or removed through genetic adaption across an environmental gra- dient (Conover & Schultz, 1995)  
 
-Totally diff definition than wikipedia. The concept is so abstract so that it is hard to interpret biologically. Angiletta's book doesn't have a good definiton. 
+Totally diff definition than wikipedia. The concept is so abstract so that it is hard to interpret biologically. Angiletta's book doesn't have a good definiton.
 
-This paper talks about other env variables as to explain the patterns described in countergradient variation....but if there are other env variables to consider other than temp, then that is cogradient variation ( organisms responding with the environmental ) ....see makes no sense. 
+This paper talks about other env variables as to explain the patterns described in countergradient variation....but if there are other env variables to consider other than temp, then that is cogradient variation ( organisms responding with the environmental ) ....see makes no sense.
 
 > Populations that experience a shorter growing season or lower temperatures may compensate for this by a faster growth rate at any given temperature (Yamahira & Conover, 2002).  
 
@@ -1037,13 +1037,13 @@ This paper talks about other env variables as to explain the patterns described 
 
 ------
 
-Citations for lat gradients: 
+Citations for lat gradients:
 
 > Intraspecific clines in life cycle traits often follow environmental gradients, such as temperature gradients along latitude (Bradford & Roff, 1995; Masaki, 1999; Gaston et al., 2008).
 
 ------
 
-Paper is not really structured in a question-hypothesis framework. But they are interested in how the environment (latitude) shapes the variation in seasonal timing of these butterflies (*Anthocharis cardamines*). 
+Paper is not really structured in a question-hypothesis framework. But they are interested in how the environment (latitude) shapes the variation in seasonal timing of these butterflies (*Anthocharis cardamines*).
 
 ### Natural history of *Anthocharis cardamines*:    
 
@@ -1057,33 +1057,33 @@ Paper is not really structured in a question-hypothesis framework. But they are 
 ### Experimental approach: common garden of pops collected in 6 populations spanning lat and measuring growth rates   
 
 * reared on garlic mustard
-* collected eggs and placed in lab 
-* larvae hatched and reared to pupation in common garden 
+* collected eggs and placed in lab
+* larvae hatched and reared to pupation in common garden
 * simulated overwintering - 2 C 24 dark, 5 months  
 
-pupae then moved to 4 constant temperatures, post wintering after 5 months. 
+pupae then moved to 4 constant temperatures, post wintering after 5 months.
 
-* pupae weighed every 48 hours and rate of weight loss was used as a proxy for rate of development 
+* pupae weighed every 48 hours and rate of weight loss was used as a proxy for rate of development
 
-* stats mostly on females ; stats not explained very well.... what are they testing. 
+* stats mostly on females ; stats not explained very well.... what are they testing.
 
-### Results: 
+### Results:
 
-Table 1: Linear models, evaluating predictors  that explain growth patterns. They only tested for local * temp interaction in the proportion variable. What about others? Ther perform model selection ? Also, what about local * initial pupal weight interaction? 
+Table 1: Linear models, evaluating predictors  that explain growth patterns. They only tested for local * temp interaction in the proportion variable. What about others? Ther perform model selection ? Also, what about local * initial pupal weight interaction?
 
-How I'd show figure 2- 
+How I'd show figure 2-
 
 ![](https://user-images.githubusercontent.com/4654474/34883079-839c6144-f786-11e7-9870-1590bdcb846b.jpg)   
 
-Northern pop have higher overall mean dev rate than southern populations. Prop in phase 1 didn't differ, it looks like. But in the model form table 1, there is a sig local X temp interaction. The y axis may be too large in units for us to see the interaction... 
+Northern pop have higher overall mean dev rate than southern populations. Prop in phase 1 didn't differ, it looks like. But in the model form table 1, there is a sig local X temp interaction. The y axis may be too large in units for us to see the interaction...
 
-Table 2. local comparisons for each phase of growth; overall, most locals are diff 
+Table 2. local comparisons for each phase of growth; overall, most locals are diff
 
-Fig 3. Weight loss is described as having 2 phases. 
+Fig 3. Weight loss is described as having 2 phases.
 
-FIg 4. prop initial weight vs days for each time point. They could have displayed this better. Calculate the break point and then you'll have the time for each phase. (would be nice to have metabolic rate with these data, maybe have ot check other refs) Then test the effects of local + env(lat) on the timing of each phase. 
+FIg 4. prop initial weight vs days for each time point. They could have displayed this better. Calculate the break point and then you'll have the time for each phase. (would be nice to have metabolic rate with these data, maybe have ot check other refs) Then test the effects of local + env(lat) on the timing of each phase.
 
-Table 3: variance partitioning of growth for each phase, for each temperature level. First phase always explains more of the variation (> 50%!). 
+Table 3: variance partitioning of growth for each phase, for each temperature level. First phase always explains more of the variation (> 50%!).
 
 
 ### Thoughts/future directions
@@ -1099,18 +1099,18 @@ Table 3: variance partitioning of growth for each phase, for each temperature le
 
 
 <div id='id-section14'/>    
-    
+
 ### Page 14:  2018-01-12. working on **hsp rxn norm paper**   
 
-* Mainly working on results and tidying up sentences. 
+* Mainly working on results and tidying up sentences.
 * There are 2 abstracts, taking out the one that got voted out!    
 
 **Abstract v2
 	Colonization into warm environments may involve mechanisms to cope with protein unfolding that is caused by high temperatures. These mechanisms include protection, tolerance, and resistance by heat shock proteins (Hsps), but the extent that contributes to physiological limits is poorly understood. We evaluated the relative importance of Hsp expression dynamics related to upper thermal limits (CTmax) of Eastern US forest ants in the genus Aphaenogaster whose geographical ranges encompass a climate gradient across two distinct forest types. Within this group, the evolutionary transition from closed canopy deciduous forests into open canopy pine forests occurred once and coincided with an increase in CTmax. Using a function-valued approach, we tested whether species divergence in CTmax between forest types corresponded with changes the Hsp expression kinetics that support the concerted roles of protection, tolerance and resistance. Protection was conferred with pre-emptive higher expression at the cooler end of the temperature gradient by slowing the overall expression rate. Greater tolerance was brought about by higher peak expression. Lastly, colonies with higher CTmax delayed their onset of expression, suggesting greater stress resistance to temperature perturbations. The upward extension of CTmax involved coordinated, adaptive, and dynamic shifts in the stress response that reflects better maintenance of protein homeostasis under temperature challenge and may have facilitated the diversification of forest ants into divergent thermal environments. These results lay out the expectation for the types of evolved mechanisms needed for surviving a warmer world in the future.**   
-	
-* I still need to tweak the other abstract and incorporate edits from Dan. 
 
-* Need to adjust results of topic sentences with this comment from SHC: 
+* I still need to tweak the other abstract and incorporate edits from Dan.
+
+* Need to adjust results of topic sentences with this comment from SHC:
 
 > It would be nice to have a statement of the objective and what you did to test it at the beginning of each results paragraph (To do X, we did Y).  The methods exist, but they are at the end so your readers will not know what is going on.   
 
@@ -1123,51 +1123,51 @@ Table 3: variance partitioning of growth for each phase, for each temperature le
 ------
 
 <div id='id-section15'/>    
-    
+
 ### Page 15: 2018-01-16. meeting with KBora on qpcr troubleshooting     
 
 KBora wants to quantify the *foraging* gene from ant brains of pogos  
 
-She has primers, but her reactions are coming up at around 30-40 CT (cycle thresholds). She wants to test out left over cDNA to see if primers work on my samples. 
+She has primers, but her reactions are coming up at around 30-40 CT (cycle thresholds). She wants to test out left over cDNA to see if primers work on my samples.
 
 But lets check the melt curves: They look "good" , single peak. Primer only control wells don't have any amplification, which is good. Therefore, the good ones can be used for a standard.
 
-Recommendations: 
+Recommendations:
 
 1. take 50 uL amouont of "good" samples (mixed)
 2. pcr purify with qiagen kit
-3. quantify with qubit 
-4. dilute, 1/100 (generally , you can be more precise), then dilute 1/10 serially (12 times, so 1 row on qpcr plate; leave last sample as water for control). 
+3. quantify with qubit
+4. dilute, 1/100 (generally , you can be more precise), then dilute 1/10 serially (12 times, so 1 row on qpcr plate; leave last sample as water for control).
 
 
-Kbora will send me melt curve pictures, amplification curves, and the datasheet. 
-The goal is to estimate the efficiency of the primers. Once you have this value, you can use it for delta delta CT calculations of gene expression. You should also sequence the amplicon to make sure the sequence is what you think it is (map abi sequencing files to reference sequence in geneious). 
+Kbora will send me melt curve pictures, amplification curves, and the datasheet.
+The goal is to estimate the efficiency of the primers. Once you have this value, you can use it for delta delta CT calculations of gene expression. You should also sequence the amplicon to make sure the sequence is what you think it is (map abi sequencing files to reference sequence in geneious).
 
 ------
 
 
 
 <div id='id-section16'/>    
-    
+
 ### Page 16: 2018-01-16.  Transcript abundance vs. Gene expression terminology
 
 
-Thinking about one of Dan's comments on using a different term than gene expression: 
+Thinking about one of Dan's comments on using a different term than gene expression:
 
-> I almost always say transcript abundance rather than expression because you don’t know whether you are seeing new transcripts being produced or just having transcripts hang around longer. 
+> I almost always say transcript abundance rather than expression because you don’t know whether you are seeing new transcripts being produced or just having transcripts hang around longer.
 
-Neither term tries to distinguish between the two. Both sound right, but gene expression is used more. I think its silently known, but gene expression can be a function of new transcripts being produced and the degradation of transcripts, which ultimately influence abundance of it. 
+Neither term tries to distinguish between the two. Both sound right, but gene expression is used more. I think its silently known, but gene expression can be a function of new transcripts being produced and the degradation of transcripts, which ultimately influence abundance of it.
 
-Doesn't seem like transcript abundance is a better term. 
+Doesn't seem like transcript abundance is a better term.
 
 ------
 
 <div id='id-section17'/>    
-    
+
 ### Page 17:  2018-01-16. Updated to do list
 
 
-1. Read papers for discussion with Dan 
+1. Read papers for discussion with Dan
 
 refs:  
 
@@ -1180,24 +1180,24 @@ refs:
 Done, revisit before meeting to refresh. Also go over yearly goals with Dan.   
 
 2. Set up schedule with undergrad researchers  
-	* all done 
-	
+	* all done
+
 3. Start working on Hsp rxn norm paper   
 	* sent out today!   
-	
+
 4. thermal niche ms
 	* Lchick to send me a version this week and make this top priority   
-	
+
 5. range limits ms
-	* sent out, 
+	* sent out,
 	* submit soon? February...please!?
 6. euro collab ms
-	* wait for results of tests of selection, then help write results and discussion 
+	* wait for results of tests of selection, then help write results and discussion
 
 
 More things to do:  
 
-Once I get all of these ms out the way, I can focus more on future projects. 
+Once I get all of these ms out the way, I can focus more on future projects.
 
 * Revisit data analysis in R. I still need to assemble dataset that merges master datasheet with trikinetics
 	* I might need to parallel process because the data files are very large.  
@@ -1210,62 +1210,62 @@ Once I get all of these ms out the way, I can focus more on future projects.
 ------
 
 <div id='id-section18'/>    
-    
+
 ### Page 18:  2018-01-17. ECB project idea   
 
-**Natural History** 
+**Natural History**
 
-European cornborers one of the best examples of speciation. They've become reproductively isolated in time and this has produced two strains ,  Z and E. ECB become rep isolated by the number of generations that are fit into a year. Univoltine Z strain has a single generation in the middle of the summer, while the bivoltine E strain emerges earlier and then later in the season. 
+European cornborers one of the best examples of speciation. They've become reproductively isolated in time and this has produced two strains ,  Z and E. ECB become rep isolated by the number of generations that are fit into a year. Univoltine Z strain has a single generation in the middle of the summer, while the bivoltine E strain emerges earlier and then later in the season.
 
 **They diapause as larvae**
 
-A QTL analysis showed a suite of candidate genes related to circadian rhythms which may be  responsible for the divergence of seasonal timing in ECB. In Dopman's talk at Entsoc, he mentioned that different strains mated at different times of the day. THe panel of genes incldues cry1, a few unknown contigs, and period. 
+A QTL analysis showed a suite of candidate genes related to circadian rhythms which may be  responsible for the divergence of seasonal timing in ECB. In Dopman's talk at Entsoc, he mentioned that different strains mated at different times of the day. THe panel of genes incldues cry1, a few unknown contigs, and period.
 
-In period, they inferred that one allele that interacts with tim may be responsible in the differences in post diapause development. There are two alleles: 
+In period, they inferred that one allele that interacts with tim may be responsible in the differences in post diapause development. There are two alleles:
 
 1. G allele - associated with later post diapause development
-2. T allele - associated with earlier post diapause development 
+2. T allele - associated with earlier post diapause development
 
 (Are these alleles enriched in Z or E strains? )
 
-The G allele codes for an **Alanine (A)**, while the T allele codes for an **Aspartic Acid (D)**. This is interesting because aspartic acid is charged and alanine is not, so there may be differences in the intra or inter molecular level interactions. 
+The G allele codes for an **Alanine (A)**, while the T allele codes for an **Aspartic Acid (D)**. This is interesting because aspartic acid is charged and alanine is not, so there may be differences in the intra or inter molecular level interactions.
 
-### Question: How does the genetic variation in period ultimately cause divergence in post diapause development in the ECB system? 
+### Question: How does the genetic variation in period ultimately cause divergence in post diapause development in the ECB system?
 
-### Hypothesis: 
+### Hypothesis:
 
-One larger hypothesis is that period sets the tempo of development in ECB; Z strains have slower tempos than E strains. 
+One larger hypothesis is that period sets the tempo of development in ECB; Z strains have slower tempos than E strains.
 
 We can break this bigger hypothesis down to explanations about the biological rhythms part itself and the molecular basis of those rhythms.   
 
 1. Z strains have slower biological rhythms
-	* Prediction: tau(time between peak bouts of activity that is cyclical) is shorter in Z strain than E strain. 
+	* Prediction: tau(time between peak bouts of activity that is cyclical) is shorter in Z strain than E strain.
 
-2. The T allele (should be enriched in the Z strain) of period interacts more slowly with tim. 
+2. The T allele (should be enriched in the Z strain) of period interacts more slowly with tim.
 	* Predictions-
-		* Binding affinity with tim is lower 
-		* It binds with more partners and has less opportunity to bind to tim 
-		* IT binds to the same partners, but longer, and has less opportunity to bind to tim 
-		* Its expressed differently--slowly (not expected since the SNP of interest is intergenic) 
-		 
+		* Binding affinity with tim is lower
+		* It binds with more partners and has less opportunity to bind to tim
+		* IT binds to the same partners, but longer, and has less opportunity to bind to tim
+		* Its expressed differently--slowly (not expected since the SNP of interest is intergenic)
+
 ### Experimental approach:
 
-1. Trikinetics system- measure post diapause development in larvae and measure feeding activity in adults 
+1. Trikinetics system- measure post diapause development in larvae and measure feeding activity in adults
 
-2. Purify different periods and measure dissociation constants (Biacore? ) with tim 
-	* Could use recombinant period protein with diff alleles, then do a pull down (immunoprecipitation) and measure the amount of tim (western blot) 
-	* Can do this in the present or absence of whole protein extracts from Z or E strains to determine the promiscuuity of period. 
-	
+2. Purify different periods and measure dissociation constants (Biacore? ) with tim
+	* Could use recombinant period protein with diff alleles, then do a pull down (immunoprecipitation) and measure the amount of tim (western blot)
+	* Can do this in the present or absence of whole protein extracts from Z or E strains to determine the promiscuuity of period.
+
 
 3. A series of immunoprecipitation experiments coupled with mass spec  
-	* Take 2 days worth of samples at ~2 hour intervals and immunoprecipitate period and measure what is attached to period with mass spec 
+	* Take 2 days worth of samples at ~2 hour intervals and immunoprecipitate period and measure what is attached to period with mass spec
 
 
 
 
 ### Expected outcomes:  
 
-**Biological rhythms** 
+**Biological rhythms**
 
 
 * Positive relationship between Tau (adults) and post diapause development (larvae)
@@ -1276,20 +1276,20 @@ We can break this bigger hypothesis down to explanations about the biological rh
 
 *  
 
-Big claim: The tempo of molecular clocks dictates broad scale physiological development that enables reproductive isolation within a season and has led to the emergence of new species. 
+Big claim: The tempo of molecular clocks dictates broad scale physiological development that enables reproductive isolation within a season and has led to the emergence of new species.
 
-### Thoughts: 
+### Thoughts:
 
 * I wonder how abundant period and tim are though; it might be difficult to isolate. Need to find antibodies  
-	* [most antibodies](http://www.antibodies-online.com/antibody/307276/anti-Period+Homolog+1+Drosophila+PER1+C-Term+antibody/) are polyclonal for fruit fly period, targeting C terminus; mostly for westerns, elisas 
-	* [here](http://www.antibodies-online.com/antibody/152723/anti-Period+Homolog+1+Drosophila+PER1+antibody/)(vendor = ?, cat#=ABIN152723,) is good for IF, IHC, 
+	* [most antibodies](http://www.antibodies-online.com/antibody/307276/anti-Period+Homolog+1+Drosophila+PER1+C-Term+antibody/) are polyclonal for fruit fly period, targeting C terminus; mostly for westerns, elisas
+	* [here](http://www.antibodies-online.com/antibody/152723/anti-Period+Homolog+1+Drosophila+PER1+antibody/)(vendor = ?, cat#=ABIN152723,) is good for IF, IHC,
 	* have to align sequences to see how conserved C terminus is
 		* fruit fly [period](https://www.ncbi.nlm.nih.gov/gene/6641177) via ncbi
 * It would be nice to delve into the SNPs found in cry1   
 
 
 
-references: 
+references:
 
 Levy, R. C., Kozak, G. M., Wadsworth, C. B., Coates, B. S., & Dopman, E. B. (2015). Explaining the sawtooth: latitudinal periodicity in a circadian gene correlates with shifts in generation number. Journal of Evolutionary Biology, 28(1), 40–53. https://doi.org/10.1111/jeb.12562   
 
@@ -1299,15 +1299,15 @@ Dopman, E. B., Robbins, P. S., & Seaman, A. (2009). COMPONENTS OF REPRODUCTIVE I
 ------
 
 <div id='id-section19'/>    
-    
+
 ### Page 19:  2018-01-18. prepping meeting with Dan on 2018-01-19    
 
-1. IDP, or yearly goals 
+1. IDP, or yearly goals
 
-	* originally didn't include ECB system in IDP. 
-	 
+	* originally didn't include ECB system in IDP.
 
-2. papers 
+
+2. papers
 
 refs:  
 
@@ -1319,84 +1319,84 @@ refs:
 
 
 * Ragland, G. J., Fuller, J., Feder, J. L., & Hahn, D. A. (n.d.). Biphasic metabolic rate trajectory of pupal diapause termination and post-diapause development in a tephritid fly. https://doi.org/10.1016/j.jinsphys.2008.12.013      
-	
-	
 
-Also, Tom's paper following up on Greg's work. 
 
-**Larger/overall hypothesis to frame: Apple flies are more responsive to favorable conditions than haw flies** How can they do this? Well different parts of the diapause "program" can be adaptively modified that leads to divergence in emergence timing. 
 
-Predictions: 
+Also, Tom's paper following up on Greg's work.
+
+**Larger/overall hypothesis to frame: Apple flies are more responsive to favorable conditions than haw flies** How can they do this? Well different parts of the diapause "program" can be adaptively modified that leads to divergence in emergence timing.
+
+Predictions:
 
 	1. Apples flies will terminate diapause earlier haw flies
-		* and it will correlate with eclosion timing 
+		* and it will correlate with eclosion timing
 	2. Apple flies will have higher post diapause development than haw flies  
-	3. Apple flies will have higher baseline metabolic rate 
+	3. Apple flies will have higher baseline metabolic rate
 
-Tom's predictions don't have the exponential phase of thhe curve in his analyses and predictions. 
+Tom's predictions don't have the exponential phase of thhe curve in his analyses and predictions.
 
 **Analyses**:  
 
-* Paper needs to present the rational for why different phases of development were selected and how they varied between host races. 
+* Paper needs to present the rational for why different phases of development were selected and how they varied between host races.
 
-* It is also a good point to do a pca on the traits, to see how they're correlated. Then , you can make arguments about how different parts of the diapause program can potentially evolve differently. 
+* It is also a good point to do a pca on the traits, to see how they're correlated. Then , you can make arguments about how different parts of the diapause program can potentially evolve differently.
 
-* There needs to be a statistics section in methods so that reader can understand how the statistical approaches. 
+* There needs to be a statistics section in methods so that reader can understand how the statistical approaches.
 
 3. ECB proj idea
 
 4. Update on Rhagoletis project
-	* Monday- removing plates from fridge 
+	* Monday- removing plates from fridge
 
-5. Conferences 
-	* Biological rhythms conference, May 12-16 2018; Amelia Island Florida 
+5. Conferences
+	* Biological rhythms conference, May 12-16 2018; Amelia Island Florida
 		* registration deadline is [march 1](https://srbr.org/meetings/upcoming-meeting/registration/)
-		* Should probably write up an abstract for a talk 
+		* Should probably write up an abstract for a talk
 	* [Evolution meeting](https://www.evolutionmeetings.org/evolution-2018---montpellier-france.html), August 19-22, 2018; Montpellier, France   
 		* 3500 abstracts received, but they can only accept 2000
 
 
-### Meeting with Dan 2018-01-19 
+### Meeting with Dan 2018-01-19
 
-1. idp; 
+1. idp;
 	* look up fellowships into the UF informatics institute/group  (pam)  ; UFBI  
 		* USDA post doctoral fellows  
-	* look into gordon conference or keystone meetings. 
+	* look into gordon conference or keystone meetings.
 
 **new project**: brain transcripts and pool-seq data that I can explore  
 
 	* pop bio talk scheduled feb 2, 4pm
 		* check with Bob Holt to see if he can make it
-		* Brett Schaeffers 
-		* Ben Bizer? 
+		* Brett Schaeffers
+		* Ben Bizer?
 		* who else works on range limits?  
-		
+
 2. Paper discussion  
-	* how do we make it more impactful? Pitch in terms developmental modules 
-	* look up developmental modules , Wagner Gunter 
-	* draft email to tpowell- ask for data 
+	* how do we make it more impactful? Pitch in terms developmental modules
+	* look up developmental modules , Wagner Gunter
+	* draft email to tpowell- ask for data
 
 
 
 ------
 
 <div id='id-section20'/>    
-    
+
 ### Page 20:  2018-01-18. starting a data science course  
 
-There is a really nice data science course by Christie Bahlai (who I follow on twitter). Its called [reproducible quantitative methods](https://cbahlai.github.io/rqm-template/). 
+There is a really nice data science course by Christie Bahlai (who I follow on twitter). Its called [reproducible quantitative methods](https://cbahlai.github.io/rqm-template/).
 
-It has 4 parts: 
+It has 4 parts:
 
 1. Data
 2. Analysis
-3. Communication 
-4. Opening your work 
+3. Communication
+4. Opening your work
 
-In my own course, I want to do something similar, but start off with the problem first. The thought experiment is this: Imagine working on a project and getting back to it in a year. Could you remember everything that you did? You'd have to log what you've done. This leads to solutions to the problem: project organization, meta data, readme file, version control, and electronic notebooks. 
+In my own course, I want to do something similar, but start off with the problem first. The thought experiment is this: Imagine working on a project and getting back to it in a year. Could you remember everything that you did? You'd have to log what you've done. This leads to solutions to the problem: project organization, meta data, readme file, version control, and electronic notebooks.
 
 
-There is a nice [paper](https://peerj.com/preprints/3205.pdf) on a modern approach to teach statistics. 
+There is a nice [paper](https://peerj.com/preprints/3205.pdf) on a modern approach to teach statistics.
 
 **paper notes**   
 
@@ -1407,69 +1407,69 @@ There is a nice [paper](https://peerj.com/preprints/3205.pdf) on a modern approa
 3. Model functions
 4. Model training
 5. Effect size and covariates
-6. Displays of distributions 
-7. bootstrap replication 
+6. Displays of distributions
+7. bootstrap replication
 8. Prediction Error
 9. Comparing models
 10. Generalization and causality
 
 
-Hmmm, too list like. The main argument in the beginning that the paper makes is that there has  been a shift to learning statistics from algebra to showing stuff on the computer. 
+Hmmm, too list like. The main argument in the beginning that the paper makes is that there has  been a shift to learning statistics from algebra to showing stuff on the computer.
 
 ### Data
 
-go over: 
+go over:
 
-1. tidy data 
-2. meaning of the unit of observation 
-3. distinction between continuous and categorical variables 
-4. difference between a data table and the presentation of information 
+1. tidy data
+2. meaning of the unit of observation
+3. distinction between continuous and categorical variables
+4. difference between a data table and the presentation of information
 
-Summary tables in a paper or textbook does not necessarily reflect a datatable, but it is a presentation of the info. For example, a contingency table can be broken down to individual level observations that make up the counts for each row + column. 
+Summary tables in a paper or textbook does not necessarily reflect a datatable, but it is a presentation of the info. For example, a contingency table can be broken down to individual level observations that make up the counts for each row + column.
 
 
-### Data graphics, model functions, and model training , effect size and covariates 
+### Data graphics, model functions, and model training , effect size and covariates
 
-use ggplot for figs and use R in general for model functions/training. Use R code to explore different aspects of the model to understand the statistics. ie look at the model output(predictions) and see if it is consistent with model parameter estimates. 
+use ggplot for figs and use R in general for model functions/training. Use R code to explore different aspects of the model to understand the statistics. ie look at the model output(predictions) and see if it is consistent with model parameter estimates.
 
 ### Bootstrapp replication  
 
 Good way to show re-sampling and simulation in statistics.  
 
-### Take homes and conclusions: 
+### Take homes and conclusions:
 
 
-intro stats should be taught more like data science (especially because datasets are really big now), an investigative process of problem solving and decision making. 
+intro stats should be taught more like data science (especially because datasets are really big now), an investigative process of problem solving and decision making.
 
-### Ok, what is my layout? 
+### Ok, what is my layout?
 
-1. How do we do science? Its not really linear, but it can be highly dynamic. 
+1. How do we do science? Its not really linear, but it can be highly dynamic.
 
-2. Present the problem: it is difficult to reproduce science (for others and your future self!!!) 
-	* go over thought experiment 
+2. Present the problem: it is difficult to reproduce science (for others and your future self!!!)
+	* go over thought experiment
 
 3. ..stuck..
 
 
-some ideas to throw out: 
+some ideas to throw out:
 
-1. repeat a dataset/project found github 
-2. have in class, student led discussions 
-	* using a package/function 
+1. repeat a dataset/project found github
+2. have in class, student led discussions
+	* using a package/function
 3. have a larger data science project that will lead to a manuscript  
-	* leave slots open for students to work on project 
+	* leave slots open for students to work on project
 	* students can even use their own dataset
 4. for weekly exercises, work on a single project and explore ins and outs or work on multiple different data sets
 	* data parsing exercises
-	* data plotting exercises 
+	* data plotting exercises
 5. have students work on each other's project to see if it is reproducible?!? cool idea
 6. Encourage students to implement electronic notebook via github
-	* I find that being specific about usage is a good way for students to actually adopt this 
-7. grading break down 
+	* I find that being specific about usage is a good way for students to actually adopt this
+7. grading break down
 	* (Bi-)weekly exercises (30%)   
-		* coding + answer questions 
+		* coding + answer questions
 	* Electronic notebook (30%)
-		* have them answer questions (replaces blog in Christie's syllabus) 
+		* have them answer questions (replaces blog in Christie's syllabus)
 	* Semester Project (30%)
 	* Participation (10%)
 
@@ -1477,17 +1477,17 @@ some ideas to throw out:
 ------
 
 <div id='id-section21'/>    
-    
+
 ### Page 21:  2018-01-22. Rhago nature figures for biological rhythms project   
 
-Drew this up on Friday. I'm trying to think about possible outcomes of the relationship between biological timing (circadian timing) and eclosion (days) under different treatment groups. If we genotype all of the samples, we can construct a relationship matrix and feed that into a mixed effects model to quantify the genetic architecture(Gmatrix, variance -covariance matrix) for each treatment. THen we can see how correlated they are. I think I'd expect greater correlation in free-run then entrainment, showing that they intrinsically diapause and can respond to photoperiod given the opportunity. 
+Drew this up on Friday. I'm trying to think about possible outcomes of the relationship between biological timing (circadian timing) and eclosion (days) under different treatment groups. If we genotype all of the samples, we can construct a relationship matrix and feed that into a mixed effects model to quantify the genetic architecture(Gmatrix, variance -covariance matrix) for each treatment. THen we can see how correlated they are. I think I'd expect greater correlation in free-run then entrainment, showing that they intrinsically diapause and can respond to photoperiod given the opportunity.
 
 ![](https://user-images.githubusercontent.com/4654474/35227251-90624dbc-ff5b-11e7-9692-16d22dbfa3b0.JPG)   
 
 ------
 
 <div id='id-section22'/>    
-    
+
 ### Page 22: 2018-01-23. Meeting with Dan, Tom about termination ms    
 
 Background:
@@ -1498,85 +1498,85 @@ Rhagoletis follows a few phases in which they exit diapause. IN the kostal 2006 
 
 
 
-Meeting: 
+Meeting:
 
-1. Tom tried path analysis 
-2. PCA suggestion- good for figure display, but there can be compounding error when estimates with error are used in a follow up analysis 
+1. Tom tried path analysis
+2. PCA suggestion- good for figure display, but there can be compounding error when estimates with error are used in a follow up analysis
 3. Dan wants to pitch paper in terms of developmental modules, developmental tactics/strategies (what is the difference?)
-4. contingency table of diff metabolic trajectories, limitations to interpretation 
+4. contingency table of diff metabolic trajectories, limitations to interpretation
 
 
-Tom will send me dataset and supplementals to Dan. 
+Tom will send me dataset and supplementals to Dan.
 
-Action items for me: 
+Action items for me:
 
 1. look up and into developmental modules - scholar search Gunter Wagner
 2. look into the usage of tactics and strategies
 3. try pca analysis when tom sends me data
-4. write up flow of ideas 
+4. write up flow of ideas
 
 
 
 ------
 
 <div id='id-section23'/>    
-    
-### Page 23: 2018-01-23. Reading Gunter et al. 2007, The road to modularity 
 
-reference: 
+### Page 23: 2018-01-23. Reading Gunter et al. 2007, The road to modularity
+
+reference:
 
 Wagner, G. P., Pavlicev, M., & Cheverud, J. M. (2007). The road to modularity. Nature Reviews Genetics, 8(12), 921–931. https://doi.org/10.1038/nrg2267
 
-Ok, what is modularity. From Dan's discussion, the different parts of the developmental trajectories as measured by metabolic rate is a "modular" process. 
+Ok, what is modularity. From Dan's discussion, the different parts of the developmental trajectories as measured by metabolic rate is a "modular" process.
 
 First par tof abstract describes modularity as: a network of interactions that can be subdivided into autonomous, internally highly connected components...(what?)
 
-Different Definitions: 
+Different Definitions:
 
-* Variational module-a set of covarying traits that vary independently with the set of traits of interest. (So bad) 
-* Functional module- features that act together in performing some discrete physiological function 
-* Developmental module- embryo program that is quasi-autonomous ...definition is os bad. 
-* Quasi-autonomy - a lower than average grade of connectedness. The elements of modules are highly interaconnected but to an increased extent are unconnected with other modules - called quasi-independence 
+* Variational module-a set of covarying traits that vary independently with the set of traits of interest. (So bad)
+* Functional module- features that act together in performing some discrete physiological function
+* Developmental module- embryo program that is quasi-autonomous ...definition is os bad.
+* Quasi-autonomy - a lower than average grade of connectedness. The elements of modules are highly interaconnected but to an increased extent are unconnected with other modules - called quasi-independence
 
-Don't see a good usage of these terms really. Traits can be correlated, just say that. But they're correlation says nothing abou ttheir interactions, which is a separate issue. 
+Don't see a good usage of these terms really. Traits can be correlated, just say that. But they're correlation says nothing abou ttheir interactions, which is a separate issue.
 
-The term with best utility is a "functional module". In the ms, the work could be framed in terms where the diapause module compromises of termination and post-diapause development. Diapause timing is a functional module. Modules are often described as having features which can be or not be independent from one of another. 
+The term with best utility is a "functional module". In the ms, the work could be framed in terms where the diapause module compromises of termination and post-diapause development. Diapause timing is a functional module. Modules are often described as having features which can be or not be independent from one of another.
 
 It can be viewed as an autonomous physiological proceess that is part of the organism.  
 
 
-One way to approach variational modules is to quantify the correlation matrix: a table of correlation coefficients among quantitative traits, which summarizes the correlation. Strong covarying traits are called variational modules. 
+One way to approach variational modules is to quantify the correlation matrix: a table of correlation coefficients among quantitative traits, which summarizes the correlation. Strong covarying traits are called variational modules.
 
 
 
 ------
 
 <div id='id-section24'/>    
-    
+
 ### Page 24:  2018-01-23. Strategies vs tactics (Mart R. Gross 1996)  
 
 ref:
 http://labs.eeb.utoronto.ca/gross/newGross1996.pdf  
 
-Paper on how to think about and use strategies vs tactics. 
+Paper on how to think about and use strategies vs tactics.
 
-* Strategy- genetically based program (decision rule) that results in the allocation of somatic and reproductive effort of an organism (energy/development) among alternative phenotypes (tactics). 
+* Strategy- genetically based program (decision rule) that results in the allocation of somatic and reproductive effort of an organism (energy/development) among alternative phenotypes (tactics).
 
-* Tactic-is a phenotype that results from a strategy. An example is the fight for accessto a mate, but alternative tactic may to sneak. The decision about which tactic is expressed is made by the strategy. 
+* Tactic-is a phenotype that results from a strategy. An example is the fight for accessto a mate, but alternative tactic may to sneak. The decision about which tactic is expressed is made by the strategy.
 
-Very confusing. Strategy sounds liek a downstream afterfact of the expression of a tactic. 
+Very confusing. Strategy sounds liek a downstream afterfact of the expression of a tactic.
 
-Maybe a strategy is an overall life history strategy (ie survive the cold) and a tactic is the mechanism by which a strategy is attained/achieved ( plastic vs constitutive mechanisms) 
+Maybe a strategy is an overall life history strategy (ie survive the cold) and a tactic is the mechanism by which a strategy is attained/achieved ( plastic vs constitutive mechanisms)
 
 ------
 
 <div id='id-section25'/>    
-    
+
 ### Page 25:  2018-01-24. revisiting thermal niche paper    
 
-one of SED's comments: 
+one of SED's comments:
 
-> But you never really look for plasticity. Where's the model with CTmax ~ rearing T 
+> But you never really look for plasticity. Where's the model with CTmax ~ rearing T
 With species/population as a random effect?
 
 I thought the model selection part would "look" for the effect of acclimation if it was there? Anyway, I'll run an anova to test for the effect of acclimation temp on CTmin/max while blocking for species.
@@ -1609,7 +1609,7 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 ------
 
 <div id='id-section26'/>    
-    
+
 ### Page 26: 2018-01-25. [Phenotypic Prediction workshop 2018](http://ufgi.ufl.edu/seminars-events/phenotypic-prediction-workshop-2018/)  
 
 
@@ -1617,106 +1617,106 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 
 * 7:30-8AM registration and breakfast
 * 8:10AM opening remarks
-* 8:10-9:00AM "The use of genomics in animal breding", Dr. Jack Dekkers, Iowa State University 
+* 8:10-9:00AM "The use of genomics in animal breding", Dr. Jack Dekkers, Iowa State University
 * 9-9:50AM "Going beyond statistics - the case for biological whole genome models", Dr. Frank Technow, Dupont -Pioneer
 * 9:50-10:20AM coffee break
 * 10:20-11:10AM "Will Big Data Close the missing heritability gap?", Dr. Ana Vazquez, Michigan State University  
 * 11:10-12:00PM “High Throughput data (environmental, genomic and phenotypic covariates) for improving predictive ability under complex scenarios with applications in plant breeding.” Dr. Diego Jarquin, University of Nebraska-Lincoln  
 
 
-### Opening remarks: 
+### Opening remarks:
 
 Marcio
 
-event, 5th edition 
+event, 5th edition
 
 2 main goals:
 
 1. bring people closer together, common goal of phenotype predition
-2. enable students to be exposed to these talks 
- 
+2. enable students to be exposed to these talks
+
 questions can be posted on twiter (#UFPPW) from livestreamers  
 
-800 people registered 
+800 people registered
 
 
 
-### "The use of genomics in animal breding", Dr. Jack Dekkers, Iowa State University 
+### "The use of genomics in animal breding", Dr. Jack Dekkers, Iowa State University
 
 Netherlands, phd in wisconsin
 
 background is in animal breeding  
 
-PIC(pig improvement company) has been used a suite of markers starting 1991 (HAL gene). HAL gene associated with poor meat quality. Started off small number of SNPs and then more recently, many more markers were used for phenotype prediction. Genomic selection...whats that. 
+PIC(pig improvement company) has been used a suite of markers starting 1991 (HAL gene). HAL gene associated with poor meat quality. Started off small number of SNPs and then more recently, many more markers were used for phenotype prediction. Genomic selection...whats that.
 
 **Genomic Selection**
 
-Meuwissen et al. 2001. 
+Meuwissen et al. 2001.
 
 1. Take reference population
 2. take phenotypes and genotype them (training data)
 3. estimate marker effects
-4. Genotype next generation and use model to predict 
+4. Genotype next generation and use model to predict
 
 Genetic evaluation using high density SNPs
 
-1. SNP effects are fitted as random vs fixed effects 
+1. SNP effects are fitted as random vs fixed effects
 	* SNPs are random effects, enabling all SNPs to be fitted simultaneously
 2. General model
 	* Mixed effects model- PLUB(pedigree) or GBLUP(genomic relatedness
-	* use to estimate breeding values of new animals based on genotypes alone 
+	* use to estimate breeding values of new animals based on genotypes alone
 	* Bayesian variable selection used to ID SNPs too
 
 
 ![](https://user-images.githubusercontent.com/4654474/35390523-c2aa756a-01a9-11e8-903e-a30612d5f41d.png)  
 
 
-3. A relationship matrix including full pedigree and genomic information: Create relationship matrix from phenotype and genotype 
+3. A relationship matrix including full pedigree and genomic information: Create relationship matrix from phenotype and genotype
 	* H matrix
 
 **The promise of Genomic selection**  
 
-* ID phenotype at earlier age 
-* reduce need for costly phenotyping 
-* Reduce generation intervals 
+* ID phenotype at earlier age
+* reduce need for costly phenotyping
+* Reduce generation intervals
 * INcrease accuracy for "difficult" traits
-	* reproduction, longevity, meat quality 
-	* disease resistance 
-	* crossbred performance in field 
+	* reproduction, longevity, meat quality
+	* disease resistance
+	* crossbred performance in field
 * Reduce rates of inbreeding/generation
 	* less emphasis on family information
 	* select on animal's 'own gneotypes (for markers)
-	
+
 **Outline**
 1. Implementation of GS in dairy cattle
 2. pig/poultry breeding programs
 3. predicting the accuracy of genomic prediction (how large? structure?)
-4. Genetic improvement of commercial X-bred performance 
+4. Genetic improvement of commercial X-bred performance
 
 
 **Dairy Cattle**
-	
+
 Reliability = variance explained squared?  
 
 can genotype from embryo; selection decisions are faster(traditional way = progeny testing = 5 years vs DNA testing = 6 months)
 
 1.5 million holstein cows genotyped
 
-Genomic prediction = higher genetic gains ( doubling ) 
+Genomic prediction = higher genetic gains ( doubling )
 
 
 **Pig/poultry**  
 
-more difficult 
+more difficult
 
 Typical breeding pyramid in pigs is a 3 way cross    
 
 * 3 breeding pops : 1 sire, 2 dam lines
-* Genomic prediction needs to be implemented in 3 lines , which are not that large 
-	* each company has their own pigs to themselves 
-* traits are not sex limited like in cattle 
+* Genomic prediction needs to be implemented in 3 lines , which are not that large
+	* each company has their own pigs to themselves
+* traits are not sex limited like in cattle
 
-Challenges: 
+Challenges:
 
 1. multiple lines
 2. limited training data per line
@@ -1724,22 +1724,22 @@ Challenges:
 4. large # selection candidates
 5 limited value of each candidate
 
-Opportunities: 
+Opportunities:
 1. preselection of candidates for further testing
 2. selection for female reproduction, longevity
 3. feed efficiency
 4. selection for carcass/meat quality
-5. selection for disease resistance 
+5. selection for disease resistance
 6. selection for commercial crossbred performance
 
-THe money end, What is the relative cost and benefits of genotyping vs phenotyping? 
+THe money end, What is the relative cost and benefits of genotyping vs phenotyping?
 * no money, invest in phenotyping
-* money, invest in genotyping 
+* money, invest in genotyping
 
 
-Training populations: 
+Training populations:
 
-If heritability = 30%, you need about 5,000 individuals. Higher heritability = less individuals needed 
+If heritability = 30%, you need about 5,000 individuals. Higher heritability = less individuals needed
 
 
 **Prediction accuracy**
@@ -1754,43 +1754,43 @@ Accuracy = q * rq
 
 (Dekkers 2007, JABG)
 
-q = proportion of genetic variance at QTL captured by markers 
+q = proportion of genetic variance at QTL captured by markers
 
 = Markers /(markers + effective # of chromosome segments)
 
-rq = accuracy with which markers effects are estimated 
+rq = accuracy with which markers effects are estimated
 
 = sqrt((Nq^2h^2))/(Nq^2h^2 + Me))
 
-Me is a key parameter if you want to get a handle of how big of apopulation you need to obtain a certain accuracy 
+Me is a key parameter if you want to get a handle of how big of apopulation you need to obtain a certain accuracy
 
 
-How large is Me? 
+How large is Me?
 
-Depends on effective population size, which depends on LD (linkage equilibrium) 
+Depends on effective population size, which depends on LD (linkage equilibrium)
 
-It also depends on L, which is the size of the chromosome 
+It also depends on L, which is the size of the chromosome
 
 Assume chromosomes are independent, but are not, but there are covariances betewen genotype and chromosomes
 
-by accountig for covariance, less individuals needed 
+by accountig for covariance, less individuals needed
 
 
 
 **The need for re-training**
 
-Train on data prior to generation 1 
+Train on data prior to generation 1
 
-GBLUP is higher accuracy than PBLUP 
+GBLUP is higher accuracy than PBLUP
 
-Relatedness matters for training and test datasets 
+Relatedness matters for training and test datasets
 
-Me can be estimated from G-A 
+Me can be estimated from G-A
 (genomic and pedigree)
 
 Variance of deviation (Var(G-A)) = average LD(r^2) over all pairs of loci = 1/Me
 
-Me can be estimated from G-A 
+Me can be estimated from G-A
 
 Relationship higher = Var(G-A) higher = Me lower = Ne smaller = increase genmic prediction accuracy
 
@@ -1798,24 +1798,24 @@ Relationship higher = Var(G-A) higher = Me lower = Ne smaller = increase genmic 
 
 Conclusion
 
-* hard to predict across breeds 
+* hard to predict across breeds
 * requires large datasets
 
 Questions:
 
-1. Why avoid inbreeding? 
+1. Why avoid inbreeding?
 
-recessive deleterious mutants can selected out with inbreeding. so some is good. Works in corn, but in animals, its too costly. 
+recessive deleterious mutants can selected out with inbreeding. so some is good. Works in corn, but in animals, its too costly.
 
-2. Genomics can ID cause inbreeding depression. 
+2. Genomics can ID cause inbreeding depression.
 
-3. What are we finding in terms of dominance? (non-additive variance) 
+3. What are we finding in terms of dominance? (non-additive variance)
 
 Hard to capitalize on dominance because directed matings are limited. Breed bred lines to increase heterosis.
 
 ### "Going beyond statistics - the case for biological whole genome models", Dr. Frank Technow, Dupont -Pioneer  
 
-phd from germany, bayesian methods, canada 
+phd from germany, bayesian methods, canada
 
 3 sections
 
@@ -1823,64 +1823,64 @@ phd from germany, bayesian methods, canada
 2. limits of predictability
 3. pushing the limits
 
-"Predictive analytics" 
+"Predictive analytics"
 
 we can only observe phenotypes, but breeding values determine performance of next generation
 
-and overall genetic values determine success of variety 
+and overall genetic values determine success of variety
 
 Falconer 1989 Intr. quant genetics pg 163
 
 Build upon predictive skills!  
 
 1. ground them in quant gen and biology
-2. incoporating novel types of data and info 
-3. develop powerful stat methods (whole genome prediction) 
+2. incoporating novel types of data and info
+3. develop powerful stat methods (whole genome prediction)
 
 
-Paradigm shift from QTL detection to prediction of genetic values 
+Paradigm shift from QTL detection to prediction of genetic values
 
-Whole Genome regressions 
+Whole Genome regressions
 * set of genotypes and phenotypes (estimation set)
-* regression of phenotype 
+* regression of phenotype
 
-What drives accuracy? 
-Cooper et al. 2014, genomic prediction --see ref 
+What drives accuracy?
+Cooper et al. 2014, genomic prediction --see ref
 
 
 
-Linear models: 
+Linear models:
 
-* based on linear mixed model 
-* determiend by data they were fitted on 
-* confined to context of observed data 
-* extrapolation risky 
+* based on linear mixed model
+* determiend by data they were fitted on
+* confined to context of observed data
+* extrapolation risky
 * modle of biology unrealistic
 
 
-Genetics is non-linear;yield is highly complex functio of : 
+Genetics is non-linear;yield is highly complex functio of :
 
 1. traits on lower phys levels (component traits
-2. Environment and management practices 
+2. Environment and management practices
 
 This generates the fitness landscape determined by (Sewell Wright 1932 )
 
-* G x E x M (interactions with environment and management) 
-* physiologicla (trait) and molecular (gene level ) epistasis 
+* G x E x M (interactions with environment and management)
+* physiologicla (trait) and molecular (gene level ) epistasis
 
-Why do the linear models still work? 
+Why do the linear models still work?
 
 * Constraining target populations of environment (TPE)
 	* homogeneous weather and soil conditions
 	* similar cropping systems
 * Constraining target pop of germplasm (TGE)
-	* heterotic groups 
-	* limiting diveristy (fixing genomic regions) 
+	* heterotic groups
+	* limiting diveristy (fixing genomic regions)
 
 Biased sampling and making the biology easier ; takes away G x E
 
 
-Hill, Goddard, and Vissher (): 
+Hill, Goddard, and Vissher ():
 * molecular pathways imply non-linear gene action
 * genetic variance is mostly additive
 
@@ -1889,16 +1889,16 @@ reason for paradox: most alleles are at extreme allele frequencies (what...)
 **Stepping out of the comfort zone**
 
 Comfort zone- known part of bio space
-* multi environment trials (MET) 
+* multi environment trials (MET)
 * constrains make system linear
-* predictable with linear models 
+* predictable with linear models
 
-Why step out? 
+Why step out?
 
 * adapting to climate change and more erratic weather patterns
 * increasing diversity for long-term genetic gains  
 
-MOdels should explore for adjacent possibilities 
+MOdels should explore for adjacent possibilities
 
 Ex: Multienvi field trials and they can test for Gx E and even G  x E x M
 
@@ -1907,55 +1907,55 @@ downside of machine learning: no prior biological knowledge (a downside and upsi
 Biological model (aka first principles)
 
 1. captures univ causality of bio systems
-2. transcends specific data set and provides outside context 
+2. transcends specific data set and provides outside context
 
 
-Causal models - a priori knowledge 
+Causal models - a priori knowledge
 
 
-Thought experiemnt: what is the area of rectangle 
+Thought experiemnt: what is the area of rectangle
 
-We need data. But we need more than data. We also need prior knowledge and outside context. 
+We need data. But we need more than data. We also need prior knowledge and outside context.
 
-Crop growth models: 
+Crop growth models:
 
 Are biological models that incorporate non-linear interactions within and between all system components
 
 * plant phys
-* env and management 
+* env and management
 
-Models are based on concepts of 
+Models are based on concepts of
 
 * resource  capture, utliization, allocation
 * results of decades of biological research
-* widely used to study agronomic practices and cropping systems 
-* increasing interst in application to breeding and applie dgenetics 
+* widely used to study agronomic practices and cropping systems
+* increasing interst in application to breeding and applie dgenetics
 
 
-**it is a set of models** 
+**it is a set of models**
 
 Maize growth model
 
-Environemntal inputs - temp and solar radiation 
+Environemntal inputs - temp and solar radiation
 
-Key phys inputs - radiation use efficiency , node number 
+Key phys inputs - radiation use efficiency , node number
 
-Loop through model 
+Loop through model
 
-Sounds like we don't need any SNP information. 
+Sounds like we don't need any SNP information.
 
 
-**Merging biology wiht WGP through bayesian statistics** 
+**Merging biology wiht WGP through bayesian statistics**
 
-BioGWP - a biological whole genome prediction model 
+BioGWP - a biological whole genome prediction model
 
-* Bayesian herarchical generalized linear model 
+* Bayesian herarchical generalized linear model
 * CGM acts as a "link function"
-* genetics represented by latent physiological traits 
+* genetics represented by latent physiological traits
 * model for marker effects is "BayesA"
-* posterioer sample with metroplis within Gibbs algorithm 
+* posterioer sample with metroplis within Gibbs algorithm
 
-Think of this as a biostat machine that can integrate diverse sources of info such as : 
+Think of this as a biostat machine that can integrate diverse sources of info such as :
 
 * harvest phenotype
 * genomic data
@@ -1963,31 +1963,31 @@ Think of this as a biostat machine that can integrate diverse sources of info su
 * env
 * management
 
-into high resolution yield prediction 
+into high resolution yield prediction
 
 
-**Proof of concept-** 
+**Proof of concept-**
 
-Integrating crop growth models into whole genome prediction with approximate Bayesian computation plos one 
+Integrating crop growth models into whole genome prediction with approximate Bayesian computation plos one
 
 * simulated data
 * demonstrate ability to work with highly non-linear systems
 
-Which model was better? 
+Which model was better?
 
 Reduction to practice- requiremments
 
-* need accurate crop growth model 
-* need env soil 
+* need accurate crop growth model
+* need env soil
 
-ARGOS: model genotype by transgene by env interaction 
+ARGOS: model genotype by transgene by env interaction
 
-* transgene affects ethylene response 
+* transgene affects ethylene response
 * maintains silk elongation under drought
 * protects yield potential
-* but effects vary by genetics/phys and env background 
+* but effects vary by genetics/phys and env background
 
-ARGOS affects silking - growth models need to incorporate this 
+ARGOS affects silking - growth models need to incorporate this
 
 
 
@@ -1995,45 +1995,45 @@ ARGOS affects silking - growth models need to incorporate this
 
 GWAS associated with disease- genetic risk score based on GWAS significant variants
 
-* Problem: proportion of variance explaiend by GWA-sig hits remains lower than the trait heritability ; aka missing heritability 
+* Problem: proportion of variance explaiend by GWA-sig hits remains lower than the trait heritability ; aka missing heritability
 
-* there could be a large number of small-effect variants not detected . starndard gwas lack power to detect 
+* there could be a large number of small-effect variants not detected . starndard gwas lack power to detect
 
-* for complex disease, these variants can explain a sizable proportion of genetic variance 
+* for complex disease, these variants can explain a sizable proportion of genetic variance
 
 **Biobanks**
 
 * recruit data from thousands of patients
 
-* pairing genomics data with electornic medical records and extensive phenotyping 
+* pairing genomics data with electornic medical records and extensive phenotyping
 * same protocol, variable def for all patienets
-* all subjects are genotyped with same platform 
+* all subjects are genotyped with same platform
 
 **Landscape of factors that affect prediction accuracy for complex traits**
 
-* acess effects of sample size, number of markers, LD, estimation procedure 
+* acess effects of sample size, number of markers, LD, estimation procedure
 
 **Model: Human Height: A model complex trait**  
 
-* highly heritable (.8) 
-* no strong QTL 
-* extensively studied 
-* strong effect of age and gender 
+* highly heritable (.8)
+* no strong QTL
+* extensively studied
+* strong effect of age and gender
 
 **Genotyping**
 
 * 600K SNPs
-* 
+*
 
 
-Data from UKbiobank 
+Data from UKbiobank
 
-* use interim release 
+* use interim release
 	* 1k white people
 
-* full release 
-	* 4k white people 
-	
+* full release
+	* 4k white people
+
 science is so biased....
 
 **Workflow**
@@ -2042,50 +2042,50 @@ science is so biased....
 2. GWS in training set , do a SNP -ranking
 
 
-Data partitions: Training and testing sets 
+Data partitions: Training and testing sets
 
 * interim release
 	* 102k training, 80k test
 
 * full release
-	* 400k training, rest test ; rep 5 tiems 
-	
-adjusted SNP windows 
+	* 400k training, rest test ; rep 5 tiems
+
+adjusted SNP windows
 
 3. Fit bayesian models to top - p SNPs
-4. assess prediction accuracy on test set 
+4. assess prediction accuracy on test set
 
 Whole Genome regression, predictions are derived using thousands of SNPs
 
-Challenges: 
+Challenges:
 
-* curse of dimensionality --> bayesians, penalized to sovle 
-* Computation ; 
+* curse of dimensionality --> bayesians, penalized to sovle
+* Computation ;
 * require large sample sizes
 
 
-Prediction: 
+Prediction:
 
-* ..5-.6 as functin of sample size 
-* prediction accuracy increasing , but slow 
+* ..5-.6 as functin of sample size
+* prediction accuracy increasing , but slow
 * highest prediction .65, r^2 0.42
 
-More SNPs genomic heritability increases but prediction accuracy plateaus. The gap is reduc of accuracy on estimated efects. 
+More SNPs genomic heritability increases but prediction accuracy plateaus. The gap is reduc of accuracy on estimated efects.
 
 
 How many markers are needed? Depends on sample size and number of SNPs
 
-Data partition into subsets--no clue why 
+Data partition into subsets--no clue why
 
 Prediction accuracy has opt of ~5k snps, and any more markers reduce prediction accuracy .
 
-Increasing training size increases prediction accuracy. 
+Increasing training size increases prediction accuracy.
 
 
 
 ### “High Throughput data (environmental, genomic and phenotypic covariates) for improving predictive ability under complex scenarios with applications in plant breeding.” Dr. Diego Jarquin, University of Nebraska-Lincoln    
 
-Genomse to field idea: G x E project 
+Genomse to field idea: G x E project
 
 genomes2fields.org
 
@@ -2096,25 +2096,25 @@ gxe is problem: use it, reduce it, ignore it
 ------
 
 <div id='id-section27'/>    
-    
-### Page 27:  2018-01-26. Meeting with Dan 
+
+### Page 27:  2018-01-26. Meeting with Dan
 
 
-1. Rhago projs 
-	* Discuss abstract and Tom needs to send me data 
-		* need flow of ideas for intro/discussion 
+1. Rhago projs
+	* Discuss abstract and Tom needs to send me data
+		* need flow of ideas for intro/discussion
 
 	* Dan needs to send email to Greg about Brain transcriptome  
-	* taking samples out of fridge 
+	* taking samples out of fridge
 
 2. Details on fellowships
-	* [UF bioinformatics post doc.](https://informatics.institute.ufl.edu/ufii-programs/ufii-fellows-program/post-doctoral-fellowship-program/) 
-		* app deadline is OCT 2nd for next year. 
-		* hs to follow the following [thrust areas or themes](https://informatics.institute.ufl.edu/about-us/). 
-		* need to work with 2 departments 
+	* [UF bioinformatics post doc.](https://informatics.institute.ufl.edu/ufii-programs/ufii-fellows-program/post-doctoral-fellowship-program/)
+		* app deadline is OCT 2nd for next year.
+		* hs to follow the following [thrust areas or themes](https://informatics.institute.ufl.edu/about-us/).
+		* need to work with 2 departments
 
 3. Pop bio talk next friday feb 2
-	* bob holt and brett scheffers going 
+	* bob holt and brett scheffers going
 
 
 
@@ -2124,12 +2124,12 @@ Biological rhythms conference, May 12-16 2018; Amelia Island Florida
 
 	* registration deadline is march 1   
 	* Should probably write up an abstract for a talk    
-	
 
-	
+
+
 -----
 
-Modules discussion: 
+Modules discussion:
 
 2-3 modules, variation in termination, but post-diapause might be more environmentally driven (put discussion)    
 
@@ -2137,20 +2137,20 @@ can pitch in terms of variational module
 
 Dan, hit plant literature  to check if modules are used in terms of module selection  
 
-functional modules have diff genetic variation that nat sel can act upon, but also have diff ways that can resond to environment 
+functional modules have diff genetic variation that nat sel can act upon, but also have diff ways that can resond to environment
 
 
-future readings: 
+future readings:
 
-Michaels 2010, Dan will send more. 
+Michaels 2010, Dan will send more.
 
 
 
 ------
 
 <div id='id-section28'/>    
-    
-### Page 28:  2018-01-30. Readings in Rhagoletis, pop gen, directions of gene flow 
+
+### Page 28:  2018-01-30. Readings in Rhagoletis, pop gen, directions of gene flow
 
 references:
 
@@ -2167,63 +2167,63 @@ These are a series of pop gen papers aiming to understand the population dynamic
 
 One issue with the sympatric speciation story in this system is that one can't excldue allopatric speciation. Perhaps apple maggot fly alleles were initially geographically separated before sympatric incipient speciation occurred.  
 
-Well in this system, the apple flies only occur in midwest and northeastern US and Canada, where as the haw flies extend far down into Mexico. So these authors wanted to understand the direction of gene flow between populations of haws and apple. They sampled flies from a disjunct mexican pop and compared with US populations. 
+Well in this system, the apple flies only occur in midwest and northeastern US and Canada, where as the haw flies extend far down into Mexico. So these authors wanted to understand the direction of gene flow between populations of haws and apple. They sampled flies from a disjunct mexican pop and compared with US populations.
 
-Their approach to the study was to compare gene trees of different populations. Specifically, 3 nuclear and 1 mitochondrial loci. They estimated divergence timing and deteremined whether topologies were likely due to lineage sorting or introgression. 
+Their approach to the study was to compare gene trees of different populations. Specifically, 3 nuclear and 1 mitochondrial loci. They estimated divergence timing and deteremined whether topologies were likely due to lineage sorting or introgression.
 
-Lineage sorting is the random assortment of alleles into extant taxa and this produces gene relationships that are not necessarily reflective of species relationships. Introgression can do this too, but it is a directed process where an allele migrates from one lineage to another. 
+Lineage sorting is the random assortment of alleles into extant taxa and this produces gene relationships that are not necessarily reflective of species relationships. Introgression can do this too, but it is a directed process where an allele migrates from one lineage to another.
 
-Ok, so how did they distinguish lineage sorting vs introgression? They performed a likelihood ratio test, where LR = ML1/ML2. They basically evaluated maximum likelihood estimates between models to see if they're stat sig diff. Ok, how did they do this? 
+Ok, so how did they distinguish lineage sorting vs introgression? They performed a likelihood ratio test, where LR = ML1/ML2. They basically evaluated maximum likelihood estimates between models to see if they're stat sig diff. Ok, how did they do this?
 
-The null model is lineage sorting (ML1), where they let N and SN nodes have different origin times among loci . This reflects independent origins of inversions on chromosome 1-3 in the common ancestor. 
+The null model is lineage sorting (ML1), where they let N and SN nodes have different origin times among loci . This reflects independent origins of inversions on chromosome 1-3 in the common ancestor.
 
-The alternative model is ML2, which is the introgression model , where the derived time of origin for N and SN/M nuclear nodes are the same across loci. 
+The alternative model is ML2, which is the introgression model , where the derived time of origin for N and SN/M nuclear nodes are the same across loci.
 
-Results: ((N),(SN,M)) relationships for chromosome 1-3 and (US,M) for mitoDNA. 
+Results: ((N),(SN,M)) relationships for chromosome 1-3 and (US,M) for mitoDNA.
 
-Fig 4 makes the modelling more sense now, because the timing of how genes diverge give a good indication of incomplete lineage sorting vs gene flow. WHen alleles show shifts later in time (1.1mya), then it is more likely due to gene flow. However, it might be harder to distinguish gene flow vs ILS at 1.1 mya. 
+Fig 4 makes the modelling more sense now, because the timing of how genes diverge give a good indication of incomplete lineage sorting vs gene flow. WHen alleles show shifts later in time (1.1mya), then it is more likely due to gene flow. However, it might be harder to distinguish gene flow vs ILS at 1.1 mya.
 
 Introgression model was supported. And they argue this has something to do with diapause with no data to show for it....  
 
 
 ### Xie et al. 2007; Evolution   
 
-This study builds on previous work and looksl ike it is a snap shot or focus in on mexican and US populations of rhagos. They use 15 nuc loci and 1 mito loci. 
+This study builds on previous work and looksl ike it is a snap shot or focus in on mexican and US populations of rhagos. They use 15 nuc loci and 1 mito loci.
 
 They're pitching the story as "speciation mode plurality". wtf...  I think this means that both allopatric and sympatric mechanisms contribute to speciation.   
 
-They found for some genomic regions, there is pop structure as such, ((EVTM,SMO),US) but for other genomic regions (chromosome 1-3), the US is paraphyletic as such, (US,((US,SMO),EVTM). So SMO alleles have migrated or hve been retained into US populations. The differentiation may be due to allopatry, which produced and maintained the genetic variation for host races to diversify their phenology. 
+They found for some genomic regions, there is pop structure as such, ((EVTM,SMO),US) but for other genomic regions (chromosome 1-3), the US is paraphyletic as such, (US,((US,SMO),EVTM). So SMO alleles have migrated or hve been retained into US populations. The differentiation may be due to allopatry, which produced and maintained the genetic variation for host races to diversify their phenology.
 
-They argue that speciation can involve both allopatry and sympatry...but it is possible for them to be acting in isolation. Allopatry then sympatry, not allopatry and sympatry. Their argument makes very little sense. It does change how we view how genetic diversity can be maintained and how that maintenance can facilitate divergence in future populations/lineages. 
+They argue that speciation can involve both allopatry and sympatry...but it is possible for them to be acting in isolation. Allopatry then sympatry, not allopatry and sympatry. Their argument makes very little sense. It does change how we view how genetic diversity can be maintained and how that maintenance can facilitate divergence in future populations/lineages.
 
-One problem- they have not established the directionality of gene flow. 
+One problem- they have not established the directionality of gene flow.
 
-### Xie et al. 2008; J. Evol. Biol. 
+### Xie et al. 2008; J. Evol. Biol.
 
 goals:   
 
 1. test whether any genetic signposts of divergence exist for rhagos (what? )
 2. nuclear loci are consistent with speciation mode plurality   
-3. whether patterns of genetic divergence vary across the genome 
+3. whether patterns of genetic divergence vary across the genome
 
 ------
 
 <div id='id-section29'/>    
-    
+
 ### Page 29: 2018-01-31. Meeting with Dan , MR trajectories paper  
 
-* Are the MR mass corrected? check with Tom. 
+* Are the MR mass corrected? check with Tom.
 
 * Check on c and remove it to see how the loadings change or whatever
 	* truncate last data point to see how  c shifts  
-	* c might be flawed 
-* another analytic approach? Partial correlation and regression with eclosion 
+	* c might be flawed
+* another analytic approach? Partial correlation and regression with eclosion
 
-Predict based on pcs 
+Predict based on pcs
 
-I did stats yesterday, but I'll dump the quick and dirty findings here: 
+I did stats yesterday, but I'll dump the quick and dirty findings here:
 
-PCA table: 
+PCA table:
 
 |        | Comp.1| Comp.2| Comp.3| Comp.4|
 |:-------|------:|------:|------:|------:|
@@ -2235,10 +2235,10 @@ PCA table:
 
 
 **Summary:**
-4 pcs captured 96% of the variation in metabolic trajectories. The first pc represents the correlation between b,c,post dd, plat, that are altogether negatively correlated with termination. The second pc represents the correlation between term,c,post_dd, plat, that are altogether negatively correlated with b. 
+4 pcs captured 96% of the variation in metabolic trajectories. The first pc represents the correlation between b,c,post dd, plat, that are altogether negatively correlated with termination. The second pc represents the correlation between term,c,post_dd, plat, that are altogether negatively correlated with b.
 
 
-**Stat model:** 
+**Stat model:**
 
 
 |               | Estimate| Std. Error| t value| Pr(>&#124;t&#124;)|
@@ -2268,7 +2268,7 @@ PC2 x host  interaction
 
 Predictions based on PCs   
 
-sample code: 
+sample code:
 
 ```R
 mean.trait<-c(1.5,35,1.3,20,4)
@@ -2285,7 +2285,7 @@ predpc2.long<-gather(predpc2,ind,mr,X1:X66)
 predpc2.long$t<-rep(seq(1,60,1),65)
 ```
 
-PC1: 
+PC1:
 
 ![](https://user-images.githubusercontent.com/4654474/35644709-b65ba638-0697-11e8-98e0-a99458a79fc3.png)
 
@@ -2306,10 +2306,10 @@ PC2
 ------
 
 <div id='id-section30'/>    
-    
+
 ### Page 30:  2018-02-01. follow up analysis; partial correlation of parameters   
 
-Dan wants to know the sole effect of each parameter. I think this can be done with a multiple linear regression on the scaled parameters such that betas can be directly compared. 
+Dan wants to know the sole effect of each parameter. I think this can be done with a multiple linear regression on the scaled parameters such that betas can be directly compared.
 
 
 model construction: Testing effect of each parameter and interaction with host on eclosion
@@ -2319,7 +2319,7 @@ fullmod3<-lm(dat$eclosion~stand.dat$term*dat$host+stand.dat$b*dat$host+stand.dat
 mp<-summary(stepAIC(fullmod3,direction="both"))
 ```
 
-output: 
+output:
 
 ```R
 knitr::kable(coef(mp))
@@ -2336,11 +2336,11 @@ knitr::kable(coef(mp))
 |stand.dat$term:dat$hostHaw |  2.284787|  0.8539093|  2.675679|          0.0096775|
 
 
-### Exploring the termination * host interaction 
+### Exploring the termination * host interaction
 
-Take residuals from a regression from previous model but without the interaction term and then plotting those residuals against eclosion 
+Take residuals from a regression from previous model but without the interaction term and then plotting those residuals against eclosion
 
-model construction 
+model construction
 
 ```R
 fullmod4<-lm(dat$eclosion~stand.dat$term+dat$host+stand.dat$c+stand.dat$post_dd+stand.dat$plat)
@@ -2348,7 +2348,7 @@ leftover<-as.vector(scale(resid(fullmod4)))
 
 ```
 
-does the interaction persist? 
+does the interaction persist?
 
 ```R
 pmod5<-lm(dat$eclosion~leftover*dat$host)
@@ -2383,7 +2383,7 @@ ggplot(mdat,aes(x=leftover,y=eclosion,colour=host))+geom_point()+stat_smooth(met
 ------
 
 <div id='id-section31'/>    
-    
+
 ### Page 31:  2018-02-07. Updates and Prep meeting with Dan   
 
 General Updates:
@@ -2394,20 +2394,20 @@ General Updates:
 	* not enough time to go over everything
 		* went over the layout of a project (publishable unit)
 		* got through github and highlighted how it could be used
-		* didnt get a chance to go over R, Rmarkdown, or markdown in general 
-		* didnt get a chance to go over metadata, 
+		* didnt get a chance to go over R, Rmarkdown, or markdown in general
+		* didnt get a chance to go over metadata,
 		* showed the nice features of my online notebook  
 2. Gave popbio talk on range limits of A. picea last Friday,2018-02-02  
-	* Dan suggests an additional slide describing how we need to know the ecology and the organisms themselves to ultimately understand range limits 
-	
+	* Dan suggests an additional slide describing how we need to know the ecology and the organisms themselves to ultimately understand range limits
+
 3. Been meeting with Taariq every week to parse trikinetics data and have it line up with each unique ID (fly); script works, but is slow and may need to run the script through hipergator
 
 Prep for meeting with Dan.
 
 1. Circadian rhythm project: ongoing
-	* taking samples out of the fridge still. 
-	* still a lull in eclosions for RT treated flies, is this the fraction that has a 2 year diapause? 
-	
+	* taking samples out of the fridge still.
+	* still a lull in eclosions for RT treated flies, is this the fraction that has a 2 year diapause?
+
 2. Paper readings
 
 * XIE, X., MICHEL, A. P., SCHWARZ, D., RULL, J., VELEZ, S., FORBES, A. A., … FEDER, J. L. (2008). Radiation and divergence in the Rhagoletis Pomonella species complex: inferences from DNA sequence data. Journal of Evolutionary Biology, 21(3), 900–913. https://doi.org/10.1111/j.1420-9101.2008.01507.x
@@ -2418,11 +2418,11 @@ Prep for meeting with Dan.
 
 **General issues/thoughts**   
 
-Phylogenetic analyses assume non-reticulate evolution(gene flow between tips) , so it is not fully appropriate to describe populations. 
+Phylogenetic analyses assume non-reticulate evolution(gene flow between tips) , so it is not fully appropriate to describe populations.
 
 * Papers need a structure analysis to:
-	* determine extent of admixture 
-	* determine population structure 
+	* determine extent of admixture
+	* determine population structure
 * PNAS paper needed an outgroup, but subsequent papers had it
 * Parsimony trees? Need ML or bayesian approach to account for secondary mutations
 * Papers need to show which allele is enriched in apple ( should be SN haplotypes)
@@ -2432,26 +2432,26 @@ Phylogenetic analyses assume non-reticulate evolution(gene flow between tips) , 
 
 3. MR trajectory paper  
 	* Took a stab at intro
-		* On the right track? 
+		* On the right track?
 		* General outline:
-			1. Speciation story -> divergence in emergence timing -> related to eclosion differences between host races 
-			2. Diapause developmental programme  is highly modular with indpedent interconnected componnents that may or may not evolve independently í ragland biphasic model í related to termination, post-diapause development 
-			3. What drives the divergence in eclosion timing? Some say Deep diapause (Feder and Filchak ), but what aspects can change? 
+			1. Speciation story -> divergence in emergence timing -> related to eclosion differences between host races
+			2. Diapause developmental programme  is highly modular with indpedent interconnected componnents that may or may not evolve independently í ragland biphasic model í related to termination, post-diapause development
+			3. What drives the divergence in eclosion timing? Some say Deep diapause (Feder and Filchak ), but what aspects can change?
 			4. Shifts in earlier eclosion timing by apple can be achieved by becoming more responsive to favorable conditions. But how this happens within the diapause module framework remains unclear. Modules that can change :  
-				1.	Elevate metabolic suppression during diapause 
+				1.	Elevate metabolic suppression during diapause
 				2.	Elevate metabolic rate upon meeting favorable conditions
-				3.	Terminate diapause earlier 
-				4.	Develop faster post-diapause, after termination 
+				3.	Terminate diapause earlier
+				4.	Develop faster post-diapause, after termination
 
-			5. In this study paragraph. 
-		
+			5. In this study paragraph.
+
 
 	* Data analysis- identified 2 modules with PCA
 		* how is "c" influenced by resp
 		* regress parameter estimates against parameter error to gauge bias
-	* How to proceed with Discussion? 
+	* How to proceed with Discussion?
 
-New figs: 
+New figs:
 
 **PC1 and PC 2 comparison**
 
@@ -2463,9 +2463,9 @@ New figs:
 
 
 4. Brain transcriptome paper
-	* Greg needs to send me dataset with metadata 
+	* Greg needs to send me dataset with metadata
 	* Dan needs to send me a the research plan for the project  
-	
+
 
 
 
@@ -2473,46 +2473,46 @@ New figs:
 ------
 
 <div id='id-section32'/>    
-    
-### Page 32:  2018-02-12. To do list 
+
+### Page 32:  2018-02-12. To do list
 
 
-1. Biological rhythms project: 
-	* keep tracking eclosions and placing them into trikinetics set up. 
-	* Only 1 eclosion so far; eclosion needs to be calculated from days out of simulated overwintering 
-	* created a branch on github to preserve the project at today's time slice 
+1. Biological rhythms project:
+	* keep tracking eclosions and placing them into trikinetics set up.
+	* Only 1 eclosion so far; eclosion needs to be calculated from days out of simulated overwintering
+	* created a branch on github to preserve the project at today's time slice
 
 2. Diapause exit proj
 	* work on intro, hide detailed info on Rhago, make more broad and highlight modules in the context of diapause biology
-	
-3. Thermal niche paper: 
+
+3. Thermal niche paper:
 	* read over, send to lacy   
 
 4. Hsp rxn norm paper:
 	* NJGotelli- wants to get rid of pca analysis and just show the correlation matrix + a multiple linear regression  
 
-5. Proteome stability project: 
+5. Proteome stability project:
 	* Wai sent me email asking for details- I replied
-	* HPLC fractionation? 
+	* HPLC fractionation?
 
 6. Biological rhythms conference
-	* wrote up abstract ; give it to Dan to read. 
-	* Deadline is Feb 21st. 
-	* need to register 
+	* wrote up abstract ; give it to Dan to read.
+	* Deadline is Feb 21st.
+	* need to register
 
 
 ------
 
 <div id='id-section33'/>    
-    
+
 ### Page 33:  2018-02-13. Re-analysis of hsp rxn norm proj    
 
 
-NJG suggests that I should present a correlation matrix and use a multiple linear regression for testing the effect of hsp gxp parameters on CTmax. 
+NJG suggests that I should present a correlation matrix and use a multiple linear regression for testing the effect of hsp gxp parameters on CTmax.
 
 One problem with multiple linear regression is that the variablies multicolinear: https://onlinecourses.science.psu.edu/stat501/node/347
 
-Let's take a look at the dataset: 
+Let's take a look at the dataset:
 
 ```R
  str(jj2)
@@ -2534,7 +2534,7 @@ Let's take a look at the dataset:
  - attr(*, "na.action")=Class 'omit'  Named int [1:3] 12 24 43
   .. ..- attr(*, "names")= chr [1:3] "12" "24" "43"
 ```
-### Construct full linear model 
+### Construct full linear model
 
 ```R
 fullmod101<-lm(CTmax~FC_hsc70_1468_max+FC_hsc70_1468_slope+FC_hsc70_1468_Tm+FC_hsp40_541_max+FC_hsp40_541_slope+FC_hsp40_541_Tm+FC_hsp40_541_Tm+FC_Hsp83_279_max+FC_Hsp83_279_slope+FC_Hsp83_279_Tm+hsc70+hsp83+hsp40,data=jj2)
@@ -2557,19 +2557,19 @@ knitr::kable(coef(summary(fullmod101)))
 |hsp83               | -0.0486555|  0.1294554| -0.3758475|          0.7098629|
 |hsp40               | -0.1742460|  0.0642824| -2.7106345|          0.0113385|
 
-### Checking for multicollinearity 
+### Checking for multicollinearity
 
 ```R
 vif(fullmod101)
-  FC_hsc70_1468_max FC_hsc70_1468_slope    FC_hsc70_1468_Tm    FC_hsp40_541_max  FC_hsp40_541_slope     FC_hsp40_541_Tm 
-           3.534310            2.668820            5.039916            3.097313            2.447423            4.714042 
-   FC_Hsp83_279_max  FC_Hsp83_279_slope     FC_Hsp83_279_Tm               hsc70               hsp83               hsp40 
+  FC_hsc70_1468_max FC_hsc70_1468_slope    FC_hsc70_1468_Tm    FC_hsp40_541_max  FC_hsp40_541_slope     FC_hsp40_541_Tm
+           3.534310            2.668820            5.039916            3.097313            2.447423            4.714042
+   FC_Hsp83_279_max  FC_Hsp83_279_slope     FC_Hsp83_279_Tm               hsc70               hsp83               hsp40
            3.488256            2.150595            6.700810            1.914794            1.807223            1.162075
 ```
 
-Generally, from the online stat tutorial, variance inflation factors above 4 requires further investigation. 
+Generally, from the online stat tutorial, variance inflation factors above 4 requires further investigation.
 
-### Model selection 
+### Model selection
 
 ```R
 fullmod102<-stepAIC(fullmod101,direction="both")
@@ -2588,13 +2588,13 @@ knitr::kable(coef(summary(fullmod102)))
 
 ### 2018-02-14 update
 
-NJG comments: 
+NJG comments:
 
 ```
 I strongly suggest you drop the PCA entirely. As is always the case, it really doesn't add anything beyond the underlying correlations of the variables. I would suggest a pairwise correlation matrix (or figure from R) for all of the variables, and then perhaps a multiple regression model for each HSP with CtMax as the response variable and the four expression parameters as the predictor variables.
 ```
 
-Yeah, lets try this again... 
+Yeah, lets try this again...
 
 Cool code to make correlation matrix heat map
 
@@ -2602,7 +2602,7 @@ Cool code to make correlation matrix heat map
 #make correlation matrix
 comat<-round(cor(na.omit(jj2)),2)
 
-##plot it with this library 
+##plot it with this library
 library(ggcorrplot)
 b<-ggcorrplot(comat, hc.order = TRUE,lab=TRUE, type = "lower",
    outline.col = "white",
@@ -2618,18 +2618,18 @@ b+theme(
   axis.ticks = element_blank(),)
 ```
 
-### Stat models with hsp83 
+### Stat models with hsp83
 
 ```R
  summary(mod83)
 
 Call:
-lm(formula = KO_temp_worker ~ hsp83 + FC_Hsp83_279_slope + FC_Hsp83_279_Tm + 
+lm(formula = KO_temp_worker ~ hsp83 + FC_Hsp83_279_slope + FC_Hsp83_279_Tm +
     FC_Hsp83_279_max, data = jj1)
 
 Residuals:
-     Min       1Q   Median       3Q      Max 
--1.53807 -0.38594  0.01758  0.32602  2.01071 
+     Min       1Q   Median       3Q      Max
+-1.53807 -0.38594  0.01758  0.32602  2.01071
 
 Coefficients:
                     Estimate Std. Error t value Pr(>|t|)    
@@ -2642,7 +2642,7 @@ FC_Hsp83_279_max    0.019388   0.029765   0.651   0.5186
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 0.7408 on 39 degrees of freedom
-Multiple R-squared:  0.2931,	Adjusted R-squared:  0.2206 
+Multiple R-squared:  0.2931,	Adjusted R-squared:  0.2206
 F-statistic: 4.043 on 4 and 39 DF,  p-value: 0.007751
 ```
 
@@ -2654,25 +2654,25 @@ F-statistic: 4.043 on 4 and 39 DF,  p-value: 0.007751
  summary(mod70)
 
 Call:
-lm(formula = KO_temp_worker ~ hsc70 + FC_hsc70_1468_max + FC_hsc70_1468_slope + 
+lm(formula = KO_temp_worker ~ hsc70 + FC_hsc70_1468_max + FC_hsc70_1468_slope +
     FC_hsc70_1468_Tm, data = jj1)
 
 Residuals:
-     Min       1Q   Median       3Q      Max 
--0.94204 -0.44307  0.07442  0.34417  1.02051 
+     Min       1Q   Median       3Q      Max
+-0.94204 -0.44307  0.07442  0.34417  1.02051
 
 Coefficients:
                      Estimate Std. Error t value Pr(>|t|)    
 (Intercept)         37.874723   5.735742   6.603 7.54e-08 ***
 hsc70               -0.244822   0.142811  -1.714  0.09441 .  
-FC_hsc70_1468_max    0.022367   0.008156   2.743  0.00916 ** 
+FC_hsc70_1468_max    0.022367   0.008156   2.743  0.00916 **
 FC_hsc70_1468_slope  0.322339   0.219113   1.471  0.14928    
 FC_hsc70_1468_Tm     0.220416   0.120014   1.837  0.07390 .  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 0.594 on 39 degrees of freedom
-Multiple R-squared:  0.5456,	Adjusted R-squared:  0.499 
+Multiple R-squared:  0.5456,	Adjusted R-squared:  0.499
 F-statistic: 11.71 on 4 and 39 DF,  p-value: 2.435e-06
 ```
 
@@ -2682,12 +2682,12 @@ F-statistic: 11.71 on 4 and 39 DF,  p-value: 2.435e-06
 summary(mod40)
 
 Call:
-lm(formula = KO_temp_worker ~ hsp40 + FC_hsp40_541_max + FC_hsp40_541_slope + 
+lm(formula = KO_temp_worker ~ hsp40 + FC_hsp40_541_max + FC_hsp40_541_slope +
     FC_hsp40_541_Tm, data = jj1)
 
 Residuals:
-    Min      1Q  Median      3Q     Max 
--2.0548 -0.3409 -0.1021  0.3422  1.8449 
+    Min      1Q  Median      3Q     Max
+-2.0548 -0.3409 -0.1021  0.3422  1.8449
 
 Coefficients:
                    Estimate Std. Error t value Pr(>|t|)    
@@ -2695,121 +2695,121 @@ Coefficients:
 hsp40              -0.12503    0.08879  -1.408  0.16766    
 FC_hsp40_541_max    0.01542    0.02583   0.597  0.55435    
 FC_hsp40_541_slope -0.19096    0.19562  -0.976  0.33550    
-FC_hsp40_541_Tm     0.20127    0.07177   2.804  0.00808 ** 
+FC_hsp40_541_Tm     0.20127    0.07177   2.804  0.00808 **
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 0.7137 on 36 degrees of freedom
   (3 observations deleted due to missingness)
-Multiple R-squared:  0.3075,	Adjusted R-squared:  0.2305 
+Multiple R-squared:  0.3075,	Adjusted R-squared:  0.2305
 F-statistic: 3.996 on 4 and 36 DF,  p-value: 0.008775
 ```
 
-Multiple linear regression Models deviate from models considering 1 predictor at a time. 
+Multiple linear regression Models deviate from models considering 1 predictor at a time.
 
 ------
 
 <div id='id-section34'/>    
-    
+
 ### Page 34:  2018-02-14. Update to do list   
 
 
-1. Biological rhythms project: 
-	* keep tracking eclosions and placing them into trikinetics set up. 
+1. Biological rhythms project:
+	* keep tracking eclosions and placing them into trikinetics set up.
 
 2. **Diapause exit proj**
 	* work on intro, hide detailed info on Rhago, make more broad and highlight modules in the context of diapause biology
-		* almost done, need to look at it one more time and then send to Dan. 
-	
-3. **Thermal niche paper**: 
+		* almost done, need to look at it one more time and then send to Dan.
+
+3. **Thermal niche paper**:
 	* **Sent to lacy**; tweaked abstract and figures   
 
 4. **Hsp rxn norm paper**:
 	* NJGotelli- wants to get rid of pca analysis and just show the correlation matrix + a multiple linear regression  
-		* multiple linear regression diff than single regressions ; asking for NJG for response on how to proceed 
-		* SHC is in favor of pca bc it separates out expression kinetics from baseline gxp. 
-		* Fixed pca figure to make it more interprettable. 
+		* multiple linear regression diff than single regressions ; asking for NJG for response on how to proceed
+		* SHC is in favor of pca bc it separates out expression kinetics from baseline gxp.
+		* Fixed pca figure to make it more interprettable.
 
-5. Proteome stability project: 
+5. Proteome stability project:
 	* Wai to HPLC fractionate
 
 6. **Biological rhythms conference**
-	* Abstract basically approved by Dan 
-	* Deadline is Feb 21st. 
-	* need to register 
-	* go over abstract 1more time and send it to Dan ---Friday 
+	* Abstract basically approved by Dan
+	* Deadline is Feb 21st.
+	* need to register
+	* go over abstract 1more time and send it to Dan ---Friday
 
 7. meeting with Brett Scheffers ; Friday Feb 16 - 2:30PM
 	* agenda
-		* reciprocal transplant along lat gradient in Fl ; fruit flies in madagascar 
+		* reciprocal transplant along lat gradient in Fl ; fruit flies in madagascar
 
 ------
 
 <div id='id-section35'/>    
-    
+
 ### Page 35:  2018-02-15. Paper reading: Melo et al. Ann rev; Modularity Genes Development and Evolution  
 
-ref: 
+ref:
 
 Melo, D., Porto, A., Cheverud, J. M., & Marroig, G. (2016). Modularity: Genes, Development, and Evolution. Annu. Rev. Ecol. Evol. Syst, 47, 463–86. https://doi.org/10.1146/annurev-ecolsys-121415-032409
 
-Found new paper on modularity and trying to get a handle on what it actually means. 
+Found new paper on modularity and trying to get a handle on what it actually means.
 
-They describe a system being modular as: 
+They describe a system being modular as:
 
-If it can be divided into multiple sets of strongly interacting parts that are relatively autonomous with respect to each other. 
+If it can be divided into multiple sets of strongly interacting parts that are relatively autonomous with respect to each other.
 
 For diapause, what is a module then? Is the whole diapause program 1 large module, with preparation, maintenance, and exit as distinct components. But for Rhagoletis, diapause exit can be broken down into a finer scale, such as termination and post diapause development.  
 
-Modularity can be applied to developmental processes; where modules are diff parts of embryo that interact with each other (induction and morphogenesis) or sets of interacting molecules that act independently in the patterning of multiple tissues. 
+Modularity can be applied to developmental processes; where modules are diff parts of embryo that interact with each other (induction and morphogenesis) or sets of interacting molecules that act independently in the patterning of multiple tissues.
 
-**The same concept can be extended to adults, where modules consist of parts that act together in the performance of some physiological function.** 
+**The same concept can be extended to adults, where modules consist of parts that act together in the performance of some physiological function.**
 
 Variational modules are sets of traits that vary together and somewhat independently from other modules. Wait what...
 
 The way to approach modularity - estimate its correlational structure...not anything new here
 
-In this paper, they use genetic integration as genetic correlation. I should use the buzz word integration. 
+In this paper, they use genetic integration as genetic correlation. I should use the buzz word integration.
 
-Interacting sentence here: 
+Interacting sentence here:
 
 ```
 If all features of an organism are completely integrated, the parts will
 be prevented from evolving independent adaptations.
 ```
 
-Trait correlation has substantial consequences for their evolutionary trajectories. 
+Trait correlation has substantial consequences for their evolutionary trajectories.
 
 **This paper uses morphology a lot as an example of modularity** One way  
 
 
-### Also reading Melo & Marroig 2015; PNAS . Directional selection can drive the evolution of modularity in complex traits 
+### Also reading Melo & Marroig 2015; PNAS . Directional selection can drive the evolution of modularity in complex traits
 
 ref: Melo, D., & Marroig, G. (2015). Directional selection can drive the evolution of modularity in complex traits. Proceedings of the National Academy of Sciences of the United States of America, 112(2), 470–5. https://doi.org/10.1073/pnas.1322632112
 
 
-Thispaper has a good description of modularity : 
+Thispaper has a good description of modularity :
 
 *Tendency for parts of many biological systems to be organized into semi-independent groups*
 
-They argue that response to selection depends on the patterns of modularity. 
+They argue that response to selection depends on the patterns of modularity.
 
-They approach modularity with PCA analysis of traits. 
+They approach modularity with PCA analysis of traits.
 
-How traits are correlated is not depndent on drift and stabilizing selection. This makes sense when I think about Paccard et al. 2016(year?) where they find more traint independence at the edge of A. lyrata's range limit. They didn't investigate how selection is operating at the range limit. So, greater traint independence could be due to drift and that selection isn't operating at the range boundaries at all. 
+How traits are correlated is not depndent on drift and stabilizing selection. This makes sense when I think about Paccard et al. 2016(year?) where they find more traint independence at the edge of A. lyrata's range limit. They didn't investigate how selection is operating at the range limit. So, greater traint independence could be due to drift and that selection isn't operating at the range boundaries at all.
 
-Instead, their simulations show that directional selection impacts modular structure of traits. When considering both stab and direct selection, stab is important for maintaining established trait correlation patterns. 
+Instead, their simulations show that directional selection impacts modular structure of traits. When considering both stab and direct selection, stab is important for maintaining established trait correlation patterns.
 
 
-Fig 2B. One cool interesting result if I'm understanding it right. The first pc explains consistant variation with increasing directional selction, but the second PC's variation increases with directional selection. 
+Fig 2B. One cool interesting result if I'm understanding it right. The first pc explains consistant variation with increasing directional selction, but the second PC's variation increases with directional selection.
 
-### What they do? 
+### What they do?
 
 They simulated 10x10 (10 traits) G matrices that are controlled by many loci in a pouplation, that are subjected mutation, recombination. They essentially did a PCA of the gmatrix to identify trait correlations reflective of 2 modules
 
-**Approach** THey modelled populations under drift, stabilizing selection, and divergent natural selection. 
+**Approach** THey modelled populations under drift, stabilizing selection, and divergent natural selection.
 
-The way they're describing module with respect to simulations is confusing. They split up the correlation within a PC(pc1 for example) such that negative or positive ones form the module. 
+The way they're describing module with respect to simulations is confusing. They split up the correlation within a PC(pc1 for example) such that negative or positive ones form the module.
 
 In the methods, they describe" populations having variational modularity when the correlation between some sets of traits belonging to a module is higher than the correlation between traits of different modules. "
 
@@ -2819,28 +2819,28 @@ So they determine modularity as the AVG ratio: ratio between the within and betw
 ------
 
 <div id='id-section36'/>    
-    
+
 ### Page 36:  2018-02-21. Updated to do list
 
-1. Biological rhythms project: 
+1. Biological rhythms project:
 	* Taariq sent me prelim data set, where he's associated unique ID, entrainment vs free run to the trikinetics data
-		* I need to bin at different time intervals and estimate dominant periods with a spectral analysis 
+		* I need to bin at different time intervals and estimate dominant periods with a spectral analysis
 	* Create talk for biological rhythms conference - all set up with paper work and registration
 
 2. **Diapause exit proj**
 	* in Dan's hands
-	
-3. **Hsp rxn norm paper**:
-	* Fixed pca figure to make it more interprettable. 
-		* redid some figures to make PCA more interpretable; fixed intro, need to move onto results
-	* Make outline for discussion 
 
-4. Leading data wrangling workshop March 2 2018 for UF grad students 
+3. **Hsp rxn norm paper**:
+	* Fixed pca figure to make it more interprettable.
+		* redid some figures to make PCA more interpretable; fixed intro, need to move onto results
+	* Make outline for discussion
+
+4. Leading data wrangling workshop March 2 2018 for UF grad students
 	* Set up rproj, simulate data
 	* Manipulating data from long to wide format
-	* Make associated plots (Kmiller's data would be nice ) 
-	
-	
+	* Make associated plots (Kmiller's data would be nice )
+
+
 notes:
 
 SHC wants me to present regression on deciduos forest species :
@@ -2852,35 +2852,35 @@ Call:
 lm(formula = kdsub$jj.KO_temp_worker ~ kdsub$pchsp.scores...1.)
 
 Residuals:
-     Min       1Q   Median       3Q      Max 
--1.01303 -0.29330  0.08219  0.34777  0.74836 
+     Min       1Q   Median       3Q      Max
+-1.01303 -0.29330  0.08219  0.34777  0.74836
 
 Coefficients:
                         Estimate Std. Error t value Pr(>|t|)    
 (Intercept)             41.47272    0.10029 413.525  < 2e-16 ***
-kdsub$pchsp.scores...1. 0.22837    0.06394  3.571  0.00141 ** 
+kdsub$pchsp.scores...1. 0.22837    0.06394  3.571  0.00141 **
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 0.4485 on 26 degrees of freedom
-Multiple R-squared:  0.3291,	Adjusted R-squared:  0.3033 
+Multiple R-squared:  0.3291,	Adjusted R-squared:  0.3033
 F-statistic: 12.76 on 1 and 26 DF,  p-value: 0.001414
 ```
 
 ------
 
 <div id='id-section37'/>    
-    
+
 ### Page 37: 2018-02-22. Flow of ideas for the discussion of the hsp rxn norm ms  
 
 
-Struggling to write the discussion here, so I'm writing out my ideas to get a better sense of where I want to go. 
+Struggling to write the discussion here, so I'm writing out my ideas to get a better sense of where I want to go.
 
-Current structure: 
+Current structure:
 1. Summary paragraph
 2. Forest heterogeneity among forest types, focusign on deciduous forests
 3. Flat woods thermal experiences
-4. Evolutionary transition between closed to open habitat was accompanied by dynamic changes in the HSR 
+4. Evolutionary transition between closed to open habitat was accompanied by dynamic changes in the HSR
 5. Cellular thermostat model discussion
 6. Reason why hsp kinetics differ and not baseline
 7. Conclusion- bringing it back to climate change
@@ -2891,31 +2891,31 @@ SHC comment on discussion
 Is this really the key result?  Or is it that you have demonstrated a surprisingly large role of Hsp expression evolution in this process that is new and exciting?  I am not claiming I know what that key fnding is, but this spot is the most important location in your entire paper.  Think very carefully about what you want to put here.  
 ```
 
-Ok, lets try to restructure it: 
+Ok, lets try to restructure it:
 
 1. Summary paragraph
 	* Colonizing thermally stressful habitats requires ability to behav and phys adjust to stress
-	* Maybe contrast between divergent habitats where it is expected for baseline expression to increase, and non necessarily kinetics. I also should think about why other groups may not find strong differences in kinetics-it could be due to unsampled variation or missing variation that can be best captured with a function valued trait approach 
+	* Maybe contrast between divergent habitats where it is expected for baseline expression to increase, and non necessarily kinetics. I also should think about why other groups may not find strong differences in kinetics-it could be due to unsampled variation or missing variation that can be best captured with a function valued trait approach
 	* Summary of results - CT max and habits
-	* Maybe say something about how this study is good because it decomposes the variation at different levels of biological organization 
-	* may need to mention the life history of ants: they usually stay in place and colony persistance willd epend on their ability to take the heat. Although, their offspring can migrate northward. Oh, maybe discuss how thermally adapted alleles can move northward. 
+	* Maybe say something about how this study is good because it decomposes the variation at different levels of biological organization
+	* may need to mention the life history of ants: they usually stay in place and colony persistance willd epend on their ability to take the heat. Although, their offspring can migrate northward. Oh, maybe discuss how thermally adapted alleles can move northward.
 
-2. How thermal ecology shapes thermal traits, the direction we expect them to evolve  and what types of mechanisms we'd expect to underlie their evolution. For example, how do organisms extend CTmax? 
-	* How clades evolve CTmax? Constrained? Largest signal was from habitats, not latitude. 
-	* hit on the fact that ants are long lived and display low plasticity for upper thermal limits (which is true for most insects), so they have to rely on evolution . 
-	* compare and contrast temperate regions, with tropical regions. We'd expect open habitats to resemble mechanisms in tropical regions  perhaps because they experience chronic temperature stress 
-		* think about how to integrate sub saharan african ants and their thermal phys 
+2. How thermal ecology shapes thermal traits, the direction we expect them to evolve  and what types of mechanisms we'd expect to underlie their evolution. For example, how do organisms extend CTmax?
+	* How clades evolve CTmax? Constrained? Largest signal was from habitats, not latitude.
+	* hit on the fact that ants are long lived and display low plasticity for upper thermal limits (which is true for most insects), so they have to rely on evolution .
+	* compare and contrast temperate regions, with tropical regions. We'd expect open habitats to resemble mechanisms in tropical regions  perhaps because they experience chronic temperature stress
+		* think about how to integrate sub saharan african ants and their thermal phys
 
-3. Transition into flat woods, accompanied by changes in kinetics, not baseline. Counter to what we expect. 
+3. Transition into flat woods, accompanied by changes in kinetics, not baseline. Counter to what we expect.
 	* End on explained variation
-	* touch on the remaining variation that could be explained 
+	* touch on the remaining variation that could be explained
 
-4. Discuss in the context of the thermostat model 
+4. Discuss in the context of the thermostat model
 
-5. Different strategies to cope with heat stress may have facilitated niche expansion in terrestrial ectotherms. 
-	* compare baseline expression used in sub saharan african ants, vs temperate forest ants 
-	* variability selects for plasticity 
-	* might be aproblem for cliamte change, if temperatures are increasing and becoming more stable. 
+5. Different strategies to cope with heat stress may have facilitated niche expansion in terrestrial ectotherms.
+	* compare baseline expression used in sub saharan african ants, vs temperate forest ants
+	* variability selects for plasticity
+	* might be aproblem for cliamte change, if temperatures are increasing and becoming more stable.
 	* Ants colonies don't move very far within their lifetime, so they have to take the heat where they are
 
 
@@ -2923,34 +2923,34 @@ Ok, lets try to restructure it:
 ------
 
 <div id='id-section38'/>    
-    
+
 ### Page 38:  2018-02-27. Reading Stinchcombe et al. 2010; *Evolution*, ACROSS-ENVIRONMENT GENETIC CORRELATIONS AND THE FREQUENCY OF SELECTIVE ENVIRONMENTS SHAPE THE EVOLUTIONARY DYNAMICS OF GROWTH RATE IN IMPATIENS CAPENSIS  
 
-ref: 
+ref:
 Stinchcombe, J. R., Izem, R., Heschel, M. S., McGoey, B. V., & Schmitt, J. (2010). ACROSS-ENVIRONMENT GENETIC CORRELATIONS AND THE FREQUENCY OF SELECTIVE ENVIRONMENTS SHAPE THE EVOLUTIONARY DYNAMICS OF GROWTH RATE IN IMPATIENS CAPENSIS. Evolution, no-no. https://doi.org/10.1111/j.1558-5646.2010.01060.x
 
-Cool paper by John Stinchcombe. Take home: the expression of the genetic architecture can change depending on the environment. In this case, they manipulated plants grown in shade or sun; at different densities. 
+Cool paper by John Stinchcombe. Take home: the expression of the genetic architecture can change depending on the environment. In this case, they manipulated plants grown in shade or sun; at different densities.
 
-table 4 is interesting and something I've been thinking about. If you plot each PC loading vs density , color coded by shade and sun. You can basically see the shift in the genetic architecture. 
+table 4 is interesting and something I've been thinking about. If you plot each PC loading vs density , color coded by shade and sun. You can basically see the shift in the genetic architecture.
 
 ------
 
 <div id='id-section39'/>    
-    
+
 ### Page 39:  2018-02-28. Meeting with Tom, diapause exit ms  
 
-Meeting about data analysis. My quick and dirty approach found that the error of the estimate correlated with the estimates themselves. How can we control/account for this? 
+Meeting about data analysis. My quick and dirty approach found that the error of the estimate correlated with the estimates themselves. How can we control/account for this?
 
-1. Regress estimate on error of the estimates. lm(Estimate ~ Error) 
-2. [Deming regression](https://cran.r-project.org/web/packages/deming/deming.pdf), where you can do single regressions and include measurement error. 
+1. Regress estimate on error of the estimates. lm(Estimate ~ Error)
+2. [Deming regression](https://cran.r-project.org/web/packages/deming/deming.pdf), where you can do single regressions and include measurement error.
 
-Action items: 
+Action items:
 
 1. Tom to send us dataset with updated parameters and error
 2. I will re-analyze and explore whether the error matters
 	* If it does, try approaches outlined above
 3. Tom will read the intro and provide feedback
-4. Set the intro, methods, and results. Send to Greg for feedback. 
+4. Set the intro, methods, and results. Send to Greg for feedback.
 
 
 
@@ -2958,7 +2958,7 @@ Action items:
 ------
 
 <div id='id-section40'/>    
-    
+
 ### Page 40: 2018-03-01.  discussion, hsp rxn norm ms   
 
 Tweaking outline;
@@ -2967,46 +2967,46 @@ Tweaking outline;
 
 1. Summary paragraph
 	* Colonizing thermally stressful habitats requires ability to behav and phys adjust to stress
-	* Maybe contrast between divergent habitats where it is expected for baseline expression to increase, and non necessarily kinetics. I also should think about why other groups may not find strong differences in kinetics-it could be due to unsampled variation or missing variation that can be best captured with a function valued trait approach 
+	* Maybe contrast between divergent habitats where it is expected for baseline expression to increase, and non necessarily kinetics. I also should think about why other groups may not find strong differences in kinetics-it could be due to unsampled variation or missing variation that can be best captured with a function valued trait approach
 	* Summary of results - CT max and habits
-	* Maybe say something about how this study is good because it decomposes the variation at different levels of biological organization 
-	* may need to mention the life history of ants: they usually stay in place and colony persistance willd epend on their ability to take the heat. Although, their offspring can migrate northward. Oh, maybe discuss how thermally adapted alleles can move northward. 
+	* Maybe say something about how this study is good because it decomposes the variation at different levels of biological organization
+	* may need to mention the life history of ants: they usually stay in place and colony persistance willd epend on their ability to take the heat. Although, their offspring can migrate northward. Oh, maybe discuss how thermally adapted alleles can move northward.
 
 
-2. How thermal ecology shapes thermal traits, the direction we expect them to evolve  and what types of mechanisms we'd expect to underlie their evolution. For example, how do organisms extend CTmax? 
-	* How clades evolve CTmax? Constrained? Largest signal was from habitats, not latitude. 
-	* hit on the fact that ants are long lived and display low plasticity for upper thermal limits (which is true for most insects), so they have to rely on evolution . 
-	* compare and contrast temperate regions, with tropical regions. We'd expect open habitats to resemble mechanisms in tropical regions  perhaps because they experience chronic temperature stress 
-		* think about how to integrate sub saharan african ants and their thermal phys 
+2. How thermal ecology shapes thermal traits, the direction we expect them to evolve  and what types of mechanisms we'd expect to underlie their evolution. For example, how do organisms extend CTmax?
+	* How clades evolve CTmax? Constrained? Largest signal was from habitats, not latitude.
+	* hit on the fact that ants are long lived and display low plasticity for upper thermal limits (which is true for most insects), so they have to rely on evolution .
+	* compare and contrast temperate regions, with tropical regions. We'd expect open habitats to resemble mechanisms in tropical regions  perhaps because they experience chronic temperature stress
+		* think about how to integrate sub saharan african ants and their thermal phys
 
-3. Transition into flat woods, accompanied by changes in kinetics, not baseline. Counter to what we expect. 
+3. Transition into flat woods, accompanied by changes in kinetics, not baseline. Counter to what we expect.
 	* highlight function valued trait approach and how it can effectively detect subtle differences in rxn norm
 	* End on explained variation
-	* touch on the remaining variation that could be explained 
+	* touch on the remaining variation that could be explained
 
 4. **This should lead to other mechanisms -- focus on proteome stability and mention cool follow up approaches**
-	* cite the 2 papers that have proteome stability data out there 
+	* cite the 2 papers that have proteome stability data out there
 	* protein homeostasis is also a function of protein degradation, and hsp chaperoning activity
 
-5. Different strategies to cope with heat stress may have facilitated niche expansion in terrestrial ectotherms. 
-	* compare baseline expression used in sub saharan african ants, vs temperate forest ants 
-	* variability selects for plasticity 
-	* might be aproblem for cliamte change, if temperatures are increasing and becoming more stable. 
+5. Different strategies to cope with heat stress may have facilitated niche expansion in terrestrial ectotherms.
+	* compare baseline expression used in sub saharan african ants, vs temperate forest ants
+	* variability selects for plasticity
+	* might be aproblem for cliamte change, if temperatures are increasing and becoming more stable.
 	* Ants colonies don't move very far within their lifetime, so they have to take the heat where they are
-	
-	
-	
+
+
+
 ### Ok, what are my topic and ending sentences for each paragraph ? s
 
-1. Colonization of thermally stressful environments depends on the ability to behaviorally and physiologically cope with temperature stress 
+1. Colonization of thermally stressful environments depends on the ability to behaviorally and physiologically cope with temperature stress
 	* Physiological adaptation played an important role in facilitating niche expansion in aphaeno
 	* transition from closed to open forests was accompanied by increase of upper thermal limits
-	* We evaluated the ability of these ants to resist and tolerate thermal perturbations and found shifts relating to both using a function valued trait approach and not in the types of mechanisms expected. 
+	* We evaluated the ability of these ants to resist and tolerate thermal perturbations and found shifts relating to both using a function valued trait approach and not in the types of mechanisms expected.
 	* We found dynamic ,coordinated shfits in the Hsp expression parameters, not baseline expression , which also related to species divergence between habitats, and also when removing open canopy forested colonies; using a function valued trait approach
-	* Aphaenos likely use a common mechanism to cope with temperature stress in temperate forest ecosystems, opposite what is found in extremely warm habitats(cataglyphis). 
+	* Aphaenos likely use a common mechanism to cope with temperature stress in temperate forest ecosystems, opposite what is found in extremely warm habitats(cataglyphis).
 
-2. Temperate Forest environments generate considerable heterogeneity in thermal microclimates that influences the thermal experiences of ectotherms (Scheffers et al. 2014). 
-	* our largest signal in shifts in ctmax were due to habitat, and less so latitude 
+2. Temperate Forest environments generate considerable heterogeneity in thermal microclimates that influences the thermal experiences of ectotherms (Scheffers et al. 2014).
+	* our largest signal in shifts in ctmax were due to habitat, and less so latitude
 		* solar radiation is htting forest dwelling insects more in open than closed habitat
 		* closed canopy forest species may benefit from bogert effect and not open canopy forest
 	* Expectations for the types of mechanisms to evolve; basal vs induced
@@ -3015,7 +3015,7 @@ Tweaking outline;
 	* By decomposing gene expression into functional parameters, we had high power to uncover variation in the expression pattersn fo hsps
 	* this could be why, some studies fail to see divergence in induction rather than baseline
 	* Altogether kinetics explained less than half of the variation, suggesting other mechanisms are important, such as proteome , metabolome, and cell membrane dynamics
-	
+
 
 4. Protein homeostasis good candidate to understand a more full picture of temperature adaptation ( is it the source for resistance and tolerance? resistance and tolerance depends on homeostasis?)
 	* depends on the functional stability of the proteome
@@ -3024,11 +3024,11 @@ Tweaking outline;
 		* chaperoning
 	* follow up approaches: multiplex proteomics  to find melting temperatuers
 	* How do all of these mechanisms interact?
-	
+
 5. Different strategies to cope with heat stress may have facilitated niche expansion in terrestrial ectotherms
 	* tempearate systems should evolve induction, troopical systems should evolve baseline
 	* it is costly to constantly upregulate
-	* variability selects for plasticity and 
+	* variability selects for plasticity and
 	* Ants don't move, so they must rely on current mechanisms
 	* this may be a problem for future climate change when we expect more chronicly higher temperatures
 
@@ -3038,7 +3038,7 @@ ok, now to fill in the whole discussion...
 ------
 
 <div id='id-section41'/>    
-    
+
 ### Page 41:  2018-03-02. Dissecting out abstracts Amnat
 
 ref:
@@ -3071,7 +3071,7 @@ could be readily applied to inferring causes of range limits in many other
 species.
 
 
-THe first two sentences describe theory and background info. 
+THe first two sentences describe theory and background info.
 
 *Determining the causes of geographic range limits is a
 fundamental problem in ecology, evolution, and conservation biology.
@@ -3079,16 +3079,16 @@ Range limits arise because of fitness and dispersal limitation, which
 yield contrasting predictions about habitat suitability and occupancy
 of suitable habitat across geographic ranges.*
 
-Expectations based on theory and background info: 
+Expectations based on theory and background info:
 
 *If a range edge is limited
 primarily by fitness, occupancy of suitable habitat should be high, habitat
 suitability should decline toward the edge, and no suitable habitat
 should exist beyond it. In contrast, a range edge limited primarily by
 dispersal should have unoccupied but suitable habitat at and beyond
-the edge.* 
+the edge.*
 
-So they've used the first 4 sentences to set up the background and expectations. Next, they get into their analytical approach and end with the justification. 
+So they've used the first 4 sentences to set up the background and expectations. Next, they get into their analytical approach and end with the justification.
 
 *We built ecological niche models relating occurrence records
 for the scarlet monkeyflower (Erythranthe cardinalis) to climatic variables
@@ -3097,13 +3097,13 @@ range-wide surveys of presence and absence to estimate the availability
 and occupancy of climatically suitable habitat.*   
 
 
-They state the result. 
+They state the result.
 
 *We found that fitness
 limitation predominated over dispersal limitation, but dispersal limitation
-also played a role at the poleward edge.* 
+also played a role at the poleward edge.*
 
-They put their results in a greater context and broaden to how these methods can be applied to other systems. 
+They put their results in a greater context and broaden to how these methods can be applied to other systems.
 
 *These results are consistent
 with the hypothesis that dispersal limitation is more important
@@ -3139,11 +3139,11 @@ Next, the methods or approach sentence where they're modelling competing phenoty
 
 Results sentences-
 
-*The offspring size that provides mothers with the highest mean fitness also generates the greatest variance in fitness, but pairwise invasion plots show that bet-hedging strategies are not evolutionarily stable; maximizing expected fitness correctly predicts the unique evolutionarily stable strategy. Nonetheless, fixation can take a long time. We find that selection to increase spawning duration as a risk avoidance strategy to reduce the negative impacts of stochastic recruitment success can allow multiple offspring sizes to coexist in a population for extended periods.* 
+*The offspring size that provides mothers with the highest mean fitness also generates the greatest variance in fitness, but pairwise invasion plots show that bet-hedging strategies are not evolutionarily stable; maximizing expected fitness correctly predicts the unique evolutionarily stable strategy. Nonetheless, fixation can take a long time. We find that selection to increase spawning duration as a risk avoidance strategy to reduce the negative impacts of stochastic recruitment success can allow multiple offspring sizes to coexist in a population for extended periods.*
 
 What the results mean-
 
-*This has two important consequences for offspring size: (1) coexistence occurs over a broader range of sizes and is longer when spawning duration is longer because longer spawning durations reduce variation in fitness and increase the time to fixation, and (2) longer spawning durations can compensate for having a nonoptimal size and even allow less optimal sizes to reach fixation.* 
+*This has two important consequences for offspring size: (1) coexistence occurs over a broader range of sizes and is longer when spawning duration is longer because longer spawning durations reduce variation in fitness and increase the time to fixation, and (2) longer spawning durations can compensate for having a nonoptimal size and even allow less optimal sizes to reach fixation.*
 
 Broadening out the larger context-
 
@@ -3159,31 +3159,31 @@ Burgess, S. C., Snyder, R. E., & Rountree, B. (2017). Collective Dispersal Leads
 
 Climate change is expected to favor smaller-bodied organisms through effects of temperature on physiological performance and food-web interactions, so much so that smaller body size has been touted as a universal response to global warming alongside range shifts and changing phenology. However, climate change involves more than warming. It is multivariate, and the interplay between climate variables may result in less straightforward predictions. We present a model that considers the simultaneous effect of multiple variables (temperature, CO2, and moisture) on herbivore body sizes within a tritrophic food web comprised of vegetation, herbivores, and a shared predator. The model accounts for climate effects on animal behavior, plant and animal metabolism, and plant quality to explore emergent effects on herbivore body size. Our analysis reveals that some common multivariate climate change scenarios may favor larger-bodied herbivores, challenging previous findings of shifts toward small-bodied herbivores in the face of rising temperatures.
 
-Opening with background info, to set up a contrast in the next sentence. 
+Opening with background info, to set up a contrast in the next sentence.
 
 *Climate change is expected to favor smaller-bodied organisms through effects of temperature on physiological performance and food-web interactions, so much so that smaller body size has been touted as a universal response to global warming alongside range shifts and changing phenology.*
 
 Presents the problem (that climate change will impose selection from many different sources) and contrasts the previous sentence.
 
-*However, climate change involves more than warming. It is multivariate, and the interplay between climate variables may result in less straightforward predictions.* 
+*However, climate change involves more than warming. It is multivariate, and the interplay between climate variables may result in less straightforward predictions.*
 
 Approach and methods sentence
 
-*We present a model that considers the simultaneous effect of multiple variables (temperature, CO2, and moisture) on herbivore body sizes within a tritrophic food web comprised of vegetation, herbivores, and a shared predator. The model accounts for climate effects on animal behavior, plant and animal metabolism, and plant quality to explore emergent effects on herbivore body size.* 
+*We present a model that considers the simultaneous effect of multiple variables (temperature, CO2, and moisture) on herbivore body sizes within a tritrophic food web comprised of vegetation, herbivores, and a shared predator. The model accounts for climate effects on animal behavior, plant and animal metabolism, and plant quality to explore emergent effects on herbivore body size.*
 
-Ends with a results sentence and no real conclusion. Maybe the result is the conclusion. But we have no clue under what variables can lead to larger bodied herbivores to do well... 
+Ends with a results sentence and no real conclusion. Maybe the result is the conclusion. But we have no clue under what variables can lead to larger bodied herbivores to do well...
 
 *Our analysis reveals that some common multivariate climate change scenarios may favor larger-bodied herbivores, challenging previous findings of shifts toward small-bodied herbivores in the face of rising temperatures.*
 
 
 ### Thoughts
 
-Abstracts for Amnat present background that lead to a gap in knowledge or problem or expectation. They usually have 1 methods/approach sentence and variable results/conclusion sections depending on what they want to highlight. 
+Abstracts for Amnat present background that lead to a gap in knowledge or problem or expectation. They usually have 1 methods/approach sentence and variable results/conclusion sections depending on what they want to highlight.
 
 ------
 
 <div id='id-section42'/>    
-    
+
 ### Page 42: 2018-03-06.  Updates and proteostasis project development/ideas
 
 Met with Dan yesterday to talk about project ideas for undergrad in the summer. The project focuses on dissecting out the evolutionary tactics organisms use to cope with heat stress at the molecular level.  
@@ -3192,55 +3192,55 @@ Action items:
 
 1. Send Dan two papers on proteome stability
 
-refs: 
+refs:
 
 * Leuenberger, P., Ganscha, S., Kahraman, A., Cappelletti, V., Boersema, P. J., von Mering, C., … Picotti, P. (2017). Cell-wide analysis of protein thermal unfolding reveals determinants of thermostability. Science (New York, N.Y.), 355(6327), eaai7825. https://doi.org/10.1126/science.aai7825
 
 * Mikhail Savitski, P. M., M Reinhard, F. B., Franken, H., Werner, T., Fälth Savitski, M., Eberhard, D., … Drewes, G. (n.d.). Tracking cancer drugs in living cells by thermal profiling of the proteome. https://doi.org/10.1126/science.1255784
 
-2. Scour the literature to see what is known, what has been done, to figure out how we can contribute to the field. I'm making a google sheets to organize the literature, [here](https://docs.google.com/spreadsheets/d/1sdfqQ6vXOtwmQrKfetHUNkMNlSzdS7VmZz5TY-dYLms/edit?usp=sharing). 
-	* Dan wants to do something with prediction to try to pitch the idea for NIH funding. 
-	* What has been done in the DGRP? 
+2. Scour the literature to see what is known, what has been done, to figure out how we can contribute to the field. I'm making a google sheets to organize the literature, [here](https://docs.google.com/spreadsheets/d/1sdfqQ6vXOtwmQrKfetHUNkMNlSzdS7VmZz5TY-dYLms/edit?usp=sharing).
+	* Dan wants to do something with prediction to try to pitch the idea for NIH funding.
+	* What has been done in the DGRP?
 
 Flow diagram of the determinants of proteostasis (protein homeostasis)
 
 ![](https://user-images.githubusercontent.com/4654474/37040097-03263d3a-2127-11e8-9a7c-7b8db6727526.png)   
 
 
-### Types of questions we can ask 
+### Types of questions we can ask
 
-1. What are the relative contributions of different molecular tactics underlying proteostasis under temperature stress? 
+1. What are the relative contributions of different molecular tactics underlying proteostasis under temperature stress?
 
-2. What evolutionary tactics at the molecular level enable adaptive changes in thermal tolerance? 
+2. What evolutionary tactics at the molecular level enable adaptive changes in thermal tolerance?
 
 
-### Hypotheses 
+### Hypotheses
 
-* Organisms rely on more stable proteome (resistance) than induced responses (tolerance) to cope with heat stress. 
+* Organisms rely on more stable proteome (resistance) than induced responses (tolerance) to cope with heat stress.
 
 ------
 
 <div id='id-section43'/>    
-    
+
 ### Page 43: 2018-03-09 & 2018-03-12. Proj updates and proteome stability proj development
 
 1. Hsp rxn norm ms-Waiting on abstract, intro, results edits from SHC and NJG
 2. THermal niche ms- Lchick to send out
 3. Range limits ms- Waiting on discussion edits from SHC and NJG
-4. Biological rhythms - still tracking eclosions  from simulated overwintering 
+4. Biological rhythms - still tracking eclosions  from simulated overwintering
 5. Rhagoletis Brain transcriptome proj- Dan to send me background info on the proj
-6. Proteome stability proj- write up a research plan 
+6. Proteome stability proj- write up a research plan
 
 
-WRiting up research plan. 
+WRiting up research plan.
 
 Background:
 
-The way organisms cope with temperature stress is multi-faceted and dynamical. Temperature stress can vary over the short and long term over an organism's lifespan. Ultimately, this stress causes macromolecular damage that disrupts biological function and can lead to negative fitness consequences. 
+The way organisms cope with temperature stress is multi-faceted and dynamical. Temperature stress can vary over the short and long term over an organism's lifespan. Ultimately, this stress causes macromolecular damage that disrupts biological function and can lead to negative fitness consequences.
 
-Therefore, organisms should respond to temperature stress by diminishing the encounter of macromolecular damage (resistant) and/or controlling macromolecular damage (tolerance). One of the most important macromolecules are proteins, which provide structural and enzymatic functions inside the organism and the degree to which resistance and tolerance mechanisms are important depend on the magnitude and duration of stress. Short term heat bouts selects for resistance tactics such as evolving greater protein stability, while long term heat stress selects for tolerance by changing protein expression, or degrading and rescuing protein function. How organisms utilize a set a of tactics at the molecular level to face short term or long term stress is poorly understand. 
+Therefore, organisms should respond to temperature stress by diminishing the encounter of macromolecular damage (resistant) and/or controlling macromolecular damage (tolerance). One of the most important macromolecules are proteins, which provide structural and enzymatic functions inside the organism and the degree to which resistance and tolerance mechanisms are important depend on the magnitude and duration of stress. Short term heat bouts selects for resistance tactics such as evolving greater protein stability, while long term heat stress selects for tolerance by changing protein expression, or degrading and rescuing protein function. How organisms utilize a set a of tactics at the molecular level to face short term or long term stress is poorly understand.
 
-However, quantitative genetic analyses of upper thermal limits ([in fruit flies](http://onlinelibrary.wiley.com/doi/10.1111/jeb.12090/full)) suggests independent and unique genetic components between dealing with hot temperatures over short and longer time scales. 
+However, quantitative genetic analyses of upper thermal limits ([in fruit flies](http://onlinelibrary.wiley.com/doi/10.1111/jeb.12090/full)) suggests independent and unique genetic components between dealing with hot temperatures over short and longer time scales.
 
 
 **Study System:** Fruit flies
@@ -3248,14 +3248,14 @@ However, quantitative genetic analyses of upper thermal limits ([in fruit flies]
 * DGRP http://dgrp2.gnets.ncsu.edu/
 * DSPR http://wfitch.bio.uci.edu/~dspr/
 
-Main Questions: 
+Main Questions:
 
-1. What is the arrangement of the genetic architecture of thermal performance? 
-	* **Hypothesis:** Thermal limits under short term and long term stress share common and unique genetic variation. 
-		* **Approach:** Measure Ctmax and CTmin under fast ramp, slow ramp, hardening ability and estimate the genetic architecture (variance-covariance G matrix) 
+1. What is the arrangement of the genetic architecture of thermal performance?
+	* **Hypothesis:** Thermal limits under short term and long term stress share common and unique genetic variation.
+		* **Approach:** Measure Ctmax and CTmin under fast ramp, slow ramp, hardening ability and estimate the genetic architecture (variance-covariance G matrix)
 		* **Expected outcomes:** PCA decomposition of the Gmatrix will show different trait correlations.
 			1. All of the CTmax related traits could be negative correlated with CTmin along the first PC.
-			2. On the other hand, all of the treatment types (slow , fast, hardening) could share the same genetic arthicture. 
+			2. On the other hand, all of the treatment types (slow , fast, hardening) could share the same genetic arthicture.
 
 ![](https://user-images.githubusercontent.com/4654474/37298502-d10593d0-25f6-11e8-86db-2f9f80938839.JPG)
 
@@ -3263,23 +3263,23 @@ Main Questions:
 **Ultimate inference--** There is  common and divergent genetic basis of thermal traits This leads to the next question...
 
 2. What are the relative contributions of molecular level tactics that organisms can use to respond to temperature stress?  
-	* **Hypothesis:** Thermally labile proteins are either not expressed(or expression becomes altered) and become broken down rapidly under an acclimation response. 
-	
-		* **Approach:** Measure the thermal stability of using multiplex proteomics under short and long term heat stress and determine the shift in relative abundance of proteins. The mass spec will give the melting curves of every protein that can be detected. 
+	* **Hypothesis:** Thermally labile proteins are either not expressed(or expression becomes altered) and become broken down rapidly under an acclimation response.
+
+		* **Approach:** Measure the thermal stability of using multiplex proteomics under short and long term heat stress and determine the shift in relative abundance of proteins. The mass spec will give the melting curves of every protein that can be detected.
 		* **Expected outcomes:**
-			* proteins with lower Tm (melting point) have lower expression in long term vs short term responses. 
-			
+			* proteins with lower Tm (melting point) have lower expression in long term vs short term responses.
+
 ![](https://user-images.githubusercontent.com/4654474/37298503-d116f922-25f6-11e8-9896-fee40236c65a.JPG)     
 
 
-			
+
 
 * **Hypothesis:** More thermally labile proteins require molecular chaperoning  (hsp mediated or osmolyte mediated)  
-	
-	* **Approach**- Metabolomics to measure the whole suite of metabolics  between short and long term temperature stress. Coupled with this experiment would be a pull down of Hsps90 and 70 to determine the relative effects of Hsp mediated vs osmolyte mediated chaperoning. 
+
+	* **Approach**- Metabolomics to measure the whole suite of metabolics  between short and long term temperature stress. Coupled with this experiment would be a pull down of Hsps90 and 70 to determine the relative effects of Hsp mediated vs osmolyte mediated chaperoning.
 	* **Expected outcomes:** Either osmolytes or hsp mediated chaperoning plays  a larger role (for which proteins? Is it protein specific? ).    
-		
-		
+
+
 What to expect for Hsp pull down experiment: 		
 
 ![](https://user-images.githubusercontent.com/4654474/37298504-d12a119c-25f6-11e8-92a2-1ef6b73e9950.JPG)  
@@ -3290,24 +3290,24 @@ Hsps target labile proteins
 
 ![](https://user-images.githubusercontent.com/4654474/37298505-d13673ce-25f6-11e8-9a49-9680670d3458.JPG)   
 
-Not sure what to expect from metabolics because there could be so many metabolites. Doing multiple linear regressions of Tm on metabolite concentration could be a start....and then test interaction with treatment. This would suggest that there are context dependencies 
+Not sure what to expect from metabolics because there could be so many metabolites. Doing multiple linear regressions of Tm on metabolite concentration could be a start....and then test interaction with treatment. This would suggest that there are context dependencies
 
 
 
-* **Hypothesis:** One way proteomes can become more stable or maintain stability is by expressing more stable splice variants (isoforms). 
+* **Hypothesis:** One way proteomes can become more stable or maintain stability is by expressing more stable splice variants (isoforms).
 	* Approach - this would come out organically through multiplex mass spec
 	* Expected outcome:
 
 
-		
 
-2018-03-12. Tweaking the flow diagram of proteostasis. 
-		
+
+2018-03-12. Tweaking the flow diagram of proteostasis.
+
 ![](https://user-images.githubusercontent.com/4654474/37293307-48d3964a-25e9-11e8-9e4a-88e0e3bec789.png)
 
 This one is not centered about the meaning of the different ways proteomes can be stable, but more about what are the types of fates or responses there are for stable and unstable proteins.   
 
-Ok, tweaked flow diagram some more: 
+Ok, tweaked flow diagram some more:
 
 ![](https://user-images.githubusercontent.com/4654474/37301358-ba044c82-25fe-11e8-932d-0c8ebaeb32af.png)
 
@@ -3319,63 +3319,63 @@ horizontal version
 ------
 
 <div id='id-section44'/>    
-    
+
 ### Page 44:  2018-03-16. Flow of ideas for evolution talk  
 
 
-Got picked to be in evolutionary physiology symposium 
+Got picked to be in evolutionary physiology symposium
 
 **S69:Organizers: Mathieu Buoro, Jacques Labonne, Matthew MacManes, Sylvie Oddou-Muratorio**
 
 *Evolutionary physiology, or the study of an animal’s or plant’s physiological processes within an integrative evolutionary, ecological, or comparative framework has grown in popularity over the past several years. Particularly in the light of adaptation, understanding how organisms respond to their ever-changing biotic or abiotic environments, by altering physiological processes, is foundational yet often an overlooked discipline within evolutionary biology.  This symposium aims to bring together a group of researchers interested in physiology across a wide variety of scales (e.g., from individual organisms to communities, including the exploration of feedback mechanisms between the two levels), physiological systems (e.g., neuro, endocrine, pulmonary, metabolic, photosynthetic), and approaches (e.g., modeling, genomic, molecular, population-level, field-based).  This symposium will promote discussion and collaboration with symposium participants and the audience members, allowing for the formation of a deep and synergistic understanding of the mechanisms that underlie physiological responses to our changing world. This is particularly timely, as newer methodological approaches, including high-throughput phenotyping is becoming more commonplace, and as evolutionary biology faces the great challenge of producing operational predictions about biodiversity dynamics in a context of rapid environmental and climatic change.*   
 
 
-I'll be presenting my hsp rxn norm work. Flow of ideas for talk: 
+I'll be presenting my hsp rxn norm work. Flow of ideas for talk:
 
-* Varying environments pose a problem for populations and species to persist because living in each of them have different requirements. This is especially true for ectotherms where for example, environmental temperatures influence internal body temperatures and has consequences on how they perform.  High temperatuers damage proteins, leading to loss in biological activity and negative fitness consequences. 
+* Varying environments pose a problem for populations and species to persist because living in each of them have different requirements. This is especially true for ectotherms where for example, environmental temperatures influence internal body temperatures and has consequences on how they perform.  High temperatuers damage proteins, leading to loss in biological activity and negative fitness consequences.
 
 * Illustrate the thermal performance curves
 
-* How may we expect organisms to respond to high temperatures? And how have they historically adapted? 
-	* they need to resist or tolerate it 
+* How may we expect organisms to respond to high temperatures? And how have they historically adapted?
+	* they need to resist or tolerate it
 		* under resistance, proteins are more stable
 		* under tolerance, protein function may be recovered, or the toxic ones are discarded
 
-* So I'm asking two questions, how has selection operated on upper thermal limits and in what ways can organism resist and/or tolerate temperature stress? What are the adaptive ways species utilize their hsps to maintain proteostasis? 
+* So I'm asking two questions, how has selection operated on upper thermal limits and in what ways can organism resist and/or tolerate temperature stress? What are the adaptive ways species utilize their hsps to maintain proteostasis?
 
-* Ants are a good system to approach these questions because: 
+* Ants are a good system to approach these questions because:
 	* They're everywhere, so they likely have adaptations that facilitate their diversificiations
 	* They're long-lived, so they're accustomed to responding to variable environments within their lifetimes and we'd expect plastic mechanisms to be critical for their performance
-	* common woodland ants 
-* Common woodland ants span a large lat gradient and 
-* In this system, we asked, what aspects of the local environment shapes their ability to take the heat? 
+	* common woodland ants
+* Common woodland ants span a large lat gradient and
+* In this system, we asked, what aspects of the local environment shapes their ability to take the heat?
 	* we slow ramped heat shocked them , measured their ctmax
 * We found that habitat type to be more critical for shaping variation in ctmax
 	* Ancestral state reconstruction shows an evolutionary transition into open canopy forests
 	* this represents an evolutionary innovation
-* We then asked, ok, are ants resisting or tolerating the heat? 
-* Approach: we estimated tactics of resistance and tolerance by measuring the expression kinetics of critical proteins involved in the stress response. Go over each tactic. 
+* We then asked, ok, are ants resisting or tolerating the heat?
+* Approach: we estimated tactics of resistance and tolerance by measuring the expression kinetics of critical proteins involved in the stress response. Go over each tactic.
 
 * We found evidence for resistance and tolerance.   
 
-* Coordinated, adaptive shifts in the ways forest ants use hsps may have facilitated their divergence and diversification and lays out the expectations for the types of responses needed for a rapidly changing world. 
+* Coordinated, adaptive shifts in the ways forest ants use hsps may have facilitated their divergence and diversification and lays out the expectations for the types of responses needed for a rapidly changing world.
 
 
 
 ------
 
 <div id='id-section45'/>    
-    
+
 ### Page 45:  2018-03-22. re-analysis of diapause exit in rhago   
 
 
-Tom sent me a data set where he refitted biphasic functions on a more accurate dataset. The problem with the last one was that it included metabolic rate measurements of adults. So this new dataset excluded those measurements. One additional concern is that there is error in the estimates of the function valued traits.  I'll do some multiple linear regressions to test the effect of function valued trait parameters and their interaction with host on eclosion timing. 
+Tom sent me a data set where he refitted biphasic functions on a more accurate dataset. The problem with the last one was that it included metabolic rate measurements of adults. So this new dataset excluded those measurements. One additional concern is that there is error in the estimates of the function valued traits.  I'll do some multiple linear regressions to test the effect of function valued trait parameters and their interaction with host on eclosion timing.
 
-### Uncorrected for estimate error 
+### Uncorrected for estimate error
 
-I'll scale the variables so that the betas are comparable for each continuous predictor. 
+I'll scale the variables so that the betas are comparable for each continuous predictor.
 
-**multiple linear regression** 
+**multiple linear regression**
 
 ```R
 uncor3<-data.frame(cbind(apply(uncor[,3:7],2,scale),uncor[,1:2],uncor[,8]))
@@ -3397,7 +3397,7 @@ knitr::kable(summary(stepAIC(full.mod3,direction="both"))$coefficients)
 |hostH:plat  | -1.2750041|  0.6721143|  -1.8970048|          0.0628978|
 
 
-**PCA parameters and then multiple linear regression** 
+**PCA parameters and then multiple linear regression**
 
 
 ```R
@@ -3420,7 +3420,7 @@ knitr::kable(ucor.pca.param$loadings[,1:3])
 |EX   |  0.0159609| -0.9998101| -0.0110578|
 |c1   | -0.0004855| -0.0110116|  0.9994103|
 
-Termination timing dominates pc1, so test for it's independent effect. 
+Termination timing dominates pc1, so test for it's independent effect.
 
 ```R
 term.mod1<-lm(Eclosion~host*term,data=cdw.pc)
@@ -3498,9 +3498,9 @@ summary(mod.sel1)
 |hostH:plat  |  6.175939|   4.704094|  1.3128860|          0.1947736|
 |hostH:term  | 18.416788|   3.323757|  5.5409553|          0.0000009|
 
-**Figure showing the interaction between term and host on eclosion 
+**Figure showing the interaction between term and host on eclosion
 
-standardized termination first: 
+standardized termination first:
 
 ```R
 
@@ -3513,7 +3513,7 @@ ggplot(comb.dat.wide,aes(x=termres,y=Eclosion,colour=host))+stat_smooth(method="
 
 **PCA and then multiple linear regression**   
 
-PCA loadings: 
+PCA loadings:
 
 ```R
 pca.param<-princomp(comb.dat.wide[,6:10])
@@ -3545,49 +3545,49 @@ regression model with pcs:
 |hostH:Comp.1 | 19.754392|  12.901890|  1.5311239|          0.1310834|
 |hostH:Comp.2 |  9.558117|   9.918091|  0.9637052|          0.3391271|
 
-No effect of PCs on eclosion. 
+No effect of PCs on eclosion.
 
-### Take home: 
+### Take home:
 
 IN the error corrected analysis, we found a term * host interaction, but not in the uncorrected analysis. The PCA doesn't add much, other than the fact that the correlational structure among parameters does not account for any of the variation in eclosion (in the corrected analysis). This might be a good talking point, because these parameters may be evolving independently and aren't constraining one another (covariation isn't functionally relevant).
 
 ------
 
 <div id='id-section46'/>    
-    
+
 ### Page 46:  2018-03-23. Meeting with dan, plan of actions    
 
-Met with Dan. 
+Met with Dan.
 
-1. Tom's re-analysis: write up results and methods, set figures 
+1. Tom's re-analysis: write up results and methods, set figures
 	* Settle on figures and send to Tom/Dan
-2. Proteostasis project: 
+2. Proteostasis project:
 	* Choose which lines? DSPR? DGRP? Look into papers about these lines and the pros and cons of using them
-	* For the lab meeting, just specify 1 project (prob proteome stability one) and send out paper. 
+	* For the lab meeting, just specify 1 project (prob proteome stability one) and send out paper.
 		* Sent! April 2nd, Monday.  
 3. Range limits paragraph- GOOD to go!
 	* Sent out new version of ms to co-authors!
-	* Nick to give me feed back next week 
+	* Nick to give me feed back next week
 
 ------
 
 <div id='id-section47'/>    
-    
+
 ### Page 47:  2018-04-02. Redundancy analysis
 
 
-Thinking about how to analyze datasets where there are not only multiple predictor variables(X's), but also to include multiple response variables (Y's). Redundancy analysis combines PCAs with multiple linear regressions with the goal of displaying and explaining variation in set of response varaibles CONSTRAINED by second set of predictor variables. 
+Thinking about how to analyze datasets where there are not only multiple predictor variables(X's), but also to include multiple response variables (Y's). Redundancy analysis combines PCAs with multiple linear regressions with the goal of displaying and explaining variation in set of response varaibles CONSTRAINED by second set of predictor variables.
 
-ex: What variables best explain variation in fungal communities sampled along a gradient of fungicide toxicity? 
+ex: What variables best explain variation in fungal communities sampled along a gradient of fungicide toxicity?
 
-A lot of outputs are graphical, there a stats table? 
+A lot of outputs are graphical, there a stats table?
 
 
 
 ------
 
 <div id='id-section48'/>    
-    
+
 ### Page 48:  2018-04-17. notes; rhagoletis brain transcriptome   
 
 Greg's group has analyzed data with edgeR and different clustering techniques to try to understand how host races differ in their transcriptional responses. They can have a common one which relates to just diapause. However, hosts can diverge in their transcriptional response and I'm still trying to understand what types of interactions are meaningful(or what they mean) in the context of race differences in diapause. They can start out diff early but then converge, or they can start out the same and differ in slopes.
@@ -3597,17 +3597,17 @@ Perhaps we need to think about this in the context of diapause modules: maintane
 Meeting with Greg:
 
 * PI's want me to work on cerasi data
-* I need to be more familiar with the system - comparisons of low and high land 
-* Make the anlayses comparable with pomonella data. Are tehre similar modules? 
+* I need to be more familiar with the system - comparisons of low and high land
+* Make the anlayses comparable with pomonella data. Are tehre similar modules?
 * Try different clustering algorthms for diff expressed genes
-* Use edgeR to test the effect of time x host interaction 
+* Use edgeR to test the effect of time x host interaction
 * Greg to send me dataset and scripts; I'll make a private github repo
 
 
 ------
 
 <div id='id-section49'/>    
-    
+
 ### Page 49:  2018-04-18. update and biological rhythms notes    
 
 status updates on projects:
@@ -3615,29 +3615,29 @@ status updates on projects:
 1. thermal niche ms- double checking data and then need to re-analyze
 	* shc thinks ctmin values might shift if there are mis-IDs
 2. hsp rxn norm ms- in shc's and njg's hands
-	* they need to look over the results 
-	* i still need to finish the discussion, it is written, but needs more citations, and need to revisit 
+	* they need to look over the results
+	* i still need to finish the discussion, it is written, but needs more citations, and need to revisit
 3. cerasi data analysis
 	* Greg to get me dataset in 1 week
-	* create a github repo with research plan and hypotheses, expected outcomes 
+	* create a github repo with research plan and hypotheses, expected outcomes
 4. biological rhythms
-	* presenting a poster and datablitz 1 slide 1min talk at biological rhythms conference may 12-16. poster session is may 13 to 16. 
-	* data blitz talk is 8pm 
-	* posters are always up but I need to stand by mine on sunday 
-	* one thing i can test in my dataset is viability selection on MR. So does MR influence survival to adulthood? 
+	* presenting a poster and datablitz 1 slide 1min talk at biological rhythms conference may 12-16. poster session is may 13 to 16.
+	* data blitz talk is 8pm
+	* posters are always up but I need to stand by mine on sunday
+	* one thing i can test in my dataset is viability selection on MR. So does MR influence survival to adulthood?
 5. evolution meeting - giving a talk and need to buy plane tickets, already registered
 
 
 notes on biological rhythms. We were low on trikinetics monitor space, so we had to move monitor #6 around between entrainment and free-run. This is the circ repo script, but also adding in my nb. The below also refers to physical notebook, not electronic.
 
 2018-04-18
-additional notes: 
+additional notes:
 
-We were running low on trikinetics space, so we had to switch some monitors around. First, #1 and 2 are in entrainment, while 3,4,5,6 are in free-run conditions. We took out #6 from free run to entrainment on 2018-03-23,20:00 or 8:00PM (nb#002,page 178, parse on 227487) and then switched it back on 2018-04-05(parse on count number 241326; nb#003,page14-15). 
+We were running low on trikinetics space, so we had to switch some monitors around. First, #1 and 2 are in entrainment, while 3,4,5,6 are in free-run conditions. We took out #6 from free run to entrainment on 2018-03-23,20:00 or 8:00PM (nb#002,page 178, parse on 227487) and then switched it back on 2018-04-05(parse on count number 241326; nb#003,page14-15).
 
-To deal with monitor #6 having a combination of free-run and entrainment data counts, we will need to subset out the data from when #6 was in entrainment. We can take this subset and call it a diff monitor altogether ("6.2") and then assign different experimental classes for #6 and #6.2. 
+To deal with monitor #6 having a combination of free-run and entrainment data counts, we will need to subset out the data from when #6 was in entrainment. We can take this subset and call it a diff monitor altogether ("6.2") and then assign different experimental classes for #6 and #6.2.
 
-Another complication: There are samples in the move from entrainment to free-run in monitor #6 that needed to be moved to monitors #1 and #2. So this means some flies have had entrainment that were in 2 monitors. See notebook #003, page 14-15. Here is the list: 
+Another complication: There are samples in the move from entrainment to free-run in monitor #6 that needed to be moved to monitors #1 and #2. So this means some flies have had entrainment that were in 2 monitors. See notebook #003, page 14-15. Here is the list:
 
 |uniqueID   | trik_monitor_6| trik_monitor_6_position| new_trik_monitor| new_trik_position|time  |date       |
 |:----------|--------------:|-----------------------:|----------------:|-----------------:|:-----|:----------|
@@ -3660,12 +3660,12 @@ Another complication: There are samples in the move from entrainment to free-run
 ------
 
 <div id='id-section50'/>    
-    
+
 ### Page 50:  2018-04-24. Reading *R. cerasi* papers
 
 I'm getting more familiar with the system.
 
-I'm encountering this word, Stenophagous, which refers to an animal that feeds on a limited variety of foods. Terrible word. 
+I'm encountering this word, Stenophagous, which refers to an animal that feeds on a limited variety of foods. Terrible word.
 
 ------
 
@@ -3673,7 +3673,7 @@ Decomposing the abstract-
 
 No clear goals or objectives
 
-Approach: Measure diapause incidence at 5 constant temperatures for 2 populations. 
+Approach: Measure diapause incidence at 5 constant temperatures for 2 populations.
 
 Result: short winters or warmer temperatures influence dormancy (the abstract doesn't have a direction of effect)
 
@@ -3684,943 +3684,972 @@ What does this even mean? ....
 ------
 
 
-Looking through figures first. 
+Looking through figures first.
 
-Why are they showing climate for each site as a table. How about a graph? 
+Why are they showing climate for each site as a table. How about a graph?
 
-Figure 1: They plot proportion of pupae in stacked bar pots for each chilling period or 3 conditions: adults, overlaying(surviving pupae), and dead. They do this for each site and constant temperature. It is hard to see if there is a site by chilling period by class interaction. It looks like pupae are more alive at higher temperatures for all sites and under shorter chilling periods. 
+Figure 1: They plot proportion of pupae in stacked bar pots for each chilling period or 3 conditions: adults, overlaying(surviving pupae), and dead. They do this for each site and constant temperature. It is hard to see if there is a site by chilling period by class interaction. It looks like pupae are more alive at higher temperatures for all sites and under shorter chilling periods.
 
-Table 3 says there is a: population by temperature interaction, population by chilling period, temperature by chilling period interaction. 
+Table 3 says there is a: population by temperature interaction, population by chilling period, temperature by chilling period interaction.
 
-Figure 2: Warmer population has less overlaying pupae at shorter chilling periods (months at 5 C) than cooler populations 
+Figure 2: Warmer population has less overlaying pupae at shorter chilling periods (months at 5 C) than cooler populations
 
-Going over intro: 
+Going over intro:
 
 Their first hypothesis was that diapause intensity varies...
-They predict pupae from warm regions need short exposure to cold to terminate diapause than pupae from colder regions. 
+They predict pupae from warm regions need short exposure to cold to terminate diapause than pupae from colder regions.
 
 3rd hypothesis- pupae cannot meet their chilling requirements for diapause termation under warmer winter temperatures and/or short cold exposures. This will cause prolonged dormancy.
 
-Plain english: Populations that have evolved in warm or cold environments have different requirements for maintaining and terminating diapause. If conditions are unfavorable, these flies will continue to remain in dormancy. It probably takes less time in winter(cold temperatures) to maintain and terminate diapause in warm populations than cooler ones. 
+Plain english: Populations that have evolved in warm or cold environments have different requirements for maintaining and terminating diapause. If conditions are unfavorable, these flies will continue to remain in dormancy. It probably takes less time in winter(cold temperatures) to maintain and terminate diapause in warm populations than cooler ones.
 
-I wished they graphed the results better to see the population * temperature effects and other interactions. 
+I wished they graphed the results better to see the population * temperature effects and other interactions.
 
-ref: 
+ref:
 
 Diapause termination of Rhagoletis cerasi pupae is regulated by local adaptation and phenotypic plasticity: escape in time through bet-hedging strategies
 
 
-ref: 
+ref:
 
 Physiological and biological patterns of a highland and a coastal population of the European cherry fruit fly during diapause
 
 ------
 
 <div id='id-section51'/>    
-    
+
 ### Page 51: 2018-04-25. Biological rhythms thoughts
 
-One way to explore the data in the biological rhythms project is to test whether there is greater viability selection for flies that have high metabolic rate. 
+One way to explore the data in the biological rhythms project is to test whether there is greater viability selection for flies that have high metabolic rate.
 
-Ok, back up. The main question is this: What maintains the variation in metabolic rates prior to entering dormancy? We see a lot more variation in metabolic rates for early eclosers compared to late eclosers. Why? Is this a bet hedging strategy where ones with higher metabolic rates can be more readily active if future conditions are favorable? Is there a cost to having high metabolic rates? Feder suggests that early eclosers with high metabolic rates are "doomed", meaning they'll die when they encounter winter conditions. 
+Ok, back up. The main question is this: What maintains the variation in metabolic rates prior to entering dormancy? We see a lot more variation in metabolic rates for early eclosers compared to late eclosers. Why? Is this a bet hedging strategy where ones with higher metabolic rates can be more readily active if future conditions are favorable? Is there a cost to having high metabolic rates? Feder suggests that early eclosers with high metabolic rates are "doomed", meaning they'll die when they encounter winter conditions.
 
 
 Lets lay out the hypotheses:
 1. Flies with high metabolic rates face greater mortality under simulated overwintering
 
-We can compare this to flies that aren't forced to overwinter. 
+We can compare this to flies that aren't forced to overwinter.
 
 ------
 
 <div id='id-section52'/>    
-    
-### Page 52:  
+
+### Page 52:  2018-05-01. project update    
+
+
+1. Biological rhythms proj
+  * giving a poster May 7 for biodiv conf at UF and biological rhythms May12
+  * giving a 1 min slide presentation data blitz at biological rhythms conference
+    * need to upload the talk
+  * some prelim shows eclosion diffs between flies and parasitoids and this pattern folows the dominant biological rhythms under free run but not entrainment
+
+2. cerasi proj
+  * Greg to send me dataset
+
+3. diapause exit paper (tom)
+  * tom sent me data and I need to redo figures
+  * once I do that, I can clean up the results, methods, and work on discussions
+
+4. hsp rxn norm paper
+  * NJG and SHC hands
+  * I should revisit it, especially the discussion
+
+5. range limits ms
+  * In review!!
+
+6. thermal niche paper (lchick)
+  * double checked data, results changed a little; main effect of local env temp, but no species effect in field ctmax and ctmin
+    * however, the data are a bit non-linear for ctmin in the field, so we tried a breakpoint analysis and both species have breakpoints.
+    * intepretation: "so at the cold end of the range, selection is acting more strong for rudis than picea. Picea may already be at it's cold limits
+at the warm edge of the range, we see the opposite, where selection is operating to a larger degree in picea than rudis"
+
+7. lat var paper with chao
+  * have to finish results section, analysis done
 
 ------
 
 <div id='id-section53'/>    
-    
+
 ### Page 53:  
 
 ------
 
 <div id='id-section54'/>    
-    
+
 ### Page 54:  
 
 ------
 
 <div id='id-section55'/>    
-    
+
 ### Page 55:  
 
 ------
 
 <div id='id-section56'/>    
-    
+
 ### Page 56:  
 
 ------
 
 <div id='id-section57'/>    
-    
+
 ### Page 57:  
 
 ------
 
 <div id='id-section58'/>    
-    
+
 ### Page 58:  
 
 ------
 
 <div id='id-section59'/>    
-    
+
 ### Page 59:  
 
 ------
 
 <div id='id-section60'/>    
-    
+
 ### Page 60:  
 
 ------
 
 <div id='id-section61'/>    
-    
+
 ### Page 61:  
 
 ------
 
 <div id='id-section62'/>    
-    
+
 ### Page 62:  
 
 ------
 
 <div id='id-section63'/>    
-    
+
 ### Page 63:  
 
 ------
 
 <div id='id-section64'/>    
-    
+
 ### Page 64:  
 
 ------
 
 <div id='id-section65'/>    
-    
+
 ### Page 65:  
 
 ------
 
 <div id='id-section66'/>    
-    
+
 ### Page 66:  
 
 ------
 
 <div id='id-section67'/>    
-    
+
 ### Page 67:  
 
 ------
 
 <div id='id-section68'/>    
-    
+
 ### Page 68:  
 
 ------
 
 <div id='id-section69'/>    
-    
+
 ### Page 69:  
 
 ------
 
 <div id='id-section70'/>    
-    
+
 ### Page 70:  
 
 ------
 
 <div id='id-section71'/>    
-    
+
 ### Page 71:  
 
 ------
 
 <div id='id-section72'/>    
-    
+
 ### Page 72:  
 
 ------
 
 <div id='id-section73'/>    
-    
+
 ### Page 73:  
 
 ------
 
 <div id='id-section74'/>    
-    
+
 ### Page 74:  
 
 ------
 
 <div id='id-section75'/>    
-    
+
 ### Page 75:  
 
 ------
 
 <div id='id-section76'/>    
-    
+
 ### Page 76:  
 
 ------
 
 <div id='id-section77'/>    
-    
+
 ### Page 77:  
 
 ------
 
 <div id='id-section78'/>    
-    
+
 ### Page 78:  
 
 ------
 
 <div id='id-section79'/>    
-    
+
 ### Page 79:  
 
 ------
 
 <div id='id-section80'/>    
-    
+
 ### Page 80:  
 
 ------
 
 <div id='id-section81'/>    
-    
+
 ### Page 81:  
 
 ------
 
 <div id='id-section82'/>    
-    
+
 ### Page 82:  
 
 ------
 
 <div id='id-section83'/>    
-    
+
 ### Page 83:  
 
 ------
 
 <div id='id-section84'/>    
-    
+
 ### Page 84:  
 
 ------
 
 <div id='id-section85'/>    
-    
+
 ### Page 85:  
 
 ------
 
 <div id='id-section86'/>    
-    
+
 ### Page 86:  
 
 ------
 
 <div id='id-section87'/>    
-    
+
 ### Page 87:  
 
 ------
 
 <div id='id-section88'/>    
-    
+
 ### Page 88:  
 
 ------
 
 <div id='id-section89'/>    
-    
+
 ### Page 89:  
 
 ------
 
 <div id='id-section90'/>    
-    
+
 ### Page 90:  
 
 ------
 
 <div id='id-section91'/>    
-    
+
 ### Page 91:  
 
 ------
 
 <div id='id-section92'/>    
-    
+
 ### Page 92:  
 
 ------
 
 <div id='id-section93'/>    
-    
+
 ### Page 93:  
 
 ------
 
 <div id='id-section94'/>    
-    
+
 ### Page 94:  
 
 ------
 
 <div id='id-section95'/>    
-    
+
 ### Page 95:  
 
 ------
 
 <div id='id-section96'/>    
-    
+
 ### Page 96:  
 
 ------
 
 <div id='id-section97'/>    
-    
+
 ### Page 97:  
 
 ------
 
 <div id='id-section98'/>    
-    
+
 ### Page 98:  
 
 ------
 
 <div id='id-section99'/>    
-    
+
 ### Page 99:  
 
 ------
 
 <div id='id-section100'/>    
-    
+
 ### Page 100:  
 
 ------
 
 <div id='id-section101'/>    
-    
+
 ### Page 101:  
 
 ------
 
 <div id='id-section102'/>    
-    
+
 ### Page 102:  
 
 ------
 
 <div id='id-section103'/>    
-    
+
 ### Page 103:  
 
 ------
 
 <div id='id-section104'/>    
-    
+
 ### Page 104:  
 
 ------
 
 <div id='id-section105'/>    
-    
+
 ### Page 105:  
 
 ------
 
 <div id='id-section106'/>    
-    
+
 ### Page 106:  
 
 ------
 
 <div id='id-section107'/>    
-    
+
 ### Page 107:  
 
 ------
 
 <div id='id-section108'/>    
-    
+
 ### Page 108:  
 
 ------
 
 <div id='id-section109'/>    
-    
+
 ### Page 109:  
 
 ------
 
 <div id='id-section110'/>    
-    
+
 ### Page 110:  
 
 ------
 
 <div id='id-section111'/>    
-    
+
 ### Page 111:  
 
 ------
 
 <div id='id-section112'/>    
-    
+
 ### Page 112:  
 
 ------
 
 <div id='id-section113'/>    
-    
+
 ### Page 113:  
 
 ------
 
 <div id='id-section114'/>    
-    
+
 ### Page 114:  
 
 ------
 
 <div id='id-section115'/>    
-    
+
 ### Page 115:  
 
 ------
 
 <div id='id-section116'/>    
-    
+
 ### Page 116:  
 
 ------
 
 <div id='id-section117'/>    
-    
+
 ### Page 117:  
 
 ------
 
 <div id='id-section118'/>    
-    
+
 ### Page 118:  
 
 ------
 
 <div id='id-section119'/>    
-    
+
 ### Page 119:  
 
 ------
 
 <div id='id-section120'/>    
-    
+
 ### Page 120:  
 
 ------
 
 <div id='id-section121'/>    
-    
+
 ### Page 121:  
 
 ------
 
 <div id='id-section122'/>    
-    
+
 ### Page 122:  
 
 ------
 
 <div id='id-section123'/>    
-    
+
 ### Page 123:  
 
 ------
 
 <div id='id-section124'/>    
-    
+
 ### Page 124:  
 
 ------
 
 <div id='id-section125'/>    
-    
+
 ### Page 125:  
 
 ------
 
 <div id='id-section126'/>    
-    
+
 ### Page 126:  
 
 ------
 
 <div id='id-section127'/>    
-    
+
 ### Page 127:  
 
 ------
 
 <div id='id-section128'/>    
-    
+
 ### Page 128:  
 
 ------
 
 <div id='id-section129'/>    
-    
+
 ### Page 129:  
 
 ------
 
 <div id='id-section130'/>    
-    
+
 ### Page 130:  
 
 ------
 
 <div id='id-section131'/>    
-    
+
 ### Page 131:  
 
 ------
 
 <div id='id-section132'/>    
-    
+
 ### Page 132:  
 
 ------
 
 <div id='id-section133'/>    
-    
+
 ### Page 133:  
 
 ------
 
 <div id='id-section134'/>    
-    
+
 ### Page 134:  
 
 ------
 
 <div id='id-section135'/>    
-    
+
 ### Page 135:  
 
 ------
 
 <div id='id-section136'/>    
-    
+
 ### Page 136:  
 
 ------
 
 <div id='id-section137'/>    
-    
+
 ### Page 137:  
 
 ------
 
 <div id='id-section138'/>    
-    
+
 ### Page 138:  
 
 ------
 
 <div id='id-section139'/>    
-    
+
 ### Page 139:  
 
 ------
 
 <div id='id-section140'/>    
-    
+
 ### Page 140:  
 
 ------
 
 <div id='id-section141'/>    
-    
+
 ### Page 141:  
 
 ------
 
 <div id='id-section142'/>    
-    
+
 ### Page 142:  
 
 ------
 
 <div id='id-section143'/>    
-    
+
 ### Page 143:  
 
 ------
 
 <div id='id-section144'/>    
-    
+
 ### Page 144:  
 
 ------
 
 <div id='id-section145'/>    
-    
+
 ### Page 145:  
 
 ------
 
 <div id='id-section146'/>    
-    
+
 ### Page 146:  
 
 ------
 
 <div id='id-section147'/>    
-    
+
 ### Page 147:  
 
 ------
 
 <div id='id-section148'/>    
-    
+
 ### Page 148:  
 
 ------
 
 <div id='id-section149'/>    
-    
+
 ### Page 149:  
 
 ------
 
 <div id='id-section150'/>    
-    
+
 ### Page 150:  
 
 ------
 
 <div id='id-section151'/>    
-    
+
 ### Page 151:  
 
 ------
 
 <div id='id-section152'/>    
-    
+
 ### Page 152:  
 
 ------
 
 <div id='id-section153'/>    
-    
+
 ### Page 153:  
 
 ------
 
 <div id='id-section154'/>    
-    
+
 ### Page 154:  
 
 ------
 
 <div id='id-section155'/>    
-    
+
 ### Page 155:  
 
 ------
 
 <div id='id-section156'/>    
-    
+
 ### Page 156:  
 
 ------
 
 <div id='id-section157'/>    
-    
+
 ### Page 157:  
 
 ------
 
 <div id='id-section158'/>    
-    
+
 ### Page 158:  
 
 ------
 
 <div id='id-section159'/>    
-    
+
 ### Page 159:  
 
 ------
 
 <div id='id-section160'/>    
-    
+
 ### Page 160:  
 
 ------
 
 <div id='id-section161'/>    
-    
+
 ### Page 161:  
 
 ------
 
 <div id='id-section162'/>    
-    
+
 ### Page 162:  
 
 ------
 
 <div id='id-section163'/>    
-    
+
 ### Page 163:  
 
 ------
 
 <div id='id-section164'/>    
-    
+
 ### Page 164:  
 
 ------
 
 <div id='id-section165'/>    
-    
+
 ### Page 165:  
 
 ------
 
 <div id='id-section166'/>    
-    
+
 ### Page 166:  
 
 ------
 
 <div id='id-section167'/>    
-    
+
 ### Page 167:  
 
 ------
 
 <div id='id-section168'/>    
-    
+
 ### Page 168:  
 
 ------
 
 <div id='id-section169'/>    
-    
+
 ### Page 169:  
 
 ------
 
 <div id='id-section170'/>    
-    
+
 ### Page 170:  
 
 ------
 
 <div id='id-section171'/>    
-    
+
 ### Page 171:  
 
 ------
 
 <div id='id-section172'/>    
-    
+
 ### Page 172:  
 
 ------
 
 <div id='id-section173'/>    
-    
+
 ### Page 173:  
 
 ------
 
 <div id='id-section174'/>    
-    
+
 ### Page 174:  
 
 ------
 
 <div id='id-section175'/>    
-    
+
 ### Page 175:  
 
 ------
 
 <div id='id-section176'/>    
-    
+
 ### Page 176:  
 
 ------
 
 <div id='id-section177'/>    
-    
+
 ### Page 177:  
 
 ------
 
 <div id='id-section178'/>    
-    
+
 ### Page 178:  
 
 ------
 
 <div id='id-section179'/>    
-    
+
 ### Page 179:  
 
 ------
 
 <div id='id-section180'/>    
-    
+
 ### Page 180:  
 
 ------
 
 <div id='id-section181'/>    
-    
+
 ### Page 181:  
 
 ------
 
 <div id='id-section182'/>    
-    
+
 ### Page 182:  
 
 ------
 
 <div id='id-section183'/>    
-    
+
 ### Page 183:  
 
 ------
 
 <div id='id-section184'/>    
-    
+
 ### Page 184:  
 
 ------
 
 <div id='id-section185'/>    
-    
+
 ### Page 185:  
 
 ------
 
 <div id='id-section186'/>    
-    
+
 ### Page 186:  
 
 ------
 
 <div id='id-section187'/>    
-    
+
 ### Page 187:  
 
 ------
 
 <div id='id-section188'/>    
-    
+
 ### Page 188:  
 
 ------
 
 <div id='id-section189'/>    
-    
+
 ### Page 189:  
 
 ------
 
 <div id='id-section190'/>    
-    
+
 ### Page 190:  
 
 ------
 
 <div id='id-section191'/>    
-    
+
 ### Page 191:  
 
 ------
 
 <div id='id-section192'/>    
-    
+
 ### Page 192:  
 
 ------
 
 <div id='id-section193'/>    
-    
+
 ### Page 193:  
 
 ------
 
 <div id='id-section194'/>    
-    
+
 ### Page 194:  
 
 ------
 
 <div id='id-section195'/>    
-    
+
 ### Page 195:  
 
 ------
 
 <div id='id-section196'/>    
-    
+
 ### Page 196:  
 
 ------
 
 <div id='id-section197'/>    
-    
+
 ### Page 197:  
 
 ------
 
 <div id='id-section198'/>    
-    
+
 ### Page 198:  
 
 ------
 
 <div id='id-section199'/>    
-    
+
 ### Page 199:  
 
 ------
 
 <div id='id-section200'/>    
-    
-### Page 200:  
 
+### Page 200:  
