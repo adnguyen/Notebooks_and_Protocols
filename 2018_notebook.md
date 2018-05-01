@@ -3737,34 +3737,34 @@ We can compare this to flies that aren't forced to overwinter.
 ### Page 52:  2018-05-01. project update    
 
 
-1. Biological rhythms proj
-  * giving a poster May 7 for biodiv conf at UF and biological rhythms May12
-  * giving a 1 min slide presentation data blitz at biological rhythms conference
-    * need to upload the talk
-  * some prelim shows eclosion diffs between flies and parasitoids and this pattern folows the dominant biological rhythms under free run but not entrainment
+1. Biological rhythms proj    
+    * giving a poster May 7 for biodiv conf at UF and biological rhythms May12
+    * giving a 1 min slide presentation data blitz at biological rhythms conference
+      * need to upload the talk
+      * some prelim shows eclosion diffs between flies and parasitoids and this pattern folows the dominant biological rhythms under free run but not entrainment
 
-2. cerasi proj
-  * Greg to send me dataset
+2. cerasi proj    
+    * Greg to send me dataset
 
-3. diapause exit paper (tom)
-  * tom sent me data and I need to redo figures
-  * once I do that, I can clean up the results, methods, and work on discussions
+3. diapause exit paper (tom)   
+    * tom sent me data and I need to redo figures
+    * once I do that, I can clean up the results, methods, and work on discussions
 
-4. hsp rxn norm paper
-  * NJG and SHC hands
-  * I should revisit it, especially the discussion
+4. hsp rxn norm paper   
+    * NJG and SHC hands
+    * I should revisit it, especially the discussion
 
-5. range limits ms
-  * In review!!
+5. range limits ms   
+    * In review!!
 
-6. thermal niche paper (lchick)
-  * double checked data, results changed a little; main effect of local env temp, but no species effect in field ctmax and ctmin
-    * however, the data are a bit non-linear for ctmin in the field, so we tried a breakpoint analysis and both species have breakpoints.
-    * intepretation: "so at the cold end of the range, selection is acting more strong for rudis than picea. Picea may already be at it's cold limits
+6. thermal niche paper (lchick)    
+    * double checked data, results changed a little; main effect of local env temp, but no species effect in field ctmax and ctmin
+      * however, the data are a bit non-linear for ctmin in the field, so we tried a breakpoint analysis and both species have breakpoints.
+      * intepretation: "so at the cold end of the range, selection is acting more strong for rudis than picea. Picea may already be at it's cold limits
 at the warm edge of the range, we see the opposite, where selection is operating to a larger degree in picea than rudis"
 
-7. lat var paper with chao
-  * have to finish results section, analysis done
+7. lat var paper with chao   
+    * have to finish results section, analysis done
 
 ------
 
