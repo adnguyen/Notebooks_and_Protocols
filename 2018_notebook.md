@@ -72,7 +72,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 50: 2018-04-24 ](#id-section50). Reading *R. cerasi* papers
 * [Page 51: 2018-04-25 ](#id-section51). Biological rhythms thoughts
 * [Page 52: 2018-05-01 ](#id-section52). project update
-* [Page 53:  ](#id-section53).
+* [Page 53: 2018-05-18 ](#id-section53). status update
 * [Page 54:  ](#id-section54).
 * [Page 55:  ](#id-section55).
 * [Page 56:  ](#id-section56).
@@ -3770,7 +3770,59 @@ at the warm edge of the range, we see the opposite, where selection is operating
 
 <div id='id-section53'/>    
 
-### Page 53:  
+### Page 53:  2018-05-18. status update  
+
+## Projects
+
+1. **Biological rhythms proj**    
+	* On-going, measuring eclosions and activity
+	* need to think about collections for later this year
+	* It looks like wasps emerge earlier under constant rearing conditions (cue for favorable environment) than flies and this is reversed under simulated overwintering. This suggests that the wasps are using environmental cues to shift their biological timing. **Is it possible that the wasps are multivoltine?** 
+
+2. **cerasi proj**    
+    * Greg to send me dataset
+		* need to learn WGCNA, which script should I focus on ?
+		* Should set up meeting with greg
+
+In edgeR, I'm assuming they're testing for the interaction between time and population. What would the stats mean?
+
+* Common responses : main effect of time
+* Overall population differences: main effect of population
+* Time by population interaction: populations time their gene expression differently
+
+You can then do functional enrichment in the 3 of these categories.
+
+3. **diapause exit paper (tom)**   
+    * Get on same page for analysis first,
+		* then discuss figures and make them
+		* need feedback on intro
+
+4. hsp rxn norm paper   
+    * NJG and SHC hands
+    * I should revisit it, especially the discussion
+
+5. **range limits ms**   
+    * In review from 2018-04-03 to 2018-05-15
+		* with AE & ED: decission process since 2018-05-15
+
+6. **thermal niche paper (lchick)**    
+    * Lchick sent me edits 2018-05-16; need to look it over and then send it back
+
+7. lat var paper with chao   
+    * have to finish results section, analysis done
+
+## Other items
+
+* Need to set up project for Hchu and set up hours for undergrads.
+* still need to buy tickets for evolution 2018
+
+## Meeting with Dan today:
+
+1. Skype with tom 2:30PM
+2. talk about Forbes et al. 2009 ms
+3. Discuss project for Hchu
+
+
 
 ------
 
