@@ -73,8 +73,8 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 51: 2018-04-25 ](#id-section51). Biological rhythms thoughts
 * [Page 52: 2018-05-01 ](#id-section52). project update
 * [Page 53: 2018-05-18 ](#id-section53). status update
-* [Page 54:  ](#id-section54).
-* [Page 55:  ](#id-section55).
+* [Page 54: 2018-05-18 ](#id-section54). 2018-05-18. ECHO app, by Hannah de Los santos ; [finding circadian rhythms with extended harmonic oscillators](https://www.youtube.com/watch?v=TqQsUF7Yfkg)
+* [Page 55: 2018-05-21 ](#id-section55). Meeting with Tom  
 * [Page 56:  ](#id-section56).
 * [Page 57:  ](#id-section57).
 * [Page 58:  ](#id-section58).
@@ -3777,7 +3777,7 @@ at the warm edge of the range, we see the opposite, where selection is operating
 1. **Biological rhythms proj**    
 	* On-going, measuring eclosions and activity
 	* need to think about collections for later this year
-	* It looks like wasps emerge earlier under constant rearing conditions (cue for favorable environment) than flies and this is reversed under simulated overwintering. This suggests that the wasps are using environmental cues to shift their biological timing. **Is it possible that the wasps are multivoltine?** 
+	* It looks like wasps emerge earlier under constant rearing conditions (cue for favorable environment) than flies and this is reversed under simulated overwintering. This suggests that the wasps are using environmental cues to shift their biological timing. **Is it possible that the wasps are multivoltine?**
 
 2. **cerasi proj**    
     * Greg to send me dataset
@@ -3806,7 +3806,7 @@ You can then do functional enrichment in the 3 of these categories.
 		* with AE & ED: decission process since 2018-05-15
 
 6. **thermal niche paper (lchick)**    
-    * Lchick sent me edits 2018-05-16; need to look it over and then send it back
+    * Lchick sent me edits 2018-05-16; need to look it over and then send it back; done (2018-05-18)
 
 7. lat var paper with chao   
     * have to finish results section, analysis done
@@ -3823,18 +3823,99 @@ You can then do functional enrichment in the 3 of these categories.
 3. Discuss project for Hchu
 
 
+### Meeting notes:
+
+meeting with tom cancelled.
+
+Sanderelli et al. 2007; bombos ; kinetics of timeless.
+
+Talk to dopman. Are the lines pure breeding? If not, make them of period alleles.
+
+
+angle for proteomics projects. Identification of temperature sensitive lethal alleles. Temperature sensitive alleles (david suzuki). May be important for non-models. Sterile technique strain optimization-- rescue with temperature sensitive alleles.
+
+Dan action items:
+
+1. Send dopman email about ECB period
+2. Touch base with Al about proteomics projects  
+3.
 
 ------
 
 <div id='id-section54'/>    
 
-### Page 54:  
+### Page 54:  2018-05-18. ECHO app, by Hannah de Los santos ; [finding circadian rhythms with extended harmonic oscillators](https://www.youtube.com/watch?v=TqQsUF7Yfkg)
+
+youtube link: https://www.youtube.com/watch?v=TqQsUF7Yfkg
+
+Taking notes:
+
+Intro:
+
+What are circadian rhythms - 24 hour endogenous cycles reinforced by external cues such as flights
+
+Health problems associated with disrupting circadian cycles
+
+People measure gene expression adn we observe circaidna rhythms in plants and animals
+
+Data:
+
+Gene expression for 24 time points- starting 2 hours, ending 48 hours, 2 hours resolution, 9624 genes, 3 replicates
+(6 missing time points)
+
+they follow sinusoidal curves. But the models assume fixed amplitudes
+
+Methods: Extended harmonic oscillators
+
+the important part is gamma, which is the forcing coefficient. It is estimated with non-linear least squares. Minimize residuals. Use nlsLM algorithm.
+
+**For replicates, they add weights, where are inverse proportioin of the variance at each time point.**
+
+This is mainly for gxp. But she started with multiple cycles that dampen in amplitude to a dataset with only 2 cycles...what.
 
 ------
 
 <div id='id-section55'/>    
 
-### Page 55:  
+### Page 55: 2018-05-21 Meeting with Tom  
+
+**Diapause exit ms**
+
+Tom's concern is what do corrected residuals mean and their bearing on our biological hypotheses.
+
+In the uncorrected data, scaling, exit, termination are significant, suggesting a common mechanism for apple and haw.
+
+For corrected data, baseline and termination x host interaction are significant. So baseline is the common mechanism, but they diverge in their termination.
+
+Need to consult Greg for the stats.
+
+For the out of winter experiment, I will redo the analysis. The data has non-eclosers and I'll need to parse that out
+
+Tom wants to keep experiment 1 (whole trajectory) and 2 (just baseline) in that order.
+
+Dan- Action Items
+
+1. Tom send me dataset with landmarks and I can re-analyze?
+2. analyze experiment 2 and send tom an email
+3. send Greg a report of our approaches
+	* but coordinate with Tom first
+4. Tom will send us comments on intro by end of weekly
+5. Dan to send out Rhagoletis meeting for the whole family.
+
+
+
+To do list to organize myself over the short term (this week)
+(not in any particular order in terms of priority)
+
+1. Finish paying for evolution meeting travel. Do the paperwork
+	* flight paid
+	* need to pay for housing (going for dorms)
+	* need to pay for train from orlando to miami
+2. Understand edgeR, WGCNA and think about data analysis for cerasi dataset
+3. Re-analyze Tom's dataset, use mixed effects model or repeated measures anova in R. Write up a small technical report and send to Tom.
+
+Need to get these items done this week.
+
 
 ------
 
