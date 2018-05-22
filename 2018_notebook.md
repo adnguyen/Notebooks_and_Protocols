@@ -75,7 +75,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 53: 2018-05-18 ](#id-section53). status update
 * [Page 54: 2018-05-18 ](#id-section54). 2018-05-18. ECHO app, by Hannah de Los santos ; [finding circadian rhythms with extended harmonic oscillators](https://www.youtube.com/watch?v=TqQsUF7Yfkg)
 * [Page 55: 2018-05-21 ](#id-section55). Meeting with Tom  
-* [Page 56:  ](#id-section56).
+* [Page 56: 2018-05-22 ](#id-section56).Circadian rhythm talk by [Katja Lamia](https://www.youtube.com/watch?v=G7xvy7gPhoE&t=103s), scripts research
 * [Page 57:  ](#id-section57).
 * [Page 58:  ](#id-section58).
 * [Page 59:  ](#id-section59).
@@ -3921,7 +3921,58 @@ Need to get these items done this week.
 
 <div id='id-section56'/>    
 
-### Page 56:  
+### Page 56:  2018-05-22. Circadian rhythm talk by [Katja Lamia](https://www.youtube.com/watch?v=G7xvy7gPhoE&t=103s), scripts research
+
+She hosted a session at the biological rhythms conference. Her video link: https://www.youtube.com/watch?v=G7xvy7gPhoE&t=103s  
+
+Title: Saturday Science at Scripps Research: Biological Rhythms:From Sleep to Cancer and Metabolic Disease
+
+She defines circadian rhythms as an internal clock in the body that keeps track of the time of day. Biological rhythms are under the broad framework of homeostasis, which was first talked about by Claude Bernard (1813-1878)
+
+"The constancy of the internal environment is the condition for a free and indepedent life".
+
+Maintaining a constant internal environment is beneficial for health. Changes in environment present a challenge to homeostasis!
+
+Daily rhythms in light, temperature, moisture. They are a challenge, but they're also predictable. Organisms can optimize physiology to antipate changes.
+
+First studies in circadian rhythms were first in plants. Jean Jacque D'ortous de mairan describes rhythmic movements of plant leaves that follow the movement of the sun.
+
+But when plants were placed in constant darkness, the leaves still moved, so it suggests an internal mechanism, not solely driven by ligiht. Leaves also move before the sun comes up, so this is a signature of anticipation, driven by an internal clock. Darwin wrote a book about the movements of plants...wow.
+
+Internal time keeping mechanism.
+
+Woody Hastings (source of inspiration)- Took his course and studied a marine organism that produces bioluminesence at night. He showed that it was govern by a circadian rhythm. It is camo beacuse it makes the org look like moonlight to trick predators.
+
+California Grunion spawns on the beach only at the times of high tide --- circalunar rhythm. Kristin Tessmar-Raible still trying to understand this mechanism (she was at the biological rhythms conference too)
+
+She studies mammals and mice in particular. In mice, the circadian rhthm that is good to measure are running wheels. They're nocturnal and run in running wheels. And they can log counts.
+
+1967 coined circa, circadian .
+
+What is the location of time keeper in the body? In brain. They did lesion studies and disrupted different parts of the brain. 1 position above optic chiasm ---SCN, suprachiasmatic nucleus. And as a result, they disrupted behavioral rhythms. Animals have clocks and where they are located.
+
+Behavior is genetically determined?
+
+1971: Konopka and Seymore Benzer identified mutant flies that altered circadian rhythms. They foudn 3 mutants: 1 with no rhythms, 1 with short and 1 with long rhythms. Genes can influence behavior!
+
+This work led to 1985 papers describing a single gene associated with diff in biological rhythms. Jeff Hall, Michael Rosbash, and Michael Young. Period gene.
+
+Joe Takahashi found that you can disrupt clock and it influenced circadian rhythms in mice.
+
+Negative feedback loop that underlies circadian rhythm, which produces occilations. You need a positive signal, then a 180 degree phase shift with a negative signal feedback loop.
+
+The positive signal: Transcription factors
+The negative signal: Transcriptional repressors
+
+Clock/Bmal increase transcription of per1/2/3 + cry1/2. Per/CRY repress Clock/Bmal.
+
+The positive signal = Clock/biochemical
+The negative signal = Per/Cry
+
+These clock sare everywhere - proboscus, antenna, leg, wing.  IN mice, SCN, lung, liver.
+
+Timing of when you eat matters. A shorter window = don't gain as much weight on a high fat diet. 
+
 
 ------
 
