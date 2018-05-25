@@ -76,7 +76,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 54: 2018-05-18 ](#id-section54). 2018-05-18. ECHO app, by Hannah de Los santos ; [finding circadian rhythms with extended harmonic oscillators](https://www.youtube.com/watch?v=TqQsUF7Yfkg)
 * [Page 55: 2018-05-21 ](#id-section55). Meeting with Tom  
 * [Page 56: 2018-05-22 ](#id-section56).Circadian rhythm talk by [Katja Lamia](https://www.youtube.com/watch?v=G7xvy7gPhoE&t=103s), scripts research
-* [Page 57:  ](#id-section57).
+* [Page 57: 2018-05-25 ](#id-section57). Meeting with Gragland
 * [Page 58:  ](#id-section58).
 * [Page 59:  ](#id-section59).
 * [Page 60:  ](#id-section60).
@@ -3971,14 +3971,36 @@ The negative signal = Per/Cry
 
 These clock sare everywhere - proboscus, antenna, leg, wing.  IN mice, SCN, lung, liver.
 
-Timing of when you eat matters. A shorter window = don't gain as much weight on a high fat diet. 
+Timing of when you eat matters. A shorter window = don't gain as much weight on a high fat diet.
 
 
 ------
 
 <div id='id-section57'/>    
 
-### Page 57:  
+### Page 57:  2018-05-25. Meeting with Gragland
+
+Agenda:
+
+1. Discuss expectations and roles for cerasi data
+	* Data analysis = middle author
+	* data analysis + writing = lead author
+
+Gragland thinks this is reasonable.
+
+
+2. Data analysis
+
+
+For pomonella, he wants to integrate pool-seq, RNA-seq, and brain development datasets. For cerasi, he wants gxp and functional enrichment analysis, but also integrated with the pomonella dataset. He needs to send me a global edgeR output.
+
+GRagland suggestion for parsing data, look at pop x time interaction, but also just differences between low and highland for a given timepoint. He is finding a weird effect where sets of genes that come up early are the ones represented in highland. Counter intuitive, but could be termination supression genes (DHahn says).
+
+Send Gragland github invite to collaborate on project.
+
+
+
+GRagland's thoughts on correcting for error in the estimates of a parameters that come out of a NLS. A bayesian model could account for that error. (From what I'm perusing, it is similar to a metaanalysis). His stance is that correcting for error is probably the better way to go. 
 
 ------
 
