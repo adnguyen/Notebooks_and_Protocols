@@ -77,7 +77,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 55: 2018-05-21 ](#id-section55). Meeting with Tom  
 * [Page 56: 2018-05-22 ](#id-section56).Circadian rhythm talk by [Katja Lamia](https://www.youtube.com/watch?v=G7xvy7gPhoE&t=103s), scripts research
 * [Page 57: 2018-05-25 ](#id-section57). Meeting with Gragland
-* [Page 58:  ](#id-section58).
+* [Page 58: 2018-05-29 ](#id-section58). Set of tasks for HChu
 * [Page 59:  ](#id-section59).
 * [Page 60:  ](#id-section60).
 * [Page 61:  ](#id-section61).
@@ -4000,13 +4000,35 @@ Send Gragland github invite to collaborate on project.
 
 
 
-GRagland's thoughts on correcting for error in the estimates of a parameters that come out of a NLS. A bayesian model could account for that error. (From what I'm perusing, it is similar to a metaanalysis). His stance is that correcting for error is probably the better way to go. 
+GRagland's thoughts on correcting for error in the estimates of a parameters that come out of a NLS. A bayesian model could account for that error. (From what I'm perusing, it is similar to a metaanalysis). His stance is that correcting for error is probably the better way to go.
 
 ------
 
 <div id='id-section58'/>    
 
-### Page 58:  
+### Page 58:  2018-05-29. Set of tasks for HChu   
+
+List of tasks for Hchu
+
+1. European cornborer rearing (trained by Qinwen) and writing up protocols (through Rmarkdown)  
+2. Contribute to the Rhagoletis project:
+	* Checking eclosions, deaths
+	* Transferring entrainment samples to free run
+	* documenting this in master spreadsheet and in notebook
+3. Maintaining personal notebook
+	* to do lists
+	* reading papers
+	* experimental notes
+	* seminar notes
+	* etc
+
+We still need to discuss projects with Dan. Potential projects.
+
+
+1. ECB: THe timing of protein protein interactions underlying seasonal changes in diapause
+2. Proteome stability project: What are the timing of events for proteostasis
+3. Rhagoletis data mining: What are the consequences of diapause depth for overwinter survival?
+
 
 ------
 
