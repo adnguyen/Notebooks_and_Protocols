@@ -79,8 +79,8 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 57: 2018-05-25 ](#id-section57). Meeting with Gragland
 * [Page 58: 2018-05-29 ](#id-section58). Set of tasks for HChu
 * [Page 59: 2018-06-04 ](#id-section59). meeting wth Gragland, cerasi data filtering and future analyses
-* [Page 60: 2018-06-01](#id-section60). meeting with Dan
-* [Page 61:  ](#id-section61).
+* [Page 60: 2018-06-04 ](#id-section60). Hchu list of projects
+* [Page 61: 2018-06-01 ](#id-section61).meeting with Dan
 * [Page 62:  ](#id-section62).
 * [Page 63:  ](#id-section63).
 * [Page 64:  ](#id-section64).
