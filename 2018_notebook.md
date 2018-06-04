@@ -78,8 +78,8 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 56: 2018-05-22 ](#id-section56).Circadian rhythm talk by [Katja Lamia](https://www.youtube.com/watch?v=G7xvy7gPhoE&t=103s), scripts research
 * [Page 57: 2018-05-25 ](#id-section57). Meeting with Gragland
 * [Page 58: 2018-05-29 ](#id-section58). Set of tasks for HChu
-* [Page 59:  ](#id-section59).
-* [Page 60:  ](#id-section60).
+* [Page 59: 2018-06-04 ](#id-section59). meeting wth Gragland, cerasi data filtering and future analyses
+* [Page 60: 2018-06-01](#id-section60). meeting with Dan
 * [Page 61:  ](#id-section61).
 * [Page 62:  ](#id-section62).
 * [Page 63:  ](#id-section63).
@@ -4034,19 +4034,81 @@ We still need to discuss projects with Dan. Potential projects.
 
 <div id='id-section59'/>    
 
-### Page 59:  
+### Page 59:  2018-06-04. meeting wth Gragland, cerasi data filtering and future analyses
+
+Greg says the best evidence is the interaction between time and populations.
+
+Problem with overall effect of population is that it may not be related to diapause at all.
+
+Greg finds more common responses than pop * time interaction in pom. It may be due to the fact that pom are less divergent than cerasi .
+
+Cerasi: Came from de novo assembly. Map reads to isoform to a gene model? Or the number is so big bc it includes a lot of diff isoforms. They amy be mapped to gene models. (longest transcript identified in de novo assembly). Could be redundancy, to get rid of it, you can annotate.
+
+Down the line, I'll need to account for redudnancy with annotations.
+
+-----
+
+WGCNA notes: authors want to use scale free. Greg has not used soft threshold. He's used 1, which is no transformation.
+
+1. Look at lit, debate networks are scale free or not
+2. it is harder to interpret if you're not dealing with raw correaltions. They lose meaning, what do the shapes look like?
+
+Greg argues not to use soft thresholding in the past. Make sure I pick a good reason to use soft thresholding.
+
+MOdules:
+
+Enrichment: You need to compare it to something.
+
+DAVID has flybase annotations
+GSEA might have uniprot annotations (double check)- presumes you have replication, but it might not work that well if you're using log2 fold changes. In order ot use replications, could use FPKM (flawed metric; worthwhile? vs log fold changes, more stat robust).
+
+Greg cuts and paste flybase IDs directly and compared to the presumed background of the genome. An alternative is to use whole gene set, but Greg doesn't think they are much diff than background drosophila genome.    
+
+
+Workflow:
+
+1. filtering ok
+2. WGCNA analysis for time and then time * pop effects.
+3. Enrichment analysis and compare them.
+4. **Think about doing network statistics on any of these things. Certain genes to focus in on; hubness and connectness.** igraph package. Greg can send me some scripts on this. Make sure I can compare among modules for example. Early divergence genes may have more hubness than later diverging genes.
+
+
+Where does the divergence occurs? Look at time points wise, how many transcripts are diff expressed at each time point. Pom = big at 2 months and small at 3 and 4 months. Good summary of where the variation lies. compare numbers to Eddy's output, they should b ethe same.
+
 
 ------
 
 <div id='id-section60'/>    
 
-### Page 60:  
+### Page 60:  2018-06-04. Things Hchu is woring on:
+
+1. Biological rhythms in ECB
+	* learn rearing conditions
+	* put different strains into trikinetics
+2. mini coding proj: viability selection on MR
+	* need to include pupae that dont make it to adults in adult lifespan column (=0)
+	* need to find out whether our sampling of death is similar to when they die (filter out deaths in trikinetics dataset)  
+	* try survival analysis on top of negative binomial glm
+3. proteome stability projs
+	* phenotype , CTmax, KO time.
+	* pick divergent strains, and start unfolding experiemnts  
+
+
 
 ------
 
 <div id='id-section61'/>    
 
-### Page 61:  
+### Page 61:  2018-06-01. meeting with Dan
+
+Outline of the layout for diapause exit ms
+
+![](https://user-images.githubusercontent.com/4654474/40930119-c817370c-67f4-11e8-934d-f1b781059af3.JPG)   
+
+Viability selection and DSPR for proteome stability project.   
+
+![](https://user-images.githubusercontent.com/4654474/40930120-c8338092-67f4-11e8-8697-6445106a34c9.JPG)   
+
 
 ------
 
