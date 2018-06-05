@@ -81,7 +81,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 59: 2018-06-04 ](#id-section59). meeting wth Gragland, cerasi data filtering and future analyses
 * [Page 60: 2018-06-04 ](#id-section60). Hchu list of projects
 * [Page 61: 2018-06-01 ](#id-section61).meeting with Dan
-* [Page 62:  ](#id-section62).
+* [Page 62: 2018-06-05 ](#id-section62). kick starting proteome stability project in Hahn lab
 * [Page 63:  ](#id-section63).
 * [Page 64:  ](#id-section64).
 * [Page 65:  ](#id-section65).
@@ -4114,7 +4114,27 @@ Viability selection and DSPR for proteome stability project.
 
 <div id='id-section62'/>    
 
-### Page 62:  
+### Page 62:  2018-06-05. kick starting proteome stability project in Hahn lab   
+
+Working on DSPR lines:
+
+* 14 founder lines to start - need to phenotype metrics of thermal limits
+	* CTmax under slow ramp
+	* CTmax under fast ramp
+	* KO under static HS
+	* KO under hardening , static HS
+
+* need to learn water bath. IT is a Lauda circulating waterbath.
+	* automate ramping protocol
+
+* let DSPR lines acclimate 2 weeks.
+	* How should I sample adults? They should be all equal ages. 5 days?
+
+* Additonal things to sample:
+	* Eggs under HS and control. Measure proteome stability and adult survival
+	* Larvae under HS and control. Measure proteome stability and adult survival
+
+* We need to set up the ultracentrifuge. Do we have a small rotor that can hold 0.5mL sample tubes?
 
 ------
 
