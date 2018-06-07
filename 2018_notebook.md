@@ -82,7 +82,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 60: 2018-06-04 ](#id-section60). Hchu list of projects
 * [Page 61: 2018-06-01 ](#id-section61).meeting with Dan
 * [Page 62: 2018-06-05 ](#id-section62). kick starting proteome stability project in Hahn lab
-* [Page 63:  ](#id-section63).
+* [Page 63: 2018-06-07 ](#id-section63). thoughts on network analyses cerasi dataset
 * [Page 64:  ](#id-section64).
 * [Page 65:  ](#id-section65).
 * [Page 66:  ](#id-section66).
@@ -4140,7 +4140,25 @@ Working on DSPR lines:
 
 <div id='id-section63'/>    
 
-### Page 63:  
+### Page 63:  2018-06-07. thoughts on network analyses on cerasi dataset    
+
+So far, I've been constructing weighted co-expression networks with genes that have a population x time interaction. But the network created has both populations in them.
+
+However, it may be more appropriate to construct population specific networks because it doesn't necessarily matter if genes in a population are correlated with genes in a another population.
+
+So here is my thought process:
+
+1. Construct separate weighted co-expression networks for high and low altitude populations with genes that display time x pop interaction
+2. WGCNA will give a color code for each module for each population.
+3. Determine trajectories of the module and compare whether the same genes are in different modules or the same one. Because of the interaction, we'd expect different modules to pop up in the same genes between populations.
+
+Another approach if we want to understand position and influence in the network.
+
+1. Construct a population specific weighted co expression network
+2. Estimate different metrics of centrality for every node/gene
+3. Determine whether genes that are significant(pop x time interaction ; time effect) are hub like genes are peripheral. We'd expect early divergent genes to be more hub like and then later expressing genes to be more peripheral in the co expression network.
+
+
 
 ------
 
