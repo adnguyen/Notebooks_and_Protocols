@@ -17,7 +17,10 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * Range limits: Identifying the factors/forces that set range limits in common forest ants (*Aphaenogaster picea*). Modelling + measured their cold physiology in forest ants of Maine and Vt.  
 * Thermal niche paper: Collaborative paper understanding how the environment shapes the ability to withstand cold and hot temperatures. In field and in a common garden, we measured upper and lower thermal limits of ants from GA-Maine (2 species).    
 * Stress in nature: Are ants stressed under experimental warming that projects climate change? Ants were collected from warming chambers (0-5 C increase from ambient) and we measured their stress response.    
-* ​Biological rhythms in *Rhagoletis*: Determining the relationship between behavioral rhythms in adult *Rhagoletis* and diapause exit timing + depth(eclosion and mass specific metabolic rate).
+* ​Biological rhythms in *Rhagoletis*: Determining the relationship between behavioral rhythms in adult *Rhagoletis* and diapause exit timing + depth(eclosion and mass specific metabolic rate).  
+* *Rhagoletis* diapause exit: Determine the physiological parameters that lead to divergent adult emergence patterns between two host races.
+* *Rhagoletis cerasi* transcriptome: Determine the adaptive shifts in the transcriptome relating to seasonal timing in low and high altitude populations.  
+* Proteome stability project in *Drosophila melanogaster*: Determine the physiological tactics at the molecular level that underlie differences in thermal traits and whether they've been shaped by selection at a broad scale.
 
 # Table of contents (Layout follows Page number: Date. Title of entry)    
 * [Page 1: 2018-01-01 ](#id-section1). Yearly goals: recap from last year and this year's
@@ -83,8 +86,8 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 61: 2018-06-01 ](#id-section61).meeting with Dan
 * [Page 62: 2018-06-05 ](#id-section62). kick starting proteome stability project in Hahn lab
 * [Page 63: 2018-06-07 ](#id-section63). thoughts on network analyses cerasi dataset
-* [Page 64:  ](#id-section64).
-* [Page 65:  ](#id-section65).
+* [Page 64: 2018-06-08 ](#id-section64). Notes on network analyses
+* [Page 65: 2018-06-08 ](#id-section65). Meeting with TPowell
 * [Page 66:  ](#id-section66).
 * [Page 67:  ](#id-section67).
 * [Page 68:  ](#id-section68).
@@ -4164,13 +4167,150 @@ Another approach if we want to understand position and influence in the network.
 
 <div id='id-section64'/>    
 
-### Page 64:  
+### Page 64:  2018-06-08. Notes on network analyses
+
+Tutorial from Duke University, SSRI (Social Science Research Institute)
+
+Fundamental concepts:
+**Networks are represnted as a graph-- which has a set of nodes that are connected through lines**
+
+### Key Elements
+
+* Nodes, dots, vertices
+* lines
+* layout
+
+A netowrk is a graph! This graph can be represented with categorical data (names represnted in the nodes) and continuous data (lines can be weighted)
+
+Networks can differ in their layout: unimodal or multimodal (No clue what the difference is, the ppt doesn't specify)
+
+Another property: **EDGES**
+
+It provides the direction and work information.
+
+* Dichtomous (0 or 1)
+* Weighted (between 0 and 1)
+
+These edges can be undirected or directed with an arrow and also can loop. Fundamentally, these types of ties represent different types of relations.
+
+### Layout! (my interpretation from the slide)
+
+Hierarchical- goes in a direction such as top to bottom or side to side. The point is, that as you move across the network, the following nodes are nested within previous nodes.
+
+Spring or Energy - nodes connected with no particular direction
+
+
+### Data structure
+
+* Adjacency matrix
+
+For example, if 4 connects to 1,2,3 but 1,2,3 don't connect with each other, the data is a mtrix of 0 and 1's indicating the connections
+
+|      | 1    | 2    | 3    | 4    |
+| ---- | ---- | ---- | ---- | ---- |
+| 1    | 0    | 0    | 0    | 1    |
+| 2    | 0    | 0    | 0    | 1    |
+| 3    | 0    | 0    | 0    | 1    |
+| 4    | 1    | 1    | 1    | 0    |
+
+
+* Edgelist, data with same structure as above:  
+
+
+| Sender | Target | Weight |
+| ------ | ------ | ------ |
+| 1      | 4      | 1      |
+| 2      | 4      | 1      |
+| 3      | 4      | 1      |
+
+
+##  Ok, now that we know the properties of a network, what kind of things can we extract from it?   
+
+Two general approaches that can overlap
+
+* Networks as variables - identify an individual's network position and other characteristics
+	* These variables from the network can then be predictors in a statistical analysis.   
+* Networks as structures- performing network analysis to identify system level properties that influence of the network will chagne and function over time
+
+No clue what this means, but you can analyze networks based on the types of **connections** and their **position**.   
+
+Types of questions for networks as variables:
+
+* Are kids with smoking peers more likely to smoke themselves?
+* Do positions in a social network influence the mental health of people occupying them?
+* Do central actors control resources?  
+
+Types of questions for networks as structures:
+
+* What generates hierarchy in social relations?
+* What network patterns spread disease more quickly?
+* How do roles such as being the "go-to-person" or "broker" in the network evolve out of consistent relational activity? (Um...what? )
+
+Structural Features of networks:
+
+* Density: proportion of connected ties over all possible connections. Dense networks are highly connected where information/diseases or resources move quickly across it
+* average path length: average number of steps along the shortest paths for all possible pairs of network nodes.
+	* How efficient information moves through network
+* transitivity: extent to which nodes make up a dyad are also connected to a third node will both connect to that third node
+	* can indicate mutualisms, shared costs, common enemy or threat, social sanction
+* clustering: coefficient measure of degree which nodes in graph tend to cluster together
+	* can indicate shared interests
+	* can be calculated as proportion of closed triads over the total number of triads both closed and open.
+	* isolated clusters are considered bottlenecks--can impeded disease spread to the whole network even if the cluster is infected
+* degree distribution : refers to number of connections a node has to other nodes; prob distribution describing the likelihood of a given degree.
+
+Positional features of a network: node level properties associated with occupying a particular place or filling a role in a network
+
+* power and centrality (exhaustive list , see Wasserman and Faust 1994; Borgatti and Martin 2006)   
+	* degree -number of ties it has
+		* in-degree centrality - number of ties node receives (needs directed network)
+		* out-degree centrality - number of ties node sends (needs directed network)
+	* closeness centrality - average length of shortest path between the node and all other nodes
+		* The most central node is the closer it is to all other nodes
+	* betweenness centrality - number of times a node acts as a bridge along the shortest path between two other nodes
+		* calculated as, computing shortest paths between 2 nodes, for each pair of nodes, determine fraction of shortest paths through the node, sum this fraction over all pairs of nodes
+	* Eigenvector centrality - a node's influence in terms of how connected the node is to other highly connected nodes (What..)
+
+
 
 ------
 
 <div id='id-section65'/>    
 
-### Page 65:  
+### Page 65:  2018-06-08. Meeting with TPowell
+
+We're pretty much in agreement with the intro of ms. Take out results section of the end of the intro. Tom doesn't like results there.
+
+Agenda:
+
+1. Analysis experiment 2
+2. If the analysis is ok, lay out all of the figures we will want, which should not be substantially different from existing ones.
+3. If we're in agreement, forge ahead and set a date to complete the results(figures + text)
+4. If not, I'll perform any additional analyses and we can set a date for that.
+
+Tom suggests to have a figure in the supplement of just the overwintering tiime point (0 time point). (Suppelmentary 4). Have a boxplot between host races there. Use Tom's, he has it.
+
+Potential issue: Ones that break diapause over the later time points are outliers (3 flies). Day 10 interaciton pattern driven by those 3 flies, then it could be  a potential problem.
+
+A couple things:
+
+* Between host race comparisons for each parameter, move to the supplement.  
+* Eclosion differences (histogram or proportion plot); histograms may be more intuitive. Cumulative plots are useful for the stats. Tom to come up with something he likes.
+* agree with 2 tables in the main text,
+* supplement tables - s1 = all of the actual model fitting from the function valued trait analyses (3 diff versions of the trajectory)
+* S2 table = actual final model tables for everything (whole bunch of sub tables )
+* S3 table = results of the pairwise t test between biphasic and triphasic model. Treat them as hierarchical models and not very different
+* Results of the partial correatlion in the main experiment. Do the same with Day1 and Day2 in experiment 2. Have it in there to back up the fact with the diff error distribution in the multiple regression models. Qualitatively the same result  with diff analysis.
+* Tom will spend time to remake - individual mr trajectories with predictions and point data.
+ 	* I can make this figure in ggplot2
+
+Altogether:  5 supp tables
+
+Tom to send Greg an email.
+
+Streamline discussion. Refocus it to modularity. Overall methods and results have superficial changes. Send to Greg, then Tom, Dan, and I will go over how to approach the discussion.
+
+Deadline: Next Friday. Tom will work on supp stuff, I'll work on figures and make them look prettier.
 
 ------
 
