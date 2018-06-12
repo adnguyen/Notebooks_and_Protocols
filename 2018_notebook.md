@@ -4316,7 +4316,7 @@ Deadline: Next Friday. Tom will work on supp stuff, I'll work on figures and mak
 
 <div id='id-section66'/>    
 
-### Page 66: 2018-06-12. to do list for Hchu  
+### Page 66: 2018-06-12. to do list for Hchu  and ANBE
 
 There has been a lot going on in the lab and we want to flesh out future plans with a to do list:
 
@@ -4334,12 +4334,25 @@ There has been a lot going on in the lab and we want to flesh out future plans w
 	* Try static HS at 37 C
 	* Try other heating protocols and summarise the data in a R markdown doc. Can try cold tolerance experiments but Hchu will need to change water bath. 
 	* Write up protocol in hahn lab protocol website github repo. Include info on vendor, pictures, and links for all materials.
+	* when starting experiment; take adults from 5-7 days (they are fully mated) 
+	* check the line that may be missing (http://wfitch.bio.uci.edu/~dspr/index.html)
 	
 
 3. Viability selection coding proj: 
-	* Fixing pdf output to make it more presentable
+	* Fixing pdf output to make it more presentable; send to ANBE by Wednesday 
 	* Create a direction of effect table to make sense of the data. 
 	* Show Dan Friday. 
+
+4. Calibration water bath
+	* try calibration from 35-40C range. 
+	* write up technical report in Rmarkdown
+	* clean water bath, it is cloudy. Dan suggests to put some ethanol in it. (also leave it open so it doesn't get as cloudy)
+	* make a new rack, have tubes that can be inserted into the styrofoam for better handling 
+	
+Notes:
+
+* Date and title every page in SURF notebook 
+
 
 ------
 
