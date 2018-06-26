@@ -88,13 +88,8 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 63: 2018-06-07 ](#id-section63). thoughts on network analyses cerasi dataset
 * [Page 64: 2018-06-08 ](#id-section64). Notes on network analyses
 * [Page 65: 2018-06-08 ](#id-section65). Meeting with TPowell
-<<<<<<< HEAD
-* [Page 66:  ](#id-section66).
-* [Page 67: 2018-06-25 ](#id-section67). updated to do list
-=======
 * [Page 66: 2018-06-12 ](#id-section66). to do list for Hchu
-* [Page 67:  ](#id-section67).
->>>>>>> 611f3374155cc809a8e617904d377922307232db
+* [Page 67: 2018-06-25 ](#id-section67). updated to do list
 * [Page 68:  ](#id-section68).
 * [Page 69:  ](#id-section69).
 * [Page 70:  ](#id-section70).
@@ -4325,38 +4320,38 @@ Deadline: Next Friday. Tom will work on supp stuff, I'll work on figures and mak
 
 There has been a lot going on in the lab and we want to flesh out future plans with a to do list:
 
-1. ECB project: we have an experimental approach outlined (SURF nb#001, page 32). Basically, we want to set up 5 cohorts for each strain (UZ and BE). For each cohort, measure larval post diapause termination( transition from larvae to pupae) under favorable and unfavorable conditions. And then, take the adults and measure their activity in the trikinetics set up. In the trikinetics set up, have sugar water on 1 side and water on the other. (Hchu can you double check this? ) 
+1. ECB project: we have an experimental approach outlined (SURF nb#001, page 32). Basically, we want to set up 5 cohorts for each strain (UZ and BE). For each cohort, measure larval post diapause termination( transition from larvae to pupae) under favorable and unfavorable conditions. And then, take the adults and measure their activity in the trikinetics set up. In the trikinetics set up, have sugar water on 1 side and water on the other. (Hchu can you double check this? )
 	* learn rearing protocol and add upon it in the existing protocol (check readme for formatting and structure)
 	* create github repository and populate with documents, data, results
 		* document experimental workflow in readme (also add a little background info  on yourself and the system)
-		* log the data in an excel spreadsheet + notebook 
+		* log the data in an excel spreadsheet + notebook
 			* individual, strain, cohort, cohort date, pupation date, eclosion date, death date, trik enter date, trik exit date, trik position, trik monitor, (have free run version too) , sex
 
 
-2. DSPR proteome stability project: Flies arrived today. WE obtained 13 strains (SURF nb#001, page 34). Hchu did test static HC at 39C. 
-	* let flies sit for 2 weeks. Coordinate a rearing schedule 
-	* document activities in notebook 
+2. DSPR proteome stability project: Flies arrived today. WE obtained 13 strains (SURF nb#001, page 34). Hchu did test static HC at 39C.
+	* let flies sit for 2 weeks. Coordinate a rearing schedule
+	* document activities in notebook
 	* Try static HS at 37 C
-	* Try other heating protocols and summarise the data in a R markdown doc. Can try cold tolerance experiments but Hchu will need to change water bath. 
+	* Try other heating protocols and summarise the data in a R markdown doc. Can try cold tolerance experiments but Hchu will need to change water bath.
 	* Write up protocol in hahn lab protocol website github repo. Include info on vendor, pictures, and links for all materials.
-	* when starting experiment; take adults from 5-7 days (they are fully mated) 
+	* when starting experiment; take adults from 5-7 days (they are fully mated)
 	* check the line that may be missing (http://wfitch.bio.uci.edu/~dspr/index.html)
-	
 
-3. Viability selection coding proj: 
-	* Fixing pdf output to make it more presentable; send to ANBE by Wednesday 
-	* Create a direction of effect table to make sense of the data. 
-	* Show Dan Friday. 
+
+3. Viability selection coding proj:
+	* Fixing pdf output to make it more presentable; send to ANBE by Wednesday
+	* Create a direction of effect table to make sense of the data.
+	* Show Dan Friday.
 
 4. Calibration water bath
-	* try calibration from 35-40C range. 
+	* try calibration from 35-40C range.
 	* write up technical report in Rmarkdown
 	* clean water bath, it is cloudy. Dan suggests to put some ethanol in it. (also leave it open so it doesn't get as cloudy)
-	* make a new rack, have tubes that can be inserted into the styrofoam for better handling 
-	
+	* make a new rack, have tubes that can be inserted into the styrofoam for better handling
+
 Notes:
 
-* Date and title every page in SURF notebook 
+* Date and title every page in SURF notebook
 
 
 
