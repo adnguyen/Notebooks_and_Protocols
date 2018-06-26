@@ -89,7 +89,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 64: 2018-06-08 ](#id-section64). Notes on network analyses
 * [Page 65: 2018-06-08 ](#id-section65). Meeting with TPowell
 * [Page 66:  ](#id-section66).
-* [Page 67:  ](#id-section67).
+* [Page 67: 2018-06-25 ](#id-section67). updated to do list
 * [Page 68:  ](#id-section68).
 * [Page 69:  ](#id-section69).
 * [Page 70:  ](#id-section70).
@@ -4318,11 +4318,21 @@ Deadline: Next Friday. Tom will work on supp stuff, I'll work on figures and mak
 
 ### Page 66:  
 
+
+
 ------
 
 <div id='id-section67'/>    
 
-### Page 67:  
+### Page 67:  2018-06-26. Updated to do list
+
+1. hsp rxn norm: in SHC and NJGs' hands
+
+2. range limits: major revisions, address reviewer comments
+
+3. biol rhythms: passively collecting data
+	* need to check free- run to entrainment samples
+4.
 
 ------
 
