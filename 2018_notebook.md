@@ -4363,12 +4363,21 @@ Notes:
 ### Page 67:  2018-06-26. Updated to do list
 
 1. hsp rxn norm: in SHC and NJGs' hands
+	* I should flesh out discussion and resend it to them (after range limits)
 
 2. range limits: major revisions, address reviewer comments
 
 3. biol rhythms: passively collecting data
 	* need to check free- run to entrainment samples
-4.
+
+4. thermal niche: major revisions from SHC's comments; start with abstracts
+
+5. cerasi proj: need to do functional enrichment analysis and network Analyses
+	* network construction fro 14,000 transcripts is overloading memory, need to run script on cluster
+
+6. diapause exit ms: fixed changes suggested by DHahn, need all co-authors to agree on them; then decide next steps; need to set up meeting for this week.
+
+
 
 ------
 
