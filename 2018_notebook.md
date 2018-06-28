@@ -91,8 +91,8 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 66: 2018-06-12 ](#id-section66). to do list for Hchu
 * [Page 67: 2018-06-25 ](#id-section67). updated to do list
 * [Page 68: 2018-06-27 ](#id-section68). Range limits writing Notes
-* [Page 69:  ](#id-section69).
-* [Page 70:  ](#id-section70).
+* [Page 69: 2018-06-28 ](#id-section69). notes on messing with hipergator
+* [Page 70: 2018-06-28 ](#id-section70). Meeting with Ruchir and training on ultracentrifuge
 * [Page 71:  ](#id-section71).
 * [Page 72:  ](#id-section72).
 * [Page 73:  ](#id-section73).
@@ -4406,13 +4406,104 @@ To fully understand the range limits of species, it is critical to identify the 
 
 <div id='id-section69'/>    
 
-### Page 69:  
+### Page 69:  2018-06-28. notes on messing with hipergator
+
+
+logging in
+
+> ssh <username>@hpg.rc.ufl.edu
+
+Using cyberduck to transfer files.
+
+To show what types of programs there are.
+
+> module spider
+
+Ok, I'm on hipergator. I need to use it to compute large weighted co-expression networks in the cerasi dataset.
+
+How should I approach this?
+
+I think just creating a script with a small network that works on my local is a good start, then estimate network properties on the larger dataset.
+
+Right now, I have the WGCA analysis with the data parsing, Enrichment and other network approaches (building a graph and estimating centrality)
+
+Separate out script into a set of scripts
+
+1. parsing - grab datasets that are significant for different classes +WGCNA - module detection  + Functional Enrichment assignments
+	* Save and output datasets
+2. Network analyses
+
+
+### Holding some WGCNA code for detecting soft power to create scale free networks
+
+```R
+#allowWGCNAThreads(nThreads = 4)
+#powers = c(c(1:10), seq(from = 12, to=20, by=2))
+#sft = pickSoftThreshold(t(timeeff.sub[,-1]), powerVector = powers, verbose = 5)
+
+#sizeGrWindow(9, 5)
+#par(mfrow = c(1,2));
+#cex1 = 0.9;
+#plot(sft$fitIndices[,1], -sign(sft$fitIndices[,3])*sft$fitIndices[,2],
+ #    xlab="Soft Threshold (power)",ylab="Scale Free Topology Model Fit,signed R^2",type="n",
+  #   main = paste("Scale independence"));
+#text(sft$fitIndices[,1], -sign(sft$fitIndices[,3])*sft$fitIndices[,2],
+ #    labels=powers,cex=cex1,col="red");
+#abline(h=0.90,col="red")
+#20? in this case (softpower)
+###################
+# Mean connectivity as a function of the soft-thresholding power
+#plot(sft$fitIndices[,1], sft$fitIndices[,5],
+ #    xlab="Soft Threshold (power)",ylab="Mean Connectivity", type="n",
+  #   main = paste("Mean connectivity"))
+#text(sft$fitIndices[,1], sft$fitIndices[,5], labels=powers, cex=cex1,col="red")
+###############################
+
+#Scaling of Topological Overlap Matrices to make them comparable across sets
+#softPower = 20; #change from above
+
+```
 
 ------
 
 <div id='id-section70'/>    
 
-### Page 70:  
+### Page 70: 2018-06-28.  Meeting with Ruchir and training on ultracentrifuge
+
+Ultracentrifuge is from Beckman Coulter: Optima TLX 120,000 RPM
+
+Rotor = [TLA 120.2 Beckman Coulter](http://www.laborgeraete-beranek.de/info/TLA-120.2.pdf) (http://www.laborgeraete-beranek.de/info/TLA-120.2.pdf)
+
+Details: 120,000 rpm max speed. Can use 1-2mL tubes, usually polycarbonate and polyallomer that have to be thickwall.
+
+* 1mL Polycarb thickwall - part number = 343778
+* 1 mL polyallomer thickwall- part number= 347287
+
+**These tubes need to be at least half filled without caps**
+
+Temp limits = 2-25C ; thaw to 2 C before centrifuging
+
+**We need to calculate how many RPMs for 100,000g**
+
+Formula: RCF = 1.12r (RPM/1000)2
+
+100,00g = 1.12r (RPM/1000)2
+
+RPM= 52,987.99; just round to 53,000
+
+Critical Notes:
+
+* Do not keep rotor in the ultracentrifuge.
+* Keep rotor clean, if any liquid leaks, clean it up
+* Make sure samples are balanced
+* For 1 mL tubes, do not fill over 3/4's of the tube.
+
+
+1. Turn on the machine
+2. Set the spped(rpm), time (days:min), and temp (C).
+3. Once the settings are set, press *display*
+4. Then press start
+5. Watch centrifuge until it goes to full RPM(speed).
 
 ------
 
