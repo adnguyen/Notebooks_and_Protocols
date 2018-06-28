@@ -4487,9 +4487,15 @@ Temp limits = 2-25C ; thaw to 2 C before centrifuging
 
 Formula: RCF = 1.12r (RPM/1000)2
 
-100,00g = 1.12r (RPM/1000)2
+100,000g = 1.12r (RPM/1000)2
 
 RPM= 52,987.99; just round to 53,000
+
+**How do we clean the tubes?**
+
+Here's an approach https://www.researchgate.net/post/Re-using_ultracentrifuge_tubes2
+
+> We use beckman polyallomer tubes for lentiviral centrifugation and we often reuse them. For that, after you are done with one harvest, just add 10% bleach to the tube for 2-3 min and rinse it out. Then spray with 70% ethanol a few times and rinse it. Let the tubes dry. When you want to reuse the tubes, spray them with 70% ethanol twice. Let them dry. Then rinse them with PBS and DMEM and use them for the virus prep.
 
 Critical Notes:
 
