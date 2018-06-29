@@ -4643,6 +4643,87 @@ srun ./Cerasi_Networks/Script/04_cluster_script.sh
 
 Yep, works.
 
+## Ok, time to try a test script that estimates centrality for a smaller dataset (overall population level differences in cerasi)
+
+cat 03_2018-06-28_Network_analyses.R
+
+```
+
+#Libraries
+
+library(ggplot2)
+library(qgraph)
+library(data.table)
+library(WGCNA)
+
+
+# Network approaches/analyses   
+
+#Some goals:
+
+#* Identify whether gene modules are more hub-like or distributed at the periphery of a network.
+#  * we'd have to have a comparable network for all modules
+#  * within this large network, figure out the connectivity for each gene in the module
+
+### Overall population level differences dataset
+
+popdiff<-fread("../Data/02_script_01_2018-06-28_overall_pop_level_diffs_no_time.csv")
+
+#create adjacency matrix
+
+adj.pop<-adjacency(t(popdiff[,-1]), power =1)
+
+# creating a network from adj matrix
+graph_pop<-qgraph(adj.pop,layout="spring")
+
+# grabbing measures of centrality
+cent.pop<-centrality(graph_pop)
+
+popdiff$cent<-cent.pop[[1]]
+fwrite(popdiff,"2018-06-28_pop_diff_centrality.csv")
+
+
+
+#sessionInfo()
+
+```
+
+Recoding the cluster script to execute '03_2018-06-28_Network_analyses.R'
+
+cat 04_cluster_script.sh
+
+```
+
+#!/bin/bash
+#SBATCH --job-name=Test_R_script
+##SBATCH --mail-user=andrew.nguyen@ufl.edu
+#SBATCH --mail-type=ALL
+#SBATCH --output my_job-%j.out
+#SBATCH --nodes=4
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=120gb
+#SBATCH --time=72:00:00
+
+
+date;hostname;pwd
+
+module load R
+
+
+cd /home/andrew.nguyen/Cerasi_Networks/Script
+
+Rscript 03_2018-06-28_Network_analyses.R
+```
+
+Ok, lets run it!
+
+```
+srun ./Cerasi_Networks/Script/04_cluster_script.sh
+```
+
+
+
 ------
 
 <div id='id-section72'/>    
