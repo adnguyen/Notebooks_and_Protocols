@@ -93,7 +93,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 68: 2018-06-27 ](#id-section68). Range limits writing Notes
 * [Page 69: 2018-06-28 ](#id-section69). notes on messing with hipergator
 * [Page 70: 2018-06-28 ](#id-section70). Meeting with Ruchir and training on ultracentrifuge
-* [Page 71:  ](#id-section71).
+* [Page 71: 2018-06-29 ](#id-section71). Working on hipergator
 * [Page 72:  ](#id-section72).
 * [Page 73:  ](#id-section73).
 * [Page 74:  ](#id-section74).
@@ -4515,7 +4515,133 @@ Critical Notes:
 
 <div id='id-section71'/>    
 
-### Page 71:  
+### Page 71:  2018-06-29. Working on hipergator
+
+Sample script for submitting a job on the cluster (https://help.rc.ufl.edu/doc/Annotated_SLURM_Script):
+
+*04_cluster_script.sh*
+
+path: /home/andrew.nguyen/Cerasi_Networks/Script/
+
+```
+#!/bin/bash
+
+#SBATCH --job-name=Test_R_script
+##SBATCH --mail-user=andrew.nguyen@ufl.edu
+#SBATCH --mail-type=ALL
+#SBATCH --output my_job-%j.out
+#SBATCH --nodes=4
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=120gb
+#SBATCH --time=72:00:00
+
+date;hostname;pwd
+
+module load R
+```
+
+
+It works on the home directory on the hipergator server.
+
+it looks like the *sbatch* command is what we use to run scripts
+
+```
+sbatch 04_cluster_script.sh
+```
+
+error
+
+> sbatch: Warning: can't run 1 processes on 4 nodes, setting nnodes to 1
+sbatch: error: Batch job submission failed: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)
+
+Sent in a ticket for help. My account was put under a group that has no resources, they will fix(re-assign me to right PI).  
+
+Ok, now I have acess. OK, what am I doing.
+
+I have a cerasi project on the cluster:
+
+path = /home/andrew.nguyen/Cerasi_Networks/Script
+
+I have a few scripts
+
+```
+ls -al
+total 12
+drwxr-xr-x 2 andrew.nguyen dhahn    5 Jun 29 16:36 .
+drwxr-xr-x 4 andrew.nguyen dhahn    4 Jun 28 12:39 ..
+-rw-r--r-- 1 andrew.nguyen dhahn 1728 Jun 28 12:41 03_2018-06-28_Network_analyses.Rmd
+-rw-r--r-- 1 andrew.nguyen dhahn  247 Jun 29 16:31 03_test.R
+-rwxrwxrwx 1 andrew.nguyen dhahn  354 Jun 29 16:35 04_cluster_script.sh
+```
+
+I'm testing to see whether my shell script(04_cluster_script.sh) can execute the R test script (03_test.R).
+
+
+04_cluster_script.sh
+
+```
+#!/bin/bash
+#SBATCH --job-name=Test_R_script
+##SBATCH --mail-user=andrew.nguyen@ufl.edu
+#SBATCH --mail-type=ALL
+#SBATCH --output my_job-%j.out
+#SBATCH --nodes=4
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=120gb
+#SBATCH --time=72:00:00
+
+
+date;hostname;pwd
+
+module load R
+
+
+cd /home/andrew.nguyen/Cerasi_Networks/Script
+
+Rscript 03_test.R
+
+```
+
+03_test.R
+
+```
+
+library(ggplot2)
+library(qgraph)
+library(data.table)
+library(WGCNA)
+
+
+#reading in a dataset
+dat<-fread("../Data/02_script_01_2018-06-28_overall_pop_level_diffs_no_time.csv")
+str(dat)
+fwrite(dat ,"../Data/test.csv")
+
+# Session Info
+
+sessionInfo()
+
+```
+
+So if I run this script, I'm wondering if the R on the cluster will have qgraph installed and wehther I'll get a new dataset in Data/.
+
+Tried this code and it worked:
+
+path =/home/andrew.nguyen
+
+```
+./Cerasi_Networks/Script/04_cluster_script.sh
+```
+
+Ok, submitting job:
+
+```
+srun ./Cerasi_Networks/Script/04_cluster_script.sh
+```
+
+Yep, works.
 
 ------
 
