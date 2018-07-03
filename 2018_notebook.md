@@ -4763,7 +4763,7 @@ The data:
 
 * We have log2(fold change) expression estimates for each time point for each population from an EDGER model (80k transcripts)
 
-# of genes that are signficant by category
+### Genes that are signficant by category
 
 | Source          | Significantly differentially expressed |
 | --------------- | -------------------------------------- |
@@ -4773,7 +4773,7 @@ The data:
 | Altitude * Time | 14564                                  |
 
 
-**Ways to construct networks (weighted co-expression, undirectional):**
+### **Ways to construct networks (weighted co-expression, undirectional):**
 
 If we want to compare across sources of variation and determine their centrality: We'd expect genes in Alt * time effect to be more central?
 
