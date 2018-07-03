@@ -4781,7 +4781,7 @@ If we want to compare across sources of variation and determine their centrality
 	* This would reduce the time series into a single network though; we need replicates to estimate a network at a particular time point
 
 
-If we want to compare within a source of variation
+If we want to compare within a source of variation: We'd expect modules showing divergence in earlier expressing genes to be more hublike/central than modules that diverge later in time.
 
 * Build individual networks for high and lowland populations for each source of variation.
 	* This would also reduce the time series into a single network ; we need replicates to estimate a network at a particular time point
