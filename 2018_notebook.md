@@ -94,8 +94,8 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 69: 2018-06-28 ](#id-section69). notes on messing with hipergator
 * [Page 70: 2018-06-28 ](#id-section70). Meeting with Ruchir and training on ultracentrifuge
 * [Page 71: 2018-06-29 ](#id-section71). Working on hipergator
-* [Page 72:  ](#id-section72).
-* [Page 73:  ](#id-section73).
+* [Page 72: 2018-07-02 ](#id-section72). Writing strategies for range limits ms
+* [Page 73: 2018-07-03 ](#id-section73). Different strategies for constructing weighted co-expression networks in cerasi dataset
 * [Page 74:  ](#id-section74).
 * [Page 75:  ](#id-section75).
 * [Page 76:  ](#id-section76).
@@ -4728,13 +4728,71 @@ srun ./Cerasi_Networks/Script/04_cluster_script.sh
 
 <div id='id-section72'/>    
 
-### Page 72:  
+### Page 72:  2018-07-02. Writing strategies for range limits ms
+
+For the fucntion valued trait paragraph. address editor's comments. There can be local differences in G. And the ultimate response to selection depends on the additive genetic variance. YOu cant mate ants though.
+
+reviewer 1, talk about growing degree days in discussion to cover alternative mechanisms
+
+reviewer 2, lay off on causal sentences.
+
+SHC suggests to have range limits as an end conclusion, not up front.
+
+Maybe change title.
+
+paragraphs so far:
+
+>Species distributions often contract and expand over ecological and evolutionary time (Sexton et al. 2009). Although \textit{A. picea} historically has expanded its northward range (DeMarco and Cognato 2015), the categorical cutoffs identified in the CART model suggests that populations have encountered a hard limit due to temperature and temperature variation (figure 4). However, transplant experiments from the core and edge to beyond the range () are needed to test for limits in adaptation and to truly determine \textit{A. picea}'s species boundary (). Nonetheless, evaluating evolutionary constraints of critical functional traits can provide insights into how populations may respond to selection (). In order to respond to both cold temperature and temperature variation, ant colonies will need to be able to have high basal cold tolerance and greater cold hardening ability. Adapting a quantitative genetic analysis, we found a negative correlation between cold hardening and basal cold tolerance, a genetic architecture that would limit A. picea's response to selection due to cold temperature and temperature variation. Furthermore, this trade-off was clinally structured, suggesting that cold adaptation in A. picea proceeded by enhancing cold tolerance at the cost of phenotypic plasticity. Taken together, these results suggest that trade-offs in cold performance likely contribute to the current northern range boundary of \textit{A. picea}.
+
+>Niche modeling identified potential and multiple agents of selection at the northern range boundary of A. picea. The nodes representing \textit{T}\textsubscript{max} and precipitation during the warmest quarter suggest that the conditions over the growing season are critical for overall colony performance. Because poleward populations have shorter growing season lengths, selection will favor faster developmental rates and developing brood may require high summer temperatures to complete growth (Yamahira and Conover 2002). \textcolor{red}{Temperature} seasonality, which was highly correlated with \textit{T}\textsubscript{min}, represents a critical node in our regression tree model and suggests that selection will favor both cold tolerance and hardening ability (Teets et al. 2011). Basal cold tolerance offers protection and resistance when organisms first encounter cold stress, while hardening enhances the response upon repeated or sustained exposure (Chown and Terblanche 2006).
+
+In paragraph 1 i have an argument about hard limits, maybe put that in paragraph 2. In paragraph 1, play up the fact that cold tolerance is a critical trait for understanding range dynamics?
+
 
 ------
 
 <div id='id-section73'/>    
 
-### Page 73:  
+### Page 73: 2018-07-03.  Different strategies for constructing weighted co-expression networks in cerasi dataset
+
+We have time series gene expression for 2 populations (lowland and highland) from 2 month - 4.5 months prior to when they typically eclose. Highland ecloses later than lowland.
+
+We want to know how the structure and individual gene members in a network differ between populations in a way that is associated with their seasonal timing. So we have to exclude just overall differences between populations unrelated to time.
+
+The data:
+
+* We have log2(fold change) expression estimates for each time point for each population from an EDGER model (80k transcripts)
+
+# of genes that are signficant by category
+
+| Source          | Significantly differentially expressed |
+| --------------- | -------------------------------------- |
+| Altitude        | 452                                    |
+| Time            | 3014                                   |
+| Altitude + Time | 58                                     |
+| Altitude * Time | 14564                                  |
+
+
+**Ways to construct networks (weighted co-expression, undirectional):**
+
+If we want to compare across sources of variation and determine their centrality: We'd expect genes in Alt * time effect to be more central?
+
+* Build a network for high and lowland populations for the whole set of genes that are significant
+	* This would reduce the time series into a single network though.
+
+
+If we want to compare within a source of variation
+
+* Build individual networks for high and lowland popuations
+
+Notes:
+
+* If we want to build a network for each time point, we'd need a metric of gene expression with replicates for each time point
+
+
+
+
+
 
 ------
 
