@@ -96,7 +96,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 71: 2018-06-29 ](#id-section71). Working on hipergator
 * [Page 72: 2018-07-02 ](#id-section72). Writing strategies for range limits ms
 * [Page 73: 2018-07-03 ](#id-section73). Different strategies for constructing weighted co-expression networks in cerasi dataset
-* [Page 74:  ](#id-section74).
+* [Page 74: 2018-07-03 ](#id-section74). Range limits ms: re-analysis with MAT
 * [Page 75:  ](#id-section75).
 * [Page 76:  ](#id-section76).
 * [Page 77:  ](#id-section77).
@@ -4799,7 +4799,78 @@ Notes:
 
 <div id='id-section74'/>    
 
-### Page 74:  
+### Page 74: 2018-07-03. Range limits ms: re-analysis with MAT
+
+ANCOVA, testing effect of pretreatment temperature and its interaction with mean annual temperature on cold tolerance.
+
+```
+cold.mod1<-aov(treatment_recovery_s~MAT*pretreat_Temp+Colony,data=k.dat)
+> #cold.mod1<-lm(treatment_recovery_s~Tmin*pretreat_Temp+Colony#,data=k.dat)
+> summary(cold.mod1)
+                  Df  Sum Sq Mean Sq F value   Pr(>F)    
+MAT                1  137239  137239   6.282 0.014879 *  
+pretreat_Temp      1  261310  261310  11.961 0.000996 ***
+Colony            19  208333   10965   0.502 0.951730    
+MAT:pretreat_Temp  1  214946  214946   9.839 0.002630 **
+Residuals         61 1332640   21847                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+```
+
+Relationship between basal and MAT
+
+```
+cold.mod101<-lm(treatment_recovery_s~MAT,data=subset(k.dat,pretreat_Temp=="25"))
+> summary(cold.mod101)
+
+Call:
+lm(formula = treatment_recovery_s ~ MAT, data = subset(k.dat,
+	 pretreat_Temp == "25"))
+
+Residuals:
+		Min       1Q   Median       3Q      Max
+-212.354  -81.225    7.096   64.495  307.747
+
+Coefficients:
+					 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -257.76     228.56  -1.128 0.273464    
+MAT           154.75      38.11   4.061 0.000667 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 128.8 on 19 degrees of freedom
+Multiple R-squared:  0.4647,	Adjusted R-squared:  0.4365
+F-statistic: 16.49 on 1 and 19 DF,  p-value: 0.0006666
+```
+
+Relationship between induced at 0 and MAT
+
+```
+cold.mod102<-lm(hardening~MAT,data=assd)
+> summary(cold.mod102)
+
+Call:
+lm(formula = hardening ~ MAT, data = assd)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-196.57 -119.52  -21.84   66.60  372.60
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept)  -565.46     293.61  -1.926   0.0692 .
+MAT           135.81      48.95   2.774   0.0121 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 165.5 on 19 degrees of freedom
+Multiple R-squared:  0.2883,	Adjusted R-squared:  0.2509
+F-statistic: 7.697 on 1 and 19 DF,  p-value: 0.01208
+
+```
+
+
 
 ------
 
