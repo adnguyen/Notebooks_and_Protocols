@@ -4778,12 +4778,13 @@ The data:
 If we want to compare across sources of variation and determine their centrality: We'd expect genes in Alt * time effect to be more central?
 
 * Build a network for high and lowland populations for the whole set of genes that are significant
-	* This would reduce the time series into a single network though.
+	* This would reduce the time series into a single network though; we need replicates to estimate a network at a particular time point
 
 
 If we want to compare within a source of variation
 
-* Build individual networks for high and lowland popuations
+* Build individual networks for high and lowland populations for each source of variation.
+	* This would also reduce the time series into a single network ; we need replicates to estimate a network at a particular time point
 
 Notes:
 
