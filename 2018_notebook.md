@@ -97,8 +97,8 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 72: 2018-07-02 ](#id-section72). Writing strategies for range limits ms
 * [Page 73: 2018-07-03 ](#id-section73). Different strategies for constructing weighted co-expression networks in cerasi dataset
 * [Page 74: 2018-07-03 ](#id-section74). Range limits ms: re-analysis with MAT
-* [Page 75:  ](#id-section75).
-* [Page 76:  ](#id-section76).
+* [Page 75: 2018-07-12 ](#id-section75). Meeting with TPowell diapause exit ms
+* [Page 76: 2018-07-16 ](#id-section76). Problem with trikinetics computer: lost data
 * [Page 77:  ](#id-section77).
 * [Page 78:  ](#id-section78).
 * [Page 79:  ](#id-section79).
@@ -4876,13 +4876,36 @@ F-statistic: 7.697 on 1 and 19 DF,  p-value: 0.01208
 
 <div id='id-section75'/>    
 
-### Page 75:  
+### Page 75: 2018-07-12. Meeting with TPowell diapause exit ms
+
+Agenda:
+
+1. Go over figures
+	* order ok? axes labels ok ?
+	* diapause exit over termination timing?
+	* figure 3
+	 	* panel C, it is mass adjusted for baseline and p
+		* exponential scaling and not exponential phase
+		* put the parameter letters as italics.
+
+2. Where are we publishing?
+
+* Tom wants to get out.
+
+Future directions on ms:
+
+* Timing- Tom will finish the last version of the results. Stats light in methods and then stats in results. Early next week, he'll send us results. Discussion will need to be cut.
+	* Tom will send dsicussion too.
+* Andrew fix figures , tweaks
 
 ------
 
 <div id='id-section76'/>    
 
-### Page 76:  
+### Page 76:  2018-07-16. Problem with trikinetics computer: lost data
+
+There was a power outage on 2018-07-13, 16:29:04, (line 383617 on monitor 6), which turned off the trikinetics computer. And we turned the computer back on, on 2018-07-16, 11:39:00. We may want to get rid of this line of the data because it includes all the behavior counts from the past 3 days.
+
 
 ------
 
