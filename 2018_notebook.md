@@ -99,7 +99,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 74: 2018-07-03 ](#id-section74). Range limits ms: re-analysis with MAT
 * [Page 75: 2018-07-12 ](#id-section75). Meeting with TPowell diapause exit ms
 * [Page 76: 2018-07-16 ](#id-section76). Problem with trikinetics computer: lost data
-* [Page 77:  ](#id-section77).
+* [Page 77: 2018-07-17 ](#id-section77). Meeting with Gragland, networks
 * [Page 78:  ](#id-section78).
 * [Page 79:  ](#id-section79).
 * [Page 80:  ](#id-section80).
@@ -4911,7 +4911,24 @@ There was a power outage on 2018-07-13, 16:29:04, (line 383617 on monitor 6), wh
 
 <div id='id-section77'/>    
 
-### Page 77:  
+### Page 77:  2018-07-17. Meeting with Gragland, networks
+
+Use FPKM- normalized count of fragments base don the overall representation in the library (dual normalization)
+
+EdgeR will produce FPKM; double check for library size.
+
+Think about interpretation.
+
+At what point does correlation become noise, vs signal.
+
+Algorithm to threshold to account for shape of the correlation matrix. THINK about thresholding.
+
+**Be careful of the metrics. Some take into account edge weight. The ones that just count edges, you need thresholding.**
+
+Fiddle with EDGER to determine FPKM values.
+
+Good idea? Yes!
+
 
 ------
 
