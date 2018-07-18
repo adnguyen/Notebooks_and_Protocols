@@ -4963,7 +4963,37 @@ Multiple R-squared:  0.8157,	Adjusted R-squared:  0.806
 F-statistic:  84.1 on 1 and 19 DF,  p-value: 2.083e-08
 ```
 
-Wow, the correlation is tighter than I expected. 
+Wow, the correlation is tighter than I expected.
+
+
+Some more....
+
+>Interesting – could you do me a favor?  Flip the axes (since baseline is the one expected to be driving the loss of hardening), and get rid of Vermont (I assume that is the far-right point).
+
+
+
+```R
+ksub.maine<-ksub%>%filter(State=="Maine")
+ggplot(ksub.maine,aes(x=coldplot,y=hard.zero))+geom_point()+stat_smooth(method="lm")
+summary(lm(hard.zero~coldplot,data=ksub.maine))
+all:
+lm(formula = hard.zero ~ coldplot, data = ksub.maine)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-95.476 -51.133  -6.479  54.165 126.942
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 713.1477    72.2246   9.874  5.9e-08 ***
+coldplot     -1.0230     0.1396  -7.326  2.5e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 77.37 on 15 degrees of freedom
+Multiple R-squared:  0.7816,	Adjusted R-squared:  0.767
+F-statistic: 53.67 on 1 and 15 DF,  p-value: 2.501e-06
+```
 
 ------
 
