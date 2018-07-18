@@ -100,7 +100,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 75: 2018-07-12 ](#id-section75). Meeting with TPowell diapause exit ms
 * [Page 76: 2018-07-16 ](#id-section76). Problem with trikinetics computer: lost data
 * [Page 77: 2018-07-17 ](#id-section77). Meeting with Gragland, networks
-* [Page 78:  ](#id-section78).
+* [Page 78: 2018-07-18 ](#id-section78). SHC range edge adaptation ms
 * [Page 79:  ](#id-section79).
 * [Page 80:  ](#id-section80).
 * [Page 81:  ](#id-section81).
@@ -4934,7 +4934,36 @@ Good idea? Yes!
 
 <div id='id-section78'/>    
 
-### Page 78:  
+### Page 78: 2018-07-18.  SHC range edge adaptation ms
+
+SHC asking for another analysis:   
+
+>Could you quickly graph me the relationship between baseline and hardening?  How tight is it really?  What’s the R2?
+
+```R
+ggplot(ksub,aes(y=coldplot,x=hard.zero))+geom_point()+stat_smooth(method="lm")
+> summary(lm(coldplot~hard.zero,data=ksub))
+
+Call:
+lm(formula = coldplot ~ hard.zero, data = ksub)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-186.60  -44.03   13.90   42.18  114.03
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 651.32917   27.07930  24.053 1.09e-15 ***
+hard.zero    -0.81063    0.08839  -9.171 2.08e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 75.59 on 19 degrees of freedom
+Multiple R-squared:  0.8157,	Adjusted R-squared:  0.806
+F-statistic:  84.1 on 1 and 19 DF,  p-value: 2.083e-08
+```
+
+Wow, the correlation is tighter than I expected. 
 
 ------
 
