@@ -4999,7 +4999,56 @@ F-statistic: 53.67 on 1 and 15 DF,  p-value: 2.501e-06
 
 <div id='id-section79'/>    
 
-### Page 79:  
+### Page 79:  2018-07-23. Paper notes: Salachan and Sørensen 2017, JEB
+
+doi: 10.1242/jeb.165308
+
+**Intro/background**
+
+Organisms face temperature changes that influence their performance and activity over space and time. Temp fluctuations differ depending on
+
+**Big Question**
+
+How does mean temperature and variable temperature influences temperature responses?  
+
+**Hypothesis**    
+
+* Outcomes depend on experimental protocol
+
+
+**Experimental approach**
+
+Fluctuate temperatures around the mean at +/-4 and +/- 8.
+
+**THermal assays measured during heating phase of fluctauting regimes** Important note
+
+**...Under developmental Acclimation:**
+
+They grew eggs under 19 or 23 degree C under 0, 4, 8 temperature fluctuations and measured adult thermal hardiness.
+
+**Under adult acclimation**
+
+They grew eggs under 19 or 23 degree C under 0, 4, 8 temperature fluctuations, transferred to constant or fluctuating conditoins, and then measured adult thermal hardiness. Important note: 19 and 23 degree C were separated and samples were not crossed over for this experiment
+
+**Under adult acclimation with temperature change**
+
+They grew eggs under 19 or 23 degree C under 0, 4, 8 temperature fluctuations, transferred to constant or fluctuating conditons for both 19 and 23 temperature, and then measured adult thermal hardiness.
+
+
+
+**Results**
+
+1. Main effect of treatment (temperature fluctuation 0, 4, 8) and main effect of temperature for both CTmmax and CTmin
+2. Interaction between dev treatment and adult treatment for Ctmin and not CTmax under 4 temp fluctuations and not 8 temp fluctuations.
+
+**Conclusion**
+
+IT looks like CTmin is more sensitive to these temperature treatments than CTmax. CTmin may have more plasticity.
+
+Thoughts:
+
+Graphs obscure patterns and there are no post hoc tests. It is hard to know what is different from each other. I'd plot either CTmax or CTmin vs temperature fluct (0,4,8) and have different transfer (Dev-Adult condition;C-F, F-C, C-C, F-F) combinatios as separate lines.
+
 
 ------
 
