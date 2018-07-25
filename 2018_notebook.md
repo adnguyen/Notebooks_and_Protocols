@@ -5054,7 +5054,7 @@ Graphs obscure patterns and there are no post hoc tests. It is hard to know what
 
 <div id='id-section80'/>    
 
-### Page 80:  2018-07-25. Proteome stability idead dump
+### Page 80:  2018-07-25. Proteome stability idea dump
 
 Knowledge Gap: What is the actual effect of having misfolded/aggregated proteins. Is it a matter of less function or do they hinder function? 
 
@@ -5066,10 +5066,19 @@ Hypothesis:
 Experimental Approach: Compare enzyme activity in the presence/absence of misfolded/aggregated proteins
 
 1. Create 2 unfolding curves
-2. Measure enzyme activity in one ---Aggregate group
-3. In the other, ultracentrifugate, and then measure enzyme activity ---Non-aggregate group
+2. Measure enzyme activity in one ---Aggregate group or U + F group; treat 25 and 70C
+3. In the other, ultracentrifugate, and then measure enzyme activity ---Non-aggregate group or U group; treat 25 and 70 C
 
 Expected Outcomes:
+
+1. Hinder result: interaction between treatment(U+F vs F) and temperature on enzyme activity
+	* enzyme activity is lower in U + F under 70C compared to 25 C . 
+2. Loss result : additive effect of temperature on enzyme activity
+	* enzyme activity is higher in 25 than 70 C
+
+Big picture:
+
+Pitch in terms of drop in performance under temperature threats. Is the drop in performance related to how aggregates hinder enzyme activity? 
 
 ------
 
