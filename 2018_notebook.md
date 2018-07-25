@@ -101,8 +101,8 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 76: 2018-07-16 ](#id-section76). Problem with trikinetics computer: lost data
 * [Page 77: 2018-07-17 ](#id-section77). Meeting with Gragland, networks
 * [Page 78: 2018-07-18 ](#id-section78). SHC range edge adaptation ms
-* [Page 79:  ](#id-section79).
-* [Page 80:  ](#id-section80).
+* [Page 79: 2018-07-23 ](#id-section79). Paper notes: Salachan and Sørensen 2017, JEB
+* [Page 80: 2018-07-25 ](#id-section80). Proteome stability idea dump
 * [Page 81:  ](#id-section81).
 * [Page 82:  ](#id-section82).
 * [Page 83:  ](#id-section83).
@@ -5054,7 +5054,22 @@ Graphs obscure patterns and there are no post hoc tests. It is hard to know what
 
 <div id='id-section80'/>    
 
-### Page 80:  
+### Page 80:  2018-07-25. Proteome stability idead dump
+
+Knowledge Gap: What is the actual effect of having misfolded/aggregated proteins. Is it a matter of less function or do they hinder function? 
+
+Hypothesis:
+
+1. Misfolded/aggregated proteins hinder function
+2. Misfolded/aggregated lose function
+
+Experimental Approach: Compare enzyme activity in the presence/absence of misfolded/aggregated proteins
+
+1. Create 2 unfolding curves
+2. Measure enzyme activity in one ---Aggregate group
+3. In the other, ultracentrifugate, and then measure enzyme activity ---Non-aggregate group
+
+Expected Outcomes:
 
 ------
 
