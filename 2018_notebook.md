@@ -103,7 +103,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 78: 2018-07-18 ](#id-section78). SHC range edge adaptation ms
 * [Page 79: 2018-07-23 ](#id-section79). Paper notes: Salachan and Sørensen 2017, JEB
 * [Page 80: 2018-07-25 ](#id-section80). Proteome stability idea dump
-* [Page 81:  ](#id-section81).
+* [Page 81: 2018-07-31 ](#id-section81). Updated to do list
 * [Page 82:  ](#id-section82).
 * [Page 83:  ](#id-section83).
 * [Page 84:  ](#id-section84).
@@ -5056,7 +5056,7 @@ Graphs obscure patterns and there are no post hoc tests. It is hard to know what
 
 ### Page 80:  2018-07-25. Proteome stability idea dump
 
-Knowledge Gap: What is the actual effect of having misfolded/aggregated proteins. Is it a matter of less function or do they hinder function? 
+Knowledge Gap: What is the actual effect of having misfolded/aggregated proteins. Is it a matter of less function or do they hinder function?
 
 Hypothesis:
 
@@ -5072,19 +5072,256 @@ Experimental Approach: Compare enzyme activity in the presence/absence of misfol
 Expected Outcomes:
 
 1. Hinder result: interaction between treatment(U+F vs F) and temperature on enzyme activity
-	* enzyme activity is lower in U + F under 70C compared to 25 C . 
+	* enzyme activity is lower in U + F under 70C compared to 25 C .
 2. Loss result : additive effect of temperature on enzyme activity
 	* enzyme activity is higher in 25 than 70 C
 
 Big picture:
 
-Pitch in terms of drop in performance under temperature threats. Is the drop in performance related to how aggregates hinder enzyme activity? 
+Pitch in terms of drop in performance under temperature threats. Is the drop in performance related to how aggregates hinder enzyme activity?
 
 ------
 
 <div id='id-section81'/>    
 
-### Page 81:  
+### Page 81:  2018-07-31. Updated to do list
+
+1. Hsp rxn norm ms- on hold
+
+2. range limits ms- revisions
+	* I will redo figures that takes out VT samples; I also need to change the text ; including new stats and new colony numbers
+	* SHC will take a crack at the results
+
+3. Thermal niche ms-
+	* Lchick to work on major revisions
+	* I sent a version of abstract to NJG and he sent back edits. Fill in blanks and then send to Lchick
+
+4. Started a literature spreadsheet for my post doc ; fill in as I go
+	* It'll track questions/hypotheses/main results/limitations and paper details in the spreadsheet
+
+5. Proteome stability project
+	* We found variation in thermal traits in the DSPR lines
+	* Want to test whether differences in thermal traits are reflected in differences in the stability of proteomes
+		* problem with protein quantification - talk to Dan
+
+6. Diapause exit ms
+	* Wrote up abstract and results - in DHahn's hands
+
+7. Cerasi data set & analysis
+	* Build time series networks for each population
+	* Fill in network literature in the tab in the spreadsheet under #4 on this list
+	* I should be using FPKM
+
+8. Tweak talk for evolution conference
+	* Practice for Dan
+	* Clean up figures to make them consistent, especially the difference in habitat types one.
+
+9. Circadian rhythm proj
+	* STill measuring, no entrainment samples right now.
+	* Dylan is hopping in on trik monitors 1 and 2 to do his experiment. I moved out both datasets so he is collecting data in new files. 
+
+------
+
+range limits stats
+
+### SHC wants pca of climate variables only for maine sites
+
+```R
+clim.pca<-princomp(scale(maine[,23:29]))
+summary(clim.pca)
+clim.pca$loadings[,1:2]
+
+```
+
+|     |     Comp.1|    Comp.2|
+|:----|----------:|---------:|
+|MAT  |  0.3434587| 0.4656631|
+|MDR  | -0.4178970| 0.3184612|
+|ISO  | -0.2746063| 0.4465854|
+|SD   | -0.4394715| 0.0623454|
+|Tmax |  0.1567641| 0.6253765|
+|Tmin |  0.4517551| 0.2360573|
+|TAR  | -0.4584722| 0.1777525|
+
+new gmax loadings
+
+```R
+knitr::kable(gload)
+```
+
+|                |   loadings| temp|
+|:---------------|----------:|----:|
+|pretreat_Temp-5 |  0.2543283|   -5|
+|pretreat_Temp0  | -0.4586843|    0|
+|pretreat_Temp25 |  0.6246196|   25|
+|pretreat_Temp5  |  0.5785984|    5|
+
+### regression models
+
+**filtering out VT first**
+
+```R
+maine<-ksub%>%
+  filter(State!="Vermont")
+```
+
+**basal**
+
+
+```R
+summary(lm(coldplot~MAT,data=maine))
+
+Call:
+lm(formula = coldplot ~ MAT, data = maine)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-172.45  -89.53  -33.33   90.05  178.51
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1213.31     250.70   4.840 0.000216 ***
+MAT          -124.59      43.49  -2.865 0.011803 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 115 on 15 degrees of freedom
+Multiple R-squared:  0.3537,	Adjusted R-squared:  0.3106
+F-statistic: 8.208 on 1 and 15 DF,  p-value: 0.0118
+
+```
+
+**hardening**
+
+without quadratic
+
+```R
+summary(lm(hard.zero~MAT,data=maine))
+Call:
+lm(formula = hard.zero ~ MAT, data = maine)
+
+Residuals:
+     Min       1Q   Median       3Q      Max
+-188.569 -135.468   -8.519   56.382  294.831
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept)  -405.13     324.51  -1.248   0.2310  
+MAT           106.00      56.29   1.883   0.0792 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 148.9 on 15 degrees of freedom
+Multiple R-squared:  0.1912,	Adjusted R-squared:  0.1373
+F-statistic: 3.546 on 1 and 15 DF,  p-value: 0.07921
+```
+
+With quadratic
+
+```R
+summary(lm(hard.zero~MAT+I(MAT^2),data=maine))
+lm(formula = hard.zero ~ MAT + I(MAT^2), data = maine)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-222.55  -81.84  -20.87  102.42  215.22
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept) -6751.92    2634.89  -2.563   0.0226 *
+MAT          2365.02     933.73   2.533   0.0239 *
+I(MAT^2)     -198.45      81.91  -2.423   0.0296 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 129.4 on 14 degrees of freedom
+Multiple R-squared:  0.4301,	Adjusted R-squared:  0.3487
+F-statistic: 5.283 on 2 and 14 DF,  p-value: 0.01952
+```
+
+### Correlation between hardening at 0 and basal cold tolerance  
+
+
+```R
+summary(lm(hard.zero~coldplot2,data=maine))
+
+Call:
+lm(formula = hard.zero ~ coldplot2, data = maine)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-95.476 -51.133  -6.479  54.165 126.942
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 435.1594    36.9233  11.785 5.53e-09 ***
+coldplot2    -1.0230     0.1396  -7.326 2.50e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 77.37 on 15 degrees of freedom
+Multiple R-squared:  0.7816,	Adjusted R-squared:  0.767
+F-statistic: 53.67 on 1 and 15 DF,  p-value: 2.501e-06
+
+```
+
+### splitting basal cold tolerance at the median and evaluating correlation
+
+lower than 261
+
+```R
+maine.low<-maine%>%
++   filter(coldplot2<median(coldplot2))
+> summary(lm(hard.zero~coldplot2,data=maine.low))
+
+Call:
+lm(formula = hard.zero ~ coldplot2, data = maine.low)
+
+Residuals:
+		Min       1Q   Median       3Q      Max
+-119.031  -53.738    2.432   36.239  151.116
+
+Coefficients:
+					 Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 366.5633    56.4144   6.498 0.000632 ***
+coldplot2    -0.2834     0.4464  -0.635 0.548913    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 90.43 on 6 degrees of freedom
+Multiple R-squared:  0.06296,	Adjusted R-squared:  -0.09322
+F-statistic: 0.4031 on 1 and 6 DF,  p-value: 0.5489
+```
+
+higher than 261
+
+```R
+
+maine.hi<-maine%>%
++   filter(coldplot2>median(coldplot2))
+> summary(lm(hard.zero~coldplot2,data=maine.hi))
+
+Call:
+lm(formula = hard.zero ~ coldplot2, data = maine.hi)
+
+Residuals:
+	 Min      1Q  Median      3Q     Max
+-57.606 -18.338   1.451  27.219  38.604
+
+Coefficients:
+					 Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 506.8081    72.6225   6.979 0.000431 ***
+coldplot2    -1.2813     0.2061  -6.216 0.000801 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 34.76 on 6 degrees of freedom
+Multiple R-squared:  0.8656,	Adjusted R-squared:  0.8432
+F-statistic: 38.63 on 1 and 6 DF,  p-value: 0.0008008
+
+```
+
+
 
 ------
 
