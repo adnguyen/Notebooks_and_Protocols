@@ -5118,7 +5118,7 @@ Pitch in terms of drop in performance under temperature threats. Is the drop in 
 
 9. Circadian rhythm proj
 	* STill measuring, no entrainment samples right now.
-	* Dylan is hopping in on trik monitors 1 and 2 to do his experiment. I moved out both datasets so he is collecting data in new files. 
+	* Dylan is hopping in on trik monitors 1 and 2 to do his experiment. I moved out both datasets so he is collecting data in new files.
 
 ------
 
@@ -5321,6 +5321,54 @@ F-statistic: 38.63 on 1 and 6 DF,  p-value: 0.0008008
 
 ```
 
+
+### figure 5 stats ; without vt samples
+
+pre-treatment temp as a factor
+
+```R
+> summary(aov(treatment_recovery_s~factor(pretreat_Temp)+Colony,new.dat3))
+                      Df Sum Sq Mean Sq F value   Pr(>F)    
+factor(pretreat_Temp)  3 420808  140269   9.517 5.53e-05 ***
+Colony                15 182778   12185   0.827    0.644    
+Residuals             45 663215   14738                     
+```
+
+Post hocs
+
+```R
+Fit: aov(formula = treatment_recovery_s ~ factor(pretreat_Temp) + Colony, data = new.dat3)
+
+$`factor(pretreat_Temp)`
+            diff        lwr       upr     p adj
+0--5  -183.63021 -298.13214 -69.12827 0.0005460
+5--5   -29.62500 -144.12694  84.87694 0.9003008
+25--5   24.56771  -89.93423 139.06964 0.9398036
+5-0    154.00521   39.50327 268.50714 0.0043922
+25-0   208.19792   93.69598 322.69985 0.0000868
+25-5    54.19271  -60.30923 168.69464 0.5910534
+
+
+```
+
+We really have a repeated measures anova design and having colony as a factor doesn't make sense because colonies will covary across pre treatment tempos
+
+Here is the mixed effects model and colony is a random effect
+
+```R
+summary(lmer(treatment_recovery_s~factor(pretreat_Temp)+(1|Colony),data=new.dat3))
+Fixed effects:
+                        Estimate Std. Error      df t value Pr(>|t|)    
+(Intercept)               600.33      29.69   60.00  20.223  < 2e-16 ***
+factor(pretreat_Temp)0   -183.63      41.98   60.00  -4.374 4.94e-05 ***
+factor(pretreat_Temp)5    -29.62      41.98   60.00  -0.706    0.483    
+factor(pretreat_Temp)25    24.57      41.98   60.00   0.585    0.561    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+```
+
+So, -5 pretreatment temp is the baseline comparison in this output. 0 is diff from -5,5,25.
 
 
 ------
