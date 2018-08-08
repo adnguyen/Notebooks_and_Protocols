@@ -104,7 +104,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 79: 2018-07-23 ](#id-section79). Paper notes: Salachan and Sørensen 2017, JEB
 * [Page 80: 2018-07-25 ](#id-section80). Proteome stability idea dump
 * [Page 81: 2018-07-31 ](#id-section81). Updated to do list
-* [Page 82:  ](#id-section82).
+* [Page 82: 2018-08-08 ](#id-section82). Circadian rhythm thoughts, data analysis
 * [Page 83:  ](#id-section83).
 * [Page 84:  ](#id-section84).
 * [Page 85:  ](#id-section85).
@@ -5375,7 +5375,22 @@ So, -5 pretreatment temp is the baseline comparison in this output. 0 is diff fr
 
 <div id='id-section82'/>    
 
-### Page 82:  
+### Page 82: 2018-08-08 Circadian rhythm thoughts, data analysis   
+
+Some QC issues: Double check dates. One way to id whether the dates have been correctly inputted is to construct  a table with number of days for free-run, entrainment, for every unique ID
+
+For example, h4o4 has 3 days in entrainment which doesn't seem right. Double check
+
+Some thoughts on data analysis.
+
+* As for measuring biological rhythms. Try out different programs such as Lomb-Scargle method.
+
+* So far, I have done a spectral density analysis and wavelet analysis(discrete). For the discrete wavelet, I could analyze this separate and get higher estimates of biological rhtyhms because the time series is longer than the entrainment. This way, we can compare rhythms that are on the order of days instead of hours.
+
+* I can also gather more accurate estimates of death days in the trikinetics data.
+
+* I still need to figure out a way to get amplitude and phase parameters from these analyses. 
+
 
 ------
 
