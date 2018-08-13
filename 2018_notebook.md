@@ -106,7 +106,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 81: 2018-07-31 ](#id-section81). Updated to do list
 * [Page 82: 2018-08-08 ](#id-section82). Circadian rhythm thoughts, data analysis
 * [Page 83: 2018-08-09 ](#id-section83). Detecting rhythms in R
-* [Page 84:  ](#id-section84).
+* [Page 84: 2018-08-13 ](#id-section84). Rhagoletis summer collections  
 * [Page 85:  ](#id-section85).
 * [Page 86:  ](#id-section86).
 * [Page 87:  ](#id-section87).
@@ -5513,13 +5513,40 @@ Fourier analysis is a classical periodogram analysis technique and is still wide
 ```
 
 
-Missing gaps: Phase shifts?  Ampitude?
+Missing gaps: Phase shifts?  Amplitude?
 
 ------
 
 <div id='id-section84'/>    
 
-### Page 84:  
+### Page 84:  2018-08-13. Rhagoletis summer collections   
+
+What are the numbers so far?
+
+
+|Host  |treatment |organism | counts|
+|:-----|:---------|:--------|------:|
+|Apple |RT        |fly      |    230|
+|Apple |SO        |fly      |    160|
+|Apple |SO        |wasp     |      2|
+|Haw   |RT        |fly      |     40|
+|Haw   |RT        |wasp     |     16|
+|Haw   |SO        |fly      |     12|
+
+This doesn't look right, but I'll have to double check the data.
+
+Ideal numbers for 2018:
+
+| Experiment | Host  | Flies | Wasps |
+| ---------- | ----- | ----- | ----- |
+| RT         | Apple | 100   | 100   |
+| SO         | Apple | 100   | 100   |
+| RT         | Haw   | 100   | 100   |
+| SO         | Haw   | 100   | 100   |
+
+
+We probably want
+
 
 ------
 
