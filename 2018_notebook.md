@@ -105,7 +105,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 80: 2018-07-25 ](#id-section80). Proteome stability idea dump
 * [Page 81: 2018-07-31 ](#id-section81). Updated to do list
 * [Page 82: 2018-08-08 ](#id-section82). Circadian rhythm thoughts, data analysis
-* [Page 83:  ](#id-section83).
+* [Page 83: 2018-08-09 ](#id-section83). Detecting rhythms in R
 * [Page 84:  ](#id-section84).
 * [Page 85:  ](#id-section85).
 * [Page 86:  ](#id-section86).
@@ -5386,17 +5386,134 @@ Some thoughts on data analysis.
 * As for measuring biological rhythms. Try out different programs such as Lomb-Scargle method.
 
 * So far, I have done a spectral density analysis and wavelet analysis(discrete). For the discrete wavelet, I could analyze this separate and get higher estimates of biological rhtyhms because the time series is longer than the entrainment. This way, we can compare rhythms that are on the order of days instead of hours.
+	* An idea to bin the data: by 1 day
 
 * I can also gather more accurate estimates of death days in the trikinetics data.
 
-* I still need to figure out a way to get amplitude and phase parameters from these analyses. 
+* I still need to figure out a way to get amplitude and phase parameters from these analyses.
+
+
 
 
 ------
 
 <div id='id-section83'/>    
 
-### Page 83:  
+### Page 83: 2018-08-09. Detecting rhythms in R
+
+A few notes, showing packages and code for each different type of method.
+
+A good ref:
+
+Leise, T. L. (2013, July 1). Wavelet analysis of circadian and ultradian behavioral rhythms. Journal of Circadian Rhythms. Ubiquity Press. https://doi.org/10.1186/1740-3391-11-5
+
+Analysis:
+1. Fourier Periodogram (TSA package - estimates dominant frequencies in a stationary time series)
+
+```R
+library(TSA)
+
+pergram<-periodogram(h4o13$counts15,xlim=c(0,.05))
+str(pergram)
+List of 16
+ $ freq     : num [1:4000] 0.000125 0.00025 0.000375 0.0005 0.000625 ...
+ $ spec     : num [1:4000] 2482 340 2169 535 692 ...
+ $ coh      : NULL
+ $ phase    : NULL
+ $ kernel   : NULL
+ $ df       : num 1.95
+ $ bandwidth: num 3.61e-05
+ $ n.used   : int 8000
+ $ orig.n   : int 7801
+ $ series   : chr "x"
+ $ snames   : NULL
+ $ method   : chr "Raw Periodogram"
+ $ taper    : num 0
+ $ pad      : num 0
+ $ detrend  : logi FALSE
+ $ demean   : logi TRUE
+```
+
+
+2. Maximum entropy spectral analysis - MESA : Estimates dominant frequency in a time series
+
+function, built in stats package
+
+```R
+spec.ar()
+```
+
+
+I went with a spectral density analysis, which is similar : It grabs the highest power + frequency, but there isn't a way to tell whether the periods are significant.
+
+```R
+sa.an<-function(ts=counts15$counts15){
+  sa1<-spectrum(ts,method=c("pgram","ar"),plot=FALSE,demean=TRUE,detrend=TRUE,tape=.2)
+  spx<-sa1$freq
+  spy<-2*sa1$spec
+  pw<-data.frame(spx,spy)
+  cc1<-pw[order(pw$spy,decreasing=TRUE),]
+  cc2<-subset(cc1,spx<0.05)
+  cc2$density<-density(cc2$spy,n=length(cc2$spy))$y
+  cc2$t<-density(cc2$spy,n=length(cc2$spy))$x
+  #cc<-findpeaks(cc2[,3],minpeakheight=1E-6)
+  cc<-findpeaks(cc2[,1])
+  cc2[order(cc2$density,decreasing=TRUE),]
+  out<-1/cc2[cc[,2],][,1]/4
+  #out<-1/cc2[cc[,2],][,1]/4/24
+  return(out[1:4])
+  ## hours
+
+
+}
+```			
+
+3. Discrete wavelet analysis:(wmtsa package) Evaluates the amplitude and period/frequency at different levels of time(freqnecy bands).  More technically, the analysis produces different details, whose sum, gives the original time series. More simply, you can get amplitude and period as a function of time. This approach is also good for non-stationary time series, meaning that amplitude and period can change over time!
+
+Lumping continuous in here, because its the same package and similar approach.
+
+Note: usually translation-invariant DWT with Daubechies least assymmetric filter of 12.
+
+I wrote a function to grab different filters
+
+```R
+globdwf<-function(vec=test$counts15,Jcirc=6){
+  DJt_circ <- wavMRDSum(vec,levels=Jcirc ,keep.smooth=FALSE, keep.details=TRUE,reflect=TRUE,wavelet="s12",xform="modwt")
+  IBL<-data.frame(findpeaks(DJt_circ))
+  names(IBL)<-c("Height","mid_time","initial_time","final_time")
+  return(mean(diff(IBL$mid_time)/4))
+}
+
+globdwf()
+
+```
+
+
+
+4. Lomb-scargle periodogram: (lomb package) similar to other periodograms but this analysis can handle unevenly sampled data. The cool thing about this analysis is that in R, it can set a threshold for significant power and can objectively evaluate period estimates.
+
+```R
+library(lomb)
+a<-lsp(h4o13$counts15,times=h4o13$time/4,type="period",from=5,to=100)
+summary(a)
+a$peak
+a$peak.at[1]
+
+```
+
+There is also this online program: http://132.187.25.13/actogramj/review.html
+
+```
+
+A brief review of automatic period estimation methods
+The period estimation by eye fit line was the classically used method, whereas today the automatic calculations are preferred because of their objectivity. However, the automatic methods should not be overestimated because most of biological data contain noise, which prevents or influences precise period estimation. Therefore the eye fit line is still useful and sometimes necessary to confirm the automatic periodogram analyses. Also, the period estimation by eye fitted line is still useful when the rhythms are composed of multiple components, the periods of which are often difficult to find automatically.
+
+Fourier analysis is a classical periodogram analysis technique and is still widely used today. This method is often employed for short-term rhythms such as bioluminescence of transgenic organisms ([8]). Chi-square periodogram analysis is the most widely used method today. However, since at least 10 cycles of the rhythms are required to apply the statistical test ([3]), we alternatively implemented the Lomb-Scargle periodogram method in ActogramJ. The Lomb-Scargle periodogram is especially suited to analyze unequally spaced time series data, but it also shows an outstanding performance for equally spaced data ([1, 2]). The Lomb-Scargle periodogram is based on Fourier analysis ([7]), so that both methods show almost the same result when the data points are equally spaced. Recently the Lomb-Scargle periodogram was even satisfactorily applied to gene expression data by DNA-array studies ([6]), suggesting the reliability of the statistical evaluation for short term data. Furthermore the Lomb-Scargle periodogram is noise tolerant in comparison to the chi-square periodogram ([3]). Thus there are several superior features in Lomb-Scargle periodogram compared to chi-square periodogram. Van Dongen et al. [1] even recommended using it as a default method. However, the Lomb-Scargle periodogram is not the best method for all data: because the periodogram is based on the least-square fitting of sine waves to the data, the period estimation for non-sinusoidal rhythms such as bimodal rhythms is less precise ([9]). Therefore the chi-square and Lomb-Scargle periodograms would be complementary. These periodogram analyses can be applied readily with a few mouse clicks in ActogramJ. One can quickly compare the results obtained by the different methods, which provides an additional check for their correctness.
+
+```
+
+
+Missing gaps: Phase shifts?  Ampitude?
 
 ------
 
