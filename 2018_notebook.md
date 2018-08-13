@@ -5533,7 +5533,7 @@ What are the numbers so far?
 |Haw   |RT        |wasp     |     16|
 |Haw   |SO        |fly      |     12|
 
-This doesn't look right, but I'll have to double check the data.
+
 
 Ideal numbers for 2018:
 
@@ -5545,7 +5545,8 @@ Ideal numbers for 2018:
 | SO         | Haw   | 100   | 100   |
 
 
-We probably want
+
+
 
 
 ------
