@@ -5553,7 +5553,107 @@ Ideal numbers for 2018:
 
 <div id='id-section85'/>    
 
-### Page 85:  
+### Page 85:  2018-08-14. Descrepancies on rhagoletis sampling for biological rhythms
+
+I am double checking trikinetics dates and positions on the master spreadsheet.
+
+------
+Sample: h404
+
+Problem: The exit date from entrainment (2017-10-18) was not consistent with entry into free run (2017-10-24). I double checked the free run date it was 2017-10-24,
+
+Solution: I changed the entrainment exit date to 2017-10-24 (nb#001, page 164).
+------
+
+
+
+------
+Sample : 2b23
+
+Problem: The free run date does not match entrainment dates.
+
+Entrainment entry- 2017-10-20
+Entrainment exit- 2017-10-29
+
+Free run entry- 2017-10-16 (this is before it eclosed)
+Free run exit - 2018-01-20
+
+
+1. There is no entry for 2b23 for free run on 2017-10-29, nb #001, page 164.
+2. On nb#001 page 152, 2b23 (trik -position 2-16) was listed as frozen and it is also logged in the notes_2 column (AJ)
+
+Solution: Remove all free run dates because the sample died.
+Free_run_trik_monitor,Free_run_trik_position,Free_run_entry_date,Free_run_entry_time,Free_run_exit_date,Free_run_exit_time,notes_3,Adult_death_date
+4,8,2017-10-16,20:17,2018-01-20,20:03,changed water 2017-11-02 22:54; disturbed to check death 2017-11-07 21:32; changed water 2017-11-17 22:39; changed water 2017-12-10 20:00,2018-01-20
+
+------
+
+
+------
+Sample : 14b9
+
+Problem: death date(exit free run date (2017-01-04) ) is before the free run entry date ( 2017-11-04). But the logged death date in nb#002, page 59 is 2018-01-04.
+
+Solution: Change free run exit date to 2018-01-04.
+
+------
+
+------
+Sample: 13o45
+
+Problem: death date(free run exit date) is note a date (43028). Death logged in nb#001, page 135. The sample was also frozen.
+
+Solution : Changed free run exit date to 2017-10-20
+
+------
+
+
+------
+Sample: 13o17
+
+Problem: The free run exit time is a date (4/2/18) and not a time. Time(20:05) is in nb#004, page 28.
+
+Solution. Changed free run exit time to 20:05
+------
+
+
+------
+Sample: 13r12
+
+
+problem: No free run trik monitor,position, time entry, and date entry. Position is 6-10. Time is 20:40. Date is 2018-04-11. Logged nb#003, page 10.
+
+SolutioN: Entered in data.
+
+
+------
+
+
+------
+Sample: 12b73
+
+
+problem: entrainment exit (2018-04-05) different than free run entyr date ( 2018-04-06).Checked nb#002, page 190 and entry date should be 2018-04-06
+
+SolutioN: Changed free run entry date to 2018-04-06.
+
+
+------
+
+
+
+------
+Sample: 11o24,2r38  , h4o2 ,4o25
+
+
+problem: free run exit date ()2017-01-04) is earlier than free run entry date (2017-11-16).But the logged death date in nb#002, page 59 is 2018-01-01.
+
+Solution: Change free run exit date to 2018-01-04.
+
+------
+
+
+
 
 ------
 
