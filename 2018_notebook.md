@@ -107,7 +107,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 82: 2018-08-08 ](#id-section82). Circadian rhythm thoughts, data analysis
 * [Page 83: 2018-08-09 ](#id-section83). Detecting rhythms in R
 * [Page 84: 2018-08-13 ](#id-section84). Rhagoletis summer collections  
-* [Page 85:  ](#id-section85).
+* [Page 85: 2018-08-14 ](#id-section85). Descrepancies on rhagoletis sampling for biological rhythms
 * [Page 86:  ](#id-section86).
 * [Page 87:  ](#id-section87).
 * [Page 88:  ](#id-section88).
@@ -5611,9 +5611,10 @@ Solution : Changed free run exit date to 2017-10-20
 ------
 Sample: 13o17
 
-Problem: The free run exit time is a date (4/2/18) and not a time. Time(20:05) is in nb#004, page 28.
+Problem: The free run exit time is a date (4/2/18) and not a time. Time(20:05) is in nb#004, page 28.   
 
 Solution. Changed free run exit time to 20:05
+
 ------
 
 
