@@ -108,7 +108,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 83: 2018-08-09 ](#id-section83). Detecting rhythms in R
 * [Page 84: 2018-08-13 ](#id-section84). Rhagoletis summer collections  
 * [Page 85: 2018-08-14 ](#id-section85). Descrepancies on rhagoletis sampling for biological rhythms
-* [Page 86:  ](#id-section86).
+* [Page 86: 2018-09-03 ](#id-section86). Reading Murren et al. 2015; Constraints on the evolution of phenotypic plasticity: limits and costs of phenotype and plasticity
 * [Page 87:  ](#id-section87).
 * [Page 88:  ](#id-section88).
 * [Page 89:  ](#id-section89).
@@ -5660,7 +5660,34 @@ Solution: Change free run exit date to 2018-01-04.
 
 <div id='id-section86'/>    
 
-### Page 86:  
+### Page 86: 2018-09-03. Reading Murren et al. 2015; Constraints on the evolution of phenotypic plasticity: limits and costs of phenotype and plasticity
+
+Two types of restrictions for performance in different environments:
+
+1. Costs - reduction in fitness when a trait is produced via plasticity rather than constitutively
+2. limits - inability to produce the optimal trait value
+
+
+There should be a distinction between cost of plasticity and costs of phenotypic production- shouldn't be conflated.
+
+"A cost of plasticity refers to the fitness decrement a highly plastic genotype pays relative to a less plastic genotype".
+
+I think this is a good way of thinking about it, comparing among genotypes. I've been thinking about plasticity within a genotype and comparisons of performance across environment. But...if you look at figure 1....the cost of plasticity isn't consistent with Angiletta's definition (slope of the reaction norm) and they're not comparing the slope of the reaction norm. Is it even appropriate to ask about what the cost of plasticity is? Or is it better just to describe the phenomenon as- performance differences across an environment among genotypes (ie home site advantage in a reciprocal transplant experiment).
+
+"A cost of phenotype refers in part to the fitness tradeoffs inherent in allocating resources to one trait vs another as well as the costs of obtaining information on the environment (Callahan et al., 2008)."
+
+This distinction is a little bit difficult to agree on because you can imagine that the aforementioned cost to plasticity can be brought about by a cost in producing a phenotype in a given environment. So why the distinction? Figure 1 still looks like a cost of the phenotype....where they label cost of plasticity.
+
+
+Conditions that favor plasticity:
+
+**Environmental Heterogeneity**; but it should be within a lifetime.
+
+When species encounter novel environments, plasticity can allow populations to move closer to the new phenotypic optimum and uncover phenotypic variation (cryptic genetic variation). But...these two items are intertwined, and they listed it as two unique things.
+
+**Constraints on plasticity**
+
+Slope and curvature can readily evolve in populations and species.
 
 ------
 
