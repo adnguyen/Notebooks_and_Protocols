@@ -5695,7 +5695,7 @@ Slope and curvature can readily evolve in populations and species.
 
 ### Page 87:  2018-09-13. Rhagoletis field collection notes 2018-08-29
 
-Went to field and collected Apple fruit 2018-08-29. These notes have coordinates of where to find fruit. Even though we collected Apple, we have some coordinates for Hawthorn trees.
+Went to field and collected Apple fruit 2018-08-29. These notes have coordinates of where to find fruit. Even though we collected Apple, we have some coordinates for Hawthorn trees. We also collected crab apples.  
 
 ![](https://user-images.githubusercontent.com/4654474/45515718-ec1abf80-b776-11e8-8520-9faf1a079fb8.jpg)
 
@@ -5710,7 +5710,7 @@ Went to field and collected Apple fruit 2018-08-29. These notes have coordinates
 ![](https://user-images.githubusercontent.com/4654474/45515642-b83f9a00-b776-11e8-956f-c99377ceaa08.JPG)   
 
 
-Overall, Grant OG has yielded the most maggots. 
+Overall, Grant OG has yielded the most maggots. Infestation of crab apples is low. 
 
 ------
 
