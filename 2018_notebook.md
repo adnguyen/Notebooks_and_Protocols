@@ -109,7 +109,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 84: 2018-08-13 ](#id-section84). Rhagoletis summer collections  
 * [Page 85: 2018-08-14 ](#id-section85). Descrepancies on rhagoletis sampling for biological rhythms
 * [Page 86: 2018-09-03 ](#id-section86). Reading Murren et al. 2015; Constraints on the evolution of phenotypic plasticity: limits and costs of phenotype and plasticity
-* [Page 87:  ](#id-section87).
+* [Page 87: 2018-09-13 ](#id-section87). Rhagoletis field collection notes 2018-08-29
 * [Page 88:  ](#id-section88).
 * [Page 89:  ](#id-section89).
 * [Page 90:  ](#id-section90).
@@ -5693,7 +5693,24 @@ Slope and curvature can readily evolve in populations and species.
 
 <div id='id-section87'/>    
 
-### Page 87:  
+### Page 87:  2018-09-13. Rhagoletis field collection notes 2018-08-29
+
+Went to field and collected Apple fruit 2018-08-29. These notes have coordinates of where to find fruit. Even though we collected Apple, we have some coordinates for Hawthorn trees.
+
+![](https://user-images.githubusercontent.com/4654474/45515718-ec1abf80-b776-11e8-8520-9faf1a079fb8.jpg)
+
+![](https://user-images.githubusercontent.com/4654474/45515638-b83f9a00-b776-11e8-9cdd-7fa99b7cac6d.JPG)  
+
+![](https://user-images.githubusercontent.com/4654474/45515639-b83f9a00-b776-11e8-97f3-981f61ba133a.JPG)   
+
+![](https://user-images.githubusercontent.com/4654474/45515640-b83f9a00-b776-11e8-8750-ab4f7690285b.JPG)
+
+![](https://user-images.githubusercontent.com/4654474/45515641-b83f9a00-b776-11e8-9ece-28762cfd8ea5.JPG)
+
+![](https://user-images.githubusercontent.com/4654474/45515642-b83f9a00-b776-11e8-956f-c99377ceaa08.JPG)   
+
+
+Overall, Grant OG has yielded the most maggots. 
 
 ------
 
