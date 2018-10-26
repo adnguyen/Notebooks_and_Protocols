@@ -110,7 +110,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 85: 2018-08-14 ](#id-section85). Descrepancies on rhagoletis sampling for biological rhythms
 * [Page 86: 2018-09-03 ](#id-section86). Reading Murren et al. 2015; Constraints on the evolution of phenotypic plasticity: limits and costs of phenotype and plasticity
 * [Page 87: 2018-09-13 ](#id-section87). Rhagoletis field collection notes 2018-08-29
-* [Page 88:  ](#id-section88).
+* [Page 88: 2018-10-26 ](#id-section88). Thoughts on amnnat revisions
 * [Page 89:  ](#id-section89).
 * [Page 90:  ](#id-section90).
 * [Page 91:  ](#id-section91).
@@ -5710,13 +5710,34 @@ Went to field and collected Apple fruit 2018-08-29. These notes have coordinates
 ![](https://user-images.githubusercontent.com/4654474/45515642-b83f9a00-b776-11e8-956f-c99377ceaa08.JPG)   
 
 
-Overall, Grant OG has yielded the most maggots. Infestation of crab apples is low. 
+Overall, Grant OG has yielded the most maggots. Infestation of crab apples is low.
 
 ------
 
 <div id='id-section88'/>    
 
-### Page 88:  
+### Page 88: 2018-10-26. Thoughts on amnnat revisions
+
+
+In the discussion, we have to make more changes to make the narrative more consistent with our data(so the reviewers and editors think). We have modelling of a species range and physiology at the range margin.
+
+
+An approach to write about the study:
+
+Paragraph 1- It summarizes the results and places it in a slightly broader content. We can add caveats here such as :
+* we need reciprocal transplants and beyond the range transplants to determine local adaptation, and a cline is more of a signature of adaptation
+* When we do the transplants, then do we see reduced organismal performance due to their cold tolerance.
+* For the genetic constraints part, we cannot completely rule out the effect of maternal acclimation, and worker acclimation through a season. In fact, workers previous in the season may have different cold tolerances than ones later in the season.
+
+Paragraph 2 - It goes into the occupancy model and and explains the meaning of each climate variable. We can do this more briefly/quickly and then discuss Angert's 2018 paper on climate modeling that tests the role of fitness and dispersal limitation. Dispersal limitation is when they don't fill in their range and there is suitable habitat. Fitness limitation is when their suitable habitat and occupancy align. These data suggest that they may be dispersal limited instead of fitness limitation.
+
+Paragraph 3 - This paragraph goes leads the modleling into the physiology
+
+When dispersal is limited, genetic drift can become more efficient and it actually is associated with increased trait independence at the species range. In contrast to these results, we identified a trade off in cold tolerance that varies across temperature, suggesting that selection is acting on these populations
+
+
+
+
 
 ------
 
