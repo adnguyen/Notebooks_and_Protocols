@@ -5751,9 +5751,19 @@ From the modeling aspect, people do make claims about range limits. The models u
 
 The problems with these models is that they're correlative and assume that a species range is static. Species ranges may not be static or at equilibrium, especially if they are dispersal limited. For our data, it may also assume that the colonies we found are edge and marginal populations that are not sink populations. Meaning, their fitness is low and cannot maintain populations; instead, their populations are totally sustained by migrants. The influence of dispesral limitation and fitness needs to be experimentally tested . In fact...Hargreaves study 2014, Amnat and get into the nuances. Also mention Angert et al. 2018, and how dispersal limitation could be more prevalent in poleward populations and that dispersal and fitness limitation can act together. Many of these studies measure survival at different life stages and fitness, which is really  difficult for mobile animal species. Instead, proxies of fitness can be measured. Dispersal limitation can decrease genetic variation.
 
-These ants postglacially expanded their range. And the evidence for dispersal limitation is mixed (Svennig et al. 2008), but generally, climate and dispersal limitation are both important. What could slow them down is expansion load, when a deleterious mutation becomes fixed , and it is more likely to be come fixed due to low effective population sizes. Increased mutation load may influence the genetic architecture and subsequent response to selection. 
+These ants postglacially expanded their range. And the evidence for dispersal limitation is mixed (Svennig et al. 2008), but generally, climate and dispersal limitation are both important. What could slow them down is expansion load, when a deleterious mutation becomes fixed , and it is more likely to be come fixed due to low effective population sizes. Increased mutation load may influence the genetic architecture and subsequent response to selection.
 
 Whether populations can respond to selective pressures at the range margin will depend on the genetic architecture of ecologically functional traits.  Genetic variation decreases in the species range edges (paccard) and have been shown to make traits more independent, which may on the surface ehnahce the response to selection because there are more trait combinations for selection to operate upon. Yet, this contrasts with our results where traits are less independent. Infact the leading PC explained the majority of the variation and it is this axis that adaptation proceeds along. The genetic architecture of the leading PC (berger 2013 evolution) does change across latitude. And for poleward populations, they shift towards cooler-warmer variation. Cooler-warmer variation seems to be the prevailing thing for performance curves (Kingsolver 2015)
+
+
+Most species may be at equilibrium (Hargraves, Lee-Yaw) because the majority of studies find that models match up with niche limits.
+
+Willi 2018 and Paccard 2016, there amy be a link between expansion load and the quantitative genetic architecture. They find expansion load in exons/introns, but also increased trait independence at the range edges.
+
+niche models that show range limits are niche limits does not account for whether populations are locally adapted.
+
+
+however which ecological traits are important at the range margin is unclear
 
 
 
