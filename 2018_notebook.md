@@ -112,7 +112,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 87: 2018-09-13 ](#id-section87). Rhagoletis field collection notes 2018-08-29
 * [Page 88: 2018-10-26 ](#id-section88). Thoughts on amnnat revisions
 * [Page 89: 2018-10-30 ](#id-section89). more thoughts on amnat discussion tweaks
-* [Page 90:  ](#id-section90).
+* [Page 90: 2018-11-05 ](#id-section90). running stuff on hipergator
 * [Page 91:  ](#id-section91).
 * [Page 92:  ](#id-section92).
 * [Page 93:  ](#id-section93).
@@ -5771,7 +5771,118 @@ however which ecological traits are important at the range margin is unclear
 
 <div id='id-section90'/>    
 
-### Page 90:  
+### Page 90:  2018-11-05. running stuff on hipergator
+
+
+New script,
+
+```
+#!/bin/bash
+#SBATCH --job-name=Test_R_script
+##SBATCH --mail-user=andrew.nguyen@ufl.edu
+##SBATCH --mail-type=ALL
+#SBATCH --output=my_job-%j.out
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=110gb
+#SBATCH --time=72:00:00
+#SBATCH --partition=bigmem
+#SBATCH --account=dhahn
+#SBATCH --qos=dhahn-b
+date;hostname;pwd
+
+module load R
+
+export ALLOW_WGCNA_THREADS=4
+
+cd /ufrc/dhahn/andrew.nguyen/Cerasi_Networks/Script
+
+Rscript 03_2018-10-31_Network_centrality_subsets_each_timepoint_population.R
+
+date
+
+
+
+```
+
+notes:
+
+Run with sbatch
+
+```
+sbatch run.sh
+```
+
+**I need to be in the /ufrc/dhahn/andrew.nguyen/ directory**, not home directory
+
+
+Some help from help desk :
+
+```
+Oleksandr Moskalenko 2018-11-05 13:49:40 EST
+I did a short test run. Here's what I saw:
+
+==========================================================================
+*
+*  Package WGCNA 1.66 loaded.
+*
+*    Important note: It appears that your system supports multi-threading,
+*    but it is not enabled within WGCNA in R.
+*    To allow multi-threading within WGCNA with all available cores, use
+*
+*          allowWGCNAThreads()
+*
+*    within R. Use disableWGCNAThreads() to disable threading if necessary.
+*    Alternatively, set the following environment variable on your system:
+*
+*          ALLOW_WGCNA_THREADS=<number_of_processors>
+*
+*    for example
+*
+*          ALLOW_WGCNA_THREADS=32
+*
+*    To set the environment variable in linux bash shell, type
+*
+*           export ALLOW_WGCNA_THREADS=32
+*
+*     before running R. Other operating systems or shells will
+*     have a similar command to achieve the same aim.
+*
+==========================================================================
+
+
+It looks like wgcna can use multiple threads, so you should set
+
+export ALLOW_WGCNA_THREADS=4
+
+in the job script. Then, you can use
+
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+
+in the job resource request if wgcna constitutes a significant portion of the analysis.
+
+I modified run.sh accordingly.
+
+I see that you just moved the directory tree in question to /ufrc. Let's create a shortcut to make it easier to change into that directory tree:
+
+[andrew.nguyen@login1 ~]$ ln -s /ufrc/dhahn/andrew.nguyen/ ufrc
+[andrew.nguyen@login1 ~]$ cd ufrc/Cerasi_Networks/Script
+
+Let's submit a test job.
+
+[andrew.nguyen@login1 Script]$ sbatch run.sh
+Submitted batch job 27514270
+
+   PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                                                                          
+363261 andrew.+  20   0 8699748   6.7g  10924 R  99.7  0.4   1:36.23 R
+
+So far it's only using 1 core, but perhaps this is the parsing phase.
+
+my_job-27514399.out is the job log. The job is running.
+```
+
+
 
 ------
 
