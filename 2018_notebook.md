@@ -113,7 +113,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 88: 2018-10-26 ](#id-section88). Thoughts on amnnat revisions
 * [Page 89: 2018-10-30 ](#id-section89). more thoughts on amnat discussion tweaks
 * [Page 90: 2018-11-05 ](#id-section90). running stuff on hipergator
-* [Page 91:  ](#id-section91).
+* [Page 91: 2018-11-06 ](#id-section91). comparing qgraph with igraph (mainly speed)
 * [Page 92:  ](#id-section92).
 * [Page 93:  ](#id-section93).
 * [Page 94:  ](#id-section94).
@@ -5888,7 +5888,35 @@ my_job-27514399.out is the job log. The job is running.
 
 <div id='id-section91'/>    
 
-### Page 91:  
+### Page 91:  2018-11-06. Comparing qgraph and igraph packages for estimating networks
+
+Comparing qgraph and igraph function from an adjacency matrix. I made a small dataset with 4 genes.  
+
+```R
+library(microbenchmark)
+microbenchmark(qgraph(adj,layout="spring"),graph_from_adjacency_matrix(adj,mode="undirected",weighted=TRUE))
+Unit: microseconds
+                                                                   expr        min          lq        mean
+                                         qgraph(adj, layout = "spring") 225917.868 304599.3010 417874.8655
+ graph_from_adjacency_matrix(adj, mode = "undirected", weighted = TRUE)    208.302    224.8995    301.2776
+     median          uq         max neval
+ 324930.956 559629.7600 1490447.354   100
+    254.335    362.0175     741.082   100
+```
+
+It looks like qgraph is so slow, which may be why it is taking up too much memory on hipergator (computer cluster)s
+
+Ok, lets compare how fast it takes to estimate centrality. One caveat is that centrality() in qgraph does 8 calculations, while eigen_centrality() in igraph calculates 1.
+
+```R
+microbenchmark(centrality(network),eigen_centrality(net))
+Unit: microseconds
+                  expr      min        lq      mean   median       uq       max neval
+   centrality(network) 2636.858 2861.3810 3512.7286 3103.009 3404.803 35386.829   100
+ eigen_centrality(net)  384.781  411.1595  491.9623  446.119  540.057   851.331   100
+```
+
+
 
 ------
 
