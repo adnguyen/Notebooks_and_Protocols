@@ -114,7 +114,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 89: 2018-10-30 ](#id-section89). more thoughts on amnat discussion tweaks
 * [Page 90: 2018-11-05 ](#id-section90). running stuff on hipergator
 * [Page 91: 2018-11-06 ](#id-section91). comparing qgraph with igraph (mainly speed)
-* [Page 92:  ](#id-section92).
+* [Page 92: 2018-11-09 ](#id-section92). git version control on hipergator (computer cluster)
 * [Page 93:  ](#id-section93).
 * [Page 94:  ](#id-section94).
 * [Page 95:  ](#id-section95).
@@ -5922,7 +5922,161 @@ Unit: microseconds
 
 <div id='id-section92'/>    
 
-### Page 92:  
+### Page 92:  2018-11-09. git version control on hipergator (computer cluster)   
+
+I'm working on the UF hipgator computer cluster and doing all of this stuff without version control and without annotating any of the files.
+
+So I need to learn git from the command line and I'll be following this tutorial : [https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+
+I should also be annotating my project. File layout so far when I log in:
+
+```
+[andrew.nguyen@login4 ~]$ pwd
+/home/andrew.nguyen
+
+[andrew.nguyen@login4 ~]$ls
+R  ufrc
+
+```
+
+One of the mistakes I made initially was that I read/write data on my home/andrew.nguyen directory which is not somethign I should do because it is inefficient to do here. Something about parallel processing not supported on home directory, but it is on the ufrc/ directory. So the help desk helped me set up a directory (symbolic link? ) right on my home.
+
+```
+[andrew.nguyen@login1 ~]$ ln -s /ufrc/dhahn/andrew.nguyen/ ufrc
+```
+
+**Ok, so I should be running scripts on /ufrc/dhahn/andrew.nguyen/**
+
+Ok, what is in ufrc?
+
+```
+[andrew.nguyen@login4 ~]$ cd ufrc
+[andrew.nguyen@login4 ufrc]$ ls
+Cerasi_Networks
+
+```
+
+Cerasi_Networks is the main transcriptome project I've been working on. So I want to basically construct networks for each population (2) and each time point ( 4) and estimate structural and node properties.
+
+Layout of Cerasi_Networks
+```
+ls
+Data  Script
+
+```
+
+
+All of the files are in Script:
+
+```
+[andrew.nguyen@login4 Script]$ ls
+03_2018-10-31_Network_centrality_subsets_each_timepoint_population_igraph_cluster.R  04_cluster_script.sh  test_cluster
+03_data_set_2018-10-31_wide_filtered_sig_genes.csv				     older_scripts
+```
+
+older_scripts folder has old scripts from past runs and test_cluster has files from initial test scripts.
+
+03_data_set_2018-10-31_wide_filtered_sig_genes.csv  is the dataset of all the significant genes found with edgeR.
+
+03_2018-10-31_Network_centrality_subsets_each_timepoint_population_igraph_cluster.R is the R script that operates on the dataset.
+
+04_cluster_script.sh is the job script ( use sbatch )
+
+
+Initial git set up:
+
+```
+[andrew.nguyen@login4 Script]$ git config --global user.name "Andrew D. Nguyen"
+[andrew.nguyen@login4 Script]$ git config --global user.email "anbe642@gmail.com"
+[andrew.nguyen@login4 Script]$ git config --global core.editor vim
+[andrew.nguyen@login4 Script]$ git config --list
+user.name=Andrew D. Nguyen
+user.email=anbe642@gmail.com
+core.editor=vim
+
+```
+
+Starting new git repo.
+
+```
+[andrew.nguyen@login4 Script]$ git init
+Initialized empty Git repository in /ufrc/dhahn/andrew.nguyen/Cerasi_Networks/Script/.git/
+```
+
+*This creates a new subdirectory named .git that contains all of your necessary repository files — a Git repository skeleton. At this point, nothing in your project is tracked yet. (See Git Internals for more information about exactly what files are contained in the .git directory you just created.)
+
+If you want to start version-controlling existing files (as opposed to an empty directory), you should probably begin tracking those files and do an initial commit. You can accomplish that with a few git add commands that specify the files you want to track, followed by a git commit:*
+
+```
+[andrew.nguyen@login4 Script]$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	03_2018-10-31_Network_centrality_subsets_each_timepoint_population_igraph_cluster.R
+	03_data_set_2018-10-31_wide_filtered_sig_genes.csv
+	04_cluster_script.sh
+	my_job-27691268.out
+	older_scripts/
+	test_cluster/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+```
+
+ok, let's git add
+
+```
+[andrew.nguyen@login4 Script]$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   03_2018-10-31_Network_centrality_subsets_each_timepoint_population_igraph_cluster.R
+	new file:   03_data_set_2018-10-31_wide_filtered_sig_genes.csv
+	new file:   04_cluster_script.sh
+	new file:   my_job-27691268.out
+	new file:   older_scripts/03_2018-10-31_Network_centrality_subsets_each_timepoint_population_igraph.R
+	new file:   older_scripts/run.sh
+	new file:   test_cluster/03_2018-06-28_Network_analyses.R
+	new file:   test_cluster/03_2018-10-31_Network_centrality_subsets_each_timepoint_population.R
+	new file:   test_cluster/03_cluster_test.sh
+	new file:   test_cluster/03_test.R
+	new file:   test_cluster/2018-06-28_pop_diff_centrality.csv
+	new file:   test_cluster/Rplots.pdf
+
+
+```
+
+git commit
+
+```
+[andrew.nguyen@login4 Script]$ git commit
+[master (root-commit) 8453a1c] First initial commit. Adding mainly the folders in the script folder. It has older scripts and new ones
+ 12 files changed, 19114 insertions(+)
+ create mode 100644 03_2018-10-31_Network_centrality_subsets_each_timepoint_population_igraph_cluster.R
+ create mode 100644 03_data_set_2018-10-31_wide_filtered_sig_genes.csv
+ create mode 100755 04_cluster_script.sh
+ create mode 100644 my_job-27691268.out
+ create mode 100644 older_scripts/03_2018-10-31_Network_centrality_subsets_each_timepoint_population_igraph.R
+ create mode 100755 older_scripts/run.sh
+ create mode 100644 test_cluster/03_2018-06-28_Network_analyses.R
+ create mode 100644 test_cluster/03_2018-10-31_Network_centrality_subsets_each_timepoint_population.R
+ create mode 100755 test_cluster/03_cluster_test.sh
+ create mode 100644 test_cluster/03_test.R
+ create mode 100644 test_cluster/2018-06-28_pop_diff_centrality.csv
+ create mode 100644 test_cluster/Rplots.pdf
+```
+
+Now I can just mess with one script and play with settings instead of making duplicates of it.
+
+
 
 ------
 
