@@ -115,7 +115,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 90: 2018-11-05 ](#id-section90). running stuff on hipergator
 * [Page 91: 2018-11-06 ](#id-section91). comparing qgraph with igraph (mainly speed)
 * [Page 92: 2018-11-09 ](#id-section92). git version control on hipergator (computer cluster)
-* [Page 93:  ](#id-section93).
+* [Page 93: 2018-11-27 ](#id-section93). Montanucci et al. 2011, MBE
 * [Page 94:  ](#id-section94).
 * [Page 95:  ](#id-section95).
 * [Page 96:  ](#id-section96).
@@ -6082,7 +6082,101 @@ Now I can just mess with one script and play with settings instead of making dup
 
 <div id='id-section93'/>    
 
-### Page 93:  
+### Page 93:  2018-11-27. Montanucci et al. 2011, MBE    
+
+Title: Molecular Evolution and Network-level analysis of the N-Glycosylation Metabolic Pathway Across Primates     
+
+Background:
+
+N-glycosylation is decorating a nitrogen atom (amide nitrogen on asparagine) with a glycan or sugars. Mostly eukaryotes and archae do this and some bacteria.
+
+To attach glycans (oligosaccharides) to the protein:
+
+* glycosidic bonds bring sugar moieties together. The bonds are fromed between carbons 1 and 4 of the sugar molecules. It reuires ATP hydrolysis
+
+
+
+
+**Big picture ideas:**
+
+How pathogens recognize and invade our body is through our tissue and cellular structures. Glyco-proteins are diverse set of structural components of the cell that pathogens can recognize. These authors were interested in whether the pathway of how glycoproteins are made has diversified and evolved by natural selection within primates.
+
+The n-glycosylation pathway: They class them
+
+1. Substrate Donor
+2. Precursor biosynthesis
+3. Attachment of precursor to peptide
+4. Quality Control
+5. Glycan Extension
+
+It looks linear for the most part. Glycan extension looks like the most integrated network. There are so different gene sets for each class
+
+
+**Question:**
+
+What shapes the evolutionary trajectory of the pathway producing glycoproteins?
+
+**Hypotheses:**
+
+Length, amino acid position, how genes interact (network) may limit or enhance evolutionary rates.
+
+Or
+
+Overall, individual protein properties and/or the position of the protein within the functional network may limit or enhance evolutionary rates.
+
+**Experimental Approach:**
+
+They picked a tractable network: N-glycosylation pathway. They measured:
+
+Gene list of 52 genes for 4 primates : chimps, gorilla, orangutan, and macaque
+
+1. evolutionary rates, omega, dn, ds
+	* omega = dn/ds
+	* dn = nonsynonmous amino acid substitution, - functional change in amino acid sequence
+	* ds = synonymous amino acid substitution - null change
+
+They use PAML. So they test an evolving model with a neutral model with LRT.
+
+2. Created a functional network and measured centrality: THey got the graph from KEGG pathway
+	* betweenness -fraaction of shortest paths that pass trhough that node
+	* closeness - reciprocal of average distance to all nodes
+	* degree - number of links/ fraction of nodes it is connected to
+
+3. Protein properties
+	* Codons used
+	* Codon bias (effective number of codons) = ENC
+	* Length
+
+They used path analysis to try to determine the direct and indirect effects of protein properties and network properties on evolutionary rates.
+
+**Results:**
+
+1. Table 1. No signature of positive selection. In fact, omega was below 0, evidence for purifying selection
+
+2. Table 2 and 3. Comparing omega for each functinal class : No sig differences among funcional classes  for ds
+	* Tehy evaluated different components of evo rates
+		* omega was diff between precursor and oST /Glycan extension
+
+3.  Strength of purifying selection and pathway structure- Figure 2 and table 4 and figure 3
+	* Negative correlation between pathway position and omega. UPstream genes are under relaxed selection than downstream ones. Driven by Dn and not ds.  Why?
+	* Negative correlation between degree/closeness and omega/dn.
+	* mantel test of pairwise distance between genes sig for dn but not ds. Neighboring genes share similar evolutionary constraints
+
+4. Path analysis
+
+
+
+**Conclusion:**
+
+Take home: Where genes are in the network and how many neighbors they have decreases the evolutionary rate of that gene.
+
+Issues:
+	* The analysis assumes perfect knowledge of the protein fucntional network.
+	* Biased taxanomic sampling : what if they included more species?
+
+Big idea: Evolutionary dispensibility of a gene. extent of given protein can have amino acid changes .
+
+Where you are on the network can constrain you evolutionarily. 
 
 ------
 
