@@ -116,7 +116,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 91: 2018-11-06 ](#id-section91). comparing qgraph with igraph (mainly speed)
 * [Page 92: 2018-11-09 ](#id-section92). git version control on hipergator (computer cluster)
 * [Page 93: 2018-11-27 ](#id-section93). Montanucci et al. 2011, MBE
-* [Page 94:  ](#id-section94).
+* [Page 94: 2018-11-30 ](#id-section94). Basic wgcna code - co expression networks
 * [Page 95:  ](#id-section95).
 * [Page 96:  ](#id-section96).
 * [Page 97:  ](#id-section97).
@@ -6176,13 +6176,68 @@ Issues:
 
 Big idea: Evolutionary dispensibility of a gene. extent of given protein can have amino acid changes .
 
-Where you are on the network can constrain you evolutionarily. 
+Where you are on the network can constrain you evolutionarily.
 
 ------
 
 <div id='id-section94'/>    
 
-### Page 94:  
+### Page 94:  2018-11-30. Basic WGNCA code
+
+
+```R
+### Load data
+dat.wide<-fread("../Data/CerasiCountsIsos/03_data_set_2018-10-31_wide_filtered_sig_genes.csv")
+glimpse(dat.wide)
+
+### WGNCA
+
+adjacency = adjacency(t(dat.wide[,4:7]), power =1); #adjacency matrix
+#topologicla overlap matrix
+TOM = TOMsimilarity(adjacency);
+dissTOM = 1-TOM
+geneTree = hclust(as.dist(dissTOM), method = "average");
+
+#identifying modules using dynamic tree cut
+dynamicMods = cutreeDynamic(dendro = geneTree, distM = dissTOM,
+                            deepSplit = 2, pamRespectsDendro = FALSE,
+                            minClusterSize = 37);
+
+dynamicColors = labels2colors(dynamicMods)
+table(dynamicColors)
+#calculate eigengenes and then cluster modules eigengenes that are similar
+MEList = moduleEigengenes(t(dat.wide[,4:7]), colors = dynamicColors)
+MEs = MEList$eigengenes
+MEs=MEs[,-6]
+
+MEDiss = 1-cor(MEs);
+METree = hclust(as.dist(MEDiss), method = "average");
+#sizeGrWindow(7, 6)
+#plot(METree, main = "Clustering of module eigengenes",
+ #    xlab = "", sub = "")
+# merge modules?
+merge = mergeCloseModules(t(dat.wide[,4:7]), dynamicColors, cutHeight =.25, verbose = 3)
+mergedColors = merge$colors;
+#mergedMEs = merge$newMEs;
+```
+
+I want to construct a network for each time point in a time course experiment. Then compare the modules across all time points. One way to get at robustness of networks or how they can change over time is to determine which genes are consistently modular or correlated in their expression and ones that switch between modules.
+
+Some code to determine how gene sets overlap across modules :
+
+```R
+x<-c("a","b","c")
+y<-c("e","f","c")
+
+z<-c("a","f","c")
+b<-c("q","f","c")
+c<-c("p","f","c")
+
+intersectSeveral <- function(...) { Reduce(intersect, list(...)) }
+intersectSeveral(x,y,z,b,c)
+```
+
+This will identify genes shared among modules. 
 
 ------
 
