@@ -5,7 +5,7 @@
 Date started: 2018-12-4
 Last date modified: ongoing    
 
-This repository is my notebook for the beginnning and continuation of a project to long term sample and monitor Narraganset Bay fish and invertebrate diversity using envrionmental DNA (eDNA). Our goals for the project are to add an additional way to survey the diversity of the bay, begin a long term study with eDNA that replicates sites and methods of collection over multiple years, and to add to the broader objectives and data of RI [C-AIM] (https://web.uri.edu/rinsfepscor/).  
+This repository is my notebook for the beginnning and continuation of a project to long term sample and monitor Narraganset Bay fish and invertebrate diversity using envrionmental DNA (eDNA). Our goals for the project are to add an additional way to survey the diversity of the bay, begin a long term study with eDNA that replicates sites and methods of collection over multiple years, and to add to the broader objectives and data of RI [C-AIM](https://web.uri.edu/rinsfepscor/).  
 
 Template for making an online notebook found [here](https://github.com/meschedl/NB_eDNA_Notebook/blob/master/Online_notebook_template.md). View github repo forked from Andrew Nguyen [here](https://github.com/adnguyen/Notebooks_and_Protocols).
 
