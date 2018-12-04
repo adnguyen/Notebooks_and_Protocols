@@ -16,7 +16,7 @@ Template for making an online notebook found [here](https://github.com/meschedl/
 
 # List of Notebooks by year    
 
-* [2018_Notebook](https://github.com/meschedl/NB_eDNA_Notebook/blob/master/2018_notebook.md). This notebook log: 
+* [2018_Notebook](https://github.com/meschedl/NB_eDNA_Notebook/blob/master/2018_Notebook.md). This notebook log: 
   * Setup for this repository
   * equiptment and background for this project
   
