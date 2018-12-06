@@ -117,7 +117,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 92: 2018-11-09 ](#id-section92). git version control on hipergator (computer cluster)
 * [Page 93: 2018-11-27 ](#id-section93). Montanucci et al. 2011, MBE
 * [Page 94: 2018-11-30 ](#id-section94). Basic wgcna code - co expression networks
-* [Page 95:  ](#id-section95).
+* [Page 95: 2018-12-06 ](#id-section95). Meeting with Dhahn
 * [Page 96:  ](#id-section96).
 * [Page 97:  ](#id-section97).
 * [Page 98:  ](#id-section98).
@@ -6237,13 +6237,34 @@ intersectSeveral <- function(...) { Reduce(intersect, list(...)) }
 intersectSeveral(x,y,z,b,c)
 ```
 
-This will identify genes shared among modules. 
+This will identify genes shared among modules.
 
 ------
 
 <div id='id-section95'/>    
 
-### Page 95:  
+### Page 95: 2018-12-06.  Meeting with Dhahn
+
+
+job application for UF
+* differentiate myself from Dan
+* teach2 classes: insect ecology and something else I wanted
+*
+
+Tom's paper:
+* dan focus on intro
+* andrew focus on results and execute on 2 items
+	* remake box plots and make them prettier
+	* straight up correlation matrix
+
+
+Cerasi data analysis :
+* Detect modules for each population and each time point.
+* A priori: maintenance modules assemble and then disperse through time and termination modules do the opposite
+* Dan wants to bootstrap the adjacency matrix to determine robustness. 	  
+
+
+
 
 ------
 
