@@ -6263,7 +6263,9 @@ Cerasi data analysis :
 * A priori: maintenance modules assemble and then disperse through time and termination modules do the opposite
 * Dan wants to bootstrap the adjacency matrix to determine robustness. 	  
 
-
+reviewing differnt metrics of gxp
+* FPKM - Fragments per kilobase of transcript per million mapped reads
+* RPMK - reads per kilobase of transcript per million mapped reads 
 
 
 ------
