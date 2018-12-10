@@ -118,7 +118,7 @@ Notebook for 2018 new year. It'll log the rest of my dissertation, post doc proj
 * [Page 93: 2018-11-27 ](#id-section93). Montanucci et al. 2011, MBE
 * [Page 94: 2018-11-30 ](#id-section94). Basic wgcna code - co expression networks
 * [Page 95: 2018-12-06 ](#id-section95). Meeting with Dhahn
-* [Page 96:  ](#id-section96).
+* [Page 96: 2018-12-07  ](#id-section96). Lab meeting reading : Johnson et al. 2018
 * [Page 97:  ](#id-section97).
 * [Page 98:  ](#id-section98).
 * [Page 99:  ](#id-section99).
@@ -6265,14 +6265,66 @@ Cerasi data analysis :
 
 reviewing differnt metrics of gxp
 * FPKM - Fragments per kilobase of transcript per million mapped reads
-* RPMK - reads per kilobase of transcript per million mapped reads 
+* RPMK - reads per kilobase of transcript per million mapped reads
 
 
 ------
 
 <div id='id-section96'/>    
 
-### Page 96:  
+### Page 96:  2018-12-07. Lab meeting reading : Johnson et al. 2018     
+
+Title: Network Architecture and Mutational Sensitivity of the C elegans metabolome    
+
+1. Background   
+
+construct networks in c elegans for 29 metabolites.
+
+2. Big picture ideas of the paper
+
+Gap in knowledge: We have a poor understanding of how mutation impacts networks and subsequent evolutionary trajectory   
+
+
+3. Questions   
+
+What is the influence of mutation and the accumulation of mutations on metabolite networks?    
+
+Are there or what positional properties of the metabolite network that impact fitness?
+
+4. Hypotheses   
+
+Mutations in central genes negatively impact fitness.    
+
+Predict system level property negatively related to fitness
+
+
+5. Experimental Approach   
+
+measures: centrality ( in and out degree, closeness, betweenness), mutational heritability , shortest path length , Core number (k -core is the largest subgraph that contains nodes of at least degree K. ), mutational bias,
+
+System: They used mutation accumulation lines (43). Figure1 - variance will increase , mutation bais = slope of Fitness vs generations . Genetic variance will increase over time
+
+Used canoical correlation analysis to find significant asosciations with mutational parameters and network parameters.
+
+6. Key Results   
+
+The graph itself: 656 metabolites, 1203 reactions connecting metabolites.
+
+Figure 2:  example figure of K-core
+
+
+Figure 4: shows a positive correlation to me (no line), but stats don't support it. Darn.
+
+Figure5: randomization for correlations between Rm(genetic correlation between two traits in MA lines) and shortest path length in directed network; absolute value of Rm and shortest path network; Rm and and shortest path length for undirected network.     
+
+
+
+
+7. Conclusion and big picture    
+
+It looks  like the total higher number of degrees can impact the heritability of mutation (short term response to selection on mutational variance)  
+
+
 
 ------
 
