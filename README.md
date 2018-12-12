@@ -1,4 +1,4 @@
-# Notebook for the Narraganset Bay eDNA Project in Carlos Prada's Lab
+# Notebook for the Narraganset Bay eDNA Project in Carlos Prada's Lab at the University of Rhode Island
 ### Author: Maggie Schedl  
 ### website: https://www.carlosprada.org/
 ### email: meschedl@uri.edu
