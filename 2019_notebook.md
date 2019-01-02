@@ -10,7 +10,7 @@
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.    
 
 **Introduction:**    
-Notebook for 2018 new year. It'll log the rest of my dissertation, post doc projects, meetings, papers I've read, and general project ideas.
+Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects, meetings, papers I've read, and general project ideas.
 
 ## List of projects and description   
 * Hsp rxn norm: Understanding how the local thermal environment shapes thermal tolerance and stress response (using Hsps as a proxy for stress) in forest ants of the genus *Aphaenogaster*. CTmax and rxn norm of Hsp expression measured across forest ants from Fl to Maine.   
