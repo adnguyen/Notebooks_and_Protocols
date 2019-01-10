@@ -24,10 +24,10 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 
 
 # Table of contents (for 200 entries)    
-* [Page 1:   2019-01-02](#id-section1). Yearly goals: recap from last year and this year's
-* [Page 2:  ](#id-section2).
-* [Page 3:  ](#id-section3).
-* [Page 4:  ](#id-section4).
+* [Page 1: 2019-01-02](#id-section1). Yearly goals: recap from last year and this year's
+* [Page 2: 2019-01-07](#id-section2). lynda.com data tells a great story
+* [Page 3: 2019-01-10 ](#id-section3). evolution of Resistance vs tolerance and meeting list with dan
+* [Page 4: 2019-01-10 ](#id-section4). Partial correlation code to test out
 * [Page 5:  ](#id-section5).
 * [Page 6:  ](#id-section6).
 * [Page 7:  ](#id-section7).
@@ -281,19 +281,350 @@ It looks like goals have changed a lot. I think in 2018, I wanted to set myself 
 
 <div id='id-section2'/>    
 
-### Page 2:  
+### Page 2: 2019-01-07 lynda.com data tells a great story    
+
+Story with data - don't need
+
+ex: Andrew Moorefield started company ; could not make payroll ; he let some employees decide
+
+He used 5 numbers to illustrate the dilemma of revenue vs salary.
+
+Story telling technique:
+
+1. Don't give them the answer, walked through the facts - presented with begnning middle and ending.
+2. Showed, not telling .
+3. Let audience draw on their own conclusions. Done telling the story, pause and let the audience to react  
+4. The converse is statement.
+
+
+Layout:
+
+Context -> conflict -> resolution
+
+
+
+Method 2: Discovery Journey Story method
+
+Walk through the ah-ha moment so that the audience can experience it.
+
+Main character - You, not the company . Walk people through the analysis
+
+Typical story line:
+1. Recommendations
+2. Reasons
+3. Evidence
+
+But you need:
+1. story
+2. Conclusion
+3. Reccomendation
+
+Correlation between sales and profits - good correlation for first 20 years or so(), then correlation stopped (1983-2000)
+
+1. he paused and let the audience answer how to explain data
+2. answer: mature market (market saturated)
+
+
+Strategy diff between a developing market vs mature market . Audience just understood this. The audience were then responsive to the recommendations.
+
+Effectiveness: Humans are more passionate about their own ideas than YOUR ideas.
+
+**Let audience struggle with data**-- give audience the gift of discovery
+
+
+
+------
+
+What data science tools must you konw?
+
+Proxmox, Hadoop, Spark, and Weka.
+
+Intro:   
+
+Internet of things (Iot) - tons of data becoming interconnected    
+
+Goal: Data fluency - capable of diverse interpretations and creating your own (own what, I have no clue)
+
+Data science : create new information and knowledge ; goal is to provide useful insights for better decisions
+
+
+You need to know how to do cloud computing.
+
+Build own cloud with ProxMox.
+
 
 ------
 
 <div id='id-section3'/>    
 
-### Page 3:  
+### Page 3: 2019-01-10.  evolution of Resistance vs tolerance and meeting list with dan    
+
+meet with dan:
+
+1. network modules vs time : data too complicated and difficult to interpret. Trying partial correlation , need to scale up the code for each time point and population
+2. Review paper on tolerance vs resistance?
+3. ANBE goals for this year    
+    * Data science positions in academia or industry analyzing genomic data   
+    * publish papers 
+
+
+### Tolerance vs resistance  
+
+
+
+# The Evolution of the resistance and tolerance to stress
+
+
+
+## Set up: Why we need to understand how organisms cope with stress.
+
+**Inform whether they are resilient or susceptible to environmental change.**
+
+Offsets from ancestral environmental conditions creates mismatches between organism and environment.
+
+Environments can perturb animals, reducing fitness. Specifically, stress damages macromolecules, disrupting cellular activity.
+
+
+
+## Problem or Need Statement:
+
+**The way we refer to how organisms cope with stress severely impacts our understanding of the physiological and molecular strategies/tactics of stress hardiness.**
+
+For example: thermal tolerance refers to the ability of an organisms to withstand both low and high temperatures.  However, coping with stress can involve not only tolerance mechanisms, but also resistance.
+
+The field would benefit from the herbivore damage literature.
+
+**Tolerance** - physiological changes in response to environmental perturbations that maintains fitness.
+
+**Resistance** - physiological mechanisms that reduces damage from environmental perturbations.
+
+A big problem in transcriptomic studies: cant tell the difference between resistance vs tolerance -- need reaction norm approach
+
+
+
+### Types of Perturbations: Press vs Pulse (Edward Bender 1980)
+
+
+
+Press perturbations is consistent damage.
+
+- thermal damage - slow ramping
+- performance under herbivore damage
+- performance under parasite load
+
+
+
+Pulse perturbation is intermittant damage.
+
+- thermal shock, rapid cold/heat treatment - lends itself to investigating recovery mechanisms
+- initial herbivore damage
+- initial parasite infection
+
+Note: There can be things in between pulse and press: intermediate heat ramping protocols. The central read out for heat damage is proteome stability.
+
+
+
+#### Types of patterns to expect from data, pulse or press     
+
+![](https://user-images.githubusercontent.com/4654474/50989224-c7dcae80-14dc-11e9-8071-fa3906cdb8ab.png)
+
+
+
+## Evolutionary tactics for stress resistance
+
+Selection favors stress resistance mechanisms when stress is constant throughout a lifetime.
+
+Cost- allocation cost whereby investing in defenses or elevating stress resistant mechanisms comes at the cost of other life history traits such as growth.
+
+Benefit - Takes more stress to disrupt biological activity
+
+
+
+Tactics
+
+- High baseline ("Front loading") investment in protective molecules.
+
+## Evolutionary tactics for stress tolerance
+
+Selection favors stress tolerance mechanisms when stress is variable within a lifetime.
+
+Cost- costs energy to turn on a response
+
+Benefit- the response enables the organism to cope with the environmental condition
+
+
+
+Tactics
+
+- When perturbed, increase magnitude of protective molecules.
+
+---
+
+---
+
+
+
+## Molecular level :
+
+Phenotype: environmental limits (thermal limits, drought limits, )
+
+Resistance - Environmental range where  key macromolecules do not change
+
+Tolerance - Environmental range wherw macromolecules changing during and after
+
+
+
+So should we be thinking about what a particular molecule is doing for the organism? THe molecule itself is resistant or tolerant?
+
+
+
+Is this just understanding phenotypic plasticity of a given molecule?
+
+
+
+
+
 
 ------
 
 <div id='id-section4'/>    
 
-### Page 4:  
+### Page 4: 2019-01-10. Partial correlation code to test out
+
+```R
+#Andrew Nguyen
+#partial correlation matrix
+
+########################################################################
+# load libraries
+
+library(ggplot2)
+library(data.table)
+library(WGCNA)
+library(edgeR)
+library(tidyr)
+library(dplyr)
+library(reshape2)
+library(igraph)
+library("GeneNet")
+#library(qgraph)
+
+#load dataset
+
+#myfiles.wide.4<-fread("../Data/CerasiCountsIsos/03_data_set_2018-10-31_wide_filtered_sig_genes.csv")
+myfiles.wide.4<-fread("../Data/03_data_set_2018-10-31_wide_filtered_sig_genes.csv")
+### Calculate FPKM
+table.dge<-DGEList(myfiles.wide.4[,3:43],genes=myfiles.wide.4[,1])
+table.dge<- calcNormFactors(table.dge) # running this gives FPKM #https://support.bioconductor.org/p/79379/
+tab.fpkm<-rpkm(y=table.dge,gene.length=myfiles.wide.4$Length)
+tab.fpkm<-data.frame(tab.fpkm)
+tab.fpkm<-data.frame(Name=myfiles.wide.4$Name,tab.fpkm)
+tab.fpkm$from<-seq(1,length(tab.fpkm$Name))
+#names(tab.fpkm)
+#'
+#' # Compute Partial Correlations and Select Relevant Edges
+
+#pcor.dyn = ggm.estimate.pcor(t(log2(tab.fpkm[1110:1130,3:6]+1)))
+pcor.dyn = ggm.estimate.pcor(t(log2(tab.fpkm[,3:6]+1)))
+arth.edges = network.test.edges(pcor.dyn,direct=TRUE,plot=FALSE)
+#arth.net = extract.network(arth.edges, method.ggm="number", cutoff.ggm=50)
+arth.net = extract.network(arth.edges, method.ggm="number", cutoff.ggm=length(tab.fpkm$Name))
+dim(arth.edges)
+
+####
+#node.labels = as.character(1:nrow(tab.fpkm))
+node.labels = as.character(1:length(tab.fpkm$Name))
+gr = network.make.graph(arth.edges, node.labels, drop.singles=FALSE)
+#adj<-as(gr,"matrix") # convert graphNEL into adjacency matrix
+
+#convert to igraph
+gg<-igraph.from.graphNEL(gr)
+################################################
+###network node properties
+#http://kateto.net/networks-r-igraph
+################################################
+#density
+edge_density(gg) # proportion of present edges from all possible edges in the network
+
+#reciprocity - proportion of reciprocated ties ( for a directed network)
+#reciprocity(gg)
+
+##global transivity- ratio of triangles to connected triples (direction disregraded)
+#transitivity(gg,type="global")
+
+#diameter: longest geodesic distance (length of shortest parth between two nodes) in a network
+#diameter(gg,)
+
+#degree distribution
+#deg.dist <- degree_distribution(gg, cumulative=T, mode="all")
+
+## average path length
+#mean_distance(gg,directed=TRUE)
+
+
+### assortativity
+#assortativity_degree(gg, directed=T)
+
+#assortativity_nominal(gg,myfiles.wide.4$sig)
+
+
+################################################
+###single node properties
+################################################
+###local transviity - ratio of triangles to connected triples each vertex is part of
+#transitivity(gg, type="local")
+
+###Grab different measures of centrality
+
+################################################
+#eigen centrality - proportional to the sum of connection centralities
+#eig<-centr_eigen(gg)$vec
+#range(eig)
+#strength
+#st.all<-strength(gg,mode="all",loops=FALSE) # all directions, in and out
+st.in<-strength(gg,mode="in",loops=FALSE) # in degree strength
+#st.out<-strength(gg,mode="out",loops=FALSE) #out degree
+
+#degree centrality
+#d.all<-degree(gg,mode="all"); range(d.all)
+d.in<-degree(gg,mode="in")
+#d.out<-degree(gg,mode="out")
+
+d<-data.frame(st.in,d.in)
+fwrite(d,"2019-01-10_centrality_partial_networks.csv")
+#betweeness  
+
+```
+
+running on the hipergator cluster : 04_cluster_script_partial_correlation.sh
+
+```
+#!/bin/bash
+#SBATCH --job-name=partial_correlation
+##SBATCH --mail-user=andrew.nguyen@ufl.edu
+##SBATCH --mail-type=ALL
+#SBATCH --output=partial_correlation_job-%j.out
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=110gb
+#SBATCH --time=96:00:00
+#SBATCH --partition=bigmem
+#SBATCH --account=dhahn
+#SBATCH --qos=dhahn-b
+date;hostname;pwd
+
+module load R
+
+cd /ufrc/dhahn/andrew.nguyen/Cerasi_Networks/Script
+
+Rscript 03_2018-12-13_partial_correlation_network_analysis.R
+
+date
+
+```
+
+
+
 
 ------
 
