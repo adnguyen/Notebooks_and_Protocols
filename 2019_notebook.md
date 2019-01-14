@@ -365,7 +365,27 @@ meet with dan:
 2. Review paper on tolerance vs resistance?
 3. ANBE goals for this year    
     * Data science positions in academia or industry analyzing genomic data   
-    * publish papers 
+    * publish papers
+
+
+**2019-01-11** meeting with Dan   
+
+We want time ordered to observe the checkered patterns(heat map): We'd expect more proportion early on in time and then less heat later in time in the cross comparisons.  Who falls together early and who doesn't. Know something about the thresholding (more or less stringent is better?) How are clusters being built? Is WGNCA building clusters that is biologically informative?
+
+
+Suggestion: We want to know what is diff from beginnning to end   
+
+Pairwise diff expression analyses- diff expressed 2 months
+**detect modules by grouping them with STEMminer ; group by stat effect , meaning take out population effects and time effect; build networks separately**
+
+
+check dirrecitonality of evolution; phylogeny of cerasi species
+
+
+**Meet on monday, create a dream figure** how do we get there? how do we parse the data?
+
+Partial correlation: signs- just add 1 and make everhything on a positive scale !    
+
 
 
 ### Tolerance vs resistance  
