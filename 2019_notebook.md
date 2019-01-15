@@ -28,7 +28,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 2: 2019-01-07](#id-section2). lynda.com data tells a great story
 * [Page 3: 2019-01-10 ](#id-section3). evolution of Resistance vs tolerance and meeting list with dan
 * [Page 4: 2019-01-10 ](#id-section4). Partial correlation code to test out
-* [Page 5:  ](#id-section5).
+* [Page 5: 2019-01-15 ](#id-section5). Biological Rhythms project: data note on trikinetics experiment
 * [Page 6:  ](#id-section6).
 * [Page 7:  ](#id-section7).
 * [Page 8:  ](#id-section8).
@@ -651,7 +651,25 @@ date
 
 <div id='id-section5'/>    
 
-### Page 5:  
+### Page 5: 2019-01-15. Biological Rhythms project: data note on trikinetics experiment   
+
+Changes are on github, referencing the the commit ---
+
+power outage last night 2019-01-14 saving raw trik data
+
+Andrew Nguyen committed 6fa7221
+
+```
+189134	14 Jan 19	18:28:00 (last reading)
+1	15 Jan 19	09:22:00 (start reading after power outage)
+
+How to deal with data:
+1. just analyze to 2019-14-19 18:28:00 and make sure the flies arent being analyzed for mortality
+
+2. Keep it going and use the Lomb-Scargle method.
+
+We can do both if I keep the flies in the trikinetics set up.
+```
 
 ------
 
