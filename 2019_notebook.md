@@ -29,7 +29,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 3: 2019-01-10 ](#id-section3). evolution of Resistance vs tolerance and meeting list with dan
 * [Page 4: 2019-01-10 ](#id-section4). Partial correlation code to test out
 * [Page 5: 2019-01-15 ](#id-section5). Biological Rhythms project: data note on trikinetics experiment
-* [Page 6:  ](#id-section6).
+* [Page 6: 2019-01-17 ](#id-section6). script update for detecting modules with WGCNA
 * [Page 7:  ](#id-section7).
 * [Page 8:  ](#id-section8).
 * [Page 9:  ](#id-section9).
@@ -675,7 +675,226 @@ We can do both if I keep the flies in the trikinetics set up.
 
 <div id='id-section6'/>    
 
-### Page 6:  
+### Page 6:  2019-01-17. module detection script update with WGCNA
+
+**Critical changes**
+* filtering out category based on statistical significance: genes with only population by time interaction from edgeR model  
+* messing with cutheight = 0.15
+* messing with module stringency with "deepSplit" specificatin in the cutreeDynamic() function. 
+
+```R
+########################################################################
+# Author: Andrew Nguyen, post doc
+# University of Florida
+# Hahn lab
+# Initiated : 2018-11-29
+# Last updated: 2019-01-17
+
+#This script takes a data set that is in wide format, converts it to long,
+#then applies a function to estimate network centrality for different subsets fo the data
+
+########################################################################
+# load libraries
+
+library(ggplot2)
+library(data.table)
+library(WGCNA)
+library(edgeR)
+library(tidyr)
+library(dplyr)
+library(reshape2)
+
+##############################################################################
+#constructing a function to estimate modules of a network for each time point in a
+# time series
+##############################################################################
+### WGNCA
+#lets write a fucntion that spits out this output
+
+#d<-tab.fpkm.long%>%
+#  dcast(formula=Name~sample,value.var="gxp")
+
+
+wgcna.mod.det<-function(data=data){
+  data<-data%>%
+    reshape2::dcast(formula=Name~sample,value.var="gxp")
+  adjacency = adjacency(t(data[,-1]), power =1); #adjacency matrix
+  #adjacency = adjacency(t(dat.wide[,4:7]), power =1); #adjacency matrix
+#topologicla overlap matrix
+  TOM = TOMsimilarity(adjacency);
+  dissTOM = 1-TOM
+  geneTree = hclust(as.dist(dissTOM), method = "average");
+
+#identifying modules using dynamic tree cut
+  dynamicMods = cutreeDynamic(dendro = geneTree, distM = dissTOM,
+                            deepSplit = 4, pamRespectsDendro = FALSE,
+                            minClusterSize = 100);
+
+  dynamicColors = labels2colors(dynamicMods)
+  table(dynamicColors)
+#calculate eigengenes and then cluster modules eigengenes that are similar
+  MEList = moduleEigengenes(t(data[,-1]), colors = dynamicColors)
+  #MEList = moduleEigengenes(t(dat.wide[,4:7]), colors = dynamicColors)
+  MEs = MEList$eigengenes
+  #MEs[is.na(MEs)] <-0
+  #MEDiss = 1-cor(MEs);
+  #METree = hclust(as.dist(MEDiss), method = "average");
+#sizeGrWindow(7, 6)
+#plot(METree, main = "Clustering of module eigengenes",
+ #    xlab = "", sub = "")
+# merge modules?
+  merge = mergeCloseModules(t(data[,-1]), dynamicColors, cutHeight =.15, verbose = 3)
+  #merge = mergeCloseModules(t(dat.wide[,4:7]), dynamicColors, cutHeight =.25, verbose = 3)
+  mergedColors = data.frame(module=as.factor(merge$colors))
+
+  return(mergedColors)
+}
+
+
+
+##############################################################################
+#data parsing start
+##############################################################################
+
+### Load data
+tab.fpkm.long<-fread("../Data/03_2019-01-15_tab_fpkm.csv")
+#tab.fpkm.long<-fread("../Data/01_2018-12-11_testdata_tab.fpkm.long.csv")
+tab.fpkm.long<-tab.fpkm.long[,-1]
+#log2 transformation to make gxp normal
+tab.fpkm.long$gxp<-log2(tab.fpkm.long$gxp+1)
+
+
+third.dat<-fread("2018-10-25_full_sig_list_edgeR_model.csv",header=TRUE)
+third.dat<-third.dat%>%
+  select("Name","sig")
+tab.fpkm.long<-inner_join(tab.fpkm.long,third.dat,by="Name")
+tab.fpkm.long<-tab.fpkm.long%>%
+  arrange(sig)
+glimpse(tab.fpkm.long)
+#head(tab.fpkm.long)
+###take mean and std of gxp
+
+tab.fpkm.long.mean<-tab.fpkm.long%>%
+  filter(sig=="Pop_int_Time_effect")%>%
+  group_by(Name,population,time,sig)%>%
+  summarize(gxp.mean=mean(gxp),gxp.sd=sd(gxp))
+
+##############################################################################
+#data parsing end
+##############################################################################
+
+
+##############################################################################
+#### apply function to whole dataset
+
+
+#modules<-tab.fpkm.long%>%
+#  group_by(population,time)%>%
+#  do(wgcna.mod.det(data=.))
+
+modules<-tab.fpkm.long%>%
+  filter(sig=="Pop_int_Time_effect")%>%
+  group_by(population,time)%>%
+  do(wgcna.mod.det(data=.))
+
+
+nn<-tab.fpkm.long.mean%>%
+  filter(sig=="Pop_int_Time_effect")
+#modules$Name<-rep(tab.fpkm[1:500,1],10)
+#adding back in name column so we can join the datasets with the mean and std dataset
+#tab.fpkm.long.mean dataset *
+#modules$Name<-rep(unique(tab.fpkm.long[10000,]),10)
+#modules$Name<-rep(unique(tab.fpkm.long$Name),10)
+modules$Name<-rep(unique(nn$Name),10)
+
+##############################################################################
+
+
+
+#joining datasets based on name population and time
+data.set<-inner_join(tab.fpkm.long.mean,modules,by=c("Name","population","time"))
+# write out the dataset
+write.csv(data.set,"05_2019-01-17_WGCNA_time_series_modules_per_timepoint_log2_transformed_point15cutoff.csv")
+
+
+
+
+
+library(plyr)
+#library(rlist)
+biglist<-dlply(data.set,.(population,time,module),c()) # create a list from the "data.set"
+str(biglist)
+
+
+#create a list so that we can extract only the Name fromt he list
+all_vectors <- list()
+
+for(i in seq_along(biglist)) {
+ all_vectors[[i]] <- dplyr::pull(biglist[[i]], Name)
+}
+names(all_vectors)<-names(biglist) # get the names back to the all_vectors
+#str(all_vectors)
+
+#https://codereview.stackexchange.com/questions/17905/compute-intersections-of-all-combinations-of-vectors-in-a-list-of-vectors-in-r/17931#17931
+#overlap function
+overlap <- function(l) {
+  results <- list()
+  # Remove duplicates within each entry of l
+  l <- lapply(l, unique)
+
+  # combinations of m elements of list l
+  for (m in seq(along=l)) {
+
+    # generate and iterate through combinations of length m
+    for (indices in combn(seq(length(l)), m, simplify=FALSE)) {
+
+      # make name by concatenating the names of the elements
+      # of l that we're intersecting
+      name <- paste(names(l)[indices], collapse="_")
+
+      results[[name]] <- Reduce(intersect, l[indices])
+    }
+  }
+  results
+}
+
+#getting pariwise comparisons
+nms <- combn( names(all_vectors) , 2 , FUN = paste0 , collapse = "-" , simplify = FALSE )
+
+# Make the combinations of list elements
+ll <- combn( all_vectors , 2 , simplify = FALSE )
+
+# Intersect the list elements
+out <- lapply( ll , function(x) length( intersect( x[[1]] , x[[2]] ) ) )
+n<- lapply( all_vectors , function(x) length(x ) )# Output with names
+tot<-data.frame(n=unlist(n))
+tot$ref_treatment<-rownames(tot)
+tot2<-data.frame(n2=unlist(n))
+tot2$ref_treatment2<-rownames(tot2)
+#tot
+
+
+###making the dataset for modules
+isec.dat<-data.frame(intersection=unlist(setNames( out , nms )))
+isec.dat$combo<-rownames(isec.dat)
+#isec.dat
+
+isec.dat$ref_treatment<-unlist(lapply(strsplit(isec.dat$combo,split="-"),`[[`,1))
+isec.dat$module1<-unlist(lapply(strsplit(isec.dat$ref_treatment,split="\\."),`[[`,3))
+isec.dat$population<-unlist(lapply(strsplit(isec.dat$ref_treatment,split="\\."),`[[`,1))
+isec.dat$time<-unlist(lapply(strsplit(isec.dat$ref_treatment,split="\\."),`[[`,2))
+isec.dat$ref_treatment2<-unlist(lapply(strsplit(isec.dat$combo,split="-"),`[[`,2))
+
+
+isec.dat<-inner_join(isec.dat,tot,by="ref_treatment")
+isec.dat<-inner_join(isec.dat,tot2,by="ref_treatment2")
+#head(isec.dat)
+isec.dat$prop1<-round(isec.dat$intersection/isec.dat$n,2)
+isec.dat$prop2<-round(isec.dat$intersection/isec.dat$n2,2)
+
+
+write.csv(isec.dat,"05_2019-01-17_modules_intersection_dataset.15cutheight_log2_transformed.csv") # write out dataset
+```
 
 ------
 
