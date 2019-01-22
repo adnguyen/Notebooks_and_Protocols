@@ -952,13 +952,41 @@ Plants can use both strategies. selection operates on maximizing one while not t
 
 EVOLUTIONARY GENETICS OF RESISTANCE AND TOLERANCE TO NATURAL HERBIVORY IN ARABIDOPSIS THALIANA; Evolution; Weinig et al. 2003
 
+Background :
+
 measured resistacne and tolerance to natural apical meristem damage by rabbits in a large field experiment with RILS of arabidopsis. Measured phenological and morphological traits associated with resistance and tolerance
 
 RILs differeed in resistance ( proportion of replicates within a RIL that resisted herbivory)
 
-* Early
+Resistance  = reduce amount of damage suffered
+Tolerance = reducing fitness consequence of damage
+
+They expect a trade-off but empirical evidence shows a mix of results.
+
+Cost of resistance and tolerance may be a way to maintain variation .
+
+Questions:   
 
 
+* (1) Does a genetic trade-off exist between resistance and tolerance to rabbit herbivory in A. thaliana?
+* (2) What are the ecological and developmental mechanisms underlying resistance and tolerance to rabbit her- bivory?
+* (3) Is tolerance to rabbit herbivory costly in the ab- sence of damage?  
+* (4) What is the pattern of natural selection acting on resistance and tolerance in this species, and how sensitive are those patterns to the mean level of resistance and tolerance exhibited by the population?
+
+Experimental approach:
+
+Resistance to AMD = 1 -p ; p is the proportion of individuals that suffered AMD.
+Tolerance = We operationally defined tolerance for each RIL as (WD 􏰄- WU), the difference between mean relative fitness of plants with AMD and those without AMD
+
+One issue they ran into: no herbivore exclusion treatment to serve as control.
+
+Results:
+
+Resistance and Tolerance were uncorrelated .
+
+Effect of AMD on phenotypic traits:
+
+* AMD increased branch production, lowered average height of basal branches, and led to later time to senescence.
 
 ------
 
