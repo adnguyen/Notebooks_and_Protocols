@@ -30,7 +30,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 4: 2019-01-10 ](#id-section4). Partial correlation code to test out
 * [Page 5: 2019-01-15 ](#id-section5). Biological Rhythms project: data note on trikinetics experiment
 * [Page 6: 2019-01-17 ](#id-section6). script update for detecting modules with WGCNA
-* [Page 7:  ](#id-section7).
+* [Page 7: 2019-01-21 ](#id-section7). paper readings for resistance and tolerance
 * [Page 8:  ](#id-section8).
 * [Page 9:  ](#id-section9).
 * [Page 10:  ](#id-section10).
@@ -680,7 +680,7 @@ We can do both if I keep the flies in the trikinetics set up.
 **Critical changes**
 * filtering out category based on statistical significance: genes with only population by time interaction from edgeR model  
 * messing with cutheight = 0.15
-* messing with module stringency with "deepSplit" specificatin in the cutreeDynamic() function. 
+* messing with module stringency with "deepSplit" specificatin in the cutreeDynamic() function.
 
 ```R
 ########################################################################
@@ -900,7 +900,141 @@ write.csv(isec.dat,"05_2019-01-17_modules_intersection_dataset.15cutheight_log2_
 
 <div id='id-section7'/>    
 
-### Page 7:  
+### Page 7:  2019-01-21. paper readings for resistance and tolerance    
+
+Evolution of plant resistance and tolerance to frost damage; Ecology letters; Agrawal et al. 2004
+
+Background:  
+
+2 strategies to combat perturbations
+
+Their definitions:
+
+* Resistance : traits that reduce damage
+* Tolerance  : traits that reduce the negative fitness impacts of damage   
+
+
+They studied how a frost event late in the season impacted a 75 parental half sibling family experimental quantitative genetic design in an annual wild radish, southern Ontario.
+
+
+Big Questions
+
+What types of strategies do plants employ to combat frost damage?
+
+Hypotheses:
+
+They can either mainly resist or tolerate frost damage.
+
+Experimental approach :
+
+Frost damage = newly wilted or dead tissue. Proportion leaf damage were visually estimated on each leaf. Ulatimely transformed into a proportion leaf area damage over entire plant.
+
+Measures of -
+
+* Resistance = 1 - damage
+* Tolerance  = for each parental half sib family  as slope of regression between fitness on proportion frost damage.
+
+Main Results
+
+* No trade off in resistance vs tolerance
+* Negative correlational selection acting on two traits: selection favored high resistance combined with low tolerance ; low resistance and high tolerance.   
+
+Figure 2. fitness is negatively related to tolerance ; so there is a cost to fitness
+
+Conclusion:
+
+Plants can use both strategies. selection operates on maximizing one while not the other. This could be because there is a trade off between the two mechanisms. However, at the population level, there was no trade off, so it could be that frost damage is rare and this selection event doesn't happen often so that the quantitative genetic architecture may not show the trade off at the population level. Or the two different strategies persist and that is how variation is maintained.
+
+
+
+
+------
+
+EVOLUTIONARY GENETICS OF RESISTANCE AND TOLERANCE TO NATURAL HERBIVORY IN ARABIDOPSIS THALIANA; Evolution; Weinig et al. 2003
+
+measured resistacne and tolerance to natural apical meristem damage by rabbits in a large field experiment with RILS of arabidopsis. Measured phenological and morphological traits associated with resistance and tolerance
+
+RILs differeed in resistance ( proportion of replicates within a RIL that resisted herbivory)
+
+* Early
+
+
+
+------
+
+Numbering the hairs on our heads: The shared challenge and promise of phenomics; PNAS; Houle 2009
+
+medicine and evolution share a common theme in that they both try to understand the genotype-phenotype map.
+
+It is easy to measure genomes, but it is harder to measure all phenotypes.  
+
+Imbalance between G space (genotypes) and P space (phenotype space)
+
+
+
+
+------
+
+Phenomics: the next challenge; Nature Genetics; Houle et al.
+
+> We now define phenomics as the acquisition of high-dimensional phenotypic data on an organism-wide scale
+
+Or...All of the different characteristics of an organism.
+
+
+Justification of studying:
+
+* trace causal links between genotypes and environmental facts and phenotypes.
+  * G-P map.   
+    * metaphor in which genotypic information influences the phenotype of an organism
+    * Jim Burns in 1970 proposed linking population genetic data with biochemical variation
+    *
+  * Pleiotropy- how a gene affects multiple phenotypes.    
+* Genetic basis of complex traits  
+  * Gwas studies- try to gauge hwo much genetic variance there is on traits   
+  * predict disease,
+* Causal explanation of phenotypes   
+  * we dont know which traits are important, but if we measure a bunch of them, we can determine that
+  *
+
+### Goals and Technical challenges   
+
+2 ways to be more comprehensive:
+
+1. sample a wide variety of phenotypes - phenotyping   
+2. define extensive phenotyping as chracterizing a phenotype in great detail   
+
+* Sample gene expression in a tissue through time   
+* increase quantitative information by phenotype measures
+
+Data challenges   
+
+* Overfitting the data: Too many variables that outnumber sample size ; large p, small N problem
+* Dimension reduction of phenotypes - pca, discriminant analysis
+* Ridge and LASSO regressions, fit models without dimension reduction int he case of large p, small N
+  * model complexity is penalized with cross validation   
+* dimension reduction can discard information
+* use machine learning techniques like random forests, regression tree
+
+Causally cohesive models
+
+G-P maps extend across all biological levels of organization and are highly non-linear.
+
+Dynmic models can account for hierarchy, space, and time between genetic variation and phenotypes. ex: tooth shape in mammals.
+
+Phenomic tools:
+
+* Transcriptome and Epigenome.
+
+* Proteomics and metabolics.  
+
+* behavior   
+
+* Imaging
+
+basically measure stuff at different levels of organization  
+
+
 
 ------
 
