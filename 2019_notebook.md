@@ -31,7 +31,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 5: 2019-01-15 ](#id-section5). Biological Rhythms project: data note on trikinetics experiment
 * [Page 6: 2019-01-17 ](#id-section6). script update for detecting modules with WGCNA
 * [Page 7: 2019-01-21 ](#id-section7). paper readings for resistance and tolerance
-* [Page 8:  ](#id-section8).
+* [Page 8: 2019-01-24 ](#id-section8). Schneider and Ayres 2008; Nature Review Immunology;
 * [Page 9:  ](#id-section9).
 * [Page 10:  ](#id-section10).
 * [Page 11:  ](#id-section11).
@@ -1068,7 +1068,74 @@ basically measure stuff at different levels of organization
 
 <div id='id-section8'/>    
 
-### Page 8:  
+### Page 8:  2019-01-24. Schneider and Ayres 2008; Nature Review Immunology;
+
+Title: Two ways to survive infection, what resistance and tolerance can teach us about treating infectious diseases
+
+
+**Overall, they argue that resistance is well known, but tolerance is less well known**
+
+### Intro
+
+definitions :
+
+resistance - ability to limit pathogen burden
+tolerance - ability to limit the health impact of a given pathogen burden
+
+
+* Tolerance includes all mechanisms that regulate the self-harm that can be caused by an immunse response (aka bystander damage or immunopathology) and other mechanisms not directly related to immune resistance.
+
+* Host's defense capacity = resistance + tolerance
+
+* Well-known : molecular mechanisms that kill pathoges, prevent infection   
+
+* less well-known: how hosts regulate production, repair, and avoidance of damage that accumulates during infection
+
+* Big picture - understanding this stuff ( resistance and tolerance of pathogen damage) will inform treatment and diagnosis of diseases.   
+
+
+### resistance and tolerance in plants   
+
+* two-component defense response originated in plant literature .
+
+* Displayed with reaction norms of fitness against environmental gradient.   
+    * env gradient can be pathogen, damage induced by pathogen, pathogen load, other host response , actual number of pathogens in host   
+
+
+* resistance defined as inverse of parasite burden **Does this make sense**?
+  * when resistance increases, pathogen load will decrease   
+
+* tolerance is measured by the slope of the reaction norm - the more flat the slope, the more tolerant (host)    
+
+* idea of tolerance is under-represented in vertebrate immunology   
+
+
+### What are mechanisms of tolerance  ?     
+
+* people know how to describe resistance mechanisms:
+  * immune recognition
+  * production of effectors , interaction with immune cells
+  * **How does a pathogen cause damage?** What is the read out? Does the pathogen just take resources from the host? It take up space? It doesn't let the host operate optimally?
+  * frame issues in terms of how a mechanism impacts tolerance/resistnace
+    * consider mechanism that affects tolerance if it impacts the slope of the tolerance curve  
+    * assuming this is the same for resistance
+
+**Class one:**
+
+* effector molecules that induce resistance mechanims that cause self harm and result in decrease in tolerance  
+* resistance and tolerance are opposite
+* ex- ROS produced during immune response are important for fighting infection, but can cause immunopathology and lead to death (decreasing tolerance)    
+* Selection favors less toxic effectors and receptos in the immune response; hosts have less toxic efefctors (i dont get this)   
+* seelction for receptors that triggure immune responses (Toll-like receptors ) - high affinity of receptors for pathogen-associated molecules than for self molecules.
+* Take home - the thing that lowers pathogen load (some effector) can decrease tolerance due to self harm.   
+
+**Class two**   
+
+* regulators of both resistance and tolerance
+* typically signalling molecules
+
+**Class three**
+
 
 ------
 
