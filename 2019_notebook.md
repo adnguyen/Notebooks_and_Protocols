@@ -1136,6 +1136,54 @@ tolerance - ability to limit the health impact of a given pathogen burden
 
 **Class three**
 
+* Tolerance and resistance can be separated : 5 examples
+  * touting as the best type of mechanism for finding new drugs and treatments that modulate tolerance  
+  1. immune response to infection - toxic compounds produced by pathogen must be dealt with to prevent damage to host  
+  2. resistance can be energetically expensive. Fruit flies alter energy use and wasting of body when infected by mycobacterium due to decreased tolerance.
+  3. preventing physiological damage can affect tolerance. immune responses can induce physiological changes that are deleterious for some organs. Sepsis can induce fatal chagnes in cardiovascular phys
+  4. Repair mechanisms: if pathology cannot be prevented, then they must repair tissue damage.
+  5. genetic traits that increase  defenses against malaria.   
+
+
+### Tolerance mechanisms in invertebrates    
+
+* typically measure pathogen load or antimicrobial activity represent effects of infection on host fitness
+* IMD ( toll and immune deficiency ) signalling pathways in fruit flies.
+* no correlation between bacterial titres(resistance) and survival. Genotypes with lowest titres were not necessarily the healthiest ; proceeses other than resistance are used (but if they are already infected, they could already be perturbed) ;
+
+**They keep referring to tolerance mechanisms but it really is unclear what the hell they're talking about** They're not matching the molecular processes with the framing they had earlier on. For example, they're not walking the reader through how different molecular mechanisms can increase the slope of the relationship between fitness and damage.  Very unclear.    
+
+### Tolerance properties in vertebrate models    
+
+* Ex: plasmodium chabaudi ; Råberg et al. applied stat framework of reaction norms by plant ecologists to vertebrate model. Infected 5 strains of mice with plasmodium and tested 3 different clones of plasmodium
+  * measured host health by severity of anaemia and weight loss in infected mice ; plotted against peak parasite density(parasite burden) . Variation in resistance between strains
+  * the slopes of the reaction norms (tolerance ) also differed among strains
+  * negative correlation between tolerance and resistance
+* tick- lyme disease example ; mouse model gets arthritis
+* molecular mechanism example: mice that are dificient in a specific ATP-sensitive potassium channel was found to be more sensitive to LPS--they'd get heart attacks when challenged to it
+  * viral infection in K_ATP deficient mice had low cytokine production and abrupt death. The hypothesized mode of action was that the KATP channel prevents vasoconstriction in the arteries of the heart.
+  * argued as a tolerance mechanism that prevents damage
+
+
+### Tolerance properties in humans   
+
+* Malaria example
+
+
+### Studying tolerance systematically    
+
+* argues to broaden perspective  
+* can broaden with genetic screens
+  * some mutant deaths correlates wtih bacterial burden -defects in resistance
+  * other mutant deaths had comparable levels of bacteria to wild type flies ; defective in tolerance
+  * future screens need to categorize reistance vs tolerance and have gain and loss of function mutations
+* genetics only part of story-- test different pathogens
+
+### Medicine and Tolerance    
+
+* manipulate tolerance mechanisms - administer corticosteroids in combo with antibiotics to decrease risk of mortality and hearing loss
+* determine a person's reaction norm
+
 
 ------
 
