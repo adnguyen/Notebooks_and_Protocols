@@ -32,7 +32,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 6: 2019-01-17 ](#id-section6). script update for detecting modules with WGCNA
 * [Page 7: 2019-01-21 ](#id-section7). paper readings for resistance and tolerance
 * [Page 8: 2019-01-24 ](#id-section8). Schneider and Ayres 2008; Nature Review Immunology;
-* [Page 9:  ](#id-section9).
+* [Page 9: 2019-01-31 ](#id-section9). test script on hipergator
 * [Page 10:  ](#id-section10).
 * [Page 11:  ](#id-section11).
 * [Page 12:  ](#id-section12).
@@ -1189,7 +1189,33 @@ tolerance - ability to limit the health impact of a given pathogen burden
 
 <div id='id-section9'/>    
 
-### Page 9:  
+### Page 9:  2019-01-31. test script on hipergator    
+
+```
+#!/bin/bash
+#SBATCH --job-name=Test_R_script
+##SBATCH --mail-user=andrew.nguyen@ufl.edu
+#SBATCH --mail-type=ALL
+#SBATCH --output my_job-%j.out
+#SBATCH --nodes=4
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=120gb
+#SBATCH --time=72:00:00
+
+
+date;hostname;pwd
+
+module load R
+
+
+cd /home/andrew.nguyen/Cerasi_Networks/Script
+
+Rscript 03_test.R
+
+```
+
+
 
 ------
 
