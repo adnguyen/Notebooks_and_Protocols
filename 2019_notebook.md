@@ -33,7 +33,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 7: 2019-01-21 ](#id-section7). paper readings for resistance and tolerance
 * [Page 8: 2019-01-24 ](#id-section8). Schneider and Ayres 2008; Nature Review Immunology;
 * [Page 9: 2019-01-31 ](#id-section9). test script on hipergator
-* [Page 10:  ](#id-section10).
+* [Page 10: 2019-02-05 ](#id-section10). Stem Miner analysis with cerasi data
 * [Page 11:  ](#id-section11).
 * [Page 12:  ](#id-section12).
 * [Page 13:  ](#id-section13).
@@ -1221,7 +1221,73 @@ Rscript 03_test.R
 
 <div id='id-section10'/>    
 
-### Page 10:  
+### Page 10:  2019-02-05. Stem Miner analysis with cerasi data     
+
+
+Using STEM-miner [http://www.cs.cmu.edu/~jernst/stem/](http://www.cs.cmu.edu/~jernst/stem/) to identify clusters of gene expression through time for highland and lowland cerasi populations  
+* [paper](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-7-191)    
+
+
+It is a GUI based program, so I'll need to log what I'm doing here    
+
+
+### Settings
+
+* Log normalized data
+* Gene annotation source = flybase for Drosophila melanogaster
+* Maximum number of model profiles = 100  
+
+I want to try to identify as many clusters as possible
+
+
+### Dataset  
+
+Sample data set, where you need the gene ID (using flybase ids for genes) and then the columsn are the different gxp values with different times) . Gxp is already log2 normalized.
+
+```
+Gene       2M_0       2_5M        3_5M       4M_0       4_5M
+1 FBgn0027495,FBgn0033633,FBgn0036282,FBgn0033427  1.7700410  1.9639728  1.76863459  1.8877797  1.7986530
+2                                     FBgn0037941 -0.5193285 -0.1164224 -0.33351716 -0.3594560 -0.4406869
+3                                     FBgn0263782  0.8824218  0.8587433  0.69634484  0.7132860  0.7337638
+4                                     FBgn0043854 -0.5152793 -0.4016565 -0.34947210 -0.2898082 -0.2252473
+5                                     FBgn0262534 -0.5271620  0.0638229 -0.04790487 -0.5071678 -0.1017322
+6                                                 -0.3525314 -0.5961887 -0.29617612 -0.8444862 -0.4384412
+
+```
+
+### Approach  
+
+* get results from Highland
+* get results from lowland
+* compare highland (reference) with lowland
+
+
+### Results
+
+* get results from Highland   
+
+sig cluster IDs : 95, 73, 92, 38, 93, 17, 30, 90
+
+![](https://user-images.githubusercontent.com/4654474/52297424-b3aa9680-294e-11e9-9671-3ee25220ff59.png)
+
+* compare highland (reference) with lowland   
+
+high 73: low 58, 63, 89
+high 83: low 89
+high 92: low 89
+high 95: low 37, 63, 86, 89
+
+![](https://user-images.githubusercontent.com/4654474/52297428-b4dbc380-294e-11e9-9e8f-e1665e3f7b8e.png)
+
+* get results from lowland
+
+
+47, 89, 63, 58, 44, 79, 81, 41, 53, 39, 13, 86, 87, 38, 32, 18, 43
+
+![](https://user-images.githubusercontent.com/4654474/52297531-f5d3d800-294e-11e9-814d-7a6b5189507a.png)
+
+
+
 
 ------
 
