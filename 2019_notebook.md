@@ -1287,6 +1287,9 @@ high 95: low 37, 63, 86, 89
 ![](https://user-images.githubusercontent.com/4654474/52297531-f5d3d800-294e-11e9-814d-7a6b5189507a.png)
 
 
+* compare lowland (reference) with highland      
+
+![](https://user-images.githubusercontent.com/4654474/52298040-08024600-2950-11e9-9119-8c664c9f8086.png)
 
 
 ------
