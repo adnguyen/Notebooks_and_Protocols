@@ -34,7 +34,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 8: 2019-01-24 ](#id-section8). Schneider and Ayres 2008; Nature Review Immunology;
 * [Page 9: 2019-01-31 ](#id-section9). test script on hipergator
 * [Page 10: 2019-02-05 ](#id-section10). Stem Miner analysis with cerasi data
-* [Page 11:  ](#id-section11).
+* [Page 11: 2019-02-11 ](#id-section11). Meeting notes with Dan, 2019-02-08
 * [Page 12:  ](#id-section12).
 * [Page 13:  ](#id-section13).
 * [Page 14:  ](#id-section14).
@@ -1296,7 +1296,18 @@ high 95: low 37, 63, 86, 89
 
 <div id='id-section11'/>    
 
-### Page 11:  
+### Page 11:  2019-02-11. Meeting notes with Dan, 2019-02-08  
+
+Met with Dan and showed the results from STEM-MINER.
+
+Dan's thoughts
+
+* What are the genes?
+* integrate data into the flyer interactome -- which ones are actual hubs and not hubs from those data? Does it match up ?
+* Next step: we have gxp vs time, try clustering based on strength vs time.  
+  * Hubs - gxp has some pattern, strength matches pattern or is consistently high (always hubs)
+  * Effectors (downstream?): - gxp has some pattern ; strength always low throughout time
+
 
 ------
 
