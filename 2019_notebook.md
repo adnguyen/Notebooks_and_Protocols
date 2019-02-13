@@ -35,7 +35,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 9: 2019-01-31 ](#id-section9). test script on hipergator
 * [Page 10: 2019-02-05 ](#id-section10). Stem Miner analysis with cerasi data
 * [Page 11: 2019-02-11 ](#id-section11). Meeting notes with Dan, 2019-02-08
-* [Page 12:  ](#id-section12).
+* [Page 12: 2019-02-13 ](#id-section12). redo analysis with STEM miner with cerasi data; no flybase annotations
 * [Page 13:  ](#id-section13).
 * [Page 14:  ](#id-section14).
 * [Page 15:  ](#id-section15).
@@ -1313,7 +1313,20 @@ Dan's thoughts
 
 <div id='id-section12'/>    
 
-### Page 12:  
+### Page 12: 2019-02-13. redo analysis with STEM miner with cerasi data; no flybase annotations
+
+**Problem with previous analysis**: When I tried to match up the names with the larger annotation file that has flybase IDs, the data shrunk for some reason. So for this run, I'm just taking the genes without the flybase gene IDs. It has 13,857 genes.
+
+Parameters: 100 profiles, no annotations, normalized data option
+
+
+* The top part is High profile.
+* The middle part is Low profile
+* bottom part is the comparison
+
+![](https://user-images.githubusercontent.com/4654474/52742892-cfddb180-2fa6-11e9-84c2-8a313ce8088e.png)
+
+**Result**: The profiles look overall the same. 
 
 ------
 
