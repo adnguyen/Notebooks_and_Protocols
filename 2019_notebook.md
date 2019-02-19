@@ -36,7 +36,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 10: 2019-02-05 ](#id-section10). Stem Miner analysis with cerasi data
 * [Page 11: 2019-02-11 ](#id-section11). Meeting notes with Dan, 2019-02-08
 * [Page 12: 2019-02-13 ](#id-section12). redo analysis with STEM miner with cerasi data; no flybase annotations
-* [Page 13:  ](#id-section13).
+* [Page 13: 2019-02-19 ](#id-section13). STEM miner analysis on strength dataset
 * [Page 14:  ](#id-section14).
 * [Page 15:  ](#id-section15).
 * [Page 16:  ](#id-section16).
@@ -1326,13 +1326,34 @@ Parameters: 100 profiles, no annotations, normalized data option
 
 ![](https://user-images.githubusercontent.com/4654474/52742892-cfddb180-2fa6-11e9-84c2-8a313ce8088e.png)
 
-**Result**: The profiles look overall the same. 
+**Result**: The profiles look overall the same.
 
 ------
 
 <div id='id-section13'/>    
 
-### Page 13:  
+### Page 13: 2019-02-19.  STEM miner analysis on strength dataset
+
+THe data: We have the strength (sum of weights of the edges into a given node, aka, gene in this case) of each gene across 5 time points and for 2 different populations
+
+We want to know how sets of genes significantly cluster in their pattern through time.
+
+To calculate strength, we simply calculated the sum of the rows (or columns) of an adjacency matrix (estimated for each time point and each population). Then, we log10 normalized the data.
+
+**Used the STEM: miner program:**
+
+Settings - noramlized data, 100 profiles , no annotations
+
+Results: top is high, middle is low, and the bottom is the comparison (high left, low right)
+
+![](https://user-images.githubusercontent.com/4654474/53025987-0a749d80-3430-11e9-8f3b-5679eb674ac5.png)
+
+**potential issue**: there are some time points for genes where the weight was zero, which might skew what profiles are significant. Try removing the zeros.
+
+removing zeros makes no difference; but I did try scaling the data.
+
+![](https://user-images.githubusercontent.com/4654474/53028715-65f55a00-3435-11e9-80ee-6d41be2af0e2.png)
+
 
 ------
 
