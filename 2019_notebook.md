@@ -1354,6 +1354,12 @@ removing zeros makes no difference; but I did try scaling the data.
 
 ![](https://user-images.githubusercontent.com/4654474/53028715-65f55a00-3435-11e9-80ee-6d41be2af0e2.png)
 
+When I take out the zeros and scale:
+
+![](https://user-images.githubusercontent.com/4654474/53035489-8e845080-3443-11e9-9aff-4faa7196b4a8.png)
+
+I think this is the best way to go. It gives a more accurate picture of the different types of shapes. The data ranged from 0 to 7000 when zeros left in, but when taken out, data ranged 5000-7000. The 0's may bias expression profiles that are low in abundance and mask effects between 5000-7000 strength. 
+
 
 ------
 
