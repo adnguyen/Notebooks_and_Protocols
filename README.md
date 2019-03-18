@@ -17,6 +17,7 @@ This repo shares my protocols and notebooks of ongoing work with the aim of capt
 * [2019_Notebook](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2019_notebook.md)     
 
   * dissertation (ants) and post doc projects (Rhagoletis)
+  * cerasi dataset brain transcriptome analysis 
 
 * [2018_Notebook](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2018_notebook.md). This notebook log:
   * dissertation projects (hsp rxn norm, range limits, proteome stability project, stressed in nature, thermal niche)
