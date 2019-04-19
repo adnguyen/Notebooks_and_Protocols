@@ -37,7 +37,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 11: 2019-02-11 ](#id-section11). Meeting notes with Dan, 2019-02-08
 * [Page 12: 2019-02-13 ](#id-section12). redo analysis with STEM miner with cerasi data; no flybase annotations
 * [Page 13: 2019-02-19 ](#id-section13). STEM miner analysis on strength dataset
-* [Page 14:  ](#id-section14).
+* [Page 14: 2019-04-19 ](#id-section14). Cerasi/pomonella brain transcriptome project: Organizing ideas
 * [Page 15:  ](#id-section15).
 * [Page 16:  ](#id-section16).
 * [Page 17:  ](#id-section17).
@@ -1358,14 +1358,161 @@ When I take out the zeros and scale:
 
 ![](https://user-images.githubusercontent.com/4654474/53035489-8e845080-3443-11e9-9aff-4faa7196b4a8.png)
 
-I think this is the best way to go. It gives a more accurate picture of the different types of shapes. The data ranged from 0 to 7000 when zeros left in, but when taken out, data ranged 5000-7000. The 0's may bias expression profiles that are low in abundance and mask effects between 5000-7000 strength. 
+I think this is the best way to go. It gives a more accurate picture of the different types of shapes. The data ranged from 0 to 7000 when zeros left in, but when taken out, data ranged 5000-7000. The 0's may bias expression profiles that are low in abundance and mask effects between 5000-7000 strength.
 
 
 ------
 
 <div id='id-section14'/>    
 
-### Page 14:  
+### Page 14: 2019-04-19.  Cerasi/pomonella brain transcriptome project: Organizing ideas   
+
+Quick update on project: I'm trying to construct a story of the molecular architecture of diapause development. Diapause development is an alternative life history strategy that allows organisms to survive unfavorable conditions by suppressing metabolic rate and increase their stress hardiness. Mainly, there are 3 phases (Kostal et al. 2017): initiation, maintenance, and termination. Because diapause is dynamic, we need to measure gxp through time to capture the progression of phases. We want to compare 2 different species and their ability to shift their seasonal timing. Do they shift their seasonal time with the same molecular architecture? (Cerasi and Pomonella)
+
+So far, I've analyzed cerasi- splitting classes of responses into population differences (population effect),  common (time effect), and divergent responses( time by population interaction; also main effect of time and population).
+
+* we find major offsets in the opposite direction, such taht the earlier ecloser actually expresses sets of genes later, suggesting that they upregulate genes prior to termination.
+
+I need to do the same for pomonella. So, far, we find a similar offset.
+
+Some tables for future reference:
+
+## Cerasi
+
+Overall break down of diff expressed genes
+
+| Source          | Significantly differentially expressed |
+| --------------- | -------------------------------------- |
+| Altitude        | 452                                    |
+| Time            | 3014                                   |
+| Altitude + Time | 58                                     |
+| Altitude * Time | 14564                                  |
+
+
+### Common responses ,  WGCNA power 16, cutuff = .25, deepsplit = 4
+
+### Divergent responses , WGCNA power 16, cutuff = .25, deepsplit = 4
+
+## Pomonella
+
+Overall break down of diff expressed genes
+
+| Source          | Significantly differentially expressed |
+| --------------- | -------------------------------------- |
+| Population        | 0                                    |
+| Time            | 2592                                   |
+| Population + Time | 0                                     |
+| Population x Time | 2902                                  |
+
+
+### Common responses ,  WGCNA power 12, cutuff = .25, deepsplit = 4
+
+
+Table of the number of genes per module
+|Var1        | Freq|
+|:-----------|----:|
+|black       |  632|
+|cyan        |   84|
+|green       |  156|
+|greenyellow |  103|
+|grey        |    2|
+|lightcyan   |  259|
+|purple      | 1356|
+
+
+### Divergent responses , WGCNA power 12, cutuff = .25, deepsplit = 4   
+
+Table of the number of genes per module
+
+|Var1          | Freq|
+|:-------------|----:|
+|black         |  137|
+|blue          |  279|
+|brown         |  337|
+|darkgrey      |  315|
+|darkturquoise |   74|
+|grey          |    2|
+|grey60        |  153|
+|purple        |  253|
+|red           |  764|
+|royalblue     |   83|
+|turquoise     |  194|
+|yellow        |  311|
+
+Tables of relabelled names per module and their groupings
+
+|module          |order |order2 |
+|:---------------|:-----|:------|
+|MEturquoise     |1     |A      |
+|MEgrey60        |1     |B      |
+|MEdarkturquoise |1     |C      |
+|MEdarkgrey      |1     |D      |
+|MEbrown         |2     |E      |
+|MEyellow        |2     |F      |
+|MEblack         |2     |G      |
+|MEblue          |3     |H      |
+|MEpurple        |4     |I      |
+|MEred           |4     |J      |
+|MEroyalblue     |4     |K      |
+
+notes: the red module (J), has genes in the hippo, mtor, dorso-ventral  in kegg pathways, but not significant 
+
+# Introduction notes:
+Set up drama about what organisms are doing in diapause-they have to be dormant, but also eventually have to be responsive to favorable cues
+
+
+Especially in light of climate change, but species seem to be evolutionarily flexible
+
+We know clinal variation SNPs associated with diapause and we know very well which genes may be important for diapause. However, missing gap in knowledge
+
+Result punchline: Common responses have developmental and stress hardiness related genes; divergent responses are focused on growth related genes.
+
+Insects need to be freeze avoiding or freeze tolerant (Bale and Hayward 2009)
+Seasonal environments promote diapause (Bradford and Roff 1997)
+
+Comparative studies of time course (heterochronic) are lacking
+
+Rough sketch of paragraphs
+
+1.	Life history timing is important, they differ especially in variable environments. For seasonal environments, organisms match their
+2.	Timing is important especially for univoltine because they have a single window to get it right
+3.	Diapause development- dynamic process,
+4.	Molecular processes driving diapause development; end with Problem: we don’t know what genes are conserved vs which ones become adaptively modulated
+5.	Rhagoletis system succinct
+6.	In this study
+
+
+Highly seasonal environments impose significant challenges for species persistence (). Although winter months appear depauperate of most living things, spring and summer months teem with species abundance and diversity (). Taken aside migration from warmer environments, how do species persist in situ during variable seasonal environments? For insects in temperate environments, they match the timing of life events with the seasons, which is under intense selection (). While the warm spring and summer months promote favorable growing conditions, fall signals insects to initiate dormancy or diapause which proceeds throughout the winter months in order to endure unfavorable growing conditions. Any mismatch between life history timing and seasonal change would lead to negative fitness consequences and subsequent population declines (Van Dyck et al. 2015). Populations constantly face critical life history decisions because seasonal environments themselves vary over space (latitude, longitude) and evolutionary time (Tauber & Tauber 1981).
+The degree of selection is particularly strong for insect species with only one life cycle per year.
+	Most pronounced over the harsh winter months
+The ability to “know” how to proceed through life history transitions over the season…
+
+Walk through the developmental diapause process.
+
+Diapause development isn’t necessarily discrete and moves in a continuous fashion. The way development transitions depend on the transcriptional trajectories of genes through time. So just knowing differentially expressed genes misses the whole continuous process of diapause development.
+
+-Issue, we ascribe and set up predefined groups already
+
+-Specific tissues are not investigated
+
+Need to add in this idea of the trajectory of diapause development is well characterized (Meyers et al. 2016- immediate termination process; Ragland et al. 2011; Ragland et al. 2010; Kostal et al. 2017) and focus on gene differences. What’s missing are comparative studies of transcriptomic profiling across diapause development to identify how organisms may adaptively differentiate their seasonal timing.
+
+Large scale genomic divergence between ancestral and derived populations of Rhagoletis (Egan et al. 2015; Meredith paper; Powell et al. 2013).
+
+Need statement: we need to understand gene identities but also their trajectories too. Because trajectories are an important component of their abundance and in turn, their role in any physiological process.
+
+Predictions:
+1.	Initiation: genes are important early on to start diapause development and then get turned off
+2.	Maintenance: genes that play an important role contribute to homeostasis during dormancy or prolonged development; there are actually two general patterns
+a.	U-shaped pattern would signify genes important for physiological processes during permissive conditions because gene abundance matches favorable conditions
+b.	Hump-shaped patterns would signify genes turned on during dormancy and would be important for physiological processes during non-permissive conditions
+3.	Termination: genes that abruptly or gradually turn on at the later stages of diapause development, we mainly expect genes to be enriched for resumption of growth
+
+
+
+
+In this study, we aim to understand seasonal differences between two distinct population of Rhagoeltis cerasi by determining how these flies progress through diapause development using transcriptional trajectories as landmarks. We first determine the degree of seasonal population divergence in eclosion timing between two to four and a half months while in dormancy.  Over the same time course, we assess whether population level divergence in eclosion reflects differences in transcript abundance trajectories as well as transcript identity. For transcripts showing common responses, we expect them to fall into three discrete phases classes of diapause development (Kostal): Initiation, maintenance, and termination based on their pattern of expression over time. Out of the genes related to initiation, we expect genes to be enriched in metabolic suppression and slowdown of development (). Out of the genes related to maintenance, we expect genes to be enriched in stress hardiness pathways and perhaps lipid metabolism (). Out of the genes related to termination, we expect genes to be enriched in overall eye development, morphogenesis, and metabolic activation (). For genes displaying population differences across time, we expect to observe offsets in expression patterns that reflect their eclosion timing. For example, analyzing reaction norms may reveal peak expression values appearing earlier in lowland populations than highland populations. In order to determine whether these class of genes remain conserved or become adaptively modulated for common or divergent gene expression responses between populations, respectively, we compared gene sets and expression trajectories of Rhagoletis cerasi with Rhagoletis pomonella.
+
 
 ------
 
