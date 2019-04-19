@@ -1391,6 +1391,7 @@ Overall break down of diff expressed genes
 ### Overall population level differences; WGCNA power 16, cutuff = .25, deepsplit = 4
 
 Table of the number of genes per module
+
 |Var1      | Freq|
 |:---------|----:|
 |grey      |    9|
@@ -1406,6 +1407,7 @@ Tables of relabelled names per module and their groupings
 ### Common responses ,  WGCNA power 16, cutuff = .25, deepsplit = 4
 
 Table of the number of genes per module
+
 |Var1          | Freq|
 |:-------------|----:|
 |black         |  127|
@@ -1441,6 +1443,7 @@ Tables of relabelled names per module and their groupings
 |MEturquoise     |Termination |M    |
 
 ### Divergent responses , WGCNA power 16, cutuff = .25, deepsplit = 4
+
 Table of the number of genes per module
 
 Var1           | Freq|
