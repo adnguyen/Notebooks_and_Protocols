@@ -1388,8 +1388,42 @@ Overall break down of diff expressed genes
 | Altitude + Time | 58                                     |
 | Altitude * Time | 14564                                  |
 
+### Overall population level differences; WGCNA power 16, cutuff = .25, deepsplit = 4
+
+Table of the number of genes per module
+|Var1      | Freq|
+|:---------|----:|
+|grey      |    9|
+|turquoise |  443|
+
+Tables of relabelled names per module and their groupings
+
+|color     |lett |module      |
+|:---------|:----|:-----------|
+|grey      |A    |MEgrey      |
+|turquoise |B    |MEturquoise |
 
 ### Common responses ,  WGCNA power 16, cutuff = .25, deepsplit = 4
+
+Table of the number of genes per module
+|Var1          | Freq|
+|:-------------|----:|
+|black         |  127|
+|brown         |  381|
+|darkgreen     |   74|
+|darkred       |  212|
+|darkturquoise |   56|
+|greenyellow   |  108|
+|grey          |   32|
+|grey60        |  355|
+|lightyellow   |  261|
+|magenta       |  433|
+|midnightblue  |  102|
+|royalblue     |   85|
+|turquoise     |  788|
+
+Tables of relabelled names per module and their groupings
+
 
 ### Divergent responses , WGCNA power 16, cutuff = .25, deepsplit = 4
 
@@ -1419,6 +1453,17 @@ Table of the number of genes per module
 |lightcyan   |  259|
 |purple      | 1356|
 
+Tables of relabelled names per module and their groupings
+
+|module        |class       |lab |
+|:-------------|:-----------|:---|
+|MEgrey        |Cycling     |A   |
+|MElightcyan   |Cycling     |B   |
+|MEblack       |Initiation  |C   |
+|MEcyan        |Maintenance |D   |
+|MEgreenyellow |Maintenance |E   |
+|MEgreen       |Termination |F   |
+|MEpurple      |Termination |G   |
 
 ### Divergent responses , WGCNA power 12, cutuff = .25, deepsplit = 4   
 
@@ -1455,7 +1500,7 @@ Tables of relabelled names per module and their groupings
 |MEred           |4     |J      |
 |MEroyalblue     |4     |K      |
 
-notes: the red module (J), has genes in the hippo, mtor, dorso-ventral  in kegg pathways, but not significant 
+notes: the red module (J), has genes in the hippo, mtor, dorso-ventral  in kegg pathways, but not significant
 
 # Introduction notes:
 Set up drama about what organisms are doing in diapause-they have to be dormant, but also eventually have to be responsive to favorable cues
