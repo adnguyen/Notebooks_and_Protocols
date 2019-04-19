@@ -1424,8 +1424,58 @@ Table of the number of genes per module
 
 Tables of relabelled names per module and their groupings
 
+|module          |class       |labs |
+|:---------------|:-----------|:----|
+|MEgreenyellow   |Cycling     |A    |
+|MEgrey          |Cycling     |B    |
+|MEdarkred       |Initiation  |C    |
+|MEdarkgreen     |Maintenance |D    |
+|MElightyellow   |Maintenance |E    |
+|MEroyalblue     |Maintenance |F    |
+|MEgrey60        |Maintenance |G    |
+|MEmagenta       |Maintenance |H    |
+|MEdarkturquoise |Maintenance |I    |
+|MEmidnightblue  |Maintenance |J    |
+|MEblack         |Maintenance |K    |
+|MEbrown         |Termination |L    |
+|MEturquoise     |Termination |M    |
 
 ### Divergent responses , WGCNA power 16, cutuff = .25, deepsplit = 4
+Table of the number of genes per module
+
+Var1           | Freq|
+|:--------------|----:|
+|blue4          | 1810|
+|blueviolet     |   47|
+|darkseagreen4  | 2442|
+|darkviolet     |  165|
+|grey           |    5|
+|indianred3     | 5399|
+|lightpink4     | 1781|
+|mediumorchid   | 1790|
+|orangered1     |   56|
+|palevioletred2 |  207|
+|thistle2       |   92|
+|yellow4        |   95|
+
+Tables of relabelled names per module and their groupings
+
+
+|module           |cluster |laa |
+|:----------------|:-------|:---|
+|MEindianred3     |1       |A   |
+|MEblue4          |2       |B   |
+|MEmediumorchid   |2       |C   |
+|MElightpink4     |2       |D   |
+|MEorangered1     |2       |E   |
+|MEdarkseagreen4  |3       |F   |
+|MEpalevioletred2 |4       |G   |
+|MEthistle2       |4       |H   |
+|MEyellow4        |5       |I   |
+|MEblueviolet     |5       |J   |
+|MEdarkviolet     |5       |K   |
+|MEgrey           |6       |L   |
+
 
 ## Pomonella
 
