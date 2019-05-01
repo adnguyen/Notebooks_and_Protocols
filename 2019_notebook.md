@@ -38,7 +38,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 12: 2019-02-13 ](#id-section12). redo analysis with STEM miner with cerasi data; no flybase annotations
 * [Page 13: 2019-02-19 ](#id-section13). STEM miner analysis on strength dataset
 * [Page 14: 2019-04-19 ](#id-section14). Cerasi/pomonella brain transcriptome project: Organizing ideas
-* [Page 15:  ](#id-section15).
+* [Page 15: 2019-05-01 ](#id-section15). Sorting ideas: How do we know the modules we're finding are robust?
 * [Page 16:  ](#id-section16).
 * [Page 17:  ](#id-section17).
 * [Page 18:  ](#id-section18).
@@ -1616,7 +1616,60 @@ In this study, we aim to understand seasonal differences between two distinct po
 
 <div id='id-section15'/>    
 
-### Page 15:  
+### Page 15: 2019-05-01. Sorting ideas: How do we know the modules we're finding are robust?   
+
+Recap: We used WGCNA to estimate weighted correlated gene networks. Nodes are the genes and the edges are weighted by the degree of correlation between the two nodes. From my understanding, WGCNA takes normalized gene expression data (in this case output of edgeR output, so normalized log fold change) and calculates all pairwise pearsons correlations. Converts this matrix (adjacency) to topological overlap matrix ; 1- TOM = dissimiliarity. Then cluster based on distances and given a cutoff, a group of genes in a cluster is a module.
+
+Dan wants to know how we can tell that these modules don't arise by chance? In other words, are the modules robust? Are the modules real?  
+
+I think there are two aspects of whether these modules are real: the number and the degree of genes cluster.  
+
+1. the number of modules
+
+2. the degree of genes ending up in a module
+
+Dan is most interested in #2, but they're both related.
+
+Ok, what are the different approaches?
+
+### Are these modules assembling more than expected by chance?
+
+  * Create a null distribution of random modules by permuting module labels and compare some test statistic from our module to the random distribution. This preserves the number of modules being compared, might be simpler.    
+
+    * For each module, compare the degree of shared genes and determine if they're significantly different from empirical module.    
+
+
+  * How consistent are the modules?   
+
+    * bootstrap the samples and determine how often the same modules arise; ie determine network preservation
+
+  * Determine the degree of module overlap between reference module to a randomly generated module (permutation). Compare reference with random generated module and their overalp with a fisher's exact test and determine whether the resultant log odds ratio is different from 1. (overlap package, compares to the number of background genes)
+
+  * Jack knife-  take one sample out, then estimate network and determine module preservation
+    * tells you the influence of each sample
+
+
+Some reference:
+
+Good paper on zsummary and module preservation     
+Li et al. 2015; Scientific Reports    
+Title - Quantitative assessment of gene expression network module-validation methods    
+link (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4607977/#b57)  
+
+Different way to assess modules : calculate median z scores   
+
+Jia et al. 2012; Plos Computation Biology      
+Title - Network-Assisted Investigation of Combined Causal
+Signals from Genome-Wide Association Studies in Schizophrenia       
+link (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3390381/pdf/pcbi.1002587.pdf)     
+
+
+
+
+
+
+
+
 
 ------
 
