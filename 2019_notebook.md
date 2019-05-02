@@ -1684,6 +1684,7 @@ This is the set up for the contingency table: A can be the reference gene set, a
 |inB  |c    |d   |
 
 
+
 * OR <  1, then no association
 * OR = 1, then equal association
 * OR > 1, then positive assocation
