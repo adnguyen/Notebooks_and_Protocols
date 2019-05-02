@@ -1666,6 +1666,33 @@ link (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3390381/pdf/pcbi.1002587.pdf)
 
 
 
+### 2019-05-02 update- Workflow:
+
+# Rationale
+
+We want to know if the modules we've detected occur by random chance. To test this, we will permute gene names for the given module structure and for each module, ask how often are genes are shared between the reference set (empirically identified modules) and a random set (permuted). For each permuted dataset, we can determine the odds ratio of association (OR) and generate a distribution of OR across all permutations.
+
+This is the set up for the contingency table: A can be the reference gene set, and B is the permuted gene set   
+
+```R
+`r knitr::kable(data.frame(notA=c("a","c"),inA=c("b","d"),row.names = c("notB","inB")))`
+```
+
+|     |notA |inA |
+|:----|:----|:---|
+|notB |a    |b   |
+|inB  |c    |d   |
+
+
+* OR <  1, then no association
+* OR = 1, then equal association
+* OR > 1, then positive assocation
+
+Then for each module, we want to determine whether the log odds ratio distrubtion is signicantly different from 0 with a one sample t-test.
+
+**Expected outcome**
+
+If modules are assembling in a non-random pattern, we'd expect the logg odds distribution to be significantly less than 0.
 
 
 
