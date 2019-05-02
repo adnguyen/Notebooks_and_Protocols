@@ -1643,7 +1643,7 @@ Ok, what are the different approaches?
 
     * bootstrap the samples and determine how often the same modules arise; ie determine network preservation
 
-  * Determine the degree of module overlap between reference module to a randomly generated module (permutation). Compare reference with random generated module and their overalp with a fisher's exact test and determine whether the resultant log odds ratio is different from 1. (overlap package, compares to the number of background genes)
+  * Determine the degree of module overlap between reference module to a randomly generated module (permutation). Compare reference with random generated module and their overalp with a fisher's exact test and determine whether the resultant log odds ratio is different from 1 - can use fisher's exact test. (overlap package, compares to the number of background genes)
 
   * Jack knife-  take one sample out, then estimate network and determine module preservation
     * tells you the influence of each sample
