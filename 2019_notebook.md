@@ -39,7 +39,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 13: 2019-02-19 ](#id-section13). STEM miner analysis on strength dataset
 * [Page 14: 2019-04-19 ](#id-section14). Cerasi/pomonella brain transcriptome project: Organizing ideas
 * [Page 15: 2019-05-01 ](#id-section15). Sorting ideas: How do we know the modules we're finding are robust?
-* [Page 16:  ](#id-section16).
+* [Page 16: 2019-05-07 ](#id-section16). Code comparing gene lists (anything 2 lists with lots of elements you want to compare in a pairwise fashion)
 * [Page 17:  ](#id-section17).
 * [Page 18:  ](#id-section18).
 * [Page 19:  ](#id-section19).
@@ -1703,7 +1703,86 @@ If modules are assembling in a non-random pattern, we'd expect the logg odds dis
 
 <div id='id-section16'/>    
 
-### Page 16:  
+### Page 16:  2019-05-07. Code comparing gene lists (anything 2 lists with lots of elements you want to compare in a pairwise fashion)  
+
+The GeneOverlap R package helped me do the calculation : https://www.bioconductor.org/packages/release/bioc/vignettes/GeneOverlap/inst/doc/GeneOverlap.pdf
+
+This is how the matrix is set up too : https://www.rdocumentation.org/packages/GeneOverlap/versions/1.8.0/topics/GeneOverlap
+
+Anyway, I want to save some code that calculates the association between two gene sets that is permuted vs a reference set. So if you have a bunch of elements (data subsets with a vector of their own gene names) between 2 lists you want to compare, this is the code:
+
+It is basically a nested for loop which i dont usually do, but I couldnt think of any other way.
+
+the workflow: first set the total possible number of genes among sets (these are genes in common responses for us on the cerasi dataset)
+1. first you need 2 lists with elemtns of a vector of gene names
+2. loop through the reference set, grab each element first (i)
+3. grab the name of the element while you're at it (ref.name)
+4. then loop through the permuted gene list (j)
+5. grab the name of the element again (per.name)
+6. start constructing the contingency table (interesect, union, setdiff, odds ratio)
+7. you get a vector, bind the rows together and you get the dataset
+
+```R
+
+a1<-list(magenta=data.frame(a=c("A","Z","B","C")),blue=data.frame(a=c("A","B","C","D")))
+c1<-list(green=data.frame(a=c("A","Z","B","C")),red=data.frame(a=c("A","B","C","D","W")))
+
+
+#total number of genes
+n=5000
+df=NULL
+#ref.names=NULL
+#
+for(i in seq_along(a1)) {
+  #newlist[[i]] <- dplyr::pull(a1[[i]],a)
+  ss <- as.character(dplyr::pull(a1[[i]],a))
+  ref.name<-names(a1[i])
+  #print(ss)
+  for(j in seq_along(c1)){
+    ss2 <- as.character(dplyr::pull(c1[[j]],a))
+    perm.name<-names(c1[j])
+    #print(ss2)
+    #print(as.vector(length(unlist(lapply(ss2,function(x){intersect(ss,x)}))),ss,ss2))
+    #print(length(unlist(lapply(ss2,function(x){intersect(ss,x)}))))
+    #print(length(unlist(lapply(ss2,function(x){setdiff(ss,x)}))))
+    #print(length(unlist(lapply(ss2,function(x){setdiff(x,ss)}))))
+    #print(n-length(unlist(lapply(ss2,function(x){union(x,ss)}))))
+
+    inAinB<-length(unlist(lapply(ss2,function(x){intersect(ss,x)})))
+    inAnotB<-length(unlist(lapply(ss2,function(x){setdiff(x,ss)})))
+    notAinB<-length(unlist(lapply(ss2,function(x){setdiff(ss,x)})))
+    notAnotB<-n-length(unlist(lapply(ss2,function(x){union(x,ss)})))
+    #calculate odds ratio
+    OR<-fisher.test(matrix(c(inAinB,inAnotB,notAinB,notAnotB),nrow=2))[[3]]
+
+    df<-rbind(df,data.frame(inAinB,inAnotB,notAinB,notAnotB,OR,logOR=log2(OR),ref.name,perm.name))
+
+  }
+}
+
+df
+
+
+```
+
+
+|            | inAinB| inAnotB| notAinB| notAnotB|        OR|    logOR|ref.name |perm.name |
+|:-----------|------:|-------:|-------:|--------:|---------:|--------:|:--------|:---------|
+|odds ratio  |      4|       0|      12|     4984|       Inf|      Inf|magenta  |green     |
+|odds ratio1 |      3|       2|      17|     4978|  427.4081|  8.73947|magenta  |red       |
+|odds ratio2 |      3|       1|      13|     4983| 1116.3346| 10.12455|blue     |green     |
+|odds ratio3 |      4|       1|      16|     4979| 1189.9513| 10.21669|blue     |red       |
+
+### Set up for the contingency table:
+
+|            | NotA| inA|
+|:-----------|------:|-------:|
+|notB  |    total genes- union|       setdiff(B,A)|
+|inB |      setdiff(A,B)|  intersect|   
+
+
+
+
 
 ------
 
