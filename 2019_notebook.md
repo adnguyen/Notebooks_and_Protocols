@@ -1766,13 +1766,12 @@ df
 ```
 
 
-|            | inAinB| inAnotB| notAinB| notAnotB|        OR|    logOR|ref.name |perm.name |
-|:-----------|------:|-------:|-------:|--------:|---------:|--------:|:--------|:---------|
-|odds ratio  |      4|       0|      12|     4984|       Inf|      Inf|magenta  |green     |
-|odds ratio1 |      3|       2|      17|     4978|  427.4081|  8.73947|magenta  |red       |
-|odds ratio2 |      3|       1|      13|     4983| 1116.3346| 10.12455|blue     |green     |
-|odds ratio3 |      4|       1|      16|     4979| 1189.9513| 10.21669|blue     |red       |
-
+|            | inAinB| inAnotB| notAinB| notAnotB|       OR|    logOR|ref.name |perm.name |
+|:-----------|------:|-------:|-------:|--------:|--------:|--------:|:--------|:---------|
+|odds ratio  |      4|       0|       0|       16|      Inf|      Inf|magenta  |green     |
+|odds ratio1 |      3|       2|       1|       14| 16.38836| 4.034599|magenta  |red       |
+|odds ratio2 |      3|       1|       1|       15| 29.62073| 4.888535|blue     |green     |
+|odds ratio3 |      4|       1|       0|       15|      Inf|      Inf|blue     |red       |
 ### Set up for the contingency table:
 
 |            | NotA| inA|
