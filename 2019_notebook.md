@@ -40,7 +40,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 14: 2019-04-19 ](#id-section14). Cerasi/pomonella brain transcriptome project: Organizing ideas
 * [Page 15: 2019-05-01 ](#id-section15). Sorting ideas: How do we know the modules we're finding are robust?
 * [Page 16: 2019-05-07 ](#id-section16). Code comparing gene lists (anything 2 lists with lots of elements you want to compare in a pairwise fashion)
-* [Page 17:  ](#id-section17).
+* [Page 17: 2019-05-09 ](#id-section17). Messing around with code
 * [Page 18:  ](#id-section18).
 * [Page 19:  ](#id-section19).
 * [Page 20:  ](#id-section20).
@@ -1787,7 +1787,24 @@ df
 
 <div id='id-section17'/>    
 
-### Page 17:  
+### Page 17:  2019-05-09. Messing around with code
+
+
+```R
+library(ggplot2)
+#library(ggthemr)
+
+x<-seq(1:10)
+T<-theme_bw()+theme(text=element_text(size=20),axis.text=element_text(size=20), panel.grid.major=element_blank(), panel.grid.minor.x = element_blank(), panel.grid = element_blank(), legend.key = element_blank())+ theme(legend.position="none")
+
+dat<-data.frame(x=x[-1:-2],y=x[-1:-2]^2)
+
+ggplot(dat,aes(x=x,y=y))+geom_point(size=5)+geom_line(size=1.5)+T+ylab("Time spent at desk")+
+  scale_x_continuous(labels=c("PhD Year 1",
+                              "PhD Year4","Start Postdoc", "Postdoc Year 2"),
+                     breaks=c(3,6,8,10))+xlab("Time")+scale_y_continuous(labels="",breaks=100)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
 
 ------
 
