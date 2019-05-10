@@ -41,8 +41,8 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 15: 2019-05-01 ](#id-section15). Sorting ideas: How do we know the modules we're finding are robust?
 * [Page 16: 2019-05-07 ](#id-section16). Code comparing gene lists (anything 2 lists with lots of elements you want to compare in a pairwise fashion)
 * [Page 17: 2019-05-09 ](#id-section17). Messing around with code
-* [Page 18:  ](#id-section18).
-* [Page 19:  ](#id-section19).
+* [Page 18: 2019-05-10 ](#id-section18). Reading Langfelder et al. 2011; Is My Network Module Preserved or Reproducible?
+* [Page 19: 2019-05-10 ](#id-section19). Helping James Brown with some stats
 * [Page 20:  ](#id-section20).
 * [Page 21:  ](#id-section21).
 * [Page 22:  ](#id-section22).
@@ -1404,7 +1404,7 @@ Tables of relabelled names per module and their groupings
 |grey      |A    |MEgrey      |
 |turquoise |B    |MEturquoise |
 
-### Common responses ,  WGCNA power 16, cutuff = .25, deepsplit = 4
+### Common responses ,  WGCNA power 16, cutuff = .25, deepsplit = 4        
 
 Table of the number of genes per module
 
@@ -1444,7 +1444,7 @@ Tables of relabelled names per module and their groupings
 
 ### Divergent responses , WGCNA power 16, cutuff = .25, deepsplit = 4
 
-Table of the number of genes per module
+Table of the number of genes per module   
 
 Var1           | Freq|
 |:--------------|----:|
@@ -1461,7 +1461,7 @@ Var1           | Freq|
 |thistle2       |   92|
 |yellow4        |   95|
 
-Tables of relabelled names per module and their groupings
+Tables of relabelled names per module and their groupings  
 
 
 |module           |cluster |laa |
@@ -1492,7 +1492,7 @@ Overall break down of diff expressed genes
 | Population x Time | 2902                                  |
 
 
-### Common responses ,  WGCNA power 12, cutuff = .25, deepsplit = 4
+### Common responses ,  WGCNA power 12, cutuff = .25, deepsplit = 4   
 
 
 Table of the number of genes per module
@@ -1506,7 +1506,7 @@ Table of the number of genes per module
 |lightcyan   |  259|
 |purple      | 1356|
 
-Tables of relabelled names per module and their groupings
+Tables of relabelled names per module and their groupings   
 
 |module        |class       |lab |
 |:-------------|:-----------|:---|
@@ -1518,9 +1518,10 @@ Tables of relabelled names per module and their groupings
 |MEgreen       |Termination |F   |
 |MEpurple      |Termination |G   |
 
-### Divergent responses , WGCNA power 12, cutuff = .25, deepsplit = 4   
+### Divergent responses , WGCNA power 12, cutuff = .25, deepsplit = 4    
 
-Table of the number of genes per module
+Table of the number of genes per module    
+
 
 |Var1          | Freq|
 |:-------------|----:|
@@ -1810,13 +1811,373 @@ ggplot(dat,aes(x=x,y=y))+geom_point(size=5)+geom_line(size=1.5)+T+ylab("Time spe
 
 <div id='id-section18'/>    
 
-### Page 18:  
+### Page 18:  2019-05-10. Reading Langfelder et al. 2011; Is My Network Module Preserved or Reproducible?
+
+[Is my Network Module Preserved and Reproducible?](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1001057&type=printable)
+Langfelder et al., PlosOne
+
+Cluster validation = quality; 4 ways to assess:
+
+1. cross-tabulation - statistics comparing cluster assignment in reference and test clusterings
+2. edge_density - dont require clustering
+3. separability - dont require clustering
+4. stability -
+
+To find reproducibility in a module or cluster, take what is found in a one set and apply it to a new case.
+
+They say module preservation is different than cluster preservation but dont tell you how they'll figure this out or do it in the intro.
+
+This paper skips steps in logic, god damn.
+
+
+Network based stats:
+
+1. Density based- preservation stats can be used to determine whether module nodes remain highly connected in the test network
+2. Separability - determine whether network modules remain distinct from one another in the test network
+3. Connectivity - determine whether the connectivity pattern between nodes in the reference network is similiar to that in the test network
+
+Zsummary = (Zdensity + Zconnectivity)/2
+
+Z<2 = no preservation
+Z<10 = weak preservation
+
+medianrank - less dependent on module size , which can influence preservation
+
+**module preservation**
+
+determine whether a module is present in a reference network can also be found in an independent test network.
+
+Modules between reference and test networks may be preserved if has a high desnity in the test network. Take mean adjacency for module q as the module density of the test network.
+
 
 ------
 
 <div id='id-section19'/>    
 
-### Page 19:  
+### Page 19:  2019-05-10. Helping James Brown with some statistic
+
+### Make figure and check stats on the differences in wandering day between strain and photoperiod
+
+**loading data and all of the manipulation
+
+```R
+data=read_excel("../Data/data.xlsx",sheet = "wanderdata")
+
+#file: data
+#sheet: wanderdata
+
+#converting wide to long. This code puts all the observations into one column with the label of your choice (measurements used below)
+all=gather(data,day,stage,"82wander_0616":"01wander_0327")
+all$strain<-substr(all$tray_id,1,2)
+all$strain<-as.factor(all$strain)
+all$treat<-substr(all$tray_id,3,4)
+all$treat<-as.factor(all$treat)
+all$cohort<-substr(all$tray_id,6,9)
+all$cohort<-as.factor(all$cohort)
+all$day<-as.factor(all$day)
+all$stage<-as.factor(all$stage)
+all$tray_id<-as.factor(all$tray_id)
+all$cell_id<-as.factor(all$cell_id)
+all$fifth_date<-as.factor(all$fifth_date)
+all=subset(all,stage!="NA")
+```
+Checking what the data look like
+
+```R
+str(all)
+Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	3780 obs. of  11 variables:
+ $ tray_id   : Factor w/ 8 levels "BE12 0314","BE12 0320",..: 3 3 3 3 3 3 3 3 3 3 ...
+ $ fifth_date: Factor w/ 21 levels "20180323","20180324",..: 20 20 19 19 20 20 19 19 20 20 ...
+ $ cell_id   : Factor w/ 48 levels "1","2","3","4",..: 1 2 3 4 5 6 7 8 9 10 ...
+ $ fiveday   : num  23 23 22 22 23 23 22 22 23 23 ...
+ $ pday      : num  NA 24 20 20 15 19 20 20 24 24 ...
+ $ wday      : num  10 10 10 10 10 9 12 10 11 12 ...
+ $ day       : Factor w/ 82 levels "01wander_0327",..: 82 82 82 82 82 82 82 82 82 82 ...
+ $ stage     : Factor w/ 6 levels "A","D","N","P",..: 6 4 4 4 4 4 4 4 4 4 ...
+ $ strain    : Factor w/ 2 levels "BE","UZ": 1 1 1 1 1 1 1 1 1 1 ...
+ $ treat     : Factor w/ 2 levels "12","16": 1 1 1 1 1 1 1 1 1 1 ...
+ $ cohort    : Factor w/ 4 levels "0302","0314",..: 4 4 4 4 4 4 4 4 4 4 ...
+
+ all%>%
+ +   group_by(cohort,strain,treat)%>%
+ +   dplyr::summarise(n.cohorts=length(cohort))
+ # A tibble: 8 x 4
+ # Groups:   cohort, strain [4]
+   cohort strain treat n.cohorts
+   <fct>  <fct>  <fct>     <int>
+ 1 0302   UZ     12          630
+ 2 0302   UZ     16         1056
+ 3 0314   BE     12          331
+ 4 0314   BE     16          552
+ 5 0320   BE     12          184
+ 6 0320   BE     16          287
+ 7 0429   BE     12          308
+ 8 0429   BE     16          432
+
+```
+**stat models**
+ANOVA
+
+```R
+mod1<-aov(wday~treat*strain+cohort,data=all)
+summary(mod1)
+par(mfrow=c(2,2))
+plot(mod1)
+par(mfrow=c(1,1))
+
+Df Sum Sq Mean Sq F value Pr(>F)    
+treat           1  17245   17245 6166.03 <2e-16 ***
+strain          1    262     262   93.82 <2e-16 ***
+cohort          2    642     321  114.72 <2e-16 ***
+treat:strain    1    861     861  307.77 <2e-16 ***
+Residuals    3380   9453       3                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+394 observations deleted due to missingness
+```
+
+**Not normal**!!  
+
+**Poisson regression**
+
+```R
+mod2<-glm(wday~treat*strain+cohort,data=all,family=poisson())
+summary(mod2)
+Call:
+glm(formula = wday ~ treat * strain + cohort, family = poisson(),
+    data = all)
+
+Deviance Residuals:
+     Min        1Q    Median        3Q       Max  
+-2.65324  -0.31997   0.00955   0.31551   1.83552  
+
+Coefficients: (1 not defined because of singularities)
+                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)       2.36027    0.01520 155.314  < 2e-16 ***
+treat16          -0.46654    0.01691 -27.597  < 2e-16 ***
+strainUZ          0.07460    0.01934   3.858 0.000114 ***
+cohort0314       -0.10587    0.01875  -5.648 1.62e-08 ***
+cohort0320       -0.23360    0.02379  -9.821  < 2e-16 ***
+cohort0429             NA         NA      NA       NA    
+treat16:strainUZ -0.21913    0.02503  -8.756  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 3596.5  on 3385  degrees of freedom
+Residual deviance: 1223.8  on 3380  degrees of freedom
+  (394 observations deleted due to missingness)
+AIC: 14250
+
+Number of Fisher Scoring iterations: 4
+```
+
+
+**Making the boxplot, wandering day vs photoperiod for each strain**
+
+```R
+ggplot(all,aes(x=treat,y=wday,fill=strain))+geom_boxplot()+ylab("Wandering Day (days)")+
+xlab("Photoperiod Treatment (hours)")+scale_fill_manual(labels=c("Long Diapause","Short Diapause"),values=c("lightsalmon1","mediumpurple1"),breaks=c("UZ","BE"))+
+T+theme(legend.position = c(0.9,0.85),legend.justification = c("right", "bottom"))+labs(fill = "Strain")+scale_y_continuous(limits=c(0,16),breaks=seq(0,16,4),labels=seq(0,16,4))
+
+```
+
+### Lipid accumulation between developmental stages for each strain, and photoperiod
+
+**data manipulations**
+
+```R
+##PC
+data=read_excel("../data/data.xlsx",sheet = "energy")
+
+#file: data
+#sheet: energy
+
+data=subset(data,treat!="NA")
+data=subset(data,cohort!="20180131")
+data=subset(data,cohort!="20180206")
+data=subset(data,sample_day!="W14")
+data=subset(data,sample_day!="W19")
+data=subset(data,sample_day!="W29")
+```
+
+**prep data for generating figure
+
+```R
+## Plot conparing Lipid Mass of both strains and both treatments
+dataLipid=data1
+dataLipid=subset(dataLipid,lipid_mass>=0)
+#dataLipid=subset(dataLipid,lipid_mass<=0.0200)
+count(dataLipid$treat)
+dataLipid=subset(dataLipid,sample_day=="1"| sample_day=="W")
+
+dataLipid$phot.title<-paste(dataLipid$photoperiod, "Hour","Photoperiod Treatment")
+```
+**actual figure in ggplot, pretty**
+
+```R
+ggplot(data=dataLipid,aes(x=sample_day,y=lipid_mass,group=treat,color=strain))+
+  stat_summary(aes(y = lipid_mass), fun.y=mean, geom="line",size=1.5)+
+  stat_summary(aes(y = lipid_mass), fun.y=mean, geom="point",size=3)+
+  stat_summary(fun.data=mean_se, geom="errorbar", width=0.25,size=1.5)+
+  #facet_wrap(~photoperiod,nrow=1)+
+  facet_wrap(~phot.title,nrow=1)+
+  scale_color_manual(labels=c("Long Diapause","Short Diapause"),values=c("lightsalmon1","mediumpurple1"),breaks=c("UZ","BE"))+
+  theme(axis.text.x  = element_text(vjust=0.5, size=16),axis.text.y  = element_text(vjust=0.5, size=16))+
+  #ggtitle("Treatment Comparison of Larvae lipid Mass (UZ 178 : BE 164 larvae)")+
+  ylab("Lipid Mass (g)")+xlab("")+T+scale_x_discrete(labels=c("Day 1 of\n 5th instar", "Wandering \nStage"))+theme(legend.position = c(0.9,0.8),legend.justification = c("right", "bottom"))+labs(color = "Strain")
+
+```
+**data prep for statistics**
+```R
+tog<-rbind(dataLW,dataL1)
+Observations: 282
+Variables: 22
+$ cohort                              <fct> 20180302, 20180302, 20180302, 20180302, 20180…
+$ rep                                 <dbl> 22, 22, 22, 22, 23, 23, 23, 21, 21, 22, 22, 2…
+$ sample_day                          <fct> W, W, W, W, W, W, W, W, W, W, W, W, W, W, W, …
+$ sample_id                           <fct> 0329-17, 0329-18, 0329-19, 0329-20, 0330-02, …
+$ tag_id                              <chr> "0329-17", "0329-18", "0329-19", "0329-20", "…
+$ batch                               <chr> "10", "10", "10", "10", "10", "10", "10", "10…
+$ FAME                                <chr> "F", "F", NA, NA, "F", NA, NA, NA, NA, "F", "…
+$ `5th_date`                          <dbl> 20180323, 20180323, 20180323, 20180323, 20180…
+$ treat                               <fct> UZ16, UZ16, UZ16, UZ16, UZ16, UZ16, UZ16, UZ1…
+$ `Microtube wt + Beads`              <dbl> 2.2601, 2.1353, 2.2251, 2.3038, 1.9232, 2.586…
+$ `Microtube wt + Beads + WET Larvae` <dbl> 2.3342, 2.2039, 2.3191, 2.4146, 1.9956, 2.674…
+$ `Microtube + Beads + DRY Larvae`    <dbl> 2.2798, 2.1543, 2.2521, 2.3358, 1.9429, 2.614…
+$ `Microtube + Beads + LEAN Larvae`   <dbl> NA, NA, NA, NA, NA, NA, NA, 1.9097, 2.4334, N…
+$ `TV wt`                             <dbl> 14.42190, 15.09370, 14.31270, 15.32050, 15.30…
+$ `TV wt + DRY Lipids`                <dbl> 14.4279, 15.1024, 14.3199, 15.3313, 15.3088, …
+$ wet_mass                            <dbl> 0.0741, 0.0686, 0.0940, 0.1108, 0.0724, 0.088…
+$ dry_mass                            <dbl> 0.0197, 0.0190, 0.0270, 0.0320, 0.0197, 0.027…
+$ lean_mass                           <dbl> -2.2601, -2.1353, -2.2251, -2.3038, -1.9232, …
+$ lipid_mass                          <dbl> 0.00600, 0.00870, 0.00720, 0.01080, 0.00580, …
+$ tag_mass                            <dbl> 0.0011988, 0.0013124, 0.0015004, 0.0020308, 0…
+$ strain                              <fct> UZ, UZ, UZ, UZ, UZ, UZ, UZ, UZ, UZ, UZ, UZ, U…
+$ photoperiod                         <fct> 16, 16, 16, 16, 16, 16, 16, 12, 12, 12, 12, 1…
+```
+
+**stat model: mixed effects**
+
+```R
+
+mm1=lmer(lipid_mass ~ photoperiod*strain*sample_day+lean_mass + (1|rep/cohort) ,data=tog, REML = TRUE)
+
+lmerTest::step(mm1)
+summary(mm1)
+#output
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: lipid_mass ~ photoperiod * strain * sample_day + lean_mass +      (1 | rep/cohort)
+   Data: tog
+
+REML criterion at convergence: -2463.4
+
+Scaled residuals:
+    Min      1Q  Median      3Q     Max
+-5.3487 -0.3937 -0.0238  0.4062  3.7083
+
+Random effects:
+ Groups     Name        Variance  Std.Dev.
+ cohort:rep (Intercept) 0.000e+00 0.0000000
+ rep        (Intercept) 6.611e-07 0.0008131
+ Residual               5.904e-06 0.0024299
+Number of obs: 282, groups:  cohort:rep, 44; rep, 20
+
+Fixed effects:
+                                     Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)                         1.951e-03  7.049e-04  7.684e+01   2.768  0.00707 **
+photoperiod16                      -7.512e-04  8.116e-04  2.641e+02  -0.926  0.35551    
+strainUZ                           -8.112e-05  8.023e-04  2.623e+02  -0.101  0.91954    
+sample_dayW                         8.321e-03  8.195e-04  6.481e+01  10.154    5e-15 ***
+lean_mass                          -1.878e-05  2.680e-04  2.421e+01  -0.070  0.94472    
+photoperiod16:strainUZ              3.612e-04  1.106e-03  2.624e+02   0.327  0.74425    
+photoperiod16:sample_dayW          -2.909e-03  9.467e-04  2.634e+02  -3.072  0.00235 **
+strainUZ:sample_dayW                2.203e-03  9.374e-04  2.612e+02   2.350  0.01949 *  
+photoperiod16:strainUZ:sample_dayW -1.328e-03  1.305e-03  2.610e+02  -1.018  0.30966
+```
+
+
+**figure genration**
+
+```R
+b1<-ggplot(data=dataLeU,aes(x=sample_day,y=lean_mass,group=treat,color=strain))+
+  stat_summary(aes(y = lean_mass), fun.y=mean, geom="line",size=1.5)+
+  stat_summary(aes(y = lean_mass), fun.y=mean, geom="point",size=3)+
+  stat_summary(fun.data=mean_se, geom="errorbar", width=0.25,size=1.5)+
+  #facet_wrap(~photoperiod,nrow=1)+
+  facet_wrap(~phot.title,nrow=1)+
+  scale_color_manual(labels=c("Long Diapause","Short Diapause"),values=c("lightsalmon1","mediumpurple1"),breaks=c("UZ","BE"))+
+  theme(axis.text.x  = element_text(vjust=0.5, size=16),axis.text.y  = element_text(vjust=0.5, size=16))+
+  #ggtitle("Treatment Comparison of Larvae lipid Mass (UZ 178 : BE 164 larvae)")+
+  ylab("Lean Mass (g)")+xlab("")+T+scale_x_discrete(labels=c("Day 1 of\n 5th instar", "Wandering \nStage"))+theme(legend.position = c(0.9,0.8),legend.justification = c("right", "bottom"))+labs(color = "Strain")+scale_y_continuous(breaks=seq(0,.04,.005),labels=seq(0,.04,.005))
+
+
+
+```
+
+### last part; wet mass vs days for non diapause and diapause
+
+messing around with finding the max value across days
+
+```R
+datamass16uz<-datamass16uz[-32,]
+
+datamass16uz$predmax<-predict(loess(mass~day,datamass16uz))
+max(datamass16uz$predmax)
+summary(datamass16uz)
+
+datamass16uz%>%
+  dplyr::filter(predmax==0.11237042)
+
+test<-data.frame(x=datamass16uz$day,y=datamass16uz$predmax)
+
+test%>%
+  dplyr::filter(y==0.11237042)
+  #dplyr::summarise(max=max(predmax))%>%
+
+#day 5
+ggplot(test,aes(x,y))+geom_line()+geom_point()+stat_smooth(forumla=y~x^2)
+summary(lm(y~x+I(x^2),test))
+
+```
+
+
+**making 2 panel figure**
+
+```R
+## Plot of wet mass peak of BE and UZ strains in long day conditions
+c1<-ggplot(data=dataBEUZmass16,aes(x=day,y=mass,color=strain))+
+  stat_summary(fun.y=mean, geom="line",shape=25,size=1.5)+
+  stat_summary(fun.y=mean, geom="point",shape=19,size=4)+
+  stat_summary(fun.data=mean_se, geom="errorbar", width=0.25,size=1.5,shape=21) +
+  theme(axis.text.x = element_text(vjust=0.5, size=16),
+        axis.text.y  = element_text(vjust=0.5, size=16))+
+  #scale_x_continuous(breaks = seq(0, 10, by=2), limits=c(0,10))+
+  scale_fill_manual(values=c("1"="lightblue","2"="black"))+
+  #ggtitle("Change in Wet Mass Production: Long Day")+
+  ylab("Wet Mass (g)")+xlab("Day")+T+scale_x_continuous(limits=c(0,10),breaks=seq(0,10,1),labels=seq(0,10,1))+
+  scale_color_manual(labels=c("Long Diapause","Short Diapause"),values=c("lightsalmon1","mediumpurple1"),breaks=c("UZ","BE"))#+theme(legend.position = c(0.9,0.8),legend.justification = c("right", "bottom"))+labs(color = "Strain")
+
+c1  
+
+
+## Plot of wet mass peak of BE and UZ strains in short day conditions
+d1<-ggplot(data=dataBEUZmass12,aes(x=day,y=mass,color=strain))+
+  stat_summary(fun.y=mean, geom="line",shape=25,size=1.5)+
+  stat_summary(fun.y=mean, geom="point",shape=19,size=4)+
+  stat_summary(fun.data=mean_se, geom="errorbar", width=0.55,size=1,shape=21) +
+  #stat_summary(fun.data=mean_se, geom="errorbar", width=0.25,size=1,shape=21) +
+  theme(axis.text.x = element_text(vjust=0.5, size=16),
+        axis.text.y  = element_text(vjust=0.5, size=16))+
+  scale_x_continuous(breaks = seq(0, 40, by=5), limits=c(0,40))+
+  #ggtitle("Change in Wet Mass Production: Short Day")+
+  ylab("Wet Mass (g)")+xlab("Day")+scale_color_manual(labels=c("Long Diapause","Short Diapause"),values=c("lightsalmon1","mediumpurple1"),breaks=c("UZ","BE"))+theme(legend.position = c(0.9,0.8),legend.justification = c("right", "bottom"))+labs(color = "Strain")+T
+
+d1
+
+(c1+plot_spacer()+plot_layout(widths=c(.4,1)))/d1
+```
 
 ------
 
