@@ -44,7 +44,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 18: 2019-05-10 ](#id-section18). Reading Langfelder et al. 2011; Is My Network Module Preserved or Reproducible?
 * [Page 19: 2019-05-10 ](#id-section19). Helping James Brown with some stats
 * [Page 20: 2019-04-14 ](#id-section20). results section cerasi paper before I chop it up
-* [Page 21:  ](#id-section21).
+* [Page 21: 2019-05-20](#id-section21).  Module preservation
 * [Page 22:  ](#id-section22).
 * [Page 23:  ](#id-section23).
 * [Page 24:  ](#id-section24).
@@ -2214,7 +2214,40 @@ When comparing the expression modules between populations, we found significant 
 
 <div id='id-section21'/>    
 
-### Page 21:  
+### Page 21:  2019-05-20. Module preservation
+
+**Zsummary = (Zdensity + Z connectivity )/2**
+
+Density is basically the average correlation of the off-diagonal of an adjacency matrix. Higher Density means more interconnected nodes.
+  * Density can be estimated for a given module, just take the mean of the off diagonal of an adjencancy matrix for a module(subset of genes)
+
+Connectivity is defined as the sum of all of the strengths in a network for a given node.
+
+**Zdensity = median (Zmeancor, Zmean.adj, Zpropvarexpl, ZmeanKmE)**
+
+* Zmeancor  
+  * meanCor is the mean correlation density of a given module
+
+* Zmean.adj  
+  * meanAdj is the mean density within a module
+
+* Zpropvarexpl
+  * propVarExpl is the mean square of membership modules (correlation between expression and first pca loadings)
+
+* ZmeanKME
+  * meanKME asssesses the sign of the reference and test set intheir kME (module membership)
+
+**Zconnectivity = median (Zcor.kIM, Zcor.kME, Zcor.cor)**
+
+* Zcor.kIM
+  * kIM is the intramodular connectivity of a node within a given module. So sum the strength of the correlations of the genes within a module.
+
+* Zcor.kME
+  * kME is module membership ( correlation between expression and first pca loadings); so you can simply take the correlation in kME between reference and test data sets.
+* Zcor.cor
+  * cor.cor correlation in the weights of each node between reference and test adjacency matrix
+
+
 
 ------
 
