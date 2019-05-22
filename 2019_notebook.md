@@ -45,7 +45,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 19: 2019-05-10 ](#id-section19). Helping James Brown with some stats
 * [Page 20: 2019-04-14 ](#id-section20). results section cerasi paper before I chop it up
 * [Page 21: 2019-05-20](#id-section21).  Module preservation
-* [Page 22:  ](#id-section22).
+* [Page 22: 2019-05-22](#id-section22). stats dump for R. cerasi module-phenotype analysis
 * [Page 23:  ](#id-section23).
 * [Page 24:  ](#id-section24).
 * [Page 25:  ](#id-section25).
@@ -1482,20 +1482,21 @@ Tables of relabelled names per module and their groupings
 
 ## Pomonella
 
-Overall break down of diff expressed genes
+Overall break down of diff expressed genes     
 
-| Source          | Significantly differentially expressed |
+| Source          | Significantly differentially expressed |   
 | --------------- | -------------------------------------- |
 | Population        | 0                                    |
 | Time            | 2592                                   |
 | Population + Time | 0                                     |
-| Population x Time | 2902                                  |
+| Population x Time | 2902                                  |   
 
 
 ### Common responses ,  WGCNA power 12, cutuff = .25, deepsplit = 4   
 
 
-Table of the number of genes per module
+Table of the number of genes per module     
+
 |Var1        | Freq|
 |:-----------|----:|
 |black       |  632|
@@ -2253,7 +2254,123 @@ Connectivity is defined as the sum of all of the strengths in a network for a gi
 
 <div id='id-section22'/>    
 
-### Page 22:  
+### Page 22:  2019-05-22. stats dump for R. cerasi module-phenotype analysis
+
+
+Just dumping some stats so I can reference it; R. cerasi dataset
+
+
+**common responses: pearsons correlations between module eigengene values and proportion of adult emergence**
+
+pearsons correlations
+
+```R
+signif(cor(cerph1.1$emp.mean[-1],mergedMEs2[,1:12], use="p"),2)
+     MEdarkred MEgreenyellow MEdarkgreen MElightyellow MEroyalblue MEgrey60 MEmagenta MEdarkturquoise MEmidnightblue MEbrown
+[1,]      -0.9         -0.12       -0.26         -0.57       -0.26    -0.56     -0.22            0.44           0.22    0.45
+     MEblack MEturquoise
+[1,]    0.51        0.76
+> #corPvalueStudent(cor(cerph1.1$mod[-1],mergedMEs2[,1:13], use="p"), nSamples = length(cerph1.1$mod[-1]))
+> corPvalueStudent(cor(cerph1.1$emp.mean[-1],mergedMEs2[,1:12], use="p"), nSamples = length(cerph1.1$mod[-1]))
+        MEdarkred MEgreenyellow MEdarkgreen MElightyellow MEroyalblue  MEgrey60 MEmagenta MEdarkturquoise MEmidnightblue
+[1,] 0.0009314735      0.761383   0.4977714     0.1095706   0.4980005 0.1132141 0.5623444       0.2338802      0.5612785
+       MEbrown   MEblack MEturquoise
+[1,] 0.2256807 0.1611093  0.01706775
+```
+
+ regression models p value
+ ```
+ apply(mergedMEs2[,1:12],2,function(x){summary(lm(cerph1.1$emp.mean[-1]~x))$coefficient[2,4]})
+       MEdarkred   MEgreenyellow     MEdarkgreen   MElightyellow     MEroyalblue        MEgrey60       MEmagenta MEdarkturquoise
+    0.0009314735    0.7613830007    0.4977714142    0.1095705929    0.4980004815    0.1132141352    0.5623444452    0.2338802404
+  MEmidnightblue         MEbrown         MEblack     MEturquoise
+    0.5612785061    0.2256806551    0.1611092631    0.0170677526
+ ```
+
+regression model beta
+
+```R
+apply(mergedMEs2[,1:12],2,function(x){summary(lm(cerph1.1$emp.mean[-1]~x))$coefficient[2,1]})
+      MEdarkred   MEgreenyellow     MEdarkgreen   MElightyellow     MEroyalblue        MEgrey60       MEmagenta MEdarkturquoise
+     -0.8516187      -0.1120932      -0.2467533      -0.5385239      -0.2466265      -0.5340631      -0.2118618       0.4178283
+ MEmidnightblue         MEbrown         MEblack     MEturquoise
+      0.2124249       0.4244426       0.4819980       0.7204863
+```
+
+**common responses: pearsons correlations between module eigengene values and adult emergence timing**
+
+```R
+corPvalueStudent(cor(cerph1.1$ave_eclosion[-1],mergedMEs2[,1:13], use="p"), nSamples = length(cerph1.1$ave_eclosion[-1]))
+       MEdarkred MEgreenyellow MEdarkgreen MElightyellow MEroyalblue  MEgrey60 MEmagenta MEdarkturquoise MEmidnightblue   MEbrown
+[1,] 0.002600856     0.9193297   0.8036208     0.2121152   0.4138235 0.2068954 0.6237771       0.2505735      0.3636643 0.3590661
+       MEblack MEturquoise    MEgrey
+[1,] 0.1564674 0.007824699 0.6258017
+```
+
+regression models p value
+
+```R
+apply(mergedMEs2[,1:12],2,function(x){summary(lm(cerph1.1$ave_eclosion[-1]~x))$coefficient[2,4]})
+      MEdarkred   MEgreenyellow     MEdarkgreen   MElightyellow     MEroyalblue        MEgrey60       MEmagenta MEdarkturquoise
+    0.002600856     0.919329671     0.803620752     0.212115162     0.413823489     0.206895351     0.623777070     0.250573531
+ MEmidnightblue         MEbrown         MEblack     MEturquoise
+    0.363664252     0.359066141     0.156467395     0.007824699
+```
+regression model beta
+
+```R
+apply(mergedMEs2[,1:12],2,function(x){summary(lm(cerph1.1$ave_eclosion[-1]~x))$coefficient[2,1]})
+      MEdarkred   MEgreenyellow     MEdarkgreen   MElightyellow     MEroyalblue        MEgrey60       MEmagenta MEdarkturquoise
+     18.4767635      -0.8469441       2.0753091       9.8388107       6.6630204       9.9388403       4.0654657      -9.1400893
+ MEmidnightblue         MEbrown         MEblack     MEturquoise
+     -7.3625798      -7.4289238     -10.9888640     -17.3484209
+
+```
+
+**divergent responses: testing interaction of module and population on proportion of adult emergence**  
+
+```R
+apply(timpop[,1:12],2,function(module){summary(lm(timpop$emp.mean~timpop$Population*module))$coefficient[,4]})
+MEpalevioletred2 MEthistle2 MEdarkseagreen4   MEyellow4 MEindianred3 MEblueviolet MEdarkviolet
+(Intercept)                       0.01794046  0.1763799       0.3480972 0.003319187   0.01212795   0.02472698  0.006891079
+timpop$PopulationLow              0.80295901  0.6232462       0.4842312 0.871145068   0.86465272   0.85080035  0.757150130
+module                            0.40406413  0.3535975       0.2947903 0.088259033   0.17381326   0.81498110  0.173810218
+timpop$PopulationLow:module       0.17267879  0.2396853       0.2319097 0.023518037   0.07997573   0.68653764  0.089854339
+                          MEblue4 MEmediumorchid MElightpink4 MEorangered1      MEgrey
+(Intercept)                 0.01905084      0.1453797   0.03395295  0.009606442 0.007299098
+timpop$PopulationLow        0.92458086      0.9571990   0.88875568  0.996576298 0.576596998
+module                      0.33594821      0.9998301   0.50301573  0.323735715 0.144787366
+timpop$PopulationLow:module 0.42095440      0.8543616   0.33935752  0.059478710 0.622020362
+
+apply(timpop[,1:12],2,function(module){summary(lm(timpop$mod~timpop$Population*module))$coefficient[,4]})
+                           MEpalevioletred2 MEthistle2 MEdarkseagreen4   MEyellow4 MEindianred3 MEblueviolet MEdarkviolet
+(Intercept)                       0.02547447  0.1956658       0.3877154 0.003681874   0.01495837   0.03081938  0.009832124
+timpop$PopulationLow              0.85710949  0.5930438       0.4502395 0.929556286   0.89065556   0.88259190  0.715268077
+module                            0.46919031  0.2964026       0.2426120 0.076035984   0.17130225   0.77763265  0.190580659
+timpop$PopulationLow:module       0.22640093  0.1937862       0.1823005 0.024261302   0.09082904   0.79857712  0.114968170
+                             MEblue4 MEmediumorchid MElightpink4 MEorangered1      MEgrey
+(Intercept)                 0.0190113      0.1327767   0.02991592  0.009337004 0.007236771
+timpop$PopulationLow        0.8852585      0.8808033   0.82147343  0.979644295 0.538926397
+module                      0.2807883      0.9295860   0.42931856  0.255812671 0.122325208
+timpop$PopulationLow:module 0.3428887      0.9133783   0.27830496  0.047290044 0.531236680
+```
+
+**divergent responses: testing interaction of module and population on adult emergence timing**
+
+```R
+apply(timpop[,1:12],2,function(module){summary(lm(timpop$ave_eclosion~timpop$Population*module))$coefficient[,4]})
+                            MEpalevioletred2  MEthistle2 MEdarkseagreen4    MEyellow4 MEindianred3 MEblueviolet MEdarkviolet
+(Intercept)                     0.0004046353 0.001626606     0.002195613 0.0001883821  0.000404306 0.0008181747  0.001547038
+timpop$PopulationLow            0.8679106813 0.574904698     0.431459474 0.7561857108  0.793005595 0.7632566195  0.959116207
+module                          0.7700067953 0.361186948     0.271143469 0.1602729207  0.319923133 0.6701365949  0.378686059
+timpop$PopulationLow:module     0.4010238049 0.235638654     0.194801647 0.0474923888  0.160535491 0.9348727949  0.255237920
+                                 MEblue4 MEmediumorchid MElightpink4 MEorangered1       MEgrey
+(Intercept)                 0.0008272252     0.01127329  0.003227091 8.193302e-05 0.0006061964
+timpop$PopulationLow        0.9952251344     0.81715304  0.879583369 8.503189e-01 0.7163357188
+module                      0.2777980482     0.75547123  0.351308548 1.831403e-01 0.2097695265
+timpop$PopulationLow:module 0.3374693036     0.92475619  0.210410781 2.446135e-02 0.7782808525
+```
+
 
 ------
 
