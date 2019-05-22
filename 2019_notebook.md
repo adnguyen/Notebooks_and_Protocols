@@ -45,7 +45,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 19: 2019-05-10 ](#id-section19). Helping James Brown with some stats
 * [Page 20: 2019-04-14 ](#id-section20). results section cerasi paper before I chop it up
 * [Page 21: 2019-05-20](#id-section21).  Module preservation
-* [Page 22: 2019-05-22](#id-section22). stats dump for R. cerasi module-phenotype analysis
+* [Page 22: 2019-05-22](#id-section22). stats dump for R. cerasi module-phenotype analysis: updated, excluded dead flies
 * [Page 23:  ](#id-section23).
 * [Page 24:  ](#id-section24).
 * [Page 25:  ](#id-section25).
@@ -2254,7 +2254,7 @@ Connectivity is defined as the sum of all of the strengths in a network for a gi
 
 <div id='id-section22'/>    
 
-### Page 22:  2019-05-22. stats dump for R. cerasi module-phenotype analysis
+### Page 22:  2019-05-22. stats dump for R. cerasi module-phenotype analysis: updated, ecluded dead flies
 
 
 Just dumping some stats so I can reference it; R. cerasi dataset
@@ -2300,6 +2300,13 @@ apply(mergedMEs2[,1:12],2,function(x){summary(lm(cerph1.1$emp.mean[-1]~x))$coeff
 **common responses: pearsons correlations between module eigengene values and adult emergence timing**
 
 ```R
+
+signif(cor(cerph1.1$ave_eclosion[-1],mergedMEs2[,1:13], use="p"),2)
+     MEdarkred MEgreenyellow MEdarkgreen MElightyellow MEroyalblue MEgrey60 MEmagenta MEdarkturquoise MEmidnightblue MEbrown
+[1,]      0.87         -0.04       0.097          0.46        0.31     0.47      0.19           -0.43          -0.34   -0.35
+     MEblack MEturquoise MEgrey
+[1,]   -0.51       -0.81   0.19
+
 corPvalueStudent(cor(cerph1.1$ave_eclosion[-1],mergedMEs2[,1:13], use="p"), nSamples = length(cerph1.1$ave_eclosion[-1]))
        MEdarkred MEgreenyellow MEdarkgreen MElightyellow MEroyalblue  MEgrey60 MEmagenta MEdarkturquoise MEmidnightblue   MEbrown
 [1,] 0.002600856     0.9193297   0.8036208     0.2121152   0.4138235 0.2068954 0.6237771       0.2505735      0.3636643 0.3590661
