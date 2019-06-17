@@ -2534,6 +2534,29 @@ Relationship with average adult emergence
 ![](https://user-images.githubusercontent.com/4654474/59625706-fc960700-9107-11e9-9610-7f0d77ba41ed.png)
 
 
+### Thoughts on average eclosion data
+
+I'm tempted to eclude the 2 month high populations because they don't eclose at all. Perhaps including 2 month high is not a good comparison because of this.
+
+Ok, if I do this, midnight blue is the only sample that is sig for both proportion fo adult emergence and days until adult emergence
+
+![](https://user-images.githubusercontent.com/4654474/59626482-fa34ac80-9109-11e9-8514-b48ed01e83a9.png)
+
+regressions without 2 month high 
+
+```R
+> apply(all.dat[-1,1:10],2,function(x){summary(lm(all.dat$ave_eclosion[-1]~x))$coefficient[2,4]})# p value
+ MEmidnightblue     MEroyalblue         MEgreen   MElightyellow        MEpurple          MEcyan           MEred       MEdarkred
+      0.0285026       0.8295862       0.1430067       0.1848082       0.6648201       0.1610619       0.4627993       0.7442192
+    MEdarkgreen MEdarkturquoise
+      0.2888008       0.6152071
+> apply(all.dat[-1,1:10],2,function(x){summary(lm(all.dat$ave_eclosion[-1]~x))$coefficient[2,1]}) # beta
+ MEmidnightblue     MEroyalblue         MEgreen   MElightyellow        MEpurple          MEcyan           MEred       MEdarkred
+     -15.392859        1.797375       11.301238       10.378513        3.598409       10.885836        6.016268       -2.718303
+    MEdarkgreen MEdarkturquoise
+       8.500415        4.164233
+```
+
 
 
 
