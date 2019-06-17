@@ -46,7 +46,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 20: 2019-04-14 ](#id-section20). results section cerasi paper before I chop it up
 * [Page 21: 2019-05-20](#id-section21).  Module preservation
 * [Page 22: 2019-05-22](#id-section22). stats dump for R. cerasi module-phenotype analysis: updated, excluded dead flies
-* [Page 23:  ](#id-section23).
+* [Page 23: 2019-06-17 ](#id-section23). Additional and re-analysis of cerasi brain transcriptome (after meeting with gragland)
 * [Page 24:  ](#id-section24).
 * [Page 25:  ](#id-section25).
 * [Page 26:  ](#id-section26).
@@ -2383,7 +2383,159 @@ timpop$PopulationLow:module 0.3374693036     0.92475619  0.210410781 2.446135e-0
 
 <div id='id-section23'/>    
 
-### Page 23:  
+### Page 23:  2019-06-17. Additional and re-analysis of cerasi brain transcriptome (after meeting with gragland)    
+
+Dataset- start with cerasi
+
+* Correlate population level effects in the modules with phenotype
+* Reset baseline expression for common responses
+* correlate average expression with phenotype and add error bars in figures
+
+
+### Correlate population level effects in the modules with phenotype
+
+Phenotype data   
+
+```R
+#phenotype data
+cerph1.10
+# A tibble: 10 x 5
+# Groups:   Population [2]
+   Population month    mod emp.mean ave_eclosion
+   <chr>      <dbl>  <dbl>    <dbl>        <dbl>
+ 1 High         2   0.0632    0              0  
+ 2 High         2.5 0.153     0.182         38.9
+ 3 High         3.5 0.566     0.6           33.7
+ 4 High         4   0.778     0.768         28.6
+ 5 High         4.5 0.904     0.866         24.1
+ 6 Low          2   0.118     0.159         42.8
+ 7 Low          2.5 0.289     0.242         36.1
+ 8 Low          3.5 0.788     0.865         26.6
+ 9 Low          4   0.918     0.918         23.2
+10 Low          4.5 0.971     0.959         21.6
+```
+
+phenotype data with modules; grey module is not a real module
+
+```R
+MEturquoise             MEgrey month Population        mod  emp.mean ave_eclosion
+1    0.0000000                  0     2       High 0.06318026 0.0000000      0.00000
+2    0.3707243 -0.192962914046971   2.5       High 0.15328540 0.1818182     38.88889
+3    0.4028881 -0.044042980443642   3.5       High 0.56606430 0.6000000     33.70175
+4    0.3638362 0.0371880608336409     4       High 0.77786161 0.7676768     28.61842
+5    0.2256386 -0.189526080361635   4.5       High 0.90384399 0.8659794     24.07143
+6   -0.5971878  0.796938298452717     2        Low 0.11820542 0.1587302     42.80000
+7   -0.2015581 -0.372529805564627   2.5        Low 0.28864996 0.2419355     36.13333
+8   -0.1268667  0.168839674415984   3.5        Low 0.78805162 0.8653846     26.55556
+9   -0.2816223  0.122032278154512     4        Low 0.91840018 0.9183673     23.24444
+10  -0.1558523  -0.32593653143998   4.5        Low 0.97148489 0.9591837     21.57447
+```
+
+regressions with proportion emergence
+
+```R
+propmod<-lm(mod~MEturquoise,data=mergedMEs2)
+> summary(propmod)
+
+Call:
+lm(formula = mod ~ MEturquoise, data = mergedMEs2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max
+-0.49172 -0.32779  0.06606  0.30170  0.43732
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)   0.5549     0.1214   4.572  0.00182 **
+MEturquoise   0.1330     0.3838   0.347  0.73781   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.3838 on 8 degrees of freedom
+Multiple R-squared:  0.0148,	Adjusted R-squared:  -0.1084
+F-statistic: 0.1201 on 1 and 8 DF,  p-value: 0.7378
+
+```
+
+regressions with average eclosion
+
+```R
+ecmod<-lm(ave_eclosion~MEturquoise,data=mergedMEs2)
+> summary(ecmod)
+
+Call:
+lm(formula = ave_eclosion ~ MEturquoise, data = mergedMEs2)
+
+Residuals:
+    Min       1Q   Median       3Q      Max
+-27.5588  -4.4608   0.2985   7.8515  13.8788
+
+Coefficients:
+           Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   27.559      4.023   6.850 0.000131 ***
+MEturquoise   -2.281     12.723  -0.179 0.862155    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 12.72 on 8 degrees of freedom
+Multiple R-squared:  0.004003,	Adjusted R-squared:  -0.1205
+F-statistic: 0.03215 on 1 and 8 DF,  p-value: 0.8622
+
+```
+
+### Take home; the module found for overall population level differences is not related to the phenotype
+
+### Reset baseline expression for common responses
+
+* redid analysis to find power to estimate scale free network---power = 16 like before
+
+Common responses; **overall eig vs time**
+
+![](https://user-images.githubusercontent.com/4654474/59625308-f8b5b500-9106-11e9-9991-76cc9e65e5a1.png)
+
+Relationship with proportion emergence   
+
+```R
+> apply(all.dat[,1:10],2,function(x){summary(lm(all.dat$mod~x))$coefficient[2,4]})# p value
+ MEmidnightblue     MEroyalblue         MEgreen   MElightyellow        MEpurple          MEcyan           MEred       MEdarkred
+     0.04713421      0.90765719      0.13551968      0.22736757      0.60756629      0.08903030      0.34208676      0.99238184
+    MEdarkgreen MEdarkturquoise
+     0.18791211      0.44172873
+> apply(all.dat[,1:10],2,function(x){summary(lm(all.dat$mod~x))$coefficient[2,1]}) # beta
+ MEmidnightblue     MEroyalblue         MEgreen   MElightyellow        MEpurple          MEcyan           MEred       MEdarkred
+    0.697883310     0.046254388    -0.553590928    -0.458946602    -0.203075229    -0.617576644    -0.367805222    -0.003809156
+    MEdarkgreen MEdarkturquoise
+   -0.496155974    -0.300894235
+
+```
+
+**only midnightblue module is sig**
+
+![](https://user-images.githubusercontent.com/4654474/59625574-a2954180-9107-11e9-8b2f-055e531e6a9a.png)    
+
+
+
+Relationship with average adult emergence    
+
+```R
+> apply(all.dat[,1:10],2,function(x){summary(lm(all.dat$ave_eclosion~x))$coefficient[2,4]})# p value
+ MEmidnightblue     MEroyalblue         MEgreen   MElightyellow        MEpurple          MEcyan           MEred       MEdarkred
+      0.2185414       0.8912286       0.3778584       0.4199857       0.7838553       0.3965589       0.6450017       0.8360219
+    MEdarkgreen MEdarkturquoise
+      0.5120202       0.7507097
+> apply(all.dat[,1:10],2,function(x){summary(lm(all.dat$ave_eclosion~x))$coefficient[2,1]}) # beta
+ MEmidnightblue     MEroyalblue         MEgreen   MElightyellow        MEpurple          MEcyan           MEred       MEdarkred
+     -15.392859        1.797375       11.301238       10.378513        3.598409       10.885836        6.016268       -2.718303
+    MEdarkgreen MEdarkturquoise
+       8.500415        4.164233
+```
+**none significant**
+
+![](https://user-images.githubusercontent.com/4654474/59625706-fc960700-9107-11e9-9610-7f0d77ba41ed.png)
+
+
+
+
 
 ------
 
