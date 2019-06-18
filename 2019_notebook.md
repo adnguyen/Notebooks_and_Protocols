@@ -2624,7 +2624,170 @@ P value adjustment method: BH
 
 <div id='id-section24'/>    
 
-### Page 24:  
+### Page 24:  2019-06-18. more analysis ; cerasi commonr responses
+
+On thinking about the data, I'm separating each population for a given time point, but for a time effect, I really need to take the average between them (at a given time point).
+
+The issue with month2, is that high eclosion day is 0 and low 2 month is around 40. The average is 20ish then. So the average at time 2 is misleading
+
+### re-estimate the common response from model outputs :
+
+```R
+
+cerph<-fread("../Data/08_cerasi_eclosion_tom_modified.csv")
+#filter out month 5 , not in transcriptome dataset
+cerph<-cerph%>%
+  dplyr::filter(month!=5)
+
+#eclosed
+cerph9<-cerph%>%
+  dplyr::filter(died==0)
+########################################################################
+##analyzing proportion emerged with glm, binomial logistic regression
+########################################################################
+mod1.1<-glm(eclosed~Population*month,data=cerph9,family="binomial")
+summary(mod1.1)#
+#anova(mod1.1,test="Chisq")
+#estimate just the effects that were sig, and the effect for each month
+mod1.12<-glm(eclosed~Population+factor(month),data=cerph9,family="binomial")
+summary(mod1.12)
+
+cerph9$mod.pred.prob<-predict(mod1.12,type="response")
+cerph9.ave<-cerph9%>%
+  group_by(month)%>%
+  dplyr::summarise(ave.mod=mean(mod.pred.prob),sd.mod=sd(mod.pred.prob))
+
+cerph9.ave<-cerph9.ave%>%
+  filter(month!=3)
+
+cerph9.ave
+
+########################################################################
+#eclosion days, average
+########################################################################
+cerph3<-cerph9%>%
+  dplyr::filter(month !=2)
+
+mod1.2<-lm(eclosion_day~Population*factor(month),data=cerph3)
+summary(mod1.2)
+##get estimated model effects
+se.mod<-summary(mod1.2)$coefficients[-2,2]
+se.mod<-se.mod[-2]
+cerph9.ave$ecl.mod<-as.vector(c(0,summary(mod1.2)$coefficients[1,1],summary(mod1.2)$coefficients[1,1]+summary(mod1.2)$coefficients[4:6,1]))
+
+cerph9.ave$ecl.se.mod<-as.vector(c(0,se.mod[1:4]))
+cerph9.ave
+# A tibble: 5 x 5
+  month ave.mod sd.mod ecl.mod ecl.se.mod
+  <dbl>   <dbl>  <dbl>   <dbl>      <dbl>
+1   2    0.0613 0.0280     0        0    
+2   2.5  0.205  0.0786    38.9      0.855
+3   3.5  0.694  0.0900    33.7      0.981
+4   4    0.818  0.0588    28.6      0.951
+5   4.5  0.897  0.0355    24.1      0.942
+```
+
+
+### Parsing out the sign of each module
+
+```R
+hl.par$n<-seq(1,length(hl.par$Name))
+hl.par$high2month<-rep(0,length(hl.par$Month_FDR))
+hl.par$low2month<-rep(0,length(hl.par$Month_FDR))
+
+hl.par2<-cbind(hl.par[,1:18],hl.par[,21:22],hl.par[,19:20])
+##making long format dataset
+te.long<-gather(hl.par2,treatment,expression,month2_5vs2_high_logFC.x:low2month)
+head(te.long)
+
+###some data prepping
+treatment<-unique(te.long$treatment)
+Population<-c(rep("High",4),rep("Low",4),"High","Low")
+month<-c(2.5,3.5,4,4.5,2.5,3.5,4,4.5,2,2)
+li.dat<-data.frame(treatment,Population,month)
+##preparing extra labels
+moduleME<-paste("ME",unique(te.long$module),sep="")
+module<-unique(te.long$module)
+gg<-data.frame(module,moduleME)
+####data merger
+names(ss)[2]<-"moduleME"
+gg<-inner_join(gg,ss,by="moduleME")
+gg$facet<-paste(gg$module,", N=",gg$N,sep="")#facet labels
+#gg$color<-gg$module1
+
+####merging data
+te.long2<-inner_join(te.long,li.dat,by="treatment")
+te.long3<-inner_join(te.long2,gg,by="module")
+#te.long3$Name<-toupper(te.long3$Name)
+#te.long3<-inner_join(te.long3,go.dat.sub,by="Name")
+###module memberhsip
+datKME<-signedKME(t(hl.par[,11:18]), mergedMEs2[,1:11])
+datKME$n<-seq(1,length(datKME$kMEdarkred))
+datkme.long<-gather(datKME[,-11],module,membership,kMEmidnightblue:kMEdarkturquoise)
+
+#filter only genes with high membership
+datkme.long2<-datkme.long%>%
+  dplyr::filter(membership>.8 | membership< -.8 )
+
+##ones with negative patterns
+#datkme.long2.neg<-datkme.long%>%
+#  dplyr::filter(membership< -0.8)
+
+datkme.long2$module<-substr(datkme.long2$module,4,30)
+
+#merge data set with expression dataset
+te.long4<-inner_join(te.long3,datkme.long2,by=c("n","module"))
+#plots
+te.long4$sign<-ifelse(te.long4$membership>0,"negative","positive")#these are opposite labels, but it matches the phenotype in this direction much better and the loadings are arbitary
+#te.long4%>%
+#  filter(Name=="10001_OASESK45LO45M04LOCUS_12158_TRANSCRIPT_1_2_CONFIDENCE_0.600_LENGTH_596_EVGCLASS=MAIN,OKAY,MATCH:OASES")
+ggplot(te.long4,aes(x=month,y=expression,group=paste(module,sign)))+geom_point()+stat_smooth(method="loess",se=FALSE)+facet_wrap(~facet)
+#take average of each gxp for a given module and sign
+te.long4.ave<-te.long4%>%
+  group_by(module,month,sign)%>%
+  dplyr::summarise(gxp=mean(expression),gxp.med=median(expression),n=length(unique(Name)),tot=length(expression),gxp.sd=sd(expression))
+
+ten<-te.long4%>%
+  group_by(facet,module,month)%>%
+  dplyr::summarise(memberSS=length(unique(Name)))
+
+te.long4.ave<-inner_join(te.long4.ave,gg,by=c("module"))
+te.long4.ave<-inner_join(te.long4.ave,ten,by=c("facet","module","month"))
+#te.long4.ave$facet2<-paste(te.long4.ave$module,", N=",te.long4.ave$memberSS,sep="")
+te.long4.ave$facet2<-paste(te.long4.ave$module,", ",te.long4.ave$memberSS," high member genes out of ",te.long4.ave$N,sep="")
+te.long4.ave$facet2<-paste(te.long4.ave$memberSS," high member genes out of ",te.long4.ave$N,sep="")
+#te.long4.ave$ss<-paste(module,paste(te.long4.ave$n,"high member genes out of",te.long4.ave$N,"genes"),sep="
+#                       ")
+
+ggplot(te.long4.ave,aes(x=month,y=gxp,group=paste(module,sign),color=sign))+geom_hline(yintercept=0,lty="dotdash")+geom_errorbar(aes(ymin=gxp-gxp.sd,ymax=gxp+gxp.sd),width=.1)+geom_line(size=1.25)+geom_point(size=5)+facet_wrap(module~facet2,scale="free")+ylab("Log Fold Change")+xlab(expression(paste("Time (months at 4",degree,"C)")))+scale_color_manual(values=c("grey50","black"),name="Relationship with\n Module Eigengene Values")+T+theme(legend.position = c(.85, 0.05),legend.justification = c("right", "bottom"))
+
+
+```
+
+
+### Correlate modules with each sign with proportion emergence    
+
+```R
+apply(te.wide.merge[,2:21],2,function(x){summary(lm(te.wide.merge$ave.mod~x))$coefficient[2,4]})# p value
+        cyan-negative          cyan-positive     darkgreen-negative     darkgreen-positive       darkred-negative
+          0.029290645            0.023009508            0.421080026            0.123814195            0.966714239
+     darkred-positive darkturquoise-negative darkturquoise-positive         green-negative         green-positive
+          0.757028524            0.453278253            0.341437081            0.805302818            0.217500531
+ lightyellow-negative   lightyellow-positive  midnightblue-negative  midnightblue-positive        purple-negative
+          0.772511632            0.559212171            0.138425347            0.161230687            0.128796577
+      purple-positive           red-negative           red-positive     royalblue-negative     royalblue-positive
+          0.169394531            0.742381367            0.143725946            0.035747364            0.009214083
+> ###cyan and royal blue correlate
+> apply(te.wide.merge[,2:21],2,function(x){summary(lm(te.wide.merge$ave.mod~x))$coefficient[2,1]}) # beta
+        cyan-negative          cyan-positive     darkgreen-negative     darkgreen-positive       darkred-negative
+           -1.1197001              0.9097996             -0.7203947              0.7917246              0.0240686
+     darkred-positive darkturquoise-negative darkturquoise-positive         green-negative         green-positive
+            0.2139435             -0.5044448              0.6502168             -0.1603223              0.6931761
+ lightyellow-negative   lightyellow-positive  midnightblue-negative  midnightblue-positive        purple-negative
+            0.1804440              0.6558825              0.5484777             -0.6720739             -0.8212709
+      purple-positive           red-negative           red-positive     royalblue-negative     royalblue-positive
+            0.6439203             -0.2084917              0.9514867              0.9259735             -1.6130741
+```
 
 ------
 
