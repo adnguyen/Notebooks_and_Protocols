@@ -2388,7 +2388,8 @@ timpop$PopulationLow:module 0.3374693036     0.92475619  0.210410781 2.446135e-0
 Dataset- start with cerasi
 
 * Correlate population level effects in the modules with phenotype
-* Reset baseline expression for common responses
+* Reset baseline expression for common responses; set log2fold chagne values to each population's
+* Redo population level differences and include 2 month high
 * correlate average expression with phenotype and add error bars in figures
 
 
@@ -2542,7 +2543,7 @@ Ok, if I do this, midnight blue is the only sample that is sig for both proporti
 
 ![](https://user-images.githubusercontent.com/4654474/59626482-fa34ac80-9109-11e9-8514-b48ed01e83a9.png)
 
-regressions without 2 month high 
+regressions without 2 month high
 
 ```R
 > apply(all.dat[-1,1:10],2,function(x){summary(lm(all.dat$ave_eclosion[-1]~x))$coefficient[2,4]})# p value
@@ -2557,7 +2558,66 @@ regressions without 2 month high
        8.500415        4.164233
 ```
 
+### Redo population level differences and include 2 month high
 
+stats: taking the average eclosion vs average proportion emergence or adult emergence
+
+proportion   
+
+```R
+> signif(cor(m.wide.ave$mod.mean,m.wide.ave[,4:13], use="p"),2)
+     MEblack MEbrown MEdarkgreen MEdarkred MEdarkturquoise MEgreenyellow MEgrey MEgrey60 MElightyellow MEmagenta
+[1,]    0.55    0.84       -0.28     -0.91            0.58          -0.3   -0.3    -0.77         -0.62     -0.32
+> corPvalueStudent(cor(m.wide.ave$mod.mean,m.wide.ave[,4:13], use="p"), nSamples = length(m.wide.ave$mod.mean))
+       MEblack    MEbrown MEdarkgreen MEdarkred MEdarkturquoise MEgreenyellow    MEgrey  MEgrey60 MElightyellow MEmagenta
+[1,] 0.3401208 0.07425528   0.6472964 0.0341849       0.3064338     0.6246071 0.6277011 0.1313196      0.263838 0.5953915
+```
+**darkred** is sig
+
+adult emergence   
+
+```R
+> signif(cor(m.wide.ave$ecl,m.wide.ave[,4:13], use="p"),2)
+     MEblack MEbrown MEdarkgreen MEdarkred MEdarkturquoise MEgreenyellow MEgrey MEgrey60 MElightyellow MEmagenta
+[1,]   -0.94   -0.25        0.11       0.4            0.49          0.21 -0.095     0.81          0.78       0.9
+> corPvalueStudent(cor(m.wide.ave$ecl,m.wide.ave[,4:13], use="p"), nSamples = length(m.wide.ave$mod.mean))
+        MEblack   MEbrown MEdarkgreen MEdarkred MEdarkturquoise MEgreenyellow    MEgrey   MEgrey60 MElightyellow  MEmagenta
+[1,] 0.01762315 0.6861367   0.8603313 0.5100662       0.4015382     0.7342587 0.8790918 0.09642874     0.1175061 0.03567657
+```
+**black and magenta** are significant
+
+
+#### Redoing connectivity for
+```R
+kruskal.test(kTotal~module1,data=tmc.long2)
+
+	Kruskal-Wallis rank sum test
+
+data:  kTotal by module1
+Kruskal-Wallis chi-squared = 9224.6, df = 11, p-value < 2.2e-16
+
+> pairwise.wilcox.test(tmc.long2$kTotal, tmc.long2$module1,
++                  p.adjust.method = "BH")
+
+	Pairwise comparisons using Wilcoxon rank sum test
+
+data:  tmc.long2$kTotal and tmc.long2$module1
+
+              black   brown   darkgreen darkred darkturquoise greenyellow grey60  lightyellow magenta midnightblue royalblue
+brown         2.7e-14 -       -         -       -             -           -       -           -       -            -        
+darkgreen     < 2e-16 < 2e-16 -         -       -             -           -       -           -       -            -        
+darkred       < 2e-16 < 2e-16 7.7e-14   -       -             -           -       -           -       -            -        
+darkturquoise < 2e-16 < 2e-16 0.096     < 2e-16 -             -           -       -           -       -            -        
+greenyellow   < 2e-16 < 2e-16 < 2e-16   < 2e-16 2.3e-09       -           -       -           -       -            -        
+grey60        0.012   < 2e-16 < 2e-16   < 2e-16 < 2e-16       < 2e-16     -       -           -       -            -        
+lightyellow   < 2e-16 < 2e-16 < 2e-16   5.3e-10 < 2e-16       < 2e-16     < 2e-16 -           -       -            -        
+magenta       0.349   < 2e-16 < 2e-16   < 2e-16 < 2e-16       < 2e-16     < 2e-16 < 2e-16     -       -            -        
+midnightblue  1.5e-09 0.349   < 2e-16   < 2e-16 < 2e-16       < 2e-16     < 2e-16 1.6e-08     < 2e-16 -            -        
+royalblue     < 2e-16 < 2e-16 < 2e-16   < 2e-16 < 2e-16       7.9e-12     < 2e-16 < 2e-16     < 2e-16 < 2e-16      -        
+turquoise     < 2e-16 < 2e-16 < 2e-16   < 2e-16 < 2e-16       < 2e-16     < 2e-16 < 2e-16     < 2e-16 < 2e-16      < 2e-16  
+
+P value adjustment method: BH
+```
 
 
 ------
