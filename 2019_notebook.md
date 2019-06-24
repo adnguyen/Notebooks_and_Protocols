@@ -47,8 +47,8 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 21: 2019-05-20](#id-section21).  Module preservation
 * [Page 22: 2019-05-22](#id-section22). stats dump for R. cerasi module-phenotype analysis: updated, excluded dead flies
 * [Page 23: 2019-06-17 ](#id-section23). Additional and re-analysis of cerasi brain transcriptome (after meeting with gragland)
-* [Page 24:  ](#id-section24).
-* [Page 25:  ](#id-section25).
+* [Page 24: 2019-06-18 ](#id-section24). more analysis ; cerasi commonr responses
+* [Page 25: 2019-06-24 ](#id-section25).stats dump, stemminer cerasi common responses only
 * [Page 26:  ](#id-section26).
 * [Page 27:  ](#id-section27).
 * [Page 28:  ](#id-section28).
@@ -2789,11 +2789,76 @@ apply(te.wide.merge[,2:21],2,function(x){summary(lm(te.wide.merge$ave.mod~x))$co
             0.6439203             -0.2084917              0.9514867              0.9259735             -1.6130741
 ```
 
+
+
 ------
 
 <div id='id-section25'/>    
 
-### Page 25:  
+### Page 25:  2019-06-24. stats dump, stemminer cerasi common responses only
+
+## Stemminer revisit for common responses
+
+```{r}
+#stemres<-fread("../Data/STEMminer/2019-06-19_cerasi_rebaseline_commonresponses_STEMmineroutput.csv") # 50 profiles examined
+#significant Profiles include;
+#14,46,38,6,41,49,37,44,19,9,43 for 50 profiles examined
+#lots of redundant profiles
+stemres<-fread("../Data/STEMminer/2019-06-19_cerasi_rebaseline_commonresponses_STEMmineroutput_30profilesexamined.csv")
+#significant profiles for 30 profiles examiend
+#25,23,27,3,28,5,22
+#chose this cut off because there is no redudancy while identifying as many profiles as possible
+
+stem.long<-gather(stemres,treatment,gxp,tm2:tm4_5)
+treatment<-unique(stem.long$treatment)
+month<-c(2,2.5,3.5,4,4.5)
+linker<-data.frame(treatment,month)
+stem.long<-inner_join(stem.long,linker,by="treatment")
+#stem.long2<-stem.long%>%
+#  filter(Profile==14| Profile==46|Profile==38|Profile==6|Profile==41|Profile==49|Profile==37|Profile==44|Profile==19|Profile==9|Profile==43)
+stem.long2<-stem.long%>%
+  filter(Profile==25| Profile==23|Profile==27|Profile==3|Profile==28|Profile==5|Profile==22)
+dim(stem.long2)
+
+stem.long3<-stem.long2%>%
+  group_by(Profile,month)%>%
+  dplyr::summarise(exp=mean(gxp),gsd=sd(gxp),N=length(gxp))
+stem.long3$facet<-paste("Profile ",stem.long3$Profile,", N=",stem.long3$N,sep="")
+
+ggplot(stem.long3,aes(x=month,y=exp,group=Profile))+geom_hline(yintercept = 0,lty="dotdash")+geom_errorbar(aes(ymin=exp-gsd,ymax=exp+gsd),width=.05)+geom_line(size=1.15,color="grey50")+facet_wrap(~facet)+geom_point(size=3)+T+xlab(expression(paste("Time (months at 4",degree,"C)")))+ylab("Log Fold Change")
+#+stat_smooth(method="loess",colour="grey50")
+```
+
+### Ok, correlate with phenotype; stemm miner data  
+
+```{r}
+#cerph9.ave
+#
+stem.long3<-stem.long3%>%
+  arrange(Profile)
+
+stem.wide<-spread(stem.long3[,-4:-6],Profile,exp)
+stem.wide1<-inner_join(stem.wide,cerph9.ave,by="month")
+#stats
+###proportion
+apply(stem.wide1[,2:8],2,function(x){summary(lm(stem.wide1$ave.mod~x))$coefficient[2,4]})# p value
+#sig- 5,25
+apply(stem.wide1[,2:8],2,function(x){summary(lm(stem.wide1$ave.mod~x))$coefficient[2,1]}) # beta
+
+####eclosion
+apply(stem.wide1[-1,2:8],2,function(x){summary(lm(stem.wide1$ecl.mod[-1]~x))$coefficient[2,4]})# p value
+###sig; 6, 9,14,41,44 for 50 profile
+###30 profile --- 3, 5, 25, 28
+apply(stem.wide1[-1,2:8],2,function(x){summary(lm(stem.wide1$ecl.mod[-1]~x))$coefficient[2,1]}) # beta
+
+###if we include 0
+apply(stem.wide1[,2:8],2,function(x){summary(lm(stem.wide1$ecl.mod~x))$coefficient[2,4]})# p value
+###23
+apply(stem.wide1[,2:8],2,function(x){summary(lm(stem.wide1$ecl.mod~x))$coefficient[2,1]}) # beta
+```
+
+
+
 
 ------
 
