@@ -2859,12 +2859,67 @@ apply(stem.wide1[,2:8],2,function(x){summary(lm(stem.wide1$ecl.mod~x))$coefficie
 
 
 
+### Create some plots for common responses STEM MINER
+
+```{r}
+stem.comb<-inner_join(stem.long3,cerph9.ave,by="month")
+
+#stem.comb
+
+##parsing for proportion
+stem.comb.prop<-stem.comb%>%
+  filter(Profile ==25|Profile==5)
+stem.comb.prop$facet<-factor(stem.comb.prop$facet,levels=c("Profile 5, N=94"  ,"Profile 25, N=158" ))
+#ggplot(stem.comb.prop,aes(x=exp,y=ave.mod,group=Profile))+stat_smooth(method="lm",se=FALSE,size=1.15,colour="grey50")+geom_point(size=5)+facet_wrap(~facet)+xlab("Log Fold Change")+ylab("Proportion of Adult Emergence")+T
+#with error bars
+pro1<-ggplot(stem.comb.prop,aes(x=exp,y=ave.mod,group=Profile))+geom_errorbar(aes(ymin=ave.mod-sd.mod,ymax=ave.mod+sd.mod),width=.1)+geom_errorbarh(aes(xmin=exp-gsd,xmax=exp+gsd),height=.04)+stat_smooth(method="lm",se=FALSE,size=1.15,colour="grey50")+geom_point(size=5)+facet_wrap(~facet,scale="free")+xlab("Log Fold Change")+ylab("Proportion of Adult Emergence")+T
+
+
+###parsing for elcosions
+step.comb.ecl<-stem.comb%>%
+  filter(month!=2)%>%
+  filter(Profile==3|Profile==5|Profile==25|Profile==28)#3, 5, 25, 28
+#step.comb.ecl
+step.comb.ecl$facet<-factor(step.comb.ecl$facet,levels=c("Profile 3, N=265" ,"Profile 5, N=94"  ,"Profile 25, N=158" ,"Profile 28, N=109"))
+ecl1<-ggplot(step.comb.ecl,aes(x=exp,y=ecl.mod,group=Profile))+geom_errorbar(aes(ymin=ecl.mod-ecl.se.mod,ymax=ecl.mod+ecl.se.mod),width=.1)+geom_errorbarh(aes(xmin=exp-gsd,xmax=exp+gsd),height=.4)+geom_point(size=5)+stat_smooth(method="lm",se=FALSE,size=1.15,colour="grey50")+facet_wrap(~facet,nrow=1,scale="free")+xlab("Log Fold Change")+ylab("Adult Emergence Timing (days)")+T
+
+#####grabbing only sig profiles
+stem.comb.pro<-stem.comb%>%
+  filter(Profile==3|Profile==5|Profile==25|Profile==28)
+stem.comb.pro$facet<-factor(stem.comb.pro$facet,levels=c("Profile 3, N=265" ,"Profile 5, N=94"  ,"Profile 25, N=158" ,"Profile 28, N=109"))
+#factor(stem.comb$facet,levels=c("Profile 3, N=265" ,"Profile 5, N=94"  , "Profile 22, N=79",  "Profile 23, N=155" ,"Profile 25, N=158", "Profile 27, N=50" ,"Profile 28, N=109"))
+
+profiles<-ggplot(stem.comb.pro,aes(x=month,y=exp,group=Profile))+geom_hline(yintercept = 0,lty="dotdash")+geom_errorbar(aes(ymin=exp-gsd,ymax=exp+gsd),width=.15,size=1.1)+geom_line(size=1.15,color="grey50")+facet_wrap(~facet,nrow=1)+geom_point(size=5)+T+xlab(expression(paste("Time (months at 4",degree,"C)")))+ylab("Log Fold Change")
+profiles
+
+profiles/((pro1|ecl1)+plot_layout(widths=c(.35,.65)))
+
+
+#### color the tiem points
+pro1.col<-ggplot(stem.comb.prop,aes(x=exp,y=ave.mod,group=Profile,colour=month))+geom_errorbar(aes(ymin=ave.mod-sd.mod,ymax=ave.mod+sd.mod),width=.1)+geom_errorbarh(aes(xmin=exp-gsd,xmax=exp+gsd),height=.04)+stat_smooth(method="lm",se=FALSE,size=1.15,colour="grey50")+geom_point(size=5)+facet_wrap(~facet,scale="free")+xlab("Log Fold Change")+ylab("Proportion of Adult Emergence")+T
+pro1.col
+
+ecl1.col<-ggplot(step.comb.ecl,aes(x=exp,y=ecl.mod,group=Profile,colour=month))+geom_errorbar(aes(ymin=ecl.mod-ecl.se.mod,ymax=ecl.mod+ecl.se.mod),width=.1)+geom_errorbarh(aes(xmin=exp-gsd,xmax=exp+gsd),height=.4)+geom_point(size=5)+stat_smooth(method="lm",se=FALSE,size=1.15,colour="grey50")+facet_wrap(~facet,nrow=1,scale="free")+xlab("Log Fold Change")+ylab("Adult Emergence Timing (days)")+T
+ecl1.col
+
+profiles.col<-ggplot(stem.comb.pro,aes(x=month,y=exp,group=Profile,colour=month))+geom_hline(yintercept = 0,lty="dotdash")+geom_errorbar(aes(ymin=exp-gsd,ymax=exp+gsd),width=.15,size=1.1)+stat_smooth(size=1.15,colour="grey50")+facet_wrap(~facet,nrow=1)+geom_point(size=5)+T+xlab(expression(paste("Time (months at 4",degree,"C)")))+ylab("Log Fold Change")#+geom_line(size=1.15,color="grey50")
+profiles.col
+
+
+##put it all together
+profiles.col/((pro1.col|ecl1.col)+plot_layout(widths=c(.35,.65)))
+
+```
+
+
 
 ------
 
 <div id='id-section26'/>    
 
 ### Page 26:  
+
+
 
 ------
 
