@@ -49,7 +49,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 23: 2019-06-17 ](#id-section23). Additional and re-analysis of cerasi brain transcriptome (after meeting with gragland)
 * [Page 24: 2019-06-18 ](#id-section24). more analysis ; cerasi commonr responses
 * [Page 25: 2019-06-24 ](#id-section25).stats dump, stemminer cerasi common responses only
-* [Page 26:  ](#id-section26).
+* [Page 26: 2019-07-01 ](#id-section26). stats dump ; cerasi divergent responses
 * [Page 27:  ](#id-section27).
 * [Page 28:  ](#id-section28).
 * [Page 29:  ](#id-section29).
@@ -2917,8 +2917,39 @@ profiles.col/((pro1.col|ecl1.col)+plot_layout(widths=c(.35,.65)))
 
 <div id='id-section26'/>    
 
-### Page 26:  
+### Page 26:  2019-07-01. stats dump ; cerasi divergent responses      
 
+testing interaction between population and module on phenotypes
+
+```R
+##proportion
+> apply(cp.wide2[,6:11],2,function(module){summary(lm(cp.wide2$ave.mod~cp.wide2$Population*module))$coefficient[,4]})
+                             darkseagreen4 negative darkseagreen4 positive mediumorchid negative mediumorchid positive
+(Intercept)                               0.87204442             0.92992974             0.8721410             0.9645869
+cp.wide2$PopulationLow                    0.13109332             0.08519676             0.1236924             0.1264185
+module                                    0.10768148             0.06661807             0.1272397             0.1465161
+cp.wide2$PopulationLow:module             0.08046733             0.04670370             0.1087025             0.1229579
+                             thistle2 negative thistle2 positive
+(Intercept)                          0.03120859        0.01471711
+cp.wide2$PopulationLow               0.41663150        0.60524339
+module                               0.68563707        0.40015538
+cp.wide2$PopulationLow:module        0.25442229        0.21021745
+
+#eclosion
+> apply(cp.wide3[,6:11],2,function(module){summary(lm(cp.wide3$ecl.mean~cp.wide3$Population*module))$coefficient[,4]})
+                             darkseagreen4 negative darkseagreen4 positive mediumorchid negative mediumorchid positive
+(Intercept)                               0.01262539             0.00461915           0.008491811            0.03371633
+cp.wide3$PopulationLow                    0.22713699             0.10825594           0.126471427            0.21678810
+module                                    0.30813178             0.15040630           0.202998181            0.31790011
+cp.wide3$PopulationLow:module             0.25980594             0.11798476           0.173879993            0.28417671
+                             thistle2 negative thistle2 positive
+(Intercept)                         0.002255349      0.0008511635
+cp.wide3$PopulationLow              0.542888803      0.8150731706
+module                              0.504044912      0.3887091650
+cp.wide3$PopulationLow:module       0.238691854      0.2370570948
+```
+
+### darkseagreen4 positive had sig interaction
 
 
 ------
