@@ -3236,6 +3236,97 @@ total number per module and sign
 
 
 
+### Summary of Enrichment analysis
+
+There are two levels in which we can do a functional enrichment analysis :
+
+1. at the module level with high member Genes
+2. at the module and sign level with high member genes  
+
+### Cerasi:
+
+**population level response**
+
+by module -
+
+* blue - no GO or KEGG enrichment
+* brown - no GO or KEGG enrichment  
+
+by module and sign
+
+* blue positive  - none
+* blue negative  - none
+
+* brown positive  - none
+* brown negative  - none
+
+**common responses**
+
+by module-
+
+* cyan - no GO or KEGG enrichment
+* green - no GO or KEGG enrichment
+* midnightblue  - GO = neurogenesis
+* royal blue - no GO or KEGG enrichment  
+
+by module and sign-
+
+* cyan positive - none
+* cyan negative - none
+
+* green positive  - none
+* green negative  -none
+
+* midnightblue positive  - none (downregulated over time )
+* midnigthblue negative  - GO = neurogenesis (up-regatuled over time )
+
+* royal blue positive  - none
+* royal blue negative  - none
+
+
+
+**divergent responses**
+
+by module
+
+*
+*
+*
+*
+
+
+### Pomonella  
+
+**Population level responses**
+
+* none
+
+**Common Responses**
+
+by module  -
+
+* darkred  - GO = GO:0007411~axon guidance and GO:0008045~motor neuron axon guidance; no kegg
+* green   - none
+* greenyellow   -none
+* pink   - none
+
+by module and sign  
+
+* darkred positive (increase in expression over time) - GO:0007411~axon guidance;  GO:0008045~motor neuron axon guidance
+* darkred negative - none
+
+* green positive - none
+* green negative - none
+
+* greenyellow positive (decrease in expression over time) - GO:0006032~chitin catabolic process; GO:0007498~mesoderm development
+* greenyellow negative  - none
+
+* pink postiive - none
+* pink negative -none  
+
+
+**Divergent responses**  
+
 
 
 
