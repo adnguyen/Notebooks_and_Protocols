@@ -3305,20 +3305,20 @@ by module
 
 by module  -
 
-* darkred  - GO = GO:0007411~axon guidance and GO:0008045~motor neuron axon guidance; no kegg
+* darkred  - GO = GO:0007411~axon guidance and GO:0008045 motor neuron axon guidance; no kegg
 * green   - none
 * greenyellow   -none
 * pink   - none
 
 by module and sign  
 
-* darkred positive (increase in expression over time) - GO:0007411~axon guidance;  GO:0008045~motor neuron axon guidance
+* darkred positive (increase in expression over time) - GO:0007411 axon guidance;  GO:0008045 motor neuron axon guidance
 * darkred negative - none
 
 * green positive - none
 * green negative - none
 
-* greenyellow positive (decrease in expression over time) - GO:0006032~chitin catabolic process; GO:0007498~mesoderm development
+* greenyellow positive (decrease in expression over time) - GO:0006032 chitin catabolic process; GO:0007498 mesoderm development
 * greenyellow negative  - none
 
 * pink postiive - none
