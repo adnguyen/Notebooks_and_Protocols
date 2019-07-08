@@ -50,7 +50,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 24: 2019-06-18 ](#id-section24). more analysis ; cerasi commonr responses
 * [Page 25: 2019-06-24 ](#id-section25).stats dump, stemminer cerasi common responses only
 * [Page 26: 2019-07-01 ](#id-section26). stats dump ; cerasi divergent responses
-* [Page 27:  ](#id-section27).
+* [Page 27: 2019-07-05 ](#id-section27). numbers dump: the number of genes per module and module+sign
 * [Page 28:  ](#id-section28).
 * [Page 29:  ](#id-section29).
 * [Page 30:  ](#id-section30).
@@ -2956,7 +2956,288 @@ cp.wide3$PopulationLow:module       0.238691854      0.2370570948
 
 <div id='id-section27'/>    
 
-### Page 27:  
+### Page 27:  2019-07-05. numbers dump: the number of genes per module and module+sign
+
+cerasi:
+
+
+**population level response**
+
+number of genes per module   
+
+|Var1  | Freq|
+|:-----|----:|
+|blue  |  269|
+|brown |  182|
+|grey  |    1|
+
+
+
+total number of  high member genes   
+
+
+|Var1  | Freq|
+|:-----|----:|
+|blue  |  134|
+|brown |   79|
+|grey  |    1|
+
+
+total number of high member genes per module per sign   
+
+|module |sign     |  n|
+|:------|:--------|--:|
+|blue   |negative | 59|
+|blue   |positive | 75|
+|brown  |negative | 16|
+|brown  |positive | 63|
+|grey   |positive |  1|
+
+total numbers of high member genes per module per sign
+
+|module |sign     |   n|
+|:------|:--------|---:|
+|blue   |negative | 118|
+|blue   |positive | 150|
+|brown  |negative |  32|
+|brown  |positive | 126|
+
+
+
+**common**
+
+total number of high member genes (both signs counted)
+
+|module       | memberSS|
+|:------------|--------:|
+|cyan         |      396|
+|green        |      279|
+|midnightblue |      570|
+|royalblue    |      276|
+
+total number by sign    
+
+|module       |sign     | memberSS|
+|:------------|:--------|--------:|
+|cyan         |negative |      311|
+|cyan         |positive |       85|
+|green        |negative |      229|
+|green        |positive |       50|
+|midnightblue |negative |      490|
+|midnightblue |positive |       80|
+|royalblue    |negative |      168|
+|royalblue    |positive |      108|
+
+
+
+**divergent**
+
+|color         |sign     | mod.num|
+|:-------------|:--------|-------:|
+|blueviolet    |negative |     547|
+|blueviolet    |positive |    3511|
+|darkseagreen4 |negative |     787|
+|darkseagreen4 |positive |    1198|
+|mediumorchid  |negative |    1167|
+|mediumorchid  |positive |    1628|
+|thistle2      |negative |      41|
+|thistle2      |positive |     164|
+
+
+
+
+pomonella:
+
+need to redo some stats; using tom's dataset, but to be consistent, I'll use greg's    
+
+proportional eclosion data, we found a population by time interaction from 2-6 months    
+
+
+```R
+fm<-glm(ecl ~ factor(treatment)*factor(host),family=binomial,data=pom.dat.ecl)
+> summary(fm)
+
+Call:
+glm(formula = ecl ~ factor(treatment) * factor(host), family = binomial,
+    data = pom.dat.ecl)
+
+Deviance Residuals:
+    Min       1Q   Median       3Q      Max  
+-2.1899   0.4366   0.5430   0.7011   1.2846  
+
+Coefficients:
+                                   Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                          0.9808     0.1596   6.147 7.91e-10 ***
+factor(treatment)3                  -1.2293     0.2197  -5.594 2.21e-08 ***
+factor(treatment)4                  -0.8165     0.2179  -3.748 0.000178 ***
+factor(treatment)5                   0.8591     0.2615   3.285 0.001018 **
+factor(treatment)6                   0.2973     0.2413   1.232 0.218079    
+factor(host)haw                      0.6232     0.2407   2.589 0.009616 **
+factor(treatment)3:factor(host)haw   1.1587     0.3323   3.487 0.000488 ***
+factor(treatment)4:factor(host)haw   1.5151     0.3755   4.035 5.47e-05 ***
+factor(treatment)5:factor(host)haw  -0.5699     0.3610  -1.578 0.114457    
+factor(treatment)6:factor(host)haw  -1.0582     0.3343  -3.166 0.001548 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 2326.4  on 2108  degrees of freedom
+Residual deviance: 2117.7  on 2099  degrees of freedom
+AIC: 2137.7
+
+Number of Fisher Scoring iterations: 4
+```
+
+
+eclosion day data ; time and pop main effects
+
+
+```R
+summary(ecl.mod)
+
+Call:
+lm(formula = dayToEclosion ~ factor(host) * factor(treatment),
+   data = pom.dat.ecl)
+
+Residuals:
+   Min      1Q  Median      3Q     Max
+-46.326  -9.014  -0.014   8.967  55.876
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                          66.090      1.150  57.458  < 2e-16 ***
+factor(host)haw                      12.236      1.536   7.967 3.06e-15 ***
+factor(treatment)3                   11.076      1.940   5.708 1.36e-08 ***
+factor(treatment)4                    4.475      1.802   2.483   0.0131 *  
+factor(treatment)5                    1.033      1.563   0.661   0.5087    
+factor(treatment)6                  -13.076      1.638  -7.982 2.74e-15 ***
+factor(host)haw:factor(treatment)3    3.866      2.409   1.605   0.1087    
+factor(host)haw:factor(treatment)4    1.910      2.311   0.826   0.4088    
+factor(host)haw:factor(treatment)5   -1.039      2.053  -0.506   0.6129    
+factor(host)haw:factor(treatment)6    4.218      2.219   1.901   0.0575 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 13.8 on 1592 degrees of freedom
+ (507 observations deleted due to missingness)
+Multiple R-squared:  0.3751,	Adjusted R-squared:  0.3716
+F-statistic: 106.2 on 9 and 1592 DF,  p-value: < 2.2e-16
+
+```
+
+
+
+
+**common**
+
+all Genes
+
+
+|color       | total_num|
+|:-----------|---------:|
+|darkred     |       755|
+|green       |       563|
+|greenyellow |       997|
+|grey        |         2|
+|pink        |       275|
+
+
+high member genes by module only  
+
+|color       |   n|
+|:-----------|---:|
+|darkred     | 409|
+|green       | 366|
+|greenyellow | 422|
+|grey        |   2|
+|pink        | 128|
+
+high mbmer genes by module and sign
+
+|color       |sign     |   n|
+|:-----------|:--------|---:|
+|darkred     |negative |  83|
+|darkred     |positive | 326|
+|green       |negative | 148|
+|green       |positive | 218|
+|greenyellow |negative | 128|
+|greenyellow |positive | 294|
+|grey        |negative |   1|
+|grey        |positive |   1|
+|pink        |negative |  38|
+|pink        |positive |  90|
+
+
+inserting some stats with correlating ave gxp with newly anlayzed phenotypes  (no modules gxp sig):
+
+proportion  
+
+```R
+apply(hmc.wide2[,2:9],2,function(x){summary(lm(hmc.wide2$common.mean~x))$coefficient[2,4]})# p value
+    darkred negative     darkred positive       green negative       green positive greenyellow negative
+           0.6454439            0.7384548            0.6558284            0.7729242            0.6559972
+greenyellow positive        pink negative        pink positive
+           0.5608325            0.8651901            0.8915960
+```
+
+eclosion     
+
+
+```R
+apply(hmc.wide2[,2:9],2,function(x){summary(lm(hmc.wide2$ecl~x))$coefficient[2,4]})# p value
+    darkred negative     darkred positive       green negative       green positive greenyellow negative
+           0.2971868            0.4202125            0.2767820            0.4228912            0.3044809
+greenyellow positive        pink negative        pink positive
+           0.2228193            0.7834458            0.8709504
+
+```
+
+again, not sig    
+
+
+
+
+**divergent**
+
+2019-07-08 contd
+
+total number per module; and extra column with number of high member genes
+
+|color     | total_num|   n|
+|:---------|---------:|---:|
+|black     |       557| 194|
+|blue      |       590| 300|
+|grey      |         2|   2|
+|grey60    |       542| 209|
+|red       |      1017| 651|
+|turquoise |       194| 152|
+
+
+
+total number per module and sign
+
+|color     |sign     |   n|
+|:---------|:--------|---:|
+|black     |negative |  21|
+|black     |positive | 173|
+|blue      |negative | 116|
+|blue      |positive | 184|
+|grey      |negative |   1|
+|grey      |positive |   1|
+|grey60    |negative |  29|
+|grey60    |positive | 180|
+|red       |negative | 179|
+|red       |positive | 472|
+|turquoise |negative |  28|
+|turquoise |positive | 124|
+
+
+
+
+
+
+
 
 ------
 
