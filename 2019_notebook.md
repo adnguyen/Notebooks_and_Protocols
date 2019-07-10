@@ -3232,8 +3232,47 @@ total number per module and sign
 |turquoise |negative |  28|
 |turquoise |positive | 124|
 
+**stats on divergent responses**
+
+tested main effects of time and host (time by host interaction was not sig, so trying a simpler model)
+
+proportion data   
 
 
+```R
+mo.out1<-apply(ana.dat[,5:14],2,function(module){summary(lm(ana.dat$mean.prop~ana.dat$Host+module))$coefficient[,4]})
+> round(data.frame(mo.out1),4)
+               black.negative black.positive blue.negative blue.positive grey60.negative grey60.positive red.negative
+(Intercept)             0.0002         0.0001        0.0007        0.0002          0.0000          0.0000       0.0000
+ana.dat$HostHaw         0.1233         0.1473        0.1193        0.2115          0.0623          0.0794       0.2171
+module                  0.7115         0.9602        0.3909        0.6712          0.2345          0.3174       0.9762
+               red.positive turquoise.negative turquoise.positive
+(Intercept)           0.0000             0.0002             0.0005
+ana.dat$HostHaw       0.1806             0.4693             0.5080
+module                0.9084             0.5572             0.3668
+```
+
+no factors are significant   
+
+
+adult emergence  data   
+
+```R
+mo.out2<-apply(ana.dat[,5:14],2,function(module){summary(lm(ana.dat$ecl~ana.dat$Host+module))$coefficient[,4]})
+> #mo.out2
+> round(data.frame(mo.out2),4)
+               black.negative black.positive blue.negative blue.positive grey60.negative grey60.positive red.negative
+(Intercept)             0.0000         0.0000        0.0000         0.000          0.0000          0.0000       0.0000
+ana.dat$HostHaw         0.0658         0.0756        0.1543         0.154          0.0420          0.0404       0.0120
+module                  0.1241         0.2505        0.7709         0.810          0.5524          0.5301       0.1123
+               red.positive turquoise.negative turquoise.positive
+(Intercept)           0.0000             0.0000             0.0001
+ana.dat$HostHaw       0.0157             0.2898             0.2110
+module                0.1542             0.4677             0.5510
+```
+
+
+module gxp differ between hosts for grey60 (positive and negative ) and red (postiive and negative) 
 
 
 ### Summary of Enrichment analysis
