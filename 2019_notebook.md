@@ -3272,7 +3272,7 @@ module                0.1542             0.4677             0.5510
 ```
 
 
-module gxp differ between hosts for grey60 (positive and negative ) and red (postiive and negative) 
+module gxp differ between hosts for grey60 (positive and negative ) and red (postiive and negative)
 
 
 ### Summary of Enrichment analysis
@@ -3326,12 +3326,46 @@ by module and sign-
 
 **divergent responses**
 
-by module
+by module and sign
 
-*
-*
-*
-*
+* blueviolet negative   -none
+* blueviolet positive   KEGG: dme04391:Hippo signaling pathway - fly, dme04320:Dorso-ventral axis formation, dme04931:Insulin resistance; and     
+    * GO:0007476~imaginal disc-derived wing morphogenesis
+    * GO:0007411~axon guidance
+    * GO:0048813~dendrite morphogenesis
+    * GO:0006468~protein phosphorylation
+    * GO:0007015~actin filament organization
+    * GO:0007298~border follicle cell migration
+    * GO:0048749~compound eye development
+    * GO:0006351~transcription, DNA-templated
+    * GO:0006355~regulation of transcription, DNA-templated
+    * GO:0008045~motor neuron axon guidance
+    * GO:0007391~dorsal closure
+    * GO:0007616~long-term memory
+    * GO:0008586~imaginal disc-derived wing vein morphogenesis
+    * GO:0007424~open tracheal system development
+    * GO:0030707~ovarian follicle cell development
+    * GO:0048477~oogenesis
+    * GO:0007480~imaginal disc-derived leg morphogenesis
+    * GO:0007422~peripheral nervous system development
+    * GO:0007614~short-term memory
+    * GO:0000122~negative regulation of transcription from RNA polymerase II promoter
+    * GO:0008355~olfactory learning
+    * GO:0007155~cell adhesion
+    * GO:0046580~negative regulation of Ras protein signal transduction
+    * GO:0045944~positive regulation of transcription from RNA polymerase II promoter
+    * GO:0008360~regulation of cell shape
+    * GO:0016318~ommatidial rotation
+    * GO:0016477~cell migration
+
+*	darkseagreen4 negative  -none
+*	darkseagreen4 positive   -none
+
+*	mediumorchid negative   -none
+*	mediumorchid positive   -none
+
+*	thistle2 negative  -none
+*	thistle2 positive  -none
 
 
 ### Pomonella  
@@ -3365,6 +3399,25 @@ by module and sign
 
 
 **Divergent responses**  
+
+by module and sign   
+
+* black negative  - none
+* black positive - none
+
+* blue negative  - none
+* blue positive  - none
+
+* grey60 negative   - none
+* grey60 positive  - KEGG: Oxphosph; GO:0032543~mitochondrial translation, GO:0006120~mitochondrial electron transport, NADH to ubiquinone
+
+* red negative  -none
+* red positive  - GO:0007411~axon guidance ,GO:0007476~imaginal disc-derived wing morphogenesis,GO:0006351~transcription, DNA-templated, GO:0045944~positive regulation of transcription from RNA polymerase II promoter
+
+* turquoise negative  -none
+* turqoise positive - KEGG: dme03010:Ribosome; GO:0002181~cytoplasmic translation, GO:0006412~translation, GO:0051298~centrosome duplication, GO:0000027~ribosomal large subunit assembly, GO:0000028~ribosomal small subunit assembly, GO:0051297~centrosome organization
+
+
 
 
 
