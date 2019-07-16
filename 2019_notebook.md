@@ -51,7 +51,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 25: 2019-06-24 ](#id-section25).stats dump, stemminer cerasi common responses only
 * [Page 26: 2019-07-01 ](#id-section26). stats dump ; cerasi divergent responses
 * [Page 27: 2019-07-05 ](#id-section27). numbers dump: the number of genes per module and module+sign
-* [Page 28:  ](#id-section28).
+* [Page 28: 2019-07-16 ](#id-section28). Helping Jbrown with data analysis and figure preparation
 * [Page 29:  ](#id-section29).
 * [Page 30:  ](#id-section30).
 * [Page 31:  ](#id-section31).
@@ -3426,7 +3426,262 @@ by module and sign
 
 <div id='id-section28'/>    
 
-### Page 28:  
+### Page 28: 2019-07-16. Helping Jbrown with data analysis and figure preparation    
+
+
+From DHahn meeting, he wants:
+
+1. The relationship between wet mass, lean masss, lipid mass on day 1 by strain and photoperiod    
+    * If NO- report but no figures
+    * If YES- report then add figuers in a multi panel
+    * Use day 1 as a covariate in the analysis to determine effect of photoperiod and strain on different metrics of mass on wandering day
+
+
+2. Do the diff metrics of mass differ by strain and photoperiod on wandering day.
+
+
+### Day 1
+
+**Wet mass**
+
+```R
+mixedL1.2=lmer(wet_mass ~ photoperiod*strain+lean_mass + (1|rep/cohort) ,data=dat.an, REML = TRUE)
+lmerTest::step(mixedL1.2)
+Backward reduced fixed-effect table:
+Degrees of freedom method: Satterthwaite
+
+                   Eliminated    Sum Sq   Mean Sq NumDF  DenDF F value    Pr(>F)    
+lean_mass                   1 0.0000293 0.0000293     1 290.19  0.1634    0.6863    
+photoperiod:strain          2 0.0004404 0.0004404     1 326.92  2.4659    0.1173    
+photoperiod                 0 0.0099830 0.0099830     1 383.92 55.4637 6.339e-13 ***
+strain                      0 0.0162875 0.0162875     1  25.89 90.4901 6.190e-10 ***
+---
+```
+
+**Lean MASS**  
+
+```R
+mixedL1.3=lmer(lean_mass ~ photoperiod*strain+(1|rep/cohort) ,data=data, REML = TRUE)
+lmerTest::step(mixedL1.3)
+
+
+Backward reduced fixed-effect table:
+Degrees of freedom method: Satterthwaite
+
+                   Eliminated   Sum Sq  Mean Sq NumDF  DenDF F value  Pr(>F)  
+photoperiod:strain          1 0.210443 0.210443     1 375.92  3.3150 0.06945 .
+strain                      2 0.026950 0.026950     1  26.77  0.4195 0.52270  
+photoperiod                 3 0.033505 0.033505     1 374.79  0.5215 0.47063  
+---
+
+```
+
+**Lipid Mass**
+```R
+
+mixedL1=lmer(lipid_mass ~ photoperiod*strain+lean_mass * (1|rep/cohort) ,data=dataL1, REML = TRUE)
+
+
+Fixed effects:
+                         Estimate Std. Error         df t value Pr(>|t|)
+(Intercept)             1.855e-02  1.859e-02  7.000e+01   0.998    0.322
+photoperiod16          -3.702e-03  1.111e-02  7.000e+01  -0.333    0.740
+strainUZ                1.113e-05  1.022e-02  7.000e+01   0.001    0.999
+lean_mass              -1.738e+00  1.786e+00  7.000e+01  -0.973    0.334
+photoperiod16:strainUZ  1.672e-02  1.461e-02  7.000e+01   1.144    0.256
+
+
+
+T<-theme_bw()+theme(text=element_text(size=20),axis.text=element_text(size=20), panel.grid.major=element_blank(), panel.grid.minor.x = element_blank(), panel.grid = element_blank(), legend.key = element_blank())+ theme(legend.position="none")
+
+d1_lm<-ggplot(dataL1,aes(x=photoperiod,y=lipid_mass,fill=strain))+geom_boxplot()+scale_fill_manual(labels=c("Long Diapause","Short Diapause"),values=c("lightsalmon1","mediumpurple1"),breaks=c("UZ","BE"))+T+ylab("Lipid Mass (g)")+xlab("Photoperiod")
+d1_lm
+```
+
+**sig effect of photoperiod; used lean mass as a covariate**
+
+
+## Wandering day
+
+**Wet mass**
+
+```R
+mixedLW3=lmer(wet_mass ~ photoperiod * strain +lean_mass +(1|rep/cohort) ,data=dataLW, REML = TRUE)
+
+Fixed effects:
+                         Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)              0.083280   0.002537 190.000000  32.822  < 2e-16 ***
+photoperiod16           -0.021455   0.003673 190.000000  -5.841 2.21e-08 ***
+strainUZ                 0.014469   0.003625 190.000000   3.991 9.38e-05 ***
+lean_mass                0.001161   0.001377 190.000000   0.843    0.400    
+photoperiod16:strainUZ   0.006668   0.005194 190.000000   1.284    0.201    
+
+```
+
+**Lean MASS**  
+
+```R
+mixedLW2=lmer(lean_mass ~ photoperiod * strain +(1|rep/cohort) ,data=dataLW, REML = TRUE)
+lmerTest::step(mixedLW2)
+
+Backward reduced fixed-effect table:
+Degrees of freedom method: Satterthwaite
+
+                   Eliminated   Sum Sq  Mean Sq NumDF   DenDF F value Pr(>F)
+photoperiod:strain          1 0.141911 0.141911     1 184.054  1.3256 0.2511
+photoperiod                 2 0.006671 0.006671     1 183.596  0.0618 0.8040
+strain                      3 0.011131 0.011131     1  14.491  0.1035 0.7522
+```
+
+**Lipid Mass**
+
+```R
+mixedLW=lmer(lipid_mass ~ photoperiod * strain +lean_mass +(1|rep/cohort) ,data=dataLW, REML = TRUE)
+lmerTest::step(mixedLW)
+
+
+Backward reduced fixed-effect table:
+Degrees of freedom method: Satterthwaite
+
+                   Eliminated     Sum Sq    Mean Sq NumDF   DenDF  F value    Pr(>F)    
+lean_mass                   1 0.00000007 0.00000007     1  16.247   0.0086    0.9272    
+photoperiod:strain          2 0.00001164 0.00001164     1 185.644   1.4634    0.2279    
+photoperiod                 0 0.00083453 0.00083453     1 191.042 104.7444 < 2.2e-16 ***
+strain                      0 0.00013262 0.00013262     1 186.252  16.6458 6.674e-05 ***
+---
+
+```
+
+**sig effect of photoperiod and strain**
+
+
+### figure all in one :
+
+structure of data
+
+```R
+glimpse(data)
+Observations: 411
+Variables: 23
+$ cohort                              <fct> 20180412, 20180412, 20180412, 20180412, 20180412, 20180412, 20180412, 2018…
+$ rep                                 <dbl> 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 15, 15, 15, 15…
+$ sample_day                          <fct> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+$ sample_id                           <fct> 0506-01, 0506-02, 0506-03, 0506-04, 0506-05, 0506-06, 0506-07, 0506-08, 05…
+$ tag_id                              <chr> "0506-01", "0506-02", "0506-03", "0506-04", "0506-05", "0506-06", "0506-07…
+$ batch                               <chr> "13", "13", "13", "13", "13", "13", "13", "13", "13", "13", "13", "13", "1…
+$ FAME                                <chr> "F", "F", NA, "F", "F", NA, NA, NA, "F", "F", NA, "F", "F", NA, NA, "F", "…
+$ `5th_date`                          <dbl> 20180506, 20180506, 20180506, 20180506, 20180506, 20180506, 20180506, 2018…
+$ treat                               <fct> UZ16, UZ16, UZ16, UZ12, UZ12, UZ12, UZ12, UZ12, BE16, BE16, BE16, BE12, BE…
+$ `Microtube wt + Beads`              <dbl> 1.9374, 2.0227, 2.0014, 2.0463, 1.9731, 2.0759, 2.1160, 2.0542, 2.2007, 2.…
+$ `Microtube wt + Beads + WET Larvae` <dbl> 1.9986, 2.0782, 2.0402, 2.1012, 2.0273, 2.1288, 2.1714, 2.1023, 2.2179, 2.…
+$ `Microtube + Beads + DRY Larvae`    <dbl> 1.9500, 2.0326, 2.0076, 2.0571, 1.9831, 2.0856, 2.1259, 2.0630, 2.2038, 2.…
+$ `Microtube + Beads + LEAN Larvae`   <dbl> 1.9517, 2.0352, 2.0115, 2.0593, 1.9857, 2.0885, 2.1282, 2.0659, 2.2075, 2.…
+$ `TV wt`                             <dbl> 14.3068, 14.5217, 13.9372, 15.3506, 15.3435, 15.0740, 15.4462, 14.3725, 15…
+$ `TV wt + DRY Lipids`                <dbl> 14.3098, 14.5242, 13.9376, 15.3521, 15.3435, 15.0752, 15.4470, 14.3757, 15…
+$ wet_mass                            <dbl> 0.0612, 0.0555, 0.0388, 0.0549, 0.0542, 0.0529, 0.0554, 0.0481, 0.0172, 0.…
+$ dry_mass                            <dbl> 0.0126, 0.0099, 0.0062, 0.0108, 0.0100, 0.0097, 0.0099, 0.0088, 0.0031, 0.…
+$ lean_mass                           <dbl> 0.0143, 0.0125, 0.0101, 0.0130, 0.0126, 0.0126, 0.0122, 0.0117, 0.0068, 0.…
+$ lipid_mass                          <dbl> 0.0030, 0.0025, 0.0004, 0.0015, 0.0000, 0.0012, 0.0008, 0.0032, -0.0002, -…
+$ tag_mass                            <dbl> 0.0008408, 0.0007848, 0.0007288, 0.0008068, 0.0008096, 0.0008056, 0.000833…
+$ calc_lean_mass                      <dbl> -0.0017, -0.0026, -0.0039, -0.0022, -0.0026, -0.0029, -0.0023, -0.0029, -0…
+$ photoperiod                         <fct> 16, 16, 16, 12, 12, 12, 12, 12, 16, 16, 16, 12, 12, 12, 12, 16, 16, 16, 16…
+$ strain                              <fct> UZ, UZ, UZ, UZ, UZ, UZ, UZ, UZ, BE, BE, BE, BE, BE, BE, BE, UZ, UZ, UZ, UZ…
+
+
+###exploring data points that look like outliers, but dont see a reason to exclude them
+
+data%>%
+  filter(lean_mass>.099)%>%
+  dplyr::select(dry_mass,sample_id,lean_mass,lipid_mass)
+
+  dry_mass sample_id lean_mass lipid_mass
+      <dbl> <fct>         <dbl>      <dbl>
+ 1    0.101 0411-08       0.100    0.00720
+ 2    0.134 0531-05       0.127    0.0135
+ 3    0.117 0602-07       0.107    0.0175
+
+```
+
+converting to long to make multi panel plots
+
+```R
+
+d.long<-gather(data,weights,grams,wet_mass:lipid_mass)
+d.long2<-d.long%>%
+  dplyr::filter(sample_day=="1" | sample_day=="W")%>%
+  dplyr::filter(weights!="dry_mass")
+
+
+d.long2$photoperiod<-substr(d.long2$treat,3,4)
+d.long2$strain<-substr(d.long2$treat,1,2)
+
+d.long2$facet<-ifelse(d.long2$sample_day=="1","Day 1","Wandering Day")
+
+d.long2<-d.long2%>%
+  filter(grams>0)
+
+
+
+d.long2%>%
+  filter(sample_day==1,weights=="lipid_mass")%>%
+  dplyr::select(grams,sample_id)%>%
+  filter(grams>.2)
+
+##excluding this outlier
+
+
+d.long3<-d.long2%>%
+  filter(sample_id!="0323-06" & grams< 0.264)
+
+```
+
+### Making the plot
+
+```R
+
+d.long<-gather(data,weights,grams,wet_mass:lipid_mass)
+d.long2<-d.long%>%
+  dplyr::filter(sample_day=="1" | sample_day=="W")%>%
+  dplyr::filter(weights!="dry_mass")
+
+
+d.long2$photoperiod<-substr(d.long2$treat,3,4)
+d.long2$strain<-substr(d.long2$treat,1,2)
+
+d.long2$facet<-ifelse(d.long2$sample_day=="1","Day 1","Wandering Day")
+
+d.long2<-d.long2%>%
+  filter(grams>0)
+
+
+
+d.long2%>%
+  filter(sample_day==1,weights=="lipid_mass")%>%
+  dplyr::select(grams,sample_id)%>%
+  filter(grams>.2)
+
+
+d.long3<-d.long2%>%
+  filter(sample_id!="0323-06" & grams< 0.264)
+
+d.long3$mg<-round(d.long3$grams,5)*1000
+
+ggplot(d.long3,aes(x=photoperiod,y=mg,fill=strain))+facet_wrap(facet~weights,scales="free")+geom_boxplot()+T+ylab("Mass (mg)")+xlab("Photoperiod (hours)")
+
+
+d.long3$mass_type<-ifelse(d.long3$weights=="lean_mass","Lean Mass",ifelse(d.long3$weights=="lipid_mass","Lipid Mass","Wet Mass"))
+
+d.long3$mt.fac<-factor(d.long3$mass_type,levels=c("Wet Mass","Lean Mass","Lipid Mass"))
+
+
+ggplot(d.long3,aes(x=photoperiod,y=mg,fill=strain))+
+facet_wrap(mt.fac~facet,scales="free",ncol=2)+geom_boxplot()+
+T+ylab("Mass (mg)")+xlab("Photoperiod (hours)")+scale_fill_manual(labels=c("Long Diapause","Short Diapause"),values=c("lightsalmon1","mediumpurple1"),breaks=c("UZ","BE"))
+
+
+```
+
+
 
 ------
 
