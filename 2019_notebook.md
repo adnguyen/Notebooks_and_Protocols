@@ -3682,6 +3682,85 @@ T+ylab("Mass (mg)")+xlab("Photoperiod (hours)")+scale_fill_manual(labels=c("Long
 ```
 
 
+### Wandering day redo ; boxplots
+
+The days that needed to be compared:
+
+1. UZ -16 hours day 5
+2. UZ - 12 hours day 10
+
+3. BE - 16 hours day 3
+4. BE - 12 hours day 8
+
+parsed out that data
+
+
+```R
+d1<-data%>%
+  filter(strain=="BE" & treat=="1" & day==8)
+
+d2<-data%>%
+  filter(strain=="BE" & treat=="2" & day==3)
+
+d3<-data%>%
+  filter(strain=="UZ" & treat=="1" & day==10)
+
+d4<-data%>%
+  filter(strain=="UZ" & treat=="2" & day==5)
+
+dat<-data.frame(rbind(d1,d2,d3,d4))
+
+
+dat$Photoperiod<-ifelse(dat$treat=="1","12","16")
+dat$mass.mg<-dat$mass*1000
+
+
+dat2<-dat%>%
+  filter(Tray!="12,23 1201-01" & Tray!="12,23 1201-02" & Tray!="16,23 1201"& Tray!="16,23 1202")
+```
+
+lets do the stats
+
+
+```R
+dat2%>%
+  group_by(Photoperiod,strain,Tray)%>%
+  dplyr::summarise(n=length(Tray))
+
+
+  summary(comp)
+
+  Error: Photoperiod
+              Df Sum Sq Mean Sq
+  Photoperiod  1  682.9   682.9
+
+  Error: Photoperiod:Tray
+                     Df Sum Sq Mean Sq F value Pr(>F)  
+  strain              1  27190   27190  18.497 0.0126 *
+  Photoperiod:strain  1    332     332   0.226 0.6595  
+  Residuals           4   5880    1470                 
+  ---
+  Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+  Error: Within
+             Df Sum Sq Mean Sq F value Pr(>F)
+  Residuals 113  29944     265              
+
+```
+
+
+
+lets plot out the data in a nice way
+
+```R
+ggplot(dat2,aes(x=Photoperiod,y=mass.mg,fill=strain))+geom_boxplot()+ylab("Wet Mass (mg)")+xlab("Photoperiod (hours)")+scale_fill_manual(labels=c("Long Diapause","Short Diapause"),values=c("lightsalmon1","mediumpurple1"),breaks=c("UZ","BE"))+T+scale_y_continuous(breaks=seq(0,160,20),labels=seq(0,160,20),limits = c(0,160))
+
+```
+
+
+
+
+
 
 ------
 
