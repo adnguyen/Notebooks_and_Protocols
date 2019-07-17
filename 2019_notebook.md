@@ -3766,7 +3766,77 @@ ggplot(dat2,aes(x=Photoperiod,y=mass.mg,fill=strain))+geom_boxplot()+ylab("Wet M
 
 <div id='id-section29'/>    
 
-### Page 29:  
+### Page 29:  2019-07-17. Jbrown stats revisit
+
+Meeting with DHahn:
+
+* Take out lean mass in the statistical models for wet mass and lipid mass.
+
+
+### Day 1
+
+**wet mass**
+
+```R
+mixedL1.2=lmer(wet_mass ~ photoperiod*strain + (1|rep/cohort) ,data=dataL1, REML = TRUE)
+lmerTest::step(mixedL1.2)
+Backward reduced fixed-effect table:
+Degrees of freedom method: Satterthwaite
+
+                   Eliminated     Sum Sq    Mean Sq NumDF  DenDF F value  Pr(>F)  
+photoperiod:strain          0 0.00012639 0.00012639     1 63.402  4.7147 0.03365 *
+
+```
+
+**lipid mass**
+
+```R
+mixedL1=lmer(lipid_mass ~ photoperiod*strain + (1|rep/cohort) ,data=dataL1, REML = TRUE,control=lmerControl(check.conv.singular = .makeCC(action = "ignore",  tol = 1e-4)))
+summary(mixedL1)
+
+Fixed effects:
+                         Estimate Std. Error         df t value Pr(>|t|)
+(Intercept)             0.0021600  0.0078731 71.0000000   0.274    0.785
+photoperiod16          -0.0006711  0.0106602 71.0000000  -0.063    0.950
+strainUZ               -0.0002191  0.0102102 71.0000000  -0.021    0.983
+photoperiod16:strainUZ  0.0135002  0.0142264 71.0000000   0.949    0.346
+```
+
+### Wandering stage  
+
+
+**wet mass**
+
+```R
+mixedLW3=lmer(wet_mass ~ photoperiod * strain +(1|rep/cohort) ,data=dataLW, REML = TRUE,control=lmerControl(check.conv.singular = .makeCC(action = "ignore",  tol = 1e-4)))
+Fixed effects:
+                         Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)              0.084779   0.002784 141.000000  30.456  < 2e-16 ***
+photoperiod16           -0.021908   0.004272 141.000000  -5.129 9.47e-07 ***
+strainUZ                 0.013863   0.004162 141.000000   3.331  0.00111 **
+photoperiod16:strainUZ   0.006003   0.006032 141.000000   0.995  0.32132    
+```
+
+**lipid mass**
+
+```R
+mixedLW=lmer(lipid_mass ~ photoperiod * strain+(1|rep/cohort) ,data=dataLW, REML = TRUE)
+lmerTest::step(mixedLW)
+
+Backward reduced fixed-effect table:
+Degrees of freedom method: Satterthwaite
+
+                   Eliminated    Sum Sq   Mean Sq NumDF  DenDF  F value    Pr(>F)    
+photoperiod:strain          1 1.503e-05 1.503e-05     1 131.40   3.6229 0.0591757 .  
+photoperiod                 0 6.545e-04 6.545e-04     1 134.61 155.4339 < 2.2e-16 ***
+strain                      0 6.116e-05 6.116e-05     1 133.30  14.5241 0.0002105 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+```
+
+
+
 
 ------
 
