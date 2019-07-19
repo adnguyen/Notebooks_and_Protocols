@@ -52,8 +52,9 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 26: 2019-07-01 ](#id-section26). stats dump ; cerasi divergent responses
 * [Page 27: 2019-07-05 ](#id-section27). numbers dump: the number of genes per module and module+sign
 * [Page 28: 2019-07-16 ](#id-section28). Helping Jbrown with data analysis and figure preparation
-* [Page 29:  ](#id-section29).
-* [Page 30:  ](#id-section30).
+* [Page 29: 2019-07-17 ](#id-section29). Jbrown stats revisit
+
+* [Page 30: 2019-07-18 ](#id-section30). cerasi and pom gene overlap 
 * [Page 31:  ](#id-section31).
 * [Page 32:  ](#id-section32).
 * [Page 33:  ](#id-section33).
