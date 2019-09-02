@@ -5,7 +5,7 @@
 ### Contact: anbe642@gmail.com     
 
 ### Date started: 2019-01-01    
-### Date end (last modified): ongoing   
+### Date end (last modified): 2019-09-02   
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.    
 
@@ -17,7 +17,7 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * Range limits: Identifying the factors/forces that set range limits in common forest ants (*Aphaenogaster picea*). Modelling + measured their cold physiology in forest ants of Maine and Vt.  
 * Thermal niche paper: Collaborative paper understanding how the environment shapes the ability to withstand cold and hot temperatures. In field and in a common garden, we measured upper and lower thermal limits of ants from GA-Maine (2 species).    
 * Stress in nature: Are ants stressed under experimental warming that projects climate change? Ants were collected from warming chambers (0-5 C increase from ambient) and we measured their stress response.    
-* ​Biological rhythms in *Rhagoletis*: Determining the relationship between behavioral rhythms in adult *Rhagoletis* and diapause exit timing + depth(eclosion and mass specific metabolic rate).  
+* Biological rhythms in *Rhagoletis*: Determining the relationship between behavioral rhythms in adult *Rhagoletis* and diapause exit timing + depth(eclosion and mass specific metabolic rate).  
 * *Rhagoletis* diapause exit: Determine the physiological parameters that lead to divergent adult emergence patterns between two host races.
 * *Rhagoletis cerasi* transcriptome: Determine the adaptive shifts in the transcriptome relating to seasonal timing in low and high altitude populations.  
 * Proteome stability project in *Drosophila melanogaster*: Determine the physiological tactics at the molecular level that underlie differences in thermal traits and whether they've been shaped by selection at a broad scale.
@@ -54,8 +54,8 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 28: 2019-07-16 ](#id-section28). Helping Jbrown with data analysis and figure preparation
 * [Page 29: 2019-07-17 ](#id-section29). Jbrown stats revisit
 
-* [Page 30: 2019-07-18 ](#id-section30). cerasi and pom gene overlap 
-* [Page 31:  ](#id-section31).
+* [Page 30: 2019-09-02  ](#id-section30). cerasi data revisit
+* [Page 31:  ](#id-section31). 
 * [Page 32:  ](#id-section32).
 * [Page 33:  ](#id-section33).
 * [Page 34:  ](#id-section34).
@@ -75,163 +75,14 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 * [Page 48:  ](#id-section48).
 * [Page 49:  ](#id-section49).
 * [Page 50:  ](#id-section50).
-* [Page 51:  ](#id-section51).
-* [Page 52:  ](#id-section52).
-* [Page 53:  ](#id-section53).
-* [Page 54:  ](#id-section54).
-* [Page 55:  ](#id-section55).
-* [Page 56:  ](#id-section56).
-* [Page 57:  ](#id-section57).
-* [Page 58:  ](#id-section58).
-* [Page 59:  ](#id-section59).
-* [Page 60:  ](#id-section60).
-* [Page 61:  ](#id-section61).
-* [Page 62:  ](#id-section62).
-* [Page 63:  ](#id-section63).
-* [Page 64:  ](#id-section64).
-* [Page 65:  ](#id-section65).
-* [Page 66:  ](#id-section66).
-* [Page 67:  ](#id-section67).
-* [Page 68:  ](#id-section68).
-* [Page 69:  ](#id-section69).
-* [Page 70:  ](#id-section70).
-* [Page 71:  ](#id-section71).
-* [Page 72:  ](#id-section72).
-* [Page 73:  ](#id-section73).
-* [Page 74:  ](#id-section74).
-* [Page 75:  ](#id-section75).
-* [Page 76:  ](#id-section76).
-* [Page 77:  ](#id-section77).
-* [Page 78:  ](#id-section78).
-* [Page 79:  ](#id-section79).
-* [Page 80:  ](#id-section80).
-* [Page 81:  ](#id-section81).
-* [Page 82:  ](#id-section82).
-* [Page 83:  ](#id-section83).
-* [Page 84:  ](#id-section84).
-* [Page 85:  ](#id-section85).
-* [Page 86:  ](#id-section86).
-* [Page 87:  ](#id-section87).
-* [Page 88:  ](#id-section88).
-* [Page 89:  ](#id-section89).
-* [Page 90:  ](#id-section90).
-* [Page 91:  ](#id-section91).
-* [Page 92:  ](#id-section92).
-* [Page 93:  ](#id-section93).
-* [Page 94:  ](#id-section94).
-* [Page 95:  ](#id-section95).
-* [Page 96:  ](#id-section96).
-* [Page 97:  ](#id-section97).
-* [Page 98:  ](#id-section98).
-* [Page 99:  ](#id-section99).
-* [Page 100:  ](#id-section100).
-* [Page 101:  ](#id-section101).
-* [Page 102:  ](#id-section102).
-* [Page 103:  ](#id-section103).
-* [Page 104:  ](#id-section104).
-* [Page 105:  ](#id-section105).
-* [Page 106:  ](#id-section106).
-* [Page 107:  ](#id-section107).
-* [Page 108:  ](#id-section108).
-* [Page 109:  ](#id-section109).
-* [Page 110:  ](#id-section110).
-* [Page 111:  ](#id-section111).
-* [Page 112:  ](#id-section112).
-* [Page 113:  ](#id-section113).
-* [Page 114:  ](#id-section114).
-* [Page 115:  ](#id-section115).
-* [Page 116:  ](#id-section116).
-* [Page 117:  ](#id-section117).
-* [Page 118:  ](#id-section118).
-* [Page 119:  ](#id-section119).
-* [Page 120:  ](#id-section120).
-* [Page 121:  ](#id-section121).
-* [Page 122:  ](#id-section122).
-* [Page 123:  ](#id-section123).
-* [Page 124:  ](#id-section124).
-* [Page 125:  ](#id-section125).
-* [Page 126:  ](#id-section126).
-* [Page 127:  ](#id-section127).
-* [Page 128:  ](#id-section128).
-* [Page 129:  ](#id-section129).
-* [Page 130:  ](#id-section130).
-* [Page 131:  ](#id-section131).
-* [Page 132:  ](#id-section132).
-* [Page 133:  ](#id-section133).
-* [Page 134:  ](#id-section134).
-* [Page 135:  ](#id-section135).
-* [Page 136:  ](#id-section136).
-* [Page 137:  ](#id-section137).
-* [Page 138:  ](#id-section138).
-* [Page 139:  ](#id-section139).
-* [Page 140:  ](#id-section140).
-* [Page 141:  ](#id-section141).
-* [Page 142:  ](#id-section142).
-* [Page 143:  ](#id-section143).
-* [Page 144:  ](#id-section144).
-* [Page 145:  ](#id-section145).
-* [Page 146:  ](#id-section146).
-* [Page 147:  ](#id-section147).
-* [Page 148:  ](#id-section148).
-* [Page 149:  ](#id-section149).
-* [Page 150:  ](#id-section150).
-* [Page 151:  ](#id-section151).
-* [Page 152:  ](#id-section152).
-* [Page 153:  ](#id-section153).
-* [Page 154:  ](#id-section154).
-* [Page 155:  ](#id-section155).
-* [Page 156:  ](#id-section156).
-* [Page 157:  ](#id-section157).
-* [Page 158:  ](#id-section158).
-* [Page 159:  ](#id-section159).
-* [Page 160:  ](#id-section160).
-* [Page 161:  ](#id-section161).
-* [Page 162:  ](#id-section162).
-* [Page 163:  ](#id-section163).
-* [Page 164:  ](#id-section164).
-* [Page 165:  ](#id-section165).
-* [Page 166:  ](#id-section166).
-* [Page 167:  ](#id-section167).
-* [Page 168:  ](#id-section168).
-* [Page 169:  ](#id-section169).
-* [Page 170:  ](#id-section170).
-* [Page 171:  ](#id-section171).
-* [Page 172:  ](#id-section172).
-* [Page 173:  ](#id-section173).
-* [Page 174:  ](#id-section174).
-* [Page 175:  ](#id-section175).
-* [Page 176:  ](#id-section176).
-* [Page 177:  ](#id-section177).
-* [Page 178:  ](#id-section178).
-* [Page 179:  ](#id-section179).
-* [Page 180:  ](#id-section180).
-* [Page 181:  ](#id-section181).
-* [Page 182:  ](#id-section182).
-* [Page 183:  ](#id-section183).
-* [Page 184:  ](#id-section184).
-* [Page 185:  ](#id-section185).
-* [Page 186:  ](#id-section186).
-* [Page 187:  ](#id-section187).
-* [Page 188:  ](#id-section188).
-* [Page 189:  ](#id-section189).
-* [Page 190:  ](#id-section190).
-* [Page 191:  ](#id-section191).
-* [Page 192:  ](#id-section192).
-* [Page 193:  ](#id-section193).
-* [Page 194:  ](#id-section194).
-* [Page 195:  ](#id-section195).
-* [Page 196:  ](#id-section196).
-* [Page 197:  ](#id-section197).
-* [Page 198:  ](#id-section198).
-* [Page 199:  ](#id-section199).
-* [Page 200:  ](#id-section200).
+
+
 
 
 
 ------
 
 <div id='id-section1'/>    
-
 ### Page 1:
 *2018 year goals**   
 
@@ -277,11 +128,9 @@ Notebook for 2019 year. It'll log the rest of my dissertation, post doc projects
 
 It looks like goals have changed a lot. I think in 2018, I wanted to set myself up more for teaching jobs and start thinking about how to start my own lab. But for this year, I'm going to focus more on publishing.
 
-
 ------
 
 <div id='id-section2'/>    
-
 ### Page 2: 2019-01-07 lynda.com data tells a great story    
 
 Story with data - don't need
@@ -353,11 +202,9 @@ You need to know how to do cloud computing.
 
 Build own cloud with ProxMox.
 
-
 ------
 
 <div id='id-section3'/>    
-
 ### Page 3: 2019-01-10.  evolution of Resistance vs tolerance and meeting list with dan    
 
 meet with dan:
@@ -386,7 +233,6 @@ check dirrecitonality of evolution; phylogeny of cerasi species
 **Meet on monday, create a dream figure** how do we get there? how do we parse the data?
 
 Partial correlation: signs- just add 1 and make everhything on a positive scale !    
-
 
 ****
 
@@ -506,11 +352,9 @@ Is this just understanding phenotypic plasticity of a given molecule?
 
 
 
-
 ------
 
 <div id='id-section4'/>    
-
 ### Page 4: 2019-01-10. Partial correlation code to test out
 
 ```R
@@ -647,11 +491,9 @@ date
 
 
 
-
 ------
 
 <div id='id-section5'/>    
-
 ### Page 5: 2019-01-15. Biological Rhythms project: data note on trikinetics experiment   
 
 Changes are on github, referencing the the commit ---
@@ -675,7 +517,6 @@ We can do both if I keep the flies in the trikinetics set up.
 ------
 
 <div id='id-section6'/>    
-
 ### Page 6:  2019-01-17. module detection script update with WGCNA
 
 **Critical changes**
@@ -900,7 +741,6 @@ write.csv(isec.dat,"05_2019-01-17_modules_intersection_dataset.15cutheight_log2_
 ------
 
 <div id='id-section7'/>    
-
 ### Page 7:  2019-01-21. paper readings for resistance and tolerance    
 
 Evolution of plant resistance and tolerance to frost damage; Ecology letters; Agrawal et al. 2004
@@ -945,7 +785,6 @@ Figure 2. fitness is negatively related to tolerance ; so there is a cost to fit
 Conclusion:
 
 Plants can use both strategies. selection operates on maximizing one while not the other. This could be because there is a trade off between the two mechanisms. However, at the population level, there was no trade off, so it could be that frost damage is rare and this selection event doesn't happen often so that the quantitative genetic architecture may not show the trade off at the population level. Or the two different strategies persist and that is how variation is maintained.
-
 
 
 
@@ -998,7 +837,6 @@ medicine and evolution share a common theme in that they both try to understand 
 It is easy to measure genomes, but it is harder to measure all phenotypes.  
 
 Imbalance between G space (genotypes) and P space (phenotype space)
-
 
 
 
@@ -1068,7 +906,6 @@ basically measure stuff at different levels of organization
 ------
 
 <div id='id-section8'/>    
-
 ### Page 8:  2019-01-24. Schneider and Ayres 2008; Nature Review Immunology;
 
 Title: Two ways to survive infection, what resistance and tolerance can teach us about treating infectious diseases
@@ -1185,11 +1022,9 @@ tolerance - ability to limit the health impact of a given pathogen burden
 * manipulate tolerance mechanisms - administer corticosteroids in combo with antibiotics to decrease risk of mortality and hearing loss
 * determine a person's reaction norm
 
-
 ------
 
 <div id='id-section9'/>    
-
 ### Page 9:  2019-01-31. test script on hipergator    
 
 ```
@@ -1221,7 +1056,6 @@ Rscript 03_test.R
 ------
 
 <div id='id-section10'/>    
-
 ### Page 10:  2019-02-05. Stem Miner analysis with cerasi data     
 
 
@@ -1292,11 +1126,9 @@ high 95: low 37, 63, 86, 89
 
 ![](https://user-images.githubusercontent.com/4654474/52298040-08024600-2950-11e9-9119-8c664c9f8086.png)
 
-
 ------
 
 <div id='id-section11'/>    
-
 ### Page 11:  2019-02-11. Meeting notes with Dan, 2019-02-08  
 
 Met with Dan and showed the results from STEM-MINER.
@@ -1309,11 +1141,9 @@ Dan's thoughts
   * Hubs - gxp has some pattern, strength matches pattern or is consistently high (always hubs)
   * Effectors (downstream?): - gxp has some pattern ; strength always low throughout time
 
-
 ------
 
 <div id='id-section12'/>    
-
 ### Page 12: 2019-02-13. redo analysis with STEM miner with cerasi data; no flybase annotations
 
 **Problem with previous analysis**: When I tried to match up the names with the larger annotation file that has flybase IDs, the data shrunk for some reason. So for this run, I'm just taking the genes without the flybase gene IDs. It has 13,857 genes.
@@ -1332,7 +1162,6 @@ Parameters: 100 profiles, no annotations, normalized data option
 ------
 
 <div id='id-section13'/>    
-
 ### Page 13: 2019-02-19.  STEM miner analysis on strength dataset
 
 THe data: We have the strength (sum of weights of the edges into a given node, aka, gene in this case) of each gene across 5 time points and for 2 different populations
@@ -1361,11 +1190,9 @@ When I take out the zeros and scale:
 
 I think this is the best way to go. It gives a more accurate picture of the different types of shapes. The data ranged from 0 to 7000 when zeros left in, but when taken out, data ranged 5000-7000. The 0's may bias expression profiles that are low in abundance and mask effects between 5000-7000 strength.
 
-
 ------
 
 <div id='id-section14'/>    
-
 ### Page 14: 2019-04-19.  Cerasi/pomonella brain transcriptome project: Organizing ideas   
 
 Quick update on project: I'm trying to construct a story of the molecular architecture of diapause development. Diapause development is an alternative life history strategy that allows organisms to survive unfavorable conditions by suppressing metabolic rate and increase their stress hardiness. Mainly, there are 3 phases (Kostal et al. 2017): initiation, maintenance, and termination. Because diapause is dynamic, we need to measure gxp through time to capture the progression of phases. We want to compare 2 different species and their ability to shift their seasonal timing. Do they shift their seasonal time with the same molecular architecture? (Cerasi and Pomonella)
@@ -1485,12 +1312,12 @@ Tables of relabelled names per module and their groupings
 
 Overall break down of diff expressed genes     
 
-| Source          | Significantly differentially expressed |   
+| Source          | Significantly differentially expressed |
 | --------------- | -------------------------------------- |
 | Population        | 0                                    |
 | Time            | 2592                                   |
 | Population + Time | 0                                     |
-| Population x Time | 2902                                  |   
+| Population x Time | 2902                                  |
 
 
 ### Common responses ,  WGCNA power 12, cutuff = .25, deepsplit = 4   
@@ -1605,8 +1432,8 @@ Need statement: we need to understand gene identities but also their trajectorie
 Predictions:
 1.	Initiation: genes are important early on to start diapause development and then get turned off
 2.	Maintenance: genes that play an important role contribute to homeostasis during dormancy or prolonged development; there are actually two general patterns
-a.	U-shaped pattern would signify genes important for physiological processes during permissive conditions because gene abundance matches favorable conditions
-b.	Hump-shaped patterns would signify genes turned on during dormancy and would be important for physiological processes during non-permissive conditions
+	a.	U-shaped pattern would signify genes important for physiological processes during permissive conditions because gene abundance matches favorable conditions
+	b.	Hump-shaped patterns would signify genes turned on during dormancy and would be important for physiological processes during non-permissive conditions
 3.	Termination: genes that abruptly or gradually turn on at the later stages of diapause development, we mainly expect genes to be enriched for resumption of growth
 
 
@@ -1614,11 +1441,9 @@ b.	Hump-shaped patterns would signify genes turned on during dormancy and would 
 
 In this study, we aim to understand seasonal differences between two distinct population of Rhagoeltis cerasi by determining how these flies progress through diapause development using transcriptional trajectories as landmarks. We first determine the degree of seasonal population divergence in eclosion timing between two to four and a half months while in dormancy.  Over the same time course, we assess whether population level divergence in eclosion reflects differences in transcript abundance trajectories as well as transcript identity. For transcripts showing common responses, we expect them to fall into three discrete phases classes of diapause development (Kostal): Initiation, maintenance, and termination based on their pattern of expression over time. Out of the genes related to initiation, we expect genes to be enriched in metabolic suppression and slowdown of development (). Out of the genes related to maintenance, we expect genes to be enriched in stress hardiness pathways and perhaps lipid metabolism (). Out of the genes related to termination, we expect genes to be enriched in overall eye development, morphogenesis, and metabolic activation (). For genes displaying population differences across time, we expect to observe offsets in expression patterns that reflect their eclosion timing. For example, analyzing reaction norms may reveal peak expression values appearing earlier in lowland populations than highland populations. In order to determine whether these class of genes remain conserved or become adaptively modulated for common or divergent gene expression responses between populations, respectively, we compared gene sets and expression trajectories of Rhagoletis cerasi with Rhagoletis pomonella.
 
-
 ------
 
 <div id='id-section15'/>    
-
 ### Page 15: 2019-05-01. Sorting ideas: How do we know the modules we're finding are robust?   
 
 Recap: We used WGCNA to estimate weighted correlated gene networks. Nodes are the genes and the edges are weighted by the degree of correlation between the two nodes. From my understanding, WGCNA takes normalized gene expression data (in this case output of edgeR output, so normalized log fold change) and calculates all pairwise pearsons correlations. Converts this matrix (adjacency) to topological overlap matrix ; 1- TOM = dissimiliarity. Then cluster based on distances and given a cutoff, a group of genes in a cluster is a module.
@@ -1705,7 +1530,6 @@ If modules are assembling in a non-random pattern, we'd expect the logg odds dis
 ------
 
 <div id='id-section16'/>    
-
 ### Page 16:  2019-05-07. Code comparing gene lists (anything 2 lists with lots of elements you want to compare in a pairwise fashion)  
 
 The GeneOverlap R package helped me do the calculation : https://www.bioconductor.org/packages/release/bioc/vignettes/GeneOverlap/inst/doc/GeneOverlap.pdf
@@ -1780,7 +1604,7 @@ df
 |            | NotA| inA|
 |:-----------|------:|-------:|
 |notB  |    total genes- union|       setdiff(B,A)|
-|inB |      setdiff(A,B)|  intersect|   
+|inB |      setdiff(A,B)|  intersect|
 
 
 
@@ -1789,7 +1613,6 @@ df
 ------
 
 <div id='id-section17'/>    
-
 ### Page 17:  2019-05-09. Messing around with code
 
 
@@ -1812,7 +1635,6 @@ ggplot(dat,aes(x=x,y=y))+geom_point(size=5)+geom_line(size=1.5)+T+ylab("Time spe
 ------
 
 <div id='id-section18'/>    
-
 ### Page 18:  2019-05-10. Reading Langfelder et al. 2011; Is My Network Module Preserved or Reproducible?
 
 [Is my Network Module Preserved and Reproducible?](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1001057&type=printable)
@@ -1851,11 +1673,9 @@ determine whether a module is present in a reference network can also be found i
 
 Modules between reference and test networks may be preserved if has a high desnity in the test network. Take mean adjacency for module q as the module density of the test network.
 
-
 ------
 
 <div id='id-section19'/>    
-
 ### Page 19:  2019-05-10. Helping James Brown with some statistic
 
 ### Make figure and check stats on the differences in wandering day between strain and photoperiod
@@ -2184,7 +2004,6 @@ d1
 ------
 
 <div id='id-section20'/>    
-
 ### Page 20:  2019-05-14. results section cerasi paper before I chop it up
 
 
@@ -2215,7 +2034,6 @@ When comparing the expression modules between populations, we found significant 
 ------
 
 <div id='id-section21'/>    
-
 ### Page 21:  2019-05-20. Module preservation
 
 **Zsummary = (Zdensity + Z connectivity )/2**
@@ -2254,7 +2072,6 @@ Connectivity is defined as the sum of all of the strengths in a network for a gi
 ------
 
 <div id='id-section22'/>    
-
 ### Page 22:  2019-05-22. stats dump for R. cerasi module-phenotype analysis: updated, ecluded dead flies
 
 
@@ -2379,11 +2196,9 @@ module                      0.2777980482     0.75547123  0.351308548 1.831403e-0
 timpop$PopulationLow:module 0.3374693036     0.92475619  0.210410781 2.446135e-02 0.7782808525
 ```
 
-
 ------
 
 <div id='id-section23'/>    
-
 ### Page 23:  2019-06-17. Additional and re-analysis of cerasi brain transcriptome (after meeting with gragland)    
 
 Dataset- start with cerasi
@@ -2620,11 +2435,9 @@ turquoise     < 2e-16 < 2e-16 < 2e-16   < 2e-16 < 2e-16       < 2e-16     < 2e-1
 P value adjustment method: BH
 ```
 
-
 ------
 
 <div id='id-section24'/>    
-
 ### Page 24:  2019-06-18. more analysis ; cerasi commonr responses
 
 On thinking about the data, I'm separating each population for a given time point, but for a time effect, I really need to take the average between them (at a given time point).
@@ -2795,7 +2608,6 @@ apply(te.wide.merge[,2:21],2,function(x){summary(lm(te.wide.merge$ave.mod~x))$co
 ------
 
 <div id='id-section25'/>    
-
 ### Page 25:  2019-06-24. stats dump, stemminer cerasi common responses only
 
 ## Stemminer revisit for common responses
@@ -2917,7 +2729,6 @@ profiles.col/((pro1.col|ecl1.col)+plot_layout(widths=c(.35,.65)))
 ------
 
 <div id='id-section26'/>    
-
 ### Page 26:  2019-07-01. stats dump ; cerasi divergent responses      
 
 testing interaction between population and module on phenotypes
@@ -2952,11 +2763,9 @@ cp.wide3$PopulationLow:module       0.238691854      0.2370570948
 
 ### darkseagreen4 positive had sig interaction
 
-
 ------
 
 <div id='id-section27'/>    
-
 ### Page 27:  2019-07-05. numbers dump: the number of genes per module and module+sign
 
 cerasi:
@@ -3422,11 +3231,9 @@ by module and sign
 
 
 
-
 ------
 
 <div id='id-section28'/>    
-
 ### Page 28: 2019-07-16. Helping Jbrown with data analysis and figure preparation    
 
 
@@ -3762,11 +3569,9 @@ ggplot(dat2,aes(x=Photoperiod,y=mass.mg,fill=strain))+geom_boxplot()+ylab("Wet M
 
 
 
-
 ------
 
 <div id='id-section29'/>    
-
 ### Page 29:  2019-07-17. Jbrown stats revisit
 
 Meeting with DHahn:
@@ -3838,1029 +3643,122 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 
 
 
-
 ------
 
 <div id='id-section30'/>    
+### Page 30:  2019-09-02. data revisit with Dan
 
-### Page 30:  
+
+
+I'm not a post doc anymore, so I'll  be adding entries infrequently, when I work on the projects. Dhahn asked me to revisit the diapause exit paper and split the PCA's of the metabolic rate trajectories by host. I sent him results, but its a similar story. 
+
+
+
+
+
+
 
 ------
 
 <div id='id-section31'/>    
-
 ### Page 31:  
 
 ------
 
 <div id='id-section32'/>    
-
 ### Page 32:  
 
 ------
 
 <div id='id-section33'/>    
-
 ### Page 33:  
 
 ------
 
 <div id='id-section34'/>    
-
 ### Page 34:  
 
 ------
 
 <div id='id-section35'/>    
-
 ### Page 35:  
 
 ------
 
 <div id='id-section36'/>    
-
 ### Page 36:  
 
 ------
 
 <div id='id-section37'/>    
-
 ### Page 37:  
 
 ------
 
 <div id='id-section38'/>    
-
 ### Page 38:  
 
 ------
 
 <div id='id-section39'/>    
-
 ### Page 39:  
 
 ------
 
 <div id='id-section40'/>    
-
 ### Page 40:  
 
 ------
 
 <div id='id-section41'/>    
-
 ### Page 41:  
 
 ------
 
 <div id='id-section42'/>    
-
 ### Page 42:  
 
 ------
 
 <div id='id-section43'/>    
-
 ### Page 43:  
 
 ------
 
 <div id='id-section44'/>    
-
 ### Page 44:  
 
 ------
 
 <div id='id-section45'/>    
-
 ### Page 45:  
 
 ------
 
 <div id='id-section46'/>    
-
 ### Page 46:  
 
 ------
 
 <div id='id-section47'/>    
-
 ### Page 47:  
 
 ------
 
 <div id='id-section48'/>    
-
 ### Page 48:  
 
 ------
 
 <div id='id-section49'/>    
-
 ### Page 49:  
 
 ------
 
 <div id='id-section50'/>    
-
 ### Page 50:  
 
 ------
 
 <div id='id-section51'/>    
-
-### Page 51:  
-
-------
-
-<div id='id-section52'/>    
-
-### Page 52:  
-
-------
-
-<div id='id-section53'/>    
-
-### Page 53:  
-
-------
-
-<div id='id-section54'/>    
-
-### Page 54:  
-
-------
-
-<div id='id-section55'/>    
-
-### Page 55:  
-
-------
-
-<div id='id-section56'/>    
-
-### Page 56:  
-
-------
-
-<div id='id-section57'/>    
-
-### Page 57:  
-
-------
-
-<div id='id-section58'/>    
-
-### Page 58:  
-
-------
-
-<div id='id-section59'/>    
-
-### Page 59:  
-
-------
-
-<div id='id-section60'/>    
-
-### Page 60:  
-
-------
-
-<div id='id-section61'/>    
-
-### Page 61:  
-
-------
-
-<div id='id-section62'/>    
-
-### Page 62:  
-
-------
-
-<div id='id-section63'/>    
-
-### Page 63:  
-
-------
-
-<div id='id-section64'/>    
-
-### Page 64:  
-
-------
-
-<div id='id-section65'/>    
-
-### Page 65:  
-
-------
-
-<div id='id-section66'/>    
-
-### Page 66:  
-
-------
-
-<div id='id-section67'/>    
-
-### Page 67:  
-
-------
-
-<div id='id-section68'/>    
-
-### Page 68:  
-
-------
-
-<div id='id-section69'/>    
-
-### Page 69:  
-
-------
-
-<div id='id-section70'/>    
-
-### Page 70:  
-
-------
-
-<div id='id-section71'/>    
-
-### Page 71:  
-
-------
-
-<div id='id-section72'/>    
-
-### Page 72:  
-
-------
-
-<div id='id-section73'/>    
-
-### Page 73:  
-
-------
-
-<div id='id-section74'/>    
-
-### Page 74:  
-
-------
-
-<div id='id-section75'/>    
-
-### Page 75:  
-
-------
-
-<div id='id-section76'/>    
-
-### Page 76:  
-
-------
-
-<div id='id-section77'/>    
-
-### Page 77:  
-
-------
-
-<div id='id-section78'/>    
-
-### Page 78:  
-
-------
-
-<div id='id-section79'/>    
-
-### Page 79:  
-
-------
-
-<div id='id-section80'/>    
-
-### Page 80:  
-
-------
-
-<div id='id-section81'/>    
-
-### Page 81:  
-
-------
-
-<div id='id-section82'/>    
-
-### Page 82:  
-
-------
-
-<div id='id-section83'/>    
-
-### Page 83:  
-
-------
-
-<div id='id-section84'/>    
-
-### Page 84:  
-
-------
-
-<div id='id-section85'/>    
-
-### Page 85:  
-
-------
-
-<div id='id-section86'/>    
-
-### Page 86:  
-
-------
-
-<div id='id-section87'/>    
-
-### Page 87:  
-
-------
-
-<div id='id-section88'/>    
-
-### Page 88:  
-
-------
-
-<div id='id-section89'/>    
-
-### Page 89:  
-
-------
-
-<div id='id-section90'/>    
-
-### Page 90:  
-
-------
-
-<div id='id-section91'/>    
-
-### Page 91:  
-
-------
-
-<div id='id-section92'/>    
-
-### Page 92:  
-
-------
-
-<div id='id-section93'/>    
-
-### Page 93:  
-
-------
-
-<div id='id-section94'/>    
-
-### Page 94:  
-
-------
-
-<div id='id-section95'/>    
-
-### Page 95:  
-
-------
-
-<div id='id-section96'/>    
-
-### Page 96:  
-
-------
-
-<div id='id-section97'/>    
-
-### Page 97:  
-
-------
-
-<div id='id-section98'/>    
-
-### Page 98:  
-
-------
-
-<div id='id-section99'/>    
-
-### Page 99:  
-
-------
-
-<div id='id-section100'/>    
-
-### Page 100:  
-
-------
-
-<div id='id-section101'/>    
-
-### Page 101:  
-
-------
-
-<div id='id-section102'/>    
-
-### Page 102:  
-
-------
-
-<div id='id-section103'/>    
-
-### Page 103:  
-
-------
-
-<div id='id-section104'/>    
-
-### Page 104:  
-
-------
-
-<div id='id-section105'/>    
-
-### Page 105:  
-
-------
-
-<div id='id-section106'/>    
-
-### Page 106:  
-
-------
-
-<div id='id-section107'/>    
-
-### Page 107:  
-
-------
-
-<div id='id-section108'/>    
-
-### Page 108:  
-
-------
-
-<div id='id-section109'/>    
-
-### Page 109:  
-
-------
-
-<div id='id-section110'/>    
-
-### Page 110:  
-
-------
-
-<div id='id-section111'/>    
-
-### Page 111:  
-
-------
-
-<div id='id-section112'/>    
-
-### Page 112:  
-
-------
-
-<div id='id-section113'/>    
-
-### Page 113:  
-
-------
-
-<div id='id-section114'/>    
-
-### Page 114:  
-
-------
-
-<div id='id-section115'/>    
-
-### Page 115:  
-
-------
-
-<div id='id-section116'/>    
-
-### Page 116:  
-
-------
-
-<div id='id-section117'/>    
-
-### Page 117:  
-
-------
-
-<div id='id-section118'/>    
-
-### Page 118:  
-
-------
-
-<div id='id-section119'/>    
-
-### Page 119:  
-
-------
-
-<div id='id-section120'/>    
-
-### Page 120:  
-
-------
-
-<div id='id-section121'/>    
-
-### Page 121:  
-
-------
-
-<div id='id-section122'/>    
-
-### Page 122:  
-
-------
-
-<div id='id-section123'/>    
-
-### Page 123:  
-
-------
-
-<div id='id-section124'/>    
-
-### Page 124:  
-
-------
-
-<div id='id-section125'/>    
-
-### Page 125:  
-
-------
-
-<div id='id-section126'/>    
-
-### Page 126:  
-
-------
-
-<div id='id-section127'/>    
-
-### Page 127:  
-
-------
-
-<div id='id-section128'/>    
-
-### Page 128:  
-
-------
-
-<div id='id-section129'/>    
-
-### Page 129:  
-
-------
-
-<div id='id-section130'/>    
-
-### Page 130:  
-
-------
-
-<div id='id-section131'/>    
-
-### Page 131:  
-
-------
-
-<div id='id-section132'/>    
-
-### Page 132:  
-
-------
-
-<div id='id-section133'/>    
-
-### Page 133:  
-
-------
-
-<div id='id-section134'/>    
-
-### Page 134:  
-
-------
-
-<div id='id-section135'/>    
-
-### Page 135:  
-
-------
-
-<div id='id-section136'/>    
-
-### Page 136:  
-
-------
-
-<div id='id-section137'/>    
-
-### Page 137:  
-
-------
-
-<div id='id-section138'/>    
-
-### Page 138:  
-
-------
-
-<div id='id-section139'/>    
-
-### Page 139:  
-
-------
-
-<div id='id-section140'/>    
-
-### Page 140:  
-
-------
-
-<div id='id-section141'/>    
-
-### Page 141:  
-
-------
-
-<div id='id-section142'/>    
-
-### Page 142:  
-
-------
-
-<div id='id-section143'/>    
-
-### Page 143:  
-
-------
-
-<div id='id-section144'/>    
-
-### Page 144:  
-
-------
-
-<div id='id-section145'/>    
-
-### Page 145:  
-
-------
-
-<div id='id-section146'/>    
-
-### Page 146:  
-
-------
-
-<div id='id-section147'/>    
-
-### Page 147:  
-
-------
-
-<div id='id-section148'/>    
-
-### Page 148:  
-
-------
-
-<div id='id-section149'/>    
-
-### Page 149:  
-
-------
-
-<div id='id-section150'/>    
-
-### Page 150:  
-
-------
-
-<div id='id-section151'/>    
-
-### Page 151:  
-
-------
-
-<div id='id-section152'/>    
-
-### Page 152:  
-
-------
-
-<div id='id-section153'/>    
-
-### Page 153:  
-
-------
-
-<div id='id-section154'/>    
-
-### Page 154:  
-
-------
-
-<div id='id-section155'/>    
-
-### Page 155:  
-
-------
-
-<div id='id-section156'/>    
-
-### Page 156:  
-
-------
-
-<div id='id-section157'/>    
-
-### Page 157:  
-
-------
-
-<div id='id-section158'/>    
-
-### Page 158:  
-
-------
-
-<div id='id-section159'/>    
-
-### Page 159:  
-
-------
-
-<div id='id-section160'/>    
-
-### Page 160:  
-
-------
-
-<div id='id-section161'/>    
-
-### Page 161:  
-
-------
-
-<div id='id-section162'/>    
-
-### Page 162:  
-
-------
-
-<div id='id-section163'/>    
-
-### Page 163:  
-
-------
-
-<div id='id-section164'/>    
-
-### Page 164:  
-
-------
-
-<div id='id-section165'/>    
-
-### Page 165:  
-
-------
-
-<div id='id-section166'/>    
-
-### Page 166:  
-
-------
-
-<div id='id-section167'/>    
-
-### Page 167:  
-
-------
-
-<div id='id-section168'/>    
-
-### Page 168:  
-
-------
-
-<div id='id-section169'/>    
-
-### Page 169:  
-
-------
-
-<div id='id-section170'/>    
-
-### Page 170:  
-
-------
-
-<div id='id-section171'/>    
-
-### Page 171:  
-
-------
-
-<div id='id-section172'/>    
-
-### Page 172:  
-
-------
-
-<div id='id-section173'/>    
-
-### Page 173:  
-
-------
-
-<div id='id-section174'/>    
-
-### Page 174:  
-
-------
-
-<div id='id-section175'/>    
-
-### Page 175:  
-
-------
-
-<div id='id-section176'/>    
-
-### Page 176:  
-
-------
-
-<div id='id-section177'/>    
-
-### Page 177:  
-
-------
-
-<div id='id-section178'/>    
-
-### Page 178:  
-
-------
-
-<div id='id-section179'/>    
-
-### Page 179:  
-
-------
-
-<div id='id-section180'/>    
-
-### Page 180:  
-
-------
-
-<div id='id-section181'/>    
-
-### Page 181:  
-
-------
-
-<div id='id-section182'/>    
-
-### Page 182:  
-
-------
-
-<div id='id-section183'/>    
-
-### Page 183:  
-
-------
-
-<div id='id-section184'/>    
-
-### Page 184:  
-
-------
-
-<div id='id-section185'/>    
-
-### Page 185:  
-
-------
-
-<div id='id-section186'/>    
-
-### Page 186:  
-
-------
-
-<div id='id-section187'/>    
-
-### Page 187:  
-
-------
-
-<div id='id-section188'/>    
-
-### Page 188:  
-
-------
-
-<div id='id-section189'/>    
-
-### Page 189:  
-
-------
-
-<div id='id-section190'/>    
-
-### Page 190:  
-
-------
-
-<div id='id-section191'/>    
-
-### Page 191:  
-
-------
-
-<div id='id-section192'/>    
-
-### Page 192:  
-
-------
-
-<div id='id-section193'/>    
-
-### Page 193:  
-
-------
-
-<div id='id-section194'/>    
-
-### Page 194:  
-
-------
-
-<div id='id-section195'/>    
-
-### Page 195:  
-
-------
-
-<div id='id-section196'/>    
-
-### Page 196:  
-
-------
-
-<div id='id-section197'/>    
-
-### Page 197:  
-
-------
-
-<div id='id-section198'/>    
-
-### Page 198:  
-
-------
-
-<div id='id-section199'/>    
-
-### Page 199:  
-
-------
-
-<div id='id-section200'/>    
-
-### Page 200:  
+### 
